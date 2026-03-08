@@ -1,16 +1,21 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Budget Analyst Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## load_dataset
+- **Input:** Path to the `ward_budget.csv` file.
+- **Task:** 
+  1. Load the CSV file into a structured format.
+  2. Validate columns (`period`, `ward`, `category`, `budgeted_amount`, `actual_spend`, `notes`).
+  3. Identify all rows where `actual_spend` is NULL.
+- **Output:** A list of data rows and a summary of null counts.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## compute_growth
+- **Input:** Data rows, ward name, category name, growth type (e.g., MoM).
+- **Task:** 
+  1. Filter data by ward and category.
+  2. Sort data by period (YYYY-MM).
+  3. For each period:
+     - Check if current or previous `actual_spend` is NULL.
+     - If NULL, set growth to "NULL: [reason from notes]".
+     - If NOT NULL, compute growth using the formula: `(current - previous) / previous * 100`.
+     - Record the result along with the explicit formula used.
+- **Output:** A structured list of growth results for the requested ward/category.
