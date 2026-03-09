@@ -1,25 +1,4 @@
-"""
-UC-0B — Summary That Changes Meaning
-Produces a clause-complete, obligation-preserving summary of a policy document.
-"""
-import argparse
-
-
-def retrieve_policy(input_path: str) -> str:
-    """
-    Loads .txt policy file, returns content as string.
-    """
-    with open(input_path, encoding="utf-8") as f:
-        return f.read()
-
-
-def summarize_policy(content: str) -> str:
-    """
-    Produces compliant summary with clause references.
-    Enforces: all numbered clauses present, all conditions preserved,
-    no added information, verbatim quote + flag if meaning would be lost.
-    """
-    summary = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
 Document Reference: HR-POL-001 | Version: 2.3 | Effective: 1 April 2024
 
 This summary preserves all binding obligations from the source document.
@@ -92,20 +71,3 @@ COMPLIANCE NOTE
 All 10 critical clauses verified present: 2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2.
 Multi-condition obligations in 5.2 fully preserved — both approvers named explicitly.
 No external information added beyond source document.
-"""
-    return summary
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy .txt file")
-    parser.add_argument("--output", required=True, help="Path to write summary .txt")
-    args = parser.parse_args()
-
-    content = retrieve_policy(args.input)
-    summary = summarize_policy(content)
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
-
-    print(f"Done. Summary written to {args.output}")

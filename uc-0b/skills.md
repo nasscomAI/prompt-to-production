@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0B Summary That Changes Meaning
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a .txt policy file and returns its full content as a string.
+    input: input_path (str) — path to the policy .txt file.
+    output: Full file content as a single string with all sections intact.
+    error_handling: If file not found or unreadable, raises IOError with path info.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Takes full policy content and produces a clause-complete, obligation-preserving summary with clause references.
+    input: content (str) — full text of the policy document.
+    output: Formatted summary string with all numbered clauses, binding obligations marked, and a compliance note listing verified clauses.
+    error_handling: If a clause cannot be summarised without meaning loss, quotes it verbatim and flags it as [VERBATIM — OBLIGATION].

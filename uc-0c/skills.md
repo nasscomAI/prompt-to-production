@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C Number That Looks Right
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the budget CSV, validates required columns, and reports all null actual_spend rows with reasons before returning data.
+    input: input_path (str) — path to ward_budget.csv.
+    output: List of row dicts with all columns. Prints null report to stdout before returning.
+    error_handling: Raises ValueError if file is empty or required columns are missing. Reports null rows but does not stop execution.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Takes ward, category, and growth_type, returns per-period growth table with formula shown for each row.
+    input: rows (list of dicts), ward (str), category (str), growth_type (str — MoM or YoY).
+    output: List of dicts with fields — period, ward, category, actual_spend, growth, formula, flag.
+    error_handling: Raises ValueError if growth_type is invalid or not specified. Marks rows as NOT COMPUTED if current or previous period is null. Raises ValueError if no data found for given ward and category combination.

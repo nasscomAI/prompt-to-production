@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-X Ask My Documents
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all 3 policy files and indexes them by document name for lookup.
+    input: No arguments — paths are hardcoded to the 3 CMC policy documents.
+    output: Dict mapping document name (str) to full document content (str).
+    error_handling: Prints WARNING if a document file is not found. Continues with available documents.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches indexed knowledge base for a single-source answer with citation, or returns refusal template if not found.
+    input: question (str) — natural language question from the user.
+    output: Answer string with source document and section number, or exact refusal template string.
+    error_handling: If no KB entry matches, returns refusal template. Never guesses, infers, or blends across documents.
