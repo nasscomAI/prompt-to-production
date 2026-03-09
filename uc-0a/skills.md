@@ -1,16 +1,32 @@
 # skills.md
+
 # INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
+
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+&nbsp; - name: classify\_complaint
+
+&nbsp;   description: Categorizes a citizen complaint into types (pothole, streetlight, flooding, garbage).
+
+&nbsp;   input: Complaint text (string)
+
+&nbsp;   output: Complaint category (string label)
+
+&nbsp;   error\_handling: Returns "unknown" if no category matches.
+
+
+
+&nbsp; - name: extract\_location
+
+&nbsp;   description: Finds ward and location details from complaint text.
+
+&nbsp;   input: Complaint text (string)
+
+&nbsp;   output: Ward number and location (JSON format)
+
+&nbsp;   error\_handling: Leaves fields empty if location cannot be parsed.
+
+
+
