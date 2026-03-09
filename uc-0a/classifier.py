@@ -6,29 +6,29 @@ import argparse
 import csv
 
 SEVERITY_KEYWORDS = [
-    "injury",
-    "child",
-    "school",
-    "hospital",
-    "ambulance",
-    "fire",
-    "hazard",
-    "fell",
-    "collapse"
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell",
+    "collapse", "accident", "crash"
 ]
 
+# Ordered from most specific → most general
 CATEGORY_KEYWORDS = {
+    "drain": "Drain Blockage",
+    "mosquito": "Drain Blockage",
     "pothole": "Pothole",
-    "flood": "Flooding",
-    "water": "Flooding",
+    "collapse": "Road Damage",
+    "crater": "Road Damage",
+    "road": "Road Damage",
     "streetlight": "Streetlight",
     "garbage": "Waste",
     "waste": "Waste",
+    "drilling": "Noise",
+    "engine": "Noise",
+    "truck": "Noise",
+    "idling": "Noise",
     "noise": "Noise",
-    "road": "Road Damage",
-    "heritage": "Heritage Damage",
-    "heat": "Heat Hazard",
-    "drain": "Drain Blockage"
+    "flood": "Flooding",
+    "water": "Flooding"
 }
 
 
@@ -37,21 +37,31 @@ def classify_complaint(row):
     description = row.get("description", "").lower()
 
     category = "Other"
+    matched_keyword = None
     flag = ""
 
-    for key, value in CATEGORY_KEYWORDS.items():
-        if key in description:
+    for keyword, value in CATEGORY_KEYWORDS.items():
+        if keyword in description:
             category = value
+            matched_keyword = keyword
             break
 
     priority = "Standard"
+    urgency_trigger = None
 
     for keyword in SEVERITY_KEYWORDS:
         if keyword in description:
             priority = "Urgent"
+            urgency_trigger = keyword
             break
 
-    reason = f"Detected keywords in description: {description[:50]}"
+    if matched_keyword:
+        reason = f"keyword '{matched_keyword}' indicates {category.lower()}"
+    else:
+        reason = "no clear category keywords found"
+
+    if urgency_trigger:
+        reason += f"; urgency triggered by '{urgency_trigger}'"
 
     if category == "Other":
         flag = "NEEDS_REVIEW"
@@ -92,7 +102,7 @@ def batch_classify(input_path, output_path):
                     "complaint_id": row.get("complaint_id"),
                     "category": "Other",
                     "priority": "Low",
-                    "reason": "Row processing failed",
+                    "reason": "classification failed",
                     "flag": "NEEDS_REVIEW"
                 })
 

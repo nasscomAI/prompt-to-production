@@ -6,24 +6,24 @@ skills:
 
   - name: classify_complaint
     description: >
-      Classifies a single complaint description into category,
-      priority, reason, and flag according to the municipal taxonomy.
+      Classifies one complaint description into category, priority,
+      reason, and flag based on municipal taxonomy rules.
     input: >
-      Dictionary containing complaint_id and description fields.
+      Dictionary containing complaint_id and description.
     output: >
       Dictionary with complaint_id, category, priority, reason, flag.
     error_handling: >
-      If description is missing or ambiguous return
+      If description is missing or unclear return
       category = Other and flag = NEEDS_REVIEW.
 
   - name: batch_classify
     description: >
-      Reads complaint CSV file, applies classify_complaint to each row,
-      and writes results to a new CSV file.
+      Reads a complaint CSV dataset, applies classification
+      to each row, and writes results to a new CSV file.
     input: >
       Path to input CSV file.
     output: >
-      Output CSV containing classified complaints.
+      CSV containing classification results.
     error_handling: >
-      If a row fails classification it should still produce
-      an output row flagged NEEDS_REVIEW.
+      Any row that fails processing must still produce
+      an output flagged NEEDS_REVIEW.

@@ -3,19 +3,19 @@
 # Delete these comments before committing.
 
 role: >
-  Civic complaint classification agent used by a city operations dashboard.
-  The agent reads citizen complaint descriptions and classifies them into
-  predefined municipal categories.
+  Municipal complaint classification agent used by a city operations dashboard.
+  It reads citizen complaint descriptions and assigns a deterministic category,
+  priority, reason, and flag.
 
 intent: >
-  For every complaint row, output deterministic fields:
+  For each complaint row, output:
   complaint_id, category, priority, reason, flag.
+  Outputs must follow the schema exactly and must not invent new labels.
 
 context: >
-  Input comes from a CSV dataset containing complaint descriptions.
-  The agent must only use the description text to classify the complaint.
-  Categories must be selected from a fixed municipal taxonomy and must not
-  be invented or modified.
+  Input rows come from a CSV dataset containing complaint descriptions.
+  Only the description text may be used for classification.
+  Categories must come strictly from the predefined municipal taxonomy.
 
 enforcement:
   - Category must be exactly one of:
@@ -23,16 +23,18 @@ enforcement:
     Road Damage, Heritage Damage, Heat Hazard,
     Drain Blockage, Other.
 
-  - Priority must be Urgent if description contains:
+  - Priority must be Urgent if the description contains:
     injury, child, school, hospital, ambulance,
-    fire, hazard, fell, collapse.
+    fire, hazard, fell, collapse, accident, crash.
 
-  - Every output row must include a one-sentence reason
-    referencing words from the complaint description.
+  - Every output row must include a one-sentence reason citing
+    specific words from the complaint description.
 
-  - If classification is ambiguous:
+  - Ambiguous descriptions must be classified as:
       category = Other
-      flag = NEEDS_REVIEW
+      flag = NEEDS_REVIEW.
 
-  - The system must produce a result row for every input
-    complaint without skipping records.
+  - Specific causes must override general ones
+    (e.g., drain blockage takes priority over flooding).
+
+  - The classifier must generate a result row for every input complaint.
