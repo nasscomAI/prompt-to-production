@@ -1,0 +1,13 @@
+IT Acceptable Use Policy
+
+1. Device Usage
+Company devices must only be used for official purposes. Personal use is prohibited on company servers.
+
+2. Password Policy
+Passwords must be changed every 90 days and must contain at least 12 characters including uppercase, lowercase, numbers, and symbols.
+
+3. Internet Access
+Access to social media is restricted during working hours. Streaming services are blocked on the corporate network.
+
+4. Data Security
+All confidential data must be encrypted before transmission. USB drives are not permitted on company devices.

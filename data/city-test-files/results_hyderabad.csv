@@ -1,0 +1,11 @@
+complaint_id,ward,complaint_text,category,subcategory,severity,reasoning
+HYD-001,Ward-5,Large pothole on main road near Jubilee Hills causing accidents daily,Roads,Pothole,Critical,Critical keyword 'accident' found; immediate risk to safety
+HYD-002,Ward-12,No water supply for the past 3 days in our area,Water,Water,High,High-impact keyword 'no water' found; significant disruption
+HYD-003,Ward-7,Garbage not collected for 2 weeks,Sanitation,Garbage,High,High-impact keyword 'week' found; significant disruption
+HYD-004,Ward-3,Street light pole broken,Electricity,Light,Medium,"Routine complaint, no strong severity signal"
+HYD-005,Ward-9,Minor crack on road pavement near the park,Roads,Road,Low,Low-signal keyword 'minor' found; minor issue
+HYD-006,Ward-14,Sewage pipe leakage flooding the entire street,Water,Pipe,High,High-impact keyword 'flooding' found; significant disruption
+HYD-007,Ward-2,Child fell into open manhole near the hospital entrance,Other,General,Critical,Critical keyword 'hospital' found; immediate risk to safety
+HYD-008,Ward-11,Dustbin overflowing near the market,Water,Overflow,Medium,"Routine complaint, no strong severity signal"
+HYD-009,Ward-6,Electricity transformer making loud noise at night,Electricity,Electricity,Medium,"Routine complaint, no strong severity signal"
+HYD-010,Ward-8,Small pothole near the colony gate,Roads,Pothole,Low,Low-signal keyword 'small' found; minor issue
