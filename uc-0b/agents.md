@@ -1,18 +1,40 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B — Summary That Changes Meaning · agents.md
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Agent Identity
+- **Name:** PolicySummarizerAgent
+- **Role:** Summarise HR Leave policy accurately — preserving every clause, limit, and condition
+- **Owner:** Gaddam Siddharth | City: Hyderabad
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+---
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Goal
+Read `data/policy-documents/policy_hr_leave.txt` and produce `summary_hr_leave.txt` that:
+- Covers **every numbered clause**
+- Preserves all **numbers, dates, limits, and conditions** exactly
+- Does NOT add, infer, or soften any rule
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+---
+
+## Failure Mode This UC Tests
+Summarisation that **omits or changes meaning** — e.g. dropping a clause like "no carry-forward" or changing "10 days" to "some days".
+
+---
+
+## Enforcement Rules (CRAFT-refined)
+1. Every numbered clause in source → must appear in summary
+2. All numeric values (days, percentages, dates) → must be reproduced verbatim
+3. Conditions (e.g. "only if approved 7 days in advance") → must not be dropped
+4. No softening language — "must" stays "must", not "should"
+5. Summary length: one paragraph per clause — not shorter
+
+---
+
+## Inputs
+| File | Description |
+|------|-------------|
+| `policy_hr_leave.txt` | Source HR Leave policy |
+
+## Outputs
+| File | Description |
+|------|-------------|
+| `summary_hr_leave.txt` | Faithful clause-by-clause summary |

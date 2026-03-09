@@ -1,0 +1,13 @@
+ward,category,previous_year,current_year,growth_pct,growth_direction
+Ward-1,Roads,500000,575000,15.0,UP
+Ward-1,Water,300000,290000,-3.33,DOWN
+Ward-1,Sanitation,200000,200000,0.0,FLAT
+Ward-2,Roads,450000,520000,15.56,UP
+Ward-2,Water,350000,400000,14.29,UP
+Ward-2,Electricity,150000,180000,20.0,UP
+Ward-3,Roads,0,100000,DIV_ZERO,DIV_ZERO
+Ward-3,Sanitation,180000,160000,-11.11,DOWN
+Ward-4,Water,420000,480000,14.29,UP
+Ward-4,Electricity,200000,195000,-2.5,DOWN
+Ward-5,Roads,600000,680000,13.33,UP
+Ward-5,Sanitation,250000,310000,24.0,UP
