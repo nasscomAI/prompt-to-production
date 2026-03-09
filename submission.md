@@ -107,13 +107,13 @@ Yes.
 ## CRAFT Loop Reflection
 
 **Which CRAFT step was hardest across all UCs, and why?**
-Enforcement (Logic refinement). It was challenging to ensure the model didn't "soften" the rules when summarizing or answering questions across different documents.
+I found the Target/Enforcement step to be the most challenging. Getting the AI to generate the code is easy, but continuously adding strict edge-case rules to the `agents.md` so that the model doesn't regress or invent things (like blending policies or softening conditions) took a lot of iterative refinement.
 
 **What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?**
-> **Single-Source Integrity**: Never combine information from different documents to form a composite answer.
+For the most part, the AI actually captured the roles and formatting very well once the boundaries were explained. However, I had to ensure the exact refusal templates were manually brought over into the `agents.md`, as the AI naturally kept trying to 'be helpful' rather than strictly rejecting out-of-scope queries.
 
 **Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
-Analyzing customer support logs and classifying them according to our internal service level taxonomy.
+I can see myself applying this framework to my iterative process when building websites to sell—specifically moving from the research phase to building. I can use strict RICE roles and Enforcements to ensure the generated code doesn't drift away from the core design system and requirements.
 
 ---
 
