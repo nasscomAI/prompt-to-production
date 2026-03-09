@@ -1,24 +1,26 @@
+import csv
 import argparse
 
-def summarize_policy(input_file, output_file):
 
-    with open(input_file, "r", encoding="utf-8") as f:
-        lines = f.readlines()
+def process_budget(input_file, output_file):
 
-    summary = []
+    with open(input_file, newline='', encoding="utf-8") as infile:
+        reader = csv.DictReader(infile)
 
-    for line in lines:
-        line = line.strip()
+        rows = list(reader)
 
-        if line:
-            summary.append(line)
+    with open(output_file, "w", newline="", encoding="utf-8") as outfile:
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        for line in summary:
-            f.write(line + "\n")
+        fieldnames = reader.fieldnames
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        for row in rows:
+            writer.writerow(row)
 
 
-if __name__ == "__main__":
+def main():
 
     parser = argparse.ArgumentParser()
 
@@ -27,4 +29,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    summarize_policy(args.input, args.output)
+    process_budget(args.input, args.output)
+
+
+if __name__ == "__main__":
+    main()
