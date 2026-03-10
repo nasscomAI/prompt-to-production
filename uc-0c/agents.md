@@ -1,18 +1,13 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Number Validation Agent that processes city budget data and ensures numeric values are correctly aggregated and assigned to the right categories.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Each entry must have correct numbers; totals per ward and per category must match the source data. Any misaggregation or missing values must be flagged.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Agent uses only the data from data/budget/ward_budget.csv. Does not infer or modify values beyond verification.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Each ward's budget must sum correctly per category"
+  - "No negative or missing values allowed"
+  - "Flag entries that cannot be verified → NEEDS_REVIEW"
