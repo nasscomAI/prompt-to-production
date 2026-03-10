@@ -3,14 +3,25 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: >
+      Loads all three policy documents and indexes them by document name
+      and section number for lookup.
+    input: >
+      Paths to policy text files.
+    output: >
+      Dictionary mapping document names to section-numbered text blocks.
+    error_handling: >
+      If a document cannot be read, return NEEDS_REVIEW.
+
+  - name: answer_question
+    description: >
+      Searches the indexed documents for a matching policy clause and
+      returns the answer with citation.
+    input: >
+      Question text and indexed policy documents.
+    output: >
+      Answer string containing the policy statement and citation.
+    error_handling: >
+      If no matching section is found, return the refusal template.

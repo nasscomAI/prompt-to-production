@@ -6,22 +6,21 @@ See README.md for run command and expected behaviour.
 import argparse
 import re
 
+# Only the clauses the trainer wants preserved
 TARGET_CLAUSES = {
-    "2.3","2.4","2.5","2.6","2.7",
-    "3.2","3.4","5.2","5.3","7.2"
+    "2.3", "2.4", "2.5", "2.6", "2.7",
+    "3.2", "3.4", "5.2", "5.3", "7.2"
 }
+
 
 def retrieve_policy(path):
 
     with open(path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Remove header section
-    if "1. PURPOSE AND SCOPE" in content:
-        content = content.split("1. PURPOSE AND SCOPE",1)[1]
-
     clauses = []
 
+    # Extract numbered clauses
     pattern = r'\n(\d+\.\d+)\s+(.*?)(?=\n\d+\.\d+|\Z)'
     matches = re.findall(pattern, content, re.DOTALL)
 
@@ -29,9 +28,15 @@ def retrieve_policy(path):
 
         if num in TARGET_CLAUSES:
 
+            # Normalize whitespace
+            clean = " ".join(text.split())
+
+            # Remove section headers accidentally captured
+            clean = re.sub(r'\d+\.\s+[A-Z][A-Z\s]+', '', clean)
+
             clauses.append({
                 "clause": num,
-                "text": " ".join(text.split())
+                "text": clean.strip()
             })
 
     return clauses
@@ -43,10 +48,10 @@ def summarize_policy(clauses):
 
     for clause in clauses:
 
-        text = clause["text"].strip()
-
+        text = clause["text"]
         lower = text.lower()
 
+        # Detect legal clauses needing verbatim preservation
         if " and " in lower or "not permitted" in lower:
             line = f"{clause['clause']} VERBATIM_REQUIRED: {text}"
 
