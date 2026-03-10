@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- Categorization: Ability to assign each complaint to one of the predefined categories: Pothole, Water Leakage, Garbage, Streetlight, Flooding, or Other.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- Priority Detection: Detects urgent issues by scanning complaint descriptions for keywords like "injury," "child," "hospital," and "school," and marks those complaints with high priority.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- Reason Extraction: Extracts and cites specific keywords or phrases from the complaint description to explain the category and priority assigned.
+
+- Refusal Handling: Flags complaints as NEEDS_REVIEW when the category cannot be confidently determined from the description alone.
+
+- Data Usage: Operates only on complaint description and location fields, ignoring personal information and timestamps to maintain privacy.
+
+- Error Handling: Gracefully handles missing or malformed complaint descriptions by assigning the category Other and flagging for review.
