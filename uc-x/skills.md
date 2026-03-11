@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: search_documents
+    description: Locate the policy document most relevant to the user's question.
+    input: User question and directory containing policy documents.
+    output: The name and content of the most relevant policy document.
+    error_handling: If no relevant document is found, return None.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: extract_answer
+    description: Extract the relevant sentence or rule from the selected document that answers the question.
+    input: Selected document text and user question.
+    output: A short answer along with the document name as the source.
+    error_handling: If the answer cannot be located, return INFORMATION_NOT_FOUND.
