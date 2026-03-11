@@ -1,16 +1,34 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C Complaint Router
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: Category Interpretation
+The agent must read the complaint category and determine the
+responsible department.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+Categories:
+- Roads
+- Water
+- Sanitation
+- Other
+
+## Skill: Routing Logic
+Routing rules:
+
+Roads → Road Maintenance  
+Water → Water Supply  
+Sanitation → Waste Management  
+Other → General Services
+
+## Skill: Output Structure
+Each row must include:
+
+- complaint_id
+- category
+- department
+- flag
+
+## Skill: Error Handling
+If category is missing or invalid:
+
+flag → NEEDS_REVIEW
+
+The program must not stop processing other rows.
