@@ -1,16 +1,32 @@
 # skills.md
+
 # INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
+
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+&nbsp; - name: summarize\_text
+
+&nbsp;   description: Creates a short summary of a document.
+
+&nbsp;   input: Document text (string)
+
+&nbsp;   output: Summary (string)
+
+&nbsp;   error\_handling: Returns "summary unavailable" if text is too short.
+
+
+
+&nbsp; - name: detect\_bias
+
+&nbsp;   description: Checks if the summary changes the meaning of the original text.
+
+&nbsp;   input: Original text and summary (strings)
+
+&nbsp;   output: Boolean (true/false)
+
+&nbsp;   error\_handling: Flags as "uncertain" if analysis fails.
+
+
+
