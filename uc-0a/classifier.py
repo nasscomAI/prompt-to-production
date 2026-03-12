@@ -8,35 +8,38 @@ import json
 import re
 
 ALLOWED_CATEGORIES = [
-    "Roads & Traffic", "Drainage & Flooding", "Streetlighting", 
-    "Sanitation & Waste", "Public Safety", "Noise Pollution", "Other"
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other"
 ]
 
-HIGH_SEVERITY_KEYWORDS = ['injury', 'child', 'school', 'hospital', 'hazard', 'missing', 'sinking', 'fallen']
+HIGH_SEVERITY_KEYWORDS = ['injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse']
 
 def classify_complaint_category(description: str) -> str:
     description_lower = description.lower()
     
-    if any(word in description_lower for word in ['pothole', 'tyre', 'vehicle', 'road', 'traffic', 'commuter', 'bus']):
-        # Commuter, road and tyre issues usually point to Roads & Traffic
-        if 'flood' in description_lower or 'rain' in description_lower or 'drain' in description_lower:
-            return "Drainage & Flooding"
-        return "Roads & Traffic"
+    if any(word in description_lower for word in ['pothole']):
+        return "Pothole"
     
-    if any(word in description_lower for word in ['flood', 'rain', 'drain', 'water', 'sinking']):
-        return "Drainage & Flooding"
+    if any(word in description_lower for word in ['flood', 'rain', 'water']):
+        return "Flooding"
         
     if any(word in description_lower for word in ['streetlight', 'dark', 'light']):
-        return "Streetlighting"
+        return "Streetlight"
         
     if any(word in description_lower for word in ['garbage', 'waste', 'smell', 'dump']):
-        return "Sanitation & Waste"
+        return "Waste"
         
     if any(word in description_lower for word in ['music', 'noise', 'loud']):
-        return "Noise Pollution"
+        return "Noise"
         
-    if any(word in description_lower for word in ['safety', 'hazard', 'injury', 'fall', 'broken', 'dead animal', 'manhole']):
-        return "Public Safety"
+    if any(word in description_lower for word in ['road', 'crack', 'sinking']):
+        return "Road Damage"
+        
+    if any(word in description_lower for word in ['heritage']):
+        return "Heritage Damage"
+
+    if any(word in description_lower for word in ['drain']):
+        return "Drain Blockage"
         
     return "Other"
 

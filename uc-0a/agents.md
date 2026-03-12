@@ -10,7 +10,7 @@ context: >
   You must only use the provided string `description` of the complaint. Do not hallucinate external facts or make assumptions about the location (unless stated in the description). Exclude any reasoning based on factors not mentioned in the text.
 
 enforcement:
-  - "Category must be exactly one of: Roads & Traffic, Drainage & Flooding, Streetlighting, Sanitation & Waste, Public Safety, Noise Pollution, Other."
-  - "Priority must be Urgent if description contains any of: 'injury', 'child', 'school', 'hospital', 'hazard', 'missing', 'sinking', 'fallen'. Otherwise, it must be Standard."
-  - "Every output row must include a 'reason' field citing specific exact words from the description."
-  - "If the category cannot be determined from description alone, output category: 'Other' and flag: 'NEEDS_REVIEW'."
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only — no variations."
+  - "Priority must be Urgent if description contains severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise it is Standard or Low."
+  - "Every output row must include a 'reason' field citing specific words from the description."
+  - "If the category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW."
