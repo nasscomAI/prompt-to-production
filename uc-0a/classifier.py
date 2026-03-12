@@ -1,35 +1,40 @@
+```python
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
 """
 import argparse
 import csv
 
+
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    complaint_id = row.get("complaint_id", "unknown")
+    description = row.get("description", "").lower()
 
+    category = "Other"
+    priority = "Low"
+    reason = ""
+    flag = "OK"
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    if not description:
+        return {
+            "complaint_id": complaint_id,
+            "category": "Other",
+            "priority": "Low",
+            "reason": "Missing complaint description",
+            "flag": "NEEDS_REVIEW"
+        }
 
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    # Category detection
+    if "water" in description or "leak" in description or "pipe" in description:
+        category = "Water"
+        reason = "Detected water-related keywords"
+    elif "garbage" in description or "waste" in description:
+        category = "Sanitation"
+        reason = "Detected sanitation-related keywords"
+    elif "pothole" in description or "road" in description:
+        category = "Roads"
+        reason = "Detected road-related keywords"
+    elif "electric" in description or "power" in description:
+        category = "Electricity"
+        reason = "Detected el
+```
