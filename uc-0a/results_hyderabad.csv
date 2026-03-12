@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description contains specific keywords like 'ambulance', 'flood' justifying this classification.",
+GH-202402,Other,Standard,"The description contains specific keywords like 'drain completely blocked', 'flood' justifying this classification.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description contains specific keywords like 'drain' justifying this classification.,
+GH-202407,Drain Blockage,Standard,The description contains specific keywords like 'drain blocked' justifying this classification.,
+GH-202410,Pothole,Standard,The description contains specific keywords like 'pothole' justifying this classification.,
+GH-202411,Pothole,Urgent,"The description contains specific keywords like 'pothole', 'hospital' justifying this classification.",
+GH-202412,Pothole,Urgent,"The description contains specific keywords like 'school', 'pothole' justifying this classification.",
+GH-202417,Other,Standard,"The description contains specific keywords like 'heritage', 'waste' justifying this classification.",NEEDS_REVIEW
+GH-202420,Noise,Standard,The description contains specific keywords like 'drilling' justifying this classification.,
+GH-202422,Pothole,Urgent,"The description contains specific keywords like 'collapse', 'crater', 'road collapsed' justifying this classification.",
+GH-202424,Flooding,Standard,The description contains specific keywords like 'flood' justifying this classification.,
+GH-202428,Waste,Standard,The description contains specific keywords like 'waste' justifying this classification.,
+GH-202432,Other,Standard,Description ambiguous.,NEEDS_REVIEW
+GH-202448,Other,Urgent,"The description contains specific keywords like 'drain blocked', 'risk', 'flood' justifying this classification.",NEEDS_REVIEW
+GH-202438,Other,Standard,Description ambiguous.,NEEDS_REVIEW
