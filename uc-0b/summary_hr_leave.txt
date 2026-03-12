@@ -46,6 +46,10 @@
 5.3 LWP exceeding 30 continuous days requires approval from
     the Municipal Commissioner.
 
+--- Clause 7.2 ---
+7.2 Leave encashment during service is not permitted under any
+    circumstances.
+
 
 ============================================================
 Inventory Check — PASSED: All clauses and binding verbs present.

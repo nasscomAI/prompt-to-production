@@ -16,6 +16,7 @@ CLAUSE_INVENTORY = [
     ("3.4", "requires"),
     ("5.2", "requires"),
     ("5.3", "requires"),
+    ("7.2", "not permitted"),
 ]
 
 
