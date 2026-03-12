@@ -1,75 +1,100 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+Classifies civic complaints using keyword matching per agents.md enforcement rules.
 """
 import argparse
 import csv
 
+# ---------------------------------------------------------------------------
+# Classification rules
+# ---------------------------------------------------------------------------
+
+# Order matters: first match wins. Each entry is (category, [keywords]).
+CATEGORY_RULES = [
+    ("Pothole",         ["pothole", "pot hole", "pothole"]),
+    ("Flooding",        ["flood", "flooded", "flooding", "waterlogg", "water log"]),
+    ("Streetlight",     ["streetlight", "street light", "lamp post", "lamppost", "light out", "lights out", "no light"]),
+    ("Waste",           ["waste", "garbage", "trash", "dumping", "litter", "rubbish", "sewage overflow"]),
+    ("Noise",           ["noise", "drilling", "loud", "sound", "horn", "idling", "engine on"]),
+    ("Road Damage",     ["road collapsed", "road collapse", "crater", "road damage", "road broken", "road sunk", "collapse"]),
+    ("Heritage Damage", ["heritage", "monument", "historical", "old city", "charminar"]),
+    ("Heat Hazard",     ["heat", "temperature", "tar melting", "hot road", "heat wave"]),
+    ("Drain Blockage",  ["drain block", "drain chok", "drain overflow", "drain full", "stormwater drain", "mosquito", "dengue"]),
+]
+
+# Keywords that force priority = Urgent (per agents.md)
+URGENT_KEYWORDS = [
+    "injury", "child", "school", "hospital", "ambulance",
+    "fire", "hazard", "fell", "collapse",
+]
+
+
+def _determine_category(description: str) -> tuple[str, str | None]:
+    """Return (category, matched_keyword). matched_keyword is None → Other."""
+    lower = description.lower()
+    for category, keywords in CATEGORY_RULES:
+        for kw in keywords:
+            if kw in lower:
+                return category, kw
+    return "Other", None
+
+
+def _determine_priority(description: str) -> tuple[str, str | None]:
+    """Return (priority, matched_urgent_keyword)."""
+    lower = description.lower()
+    for kw in URGENT_KEYWORDS:
+        if kw in lower:
+            return "Urgent", kw
+    # Heuristic: descriptions with strong operational language → Standard
+    standard_indicators = [
+        "blocked", "flooded", "overflow", "collapsed", "crater",
+        "abandoned", "suffering", "breeding", "risk", "concern",
+    ]
+    for kw in standard_indicators:
+        if kw in lower:
+            return "Standard", None
+    return "Low", None
+
+
 def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-
-    A simple rule-based implementation that matches keywords in the
-    `description` field. This implementation enforces:
-      * category must be one of the allowed strings (exact match).
-      * priority is Urgent if any severity keywords are present.
-      * reason cites specific words from the description.
-      * flag is set to NEEDS_REVIEW when no clear category or multiple matches.
+    Returns dict with keys: complaint_id, category, priority, reason, flag.
     """
-    desc = row.get("description", "") or ""
-    desc_lower = desc.lower()
+    complaint_id = row.get("complaint_id", "").strip()
+    description = row.get("description", "").strip()
 
-    categories = [
-        ("Pothole", ["pothole"]),
-        ("Flooding", ["flood", "flooded"]),
-        ("Streetlight", ["streetlight", "unlit"]),
-        ("Waste", ["waste", "garbage", "bin"]),
-        ("Noise", ["noise", "music", "drilling", "sound"]),
-        ("Road Damage", ["road", "surface", "subsidence", "bubbling"]),
-        ("Heritage Damage", ["heritage", "ancient", "histor"]),
-        ("Heat Hazard", ["temperature", "heat", "melting"]),
-        ("Drain Blockage", ["drain", "blocked", "sewer"]),
-    ]
-    matched = []
-    for cat, keywords in categories:
-        for kw in keywords:
-            if kw in desc_lower:
-                matched.append(cat)
-                break
+    flag = ""
 
-    # choose category or Other
-    if len(matched) == 1:
-        category = matched[0]
-        flag = ""
-    elif len(matched) > 1:
-        category = matched[0]
-        flag = "NEEDS_REVIEW"  # ambiguous
+    if not description:
+        return {
+            "complaint_id": complaint_id,
+            "category": "Other",
+            "priority": "Low",
+            "reason": "No description provided.",
+            "flag": "NEEDS_REVIEW",
+        }
+
+    category, cat_kw = _determine_category(description)
+    priority, urg_kw = _determine_priority(description)
+
+    # Build one-sentence reason citing the keyword found
+    if urg_kw:
+        reason = (
+            f"Complaint classified as {category} with Urgent priority "
+            f"because the description contains '{urg_kw}'."
+        )
+    elif cat_kw:
+        reason = (
+            f"Complaint classified as {category} based on the keyword "
+            f"'{cat_kw}' found in the description."
+        )
     else:
-        category = "Other"
+        reason = "Category could not be determined from the description alone."
         flag = "NEEDS_REVIEW"
 
-    # priority
-    urgent_keywords = [
-        "injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"
-    ]
-    priority = "Standard"
-    for kw in urgent_keywords:
-        if kw in desc_lower:
-            priority = "Urgent"
-            break
-
-    # reason: pick first keyword found
-    reason = ""
-    for kw in urgent_keywords + [k for _, kws in categories for k in kws]:
-        if kw in desc_lower:
-            reason = f"Description mentions '{kw}'."
-            break
-    if not reason:
-        reason = "No keyword found in description."
-
     return {
-        "complaint_id": row.get("complaint_id", ""),
+        "complaint_id": complaint_id,
         "category": category,
         "priority": priority,
         "reason": reason,
@@ -80,36 +105,32 @@ def classify_complaint(row: dict) -> dict:
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-
-    Rows that cannot be parsed are skipped with a warning. Output file will
-    contain the original columns plus category, priority, reason, and flag.
+    Skips malformed rows without crashing; always produces output file.
     """
-    with open(input_path, newline="", encoding="utf-8") as infile:
+    output_fields = ["complaint_id", "category", "priority", "reason", "flag"]
+
+    with open(input_path, newline="", encoding="utf-8") as infile, \
+         open(output_path, "w", newline="", encoding="utf-8") as outfile:
+
         reader = csv.DictReader(infile)
-        fieldnames = reader.fieldnames or []
+        writer = csv.DictWriter(outfile, fieldnames=output_fields)
+        writer.writeheader()
 
-        # add our output columns
-        out_fields = fieldnames + ["category", "priority", "reason", "flag"]
-
-        with open(output_path, "w", newline="", encoding="utf-8") as outfile:
-            writer = csv.DictWriter(outfile, fieldnames=out_fields)
-            writer.writeheader()
-
-            for idx, row in enumerate(reader, start=1):
-                try:
-                    result = classify_complaint(row)
-                    out_row = row.copy()
-                    out_row.update({
-                        "category": result["category"],
-                        "priority": result["priority"],
-                        "reason": result["reason"],
-                        "flag": result["flag"],
-                    })
-                    writer.writerow(out_row)
-                except Exception as e:
-                    # log error and continue
-                    print(f"Warning: failed to classify row {idx}: {e}")
-    
+        for line_num, row in enumerate(reader, start=2):
+            try:
+                result = classify_complaint(row)
+                writer.writerow(result)
+            except Exception as exc:
+                # Log bad row and continue
+                cid = row.get("complaint_id", f"row {line_num}")
+                print(f"Warning: skipped {cid} — {exc}")
+                writer.writerow({
+                    "complaint_id": cid,
+                    "category": "Other",
+                    "priority": "Low",
+                    "reason": f"Processing error: {exc}",
+                    "flag": "NEEDS_REVIEW",
+                })
 
 
 if __name__ == "__main__":
