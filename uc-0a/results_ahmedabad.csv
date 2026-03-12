@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
+AM-202402,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
+AM-202405,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on 'heat' found in description.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage based on 'upturned'; Urgent due to severity keyword(s): child.,
+AM-202410,Pothole,Standard,Classified as Pothole based on 'Pothole' found in description.,
+AM-202414,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
+AM-202417,Waste,Standard,Classified as Waste based on 'waste (also matches: Heritage Damage)' found in description.,NEEDS_REVIEW
+AM-202421,Noise,Low,Classified as Noise based on 'music' found in description.,
+AM-202424,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
+AM-202429,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage based on 'Old city, ancient, Heritage' found in description.",
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on 'heat' found in description.,
+AM-202444,Waste,Standard,"Classified as Waste based on 'waste, bins, overflowing' found in description.",
+AM-202445,Other,Standard,Classified as Other based on 'no recognized category keywords' found in description.,
