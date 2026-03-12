@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Low,Description mentions severe heat or high temperatures.,
+AM-202402,Heat Hazard,Urgent,Description mentions severe heat or high temperatures. Priority set to Urgent because description contains 'danger'.,
+AM-202405,Other,Standard,Tree fall hazard is not in allowed categories.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions severe heat or high temperatures.,
+AM-202407,Other,Urgent,Categorization ambiguous or unclassifiable. Priority set to Urgent because description contains 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Low,Description mentions 'pothole'.,
+AM-202414,Other,Low,Categorization ambiguous or unclassifiable.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Description mentions waste or garbage accumulation.,
+AM-202421,Noise,Standard,Description mentions noise issues like music or drilling.,
+AM-202424,Other,Standard,Categorization ambiguous or unclassifiable.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Low,Description mentions severe heat or high temperatures.,
+AM-202431,Road Damage,Standard,Description mentions road surface issues.,
+AM-202435,Heat Hazard,Standard,Description mentions severe heat or high temperatures.,
+AM-202444,Waste,Standard,Description mentions waste or garbage accumulation.,
+AM-202445,Heat Hazard,Low,Description mentions severe heat or high temperatures.,
