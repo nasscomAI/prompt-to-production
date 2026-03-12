@@ -39,27 +39,31 @@ def classify_complaint(row: dict) -> dict:
     # Priority assignment
     if any(kw in desc_lower for kw in severity_keywords):
         priority = "Urgent"
-    # Category assignment
+    # Category assignment — ordered from most specific to least specific
     if "pothole" in desc_lower:
         category = "Pothole"
-    elif "flood" in desc_lower or "flooded" in desc_lower or "underpass flooded" in desc_lower or "drain blocked" in desc_lower:
+    elif any(kw in desc_lower for kw in ["melting", "temperature", "heat hazard", "bubbling", "burns on contact", "full sun", "dangerous temp"]):
+        category = "Heat Hazard"
+    elif any(kw in desc_lower for kw in ["drain blocked", "drain blockage", "stormwater drain", "main drain", "drain completely", "mosquito", "drainage"]):
+        category = "Drain Blockage"
+    elif any(kw in desc_lower for kw in ["flood", "flooded", "flooding", "waterlogged", "standing water", "knee-deep", "submerged"]):
         category = "Flooding"
-    elif "streetlight" in desc_lower or "light" in desc_lower or "dark" in desc_lower or "wiring theft" in desc_lower:
+    elif any(kw in desc_lower for kw in ["streetlight", "street light", "wiring theft"]) or (("light" in desc_lower or "dark" in desc_lower or "unlit" in desc_lower) and "streetlight" in desc_lower):
         category = "Streetlight"
-    elif "waste" in desc_lower or "garbage" in desc_lower or "bins" in desc_lower or "dead animal" in desc_lower:
+    elif "unlit" in desc_lower or ("light" in desc_lower and ("out" in desc_lower or "flickering" in desc_lower or "sparking" in desc_lower or "darkness" in desc_lower)):
+        category = "Streetlight"
+    elif any(kw in desc_lower for kw in ["waste", "garbage", "bins", "dead animal", "dumped", "overflowing"]):
         category = "Waste"
-    elif "music" in desc_lower or "noise" in desc_lower or "amplifier" in desc_lower or "club music" in desc_lower or "wedding band" in desc_lower:
+    elif any(kw in desc_lower for kw in ["music", "noise", "amplifier", "drilling", "trucks idling", "idling with engines", "band playing", "wedding band", "club music"]):
         category = "Noise"
         if priority == "Standard":
             priority = "Low"
-    elif "road" in desc_lower or "surface" in desc_lower or "cracked" in desc_lower or "subsidence" in desc_lower or "collapse" in desc_lower or "sinking" in desc_lower or "manhole" in desc_lower or "bridge" in desc_lower:
-        category = "Road Damage"
-    elif "heritage" in desc_lower or "historic" in desc_lower or "ancient" in desc_lower or "monument" in desc_lower:
+    elif any(kw in desc_lower for kw in ["heritage", "historic", "ancient", "monument", "cobblestone", "heritage zone", "heritage lamp"]):
         category = "Heritage Damage"
-    elif "heat" in desc_lower or "temperature" in desc_lower or "melting" in desc_lower or "burn" in desc_lower or "bubbling" in desc_lower:
-        category = "Heat Hazard"
-    elif "drain" in desc_lower or "drainage" in desc_lower or "blocked" in desc_lower or "mosquito" in desc_lower:
-        category = "Drain Blockage"
+    elif any(kw in desc_lower for kw in ["pothole", "road collapsed", "road collapse", "crater", "road surface", "subsidence", "sinking", "manhole", "footpath", "tarmac", "road damage", "road subsid", "buckled", "cracked"]):
+        category = "Road Damage"
+    elif any(kw in desc_lower for kw in ["surface", "road", "bridge", "lane"]):
+        category = "Road Damage"
     else:
         category = "Other"
         flag = "NEEDS_REVIEW"
@@ -113,9 +117,7 @@ def batch_classify(input_path: str, output_path: str):
     except Exception as e:
         print(f"Error: Could not write output file {output_path}: {e}", file=sys.stderr)
         return
-
-
-if __name__ == "__main__":
+    print(f"Done. Results written to {output_path}")
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
     parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
     parser.add_argument("--output", required=True, help="Path to write results CSV")
