@@ -67,6 +67,7 @@ def classify_complaint(row: dict) -> dict:
     }
 
 
+
 def batch_classify(input_path: str, output_path: str):
 
     with open(input_path, newline="", encoding="utf-8") as infile, \
