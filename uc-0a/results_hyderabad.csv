@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202402,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202406,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202407,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202410,Pothole,Low,Category 'Pothole' based on word 'pothole' in description.,
+GH-202411,Pothole,Low,Category 'Pothole' based on word 'pothole' in description.,
+GH-202412,Pothole,Urgent,Category 'Pothole' based on word 'pothole' in description. Priority 'Urgent' due to words: school.,
+GH-202417,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202420,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202422,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202424,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202428,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202432,Other,Low,Default classification.,NEEDS_REVIEW
+GH-202448,Flooding,Low,Category 'Flooding' based on word 'flooding' in description.,
+GH-202438,Other,Low,Default classification.,NEEDS_REVIEW
