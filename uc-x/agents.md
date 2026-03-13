@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+# skills.md
+# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
 # Delete these comments before committing.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+skills:
+  - name: [skill_name]
+    description: [One sentence — what does this skill do?]
+    input: [What does it receive? Type and format.]
+    output: [What does it return? Type and format.]
+    error_handling: [What does it do when input is invalid or ambiguous?]
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - name: [second_skill_name]
+    description: [One sentence]
+    input: [Type and format]
+    output: [Type and format]
+    error_handling: [What does it do when input is invalid or ambiguous?]
