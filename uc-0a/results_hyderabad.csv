@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description contains 'ambulance, flood'.",
+GH-202402,Other,Standard,"Description mentions multiple possible issues: Drain Blockage, Flooding causing ambiguity.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description contains 'drain'.,
+GH-202407,Drain Blockage,Standard,The description contains 'drain'.,
+GH-202410,Pothole,Standard,The description contains 'pothole'.,
+GH-202411,Pothole,Urgent,"The description contains 'pothole, hospital'.",
+GH-202412,Pothole,Urgent,"The description contains 'pothole, school'.",
+GH-202417,Other,Standard,"Description mentions multiple possible issues: Waste, Heritage Damage causing ambiguity.",NEEDS_REVIEW
+GH-202420,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The description contains 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,The description contains 'flood'.,
+GH-202428,Waste,Standard,The description contains 'waste'.,
+GH-202432,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Description mentions multiple possible issues: Drain Blockage, Flooding causing ambiguity.",NEEDS_REVIEW
+GH-202438,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
