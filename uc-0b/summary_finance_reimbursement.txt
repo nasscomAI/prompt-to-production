@@ -1,0 +1,34 @@
+# Policy Document Summary
+
+*Enforcement Rules Applied:*
+- Every numbered clause is fully present.
+- Multi-condition obligations are preserved exactly.
+- Clauses with strict obligations are quoted verbatim to prevent meaning loss.
+
+## Structured Clauses
+
+**Clause 1.1**: This policy governs reimbursement of expenses incurred by CMC employees in the course of official duties.
+**Clause 1.2**: Personal expenses are not reimbursable under any circumstances.
+**Clause 1.3 [VERBATIM]**: "All claims must be submitted within 30 calendar days of the expense being incurred. Claims submitted after 30 days will not be processed."
+**Clause 2.1 [VERBATIM]**: "Local travel (within city limits) is reimbursable at actual cost for public transport or at Rs 4 per km for personal vehicle use. Receipts are required for all claims above Rs 200."
+**Clause 2.2 [VERBATIM]**: "Outstation travel must be pre-approved using Form FIN-T1 before travel commences. Travel without prior approval is not reimbursable."
+**Clause 2.3**: Air travel is permitted for journeys exceeding 500 km only. Economy class is mandatory. Business class is not reimbursable.
+**Clause 2.4 [VERBATIM]**: "Hotel accommodation for outstation travel is reimbursable up to Rs 3,500 per night for Grade A cities and Rs 2,500 per night for other locations."
+**Clause 2.5 [VERBATIM]**: "Daily allowance (DA) for outstation travel is Rs 750 per day. DA covers meals and incidentals. No separate meal receipts are required if DA is claimed."
+**Clause 2.6 [VERBATIM]**: "If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day."
+**Clause 3.1**: Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+**Clause 3.2 [VERBATIM]**: "The allowance covers: desk, chair, monitor, keyboard, mouse, and networking equipment only."
+**Clause 3.3 [VERBATIM]**: "The allowance does not cover: personal computers, laptops, smartphones, printers, or air conditioning equipment."
+**Clause 3.4 [VERBATIM]**: "Claims must be submitted with original receipts within 60 days of the work-from-home arrangement being approved in writing by the Department Head."
+**Clause 3.5 [VERBATIM]**: "Employees on temporary or partial work-from-home arrangements are not eligible for this allowance."
+**Clause 4.1**: Training expenses are reimbursable only if the training was pre-approved by the Department Head using Form FIN-TR1.
+**Clause 4.2**: Course fees are reimbursable up to Rs 15,000 per financial year per employee.
+**Clause 4.3**: Exam fees for professional certifications are reimbursable once per attempt per certification, up to Rs 5,000.
+**Clause 4.4 [VERBATIM]**: "If an employee leaves CMC within 12 months of a reimbursed training expense, they must repay 100% of the reimbursed amount. If they leave between 12 and 24 months, they must repay 50%."
+**Clause 5.1 [VERBATIM]**: "Employees in Grade C and above are entitled to a monthly mobile phone reimbursement of Rs 500."
+**Clause 5.2 [VERBATIM]**: "Employees in Grade B and above are entitled to a monthly internet reimbursement of Rs 800 for approved work-from-home arrangements only."
+**Clause 5.3 [VERBATIM]**: "Reimbursements under this section require submission of the original bill each month. Estimated or self-declared amounts are not accepted."
+**Clause 6.1 [VERBATIM]**: "All reimbursement claims must be submitted via the CMC employee portal using Form FIN-EXP1."
+**Clause 6.2 [VERBATIM]**: "Original receipts must be attached. Photocopies and screenshots of digital receipts are accepted only if the vendor does not issue physical receipts."
+**Clause 6.3**: Claims are processed within 15 working days of submission.
+**Clause 6.4 [VERBATIM]**: "Disputed claims must be raised with the Finance Department within 10 working days of receiving the reimbursement decision."
