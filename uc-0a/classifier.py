@@ -56,19 +56,19 @@ def _determine_priority(description: str) -> tuple[str, str | None]:
     return "Low", None
 
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns dict with keys: complaint_id, category, priority, reason, flag.
-    """
-    complaint_id = row.get("complaint_id", "").strip()
-    description = row.get("description", "").strip()
+def classify_complaint(description: str) -> dict:
+    """Classify a single complaint description.
 
-    flag = ""
+    Returns a dict with keys: category, priority, reason, flag.
+
+    The returned category will always be one of the allowed values.
+    If the category cannot be determined, flag is set to "NEEDS_REVIEW".
+    """
+
+    description = (description or "").strip()
 
     if not description:
         return {
-            "complaint_id": complaint_id,
             "category": "Other",
             "priority": "Low",
             "reason": "No description provided.",
@@ -78,7 +78,7 @@ def classify_complaint(row: dict) -> dict:
     category, cat_kw = _determine_category(description)
     priority, urg_kw = _determine_priority(description)
 
-    # Build one-sentence reason citing the keyword found
+    # Build one-sentence reason citing the keyword found.
     if urg_kw:
         reason = (
             f"Complaint classified as {category} with Urgent priority "
@@ -91,15 +91,24 @@ def classify_complaint(row: dict) -> dict:
         )
     else:
         reason = "Category could not be determined from the description alone."
-        flag = "NEEDS_REVIEW"
+
+    # If the category cannot be determined, enforce review flag.
+    flag = "NEEDS_REVIEW" if category == "Other" else ""
 
     return {
-        "complaint_id": complaint_id,
         "category": category,
         "priority": priority,
         "reason": reason,
         "flag": flag,
     }
+
+
+def classify_complaint_row(row: dict) -> dict:
+    """Classify a CSV row with at least complaint_id and description."""
+    complaint_id = row.get("complaint_id", "").strip()
+    result = classify_complaint(row.get("description", ""))
+    result["complaint_id"] = complaint_id
+    return result
 
 
 def batch_classify(input_path: str, output_path: str):
@@ -118,7 +127,7 @@ def batch_classify(input_path: str, output_path: str):
 
         for line_num, row in enumerate(reader, start=2):
             try:
-                result = classify_complaint(row)
+                result = classify_complaint_row(row)
                 writer.writerow(result)
             except Exception as exc:
                 # Log bad row and continue
