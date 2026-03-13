@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all three policy documents and extracts numbered sections.
+    input: File paths to policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt.
+    output: Dictionary indexing sections by document name and containing the numbered clause text.
+    error_handling: Return empty dictionary and log error if a document cannot be read.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Finds the most relevant section for a question and returns a single-source answer with citation or the refusal template.
+    input: User question text and the document index from retrieve_documents.
+    output: A single string with the exact clause text and a citation formatted as "Source: <document_name> section <section_number>", or the refusal template if not found.
+    error_handling: If the question cannot be accurately answered or matched to a policy section, return exactly the refusal template.
