@@ -1,50 +1,214 @@
-# UC-0B Summary That Changes Meaning — Agent Definition
+# UC-0B — Policy Summary Validator Agent
 
-## Role
+## Agent Role
 
-A **Policy Summary Agent** that loads policy text files, generates short summaries, and validates that each summary preserves the original policy meaning. The agent highlights any summaries that are risky (i.e., that could change interpretation or omit critical obligations). It operates within the boundary of the provided policy documents only — no external APIs.
+The **Policy Summary Validator Agent** processes internal policy documents and generates concise summaries while ensuring the summaries **do not change the meaning of the original policy**.
 
-## Intent
+The agent performs rule-based summarization and validation using only Python standard libraries.
+Its primary objective is to **detect summaries that omit critical policy information or alter obligations**.
 
-A correct output is:
+---
 
-- **Summary** for each policy: concise (2–5 sentences) capturing core obligations and scope
-- **Meaning preservation check**: Whether the summary accurately reflects the policy (pass/fail)
-- **Risky summaries flagged**: Any summary that omits critical terms, numbers, deadlines, or obligations is marked as risky
-- **Structured output**: JSON or formatted text with policy name, summary, validation result, and risk flags
+# Objective
 
-## Context
+For every policy document, the agent must produce:
 
-The agent may use:
+* A **concise summary** (2–5 sentences)
+* A **meaning preservation validation**
+* A **risk flag** if the summary changes interpretation
+* A **structured output record**
 
-- Policy text files from `data/policy-documents/` (or user-specified path)
-- Rule-based extraction: section titles, numbers, deadlines, mandatory terms
-- Only standard library: `pathlib`, `re`, `json` — no external summarisation APIs
+The final output should contain:
 
-Exclusions:
+```
+policy_name
+summary
+valid
+risky
+omitted_critical
+```
 
-- No external LLM or summarisation API calls
-- Summaries are produced by rule-based extraction (key sections, numbers, obligations)
+---
 
-## Task Flow
+# Input
 
-1. **Load** — Read policy files from the policy-documents directory
-2. **Extract** — Identify key sections, numbers, deadlines, and obligations
-3. **Summarise** — Build a short summary from extracted content
-4. **Validate** — Check that critical terms/numbers are present in the summary
-5. **Flag** — Mark summaries that omit critical content as risky
-6. **Output** — Print results and optionally write to file
+The agent reads policy files from:
 
-## Reasoning Approach
+```
+data/policy-documents/
+```
 
-- **Critical elements**: Policy numbers, effective dates, numeric limits (e.g., 18 days leave, 30 days claim), mandatory procedures
-- **Validation**: Summary must mention at least: scope, key entitlement/obligation, and any numeric limit
-- **Risky**: Summary is risky if it omits a critical numeric limit or changes a mandatory requirement to optional (or vice versa)
-- **Transparency**: Explain what was omitted if a summary is flagged as risky
+Supported format:
 
-## Enforcement Rules
+```
+.txt policy files
+```
 
-- Summary must be 2–5 sentences
-- Summary must not introduce information not in the source policy
-- If policy cannot be parsed (empty, binary), output error and skip
-- Every output must include: `policy_name`, `summary`, `valid`, `risky`, `omitted_critical` (if risky)
+Example:
+
+```
+policy_hr_leave.txt
+policy_finance_reimbursement.txt
+policy_it_acceptable_use.txt
+```
+
+---
+
+# Output Format
+
+The agent produces structured results like:
+
+```
+{
+ "policy_name": "policy_hr_leave.txt",
+ "summary": "Employees are entitled to 18 days of paid leave annually. Leave requests must be approved by the reporting manager before being taken. Emergency leave must be reported within 24 hours.",
+ "valid": true,
+ "risky": false,
+ "omitted_critical": []
+}
+```
+
+If validation fails:
+
+```
+{
+ "policy_name": "policy_hr_leave.txt",
+ "summary": "Employees may take leave when required.",
+ "valid": false,
+ "risky": true,
+ "omitted_critical": ["18 days leave limit", "manager approval requirement"]
+}
+```
+
+---
+
+# Task Flow
+
+### 1. Load Policy
+
+Read policy documents using `pathlib`.
+
+### 2. Extract Key Elements
+
+Identify critical information using pattern matching:
+
+* Numeric limits (`\d+ days`, `\d+ hours`)
+* Deadlines (`within 30 days`)
+* Mandatory obligations (`must`, `required`, `mandatory`)
+* Key policy sections (leave entitlement, approval rules, reimbursement limits)
+
+### 3. Generate Summary
+
+Construct a **2–5 sentence summary** by combining extracted key information.
+
+### 4. Validate Summary
+
+Check if critical information from the original policy appears in the summary:
+
+Validation includes:
+
+* Presence of numeric limits
+* Presence of mandatory obligations
+* Presence of approval processes
+
+### 5. Risk Detection
+
+Mark a summary as **risky** if:
+
+* Numeric limits are missing
+* Mandatory procedures are removed
+* Obligations are changed to optional language
+
+### 6. Output Result
+
+Print structured results and optionally save them to a JSON file.
+
+---
+
+# Reasoning Strategy
+
+The agent uses a **rule-based reasoning approach**:
+
+### Critical Elements
+
+The following elements must be preserved:
+
+* numeric limits
+* deadlines
+* mandatory procedures
+* approval requirements
+* policy scope
+
+### Risk Identification
+
+A summary is marked **risky** if it:
+
+* omits numeric limits
+* removes approval requirements
+* weakens mandatory language
+
+Example:
+
+Original policy:
+
+```
+Employees must obtain manager approval before taking leave.
+```
+
+Risky summary:
+
+```
+Employees can take leave when needed.
+```
+
+---
+
+# Constraints
+
+The agent must follow these constraints:
+
+* Summary length must be **2–5 sentences**
+* No external APIs or LLM services
+* Only Python standard libraries allowed:
+
+  * `pathlib`
+  * `re`
+  * `json`
+
+If a file cannot be parsed:
+
+```
+skip file
+log error
+continue processing
+```
+
+---
+
+# RICE + CRAFT Application
+
+### RICE
+
+* **Reduce hallucination** by restricting summaries to extracted content
+* **Improve consistency** with rule-based extraction
+* **Constrain outputs** using structured schema
+* **Evaluate summaries** using validation checks
+
+### CRAFT Loop
+
+1. Create summary rules
+2. Run summarization
+3. Analyze missing elements
+4. Fix extraction logic
+5. Test again
+
+---
+
+# Agent Guarantees
+
+The agent ensures:
+
+* summaries remain faithful to the original policy
+* missing critical information is detected
+* outputs are transparent and explainable
+* results follow a consistent schema
