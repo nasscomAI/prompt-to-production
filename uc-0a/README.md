@@ -1,6 +1,23 @@
 # UC-0A — Complaint Classifier
 
-**Core failure modes:** Taxonomy drift · Severity blindness · Missing justification · Hallucinated sub-categories · False confidence on ambiguity
+Classifies city complaints into: **sanitation**, **roads**, **water**, **electricity**, **others** using rule-based keyword matching. Outputs structured JSON.
+
+## How to Run
+
+From the project root:
+
+```bash
+cd uc-0a
+python classifier.py --input ../data/city-test-files/test_pune.csv --output results_pune.json
+```
+
+Or with CSV output:
+
+```bash
+python classifier.py --input ../data/city-test-files/test_pune.csv --output results_pune.csv --format csv
+```
+
+**Requirements:** Python 3.8+, standard library only (csv, json, re, pathlib).
 
 ---
 
