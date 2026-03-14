@@ -1,4 +1,4 @@
-name: Welcome Participant
+name: Welcome Participants
 
 on:
   pull_request_target:
