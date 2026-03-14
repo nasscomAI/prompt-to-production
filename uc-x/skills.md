@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-X Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads and indexes all three policy files by filename and section headers.
+    input: File paths to HR, IT, and Finance TXT files.
+    output: Indexed dictionary of policy text.
+    error_handling: Refuses to start if any of the three core files are missing.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches the index for the specific query and applies the RICE refusal logic.
+    input: User question (String).
+    output: Cited answer or the exact refusal template.
+    error_handling: If multiple documents contain the same keywords, it selects the most relevant one without blending.
