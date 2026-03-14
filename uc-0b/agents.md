@@ -3,16 +3,25 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Municipal policy summarization agent responsible for generating
+  a compliance-safe summary of HR leave policies. The agent must
+  preserve legal obligations and conditions from the source policy.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a summary that includes every numbered clause from the
+  source document while preserving obligations and conditions.
+  Each clause must appear exactly once in the summary.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input is a municipal HR leave policy document provided as a
+  text file. Only the contents of the provided document may be
+  used for summarization. No external assumptions or additions
+  are permitted.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Every numbered clause in the source policy must appear in the summary.
+  - Multi-condition obligations must preserve ALL conditions exactly
+    (e.g. approvals from multiple authorities must not be reduced).
+  - No new information may be introduced into the summary.
+  - If summarizing a clause risks losing meaning, quote the clause
+    verbatim and flag it as VERBATIM_REQUIRED.

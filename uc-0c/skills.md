@@ -3,14 +3,28 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: >
+      Loads the ward budget CSV file and validates required columns.
+      Identifies and reports rows where actual_spend is null.
+    input: >
+      Path to ward_budget.csv
+    output: >
+      List of records plus a report of rows with null actual_spend.
+    error_handling: >
+      If required columns are missing or dataset is malformed,
+      return NEEDS_REVIEW.
+
+  - name: compute_growth
+    description: >
+      Computes growth metrics for a specific ward and category.
+      Returns a per-period table including formula and result.
+    input: >
+      Dataset records, ward name, category name, growth_type.
+    output: >
+      Structured table with period, actual_spend, growth percentage,
+      and formula used.
+    error_handling: >
+      If actual_spend is null for a period, growth is not computed
+      and the row is flagged with the null reason.
