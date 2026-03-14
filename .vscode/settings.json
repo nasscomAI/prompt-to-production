@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd /Users/rakesh\\.lodha/Project/nasscom/prompt-to-production/uc-0b && python app\\.py --input \\.\\./data/policy-documents/policy_hr_leave\\.txt --output summary_hr_leave\\.txt$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
