@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Large pothole 60cm wide causing tyre damage.",
+PM-202402,Pothole,Urgent,"School children at risk during morning hours.",
+PM-202406,Flooding,Standard,"Underpass flooded knee-deep after 2hrs rain.",
+PM-202408,Flooding,Standard,"Drain blocked.",
+PM-202410,Streetlight,Standard,"Three consecutive streetlights out for 10 days.",
+PM-202411,Streetlight,Urgent,"Electrical hazard reported.",
+PM-202413,Waste,Standard,"Overflowing garbage bins near vegetable market.",
+PM-202418,Noise,Standard,"Wedding venue playing music past midnight on weeknights.",
+PM-202419,Road Damage,Standard,"Road surface cracked and sinking near utility work done 1 month ago.",
+PM-202420,Other,Urgent,"Risk of serious injury to cyclists.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Bridge approach floods in 30mins of rain.",
+PM-202428,Waste,Standard,"Dead animal not removed for 36 hours.",
+PM-202430,Streetlight,Standard,"Heritage street, lights out.",
+PM-202433,Waste,Standard,"Bulk waste from apartment renovation dumped on public road.",
+PM-202446,Road Damage,Urgent,"Elderly resident fell last week.",
