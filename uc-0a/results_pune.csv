@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected keywords in complaint text,
+PM-202402,Pothole,Urgent,Detected keywords in complaint text,
+PM-202406,Flooding,Standard,Detected keywords in complaint text,
+PM-202408,Flooding,Standard,Detected keywords in complaint text,
+PM-202410,Streetlight,Standard,Detected keywords in complaint text,
+PM-202411,Streetlight,Urgent,Detected keywords in complaint text,
+PM-202413,Waste,Standard,Detected keywords in complaint text,
+PM-202418,Other,Standard,Detected keywords in complaint text,NEEDS_REVIEW
+PM-202419,Other,Standard,Detected keywords in complaint text,NEEDS_REVIEW
+PM-202420,Other,Urgent,Detected keywords in complaint text,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected keywords in complaint text,
+PM-202428,Other,Standard,Detected keywords in complaint text,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Detected keywords in complaint text,
+PM-202433,Waste,Standard,Detected keywords in complaint text,
+PM-202446,Other,Urgent,Detected keywords in complaint text,NEEDS_REVIEW
