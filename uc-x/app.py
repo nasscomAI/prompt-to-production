@@ -109,6 +109,9 @@ def main():
     ]
     model = PolicyQAModel(docs)
     print(f"Documents parsed successfully into {len(model.sections)} searchable sections.")
+    
+    results_file = "qa_results.txt"
+    
     print("Type your question below (or 'exit' to quit):\n")
     
     try:
@@ -118,14 +121,23 @@ def main():
                 break
             if not q.strip():
                 continue
+                
+            answer = model.answer_question(q)
+            print("\n" + answer + "\n")
             
-            print("\n" + model.answer_question(q) + "\n")
+            # Save the result to a text file
+            try:
+                with open(results_file, "a", encoding="utf-8") as f:
+                    f.write(f"Q: {q}\nA: {answer}\n\n")
+            except Exception as e:
+                print(f"Error saving to file: {e}")
+                
     except EOFError:
         pass
     except KeyboardInterrupt:
         pass
     finally:
-        print("\nExiting.")
+        print(f"\nExiting. Question history saved to {results_file}.")
 
 if __name__ == "__main__":
     main()
