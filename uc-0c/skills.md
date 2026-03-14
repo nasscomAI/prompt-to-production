@@ -1,16 +1,18 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Budget Data Reading
+    description: Reads the ward budget dataset from the budget directory.
+    input: CSV file path (string)
+    output: List of rows from the dataset
+    error_handling: Returns empty list if the dataset cannot be opened.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Budget Aggregation
+    description: Groups budget values by ward and category.
+    input: Dataset rows
+    output: Aggregated totals per ward and category
+    error_handling: Skips rows with missing or invalid numeric values.
+
+  - name: Growth Calculation
+    description: Calculates growth values based on aggregated budget data.
+    input: Aggregated ward-category totals
+    output: Growth results written to CSV format
+    error_handling: Produces no result if required columns are missing.
