@@ -1,16 +1,18 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+skill: retrieve_policy
+description: Load policy document and return structured numbered clauses
+input: policy file path
+output: structured numbered clauses
+constraints:
+- Preserve clause numbers
+- Do not modify original text
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+skill: summarize_policy
+description: Produce a compliant summary of each clause
+input: structured clauses
+output: clause-based summary
+rules:
+- Every clause must appear in summary
+- Do not drop conditions
+- Do not add new information
+- Preserve binding verbs (must, requires, not permitted)
+- If summarization changes meaning, quote clause verbatim
