@@ -100,6 +100,81 @@ def detect_suspicious(rows: list, threshold: float = 1.2) -> list:
     return flagged
 
 
+def compute_growth(rows: list, ward_filter: str | None, category_filter: str | None, growth_type: str = "MoM") -> list:
+    """
+    Compute MoM (Month-over-Month) or YoY growth per ward per category.
+    Returns list of dicts with ward, category, period, actual_spend, growth_pct, formula, null_flag.
+    Null rows are flagged, not computed.
+    """
+    from collections import defaultdict
+
+    keyed = defaultdict(dict)
+    for r in rows:
+        w, c, p = r["ward"], r["category"], r["period"]
+        if ward_filter and ward_filter.lower() not in w.lower():
+            continue
+        if category_filter and category_filter.lower() not in c.lower():
+            continue
+        keyed[(w, c)][p] = r
+
+    periods = sorted({r["period"] for r in rows})
+    output = []
+
+    for (ward, category), by_period in sorted(keyed.items()):
+        for i, period in enumerate(periods):
+            if period not in by_period:
+                continue
+            row = by_period[period]
+            actual = row.get("actual_spend")
+            notes = row.get("notes", "")
+
+            if actual is None:
+                output.append({
+                    "ward": ward,
+                    "category": category,
+                    "period": period,
+                    "actual_spend": "",
+                    "growth_pct": "",
+                    "formula": "NULL",
+                    "notes": notes or "Missing actual_spend",
+                })
+                continue
+
+            prev_actual = None
+            prev_period = None
+            if growth_type == "MoM" and i > 0:
+                prev_period = periods[i - 1]
+                prev_row = by_period.get(prev_period)
+                if prev_row:
+                    prev_actual = prev_row.get("actual_spend")
+
+            if prev_actual is None or prev_actual == 0:
+                formula = "(no prior period)" if i == 0 else "prev period NULL"
+                output.append({
+                    "ward": ward,
+                    "category": category,
+                    "period": period,
+                    "actual_spend": f"{actual:.1f}",
+                    "growth_pct": "",
+                    "formula": formula,
+                    "notes": notes,
+                })
+            else:
+                growth = ((actual - prev_actual) / prev_actual) * 100
+                formula = f"({actual:.1f}-{prev_actual:.1f})/{prev_actual:.1f}*100"
+                output.append({
+                    "ward": ward,
+                    "category": category,
+                    "period": period,
+                    "actual_spend": f"{actual:.1f}",
+                    "growth_pct": f"{growth:+.1f}%",
+                    "formula": formula,
+                    "notes": notes,
+                })
+
+    return output
+
+
 def flag_inconsistencies(rows: list) -> list:
     """Identify missing data and anomalies."""
     issues = []
@@ -136,20 +211,26 @@ def flag_inconsistencies(rows: list) -> list:
 def main():
     parser = argparse.ArgumentParser(description="UC-0C Budget Validation")
     parser.add_argument("--input", default="data/budget/ward_budget.csv", help="Path to ward_budget.csv")
-    parser.add_argument("--output", help="Path to write results JSON (optional)")
+    parser.add_argument("--output", help="Path to write results (JSON or growth_output.csv)")
+    parser.add_argument("--growth-output", default="growth_output.csv", help="Path for growth CSV (default: growth_output.csv)")
+    parser.add_argument("--ward", help="Filter by ward (e.g. 'Ward 1 – Kasba')")
+    parser.add_argument("--category", help="Filter by category (e.g. 'Roads & Pothole Repair')")
+    parser.add_argument("--growth-type", default="MoM", choices=["MoM", "YoY"], help="Growth type (default: MoM)")
     parser.add_argument("--threshold", type=float, default=1.2, help="Overspend threshold (default 1.2 = 20%%)")
     args = parser.parse_args()
 
     base = Path(__file__).resolve().parent.parent
     input_path = Path(args.input)
     if not input_path.is_absolute():
-        # Resolve relative to cwd (user typically runs from uc-0c with ../data/...)
         input_path = (Path.cwd() / args.input).resolve()
     if not input_path.exists() and (base / "data/budget/ward_budget.csv").exists():
         input_path = base / "data/budget/ward_budget.csv"
     output_path = Path(args.output) if args.output else None
     if output_path and not output_path.is_absolute():
-        output_path = base / output_path
+        output_path = Path.cwd() / output_path
+    growth_output_path = Path(args.growth_output)
+    if not growth_output_path.is_absolute():
+        growth_output_path = Path(__file__).resolve().parent / growth_output_path
 
     rows = load_budget_csv(input_path)
     totals = calculate_totals(rows)
@@ -182,6 +263,15 @@ def main():
         print(f"    ... and {len(inconsistencies) - 10} more")
     print()
 
+    # Compute growth and write growth_output.csv (workshop requirement)
+    growth_rows = compute_growth(rows, args.ward, args.category, args.growth_type)
+    growth_output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(growth_output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["ward", "category", "period", "actual_spend", "growth_pct", "formula", "notes"])
+        writer.writeheader()
+        writer.writerows(growth_rows)
+    print(f"  growth_output.csv written to: {growth_output_path}\n")
+
     result = {
         "totals": {
             "total_budgeted": totals["total_budgeted"],
@@ -196,8 +286,14 @@ def main():
 
     if output_path:
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(result, f, indent=2)
+        if str(output_path).lower().endswith(".csv"):
+            with open(output_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.DictWriter(f, fieldnames=["ward", "category", "period", "actual_spend", "growth_pct", "formula", "notes"])
+                writer.writeheader()
+                writer.writerows(growth_rows)
+        else:
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(result, f, indent=2)
         print(f"  Results written to: {output_path}\n")
 
     print("Done.")

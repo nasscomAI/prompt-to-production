@@ -193,6 +193,22 @@ def process_policies(policy_dir: Path, output_path: Path | None) -> list:
             json.dump({"policies": results}, f, indent=2)
         print(f"  Results written to: {output_path}\n")
 
+    # Write summary_hr_leave.txt (workshop requirement)
+    uc0b_dir = Path(__file__).resolve().parent
+    for r in results:
+        if r["policy_name"] == "policy_hr_leave.txt":
+            txt_path = uc0b_dir / "summary_hr_leave.txt"
+            txt_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(txt_path, "w", encoding="utf-8") as f:
+                f.write(f"POLICY: {r['policy_name']}\n")
+                f.write(f"STATUS: {'RISKY' if r['risky'] else 'OK'}\n\n")
+                f.write("SUMMARY:\n")
+                f.write(r["summary"] + "\n\n")
+                if r["omitted_critical"]:
+                    f.write("OMITTED CRITICAL: " + ", ".join(r["omitted_critical"]) + "\n")
+            print(f"  summary_hr_leave.txt written to: {txt_path}\n")
+            break
+
     return results
 
 
@@ -203,7 +219,11 @@ def main():
     args = parser.parse_args()
 
     base = Path(__file__).resolve().parent.parent
-    policy_dir = Path(args.input) if Path(args.input).is_absolute() else base / args.input
+    policy_dir = Path(args.input)
+    if not policy_dir.is_absolute():
+        policy_dir = (Path.cwd() / args.input).resolve()
+    if not policy_dir.exists() and (base / "data/policy-documents").exists():
+        policy_dir = base / "data/policy-documents"
     output_path = Path(args.output) if args.output else None
     if output_path and not output_path.is_absolute():
         output_path = base / output_path
