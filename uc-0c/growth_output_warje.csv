@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,formula,growth_percent,status,reason,comparison_period,comparison_actual,null_note
+2024-01,Ward 4 – Warje,Roads & Pothole Repair,10.2,MoM,,,NOT_COMPUTABLE,Comparison period 2023-12 not available in filtered data.,2023-12,,
+2024-02,Ward 4 – Warje,Roads & Pothole Repair,10.7,MoM,((10.7 - 10.2) / 10.2) * 100,4.9,COMPUTED,Computed using explicit growth formula.,2024-01,10.2,
+2024-03,Ward 4 – Warje,Roads & Pothole Repair,11.1,MoM,((11.1 - 10.7) / 10.7) * 100,3.7,COMPUTED,Computed using explicit growth formula.,2024-02,10.7,
+2024-04,Ward 4 – Warje,Roads & Pothole Repair,8.8,MoM,((8.8 - 11.1) / 11.1) * 100,-20.7,COMPUTED,Computed using explicit growth formula.,2024-03,11.1,
+2024-05,Ward 4 – Warje,Roads & Pothole Repair,11.3,MoM,((11.3 - 8.8) / 8.8) * 100,28.4,COMPUTED,Computed using explicit growth formula.,2024-04,8.8,
+2024-06,Ward 4 – Warje,Roads & Pothole Repair,12.5,MoM,((12.5 - 11.3) / 11.3) * 100,10.6,COMPUTED,Computed using explicit growth formula.,2024-05,11.3,
+2024-07,Ward 4 – Warje,Roads & Pothole Repair,,MoM,,,FLAGGED_NULL,Current period actual_spend is null; growth not computed. Note: Audit freeze — figures under review,2024-06,12.5,Audit freeze — figures under review
+2024-08,Ward 4 – Warje,Roads & Pothole Repair,16.0,MoM,,,FLAGGED_NULL,Comparison period 2024-07 actual_spend is null; growth not computed. Note: Audit freeze — figures under review,2024-07,,
+2024-09,Ward 4 – Warje,Roads & Pothole Repair,14.7,MoM,((14.7 - 16.0) / 16.0) * 100,-8.1,COMPUTED,Computed using explicit growth formula.,2024-08,16.0,
+2024-10,Ward 4 – Warje,Roads & Pothole Repair,11.0,MoM,((11.0 - 14.7) / 14.7) * 100,-25.2,COMPUTED,Computed using explicit growth formula.,2024-09,14.7,
+2024-11,Ward 4 – Warje,Roads & Pothole Repair,9.0,MoM,((9.0 - 11.0) / 11.0) * 100,-18.2,COMPUTED,Computed using explicit growth formula.,2024-10,11.0,
+2024-12,Ward 4 – Warje,Roads & Pothole Repair,11.2,MoM,((11.2 - 9.0) / 9.0) * 100,24.4,COMPUTED,Computed using explicit growth formula.,2024-11,9.0,
