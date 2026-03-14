@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202402,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202406,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202407,Other,Urgent,The complaint was classified due to the presence of terms: 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The complaint was classified due to the presence of terms: 'pothole'.,
+AM-202414,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202417,Other,Standard,"The complaint was classified due to the presence of terms: 'waste', 'heritage'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,The complaint was classified due to the presence of terms: 'music'.,
+AM-202424,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202429,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The complaint was classified due to the presence of terms: 'heritage'.,
+AM-202435,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+AM-202444,Waste,Standard,The complaint was classified due to the presence of terms: 'waste'.,
+AM-202445,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
