@@ -102,6 +102,7 @@ Yes! All of these tools (IDEs and CLI tools) work perfectly with WSL. Just run t
 ---
 
 ## 📖 Useful Resources
+- [Git Cheat Sheet](https://git-scm.com/cheat-sheet)
 - [GitHub Best Practices for Repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/best-practices-for-repositories)
 - [Official GitHub Desktop](https://desktop.github.com/) (Great for those who prefer a GUI over CLI!)
 
