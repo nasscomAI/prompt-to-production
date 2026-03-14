@@ -1,0 +1,12 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 classifier\\.py --input \\.\\./data/city-test-files/test_ahmedabad\\.csv --output results_ahmedabad\\.csv$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^python3 classifier\\.py --input \\.\\./data/city-test-files/test_hyderabad\\.csv --output results_hyderabad\\.csv$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions flooding/water logging: 'Underpass flooded after 1hr rain. Ambulance divert...' Contains severity keywords: ambulance.,
+GH-202402,Flooding,Standard,Description mentions flooding/water logging: 'Market area flooded. Traders suffering losses. Dra...',
+GH-202406,Drain Blockage,Standard,Description mentions drain/drainage blockage: 'Main stormwater drain 100% blocked with constructi...',
+GH-202407,Drain Blockage,Standard,Description mentions drain/drainage blockage: 'Drain blocked and mosquito breeding. Dengue concer...',
+GH-202410,Other,Low,Cannot determine specific category from description: 'Potholes causing vehicles to slow to 20kmph on fas...',NEEDS_REVIEW
+GH-202411,Pothole,Urgent,Description mentions pothole/road damage: 'Pothole swallowed entire motorcycle wheel. Rider h...' Contains severity keywords: hospital.,
+GH-202412,Other,Urgent,Cannot determine specific category from description: 'School bus struggling to navigate 6 potholes in 20...' Contains severity keywords: school.,NEEDS_REVIEW
+GH-202417,Waste,Low,Description mentions waste/garbage: 'Heritage zone garbage overflow. Tourist photograph...',
+GH-202420,Other,Low,Cannot determine specific category from description: 'Construction drilling from 5am daily near resident...',NEEDS_REVIEW
+GH-202422,Other,Urgent,Cannot determine specific category from description: 'Road collapsed partially. Crater 1m deep near resi...' Contains severity keywords: collapse.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Description mentions flooding/water logging: 'Underpass floods in light rain. Cars regularly aba...',
+GH-202428,Waste,Low,Description mentions waste/garbage: 'Post-market waste not cleared. Area unusable by Su...',
+GH-202432,Other,Low,Cannot determine specific category from description: '24hr supermarket delivery trucks idling with engin...',NEEDS_REVIEW
+GH-202448,Flooding,Standard,Description mentions flooding/water logging: 'Main drain blocked — entire locality at flooding r...',
+GH-202438,Other,Low,Cannot determine specific category from description: 'Colony surrounded by fields that channel rainwater...',NEEDS_REVIEW
