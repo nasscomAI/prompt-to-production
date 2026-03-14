@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for Policy Summary Agent
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Text Processing
+Ability to read policy documents and detect important clauses.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Clause Identification
+Recognize numbered sections and rules.
+
+## Meaning Preservation
+Ensure the summary keeps the same meaning as the original document.
+
+## Output Generation
+Generate a short summary without losing key policy information.
