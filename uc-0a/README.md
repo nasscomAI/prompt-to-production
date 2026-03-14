@@ -59,3 +59,8 @@ Then look for:
 ```
 UC-0A Fix [failure mode]: [why it failed] → [what you changed]
 ```
+## Participant Submission
+
+Name: Pamulapati Varshitha  
+City: Nellore  
+Branch: participant/varshithaPamulapati-Nellore
