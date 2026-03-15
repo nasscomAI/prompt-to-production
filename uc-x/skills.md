@@ -1,16 +1,8 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_policy_question
+    description: Takes a user question and provides an answer based solely on the content of the policy documents, using direct quotes or the refusal template if not covered.
+    input: A string containing the user's question.
+    output: A string containing the answer or the refusal template.
+    error_handling: If the question is ambiguous or cannot be answered from documents, respond with the refusal template; do not attempt to interpret or guess.

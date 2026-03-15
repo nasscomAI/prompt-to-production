@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0C Number That Looks Right
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  The Budget Growth Calculator Agent is responsible for calculating month-over-month growth rates for actual spend in municipal ward budgets. It operates within the boundary of processing CSV data for a specific ward and category, handling null values appropriately without assumptions.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  The correct output is a CSV file containing a table of growth rates for each month in the period, with columns for period, growth_rate, and notes; growth_rate calculated as ((current - previous) / previous) * 100, skipping months with null actual_spend, resulting in verifiable percentages matching reference values.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use the input CSV data including period, ward, category, budgeted_amount, actual_spend, and notes. It must filter data to the specified ward and category. Exclusions: No use of budgeted_amount for growth calculation; handle null actual_spend by skipping those periods in growth calculation.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Output must be a per-ward per-category table — not aggregated across wards or categories"
+  - "Handle null actual_spend values silently by skipping those periods in growth calculations — do not assume or impute values"
+  - "Growth rate formula: ((current_month_actual - previous_month_actual) / previous_month_actual) * 100 — no other formulas or assumptions"
+  - "Refuse to calculate if specified ward or category has no valid data; output an error message instead of guessing"

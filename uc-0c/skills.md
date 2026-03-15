@@ -1,16 +1,8 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: calculate_growth
+    description: Reads budget CSV, filters to specified ward and category, calculates month-over-month growth rates for actual_spend, and writes results to CSV.
+    input: Input file path (string), ward name (string), category name (string), growth type (string, e.g., 'MoM'), output file path (string).
+    output: None (writes a CSV file with period, growth_rate, notes).
+    error_handling: If the specified ward or category has no matching data, or if there are insufficient data points for growth calculation, output an error message to the file or raise ValueError.
