@@ -1,7 +1,3 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
 A municipal complaint classification agent responsible for analyzing citizen
 complaint descriptions and assigning a valid category and priority according
