@@ -1,9 +1,9 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:Chadalla Naveen**  
-**City / Group:**Nellore /   
-**Date:**  
-**AI tool(s) used:**  
+**Name:vChadalla Naveen**  
+**City / Group:vNellore / Computer Science and Engineering** 
+**Date: 15/03/2026**  
+**AI tool(s) used: Antigravity and Chatgpt**  
 
 ---
 
