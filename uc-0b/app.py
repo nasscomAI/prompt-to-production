@@ -34,12 +34,12 @@ def main():
 
     args = parser.parse_args()
 
-    with open(args.input, "r") as f:
+    with open(args.input, "r", encoding="utf-8") as f:
         text = f.read()
 
     summary = summarize_policy(text)
 
-    with open(args.output, "w") as f:
+    with open(args.output, "w", encoding="utf-8") as f:
         f.write(summary)
 
     print(f"Summary written to {args.output}")
