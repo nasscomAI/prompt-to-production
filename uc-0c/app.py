@@ -1,30 +1,38 @@
-import csv
+import os
 
-def calculate_growth(input_file, output_file):
-    rows = []
+def process_documents(folder="../data/policy-documents"):
+    """
+    Process documents and calculate word count
+    """
 
-    with open(input_file, "r") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                prev = float(row["previous"])
-                curr = float(row["current"])
-                growth = curr - prev
-                row["growth"] = growth
-            except:
-                row["growth"] = 0
-            rows.append(row)
+    results = []
 
-    fieldnames = list(rows[0].keys())
+    for filename in os.listdir(folder):
+        filepath = os.path.join(folder, filename)
 
-    with open(output_file, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
+        try:
+            with open(filepath, "r") as file:
+                content = file.read()
 
-    print("Growth calculation complete.")
+            word_count = len(content.split())
+
+            results.append({
+                "file": filename,
+                "word_count": word_count
+            })
+
+        except Exception:
+            results.append({
+                "file": filename,
+                "word_count": 0
+            })
+
+    return results
+
 
 if __name__ == "__main__":
-    input_file = "../data/budget/ward_budget.csv"
-    output_file = "growth_output.csv"
-    calculate_growth(input_file, output_file)
+
+    docs = process_documents()
+
+    for doc in docs:
+        print(doc["file"], "->", doc["word_count"], "words")
