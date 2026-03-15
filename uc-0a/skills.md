@@ -1,4 +1,16 @@
-# skills.md
+skills:
+
+name: classify_complaint
+description: Classifies a single complaint into category and priority based on the defined schema.
+input: One complaint description string.
+output: category, priority, reason, and flag.
+error_handling: If the complaint description is unclear or ambiguous, assign category "Other" and set flag "NEEDS_REVIEW".
+
+name: batch_classify
+description: Processes an input CSV file and applies complaint classification to each row.
+input: CSV file containing complaint descriptions.
+output: CSV file with category, priority, reason, and flag for each complaint.
+error_handling: If a row has missing or invalid description text, classify as "Other" and flag NEEDS_REVIEW.# skills.md
 
 skills:
   - name: classify_complaint
