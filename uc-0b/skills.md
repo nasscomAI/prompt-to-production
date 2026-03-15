@@ -1,5 +1,4 @@
 skills:
-
 - name: summarize_policy
   description: Generates a concise summary of a policy document while preserving all important clauses and conditions.
   input: Policy document text file (plain text).
