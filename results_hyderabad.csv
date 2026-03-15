@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Medium,Detected 'Flooding' from description snippet: 'Underpass flooded after 1hr rain. Ambulance diverted. Lives',
+GH-202402,Flooding,Medium,Detected 'Flooding' from description snippet: 'Market area flooded. Traders suffering losses. Drain completely',
+GH-202406,Drainage Blockage,Medium,Detected 'Drainage Blockage' from description snippet: 'Main stormwater drain 100% blocked with construction debris.',
+GH-202407,Drainage Blockage,Medium,Detected 'Drainage Blockage' from description snippet: 'Drain blocked and mosquito breeding. Dengue concern.',
+GH-202410,Pothole,Medium,Detected 'Pothole' from description snippet: 'Potholes causing vehicles to slow to 20kmph on',
+GH-202411,Pothole,Medium,Detected 'Pothole' from description snippet: 'Pothole swallowed entire motorcycle wheel. Rider hospitalised.',
+GH-202412,Pothole,Urgent,Detected 'Pothole' from description snippet: 'School bus struggling to navigate 6 potholes in',
+GH-202417,Garbage,High,Detected 'Garbage' from description snippet: 'Heritage zone garbage overflow. Tourist photographs showing piles',
+GH-202420,Other,Medium,Detected 'Other' from description snippet: 'Construction drilling from 5am daily near residential towers.',NEEDS_REVIEW
+GH-202422,Other,Medium,Detected 'Other' from description snippet: 'Road collapsed partially. Crater 1m deep near residential',NEEDS_REVIEW
+GH-202424,Flooding,Medium,Detected 'Flooding' from description snippet: 'Underpass floods in light rain. Cars regularly abandoned.',
+GH-202428,Garbage,Medium,Detected 'Garbage' from description snippet: 'Post-market waste not cleared. Area unusable by Sunday',
+GH-202432,Other,Medium,Detected 'Other' from description snippet: '24hr supermarket delivery trucks idling with engines on.',NEEDS_REVIEW
+GH-202448,Flooding,Medium,Detected 'Flooding' from description snippet: 'Main drain blocked — entire locality at flooding',
+GH-202438,Other,Medium,Detected 'Other' from description snippet: 'Colony surrounded by fields that channel rainwater through',NEEDS_REVIEW

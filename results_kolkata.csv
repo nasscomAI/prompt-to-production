@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Medium,Detected 'Streetlight' from description snippet: 'Heritage lamp post knocked over by delivery vehicle.',
+KM-202402,Other,Medium,Detected 'Other' from description snippet: 'Historic tram road cobblestones broken up by cable',NEEDS_REVIEW
+KM-202405,Other,Medium,Detected 'Other' from description snippet: 'Wedding band playing near Tagore Museum at 11pm.',NEEDS_REVIEW
+KM-202409,Pothole,Medium,Detected 'Pothole' from description snippet: 'Airport access road full of potholes. Diplomatic complaint',
+KM-202410,Pothole,Medium,Detected 'Pothole' from description snippet: 'Pothole causing tyre blowouts. Three incidents this week.',
+KM-202411,Pothole,Urgent,Detected 'Pothole' from description snippet: 'Deep pothole filling with rainwater. Depth invisible. Accident',
+KM-202415,Drainage Blockage,Medium,Detected 'Drainage Blockage' from description snippet: 'New residential complex draining directly onto public road.',
+KM-202418,Garbage,High,Detected 'Garbage' from description snippet: 'Tourist zone waste overflowing. Foreign visitors photographing piles.',
+KM-202421,Other,Medium,Detected 'Other' from description snippet: 'Footpath broken and sinking. Elderly pedestrian fell. Hospital',NEEDS_REVIEW
+KM-202422,Other,Medium,Detected 'Other' from description snippet: 'Road surface buckled near bridge. Structural concern raised.',NEEDS_REVIEW
+KM-202426,Other,Medium,Detected 'Other' from description snippet: 'Heritage residential building exterior defaced by billboard installation.',NEEDS_REVIEW
+KM-202430,Other,Medium,Detected 'Other' from description snippet: 'Road subsided near gas pipeline. Gas leak smell',NEEDS_REVIEW
+KM-202434,Other,Medium,Detected 'Other' from description snippet: 'Street paving removed for utility work — heritage',NEEDS_REVIEW
+KM-202436,Other,Medium,Detected 'Other' from description snippet: 'Entire colony substation tripped. Darkness for 3 nights.',NEEDS_REVIEW
+KM-202438,Other,Medium,Detected 'Other' from description snippet: 'Street vendors using amplifiers illegally in heritage precinct.',NEEDS_REVIEW
