@@ -19,4 +19,4 @@ enforcement:
 - "Growth must be calculated separately for each ward and category."
 - "The system must not produce a single aggregated number for the entire dataset."
 - "All calculations must be derived directly from the CSV values without altering the data."
-- "If required data for a calculation is missing or invalid, the system must flag the row instead of guessing a value."
+- "If required data for a calculation is missing or invalid, the system must flag the row instead of guessing a value." 
