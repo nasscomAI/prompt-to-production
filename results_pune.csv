@@ -1,16 +1,16 @@
 complaint_id,category,priority,reason,flag
-PM-202401,Pothole,High,Detected 'Pothole' from description snippet: 'Large pothole 60cm wide causing tyre damage. Three',
-PM-202402,Pothole,Urgent,Detected 'Pothole' from description snippet: 'Deep pothole near bus stop. School children at',
-PM-202406,Flooding,Medium,Detected 'Flooding' from description snippet: 'Underpass flooded knee-deep after 2hrs rain. Commuters stranded.',
-PM-202408,Flooding,Medium,Detected 'Flooding' from description snippet: 'Bus stand flooded. Passengers standing in water. Drain',
-PM-202410,Streetlight,Medium,Detected 'Streetlight' from description snippet: 'Three consecutive streetlights out for 10 days. Area',
-PM-202411,Streetlight,Medium,Detected 'Streetlight' from description snippet: 'Streetlight flickering and sparking. Electrical hazard reported.',
-PM-202413,Garbage,High,Detected 'Garbage' from description snippet: 'Overflowing garbage bins near vegetable market. Smell affecting',
-PM-202418,Other,Medium,Detected 'Other' from description snippet: 'Wedding venue playing music past midnight on weeknights.',NEEDS_REVIEW
-PM-202419,Other,Medium,Detected 'Other' from description snippet: 'Road surface cracked and sinking near utility work',NEEDS_REVIEW
-PM-202420,Other,Urgent,Detected 'Other' from description snippet: 'Manhole cover missing. Risk of serious injury to',NEEDS_REVIEW
-PM-202427,Flooding,Medium,Detected 'Flooding' from description snippet: 'Bridge approach floods in 30mins of rain. Bridge',
-PM-202428,Other,Medium,Detected 'Other' from description snippet: 'Dead animal not removed for 36 hours. Health',NEEDS_REVIEW
-PM-202430,Streetlight,Medium,"Detected 'Streetlight' from description snippet: 'Heritage street, lights out. Safety concern for pedestrians'",
-PM-202433,Garbage,Medium,Detected 'Garbage' from description snippet: 'Bulk waste from apartment renovation dumped on public',
-PM-202446,Other,Medium,Detected 'Other' from description snippet: 'Footpath tiles broken and upturned. Elderly resident fell',NEEDS_REVIEW
+PM-202401,Pothole,Standard,Description contains keyword 'pothole',
+PM-202402,Pothole,Urgent,Description contains keyword 'pothole'; severity keyword 'child' detected,
+PM-202406,Flooding,Standard,Description contains keyword 'flood',
+PM-202408,Flooding,Standard,Description contains keyword 'flood',
+PM-202410,Streetlight,Standard,Description mentions streetlight issue,
+PM-202411,Streetlight,Urgent,Description mentions streetlight issue; severity keyword 'hazard' detected,
+PM-202413,Waste,Standard,Description contains keyword 'garbage',
+PM-202418,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202419,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202420,Other,Urgent,No known category keywords detected; severity keyword 'injury' detected,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description contains keyword 'flood',
+PM-202428,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202430,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202433,Waste,Standard,Description contains keyword 'garbage',
+PM-202446,Other,Urgent,No known category keywords detected; severity keyword 'fell' detected,NEEDS_REVIEW

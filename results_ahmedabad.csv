@@ -1,16 +1,16 @@
 complaint_id,category,priority,reason,flag
-AM-202401,Other,Medium,Detected 'Other' from description snippet: 'Tarmac surface melting at 44°C. Footwear sticking. Park',NEEDS_REVIEW
-AM-202402,Other,High,Detected 'Other' from description snippet: 'Metal bus shelter reaching dangerous temperatures. Commuters refusing',NEEDS_REVIEW
-AM-202405,Other,Medium,Detected 'Other' from description snippet: 'Dead trees with split branches. Fall risk to',NEEDS_REVIEW
-AM-202406,Other,Medium,Detected 'Other' from description snippet: 'Irrigation system broken. Grass dying in heatwave conditions.',NEEDS_REVIEW
-AM-202407,Other,Urgent,Detected 'Other' from description snippet: 'Broken bench and upturned paving. Child injured last',NEEDS_REVIEW
-AM-202410,Pothole,Medium,Detected 'Pothole' from description snippet: 'Pothole on main highway causing morning rush lane',
-AM-202414,Other,Medium,Detected 'Other' from description snippet: 'Residential colony unlit after 9pm. Wiring theft reported.',NEEDS_REVIEW
-AM-202417,Garbage,Medium,Detected 'Garbage' from description snippet: 'Night market waste not cleared before morning. Heritage',
-AM-202421,Other,Medium,Detected 'Other' from description snippet: 'Club music audible at residential buildings at 2am.',NEEDS_REVIEW
-AM-202424,Other,Medium,Detected 'Other' from description snippet: 'Zoo approach road surface bubbling at 45°C. Visitor',NEEDS_REVIEW
-AM-202429,Other,Medium,Detected 'Other' from description snippet: 'River walk surface temperature unbearable. Installed temperature reads',NEEDS_REVIEW
-AM-202431,Other,Medium,Detected 'Other' from description snippet: 'Old city road subsidence near ancient step well.',NEEDS_REVIEW
-AM-202435,Other,Medium,Detected 'Other' from description snippet: 'Black metal road dividers storing heat. Motorists reporting',NEEDS_REVIEW
-AM-202444,Garbage,High,Detected 'Garbage' from description snippet: 'Restaurant waste bins overflowing on Sunday night. Health',
-AM-202445,Other,Medium,Detected 'Other' from description snippet: 'BRT shelter roof glass broken. Users exposed to',NEEDS_REVIEW
+AM-202401,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202402,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202405,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202406,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202407,Other,Urgent,No known category keywords detected; severity keyword 'child' detected,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description contains keyword 'pothole',
+AM-202414,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202417,Waste,Standard,Description contains keyword 'garbage',
+AM-202421,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202424,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202429,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202431,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202435,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+AM-202444,Waste,Standard,Description contains keyword 'garbage',
+AM-202445,Other,Standard,No known category keywords detected,NEEDS_REVIEW
