@@ -1,51 +1,84 @@
-def get_number(prompt):
-    """Get a valid float number from the user."""
-    while True:
-        user_input = input(prompt)
-        try:
-            return float(user_input)
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+import argparse
+import csv
 
 
-def get_operation():
-    """Get a valid operation from the user."""
-    valid_operations = {"+", "-", "*", "/"}
-    while True:
-        op = input("Choose an operation (+, -, *, /): ")
-        if op in valid_operations:
-            return op
-        print("Invalid operation. Please choose one of +, -, *, /.")
+def classify_complaint(row: dict) -> dict:
+    """
+    Classify a single complaint row.
+    """
+
+    text = row.get("complaint_text", "").lower()
+
+    category = "general"
+    priority = "low"
+    reason = "general complaint"
+    flag = "no"
+
+    if not text:
+        flag = "missing_text"
+        reason = "complaint text missing"
+
+    elif "refund" in text or "payment" in text:
+        category = "billing"
+        priority = "high"
+        reason = "payment issue"
+
+    elif "delay" in text or "late" in text:
+        category = "service"
+        priority = "medium"
+        reason = "service delay"
+
+    return {
+        "complaint_id": row.get("complaint_id"),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
-def calculate(num1, num2, operation):
-    """Perform the chosen arithmetic operation."""
-    if operation == "+":
-        return num1 + num2
-    elif operation == "-":
-        return num1 - num2
-    elif operation == "*":
-        return num1 * num2
-    elif operation == "/":
-        if num2 == 0:
-            print("Error: Division by zero is not allowed.")
-            return None
-        return num1 / num2
+def batch_classify(input_path: str, output_path: str):
+    """
+    Read input CSV, classify each row, write results CSV.
+    """
 
+    results = []
 
-def main():
-    print("Simple Calculator")
-    print("-----------------")
+    with open(input_path, "r") as infile:
+        reader = csv.DictReader(infile)
 
-    first_number = get_number("Enter the first number: ")
-    second_number = get_number("Enter the second number: ")
-    operation = get_operation()
+        for row in reader:
+            try:
+                result = classify_complaint(row)
+                results.append(result)
 
-    result = calculate(first_number, second_number, operation)
+            except Exception:
+                results.append({
+                    "complaint_id": row.get("complaint_id"),
+                    "category": "error",
+                    "priority": "low",
+                    "reason": "processing error",
+                    "flag": "error"
+                })
 
-    if result is not None:
-        print(f"Result: {first_number} {operation} {second_number} = {result}")
+    with open(output_path, "w", newline="") as outfile:
+        fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
+
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerows(results)
 
 
 if __name__ == "__main__":
-    main()
+
+    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
+
+    parser.add_argument("--input", required=True, help="Path to test_[city].csv")
+    parser.add_argument("--output", required=True, help="Path to write results CSV")
+
+    args = parser.parse_args()
+
+    batch_classify(args.input, args.output)
+
+    print(f"Done. Results written to {args.output}")
