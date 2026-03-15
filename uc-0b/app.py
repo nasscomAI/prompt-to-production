@@ -1,22 +1,48 @@
-import sys
+import os
 
-def summarize_policy(input_file, output_file):
-    with open(input_file, "r") as f:
-        text = f.readlines()
+def summarize_document(text):
+    """
+    Simple summarizer that returns the first 3 sentences
+    """
+    sentences = text.split(".")
+    summary = ".".join(sentences[:3])
+    return summary.strip() + "."
 
-    summary = []
-    for line in text:
-        if line.strip():
-            summary.append(line.strip())
 
-    with open(output_file, "w") as f:
-        for line in summary:
-            f.write(line + "\n")
+def process_documents(folder="../data/policy-documents"):
+    """
+    Process all documents in the folder and create summaries
+    """
 
-    print("Summary generated successfully.")
+    results = []
+
+    for filename in os.listdir(folder):
+        filepath = os.path.join(folder, filename)
+
+        try:
+            with open(filepath, "r") as file:
+                content = file.read()
+
+            summary = summarize_document(content)
+
+            results.append({
+                "file": filename,
+                "summary": summary
+            })
+
+        except Exception:
+            results.append({
+                "file": filename,
+                "summary": "Error processing file"
+            })
+
+    return results
+
 
 if __name__ == "__main__":
-    input_file = "../data/policy-documents/policy_hr_leave.txt"
-    output_file = "summary_hr_leave.txt"
 
-    summarize_policy(input_file, output_file)
+    summaries = process_documents()
+
+    for item in summaries:
+        print("\nFile:", item["file"])
+        print("Summary:", item["summary"])
