@@ -132,4 +132,13 @@ Example: `[Pune] Arshdeep Singh — Vibe Coding Submission`
 - [ ] 4+ commits with meaningful messages, one per UC
 - [ ] PR template fully filled — every section complete
 
+---
+
+## Resources
+
+Check out the [resources/](./resources) directory for curated lists of tools, courses, and platforms:
+- [Coding Tools](./resources/coding-tools.md)
+- [Useful AI Courses](./resources/courses.md)
+- [AI & Data Platforms](./resources/platforms.md)
+
 **Blocked for more than 5 minutes? Flag your tutor. Do not debug alone.**
