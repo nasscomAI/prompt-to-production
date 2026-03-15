@@ -69,9 +69,7 @@ def classify_complaint(row: dict) -> dict:
 
 
 def batch_classify(input_path: str, output_path: str):
-    """
     Read input CSV, classify each row, write results CSV.
-    """
 
     with open(input_path, "r") as infile, open(output_path, "w", newline="") as outfile:
         reader = csv.DictReader(infile)
