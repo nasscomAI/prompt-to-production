@@ -1,31 +1,22 @@
+import sys
 
-import csv
-
-def calculate_growth(input_file, output_file):
-    rows = []
-
+def summarize_policy(input_file, output_file):
     with open(input_file, "r") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            try:
-                prev = float(row["previous"])
-                curr = float(row["current"])
-                growth = curr - prev
-                row["growth"] = growth
-            except:
-                row["growth"] = 0
-            rows.append(row)
+        text = f.readlines()
 
-    fieldnames = list(rows[0].keys())
+    summary = []
+    for line in text:
+        if line.strip():
+            summary.append(line.strip())
 
-    with open(output_file, "w", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(rows)
+    with open(output_file, "w") as f:
+        for line in summary:
+            f.write(line + "\n")
 
-    print("Growth calculation complete.")
+    print("Summary generated successfully.")
 
 if __name__ == "__main__":
-    input_file = "../data/budget/ward_budget.csv"
-    output_file = "growth_output.csv"
-    calculate_growth(input_file, output_file)
+    input_file = "../data/policy-documents/policy_hr_leave.txt"
+    output_file = "summary_hr_leave.txt"
+
+    summarize_policy(input_file, output_file)
