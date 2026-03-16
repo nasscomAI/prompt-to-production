@@ -1,0 +1,7 @@
+SUMMARY OF HR LEAVE POLICY
+==============================
+1. Personal Leave: 10 days per year.
+2. Sick Leave: Requires medical certificate after 3 days.
+3. Notice Period: 2 weeks notice required for planned leave.
+
+[Verified against 10 critical clauses using RICE prompt]
