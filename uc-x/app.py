@@ -6,6 +6,19 @@ This question is not covered in the available policy documents
 Please contact the relevant team for guidance.
 """
 
+# Enforced rules:
+# 1) Answers must come from a single source document.
+# 2) No hedging language may be used.
+# 3) If the question cannot be answered from one document, return the refusal template exactly.
+
+FORBIDDEN_PHRASES = [
+    "while not explicitly covered",
+    "typically",
+    "generally understood",
+    "it is common practice",
+]
+
+
 def answer_question(question):
 
     q = question.lower()
