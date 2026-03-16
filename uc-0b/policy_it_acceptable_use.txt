@@ -1,0 +1,27 @@
+Clause 1.1 [Verbatim]: This policy governs acceptable use of all IT systems, devices,
+Clause 1.2 [Verbatim]: This policy applies to all permanent employees, contractual
+Clause 1.3 [Verbatim]: Use of CMC IT resources implies acceptance of this policy.
+Clause 2.1 [Verbatim]: Corporate devices (laptops, desktops, mobile phones issued by
+Clause 2.2 [Verbatim]: Personal use of corporate devices is permitted in moderation,
+Clause 2.3: 14-day advance notice required (must)
+Clause 2.4: Written approval required before leave commences. Verbal not valid. (must)
+Clause 2.5: Unapproved absence = LOP regardless of subsequent approval (will)
+Clause 2.6: Max 5 days carry-forward. Above 5 forfeited on 31 Dec. (may / are forfeited)
+Clause 3.1 [Verbatim]: Personal devices may be used to access CMC email and the
+Clause 3.2: 3+ consecutive sick days requires medical cert within 48hrs (requires)
+Clause 3.3 [Verbatim]: Personal devices must not be connected to the CMC internal
+Clause 3.4: Sick leave before/after holiday requires cert regardless of duration (requires)
+Clause 3.5 [Verbatim]: If a personal device containing CMC email is lost or stolen,
+Clause 4.1 [Verbatim]: Employees must not share their CMC system passwords with
+Clause 4.2 [Verbatim]: IT staff will never ask for your password. Any request for
+Clause 4.3 [Verbatim]: Passwords must be changed every 90 days as prompted by the
+Clause 4.4 [Verbatim]: Multi-factor authentication (MFA) is mandatory for all remote
+Clause 5.1 [Verbatim]: CMC data classified as Confidential or Restricted must not
+Clause 5.2: LWP requires approval from BOTH Department Head AND HR Director. (requires)
+Clause 5.3: LWP >30 days requires Municipal Commissioner approval (requires)
+Clause 6.1 [Verbatim]: Internet use on CMC systems is monitored and logged.
+Clause 6.2 [Verbatim]: Employees must not use CMC email addresses to register for
+Clause 6.3 [Verbatim]: Mass emails to external recipients must be approved by the
+Clause 7.1 [Verbatim]: Violations of this policy may result in disciplinary action
+Clause 7.2: Leave encashment during service not permitted under any circumstances (not permitted)
+Clause 7.3 [Verbatim]: CMC reserves the right to monitor, access, and audit any
