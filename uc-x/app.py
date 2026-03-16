@@ -1,4 +1,3 @@
-"""
 import os
 
 def search_documents(query, folder="../data/policy-documents"):
