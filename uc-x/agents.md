@@ -23,3 +23,4 @@ enforcement:
 - "The response must reference or quote the relevant clause from the document."
 - "The system must not combine information from multiple documents in a single answer."
 - "If the answer cannot be found clearly in one document, the system must refuse and state that the information is not available in the provided documents."
+- "The refusal must match the refusal template exactly (no paraphrasing)."
