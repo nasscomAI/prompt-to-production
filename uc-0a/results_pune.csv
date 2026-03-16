@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on the word 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Urgent priority due to keyword 'child'. Category 'Pothole' identified via 'pothole'.,
+PM-202406,Flooding,Standard,Classified as Flooding based on the word 'flood' in the description.,
+PM-202408,Flooding,Standard,Classified as Flooding based on the word 'drain blocked' in the description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight based on the word 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,Urgent priority due to keyword 'hazard'. Category 'Streetlight' identified via 'streetlight'.,
+PM-202413,Waste,Standard,Classified as Waste based on the word 'garbage' in the description.,
+PM-202418,Noise,Standard,Classified as Noise based on the word 'music' in the description.,
+PM-202419,Road Damage,Standard,Classified as Road Damage based on the word 'road surface' in the description.,
+PM-202420,Road Damage,Urgent,Urgent priority due to keyword 'injury'. Category 'Road Damage' identified via 'manhole'.,
+PM-202427,Flooding,Standard,Classified as Flooding based on the word 'flood' in the description.,
+PM-202428,Waste,Standard,Classified as Waste based on the word 'animal' in the description.,
+PM-202430,Streetlight,Standard,Classified as Streetlight based on the word 'heritage' in the description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste based on the word 'waste' in the description.,
+PM-202446,Road Damage,Urgent,Urgent priority due to keyword 'fell'. Category 'Road Damage' identified via 'footpath'.,
