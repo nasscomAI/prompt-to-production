@@ -1,16 +1,20 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: nuanced_summarization
+    description: Distills complex transcripts into a concise 2-sentence summary while preserving all technical facts and user intent.
+    input: Raw text string (customer support transcript).
+    output: String (2-sentence summary).
+    error_handling: If the input is empty or nonsensical, returns "error: insufficient_context".
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: sentiment_preservation
+    description: Analyzes the emotional tone of the transcript to ensure the summary reflects the user's actual experience without dilution.
+    input: Raw text string.
+    output: String (One of: Positive, Neutral, Negative).
+    error_handling: If tone is ambiguous, defaults to "Neutral" and flags for manual review.
+
+  - name: keyword_guardian
+    description: Extracts and protects specific technical entities like error codes, product names, or monetary amounts from being generalized.
+    input: Raw text string.
+    output: List of strings (key technical entities).
+    error_handling: Returns an empty list if no technical entities are detected.
