@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Ambiguous: multiple categories matched (Road Damage, Heat Hazard).",NEEDS_REVIEW
+AM-202402,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category identified because description mentions 'heatwave'.,
+AM-202407,Road Damage,Urgent,Category identified because description mentions 'paving'. Priority set to Urgent due to keywords: child.,
+AM-202410,Pothole,Standard,Category identified because description mentions 'pothole'.,
+AM-202414,Streetlight,Standard,Category identified because description mentions 'unlit'.,
+AM-202417,Other,Standard,"Ambiguous: multiple categories matched (Waste, Heritage Damage).",NEEDS_REVIEW
+AM-202421,Noise,Standard,Category identified because description mentions 'music'.,
+AM-202424,Road Damage,Standard,Category identified because description mentions 'road surface'.,
+AM-202429,Heat Hazard,Standard,Category identified because description mentions 'temperature'.,
+AM-202431,Other,Standard,"Ambiguous: multiple categories matched (Road Damage, Heritage Damage).",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Category identified because description mentions 'heat'.,
+AM-202444,Waste,Standard,Category identified because description mentions 'waste'.,
+AM-202445,Heat Hazard,Standard,Category identified because description mentions 'sun'.,
