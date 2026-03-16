@@ -24,12 +24,13 @@ def batch_process(input_file, output_file):
                 category = classify_text(row[0])
                 writer.writerow([row[0], category])
 
-# Main block
+# === MAIN ENTRY POINT ===
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0C CSV classifier")
+    # !!! All lines under this MUST be indented with 4 spaces
+    parser = argparse.ArgumentParser(description="UC-0B CSV classifier")
     parser.add_argument("--input", required=True, help="Path to input CSV file")
     parser.add_argument("--output", required=True, help="Path to output CSV file")
     args = parser.parse_args()
 
     batch_process(args.input, args.output)
-    print(f"✅ UC-0C output generated: {args.output}")
+    print(f"✅ Output generated: {args.output}")
