@@ -1,18 +1,18 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Budget Analysis Agent
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Purpose
+Analyze ward budget data and calculate growth values accurately.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Responsibilities
+1. Read ward budget dataset.
+2. Calculate growth for each ward and category.
+3. Prevent incorrect aggregation across wards.
+4. Ensure calculations are transparent and accurate.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Rules
+- Calculate growth only within the same ward.
+- Do not combine unrelated categories.
+- Maintain correct numeric calculations.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+## Output
+A CSV file showing ward-wise growth values.
