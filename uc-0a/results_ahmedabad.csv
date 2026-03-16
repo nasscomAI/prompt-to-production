@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'heat'.,
+AM-202407,Other,Urgent,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+AM-202414,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because the description mentions 'waste'.,
+AM-202421,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202424,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202429,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because the description mentions 'waste'.,
+AM-202445,Other,Standard,Flagged as ambiguous because no clear category keywords were found in the description.,NEEDS_REVIEW
