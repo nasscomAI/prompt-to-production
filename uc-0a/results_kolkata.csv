@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Category identified because description mentions 'heritage'.,
+KM-202402,Heritage Damage,Standard,Category identified because description mentions 'historic'.,
+KM-202405,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+KM-202409,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+KM-202410,Pothole,Standard,Category identified because description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Category identified because description mentions 'pothole'.,
+KM-202415,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Category identified because description mentions 'waste'.,
+KM-202421,Road Damage,Urgent,"Category identified because description mentions 'sinking'. Priority set to Urgent due to keywords: hospital, fell.",
+KM-202422,Road Damage,Standard,Category identified because description mentions 'road surface'.,
+KM-202426,Heritage Damage,Standard,Category identified because description mentions 'heritage'.,
+KM-202430,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+KM-202434,Other,Standard,"Ambiguous: multiple categories matched (Road Damage, Heritage Damage).",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Category identified because description mentions 'darkness'.,
+KM-202438,Heritage Damage,Standard,Category identified because description mentions 'heritage'.,
