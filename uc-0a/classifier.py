@@ -4,6 +4,7 @@ def get_number(prompt):
         user_input = input(prompt)
         try:
             return float(user_input)
+            
         except ValueError:
             print("Invalid input. Please enter a number.")
 def get_number(prompt):
