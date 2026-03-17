@@ -1,0 +1,24 @@
+name: Welcome Participant
+
+on:
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  pull-requests: write
+  issues: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome Message
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "👋 Hi there, participant! Thanks for joining our **Vibe Coding Session**! \n\nWe're reviewing your PR for the 4 User Cases. Once your submission is validated and merged, you'll be awarded your completion badge! 🏆 \n\n**Next Steps:**\n- Make sure all 4 UCs are finished.\n- Ensure your commit messages match the required format.\n- Good luck!"
+            })
