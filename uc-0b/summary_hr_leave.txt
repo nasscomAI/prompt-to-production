@@ -1,0 +1,118 @@
+[
+  {
+    "clause": "1.1",
+    "text": "This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC)."
+  },
+  {
+    "clause": "1.2",
+    "text": "This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts."
+  },
+  {
+    "clause": "2.1",
+    "text": "Each permanent employee is entitled to 18 days of paid annual leave per calendar year."
+  },
+  {
+    "clause": "2.2",
+    "text": "Annual leave accrues at 1.5 days per month from the date of joining."
+  },
+  {
+    "clause": "2.3",
+    "text": "Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1."
+  },
+  {
+    "clause": "2.4",
+    "text": "Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid."
+  },
+  {
+    "clause": "2.5",
+    "text": "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
+  },
+  {
+    "clause": "2.6",
+    "text": "Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December."
+  },
+  {
+    "clause": "2.7",
+    "text": "Carry-forward days must be used within the first quarter (January\u2013March) of the following year or they are forfeited."
+  },
+  {
+    "clause": "3.1",
+    "text": "Each employee is entitled to 12 days of paid sick leave per calendar year."
+  },
+  {
+    "clause": "3.2",
+    "text": "Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work."
+  },
+  {
+    "clause": "3.3",
+    "text": "Sick leave cannot be carried forward to the following year."
+  },
+  {
+    "clause": "3.4",
+    "text": "Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration."
+  },
+  {
+    "clause": "4.1",
+    "text": "Female employees are entitled to 26 weeks of paid maternity leave for the first two live births."
+  },
+  {
+    "clause": "4.2",
+    "text": "For a third or subsequent child, maternity leave is 12 weeks paid."
+  },
+  {
+    "clause": "4.3",
+    "text": "Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth."
+  },
+  {
+    "clause": "4.4",
+    "text": "Paternity leave cannot be split across multiple periods."
+  },
+  {
+    "clause": "5.1",
+    "text": "An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements."
+  },
+  {
+    "clause": "5.2",
+    "text": "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+  },
+  {
+    "clause": "5.3",
+    "text": "LWP exceeding 30 continuous days requires approval from the Municipal Commissioner."
+  },
+  {
+    "clause": "5.4",
+    "text": "Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits."
+  },
+  {
+    "clause": "6.1",
+    "text": "Employees are entitled to all gazetted public holidays as declared by the State Government each year."
+  },
+  {
+    "clause": "6.2",
+    "text": "If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked."
+  },
+  {
+    "clause": "6.3",
+    "text": "Compensatory off cannot be encashed."
+  },
+  {
+    "clause": "7.1",
+    "text": "Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days."
+  },
+  {
+    "clause": "7.2",
+    "text": "Leave encashment during service is not permitted under any circumstances."
+  },
+  {
+    "clause": "7.3",
+    "text": "Sick leave and LWP cannot be encashed under any circumstances."
+  },
+  {
+    "clause": "8.1",
+    "text": "Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision."
+  },
+  {
+    "clause": "8.2",
+    "text": "Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing."
+  }
+]
