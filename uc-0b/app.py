@@ -5,6 +5,7 @@ See README.md for run command and expected behaviour.
 """
 import argparse
 import re
+import json
 
 
 # -----------------------------
@@ -96,7 +97,7 @@ def main():
         summary = summarize_policy(clauses)
 
         with open(args.output, "w", encoding="utf-8") as f:
-            f.write(summary)
+            json.dump(clauses, f, indent=2)
 
         print("✅ Summary generated successfully.")
 
