@@ -39,6 +39,10 @@ def retrieve_documents(file_paths: list) -> dict:
             if not line:
                 continue
                 
+            # Stop matching if we hit a section heading or visual divider
+            if line.startswith('═') or re.match(r'^\d+\.\s+[A-Z]', line):
+                continue
+
             # Match numbered clauses like "2.3" or "5.2"
             match = re.match(r'^(\d+\.\d+)\s*(.*)', line)
             if match:
