@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0B
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads .txt policy file and returns content as structured numbered sections to preserve strict references.
+    input: File path to the policy .txt file.
+    output: Dictionary mapping section/clause numbers to their text content.
+    error_handling: Raises an exception if the file cannot be read or parsed.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Takes structured sections and produces a compliant summary preserving all required clauses and conditions.
+    input: Dictionary of structured clauses.
+    output: String representing the final summary text with clause references.
+    error_handling: Verbatim quotes the clause if summarization drops key verbs or conditions.
