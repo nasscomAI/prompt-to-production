@@ -6,7 +6,13 @@ import argparse
 import csv
 import json
 import os
-import re
+
+try:
+    from google import genai  # type: ignore
+    from google.genai import types  # type: ignore
+    HAS_GENAI = True
+except ImportError:
+    HAS_GENAI = False
 
 # Fallback heuristic rules mimicking the exact RICE rules from agents.md
 def heuristic_classify(desc: str) -> dict:
@@ -48,7 +54,7 @@ def heuristic_classify(desc: str) -> dict:
         # Provide a reason citing specific words
         # Take the first 5 words as cited words
         words = desc.split()
-        cited = " ".join(words[:min(5, len(words))])
+        cited = " ".join([words[i] for i in range(min(5, len(words)))])
         reason = f"Based on description stating: '{cited}...'"
     
     # Ambiguity check
@@ -69,8 +75,8 @@ def classify_complaint_llm(row: dict) -> dict:
     gemini_key = os.environ.get("GEMINI_API_KEY")
     if gemini_key:
         try:
-            from google import genai
-            from google.genai import types
+            from google import genai  # type: ignore
+            from google.genai import types  # type: ignore
             client = genai.Client(api_key=gemini_key)
             prompt = f'''
             You are an expert civic services complaint classifier.
