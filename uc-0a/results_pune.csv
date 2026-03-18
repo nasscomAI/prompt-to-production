@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole based on description: ""Large pothole 60cm wide causing tyre damage"".",
+PM-202402,Pothole,Urgent,"Classified as Pothole (Urgent) because description mentions ""child"" in context: ""Deep pothole near bus stop"".",
+PM-202406,Flooding,Standard,"Classified as Flooding based on description: ""Underpass flooded knee-deep after 2hrs rain"".",
+PM-202408,Flooding,Standard,"Closest match is Flooding but category is ambiguous; description reads: ""Bus stand flooded"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight based on description: ""Three consecutive streetlights out for 10 days"".",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight (Urgent) because description mentions ""hazard"" in context: ""Streetlight flickering and sparking"".",
+PM-202413,Waste,Standard,"Classified as Waste based on description: ""Overflowing garbage bins near vegetable market"".",
+PM-202418,Noise,Standard,"Classified as Noise based on description: ""Wedding venue playing music past midnight on weeknights"".",
+PM-202419,Road Damage,Standard,"Classified as Road Damage based on description: ""Road surface cracked and sinking near utility work done 1 month ago"".",
+PM-202420,Road Damage,Urgent,"Classified as Road Damage (Urgent) because description mentions ""injury"" in context: ""Manhole cover missing"".",
+PM-202427,Flooding,Standard,"Classified as Flooding based on description: ""Bridge approach floods in 30mins of rain"".",
+PM-202428,Waste,Standard,"Classified as Waste based on description: ""Dead animal not removed for 36 hours"".",
+PM-202430,Heritage Damage,Standard,"Closest match is Heritage Damage but category is ambiguous; description reads: ""Heritage street, lights out"".",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as Waste based on description: ""Bulk waste from apartment renovation dumped on public road"".",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage (Urgent) because description mentions ""fell"" in context: ""Footpath tiles broken and upturned"".",
