@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Complaint mentions pothole.,NEEDS_REVIEW
+PM-202402,Pothole,Urgent,Complaint mentions pothole.,NEEDS_REVIEW
+PM-202406,Flooding,Standard,Complaint mentions flood.,
+PM-202408,Drain Blockage,Standard,Complaint mentions drain.,
+PM-202410,Streetlight,Standard,Complaint mentions streetlight.,
+PM-202411,Streetlight,Urgent,Complaint mentions streetlight.,
+PM-202413,Waste,Standard,Complaint mentions garbage.,
+PM-202418,Noise,Standard,Complaint mentions music.,
+PM-202419,Road Damage,Standard,Complaint mentions road.,
+PM-202420,Other,Urgent,No clear category indicators found.,
+PM-202427,Other,Standard,No clear category indicators found.,
+PM-202428,Waste,Standard,Complaint mentions animal.,
+PM-202430,Streetlight,Standard,Complaint mentions light.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Complaint mentions waste.,
+PM-202446,Other,Urgent,No clear category indicators found.,
