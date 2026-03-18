@@ -7,3 +7,4 @@ For best practices when using AI code review tools please the the [guide to usin
 - [cubic](https://www.cubic.dev/)
 - [qodo](https://www.qodo.ai/)
 - [Sonar AI Code Assurance](https://www.sonarsource.com/solutions/ai/ai-code-assurance/)
+
