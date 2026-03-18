@@ -1,35 +1,33 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
-import csv
+def classify_complaint(text):
+    text = text.lower()
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    if "pothole" in text or "road" in text:
+        return "Pothole", "Detected road or pothole related words"
+
+    elif "flood" in text or "waterlogging" in text:
+        return "Flooding", "Detected flooding related words"
+
+    elif "garbage" in text or "waste" in text:
+        return "Garbage", "Detected sanitation related words"
+
+    elif "water" in text or "pipeline" in text:
+        return "Water", "Detected water supply related words"
+
+    elif "electricity" in text or "power" in text or "light" in text:
+        return "Electricity", "Detected electricity related words"
+
+    else:
+        return "Other", "Category unclear from description"
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def main():
+    complaint = input("Enter complaint: ")
+
+    category, reason = classify_complaint(complaint)
+
+    print("Category:", category)
+    print("Reason:", reason)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    main()

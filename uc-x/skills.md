@@ -1,16 +1,64 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+\# Skills for Policy QA Agent
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+
+\## Skill 1: Document Grounding
+
+\- Read only provided documents
+
+\- Extract exact lines
+
+\- Do not paraphrase incorrectly
+
+
+
+\## Skill 2: Strict Refusal
+
+\- If answer not clearly present → refuse
+
+\- Use exact refusal template
+
+
+
+\## Skill 3: No Cross-Document Blending
+
+\- Do NOT combine HR + IT + Finance answers
+
+\- If conflict → refuse
+
+
+
+\## Skill 4: Source Attribution
+
+\- Always mention:
+
+&#x20; - document name
+
+&#x20; - section
+
+
+
+\## Skill 5: Ambiguity Detection
+
+Mark question as ambiguous if:
+
+\- multiple docs give different answers
+
+\- answer is incomplete
+
+\- permission is unclear
+
+
+
+→ Result: REFUSE
+
+
+
+\## Skill 6: Precision Answering
+
+\- Keep answers short
+
+\- No extra explanation
+
+\- No assumptions
+
