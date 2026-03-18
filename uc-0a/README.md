@@ -40,7 +40,7 @@ python classifier.py \
 
 ## Skills to Define in skills.md
 - `classify_complaint` — one complaint row in → category + priority + reason + flag out
-- `batch_classify` — reads input CSV, applies classify_complaint per row, writes output CSV
+- `batch_classify` — reads input CSV, applies classify_complaint per row, writes output CSV.
 
 ---
 
