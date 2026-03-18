@@ -2,7 +2,7 @@
 # INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
 # Delete these comments before committing.
 
-role: >
+role:  >
   [FILL IN: Who is this agent? What is its operational boundary?]
 
 intent: >
