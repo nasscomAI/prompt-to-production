@@ -33,3 +33,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     batch_classify(args.input, args.output)
     print(f"Done. Results written to {args.output}")
+
