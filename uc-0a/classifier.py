@@ -1,87 +1,88 @@
-import csv
-import argparse
+"""
+UC-0A — Complaint Classifier
+"""
 
-severity_keywords = [
-    "injury","child","school","hospital","ambulance",
-    "fire","hazard","fell","collapse"
+import argparse
+import csv
+
+URGENT_KEYWORDS = [
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell", "collapse"
 ]
 
-def classify_complaint(text):
+def classify_complaint(row: dict) -> dict:
+    complaint = row.get("complaint", "").lower()
+    complaint_id = row.get("complaint_id", "")
 
-    if not text:
-        return "Other","Standard","Missing description","NEEDS_REVIEW"
+    category = "Other"
+    priority = "Standard"
+    flag = ""
 
-    text_lower = text.lower()
+    if "pothole" in complaint:
+        category = "Pothole"
+    elif "flood" in complaint:
+        category = "Flooding"
+    elif "light" in complaint:
+        category = "Streetlight"
+    elif "waste" in complaint or "garbage" in complaint:
+        category = "Waste"
+    elif "noise" in complaint:
+        category = "Noise"
+    elif "road" in complaint:
+        category = "Road Damage"
+    elif "heritage" in complaint:
+        category = "Heritage Damage"
+    elif "heat" in complaint:
+        category = "Heat Hazard"
+    elif "drain" in complaint:
+        category = "Drain Blockage"
 
-    if "pothole" in text_lower:
-        category="Pothole"
+    for word in URGENT_KEYWORDS:
+        if word in complaint:
+            priority = "Urgent"
 
-    elif "flood" in text_lower or "water" in text_lower:
-        category="Flooding"
+    if category == "Other":
+        flag = "NEEDS_REVIEW"
 
-    elif "light" in text_lower:
-        category="Streetlight"
+    reason = f"Detected keywords from complaint: {complaint}"
 
-    elif "garbage" in text_lower or "waste" in text_lower:
-        category="Waste"
-
-    elif "noise" in text_lower:
-        category="Noise"
-
-    elif "drain" in text_lower:
-        category="Drain Blockage"
-
-    else:
-        category="Other"
-
-    priority="Standard"
-
-    for word in severity_keywords:
-        if word in text_lower:
-            priority="Urgent"
-            break
-
-    reason=f"Detected keywords in description: {text[:30]}"
-    flag=""
-
-    return category,priority,reason,flag
-
-
-def batch_classify(input_file,output_file):
-
-    with open(input_file,newline="",encoding="utf-8") as infile:
-        reader=csv.DictReader(infile)
-
-        with open(output_file,"w",newline="",encoding="utf-8") as outfile:
-
-            fieldnames=reader.fieldnames+["category","priority","reason","flag"]
-            writer=csv.DictWriter(outfile,fieldnames=fieldnames)
-
-            writer.writeheader()
-
-            for row in reader:
-
-                text=row.get("description","")
-
-                category,priority,reason,flag=classify_complaint(text)
-
-                row["category"]=category
-                row["priority"]=priority
-                row["reason"]=reason
-                row["flag"]=flag
-
-                writer.writerow(row)
+    return {
+        "complaint_id": complaint_id,
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
-if __name__=="__main__":
+def batch_classify(input_path: str, output_path: str):
+    with open(input_path, "r") as infile, open(output_path, "w", newline="") as outfile:
+        reader = csv.DictReader(infile)
 
-    parser=argparse.ArgumentParser()
+        fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+        writer.writeheader()
 
-    parser.add_argument("--input",required=True)
-    parser.add_argument("--output",required=True)
+        for row in reader:
+            try:
+                result = classify_complaint(row)
+                writer.writerow(result)
+            except Exception:
+                writer.writerow({
+                    "complaint_id": row.get("complaint_id", ""),
+                    "category": "Other",
+                    "priority": "Low",
+                    "reason": "Row processing error",
+                    "flag": "NEEDS_REVIEW"
+                })
 
-    args=parser.parse_args()
 
-    batch_classify(args.input,args.output)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
+    parser.add_argument("--input", required=True, help="Path to test_[city].csv")
+    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    args = parser.parse_args()
 
-    print("Done")
+    batch_classify(args.input, args.output)
+
+    print(f"Done. Results written to {args.output}")
