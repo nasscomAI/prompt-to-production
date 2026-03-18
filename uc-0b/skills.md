@@ -1,24 +1,15 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-X skills definition for policy-based question answering
 
 skills:
-  - name: extract_policy_rules
-    description: Extracts structured rules from a policy document without adding or changing meaning
-    input: policy document text
-    output: list of rules with conditions and constraints
-    rules:
-      - Must not paraphrase away conditions
-      - Must preserve numbers, limits, and thresholds exactly
-      - Must not infer missing information
-      - Each rule must remain grounded in source text
+  - name: retrieve_documents
+    description: Load and index all policy documents by name and section for fast lookup.
+    input: List of document file paths (string array)
+    output: Indexed document object with sections, content, and document names
+    error_handling: If a file is missing or unreadable, log the error and skip it; if all fail, raise a clear load error
 
-  - name: summarize_policy
-    description: Generates a concise but accurate summary of a policy document
-    input: policy document text
-    output: structured summary
-    rules:
-      - Do not drop conditions or exceptions
-      - Do not generalize specific rules
-      - Keep numerical values exact
-      - Avoid adding external knowledge
+  - name: answer_question
+    description: Search indexed policy documents and return a single-source answer with citation, or refusal.
+    input: User question (string)
+    output: Answer text (string) — either a factual answer citing document + section, or the refusal template
+    error_handling: If question matches multiple sources creating ambiguity, return refusal template; if question not found, return refusal template
