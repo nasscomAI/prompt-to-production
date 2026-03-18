@@ -1,84 +1,131 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+Deterministic classification with RICE enforcement:
+- Exact category names from allowed list only
+- Priority Urgent/Standard/Low with severity keyword detection
+- Reasons cite specific phrases from complaint description
+- Flag NEEDS_REVIEW for genuinely ambiguous classifications
 """
 import argparse
 import csv
 import re
 
-# Severity keywords that trigger Urgent priority
+# Severity keywords that MUST trigger Urgent priority
 SEVERITY_KEYWORDS = {'injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse'}
 
-# Valid categories
+# Valid categories - EXACTLY as per UC-0A schema
 VALID_CATEGORIES = {
     'Pothole', 'Flooding', 'Streetlight', 'Waste', 'Noise', 
     'Road Damage', 'Heritage Damage', 'Heat Hazard', 'Drain Blockage', 'Other'
 }
 
-# Category detection patterns
+# Category detection patterns - terms that indicate each category
 CATEGORY_PATTERNS = {
-    'Pothole': r'\b(pothole|pot hole|crater|pit|hole|tyre damage)\b',
-    'Flooding': r'\b(flood|water|wet|knee-deep|submerged|waterlog|inundated)\b',
-    'Streetlight': r'\b(streetlight|street light|light|lamp|illumination|dark|sparking|electrical)\b',
-    'Waste': r'\b(waste|garbage|bin|trash|dump|dumped|litter|debris|animal|smell)\b',
-    'Noise': r'\b(noise|music|sound|loud|loudly|past midnight)\b',
-    'Road Damage': r'\b(road|surface|cracked|sinking|damage|crack|pothole|pit)\b',
-    'Heritage Damage': r'\b(heritage|heritage street|old|historic|ancient)\b',
+    'Pothole': r'\b(pothole|pot hole|crater|pit|tyre damage)\b',
+    'Flooding': r'\b(flood|floods|flooded|water|knee-deep|submerged|waterlog|inundated|stranded)\b',
+    'Streetlight': r'\b(streetlight|street light|lights|light|lamp|illumination|dark|sparkling|sparking|electrical|flicker)\b',
+    'Waste': r'\b(waste|garbage|bin|trash|dump|dumped|litter|debris|animal|smell|overflowing)\b',
+    'Noise': r'\b(noise|music|sound|loud|loudly|midnight)\b',
+    'Road Damage': r'\b(road|surface|cracked|sinking|damage|crack|tiles|broken|upturned|manhole|cover)\b',
+    'Heritage Damage': r'\b(heritage|heritage street|old city|historic|ancient)\b',
     'Heat Hazard': r'\b(heat|temperature|hot|thermal)\b',
     'Drain Blockage': r'\b(drain|blocked|blockage|clogged)\b',
 }
 
+
+def extract_context_phrase(description: str, keyword: str, max_words: int = 10) -> str:
+    """
+    Extract a short context phrase (up to max_words) around the keyword.
+    Used for generating reason field that cites actual description text.
+    """
+    words = description.split()
+    keyword_idx = -1
+    
+    # Find the keyword in the description
+    for i, word in enumerate(words):
+        if keyword.lower() in word.lower():
+            keyword_idx = i
+            break
+    
+    if keyword_idx >= 0:
+        start = max(0, keyword_idx - 2)
+        end = min(len(words), keyword_idx + max_words - 2)
+        phrase = ' '.join(words[start:end]).rstrip('.,;:')
+        return phrase
+    return None
+
+
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+    Classify a single complaint row deterministically.
     
-    Implements RICE enforcement rules:
-    - Exact category names from allowed list
-    - Urgent priority for severity keywords
-    - Reason cites specific words from description
-    - Flag set for ambiguous classifications
+    Enforcement:
+    - category: EXACTLY one of the allowed list
+    - priority: Urgent if severity keywords present, else Standard
+    - reason: ONE sentence citing specific words/phrases from description
+    - flag: NEEDS_REVIEW if genuinely ambiguous (multiple strong matches)
+    
+    Returns: dict with keys: complaint_id, category, priority, reason, flag
     """
     complaint_id = row.get('complaint_id', '')
-    description = row.get('description', '').lower()
+    description = row.get('description', '')
+    description_lower = description.lower()
     
     category = 'Other'
     flag = ''
     reason = 'No description provided.'
     
-    if description:
+    if description_lower:
         # Count category matches
         matches = {}
+        match_phrases = {}  # Store matching phrases for reason extraction
+        
         for cat, pattern in CATEGORY_PATTERNS.items():
-            if re.search(pattern, description, re.IGNORECASE):
-                matches[cat] = len(re.findall(pattern, description, re.IGNORECASE))
+            match_count = len(re.findall(pattern, description_lower, re.IGNORECASE))
+            if match_count > 0:
+                matches[cat] = match_count
+                # Extract phrase for reason - get the first matching keyword
+                match = re.search(pattern, description_lower, re.IGNORECASE)
+                if match:
+                    matched_keyword = match.group()
+                    phrase = extract_context_phrase(description, matched_keyword)
+                    match_phrases[cat] = phrase if phrase else matched_keyword
         
         if matches:
             # Sort by most matches, pick top category
             sorted_matches = sorted(matches.items(), key=lambda x: x[1], reverse=True)
             category = sorted_matches[0][0]
+            top_match_count = sorted_matches[0][1]
             
-            # Flag if genuinely ambiguous (multiple strong candidates)
-            if len(sorted_matches) > 1 and sorted_matches[0][1] == sorted_matches[1][1]:
+            # Flag if genuinely ambiguous: multiple categories with same match count
+            if len(sorted_matches) > 1 and sorted_matches[1][1] == top_match_count:
                 flag = 'NEEDS_REVIEW'
             
-            # Extract reason: find key phrase from description
-            for pattern_text in CATEGORY_PATTERNS[category].split('|'):
-                pattern_text = pattern_text.replace(r'\b', '').replace('(', '').replace(')', '')
-                if pattern_text.strip() in description:
-                    keywords = [w for w in description.split() if pattern_text.strip() in w]
-                    if keywords:
-                        reason = f"Complaint mentions {pattern_text.strip()}."
-                        break
+            # Generate reason: cite the actual phrase from description
+            if category in match_phrases:
+                phrase_to_cite = match_phrases[category]
+                # Clean up any trailing punctuation from phrase
+                phrase_to_cite = phrase_to_cite.rstrip('.,;:')
+                reason = f"Description mentions: {phrase_to_cite}."
+            else:
+                reason = f"Complaint matches {category.lower()} indicators."
+        
         else:
-            reason = "No clear category indicators found."
+            # No matches found
+            reason = "No clear category indicators in description."
+            flag = 'NEEDS_REVIEW' if len(description_lower) > 20 else ''
     
-    # Check priority: Urgent if severity keywords present
+    # Determine priority: Urgent if severity keywords present
     priority = 'Standard'
     for keyword in SEVERITY_KEYWORDS:
-        if re.search(r'\b' + keyword + r'\b', description, re.IGNORECASE):
+        if re.search(r'\b' + keyword + r'\b', description_lower, re.IGNORECASE):
             priority = 'Urgent'
             break
+    
+    # Validate category is in allowed list (defensive check)
+    if category not in VALID_CATEGORIES:
+        category = 'Other'
+        flag = 'NEEDS_REVIEW'
     
     return {
         'complaint_id': complaint_id,
@@ -93,10 +140,10 @@ def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
     
-    Handles errors gracefully:
+    Error handling:
     - Skips rows with missing complaint_id
-    - Continues on bad rows
-    - Always produces output
+    - Continues on bad rows instead of crashing
+    - Always produces output file
     """
     results = []
     
