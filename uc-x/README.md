@@ -13,7 +13,7 @@
 
 ## Run Command
 ```bash
-python app.py
+python qa.py
 ```
 Interactive CLI — type questions, read answers.
 
