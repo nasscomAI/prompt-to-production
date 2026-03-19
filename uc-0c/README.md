@@ -18,7 +18,7 @@ Must be a per-ward per-category table — not a single aggregated number.
 
 ## Run Command
 ```bash
-python municipal_growth_tool.py \
+python mgt.py \
   --input ../data/budget/ward_budget.csv \
   --ward "Ward 1 – Kasba" \
   --category "Roads & Pothole Repair" \
