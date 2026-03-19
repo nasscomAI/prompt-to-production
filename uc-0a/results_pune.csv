@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole' indicating Pothole.,
+PM-202402,Pothole,Urgent,Description mentions 'child' (severity keyword) and 'pothole' indicating Pothole.,
+PM-202406,Flooding,Standard,Description mentions 'flood' indicating Flooding.,
+PM-202408,Flooding,Standard,Description mentions 'flood' indicating Flooding.,NEEDS_REVIEW
+PM-202410,Streetlight,Urgent,Description mentions 'streetlight' indicating Streetlight.,
+PM-202411,Streetlight,Urgent,Description mentions 'hazard' (severity keyword) and 'streetlight' indicating Streetlight.,
+PM-202413,Waste,Standard,Description mentions 'garbage' indicating Waste.,
+PM-202418,Noise,Standard,Description mentions 'music' indicating Noise.,
+PM-202419,Road Damage,Standard,Description mentions 'road surface' indicating Road Damage.,
+PM-202420,Road Damage,Urgent,Description mentions 'injury' (severity keyword) and 'manhole' indicating Road Damage.,
+PM-202427,Flooding,Standard,Description mentions 'flood' indicating Flooding.,
+PM-202428,Waste,Standard,Description mentions 'dead animal' indicating Waste.,
+PM-202430,Streetlight,Urgent,Description mentions 'lights out' indicating Streetlight.,NEEDS_REVIEW
+PM-202433,Waste,Urgent,Description mentions 'waste' indicating Waste.,
+PM-202446,Road Damage,Urgent,Description mentions 'fell' (severity keyword) and 'broken' indicating Road Damage.,
