@@ -1,0 +1,41 @@
+Q: Can I carry forward unused annual leave?
+A: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+Source: policy_hr_leave.txt, Section 2.6
+
+------------------------------------------------------------
+
+Q: Can I install Slack on my work laptop?
+A: Employees must not install software on corporate devices without written approval from the IT Department.
+Source: policy_it_acceptable_use.txt, Section 2.3
+
+------------------------------------------------------------
+
+Q: What is the home office equipment allowance?
+A: Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+Source: policy_finance_reimbursement.txt, Section 3.1
+
+------------------------------------------------------------
+
+Q: Can I use my personal phone for work files from home?
+A: Personal devices may be used to access CMC email and the CMC employee self-service portal only. Access to internal file systems, project repositories, or shared drives from personal devices is not permitted.
+Source: policy_it_acceptable_use.txt, Section 3.1
+
+------------------------------------------------------------
+
+Q: What is the company view on flexible working culture?
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+Source: N/A — refusal template applied
+
+------------------------------------------------------------
+
+Q: Can I claim DA and meal receipts on the same day?
+A: DA and meal receipts cannot be claimed simultaneously for the same day. If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day.
+Source: policy_finance_reimbursement.txt, Section 2.6
+
+------------------------------------------------------------
+
+Q: Who approves leave without pay?
+A: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient. LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+Source: policy_hr_leave.txt, Section 5.2 & 5.3
+
+------------------------------------------------------------
