@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Low,No specific severity keywords found. Mentions damage to heritage sites.,
+KM-202402,Other,Standard,Mentions infrastructure damage but no immediate danger keywords.,NEEDS_REVIEW
+KM-202405,Other,Low,No specific severity keywords found.,
+KM-202409,Pothole,Low,No specific severity keywords found. Mentions pothole in description.,
+KM-202410,Pothole,Low,No specific severity keywords found. Mentions pothole in description.,
+KM-202411,Pothole,Low,No specific severity keywords found. Mentions pothole in description.,
+KM-202415,Flooding,Low,No specific severity keywords found. Mentions flooding or standing water.,
+KM-202418,Waste,Low,No specific severity keywords found. Mentions waste or garbage.,
+KM-202421,Other,Urgent,"Contains severity keyword(s): fell, hospital.",NEEDS_REVIEW
+KM-202422,Other,Low,No specific severity keywords found.,
+KM-202426,Heritage Damage,Low,No specific severity keywords found. Mentions damage to heritage sites.,
+KM-202430,Other,Low,No specific severity keywords found.,
+KM-202434,Heritage Damage,Low,No specific severity keywords found. Mentions damage to heritage sites.,
+KM-202436,Streetlight,Low,No specific severity keywords found. Mentions lighting issues.,
+KM-202438,Heritage Damage,Low,No specific severity keywords found. Mentions damage to heritage sites.,
