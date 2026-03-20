@@ -1,40 +1,39 @@
 import argparse
 
-def load_document(path):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            return f.read()
-    except Exception:
-        return None
+def process_data(text):
+    cleaned = text.strip()
 
+    if not cleaned:
+        return {
+            "result": "",
+            "metrics": {"word_count": 0},
+            "flag": "NEEDS_REVIEW"
+        }
 
-def answer_question(document, question):
-    if not document:
-        return "INSUFFICIENT_INFORMATION"
+    words = cleaned.split()
 
-    doc_lower = document.lower()
-    question_lower = question.lower()
-
-    # Simple keyword matching
-    for sentence in document.split("."):
-        if any(word in sentence.lower() for word in question_lower.split()):
-            return sentence.strip()
-
-    return "INSUFFICIENT_INFORMATION"
-
+    return {
+        "result": cleaned,
+        "metrics": {
+            "word_count": len(words)
+        },
+        "flag": ""
+    }
 
 def main():
-    parser = argparse.ArgumentParser(description="UC-X QA System")
-    parser.add_argument("--doc", required=True, help="Path to document")
-    parser.add_argument("--question", required=True, help="Question to answer")
+    parser = argparse.ArgumentParser(description="UC-0C Data Processor")
+    parser.add_argument("--input", required=True, help="Input text")
     args = parser.parse_args()
 
-    document = load_document(args.doc)
-    answer = answer_question(document, args.question)
+    output = process_data(args.input)
 
-    print("Answer:")
-    print(answer)
+    print("Processed Output:")
+    print(output["result"])
+    print("\nMetrics:")
+    print(output["metrics"])
 
+    if output["flag"]:
+        print("\nFlag:", output["flag"])
 
 if __name__ == "__main__":
     main()
