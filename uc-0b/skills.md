@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a local .txt policy file and breaks it into a structured list of sections by number.
+    input: file_path (string).
+    output: List of section dicts: [{'section': '2.3', 'content': '...'}]
+    error_handling: Return empty list if file not found; notify if sections cannot be parsed.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Processes a list of policy sections into a summary adhering to CMC strict-meaning guidelines.
+    input: List of section dicts.
+    output: String (summarized policy text with clause references).
+    error_handling: If a key clause (e.g. 5.2) is missing from input, flag as INCOMPLETE in the output.

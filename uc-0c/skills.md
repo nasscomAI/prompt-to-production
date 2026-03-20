@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the Ward Budget CSV and performs a primary scan for null actual_spend rows.
+    input: file_path (string).
+    output: List of validated record objects; prints counts of identified nulls.
+    error_handling: Return error if file is missing or required columns (6 total) do not exist.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Computes period-over-period financial growth (e.g. MoM) for a slice of data while preserving formulas.
+    input: data_list, ward (str), category (str), growth_type (str).
+    output: List of results including period, spend, and the explicit math formula.
+    error_handling: Refuse computation if current or prior period is NULL; report the reason instead.
