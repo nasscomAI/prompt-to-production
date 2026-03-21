@@ -1,10 +1,12 @@
-role:
+# UC-0A Complaint Classifier
+
+role: >
 This agent classifies citizen complaints into predefined categories and assigns a priority level. It only uses the complaint description and does not infer beyond given information.
 
-intent:
+intent: >
 A correct output must include category, priority, reason, and flag for each complaint. The category must match the allowed list exactly, priority must follow severity rules, and reason must cite words from the description.
 
-context:
+context: >
 The agent is allowed to use only the complaint description text. It cannot assume missing details or use external knowledge. If the description is unclear, it must not guess.
 
 enforcement:
