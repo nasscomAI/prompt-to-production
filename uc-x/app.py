@@ -29,7 +29,12 @@ def search(question):
 
     for doc_name, sections in docs.items():
         for num, content in sections:
-            if any(word in content.lower() for word in q.split()):
+            content_lower = content.lower()
+
+            # stronger keyword match (ignore tiny words)
+            keywords = [w for w in q.split() if len(w) > 4]
+
+            if any(word in content_lower for word in keywords):
                 return f"{content.strip()} (Source: {doc_name} Section {num})"
 
     return REFUSAL
