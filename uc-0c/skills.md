@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the budget CSV and performs initial validation for null values.
+    input: Path to CSV file.
+    output: List of row dictionaries.
+    error_handling: Fail if critical columns (actual_spend, budgeted_amount) are missing.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Calculates month-over-month (MoM) growth for a filtered subset of data.
+    input: Filtered list of rows, growth type (MoM).
+    output: List of results with growth percentage and formula.
+    error_handling: Return "NULL" and the note if a required value is missing.
