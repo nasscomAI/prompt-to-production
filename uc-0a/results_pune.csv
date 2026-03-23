@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected keywords from complaint: large pothole 60cm wide causing tyre damage. three vehicles affected this week.,
+PM-202402,Pothole,Urgent,Detected keywords from complaint: deep pothole near bus stop. school children at risk during morning hours.,
+PM-202406,Flooding,Standard,Detected keywords from complaint: underpass flooded knee-deep after 2hrs rain. commuters stranded.,
+PM-202408,Flooding,Standard,Detected keywords from complaint: bus stand flooded. passengers standing in water. drain blocked.,
+PM-202410,Streetlight,Standard,Detected keywords from complaint: three consecutive streetlights out for 10 days. area very dark at night.,
+PM-202411,Streetlight,Urgent,Detected keywords from complaint: streetlight flickering and sparking. electrical hazard reported.,
+PM-202413,Waste,Standard,Detected keywords from complaint: overflowing garbage bins near vegetable market. smell affecting shoppers.,
+PM-202418,Other,Standard,Detected keywords from complaint: wedding venue playing music past midnight on weeknights.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Detected keywords from complaint: road surface cracked and sinking near utility work done 1 month ago.,
+PM-202420,Other,Urgent,Detected keywords from complaint: manhole cover missing. risk of serious injury to cyclists.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected keywords from complaint: bridge approach floods in 30mins of rain. bridge becomes inaccessible.,
+PM-202428,Other,Standard,Detected keywords from complaint: dead animal not removed for 36 hours. health concern.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Detected keywords from complaint: heritage street, lights out. safety concern for pedestrians after dark.",
+PM-202433,Waste,Standard,Detected keywords from complaint: bulk waste from apartment renovation dumped on public road.,
+PM-202446,Other,Urgent,Detected keywords from complaint: footpath tiles broken and upturned. elderly resident fell last week.,NEEDS_REVIEW
