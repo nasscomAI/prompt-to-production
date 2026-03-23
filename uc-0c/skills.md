@@ -1,16 +1,46 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# \# Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# 
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# \## load\_dataset
+
+# Reads the ward budget CSV dataset.
+
+# 
+
+# Responsibilities:
+
+# \- Load the CSV file.
+
+# \- Validate required columns (ward, category, period, spend, notes).
+
+# \- Count and report NULL values before computation.
+
+# \- Return the cleaned dataset for analysis.
+
+# 
+
+# 
+
+# \## compute\_growth
+
+# Computes growth values for a specific ward and category.
+
+# 
+
+# Rules:
+
+# \- Growth type must be specified (MoM or YoY).
+
+# \- Never aggregate across wards or categories.
+
+# \- If spend value is NULL, flag the row instead of computing.
+
+# \- Output must include the formula used for the growth calculation.
+
+# 
+
+# Output:
+
+# Ward, Category, Period, Spend, Growth, Formula
+
