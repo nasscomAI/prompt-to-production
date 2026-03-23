@@ -68,7 +68,7 @@ if __name__ == "__main__":
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
 
-   args = parser.parse_args()
+    args = parser.parse_args()
 
-batch_classify(args.input, args.output)
-print(f"Done. Results written to {args.output}")
+    batch_classify(args.input, args.output)
+    print(f"Done. Results written to {args.output}")
