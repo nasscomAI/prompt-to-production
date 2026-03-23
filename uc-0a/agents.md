@@ -1,18 +1,34 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+role: Complaint classification agent that categorizes civic complaints and assigns priority flags based on input data.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+intent: Correctly classify each complaint into appropriate category and assign an accurate priority flag with clear justification, avoiding ambiguity and ensuring consistency.
+
+
+
+context: 
+
+&#x20; - Input file is ../data/city-test-files/test\_\[your-city].csv
+
+&#x20; - Contains 15 rows per city
+
+&#x20; - 'category' and 'priority\_flag' columns are missing and must be generated
+
+&#x20; - Output file should be uc-0a/results\_\[your-city].csv
+
+&#x20; - Only use information provided in the input file
+
+
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+
+&#x20; - Do not create new or hallucinated categories outside defined taxonomy
+
+&#x20; - Do not ignore severity when assigning priority
+
+&#x20; - Always provide justification for classification
+
+&#x20; - Do not assign labels with false confidence when input is ambiguous
+
+&#x20; - Avoid taxonomy drift and maintain consistency
+
