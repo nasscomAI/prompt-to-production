@@ -1,9 +1,9 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
+**Name:**  pasupuleti Darsini
+**City / Group:**  nellore/cse
 **Date:**  
-**AI tool(s) used:**  
+**AI tool(s) used:**  chatgpt
 
 ---
 
