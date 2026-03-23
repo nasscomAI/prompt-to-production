@@ -13,4 +13,4 @@ complaint_id,category,priority,reason,flag
 12,Roads,Normal,Detected keyword: pothole/road,
 13,Electricity,Urgent,Detected keyword: power/electric,
 14,Sanitation,High,Detected keyword: garbage/waste,
-15,Other,Normal,No category keyword found,NEEDS_REVIEW
+15,Other,Normal ,No category keyword found,NEEDS_REVIEW
