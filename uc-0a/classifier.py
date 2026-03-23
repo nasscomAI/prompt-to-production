@@ -29,13 +29,8 @@ def classify_complaint(row: dict) -> dict:
     else:
         priority = "Standard"
 
-    # Reason
     reason = f"Detected keywords in complaint: {text}"
-
-    # Flag
-    flag = ""
-    if category == "Other":
-        flag = "NEEDS_REVIEW"
+    flag = "NEEDS_REVIEW" if category == "Other" else ""
 
     return {
         "complaint_id": row.get("complaint_id", ""),
@@ -46,6 +41,7 @@ def classify_complaint(row: dict) -> dict:
     }
 
 
+def batch_classify(input_path: str, output_path: str):
     with open(input_path, 'r') as infile, open(output_path, 'w', newline='') as outfile:
         reader = csv.DictReader(infile)
         fieldnames = reader.fieldnames + ["category", "priority", "reason", "flag"]
@@ -57,7 +53,6 @@ def classify_complaint(row: dict) -> dict:
             try:
                 result = classify_complaint(row)
                 row.update(result)
-                writer.writerow(row)
             except Exception:
                 row.update({
                     "category": "Other",
@@ -65,7 +60,7 @@ def classify_complaint(row: dict) -> dict:
                     "reason": "Error processing row",
                     "flag": "NEEDS_REVIEW"
                 })
-                writer.writerow(row)
+            writer.writerow(row)
 
 
 if __name__ == "__main__":
