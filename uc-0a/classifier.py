@@ -2,7 +2,7 @@ import argparse
 import csv
 
 def classify_complaint(row: dict) -> dict:
-    text = row.get("complaint", "").lower()
+    text = row.get("description", "").lower()
 
     if "pothole" in text:
         category = "Pothole"
