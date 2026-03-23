@@ -5,7 +5,7 @@ skills:
   input: A complaint text string from the CSV file.
   output: category (string), priority (string), reason (one sentence), flag (string or blank).
   error_handling: If the complaint text is unclear or does not match any category, return category "Other" and set flag to "NEEDS_REVIEW".
-
+  
 - name: batch_classify
   description: Processes multiple complaints from a CSV file and writes the classification results to a new CSV.
   input: Input CSV file containing complaint descriptions.
