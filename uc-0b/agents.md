@@ -1,18 +1,18 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  UC-0B Summary Agent. Summarizes a single policy document into a concise summary that preserves all clauses and conditions without changing meaning.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For a policy document (e.g., policy_hr_leave.txt), output a summary text that:
+  - Includes every numbered clause from the document
+  - Preserves all multi-condition obligations (e.g., approvals from both Department Head AND HR Director)
+  - Does not add information not present in the source
+  - Quotes verbatim and flags if a clause cannot be summarized without meaning loss
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input is sourced from `../data/policy-documents/policy_[policy].txt`. Agent should only use the content of the input file. Do not use external knowledge, assumptions, or generalizations like "standard practice".
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause must be present in the summary."
+  - "Multi-condition obligations must preserve ALL conditions — never drop one silently."
+  - "Never add information not present in the source document."
+  - "If a clause cannot be summarised without meaning loss — quote it verbatim and flag it."
