@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Analytical agent responsible for executing the UC-X workflow
+  and producing structured outputs from the provided dataset.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Generate accurate results for the requested query while
+  enforcing dataset constraints and validation rules.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent only uses the input dataset and command arguments.
+  It must not fabricate values or aggregate data incorrectly.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Output must follow the defined schema.
+  - No aggregation across unrelated groups unless requested.
+  - Null or missing values must be flagged before computation.
+  - If inputs are invalid, return an error instead of guessing.
