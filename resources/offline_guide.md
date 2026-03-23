@@ -1,4 +1,5 @@
 # Assignment Guide
+
 **Nasscom AI-Code Sarathi · prompt-to-production**
 
 This guide walks you through completing the workshop assignment from start to finish.
@@ -43,14 +44,14 @@ Complete this checklist before starting. Every item is required.
 ### 1.2 Software
 
 - [ ] **GitHub Desktop** — download and install from [desktop.github.com](https://desktop.github.com)
-  Sign in with your GitHub account after installing.
+      Sign in with your GitHub account after installing.
 - [ ] **Python 3.9 or above** — verify by opening a terminal and running:
   ```
   python3 --version
   ```
   If not installed, download from [python.org](https://python.org).
 - [ ] **A code editor** — VS Code is recommended ([code.visualstudio.com](https://code.visualstudio.com)).
-  Any text editor that can open `.py`, `.md`, and `.yaml` files will work.
+      Any text editor that can open `.py`, `.md`, and `.yaml` files will work.
 
 ### 1.3 Verify Your Setup
 
@@ -73,6 +74,7 @@ Forking creates your own copy of the repository on GitHub. You will do all your
 work in your fork.
 
 1. Open your web browser and go to:
+
    ```
    https://github.com/nasscomAI/prompt-to-production
    ```
@@ -119,9 +121,10 @@ Cloning downloads your fork to your local machine so you can edit files.
 > **Verify the clone worked.** Open your code editor and use
 > File → Open Folder to open the folder you chose in step 4.
 > You should see the following structure:
+>
 > ```
 > prompt-to-production/
-> ├── docs/
+> ├── resources/
 > ├── uc-0a/
 > ├── uc-0b/
 > ├── uc-0c/
@@ -144,16 +147,20 @@ branch and use it for the entire assignment. Do not create multiple branches.
 2. Click **Current Branch**, then click **New Branch**.
 
 3. Name your branch exactly as follows — replace the placeholders:
+
    ```
    participant/[your-name]-[city]
    ```
+
    **Examples:**
+
    ```
    participant/arshdeep-pune
    participant/priya-hyderabad
    participant/rahul-kolkata
    participant/deepa-ahmedabad
    ```
+
    Use lowercase only. Use hyphens, not spaces.
 
 4. Click **Create Branch**.
@@ -197,11 +204,11 @@ The AI agent uses the RICE framework to generate your agents.md and skills.md.
 You do not need to write a RICE prompt yourself — the README contains everything
 the AI needs. RICE stands for:
 
-| Element | What it means |
-|---|---|
-| **R — Role** | Who the AI is acting as |
-| **I — Intent** | What a correct output looks like |
-| **C — Context** | What information the AI may use |
+| Element             | What it means                            |
+| ------------------- | ---------------------------------------- |
+| **R — Role**        | Who the AI is acting as                  |
+| **I — Intent**      | What a correct output looks like         |
+| **C — Context**     | What information the AI may use          |
 | **E — Enforcement** | Specific rules that must never be broken |
 
 Understanding this helps you read and check the agents.md the AI generates.
@@ -210,13 +217,13 @@ Understanding this helps you read and check the agents.md the AI generates.
 
 After running your code, follow this loop:
 
-| Step | What you do |
-|---|---|
+| Step            | What you do                                          |
+| --------------- | ---------------------------------------------------- |
 | **C — Control** | agents.md + skills.md defined before generating code |
-| **R — Run** | Execute the script and read the actual output |
-| **A — Analyze** | Note what failed and why |
-| **F — Fix** | Ask AI to fix one thing, re-run, compare |
-| **T — Track** | Commit with a meaningful message |
+| **R — Run**     | Execute the script and read the actual output        |
+| **A — Analyze** | Note what failed and why                             |
+| **F — Fix**     | Ask AI to fix one thing, re-run, compare             |
+| **T — Track**   | Commit with a meaningful message                     |
 
 ---
 
@@ -251,6 +258,7 @@ Select **one** of the following. Read each description before deciding.
 **What it does:** Summarises an HR policy document preserving every binding obligation.
 
 **Failure modes taught:**
+
 - Clause omission — AI drops entire clauses when compressing
 - Scope bleed — AI adds information not in the source document
 - Condition dropping — multi-condition obligations lose one condition silently
@@ -258,6 +266,7 @@ Select **one** of the following. Read each description before deciding.
 **Input file:** `data/policy-documents/policy_hr_leave.txt`
 **Output file:** `uc-0b/summary_hr_leave.txt`
 **Run command:**
+
 ```bash
 cd uc-0b
 python3 app.py --input ../data/policy-documents/policy_hr_leave.txt --output summary_hr_leave.txt
@@ -271,6 +280,7 @@ python3 app.py --input ../data/policy-documents/policy_hr_leave.txt --output sum
 from a ward-level budget CSV.
 
 **Failure modes taught:**
+
 - Wrong aggregation level — AI returns one number for all wards combined
 - Silent null handling — AI skips missing rows without flagging them
 - Formula assumption — AI picks a formula without being asked
@@ -278,6 +288,7 @@ from a ward-level budget CSV.
 **Input file:** `data/budget/ward_budget.csv`
 **Output file:** `uc-0c/growth_output.csv`
 **Run command:**
+
 ```bash
 cd uc-0c
 python3 app.py --input ../data/budget/ward_budget.csv --ward "Ward 1 – Kasba" --category "Roads & Pothole Repair" --growth-type MoM --output growth_output.csv
@@ -290,17 +301,21 @@ python3 app.py --input ../data/budget/ward_budget.csv --ward "Ward 1 – Kasba" 
 **What it does:** Answers staff questions strictly from three policy documents.
 
 **Failure modes taught:**
+
 - Cross-document blending — AI merges two policies into an answer neither supports
 - Hedged hallucination — AI says "while not explicitly covered..." instead of refusing
 - Condition dropping — multi-condition answers lose one condition
 
 **Input files:**
+
 ```
 data/policy-documents/policy_hr_leave.txt
 data/policy-documents/policy_it_acceptable_use.txt
 data/policy-documents/policy_finance_reimbursement.txt
 ```
+
 **Run command:**
+
 ```bash
 cd uc-x
 python3 app.py
@@ -382,11 +397,11 @@ README:
 
 Read through the generated agents.md and check it against the README:
 
-| Check | Where to look in the README |
-|---|---|
+| Check                                                                 | Where to look in the README                     |
+| --------------------------------------------------------------------- | ----------------------------------------------- |
 | Does the enforcement section include every rule listed in the README? | "Enforcement Rules Your agents.md Must Include" |
-| Does the enforcement include a refusal condition? | "Failure modes" section |
-| Is the context specific — does it state what is excluded? | "Input file" and "failure modes" sections |
+| Does the enforcement include a refusal condition?                     | "Failure modes" section                         |
+| Is the context specific — does it state what is excluded?             | "Input file" and "failure modes" sections       |
 
 If anything is missing, edit the agents.md file directly in your code editor
 to add it. Save the file when done.
@@ -420,11 +435,11 @@ enforcement:
 
 Each UC README lists two skills under "Skills to Define in skills.md":
 
-| UC | Skill 1 | Skill 2 |
-|---|---|---|
-| UC-0B | `retrieve_policy` | `summarize_policy` |
-| UC-0C | `load_dataset` | `compute_growth` |
-| UC-X | `retrieve_documents` | `answer_question` |
+| UC    | Skill 1              | Skill 2            |
+| ----- | -------------------- | ------------------ |
+| UC-0B | `retrieve_policy`    | `summarize_policy` |
+| UC-0C | `load_dataset`       | `compute_growth`   |
+| UC-X  | `retrieve_documents` | `answer_question`  |
 
 ### 10.2 Generate skills.md
 
@@ -460,12 +475,12 @@ README:
 
 Check each skill against the README:
 
-| Check | What to look for |
-|---|---|
-| Are both skill names correct? | Match names in "Skills to Define in skills.md" |
-| Does error_handling address the UC failure mode? | Match failure modes listed in the README |
-| Is the input field specific — type and format stated? | Not just "data" |
-| Is the output field specific? | Not just "result" |
+| Check                                                 | What to look for                               |
+| ----------------------------------------------------- | ---------------------------------------------- |
+| Are both skill names correct?                         | Match names in "Skills to Define in skills.md" |
+| Does error_handling address the UC failure mode?      | Match failure modes listed in the README       |
+| Is the input field specific — type and format stated? | Not just "data"                                |
+| Is the output field specific?                         | Not just "result"                              |
 
 Edit the file directly if anything needs to be added or corrected. Save when done.
 
@@ -511,18 +526,21 @@ UC README:
 Open a terminal, navigate to your UC folder, and run the command for your UC.
 
 **UC-0B:**
+
 ```bash
 cd uc-0b
 python3 app.py --input ../data/policy-documents/policy_hr_leave.txt --output summary_hr_leave.txt
 ```
 
 **UC-0C:**
+
 ```bash
 cd uc-0c
 python3 app.py --input ../data/budget/ward_budget.csv --ward "Ward 1 – Kasba" --category "Roads & Pothole Repair" --growth-type MoM --output growth_output.csv
 ```
 
 **UC-X:**
+
 ```bash
 cd uc-x
 python3 app.py
@@ -544,11 +562,11 @@ Repeat until the script runs without errors.
 
 Once the script runs, verify the output file was created:
 
-| UC | Output file to check |
-|---|---|
-| UC-0B | `uc-0b/summary_hr_leave.txt` — open and read it |
+| UC    | Output file to check                                                            |
+| ----- | ------------------------------------------------------------------------------- |
+| UC-0B | `uc-0b/summary_hr_leave.txt` — open and read it                                 |
 | UC-0C | `uc-0c/growth_output.csv` — open and check it has per-ward rows, not one number |
-| UC-X | Output appears in the terminal — try asking a question |
+| UC-X  | Output appears in the terminal — try asking a question                          |
 
 ---
 
@@ -565,6 +583,7 @@ Every commit must follow this format:
 ```
 
 **Examples:**
+
 ```
 UC-0B Generated agents.md and skills.md from README, implemented summariser
 UC-0C Generated agents.md and skills.md from README, implemented growth calculator
@@ -572,6 +591,7 @@ UC-X  Generated agents.md and skills.md from README, implemented document assist
 ```
 
 **Avoid:**
+
 ```
 update
 done
@@ -607,6 +627,7 @@ Pushing sends your committed work from your local machine to your fork on GitHub
 4. When complete, the button changes to **Fetch origin**.
 
 **Verify the push worked:**
+
 1. Open your browser and go to:
    ```
    https://github.com/[your-username]/prompt-to-production
@@ -625,12 +646,13 @@ back to the original repository.
 ### 14.1 Open the PR
 
 1. Go to the original repository:
+
    ```
    https://github.com/nasscomAI/prompt-to-production
    ```
 
 2. GitHub will show a banner at the top:
-   *"[your-branch] had recent pushes — Compare & pull request"*
+   _"[your-branch] had recent pushes — Compare & pull request"_
    Click **Compare & pull request**.
 
    If the banner does not appear:
@@ -641,10 +663,13 @@ back to the original repository.
 ### 14.2 Fill in the PR Title
 
 Use this exact format:
+
 ```
 [City] [Name] — Vibe Coding Submission
 ```
+
 Example:
+
 ```
 [Pune] Arshdeep Singh — Vibe Coding Submission
 ```
@@ -675,12 +700,14 @@ For your submission to be accepted, your PR must include the following files
 committed on your branch:
 
 **UC-0A (done with facilitator):**
+
 - [ ] `uc-0a/agents.md` — present and updated
 - [ ] `uc-0a/skills.md` — present and updated
 - [ ] `uc-0a/classifier.py`
 - [ ] `uc-0a/results_[city].csv`
 
 **Your chosen UC (0B, 0C, or UC-X):**
+
 - [ ] `uc-[your-uc]/agents.md` — present and updated
 - [ ] `uc-[your-uc]/skills.md` — present and updated
 - [ ] `uc-[your-uc]/app.py`
@@ -696,11 +723,13 @@ commit with a meaningful message, and push. The PR will update automatically.
 ## Quick Reference
 
 ### Commit Message Format
+
 ```
 [UC-ID] [what you built or fixed]
 ```
 
 ### AI Prompt to Generate agents.md
+
 ```
 Read the following UC README. Using the R.I.C.E framework, generate an
 agents.md YAML with four fields: role, intent, context, enforcement.
@@ -711,6 +740,7 @@ README: [paste README content]
 ```
 
 ### AI Prompt to Generate skills.md
+
 ```
 Read the following UC README. Generate a skills.md YAML defining the
 two skills described. Each skill needs: name, description, input, output,
@@ -721,14 +751,14 @@ README: [paste README content]
 
 ### Files Required Per UC
 
-| File | UC-0A | UC-0B | UC-0C | UC-X |
-|---|---|---|---|---|
-| `agents.md` | ✓ | ✓ | ✓ | ✓ |
-| `skills.md` | ✓ | ✓ | ✓ | ✓ |
-| `classifier.py` / `app.py` | ✓ | ✓ | ✓ | ✓ |
-| `results_[city].csv` | ✓ | — | — | — |
-| `summary_hr_leave.txt` | — | ✓ | — | — |
-| `growth_output.csv` | — | — | ✓ | — |
+| File                       | UC-0A | UC-0B | UC-0C | UC-X |
+| -------------------------- | ----- | ----- | ----- | ---- |
+| `agents.md`                | ✓     | ✓     | ✓     | ✓    |
+| `skills.md`                | ✓     | ✓     | ✓     | ✓    |
+| `classifier.py` / `app.py` | ✓     | ✓     | ✓     | ✓    |
+| `results_[city].csv`       | ✓     | —     | —     | —    |
+| `summary_hr_leave.txt`     | —     | ✓     | —     | —    |
+| `growth_output.csv`        | —     | —     | ✓     | —    |
 
 ### Getting Help
 
