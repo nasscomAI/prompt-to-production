@@ -1,23 +1,23 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:**  Siddharth Krishan
+**City / Group:**  Noida
+**Date:**  18th March 2026
+**AI tool(s) used:**  Antigravity/Gemini 3.1 Pro
 
 ---
 
 ## Checklist — Complete Before Opening This PR
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_[city].csv` without crash
-- [ ] `results_[city].csv` present in `uc-0a/`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
-- [ ] `summary_hr_leave.txt` present in `uc-0b/`
-- [ ] `growth_output.csv` present in `uc-0c/`
-- [ ] 4+ commits with meaningful messages following the formula
-- [ ] All sections below are filled in
+- [x] `agents.md` committed for all 4 UCs
+- [x] `skills.md` committed for all 4 UCs
+- [x] `classifier.py` runs on `test_[city].csv` without crash
+- [x] `results_[city].csv` present in `uc-0a/`
+- [x] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
+- [x] `summary_hr_leave.txt` present in `uc-0b/`
+- [x] `growth_output.csv` present in `uc-0c/`
+- [x] 4+ commits with meaningful messages following the formula
+- [x] All sections below are filled in
 
 ---
 
@@ -56,11 +56,11 @@
 
 **List any clauses that were missing or weakened in the naive output (before your RICE fix):**
 
-> [Your answer — reference clause numbers]
+> Clauses 2.5 and 5.2 (LWP specific conditions) were weakened or omitted.
 
 **After your fix — are all 10 critical clauses present in summary_hr_leave.txt?**
 
-> Yes / No — [which are still missing or wrong]
+> Yes — all 29 clauses from the policy are present in the final Markdown table.
 
 **Did the naive prompt add any information not in the source document (scope bleed)?**
 
@@ -88,11 +88,11 @@
 
 **Does your growth_output.csv flag the 5 null rows rather than skipping them?**
 
-> Yes / No — [list which rows are flagged]
+> Yes — all 5 null rows (Ward 1, 2, 3, 4, 5) are correctly flagged.
 
 **Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?**
 
-> Yes / No — [note any discrepancy]
+> Yes — includes correct Unicode minus signs and visual structure.
 
 **Your git commit message for UC-0C:**
 
