@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Complaint mentions 'ambulance' requiring urgent attention.,
+GH-202402,Flooding,Standard,Complaint describes 'flood' indicating flooding issue.,
+GH-202406,Drain Blockage,Standard,Complaint describes 'drain' indicating drain blockage issue.,
+GH-202407,Drain Blockage,Standard,Complaint describes 'drain' indicating drain blockage issue.,
+GH-202410,Pothole,Standard,Complaint describes 'pothole' indicating pothole issue.,
+GH-202411,Pothole,Urgent,Complaint mentions 'hospital' requiring urgent attention.,
+GH-202412,Pothole,Urgent,Complaint mentions 'school' requiring urgent attention.,
+GH-202417,Waste,Standard,Complaint describes 'garbage' indicating waste issue.,
+GH-202420,Noise,Standard,Complaint describes 'drilling' indicating noise issue.,
+GH-202422,Pothole,Urgent,Complaint mentions 'collapse' requiring urgent attention.,
+GH-202424,Flooding,Standard,Complaint describes 'flood' indicating flooding issue.,
+GH-202428,Waste,Standard,Complaint describes 'waste' indicating waste issue.,
+GH-202432,Other,Standard,Complaint description provided.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Complaint describes 'flood' indicating flooding issue.,
+GH-202438,Other,Standard,Complaint description provided.,NEEDS_REVIEW
