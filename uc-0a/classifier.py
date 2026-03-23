@@ -28,7 +28,7 @@ def batch_classify(input_path: str, output_path: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
+    parser.add_argument("--input",  required=True, help="Path to test_pune.csv")
     parser.add_argument("--output", required=True, help="Path to write results CSV")
     args = parser.parse_args()
     batch_classify(args.input, args.output)
