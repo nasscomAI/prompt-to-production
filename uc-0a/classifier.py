@@ -4,7 +4,6 @@ import csv
 def classify_complaint(row: dict) -> dict:
     text = row.get("complaint", "").lower()
 
-    # Category detection
     if "pothole" in text:
         category = "Pothole"
     elif "flood" in text or "water" in text:
@@ -22,8 +21,11 @@ def classify_complaint(row: dict) -> dict:
     else:
         category = "Other"
 
-    # Priority detection
-    urgent_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
+    urgent_keywords = [
+        "injury", "child", "school", "hospital",
+        "ambulance", "fire", "hazard", "fell", "collapse"
+    ]
+
     if any(word in text for word in urgent_keywords):
         priority = "Urgent"
     else:
@@ -39,7 +41,6 @@ def classify_complaint(row: dict) -> dict:
         "reason": reason,
         "flag": flag
     }
-
 
 def batch_classify(input_path: str, output_path: str):
     with open(input_path, 'r') as infile, open(output_path, 'w', newline='') as outfile:
@@ -62,11 +63,11 @@ def batch_classify(input_path: str, output_path: str):
                 })
             writer.writerow(row)
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
     parser.add_argument("--input", required=True)
     parser.add_argument("--output", required=True)
+
     args = parser.parse_args()
 
     batch_classify(args.input, args.output)
