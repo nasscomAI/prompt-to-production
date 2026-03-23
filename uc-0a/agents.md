@@ -1,18 +1,16 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+### RICE Framework Content for UC-0A Complaint Classifier
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+#### Reach
+- Define the number of potential users or cases affected by complaints.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+#### Impact
+- Assess how significant the resolution of these complaints will be on user satisfaction.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+#### Confidence
+- Evaluate our certainty in the effectiveness of the classifier in resolving complaints.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+#### Effort
+- Estimate the resources required to develop and implement the classifier, expressed in person-hours or story points.
+
+#### Summary
+Using the RICE framework, we can prioritize the development of the UC-0A complaint classifier based on its reach, impact, confidence in success, and the effort involved in its implementation.
