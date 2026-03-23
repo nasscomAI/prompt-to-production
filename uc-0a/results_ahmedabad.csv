@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Cannot determine specific category from description: 'Tarmac surface melting at 44°C. Footwear sticking....',NEEDS_REVIEW
+AM-202402,Other,Low,Cannot determine specific category from description: 'Metal bus shelter reaching dangerous temperatures....',NEEDS_REVIEW
+AM-202405,Other,Low,Cannot determine specific category from description: 'Dead trees with split branches. Fall risk to walke...',NEEDS_REVIEW
+AM-202406,Other,Low,Cannot determine specific category from description: 'Irrigation system broken. Grass dying in heatwave ...',NEEDS_REVIEW
+AM-202407,Other,Urgent,Cannot determine specific category from description: 'Broken bench and upturned paving. Child injured la...' Contains severity keywords: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions pothole/road damage: 'Pothole on main highway causing morning rush lane ...',
+AM-202414,Other,Low,Cannot determine specific category from description: 'Residential colony unlit after 9pm. Wiring theft r...',NEEDS_REVIEW
+AM-202417,Waste,Low,Description mentions waste/garbage: 'Night market waste not cleared before morning. Her...',
+AM-202421,Noise,Low,Description mentions noise issues: 'Club music audible at residential buildings at 2am...',
+AM-202424,Road Damage,Standard,Description mentions road damage: 'Zoo approach road surface bubbling at 45°C. Visito...',
+AM-202429,Heat Hazard,Low,Description mentions heat hazard: 'River walk surface temperature unbearable. Install...',
+AM-202431,Heritage Damage,Low,Description mentions heritage/historic site: 'Old city road subsidence near ancient step well. H...',
+AM-202435,Heat Hazard,Low,Description mentions heat hazard: 'Black metal road dividers storing heat. Motorists ...',
+AM-202444,Waste,Low,Description mentions waste/garbage: 'Restaurant waste bins overflowing on Sunday night....',
+AM-202445,Heat Hazard,Low,Description mentions heat hazard: 'BRT shelter roof glass broken. Users exposed to fu...',

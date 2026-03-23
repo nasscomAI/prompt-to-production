@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Description mentions streetlight issues: 'Heritage lamp post knocked over by delivery vehicl...',
+KM-202402,Heritage Damage,Low,Description mentions heritage/historic site: 'Historic tram road cobblestones broken up by cable...',
+KM-202405,Other,Low,Cannot determine specific category from description: 'Wedding band playing near Tagore Museum at 11pm. F...',NEEDS_REVIEW
+KM-202409,Other,Low,Cannot determine specific category from description: 'Airport access road full of potholes. Diplomatic c...',NEEDS_REVIEW
+KM-202410,Pothole,Standard,Description mentions pothole/road damage: 'Pothole causing tyre blowouts. Three incidents thi...',
+KM-202411,Pothole,Standard,Description mentions pothole/road damage: 'Deep pothole filling with rainwater. Depth invisib...',
+KM-202415,Other,Low,Cannot determine specific category from description: 'New residential complex draining directly onto pub...',NEEDS_REVIEW
+KM-202418,Waste,Low,Description mentions waste/garbage: 'Tourist zone waste overflowing. Foreign visitors p...',
+KM-202421,Road Damage,Urgent,"Description mentions road damage: 'Footpath broken and sinking. Elderly pedestrian fe...' Contains severity keywords: hospital, fell.",
+KM-202422,Road Damage,Standard,Description mentions road damage: 'Road surface buckled near bridge. Structural conce...',
+KM-202426,Heritage Damage,Low,Description mentions heritage/historic site: 'Heritage residential building exterior defaced by ...',
+KM-202430,Other,Low,Cannot determine specific category from description: 'Road subsided near gas pipeline. Gas leak smell re...',NEEDS_REVIEW
+KM-202434,Heritage Damage,Low,Description mentions heritage/historic site: 'Street paving removed for utility work — heritage ...',
+KM-202436,Other,Low,Cannot determine specific category from description: 'Entire colony substation tripped. Darkness for 3 n...',NEEDS_REVIEW
+KM-202438,Heritage Damage,Low,Description mentions heritage/historic site: 'Street vendors using amplifiers illegally in herit...',
