@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Assigned Pothole based on complaint wording including 'pothole'.,
+PM-202402,Pothole,Urgent,Marked Urgent because the description contains severity cue 'child'.,
+PM-202406,Flooding,Standard,Assigned Flooding based on complaint wording including 'flood'.,
+PM-202408,Other,Standard,"The description includes overlapping issue cues such as 'flood', so classification is ambiguous.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Assigned Streetlight based on complaint wording including 'streetlight'.,
+PM-202411,Streetlight,Urgent,Marked Urgent because the description contains severity cue 'hazard'.,
+PM-202413,Waste,Standard,Assigned Waste based on complaint wording including 'garbage'.,
+PM-202418,Noise,Low,Assigned Noise based on complaint wording including 'music'.,
+PM-202419,Road Damage,Standard,Assigned Road Damage based on complaint wording including 'road surface'.,
+PM-202420,Road Damage,Urgent,Marked Urgent because the description contains severity cue 'injury'.,
+PM-202427,Flooding,Standard,Assigned Flooding based on complaint wording including 'flood'.,
+PM-202428,Waste,Standard,Assigned Waste based on complaint wording including 'dead animal'.,
+PM-202430,Other,Standard,"The description includes overlapping issue cues such as 'lights out', so classification is ambiguous.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Assigned Waste based on complaint wording including 'waste'.,
+PM-202446,Road Damage,Urgent,Marked Urgent because the description contains severity cue 'fell'.,
