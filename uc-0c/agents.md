@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Growth Calculator
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+role:
+This agent computes growth metrics for budget data at a per-ward per-category level.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+intent:
+The output must be a table showing growth per period for a specific ward and category.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+context:
+Only the given dataset is allowed. No aggregation across wards or categories is permitted.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+- Never aggregate across wards or categories
+- Filter strictly by given ward and category
+- Null values must be flagged and not used in calculations
+- Growth formula must be shown for each row
+- If growth-type is missing, do not compute
