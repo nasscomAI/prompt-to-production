@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Based on description keywords: Large pothole 60cm wide causing tyre dam,
+PM-202402,Pothole,Urgent,Based on description keywords: Deep pothole near bus stop. School child,
+PM-202406,Flooding,Standard,Based on description keywords: Underpass flooded knee-deep after 2hrs r,
+PM-202408,Flooding,Standard,Based on description keywords: Bus stand flooded. Passengers standing i,
+PM-202410,Streetlight,Standard,Based on description keywords: Three consecutive streetlights out for 1,
+PM-202411,Streetlight,Urgent,Based on description keywords: Streetlight flickering and sparking. Ele,
+PM-202413,Waste,Standard,Based on description keywords: Overflowing garbage bins near vegetable ,
+PM-202418,Other,Standard,Based on description keywords: Wedding venue playing music past midnigh,NEEDS_REVIEW
+PM-202419,Other,Standard,Based on description keywords: Road surface cracked and sinking near ut,NEEDS_REVIEW
+PM-202420,Other,Urgent,Based on description keywords: Manhole cover missing. Risk of serious i,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Based on description keywords: Bridge approach floods in 30mins of rain,
+PM-202428,Other,Standard,Based on description keywords: Dead animal not removed for 36 hours. He,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Based on description keywords: Heritage street, lights out. Safety conc",
+PM-202433,Waste,Standard,Based on description keywords: Bulk waste from apartment renovation dum,
+PM-202446,Other,Urgent,Based on description keywords: Footpath tiles broken and upturned. Elde,NEEDS_REVIEW
