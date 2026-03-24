@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B — Policy Summary Agent
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+role:
+Policy summarization agent that summarizes HR leave policy without changing meaning.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+intent:
+Generate accurate summary preserving all clauses and obligations.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+context:
+Input policy file from data/policy-documents/policy_hr_leave.txt
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+- Every clause must be included
+- Do not drop conditions
+- Do not add new information
+- Preserve binding verbs (must, requires, not permitted)
+- Quote clause if meaning changes
