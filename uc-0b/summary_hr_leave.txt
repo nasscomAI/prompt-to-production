@@ -1,0 +1,11 @@
+Summary (required clauses):
+- 2.3: Employees must submit leave requests with at least 14 days advance notice.
+- 2.4: Leave must receive written approval before leave commences. Verbal approval is not valid.
+- 2.5: Unapproved absence will be treated as loss of pay regardless of subsequent approval.
+- 2.6: Employees may carry forward up to 5 days. Days above 5 are forfeited on 31 Dec.
+- 2.7: Carry-forward days must be used between Jan and Mar or are forfeited.
+- 3.2: Sick leave of 3 or more consecutive days requires a medical certificate within 48 hours.
+- 3.4: Sick leave taken before or after a holiday requires a medical certificate regardless of duration.
+- 5.2: Leave without pay requires approval from both the Department Head and HR Director.
+- 5.3: Leave without pay exceeding 30 days requires Municipal Commissioner approval.
+- 7.2: Leave encashment during service is not permitted under any circumstances.
