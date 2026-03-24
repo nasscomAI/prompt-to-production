@@ -1,16 +1,27 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Load a .txt policy document and return it as structured numbered sections without changing wording.
+    input: >
+      A file path to a UTF-8 plain-text policy document (for example,
+      ../data/policy-documents/policy_hr_leave.txt).
+    output: >
+      A JSON-like structure with one item per numbered clause: clause_id, raw_text,
+      and extracted constraints (actors, approvals, timing, thresholds, exceptions)
+      copied from source wording.
+    error_handling: >
+      If file is missing, unreadable, or has no numbered clauses, return an explicit
+      error with reason and do not fabricate sections.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produce a source-faithful summary from structured clauses with clause references and no meaning drift.
+    input: >
+      Structured numbered sections from retrieve_policy, including clause_id and
+      raw_text for each clause.
+    output: >
+      A clause-referenced summary that covers every numbered clause, preserves all
+      conditions and obligations, and flags any clause quoted verbatim to prevent
+      meaning loss.
+    error_handling: >
+      If any clause is missing, ambiguous, or cannot be summarized without dropping
+      conditions, quote that clause verbatim and mark it as 'verbatim to prevent
+      meaning loss'; if source structure is invalid, return an explicit error.
