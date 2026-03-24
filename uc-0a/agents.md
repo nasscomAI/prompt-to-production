@@ -26,3 +26,4 @@ enforcement:
   - "reason field must quote or directly reference specific words from the description — generic reasons like 'safety concern' without citing source words are not valid"
   - "flag must be set to NEEDS_REVIEW when the description could plausibly belong to two or more categories with equal confidence — otherwise flag must be blank"
   - "category must never be blank — if genuinely unclassifiable, use Other"
+  - "taxonomy drift is forbidden — the classifier must never invent sub-categories such as 'Pothole-Severe' or 'Noise-Night'; only the 10 canonical values are valid output"
