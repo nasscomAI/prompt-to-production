@@ -42,7 +42,7 @@ def load_documents(data_dir: str) -> dict:
             print(f"WARNING: Could not load {filepath} — skipping.")
             continue
 
-        # Parse into sections
+        
         sections = {}
         current_section = None
         current_lines = []
@@ -80,14 +80,14 @@ def search_documents(question: str, documents: dict) -> list:
     Sorted by relevance score descending.
     """
     question_lower = question.lower()
-    question_words = set(re.findall(r'\b\w{4,}\b', question_lower))  # words 4+ chars
+    question_words = set(re.findall(r'\b\w{4,}\b', question_lower))  
 
     matches = []
 
     for filename, doc in documents.items():
         for section_num, section_text in doc["sections"].items():
             text_lower = section_text.lower()
-            # Score = number of question words found in section text
+            
             score = sum(1 for w in question_words if w in text_lower)
             if score > 0:
                 matches.append({
@@ -115,10 +115,10 @@ def answer_question(question: str, documents: dict) -> str:
     if not matches:
         return REFUSAL_TEMPLATE
 
-    # Take the top match only — single source rule
+    
     top = matches[0]
 
-    # Check if top score is too low to be meaningful
+    
     if top["score"] < 2:
         return REFUSAL_TEMPLATE
 
@@ -127,7 +127,7 @@ def answer_question(question: str, documents: dict) -> str:
         f"[Source: {top['filename']}, Section {top['section']} ({top['doc_ref']})]"
     )
 
-    # Safety check — make sure no hedging phrases crept in
+    
     answer_lower = answer.lower()
     for phrase in HEDGING_PHRASES:
         if phrase in answer_lower:
@@ -140,7 +140,7 @@ def find_data_dir() -> str:
     """
     Finds the policy-documents folder relative to this script's location.
     """
-    # Try relative path from uc-x folder
+
     candidates = [
         os.path.join(os.path.dirname(__file__), "..", "data", "policy-documents"),
         os.path.join(os.path.dirname(__file__), "data", "policy-documents"),
@@ -160,7 +160,6 @@ def main():
     print("=" * 60)
     print()
 
-    # Find and load documents
     data_dir = find_data_dir()
     if not data_dir:
         print("ERROR: Could not find policy-documents folder.")
@@ -180,7 +179,7 @@ def main():
     print("-" * 60)
     print()
 
-    # Interactive loop
+    
     while True:
         try:
             question = input("Your question: ").strip()
