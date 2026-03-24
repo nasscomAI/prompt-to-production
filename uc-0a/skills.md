@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for UC-0A
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `classify_complaint`
+- **Input**: A dictionary representing one complaint row.
+- **Output**: A dictionary with keys `complaint_id`, `category`, `priority`, `reason`, `flag`.
+- **Purpose**: Applies strict RICE enforcement rules to prevent severity blindness and taxonomy drift.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `batch_classify`
+- **Input**: `input_path` (CSV), `output_path` (CSV).
+- **Output**: Writes the results out.
+- **Purpose**: Processes the whole file safely, catching exceptions per row to avoid crashes.
