@@ -11,6 +11,9 @@ categories = {
 }
 
 def classify(text):
+    if not text:
+        return "Other"
+        
     text = text.lower()
     for category, keywords in categories.items():
         for word in keywords:
@@ -24,14 +27,16 @@ output_file = "results_hyderabad.csv"
 with open(input_file, 'r', encoding='utf-8') as infile, \
      open(output_file, 'w', newline='', encoding='utf-8') as outfile:
 
-    reader = csv.DictReader(infile)   # ✅ important change
+    reader = csv.DictReader(infile)
     writer = csv.writer(outfile)
 
     writer.writerow(["Complaint", "Category"])
 
     for row in reader:
-        complaint = row["description"]   # ✅ correct column
+        # safer column handling
+        complaint = row.get("description") or row.get("complaint") or ""
+        
         category = classify(complaint)
         writer.writerow([complaint, category])
 
-print("Done!")
+print("Done! Output saved to results_hyderabad.csv")
