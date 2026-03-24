@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified because description mentions 'flood'; severity keyword 'ambulance' triggers Urgent priority.,
+GH-202402,Flooding,Standard,Classified because description mentions 'flood'; no severity keywords found so priority is Standard.,
+GH-202406,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Classified because description mentions 'drain block'; no severity keywords found so priority is Standard.,
+GH-202410,Pothole,Standard,Classified because description mentions 'pothole'; no severity keywords found so priority is Standard.,
+GH-202411,Pothole,Urgent,Classified because description mentions 'pothole'; severity keyword 'hospital' triggers Urgent priority.,
+GH-202412,Pothole,Urgent,Classified because description mentions 'pothole'; severity keyword 'school' triggers Urgent priority.,
+GH-202417,Waste,Standard,Classified because description mentions 'garbage'; no severity keywords found so priority is Standard.,
+GH-202420,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classified because description does not clearly match a specific category; severity keyword 'collapse' triggers Urgent priority.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified because description mentions 'flood'; no severity keywords found so priority is Standard.,
+GH-202428,Waste,Standard,Classified because description mentions 'waste'; no severity keywords found so priority is Standard.,
+GH-202432,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified because description mentions 'drain block'; no severity keywords found so priority is Standard.,
+GH-202438,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
