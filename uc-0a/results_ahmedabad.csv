@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Marked based on complaint text containing '44°c'.,
+AM-202402,Heat Hazard,Standard,Marked based on complaint text containing 'dangerous temperatures'.,
+AM-202405,Other,Standard,"Marked from complaint text: 'am-202405 2024-05-08 ahmedabad ward 11 – vastrapur sabarmati riverfront, north s'.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Marked based on complaint text containing 'heat'.,
+AM-202407,Other,Urgent,Marked based on complaint text containing 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Marked based on complaint text containing 'pothole'.,
+AM-202414,Streetlight,Standard,Marked based on complaint text containing 'unlit'.,
+AM-202417,Heritage Damage,Standard,Marked based on complaint text containing 'heritage'.,
+AM-202421,Noise,Standard,Marked based on complaint text containing 'music audible'.,
+AM-202424,Heat Hazard,Standard,Marked based on complaint text containing '45°c'.,
+AM-202429,Heat Hazard,Standard,Marked based on complaint text containing '52°c'.,
+AM-202431,Heritage Damage,Standard,Marked based on complaint text containing 'heritage'.,
+AM-202435,Heat Hazard,Standard,Marked based on complaint text containing 'heat'.,
+AM-202444,Waste,Standard,Marked based on complaint text containing 'waste'.,
+AM-202445,Heat Hazard,Standard,Marked based on complaint text containing 'full sun'.,
