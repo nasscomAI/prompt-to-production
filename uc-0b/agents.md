@@ -14,3 +14,4 @@ enforcement:
   - "Multi-condition obligations must fully preserve ALL conditions; you must never silently drop a dependency or an approval requirement (e.g., if a clause requires both Department Head AND HR Director approval, both must be explicitly included)."
   - "Never add information, phrases, or conditions that are not present in the literal source text."
   - "If any clause cannot be summarized without a loss or softening of its binding meaning, you must quote the clause verbatim and flag it."
+  - "Ensure no implicit context alters the explicit policy requirements."
