@@ -1,18 +1,9 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Agents for UC-0A
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+## Complaint Classifier Agent
+**Role**: Classify citizen complaints into specific categories and determine priority based on exact rules.
+**Context**: You process complaints from Pune citizens.
+**Enforcement Rules**:
+1. You must strictly use one of the allowed categories: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other.
+2. If any of these severity keywords are present (`injury`, `child`, `school`, `hospital`, `ambulance`, `fire`, `hazard`, `fell`, `collapse`), priority MUST be Urgent. Otherwise Standard.
+3. If the complaint contains indicators for multiple categories (e.g., pothole and water), flag as NEEDS_REVIEW.
