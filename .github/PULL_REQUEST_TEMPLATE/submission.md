@@ -1,6 +1,6 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:** badarinarayanas  
+**Name:** Badari Narayana S
 **City / Group:** Bengaluru  
 **Date:** March 24, 2026  
 **AI tool(s) used:** Python (Local R.I.C.E Rules Engine), Anthropic / Gemini Models  
