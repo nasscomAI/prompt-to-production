@@ -14,8 +14,8 @@ def classify_complaint(description):
     desc_lower = description.lower()
     
     # 1. Category Assignment (Taxonomy drift & Hallucinated avoidance)
-    category = "Other"
-    flag = ""
+    category: str = "Other"
+    flag: str = ""
     if "pothole" in desc_lower: category = "Pothole"
     elif "drain" in desc_lower and "block" in desc_lower: category = "Drain Blockage"
     elif "drain" in desc_lower: category = "Drain Blockage"
@@ -47,7 +47,7 @@ def classify_complaint(description):
     reason_words = []
     for word in desc_lower.split():
         clean_word = re.sub(r'[^a-zA-Z]', '', word)
-        if clean_word in SEVERITY_KEYWORDS or clean_word in category.lower():
+        if clean_word and (clean_word in SEVERITY_KEYWORDS or clean_word in str(category).lower()):
             reason_words.append(clean_word)
     
     if reason_words:
@@ -71,12 +71,16 @@ def batch_classify(input_csv, output_csv):
     with open(input_csv, 'r', encoding='utf-8') as fin, \
          open(output_csv, 'w', encoding='utf-8', newline='') as fout:
         reader = csv.DictReader(fin)
-        fieldnames = reader.fieldnames + ['category', 'priority', 'reason', 'flag']
+        _fn = reader.fieldnames
+        base_fields = _fn if _fn is not None else ['id', 'description']
+        fieldnames = [str(f) for f in base_fields] + ['category', 'priority', 'reason', 'flag']
         writer = csv.DictWriter(fout, fieldnames=fieldnames)
         writer.writeheader()
         
         for row in reader:
-            res = classify_complaint(row['description'])
+            row.pop(None, None)
+            desc = row.get('description') or ""
+            res = classify_complaint(desc)
             row.update(res)
             writer.writerow(row)
             print(f"Processed: {row['id']} -> {res['category']} ({res['priority']})")
