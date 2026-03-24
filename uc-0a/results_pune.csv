@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint explicitly states 'Large pothole 60cm wide'.,
+PM-202402,Pothole,Urgent,The complaint explicitly cites 'child' which elevates severity.,
+PM-202406,Flooding,Standard,The complaint explicitly states 'Underpass flooded knee-deep after'.,
+PM-202408,Drain Blockage,Standard,The complaint explicitly states 'Bus stand flooded. Passengers'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The complaint explicitly states 'Three consecutive streetlights out'.,
+PM-202411,Streetlight,Urgent,The complaint explicitly cites 'hazard' which elevates severity.,
+PM-202413,Waste,Standard,The complaint explicitly states 'Overflowing garbage bins near'.,
+PM-202418,Noise,Standard,The complaint explicitly states 'Wedding venue playing music'.,
+PM-202419,Road Damage,Standard,The complaint explicitly states 'Road surface cracked and'.,
+PM-202420,Road Damage,Urgent,The complaint explicitly cites 'injury' which elevates severity.,
+PM-202427,Flooding,Standard,The complaint explicitly states 'Bridge approach floods in'.,
+PM-202428,Waste,Standard,The complaint explicitly states 'Dead animal not removed'.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The complaint explicitly states 'Heritage street, lights out.'.",
+PM-202433,Waste,Standard,The complaint explicitly states 'Bulk waste from apartment'.,
+PM-202446,Road Damage,Urgent,The complaint explicitly cites 'fell' which elevates severity.,
