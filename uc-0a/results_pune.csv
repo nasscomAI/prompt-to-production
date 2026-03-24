@@ -1,0 +1,6 @@
+id,description,category,priority,reason,flag
+1,Huge pothole on MG Road causing traffic jams.,Pothole,Standard,Classified because the description explicitly mentions 'pothole'.,
+2,A child fell into an open drain near the school. Please fix urgently!,Drain Blockage,Urgent,Classified because the description explicitly mentions 'a'.,
+3,Streetlight is not working since 3 days on 1st cross.,Streetlight,Standard,Classified because the description explicitly mentions 'streetlight'.,
+4,Garbage dumped near the heritage site wall.,Waste,Standard,Matches general pattern for Waste.,
+5,Loud speakers playing noise after 11 PM.,Noise,Standard,Classified because the description explicitly mentions 'noise'.,
