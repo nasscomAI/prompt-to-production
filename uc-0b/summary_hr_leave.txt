@@ -1,0 +1,52 @@
+══════════════════════════════════════════════════════════════════════
+POLICY SUMMARY — HR Leave Policy (HR-POL-001 v2.3)
+Source: policy_hr_leave.txt
+══════════════════════════════════════════════════════════════════════
+
+IMPORTANT: This summary preserves all binding obligations.
+Binding verbs (must/will/requires/not permitted) are CAPITALISED.
+
+1. ANNUAL LEAVE
+--------------------------------------------------
+  [2.1] Entitlement : 18 days paid annual leave per calendar year.
+  [2.2] Accrual     : 1.5 days per month from date of joining.
+
+2. CRITICAL OBLIGATIONS (all clauses verified)
+--------------------------------------------------
+  [2.3] Employees MUST submit leave application at least 14 calendar days in advance using Form HR-L1.
+  [2.4] Leave MUST have written approval from the direct manager before leave commences. Verbal approval is NOT valid.
+  [2.5] Unapproved absence WILL be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+  [2.6] Employees MAY carry forward a maximum of 5 unused annual leave days. Days above 5 ARE FORFEITED on 31 December.
+  [2.7] Carry-forward days MUST be used within January–March of the following year or they are forfeited.
+  [3.2] Sick leave of 3+ consecutive days REQUIRES a medical certificate submitted within 48 hours of returning.
+  [3.4] Sick leave immediately before or after a public holiday REQUIRES a medical certificate regardless of duration.
+  [5.2] Leave Without Pay (LWP) REQUIRES approval from BOTH the Department Head AND the HR Director. Manager approval alone is NOT sufficient.
+  [5.3] LWP exceeding 30 continuous days REQUIRES approval from the Municipal Commissioner.
+  [7.2] Leave encashment during service is NOT PERMITTED under any circumstances.
+
+3. SICK LEAVE
+--------------------------------------------------
+  [3.1] Entitlement : 12 days paid sick leave per calendar year.
+  [3.3] Sick leave cannot be carried forward to the following year.
+
+4. MATERNITY AND PATERNITY LEAVE
+--------------------------------------------------
+  [4.1] Maternity   : 26 weeks paid for first two live births; 12 weeks for third+.
+  [4.3] Paternity   : 5 days paid, within 30 days of birth. Cannot be split.
+
+5. PUBLIC HOLIDAYS
+--------------------------------------------------
+  [6.2] Working on a public holiday entitles employee to 1 compensatory day (within 60 days).
+  [6.3] Compensatory off CANNOT be encashed.
+
+6. GRIEVANCE PROCEDURE
+--------------------------------------------------
+  [8.1] Leave grievances must be raised with HR within 10 working days of the decision.
+
+══════════════════════════════════════════════════════════════════════
+CLAUSE VERIFICATION: 10/10 critical clauses confirmed in source.
+ALL 10 CRITICAL CLAUSES VERIFIED ✓
+
+NOTE: This summary must not be used as a substitute for the full policy document.
+Note: No information has been added beyond what appears in the source document.
+══════════════════════════════════════════════════════════════════════
