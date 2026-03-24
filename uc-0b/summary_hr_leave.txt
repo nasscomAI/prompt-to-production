@@ -1,0 +1,26 @@
+# HR Leave Policy Summary - Compliance Extract
+
+**Clause 2.3** (must): Employees must submit a leave application at least 14 calendar
+
+**Clause 2.4** (must): Leave applications must receive written approval from the
+
+**Clause 2.5** (will): Unapproved absence will be recorded as Loss of Pay (LOP)
+
+**Clause 2.6** (may): Employees may carry forward a maximum of 5 unused annual leave
+
+**Clause 2.7** (must): Carry-forward days must be used within the first quarter
+
+**Clause 3.2** (requires): Sick leave of 3 or more consecutive days requires a medical
+
+**Clause 3.4** (unknown): Sick leave taken immediately before or after a public holiday
+
+**Clause 5.2** (requires): LWP requires approval from the Department Head and the
+
+**Clause 5.3** (requires): LWP exceeding 30 continuous days requires approval from
+
+**Clause 7.2** (not permitted): Leave encashment during service is not permitted under any
+
+
+## Enforcement Report
+
+✓ No violations detected.
