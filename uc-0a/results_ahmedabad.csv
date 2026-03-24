@@ -1,0 +1,16 @@
+id,description,category,priority,reason,flag
+AM-202401,Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202402,Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202405,Dead trees with split branches. Fall risk to walkers. 3 trees affected.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202406,Irrigation system broken. Grass dying in heatwave conditions.,Heat Hazard,Standard,Description contains 'heat hazard' related terms,
+AM-202407,Broken bench and upturned paving. Child injured last week.,Other,Urgent,No clear category indicators found in description,NEEDS_REVIEW
+AM-202410,Pothole on main highway causing morning rush lane closure.,Pothole,Standard,Description contains 'pothole' related terms,
+AM-202414,Residential colony unlit after 9pm. Wiring theft reported.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202417,Night market waste not cleared before morning. Heritage area affected.,Heritage Damage,Standard,"Multiple categories apply: Heritage Damage, Waste",NEEDS_REVIEW
+AM-202421,Club music audible at residential buildings at 2am.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202424,Zoo approach road surface bubbling at 45°C. Visitor complaints.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202429,River walk surface temperature unbearable. Installed temperature reads 52°C.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+AM-202431,Old city road subsidence near ancient step well. Heritage concern.,Heritage Damage,Standard,Description contains 'heritage damage' related terms,
+AM-202435,Black metal road dividers storing heat. Motorists reporting burns on contact.,Heat Hazard,Standard,Description contains 'heat hazard' related terms,
+AM-202444,Restaurant waste bins overflowing on Sunday night. Health risk.,Waste,Standard,Description contains 'waste' related terms,
+AM-202445,BRT shelter roof glass broken. Users exposed to full sun.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
