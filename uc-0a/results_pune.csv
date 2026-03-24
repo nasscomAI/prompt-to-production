@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'. Priority set to Standard as no immediate life-safety keywords were detected.,
+PM-202402,Pothole,Urgent,"Classified as Pothole because the description mentions 'pothole'. Priority set to Urgent due to safety-critical keyword(s): child, school.",
+PM-202406,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202408,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight because the description mentions 'streetlight'. Priority set to Standard as no immediate life-safety keywords were detected.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because the description mentions 'streetlight'. Priority set to Urgent due to safety-critical keyword(s): hazard.,
+PM-202413,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202418,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202419,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified as Other because no specific category keywords were identified. Priority set to Urgent due to safety-critical keyword(s): injury.,NEEDS_REVIEW
+PM-202427,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202428,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202430,Other,Standard,Classified as Other because no specific category keywords were identified. Priority set to Standard as no immediate life-safety keywords were detected.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because the description mentions 'waste'. Priority set to Standard as no immediate life-safety keywords were detected.,
+PM-202446,Other,Urgent,Classified as Other because no specific category keywords were identified. Priority set to Urgent due to safety-critical keyword(s): fell.,NEEDS_REVIEW
