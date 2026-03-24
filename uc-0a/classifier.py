@@ -29,17 +29,17 @@ def classify_complaint(description: str) -> dict:
     category = "Other"
     reason_snippet = ""
     
-    # Mapping keywords to categories
+    # Mapping keywords (using stems where possible) to categories
     category_map = {
         "Pothole": ["pothole", "pit"],
-        "Flooding": ["flood", "waterlogging", "standing in water", "inundated"],
-        "Streetlight": ["streetlight", "street light", "lamp", "lights out", "dark at night"],
-        "Waste": ["garbage", "bins", "trash", "waste", "dump", "smell", "dead animal"],
-        "Noise": ["noise", "music", "loud"],
-        "Heritage Damage": ["heritage"],
-        "Heat Hazard": ["heat", "sun", "shade"],
-        "Drain Blockage": ["drain", "manhole", "sewer"],
-        "Road Damage": ["road surface", "cracked", "sinking", "footpath", "tiles", "broken"]
+        "Flooding": ["flood", "waterlog", "inundat"],
+        "Streetlight": ["streetlight", "street light", "lamp", "unlit", "darkness", "lights out"],
+        "Waste": ["garbage", "bin", "trash", "waste", "dump", "smell", "dead animal", "litter"],
+        "Noise": ["noise", "music", "loud", "audible"],
+        "Heritage Damage": ["heritage", "ancient", "monument", "step well", "archaeologic"],
+        "Heat Hazard": ["heat", "sun", "shade", "melt", "temp", "°c", "burn", "hot"],
+        "Drain Blockage": ["drain", "manhole", "sewer", "gutter"],
+        "Road Damage": ["road surface", "crack", "sink", "footpath", "tile", "broken", "subsidence", "paving", "pavement"]
     }
 
     found_cat = False
@@ -54,17 +54,22 @@ def classify_complaint(description: str) -> dict:
 
     # 2. Determine Priority
     priority = "Standard"
-    is_urgent = any(kw in desc_lower for kw in URGENT_KEYWORDS)
-    if is_urgent:
+    urgent_keywords_to_check = [
+        "injury", "injured", "child", "school", "hospital", "ambulance", 
+        "fire", "hazard", "fell", "fall", "collapse"
+    ]
+    urgent_found = []
+    for kw in urgent_keywords_to_check:
+        if kw in desc_lower:
+            urgent_found.append(kw)
+    
+    if urgent_found:
         priority = "Urgent"
-        # Find the specific urgent keyword for the reason
-        for kw in URGENT_KEYWORDS:
-            if kw in desc_lower:
-                if reason_snippet:
-                    reason_snippet += f" and {kw}"
-                else:
-                    reason_snippet = kw
-                break
+        urgent_reason = ", ".join(urgent_found)
+        if reason_snippet:
+            reason_snippet = f"{reason_snippet} (Category) and {urgent_reason} (Priority)"
+        else:
+            reason_snippet = urgent_reason
     elif category == "Other":
         priority = "Low"
 
@@ -74,7 +79,7 @@ def classify_complaint(description: str) -> dict:
         flag = "NEEDS_REVIEW"
     
     # 4. Construct Reason
-    if not found_cat and not is_urgent:
+    if not found_cat and not urgent_found:
         reason = "No specific category or severity keywords identified in description."
     else:
         reason = f"Classification based on mentions of '{reason_snippet}' in the description."
@@ -100,11 +105,13 @@ def batch_classify(input_path: str, output_path: str):
     try:
         with open(input_path, mode='r', encoding='utf-8') as infile:
             reader = csv.DictReader(infile)
-            fieldnames = reader.fieldnames + ["category", "priority", "reason", "flag"]
+            # Fix lint: ensure fieldnames is a list even if reader.fieldnames is None
+            original_fieldnames = list(reader.fieldnames or [])
+            fieldnames = original_fieldnames + ["category", "priority", "reason", "flag"]
             
             for row in reader:
                 description = row.get("description", "")
-                if not description:
+                if not description or not description.strip():
                     # Skill: If input is empty, return Other + NEEDS_REVIEW
                     classification = {
                         "category": "Other",
@@ -135,7 +142,7 @@ def batch_classify(input_path: str, output_path: str):
                 writer = csv.DictWriter(outfile, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(results)
-            print(f"Succeesfully processed {len(results)} rows.")
+            print(f"Successfully processed {len(results)} rows.")
         else:
             print("No rows found to process.")
 
