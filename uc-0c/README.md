@@ -82,5 +82,5 @@ formula chosen silently (MoM or YoY picked without being asked).
 
 ## Commit Formula
 ```
-UC-0C Fix [failure mode]: [why it failed] → [what you changed]
+UC-0C Fix [Wrong aggregation & Silent nulls]: [Starter code lacked per-ward filtering and skipped null spend reporting] → [Implemented R.I.C.E-compliant parser and growth calculator with mandatory null flagging and formula transparency.]
 ```
