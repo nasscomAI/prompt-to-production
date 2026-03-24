@@ -1,0 +1,16 @@
+category,priority,reason,flag,complaint_id
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,KM-202401
+Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'historic'.,,KM-202402
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,KM-202405
+Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,,KM-202409
+Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,,KM-202410
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,KM-202411
+Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,,KM-202415
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,KM-202418
+Road Damage,Urgent,Classified as Road Damage because the description mentions 'sinking (severity: hospital)'.,,KM-202421
+Road Damage,Standard,Classified as Road Damage because the description mentions 'surface'.,,KM-202422
+Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,,KM-202426
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,KM-202430
+Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,,KM-202434
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,KM-202436
+Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,,KM-202438
