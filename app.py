@@ -1,8 +1,3 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
 import argparse
 import csv
 import sys
@@ -125,11 +120,12 @@ def write_output(results, output_file):
 # -------------------------------
 def main():
     parser = argparse.ArgumentParser(description="UC-0C Growth Computation App")
-    parser.add_argument("--input", "-input", required=True, help="Input CSV file path")
-    parser.add_argument("--ward", "-ward", required=True, help="Ward name")
-    parser.add_argument("--category", "-category", required=True, help="Category name")
-    parser.add_argument("--growth-type", "-growth-type", required=True, help="Growth type (MoM)")
-    parser.add_argument("--output", "-output", required=True, help="Output CSV file path")
+    parser.add_argument("--input", required=True, help="Input CSV file path")
+    parser.add_argument("--ward", required=True, help="Ward name")
+    parser.add_argument("--category", required=True, help="Category name")
+    parser.add_argument("--growth-type", required=True, help="Growth type (MoM)")
+    parser.add_argument("--output", required=True, help="Output CSV file path")
+
     args = parser.parse_args()
 
     # Load dataset
@@ -150,9 +146,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-import argparse
-
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
-
