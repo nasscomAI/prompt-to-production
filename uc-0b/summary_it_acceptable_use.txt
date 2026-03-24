@@ -1,0 +1,28 @@
+CMC ACCEPTABLE USE POLICY SUMMARY
+- 1.1: Governs use of all CMC IT systems, devices, networks, and data.
+- 1.2: Applies to permanent staff, contractual staff, and third-party vendors.
+- 1.3: Use implies policy acceptance.
+- 2.1: Corporate devices primarily for official work.
+- 2.2: Moderate personal use allowed if no work/bandwidth interference.
+- 2.3: Software install requires IT Department written approval.
+- 2.4: Approved software must come from CMC catalogue only.
+- 2.5: Restricted sites (gambling, adult, harmful) prohibited.
+- 2.6: Security agent must be active; circumvention is a disciplinary offence.
+- 3.1: Personal devices: CMC email and portal access only.
+- 3.2: Personal devices must not access/store/transmit sensitive CMC data.
+- 3.3: Personal devices must not connect to internal network; Guest WiFi available.
+- 3.4: PIN or biometric lock mandatory for CMC email access on personal devices.
+- 3.5: Lost/stolen devices with CMC email must be reported within 4 hours for remote wipe.
+- 4.1: Password sharing prohibited.
+- 4.2: IT staff will never ask for passwords; report requests.
+- 4.3: Passwords must be changed every 90 days.
+- 4.4: MFA mandatory for all remote access.
+- 5.1: Confidential data not allowed on personal devices or unapproved cloud storage.
+- 5.2: No forwarding Confidential emails to personal accounts.
+- 5.3: Printing Confidential docs requires secure print; docs must not be left unattended.
+- 6.1: Internet use is monitored and logged.
+- 6.2: CMC email addresses not for personal service registrations.
+- 6.3: Mass external emails require Communications Department approval.
+- 7.1: Violations may lead to termination.
+- 7.2: Unauthorised access reported to law enforcement.
+- 7.3: CMC reserves right to monitor/audit without notice.
