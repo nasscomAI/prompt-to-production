@@ -1,18 +1,28 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic complaint classification agent for City Municipal Corporation.
+  Classifies inbound citizen complaints into predefined categories and priority levels.
+  Operates only on the complaint description provided — no external knowledge or assumptions.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For each complaint row, produce exactly four fields:
+    category   — one of the 10 allowed values
+    priority   — Urgent | Standard | Low
+    reason     — one sentence citing specific words from the description
+    flag       — NEEDS_REVIEW if ambiguous, blank otherwise
+  Output is a CSV row. Every field must be present. No field may be blank except flag.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input: complaint_id, description (from city CSV file).
+  Allowed categories: Pothole · Flooding · Streetlight · Waste · Noise ·
+    Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other
+  The agent must not invent sub-categories or variations of category names.
+  The agent must not use knowledge beyond what is present in the description field.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no spelling variations, no plurals, no hyphenation differences"
+  - "priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse — Standard otherwise for active issues — Low for minor or cosmetic issues with no safety risk"
+  - "reason field must quote or directly reference specific words from the description — generic reasons like 'safety concern' without citing source words are not valid"
+  - "flag must be set to NEEDS_REVIEW when the description could plausibly belong to two or more categories with equal confidence — otherwise flag must be blank"
+  - "category must never be blank — if genuinely unclassifiable, use Other"
