@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,"Classified as Pothole because description mentions 'tyre damage'; no severity keywords found, priority set to Low.",
+PM-202402,Pothole,Urgent,Classified as Pothole because description mentions 'pothole'; priority Urgent because description contains 'child'.,
+PM-202406,Flooding,Standard,"Classified as Flooding because description mentions 'flooded'; no severity keywords found, priority set to Standard.",
+PM-202408,Flooding,Standard,"Classified as Flooding because description mentions 'flooded'; no severity keywords found, priority set to Standard.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight because description mentions 'streetlight'; no severity keywords found, priority set to Standard.",
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description mentions 'Streetlight'; priority Urgent because description contains 'hazard'.,
+PM-202413,Waste,Low,"Classified as Waste because description mentions 'garbage'; no severity keywords found, priority set to Low.",
+PM-202418,Noise,Low,"Classified as Noise because description mentions 'midnight'; no severity keywords found, priority set to Low.",
+PM-202419,Road Damage,Low,"Classified as Road Damage because description mentions 'sinking'; no severity keywords found, priority set to Low.",
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage because description mentions 'Manhole'; priority Urgent because description contains 'injury'.,
+PM-202427,Flooding,Standard,"Classified as Flooding because description mentions 'flood'; no severity keywords found, priority set to Standard.",
+PM-202428,Waste,Low,"Classified as Waste because description mentions 'animal not removed'; no severity keywords found, priority set to Low.",
+PM-202430,Heritage Damage,Standard,"Classified as Heritage Damage because description mentions 'Heritage street'; no severity keywords found, priority set to Standard.",
+PM-202433,Waste,Low,"Classified as Waste because description mentions 'waste'; no severity keywords found, priority set to Low.",
+PM-202446,Road Damage,Urgent,Classified as Road Damage because description mentions 'tiles broken'; priority Urgent because description contains 'fell'.,
