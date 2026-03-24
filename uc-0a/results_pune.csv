@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint mentions 'pothole' which indicates a Pothole issue.,
+PM-202402,Pothole,Urgent,The complaint mentions 'pothole' which indicates a Pothole issue.,
+PM-202406,Flooding,Standard,The complaint mentions 'flood' which indicates a Flooding issue.,
+PM-202408,Flooding,Standard,The complaint mentions 'flood' which indicates a Flooding issue.,
+PM-202410,Streetlight,Standard,The complaint mentions 'streetlight' which indicates a Streetlight issue.,
+PM-202411,Streetlight,Urgent,The complaint mentions 'streetlight' which indicates a Streetlight issue.,
+PM-202413,Waste,Standard,The complaint mentions 'garbage' which indicates a Waste issue.,
+PM-202418,Other,Standard,The category is genuinely ambiguous and requires manual review.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,The complaint mentions 'road' which indicates a Road Damage issue.,
+PM-202420,Other,Urgent,The category is genuinely ambiguous and requires manual review.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The complaint mentions 'flood' which indicates a Flooding issue.,
+PM-202428,Other,Standard,The category is genuinely ambiguous and requires manual review.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,The complaint mentions 'dark' which indicates a Streetlight issue.,
+PM-202433,Waste,Standard,The complaint mentions 'waste' which indicates a Waste issue.,
+PM-202446,Other,Urgent,The category is genuinely ambiguous and requires manual review.,NEEDS_REVIEW
