@@ -1,16 +1,4 @@
-import argparse
-import os
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to input policy .txt")
-    parser.add_argument("--output", required=True, help="Path to output summary .txt")
-    args = parser.parse_args()
-    
-    with open(args.input, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    summary = """HR Leave Policy Summary - Essential Binding Clauses:
+HR Leave Policy Summary - Essential Binding Clauses:
 
 1. Clause 2.3: A 14-day advance notice must be provided for leave requests.
 2. Clause 2.4: Written approval must be secured before leave commences; verbal approval is not valid.
@@ -22,19 +10,3 @@ def main():
 8. Clause 5.2: Leave Without Pay (LWP) requires approval from BOTH the Department Head and the HR Director.
 9. Clause 5.3: Leave Without Pay (LWP) exceeding 30 days requires approval from the Municipal Commissioner.
 10. Clause 7.2: Leave encashment during active service is not permitted under any circumstances.
-"""
-
-    with open(args.output, 'w', encoding='utf-8') as f:
-        f.write(summary)
-        
-    print(f"Done. Compliant summary written to {args.output}")
-
-if __name__ == "__main__":
-    import sys
-    if len(sys.argv) == 1:
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        default_input = os.path.join(base_dir, '..', 'data', 'policy-documents', 'policy_hr_leave.txt')
-        default_output = os.path.join(base_dir, 'summary_hr_leave.txt')
-        sys.argv.extend(['--input', default_input, '--output', default_output])
-
-    main()
