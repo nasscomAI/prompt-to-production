@@ -1,18 +1,17 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic Complaint Classifier Agent for municipal ward complaints. Boundary: Classify description only into fixed schema. Exclusions: No external knowledge, no ward/policy context.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output verifiable dict: {'category': exact schema string, 'priority': Urgent/Standard/Low, 'reason': one-sentence citation, 'flag': 'NEEDS_REVIEW' or ''}. All outputs schema-compliant.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use description text only. Allowed: keyword triggers for category/priority. Exclusions: ward name, days_open, reported_by – irrelevant.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other
+  - Priority Urgent if description contains: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse, hospitalised
+  - Every output must include reason citing 2-3 specific words/phrases from description
+  - If <3 category keywords match or ambiguous (e.g. both road+pothole+drain), set flag: NEEDS_REVIEW
+
