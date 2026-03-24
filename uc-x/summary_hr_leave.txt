@@ -1,0 +1,37 @@
+SUMMARY — HR LEAVE POLICY (HR-POL-001)
+City Municipal Corporation | Version 2.3 | Effective: 1 April 2024
+Generated from: policy_hr_leave.txt
+================================================================================
+
+CLAUSE 1 — Annual leave entitlement [Section 2.1]
+Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+
+CLAUSE 2 — Leave accrual rate [Section 2.2]
+Annual leave accrues at 1.5 days per month from the date of joining.
+
+CLAUSE 3 — Advance notice required [Section 2.3]
+Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+
+CLAUSE 4 — Approval requirement [Section 2.4]
+Leave applications must receive written approval from the employee's direct manager before leave commences. Verbal approval is not valid.
+
+CLAUSE 5 — Carry-forward limit [Section 2.6]
+Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+CLAUSE 6 — Carry-forward deadline [Section 2.7]
+Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+
+CLAUSE 7 — Sick leave entitlement [Section 3.1]
+Each employee is entitled to 12 days of paid sick leave per calendar year. Sick leave cannot be carried forward.
+
+CLAUSE 8 — Medical certificate rule [Section 3.2]
+Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+
+CLAUSE 9 — Leave Without Pay (LWP) approval chain [Section 5.2]
+LWP requires approval from the Department Head AND the HR Director. Manager approval alone is not sufficient.
+
+CLAUSE 10 — Leave encashment limit [Section 7.1]
+Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days. Leave encashment during service is not permitted under any circumstances.
+
+================================================================================
+END OF SUMMARY
