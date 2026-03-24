@@ -1,0 +1,13 @@
+Ward,Category,Period,Actual Spend (₹ lakh),Growth,Formula
+Ward 4 – Warje,Roads & Pothole Repair,2024-01,10.2,n/a,First month in sequence
+Ward 4 – Warje,Roads & Pothole Repair,2024-02,10.7,+4.9%,(10.7 - 10.2) / 10.2
+Ward 4 – Warje,Roads & Pothole Repair,2024-03,11.1,+3.7%,(11.1 - 10.7) / 10.7
+Ward 4 – Warje,Roads & Pothole Repair,2024-04,8.8,-20.7%,(8.8 - 11.1) / 11.1
+Ward 4 – Warje,Roads & Pothole Repair,2024-05,11.3,+28.4%,(11.3 - 8.8) / 8.8
+Ward 4 – Warje,Roads & Pothole Repair,2024-06,12.5,+10.6%,(12.5 - 11.3) / 11.3
+Ward 4 – Warje,Roads & Pothole Repair,2024-07,NULL,NULL (Flagged),Calculation skipped: Audit freeze — figures under review
+Ward 4 – Warje,Roads & Pothole Repair,2024-08,16.0,n/a,Previous month was NULL
+Ward 4 – Warje,Roads & Pothole Repair,2024-09,14.7,-8.1%,(14.7 - 16.0) / 16.0
+Ward 4 – Warje,Roads & Pothole Repair,2024-10,11.0,-25.2%,(11.0 - 14.7) / 14.7
+Ward 4 – Warje,Roads & Pothole Repair,2024-11,9.0,-18.2%,(9.0 - 11.0) / 11.0
+Ward 4 – Warje,Roads & Pothole Repair,2024-12,11.2,+24.4%,(11.2 - 9.0) / 9.0
