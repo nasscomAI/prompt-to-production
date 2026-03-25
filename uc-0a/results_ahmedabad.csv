@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Classified because description mentions 'surface'.,
+AM-202402,Other,Standard,No clear category detected from the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,No clear category detected from the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified because description mentions 'heat'.,
+AM-202407,Other,Urgent,No clear category detected from the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified because description mentions 'pothole'.,
+AM-202414,Other,Standard,No clear category detected from the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified because description mentions 'waste'.,
+AM-202421,Noise,Standard,Classified because description mentions 'music'.,
+AM-202424,Road Damage,Standard,Classified because description mentions 'road'.,
+AM-202429,Road Damage,Standard,Classified because description mentions 'surface'.,
+AM-202431,Heritage Damage,Standard,Classified because description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified because description mentions 'heat'.,
+AM-202444,Waste,Standard,Classified because description mentions 'waste'.,
+AM-202445,Other,Standard,No clear category detected from the description.,NEEDS_REVIEW
