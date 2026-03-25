@@ -1,12 +1,12 @@
 skills:
-  - name: complaint_classifier
-    description: Classifies a municipal complaint into a valid department and sub_category using only the approved taxonomy.
-    input: Complaint text in plain language.
-    output: JSON object with department, sub_category, severity, rationale, and ambiguity flag.
-    error_handling: If the complaint is unclear or does not match a valid taxonomy category, mark ambiguity_flag as true and provide the closest safe classification with rationale.
+  - name: policy_summarizer
+    description: Creates a concise and accurate summary of a policy document without changing obligations, conditions, or approvals.
+    input: Plain text policy document.
+    output: Clear summary text preserving all important rules, constraints, and exceptions.
+    error_handling: If the policy text is missing, incomplete, or unclear, do not guess. Return a request for complete or clearer input.
 
-  - name: severity_detector
-    description: Detects complaint urgency using explicit severity cues such as safety risk, outage, blocked access, or hazard.
-    input: Complaint text.
-    output: Severity level as low, medium, or high based only on defined severity rules.
-    error_handling: If severity cannot be clearly determined from the complaint text, default conservatively and explain the reasoning in rationale.
+  - name: clause_preserver
+    description: Detects and preserves critical clauses such as deadlines, approvals, eligibility rules, exceptions, and restrictions.
+    input: Policy or procedural text.
+    output: Structured key obligations and constraints that must not be omitted or softened.
+    error_handling: If a clause is ambiguous or incomplete, mark it as unclear instead of simplifying it.
