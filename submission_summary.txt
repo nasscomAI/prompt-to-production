@@ -1,0 +1,35 @@
+# AI-Code Sarathi Submission Summary - Sami Kolarkar
+
+## Contact Details
+- **Participant Name**: Sami Kolarkar
+- **City**: Solapur
+
+## Repository Details
+- **GitHub Repository Link (Fork)**: https://github.com/SamiKolarkar/prompt-to-production
+- **Pull Request Link**: https://github.com/nasscomAI/prompt-to-production/pull/453
+- **Branch**: participant/SamiKolarkar-Solapur
+
+## Submission Summary
+I have successfully completed all four Use Cases (UC-0A, UC-0B, UC-0C, and UC-X) as part of the "Prompt-to-Production" workshop. Every task was developed using AI-assisted coding (Vibe Coding) and verified against the workshop's specific failure modes.
+
+### **UC-0A: Complaint Classifier**
+- **Failure Mode**: Severity blindness.
+- **Enforcement Rule**: Added safety triggers for keywords like injury/child/school/hospital.
+- **Status**: Complete & Verified.
+
+### **UC-0B: Policy Summarizer**
+- **Failure Mode**: Condition drop (missing multi-approver logic).
+- **Enforcement Rule**: Implemented multi-condition preservation to prevent clause dilution.
+- **Status**: Complete & Verified.
+
+### **UC-0C: Budget Growth Analysis**
+- **Failure Mode**: Silent aggregation (lack of ward/category granularity).
+- **Enforcement Rule**: Grouping forced at the per-ward and per-category level.
+- **Status**: Complete & Verified.
+
+### **UC-X: Document Q&A Analyst**
+- **Failure Mode**: Cross-document blending and hedged hallucinations.
+- **Enforcement Rule**: Single-source citation required for every claim; exact refusal template for unknowns.
+- **Status**: Complete & Verified.
+
+This file serves as a backup evidence for my technical submission.
