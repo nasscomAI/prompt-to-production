@@ -6,9 +6,10 @@ import os
 import sys
 
 try:
-    import google.generativeai as genai
+    from google import genai
+    from google.genai import types
 except ImportError:
-    print("Please install google-generativeai package: pip install google-generativeai")
+    print("Please install google-genai package: pip install google-genai")
     sys.exit(1)
 
 def retrieve_policy(filepath: str) -> str:
@@ -21,9 +22,11 @@ def summarize_policy(policy_text: str) -> str:
     # Ensure API key is set
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
+        api_key = input("GEMINI_API_KEY not found. Please enter your API key: ").strip()
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
         
-    genai.configure(api_key=api_key)
+    client = genai.Client(api_key=api_key)
     
     # RICE Context from agents.md
     system_instruction = '''
@@ -42,8 +45,13 @@ enforcement:
   - "Never add information not present in the source document."
   - "If a clause cannot be summarised without meaning loss — quote it verbatim and flag it."
 '''
-    model = genai.GenerativeModel('gemini-2.5-flash', system_instruction=system_instruction)
-    response = model.generate_content(f"Summarize the following policy document according to your strict instructions:\n\n{policy_text}")
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=f"Summarize the following policy document according to your strict instructions:\n\n{policy_text}",
+        config=types.GenerateContentConfig(
+            system_instruction=system_instruction,
+        )
+    )
     return response.text
 
 def main():
@@ -58,7 +66,9 @@ def main():
         summary = summarize_policy(policy_content)
         
         # Ensure output directory exists just in case
-        os.makedirs(os.path.dirname(os.path.abspath(args.output)), exist_ok=True)
+        output_dir = os.path.dirname(os.path.abspath(args.output))
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
         
         with open(args.output, 'w', encoding='utf-8') as f:
             f.write(summary)
