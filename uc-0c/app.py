@@ -26,7 +26,7 @@ def compute_growth(df, ward, category, growth_type):
     if growth_type is None:
         raise Exception("❌ growth-type must be specified")
  
-    df = df[(df["ward"] == ward) & (df["category"] == category)]
+    df = df[(df["ward"] == ward) & (df["category"] == category)] # Filter by ward and category
  
     df = df.sort_values("period")
  
