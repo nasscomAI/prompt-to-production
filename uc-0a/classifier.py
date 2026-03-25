@@ -17,12 +17,12 @@ URGENT_KEYWORDS = [
 CATEGORY_MAPPING = {
     "Pothole": ["pothole", "pit"],
     "Flooding": ["flood", "waterlogging", "inundation", "water log"],
-    "Streetlight": ["streetlight", "street light", "lamp", "darkness", "light out"],
-    "Waste": ["waste", "garbage", "trash", "dump", "litter", "animal"],
+    "Streetlight": ["streetlight", "street light", "lamp", "darkness", "light out", "unlit"],
+    "Waste": ["waste", "garbage", "trash", "dump", "litter", "animal", "refuse"],
     "Noise": ["noise", "loud", "sound", "music"],
-    "Road Damage": ["road damage", "crack", "pavement", "broken road", "footpath", "tile"],
-    "Heritage Damage": ["heritage", "monument", "statue", "historical site"],
-    "Heat Hazard": ["heat", "extreme temperature", "sunstroke"],
+    "Road Damage": ["road damage", "crack", "pavement", "broken road", "footpath", "tile", "paving", "broken", "glass", "bench"],
+    "Heritage Damage": ["heritage", "monument", "statue", "historical site", "ancient"],
+    "Heat Hazard": ["heat", "extreme temperature", "sunstroke", "melting", "temperature", "bubbling", "burn", "unbearable", "sun"],
     "Drain Blockage": ["drain", "sewage", "clogged", "sewer", "blockage", "manhole"],
 }
 

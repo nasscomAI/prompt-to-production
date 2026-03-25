@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+AM-202401,Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.,Heat Hazard,Standard,Category 'Heat Hazard' assigned because the term 'melting' was found in the input.,
+AM-202402,Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.,Heat Hazard,Standard,Category 'Heat Hazard' assigned because the term 'temperature' was found in the input.,
+AM-202405,Dead trees with split branches. Fall risk to walkers. 3 trees affected.,Other,Standard,Category set to 'Other' as no specific category keywords were identified and the request might be ambiguous.,NEEDS_REVIEW
+AM-202406,Irrigation system broken. Grass dying in heatwave conditions.,Road Damage,Standard,Category 'Road Damage' assigned because the term 'broken' was found in the input.,
+AM-202407,Broken bench and upturned paving. Child injured last week.,Road Damage,Urgent,Category 'Road Damage' assigned because the term 'paving' was found in the input. Priority elevated to Urgent due to keywords: child.,
+AM-202410,Pothole on main highway causing morning rush lane closure.,Pothole,Standard,Category 'Pothole' assigned because the term 'pothole' was found in the input.,
+AM-202414,Residential colony unlit after 9pm. Wiring theft reported.,Streetlight,Standard,Category 'Streetlight' assigned because the term 'unlit' was found in the input.,
+AM-202417,Night market waste not cleared before morning. Heritage area affected.,Waste,Standard,Category 'Waste' assigned because the term 'waste' was found in the input.,
+AM-202421,Club music audible at residential buildings at 2am.,Noise,Standard,Category 'Noise' assigned because the term 'music' was found in the input.,
+AM-202424,Zoo approach road surface bubbling at 45°C. Visitor complaints.,Heat Hazard,Standard,Category 'Heat Hazard' assigned because the term 'bubbling' was found in the input.,
+AM-202429,River walk surface temperature unbearable. Installed temperature reads 52°C.,Heat Hazard,Standard,Category 'Heat Hazard' assigned because the term 'temperature' was found in the input.,
+AM-202431,Old city road subsidence near ancient step well. Heritage concern.,Heritage Damage,Standard,Category 'Heritage Damage' assigned because the term 'heritage' was found in the input.,
+AM-202435,Black metal road dividers storing heat. Motorists reporting burns on contact.,Heat Hazard,Standard,Category 'Heat Hazard' assigned because the term 'heat' was found in the input.,
+AM-202444,Restaurant waste bins overflowing on Sunday night. Health risk.,Waste,Standard,Category 'Waste' assigned because the term 'waste' was found in the input.,
+AM-202445,BRT shelter roof glass broken. Users exposed to full sun.,Road Damage,Standard,Category 'Road Damage' assigned because the term 'broken' was found in the input.,
