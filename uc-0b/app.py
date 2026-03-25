@@ -20,7 +20,7 @@ def summarize_policy(text):
             current_section = "Maternity and Paternity Leave"
             summary.append("\nMaternity and Paternity Leave:")
         elif "LEAVE WITHOUT PAY" in line:
-            current_section = "Leave Without Pay")
+            current_section = "Leave Without Pay"
             summary.append("\nLeave Without Pay:")
         elif "PUBLIC HOLIDAYS" in line:
             current_section = "Public Holidays"
