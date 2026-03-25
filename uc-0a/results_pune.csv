@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description contains specific keywords such as 'pothole'.,
+PM-202402,Pothole,Urgent,"The description contains specific keywords such as 'child, pothole, school'.",
+PM-202406,Flooding,Standard,The description contains specific keywords such as 'flood'.,
+PM-202408,Other,Standard,"The description contains specific keywords such as 'drain, flood'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description contains specific keywords such as 'dark, lights out, streetlight'.",
+PM-202411,Streetlight,Urgent,"The description contains specific keywords such as 'hazard, light, streetlight'.",
+PM-202413,Waste,Standard,The description contains specific keywords such as 'garbage'.,
+PM-202418,Noise,Standard,The description contains specific keywords such as 'music'.,
+PM-202419,Road Damage,Standard,"The description contains specific keywords such as 'crack, road surface, sinking'.",
+PM-202420,Drain Blockage,Urgent,"The description contains specific keywords such as 'injury, manhole'.",
+PM-202427,Flooding,Standard,The description contains specific keywords such as 'flood'.,
+PM-202428,Other,Standard,The description does not contain conclusive keywords to cleanly categorize the complaint.,NEEDS_REVIEW
+PM-202430,Other,Standard,"The description contains specific keywords such as 'dark, heritage, lights out'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description contains specific keywords such as 'dump, waste'.",
+PM-202446,Road Damage,Urgent,"The description contains specific keywords such as 'broken, fell, footpath'.",
