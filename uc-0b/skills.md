@@ -14,3 +14,6 @@ skills:
     input: [Type and format]
     output: [Type and format]
     error_handling: [What does it do when input is invalid or ambiguous?]
+
+retrieve_policy
+summarize_policy
