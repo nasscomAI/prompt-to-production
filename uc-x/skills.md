@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-X Ask My Documents
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads and indexes the three policy files by name and section number.
+    input: Paths to three policy .txt files.
+    output: Indexed searchable data repository.
+    error_handling: Alert if core documents are unreadable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches indexed docs to return a single-source answer with citation or refusal.
+    input: String question.
+    output: String answer with citation OR standard refusal.
+    error_handling: Strict format control for refusal messages.
+
