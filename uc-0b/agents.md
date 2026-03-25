@@ -17,7 +17,7 @@ context: >
   the source text.
 
 enforcement:
-  - "Coverage rule: include every numbered clause present in the source policy in the summary."
+  - "Coverage rule: include every numbered clause present in the source policy in the summary, with explicit checks for the critical inventory clauses 2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, and 7.2."
   - "Condition integrity rule: preserve all conditions in each obligation; for multi-condition clauses keep all required actors, thresholds, timing, and exceptions (for example, clause 5.2 requires both Department Head and HR Director approvals)."
-  - "Fidelity rule: do not add information, rationale, examples, or recommendations not explicitly present in the source policy."
+  - "Fidelity rule: do not add information, rationale, examples, or recommendations not explicitly present in the source policy, and do not use scope-bleed phrasing such as 'as is standard practice', 'typically in government organisations', or 'employees are generally expected to'."
   - "Refusal/quote rule: if a clause cannot be summarized without changing meaning, quote that clause verbatim and explicitly flag it as 'verbatim to prevent meaning loss' rather than guessing."

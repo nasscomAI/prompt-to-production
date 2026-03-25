@@ -29,3 +29,15 @@ Clause 7.2: "Leave encashment during service is not permitted under any circumst
 Clause 7.3: "Sick leave and LWP cannot be encashed under any circumstances." [verbatim to prevent meaning loss]
 Clause 8.1: "Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision." [verbatim to prevent meaning loss]
 Clause 8.2: "Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing." [verbatim to prevent meaning loss]
+
+Critical Clause Coverage Checklist
+- Clause 2.3: present
+- Clause 2.4: present
+- Clause 2.5: present
+- Clause 2.6: present
+- Clause 2.7: present
+- Clause 3.2: present
+- Clause 3.4: present
+- Clause 5.2: present
+- Clause 5.3: present
+- Clause 7.2: present

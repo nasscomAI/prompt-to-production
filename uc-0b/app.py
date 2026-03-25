@@ -11,6 +11,7 @@ from pathlib import Path
 
 CLAUSE_RE = re.compile(r"^(\d+\.\d+)\s+(.*)$")
 SECTION_HEADING_RE = re.compile(r"^\d+\.\s+.+$")
+CRITICAL_INVENTORY = ["2.3", "2.4", "2.5", "2.6", "2.7", "3.2", "3.4", "5.2", "5.3", "7.2"]
 
 
 def _normalize_space(text: str) -> str:
@@ -147,12 +148,37 @@ def _requires_verbatim(raw_text: str) -> bool:
     return any(marker in lower for marker in risk_markers)
 
 
+def _validate_inventory(clauses: list[dict]) -> tuple[list[str], list[str]]:
+    present_ids = {str(c.get("clause_id", "")).strip() for c in clauses}
+    present = [cid for cid in CRITICAL_INVENTORY if cid in present_ids]
+    missing = [cid for cid in CRITICAL_INVENTORY if cid not in present_ids]
+    return present, missing
+
+
+def _append_coverage_checklist(lines: list[str], present: list[str], missing: list[str]):
+    lines.append("")
+    lines.append("Critical Clause Coverage Checklist")
+    for cid in CRITICAL_INVENTORY:
+        status = "present" if cid in present else "missing"
+        lines.append(f"- Clause {cid}: {status}")
+    if missing:
+        lines.append(
+            f"- Inventory validation error: missing critical clauses {', '.join(missing)}"
+        )
+
+
 def summarize_policy(clauses: list[dict]) -> str:
     """
     Create a clause-referenced summary with full coverage and meaning-preserving fallback.
     """
     if not clauses:
         raise ValueError("No clauses provided for summarization.")
+
+    present, missing = _validate_inventory(clauses)
+    if missing:
+        raise ValueError(
+            f"Source policy is missing required critical clauses: {', '.join(missing)}"
+        )
 
     lines = []
     lines.append("Policy Summary (Clause-Referenced)")
@@ -171,6 +197,8 @@ def summarize_policy(clauses: list[dict]) -> str:
             )
         else:
             lines.append(f"Clause {clause_id}: {raw_text}")
+
+    _append_coverage_checklist(lines, present, missing)
 
     return "\n".join(lines) + "\n"
 

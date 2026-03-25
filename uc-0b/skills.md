@@ -19,8 +19,9 @@ skills:
       raw_text for each clause.
     output: >
       A clause-referenced summary that covers every numbered clause, preserves all
-      conditions and obligations, and flags any clause quoted verbatim to prevent
-      meaning loss.
+      conditions and obligations, flags any clause quoted verbatim to prevent
+      meaning loss, and includes a clause coverage checklist for 2.3, 2.4, 2.5,
+      2.6, 2.7, 3.2, 3.4, 5.2, 5.3, and 7.2.
     error_handling: >
       If any clause is missing, ambiguous, or cannot be summarized without dropping
       conditions, quote that clause verbatim and mark it as 'verbatim to prevent
