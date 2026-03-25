@@ -5,7 +5,8 @@ intent: >
   Output a JSON object or dictionary containing exactly these fields: `category`, `priority`, `reason`, and `flag` (optional), properly classified according to the classification schema.
 
 context: >
-  You will receive a complaint text description. You are only allowed to use the text from the complaint description to determine the classification. Do not use any external knowledge to assume details not present in the text.
+  Your input is a single citizen complaint text description. Your classification must rely entirely on the explicit words provided in this text. 
+  Exclusions: DO NOT use external domain knowledge, infer missing details, or assume unstated risks/severity (e.g., do not assume an accident occurred unless explicitly stated). If the text is vague, rely strictly on the provided words without guessing.
 
 enforcement:
   - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
