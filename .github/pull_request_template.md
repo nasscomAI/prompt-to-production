@@ -9,15 +9,15 @@
 
 ## Checklist — Complete Before Opening This PR
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_ahmedabad.csv` without crash
-- [ ] `results_ahmedabad.csv` present in `uc-0a/`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
-- [ ] `summary_hr_leave.txt` present in `uc-0b/`
-- [ ] `growth_output.csv` present in `uc-0c/`
-- [ ] 4+ commits with meaningful messages following the formula
-- [ ] All sections below are filled in
+- [x] `agents.md` committed for all 4 UCs
+- [x] `skills.md` committed for all 4 UCs
+- [x] `classifier.py` runs on `test_ahmedabad.csv` without crash
+- [x] `results_ahmedabad.csv` present in `uc-0a/`
+- [x] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
+- [x] `summary_hr_leave.txt` present in `uc-0b/`
+- [x] `growth_output.csv` present in `uc-0c/`
+- [x] 4+ commits with meaningful messages following the formula
+- [x] All sections below are filled in
 
 ---
 
