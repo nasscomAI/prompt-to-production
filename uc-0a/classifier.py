@@ -1,30 +1,25 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
 import argparse
 import csv
 
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
+    desc = row.get("description", "").lower()
+    urgent = any(word in desc for word in ["injury", "child", "school", "hospital"])
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": "Other",
+        "priority": "Urgent" if urgent else "Normal",
+        "reason": "Found keyword" if urgent else "Normal issue",
+        "flag": "REVIEW" if not urgent else ""
+    }
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
+    with open(input_path, 'r', encoding='utf-8') as fin, open(output_path, 'w', newline='', encoding='utf-8') as fout:
+        reader = csv.DictReader(fin)
+        writer = csv.DictWriter(fout, fieldnames=["complaint_id", "category", "priority", "reason", "flag"])
+        writer.writeheader()
+        for row in reader:
+            res = classify_complaint(row)
+            writer.writerow(res)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
