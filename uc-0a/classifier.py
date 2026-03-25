@@ -133,7 +133,7 @@ def batch_classify(input_path: str, output_path: str):
         print(f"Failed to read input CSV: {e}", file=sys.stderr)
         return
 
-    out_fieldnames = list(fieldnames) + ["category", "priority", "reason", "flag"]
+    out_fieldnames = list(fieldnames or []) + ["category", "priority", "reason", "flag"]
     
     out_dir = os.path.dirname(output_path)
     if out_dir and not os.path.exists(out_dir):
