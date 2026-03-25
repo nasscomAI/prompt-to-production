@@ -10,27 +10,35 @@ def summarize_policy(text):
         if "PURPOSE AND SCOPE" in line:
             current_section = "Purpose and Scope"
             summary.append("\nPurpose and Scope:")
+
         elif "ANNUAL LEAVE" in line:
             current_section = "Annual Leave"
             summary.append("\nAnnual Leave:")
+
         elif "SICK LEAVE" in line:
             current_section = "Sick Leave"
             summary.append("\nSick Leave:")
+
         elif "MATERNITY AND PATERNITY LEAVE" in line:
             current_section = "Maternity and Paternity Leave"
             summary.append("\nMaternity and Paternity Leave:")
+
         elif "LEAVE WITHOUT PAY" in line:
             current_section = "Leave Without Pay"
             summary.append("\nLeave Without Pay:")
+
         elif "PUBLIC HOLIDAYS" in line:
             current_section = "Public Holidays"
             summary.append("\nPublic Holidays:")
+
         elif "LEAVE ENCASHMENT" in line:
             current_section = "Leave Encashment"
             summary.append("\nLeave Encashment:")
+
         elif "GRIEVANCES" in line:
             current_section = "Grievances"
             summary.append("\nGrievances:")
+
         elif line[0].isdigit():
             summary.append(f"- {line}")
 
