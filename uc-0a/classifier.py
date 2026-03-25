@@ -8,7 +8,7 @@ def classify_complaint(row: dict) -> dict:
     """
 
     complaint_id = row.get("complaint_id", "UNKNOWN")
-    text = row.get("complaint", "").lower()
+    text = (row.get("complaint") or row.get("description") or row.get("description") or "").lower()
 
     category = "Other"
     priority = "Normal"
