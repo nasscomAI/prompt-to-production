@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,Classified based on description containing: category keyword 'pothole',
+PM-202402,Pothole,Urgent,"Classified based on description containing: category keyword 'pothole'; urgent keyword(s) 'school, child'",
+PM-202406,Flooding,Normal,Classified based on description containing: category keyword 'flood',
+PM-202408,Flooding,Normal,Classified based on description containing: category keyword 'flood',
+PM-202410,Streetlight,Normal,Classified based on description containing: category keyword 'light',
+PM-202411,Streetlight,Urgent,Classified based on description containing: category keyword 'light'; urgent keyword(s) 'hazard',
+PM-202413,Garbage,Normal,Classified based on description containing: category keyword 'garbage',
+PM-202418,Noise,Normal,Classified based on description containing: category keyword 'music',
+PM-202419,Other,Normal,Classified based on description containing: flag set to NEEDS_REVIEW due to ambiguity,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified based on description containing: flag set to NEEDS_REVIEW due to ambiguity; urgent keyword(s) 'injury',NEEDS_REVIEW
+PM-202427,Flooding,Normal,Classified based on description containing: category keyword 'flood',
+PM-202428,Garbage,Normal,Classified based on description containing: category keyword 'animal',
+PM-202430,Streetlight,Normal,Classified based on description containing: category keyword 'light',
+PM-202433,Garbage,Normal,Classified based on description containing: category keyword 'waste',
+PM-202446,Other,Normal,Classified based on description containing: flag set to NEEDS_REVIEW due to ambiguity,NEEDS_REVIEW
