@@ -15,9 +15,9 @@ import re
 USE_MOCK = False
 
 try:
-    import google.generativeai as genai
+    import google.generativeai as genai  # type: ignore
 except ImportError:
-    genai = None # type: ignore
+    genai = None 
     USE_MOCK = True
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -101,7 +101,9 @@ def classify_complaint(description: str) -> dict:
     prompt = f"Analyze this complaint and output JSON with exactly four keys: category, priority, reason, flag.\n\nDescription: {description}"
     
     try:
-        # At this point, model is guaranteed not to be None because of the guard above
+        # Extra safeguard for static analysis tools
+        assert model is not None
+        
         response = model.generate_content(prompt)
         text_resp = response.text.strip()
         
