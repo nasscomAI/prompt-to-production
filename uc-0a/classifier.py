@@ -13,7 +13,7 @@ def classify_complaint(row: dict) -> dict:
     """
     desc = str(row.get('description', '')).lower()
     
-    # RICE Priority Rule: Urgent if severity keywords present
+    # RICE Priority Rule: Urgent if severity keywords presentt
     severity_keywords = ['injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse']
     priority = "Standard"
     priority_reason = ""
