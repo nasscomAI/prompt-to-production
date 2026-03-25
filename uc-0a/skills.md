@@ -8,6 +8,7 @@ skills:
     input: [What does it receive? Type and format.]
     output: [What does it return? Type and format.]
     error_handling: [What does it do when input is invalid or ambiguous?]
+    enforcement: "Must trigger Urgent priority if description contains keywords: injury, child, school, or hospital."
 
   - name: [second_skill_name]
     description: [One sentence]

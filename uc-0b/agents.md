@@ -12,7 +12,7 @@ context: >
   [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
+  - "Must include and address every numbered clause from the input."
   - "[FILL IN: Specific testable rule 2]"
   - "[FILL IN: Specific testable rule 3]"
   - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
