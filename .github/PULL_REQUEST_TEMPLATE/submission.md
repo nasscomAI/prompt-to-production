@@ -11,8 +11,8 @@
 
 - [x] `agents.md` committed for all 4 UCs
 - [x] `skills.md` committed for all 4 UCs
-- [x] `classifier.py` runs on `test_[city].csv` without crash
-- [x] `results_[city].csv` present in `uc-0a/`
+- [x] `classifier.py` runs on `test_ahmedabad.csv` without crash
+- [x] `results_ahmedabad.csv` present in `uc-0a/`
 - [x] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
 - [x] `summary_hr_leave.txt` present in `uc-0b/`
 - [x] `growth_output.csv` present in `uc-0c/`
