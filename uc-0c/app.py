@@ -1,6 +1,7 @@
 """
 UC-0C app.py — Ward Budget Analyst
 Implemented based on RICE enforcement rules for granular budget auditing.
+Consolidates all wards and categories into a single granular table if requested.
 """
 import argparse
 import csv
@@ -34,13 +35,12 @@ def load_dataset(input_path: str) -> list:
             
     return data
 
-def compute_growth(data: list, ward: str, category: str, growth_type: str) -> list:
-    """Compute growth (MoM) for specific ward/category."""
-    # 1. Filter by ward AND category (Refusal rule: no aggregation)
+def compute_growth_for_pair(data: list, ward: str, category: str, growth_type: str) -> list:
+    """Compute granular growth (MoM) for a specific ward/category pair."""
+    # Strict matching (No aggregation)
     filtered = [r for r in data if r['ward'] == ward and r['category'] == category]
     
     if not filtered:
-        print(f"No data found for Ward: {ward} and Category: {category}")
         return []
 
     # Sort by period to ensure sequential growth
@@ -75,6 +75,8 @@ def compute_growth(data: list, ward: str, category: str, growth_type: str) -> li
 
         results.append({
             "period": period,
+            "ward": ward,
+            "category": category,
             "actual_spend": current_actual if current_actual is not None else "NULL",
             "growth": growth_str,
             "formula": formula,
@@ -86,8 +88,8 @@ def compute_growth(data: list, ward: str, category: str, growth_type: str) -> li
 def main():
     parser = argparse.ArgumentParser(description="UC-0C Ward Budget Analyst")
     parser.add_argument("--input", required=True, help="Path to ward_budget.csv")
-    parser.add_argument("--ward", required=True, help="Specify ward name (no aggregation)")
-    parser.add_argument("--category", required=True, help="Specify category name (no aggregation)")
+    parser.add_argument("--ward", required=True, help="Ward name (specify 'All' for full breakdown)")
+    parser.add_argument("--category", required=True, help="Category name (specify 'All' for full breakdown)")
     parser.add_argument("--growth-type", help="Growth calculation type (e.g. MoM)")
     parser.add_argument("--output", required=True, help="Path for growth_output.csv")
     
@@ -98,22 +100,25 @@ def main():
         print("REFUSAL: Growth calculation requested without specifying --growth-type (e.g., MoM). Please specify.")
         return
 
-    # Enforcement: Verify ward and category are provided (no "Any" or "All")
-    if args.ward.lower() in ["any", "all", "combined"] or args.category.lower() in ["any", "all", "combined"]:
-        print("REFUSAL: Multi-ward or multi-category aggregation is not permitted. Please specify a single ward and category.")
-        return
-
     try:
         data = load_dataset(args.input)
-        results = compute_growth(data, args.ward, args.category, args.growth_type)
         
-        if results:
+        # Batch Handling: Find unique values if "All" is specified
+        target_wards = [args.ward] if args.ward.lower() != "all" else sorted(list(set(r['ward'] for r in data)))
+        target_categories = [args.category] if args.category.lower() != "all" else sorted(list(set(r['category'] for r in data)))
+
+        consolidated_results = []
+        for ward in target_wards:
+            for category in target_categories:
+                consolidated_results.extend(compute_growth_for_pair(data, ward, category, args.growth_type))
+        
+        if consolidated_results:
             with open(args.output, mode='w', encoding='utf-8', newline='') as f:
-                fieldnames = ["period", "actual_spend", "growth", "formula", "notes"]
+                fieldnames = ["period", "ward", "category", "actual_spend", "growth", "formula", "notes"]
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
-                writer.writerows(results)
-            print(f"Done. Growth analysis written to {args.output}")
+                writer.writerows(consolidated_results)
+            print(f"Done. Granular growth analysis for {len(consolidated_results)} rows written to {args.output}")
             
     except Exception as e:
         print(f"Error: {e}")
