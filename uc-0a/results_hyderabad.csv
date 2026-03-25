@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding based on 'flood' in the description; priority set to Urgent due to 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+GH-202410,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+GH-202411,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+GH-202412,Pothole,Urgent,Classified as Pothole based on 'pothole' in the description; priority set to Urgent due to 'school'.,
+GH-202417,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+GH-202420,Noise,Standard,Classified as Noise based on 'drilling' in the description.,
+GH-202422,Pothole,Standard,Classified as Pothole based on 'crater' in the description.,
+GH-202424,Flooding,Standard,Classified as Flooding based on 'flood' in the description.,
+GH-202428,Waste,Standard,Classified as Waste based on 'waste' in the description.,
+GH-202432,Other,Standard,Description '24hr supermarket delivery trucks idling with engines on.' did not match any known category.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+GH-202438,Other,Standard,Description 'Colony surrounded by fields that channel rainwater through main road.' did not match any known category.,NEEDS_REVIEW
