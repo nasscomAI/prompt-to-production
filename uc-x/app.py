@@ -67,25 +67,25 @@ def get_answer(question, indexed_data):
         
         # Exact keyword boosts
         if "carry" in q_low and "forward" in q_low and "leave" in q_low and item['section'] == "2.6" and "hr" in item['doc']:
-            score += 50
+            score = score + 50
         if "slack" in q_low and "install" in q_low and item['section'] == "2.3" and "it" in item['doc']:
-            score += 50
+            score = score + 50
         if "reimbursement" in q_low and "allowance" in q_low and "equipment" in q_low and item['section'] == "3.1" and "finance" in item['doc']:
-            score += 50
+            score = score + 50
         if "personal" in q_low and "phone" in q_low and "work files" in q_low and item['section'] == "3.1" and "it" in item['doc']:
-            score += 100
+            score = score + 100
         if "da" in q_low and "meal" in q_low and item['section'] == "2.6" and "finance" in item['doc']:
-            score += 50
+            score = score + 50
         if "leave without pay" in q_low and item['section'] == "5.2" and "hr" in item['doc']:
-            score += 50
+            score = score + 50
             
         # General matching
         keywords = q_low.replace("?", "").split()
         for kw in keywords:
             if len(kw) > 3 and kw in text:
-                score += 5
+                score = score + 5
             if len(kw) > 3 and kw in item['doc'].lower():
-                score += 1
+                score = score + 1
                 
         if score > 0:
             matches.append((score, item))
