@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Unknown,LOW,Empty complaint,NULL
+PM-202402,Unknown,LOW,Empty complaint,NULL
+PM-202406,Unknown,LOW,Empty complaint,NULL
+PM-202408,Unknown,LOW,Empty complaint,NULL
+PM-202410,Unknown,LOW,Empty complaint,NULL
+PM-202411,Unknown,LOW,Empty complaint,NULL
+PM-202413,Unknown,LOW,Empty complaint,NULL
+PM-202418,Unknown,LOW,Empty complaint,NULL
+PM-202419,Unknown,LOW,Empty complaint,NULL
+PM-202420,Unknown,LOW,Empty complaint,NULL
+PM-202427,Unknown,LOW,Empty complaint,NULL
+PM-202428,Unknown,LOW,Empty complaint,NULL
+PM-202430,Unknown,LOW,Empty complaint,NULL
+PM-202433,Unknown,LOW,Empty complaint,NULL
+PM-202446,Unknown,LOW,Empty complaint,NULL
