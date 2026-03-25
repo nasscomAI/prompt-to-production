@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classification based on presence of the word 'heat' indicating a heat hazard issue.,
+AM-202402,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classification based on presence of the word 'heat' indicating a heat hazard issue.,
+AM-202407,Other,Urgent,"Could not determine a specific category from the description.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+AM-202414,Streetlight,Standard,Classification based on presence of the word 'darkness' indicating a streetlight issue.,
+AM-202417,Other,Standard,"Ambiguous description matched multiple categories: Waste, Heritage Damage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Classification based on presence of the word 'music' indicating a noise issue.,
+AM-202424,Heat Hazard,Standard,Classification based on presence of the word 'heat' indicating a heat hazard issue.,
+AM-202429,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+AM-202431,Other,Standard,"Ambiguous description matched multiple categories: Road Damage, Heritage Damage.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classification based on presence of the word 'heat' indicating a heat hazard issue.,
+AM-202444,Waste,Standard,Classification based on presence of the word 'waste' indicating a waste issue.,
+AM-202445,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
