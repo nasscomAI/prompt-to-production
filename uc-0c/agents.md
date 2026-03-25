@@ -12,7 +12,7 @@ context: >
   [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
+  - "Aggregation is restricted to per-ward and per-category only."
   - "[FILL IN: Specific testable rule 2]"
   - "[FILL IN: Specific testable rule 3]"
   - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
