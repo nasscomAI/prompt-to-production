@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202402,Other,Urgent,Could not determine specific category from description. Contains urgent keywords: danger.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202406,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202407,Other,Urgent,Could not determine specific category from description. Contains urgent keywords: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions 'pothole'.,
+AM-202414,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202417,Trash Collection,Standard,Description mentions 'waste'.,
+AM-202421,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202424,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202429,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202431,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202435,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+AM-202444,Trash Collection,Standard,Description mentions 'waste'.,
+AM-202445,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW

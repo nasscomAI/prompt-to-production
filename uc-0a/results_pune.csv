@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,"Description mentions 'pothole'. Contains urgent keywords: child, school.",
+PM-202406,Flooding,Standard,Description mentions 'flood'.,
+PM-202408,Flooding,Standard,Description mentions 'flood'.,
+PM-202410,Streetlight Outage,Standard,Description mentions 'streetlight'.,
+PM-202411,Streetlight Outage,Standard,Description mentions 'streetlight'.,
+PM-202413,Trash Collection,Standard,Description mentions 'garbage'.,
+PM-202418,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+PM-202419,Pothole,Standard,Description mentions 'crack'.,
+PM-202420,Pothole,Urgent,Description mentions 'hole'. Contains urgent keywords: injury.,
+PM-202427,Flooding,Standard,Description mentions 'flood'.,
+PM-202428,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
+PM-202430,Streetlight Outage,Standard,Description mentions 'dark'.,
+PM-202433,Trash Collection,Standard,Description mentions 'waste'.,
+PM-202446,Other,Standard,Could not determine specific category from description.,NEEDS_REVIEW
