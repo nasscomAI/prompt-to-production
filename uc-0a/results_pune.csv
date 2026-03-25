@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+PM-202402,Pothole,Urgent,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+PM-202406,Flooding,Standard,"The complaint mentions 'flood', which justifies the Flooding classification.",
+PM-202408,Flooding,Standard,"The complaint mentions 'flood', which justifies the Flooding classification.",
+PM-202410,Streetlight,Standard,"The complaint mentions ' streetlight', which justifies the Streetlight classification.",
+PM-202411,Streetlight,Urgent,"The complaint mentions 'light', which justifies the Streetlight classification.",
+PM-202413,Waste,Standard,"The complaint mentions 'garbage', which justifies the Waste classification.",
+PM-202418,Noise,Standard,"The complaint mentions 'music', which justifies the Noise classification.",
+PM-202419,Road Damage,Standard,"The complaint mentions 'crack', which justifies the Road Damage classification.",
+PM-202420,Pothole,Urgent,"The complaint mentions 'hole', which justifies the Pothole classification.",
+PM-202427,Flooding,Standard,"The complaint mentions 'flood', which justifies the Flooding classification.",
+PM-202428,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The complaint mentions 'light', which justifies the Streetlight classification.",
+PM-202433,Waste,Standard,"The complaint mentions 'waste', which justifies the Waste classification.",
+PM-202446,Other,Urgent,The description is too vague or does not match a specific category.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"The complaint mentions 'lamp', which justifies the Streetlight classification.",
+KM-202402,Heritage Damage,Standard,"The complaint mentions 'historic', which justifies the Heritage Damage classification.",
+KM-202405,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+KM-202410,Pothole,Standard,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+KM-202411,Pothole,Standard,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+KM-202415,Drain Blockage,Standard,"The complaint mentions 'drain', which justifies the Drain Blockage classification.",
+KM-202418,Waste,Standard,"The complaint mentions 'waste', which justifies the Waste classification.",
+KM-202421,Pothole,Urgent,"The complaint mentions 'pit', which justifies the Pothole classification.",
+KM-202422,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"The complaint mentions 'heritage', which justifies the Heritage Damage classification.",
+KM-202430,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The complaint mentions 'heritage', which justifies the Heritage Damage classification.",
+KM-202436,Streetlight,Standard,"The complaint mentions 'darkness', which justifies the Streetlight classification.",
+KM-202438,Heritage Damage,Standard,"The complaint mentions 'heritage', which justifies the Heritage Damage classification.",

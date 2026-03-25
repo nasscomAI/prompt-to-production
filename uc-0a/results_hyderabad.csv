@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The complaint mentions 'flood', which justifies the Flooding classification.",
+GH-202402,Flooding,Standard,"The complaint mentions 'flood', which justifies the Flooding classification.",
+GH-202406,Drain Blockage,Standard,"The complaint mentions 'drain', which justifies the Drain Blockage classification.",
+GH-202407,Drain Blockage,Standard,"The complaint mentions 'drain', which justifies the Drain Blockage classification.",
+GH-202410,Pothole,Standard,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+GH-202411,Pothole,Urgent,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+GH-202412,Pothole,Urgent,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+GH-202417,Waste,Standard,"The complaint mentions 'garbage', which justifies the Waste classification.",
+GH-202420,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"The complaint mentions 'flood', which justifies the Flooding classification.",
+GH-202428,Waste,Standard,"The complaint mentions 'waste', which justifies the Waste classification.",
+GH-202432,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"The complaint mentions 'flood', which justifies the Flooding classification.",
+GH-202438,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW

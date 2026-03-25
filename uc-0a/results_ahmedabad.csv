@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"The complaint mentions 'temperature', which justifies the Heat Hazard classification.",
+AM-202405,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The complaint mentions 'heat', which justifies the Heat Hazard classification.",
+AM-202407,Other,Urgent,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The complaint mentions 'pothole', which justifies the Pothole classification.",
+AM-202414,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"The complaint mentions 'waste', which justifies the Waste classification.",
+AM-202421,Noise,Standard,"The complaint mentions 'music', which justifies the Noise classification.",
+AM-202424,Other,Low,The description is too vague or does not match a specific category.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"The complaint mentions 'temperature', which justifies the Heat Hazard classification.",
+AM-202431,Heritage Damage,Standard,"The complaint mentions 'heritage', which justifies the Heritage Damage classification.",
+AM-202435,Heat Hazard,Standard,"The complaint mentions 'heat', which justifies the Heat Hazard classification.",
+AM-202444,Waste,Standard,"The complaint mentions 'waste', which justifies the Waste classification.",
+AM-202445,Heat Hazard,Standard,"The complaint mentions 'sun', which justifies the Heat Hazard classification.",
