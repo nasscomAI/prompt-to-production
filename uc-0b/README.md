@@ -1,71 +1,61 @@
-# UC-0B — Summary That Changes Meaning
+# UC-0A — Complaint Classifier
 
-**Core failure modes:** Clause omission · Scope bleed · Obligation softening
+**Core failure modes:** Taxonomy drift · Severity blindness · Missing justification · Hallucinated sub-categories · False confidence on ambiguity
 
 ---
 
 ## Your Input File
 ```
-../data/policy-documents/policy_hr_leave.txt
+../data/city-test-files/test_[your-city].csv
 ```
+15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
 
 ## Your Output File
 ```
-uc-0b/summary_hr_leave.txt
+uc-0a/results_[your-city].csv
 ```
 
 ## Run Command
 ```bash
-python app.py \
-  --input ../data/policy-documents/policy_hr_leave.txt \
-  --output summary_hr_leave.txt
+python classifier.py \
+  --input ../data/city-test-files/test_pune.csv \
+  --output results_pune.csv
 ```
 
 ---
 
-## Do This Before Writing Any Prompt — Clause Inventory
+## Classification Schema — Your Enforcement Must Reference These Exactly
 
-Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
-
-| Clause | Core obligation | Binding verb |
+| Field | Allowed values | Rule |
 |---|---|---|
-| 2.3 | 14-day advance notice required | must |
-| 2.4 | Written approval required before leave commences. Verbal not valid. | must |
-| 2.5 | Unapproved absence = LOP regardless of subsequent approval | will |
-| 2.6 | Max 5 days carry-forward. Above 5 forfeited on 31 Dec. | may / are forfeited |
-| 2.7 | Carry-forward days must be used Jan–Mar or forfeited | must |
-| 3.2 | 3+ consecutive sick days requires medical cert within 48hrs | requires |
-| 3.4 | Sick leave before/after holiday requires cert regardless of duration | requires |
-| 5.2 | LWP requires Department Head AND HR Director approval | requires |
-| 5.3 | LWP >30 days requires Municipal Commissioner approval | requires |
-| 7.2 | Leave encashment during service not permitted under any circumstances | not permitted |
+| `category` | Pothole · Flooding · Streetlight · Waste · Noise · Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other | Exact strings only — no variations |
+| `priority` | Urgent · Standard · Low | Urgent if severity keywords present |
+| `reason` | One sentence | Must cite specific words from description |
+| `flag` | NEEDS_REVIEW or blank | Set when category is genuinely ambiguous |
 
-**The trap:** Clause 5.2 requires TWO approvers. AI will often preserve "requires approval" but drop "from both Department Head and HR Director." That is a condition drop — not a softening.
-
----
-
-## Enforcement Rules Your agents.md Must Include
-1. Every numbered clause must be present in the summary
-2. Multi-condition obligations must preserve ALL conditions — never drop one silently
-3. Never add information not present in the source document
-4. If a clause cannot be summarised without meaning loss — quote it verbatim and flag it
+**Severity keywords that must trigger Urgent:**
+`injury`, `child`, `school`, `hospital`, `ambulance`, `fire`, `hazard`, `fell`, `collapse`
 
 ---
 
 ## Skills to Define in skills.md
-- `retrieve_policy` — loads .txt policy file, returns content as structured numbered sections
-- `summarize_policy` — takes structured sections, produces compliant summary with clause references
+- `classify_complaint` — one complaint row in → category + priority + reason + flag out
+- `batch_classify` — reads input CSV, applies classify_complaint per row, writes output CSV
 
 ---
 
 ## What Will Fail From the Naive Prompt
-Run `"Summarize the policy document."` first.
-Then check: which of the 10 clauses above are missing? Which have had conditions dropped?
-Scope bleed to look for: phrases like "as is standard practice", "typically in government organisations", "employees are generally expected to" — none of these are in the source document.
+Run `"Classify this citizen complaint by category and priority."` first.
+Then look for:
+1. Category names that vary across rows for the same type of complaint
+2. Injury/child/school complaints classified as Standard instead of Urgent
+3. No reason field in the output
+4. Category names that are not in the allowed list above
+5. Confident classification on genuinely ambiguous complaints
 
 ---
 
 ## Commit Formula
 ```
-UC-0B Fix [failure mode]: [why it failed] → [what you changed]
+UC-0A Fix [failure mode]: [why it failed] → [what you changed]
 ```
