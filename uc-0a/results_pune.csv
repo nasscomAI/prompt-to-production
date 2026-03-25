@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Based on description, Large pothole 60cm wide causing tyre damage.",
+PM-202402,Pothole,Urgent,"Due to keyword ""school"", School children at risk during morning hours.",
+PM-202406,Flooding,Standard,"Due to keyword ""flood"", Underpass flooded knee-deep after 2hrs rain.",
+PM-202408,Other,Standard,"Genuinely ambiguous because it involves multiple issues like Flooding and Drain Blockage citing ""flood"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Due to keyword ""streetlights"", Three consecutive streetlights out for 10 days.",
+PM-202411,Streetlight,Urgent,"Due to keyword ""hazard"", Electrical hazard reported.",
+PM-202413,Waste,Standard,"Due to keyword ""garbage"", Overflowing garbage bins near vegetable market.",
+PM-202418,Noise,Standard,"Due to keyword ""music"", Wedding venue playing music past midnight on weeknights.",
+PM-202419,Road Damage,Standard,"Due to keyword ""road "", Road surface cracked and sinking near utility work done 1 month ago.",
+PM-202420,Drain Blockage,Urgent,"Due to keyword ""injury"", Risk of serious injury to cyclists.",
+PM-202427,Flooding,Standard,"Due to keyword ""flood"", Bridge approach floods in 30mins of rain.",
+PM-202428,Other,Standard,Genuinely ambiguous description with no recognizable categorized keywords from the allowed list.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Genuinely ambiguous because it involves multiple issues like Streetlight and Heritage Damage citing ""lights out"".",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Due to keyword ""waste"", Bulk waste from apartment renovation dumped on public road.",
+PM-202446,Other,Urgent,"Genuinely ambiguous category but Urgent priority assigned citing ""fell"".",NEEDS_REVIEW
