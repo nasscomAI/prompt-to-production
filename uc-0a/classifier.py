@@ -13,12 +13,10 @@ USE_MOCK = False
 try:
     import google.generativeai as genai
 except ImportError:
-    print("Warning: google-generativeai is not installed. Using MOCK mode.", file=sys.stderr)
     USE_MOCK = True
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 if not API_KEY:
-    print("Warning: GEMINI_API_KEY environment variable is missing. Using MOCK mode.", file=sys.stderr)
     USE_MOCK = True
 
 model = None
@@ -49,7 +47,6 @@ if not USE_MOCK:
             generation_config={"response_mime_type": "application/json"}
         )
     except Exception as e:
-        print(f"Failed to initialize model: {e}", file=sys.stderr)
         USE_MOCK = True
 
 def mock_classify(description: str) -> dict:
@@ -76,11 +73,13 @@ def mock_classify(description: str) -> dict:
         "flag": flag
     }
 
-def classify_complaint(row: dict) -> dict:
-    """Classify a single complaint row."""
-    description = row.get("description", "")
-    
-    if not description.strip():
+def classify_complaint(description: str) -> dict:
+    """
+    Classifies a single citizen complaint to determine its category, priority, classification reason, and potential review flag.
+    Input: A string containing the core complaint description text.
+    Output: A JSON object containing category, priority, reason, and flag.
+    """
+    if not description or not description.strip():
         return {
             "category": "Other",
             "priority": "Low",
@@ -111,7 +110,7 @@ def classify_complaint(row: dict) -> dict:
             "flag": str(result.get("flag", "")) if result.get("flag") else ""
         }
     except Exception as e:
-        print(f"Error classifying complaint ID {row.get('complaint_id', 'Unknown')}: {e}", file=sys.stderr)
+        print(f"Error invoking LLM: {e}", file=sys.stderr)
         return {
             "category": "Other",
             "priority": "Low",
@@ -120,6 +119,9 @@ def classify_complaint(row: dict) -> dict:
         }
 
 def batch_classify(input_path: str, output_path: str):
+    """
+    Reads an input CSV file of civic complaints, iterates over each row using classify_complaint, and writes structured output to CSV.
+    """
     if not os.path.exists(input_path):
         print(f"Error: Input file '{input_path}' not found.", file=sys.stderr)
         return
@@ -146,7 +148,10 @@ def batch_classify(input_path: str, output_path: str):
             
             for idx, row in enumerate(rows):
                 print(f"Processing ({idx+1}/{len(rows)}): {row.get('complaint_id', 'Unknown')}")
-                classification = classify_complaint(row)
+                # Notice we pass ONLY the `description` string according to skills.md
+                description = row.get("description", "")
+                classification = classify_complaint(description)
+                
                 row.update(classification)
                 writer.writerow(row)
                 
