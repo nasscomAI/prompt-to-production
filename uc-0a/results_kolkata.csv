@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"This complaint was classified as Streetlight because it mentions lamp, heritage.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,This complaint was classified as Heritage Damage because it mentions historic.,
+KM-202405,Heritage Damage,Standard,This complaint was classified as Heritage Damage because it mentions museum.,
+KM-202409,Pothole,Standard,This complaint was classified as Pothole because it mentions pothole.,
+KM-202410,Pothole,Standard,This complaint was classified as Pothole because it mentions pothole.,
+KM-202411,Pothole,Standard,This complaint was classified as Pothole because it mentions pothole.,
+KM-202415,Drain Blockage,Standard,This complaint was classified as Drain Blockage because it mentions drain.,
+KM-202418,Flooding,Standard,"This complaint was classified as Flooding because it mentions waste, overflow, hot.",NEEDS_REVIEW
+KM-202421,Other,Urgent,"This complaint was classified as Other because it mentions hospital, fell.",
+KM-202422,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+KM-202426,Heritage Damage,Standard,This complaint was classified as Heritage Damage because it mentions heritage.,
+KM-202430,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+KM-202434,Heritage Damage,Standard,This complaint was classified as Heritage Damage because it mentions heritage.,
+KM-202436,Streetlight,Standard,This complaint was classified as Streetlight because it mentions darkness.,
+KM-202438,Heritage Damage,Standard,This complaint was classified as Heritage Damage because it mentions heritage.,
