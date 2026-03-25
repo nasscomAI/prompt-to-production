@@ -33,7 +33,7 @@ def classify_complaint(row: dict) -> dict:
         reason = "Detected keywords: road/pothole"
     elif any(word in text for word in ["garbage", "waste", "trash"]):
         category = "Garbage Issue"
-        reason = "Detected keywords: garbage/waste/trash"
+        reason = "Detected keywords: garbage/waste/trash/dirty/dust"
     else:
         category = "Other"
         reason = "No matching keywords"
