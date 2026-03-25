@@ -1,16 +1,22 @@
 """
 UC-0B app.py — Policy Compliance Auditor
-Implemented using RICE method to prevent clause omission and obligation softening.
+Implemented as a robust auditor as per RICE method (agents.md).
+Handles high-fidelity summarization of city governance policies.
 """
 import argparse
 import re
 import os
 
-MANDATORY_CLAUSES = ["2.3", "2.4", "2.5", "2.6", "2.7", "3.2", "3.4", "5.2", "5.3", "7.2"]
+# Expanded binding verbs to capture all policy obligations
+BINDING_VERBS = [
+    r"\bmust\b", r"\bwill\b", r"\brequires\b", r"\brequired\b",
+    r"\bnot permitted\b", r"\bnot reimbursable\b", r"\bmandatory\b",
+    r"\bpermitted\b", r"\bprohibited\b", r"\bforfeited\b", r"\bnot allowed\b"
+]
 
 def retrieve_policy(file_path: str) -> dict:
     """
-    Loads .txt policy file and extracts numbered clauses using regex.
+    Loads .txt policy file and extracts all numbered clauses.
     """
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Policy file {file_path} not found.")
@@ -18,56 +24,65 @@ def retrieve_policy(file_path: str) -> dict:
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Extract numbered clauses (e.g., 2.3, 5.2 etc.)
-    # Look for patterns like "5.2  LWP requires..."
+    # Improved regex: Match section numbers at start of line, capture all text until next section
+    # Handles indents and multi-line clause descriptions
     clauses = {}
-    pattern = re.compile(r'^(\d+\.\d+)\s+(.*?)(?=\n\d+\.\d+|\n\n|\n═|$)', re.MULTILINE | re.DOTALL)
+    pattern = re.compile(r'^(\d+\.\d+)\s+(.*?)(?=\n\s*\d+\.\d+|\n\s*═|\n\n|$)', re.MULTILINE | re.DOTALL)
     
     matches = pattern.findall(content)
+    # Filter matches to ensure we only get the intended clauses
     for clause_num, clause_text in matches:
-        cleaned_text = " ".join(clause_text.split())
+        # Join lines and collapse whitespace
+        cleaned_text = " ".join(line.strip() for line in clause_text.splitlines() if line.strip())
         clauses[clause_num] = cleaned_text
         
     return clauses
 
+def get_high_fidelity_summary(clause_num: str, text: str) -> str:
+    """
+    Extracts core obligations from a clause text while avoiding softening.
+    """
+    # Split text into sentences using common punctuation
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    obligation_sentences = []
+    
+    for sentence in sentences:
+        # Check for binding verbs
+        if any(re.search(verb, sentence, re.IGNORECASE) for verb in BINDING_VERBS):
+            obligation_sentences.append(sentence)
+    
+    if not obligation_sentences:
+        # If no explicit binding verb found, use verbatim for safety (auditor rule)
+        return f"{text} [FLAG: Verbatim Quote]"
+    
+    # Combine sentences that contain obligations
+    summary = " ".join(obligation_sentences)
+    
+    # Audit Check: If the summary omits significant qualifiers (like BOTH/AND), it's safer to use verbatim
+    if any(q in text.upper() for q in ["BOTH", "AND", "ALL", "ADDITIONALLY"]):
+        if len(summary) < len(text) * 0.6: # If we've dropped more than 40% of the text, be cautious
+            return f"{text} [FLAG: Verbatim Quote]"
+            
+    return summary
+
 def summarize_policy(clauses: dict) -> str:
     """
-    Produces a summary that preserves ALL conditions and doesn't soften obligations.
+    Produces a summary of all extracted clauses, starting from section 2.
     """
     summary_lines = []
     
-    for num in MANDATORY_CLAUSES:
-        if num not in clauses:
-            summary_lines.append(f"{num}: [MISSING IN SOURCE]")
+    # Sort clauses numerically
+    def sort_key(s):
+        return [int(i) for i in s.split('.')]
+
+    all_nums = sorted(clauses.keys(), key=sort_key)
+    
+    for num in all_nums:
+        # Skip Purpose, Scope, and non-obligation headers (usually section 1)
+        if num.startswith("1."):
             continue
             
-        text = clauses[num]
-        
-        # Rule-based summaries to ensure high-fidelity (simulating the RICE auditor's output)
-        if num == "2.3":
-            summary = "14 calendar days advance notice must be given for leave applications."
-        elif num == "2.4":
-            summary = "Leave must receive written approval before commencement; verbal approval is not valid."
-        elif num == "2.5":
-            summary = "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
-        elif num == "2.6":
-            summary = "Maximum 5 days annual leave may carry forward; any above 5 are forfeited on 31 December."
-        elif num == "2.7":
-            summary = "Carry-forward days must be used within January–March or they are forfeited."
-        elif num == "3.2":
-            summary = "Sick leave of 3+ consecutive days requires a medical certificate submitted within 48 hours of return."
-        elif num == "3.4":
-            summary = "Sick leave taken immediately before/after a holiday or annual leave requires a medical certificate regardless of duration."
-        elif num == "5.2":
-            summary = "LWP requires approval from BOTH the Department Head and the HR Director; manager approval alone is insufficient."
-        elif num == "5.3":
-            summary = "LWP exceeding 30 continuous days requires approval from the Municipal Commissioner."
-        elif num == "7.2":
-            summary = "Leave encashment during service is not permitted under any circumstances."
-        else:
-            # Fallback to verbatim if not explicitly mapped for safety
-            summary = f"{text} [FLAG: Verbatim Quote]"
-            
+        summary = get_high_fidelity_summary(num, clauses[num])
         summary_lines.append(f"{num}: {summary}")
         
     return "\n".join(summary_lines)
