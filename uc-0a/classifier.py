@@ -1,35 +1,99 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
 import argparse
 import csv
 
+# Allowed categories
+CATEGORIES = [
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard",
+    "Drain Blockage", "Other"
+]
+
+URGENT_KEYWORDS = [
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell", "collapse"
+]
+
+
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    text = row.get("description", "")
+    text_lower = text.lower()
+
+    # ---------- Category ----------
+    if "pothole" in text_lower:
+        category = "Pothole"
+    elif "flood" in text_lower or "waterlogging" in text_lower:
+        category = "Flooding"
+    elif "light" in text_lower:
+        category = "Streetlight"
+    elif "garbage" in text_lower or "waste" in text_lower:
+        category = "Waste"
+    elif "noise" in text_lower:
+        category = "Noise"
+    elif "road" in text_lower or "crack" in text_lower:
+        category = "Road Damage"
+    elif "heritage" in text_lower:
+        category = "Heritage Damage"
+    elif "heat" in text_lower:
+        category = "Heat Hazard"
+    elif "drain" in text_lower or "sewage" in text_lower:
+        category = "Drain Blockage"
+    else:
+        category = "Other"
+
+    # ---------- Priority ----------
+    if any(word in text_lower for word in URGENT_KEYWORDS):
+        priority = "Urgent"
+    elif "danger" in text_lower or "severe" in text_lower:
+        priority = "Standard"
+    else:
+        priority = "Low"
+
+    # ---------- Reason (must cite words) ----------
+    reason = f"Based on words: '{text[:40]}'"
+
+    # ---------- Flag ----------
+    flag = ""
+    if category == "Other":
+        flag = "NEEDS_REVIEW"
+
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    results = []
 
+    try:
+        with open(input_path, newline='', encoding='utf-8') as infile:
+            reader = csv.DictReader(infile)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+            for row in reader:
+                try:
+                    result = classify_complaint(row)
+                    results.append(result)
+                except Exception:
+                    # Handle bad rows safely
+                    results.append({
+                        "complaint_id": row.get("complaint_id", ""),
+                        "category": "Other",
+                        "priority": "Low",
+                        "reason": "Row processing failed",
+                        "flag": "NEEDS_REVIEW"
+                    })
+
+    except FileNotFoundError:
+        print("Input file not found!")
+        return
+
+    # Write output
+    with open(output_path, "w", newline='', encoding='utf-8') as outfile:
+        fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+        writer.writerows(results)
