@@ -43,7 +43,7 @@ def main():
     with open(args.output, 'w', encoding='utf-8') as f:
         f.write(summary)
 
-    print("✅ Summary generated successfully!")
+    print("✅ Summary generated successfully!") # You can replace this with a more detailed message if needed
 
 if __name__ == "__main__":
     main()
