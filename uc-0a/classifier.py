@@ -17,31 +17,31 @@ USE_MOCK = False
 try:
     import google.generativeai as genai
 except ImportError:
+    genai = None # type: ignore
     USE_MOCK = True
 
 API_KEY = os.environ.get("GEMINI_API_KEY")
 if not API_KEY:
     USE_MOCK = True
 
+SYSTEM_PROMPT = (
+    "role: >\n"
+    "  You are an expert citizen complaint classifier. Your operational boundary is strictly limited to assigning a structured categorization and priority to text-based civic complaints, processing one row at a time.\n\n"
+    "intent: >\n"
+    "  To evaluate a citizen complaint description and produce a verifiable classification containing exactly four fields: 'category', 'priority', 'reason', and 'flag'. The output must strictly adhere to the allowed classification schema without any deviation, guesswork, or hallucinated values.\n\n"
+    "context: >\n"
+    "  You will receive a single complaint description at a time. You are ONLY allowed to use the information explicitly stated in the description. You must NOT use external knowledge to invent categories, infer unspoken priorities, or deduce severity beyond the provided text.\n\n"
+    "enforcement:\n"
+    "  - \"Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other (Exact strings only — no variations).\"\n"
+    "  - \"Priority must be Urgent if the description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, use Standard or Low.\"\n"
+    "  - \"Every output row must include a 'reason' field consisting of exactly one sentence that cites specific words directly from the description.\"\n"
+    "  - \"If a category cannot be determined from the description alone and is genuinely ambiguous, you must output the category string 'Other' and set the 'flag' field exactly to 'NEEDS_REVIEW'.\""
+)
+
 model = None
-if not USE_MOCK:
+if not USE_MOCK and genai:
     try:
         genai.configure(api_key=API_KEY)
-        
-        SYSTEM_PROMPT = (
-            "role: >\n"
-            "  You are an expert citizen complaint classifier. Your operational boundary is strictly limited to assigning a structured categorization and priority to text-based civic complaints, processing one row at a time.\n\n"
-            "intent: >\n"
-            "  To evaluate a citizen complaint description and produce a verifiable classification containing exactly four fields: 'category', 'priority', 'reason', and 'flag'. The output must strictly adhere to the allowed classification schema without any deviation, guesswork, or hallucinated values.\n\n"
-            "context: >\n"
-            "  You will receive a single complaint description at a time. You are ONLY allowed to use the information explicitly stated in the description. You must NOT use external knowledge to invent categories, infer unspoken priorities, or deduce severity beyond the provided text.\n\n"
-            "enforcement:\n"
-            "  - \"Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other (Exact strings only — no variations).\"\n"
-            "  - \"Priority must be Urgent if the description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, use Standard or Low.\"\n"
-            "  - \"Every output row must include a 'reason' field consisting of exactly one sentence that cites specific words directly from the description.\"\n"
-            "  - \"If a category cannot be determined from the description alone and is genuinely ambiguous, you must output the category string 'Other' and set the 'flag' field exactly to 'NEEDS_REVIEW'.\""
-        )
-        
         model = genai.GenerativeModel(
             model_name="gemini-1.5-flash",
             system_instruction=SYSTEM_PROMPT,
@@ -95,12 +95,13 @@ def classify_complaint(description: str) -> dict:
             "flag": "NEEDS_REVIEW"
         }
         
-    if USE_MOCK:
+    if USE_MOCK or model is None:
         return mock_classify(description)
     
     prompt = f"Analyze this complaint and output JSON with exactly four keys: category, priority, reason, flag.\n\nDescription: {description}"
     
     try:
+        # At this point, model is guaranteed not to be None because of the guard above
         response = model.generate_content(prompt)
         text_resp = response.text.strip()
         
