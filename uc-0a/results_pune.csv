@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,category from words: pothole; no severity keywords found.,
+PM-202402,Pothole,Urgent,"category from words: pothole; urgent due to severity words: child, school.",
+PM-202406,Flooding,Standard,"category from words: flood, flooded, underpass flooded; no severity keywords found.",
+PM-202408,Other,Standard,category ambiguous or not explicit in complaint text; no severity keywords found.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"category from words: lights out, streetlight; no severity keywords found.",
+PM-202411,Streetlight,Urgent,"category from words: flickering, sparking, streetlight; urgent due to severity words: hazard.",
+PM-202413,Waste,Standard,"category from words: bins, garbage; no severity keywords found.",
+PM-202418,Noise,Standard,"category from words: midnight, music; no severity keywords found.",
+PM-202419,Road Damage,Standard,"category from words: road surface cracked, sinking; no severity keywords found.",
+PM-202420,Road Damage,Urgent,category from words: manhole cover missing; urgent due to severity words: injury.,
+PM-202427,Flooding,Standard,category from words: flood; no severity keywords found.,
+PM-202428,Waste,Standard,category from words: dead animal; no severity keywords found.,
+PM-202430,Other,Standard,category ambiguous or not explicit in complaint text; no severity keywords found.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"category from words: dumped, waste; no severity keywords found.",
+PM-202446,Road Damage,Urgent,"category from words: broken, upturned; urgent due to severity words: fell.",
