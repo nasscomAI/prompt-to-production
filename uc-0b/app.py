@@ -1,7 +1,10 @@
 import argparse
 import os
+from dotenv import load_dotenv
 import google.genai as genai
 import google.genai.types as types
+
+load_dotenv()  # loads GEMINI_API_KEY from .env file if present
 
 def get_agent_instructions() -> str:
     """Reads the agents.md file to get the R.I.C.E template instructions dynamically."""
@@ -38,8 +41,8 @@ def summarize_policy(client, policy_content: str, agent_instructions: str) -> st
 
 def main():
     parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy document (.txt)")
-    parser.add_argument("--output", required=True, help="Path to write the summary (.txt)")
+    parser.add_argument("--input",  default="../data/policy-documents/policy_hr_leave.txt", help="Path to policy document (.txt)")
+    parser.add_argument("--output", default="summary_hr_leave.txt", help="Path to write the summary (.txt)")
     args = parser.parse_args()
 
     # Check for GEMINI_API_KEY
