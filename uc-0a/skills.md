@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+## Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+### classify_complaint
+Takes a complaint description and returns:
+- category (from allowed list)
+- priority (Urgent / Standard / Low)
+- reason (one sentence quoting words from description)
+- flag (NEEDS_REVIEW if ambiguous)
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+### batch_classify
+- Reads input CSV
+- Applies classify_complaint to each row
+- Writes output CSV
