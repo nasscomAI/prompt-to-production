@@ -29,6 +29,7 @@ def classify_complaint(row: dict) -> dict:
     description = row.get("description", "")
     complaint_id = row.get("complaint_id", "")
 
+    # Handle invalid input
     if not description or not isinstance(description, str):
         return {
             "complaint_id": complaint_id,
@@ -40,29 +41,31 @@ def classify_complaint(row: dict) -> dict:
 
     text = description.lower()
 
+    # --- CATEGORY DETECTION ---
     matched_categories = []
     matched_keyword = None
 
-    # Category detection
     for category, keywords in CATEGORY_KEYWORDS.items():
         for kw in keywords:
             if kw in text:
-                matched_categories.append(category)
-                matched_keyword = kw
+                matched_categories.append((category, kw))
                 break
 
-    # Handle category + ambiguity
+    # --- HANDLE AMBIGUITY ---
     if len(matched_categories) == 1:
-        category = matched_categories[0]
+        category, matched_keyword = matched_categories[0]
         flag = ""
+
     elif len(matched_categories) > 1:
-        category = matched_categories[0]
-        flag = "NEEDS_REVIEW"
-    else:
-        category = "Other"
+        category, matched_keyword = matched_categories[0]
         flag = "NEEDS_REVIEW"
 
-    # Priority detection
+    else:
+        category = "Other"
+        matched_keyword = None
+        flag = "NEEDS_REVIEW"
+
+    # --- PRIORITY DETECTION ---
     priority = "Standard"
     severity_word = None
 
@@ -72,14 +75,14 @@ def classify_complaint(row: dict) -> dict:
             severity_word = word
             break
 
-    # Reason generation
+    # --- REASON GENERATION ---
     if matched_keyword:
-        reason = f"Classified as {category} because '{matched_keyword}' found in description"
+        reason = f"Classified as {category} based on keyword '{matched_keyword}' in description"
     else:
-        reason = f"Classified as {category} due to lack of clear category keywords"
+        reason = f"Classified as {category} because description lacks clear category keywords"
 
     if severity_word:
-        reason += f"; marked Urgent due to '{severity_word}'"
+        reason += f"; marked Urgent due to keyword '{severity_word}'"
 
     return {
         "complaint_id": complaint_id,
