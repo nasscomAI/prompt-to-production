@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'temperature'.,
+AM-202405,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'heat'.,
+AM-202407,Other,Urgent,No specific category keywords found in description. Priority set to Urgent due to keyword: 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because description mentions 'pothole'.,
+AM-202414,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because description mentions 'waste'.,
+AM-202421,Noise,Standard,Classified as Noise because description mentions 'music'.,
+AM-202424,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'temperature'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'heat'.,
+AM-202444,Flooding,Low,Classified as Flooding because description mentions 'overflow'.,
+AM-202445,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
