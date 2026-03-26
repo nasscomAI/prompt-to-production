@@ -2,7 +2,7 @@ name: Welcome Participant
 
 on:
   pull_request_target:
-    types: [opened]
+    types: [opened,synchronize,reopened]
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
