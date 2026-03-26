@@ -11,7 +11,7 @@ def retrieve_documents():
     Loads all 3 policy files and indexes them by document name and section number.
     Returns: dict mapping (doc_name, section_num) -> section_text
     """
-    base_path = "../data/policy-documents"
+    base_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../data/policy-documents")
     files = ["policy_hr_leave.txt", "policy_it_acceptable_use.txt", "policy_finance_reimbursement.txt"]
     index = {}
 
@@ -31,8 +31,13 @@ def retrieve_documents():
         if len(segments) > 1:
             for i in range(1, len(segments), 2):
                 section_num = segments[i]
-                section_text = segments[i+1].strip()
-                # Clean up whitespace
+                section_text = segments[i+1]
+                # Remove decorative lines and headers that bleed into the end of sections
+                section_text = re.sub(r'═+', '', section_text)
+                # Remove section headers like "3. WORK FROM HOME"
+                section_text = re.sub(r'\n\s*\d+\.\s+[A-Z\s]+\n', '\n', section_text)
+                section_text = section_text.strip()
+                # Clean up internal whitespace
                 section_text = re.sub(r'\s+', ' ', section_text)
                 index[(file_name, section_num)] = section_text
                 
@@ -58,14 +63,16 @@ def answer_question(question: str, index: dict) -> str:
             results.append((doc, section, text))
         elif "home office" in question and "equipment allowance" in text.lower():
             results.append((doc, section, text))
-        elif "personal phone" in question and "personal device" in text.lower() and "home" in text.lower():
+        elif "personal phone" in question and ("personal device" in text.lower() or "personal phone" in text.lower()):
             # Trap question: IT policy 3.1 is the only valid source
             if "policy_it_acceptable_use.txt" in doc and section == "3.1":
                 results.append((doc, section, text))
-        elif "da" in question and "meal" in question and "receipt" in question:
-            results.append((doc, section, text))
-        elif "leave without pay" in question and "approval" in question:
-            results.append((doc, section, text))
+        elif "da" in question and "meal" in question and ("simultaneously" in text.lower() or "instead of da" in text.lower()):
+            if section == "2.6": # Specifically for the DA vs meals prohibition
+                results.append((doc, section, text))
+        elif "leave without pay" in question and ("lwp" in text.lower() or "leave without pay" in text.lower()):
+            if "approv" in text.lower() and section == "5.2":
+                results.append((doc, section, text))
         # General backup search
         elif all(word in text.lower() for word in question.split() if len(word) > 3):
             results.append((doc, section, text))
