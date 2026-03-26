@@ -1,0 +1,169 @@
+[1mdiff --git a/uc-0b/agents.md b/uc-0b/agents.md[m
+[1mindex 7b30eac..280cf26 100644[m
+[1m--- a/uc-0b/agents.md[m
+[1m+++ b/uc-0b/agents.md[m
+[36m@@ -1,18 +1,24 @@[m
+ # agents.md[m
+[31m-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.[m
+[31m-# Delete these comments before committing.[m
+[32m+[m[32m# Agent specification for UC-0B policy summarization[m
+ [m
+ role: >[m
+[31m-  [FILL IN: Who is this agent? What is its operational boundary?][m
+[32m+[m[32m  Policy summarization agent for UC-0B. Operates on a single input text policy file and[m
+[32m+[m[32m  generates a structured clause-level summary without introducing new assertions.[m
+ [m
+ intent: >[m
+[31m-  [FILL IN: What does a correct output look like — make it verifiable][m
+[32m+[m[32m  Given a policy document (e.g., policy_hr_leave.txt), produce a compliant summary file[m
+[32m+[m[32m  (e.g., summary_hr_leave.txt) that includes all numbered clauses and preserves[m
+[32m+[m[32m  obligation conditions exactly.[m
+ [m
+ context: >[m
+[31m-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.][m
+[32m+[m[32m  Allowed to use the source policy document text and clause inventory rules from the[m
+[32m+[m[32m  UC-0B spec. Not allowed to invent assumptions, add external policy language, or omit[m
+[32m+[m[32m  previously-binding condition qualifiers.[m
+ [m
+ enforcement:[m
+[31m-  - "[FILL IN: Specific testable rule 1]"[m
+[31m-  - "[FILL IN: Specific testable rule 2]"[m
+[31m-  - "[FILL IN: Specific testable rule 3]"[m
+[31m-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"[m
+[32m+[m[32m  - "Every numbered clause from the source policy must be present in the output."[m
+[32m+[m[32m  - "Multi-condition obligations must preserve ALL conditions; do not drop any condition silently."[m
+[32m+[m[32m  - "Do not add information not present in the source document."[m
+[32m+[m[32m  - "If a clause cannot be summarized without losing meaning, quote it verbatim and flag it."[m
+[32m+[m[32m  - "Refuse to guess when the source is ambiguous or missing any required clause mapping."[m
+[41m+[m
+[1mdiff --git a/uc-0b/app.py b/uc-0b/app.py[m
+[1mindex 661bc56..f9f564e 100644[m
+[1m--- a/uc-0b/app.py[m
+[1m+++ b/uc-0b/app.py[m
+[36m@@ -1,12 +1,101 @@[m
+ """[m
+[31m-UC-0B app.py — Starter file.[m
+[31m-Build this using the RICE + agents.md + skills.md + CRAFT workflow.[m
+[31m-See README.md for run command and expected behaviour.[m
+[32m+[m[32mUC-0B app.py — Policy summarization tool.[m
+[32m+[m[32mImplements agents.md + skills.md behavior:[m
+[32m+[m[32m- retrieve_policy: parse numbered clauses from input text[m
+[32m+[m[32m- summarize_policy: generate clause-level summary with no meaning loss[m
+ """[m
+ import argparse[m
+[32m+[m[32mimport re[m
+[32m+[m[32mimport json[m
+[32m+[m[32mimport sys[m
+[32m+[m
+[32m+[m[32mCLAUSE_RE = re.compile(r"^(?P<number>\d+(?:\.\d+)*)(?:\s+|\.)+(?P<text>.+)$")[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef retrieve_policy(path):[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        with open(path, "r", encoding="utf-8") as f:[m
+[32m+[m[32m            lines = [line.rstrip("\n") for line in f][m
+[32m+[m[32m    except FileNotFoundError:[m
+[32m+[m[32m        raise FileNotFoundError(f"Policy file not found: {path}")[m
+[32m+[m[32m    except IOError as exc:[m
+[32m+[m[32m        raise RuntimeError(f"Failed to read policy file: {exc}")[m
+[32m+[m
+[32m+[m[32m    clauses = [][m
+[32m+[m[32m    current = None[m
+[32m+[m[32m    for line in lines:[m
+[32m+[m[32m        if not line.strip():[m
+[32m+[m[32m            continue[m
+[32m+[m
+[32m+[m[32m        m = CLAUSE_RE.match(line.strip())[m
+[32m+[m[32m        if m:[m
+[32m+[m[32m            if current is not None:[m
+[32m+[m[32m                clauses.append(current)[m
+[32m+[m[32m            current = {[m
+[32m+[m[32m                "number": m.group("number"),[m
+[32m+[m[32m                "text": m.group("text").strip(),[m
+[32m+[m[32m            }[m
+[32m+[m[32m        elif current is not None:[m
+[32m+[m[32m            # continue multiline clause text[m
+[32m+[m[32m            current["text"] += " " + line.strip()[m
+[32m+[m
+[32m+[m[32m    if current is not None:[m
+[32m+[m[32m        clauses.append(current)[m
+[32m+[m
+[32m+[m[32m    if not clauses:[m
+[32m+[m[32m        raise ValueError("No numbered clauses found in policy text")[m
+[32m+[m
+[32m+[m[32m    return {"clauses": clauses, "source": path}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef summarize_policy(policy_structure):[m
+[32m+[m[32m    clauses = policy_structure.get("clauses", [])[m
+[32m+[m[32m    if not clauses:[m
+[32m+[m[32m        raise ValueError("No clauses to summarize")[m
+[32m+[m
+[32m+[m[32m    # Enforcement: every clause present, all conditions preserved.[m
+[32m+[m[32m    # We produce literal, clause-by-clause output with explicit notice[m
+[32m+[m[32m    summary_lines = ["Policy Summary (verbatim clauses with conditions preserved):", ""][m
+[32m+[m
+[32m+[m[32m    for clause in clauses:[m
+[32m+[m[32m        number = clause.get("number")[m
+[32m+[m[32m        text = clause.get("text")[m
+[32m+[m[32m        if not number or not text:[m
+[32m+[m[32m            raise ValueError(f"Malformed clause data: {json.dumps(clause)}")[m
+[32m+[m
+[32m+[m[32m        summary_lines.append(f"Clause {number}: {text}")[m
+[32m+[m
+[32m+[m[32m    return "\n".join(summary_lines)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef save_summary(path, summary_text):[m
+[32m+[m[32m    with open(path, "w", encoding="utf-8") as f:[m
+[32m+[m[32m        f.write(summary_text)[m
+[32m+[m
+[32m+[m
+[32m+[m[32mdef parse_args():[m
+[32m+[m[32m    parser = argparse.ArgumentParser(description="UC-0B policy summarization tool")[m
+[32m+[m[32m    parser.add_argument("--input", required=True, help="Path to source policy txt file")[m
+[32m+[m[32m    parser.add_argument("--output", required=True, help="Path to output summary file")[m
+[32m+[m[32m    return parser.parse_args()[m
+[32m+[m
+ [m
+ def main():[m
+[31m-    raise NotImplementedError("Build this using your AI tool + RICE prompt")[m
+[32m+[m[32m    args = parse_args()[m
+[32m+[m
+[32m+[m[32m    policy = retrieve_policy(args.input)[m
+[32m+[m
+[32m+[m[32m    # Check clause inventory local requirement if we know expected numbers[m
+[32m+[m[32m    # (optional, not mandatory for generic operation)[m
+[32m+[m[32m    summary = summarize_policy(policy)[m
+[32m+[m[32m    save_summary(args.output, summary)[m
+[32m+[m[32m    print(f"Summary written to {args.output}")[m
+[32m+[m
+ [m
+ if __name__ == "__main__":[m
+[31m-    main()[m
+[32m+[m[32m    try:[m
+[32m+[m[32m        main()[m
+[32m+[m[32m    except Exception as e:[m
+[32m+[m[32m        print(f"Error: {e}", file=sys.stderr)[m
+[32m+[m[32m        sys.exit(1)[m
+[41m+[m
+[1mdiff --git a/uc-0b/skills.md b/uc-0b/skills.md[m
+[1mindex 01de6be..23315f1 100644[m
+[1m--- a/uc-0b/skills.md[m
+[1m+++ b/uc-0b/skills.md[m
+[36m@@ -1,16 +1,16 @@[m
+ # skills.md[m
+[31m-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.[m
+[31m-# Delete these comments before committing.[m
+[32m+[m[32m# UC-0B skill definitions[m
+ [m
+ skills:[m
+[31m-  - name: [skill_name][m
+[31m-    description: [One sentence — what does this skill do?][m
+[31m-    input: [What does it receive? Type and format.][m
+[31m-    output: [What does it return? Type and format.][m
+[31m-    error_handling: [What does it do when input is invalid or ambiguous?][m
+[32m+[m[32m  - name: retrieve_policy[m
+[32m+[m[32m    description: Loads a .txt policy file and returns structured sections with clause numbers.[m
+[32m+[m[32m    input: path string (e.g., "../data/policy-documents/policy_hr_leave.txt").[m
+[32m+[m[32m    output: JSON object with "clauses": array of {"number", "text"}, and metadata fields.[m
