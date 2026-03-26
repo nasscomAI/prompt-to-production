@@ -12,4 +12,3 @@ enforcement:
   - "Do not combine unrelated document content"
   - "Do not guess answers"
   - "If answer is not found, respond with refusal"
-  
