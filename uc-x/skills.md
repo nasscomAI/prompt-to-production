@@ -8,4 +8,4 @@
   description: Answers question from documents
   input: question and documents
   output: answer or refusal
-  error_handling: return refusal if answer not found
+  error_handling: return refusal if answer not found 

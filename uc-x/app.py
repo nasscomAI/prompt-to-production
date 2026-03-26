@@ -28,7 +28,6 @@ def answer_question(documents, question):
     question_lower = question.lower()
     doc_lower = documents.lower()
 
-    # simple keyword-based matching
     keywords = question_lower.split()
 
     matches = []
