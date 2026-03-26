@@ -87,6 +87,26 @@ def compute_growth(ward: str, category: str, growth_type: str, data: list):
             else:
                 res["formula"] = "Base month: No preceding period for MoM"
         
+        elif growth_type.upper() == "YOY":
+            try:
+                year, month = period.split('-')
+                prev_year_period = f"{int(year)-1}-{month}"
+                prev_row = next((r for r in filtered_data if r["period"] == prev_year_period), None)
+                
+                if prev_row:
+                    prev_actual = prev_row["actual_spend"]
+                    if actual is not None and prev_actual is not None:
+                        growth = ((actual - prev_actual) / prev_actual) * 100
+                        res["growth"] = f"{growth:+.1f}%"
+                        res["formula"] = f"(({actual} - {prev_actual}) / {prev_actual}) * 100"
+                    else:
+                        res["growth"] = "NULL_IN_SEQUENCE"
+                        res["formula"] = "Cannot compute: preceding or current value is NULL"
+                else:
+                    res["formula"] = "Base year: No preceding year data for YoY"
+            except ValueError:
+                res["formula"] = "Invalid period format for YoY"
+        
         results.append(res)
         
     return results
@@ -96,7 +116,7 @@ def main():
     parser.add_argument("--input", required=True, help="Path to ward_budget.csv")
     parser.add_argument("--ward", help="Target ward for analysis")
     parser.add_argument("--category", help="Target category for analysis")
-    parser.add_argument("--growth-type", help="MoM (Year-over-Year not yet implemented)")
+    parser.add_argument("--growth-type", help="MoM or YoY")
     parser.add_argument("--output", required=True, help="Path to output CSV file")
     args = parser.parse_args()
     
@@ -110,9 +130,19 @@ def main():
     if not args.ward or not args.category:
         print("REFUSAL: Specific --ward and --category are required. Universal aggregation is prohibited.")
         sys.exit(1)
+        
+    if args.ward.lower() == 'any' or args.category.lower() == 'any':
+        print("REFUSAL: 'Any' is not permitted for ward or category.")
+        sys.exit(1)
 
     try:
         data, nulls = load_dataset(args.input)
+        
+        # Check sequence
+        combination_exists = any(r["ward"] == args.ward and r["category"] == args.category for r in data)
+        if not combination_exists:
+            print(f"REFUSAL: The requested ward/category combination was not found.")
+            sys.exit(1)
         
         # Rule 2: Flag every null row before computing
         if nulls:
