@@ -12,4 +12,3 @@ enforcement:
   - "Handle missing values explicitly"
   - "Do not assume formulas"
   - "Return error if data is incomplete"
-  
