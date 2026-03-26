@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because 'pothole' found in description,
+PM-202402,Pothole,Urgent,Classified as Pothole because 'pothole' found in description; marked Urgent due to 'child',
+PM-202406,Flooding,Standard,Classified as Flooding because 'flood' found in description,
+PM-202408,Flooding,Standard,Classified as Flooding because 'drain' found in description,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight because 'streetlight' found in description,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because 'streetlight' found in description; marked Urgent due to 'hazard',
+PM-202413,Flooding,Standard,Classified as Flooding because 'garbage' found in description,NEEDS_REVIEW
+PM-202418,Other,Standard,Classified as Other due to lack of clear category keywords,NEEDS_REVIEW
+PM-202419,Other,Standard,Classified as Other due to lack of clear category keywords,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified as Other due to lack of clear category keywords; marked Urgent due to 'injury',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding because 'flood' found in description,
+PM-202428,Other,Standard,Classified as Other due to lack of clear category keywords,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight because 'heritage' found in description,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because 'waste' found in description,
+PM-202446,Other,Urgent,Classified as Other due to lack of clear category keywords; marked Urgent due to 'fell',NEEDS_REVIEW
