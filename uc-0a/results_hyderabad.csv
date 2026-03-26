@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding because description mentions 'Underpass flooded after 1hr rain. Ambulance diverted. Lives ...',
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage because description mentions 'Market area flooded. Traders suffering losses. Drain complet...',
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage because description mentions 'Main stormwater drain 100% blocked with construction debris.',
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage because description mentions 'Drain blocked and mosquito breeding. Dengue concern.',
+GH-202410,Pothole,Standard,Classified as Pothole because description mentions 'Potholes causing vehicles to slow to 20kmph on fast road.',
+GH-202411,Pothole,Urgent,Classified as Pothole because description mentions 'Pothole swallowed entire motorcycle wheel. Rider hospitalise...',
+GH-202412,Pothole,Urgent,Classified as Pothole because description mentions 'School bus struggling to navigate 6 potholes in 200m stretch...',
+GH-202417,Waste,Standard,Classified as Waste because description mentions 'Heritage zone garbage overflow. Tourist photographs showing ...',
+GH-202420,Other,Standard,Category ambiguous from description provided.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Classified as Road Damage because description mentions 'Road collapsed partially. Crater 1m deep near residential ga...',
+GH-202424,Flooding,Standard,Classified as Flooding because description mentions 'Underpass floods in light rain. Cars regularly abandoned.',
+GH-202428,Waste,Standard,Classified as Waste because description mentions 'Post-market waste not cleared. Area unusable by Sunday morni...',
+GH-202432,Other,Standard,Category ambiguous from description provided.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage because description mentions 'Main drain blocked — entire locality at flooding risk this w...',
+GH-202438,Flooding,Standard,Classified as Flooding because description mentions 'Colony surrounded by fields that channel rainwater through m...',
