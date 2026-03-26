@@ -11,8 +11,6 @@ def classify_complaint(row: dict) -> dict:
     complaint_id = row.get("complaint_id", "Unknown")
     
     # 1. Category Classification Logic (Exact strings from taxonomy)
-    category = "Other"
-    
     # Define keywords for categories
     category_map = {
         "Pothole": [r"pothole", r"crater", r"sinkhole"],
@@ -26,19 +24,36 @@ def classify_complaint(row: dict) -> dict:
         "Road Damage": [r"road", r"tarmac", r"paving", r"surface", r"divider", r"bus\s*shelter", r"bench"]
     }
 
-    found_cat_word = None
+    matched_categories = []
+    category_word_map = {}
     for cat, kws in category_map.items():
         for kw in kws:
             if re.search(kw, description, re.IGNORECASE):
-                category = cat
-                found_cat_word = kw
-                break
-        if found_cat_word:
-            break
+                if cat not in matched_categories:
+                    matched_categories.append(cat)
+                    category_word_map[cat] = kw
+
+    # Rule: Category Precedence (Waste over Heritage Damage unless heritage itself damaged)
+    # Since we can't easily detect "physical damage to heritage" without complex NLP, 
+    # we follow the general rule that Waste takes precedence for now.
+    category = "Other"
+    flag = ""
+    
+    if len(matched_categories) == 1:
+        category = matched_categories[0]
+    elif len(matched_categories) > 1:
+        if "Waste" in matched_categories and "Heritage Damage" in matched_categories:
+            category = "Waste" # Precedence
+        else:
+            # Ambiguity rule: whenever a description matches two or more categories
+            category = matched_categories[0]
+            flag = "NEEDS_REVIEW"
+    
+    found_cat_word = category_word_map.get(category, None)
 
     # 2. Priority Classification Logic
     # Urgent if description contains specific keywords
-    urgent_keywords = [r"injury", r"child", r"school", r"hospital", r"ambulance", r"fire", r"hazard", r"fell", r"collapse", r"injured", r"dangerous", r"unsafe", r"risk"]
+    urgent_keywords = [r"injury", r"child", r"school", r"hospital", r"ambulance", r"fire", r"hazard", r"fell", r"collapse", r"injured", r"dangerous", r"unsafe", r"risk", r"burns", r"subsidence", r"lane\s*closure"]
     priority = "Standard"
     
     found_urgent = []
@@ -52,20 +67,16 @@ def classify_complaint(row: dict) -> dict:
         priority = "Low"
     
     # 3. Reason Field (Strictly one sentence, citing specific words)
-    # We find a representative keyword to cite
     char_word = "general description"
     if found_urgent:
         char_word = found_urgent[0]
     elif found_cat_word:
         char_word = found_cat_word
     
-    # Clean up char_word if it's a regex
     characteristic_word = str(char_word).replace(r"\b", "").replace(r"\s*", " ")
-            
     reason = f"The complaint is classified as {category} with {priority} priority because the description mentions '{characteristic_word}'."
 
     # 4. Refusal / Flagging Condition
-    flag = ""
     if category == "Other":
         flag = "NEEDS_REVIEW"
 

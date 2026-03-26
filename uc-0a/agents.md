@@ -11,6 +11,8 @@ context: >
 
 enforcement:
   - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
-  - "Priority must be Urgent if the description contains any of the following keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Category Precedence: The primary nature of the hazard (e.g., Waste) takes precedence over the location (e.g., Heritage Area) unless the heritage structure itself is being physically damaged."
+  - "Priority must be Urgent if the description contains any of the following keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse, burns, subsidence, lane closure."
   - "Every output row must include a reason field that is exactly one sentence and must cite specific words from the description as justification."
   - "If the category cannot be determined with high confidence from the description alone, output category: Other and flag: NEEDS_REVIEW."
+  - "Ambiguity rules: To use NEEDS_REVIEW whenever a description matches two or more categories within the same priority level."

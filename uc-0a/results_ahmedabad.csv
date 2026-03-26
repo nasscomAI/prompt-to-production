@@ -1,16 +1,16 @@
 complaint_id,category,priority,reason,flag,description
-AM-202401,Heat Hazard,Urgent,The complaint is classified as Heat Hazard with Urgent priority because the description mentions 'unsafe'.,,Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.
+AM-202401,Heat Hazard,Urgent,The complaint is classified as Heat Hazard with Urgent priority because the description mentions 'unsafe'.,NEEDS_REVIEW,Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.
 AM-202402,Road Damage,Urgent,The complaint is classified as Road Damage with Urgent priority because the description mentions 'dangerous'.,,Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.
 AM-202405,Other,Urgent,The complaint is classified as Other with Urgent priority because the description mentions 'risk'.,NEEDS_REVIEW,Dead trees with split branches. Fall risk to walkers. 3 trees affected.
 AM-202406,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'heat'.,,Irrigation system broken. Grass dying in heatwave conditions.
 AM-202407,Road Damage,Urgent,The complaint is classified as Road Damage with Urgent priority because the description mentions 'child'.,,Broken bench and upturned paving. Child injured last week.
-AM-202410,Pothole,Standard,The complaint is classified as Pothole with Standard priority because the description mentions 'pothole'.,,Pothole on main highway causing morning rush lane closure.
+AM-202410,Pothole,Urgent,The complaint is classified as Pothole with Urgent priority because the description mentions 'lane closure'.,,Pothole on main highway causing morning rush lane closure.
 AM-202414,Streetlight,Standard,The complaint is classified as Streetlight with Standard priority because the description mentions 'unlit'.,,Residential colony unlit after 9pm. Wiring theft reported.
-AM-202417,Heritage Damage,Standard,The complaint is classified as Heritage Damage with Standard priority because the description mentions 'heritage'.,,Night market waste not cleared before morning. Heritage area affected.
+AM-202417,Waste,Standard,The complaint is classified as Waste with Standard priority because the description mentions 'waste'.,,Night market waste not cleared before morning. Heritage area affected.
 AM-202421,Noise,Standard,The complaint is classified as Noise with Standard priority because the description mentions 'music'.,,Club music audible at residential buildings at 2am.
-AM-202424,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'bubbling'.,,Zoo approach road surface bubbling at 45°C. Visitor complaints.
-AM-202429,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'surface temperature'.,,River walk surface temperature unbearable. Installed temperature reads 52°C.
-AM-202431,Heritage Damage,Standard,The complaint is classified as Heritage Damage with Standard priority because the description mentions 'heritage'.,,Old city road subsidence near ancient step well. Heritage concern.
-AM-202435,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'heat'.,,Black metal road dividers storing heat. Motorists reporting burns on contact.
+AM-202424,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'bubbling'.,NEEDS_REVIEW,Zoo approach road surface bubbling at 45°C. Visitor complaints.
+AM-202429,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'surface temperature'.,NEEDS_REVIEW,River walk surface temperature unbearable. Installed temperature reads 52°C.
+AM-202431,Heritage Damage,Urgent,The complaint is classified as Heritage Damage with Urgent priority because the description mentions 'subsidence'.,NEEDS_REVIEW,Old city road subsidence near ancient step well. Heritage concern.
+AM-202435,Heat Hazard,Urgent,The complaint is classified as Heat Hazard with Urgent priority because the description mentions 'burns'.,NEEDS_REVIEW,Black metal road dividers storing heat. Motorists reporting burns on contact.
 AM-202444,Waste,Urgent,The complaint is classified as Waste with Urgent priority because the description mentions 'risk'.,,Restaurant waste bins overflowing on Sunday night. Health risk.
 AM-202445,Heat Hazard,Standard,The complaint is classified as Heat Hazard with Standard priority because the description mentions 'sun'.,,BRT shelter roof glass broken. Users exposed to full sun.
