@@ -1,0 +1,11 @@
+[33m143e0c3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mparticipant/madhusree-Nellore[m[33m, [m[1;31morigin/participant/madhusree-Nellore[m[33m)[m Add additional project files
+pws
+[33m328b67e[m UC-0A Fix weak enforcement: rules not strict or testable → added explicit category constraints, priority triggers, keyword-based reasoning, and fallback handling
+uc-0a/agents.md
+[33mae7ffe6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m feat: add comprehensive offline assignment guide for the workshop
+resources/offline_guide.md
+[33m9012fd9[m docs: Remove all WSL-specific information and requirements from the FAQ and prerequisites documentation.
+FAQ.md
+PREREQUISITES.md
+[33m3f735b3[m Updates
+resources/offline_guide.md
