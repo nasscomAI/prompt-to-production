@@ -1,40 +1,77 @@
-# UC-0B — skills.md
-## Skills: Policy Summariser Agent
+# UC-0A — Complaint Classifier · skills.md
 
-### Skill 1 — Document Ingestion
-- **Input**: Plain-text `.txt` policy file
-- **Action**: Read entire file; detect section headings and numbered clauses using regex patterns
-- **Output**: Structured list of `(section_id, heading, body)` tuples
-- **Guard**: Raise an error if the file is empty or unreadable
+## Skill 1 — Keyword-Based Category Routing
 
-### Skill 2 — Clause Inventory
-- **Input**: Structured clause list from Skill 1
-- **Action**: Build an explicit inventory of every numbered clause found in the source document
-- **Output**: `clause_inventory[]` — a checklist used for completeness verification
-- **Guard**: Log a warning if fewer than 3 clauses are detected (likely a parsing error)
+**What it does:** Maps complaint text to a department using curated keyword lists.
 
-### Skill 3 — Faithful Summarisation (LLM call)
-- **Input**: Full document text + clause inventory
-- **Action**: Call the LLM with a strict prompt that includes:
-  - The full source text
-  - The clause inventory (to enforce coverage)
-  - Explicit rules: no omission, no meaning change, no softening, single source
-- **Output**: Draft summary text
-- **Guard**: Prompt instructs the model to include a `[CLAUSE COVERAGE]` section listing every clause it has summarised
+**Keyword Map:**
+| Department   | Keywords (case-insensitive)                                              |
+|-------------|--------------------------------------------------------------------------|
+| Roads        | road, pothole, footpath, pavement, traffic, signal, divider, street      |
+| Water        | water, pipe, leak, supply, drainage, sewage, overflow, tap, borewell     |
+| Sanitation   | garbage, waste, dustbin, litter, sweeping, trash, dump, cleaning         |
+| Electricity  | power, electricity, light, streetlight, wire, transformer, outage, shock |
+| Parks        | park, garden, tree, playground, bench, grass, footpath (green area)      |
+| Health       | hospital, disease, mosquito, stagnant, rats, hygiene, smell, epidemic    |
+| Other        | (fallback when no keywords match)                                         |
 
-### Skill 4 — Completeness Verification
-- **Input**: Draft summary + clause inventory
-- **Action**: Check each clause ID from the inventory appears in the summary; flag any missing ones
-- **Output**: Verification report with pass/fail per clause
-- **Guard**: If any clause is missing, re-prompt the model with the missing clause list and request a corrected summary
+**Logic:** Scan complaint text for each keyword group in order. First match wins. If zero matches → `Other`.
 
-### Skill 5 — Output Writer
-- **Input**: Verified summary text
-- **Action**: Write the summary to `summary_[policy_name].txt` in the output directory
-- **Output**: `.txt` file on disk
-- **Guard**: Confirm file is non-empty after write
+---
 
-### Skill 6 — CRAFT Loop Logger
-- **Input**: Each run's prompt, raw LLM output, verification report
-- **Action**: Append a structured log entry to `craft_log.txt` with timestamp, failure type detected, and fix applied
-- **Output**: Audit trail for tutor review
+## Skill 2 — Severity Escalation Detector
+
+**What it does:** Upgrades any classification to `High` if safety-critical terms are present.
+
+**High-severity trigger words:**
+```
+injury, injured, accident, child, children, school, hospital, fire,
+flood, collapse, danger, dangerous, emergency, death, dead, unsafe, bleeding
+```
+
+**Rules:**
+- If **any** trigger word is found → severity = `High` (overrides all other logic)
+- If no trigger found → proceed to Skill 3
+
+---
+
+## Skill 3 — Baseline Severity Scorer
+
+**What it does:** Assigns `Medium` or `Low` when no High-triggers are present.
+
+**Scoring heuristics:**
+| Signal                                        | Severity |
+|-----------------------------------------------|----------|
+| Complaint mentions duration > 3 days          | Medium   |
+| Complaint mentions multiple households/area   | Medium   |
+| Single household, short-term inconvenience    | Low      |
+| No duration or scale mentioned                | Low      |
+
+---
+
+## Skill 4 — Suggested Action Generator
+
+**What it does:** Produces a one-line, department-specific action for field teams.
+
+**Templates by category:**
+- **Roads:** `Dispatch [repair crew / inspection team] to [location hint] [urgency phrase]`
+- **Water:** `Send plumbing team to inspect [pipe/supply/drainage] issue at reported location`
+- **Sanitation:** `Schedule emergency / routine garbage pickup at reported location`
+- **Electricity:** `Alert DISCOM for [outage / wire fault / streetlight] repair at reported site`
+- **Parks:** `Assign parks maintenance crew to address [tree / bench / grass] issue`
+- **Health:** `Notify health inspectors; arrange fogging / pest control at reported site`
+- **Other:** `Log complaint and assign duty officer for on-ground assessment`
+
+**Rule:** Always include the implied urgency from severity — High → "immediately", Medium → "within 24 hours", Low → "at next scheduled visit".
+
+---
+
+## Skill 5 — CSV Row Emitter
+
+**What it does:** Formats and writes the final output row safely.
+
+**Rules:**
+- Wrap fields containing commas in double-quotes
+- No trailing spaces
+- Encoding: UTF-8
+- One row per complaint; preserve original `complaint_id` column
