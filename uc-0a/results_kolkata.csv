@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage",
+KM-202402,Other,Standard,Categorized as Other,NEEDS_REVIEW
+KM-202405,Other,Low,Categorized as Other,NEEDS_REVIEW
+KM-202409,Pothole,Low,"""pothole"" indicates Pothole",
+KM-202410,Pothole,Standard,"""pothole"" indicates Pothole; ""week"" triggers Standard priority",
+KM-202411,Pothole,Low,"""pothole"" indicates Pothole",
+KM-202415,Drain Blockage,Low,"""drain"" indicates Drain Blockage",
+KM-202418,Waste,Standard,"""waste"" indicates Waste",
+KM-202421,Road Damage,Urgent,"""sinking"" indicates Road Damage; ""hospital"" triggers Urgent priority",
+KM-202422,Road Damage,Low,"""road surface"" indicates Road Damage",
+KM-202426,Heritage Damage,Low,"""heritage"" indicates Heritage Damage",
+KM-202430,Waste,Standard,"""smell"" indicates Waste",
+KM-202434,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage",
+KM-202436,Other,Standard,"""entire"" triggers Standard priority",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage",

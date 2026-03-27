@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Categorized as Other,NEEDS_REVIEW
+AM-202402,Other,Standard,"""commuters"" triggers Standard priority",NEEDS_REVIEW
+AM-202405,Other,Standard,"""affected"" triggers Standard priority",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"""heat"" indicates Heat Hazard",
+AM-202407,Other,Urgent,"""child"" triggers Urgent priority",NEEDS_REVIEW
+AM-202410,Pothole,Low,"""pothole"" indicates Pothole",
+AM-202414,Other,Low,Categorized as Other,NEEDS_REVIEW
+AM-202417,Waste,Standard,"""waste"" indicates Waste; ""affected"" triggers Standard priority",
+AM-202421,Noise,Standard,"""music"" indicates Noise",
+AM-202424,Road Damage,Standard,"""road surface"" indicates Road Damage",
+AM-202429,Other,Low,Categorized as Other,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage",
+AM-202435,Heat Hazard,Standard,"""heat"" indicates Heat Hazard",
+AM-202444,Waste,Standard,"""waste"" indicates Waste",
+AM-202445,Other,Low,Categorized as Other,NEEDS_REVIEW
