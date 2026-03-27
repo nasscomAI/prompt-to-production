@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Summarizes the HR leave policy, preserving all obligations and scope.
+    input: The full text of policy_hr_leave.txt.
+    output: A summary text containing all 10 clauses, each with its core obligation and binding verb.
+    error_handling: If any clause is missing or ambiguous, output NEEDS_REVIEW and specify which clause failed.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: clause_inventory_check
+    description: Checks the summary for presence and accuracy of all 10 clauses and binding verbs.
+    input: The summary text and the clause inventory from the README.
+    output: A report listing any missing, merged, or softened clauses, and any changes to binding verbs.
+    error_handling: If summary fails inventory check, output NEEDS_REVIEW and list discrepancies.
