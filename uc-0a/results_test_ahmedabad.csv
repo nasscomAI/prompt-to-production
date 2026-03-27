@@ -14,3 +14,4 @@ AM-202431,Old city road subsidence near ancient step well. Heritage concern.,Her
 AM-202435,Black metal road dividers storing heat. Motorists reporting burns on contact.,Heat Hazard,Standard,Complaint mentions 'heat'.,
 AM-202444,Restaurant waste bins overflowing on Sunday night. Health risk.,Waste,Standard,Complaint could be Waste or Heat Hazard.,NEEDS_REVIEW
 AM-202445,BRT shelter roof glass broken. Users exposed to full sun.,Heat Hazard,Standard,Complaint mentions 'sun'.,
+ UC-0A Fix severity blindness: no keywords → added injury/child/school triggers  

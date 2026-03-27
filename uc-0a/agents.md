@@ -11,7 +11,7 @@ intent: >
 context: >
   [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
 
-enforcement:
+enforcement:  
   - Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other
   - Priority must be exactly one of: Urgent, Standard, Low
   - Priority must be Urgent if any severity keyword is present in description — keywords are injury, child, school, hospital, ambulance, fire, hazard, fell, collapse

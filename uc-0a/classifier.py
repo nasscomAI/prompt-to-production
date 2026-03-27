@@ -33,7 +33,7 @@ SEVERITY_KEYWORDS = {
     'injury', 'child', 'children', 'school', 'hospital', 'ambulance',
     'fire', 'hazard', 'fell', 'collapse', 'collapsed', 'collapsing'
 }
-
+   
 # Category keywords for matching
 CATEGORY_KEYWORDS = {
     "Pothole": ['pothole', 'pit', 'crater', 'hole in road'],
