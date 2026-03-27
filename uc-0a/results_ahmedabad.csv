@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified due to the presence of terms like 'temperature' in the description.,
+AM-202405,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified due to the presence of terms like 'heat' in the description.,
+AM-202407,Other,Urgent,Classified due to the presence of terms like 'child' in the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified due to the presence of terms like 'pothole' in the description.,
+AM-202414,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified due to the presence of terms like 'waste' in the description.,
+AM-202421,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+AM-202424,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified due to the presence of terms like 'temperature' in the description.,
+AM-202431,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified due to the presence of terms like 'heat' in the description.,
+AM-202444,Waste,Standard,Classified due to the presence of terms like 'waste' in the description.,
+AM-202445,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
