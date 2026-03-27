@@ -1,0 +1,34 @@
+Policy summary for `policy_hr_leave.txt`:
+
+Clause 2.3: "2.3 Employees must submit a leave application at least 14 calendar"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 2.4: "2.4 Leave applications must receive written approval from the"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 2.5: "2.5 Unapproved absence will be recorded as Loss of Pay (LOP)"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 2.6: "2.6 Employees may carry forward a maximum of 5 unused annual leave"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 2.7: "2.7 Carry-forward days must be used within the first quarter"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 3.2: "3.2 Sick leave of 3 or more consecutive days requires a medical"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 3.4: "3.4 Sick leave taken immediately before or after a public holiday"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 5.2: "5.2 LWP requires approval from the Department Head and the"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 5.3: "5.3 LWP exceeding 30 continuous days requires approval from"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Clause 7.2: "7.2 Leave encashment during service is not permitted under any"
+(Verbatim quote to prevent meaning loss and condition drop.)
+
+Flags:
+- Clause 5.2 may be missing the dual approver condition; verify exact phrasing.
