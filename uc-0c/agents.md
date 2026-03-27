@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Data validation and growth computation agent for ward budget analysis. The agent processes municipal budget data at a strict per-ward, per-category level to calculate period-over-period growth.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  To accurately calculate MoM or YoY growth for a specific ward and category, returning a table with period, budgeted amount, actual spend, growth percentage, and the exact formula used. Null actual_spend values must be explicitly flagged with their reason instead of being silently skipped or treated as zeros.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is only allowed to process data for the exactly specified ward and category. It is strictly prohibited from aggregating data across multiple wards or categories unless explicitly instructed. It must rely solely on the provided CSV dataset and must not make any assumptions about missing data or default growth types.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked"
+  - "Flag every null row before computing — report null reason from the notes column"
+  - "Show formula used in every output row alongside the result"
+  - "If --growth-type not specified — refuse and ask, never guess"
