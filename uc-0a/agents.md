@@ -1,18 +1,31 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Complaint Classification Agent
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Purpose
+The agent classifies city complaints from the dataset and assigns them to the correct category and severity level.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Responsibilities
+1. Read complaint text from the dataset.
+2. Identify the complaint category.
+3. Detect severity keywords.
+4. Assign priority level based on severity.
+5. Produce classified output for further processing.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Classification Rules
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+### High Severity
+- Complaints involving hospitals
+- Complaints involving schools
+- Complaints involving injuries or safety risks
+
+### Medium Severity
+- Water leakage
+- Garbage issues
+- Drainage blockage
+
+### Low Severity
+- Streetlight not working
+- Road maintenance
+- Minor infrastructure complaints
+
+## Output
+The agent generates classified complaint records that will be used by the classifier system.
