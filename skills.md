@@ -1,121 +1,110 @@
-# skills.md — UC-0B: Summary That Changes Meaning
+# skills.md — UC-0A: Complaint Classifier
 
-## Skill Set for PolicySummaryAgent
+## Skill 1: Text-Based Category Detection
 
----
+**Name:** `detect_category`
 
-### Skill 1: `read_policy_document`
+**Description:**
+Reads the raw complaint text and identifies which civic domain the issue belongs to.
 
-**Purpose:** Load and parse a plain-text HR policy document from disk.  
-**Input:** File path to `.txt` policy document  
-**Output:** Raw text string  
-
-**Logic:**
-- Open file with UTF-8 encoding
-- Strip leading/trailing whitespace
-- Return full text
-
-**Failure handling:**
-- If file not found → raise `FileNotFoundError` with clear message
-- If file is empty → raise `ValueError("Policy document is empty")`
-
----
-
-### Skill 2: `count_clauses`
-
-**Purpose:** Count the number of numbered clauses in the source document to enable completeness checking.  
-**Input:** Raw policy text  
-**Output:** Integer count of clauses  
+**Input:** Plain text complaint string
 
 **Logic:**
-- Use regex to find patterns like `1.`, `2.`, `1)`, `(a)`, `Section 1`, `Clause 1`
-- Return total count
+- Scan for domain keywords (see keyword map below)
+- Match the most specific category first
+- If multiple categories match, pick the primary one based on the main subject
+
+**Keyword Map:**
+
+| Category | Keywords |
+|---|---|
+| Roads | road, pothole, footpath, bridge, divider, pavement, speed breaker, accident, vehicle |
+| Water | water, pipe, drainage, sewage, leakage, flood, supply, borewell, tank |
+| Electricity | power, electricity, light, streetlight, transformer, outage, wire, shock, electrocution |
+| Sanitation | garbage, waste, trash, dustbin, sweeper, drain, smell, dumping, cleanliness |
+| Safety | fire, explosion, danger, threat, harassment, crime, theft, violence |
+| Health | hospital, clinic, medicine, disease, epidemic, ambulance, dengue, malaria |
+| Parks & Public Spaces | park, garden, playground, bench, tree, encroachment |
 
 ---
 
-### Skill 3: `summarise_with_llm`
+## Skill 2: Severity Classification
 
-**Purpose:** Send the policy text to an LLM with a strict summarisation prompt that enforces completeness and meaning-preservation.  
-**Input:** Raw policy text, document title  
-**Output:** Structured summary string  
+**Name:** `classify_severity`
 
-**Prompt strategy (CRAFT loop):**
-- **C**ontext: "You are summarising an HR policy for employees who will rely on it legally."
-- **R**ole: "You are a precise policy summarisation specialist."
-- **A**ction: "Summarise every numbered clause. Do not omit, soften, or merge clauses."
-- **F**ormat: "Output section-by-section. Mark conditions with [CONDITION]."
-- **T**one: "Neutral and precise. No editorialising."
+**Description:**
+Determines the urgency level of a complaint based on the nature of the issue and high-risk trigger words.
 
-**Enforcement rules embedded in prompt:**
-1. Every clause must appear
-2. Obligations (`must`, `shall`, `will not`) must stay obligations
-3. Penalties must not be softened
-4. Conditions and exceptions must be preserved
+**Input:** Category + complaint text
 
----
+**Severity Triggers (in priority order):**
 
-### Skill 4: `verify_completeness`
+1. **Critical** — Any of: `injury`, `injured`, `dead`, `death`, `fire`, `flood`, `hospital`, `child`, `school`, `emergency`, `electrocution`, `explosion`, `collapse`
+2. **High** — Any of: `accident`, `contamination`, `no water`, `power cut`, `outage`, `dangerous`, `overflowing`, `blocked road`
+3. **Medium** — Any of: `pothole`, `broken`, `irregular`, `dim light`, `delayed`, `overflow`
+4. **Low** — Everything else (cosmetic, non-urgent, general feedback)
 
-**Purpose:** Check that the summary covers all clauses found in the source document.  
-**Input:** Source clause count, summary text  
-**Output:** `PASS` or `FAIL` with details  
-
-**Logic:**
-- Count clause markers in summary
-- Compare to source clause count
-- If summary count < source count → `FAIL` with list of potentially missing clauses
+**Rule:** Always check Critical triggers first. Do not override Critical with a lower severity.
 
 ---
 
-### Skill 5: `write_summary_file`
+## Skill 3: Department Routing
 
-**Purpose:** Write the final verified summary to disk as `summary_hr_leave.txt`.  
-**Input:** Summary string, output file path  
-**Output:** Confirmation message  
+**Name:** `route_department`
 
-**Logic:**
-- Open output path for writing (UTF-8)
-- Write summary string
-- Print confirmation with file path and character count
+**Description:**
+Maps the classified category to the responsible municipal department.
+
+**Routing Table:**
+
+| Category | Department |
+|---|---|
+| Roads | PWD (Public Works Department) |
+| Water | Water Board |
+| Electricity | BESCOM / Electricity Board |
+| Sanitation | BBMP / Municipal Corporation |
+| Safety | Fire & Emergency Services / Police |
+| Health | Health Department |
+| Parks & Public Spaces | BBMP / Municipal Corporation |
+
+**Fallback:** If category is unclear, assign `Municipal Corporation (General)` and log for manual review.
 
 ---
 
-### Skill 6: `detect_meaning_drift`
+## Skill 4: CSV I/O Handler
 
-**Purpose:** Scan the generated summary for known softening patterns that indicate meaning drift.  
-**Input:** Summary text  
-**Output:** List of warnings (empty list = clean)  
+**Name:** `handle_csv`
 
-**Patterns to flag:**
+**Description:**
+Reads the input CSV, applies classify skills row by row, and writes the output CSV.
 
-| Risky phrase in summary | What it likely softened |
-|------------------------|------------------------|
-| "may face" | "will be terminated" |
-| "should submit" | "must submit" |
-| "encouraged to" | "required to" |
-| "consider" | "must" |
-| "generally" | a specific rule |
-| "etc." | a complete list |
-
-**Output format:**
+**Input file format:**
 ```
-[DRIFT WARNING] Line 12: "should submit" — original may have said "must submit"
+complaint_id, complaint_text
 ```
+
+**Output file format:**
+```
+complaint_id, complaint_text, category, severity, department
+```
+
+**Rules:**
+- Preserve all original columns
+- Never skip a row — if classification fails, write `Unknown` and log the row index
+- Output file must be named `results_[city].csv`
 
 ---
 
-## Skill Execution Order
+## Skill 5: Audit Logger
 
+**Name:** `log_audit`
+
+**Description:**
+Appends a plain-text log entry for each classification decision, useful for CRAFT loop debugging.
+
+**Format:**
 ```
-read_policy_document
-        ↓
-count_clauses
-        ↓
-summarise_with_llm
-        ↓
-detect_meaning_drift  ← re-prompt if warnings found
-        ↓
-verify_completeness   ← re-prompt if FAIL
-        ↓
-write_summary_file
+[ROW 12] TEXT: "Water pipe burst near school" → CATEGORY: Water | SEVERITY: Critical | DEPT: Water Board
 ```
+
+**Purpose:** Enables tutors and reviewers to trace every classification decision back to the input text.
