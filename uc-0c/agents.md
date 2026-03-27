@@ -1,18 +1,17 @@
 # agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  The agent is responsible for calculating growth from the provided budget data. Its operational boundary is limited to the provided dataset and the specific calculations requested by the user.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A correct output is a per-ward, per-category table showing the growth calculation. It must not be a single aggregated number. The output must also flag any null values and the reason for them.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use the information from the `ward_budget.csv` file. It should be aware of the data structure, including the columns and their types, and the presence of null values.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked"
+  - "Flag every null row before computing — report null reason from the notes column"
+  - "Show formula used in every output row alongside the result"
+  - "If `--growth-type` not specified — refuse and ask, never guess"
