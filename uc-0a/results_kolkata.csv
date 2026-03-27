@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description contains ""lamp post"", ""lamp post"", indicating a Streetlight complaint.",
+KM-202402,Heritage Damage,Standard,"Description contains ""historic"", ""cobblestone"", indicating a Heritage Damage complaint.",
+KM-202405,Noise,Standard,"Description contains ""wedding band"", indicating a Noise complaint.",
+KM-202409,Pothole,Standard,"Description contains ""pothole"", indicating a Pothole complaint.",
+KM-202410,Pothole,Standard,"Description contains ""pothole"", indicating a Pothole complaint.",
+KM-202411,Pothole,Standard,"Description contains ""pothole"", indicating a Pothole complaint. Ambiguous between Pothole, Flooding.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,"Description contains ""drain"", indicating a Drain Blockage complaint.",
+KM-202418,Waste,Standard,"Description contains ""waste overflowing"", indicating a Waste complaint.",
+KM-202421,Road Damage,Urgent,"Description contains ""footpath"", indicating a Road Damage complaint.",
+KM-202422,Road Damage,Standard,"Description contains ""road surface"", indicating a Road Damage complaint.",
+KM-202426,Heritage Damage,Standard,"Description contains ""heritage"", indicating a Heritage Damage complaint.",
+KM-202430,Road Damage,Standard,"Description contains ""road subsided"", indicating a Road Damage complaint.",
+KM-202434,Heritage Damage,Standard,"Description contains ""heritage"", indicating a Heritage Damage complaint.",
+KM-202436,Streetlight,Standard,"Description contains ""darkness"", indicating a Streetlight complaint.",
+KM-202438,Noise,Standard,"Description contains ""amplifier"", indicating a Noise complaint. Ambiguous between Noise, Heritage Damage.",NEEDS_REVIEW

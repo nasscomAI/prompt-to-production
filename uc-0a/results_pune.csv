@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description contains ""pothole"", indicating a Pothole complaint.",
+PM-202402,Pothole,Urgent,"Description contains ""pothole"", indicating a Pothole complaint.",
+PM-202406,Flooding,Standard,"Description contains ""flood"", indicating a Flooding complaint.",
+PM-202408,Flooding,Standard,"Description contains ""flood"", indicating a Flooding complaint. Ambiguous between Flooding, Drain Blockage.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description contains ""streetlight"", ""lights out"", indicating a Streetlight complaint.",
+PM-202411,Streetlight,Urgent,"Description contains ""streetlight"", indicating a Streetlight complaint.",
+PM-202413,Waste,Standard,"Description contains ""garbage"", indicating a Waste complaint.",
+PM-202418,Noise,Standard,"Description contains ""music past"", indicating a Noise complaint.",
+PM-202419,Road Damage,Standard,"Description contains ""road surface"", indicating a Road Damage complaint.",
+PM-202420,Drain Blockage,Urgent,"Description contains ""manhole"", indicating a Drain Blockage complaint.",
+PM-202427,Flooding,Standard,"Description contains ""flood"", indicating a Flooding complaint.",
+PM-202428,Waste,Standard,"Description contains ""dead animal"", indicating a Waste complaint.",
+PM-202430,Streetlight,Standard,"Description contains ""lights out"", indicating a Streetlight complaint. Ambiguous between Streetlight, Heritage Damage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description contains ""bulk waste"", ""renovation dump"", ""dumped on"", indicating a Waste complaint.",
+PM-202446,Road Damage,Urgent,"Description contains ""footpath"", ""tiles broken"", indicating a Road Damage complaint.",

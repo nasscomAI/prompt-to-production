@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description contains ""flood"", indicating a Flooding complaint.",
+GH-202402,Flooding,Standard,"Description contains ""flood"", indicating a Flooding complaint. Ambiguous between Flooding, Drain Blockage.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Description contains ""drain"", indicating a Drain Blockage complaint.",
+GH-202407,Drain Blockage,Standard,"Description contains ""drain"", indicating a Drain Blockage complaint.",
+GH-202410,Pothole,Standard,"Description contains ""pothole"", indicating a Pothole complaint.",
+GH-202411,Pothole,Urgent,"Description contains ""pothole"", indicating a Pothole complaint.",
+GH-202412,Pothole,Urgent,"Description contains ""pothole"", indicating a Pothole complaint.",
+GH-202417,Waste,Standard,"Description contains ""garbage"", indicating a Waste complaint. Ambiguous between Waste, Heritage Damage.",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Description contains ""drilling"", indicating a Noise complaint.",
+GH-202422,Pothole,Urgent,"Description contains ""crater"", indicating a Pothole complaint.",
+GH-202424,Flooding,Standard,"Description contains ""flood"", indicating a Flooding complaint.",
+GH-202428,Waste,Standard,"Description contains ""waste not cleared"", indicating a Waste complaint.",
+GH-202432,Other,Low,No specific category keywords found; classified as Other.,
+GH-202448,Flooding,Standard,"Description contains ""flood"", ""flooding"", indicating a Flooding complaint.",
+GH-202438,Flooding,Standard,"Description contains ""rainwater"", indicating a Flooding complaint.",

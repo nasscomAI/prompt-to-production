@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description contains ""tarmac surface melting"", indicating a Heat Hazard complaint.",
+AM-202402,Heat Hazard,Standard,"Description contains ""dangerous temperatures"", indicating a Heat Hazard complaint.",
+AM-202405,Other,Low,No specific category keywords found; classified as Other.,
+AM-202406,Heat Hazard,Standard,"Description contains ""heat"", ""heatwave"", indicating a Heat Hazard complaint.",
+AM-202407,Road Damage,Urgent,"Description contains ""upturned paving"", indicating a Road Damage complaint.",
+AM-202410,Pothole,Standard,"Description contains ""pothole"", indicating a Pothole complaint.",
+AM-202414,Streetlight,Standard,"Description contains ""unlit"", ""wiring theft"", indicating a Streetlight complaint.",
+AM-202417,Waste,Standard,"Description contains ""waste not cleared"", indicating a Waste complaint. Ambiguous between Waste, Heritage Damage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Description contains ""club music"", ""music audible"", indicating a Noise complaint.",
+AM-202424,Road Damage,Standard,"Description contains ""road surface"", indicating a Road Damage complaint.",
+AM-202429,Heat Hazard,Standard,"Description contains ""surface temperature"", indicating a Heat Hazard complaint.",
+AM-202431,Road Damage,Standard,"Description contains ""road subsidence"", indicating a Road Damage complaint. Ambiguous between Road Damage, Heritage Damage.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description contains ""heat"", ""storing heat"", ""burns on contact"", indicating a Heat Hazard complaint.",
+AM-202444,Waste,Standard,"Description contains ""bins overflowing"", indicating a Waste complaint.",
+AM-202445,Other,Low,No specific category keywords found; classified as Other.,
