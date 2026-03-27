@@ -1,18 +1,19 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0C Budget Growth Analysis
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An AI agent responsible for analyzing city ward budget data
+  and calculating growth across categories.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  The output must compute growth values correctly based on
+  the ward budget dataset and present them in a structured format.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to read only the provided ward_budget.csv file
+  and must not introduce external information.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Each ward must have a calculated growth value"
+  - "Growth must be calculated using current and previous values"
+  - "Output must be written to growth_output.csv"
+  - "If data is missing, mark the row with a flag instead of crashing"
