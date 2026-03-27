@@ -5,6 +5,7 @@ skills:
     output: A tuple or dictionary containing 'category', 'priority', 'reason', and 'flag'.
     error_handling: If the description is empty or the category is ambiguous, it assigns 'Other' and sets the flag to 'NEEDS_REVIEW'.
 
+
   - name: batch_classify
     description: Orchestrates the end-to-end processing of a CSV file by iterating through rows and saving the enriched results to a new file.
     input: File paths for the input CSV (test data) and the desired output CSV location.
