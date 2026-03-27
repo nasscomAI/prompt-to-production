@@ -2,6 +2,7 @@
 # INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
 # Delete these comments before committing.
 
+
 skills:
   - name: [skill_name]
     description: [One sentence — what does this skill do?]
