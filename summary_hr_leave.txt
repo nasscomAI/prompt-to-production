@@ -1,0 +1,43 @@
+======================================================================
+POLICY SUMMARY — policy_hr_leave.txt
+Generated : 2026-03-27
+Source    : policy_hr_leave.txt
+======================================================================
+
+### ANNUAL LEAVE
+  - Every permanent employee is entitled to 18 days of paid annual leave per calendar year.
+  - Leave must be applied for at least 5 working days in advance using the official HR portal.
+  - Unused leave may be carried forward to the next year, subject to a maximum carry-forward of 9 days. [EXCEPTION]
+  - Leave encashment is permitted only upon resignation or retirement, and only for a maximum of 30 days.
+
+### SICK LEAVE
+  - Each employee is entitled to 12 days of paid sick leave per year.
+  - Sick leave exceeding 3 consecutive days requires a medical certificate from a registered practitioner.
+  - Sick leave cannot be carried forward and will lapse at the end of the calendar year. [EXCEPTION]
+  - If sick leave is exhausted, additional days will be treated as unpaid leave and deducted from salary. [PENALTY]
+
+### MATERNITY AND PATERNITY LEAVE
+  - Female employees are entitled to 26 weeks of paid maternity leave for the first 2 children.
+  - For the 3rd child onwards, maternity leave is limited to 12 weeks. [EXCEPTION]
+  - Male employees are entitled to 5 days of paid paternity leave within 6 months of the child's birth.
+  - Paternity leave must be taken in a single continuous block and cannot be split. [EXCEPTION]
+
+### BEREAVEMENT LEAVE
+  - Employees are entitled to 3 days of paid bereavement leave upon the death of an immediate family member.
+  - Immediate family is defined as: spouse, children, parents, and siblings.
+  - Extended family bereavement (grandparents, in-laws) entitles an employee to 1 day of paid leave.
+
+### LEAVE WITHOUT PAY
+  - Employees may apply for leave without pay (LWP) for a maximum of 90 days per year.
+  - LWP beyond 30 days requires approval from the Head of Department and HR Director.
+  - LWP periods will not count toward provident fund contributions or service continuity. [PENALTY]
+
+### DISCIPLINARY PROVISIONS
+  - Misrepresentation of leave reasons may result in disciplinary action up to and including termination. [PENALTY] [PENALTY]
+  - Repeated unauthorised absence (3 or more occurrences in 6 months) will trigger a formal performance improvement plan. [PENALTY]
+
+----------------------------------------------------------------------
+CLAUSE COUNT  : 20
+COMPLETENESS  : PASSED
+NUMERIC CHECK : PASSED
+======================================================================
