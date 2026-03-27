@@ -19,5 +19,5 @@ enforcement:
   - If question not covered — respond with exact refusal template: "This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance."
   - Cite source document name + section number for every factual claim — format is "policy_document.txt section X.Y"
   - If question appears to blend multiple documents (e.g., HR + IT), either answer from single most-relevant source OR refuse if genuine ambiguity
-  - For cross-document trap questions (e.g., personal phone + work files), answer IT section 3.1 only (email + portal) or refuse
-  - All employee questions must receive exactly one of: (1) single-source answer with citation, or (2) refusal template
+  - For cross-document trap questions (e.g., personal phone + work files), answer IT section 3.1 only (email + portal) or refuse   
+  - All employee questions must receive exactly one of: (1) single-source answer with citation, or (2) refusal template   

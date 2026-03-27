@@ -5,9 +5,9 @@ Implements retrieve_documents and answer_question skills following agents.md int
 - Single-source answers only (no cross-document blending)
 - Exact refusal template for out-of-scope questions
 - Explicit citations with document name + section number
-- No hedging phrases
+- No hedging  phrases    
 """
-
+  
 import os
 import re
 from typing import Dict, List, Tuple, Optional
