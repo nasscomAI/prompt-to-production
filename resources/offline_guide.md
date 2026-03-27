@@ -1,3 +1,6 @@
+## Added Section
+- Step-by-step setup instructions for offline usage
+
 # Assignment Guide
 
 **Nasscom AI-Code Sarathi · prompt-to-production**
