@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description contains the word 'pothole'.,
+PM-202402,Pothole,Urgent,The description contains the word 'child'.,
+PM-202406,Flooding,Standard,The description contains the word 'flood'.,
+PM-202408,Other,Standard,The description contains the word 'flood'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description contains the word 'streetlight'.,
+PM-202411,Streetlight,Urgent,The description contains the word 'hazard'.,
+PM-202413,Waste,Standard,The description contains the word 'garbage'.,
+PM-202418,Noise,Standard,The description contains the word 'music'.,
+PM-202419,Pothole,Standard,The description contains the word 'surface cracked'.,
+PM-202420,Road Damage,Urgent,The description contains the word 'injury'.,
+PM-202427,Flooding,Standard,The description contains the word 'flood'.,
+PM-202428,Waste,Standard,The description contains the word 'dead animal'.,
+PM-202430,Other,Standard,The description contains the word 'lights out'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,The description contains the word 'waste'.,
+PM-202446,Road Damage,Urgent,The description contains the word 'fell'.,
