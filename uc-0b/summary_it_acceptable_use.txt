@@ -1,0 +1,24 @@
+2.1: Corporate devices laptops, desktops, mobile phones issued by [FLAG: Verbatim Quote]
+2.2: Personal use of corporate devices is permitted in moderation,
+2.3: Employees must not install software on corporate devices
+2.4: Software approved for installation must be sourced from the
+2.5: Corporate devices must not be used to access gambling, adult
+2.6: Corporate devices must have the CMC endpoint security agent
+3.1: Personal devices may be used to access CMC email and the [FLAG: Verbatim Quote]
+3.2: Personal devices must not be used to access, store, or
+3.3: Personal devices must not be connected to the CMC internal
+3.4: Employees using personal devices for CMC email must enable
+3.5: If a personal device containing CMC email is lost or stolen, [FLAG: Verbatim Quote]
+4.1: Employees must not share their CMC system passwords with
+4.2: IT staff will never ask for your password.
+4.3: Passwords must be changed every 90 days as prompted by the
+4.4: Multi-factor authentication (MFA) is mandatory for all remote
+5.1: CMC data classified as Confidential or Restricted must not
+5.2: Employees must not forward CMC email containing Confidential
+5.3: Printing of Confidential documents must use the secure print
+6.1: Internet use on CMC systems is monitored and logged. [FLAG: Verbatim Quote]
+6.2: Employees must not use CMC email addresses to register for
+6.3: Mass emails to external recipients must be approved by the
+7.1: Violations of this policy may result in disciplinary action [FLAG: Verbatim Quote]
+7.2: Violations involving unauthorised access to restricted data [FLAG: Verbatim Quote]
+7.3: CMC reserves the right to monitor, access, and audit any [FLAG: Verbatim Quote]
