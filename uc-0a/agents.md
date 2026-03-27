@@ -12,7 +12,14 @@ context: >
   [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other
+  - Priority must be exactly one of: Urgent, Standard, Low
+  - Priority must be Urgent if any severity keyword is present in description — keywords are injury, child, school, hospital, ambulance, fire, hazard, fell, collapse
+  - Priority must not be Urgent if no severity keywords are present
+  - Reason must be a single sentence
+  - Reason must cite at least one specific word or phrase from the complaint description
+  - Flag must be either NEEDS_REVIEW or blank — no other values
+  - Flag must be set to NEEDS_REVIEW if category is genuinely ambiguous
+  - Flag must not be set to NEEDS_REVIEW for complaints that map clearly to a single category
+  - Category names must not vary or be modified from the allowed list
+  - Valid classifications cannot output ambiguous categories with high confidence

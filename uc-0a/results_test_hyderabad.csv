@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+GH-202401,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,Flooding,Urgent,Complaint mentions 'flood'.,
+GH-202402,Market area flooded. Traders suffering losses. Drain completely blocked.,Flooding,Standard,Complaint could be Flooding or Drain Blockage.,NEEDS_REVIEW
+GH-202406,Main stormwater drain 100% blocked with construction debris.,Drain Blockage,Standard,Complaint mentions 'drain'.,
+GH-202407,Drain blocked and mosquito breeding. Dengue concern.,Drain Blockage,Standard,Complaint mentions 'drain'.,
+GH-202410,Potholes causing vehicles to slow to 20kmph on fast road.,Pothole,Standard,Complaint mentions 'pothole'.,
+GH-202411,Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Pothole,Standard,Complaint mentions 'pothole'.,
+GH-202412,School bus struggling to navigate 6 potholes in 200m stretch.,Pothole,Urgent,Complaint mentions 'pothole'.,
+GH-202417,Heritage zone garbage overflow. Tourist photographs showing piles of waste.,Waste,Standard,Complaint mentions 'garbage'.,
+GH-202420,Construction drilling from 5am daily near residential towers.,Other,Standard,No clear match to standard categories.,NEEDS_REVIEW
+GH-202422,Road collapsed partially. Crater 1m deep near residential gate.,Pothole,Urgent,Complaint mentions 'crater'.,
+GH-202424,Underpass floods in light rain. Cars regularly abandoned.,Flooding,Standard,Complaint mentions 'flood'.,
+GH-202428,Post-market waste not cleared. Area unusable by Sunday morning.,Waste,Standard,Complaint could be Waste or Heat Hazard.,NEEDS_REVIEW
+GH-202432,24hr supermarket delivery trucks idling with engines on.,Other,Standard,No clear match to standard categories.,NEEDS_REVIEW
+GH-202448,Main drain blocked — entire locality at flooding risk this week.,Drain Blockage,Standard,Complaint mentions 'drain'.,
+GH-202438,Colony surrounded by fields that channel rainwater through main road.,Flooding,Standard,Complaint mentions 'water'.,
