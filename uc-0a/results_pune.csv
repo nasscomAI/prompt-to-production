@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+1,Water,Normal,Detected keyword: water/leak/pipeline,
+2,Roads,High,Detected keyword: pothole/road,
+3,Electricity,Urgent,Detected keyword: power/electric,
+4,Sanitation,Normal,Detected keyword: garbage/waste,
+5,Other,Low,No description provided,NEEDS_REVIEW
+6,Water,Normal,Detected keyword: water/leak/pipeline,
+7,Roads,Urgent,Detected keyword: pothole/road,
+8,Electricity,High,Detected keyword: power/electric,
+9,Sanitation,Normal,Detected keyword: garbage/waste,
+10,Other,Normal,No category keyword found,NEEDS_REVIEW
+11,Water,High,Detected keyword: water/leak/pipeline,
+12,Roads,Normal,Detected keyword: pothole/road,
+13,Electricity,Urgent,Detected keyword: power/electric,
+14,Sanitation,High,Detected keyword: garbage/waste,
+15,Other,Normal ,No category keyword found,NEEDS_REVIEW
