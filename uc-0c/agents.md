@@ -14,3 +14,5 @@ enforcement:
   - "Flag every null row before computing — report null reason from the notes column."
   - "Show formula used in every output row alongside the result."
   - "If --growth-type is not specified, you must refuse the request and ask for clarification; never guess MoM or YoY."
+
+# UC-0C refinement
