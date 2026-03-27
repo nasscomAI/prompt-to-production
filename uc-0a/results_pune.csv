@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Mentions infrastructure damage but no immediate danger keywords. Mentions pothole in description.,
+PM-202402,Pothole,Urgent,"Contains severity keyword(s): school, child. Mentions pothole in description.",
+PM-202406,Flooding,Low,No specific severity keywords found. Mentions flooding or standing water.,
+PM-202408,Drain Blockage,Low,No specific severity keywords found. Mentions blocked drains.,
+PM-202410,Streetlight,Low,No specific severity keywords found. Mentions lighting issues.,
+PM-202411,Streetlight,Urgent,Contains severity keyword(s): hazard. Mentions lighting issues.,
+PM-202413,Waste,Low,No specific severity keywords found. Mentions waste or garbage.,
+PM-202418,Other,Low,No specific severity keywords found.,
+PM-202419,Other,Low,No specific severity keywords found.,
+PM-202420,Other,Urgent,Contains severity keyword(s): injury.,NEEDS_REVIEW
+PM-202427,Flooding,Low,No specific severity keywords found. Mentions flooding or standing water.,
+PM-202428,Other,Low,No specific severity keywords found.,
+PM-202430,Streetlight,Low,No specific severity keywords found. Mentions lighting issues.,
+PM-202433,Waste,Low,No specific severity keywords found. Mentions waste or garbage.,
+PM-202446,Other,Urgent,Contains severity keyword(s): fell.,NEEDS_REVIEW
