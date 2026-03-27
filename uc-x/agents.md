@@ -16,3 +16,5 @@ enforcement:
   - "Never use hedging phrases like 'while not explicitly covered', 'typically', 'generally understood', or 'it is common practice'."
   - "Cite the source document name and section number for every factual claim made."
   - "If the question is not covered in the documents, use the refusal template exactly: 'This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.'"
+
+# UC-X refinement
