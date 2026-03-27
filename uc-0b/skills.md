@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Parses a plain text policy document into a list of numbered clauses and their text.
+    input: Absolute path to the .txt file.
+    output: List of dictionaries: [{ "clause": "2.3", "content": "..." }, ...]
+    error_handling: Return error if file is missing or contains no numbered clauses.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Generates a condensed summary of each clause while preserving all binding obligations and conditions.
+    input: List of structured sections from retrieve_policy.
+    output: Multi-line string with [Clause ID] followed by the summarized rule.
+    error_handling: Refuse and quote verbatim if a clause is too complex to summarize without meaning loss.
