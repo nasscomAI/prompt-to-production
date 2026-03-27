@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,"Keyword ""pothole"" found in description.",
+Pothole,Urgent,"Keyword ""pothole"" found in description.",
+Other,Standard,No clear keyword found in description.,NEEDS_REVIEW
+Drain Blockage,Standard,"Keyword ""drain"" found in description.",
+Other,Standard,No clear keyword found in description.,NEEDS_REVIEW
+Streetlight,Urgent,"Keyword ""streetlight"" found in description.",
+Waste,Standard,"Keyword ""garbage"" found in description.",
+Other,Standard,No clear keyword found in description.,NEEDS_REVIEW
+Other,Standard,No clear keyword found in description.,NEEDS_REVIEW
+Other,Urgent,No clear keyword found in description.,NEEDS_REVIEW
+Other,Standard,No clear keyword found in description.,NEEDS_REVIEW
+Other,Standard,No clear keyword found in description.,NEEDS_REVIEW
+Heritage Damage,Standard,"Keyword ""heritage"" found in description.",
+Waste,Standard,"Keyword ""waste"" found in description.",
+Other,Urgent,No clear keyword found in description.,NEEDS_REVIEW
