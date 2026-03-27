@@ -1,18 +1,16 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An AI classifier agent that reads citizen complaint descriptions and categorizes them into specific infrastructure, environmental, or nuisance domains: Infrastructure (Pothole, Road Damage, Heritage Damage, Streetlight), Environmental (Flooding, Heat Hazard, Waste, Drain Blockage), Nuisance (Noise), or General (Other).
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  To evaluate the problem text and return the correct, exact mapped category while maintaining taxonomy bounds without hallucinating sub-categories.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is only allowed to use the text provided in the complaint description. It must strictly follow the allowed category list and priority mappings, assigning appropriate priority values when injury/hazard context is parsed. 
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Road Damage, Heritage Damage, Streetlight, Flooding, Heat Hazard, Waste, Drain Blockage, Noise, or Other"
+  - "Priority must be designated appropriately based strictly on severity keywords present in the description."
+  - "Every output row must include a reason field explicitly citing the keyword mapped from the user description."
+  - "If the category is genuinely ambiguous or lacks specific keywords, output category 'Other' and flag as 'NEEDS_REVIEW'."
