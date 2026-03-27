@@ -12,3 +12,5 @@ enforcement:
   - "Multi-condition obligations must preserve ALL conditions verbatim — never drop one silently."
   - "Never add information, phrases, or assumptions not present in the source document (e.g., avoid 'as is standard practice')."
   - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag it rather than guessing or softening the meaning."
+
+# UC-0B refinement
