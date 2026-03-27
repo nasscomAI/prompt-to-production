@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Category matched on: ""melting"".",
+AM-202402,Heat Hazard,Standard,"Category matched on: ""temperatures"".",
+AM-202405,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category matched on: ""heatwave"".",
+AM-202407,Other,Urgent,"No clear category keywords found; Severity keywords found: ""child"".",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Category matched on: ""pothole"".",
+AM-202414,Streetlight,Standard,"Category matched on: ""unlit"".",
+AM-202417,Waste,Standard,"Category matched on: ""waste"".",
+AM-202421,Noise,Standard,"Category matched on: ""music"".",
+AM-202424,Road Damage,Standard,"Category matched on: ""road surface"".",
+AM-202429,Heat Hazard,Standard,"Category matched on: ""temperature"".",
+AM-202431,Heritage Damage,Standard,"Category matched on: ""heritage"", ""old city"", ""step well"".",
+AM-202435,Heat Hazard,Standard,"Category matched on: ""heat"", ""burns"".",
+AM-202444,Waste,Standard,"Category matched on: ""waste"", ""bins overflowing"".",
+AM-202445,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
