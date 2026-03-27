@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Category matched on: ""flooded""; Severity keywords found: ""ambulance"".",
+GH-202402,Flooding,Standard,"Category matched on: ""flooded"".",
+GH-202406,Waste,Standard,"Category matched on: ""debris"".",
+GH-202407,Drain Blockage,Standard,"Category matched on: ""drain blocked"".",
+GH-202410,Pothole,Standard,"Category matched on: ""potholes"".",
+GH-202411,Pothole,Standard,"Category matched on: ""pothole"".",
+GH-202412,Pothole,Urgent,"Category matched on: ""potholes""; Severity keywords found: ""school"".",
+GH-202417,Waste,Standard,"Category matched on: ""garbage"", ""waste"".",
+GH-202420,Noise,Standard,"Category matched on: ""drilling"".",
+GH-202422,Pothole,Standard,"Category matched on: ""crater"".",
+GH-202424,Flooding,Standard,"Category matched on: ""floods"".",
+GH-202428,Waste,Standard,"Category matched on: ""waste"".",
+GH-202432,Noise,Standard,"Category matched on: ""idling"".",
+GH-202448,Drain Blockage,Standard,"Category matched on: ""drain blocked"".",
+GH-202438,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
