@@ -1,0 +1,149 @@
+POLICY SUMMARY WITH CLAUSE ENFORCEMENT
+
+============================================================
+
+NOTE: Each clause reference below maps to the source document.
+
+
+### SECTION 1
+
+
+[Clause 1.1]
+Requirement: This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).
+Binding verb: None
+
+[Clause 1.2]
+Requirement: This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts.
+Binding verb: None
+
+### SECTION 2
+
+
+[Clause 2.1]
+Requirement: Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+Binding verb: None
+
+[Clause 2.2]
+Requirement: Annual leave accrues at 1.5 days per month from the date of joining.
+Binding verb: None
+
+[Clause 2.3]
+Requirement: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+Binding verb: must
+
+[Clause 2.4]
+Requirement: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
+Binding verb: must
+
+[Clause 2.5]
+Requirement: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+Binding verb: will
+
+[Clause 2.6]
+Requirement: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+Binding verb: may
+
+[Clause 2.7]
+Requirement: Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+Binding verb: must
+
+### SECTION 3
+
+
+[Clause 3.1]
+Requirement: Each employee is entitled to 12 days of paid sick leave per calendar year.
+Binding verb: None
+
+[Clause 3.2]
+Requirement: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+Binding verb: requires
+
+[Clause 3.3]
+Requirement: Sick leave cannot be carried forward to the following year.
+Binding verb: cannot
+
+[Clause 3.4]
+Requirement: Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+Reason: Stricter medical cert requirement for leave adjacent to holidays.
+Binding verb: requires
+
+### SECTION 4
+
+
+[Clause 4.1]
+Requirement: Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.
+Binding verb: None
+
+[Clause 4.2]
+Requirement: For a third or subsequent child, maternity leave is 12 weeks paid.
+Binding verb: None
+
+[Clause 4.3]
+Requirement: Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+Binding verb: None
+
+[Clause 4.4]
+Requirement: Paternity leave cannot be split across multiple periods.
+Binding verb: cannot
+
+### SECTION 5
+
+
+[Clause 5.1]
+Requirement: An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+Binding verb: may
+
+[Clause 5.2]
+Requirement: LWP requires approval from BOTH the Department Head AND the HR Director.
+Reason: Multi-condition obligation — manager approval alone is insufficient.
+Binding verb: requires
+
+[Clause 5.3]
+Requirement: LWP exceeding 30 continuous days requires Municipal Commissioner approval.
+Reason: Additional escalation condition for extended LWP.
+Binding verb: requires
+
+[Clause 5.4]
+Requirement: Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits.
+Binding verb: None
+
+### SECTION 6
+
+
+[Clause 6.1]
+Requirement: Employees are entitled to all gazetted public holidays as declared by the State Government each year.
+Binding verb: None
+
+[Clause 6.2]
+Requirement: If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+Binding verb: None
+
+[Clause 6.3]
+Requirement: Compensatory off cannot be encashed.
+Binding verb: cannot
+
+### SECTION 7
+
+
+[Clause 7.1]
+Requirement: Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.
+Binding verb: may
+
+[Clause 7.2]
+Requirement: Leave encashment during service is not permitted under any circumstances.
+Binding verb: not permitted
+
+[Clause 7.3]
+Requirement: Sick leave and LWP cannot be encashed under any circumstances.
+Binding verb: cannot
+
+### SECTION 8
+
+
+[Clause 8.1]
+Requirement: Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.
+Binding verb: must
+
+[Clause 8.2]
+Requirement: Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
+Binding verb: will
