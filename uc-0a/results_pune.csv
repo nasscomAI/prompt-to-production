@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description contains specific keywords like 'pothole' justifying this classification.,
+PM-202402,Pothole,Urgent,"The description contains specific keywords like 'child', 'pothole' justifying this classification.",
+PM-202406,Flooding,Urgent,"The description contains specific keywords like 'stranded', 'flood' justifying this classification.",
+PM-202408,Other,Standard,"The description contains specific keywords like 'flood', 'drain blocked' justifying this classification.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description contains specific keywords like 'streetlight' justifying this classification.,
+PM-202411,Streetlight,Urgent,"The description contains specific keywords like 'hazard', 'streetlight' justifying this classification.",
+PM-202413,Waste,Standard,The description contains specific keywords like 'garbage' justifying this classification.,
+PM-202418,Noise,Standard,The description contains specific keywords like 'music' justifying this classification.,
+PM-202419,Road Damage,Standard,The description contains specific keywords like 'road surface' justifying this classification.,
+PM-202420,Other,Urgent,The description contains specific keywords like 'injury' justifying this classification.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description contains specific keywords like 'flood' justifying this classification.,
+PM-202428,Other,Standard,Description ambiguous.,NEEDS_REVIEW
+PM-202430,Other,Standard,"The description contains specific keywords like 'lights out', 'heritage' justifying this classification.",NEEDS_REVIEW
+PM-202433,Waste,Standard,The description contains specific keywords like 'waste' justifying this classification.,
+PM-202446,Road Damage,Urgent,"The description contains specific keywords like 'footpath', 'fell' justifying this classification.",

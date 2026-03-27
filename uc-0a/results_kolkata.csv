@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description contains specific keywords like 'heritage', 'lamp post' justifying this classification.",NEEDS_REVIEW
+KM-202402,Other,Standard,Description ambiguous.,NEEDS_REVIEW
+KM-202405,Heritage Damage,Standard,The description contains specific keywords like 'tagore museum' justifying this classification.,
+KM-202409,Pothole,Standard,The description contains specific keywords like 'pothole' justifying this classification.,
+KM-202410,Pothole,Standard,The description contains specific keywords like 'pothole' justifying this classification.,
+KM-202411,Pothole,Urgent,"The description contains specific keywords like 'pothole', 'risk' justifying this classification.",
+KM-202415,Drain Blockage,Standard,The description contains specific keywords like 'drain' justifying this classification.,
+KM-202418,Waste,Standard,The description contains specific keywords like 'waste' justifying this classification.,
+KM-202421,Road Damage,Urgent,"The description contains specific keywords like 'hospital', 'footpath' justifying this classification.",
+KM-202422,Road Damage,Standard,The description contains specific keywords like 'road surface' justifying this classification.,
+KM-202426,Heritage Damage,Standard,The description contains specific keywords like 'heritage' justifying this classification.,
+KM-202430,Road Damage,Standard,The description contains specific keywords like 'road subsided' justifying this classification.,
+KM-202434,Other,Standard,"The description contains specific keywords like 'heritage', 'paving' justifying this classification.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,The description contains specific keywords like 'darkness' justifying this classification.,
+KM-202438,Other,Standard,"The description contains specific keywords like 'heritage', 'amplifiers' justifying this classification.",NEEDS_REVIEW
