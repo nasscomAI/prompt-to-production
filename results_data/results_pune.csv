@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description mentions the word 'large'.,
+PM-202402,Pothole,Urgent,The description mentions the word 'child'.,
+PM-202406,Other,Standard,The description mentions the word 'underpass'.,NEEDS_REVIEW
+PM-202408,Other,Standard,The description mentions the word 'bus'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description mentions the word 'three'.,
+PM-202411,Streetlight,Urgent,The description mentions the word 'hazard'.,
+PM-202413,Other,Standard,The description mentions the word 'overflowing'.,NEEDS_REVIEW
+PM-202418,Other,Standard,The description mentions the word 'wedding'.,NEEDS_REVIEW
+PM-202419,Other,Standard,The description mentions the word 'road'.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The description mentions the word 'injury'.,NEEDS_REVIEW
+PM-202427,Other,Standard,The description mentions the word 'bridge'.,NEEDS_REVIEW
+PM-202428,Other,Standard,The description mentions the word 'dead'.,NEEDS_REVIEW
+PM-202430,Other,Standard,The description mentions the word 'heritage'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,The description mentions the word 'bulk'.,
+PM-202446,Other,Urgent,The description mentions the word 'fell'.,NEEDS_REVIEW
