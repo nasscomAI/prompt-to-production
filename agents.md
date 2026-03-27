@@ -27,3 +27,4 @@ Summarise the given policy document in a way that:
 4. Write one summary bullet per clause — do not merge clauses
 5. Flag exceptions and penalties
 6. Produce the final summary in the output file `summary_hr_leave.txt`
+
