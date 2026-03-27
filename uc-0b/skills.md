@@ -4,7 +4,7 @@ skills:
     input: file path (string) pointing to .txt policy document
     output: object with fields {sections: list of {section_num: string, clauses: list of {clause_num: string, text: string, binding_verb: string}}}
     error_handling: If file does not exist, raise IOError. If file is not valid UTF-8 text, raise encoding error. If file cannot be parsed into numbered sections, raise parsing error with indication of where structure breaks down. Never skip clauses during parsing.
-
+  
   - name: summarize_policy
     description: Transform structured policy sections into a compliant summary that preserves all clauses and multi-condition obligations.
     input: object from retrieve_policy containing sections and clauses

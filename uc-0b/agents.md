@@ -14,7 +14,7 @@ context: |
   Input: plain text policy document with numbered sections and clauses.
   Allowed data: clause text as written in source document, section numbers, binding verbs.
   Forbidden: external knowledge of "standard" policies, assumptions about practice, information not explicitly stated in source document.
-
+  
 enforcement:
   - Every numbered clause (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) must be present in summary
   - Multi-condition obligations must preserve ALL conditions — never drop one silently (e.g., clause 5.2 requires BOTH Department Head AND HR Director approval)

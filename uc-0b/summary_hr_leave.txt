@@ -88,7 +88,7 @@ Binding verb: cannot
 
 ### SECTION 5
 
-
+  
 [Clause 5.1]
 Requirement: An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
 Binding verb: may
