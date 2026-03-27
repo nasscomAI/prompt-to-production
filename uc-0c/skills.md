@@ -2,7 +2,7 @@ skills:
   - name: load_dataset
     description: Read and validate budget CSV, report null count and locations before returning filtered data.
     input: file path (string) pointing to ward_budget.csv
-    output: object with fields {dataframe: DataFrame, null_summary: {count: int, locations: list of {period, ward, category, reason}}}
+    output: object with fields {dataframe: DataFrame, null_summary: {count: int, locations: list of {period, ward, category, reason}}} 
     error_handling: If file not found, raise IOError. If columns missing (period, ward, category, budgeted_amount, actual_spend, notes), raise ValueError listing missing columns. Before returning, scan for null actual_spend values and report count, locations, and reasons from notes column.
 
   - name: compute_growth
