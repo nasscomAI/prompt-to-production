@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,Classified as Flooding because description contains 'flood'.,
+Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+Flooding,Standard,Classified as Flooding because description contains 'water'.,
+Drain Blockage,Standard,Classified as Drain Blockage because description contains 'drain'.,
+Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+Pothole,Urgent,Classified as Pothole because description contains 'pothole'.,
+Pothole,Urgent,Classified as Pothole because description contains 'pothole'.,
+Waste,Standard,Classified as Waste because description contains 'waste'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Other,Urgent,"Classified as Other due to ambiguity, but marked Urgent because description contains 'collapse'.",NEEDS_REVIEW
+Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+Waste,Standard,Classified as Waste because description contains 'waste'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+Flooding,Standard,Classified as Flooding because description contains 'water'.,
