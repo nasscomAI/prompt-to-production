@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+AM-202402,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified based on presence of the word 'heat' in description.,
+AM-202407,Other,Urgent,No distinct category identified from the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified based on presence of the word 'pothole' in description.,
+AM-202414,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Ambiguous complaint mentioning multiple flags: waste, heritage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified based on presence of the word 'music' in description.,
+AM-202424,Road Damage,Standard,Classified based on presence of the word 'road surface' in description.,
+AM-202429,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified based on presence of the word 'heritage' in description.,
+AM-202435,Heat Hazard,Standard,Classified based on presence of the word 'heat' in description.,
+AM-202444,Waste,Standard,Classified based on presence of the word 'waste' in description.,
+AM-202445,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
