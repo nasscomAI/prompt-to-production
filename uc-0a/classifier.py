@@ -76,6 +76,8 @@ CATEGORY_KEYWORDS = [
     ),
 ]
 
+HERITAGE_GENERIC_HINTS = {"heritage", "historic", "historical", "old city"}
+
 
 def _contains_keyword(text: str, keyword: str) -> bool:
     """Match keyword as a standalone token/phrase to reduce false positives."""
@@ -117,17 +119,59 @@ def classify_complaint(row: dict) -> dict:
     else:
         priority = "Standard"
 
-    # Determine category — first matching keyword group wins
+    # Determine category from all matching keyword groups, then disambiguate
+    matched_by_category = {}
+    for cat, keywords in CATEGORY_KEYWORDS:
+        matched = [kw for kw in keywords if _contains_keyword(desc_lower, kw)]
+        if matched:
+            matched_by_category[cat] = matched
+
     category = None
     matched_keyword = None
-    for cat, keywords in CATEGORY_KEYWORDS:
-        for kw in keywords:
-            if _contains_keyword(desc_lower, kw):
-                category = cat
-                matched_keyword = kw
-                break
-        if category:
-            break
+
+    if matched_by_category:
+        categories = set(matched_by_category.keys())
+
+        # If both Flooding and Pothole appear, favor Pothole when explicitly present.
+        if {"Flooding", "Pothole"}.issubset(categories):
+            category = "Pothole"
+            matched_keyword = matched_by_category["Pothole"][0]
+
+        # If both Flooding and Drain Blockage appear, favor Drain Blockage.
+        elif {"Flooding", "Drain Blockage"}.issubset(categories):
+            category = "Drain Blockage"
+            matched_keyword = matched_by_category["Drain Blockage"][0]
+
+        # Heritage mentions are often contextual. If heritage is only generic and
+        # another concrete civic category also matches, favor the concrete category.
+        elif "Heritage Damage" in categories and len(categories) > 1:
+            heritage_hits = set(matched_by_category["Heritage Damage"])
+            category_order = [cat for cat, _ in CATEGORY_KEYWORDS]
+            non_heritage_categories = [
+                c for c in category_order if c in categories and c != "Heritage Damage"
+            ]
+            if heritage_hits.issubset(HERITAGE_GENERIC_HINTS):
+                category = non_heritage_categories[0]
+                matched_keyword = matched_by_category[category][0]
+
+        # Otherwise, choose the strongest category by number of keyword hits.
+        if category is None:
+            sorted_candidates = sorted(
+                matched_by_category.items(),
+                key=lambda item: (len(item[1]), max(len(k) for k in item[1])),
+                reverse=True,
+            )
+
+            # If top two are equally strong, mark ambiguous.
+            if (
+                len(sorted_candidates) > 1
+                and len(sorted_candidates[0][1]) == len(sorted_candidates[1][1])
+                and max(len(k) for k in sorted_candidates[0][1]) == max(len(k) for k in sorted_candidates[1][1])
+            ):
+                category = None
+            else:
+                category = sorted_candidates[0][0]
+                matched_keyword = sorted_candidates[0][1][0]
 
     # Ambiguity handling
     if category is None:
