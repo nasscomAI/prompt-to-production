@@ -1,0 +1,1 @@
+UC-0A Fix missing justification: naive classification had no reason field → added reason generation and strict schema enforcement
