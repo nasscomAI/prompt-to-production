@@ -1,12 +1,15 @@
+# skills.md
+
 skills:
   - name: classify_complaint
-    description: Classifies a single complaint according to the strict taxonomy.
-    input: one complaint row in
-    output: category + priority + reason + flag out
-    error_handling: Set flag to NEEDS_REVIEW when category is genuinely ambiguous or unable to be determined.
+    description: Processes a single complaint description to determine its category, priority, reason, and review flag.
+    input: A single dictionary representing a complaint row, containing the key 'description'.
+    output: A dictionary containing the standard exact keys 'category', 'priority', 'reason', and 'flag'.
+    error_handling: If the description is ambiguous, missing, or unreadable, the output returns category as 'Other' and sets flag to 'NEEDS_REVIEW'.
 
   - name: batch_classify
-    description: reads input CSV, applies classify_complaint per row, writes output CSV
-    input: input CSV file path and output CSV file path
-    output: results CSV file
-    error_handling: Flag nulls, do not crash on bad rows, produce output even if some rows fail.
+    description: Loads a dataset of complaints, applies classify_complaint to each row individually, and writes the output dataset.
+    input: File paths mapped to the input CSV and the target output CSV.
+    output: Writes a formatted CSV containing all input data alongside newly classified category, priority, reason, and flag columns.
+    error_handling: Bypasses malformed rows safely, ensuring the pipeline never crashes on a bad row and successfully outputs all processable complaints.
+
