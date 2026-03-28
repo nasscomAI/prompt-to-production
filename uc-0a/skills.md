@@ -1,16 +1,24 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- # updated
+name: classify_complaint
+  description: Classifies a complaint into category and priority based on text
+  input:
+    type: string
+    format: complaint text
+  output:
+    type: object
+    format: category, priority_flag, justification
+  error_handling: >
+    If the complaint text is empty or unclear, assign category as "Other",
+    priority_flag as "Low", and provide a generic justification.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: batch_classify
+  description: Processes a CSV file of complaints and applies classification
+  input:
+    type: CSV file
+    format: rows containing complaint descriptions
+  output:
+    type: CSV file
+    format: original data with added category, priority_flag, justification columns
+  error_handling: >
+    If rows are missing complaint text, skip or assign default classification.
+    Ensure output file is always generated.
