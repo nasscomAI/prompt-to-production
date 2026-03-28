@@ -15,3 +15,4 @@ enforcement:
   - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag it."
   - "Clause 5.2 must explicitly retain requirement for both Department Head and HR Director approvals."
   - "Do not include scope bleed phrases not in source: e.g. 'as is standard practice', 'typically in government organisations', 'employees are generally expected to'."
+
