@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other with Standard priority because the description mentions 'nature of the issue'.,NEEDS_REVIEW
+AM-202402,Other,Standard,Classified as Other with Standard priority because the description mentions 'nature of the issue'.,NEEDS_REVIEW
+AM-202405,Other,Standard,Classified as Other with Standard priority because the description mentions 'nature of the issue'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the description mentions 'heat'.,
+AM-202407,Other,Urgent,Classified as Other with Urgent priority because the description mentions 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority because the description mentions 'pothole'.,
+AM-202414,Other,Standard,Classified as Other with Standard priority because the description mentions 'nature of the issue'.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the description mentions 'heritage'.,
+AM-202421,Noise,Standard,Classified as Noise with Standard priority because the description mentions 'music'.,
+AM-202424,Road Damage,Standard,Classified as Road Damage with Standard priority because the description mentions 'road surface'.,
+AM-202429,Other,Standard,Classified as Other with Standard priority because the description mentions 'nature of the issue'.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the description mentions 'heat'.,
+AM-202444,Waste,Standard,"Classified as Waste with Standard priority because the description mentions 'bins, waste'.",NEEDS_REVIEW
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the description mentions 'sun'.,
