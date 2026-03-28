@@ -3,16 +3,20 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  This agent processes numerical data and ensures correct formatting and validation.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  The output must be a correctly formatted number or calculation result based on input.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+ The agent only uses provided numeric input.
+  It must not assume missing values or guess data.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Output must be a valid number
+  - Must follow correct format (no text in numeric output)
+  - Must handle decimal values properly
+
+refusal:
+  - If input is not numeric → return "Invalid input"
+  - If calculation cannot be done → return "Cannot process"
