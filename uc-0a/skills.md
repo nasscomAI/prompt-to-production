@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+* name: complaint_category_detection
+  description: Identifies complaint category from complaint text.
+  input: complaint text string
+  output: category name string
+  error_handling: returns "Unknown" if complaint text is unclear
+
+* name: priority_assignment
+  description: Assigns complaint priority based on severity keywords.
+  input: complaint text string
+  output: High / Medium / Low
+  error_handling: defaults to Medium if uncertain
