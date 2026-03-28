@@ -1,0 +1,1 @@
+UC-0B Fix condition drop: naive summary omitted dual approvals and strict conditions → enforced clause preservation and verbatim quoting for complex rules
