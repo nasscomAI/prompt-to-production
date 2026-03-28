@@ -5,6 +5,7 @@ def retrieve_policy(input_file):
         content = f.read()
     
     # simple split by clauses
+    #minor fix
     clauses = content.split('\n')
     return [c.strip() for c in clauses if c.strip()]
 
@@ -26,7 +27,7 @@ def main(input_file, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(summary)
 
-
+# Fixed code:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True)
