@@ -53,7 +53,7 @@ def classify_complaint(row: dict) -> dict:
     if len(matched_categories) == 1:
         category = matched_categories[0]
     elif len(matched_categories) > 1:
-        category = matched_categories[0] 
+        category = "Other" 
         flag = "NEEDS_REVIEW"
     else:
         category = "Other"
