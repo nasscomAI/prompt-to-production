@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Heritage Damage,Standard,Classified as Heritage Damage because description contains 'heritage'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+Drain Blockage,Standard,Classified as Drain Blockage because description contains 'drain'.,
+Waste,Standard,Classified as Waste because description contains 'waste'.,
+Other,Urgent,"Classified as Other due to ambiguity, but marked Urgent because description contains 'hospital'.",NEEDS_REVIEW
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Heritage Damage,Standard,Classified as Heritage Damage because description contains 'heritage'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Heritage Damage,Standard,Classified as Heritage Damage because description contains 'heritage'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Heritage Damage,Standard,Classified as Heritage Damage because description contains 'heritage'.,
