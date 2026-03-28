@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description contains ""pothole"" indicating Pothole.",
+PM-202402,Pothole,Urgent,"Description contains ""pothole"" indicating Pothole; Severity keywords found: ""child"", ""school"".",
+PM-202406,Flooding,Standard,"Description contains ""flooded"" indicating Flooding.",
+PM-202408,Flooding,Standard,"Description contains ""flooded"" indicating Flooding.",
+PM-202410,Streetlight,Standard,"Description contains ""streetlights"" indicating Streetlight.",
+PM-202411,Streetlight,Urgent,"Description contains ""streetlight"" indicating Streetlight; Severity keywords found: ""hazard"".",
+PM-202413,Waste,Standard,"Description contains ""garbage"" indicating Waste.",
+PM-202418,Noise,Standard,"Description contains ""music"" indicating Noise.",
+PM-202419,Road Damage,Standard,"Description contains ""road surface cracked and sinking"" indicating Road Damage.",
+PM-202420,Other,Urgent,"Severity keywords found: ""injury"".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description contains ""floods"" indicating Flooding.",
+PM-202428,Waste,Standard,"Description contains ""dead animal"" indicating Waste.",
+PM-202430,Streetlight,Standard,"Description contains ""lights out"" indicating Streetlight.",
+PM-202433,Waste,Standard,"Description contains ""waste"" indicating Waste.",
+PM-202446,Road Damage,Urgent,"Description contains ""footpath tiles broken"" indicating Road Damage; Severity keywords found: ""fell"".",

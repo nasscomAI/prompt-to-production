@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Urgent,"Description contains ""melting"" indicating Heat Hazard; Severity keywords found: ""unsafe"".",
+AM-202402,Heat Hazard,Standard,"Description contains ""temperatures"" indicating Heat Hazard.",
+AM-202405,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description contains ""heatwave"" indicating Heat Hazard.",
+AM-202407,Road Damage,Urgent,"Description contains ""broken bench and upturned paving"" indicating Road Damage; Severity keywords found: ""child"".",
+AM-202410,Pothole,Standard,"Description contains ""pothole"" indicating Pothole.",
+AM-202414,Streetlight,Standard,"Description contains ""unlit"" indicating Streetlight.",
+AM-202417,Heritage Damage,Standard,"Description contains ""heritage"" indicating Heritage Damage.",
+AM-202421,Noise,Standard,"Description contains ""music"" indicating Noise.",
+AM-202424,Heat Hazard,Standard,"Description contains ""bubbling"" indicating Heat Hazard.",
+AM-202429,Heat Hazard,Standard,"Description contains ""temperature"" indicating Heat Hazard.",
+AM-202431,Heritage Damage,Standard,"Description contains ""heritage"" indicating Heritage Damage.",
+AM-202435,Heat Hazard,Urgent,"Description contains ""burns"" indicating Heat Hazard; Severity keywords found: ""burn"".",
+AM-202444,Waste,Standard,"Description contains ""waste"" indicating Waste.",
+AM-202445,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
