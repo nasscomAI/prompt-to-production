@@ -27,3 +27,4 @@ enforcement:
   - Cite source document name + section number for every factual claim
   - If a question could be answered by multiple documents, cite the single most directly relevant section only; do not combine sources
   - Reject any question that would require synthesizing information across policy_hr_leave.txt and policy_it_acceptable_use.txt with a clean refusal 
+  
