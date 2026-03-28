@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description mentions 'heritage'.,
+KM-202402,Other,Standard,No clear category keywords matched the description.,NEEDS_REVIEW
+KM-202405,Other,Standard,No clear category keywords matched the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description mentions 'pothole'.,
+KM-202410,Pothole,Standard,The description mentions 'pothole'.,
+KM-202411,Other,Standard,"Ambiguous matches observed: Pothole, Flooding.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,The description mentions 'drain'.,
+KM-202418,Waste,Standard,The description mentions 'waste'.,
+KM-202421,Road Damage,Urgent,The description mentions 'sinking'. Priority escalated to Urgent due to severity keyword 'hospital'.,
+KM-202422,Other,Standard,No clear category keywords matched the description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,The description mentions 'heritage'.,
+KM-202430,Waste,Standard,The description mentions 'smell'.,
+KM-202434,Other,Standard,"Ambiguous matches observed: Road Damage, Heritage Damage.",NEEDS_REVIEW
+KM-202436,Other,Standard,No clear category keywords matched the description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The description mentions 'heritage'.,

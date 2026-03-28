@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,The description mentions 'pothole'. Priority escalated to Urgent due to severity keyword 'child'.,
+PM-202406,Flooding,Standard,The description mentions 'flood'.,
+PM-202408,Flooding,Standard,The description mentions flooding caused by a blocked drain.,
+PM-202410,Streetlight,Standard,The description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,The description mentions 'streetlight'. Priority escalated to Urgent due to severity keyword 'hazard'.,
+PM-202413,Waste,Standard,The description mentions 'garbage'.,
+PM-202418,Noise,Standard,The description mentions 'music'.,
+PM-202419,Road Damage,Standard,The description mentions 'surface cracked'.,
+PM-202420,Road Damage,Urgent,The description mentions 'manhole'. Priority escalated to Urgent due to severity keyword 'injury'.,
+PM-202427,Flooding,Standard,The description mentions 'flood'.,
+PM-202428,Waste,Standard,The description mentions 'dead animal'.,
+PM-202430,Other,Standard,Ambiguous between Streetlight and Heritage Damage.,NEEDS_REVIEW
+PM-202433,Waste,Standard,The description mentions 'waste'.,
+PM-202446,Road Damage,Urgent,The description mentions 'footpath tiles'. Priority escalated to Urgent due to severity keyword 'fell'.,

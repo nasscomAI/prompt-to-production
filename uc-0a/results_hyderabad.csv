@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description mentions 'flood'. Priority escalated to Urgent due to severity keyword 'ambulance'.,
+GH-202402,Flooding,Standard,The description mentions flooding caused by a blocked drain.,
+GH-202406,Flooding,Standard,The description mentions flooding caused by a blocked drain.,
+GH-202407,Drain Blockage,Standard,The description mentions 'drain block'.,
+GH-202410,Pothole,Standard,The description mentions 'pothole'.,
+GH-202411,Pothole,Urgent,The description mentions 'pothole'. Priority escalated to Urgent due to severity keyword 'hospital'.,
+GH-202412,Pothole,Urgent,The description mentions 'pothole'. Priority escalated to Urgent due to severity keyword 'school'.,
+GH-202417,Other,Standard,"Ambiguous matches observed: Waste, Heritage Damage.",NEEDS_REVIEW
+GH-202420,Other,Standard,No clear category keywords matched the description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,No clear category keywords matched the description. Priority escalated to Urgent due to severity keyword 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,The description mentions 'flood'.,
+GH-202428,Other,Standard,"Ambiguous matches observed: Waste, Heat Hazard.",NEEDS_REVIEW
+GH-202432,Other,Standard,No clear category keywords matched the description.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description mentions flooding caused by a blocked drain.,
+GH-202438,Flooding,Standard,The description mentions 'water'.,
