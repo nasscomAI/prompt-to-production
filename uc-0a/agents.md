@@ -23,4 +23,3 @@ enforcement:
   - "don’t classify injury/child/school/hospital/ambulance/fire/hazard/fell/collapse as Standard or Low"
   - "provide a reason field in every output row"
 
-
