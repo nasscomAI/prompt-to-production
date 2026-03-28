@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category is exactly mapped to Pothole due to the word 'pothole' in the text.,
+PM-202402,Pothole,Urgent,Priority is Urgent and category is Pothole because the text cites 'child'.,
+PM-202406,Flooding,Standard,Category is exactly mapped to Flooding due to the word 'flood' in the text.,
+PM-202408,Other,Standard,Category is Other because the text contains conflicting keywords like 'flood' and 'drain'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category is exactly mapped to Streetlight due to the word 'streetlight' in the text.,
+PM-202411,Streetlight,Urgent,Priority is Urgent and category is Streetlight because the text cites 'hazard'.,
+PM-202413,Waste,Standard,Category is exactly mapped to Waste due to the word 'garbage' in the text.,
+PM-202418,Noise,Standard,Category is exactly mapped to Noise due to the word 'music' in the text.,
+PM-202419,Road Damage,Standard,Category is exactly mapped to Road Damage due to the word 'road' in the text.,
+PM-202420,Other,Urgent,Priority is Urgent and category is Other because the text cites 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category is exactly mapped to Flooding due to the word 'flood' in the text.,
+PM-202428,Other,Standard,Category is Other because the text starting with 'dead animal not' lacks known category keywords.,NEEDS_REVIEW
+PM-202430,Other,Standard,Category is Other because the text contains conflicting keywords like 'light' and 'dark'.,NEEDS_REVIEW
+PM-202433,Other,Standard,Category is Other because the text contains conflicting keywords like 'waste' and 'road'.,NEEDS_REVIEW
+PM-202446,Other,Urgent,Priority is Urgent and category is Other because the text cites 'fell'.,NEEDS_REVIEW
