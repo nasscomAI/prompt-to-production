@@ -40,6 +40,12 @@ def _contains_keyword(text: str, keyword: str) -> bool:
     return re.search(pattern, text) is not None
 
 
+def _contains_severity_keyword(text: str, keyword: str) -> bool:
+    """Match severity keywords with light inflection support (e.g., collapse -> collapsed)."""
+    tokens = re.findall(r"[a-z]+", text.lower())
+    return any(token.startswith(keyword) for token in tokens)
+
+
 def classify_complaint(row: dict) -> dict:
     """
     skill: classify_complaint
@@ -62,7 +68,7 @@ def classify_complaint(row: dict) -> dict:
     desc_lower = description.lower()
 
     # Determine priority — Urgent if any severity keyword present
-    matched_severity = [kw for kw in SEVERITY_KEYWORDS if _contains_keyword(desc_lower, kw)]
+    matched_severity = [kw for kw in SEVERITY_KEYWORDS if _contains_severity_keyword(desc_lower, kw)]
     if matched_severity:
         priority = "Urgent"
     else:
