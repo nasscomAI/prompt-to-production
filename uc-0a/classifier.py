@@ -81,8 +81,16 @@ def classify_complaint(row: dict) -> dict:
             "flag": "NEEDS_REVIEW",
         }
 
+    if category not in ALLOWED_CATEGORIES:
+        return {
+            **row,
+            "category": "Other",
+            "priority": priority,
+            "reason": f"Mapped category '{category}' is invalid for allowed schema.",
+            "flag": "NEEDS_REVIEW",
+        }
+
     # Build reason citing specific words from description (enforcement rule)
-    cited_words = matched_severity + [matched_keyword]
     reason = (
         f"Classified as {category} based on '{matched_keyword}' in description"
         + (f"; priority set to Urgent due to '{matched_severity[0]}'" if matched_severity else "")
@@ -108,7 +116,8 @@ def batch_classify(input_path: str, output_path: str):
 
     with open(input_path, newline="", encoding="utf-8") as infile:
         reader = csv.DictReader(infile)
-        fieldnames = (reader.fieldnames or []) + output_extra_fields
+        input_fields = reader.fieldnames or []
+        fieldnames = list(dict.fromkeys(input_fields + output_extra_fields))
         rows = list(reader)
 
     results = []
