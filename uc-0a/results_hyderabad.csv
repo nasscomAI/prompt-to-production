@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description contains ""flooded"" indicating Flooding; Severity keywords found: ""ambulance"".",
+GH-202402,Flooding,Standard,"Description contains ""flooded"" indicating Flooding.",
+GH-202406,Drain Blockage,Standard,"Description contains ""drain 100% blocked"" indicating Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Description contains ""drain blocked"" indicating Drain Blockage.",
+GH-202410,Pothole,Standard,"Description contains ""potholes"" indicating Pothole.",
+GH-202411,Pothole,Urgent,"Description contains ""pothole"" indicating Pothole; Severity keywords found: ""hospital"".",
+GH-202412,Pothole,Urgent,"Description contains ""potholes"" indicating Pothole; Severity keywords found: ""school"".",
+GH-202417,Heritage Damage,Standard,"Description contains ""heritage"" indicating Heritage Damage.",
+GH-202420,Noise,Standard,"Description contains ""drilling"" indicating Noise.",
+GH-202422,Pothole,Urgent,"Description contains ""crater"" indicating Pothole; Severity keywords found: ""collapse"".",
+GH-202424,Flooding,Standard,"Description contains ""floods"" indicating Flooding.",
+GH-202428,Waste,Standard,"Description contains ""waste"" indicating Waste.",
+GH-202432,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description contains ""flooding"" indicating Flooding.",
+GH-202438,Flooding,Standard,"Description contains ""channel rainwater"" indicating Flooding.",
