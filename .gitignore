@@ -1,4 +1,4 @@
-*:Zone.Identifier
+cd*:Zone.Identifier
 *.Zone.Identifier
 __pycache__/
 .DS_Store
