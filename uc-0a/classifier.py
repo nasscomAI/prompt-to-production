@@ -1,29 +1,133 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+Implements classify_complaint and batch_classify as defined in agents.md and skills.md.
 """
 import argparse
 import csv
 
+# Enforcement: exact allowed category strings (agents.md)
+ALLOWED_CATEGORIES = [
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other",
+]
+
+# Enforcement: keywords that must trigger Urgent priority (agents.md / README)
+SEVERITY_KEYWORDS = [
+    "injury", "child", "school", "hospital", "ambulance",
+    "fire", "hazard", "fell", "collapse",
+]
+
+# Category keyword map — ordered from most specific to least specific
+CATEGORY_KEYWORDS = [
+    ("Heritage Damage",  ["heritage", "monument", "historical", "historic"]),
+    ("Heat Hazard",      ["heat", "temperature", "hot", "summer", "heatwave"]),
+    ("Drain Blockage",   ["drain", "drainage", "sewer", "stormwater"]),
+    ("Flooding",         ["flood", "flooded", "flooding", "waterlog", "submerged"]),
+    ("Pothole",          ["pothole", "potholes"]),
+    ("Road Damage",      ["road collapse", "road collapsed", "crater", "road damage", "road cracked"]),
+    ("Streetlight",      ["streetlight", "street light", "lamp", "lighting", "light not working"]),
+    ("Waste",            ["waste", "garbage", "trash", "rubbish", "litter", "dump", "debris"]),
+    ("Noise",            ["noise", "drilling", "loud", "sound", "idling", "honking"]),
+]
+
+
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
+    skill: classify_complaint
+    Classifies a single complaint row into category, priority, reason, and flag.
+    Input:  dict with at least a 'description' key.
+    Output: dict with keys category, priority, reason, flag (plus original fields).
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    description = (row.get("description") or "").strip()
+
+    # Error handling: missing or empty description
+    if not description:
+        return {
+            **row,
+            "category": "Other",
+            "priority": "Low",
+            "reason": "No description provided.",
+            "flag": "NEEDS_REVIEW",
+        }
+
+    desc_lower = description.lower()
+
+    # Determine priority — Urgent if any severity keyword present
+    matched_severity = [kw for kw in SEVERITY_KEYWORDS if kw in desc_lower]
+    if matched_severity:
+        priority = "Urgent"
+    else:
+        priority = "Standard"
+
+    # Determine category — first matching keyword group wins
+    category = None
+    matched_keyword = None
+    for cat, keywords in CATEGORY_KEYWORDS:
+        for kw in keywords:
+            if kw in desc_lower:
+                category = cat
+                matched_keyword = kw
+                break
+        if category:
+            break
+
+    # Ambiguity handling
+    if category is None:
+        return {
+            **row,
+            "category": "Other",
+            "priority": priority,
+            "reason": f"Description does not match any known category: '{description[:80]}'.",
+            "flag": "NEEDS_REVIEW",
+        }
+
+    # Build reason citing specific words from description (enforcement rule)
+    cited_words = matched_severity + [matched_keyword]
+    reason = (
+        f"Classified as {category} based on '{matched_keyword}' in description"
+        + (f"; priority set to Urgent due to '{matched_severity[0]}'" if matched_severity else "")
+        + "."
+    )
+
+    return {
+        **row,
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": "",
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
     """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
+    skill: batch_classify
+    Reads input CSV, applies classify_complaint per row, writes results CSV.
+    Does not crash on bad rows — records classification errors inline.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    output_extra_fields = ["category", "priority", "reason", "flag"]
+
+    with open(input_path, newline="", encoding="utf-8") as infile:
+        reader = csv.DictReader(infile)
+        fieldnames = (reader.fieldnames or []) + output_extra_fields
+        rows = list(reader)
+
+    results = []
+    for row in rows:
+        try:
+            results.append(classify_complaint(row))
+        except Exception as exc:
+            results.append({
+                **row,
+                "category": "Other",
+                "priority": "Low",
+                "reason": f"Classification error: {exc}",
+                "flag": "NEEDS_REVIEW",
+            })
+
+    with open(output_path, "w", newline="", encoding="utf-8") as outfile:
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(results)
 
 
 if __name__ == "__main__":

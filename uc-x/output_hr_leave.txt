@@ -1,0 +1,4 @@
+﻿Documents loaded. Ask your question (type 'exit' to quit).
+Q> A> Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December. (Source: policy_hr_leave.txt section 2.6)
+Q> A> LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient. (Source: policy_hr_leave.txt section 5.2)
+Q> 
