@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description includes heritage lamp, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"The description mentions historic, indicating Heritage Damage.",
+KM-202405,Other,Standard,"The description includes wedding band, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202409,Other,Standard,"The description includes airport access, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202410,Pothole,Standard,"The description mentions pothole, indicating Pothole.",
+KM-202411,Pothole,Standard,"The description mentions pothole, indicating Pothole.",
+KM-202415,Other,Standard,"The description includes new residential, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The description mentions waste, indicating Waste.",
+KM-202421,Other,Urgent,"The description includes footpath broken, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202422,Other,Standard,"The description includes road surface, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"The description mentions heritage, indicating Heritage Damage.",
+KM-202430,Other,Standard,"The description includes road subsided, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The description mentions heritage, indicating Heritage Damage.",
+KM-202436,Other,Standard,"The description includes entire colony, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The description mentions heritage, indicating Heritage Damage.",

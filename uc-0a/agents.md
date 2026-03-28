@@ -3,16 +3,16 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A complaint classification agent for the UC-0A task. It evaluates one citizen complaint and assigns the exact category, priority, reason, and review flag required by the complaint classifier.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Given a single complaint row from the test CSV, output a valid classification with `category`, `priority`, `reason`, and `flag` values that match the UC-0A schema and allowed values.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may only use information present in the complaint row and the predefined UC-0A schema. It must not invent categories, synonyms, or external data. It should classify based on the complaint description, exact taxonomy, and severity keywords.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only."
+  - "Priority must be one of: Urgent, Standard, Low. Use Urgent when description contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Reason must be one sentence and must cite specific words from the description."
+  - "If category cannot be determined from the description alone, output category: Other and flag: NEEDS_REVIEW."
