@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: extract_clauses
+    description: Splits complaint text into individual meaningful clauses.
+    input: A string containing complaint text.
+    output: A list of cleaned clause strings.
+    error_handling: If text is empty or cannot be split, returns original text as a single clause and flags for review.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: process_complaint
+    description: Processes complaint text and ensures all clauses are extracted and validated.
+    input: A string containing complaint text.
+    output: A dictionary with list of clauses and optional flag.
+    error_handling: If no valid clauses are found, returns original text with flag "NEEDS_REVIEW".
