@@ -14,5 +14,3 @@ skills:
     input: rows list, null_rows list, ward string, category string, growth_type string (MoM or YoY).
     output: (output_rows list, flagged list) where each row includes period, actual_spend, growth, formula, notes, status.
     error_handling: if --growth-type missing or invalid, raise ValueError; if ward/category not found, raise ValueError; if actual_spend null insert status NULL_ROW.
-
-
