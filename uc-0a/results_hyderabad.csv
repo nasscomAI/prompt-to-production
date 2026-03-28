@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,Complaint mentions 'flooded' and is classified as Flooding.,
+Flooding,Standard,Complaint mentions 'flooded' and is classified as Flooding.,
+Other,Standard,Description mentions 'Main stormwater drain 100% blocked with construction debris' which does not match any defined category.,NEEDS_REVIEW
+Drain Blockage,Standard,Complaint mentions 'drain blocked' and is classified as Drain Blockage.,
+Pothole,Standard,Complaint mentions 'pothole' and is classified as Pothole.,
+Pothole,Urgent,Complaint mentions 'pothole' and is classified as Pothole.,
+Pothole,Urgent,Complaint mentions 'pothole' and is classified as Pothole.,
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,NEEDS_REVIEW
+Other,Standard,Description mentions 'Construction drilling from 5am daily near residential towers' which does not match any defined category.,NEEDS_REVIEW
+Other,Urgent,Description mentions 'Road collapsed partially' which does not match any defined category.,NEEDS_REVIEW
+Flooding,Standard,Complaint mentions 'flood' and is classified as Flooding.,
+Waste,Standard,Complaint mentions 'waste' and is classified as Waste.,
+Other,Standard,Description mentions '24hr supermarket delivery trucks idling with engines on' which does not match any defined category.,NEEDS_REVIEW
+Drain Blockage,Standard,Complaint mentions 'drain blocked' and is classified as Drain Blockage.,NEEDS_REVIEW
+Other,Standard,Description mentions 'Colony surrounded by fields that channel rainwater through main road' which does not match any defined category.,NEEDS_REVIEW
