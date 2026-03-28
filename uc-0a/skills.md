@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Complaint Classifier
+    description: Analyzes the complaints mentioned in the dataset and classifies them into categories and priorities.
+    input: Complaints in the form of text or images.
+    output: Category(Roads,Health,Education)
+    error_handling: If text is unclear, assign category as "Other"
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Priority Detection
+    description: Assigns priority level based on urgency keywords in complaint.
+    input: Complaint text (string)
+    output: Priority (High, Medium, Low)
+    error_handling: If no urgency keywords found, assign "Medium"
