@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description contains: pothole, hole, tyre damage",
+PM-202402,Pothole,Urgent,"Description contains: pothole, hole, school",
+PM-202406,Flooding,Standard,"Description contains: flood, flooded, stranded",
+PM-202408,Flooding,Standard,"Description contains: flood, flooded",
+PM-202410,Streetlight,Standard,"Description contains: streetlight, lights out, dark at night",
+PM-202411,Streetlight,Urgent,"Description contains: streetlight, flickering, hazard",
+PM-202413,Waste,Standard,"Description contains: garbage, bin",
+PM-202418,Noise,Standard,"Description contains: music, past midnight",
+PM-202419,Road Damage,Standard,"Description contains: road surface, cracked, sinking, road",
+PM-202420,Pothole,Urgent,"Description contains: hole, injury",
+PM-202427,Flooding,Standard,"Description contains: flood, inaccessible",
+PM-202428,Other,Urgent,Description contains: dead,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Description contains: lights out,
+PM-202433,Waste,Standard,"Description contains: waste, dumped",
+PM-202446,Road Damage,Urgent,"Description contains: tiles broken, fell",
