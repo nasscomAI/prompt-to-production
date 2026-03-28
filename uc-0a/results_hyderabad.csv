@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description contains category keyword: 'flood' and severity keyword: 'ambulance',
+GH-202402,Flooding,Standard,Description contains category keyword: 'flood',
+GH-202406,Flooding,Standard,Description contains category keyword: 'water',
+GH-202407,Flooding,Standard,Description contains category keyword: 'drain',
+GH-202410,Pothole,Standard,Description contains category keyword: 'pothole',
+GH-202411,Pothole,Urgent,Description contains category keyword: 'pothole' and severity keyword: 'hospital',
+GH-202412,Pothole,Urgent,Description contains category keyword: 'pothole' and severity keyword: 'school',
+GH-202417,Waste,Standard,Description contains category keyword: 'garbage',
+GH-202420,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Description contains category keyword: 'crater' and severity keyword: 'collapse',
+GH-202424,Flooding,Standard,Description contains category keyword: 'flood',
+GH-202428,Waste,Standard,Description contains category keyword: 'waste',
+GH-202432,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Description contains category keyword: 'flood',
+GH-202438,Flooding,Standard,Description contains category keyword: 'water',
