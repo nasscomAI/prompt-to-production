@@ -4,12 +4,15 @@ Implements classify_complaint and batch_classify as defined in agents.md and ski
 """
 import argparse
 import csv
+import re
 
 # Enforcement: exact allowed category strings (agents.md)
 ALLOWED_CATEGORIES = [
     "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
     "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other",
 ]
+
+ALLOWED_PRIORITIES = ["Urgent", "Standard", "Low"]
 
 # Enforcement: keywords that must trigger Urgent priority (agents.md / README)
 SEVERITY_KEYWORDS = [
@@ -29,6 +32,12 @@ CATEGORY_KEYWORDS = [
     ("Waste",            ["waste", "garbage", "trash", "rubbish", "litter", "dump", "debris"]),
     ("Noise",            ["noise", "drilling", "loud", "sound", "idling", "honking"]),
 ]
+
+
+def _contains_keyword(text: str, keyword: str) -> bool:
+    """Match keyword as a standalone token/phrase to reduce false positives."""
+    pattern = r"\b" + re.escape(keyword) + r"\b"
+    return re.search(pattern, text) is not None
 
 
 def classify_complaint(row: dict) -> dict:
@@ -53,7 +62,7 @@ def classify_complaint(row: dict) -> dict:
     desc_lower = description.lower()
 
     # Determine priority — Urgent if any severity keyword present
-    matched_severity = [kw for kw in SEVERITY_KEYWORDS if kw in desc_lower]
+    matched_severity = [kw for kw in SEVERITY_KEYWORDS if _contains_keyword(desc_lower, kw)]
     if matched_severity:
         priority = "Urgent"
     else:
@@ -64,7 +73,7 @@ def classify_complaint(row: dict) -> dict:
     matched_keyword = None
     for cat, keywords in CATEGORY_KEYWORDS:
         for kw in keywords:
-            if kw in desc_lower:
+            if _contains_keyword(desc_lower, kw):
                 category = cat
                 matched_keyword = kw
                 break
@@ -88,6 +97,15 @@ def classify_complaint(row: dict) -> dict:
             "category": "Other",
             "priority": priority,
             "reason": f"Mapped category '{category}' is invalid for allowed schema.",
+            "flag": "NEEDS_REVIEW",
+        }
+
+    if priority not in ALLOWED_PRIORITIES:
+        return {
+            **row,
+            "category": "Other",
+            "priority": "Low",
+            "reason": "Computed priority is invalid for allowed schema.",
             "flag": "NEEDS_REVIEW",
         }
 
