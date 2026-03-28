@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Contains word 'flood'.,
+GH-202402,Flooding,Standard,Contains word 'flood'.,
+GH-202406,Drain Blockage,Standard,Contains 'drain' or 'manhole'.,
+GH-202407,Drain Blockage,Standard,Contains 'drain' or 'manhole'.,
+GH-202410,Pothole,Standard,Contains word 'pothole'.,
+GH-202411,Pothole,Urgent,Contains word 'pothole'.,
+GH-202412,Pothole,Urgent,Contains word 'pothole'.,
+GH-202417,Waste,Standard,Contains words related to waste or animal.,
+GH-202420,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Could not confidently determine category from description.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Contains word 'flood'.,
+GH-202428,Waste,Standard,Contains words related to waste or animal.,
+GH-202432,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Contains word 'flood'.,
+GH-202438,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW

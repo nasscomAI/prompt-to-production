@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,Contains words indicating road damage.,
+AM-202407,Road Damage,Urgent,Contains words indicating road damage.,
+AM-202410,Pothole,Standard,Contains word 'pothole'.,
+AM-202414,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Contains words related to waste or animal.,
+AM-202421,Noise,Standard,Contains 'music' or 'noise'.,
+AM-202424,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+AM-202429,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Contains word 'heritage'.,
+AM-202435,Heat Hazard,Standard,Contains word 'heat'.,
+AM-202444,Waste,Standard,Contains words related to waste or animal.,
+AM-202445,Road Damage,Standard,Contains words indicating road damage.,
