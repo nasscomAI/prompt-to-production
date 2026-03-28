@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: classify_complaint
+  description: This skill reads a citizen complaint and classifies it into a service category.
+  inputs: complaint_text (string)
+  outputs: category (sanitation, water, roads, other)
+  error_handling: If complaint text is empty or unclear, return category "other".
+
+- name: keyword_detection
+  description: Detects important keywords in the complaint text to help classification.
+  inputs: complaint_text (string)
+  outputs: detected_keyword (string)
+  error_handling: If no keyword is detected, return "none".
