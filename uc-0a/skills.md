@@ -1,14 +1,14 @@
 # skills.md
 skills:
 
-* name: complaint_category_detection
-  description: Identifies complaint category from complaint text.
-  input: complaint text string
-  output: category name string
-  error_handling: returns "Unknown" if complaint text is unclear
+* name: classify_complaint
+  description: Classifies one complaint row into category, priority, reason, and flag.
+  input: complaint row text
+  output: category, priority, reason, flag
+  error_handling: returns NEEDS_REVIEW when complaint is ambiguous
 
-* name: priority_assignment
-  description: Assigns complaint priority based on severity keywords.
-  input: complaint text string
-  output: High / Medium / Low
-  error_handling: defaults to Medium if uncertain
+* name: batch_classify
+  description: Reads input CSV, applies classify_complaint to every row, writes output CSV.
+  input: CSV file path
+  output: classified CSV file
+  error_handling: skips invalid rows or marks them for review
