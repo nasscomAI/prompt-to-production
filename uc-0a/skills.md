@@ -10,3 +10,8 @@ skills:
     input: The file path to the input CSV containing citizen complaints (e.g., ../data/city-test-files/test_[city].csv).
     output: The file path to the generated output CSV (e.g., results_[city].csv) populated with classification columns.
     error_handling: Handles broken rows by skipping or marking them with an error state, logging the failure, and continuing to process the remaining rows.
+
+example of the final command: 
+python classifier.py \
+  --input ../data/city-test-files/test_pune.csv \
+  --output results_pune.csv
