@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized based on the specific mentioning of the word 'heat'.,
+AM-202407,Other,Urgent,Priority marked Urgent due to mention of 'child' in the complaint.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Categorized based on the specific mentioning of the word 'pothole'.,
+AM-202414,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized based on the specific mentioning of the word 'waste'.,
+AM-202421,Noise,Standard,Categorized based on the specific mentioning of the word 'music'.,
+AM-202424,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Categorized based on the specific mentioning of the word 'heritage'.,
+AM-202435,Heat Hazard,Standard,Categorized based on the specific mentioning of the word 'heat'.,
+AM-202444,Waste,Standard,Categorized based on the specific mentioning of the word 'waste'.,
+AM-202445,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW

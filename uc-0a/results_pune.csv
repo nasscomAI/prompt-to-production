@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized based on the specific mentioning of the word 'pothole'.,
+PM-202402,Pothole,Urgent,Classified as Pothole with Urgent priority due to the presence of 'pothole' and 'child'.,
+PM-202406,Flooding,Standard,Categorized based on the specific mentioning of the word 'flood'.,
+PM-202408,Flooding,Standard,Categorized based on the specific mentioning of the word 'flood'.,
+PM-202410,Streetlight,Standard,Categorized based on the specific mentioning of the word 'streetlight'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight with Urgent priority due to the presence of 'streetlight' and 'hazard'.,
+PM-202413,Waste,Standard,Categorized based on the specific mentioning of the word 'garbage'.,
+PM-202418,Noise,Standard,Categorized based on the specific mentioning of the word 'music'.,
+PM-202419,Road Damage,Standard,Categorized based on the specific mentioning of the word 'cracked'.,
+PM-202420,Other,Urgent,Priority marked Urgent due to mention of 'injury' in the complaint.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized based on the specific mentioning of the word 'flood'.,
+PM-202428,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Categorized based on the specific mentioning of the word 'light'.,
+PM-202433,Waste,Standard,Categorized based on the specific mentioning of the word 'waste'.,
+PM-202446,Other,Urgent,Priority marked Urgent due to mention of 'fell' in the complaint.,NEEDS_REVIEW
