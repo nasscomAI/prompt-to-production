@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on presence of the word 'pothole' in description.,
+PM-202402,Pothole,Urgent,Classified based on presence of the word 'pothole' in description.,
+PM-202406,Flooding,Standard,Classified based on presence of the word 'flood' in description.,
+PM-202408,Flooding,Standard,"Ambiguous complaint mentioning multiple flags: flood, drain.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified based on presence of the word 'streetlight' in description.,
+PM-202411,Streetlight,Urgent,Classified based on presence of the word 'streetlight' in description.,
+PM-202413,Waste,Standard,Classified based on presence of the word 'garbage' in description.,
+PM-202418,Noise,Standard,Classified based on presence of the word 'music' in description.,
+PM-202419,Road Damage,Standard,Classified based on presence of the word 'cracked' in description.,
+PM-202420,Road Damage,Urgent,Classified based on presence of the word 'manhole' in description.,
+PM-202427,Flooding,Standard,Classified based on presence of the word 'flood' in description.,
+PM-202428,Waste,Standard,Classified based on presence of the word 'dead animal' in description.,
+PM-202430,Streetlight,Standard,"Ambiguous complaint mentioning multiple flags: lights out, dark, lights, heritage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified based on presence of the word 'waste' in description.,
+PM-202446,Road Damage,Urgent,Classified based on presence of the word 'tiles broken' in description.,
