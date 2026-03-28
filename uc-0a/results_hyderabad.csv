@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Priority is Urgent and category is Flooding because the text cites 'ambulance'.,
+GH-202402,Other,Standard,Category is Other because the text contains conflicting keywords like 'flood' and 'drain'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Category is exactly mapped to Drain Blockage due to the word 'drain' in the text.,
+GH-202407,Drain Blockage,Standard,Category is exactly mapped to Drain Blockage due to the word 'drain' in the text.,
+GH-202410,Other,Standard,Category is Other because the text contains conflicting keywords like 'pothole' and 'road'.,NEEDS_REVIEW
+GH-202411,Pothole,Urgent,Priority is Urgent and category is Pothole because the text cites 'hospital'.,
+GH-202412,Pothole,Urgent,Priority is Urgent and category is Pothole because the text cites 'school'.,
+GH-202417,Other,Standard,Category is Other because the text contains conflicting keywords like 'waste' and 'garbage'.,NEEDS_REVIEW
+GH-202420,Other,Standard,Category is Other because the text starting with 'construction drilling from' lacks known category keywords.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Priority is Urgent and category is Road Damage because the text cites 'collapse'.,
+GH-202424,Other,Standard,Category is Other because the text contains conflicting keywords like 'flood' and 'light'.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Category is exactly mapped to Waste due to the word 'waste' in the text.,
+GH-202432,Other,Standard,Category is Other because the text starting with '24hr supermarket delivery' lacks known category keywords.,NEEDS_REVIEW
+GH-202448,Other,Standard,Category is Other because the text contains conflicting keywords like 'flood' and 'drain'.,NEEDS_REVIEW
+GH-202438,Road Damage,Standard,Category is exactly mapped to Road Damage due to the word 'road' in the text.,
