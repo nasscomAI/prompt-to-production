@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Categorized based on keyword 'heritage'.,
+KM-202402,Road Damage,Standard,Categorized based on keyword 'road'.,
+KM-202405,Other,Standard,Could not confidently determine a specific category from description.,NEEDS_REVIEW
+KM-202409,Other,Standard,"Ambiguous description matching multiple categories: Road Damage, Pothole",NEEDS_REVIEW
+KM-202410,Pothole,Standard,Categorized based on keyword 'pothole'.,
+KM-202411,Pothole,Standard,Categorized based on keyword 'pothole'.,
+KM-202415,Other,Standard,"Ambiguous description matching multiple categories: Road Damage, Drain Blockage",NEEDS_REVIEW
+KM-202418,Waste,Standard,Categorized based on keyword 'waste'.,
+KM-202421,Other,Urgent,Flagged as urgent due to keyword 'hospital'.,NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Categorized based on keyword 'road'.,
+KM-202426,Heritage Damage,Standard,Categorized based on keyword 'heritage'.,
+KM-202430,Road Damage,Standard,Categorized based on keyword 'road'.,
+KM-202434,Heritage Damage,Standard,Categorized based on keyword 'heritage'.,
+KM-202436,Other,Standard,Could not confidently determine a specific category from description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Categorized based on keyword 'heritage'.,
