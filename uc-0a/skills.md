@@ -11,6 +11,11 @@ skills:
     output: File path to the generated output CSV file containing classified rows.
     error_handling: If the input file cannot be found or the CSV is malformed, log an error and halt execution.
 
-example command:python classifier.py \
+example of the final command:python classifier.py \
   --input ../data/city-test-files/test_pune.csv \
   --output results_pune.csv
+
+  example of the final output:
+  Category,Priority,Reason,Flag
+  Pothole,Urgent,"Deep pothole near bus stop. School children at risk during morning hours.",NEEDS_REVIEW
+  Flooding,Standard,"Underpass flooded knee-deep after 2hrs rain. Commuters stranded.",NEEDS_REVIEW 
