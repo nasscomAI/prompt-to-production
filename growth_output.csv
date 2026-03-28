@@ -1,0 +1,21 @@
+ward_id,category,previous_year,current_year,growth_rate_pct,anomaly_flag,anomaly_reason
+W01,Parks,200000.0,850000.0,325.0,TRUE,"outlier_growth: 325.0% is outside [-50.0%, 200.0%]"
+W01,Roads,1200000.0,1450000.0,20.83,FALSE,
+W01,Sanitation,850000.0,920000.0,8.24,FALSE,
+W01,Water Supply,600000.0,600000.0,0.0,TRUE,round_number_alert: growth is exactly 0.00% — possible copy-paste error
+W02,Parks,180000.0,195000.0,8.33,FALSE,
+W02,Roads,980000.0,1100000.0,12.24,FALSE,
+W02,Sanitation,720000.0,780000.0,8.33,FALSE,
+W02,Water Supply,550000.0,590000.0,7.27,FALSE,
+W03,Parks,250000.0,270000.0,8.0,FALSE,
+W03,Roads,1500000.0,1800000.0,20.0,FALSE,
+W03,Sanitation,900000.0,945000.0,5.0,FALSE,
+W03,Water Supply,700000.0,0.0,-100.0,TRUE,"outlier_growth: -100.0% is outside [-50.0%, 200.0%]"
+W04,Parks,150000.0,162000.0,8.0,FALSE,
+W04,Roads,800000.0,820000.0,2.5,FALSE,
+W04,Sanitation,600000.0,1900000.0,216.67,TRUE,"outlier_growth: 216.67% is outside [-50.0%, 200.0%]"
+W04,Water Supply,480000.0,510000.0,6.25,FALSE,
+W05,Parks,190000.0,205000.0,7.89,FALSE,
+W05,Roads,1100000.0,1210000.0,10.0,FALSE,
+W05,Sanitation,780000.0,820000.0,5.13,FALSE,
+W05,Water Supply,520000.0,545000.0,4.81,FALSE,
