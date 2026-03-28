@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202402,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202405,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202406,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202407,Other,Urgent,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because description mentioned 'pothole',
+AM-202414,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202417,Other,Standard,"Description contains multiple complaint types (Waste, Heritage Damage), requires manual review",NEEDS_REVIEW
+AM-202421,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202424,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description mentioned 'temperature',
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because description mentioned 'ancient',
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description mentioned 'heat',
+AM-202444,Waste,Standard,Classified as Waste because description mentioned 'waste',
+AM-202445,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW

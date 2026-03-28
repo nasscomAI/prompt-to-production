@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because description mentioned 'pothole',
+PM-202402,Pothole,Urgent,Classified as Pothole because description mentioned 'pothole' and contains severity keyword 'child',
+PM-202406,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage because description mentioned 'drain',
+PM-202410,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description mentioned 'streetlight' and contains severity keyword 'hazard',
+PM-202413,Waste,Standard,Classified as Waste because description mentioned 'garbage',
+PM-202418,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+PM-202419,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage because description mentioned 'manhole' and contains severity keyword 'injury',
+PM-202427,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+PM-202428,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+PM-202430,Other,Standard,"Description contains multiple complaint types (Streetlight, Heritage Damage), requires manual review",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because description mentioned 'waste',
+PM-202446,Other,Urgent,Description does not clearly match any defined category,NEEDS_REVIEW
