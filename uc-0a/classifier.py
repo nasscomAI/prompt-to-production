@@ -22,15 +22,58 @@ SEVERITY_KEYWORDS = [
 
 # Category keyword map — ordered from most specific to least specific
 CATEGORY_KEYWORDS = [
-    ("Heritage Damage",  ["heritage", "monument", "historical", "historic"]),
-    ("Heat Hazard",      ["heat", "temperature", "hot", "summer", "heatwave"]),
-    ("Drain Blockage",   ["drain", "drainage", "sewer", "stormwater"]),
-    ("Flooding",         ["flood", "flooded", "flooding", "waterlog", "submerged"]),
+    (
+        "Heritage Damage",
+        [
+            "heritage", "monument", "historical", "historic", "old city",
+            "museum", "cobblestones", "defaced", "heritage stone", "step well",
+        ],
+    ),
+    (
+        "Heat Hazard",
+        [
+            "heat", "temperature", "hot", "summer", "heatwave", "sun",
+            "burn", "burns", "unbearable", "melting",
+        ],
+    ),
+    ("Drain Blockage",   ["drain", "drainage", "sewer", "stormwater", "manhole"]),
+    (
+        "Flooding",
+        [
+            "flood", "flooded", "flooding", "waterlog", "submerged", "standing in water",
+            "rainwater", "inaccessible",
+        ],
+    ),
     ("Pothole",          ["pothole", "potholes"]),
-    ("Road Damage",      ["road collapse", "road collapsed", "crater", "road damage", "road cracked"]),
-    ("Streetlight",      ["streetlight", "street light", "lamp", "lighting", "light not working"]),
-    ("Waste",            ["waste", "garbage", "trash", "rubbish", "litter", "dump", "debris"]),
-    ("Noise",            ["noise", "drilling", "loud", "sound", "idling", "honking"]),
+    (
+        "Road Damage",
+        [
+            "road collapse", "road collapsed", "crater", "road damage", "road cracked",
+            "sinking", "subsidence", "subsided", "buckled", "surface cracked",
+            "footpath broken", "tiles broken", "upturned", "paving removed",
+        ],
+    ),
+    (
+        "Streetlight",
+        [
+            "streetlight", "street light", "lamp", "lighting", "light not working",
+            "lights out", "unlit", "very dark", "dark at night", "darkness",
+        ],
+    ),
+    (
+        "Waste",
+        [
+            "waste", "garbage", "trash", "rubbish", "litter", "dump", "debris",
+            "overflowing", "dead animal", "bins",
+        ],
+    ),
+    (
+        "Noise",
+        [
+            "noise", "drilling", "loud", "sound", "idling", "honking", "music",
+            "band", "amplifiers", "engines on",
+        ],
+    ),
 ]
 
 
