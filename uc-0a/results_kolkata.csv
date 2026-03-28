@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,This complaint was classified based on noting the specific keyword 'heritage' in the description.,
+KM-202402,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'road' in the description.,
+KM-202405,Other,Standard,This complaint was classified based on noting the specific keyword 'wedding' in the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,This complaint was classified based on noting the specific keyword 'pothole' in the description.,
+KM-202410,Pothole,Standard,This complaint was classified based on noting the specific keyword 'pothole' in the description.,
+KM-202411,Pothole,Standard,This complaint was classified based on noting the specific keyword 'pothole' in the description.,NEEDS_REVIEW
+KM-202415,Flooding,Standard,This complaint was classified based on noting the specific keyword 'rain' in the description.,NEEDS_REVIEW
+KM-202418,Waste,Standard,This complaint was classified based on noting the specific keyword 'waste' in the description.,
+KM-202421,Road Damage,Urgent,This complaint was classified based on noting the specific keyword 'hospital' in the description.,
+KM-202422,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'road' in the description.,
+KM-202426,Heritage Damage,Standard,This complaint was classified based on noting the specific keyword 'heritage' in the description.,
+KM-202430,Waste,Standard,This complaint was classified based on noting the specific keyword 'smell' in the description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,This complaint was classified based on noting the specific keyword 'heritage' in the description.,
+KM-202436,Other,Standard,This complaint was classified based on noting the specific keyword 'entire' in the description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,This complaint was classified based on noting the specific keyword 'heritage' in the description.,
