@@ -15,4 +15,3 @@ skills:
     output: text summary with each required clause referenced and a missing-clause report if needed.
     error_handling: if required clauses are missing, include placeholder warnings; if meaning could be lost (multi-condition rules), emit verbatim clause text with explicit warning or flag.
 
-
