@@ -21,7 +21,7 @@ git checkout -b participant/[your-name]-[city]
 > **One branch. All four UCs. The whole session.**
 > Do not create a new branch per UC — all your work goes into this single branch.
 > Your commit history is your evidence trail. Tutors read it in chronological order
-> to follow your CRAFT loop across UC-0A through UC-X.
+> to follow your CRAFT loop across UC-0A through UC-0X.
 
 **Step 3 — Confirm your environment**
 ```bash
@@ -68,7 +68,7 @@ workshop-repo/
 │   ├── skills.md
 │   └── app.py
 │
-├── uc-x/           Ask My Documents
+├── uc-0x/           Ask My Documents
 │   ├── README.md
 │   ├── agents.md
 │   ├── skills.md
@@ -98,7 +98,7 @@ Good examples:
 UC-0A Fix severity blindness: no keywords in enforcement → added injury/child/school/hospital triggers
 UC-0B Fix clause omission: completeness not enforced → added every-numbered-clause rule
 UC-0C Fix silent aggregation: no scope in enforcement → restricted to per-ward per-category only
-UC-X  Fix cross-doc blending: no single-source rule → added single-source attribution enforcement
+UC-0X Fix cross-doc blending: no single-source rule → added single-source attribution enforcement
 ```
 
 Minimum **4 commits** — one per UC — all on the same branch.
@@ -126,7 +126,7 @@ Example: `[Pune] Arshdeep Singh — Vibe Coding Submission`
 
 - [ ] `agents.md` + `skills.md` committed for all 4 UCs
 - [ ] `classifier.py` runs on `test_[city].csv`, produces `results_[city].csv`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — each runs without crash
+- [ ] `app.py` for UC-0B, UC-0C, UC-0X — each runs without crash
 - [ ] `growth_output.csv` present (UC-0C output)
 - [ ] `summary_hr_leave.txt` present (UC-0B output)
 - [ ] 4+ commits with meaningful messages, one per UC
