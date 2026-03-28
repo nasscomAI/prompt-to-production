@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,"Classified as Other/Low based on description containing ""Tarmac surface melting at 44°C. Footwear sticking."".",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard/Standard based on description containing ""temperature"".",
+AM-202405,Other,Low,"Classified as Other/Low based on description containing ""Dead trees with split branches. Fall risk to walke"".",
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard/Standard based on description containing ""heatwave"".",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage/Urgent based on description containing ""upturned"", ""Child"".",
+AM-202410,Pothole,Standard,"Classified as Pothole/Standard based on description containing ""Pothole"", ""Pothole"".",
+AM-202414,Other,Low,"Classified as Other/Low based on description containing ""Residential colony unlit after 9pm. Wiring theft r"".",
+AM-202417,Heritage Damage,Standard,"Classified as Heritage Damage/Standard based on description containing ""Heritage"".",NEEDS_REVIEW
+AM-202421,Other,Low,"Classified as Other/Low based on description containing ""Club music audible at residential buildings at 2am"".",
+AM-202424,Road Damage,Standard,"Classified as Road Damage/Standard based on description containing ""road surface"".",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard/Standard based on description containing ""temperature"".",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage/Standard based on description containing ""Heritage"".",
+AM-202435,Other,Low,"Classified as Other/Low based on description containing ""Black metal road dividers storing heat. Motorists"".",
+AM-202444,Waste,Standard,"Classified as Waste/Standard based on description containing ""waste"", ""bins overflow"".",
+AM-202445,Other,Low,"Classified as Other/Low based on description containing ""BRT shelter roof glass broken. Users exposed to fu"".",
