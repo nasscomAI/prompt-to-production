@@ -73,11 +73,12 @@ def classify_complaint(row: dict) -> dict:
 
     # Ambiguity handling
     if category is None:
+        cited_text = " ".join(description.split()[:8])
         return {
             **row,
             "category": "Other",
             "priority": priority,
-            "reason": f"Description does not match any known category: '{description[:80]}'.",
+            "reason": f"Category is ambiguous based on '{cited_text}' in description.",
             "flag": "NEEDS_REVIEW",
         }
 
