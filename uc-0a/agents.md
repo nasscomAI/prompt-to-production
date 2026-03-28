@@ -1,18 +1,24 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+role: "Complaint classification agent that processes structured civic complaint rows and outputs standardized labels without expanding or altering the predefined taxonomy"
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+intent: "Produce a CSV where each input row is assigned a valid category, priority, one-sentence reason citing exact words from the complaint, and a flag when ambiguity exists; outputs must strictly match allowed schema values and be verifiable against input text"
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+context: "Use only the complaint text provided in each CSV row and the predefined classification schema; must not use external knowledge, invent new categories, infer unstated severity, or modify the schema or field structure"
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+
+* "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+* "Category values must use exact strings only with no spelling changes, synonyms, or new sub-categories"
+* "Priority must be exactly one of: Urgent, Standard, Low"
+* "Priority must be set to Urgent if any severity keyword appears: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
+* "Reason must be exactly one sentence"
+* "Reason must explicitly cite specific words present in the complaint description"
+* "Flag must be either NEEDS_REVIEW or blank"
+* "Flag must be set to NEEDS_REVIEW when the category is genuinely ambiguous"
+* "Every row must include category, priority, reason, and flag fields with no omissions"
+* "No hallucinated categories or sub-categories are allowed"
+* "No variation in category or priority naming across rows"
+* "Do not assign Standard or Low when severity keywords requiring Urgent are present"
+* "Do not express false confidence; ambiguous cases must be flagged"
+* "Batch processing must apply single-row classification consistently across all rows and preserve row count"
+* "Output must conform exactly to the specified CSV structure and allowed values"
