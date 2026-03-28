@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on presence of: temperature.,
+AM-202405,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on presence of: heat.,
+AM-202407,Other,Urgent,Classified as Other based on presence of: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole based on presence of: pothole.,
+AM-202414,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Classified as Waste based on presence of: waste, heritage.",
+AM-202421,Noise,Standard,Classified as Noise based on presence of: music.,
+AM-202424,Road Damage,Standard,Classified as Road Damage based on presence of: road surface.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on presence of: temperature.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage based on presence of: heritage.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on presence of: heat.,
+AM-202444,Waste,Standard,Classified as Waste based on presence of: waste.,
+AM-202445,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW

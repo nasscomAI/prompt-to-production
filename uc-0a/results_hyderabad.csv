@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on presence of: flood, ambulance.",
+GH-202402,Flooding,Standard,Classified as Flooding based on presence of: flood.,
+GH-202406,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on presence of: drain blocked.,
+GH-202410,Pothole,Standard,Classified as Pothole based on presence of: pothole.,
+GH-202411,Pothole,Urgent,"Classified as Pothole based on presence of: pothole, hospital.",
+GH-202412,Pothole,Urgent,"Classified as Pothole based on presence of: pothole, school.",
+GH-202417,Waste,Standard,"Classified as Waste based on presence of: garbage, heritage, hot.",
+GH-202420,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classified as Other based on presence of: collapse.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on presence of: flood.,
+GH-202428,Waste,Standard,Classified as Waste based on presence of: waste.,
+GH-202432,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Classified as Flooding based on presence of: flood, drain blocked.",
+GH-202438,Other,Standard,Classified as Other based on description content.,NEEDS_REVIEW
