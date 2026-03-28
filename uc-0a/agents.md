@@ -18,6 +18,6 @@ context: >
 
 enforcement:
   - "Category must be exactly one of: Pothole · Flooding · Streetlight · Waste · Noise · Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other"
-  - "Priority must be one of: Urgent, Standard, Low. Set to Urgent when description contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Priority must be one of: Urgent · Standard · Low"
   - "Every output row must include a reason field containing one sentence that cites specific words from the complaint description."
-  - "If the category cannot be confidently determined from the description alone, set category to Other and flag to NEEDS_REVIEW."
+  - "If the category cannot be confidently determined from the description alone, set category NEEDS_REVIEW or blank"
