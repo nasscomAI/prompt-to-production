@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Based on description mentioning pothole, classified as Pothole.",
+PM-202402,Pothole,Urgent,"Based on description mentioning pothole, child, school, classified as Pothole.",
+PM-202406,Flooding,Standard,"Based on description mentioning flood, classified as Flooding.",
+PM-202408,Other,Standard,"Based on description mentioning flood, drain, classified as Other.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Based on description mentioning streetlight, classified as Streetlight.",
+PM-202411,Streetlight,Urgent,"Based on description mentioning streetlight, hazard, classified as Streetlight.",
+PM-202413,Waste,Low,"Based on description mentioning garbage, classified as Waste.",
+PM-202418,Noise,Standard,Description provided with no keyword match; defaulting to Noise.,
+PM-202419,Road Damage,Standard,"Based on description mentioning road, classified as Road Damage.",
+PM-202420,Pothole,Urgent,"Based on description mentioning injury, classified as Pothole.",
+PM-202427,Flooding,Standard,"Based on description mentioning flood, classified as Flooding.",
+PM-202428,Waste,Standard,Description provided with no keyword match; defaulting to Waste.,
+PM-202430,Other,Standard,"Based on description mentioning heritage, classified as Other.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Based on description mentioning road, classified as Waste.",
+PM-202446,Road Damage,Urgent,"Based on description mentioning fell, classified as Road Damage.",
