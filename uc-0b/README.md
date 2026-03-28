@@ -69,3 +69,18 @@ Scope bleed to look for: phrases like "as is standard practice", "typically in g
 ```
 UC-0B Fix [failure mode]: [why it failed] → [what you changed]
 ```
+
+---
+
+## Output Data Structure
+
+The output data in `summary_hr_leave.txt` is structured as follows:
+
+Each clause is listed sequentially with its number and description. The format is plain text, with each clause starting with "Clause <number>:" followed by its content. For example:
+
+```
+Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance.
+Clause 2.4: Leave applications must receive written approval from the relevant authority before leave commences. Verbal approvals are not valid.
+```
+
+This format ensures that all clauses are included verbatim, preserving their original content and structure. The output does not separate "Core obligation" and "Binding verb" into distinct columns but retains all necessary details within the clause descriptions.
