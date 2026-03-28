@@ -1,6 +1,29 @@
-# UC-X — Ask My Documents
+# UC-X — Final Civic Tech Assistant
 
-**Core failure modes:** Cross-document blending · Hedged hallucination · Condition dropping
+Combines complaint classification, policy lookup, and budget validation. Ask questions like *"Is my ward budget overspending on roads?"* and get structured reasoning.
+
+## How to Run
+
+From the project root:
+
+```bash
+cd uc-x
+python app.py --question "Is my ward budget overspending on roads?"
+```
+
+Interactive mode:
+
+```bash
+python app.py --interactive
+```
+
+Save response to JSON:
+
+```bash
+python app.py -q "What is the annual leave entitlement?" --output response.json
+```
+
+**Requirements:** Python 3.8+, standard library only (csv, json, re, pathlib).
 
 ---
 

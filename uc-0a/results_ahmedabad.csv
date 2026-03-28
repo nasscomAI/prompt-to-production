@@ -1,0 +1,16 @@
+complaint_id,category,reason,confidence
+AM-202401,roads,surface,medium
+AM-202402,others,No matching keywords found,low
+AM-202405,others,No matching keywords found,low
+AM-202406,roads,broken,medium
+AM-202407,roads,"upturned, broken",high
+AM-202410,roads,pothole,medium
+AM-202414,others,No matching keywords found,low
+AM-202417,sanitation,waste,medium
+AM-202421,others,No matching keywords found,low
+AM-202424,roads,"road, surface",high
+AM-202429,roads,surface,medium
+AM-202431,roads,road,medium
+AM-202435,roads,road,medium
+AM-202444,sanitation,waste,medium
+AM-202445,roads,broken,medium
