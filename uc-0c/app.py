@@ -56,7 +56,6 @@ def compute_growth(data, ward, category):
     growth = ((curr - prev) / prev) * 100
     return growth
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', required=True)
