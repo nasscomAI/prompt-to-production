@@ -18,7 +18,6 @@ def load_dataset(file_path):
             data.append(row)
     return data
 
-
 def compute_growth(data, ward, category):
     # Filter data correctly
     filtered = [
