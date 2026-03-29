@@ -1,0 +1,4 @@
+git commit --amend -m "docs: update project documentation"
+git push --force
+
+
