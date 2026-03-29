@@ -40,7 +40,6 @@ def answer_question(documents, question):
     # return top relevant lines
     return "\n".join(matches[:3])
 
-
 def main():
     try:
         docs = retrieve_documents()
