@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Category set to Other due to ambiguity from words Streetlight: lamp post; Heritage Damage: heritage; priority set to Standard.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Category set to Heritage Damage based on words historic, and priority set to Standard because no severity keyword was found.",
+KM-202405,Other,Standard,"Category set to Other because description words ""Wedding band playing near Tagore Museum at 11pm. Festival season ongoing."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+KM-202409,Other,Standard,"Category set to Other because description words ""Airport access road full of potholes. Diplomatic complaint received."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+KM-202410,Pothole,Standard,"Category set to Pothole based on words pothole, and priority set to Standard because no severity keyword was found.",
+KM-202411,Pothole,Standard,"Category set to Pothole based on words pothole, and priority set to Standard because no severity keyword was found.",
+KM-202415,Other,Standard,"Category set to Other because description words ""New residential complex draining directly onto public road."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Category set to Waste based on words waste, and priority set to Standard because no severity keyword was found.",
+KM-202421,Other,Urgent,"Category set to Other because description words ""Footpath broken and sinking. Elderly pedestrian fell. Hospital visit."" did not match any allowed category indicators; priority set to Urgent.",NEEDS_REVIEW
+KM-202422,Other,Standard,"Category set to Other because description words ""Road surface buckled near bridge. Structural concern raised."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Category set to Heritage Damage based on words heritage, and priority set to Standard because no severity keyword was found.",
+KM-202430,Other,Standard,"Category set to Other because description words ""Road subsided near gas pipeline. Gas leak smell reported too."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Category set to Heritage Damage based on words heritage, and priority set to Standard because no severity keyword was found.",
+KM-202436,Other,Standard,"Category set to Other because description words ""Entire colony substation tripped. Darkness for 3 nights."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Category set to Heritage Damage based on words heritage, and priority set to Standard because no severity keyword was found.",

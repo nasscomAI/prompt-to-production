@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,"Category set to Other because description words ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk."" did not match any allowed category indicators; priority set to Urgent.",NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,"Category set to Drain Blockage based on words drain, blocked, and priority set to Standard because no severity keyword was found.",
+GH-202406,Drain Blockage,Standard,"Category set to Drain Blockage based on words drain, blocked, and priority set to Standard because no severity keyword was found.",
+GH-202407,Drain Blockage,Standard,"Category set to Drain Blockage based on words drain, blocked, and priority set to Standard because no severity keyword was found.",
+GH-202410,Other,Standard,"Category set to Other because description words ""Potholes causing vehicles to slow to 20kmph on fast road."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+GH-202411,Pothole,Urgent,"Category set to Pothole based on words pothole, and priority set to Urgent due to severity word hospital.",
+GH-202412,Other,Urgent,"Category set to Other because description words ""School bus struggling to navigate 6 potholes in 200m stretch."" did not match any allowed category indicators; priority set to Urgent.",NEEDS_REVIEW
+GH-202417,Other,Standard,"Category set to Other due to ambiguity from words Waste: garbage, waste; Heritage Damage: heritage; priority set to Standard.",NEEDS_REVIEW
+GH-202420,Other,Standard,"Category set to Other because description words ""Construction drilling from 5am daily near residential towers."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Category set to Pothole based on words crater, and priority set to Urgent due to severity word collapse.",
+GH-202424,Other,Standard,"Category set to Other because description words ""Underpass floods in light rain. Cars regularly abandoned."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+GH-202428,Waste,Standard,"Category set to Waste based on words waste, and priority set to Standard because no severity keyword was found.",
+GH-202432,Other,Standard,"Category set to Other because description words ""24hr supermarket delivery trucks idling with engines on."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+GH-202448,Other,Standard,"Category set to Other due to ambiguity from words Flooding: flooding; Drain Blockage: drain, blocked; priority set to Standard.",NEEDS_REVIEW
+GH-202438,Other,Standard,"Category set to Other because description words ""Colony surrounded by fields that channel rainwater through main road."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
