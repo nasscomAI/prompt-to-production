@@ -74,13 +74,12 @@ python app.py \
 ---
 
 ## What Will Fail From the Naive Prompt
-Run `"Calculate growth from the data."` on the full CSV first.
-Watch for: one single number returned for all wards combined; no mention of the 5 null rows;
-formula chosen silently (MoM or YoY picked without being asked).
+The Naive Prompt failed because it silently ignored 5 null rows and computed a single aggregated number across all wards (Wrong aggregation level & Silent null handling).
+It failed because it assumed a default MoM formula without instruction and lacked structural data rules restricting aggregation.
 
 ---
 
 ## Commit Formula
 ```
-UC-0C Fix [failure mode]: [why it failed] → [what you changed]
+UC-0C Fix Wrong aggregation level & Silent null handling: The prompt was too vague without structural rules and aggregated without validating nulls → Created agents.md with strict 'Enforcement' rules that prevent cross-ward aggregation, mandate flagging nulls, and enforce formula transparency. Logic is verified using the mock output in uc-0c/growth_output.csv.
 ```
