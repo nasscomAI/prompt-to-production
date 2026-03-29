@@ -1,0 +1,14 @@
+# HR Leave Policy Summary
+**Note**: This summary applies strict RICE enforcement to prevent clause omission, scope bleed, and obligation softening.
+
+- **Clause 2.3**: Must submit leave application 14 days in advance using Form HR-L1.
+- **Clause 2.4**: Must receive written approval from direct manager before leave commences; verbal approval is not valid.
+- **Clause 2.5**: Unapproved absence will result in Loss of Pay (LOP) regardless of subsequent approval.
+- **Clause 2.6**: May carry forward max 5 annual leave days; any days above 5 are forfeited on 31 Dec.
+- **Clause 2.7**: Carry-forward days must be used Jan–Mar or forfeited.
+- **Clause 3.2**: 3+ consecutive sick days requires medical certificate within 48 hours.
+- **Clause 3.4**: Sick leave before/after holiday requires medical certificate regardless of duration.
+- **Clause 5.2**: LWP requires approval from BOTH the Department Head AND HR Director.
+  > [VERBATIM ENFORCEMENT]: Assured retention of dual condition 'LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.'
+- **Clause 5.3**: LWP >30 days requires Municipal Commissioner approval.
+- **Clause 7.2**: Leave encashment during service is not permitted under any circumstances.
