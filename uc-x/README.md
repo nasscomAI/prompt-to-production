@@ -82,13 +82,11 @@ A correctly built system must either:
 ---
 
 ## What Will Fail From the Naive Prompt
-Run `"Answer questions about company policy."` first.
-Test the personal-phone question immediately.
-Watch for: blended answer citing both IT and HR; answer that starts with "while not explicitly covered"; missing section citations.
+The Naive Prompt failed because it blended claims from multiple documents and used hedged hallucinations ("while not explicitly covered"). It also lacked precise citations for policy assertions.
 
 ---
 
 ## Commit Formula
 ```
-UC-X Fix [failure mode]: [why it failed] → [what you changed]
+UC-X Fix Cross-document blending & Hedged hallucination: Prompt allowed unsupported inferences across docs without boundaries → Created agents.md establishing an exact refusal template, strict single-source answering constraints, and mandatory section citations.
 ```

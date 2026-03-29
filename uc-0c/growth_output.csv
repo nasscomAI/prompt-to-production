@@ -1,0 +1,4 @@
+MOCK CSV OUTPUT:
+Ward,Category,Period,Actual Spend,Growth Formula,Notes
+None,None,2024-01,10.0,start,
+None,None,2024-02,NULL,n/a,Flagged as Null
