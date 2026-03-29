@@ -1,0 +1,7 @@
+period,actual_spend,budgeted_amount,growth_value,growth_formula,status,notes
+2024-01,13.3,13.0,N/A (first period),N/A,computed,
+2024-02,12.2,13.0,-8.3%,((12.2 - 13.3) / 13.3) * 100,computed,
+2024-03,12.3,13.0,+0.8%,((12.3 - 12.2) / 12.2) * 100,computed,
+2024-04,13.4,13.0,+8.9%,((13.4 - 12.3) / 12.3) * 100,computed,
+2024-05,14.1,13.0,+5.2%,((14.1 - 13.4) / 13.4) * 100,computed,
+2024-06,14.8,13.0,+5.0%,((14.8 - 14.1) / 14.1) * 100,computed,
