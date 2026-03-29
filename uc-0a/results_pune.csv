@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on words 'large pothole 60cm wide causing tyre',
+PM-202402,Pothole,Urgent,Classified as Pothole based on words 'deep pothole near bus stop. school',
+PM-202406,Flooding,Standard,Classified as Flooding based on words 'underpass flooded knee-deep after 2hrs rain.',
+PM-202408,Flooding,Standard,Classified as Flooding based on words 'bus stand flooded. passengers standing in',
+PM-202410,Streetlight,Standard,Classified as Streetlight based on words 'three consecutive streetlights out for 10',
+PM-202411,Streetlight,Urgent,Classified as Streetlight based on words 'streetlight flickering and sparking. electrical hazard',
+PM-202413,Waste,Low,Classified as Waste based on words 'overflowing garbage bins near vegetable market.',
+PM-202418,Other,Standard,Classified as Other based on words 'wedding venue playing music past midnight',NEEDS_REVIEW
+PM-202419,Pothole,Standard,Classified as Pothole based on words 'road surface cracked and sinking near',
+PM-202420,Other,Urgent,Classified as Other based on words 'manhole cover missing. risk of serious',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on words 'bridge approach floods in 30mins of',
+PM-202428,Other,Standard,Classified as Other based on words 'dead animal not removed for 36',NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Classified as Streetlight based on words 'heritage street, lights out. safety concern'",
+PM-202433,Waste,Standard,Classified as Waste based on words 'bulk waste from apartment renovation dumped',
+PM-202446,Other,Urgent,Classified as Other based on words 'footpath tiles broken and upturned. elderly',NEEDS_REVIEW
