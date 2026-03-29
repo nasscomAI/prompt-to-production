@@ -3,14 +3,15 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+   - name: summerize_and_categorize_leave
+    description: Reads all the clauses for a category of leave and summarizes key requirement of the leaves as must requires 
+    input: A dictionary of  a leave description   (string)
+    output: A dictionary with keys 'Clause' (string), 'Core Obligation' (one sentence summarizing requirements for the leave including approvals, 'Binding verb' (must/requires/not permitted/will)
+    error_handling: If a clause cannot be summarised without meaning loss — quote it verbatim and flag it
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: summerize_all_leave
+  description: Reads the leave detaisl from a txt file and generates a table of leae mandates
+    input: A txt file of he_leaves (string)
+    output: A csv file with leave categorired (string) Output written to [output_csv_path]
+    error_handling:  If input file not found, raise FileNotFoundError; 
+    ensure all rows are processed even if some fail.
