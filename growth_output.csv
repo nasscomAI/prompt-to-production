@@ -1,0 +1,11 @@
+ward,category,computed_total,recorded_total,status
+Ward-1,Education,90000.0,90000.0,OK
+Ward-1,Health,30000.0,30000.0,OK
+Ward-1,Roads,120000.0,120000.0,OK
+Ward-2,Education,80000.0,75000.0,MISMATCH
+Ward-2,Health,60000.0,60000.0,OK
+Ward-2,Roads,60000.0,60000.0,OK
+Ward-3,Education,55000.0,55000.0,OK
+Ward-3,Health,20000.0,20000.0,OK
+Ward-3,Roads,40000.0,40000.0,OK
+Ward-3,Sanitation,65000.0,65000.0,OK
