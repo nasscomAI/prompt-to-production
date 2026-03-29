@@ -5,60 +5,26 @@ See README.md for run command and expected behaviour.
 """
 import os
 
-def retrieve_documents():
-    files = [
-        "../data/policy-documents/policy_hr_leave.txt",
-        "../data/policy-documents/policy_it_acceptable_use.txt",
-        "../data/policy-documents/policy_finance_reimbursement.txt"
-    ]
+def search_documents(query, folder="../data/policy-documents"):
+    results = []
 
-    documents = ""
+    for filename in os.listdir(folder):
+        filepath = os.path.join(folder, filename)
+        with open(filepath, "r") as f:
+            content = f.read()
+            if query.lower() in content.lower():
+                results.append((filename, content[:200]))
 
-    for file_path in files:
-        if not os.path.exists(file_path):
-            raise FileNotFoundError(f"{file_path} not found")
+    return results
 
-        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-            documents += f.read() + "\n"
-
-    return documents
-
-def answer_question(documents, question):
-    question_lower = question.lower()
-    doc_lower = documents.lower()
-
-    keywords = question_lower.split()
-
-    matches = []
-    for line in documents.split('\n'):
-        if any(word in line.lower() for word in keywords):
-            matches.append(line.strip())
-
-    if not matches:
-        return "❌ Cannot answer from provided documents."
-
-    # return top relevant lines
-    return "\n".join(matches[:3])
-
-def main():
-    try:
-        docs = retrieve_documents()
-        print("📄 Documents loaded successfully!")
-    except Exception as e:
-        print(f"❌ Error: {str(e)}")
-        return
-
-    while True:
-        question = input("\nAsk a question (type 'exit' to quit): ")
-
-        if question.lower() == "exit":
-            print("Exiting...")
-            break
-
-        answer = answer_question(docs, question)
-        print("\nAnswer:")
-        print(answer)
 
 if __name__ == "__main__":
-    main()
-    
+    query = input("Enter search query: ")
+    matches = search_documents(query)
+
+    if matches:
+        for file, snippet in matches:
+            print(f"\nFound in {file}:")
+            print(snippet)
+    else:
+        print("No matching documents found.")
