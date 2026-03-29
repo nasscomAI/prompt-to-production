@@ -17,7 +17,6 @@ def search_documents(query, folder="../data/policy-documents"):
 
     return results
 
-
 if __name__ == "__main__":
     query = input("Enter search query: ")
     matches = search_documents(query)
