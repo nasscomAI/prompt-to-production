@@ -23,7 +23,6 @@ def retrieve_documents():
 
     return documents
 
-
 def answer_question(documents, question):
     question_lower = question.lower()
     doc_lower = documents.lower()
@@ -40,7 +39,6 @@ def answer_question(documents, question):
 
     # return top relevant lines
     return "\n".join(matches[:3])
-
 
 def main():
     try:
@@ -60,7 +58,6 @@ def main():
         answer = answer_question(docs, question)
         print("\nAnswer:")
         print(answer)
-
 
 if __name__ == "__main__":
     main()
