@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on words 'flooded', 'underpass flooded', 'ambulance' in the complaint description.",
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage based on words 'drain completely blocked' in the complaint description.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on words 'drain 100% blocked' in the complaint description.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on words 'drain blocked' in the complaint description.,
+GH-202410,Pothole,Standard,Classified as Pothole based on words 'potholes' in the complaint description.,
+GH-202411,Pothole,Standard,Classified as Pothole based on words 'pothole' in the complaint description.,
+GH-202412,Pothole,Urgent,"Classified as Pothole based on words 'potholes', 'school' in the complaint description.",
+GH-202417,Waste,Low,Classified as Waste based on words 'garbage' in the complaint description.,
+GH-202420,Other,Low,Classified as Other based on words 'Construction drilling from 5am daily near residential towers.' in the complaint description.,NEEDS_REVIEW
+GH-202422,Other,Low,Classified as Other based on words 'Road collapsed partially. Crater 1m deep near residential' in the complaint description.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on words 'floods' in the complaint description.,
+GH-202428,Other,Low,Classified as Other based on words 'Post-market waste not cleared. Area unusable by Sunday' in the complaint description.,NEEDS_REVIEW
+GH-202432,Other,Low,Classified as Other based on words '24hr supermarket delivery trucks idling with engines on.' in the complaint description.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage based on words 'drain blocked' in the complaint description.,NEEDS_REVIEW
+GH-202438,Other,Low,Classified as Other based on words 'Colony surrounded by fields that channel rainwater through' in the complaint description.,NEEDS_REVIEW
