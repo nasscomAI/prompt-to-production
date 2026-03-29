@@ -1,0 +1,15 @@
+ward,category,amount,total
+Ward-1,Roads,50000,120000
+Ward-1,Roads,70000,120000
+Ward-1,Health,30000,30000
+Ward-1,Education,45000,90000
+Ward-1,Education,45000,90000
+Ward-2,Roads,60000,60000
+Ward-2,Health,25000,60000
+Ward-2,Health,35000,60000
+Ward-2,Education,80000,75000
+Ward-3,Roads,40000,40000
+Ward-3,Health,20000,20000
+Ward-3,Education,55000,55000
+Ward-3,Sanitation,30000,65000
+Ward-3,Sanitation,35000,65000
