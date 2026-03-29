@@ -1,12 +1,14 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+# UC-X Ask My Documents
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+try:
+    file_path = "../data/policy-documents/policy_hr_leave.txt"
 
-if __name__ == "__main__":
-    main()
+    with open(file_path, "r", encoding="utf-8") as f:
+        data = f.read()
+
+    print("Document loaded successfully!")
+    print("\nSample Output:\n")
+    print(data[:300])  # show first 300 chars
+
+except Exception as e:
+    print("Error:", e)
