@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"""pothole"" indicates Pothole.",
+PM-202402,Pothole,Urgent,"""pothole"" indicates Pothole; ""child"" triggers Urgent priority.",
+PM-202406,Flooding,Standard,"""flood"" indicates Flooding.",
+PM-202408,Flooding,Standard,"""flood"" indicates Flooding.",
+PM-202410,Streetlight,Standard,"""streetlight"" indicates Streetlight.",
+PM-202411,Streetlight,Urgent,"""streetlight"" indicates Streetlight; ""hazard"" triggers Urgent priority.",
+PM-202413,Waste,Standard,"""garbage"" indicates Waste.",
+PM-202418,Other,Standard,no clear category keyword found — classified as Other.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"""road surface"" indicates Road Damage.",
+PM-202420,Drain Blockage,Urgent,"""manhole"" indicates Drain Blockage; ""injury"" triggers Urgent priority.",
+PM-202427,Flooding,Standard,"""flood"" indicates Flooding.",
+PM-202428,Other,Standard,no clear category keyword found — classified as Other.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage.",
+PM-202433,Waste,Standard,"""waste"" indicates Waste.",
+PM-202446,Other,Urgent,"no clear category keyword found — classified as Other; ""fell"" triggers Urgent priority.",NEEDS_REVIEW
