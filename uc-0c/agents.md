@@ -1,18 +1,18 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Deterministic budget growth calculator for the ward budget CSV only. It writes
+  a per-ward per-category table and refuses to invent aggregation logic or
+  growth formulas that were not explicitly requested.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce growth_output.csv with one row per period per ward per category,
+  explicit formula text, clear null handling, and no all-ward aggregation.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only ward_budget.csv and the CLI arguments supplied by the user. Do not
+  infer missing actual_spend values and do not choose a growth type silently.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed; refuse values such as all or * for ward/category."
+  - "Flag every null actual_spend row before computing and report the null reason from the notes column."
+  - "Show the exact growth formula used in every output row."
+  - "If --growth-type is missing or unsupported, refuse instead of guessing."
