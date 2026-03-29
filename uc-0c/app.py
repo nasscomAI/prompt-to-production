@@ -17,21 +17,32 @@ def load_dataset(input_path: str, ward: str, category: str) -> list:
         
     filtered_data = []
     null_count = 0
+    null_rows = []
+    
+    required_columns = {'period', 'ward', 'category', 'budgeted_amount', 'actual_spend', 'notes'}
     
     try:
         with open(input_path, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
+            
+            # 1. Validate Columns
+            if not required_columns.issubset(set(reader.fieldnames)):
+                missing = required_columns - set(reader.fieldnames)
+                raise ValueError(f"REFUSAL: Invalid CSV structure. Missing columns: {missing}")
+                
             for row in reader:
                 if row['ward'] == ward and row['category'] == category:
                     spend_str = row['actual_spend'].strip()
                     if not spend_str:
                         row['actual_spend'] = None  # Identify explicit omission 
+                        null_rows.append(f"{row['period']} · {row['ward']} · {row['category']} (Reason: {row['notes']})")
                         null_count += 1
                     else:
                         try:
                             row['actual_spend'] = float(spend_str)
                         except ValueError:
                             row['actual_spend'] = None
+                            null_rows.append(f"{row['period']} · {row['ward']} · {row['category']} (Parse error)")
                             null_count += 1
                     filtered_data.append(row)
     except FileNotFoundError:
@@ -40,7 +51,11 @@ def load_dataset(input_path: str, ward: str, category: str) -> list:
     if not filtered_data:
         raise ValueError(f"No data found for Ward '{ward}' and Category '{category}'.")
         
-    print(f"Loaded {len(filtered_data)} rows safely for computation window. Intercepted {null_count} nulls.")
+    # 2. Report null count and *which rows* before returning
+    print(f"Loaded {len(filtered_data)} rows safely for computation window.")
+    print(f"Intercepted {null_count} explicit nulls.")
+    for nr in null_rows:
+        print(f"  -> Null flagged at: {nr}")
     
     # Chronological sort required for period metrics
     filtered_data.sort(key=lambda x: x['period'])
