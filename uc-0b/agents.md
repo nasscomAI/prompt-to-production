@@ -8,8 +8,10 @@ context: >
   Only the provided `.txt` input document may be used. External knowledge is strictly excluded. You must not introduce phrases such as "as is standard practice", "typically in government organisations", or "employees are generally expected to". You must be vigilant against "The trap" where dual-approver requirements are partially dropped during summarisation.
 
 enforcement:
-  - "Every numbered clause must be present in the summary"
+  - "Only required clause must be present in the summary"
   - "Multi-condition obligations must preserve ALL conditions — never drop one silently"
   - "Never add information not present in the source document"
   - "If a clause cannot be summarised without meaning loss — quote it verbatim and flag it"
   - "Refuse to summarize or guess if a clause's core obligation is ambiguous or if attempting to summarize it fundamentally changes its binding nature"
+  - "summary_hr_leave.txt must be generated with exact clause references with only reuired keys - clause, Core obligation, binding verb"
+  
