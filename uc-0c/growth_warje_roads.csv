@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,growth_value,formula_used,status,notes
+2024-01,Ward 4 – Warje,Roads & Pothole Repair,10.200000,MOM,,MoM: (current - previous) / previous,not_computed_no_previous,
+2024-02,Ward 4 – Warje,Roads & Pothole Repair,10.700000,MOM,0.049020,MoM: (current - previous) / previous,computed,
+2024-03,Ward 4 – Warje,Roads & Pothole Repair,11.100000,MOM,0.037383,MoM: (current - previous) / previous,computed,
+2024-04,Ward 4 – Warje,Roads & Pothole Repair,8.800000,MOM,-0.207207,MoM: (current - previous) / previous,computed,
+2024-05,Ward 4 – Warje,Roads & Pothole Repair,11.300000,MOM,0.284091,MoM: (current - previous) / previous,computed,
+2024-06,Ward 4 – Warje,Roads & Pothole Repair,12.500000,MOM,0.106195,MoM: (current - previous) / previous,computed,
+2024-07,Ward 4 – Warje,Roads & Pothole Repair,,MOM,,not_computed: actual_spend is null,null_actual_spend,Audit freeze — figures under review
+2024-08,Ward 4 – Warje,Roads & Pothole Repair,16.000000,MOM,,MoM: (current - previous) / previous,not_computed_previous_null,
+2024-09,Ward 4 – Warje,Roads & Pothole Repair,14.700000,MOM,-0.081250,MoM: (current - previous) / previous,computed,
+2024-10,Ward 4 – Warje,Roads & Pothole Repair,11.000000,MOM,-0.251701,MoM: (current - previous) / previous,computed,
+2024-11,Ward 4 – Warje,Roads & Pothole Repair,9.000000,MOM,-0.181818,MoM: (current - previous) / previous,computed,
+2024-12,Ward 4 – Warje,Roads & Pothole Repair,11.200000,MOM,0.244444,MoM: (current - previous) / previous,computed,

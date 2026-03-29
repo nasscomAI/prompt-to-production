@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Category set to Other because description words ""Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Category set to Other because description words ""Metal bus shelter reaching dangerous temperatures. Commuters refusing to use."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Category set to Other because description words ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category set to Heat Hazard based on words heatwave, and priority set to Standard because no severity keyword was found.",
+AM-202407,Other,Urgent,"Category set to Other because description words ""Broken bench and upturned paving. Child injured last week."" did not match any allowed category indicators; priority set to Urgent.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Category set to Pothole based on words pothole, and priority set to Standard because no severity keyword was found.",
+AM-202414,Other,Standard,"Category set to Other because description words ""Residential colony unlit after 9pm. Wiring theft reported."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202417,Other,Standard,Category set to Other due to ambiguity from words Waste: waste; Heritage Damage: heritage; priority set to Standard.,NEEDS_REVIEW
+AM-202421,Other,Standard,"Category set to Other because description words ""Club music audible at residential buildings at 2am."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202424,Other,Standard,"Category set to Other because description words ""Zoo approach road surface bubbling at 45°C. Visitor complaints."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202429,Other,Standard,"Category set to Other because description words ""River walk surface temperature unbearable. Installed temperature reads 52°C."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Category set to Heritage Damage based on words heritage, and priority set to Standard because no severity keyword was found.",
+AM-202435,Heat Hazard,Standard,"Category set to Heat Hazard based on words heat, and priority set to Standard because no severity keyword was found.",
+AM-202444,Waste,Standard,"Category set to Waste based on words waste, and priority set to Standard because no severity keyword was found.",
+AM-202445,Other,Standard,"Category set to Other because description words ""BRT shelter roof glass broken. Users exposed to full sun."" did not match any allowed category indicators; priority set to Standard.",NEEDS_REVIEW
