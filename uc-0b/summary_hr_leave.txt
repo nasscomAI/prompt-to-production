@@ -1,28 +1,4 @@
-"""
-UC-0B app.py — Summary generator for HR leave policy.
-"""
-import argparse
-
-def main():
-    parser = argparse.ArgumentParser(description='Generate summary of HR leave policy')
-    parser.add_argument('--input', required=True, help='Input policy document file')
-    parser.add_argument('--output', required=True, help='Output summary file')
-    args = parser.parse_args()
-
-    # Read the input file (though for this implementation, we generate a fixed summary)
-    with open(args.input, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # Generate summary that includes all clauses
-    summary = generate_summary(content)
-
-    # Write to output
-    with open(args.output, 'w', encoding='utf-8') as f:
-        f.write(summary)
-
-def generate_summary(content):
-    # This is a hardcoded summary that preserves all key obligations
-    summary = """CITY MUNICIPAL CORPORATION EMPLOYEE LEAVE POLICY SUMMARY
+CITY MUNICIPAL CORPORATION EMPLOYEE LEAVE POLICY SUMMARY
 
 PURPOSE AND SCOPE:
 - Governs leave entitlements for permanent and contractual employees.
@@ -68,8 +44,3 @@ LEAVE ENCASHMENT:
 GRIEVANCES:
 - Leave-related grievances must be raised with HR Department within 10 working days of disputed decision.
 - Grievances raised after 10 working days will not be considered unless exceptional circumstances demonstrated in writing.
-"""
-    return summary
-
-if __name__ == "__main__":
-    main()
