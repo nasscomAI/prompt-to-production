@@ -27,7 +27,6 @@ def get_operation():
             return choice
         print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
-
 def compute(a, b, op):
     if op == "1":
         return a + b
