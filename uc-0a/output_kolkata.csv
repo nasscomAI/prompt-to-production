@@ -1,0 +1,16 @@
+complaint_id,category,severity
+KM-202401,other,low
+KM-202402,roads,medium
+KM-202405,other,low
+KM-202409,roads,medium
+KM-202410,roads,high
+KM-202411,roads,high
+KM-202415,water,medium
+KM-202418,sanitation,medium
+KM-202421,roads,high
+KM-202422,roads,high
+KM-202426,other,low
+KM-202430,roads,high
+KM-202434,roads,medium
+KM-202436,electricity,medium
+KM-202438,other,low
