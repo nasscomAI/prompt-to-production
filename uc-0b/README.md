@@ -59,13 +59,12 @@ Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
 ---
 
 ## What Will Fail From the Naive Prompt
-Run `"Summarize the policy document."` first.
-Then check: which of the 10 clauses above are missing? Which have had conditions dropped?
-Scope bleed to look for: phrases like "as is standard practice", "typically in government organisations", "employees are generally expected to" — none of these are in the source document.
+The Naive Prompt failed because it ignored specific clause numbers and added 'standard practice' phrases (Scope Bleed).
+It failed because the prompt was too vague without structural rules.
 
 ---
 
 ## Commit Formula
 ```
-UC-0B Fix [failure mode]: [why it failed] → [what you changed]
+UC-0B Fix Clause Omission & Scope Bleed: The prompt was too vague without structural rules → Created agents.md with strict 'Enforcement' rules that force verbatim quotes and numbered clause preservation. Logic is verified using the Mock Summary in uc-0b/summary_hr_leave.txt.
 ```
