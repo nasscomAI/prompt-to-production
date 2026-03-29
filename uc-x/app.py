@@ -23,7 +23,6 @@ def retrieve_documents():
 
     return documents
 
-
 def answer_question(documents, question):
     question_lower = question.lower()
     doc_lower = documents.lower()
