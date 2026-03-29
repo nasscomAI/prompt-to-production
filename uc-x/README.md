@@ -26,7 +26,7 @@ Define your **refusal template** — the exact wording the system must use when 
 ```
 This question is not covered in the available policy documents
 (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
-Please contact [relevant team] for guidance.
+Please contact [AskHR@abcd.com] for guidance.
 ```
 
 This template goes verbatim into your RICE Enforcement and agents.md.
