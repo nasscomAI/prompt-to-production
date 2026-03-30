@@ -4,75 +4,112 @@ Starter file. Build this using the RICE → agents.md → skills.md → CRAFT wo
 """
 import argparse
 import csv
-from typing import Dict, Any
+import re # Import regex for more flexible keyword matching and reason extraction
+from typing import Dict, Any, List
 
-def classify_complaint(row: Dict[str, Any]) -> Dict[str, Any]:
+# Define the Classification Schema directly within the script for clarity
+# In a real application, this might come from a config file or a dedicated module.
+CLASSIFICATION_SCHEMA = {
+    "allowed_categories": [
+        "Pothole", "Flooding", "Streetlight", "Waste", "Noise", 
+        "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other"
+    ],
+    "severity_keywords": [
+        "injury", "child", "school", "hospital", "ambulance", "fire", 
+        "hazard", "fell", "collapse", "risk" # Added 'risk' as it's implied by 'at risk' from sample
+    ],
+    # Keywords for category matching - prioritize more specific matches first
+    "category_keywords": {
+        "Pothole": ["pothole"],
+        "Flooding": ["flooded", "standing in water", "inaccessible"],
+        "Streetlight": ["streetlight", "lights out", "dark at night", "flickering", "sparking"],
+        "Waste": ["garbage bins", "bulk waste", "dead animal", "smell"],
+        "Noise": ["music past midnight", "noise complaint", "loud music"],
+        "Road Damage": ["road surface cracked", "sinking", "manhole cover missing", "road damage"],
+        "Drain Blockage": ["drain blocked", "clogged drain"], # Specific from text
+        # "Heritage Damage": [], # No explicit keywords in sample, would need to be defined
+        # "Heat Hazard": [], # No explicit keywords in sample, would need to be defined
+    }
+}
+
+
+def classify_complaint(row: Dict[str, Any], schema: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Classify a single complaint row.
+    Classify a single complaint row based on the strict schema and enforcement rules.
     Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
     """
-    # --- SIMULATED CLASSIFICATION LOGIC ---
-    # This section is a placeholder. You would replace this with actual calls to your
-    # AI tool or model based on your agents.md and skills.md.
-    
     complaint_id = row.get("complaint_id", "N/A")
-    # This line is crucial: It now correctly pulls text from the 'description' column
-    # as per your sample input CSV.
-    complaint_text = row.get("description", "").lower() 
+    raw_description = row.get("description", "")
+    description_lower = raw_description.lower()
 
-    category = "Unknown"
-    priority = "Low"
-    reason = "Undetermined"
-    flag = "Success"
+    category = "Other" # Default as per enforcement rule
+    priority = "Standard" # Default as per enforcement rule
+    reason = "Description did not clearly match any specific category." # Default reason
+    flag = "" # Default flag
 
-    if not complaint_text:
+    if not raw_description:
         flag = "Null Data - Missing Description Text"
-        category = "General"
-        reason = "Missing Information"
-        priority = "Medium"
-    else:
-        # Based on keywords observed in your provided sample data
-        if "pothole" in complaint_text or "road surface cracked" in complaint_text or "manhole cover missing" in complaint_text:
-            category = "Roads & Infrastructure"
-            priority = "High"
-            reason = "Road Hazard"
-        elif "flooded" in complaint_text or "inaccessible" in complaint_text or "drain blocked" in complaint_text:
-            category = "Drainage & Flooding"
-            priority = "High"
-            reason = "Flooding Issue"
-        elif "streetlight" in complaint_text or "lights out" in complaint_text or "dark at night" in complaint_text:
-            category = "Public Lighting"
-            priority = "Medium"
-            reason = "Lighting Malfunction"
-        elif "garbage bins" in complaint_text or "bulk waste" in complaint_text:
-            category = "Waste Management"
-            priority = "Medium"
-            reason = "Illegal Dumping/Overflow"
-        elif "music past midnight" in complaint_text:
-            category = "Public Nuisance"
-            priority = "Low"
-            reason = "Noise Complaint"
-        elif "dead animal" in complaint_text:
-            category = "Sanitation & Health"
-            priority = "High"
-            reason = "Health Hazard"
-        elif "footpath tiles broken" in complaint_text:
-            category = "Pedestrian Infrastructure"
-            priority = "Medium"
-            reason = "Footpath Hazard"
-        else:
-            category = "General Inquiry"
-            priority = "Low"
-            reason = "General Information"
-            
-    # Example RICE enforcement: If priority is High and it's a "Road Hazard" issue,
-    # maybe add an extra flag or adjust reason. This is just a demonstration.
-    # You would replace this with your actual RICE rules.
-    if category == "Roads & Infrastructure" and priority == "High":
-        reason = "Urgent Road Hazard - Safety Risk"
+        category = "Other"
+        reason = "No description provided for classification."
+        priority = "Low" # If no description, cannot be urgent.
+        return {
+            "complaint_id": complaint_id,
+            "category": category,
+            "priority": priority,
+            "reason": reason,
+            "flag": flag,
+        }
+
+    # --- Enforcement Rule: Priority must be Urgent if severity keywords present ---
+    matched_severity_keywords = []
+    for keyword in schema["severity_keywords"]:
+        if keyword in description_lower:
+            matched_severity_keywords.append(keyword)
+            # Use 'risk' as a more general trigger, but report the exact found words
+            if keyword == "risk" and "at risk" in description_lower:
+                 matched_severity_keywords = ["at risk"] # Refine to matched phrase
+            priority = "Urgent"
+            break # Once urgent, no need to check further
+
+    # --- Enforcement Rule: Category must be exact strings only ---
+    # --- Enforcement Rule: Reason must cite specific words from description ---
+    matched_category_keyword = None
+    for allowed_cat, keywords in schema["category_keywords"].items():
+        for keyword in keywords:
+            if keyword in description_lower:
+                category = allowed_cat
+                matched_category_keyword = keyword
+                
+                # Try to extract the phrase from the original description for the reason
+                # This makes the reason more specific and directly citing
+                match = re.search(r'\b' + re.escape(keyword) + r'\b', raw_description, re.IGNORECASE)
+                if match:
+                    reason = f"Classification based on phrase: '{match.group(0)}'."
+                else: # Fallback if regex fails for some reason
+                    reason = f"Classification based on keyword: '{keyword}'."
+                
+                break # Matched a category, move to next complaint
+        if category != "Other":
+            break # Break outer loop if category found
+
+    # Handle categories without explicit keywords in schema (Heritage Damage, Heat Hazard)
+    # This section would be for more advanced AI logic, but for simulation, we'll keep it simple
+    # For now, if no other category matches, it remains "Other"
+
+    # --- Enforcement Rule: Flag NEEDS_REVIEW or blank ---
+    # Set flag to NEEDS_REVIEW if category is 'Other' and description is not null,
+    # or if priority is Urgent but no specific severity keyword was found (ambiguity)
+    # The ambiguity here is if the *simulated* logic can't confidently classify.
+    if category == "Other" and raw_description:
+        flag = "NEEDS_REVIEW"
+        reason = "Description did not clearly match any defined category, defaulting to 'Other'."
+    
+    # If priority is Urgent, make sure the reason mentions the severity aspect
+    if priority == "Urgent" and matched_severity_keywords and "Classification based on phrase" in reason:
+        reason = f"{reason} Severity detected by: '{', '.join(matched_severity_keywords)}'."
+    elif priority == "Urgent" and matched_severity_keywords:
+        reason = f"Severity detected by: '{', '.join(matched_severity_keywords)}'."
+
 
     return {
         "complaint_id": complaint_id,
@@ -83,11 +120,9 @@ def classify_complaint(row: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def batch_classify(input_path: str, output_path: str):
+def batch_classify(input_path: str, output_path: str, schema: Dict[str, Any]):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
     Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
     processed_rows = []
@@ -101,29 +136,22 @@ def batch_classify(input_path: str, output_path: str):
             for i, row in enumerate(reader):
                 # Initialize with default error state, to be overridden if successful
                 classified_data = {
-                    "complaint_id": row.get("complaint_id", "N/A"), # Ensure complaint_id is always present
+                    "complaint_id": row.get("complaint_id", "N/A"),
                     "category": "Error",
                     "priority": "Error",
                     "reason": "Processing Failed",
-                    "flag": f"Processing Error - Line {i+2}" # Line i+2 because of header (assuming 1-based line numbering for error reporting)
+                    "flag": f"Processing Error - Line {i+2}" 
                 }
                 try:
-                    # Pass the full row to classify_complaint
-                    classified_data = classify_complaint(row)
+                    # Pass the classification schema to classify_complaint
+                    classified_data = classify_complaint(row, schema)
                     
-                    # Additional check for critical fields in batch_classify if needed
-                    # If classify_complaint already flagged it, don't override with a generic 'missing ID' flag
-                    if not row.get("complaint_id") and classified_data["flag"] == "Success":
-                        classified_data["flag"] = "Null Data - Missing Complaint ID"
-                            
                 except Exception as e:
-                    # Catch any unexpected errors during classification of a single row
                     print(f"Error classifying row {i+2} (complaint_id: {row.get('complaint_id', 'N/A')}): {e}")
                     classified_data["flag"] = f"Runtime Error - Line {i+2}"
                     classified_data["reason"] = f"Failed to classify: {e}"
                 
                 # Combine original row data with classified data.
-                # New classified data overwrites existing keys if they share names (e.g., 'flag').
                 output_row = {**row, **classified_data}
                 processed_rows.append(output_row)
     except FileNotFoundError:
@@ -134,7 +162,6 @@ def batch_classify(input_path: str, output_path: str):
         return
 
     # Determine all unique headers for the output file
-    # Ensure standard classification fields are always present and come last for consistency
     classification_headers = ["complaint_id", "category", "priority", "reason", "flag"]
     all_headers = list(original_headers)
     for h in classification_headers:
@@ -156,6 +183,8 @@ if __name__ == "__main__":
     parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
     parser.add_argument("--output", required=True, help="Path to write results CSV")
     args = parser.parse_args()
-    batch_classify(args.input, args.output)
+    
+    # Pass the defined CLASSIFICATION_SCHEMA to the batch_classify function
+    batch_classify(args.input, args.output, CLASSIFICATION_SCHEMA)
     print(f"Done. Results written to {args.output}")
 
