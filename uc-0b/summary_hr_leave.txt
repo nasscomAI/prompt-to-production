@@ -1,0 +1,31 @@
+# Policy Summary
+
+**1.1** - 'This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**1.2** - 'This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts. ═══════════════════════════════════════════════════════════ 2. ANNUAL LEAVE ═══════════════════════════════════════════════════════════' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**2.1** - 'Each permanent employee is entitled to 18 days of paid annual leave per calendar year.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**2.2** - 'Annual leave accrues at 1.5 days per month from the date of joining.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**2.3** - 14-day advance notice required must.
+**2.4** - Written approval required before leave commences. Verbal not valid. (must written). **FLAG: Meaning Loss - Verbal not valid condition.** (FLAG: Meaning Loss - Conditions)
+**2.5** - Unapproved absence = LOP regardless of subsequent approval will.
+**2.6** - Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December. (FLAG: Meaning Loss - Forfeiture condition). (FLAG: Meaning Loss - Conditions)
+**2.7** - Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited. ═══════════════════════════════════════════════════════════ 3. SICK LEAVE ═══════════════════════════════════════════════════════════ (FLAG: Meaning Loss - Usage period condition). (FLAG: Meaning Loss - Conditions)
+**3.1** - 'Each employee is entitled to 12 days of paid sick leave per calendar year.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**3.2** - Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work. (FLAG: Meaning Loss - Certification period). (FLAG: Meaning Loss - Conditions)
+**3.3** - 'Sick leave cannot be carried forward to the following year.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**3.4** - Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration. ═══════════════════════════════════════════════════════════ 4. MATERNITY AND PATERNITY LEAVE ═══════════════════════════════════════════════════════════ (FLAG: Meaning Loss - Holiday cert condition). (FLAG: Meaning Loss - Conditions)
+**4.1** - 'Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**4.2** - 'For a third or subsequent child, maternity leave is 12 weeks paid.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**4.3** - 'Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**4.4** - 'Paternity leave cannot be split across multiple periods. ═══════════════════════════════════════════════════════════ 5. LEAVE WITHOUT PAY (LWP) ═══════════════════════════════════════════════════════════' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**5.1** - 'An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**5.2** - LWP requires Department Head AND HR Director approval.
+**5.3** - LWP exceeding 30 continuous days requires approval from the Municipal Commissioner. (FLAG: Meaning Loss - Municipal Commissioner condition). (FLAG: Meaning Loss - Conditions)
+**5.4** - 'Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits. ═══════════════════════════════════════════════════════════ 6. PUBLIC HOLIDAYS ═══════════════════════════════════════════════════════════' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**6.1** - 'Employees are entitled to all gazetted public holidays as declared by the State Government each year.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**6.2** - 'If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**6.3** - 'Compensatory off cannot be encashed. ═══════════════════════════════════════════════════════════ 7. LEAVE ENCASHMENT ═══════════════════════════════════════════════════════════' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**7.1** - 'Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**7.2** - Leave encashment during service not permitted under any circumstances not permitted under any circumstances.
+**7.3** - 'Sick leave and LWP cannot be encashed under any circumstances. ═══════════════════════════════════════════════════════════ 8. GRIEVANCES ═══════════════════════════════════════════════════════════' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**8.1** - 'Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
+**8.2** - 'Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.' (FLAG: Verbatim Quote - No specific summary logic) (FLAG: Verbatim Quote)
