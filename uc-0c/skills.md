@@ -18,3 +18,4 @@ skills:
       type: list
       format: A formatted per-period table where each row perfectly aligns the numerical outcome with the explicit formula used.
     error_handling: To prevent the wrong aggregation level, it categorically refuses to execute if tasked with aggregating across multiple wards or categories; to prevent formula assumption, it halts and asks for clarification if 'growth_type' is omitted rather than guessing.
+ 

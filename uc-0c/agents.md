@@ -6,3 +6,4 @@ enforcement:
   - "Flag every null row before computing — report null reason from the notes column."
   - "Show formula used in every output row alongside the result."
   - "If '--growth-type' not specified — refuse and ask, never guess."
+ 
