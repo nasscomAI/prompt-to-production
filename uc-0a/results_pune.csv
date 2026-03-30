@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Mentioned: pothole.,
+PM-202402,Pothole,Urgent,"Mentioned: pothole, school.",
+PM-202406,Flooding,Standard,Mentioned: flooded.,
+PM-202408,Other,Standard,"Mentioned: flooded, drain.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Mentioned: dark.,
+PM-202411,Streetlight,Urgent,"Mentioned: streetlight, sparking, hazard.",
+PM-202413,Waste,Standard,Mentioned: garbage.,
+PM-202418,Noise,Standard,"Mentioned: music, weeknights.",
+PM-202419,Road Damage,Standard,"Mentioned: cracked, sinking.",
+PM-202420,Drain Blockage,Urgent,"Mentioned: manhole, injury.",
+PM-202427,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+PM-202428,Waste,Standard,Mentioned: animal.,
+PM-202430,Other,Standard,"Mentioned: lights, dark, heritage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Mentioned: waste, dumped.",
+PM-202446,Road Damage,Urgent,"Mentioned: broken, upturned, fell.",
