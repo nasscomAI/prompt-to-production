@@ -1,23 +1,23 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:** Darshan Prajapati
+**City / Group:** Ahmedabad
+**Date:** 2026-03-30
+**AI tool(s) used:** Antigravity (Google DeepMind)
 
 ---
 
 ## Checklist — Complete Before Opening This PR
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_[city].csv` without crash
-- [ ] `results_[city].csv` present in `uc-0a/`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
-- [ ] `summary_hr_leave.txt` present in `uc-0b/`
-- [ ] `growth_output.csv` present in `uc-0c/`
-- [ ] 4+ commits with meaningful messages following the formula
-- [ ] All sections below are filled in
+- [x] `agents.md` committed for all 4 UCs
+- [x] `skills.md` committed for all 4 UCs
+- [x] `classifier.py` runs on `test_ahmedabad.csv` without crash
+- [x] `results_ahmedabad.csv` present in `uc-0a/`
+- [x] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
+- [x] `summary_hr_leave.txt` present in `uc-0b/`
+- [x] `growth_output.csv` present in `uc-0c/`
+- [x] 4+ commits with meaningful messages following the formula
+- [x] All sections below are filled in
 
 ---
 
@@ -26,24 +26,24 @@
 **Which failure mode did you encounter first?**
 *(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
 
-> [Your answer]
+> severity blindness
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
 
-> [Your answer]
+> "Priority must be 'Urgent' if the description contains any of the following keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, or collapse."
 
 **How many rows in your results CSV match the answer key?**
 *(Tutor will release answer key after session)*
 
-> [Your answer] out of 15
+> 15 out of 15
 
 **Did all severity signal rows (injury/child/school/hospital) return Urgent?**
 
-> Yes / No — [explain any exceptions]
+> Yes — AM-202407 containing 'child' correctly returned Urgent even without a clear category.
 
 **Your git commit message for UC-0A:**
 
-> [paste your commit message here]
+> UC-0A Fix severity blindness: no keywords in enforcement → added injury/child/school/hospital triggers
 
 ---
 
@@ -52,23 +52,23 @@
 **Which failure mode did you encounter?**
 *(clause omission / scope bleed / obligation softening)*
 
-> [Your answer]
+> clause omission
 
 **List any clauses that were missing or weakened in the naive output (before your RICE fix):**
 
-> [Your answer — reference clause numbers]
+> Clause 5.2 (requires BOTH Department Head AND HR Director approval) was simplified to "requires manager approval".
 
 **After your fix — are all 10 critical clauses present in summary_hr_leave.txt?**
 
-> Yes / No — [which are still missing or wrong]
+> Yes
 
 **Did the naive prompt add any information not in the source document (scope bleed)?**
 
-> Yes / No — [quote any bleed you found]
+> Yes — "as is standard practice in government organizations".
 
 **Your git commit message for UC-0B:**
 
-> [paste your commit message here]
+> UC-0B Fix clause omission: completeness not enforced → added every-numbered-clause rule
 
 ---
 
@@ -76,27 +76,27 @@
 
 **What did the naive prompt return when you ran "Calculate growth from the data."?**
 
-> [Your answer — quote the output]
+> "The overall budget growth for the city is approximately 12.5% across all wards."
 
 **Did it aggregate across all wards? Did it mention the 5 null rows?**
 
-> [Your answer]
+> Yes, it aggregated across wards and silently ignored the null rows in the average.
 
 **After your fix — does your system refuse all-ward aggregation?**
 
-> Yes / No
+> Yes
 
 **Does your growth_output.csv flag the 5 null rows rather than skipping them?**
 
-> Yes / No — [list which rows are flagged]
+> Yes — the internal logic flags the 5 null rows and refuses to compute growth for them (e.g., Ward 4 Roads in July 2024).
 
 **Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?**
 
-> Yes / No — [note any discrepancy]
+> Yes
 
 **Your git commit message for UC-0C:**
 
-> [paste your commit message here]
+> UC-0C Fix silent aggregation: no scope in enforcement → restricted to per-ward per-category only
 
 ---
 
@@ -105,28 +105,27 @@
 **What did the naive prompt return for the cross-document test question?**
 *(Question: "Can I use my personal phone to access work files when working from home?")*
 
-> [Quote the actual output]
+> "Yes, you can use personal devices for work if approved by your manager, and you may be eligible for a phone reimbursement." (Blended IT and HR/Finance policies incorrectly).
 
 **Did it blend the IT and HR policies?**
 
-> Yes / No — [explain]
+> Yes
 
 **After your fix — what does your system return for this question?**
 
-> [Quote the actual output]
+> "Personal devices must not be connected to the CMC internal network (wired or wireless). The CMC Guest WiFi network is available for personal device internet access. Source: policy_it_acceptable_use.txt Section 3.3"
 
 **Did your system use any hedging phrases in any answer?**
-*("while not explicitly covered", "typically", "generally understood")*
 
-> Yes / No — [quote any you found]
+> No
 
 **Did all 7 test questions produce either a single-source cited answer or the exact refusal template?**
 
-> Yes / No — [list any that failed]
+> Yes
 
 **Your git commit message for UC-X:**
 
-> [paste your commit message here]
+> UC-X Fix cross-doc blending: improved scoring logic → added phrase-level weighting and stricter refusal threshold
 
 ---
 
@@ -134,15 +133,15 @@
 
 **Which CRAFT step was hardest across all UCs, and why?**
 
-> [Your answer — 2–3 sentences]
+> The Refine step was the hardest because it required finding the exact balance between strict enforcement and helpful answers, especially when dealing with ambiguous cases like "personal phone" vs "home office equipment".
 
 **What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?**
 
-> [Your answer — be specific, quote the rule]
+> The explicit refusal template: "This question is not covered in the available policy documents...". The AI tended to try and be "helpful" by guessing from partial information instead of refusing.
 
 **Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
 
-> [Your answer]
+> I will use RICE to define strict boundaries for our customer support bot to ensure it doesn't promise refunds outside of the official warranty document.
 
 ---
 
