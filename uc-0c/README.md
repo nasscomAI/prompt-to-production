@@ -59,7 +59,7 @@ python app.py \
 
 ---
 
-## Enforcement Rules Your agents.md Must Include
+## Enforcement Rules in `agents.md`
 1. Never aggregate across wards or categories unless explicitly instructed — refuse if asked
 2. Flag every null row before computing — report null reason from the notes column
 3. Show formula used in every output row alongside the result
@@ -67,7 +67,7 @@ python app.py \
 
 ---
 
-## Skills to Define in skills.md
+## Skills Defined in `skills.md`
 - `load_dataset` — reads CSV, validates columns, reports null count and which rows before returning
 - `compute_growth` — takes ward + category + growth_type, returns per-period table with formula shown
 
