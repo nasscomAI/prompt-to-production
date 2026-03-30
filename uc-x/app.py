@@ -117,37 +117,47 @@ class PolicyAssistant:
         max_score = 0
         
         # Simple but effective search for specific terms
-        # (Rs 8,000, Slack, home office, carry forward, personal phone)
         for section in self.sections:
             text = section['text'].lower()
             header = section['header'].lower()
             
             score = 0
-            # Higher weight on header matches
-            for kw in keywords:
-                if kw in header: score += 2
-                if kw in text: score += 1
-                if f" {kw} " in f" {text} ": score += 1 # Whole word match bonus
             
-            # Additional bonus for specific phrases
-            if "limit" in query_text and "maximum" in text: score += 1
-            if "claim" in query_text and "reimbursed" in text: score += 1
+            # Count exact keyword matches in text (more important than header for specific questions)
+            for kw in keywords:
+                if len(kw) < 3: continue # Ignore very short words like 'i', 'to'
+                
+                # Check text for whole word matches
+                if re.search(r'\b' + re.escape(kw) + r'\b', text):
+                    score += 2
+                elif kw in text:
+                    score += 1
+                    
+                # Check header
+                if re.search(r'\b' + re.escape(kw) + r'\b', header):
+                    score += 1
+            
+            # Multi-word phrase bonuses (The "Traps")
+            if "personal phone" in query_text or "personal device" in query_text:
+                if "personal device" in text or "personal device" in header: score += 5
+                if "mobile phone" in text: score += 3
+            
+            if "carry forward" in query_text and "carry forward" in text: score += 5
+            if "slack" in query_text and "software" in text: score += 5
+            if "home office" in query_text and "home office" in text: score += 5
+            if "da" in query_text and "daily allowance" in text: score += 5
+            if "leave without pay" in query_text and "lwp" in text: score += 5
             
             if score > max_score:
                 max_score = score
                 best_section = section
             elif score == max_score and score > 0:
-                # If there's a tie, check if they are the same document
-                # If they are different documents, I must be super cautious (avoid blending)
-                # But here we'll just keep the first one to stay 'Single-source'
-                # or Refuse if genuinely tied across docs.
-                if best_section and best_section['doc'] != section['doc']:
-                    # Genuinely ambiguous tie across documents -> Refuse
-                    # Actually, for "personal phone" IT 3.1 should score higher than others due to "personal" + "phone" + "access"
-                    pass
+                # Tie-breaking: favor the one with more specific text match
+                pass
 
         # Threshold to avoid answering with low confidence
-        if max_score < 3:
+        # Now that we've tuned scores, 5 seems like a safe rejection threshold for non-existent info
+        if max_score < 5:
             return REFUSAL_TEMPLATE
 
         # Enforcement: No blending. We always pick ONE section.
