@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Assigned Pothole: description mentions Large, pothole.",
+PM-202402,Pothole,Urgent,"Assigned Pothole: description mentions Deep, pothole.",
+PM-202406,Flooding,Standard,"Assigned Flooding: description mentions Underpass, flooded.",
+PM-202408,Flooding,Standard,"Assigned Flooding: description mentions stand, flooded..",
+PM-202410,Streetlight,Standard,"Assigned Streetlight: description mentions Three, consecutive.",
+PM-202411,Streetlight,Urgent,"Assigned Streetlight: description mentions Streetlight, flickering.",
+PM-202413,Other,Standard,"Insufficient information to classify: description mentions Overflowing, garbage.",NEEDS_REVIEW
+PM-202418,Noise,Standard,"Assigned Noise: description mentions Wedding, venue.",
+PM-202419,Road Damage,Standard,"Assigned Road Damage: description mentions Road, surface.",
+PM-202420,Pothole,Urgent,"Assigned Pothole: description mentions Manhole, cover.",
+PM-202427,Flooding,Standard,"Assigned Flooding: description mentions Bridge, approach.",
+PM-202428,Other,Standard,"Insufficient information to classify: description mentions Dead, animal.",NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Assigned Streetlight: description mentions Heritage, street,.",
+PM-202433,Waste,Standard,"Assigned Waste: description mentions Bulk, waste.",
+PM-202446,Road Damage,Urgent,"Assigned Road Damage: description mentions Footpath, tiles.",
