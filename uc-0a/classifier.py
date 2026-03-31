@@ -125,5 +125,6 @@ if __name__ == "__main__":
     parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
     parser.add_argument("--output", required=True, help="Path to write results CSV")
     args = parser.parse_args()
+    
     batch_classify(args.input, args.output)
     print(f"Done. Classified results successfully written to {args.output}")
