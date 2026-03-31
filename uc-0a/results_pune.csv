@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions 'pothole', which matches the Pothole category.",
+PM-202402,Pothole,Urgent,"Description mentions 'child' indicating a safety-critical situation, classified as Pothole with Urgent priority.",
+PM-202406,Flooding,Standard,"Description mentions 'flood', which matches the Flooding category.",
+PM-202408,Flooding,Standard,Description contains 'flood' which could match multiple categories; classified as Flooding but flagged for human review.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions 'streetlight', which matches the Streetlight category.",
+PM-202411,Streetlight,Urgent,"Description mentions 'hazard' indicating a safety-critical situation, classified as Streetlight with Urgent priority.",
+PM-202413,Waste,Standard,"Description mentions 'garbage', which matches the Waste category.",
+PM-202418,Noise,Standard,"Description mentions 'music', which matches the Noise category.",
+PM-202419,Road Damage,Standard,"Description mentions 'road surface', which matches the Road Damage category.",
+PM-202420,Drain Blockage,Urgent,"Description mentions 'injury' indicating a safety-critical situation, classified as Drain Blockage with Urgent priority.",
+PM-202427,Flooding,Standard,"Description mentions 'flood', which matches the Flooding category.",
+PM-202428,Other,Standard,Description mentions 'animal' which does not clearly match any standard category; flagged for review.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Description mentions 'heritage', which matches the Heritage Damage category.",
+PM-202433,Waste,Standard,"Description mentions 'waste', which matches the Waste category.",
+PM-202446,Other,Urgent,Description mentions 'fell' which does not clearly match any standard category; flagged for review.,NEEDS_REVIEW
