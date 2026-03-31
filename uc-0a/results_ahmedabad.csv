@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+AM-202402,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+AM-202405,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,The description mentions 'broken' (Irrigation system broken.).,
+AM-202407,Road Damage,Urgent,The description contains the severity keyword 'child' (Child injured last week.).,
+AM-202410,Pothole,Standard,The description mentions 'pothole' (Pothole on main highway causing morning rush lane closure.).,
+AM-202414,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description mentions 'waste' (Night market waste not cleared before morning.).,
+AM-202421,Noise,Standard,The description mentions 'music' (Club music audible at residential buildings at 2am.).,
+AM-202424,Road Damage,Standard,The description mentions 'road surface' (Zoo approach road surface bubbling at 45°C.).,
+AM-202429,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description mentions 'heritage' (Heritage concern.).,
+AM-202435,Heat Hazard,Standard,The description mentions 'heat' (Black metal road dividers storing heat.).,
+AM-202444,Waste,Standard,The description mentions 'waste' (Restaurant waste bins overflowing on Sunday night.).,
+AM-202445,Road Damage,Standard,The description mentions 'broken' (BRT shelter roof glass broken.).,

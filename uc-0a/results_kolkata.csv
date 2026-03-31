@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description mentions 'heritage' (Heritage lamp post knocked over by delivery vehicle.).,
+KM-202402,Road Damage,Standard,The description mentions 'broken' (Historic tram road cobblestones broken up by cable laying work.).,
+KM-202405,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description mentions 'pothole' (Airport access road full of potholes.).,
+KM-202410,Pothole,Standard,The description mentions 'pothole' (Pothole causing tyre blowouts.).,
+KM-202411,Pothole,Standard,The description mentions 'pothole' (Deep pothole filling with rainwater.).,
+KM-202415,Drain Blockage,Standard,The description mentions 'drain' (New residential complex draining directly onto public road.).,
+KM-202418,Waste,Standard,The description mentions 'waste' (Tourist zone waste overflowing.).,
+KM-202421,Road Damage,Urgent,The description contains the severity keyword 'hospital' (Hospital visit.).,
+KM-202422,Road Damage,Standard,The description mentions 'road surface' (Road surface buckled near bridge.).,
+KM-202426,Heritage Damage,Standard,The description mentions 'heritage' (Heritage residential building exterior defaced by billboard installation.).,
+KM-202430,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The description mentions 'heritage' (Street paving removed for utility work — heritage stone not replaced.).,
+KM-202436,Streetlight,Standard,The description mentions 'dark' (Darkness for 3 nights.).,
+KM-202438,Heritage Damage,Standard,The description mentions 'heritage' (Street vendors using amplifiers illegally in heritage precinct.).,

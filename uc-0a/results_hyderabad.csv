@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description contains the severity keyword 'ambulance' (Ambulance diverted.).,
+GH-202402,Flooding,Standard,The description mentions 'flood' (Market area flooded.).,
+GH-202406,Drain Blockage,Standard,The description mentions 'drain' (Main stormwater drain 100% blocked with construction debris.).,
+GH-202407,Drain Blockage,Standard,The description mentions 'drain blocked' (Drain blocked and mosquito breeding.).,
+GH-202410,Pothole,Standard,The description mentions 'pothole' (Potholes causing vehicles to slow to 20kmph on fast road.).,
+GH-202411,Pothole,Urgent,The description contains the severity keyword 'hospital' (Rider hospitalised.).,
+GH-202412,Pothole,Urgent,The description contains the severity keyword 'school' (School bus struggling to navigate 6 potholes in 200m stretch.).,
+GH-202417,Waste,Standard,The description mentions 'garbage' (Heritage zone garbage overflow.).,
+GH-202420,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The description contains the severity keyword 'collapse' (Road collapsed partially.).,NEEDS_REVIEW
+GH-202424,Flooding,Standard,The description mentions 'flood' (Underpass floods in light rain.).,
+GH-202428,Waste,Standard,The description mentions 'waste' (Post-market waste not cleared.).,
+GH-202432,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description mentions 'flood' (Main drain blocked — entire locality at flooding risk this week.).,
+GH-202438,Other,Standard,No specific category or severity keywords were found.,NEEDS_REVIEW
