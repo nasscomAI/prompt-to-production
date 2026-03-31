@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Category set to Other because 'Tarmac surface melting at 44°C. Footwear' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202402,Other,Standard,Category set to Other because 'Metal bus shelter reaching dangerous temperatures.' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category set to Other because 'Dead trees with split branches. Fall' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category set to Heat Hazard from 'heatwave' and priority set to Standard because no severity keyword was found.,
+AM-202407,Other,Urgent,Category set to Other because 'Broken bench and upturned paving. Child' does not match an allowed category and priority set to Urgent from 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category set to Pothole from 'Pothole' and priority set to Standard because no severity keyword was found.,
+AM-202414,Other,Standard,Category set to Other because 'Residential colony unlit after 9pm. Wiring' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Category set to Other because description is ambiguous across 'waste', 'Heritage' and priority set to Standard.",NEEDS_REVIEW
+AM-202421,Other,Standard,Category set to Other because 'Club music audible at residential buildings' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202424,Other,Standard,Category set to Other because 'Zoo approach road surface bubbling at' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202429,Other,Standard,Category set to Other because 'River walk surface temperature unbearable. Installed' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Category set to Heritage Damage from 'Heritage' and priority set to Standard because no severity keyword was found.,
+AM-202435,Heat Hazard,Standard,Category set to Heat Hazard from 'heat' and priority set to Standard because no severity keyword was found.,
+AM-202444,Waste,Standard,Category set to Waste from 'waste' and priority set to Standard because no severity keyword was found.,
+AM-202445,Other,Standard,Category set to Other because 'BRT shelter roof glass broken. Users' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW

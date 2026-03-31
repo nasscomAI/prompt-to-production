@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Category set to Flooding from 'flooded' and priority set to Urgent from 'ambulance'.,
+GH-202402,Other,Standard,"Category set to Other because description is ambiguous across 'flooded', 'Drain' and priority set to Standard.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Category set to Drain Blockage from 'drain' and priority set to Standard because no severity keyword was found.,
+GH-202407,Drain Blockage,Standard,Category set to Drain Blockage from 'Drain' and priority set to Standard because no severity keyword was found.,
+GH-202410,Pothole,Standard,Category set to Pothole from 'Potholes' and priority set to Standard because no severity keyword was found.,
+GH-202411,Pothole,Standard,Category set to Pothole from 'Pothole' and priority set to Standard because no severity keyword was found.,
+GH-202412,Pothole,Urgent,Category set to Pothole from 'potholes' and priority set to Urgent from 'school'.,
+GH-202417,Other,Standard,"Category set to Other because description is ambiguous across 'garbage', 'Heritage' and priority set to Standard.",NEEDS_REVIEW
+GH-202420,Other,Standard,Category set to Other because 'Construction drilling from 5am daily near' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+GH-202422,Other,Standard,Category set to Other because 'Road collapsed partially. Crater 1m deep' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Category set to Flooding from 'floods' and priority set to Standard because no severity keyword was found.,
+GH-202428,Waste,Standard,Category set to Waste from 'waste' and priority set to Standard because no severity keyword was found.,
+GH-202432,Other,Standard,Category set to Other because '24hr supermarket delivery trucks idling with' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Category set to Other because description is ambiguous across 'flooding', 'drain' and priority set to Standard.",NEEDS_REVIEW
+GH-202438,Other,Standard,Category set to Other because 'Colony surrounded by fields that channel' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW

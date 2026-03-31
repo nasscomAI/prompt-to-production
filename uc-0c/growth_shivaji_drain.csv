@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_value,growth_type,formula_used,status,null_reason
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.9,,MOM,MoM = (current - previous) / previous * 100,not_computed_missing_previous_period,
+2024-02,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,-4.58716,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,,,MOM,,null_flagged_with_reason,Data not submitted by ward office
+2024-04,Ward 2 – Shivajinagar,Drainage & Flooding,10,,MOM,MoM = (current - previous) / previous * 100,not_computed_previous_period_null,
+2024-05,Ward 2 – Shivajinagar,Drainage & Flooding,10.2,2,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-06,Ward 2 – Shivajinagar,Drainage & Flooding,12.3,20.5882,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-07,Ward 2 – Shivajinagar,Drainage & Flooding,12.6,2.43902,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-08,Ward 2 – Shivajinagar,Drainage & Flooding,12.8,1.5873,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-09,Ward 2 – Shivajinagar,Drainage & Flooding,12.9,0.78125,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-10,Ward 2 – Shivajinagar,Drainage & Flooding,11.5,-10.8527,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-11,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,-9.56522,MOM,MoM = (current - previous) / previous * 100,computed,
+2024-12,Ward 2 – Shivajinagar,Drainage & Flooding,8.4,-19.2308,MOM,MoM = (current - previous) / previous * 100,computed,

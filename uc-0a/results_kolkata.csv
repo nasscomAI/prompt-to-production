@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Category set to Other because description is ambiguous across 'lamp post', 'Heritage' and priority set to Standard.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Category set to Heritage Damage from 'Historic' and priority set to Standard because no severity keyword was found.,
+KM-202405,Other,Standard,Category set to Other because 'Wedding band playing near Tagore Museum' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Category set to Pothole from 'potholes' and priority set to Standard because no severity keyword was found.,
+KM-202410,Pothole,Standard,Category set to Pothole from 'Pothole' and priority set to Standard because no severity keyword was found.,
+KM-202411,Pothole,Standard,Category set to Pothole from 'pothole' and priority set to Standard because no severity keyword was found.,
+KM-202415,Other,Standard,Category set to Other because 'New residential complex draining directly onto' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Category set to Waste from 'waste' and priority set to Standard because no severity keyword was found.,
+KM-202421,Other,Urgent,Category set to Other because 'Footpath broken and sinking. Elderly pedestrian' does not match an allowed category and priority set to Urgent from 'hospital'.,NEEDS_REVIEW
+KM-202422,Other,Standard,Category set to Other because 'Road surface buckled near bridge. Structural' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Category set to Heritage Damage from 'Heritage' and priority set to Standard because no severity keyword was found.,
+KM-202430,Other,Standard,Category set to Other because 'Road subsided near gas pipeline. Gas' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Category set to Heritage Damage from 'heritage' and priority set to Standard because no severity keyword was found.,
+KM-202436,Other,Standard,Category set to Other because 'Entire colony substation tripped. Darkness for' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Category set to Heritage Damage from 'heritage' and priority set to Standard because no severity keyword was found.,
