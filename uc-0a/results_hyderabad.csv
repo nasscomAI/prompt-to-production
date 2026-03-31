@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on 'flood', 'flooded', 'underpass flooded'; priority is Urgent because of 'ambulance'.",
+GH-202402,Flooding,Standard,"Classified as Flooding based on 'flood', 'flooded'; priority is Standard because of 'days_open=20'.",
+GH-202406,Other,Standard,Classified as Other based on 'other'; no urgent severity keywords were found so priority is Standard and the row should be reviewed for overlap.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain blocked'; no urgent severity keywords were found so priority is Standard.,
+GH-202410,Pothole,Standard,"Classified as Pothole based on 'pothole', 'potholes'; priority is Standard because of 'days_open=18'.",
+GH-202411,Pothole,Urgent,Classified as Pothole based on 'pothole'; priority is Urgent because of 'hospital'.,
+GH-202412,Pothole,Urgent,"Classified as Pothole based on 'pothole', 'potholes'; priority is Urgent because of 'school'.",
+GH-202417,Waste,Standard,"Classified as Waste based on 'garbage', 'waste'; priority is Standard because of 'days_open=11' and the row should be reviewed for overlap.",NEEDS_REVIEW
+GH-202420,Other,Standard,Classified as Other based on 'other'; priority is Standard because of 'days_open=12' and the row should be reviewed for overlap.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classified as Other based on 'other'; priority is Urgent because of 'collapse' and the row should be reviewed for overlap.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on 'flood'; no urgent severity keywords were found so priority is Standard.,
+GH-202428,Waste,Standard,Classified as Waste based on 'waste'; priority is Standard because of 'days_open=8'.,
+GH-202432,Other,Standard,Classified as Other based on 'other'; no urgent severity keywords were found so priority is Standard and the row should be reviewed for overlap.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain blocked'; priority is Standard because of 'days_open=8'.,
+GH-202438,Other,Standard,Classified as Other based on 'other'; priority is Standard because of 'days_open=11' and the row should be reviewed for overlap.,NEEDS_REVIEW

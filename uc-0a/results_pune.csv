@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on 'pothole'; no urgent severity keywords were found so priority is Standard.,
+PM-202402,Pothole,Urgent,"Classified as Pothole based on 'pothole'; priority is Urgent because of 'child', 'school'.",
+PM-202406,Flooding,Standard,"Classified as Flooding based on 'flood', 'flooded', 'underpass flooded'; priority is Standard because of 'days_open=8'.",
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain blocked'; priority is Standard because of 'days_open=12'.,
+PM-202410,Streetlight,Standard,"Classified as Streetlight based on 'streetlight', 'streetlights', 'lights out'; priority is Standard because of 'days_open=18'.",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight based on 'streetlight', 'flickering', 'sparking'; priority is Urgent because of 'hazard'.",
+PM-202413,Waste,Standard,"Classified as Waste based on 'garbage', 'bins', 'smell'; priority is Standard because of 'days_open=13'.",
+PM-202418,Noise,Low,"Classified as Noise based on 'music past midnight', 'wedding venue', 'past midnight'; priority is Low because of 'days_open=5'.",
+PM-202419,Road Damage,Standard,"Classified as Road Damage based on 'road surface cracked', 'sinking', 'cracked'; no urgent severity keywords were found so priority is Standard.",
+PM-202420,Road Damage,Urgent,Classified as Road Damage based on 'manhole cover missing'; priority is Urgent because of 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding based on 'flood'; priority is Standard because of 'days_open=12'.,
+PM-202428,Waste,Low,Classified as Waste based on 'dead animal'; priority is Low because of 'days_open=1'.,
+PM-202430,Streetlight,Standard,Classified as Streetlight based on 'lights out'; priority is Standard because of 'days_open=19' and the row should be reviewed for overlap.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as Waste based on 'waste', 'dumped'; priority is Standard because of 'days_open=20'.",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage based on 'footpath', 'tiles broken'; priority is Urgent because of 'fell'.",
