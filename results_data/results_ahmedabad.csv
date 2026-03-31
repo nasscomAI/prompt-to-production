@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description mentions the word 'tarmac'.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description mentions the word 'metal'.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description mentions the word 'dead'.,NEEDS_REVIEW
+AM-202406,Other,Standard,The description mentions the word 'irrigation'.,NEEDS_REVIEW
+AM-202407,Other,Urgent,The description mentions the word 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description mentions the word 'pothole'.,
+AM-202414,Other,Standard,The description mentions the word 'residential'.,NEEDS_REVIEW
+AM-202417,Other,Standard,The description mentions the word 'night'.,NEEDS_REVIEW
+AM-202421,Other,Standard,The description mentions the word 'club'.,NEEDS_REVIEW
+AM-202424,Other,Standard,The description mentions the word 'zoo'.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description mentions the word 'river'.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description mentions the word 'old'.,
+AM-202435,Other,Standard,The description mentions the word 'black'.,NEEDS_REVIEW
+AM-202444,Waste,Standard,The description mentions the word 'restaurant'.,
+AM-202445,Other,Standard,The description mentions the word 'brt'.,NEEDS_REVIEW
