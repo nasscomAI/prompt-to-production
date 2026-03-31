@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0A Complaint Classifier
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Analyzes one raw complaint and maps it to the Municipal Classification Schema.
+    input: Dictionary with 'complaint_id' and 'description'.
+    output: Dictionary with 'complaint_id', 'category', 'priority', 'reason', and 'flag'.
+    error_handling: Map unrecognized complaints to 'Other' with a 'NEEDS_REVIEW' flag.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Processes a collection of complaints from a CSV file and writes to an output CSV.
+    input: Paths for input CSV and output results CSV.
+    output: A completed CSV following the fixed schema columns.
+    error_handling: Log errors for missing input rows or null values without stopping the process.

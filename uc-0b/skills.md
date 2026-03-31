@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Extracts the raw content of a policy document and splits it into numbered sections.
+    input: File path (string) to the .txt policy source.
+    output: A list of dict containing 'section_id' (string) and 'content' (string).
+    error_handling: Raise a FileNotFoundError if the path is invalid or empty.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Compresses policy sections into concise summaries while retaining all binding clauses.
+    input: List of sections (dicts) and a set of enforcement rules (strings).
+    output: A markdown-formatted summary including all 10 mandated ground truth clauses.
+    error_handling: If any of the 10 critical clauses are missing or lose meaning, quote them verbatim.
