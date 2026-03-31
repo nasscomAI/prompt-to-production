@@ -124,13 +124,13 @@ Example: `[Pune] Arshdeep Singh — Vibe Coding Submission`
 
 ## Minimum Pass Requirements
 
-- [ ] `agents.md` + `skills.md` committed for all 4 UCs
+- [x] `agents.md` + `skills.md` committed for all 4 UCs
 - [x] `classifier.py` runs on `test_[city].csv`, produces `results_[city].csv`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — each runs without crash
+- [x] `app.py` for UC-0B, UC-0C, UC-X — each runs without crash
 - [x] `growth_output.csv` present (UC-0C output)
 - [x] `summary_hr_leave.txt` present (UC-0B output)
-- [ ] 4+ commits with meaningful messages, one per UC
-- [ ] PR template fully filled — every section complete
+- [x] 4+ commits with meaningful messages, one per UC
+- [x] PR template fully filled — every section complete
 
 ---
 
