@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The classification is based on explicitly citing the word 'flooded' from the description.,
+GH-202402,Flooding,Standard,"The complaint is ambiguous, citing conflicting words like 'flooded' and 'drain'.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The classification is based on explicitly citing the word 'drain' from the description.,
+GH-202407,Drain Blockage,Standard,The classification is based on explicitly citing the word 'drain' from the description.,
+GH-202410,Pothole,Standard,The classification is based on explicitly citing the word 'potholes' from the description.,
+GH-202411,Pothole,Standard,The classification is based on explicitly citing the word 'pothole' from the description.,
+GH-202412,Pothole,Urgent,The classification is based on explicitly citing the word 'potholes' from the description.,
+GH-202417,Heritage Damage,Standard,"The complaint is ambiguous, citing conflicting words like 'waste' and 'garbage'.",NEEDS_REVIEW
+GH-202420,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+GH-202422,Pothole,Standard,The classification is based on explicitly citing the word 'crater' from the description.,
+GH-202424,Streetlight,Standard,The classification is based on explicitly citing the word 'light' from the description.,
+GH-202428,Waste,Standard,The classification is based on explicitly citing the word 'waste' from the description.,
+GH-202432,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"The complaint is ambiguous, citing conflicting words like 'flooding' and 'drain'.",NEEDS_REVIEW
+GH-202438,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
