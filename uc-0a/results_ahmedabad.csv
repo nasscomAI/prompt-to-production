@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific match found,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Matched heat hazard keywords,
+AM-202405,Other,Standard,No specific match found,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Matched heat hazard keywords,
+AM-202407,Other,Urgent,No specific match found | Urgent severity keywords found: child,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Matched pothole keywords,
+AM-202414,Other,Standard,No specific match found,NEEDS_REVIEW
+AM-202417,Waste,Standard,Matched waste keywords,
+AM-202421,Noise,Standard,Matched noise keywords,
+AM-202424,Road Damage,Standard,Matched road damage keywords,
+AM-202429,Heat Hazard,Standard,Matched heat hazard keywords,
+AM-202431,Road Damage,Standard,Matched road damage keywords,
+AM-202435,Road Damage,Standard,Matched road damage keywords,
+AM-202444,Flooding,Standard,Matched flooding keywords,
+AM-202445,Other,Standard,No specific match found,NEEDS_REVIEW
