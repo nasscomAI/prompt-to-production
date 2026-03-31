@@ -1,0 +1,13 @@
+Ward,Category,Period,Actual Spend (Lakhs),Growth,Formula
+Ward 1 – Kasba,Waste Management,2024-01,5.3,n/a,"First period in series, no previous data available."
+Ward 1 – Kasba,Waste Management,2024-02,6.4,+20.8%,((6.4 - 5.3) / 5.3) * 100
+Ward 1 – Kasba,Waste Management,2024-03,6.5,+1.6%,((6.5 - 6.4) / 6.4) * 100
+Ward 1 – Kasba,Waste Management,2024-04,5.7,-12.3%,((5.7 - 6.5) / 6.5) * 100
+Ward 1 – Kasba,Waste Management,2024-05,6.1,+7.0%,((6.1 - 5.7) / 5.7) * 100
+Ward 1 – Kasba,Waste Management,2024-06,5.7,-6.6%,((5.7 - 6.1) / 6.1) * 100
+Ward 1 – Kasba,Waste Management,2024-07,7.6,+33.3%,((7.6 - 5.7) / 5.7) * 100
+Ward 1 – Kasba,Waste Management,2024-08,8.3,+9.2%,((8.3 - 7.6) / 7.6) * 100
+Ward 1 – Kasba,Waste Management,2024-09,8.9,+7.2%,((8.9 - 8.3) / 8.3) * 100
+Ward 1 – Kasba,Waste Management,2024-10,6.8,-23.6%,((6.8 - 8.9) / 8.9) * 100
+Ward 1 – Kasba,Waste Management,2024-11,NULL,FLAGGED,NULL value in source. Reason: Contractor change — billing delayed
+Ward 1 – Kasba,Waste Management,2024-12,5.1,FLAGGED,"Previous period was NULL, cannot compute growth."
