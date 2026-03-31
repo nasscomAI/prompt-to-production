@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,The description mentions 'pothole' and contains severe keywords like 'school'.,
+PM-202406,Flooding,Standard,The description mentions 'flood'.,
+PM-202408,Other,Standard,The description mentions 'flood'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,The description mentions 'streetlight' and contains severe keywords like 'hazard'.,
+PM-202413,Waste,Standard,The description mentions 'garbage'.,
+PM-202418,Noise,Standard,The description mentions 'music'.,
+PM-202419,Road Damage,Standard,The description mentions 'road surface'.,
+PM-202420,Drain Blockage,Urgent,The description mentions 'manhole' and contains severe keywords like 'injury'.,
+PM-202427,Flooding,Standard,The description mentions 'flood'.,
+PM-202428,Waste,Standard,The description mentions 'dead animal'.,
+PM-202430,Streetlight,Standard,The description mentions 'lights out'.,
+PM-202433,Waste,Standard,The description mentions 'waste'.,
+PM-202446,Road Damage,Urgent,The description mentions 'footpath tiles broken' and contains severe keywords like 'fell'.,
