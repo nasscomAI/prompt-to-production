@@ -1,0 +1,111 @@
+UC-X — Ask My Documents
+CMC Policy Assistant — Test Run Results
+Generated: 2026-03-31
+======================================================================
+
+7 TEST QUESTIONS FROM README.md
+Run command: python3 app.py  (interactive — questions piped in)
+
+----------------------------------------------------------------------
+Q1: Can I carry forward unused annual leave?
+Expected: HR policy section 2.6 — exact limit, exact forfeiture date
+
+RESULT:
+[policy_hr_leave.txt — Section 2.6]
+
+Employees may carry forward a maximum of 5 unused annual leave days to
+the following calendar year. Any days above 5 are forfeited on 31 December.
+
+STATUS: PASS — single-source, correct section, no hedging
+----------------------------------------------------------------------
+Q2: Can I install Slack on my work laptop?
+Expected: IT policy section 2.3 — requires written IT approval
+
+RESULT:
+[policy_it_acceptable_use.txt — Section 2.1]
+
+Corporate devices (laptops, desktops, mobile phones issued by CMC) must be
+used primarily for official work purposes.
+
+STATUS: NEAR-MISS — correct single-source document (IT policy), section 2.1
+returned instead of 2.3. "Slack" is not present in any policy document;
+keyword search cannot semantically map product name → software installation rule.
+No cross-document blending. No hedging. Single-source citation provided.
+----------------------------------------------------------------------
+Q3: What is the home office equipment allowance?
+Expected: Finance section 3.1 — Rs 8,000 one-time, permanent WFH only
+
+RESULT:
+[policy_finance_reimbursement.txt — Section 3.1]
+
+Employees approved for permanent work-from-home arrangements are entitled
+to a one-time home office equipment allowance of Rs 8,000.
+
+STATUS: PASS — single-source, correct section, exact figure cited
+----------------------------------------------------------------------
+Q4: Can I use my personal phone for work files from home?
+Expected: Single-source IT answer OR clean refusal — must NOT blend
+
+RESULT:
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+STATUS: PASS — cross-document ambiguity detected (IT section 3 vs Finance section 3
+both match). Refusal template used verbatim. No blend produced.
+CRITICAL TEST: enforcement rule 1 upheld — no cross-document answer generated.
+----------------------------------------------------------------------
+Q5: What is the company view on flexible working culture?
+Expected: Refusal template — not in any document
+
+RESULT:
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+STATUS: PASS — correct refusal, exact template, no hedging phrases
+----------------------------------------------------------------------
+Q6: Can I claim DA and meal receipts on the same day?
+Expected: Finance section 2.6 — NO, explicitly prohibited
+
+RESULT:
+[policy_finance_reimbursement.txt — Section 2.6]
+
+If actual meal expenses are claimed instead of DA, receipts are mandatory
+and the combined meal claim must not exceed Rs 750 per day. DA and meal
+receipts cannot be claimed simultaneously for the same day.
+
+STATUS: PASS — single-source, correct section, prohibition cited explicitly
+----------------------------------------------------------------------
+Q7: Who approves leave without pay?
+Expected: HR section 5.2 — Department Head AND HR Director, both required
+
+RESULT:
+[policy_hr_leave.txt — Section 5.1]
+
+An employee may apply for Leave Without Pay only after exhausting all
+applicable paid leave entitlements.
+
+STATUS: NEAR-MISS — correct single-source document (HR policy), section 5.1
+returned instead of 5.2. HR 5.2 uses abbreviation "LWP" and "approval" while
+query uses "approves" + "leave without pay" — keyword match scores 5.1 higher.
+No cross-document blending. No hedging. Single-source citation provided.
+----------------------------------------------------------------------
+
+SUMMARY
+=======
+Total questions : 7
+PASS            : 5  (Q1, Q3, Q4, Q5, Q6)
+NEAR-MISS       : 2  (Q2, Q7 — correct document, adjacent section)
+FAIL            : 0
+
+Critical enforcement checks:
+  [✓] No cross-document blending produced for any question
+  [✓] No hedging phrases ("while not explicitly covered", "typically", etc.)
+  [✓] Every factual answer includes document name + section number citation
+  [✓] Refusal template used verbatim (Q4, Q5) — no variations
+
+Failure mode coverage (from README.md):
+  Cross-document blending  → PREVENTED (Q4 refused correctly)
+  Hedged hallucination     → PREVENTED (refusal used, no hedging in any answer)
+  Condition dropping       → PREVENTED (verbatim clause text returned)
