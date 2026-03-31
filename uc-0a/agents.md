@@ -3,16 +3,19 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  [Complaint Classifier operating on citizen complaint CSV files to systematically categorize issues and assign priority levels.]
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  [Output verifiable classifications for each complaint row, containing only the exact category, priority, one-sentence reason, and flag fields according to the strict classification schema]
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  [Uses the complaint description from the provided input CSV files where original category and priority flags have been stripped.]
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be an exact string match to one of the following with no variations or hallucinated sub-categories: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "Priority must be exactly one of: Urgent, Standard, Low."
+  - "Priority must be classified as Urgent if any of the following severity keywords are present: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Reason must be exactly one sentence.
+  Reason must specifically cite exact words from the complaint description.
+Flag must be exactly the string NEEDS_REVIEW or left blank.
+Flag must be set to NEEDS_REVIEW when the classification category is genuinely ambiguous, avoiding false confidence."
