@@ -6,3 +6,4 @@ enforcement:
   - Multi-condition obligations must preserve ALL conditions — never drop one silently
   - Never add information not present in the source document
   - If a clause cannot be summarised without meaning loss — quote it verbatim and flag it
+  - "If the input document is missing clauses or malformed, refuse to generate summary and return an explicit error"
