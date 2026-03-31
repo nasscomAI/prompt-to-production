@@ -49,47 +49,38 @@ class PolicyExpert:
         Enforces RICE rules.
         """
         q_lower = question.lower()
+        # Remove common stop words for better keyword matching
+        stop_words = {'the', 'is', 'at', 'which', 'on', 'can', 'i', 'to', 'for', 'my', 'what', 'when'}
+        q_keywords = [w for w in re.findall(r'\w+', q_lower) if w not in stop_words]
+        
         potential_answers = []
 
-        # Simple keyword matching across indexed sections
-        # In a real RAG system, we'd use embeddings, but here we enforce strict single-source
         for doc_name, sections in self.documents.items():
             for sec_num, content in sections.items():
-                # Check if keywords from question are in content
-                # For the demo, we look for key semantic matches
-                words = q_lower.split()
-                matches = sum(1 for word in words if word in content.lower())
+                content_lower = content.lower()
+                # Count exact keyword matches
+                matches = sum(1 for kw in q_keywords if kw in content_lower)
                 
-                # If significant relevance found
-                if matches > 1:
+                # We need a significant portion of the semantic keywords to match
+                # to consider it "covered".
+                if len(q_keywords) > 0 and (matches / len(q_keywords)) >= 0.4:
                     potential_answers.append({
                         "doc": doc_name,
                         "sec": sec_num,
                         "text": content,
-                        "relevance": matches
+                        "confidence": matches / len(q_keywords)
                     })
 
         if not potential_answers:
             return REFUSAL_TEMPLATE
 
         # Rule 1: Never combine claims from two different documents.
-        # Rule 2: Never use hedging phrases.
-        # Rule 4: Cite source.
-        
         # Select best single source
-        best = max(potential_answers, key=lambda x: x["relevance"])
+        best = max(potential_answers, key=lambda x: x["confidence"])
         
-        # Detect if multiple documents offer conflicting/different perspectives to avoid blending
-        docs_involved = set(a["doc"] for a in potential_answers if a["relevance"] > 2)
-        if len(docs_involved) > 1:
-            # Critical Test: Personal device question matches both IT and HR keywords
-            # Rules mandate either single IT source or Refusal if ambiguous.
-            # We prioritize IT for device questions as per README advice.
-            it_answers = [a for a in potential_answers if "it_acceptable_use" in a["doc"]]
-            if it_answers:
-                best = max(it_answers, key=lambda x: x["relevance"])
-            else:
-                return REFUSAL_TEMPLATE
+        # If confidence is low, refuse
+        if best["confidence"] < 0.5:
+            return REFUSAL_TEMPLATE
 
         # Format answer strictly with citation
         return f"{best['text']}\n\n[Source: {best['doc']} Section {best['sec']}]"
