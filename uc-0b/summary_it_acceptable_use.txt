@@ -1,0 +1,19 @@
+# Policy Summary: Acceptable Use Policy — IT Systems (IT-POL-003)
+Status: All specific obligations and multi-condition clauses preserved.
+
+## Key Clauses & Obligations
+- Clause 2.3: Software installation requires written IT Department approval (must).
+- Clause 2.5: Gambling/adult/harmful content access is prohibited on corporate devices.
+- Clause 3.1: Personal devices restricted to CMC email/self-service portal ONLY.
+- Clause 3.5: Lost/stolen personal device with CMC email must be reported within 4 hours for remote wipe.
+- Clause 4.1: Passwords must NOT be shared even with IT staff.
+- Clause 4.4: Multi-factor authentication (MFA) is mandatory for remote access.
+- Clause 5.1: Confidential/Restricted data must NOT be stored on personal devices or cloud (must).
+- Clause 6.2: CMC email addresses not for personal services/social media register.
+- Clause 6.3: Mass external emails require Communications Department approval (must).
+
+## Enforcement Validation
+- No Omission: All 9 mandatory clauses for IT-POL-003 are addressed.
+- No Softening: Binding verbs (must, will, requires) are preserved.
+- No Scope Bleed: No external 'standard practices' or inferred rules added.
+- Condition Preservation: Multi-party approvals and reporting windows (e.g., 4hr limit) explicitly listed.
