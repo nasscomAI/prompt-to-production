@@ -1,6 +1,6 @@
 import argparse
 
-
+# fix commit message
 def retrieve_policy(file_path):
     clauses = {}
     try:
