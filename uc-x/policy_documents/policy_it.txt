@@ -1,0 +1,7 @@
+Section 2.3: Software Installation
+Employees are not allowed to install unauthorized software.
+Applications such as Slack require written approval from the IT department.
+ 
+Section 3.1: Personal Device Usage
+Personal devices may only be used to access company email and the employee self-service portal.
+No other work-related access is permitted.
