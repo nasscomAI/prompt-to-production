@@ -1,16 +1,16 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: load_dataset
+  description: Loads and validates the dataset, identifying null values and affected rows.
+  input: Path to CSV file.
+  output: List of rows with validation summary (including null rows).
+  error_handling:
+  If file is missing or malformed, return empty dataset and error message.
+
+- name: compute_growth
+  description: Computes growth for a given ward and category with explicit formula.
+  input: Dataset, ward name, category name, growth type (MoM).
+  output: Table of period-wise growth values with formula included.
+  error_handling:
+  If null values exist, flag them and skip computation for those rows.
+  If growth-type is missing, refuse computation.
