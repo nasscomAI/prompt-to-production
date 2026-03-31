@@ -1,16 +1,20 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+Replacing 16 lines with 12 lines in [](file:///c%3A/Users/TELUGU%20SUMANTH/OneDrive/Documents/GitHub/prompt-to-production/uc-x/skills.md)
 
+
+```
+
+```
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all 3 policy files and indexes them by document name and section number.
+    input: List of file paths (strings) to the policy documents.
+    output: Dictionary indexed by document name and section number containing the content.
+    error_handling: If any file is not found or cannot be read, raises an error indicating the missing file.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches indexed documents and returns a single-source answer with citation or the refusal template.
+    input: String containing the user's question.
+    output: String containing the answer with document name and section number citation, or the exact refusal template.
+    error_handling: If the question is ambiguous, involves cross-document blending, hedged hallucination, or condition dropping, returns the refusal template; if input is invalid, raises an error.
+
+Made changes.
