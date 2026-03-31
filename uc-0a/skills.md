@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0A Agent Capabilities
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## classify_complaint
+**Description:** Processes a single citizen complaint description and returns a structured classification.
+**Input:** One complaint row description.
+**Output:** Exact `category`, `priority`, `reason` (one sentence citing specific words), and a review `flag` (NEEDS_REVIEW or blank).
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## batch_classify
+**Description:** Orchestrates the processing of multiple complaints by reading from and writing to CSV files.
+**Process:** 
+1. Reads input CSV file.
+2. Applies `classify_complaint` for each row to obtain structured data.
+3. Writes the resulting classified rows to the output CSV file.
