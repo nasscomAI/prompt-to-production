@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Normal,No matching keywords found.,VALID
+KM-202402,Other,Normal,No matching keywords found.,VALID
+KM-202405,Other,Normal,No matching keywords found.,VALID
+KM-202409,Pothole,Normal,Description contains matching keyword: 'pothole',VALID
+KM-202410,Pothole,Normal,Description contains matching keyword: 'pothole',VALID
+KM-202411,Pothole,Urgent,Description contains matching keyword: 'pothole',VALID
+KM-202415,Sewage,Normal,Description contains matching keyword: 'drain',VALID
+KM-202418,Garbage,Normal,Description contains matching keyword: 'waste',VALID
+KM-202421,Road,Urgent,Description contains matching keyword: 'sink',VALID
+KM-202422,Road,Normal,Description contains matching keyword: 'road surface',VALID
+KM-202426,Other,Normal,No matching keywords found.,VALID
+KM-202430,Garbage,Normal,Description contains matching keyword: 'smell',VALID
+KM-202434,Other,Normal,No matching keywords found.,VALID
+KM-202436,Streetlight,Normal,Description contains matching keyword: 'dark',VALID
+KM-202438,Other,Normal,No matching keywords found.,VALID
