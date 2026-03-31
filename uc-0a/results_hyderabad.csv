@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classification based on presence of the word 'flood' indicating a flooding issue.,
+GH-202402,Other,Standard,"Ambiguous description matched multiple categories: Flooding, Drain Blockage.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classification based on presence of the word 'drain' indicating a drain blockage issue.,
+GH-202407,Drain Blockage,Standard,Classification based on presence of the word 'drain' indicating a drain blockage issue.,
+GH-202410,Pothole,Standard,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+GH-202411,Pothole,Urgent,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+GH-202412,Pothole,Urgent,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+GH-202417,Other,Standard,"Ambiguous description matched multiple categories: Waste, Heritage Damage.",NEEDS_REVIEW
+GH-202420,Noise,Standard,Classification based on presence of the word 'noise' indicating a noise issue.,
+GH-202422,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classification based on presence of the word 'flood' indicating a flooding issue.,
+GH-202428,Waste,Standard,Classification based on presence of the word 'waste' indicating a waste issue.,
+GH-202432,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+GH-202448,Other,Standard,"Ambiguous description matched multiple categories: Flooding, Drain Blockage.",NEEDS_REVIEW
+GH-202438,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW

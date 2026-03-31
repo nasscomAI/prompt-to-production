@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Ambiguous description matched multiple categories: Streetlight, Heritage Damage.",NEEDS_REVIEW
+KM-202402,Other,Standard,"Ambiguous description matched multiple categories: Road Damage, Heritage Damage.",NEEDS_REVIEW
+KM-202405,Heritage Damage,Standard,Classification based on presence of the word 'heritage' indicating a heritage damage issue.,
+KM-202409,Pothole,Standard,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+KM-202410,Pothole,Standard,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+KM-202411,Pothole,Standard,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+KM-202415,Drain Blockage,Standard,Classification based on presence of the word 'drain' indicating a drain blockage issue.,
+KM-202418,Waste,Standard,Classification based on presence of the word 'waste' indicating a waste issue.,
+KM-202421,Other,Urgent,"Ambiguous description matched multiple categories: Road Damage, Hospital.",NEEDS_REVIEW
+KM-202422,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classification based on presence of the word 'heritage' indicating a heritage damage issue.,
+KM-202430,Other,Urgent,"Ambiguous description matched multiple categories: Road Damage, Hazard.",NEEDS_REVIEW
+KM-202434,Other,Standard,"Ambiguous description matched multiple categories: Road Damage, Heritage Damage.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classification based on presence of the word 'darkness' indicating a streetlight issue.,
+KM-202438,Other,Standard,"Ambiguous description matched multiple categories: Noise, Heritage Damage.",NEEDS_REVIEW
