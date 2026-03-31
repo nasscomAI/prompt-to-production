@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Urgent,The description mentions 'surface melting at 44°C' and 'Park users unsafe'.,
+AM-202402,Heat Hazard,Standard,"The description mentions 'dangerous temperatures', indicating a heat hazard.",
+AM-202405,Other,Urgent,"Contains ""Fall risk to walkers"" indicating potential injury hazard.",
+AM-202406,Heat Hazard,Standard,The phrase 'heatwave conditions' implies a heat hazard issue.,
+AM-202407,Other,Urgent,The description contains 'Child injured last week' which indicates urgency.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description mentions 'Pothole on main highway' causing lane closure.,
+AM-202414,Streetlight,Standard,The phrase 'Residential colony unlit after 9pm' indicates a streetlight issue.,
+AM-202417,Waste,Standard,The description mentions 'waste not cleared' indicating a waste issue.,NEEDS_REVIEW
+AM-202421,Noise,Standard,"The description includes 'music audible at residential buildings at 2am', indicating a noise issue.",
+AM-202424,Heat Hazard,Standard,The phrase 'surface bubbling at 45°C' suggests the issue is related to heat.,
+AM-202429,Heat Hazard,Standard,The description mentions 'surface temperature unbearable' and 'temperature reads 52°C'.,
+AM-202431,Heritage Damage,Standard,The description mentions 'ancient step well' and 'Heritage concern'.,
+AM-202435,Heat Hazard,Urgent,mention of 'burns' being reported indicates potential for injury,
+AM-202444,Waste,Standard,The description mentions 'waste bins overflowing' indicating a waste issue.,
+AM-202445,Other,Standard,"The description mentions 'BRT shelter roof glass broken', which does not fit predefined categories.",NEEDS_REVIEW

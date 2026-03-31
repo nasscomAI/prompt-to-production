@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description mentions 'Large pothole 60cm wide causing tyre damage'.,
+PM-202402,Pothole,Urgent,The description contains 'Deep pothole' and 'School children at risk.',
+PM-202406,Flooding,Standard,The description mentions 'flooded knee-deep' and 'commuters stranded.',
+PM-202408,Flooding,Standard,The description states 'Bus stand flooded' and 'Drain blocked'.,
+PM-202410,Streetlight,Standard,Description mentions 'streetlights out' and 'very dark at night',
+PM-202411,Streetlight,Urgent,The description contains 'Streetlight flickering and sparking' and 'Electrical hazard'.,
+PM-202413,Waste,Standard,The description mentions 'Overflowing garbage bins near vegetable market' and 'smell affecting shoppers'.,
+PM-202418,Noise,Standard,"The description mentions 'music past midnight,' indicating a noise issue.",
+PM-202419,Road Damage,Standard,The description mentions 'Road surface cracked and sinking.',
+PM-202420,Other,Urgent,The description mentions 'Risk of serious injury to cyclists'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description mentions 'floods in 30mins of rain' and 'Bridge becomes inaccessible'.,
+PM-202428,Waste,Standard,The description mentions a 'Dead animal not removed' which relates to waste management.,
+PM-202430,Streetlight,Standard,The description contains 'lights out' indicating a streetlight issue.,
+PM-202433,Waste,Standard,Bulk waste from apartment renovation dumped on public road,
+PM-202446,Road Damage,Urgent,"The description contains the word 'fell', indicating urgency.",
