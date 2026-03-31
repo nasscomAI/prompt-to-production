@@ -19,7 +19,7 @@ uc-0a/results_[your-city].csv
 ```bash
 python classifier.py \
   --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
+  --output results_ahmedabad.csv
 ```
 
 ---
