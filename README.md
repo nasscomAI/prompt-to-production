@@ -93,6 +93,7 @@ Every commit must follow this format:
 [UC-ID] Fix [what]: [why it failed] → [what you changed]
 ```
 
+
 Good examples:
 ```
 UC-0A Fix severity blindness: no keywords in enforcement → added injury/child/school/hospital triggers

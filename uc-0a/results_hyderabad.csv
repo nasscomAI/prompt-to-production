@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority due to the presence of 'flood' and 'ambulance'.,
+GH-202402,Flooding,Standard,Categorized based on the specific mentioning of the word 'flood'.,
+GH-202406,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Categorized based on the specific mentioning of the word 'drain block'.,
+GH-202410,Pothole,Standard,Categorized based on the specific mentioning of the word 'pothole'.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority due to the presence of 'pothole' and 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority due to the presence of 'pothole' and 'school'.,
+GH-202417,Waste,Standard,Categorized based on the specific mentioning of the word 'waste'.,
+GH-202420,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Priority marked Urgent due to mention of 'collapse' in the complaint.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Categorized based on the specific mentioning of the word 'flood'.,
+GH-202428,Waste,Standard,Categorized based on the specific mentioning of the word 'waste'.,
+GH-202432,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Categorized based on the specific mentioning of the word 'flood'.,
+GH-202438,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
