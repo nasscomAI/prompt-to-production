@@ -1,18 +1,12 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+# UC-X Agents Rules
+ 
+## Enforcement Rules
+ 
+1. Never combine claims from two different documents into a single answer
+2. Never use hedging phrases like:
+   - "while not explicitly covered"
+   - "typically"
+   - "generally understood"
+3. If question is not in documents — use refusal template EXACTLY
+4. Always cite document name + section number
+5. Never assume or infer missing conditions
