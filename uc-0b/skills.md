@@ -8,6 +8,7 @@ skills:
     input: [What does it receive? Type and format.]
     output: [What does it return? Type and format.]
     error_handling: [What does it do when input is invalid or ambiguous?]
+    enforcement: "Must include and address every numbered clause from the input."
 
   - name: [second_skill_name]
     description: [One sentence]
