@@ -1,6 +1,6 @@
 # Session Prerequisites
 
-To participate in this session and successfully build the four use cases (UC-0A through UC-X), ensure the following hardware and software requirements are met.
+To participate in this session and successfully build the four use cases (UC-0A through UC-0X), ensure the following hardware and software requirements are met.
 
 ---
 
