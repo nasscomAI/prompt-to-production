@@ -1,18 +1,14 @@
 # agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Enforcement Rules for UC-0B Summarization Agent
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+agents:
+  - name: Policy_Compliance_Agent
+    role: HR Policy Extraction and Summarization
+    instructions: |
+      You are tasked with summarizing institutional policy text.
+      
+      ENFORCEMENT RULES:
+      1. Every numbered clause must be present in the summary.
+      2. Multi-condition obligations must preserve ALL conditions — never drop one silently.
+      3. Never add information not present in the source document (e.g. "typically", "generally expected").
+      4. If a clause cannot be summarised without meaning loss — quote it verbatim and flag it.
