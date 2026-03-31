@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on description keyword 'pothole'.,
+PM-202402,Pothole,Urgent,Classified based on severity keyword 'child'.,
+PM-202406,Flooding,Standard,Classified based on description keyword 'flood'.,
+PM-202408,Other,Standard,Classified based on description keyword 'flood'. Description is ambiguous; flagged for review.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified based on description keyword 'streetlight'.,
+PM-202411,Streetlight,Urgent,Classified based on severity keyword 'hazard'.,
+PM-202413,Waste,Standard,Classified based on description keyword 'garbage'.,
+PM-202418,Noise,Standard,Classified based on description keyword 'music'.,
+PM-202419,Road Damage,Standard,Classified based on description keyword 'road surface cracked'.,
+PM-202420,Drain Blockage,Urgent,Classified based on severity keyword 'injury'.,
+PM-202427,Flooding,Standard,Classified based on description keyword 'flood'.,
+PM-202428,Waste,Standard,Classified based on description keyword 'dead animal'.,
+PM-202430,Other,Standard,Classified based on description keyword 'lights out'. Description is ambiguous; flagged for review.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified based on description keyword 'waste'.,
+PM-202446,Road Damage,Urgent,Classified based on severity keyword 'fell'.,
