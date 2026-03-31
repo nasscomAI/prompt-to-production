@@ -1,35 +1,54 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
+import pandas as pd
 import argparse
-import csv
+import os
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+def batch_classify(input_path, output_path):
+    # 1. Load the data
+    if not os.path.exists(input_path):
+        print(f"Error: {input_path} not found.")
+        return
+        
+    df = pd.read_csv(input_path)
     
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    # 2. Apply classification logic (This reflects your agents.md rules)
+    results = []
+    for _, row in df.iterrows():
+        desc = str(row['description']).lower()
+        
+        # Priority Logic based on keywords
+        if any(word in desc for word in ['injury', 'hospital', 'school', 'child', 'electric']):
+            priority = "Urgent"
+            reasoning = "Safety risk: high-vulnerability location or injury mentioned."
+        elif any(word in desc for word in ['dark', 'block', 'flood']):
+            priority = "High"
+            reasoning = "Major utility failure or access blockage."
+        else:
+            priority = "Medium"
+            reasoning = "Standard maintenance request."
 
+        # Category Logic
+        if "hole" in desc: category = "Pothole"
+        elif "light" in desc: category = "Streetlight"
+        elif "water" in desc or "leak" in desc: category = "Water Leakage"
+        elif "waste" in desc or "garbage" in desc: category = "Garbage"
+        else: category = "Other"
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+        results.append({
+            "category": category,
+            "priority": priority,
+            "reasoning": reasoning,
+            "needs_review": False if category != "Other" else True
+        })
 
+    # 3. Merge and Save
+    results_df = pd.DataFrame(results)
+    final_df = pd.concat([df, results_df], axis=1)
+    final_df.to_csv(output_path, index=False)
+    print(f"✅ Success! Results saved to {output_path}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
     args = parser.parse_args()
     batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
