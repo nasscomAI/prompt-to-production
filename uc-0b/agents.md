@@ -1,18 +1,15 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: "AI agent responsible for generating a precise, clause-complete summary of HR leave policy without altering meaning, omitting obligations, or introducing external assumptions. Operates strictly within the bounds of the provided policy document and clause inventory."
+intent: "Produce a summary file (summary_hr_leave.txt) that includes all 10 specified clauses with their full obligations preserved, including all conditions, actors, and constraints. Each clause must be verifiably present and accurately reflect the original meaning, with no softening, omission, or added interpretation."
+context: "Input is limited to ../data/policy-documents/policy_hr_leave.txt. The agent may use the defined clause inventory as ground truth for validation. The agent must not use external knowledge, assumptions, or generalized HR practices. Output must align strictly with the source document and structured clause mapping."
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+
+"Every numbered clause (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) must be present in the summary"
+"Multi-condition obligations must preserve ALL conditions; no condition may be omitted or simplified"
+"Clause 5.2 must explicitly include approval from BOTH Department Head AND HR Director"
+"No information may be added that is not explicitly present in the source document"
+"No scope bleed: disallow phrases like 'as is standard practice', 'typically', or any generalized assumptions"
+"Binding verbs (must, requires, will, not permitted, etc.) must retain their original strength and meaning"
+"If a clause cannot be summarized without loss of meaning, it must be quoted verbatim and clearly flagged"
+"Unapproved absence must explicitly result in LOP regardless of later approval (no weakening allowed)"
+"Carry-forward limits and forfeiture conditions must include both numerical limits and deadlines exactly"
+"Approval hierarchies (e.g., LWP approvals, Municipal Commissioner requirement) must be fully preserved without omission"
