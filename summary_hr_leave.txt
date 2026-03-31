@@ -1,0 +1,122 @@
+================================================================
+SUMMARY — HR LEAVE POLICY  (NasscomAI Civic Tech, v2.1)
+Effective: 01 January 2025
+================================================================
+
+PURPOSE & SCOPE
+───────────────
+This policy governs leave entitlements, eligibility, approval, and
+penalties for all full-time and part-time employees. Permanent,
+contractual, and probationary staff are covered. Consultants and
+interns are NOT eligible for paid leave.
+
+LEAVE ENTITLEMENTS AT A GLANCE
+───────────────────────────────
+  Type                       Entitlement      Carry Fwd        Encashment
+  ------------------------------------------------------------------------------
+  Earned Leave (EL)          18 days/year     30 days          10 days/year (not during notice period)
+  Sick Leave (SL)            12 days/year     Nil — lapses     Not permitted
+  Casual Leave (CL)          6 days/year      Nil — lapses     Not permitted
+  Maternity Leave (ML)       26 weeks paid    N/A              N/A
+  Paternity Leave (PL)       5 days paid      N/A              N/A
+  Bereavement Leave (BL)     3 days (imm.)    N/A              N/A
+  Comp-Off                   As earned        60 days          Not permitted
+
+CLAUSE-BY-CLAUSE DETAIL
+────────────────────────
+
+3.1 EARNED LEAVE
+  • 18 days per calendar year for confirmed employees only.
+  • Accrual: 1.5 days/month from date of confirmation.
+  • Probationary employees are NOT eligible.
+  • Maximum carry forward: 30 days. Balance above 30 days LAPSES at year-end.
+  • Encashment: maximum 10 days per year during appraisal cycle.
+    ⚠ Encashment is NOT permitted during notice period.
+  • More than 5 consecutive EL days requires minimum 12 months of service.
+
+3.2 SICK LEAVE
+  • 12 days per calendar year.
+  • Unused SL LAPSES — no carry forward permitted.
+  • Medical certificate from a registered practitioner is MANDATORY
+    for sick leave exceeding 3 consecutive days.
+  • Combining SL with EL requires prior WRITTEN approval from HR Head.
+
+3.3 CASUAL LEAVE
+  • 6 days per calendar year.
+  • Cannot be carried forward or encashed under ANY circumstances.
+  • Maximum 2 consecutive CL days at one time.
+  • Cannot be prefixed/suffixed to a public holiday without manager approval.
+
+3.4 MATERNITY LEAVE
+  • 26 weeks (182 days) fully paid — as per Maternity Benefit Act 1961 (amended 2017).
+  • Requires minimum 80 days of work in the 12 months before expected delivery.
+  • Additional 12 weeks of UNPAID leave may be requested with written approval
+    from Department Head AND HR Director.
+  • Adoptive mothers: 12 weeks paid leave for children below 3 months of age.
+
+3.5 PATERNITY LEAVE
+  • 5 days paid leave within 6 months of childbirth or adoption.
+  • Cannot be split into more than 2 spells.
+
+3.6 BEREAVEMENT LEAVE
+  • Immediate family (spouse, children, parents, siblings): 3 days.
+  • Extended family (grandparents, in-laws): 1 day.
+  • Must be applied within 7 days of the event.
+  • Supporting documentation (death certificate or equivalent) is MANDATORY.
+
+3.7 COMPENSATORY OFF
+  • Awarded for working on declared public holidays or weekends (manager instruction).
+  • Must be availed within 60 days. Unused comp-off LAPSES — NOT encashable.
+  • Maximum 10 comp-off days accumulated at any time.
+
+LEAVE APPLICATION PROCESS
+──────────────────────────
+  • Earned Leave   → minimum 5 working days advance notice.
+  • Casual Leave   → minimum 1 working day advance notice.
+  • Emergency leave → notify manager within 2 hours of shift start.
+
+  Approval hierarchy (MANDATORY):
+    Up to 3 days      → Direct Manager
+    4–7 days          → Direct Manager + HR Business Partner
+    More than 7 days  → Direct Manager + HR Business Partner + Department Head
+  ⚠ Leave taken without approval = Loss of Pay (LOP).
+
+  All applications MUST be submitted via the HRMS portal.
+  Email or verbal requests are NOT valid.
+
+LEAVE WITHOUT PAY (LWP)
+────────────────────────
+  • Requires same approval hierarchy as above.
+  • More than 10 LWP days → proportional deduction in annual increment and bonus.
+  • More than 30 LWP days → treated as MISCONDUCT; may lead to termination.
+
+PENALTIES & DISCIPLINARY ACTION
+─────────────────────────────────
+  • 1–2 days unauthorised absence       → Written warning.
+  • 3–5 days unauthorised absence       → Salary deduction + formal warning.
+  • More than 5 days unauthorised absence → Treated as VOLUNTARY ABANDONMENT
+                                            and may result in TERMINATION without notice.
+  • False medical certificates / fraudulent applications → Immediate disciplinary
+    action, may lead to TERMINATION.
+
+PUBLIC HOLIDAYS
+────────────────
+  • 12 public holidays per year (declared annually by HR in January).
+  • Working on a mandatory holiday requires Department Head approval
+    and qualifies for Comp-Off (Section 3.7).
+
+POLICY AMENDMENTS
+──────────────────
+  • Reviewed annually by HR Director.
+  • Changes communicated with 30 days' notice.
+  • Exceptions MUST be approved in writing by HR Director.
+    Verbal exceptions are NOT valid.
+
+CLAUSE COUNT: 34
+
+================================================================
+[REVIEW FLAGS — Meaning-Change Detection]
+================================================================
+✅ No meaning-change issues detected.
+
+Total flags: 0
