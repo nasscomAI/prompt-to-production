@@ -17,6 +17,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Check Commit Message Format
         run: |
+          echo "=== Workflow version: v2-relaxed (from main) ==="
           # Accepts both formats from our docs:
           #   [UC-0A] Fix severity: missing keywords → added triggers
           #   UC-0B Generated agents.md and skills.md from README, implemented summariser
