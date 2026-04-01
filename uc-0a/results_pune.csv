@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint is classified as Pothole because the description mentions pothole.,
+PM-202402,Pothole,Urgent,Urgent Pothole case citing 'pothole' and safety risk 'child'.,
+PM-202406,Flooding,Standard,The complaint is classified as Flooding because the description mentions flood.,
+PM-202408,Flooding,Standard,The complaint is classified as Flooding because the description mentions flood.,
+PM-202410,Streetlight,Standard,The complaint is classified as Streetlight because the description mentions streetlight.,
+PM-202411,Streetlight,Urgent,Urgent Streetlight case citing 'streetlight' and safety risk 'hazard'.,
+PM-202413,Waste,Standard,The complaint is classified as Waste because the description mentions garbage.,
+PM-202418,Noise,Standard,The complaint is classified as Noise because the description mentions music.,
+PM-202419,Road Damage,Standard,The complaint is classified as Road Damage because the description mentions road.,
+PM-202420,Other,Urgent,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The complaint is classified as Flooding because the description mentions flood.,
+PM-202428,Waste,Standard,The complaint is classified as Waste because the description mentions animal.,
+PM-202430,Streetlight,Standard,The complaint is classified as Streetlight because the description mentions light.,
+PM-202433,Waste,Standard,The complaint is classified as Waste because the description mentions waste.,
+PM-202446,Other,Urgent,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
