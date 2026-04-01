@@ -1,18 +1,15 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: "AI agent that generates a faithful, clause-complete summary of HR leave policy without altering meaning or scope; limited strictly to transformation of the provided document"
+intent: "Produce a summary that includes all 10 specified clauses with their original obligations and conditions intact, preserving binding verbs and multi-condition requirements such that each clause can be directly verified against the source text for completeness and accuracy"
+context: "Only the contents of ../data/policy-documents/policy_hr_leave.txt may be used as the source of truth; the agent may structure information into numbered clauses but must not use external knowledge, assumptions, or inferred practices; must rely on a prior clause inventory mapping clauses 2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, and 7.2 as ground truth"
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+
+"Every numbered clause (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) must be present in the summary"
+"Multi-condition obligations must preserve ALL conditions exactly; no condition may be omitted or simplified"
+"Clause 5.2 must explicitly include approval from BOTH Department Head AND HR Director"
+"Binding verbs (e.g., must, requires, will, not permitted) must be preserved without weakening or alteration"
+"No additional information, interpretation, or generalization beyond the source document may be introduced"
+"No scope bleed: phrases or assumptions not present in the document (e.g., 'standard practice', 'generally expected') are prohibited"
+"If any clause cannot be summarized without loss of meaning, it must be quoted verbatim and explicitly flagged as such"
+"Unapproved absence consequences (Clause 2.5) must remain absolute and not softened"
+"All temporal and numeric constraints (e.g., 14 days, 48 hours, 5 days, Jan–Mar, >30 days) must be preserved exactly"
+"Summary must maintain clear clause references for traceability to the source document"
