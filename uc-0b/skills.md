@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: nuance_preserved_summarization
+    description: Distills complex policy text into actionable bullet points without losing legal constraints.
+    input: Long-form text (HR Policy).
+    output: Structured Markdown text with headings for Eligibility, Accrual, and Restrictions.
+    error_handling: If conflicting rules are found in the text, list both and flag as 'POLICY_CONFLICT'.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: constraint_extraction
+    description: Identifies specific numbers, deadlines, and 'must/shall' requirements.
+    input: HR Policy text.
+    output: A list of mandatory constraints found in the document.
+    error_handling: If no specific constraints are found, return 'No restrictive clauses identified'.
