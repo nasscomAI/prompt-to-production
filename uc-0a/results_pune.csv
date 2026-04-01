@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,No urgent keywords found in description,
+PM-202402,Pothole,Urgent,Contains urgent keyword indicating high risk,
+PM-202406,Flooding,Standard,No urgent keywords found in description,
+PM-202408,Flooding,Standard,No urgent keywords found in description,
+PM-202410,Streetlight,Standard,No urgent keywords found in description,
+PM-202411,Streetlight,Urgent,Contains urgent keyword indicating high risk,
+PM-202413,Waste,Standard,No urgent keywords found in description,
+PM-202418,Other,Standard,No urgent keywords found in description,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,No urgent keywords found in description,
+PM-202420,Other,Urgent,Contains urgent keyword indicating high risk,NEEDS_REVIEW
+PM-202427,Flooding,Standard,No urgent keywords found in description,
+PM-202428,Other,Standard,No urgent keywords found in description,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,No urgent keywords found in description,
+PM-202433,Waste,Standard,No urgent keywords found in description,
+PM-202446,Other,Urgent,Contains urgent keyword indicating high risk,NEEDS_REVIEW
