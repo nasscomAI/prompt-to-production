@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Found keyword 'pothole' in description,
+PM-202402,Pothole,Urgent,"Found keyword 'pothole' in description; urgency triggered by: child, school",
+PM-202406,Flooding,Standard,Found keyword 'flood' in description,
+PM-202408,Flooding,Standard,Found keyword 'flood' in description,
+PM-202410,Streetlight,Standard,Found keyword 'streetlight' in description,
+PM-202411,Streetlight,Urgent,Found keyword 'streetlight' in description; urgency triggered by: hazard,
+PM-202413,Flooding,Standard,Found keyword 'overflow' in description,
+PM-202418,Other,Standard,,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Found keyword 'crack' in description,
+PM-202420,Other,Urgent,Urgency triggered by: injury,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Found keyword 'flood' in description,
+PM-202428,Other,Standard,,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Found keyword 'heritage' in description,
+PM-202433,Waste,Standard,Found keyword 'waste' in description,
+PM-202446,Other,Urgent,Urgency triggered by: fell,NEEDS_REVIEW
