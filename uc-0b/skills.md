@@ -1,16 +1,28 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## retrieve_policy
+Purpose: load HR leave policy txt file.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+Steps:
+1. Read file
+2. Split by numbered clauses
+3. Extract:
+   - clause number
+   - text
+   - obligation verb
+   - conditions
+   - deadlines
+   - approvers
+
+## summarize_policy
+Purpose: produce clause-safe summary.
+
+Steps:
+1. Process one clause at a time
+2. Preserve exact modality
+3. Preserve all conditions
+4. Preserve clause number
+5. Preserve thresholds and deadlines
+6. Preserve all approvers
+7. Quote verbatim if compression risks meaning loss
+8. Emit missing clause warning
