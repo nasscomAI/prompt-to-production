@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,Description contains matching keyword: 'pothole',VALID
+PM-202402,Pothole,Urgent,Description contains matching keyword: 'pothole',VALID
+PM-202406,Flooding,Normal,Description contains matching keyword: 'flood',VALID
+PM-202408,Flooding,Normal,Description contains matching keyword: 'flood',VALID
+PM-202410,Streetlight,Normal,Description contains matching keyword: 'light',VALID
+PM-202411,Streetlight,Urgent,Description contains matching keyword: 'light',VALID
+PM-202413,Garbage,Normal,Description contains matching keyword: 'garbage',VALID
+PM-202418,Noise,Urgent,Description contains matching keyword: 'music',VALID
+PM-202419,Road,Normal,Description contains matching keyword: 'road surface',VALID
+PM-202420,Sewage,Urgent,Description contains matching keyword: 'manhole',VALID
+PM-202427,Flooding,Normal,Description contains matching keyword: 'flood',VALID
+PM-202428,Garbage,Urgent,Description contains matching keyword: 'animal',VALID
+PM-202430,Streetlight,Normal,Description contains matching keyword: 'light',VALID
+PM-202433,Garbage,Normal,Description contains matching keyword: 'waste',VALID
+PM-202446,Footpath,Urgent,Description contains matching keyword: 'footpath',VALID
