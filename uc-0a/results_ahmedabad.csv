@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'melting'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'temperature'.,
+AM-202405,Other,Standard,Classified as Other based on keywords in description.,
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'heatwave'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage because description mentions 'paving'.,
+AM-202410,Pothole,Standard,Classified as Pothole based on keywords in description.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on keywords in description.,
+AM-202417,Waste,Standard,Classified as Waste because description mentions 'waste'.,
+AM-202421,Noise,Standard,Classified as Noise based on keywords in description.,
+AM-202424,Road Damage,Standard,Classified as Road Damage because description mentions 'road surface'.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'temperature'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage'.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because description mentions 'waste'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'sun'.,

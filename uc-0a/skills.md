@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Complaint Classifier Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## classify_complaint
+- **Input:** Single complaint row (dict/object)
+- **Task:** Apply the Complaint Classifier Agent's RICE rules to determine the category, priority, reason, and flag.
+- **Output:** A dictionary with `complaint_id`, `category`, `priority`, `reason`, and `flag`.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## batch_classify
+- **Input:** Input CSV path, Output CSV path
+- **Task:** 
+  1. Read the input CSV.
+  2. For each row, call `classify_complaint`.
+  3. Aggregate results into a list.
+  4. Write the results to the output CSV with the required columns.
+- **Output:** Completion status and output file path.
