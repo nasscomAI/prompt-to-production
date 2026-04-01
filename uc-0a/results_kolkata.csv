@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description justifies the Heritage Damage category due to the word 'heritage'.,
+KM-202402,Other,Standard,The description lacks clear categorization keywords and must be reviewed.,NEEDS_REVIEW
+KM-202405,Other,Standard,The description lacks clear categorization keywords and must be reviewed.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description justifies the Pothole category due to the word 'pothole'.,
+KM-202410,Pothole,Standard,The description justifies the Pothole category due to the word 'pothole'.,
+KM-202411,Pothole,Standard,The description justifies the Pothole category due to the word 'pothole'.,
+KM-202415,Drain Blockage,Standard,The description justifies the Drain Blockage category due to the word 'drain'.,
+KM-202418,Waste,Standard,The description justifies the Waste category due to the word 'waste'.,
+KM-202421,Road Damage,Urgent,"The word 'sink' places this in Road Damage, and it is Urgent due to 'hospital'.",
+KM-202422,Road Damage,Standard,The description justifies the Road Damage category due to the word 'road surface'.,
+KM-202426,Heritage Damage,Standard,The description justifies the Heritage Damage category due to the word 'heritage'.,
+KM-202430,Waste,Standard,The description justifies the Waste category due to the word 'smell'.,
+KM-202434,Heritage Damage,Standard,The description justifies the Heritage Damage category due to the word 'heritage'.,
+KM-202436,Streetlight,Standard,The description justifies the Streetlight category due to the word 'dark'.,
+KM-202438,Heritage Damage,Standard,The description justifies the Heritage Damage category due to the word 'heritage'.,

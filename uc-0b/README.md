@@ -44,7 +44,7 @@ Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
 
 ---
 
-## Enforcement Rules Your agents.md Must Include
+## Enforcement Rules Included in agents.md
 1. Every numbered clause must be present in the summary
 2. Multi-condition obligations must preserve ALL conditions — never drop one silently
 3. Never add information not present in the source document
@@ -52,7 +52,7 @@ Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
 
 ---
 
-## Skills to Define in skills.md
+## Skills Defined in skills.md
 - `retrieve_policy` — loads .txt policy file, returns content as structured numbered sections
 - `summarize_policy` — takes structured sections, produces compliant summary with clause references
 
