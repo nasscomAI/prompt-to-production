@@ -1,0 +1,38 @@
+[
+    {
+        "category": "Road Infrastructure",
+        "severity": "High",
+        "logic_reasoning": [
+            "pothole"
+        ],
+        "flag": "NONE",
+        "original_text": "Massive pothole near the city hospital causing tra..."
+    },
+    {
+        "category": "Street Lighting",
+        "severity": "Medium",
+        "logic_reasoning": [
+            "dark"
+        ],
+        "flag": "NONE",
+        "original_text": "The street lights are not working on 5th Avenue, i..."
+    },
+    {
+        "category": "Water Supply",
+        "severity": "Medium",
+        "logic_reasoning": [
+            "water"
+        ],
+        "flag": "NONE",
+        "original_text": "There is a water leak from the main pipe in front ..."
+    },
+    {
+        "category": "Garbage Collection",
+        "severity": "Medium",
+        "logic_reasoning": [
+            "garbage"
+        ],
+        "flag": "NONE",
+        "original_text": "Garbage hasn't been collected for 3 days and it sm..."
+    }
+]
