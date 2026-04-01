@@ -1,0 +1,11 @@
+complaint_id,category,priority,reason,flag
+SL-202401,Pothole,Standard,Classified as Pothole based on keywords in description.,
+SL-202402,Flooding,Urgent,Classified as Flooding based on keywords in description. Keyword 'hospital' found in description.,
+SL-202403,Streetlight,Urgent,Classified as Streetlight based on keywords in description. Keyword 'school' found in description.,
+SL-202404,Waste,Standard,Classified as Waste based on keywords in description.,
+SL-202405,Noise,Standard,Classified as Noise based on keywords in description.,
+SL-202406,Road Damage,Standard,Classified as Road Damage based on keywords in description.,
+SL-202407,Heritage Damage,Standard,Classified as Heritage Damage based on keywords in description.,
+SL-202408,Drain Blockage,Standard,Classified as Drain Blockage based on keywords in description.,
+SL-202409,Other,Urgent,Classified as Other based on keywords in description. Keyword 'fell' found in description.,NEEDS_REVIEW
+SL-202410,Heat Hazard,Standard,Classified as Heat Hazard based on keywords in description.,
