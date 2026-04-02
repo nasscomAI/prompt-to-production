@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Recursively loads all 3 specified policy files and structurally indexes their raw strings sequentially by document name and numeric section number.
+    input: Filenames referring to the 3 mandatory policy text files.
+    output: A queryable indexed representation binding source text exactly to its host document and section node.
+    error_handling: System halts execution if any of the three mandatory foundational textual documents cannot be located or parsed.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Processes an employee question dynamically, searching indexed nodes deterministically. It either maps a single-source explicit answer alongside formal citation, or triggers a universal native refusal text block.
+    input: Employee textual question alongside queried indexed documents.
+    output: A single-source answer ending with `[Document: Section]` or the explicit deterministic Refusal string verbatim.
+    error_handling: Never blends multi-document returns. Automatically resolves to the refusal template explicitly on missing scope or mathematical/policy ambivalence.
