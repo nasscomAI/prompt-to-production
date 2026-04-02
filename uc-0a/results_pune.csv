@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified dynamically based on matching keywords like pothole.,
+PM-202402,Pothole,Urgent,Classified dynamically based on matching keywords like pothole.,
+PM-202406,Flooding,Standard,Classified dynamically based on matching keywords like flood.,
+PM-202408,Flooding,Standard,Classified dynamically based on matching keywords like flood.,
+PM-202410,Streetlight,Standard,Classified dynamically based on matching keywords like streetlight or dark.,
+PM-202411,Other,Urgent,No matching category keyword found.,NEEDS_REVIEW
+PM-202413,Waste,Standard,Classified dynamically based on matching keywords like garbage or waste.,
+PM-202418,Noise,Standard,Classified dynamically based on matching keywords like music or noise.,
+PM-202419,Road Damage,Standard,Classified dynamically based on matching keywords like crack or footpath.,
+PM-202420,Other,Urgent,No matching category keyword found.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified dynamically based on matching keywords like flood.,
+PM-202428,Other,Standard,Classified dynamically based on matching keywords like dead animal.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified dynamically based on matching keywords like streetlight or dark.,
+PM-202433,Waste,Standard,Classified dynamically based on matching keywords like garbage or waste.,
+PM-202446,Road Damage,Urgent,Classified dynamically based on matching keywords like crack or footpath.,
