@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Streetlight,Standard,"Classified based on words from complaint like 'Heritage, lamp'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified based on words from complaint like 'Historic, tram'.",
+Other,Standard,"Classified based on words from complaint like 'Wedding, band'.",NEEDS_REVIEW
+Pothole,Standard,"Classified based on words from complaint like 'Airport, access'.",
+Pothole,Standard,"Classified based on words from complaint like 'Pothole, causing'.",
+Pothole,Standard,"Classified based on words from complaint like 'Deep, pothole'.",
+Road Damage,Standard,"Classified based on words from complaint like 'residential, complex'.",NEEDS_REVIEW
+Waste,Standard,"Classified based on words from complaint like 'Tourist, zone'.",
+Other,Urgent,"Classified based on words from complaint like 'Footpath, broken'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified based on words from complaint like 'Road, surface'.",
+Heritage Damage,Standard,"Classified based on words from complaint like 'Heritage, residential'.",
+Road Damage,Standard,"Classified based on words from complaint like 'Road, subsided'.",
+Heritage Damage,Standard,"Classified based on words from complaint like 'Street, paving'.",
+Other,Standard,"Classified based on words from complaint like 'Entire, colony'.",NEEDS_REVIEW
+Heritage Damage,Standard,"Classified based on words from complaint like 'Street, vendors'.",
