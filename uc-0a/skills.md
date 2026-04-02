@@ -1,16 +1,24 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A — Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Classification Logic
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- Uses keyword-based classification
+- Maps complaint text to predefined categories
+
+## Priority Handling
+
+- High: urgent/danger keywords
+- Medium: general issues
+- Low: minor or unclear complaints
+
+## Robustness
+
+- Handles empty/null inputs
+- Flags invalid or error cases
+- Always produces output
+
+## Design Principles
+
+- Deterministic (no randomness)
+- Explainable (reason field included)
+- Aligned with RICE prompt constraints
