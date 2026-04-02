@@ -3,16 +3,24 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
+  budget_agent
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Compute month-over-month growth for a specific ward and category without incorrect aggregation, silent null handling, or formula assumption
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  |
+  Load the ward budget dataset and generate a per-period growth table.
+  Filter strictly by the provided ward and category.
+  Compute growth only for the specified growth type.
+  Include formula used for each computed value.
+  Ensure output is a per-ward per-category table, not aggregated.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+   - Never aggregate across wards or categories; refuse if such request occurs
+  - Must filter data strictly by given ward and category before computation
+  - Must flag all rows where actual_spend is null before computing growth
+  - Must include null reason from the notes column in the output
+  - Must not compute growth for rows with null values
+  - Must display the formula used for each growth calculation
+  - If growth type is not provided, refuse and ask instead of assuming
+  - Output must be a per-period table, not a single combined value
