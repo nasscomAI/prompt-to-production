@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Found Heritage Damage indicators in description: 'Heritage lamp post knocked over by delivery vehicle. Not restored.'.,
+KM-202402,Other,Standard,Could not confidently classify: 'Historic tram road cobblestones broken up by cable laying work.'.,NEEDS_REVIEW
+KM-202405,Other,Standard,Could not confidently classify: 'Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Found Pothole indicators in description: 'Airport access road full of potholes. Diplomatic complaint received.'.,
+KM-202410,Pothole,Low,Found Pothole indicators in description: 'Pothole causing tyre blowouts. Three incidents this week.'.,
+KM-202411,Pothole,Standard,Found Pothole indicators in description: 'Deep pothole filling with rainwater. Depth invisible. Accident risk.'.,
+KM-202415,Drain Blockage,Standard,Found Drain Blockage indicators in description: 'New residential complex draining directly onto public road.'.,
+KM-202418,Other,Low,Could not confidently classify: 'Tourist zone waste overflowing. Foreign visitors photographing piles.'.,NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,Found Road Damage indicators in description: 'Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.'.,
+KM-202422,Road Damage,Standard,Found Road Damage indicators in description: 'Road surface buckled near bridge. Structural concern raised.'.,
+KM-202426,Heritage Damage,Standard,Found Heritage Damage indicators in description: 'Heritage residential building exterior defaced by billboard installation.'.,
+KM-202430,Other,Standard,Could not confidently classify: 'Road subsided near gas pipeline. Gas leak smell reported too.'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Found Heritage Damage indicators in description: 'Street paving removed for utility work — heritage stone not replaced.'.,
+KM-202436,Streetlight,Standard,Found Streetlight indicators in description: 'Entire colony substation tripped. Darkness for 3 nights.'.,
+KM-202438,Heritage Damage,Standard,Found Heritage Damage indicators in description: 'Street vendors using amplifiers illegally in heritage precinct.'.,
