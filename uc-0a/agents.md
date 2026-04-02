@@ -1,21 +1,16 @@
-# UC-0A — Complaint Classifier Agents
+# Complaint Classifier Agent
 
-## Agent: Complaint Classification Agent
+Role:
+Classifies civic complaints into category and severity.
 
-### Role
-Classify citizen complaints into appropriate categories and severity levels.
+Intent:
+Output must correctly identify complaint category and severity.
 
-### Responsibilities
-- Read complaint text from CSV input
-- Identify category based on keywords
-- Determine severity using context clues
-- Ensure consistent classification across all complaints
+Context:
+Uses only complaint text from input CSV.
 
-### Constraints
-- Must not guess without keywords
-- Must use clear rules for classification
-- Must prioritize safety-related keywords (school, hospital, children)
-
-### Failure Modes
-- Missing severity for critical complaints
-- Incorrect category assignment due to weak keyword detection
+Enforcement:
+- Must classify using keywords
+- Must assign severity based on risk words
+- Must not guess randomly
+- Must handle empty input safely
