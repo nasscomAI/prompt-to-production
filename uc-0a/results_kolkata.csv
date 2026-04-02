@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Assigned Standard priority and categorized as Heritage Damage because of the word 'heritage'.,
+KM-202402,Road Damage,Standard,Assigned Standard priority and categorized as Road Damage because of the word 'broken'.,
+KM-202405,Other,Standard,Assigned Standard priority and categorized as Other because of the word 'complaint'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Assigned Standard priority and categorized as Pothole because of the word 'pothole'.,
+KM-202410,Pothole,Standard,Assigned Standard priority and categorized as Pothole because of the word 'pothole'.,
+KM-202411,Pothole,Standard,Assigned Standard priority and categorized as Pothole because of the word 'pothole'.,
+KM-202415,Drain Blockage,Standard,Assigned Standard priority and categorized as Drain Blockage because of the word 'drain'.,
+KM-202418,Waste,Standard,Assigned Standard priority and categorized as Waste because of the word 'waste'.,
+KM-202421,Road Damage,Urgent,"Priority escalated to Urgent due to finding 'hospital', classified as Road Damage based on 'broken'.",
+KM-202422,Other,Standard,Assigned Standard priority and categorized as Other because of the word 'complaint'.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Assigned Standard priority and categorized as Heritage Damage because of the word 'heritage'.,
+KM-202430,Other,Standard,Assigned Standard priority and categorized as Other because of the word 'complaint'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Assigned Standard priority and categorized as Heritage Damage because of the word 'heritage'.,
+KM-202436,Other,Standard,Assigned Standard priority and categorized as Other because of the word 'complaint'.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Assigned Standard priority and categorized as Heritage Damage because of the word 'heritage'.,
