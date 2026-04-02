@@ -1,18 +1,21 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A — Complaint Classifier Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Agent: Complaint Classification Agent
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+### Role
+Classify citizen complaints into appropriate categories and severity levels.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+### Responsibilities
+- Read complaint text from CSV input
+- Identify category based on keywords
+- Determine severity using context clues
+- Ensure consistent classification across all complaints
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+### Constraints
+- Must not guess without keywords
+- Must use clear rules for classification
+- Must prioritize safety-related keywords (school, hospital, children)
+
+### Failure Modes
+- Missing severity for critical complaints
+- Incorrect category assignment due to weak keyword detection

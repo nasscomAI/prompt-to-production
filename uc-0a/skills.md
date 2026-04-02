@@ -1,16 +1,23 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A — Complaint Classifier Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: Text Classification
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+### Description
+Ability to classify complaint text into predefined categories using keyword matching.
+
+### Inputs
+- Complaint text (string)
+
+### Outputs
+- Category (Sanitation, Road, Water, Other)
+- Severity (Low, Medium, High)
+
+### Rules
+- Use keyword-based detection
+- Match sanitation, road, water-related terms
+- Assign High severity for sensitive locations (school, hospital, child)
+- Assign Medium severity for serious indicators (many, urgent)
+
+### Limitations
+- Cannot understand complex language
+- Depends on presence of keywords
