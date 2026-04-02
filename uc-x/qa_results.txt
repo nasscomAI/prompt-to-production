@@ -1,0 +1,26 @@
+--- RUNNING Q&A SIMULATOR IN RICE MODE ---
+
+Q: Can I carry forward unused annual leave?
+A: [policy_hr_leave.txt Section 2.6]: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+Q: Can I install Slack on my work laptop?
+A: [policy_it_acceptable_use.txt Section 2.3]: Employees must not install non-standard or third-party software on CMC laptops without prior written approval from the IT Helpdesk.
+
+Q: What is the home office equipment allowance?
+A: [policy_finance_reimbursement.txt Section 3.1]: Employees designated as permanent WFH are eligible for a one-time home office equipment allowance up to Rs 8,000.
+
+Q: Can I use my personal phone for work files from home?
+A: This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+Q: What is the company view on flexible working culture?
+A: This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+Q: Can I claim DA and meal receipts on the same day?
+A: [policy_finance_reimbursement.txt Section 2.6]: DA is paid at Rs 800 per day. When DA is claimed, separate meal receipts cannot be reimbursed.
+
+Q: Who approves leave without pay?
+A: [policy_hr_leave.txt Section 5.2]: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
