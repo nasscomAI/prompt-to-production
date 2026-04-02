@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description states 'Underpass flooded after 1hr rain' which justifies this classification.,
+GH-202402,Flooding,Standard,The description states 'Market area flooded' which justifies this classification.,
+GH-202406,Flooding,Standard,The description states 'Main stormwater drain 100% blocked with construction debris' which justifies this classification.,
+GH-202407,Flooding,Standard,The description states 'Drain blocked and mosquito breeding' which justifies this classification.,
+GH-202410,Pothole,Standard,The description states 'Potholes causing vehicles to slow to 20kmph on fast road' which justifies this classification.,
+GH-202411,Pothole,Urgent,The description states 'Pothole swallowed entire motorcycle wheel' which justifies this classification.,
+GH-202412,Pothole,Urgent,The description states 'School bus struggling to navigate 6 potholes in 200m stretch' which justifies this classification.,
+GH-202417,Waste,Standard,The description states 'Heritage zone garbage overflow' which justifies this classification.,
+GH-202420,Other,Standard,The description states 'Construction drilling from 5am daily near residential towers' which justifies this classification.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,The description states 'Road collapsed partially' which justifies this classification.,
+GH-202424,Flooding,Standard,The description states 'Underpass floods in light rain' which justifies this classification.,
+GH-202428,Waste,Standard,The description states 'Post-market waste not cleared' which justifies this classification.,
+GH-202432,Other,Standard,The description states '24hr supermarket delivery trucks idling with engines on' which justifies this classification.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description states 'Main drain blocked — entire locality at flooding risk this week' which justifies this classification.,
+GH-202438,Flooding,Standard,The description states 'Colony surrounded by fields that channel rainwater through main road' which justifies this classification.,

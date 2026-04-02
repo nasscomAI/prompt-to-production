@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description states 'Large pothole 60cm wide causing tyre damage' which justifies this classification.,
+PM-202402,Pothole,Urgent,The description states 'Deep pothole near bus stop' which justifies this classification.,
+PM-202406,Flooding,Standard,The description states 'Underpass flooded knee-deep after 2hrs rain' which justifies this classification.,
+PM-202408,Flooding,Standard,The description states 'Bus stand flooded' which justifies this classification.,
+PM-202410,Streetlight,Standard,The description states 'Three consecutive streetlights out for 10 days' which justifies this classification.,
+PM-202411,Streetlight,Urgent,The description states 'Streetlight flickering and sparking' which justifies this classification.,
+PM-202413,Waste,Standard,The description states 'Overflowing garbage bins near vegetable market' which justifies this classification.,
+PM-202418,Noise,Standard,The description states 'Wedding venue playing music past midnight on weeknights' which justifies this classification.,
+PM-202419,Road Damage,Standard,The description states 'Road surface cracked and sinking near utility work done 1 month ago' which justifies this classification.,
+PM-202420,Other,Urgent,The description states 'Manhole cover missing' which justifies this classification.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description states 'Bridge approach floods in 30mins of rain' which justifies this classification.,
+PM-202428,Other,Standard,The description states 'Dead animal not removed for 36 hours' which justifies this classification.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The description states 'Heritage street, lights out' which justifies this classification.",
+PM-202433,Waste,Standard,The description states 'Bulk waste from apartment renovation dumped on public road' which justifies this classification.,
+PM-202446,Road Damage,Urgent,The description states 'Footpath tiles broken and upturned' which justifies this classification.,
