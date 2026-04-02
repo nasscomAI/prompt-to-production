@@ -1,8 +1,22 @@
+"""
+UC-0A — Complaint Classifier
+Implements classify_complaint and batch_classify as defined in skills.md.
+Enforcement rules are sourced from agents.md and README.md.
+
+Run:
+    python classifier.py --input ../data/city-test-files/test_pune.csv --output results_pune.csv
+"""
+
 import argparse
 import csv
-from typing import Dict, Tuple
+import sys
+from typing import Optional
 
-ALLOWED_CATEGORIES = [
+# ---------------------------------------------------------------------------
+# Classification Schema — must match README.md exactly
+# ---------------------------------------------------------------------------
+
+ALLOWED_CATEGORIES = {
     "Pothole",
     "Flooding",
     "Streetlight",
@@ -13,340 +27,211 @@ ALLOWED_CATEGORIES = [
     "Heat Hazard",
     "Drain Blockage",
     "Other",
-]
-
-SEVERITY_KEYWORDS = [
-    "injury",
-    "child",
-    "school",
-    "hospital",
-    "ambulance",
-    "fire",
-    "hazard",
-    "fell",
-    "collapse",
-]
-
-CATEGORY_KEYWORDS = {
-    "Pothole": [
-        "pothole",
-        "crater",
-        "road hole",
-    ],
-    "Flooding": [
-        "flood",
-        "flooding",
-        "waterlogged",
-        "water logging",
-        "water-logging",
-        "standing water",
-        "submerged",
-        "rainwater",
-        "water through road",
-        "water on road",
-        "road flooded",
-        "water entering road",
-        "main road flooded",
-    ],
-    "Streetlight": [
-        "streetlight",
-        "street light",
-        "light not working",
-        "lights not working",
-        "dark road",
-        "dark street",
-        "lamp post",
-        "lamp",
-        "no lights",
-        "street in darkness",
-        "area is dark",
-    ],
-    "Waste": [
-        "garbage",
-        "trash",
-        "waste",
-        "dump",
-        "dumping",
-        "overflowing bin",
-        "overflowing garbage",
-        "rubbish",
-        "litter",
-    ],
-    "Noise": [
-        "noise",
-        "loudspeaker",
-        "speaker",
-        "dj",
-        "horn",
-        "honking",
-        "construction noise",
-        "loud music",
-        "sound pollution",
-        "drilling",
-        "drill",
-        "idling",
-        "truck idling",
-        "engine on",
-        "engines on",
-        "delivery trucks",
-    ],
-    "Road Damage": [
-        "road damage",
-        "damaged road",
-        "broken road",
-        "cracked road",
-        "road cracked",
-        "uneven road",
-        "road sinking",
-        "collapsed road",
-        "road surface damaged",
-        "caved road",
-    ],
-    "Heritage Damage": [
-        "heritage",
-        "monument",
-        "statue",
-        "historic wall",
-        "historic structure",
-        "old building",
-        "protected structure",
-    ],
-    "Heat Hazard": [
-        "heat",
-        "extreme heat",
-        "heatwave",
-        "no shade",
-        "sun exposure",
-        "hot pavement",
-        "burning surface",
-    ],
-    "Drain Blockage": [
-        "drain",
-        "blocked drain",
-        "choked drain",
-        "sewage",
-        "manhole",
-        "clogged drain",
-        "drain blockage",
-        "overflowing drain",
-        "gutter",
-    ],
 }
 
+PRIORITY_LEVELS = {"Urgent", "Standard", "Low"}
 
-def normalize_text(text: str) -> str:
-    return (text or "").strip().lower()
+# Keywords that must trigger Urgent priority (agents.md enforcement rule 2)
+URGENT_KEYWORDS = {
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell", "collapse",
+}
 
-
-def find_description_field(row: Dict[str, str]) -> str:
-    possible_fields = [
-        "description",
-        "complaint",
-        "complaint_text",
-        "issue",
-        "details",
-        "text",
-        "body",
-    ]
-
-    for field in possible_fields:
-        if field in row and str(row[field]).strip():
-            return str(row[field]).strip()
-
-    best_value = ""
-    for key, value in row.items():
-        if key is None:
-            continue
-        key_l = str(key).strip().lower()
-        if "id" in key_l:
-            continue
-        value_str = str(value).strip()
-        if len(value_str) > len(best_value):
-            best_value = value_str
-
-    return best_value
+# Keyword → category mapping for classify_complaint heuristic
+CATEGORY_KEYWORDS: list[tuple[str, set[str]]] = [
+    ("Pothole",         {"pothole", "pot hole", "crater", "pit", "road hole"}),
+    ("Flooding",        {"flood", "flooded", "flooding", "waterlogged", "submerged", "inundated"}),
+    ("Streetlight",     {"streetlight", "street light", "lamp", "light post", "light pole", "dark street", "no light"}),
+    ("Waste",           {"garbage", "waste", "trash", "litter", "dumping", "rubbish", "overflowing bin", "bin"}),
+    ("Noise",           {"noise", "loud", "honking", "music", "sound", "disturbance", "blaring"}),
+    ("Road Damage",     {"road damage", "broken road", "cracked road", "damaged road", "road crack", "uneven road"}),
+    ("Heritage Damage", {"heritage", "monument", "historical", "ancient", "heritage site", "old building"}),
+    ("Heat Hazard",     {"heat", "hot", "temperature", "scorching", "summer heat", "heat wave", "thermal"}),
+    ("Drain Blockage",  {"drain", "blocked drain", "drainage", "sewer", "clogged", "overflow drain", "manhole"}),
+]
 
 
-def find_complaint_id(row: Dict[str, str]) -> str:
-    possible_fields = [
-        "complaint_id",
-        "id",
-        "ticket_id",
-        "case_id",
-        "reference_id",
-    ]
-
-    for field in possible_fields:
-        if field in row and str(row[field]).strip():
-            return str(row[field]).strip()
-
-    for value in row.values():
-        if str(value).strip():
-            return str(value).strip()
-
-    return ""
-
-
-def detect_category(description: str) -> Tuple[str, str]:
-    text = normalize_text(description)
-
-    # HARD RULES FIRST (more reliable than keyword lists)
-
-    # Noise (construction / drilling / vehicles)
-    if any(word in text for word in ["drilling", "drill", "idling", "engine", "truck", "noise"]):
-        return "Noise", "drilling" if "drilling" in text else "noise"
-
-    # Flooding (rainwater / flow)
-    if any(word in text for word in ["rainwater", "water", "flood", "waterlogged", "submerged"]):
-        if "road" in text or "main road" in text:
-            return "Flooding", "rainwater" if "rainwater" in text else "water"
-
-    # Drain blockage
-    if "drain" in text or "sewage" in text:
-        return "Drain Blockage", "drain"
-
-    # Pothole
-    if "pothole" in text or "crater" in text:
-        return "Pothole", "pothole" if "pothole" in text else "crater"
-
-    # Streetlight
-    if any(word in text for word in ["streetlight", "lamp", "dark", "no lights"]):
-        return "Streetlight", "streetlight"
-
-    # Waste
-    if any(word in text for word in ["garbage", "waste", "trash", "dump"]):
-        return "Waste", "waste"
-
-    # Road damage
-    if any(word in text for word in ["cracked", "broken road", "road damage", "collapsed road"]):
-        return "Road Damage", "road damage"
-
-    # Heritage
-    if "heritage" in text or "monument" in text:
-        return "Heritage Damage", "heritage"
-
-    # Heat hazard
-    if "heat" in text or "heatwave" in text:
-        return "Heat Hazard", "heat"
-
-    return "Other", ""
-
-
-def detect_priority(description: str) -> Tuple[str, str]:
-    text = normalize_text(description)
-
-    for kw in SEVERITY_KEYWORDS:
-        if kw in text:
-            return "Urgent", kw
-
-    low_keywords = ["minor", "slight", "small", "occasionally", "sometimes"]
-    for kw in low_keywords:
-        if kw in text:
-            return "Low", kw
-
-    return "Standard", ""
-
-
-def build_reason(
-    description: str,
-    category: str,
-    category_keyword: str,
-    priority: str,
-    priority_keyword: str,
-) -> str:
-    if not description.strip():
-        return "Description is missing or unusable, so the complaint was marked Other and needs review."
-
-    if category == "Other":
-        return "The description does not clearly match any allowed category based on the given text."
-
-    if priority == "Urgent" and category_keyword and priority_keyword:
-        return (
-            f"Classified as {category} because the description includes '{category_keyword}', "
-            f"and marked Urgent because it includes '{priority_keyword}'."
-        )
-
-    if category_keyword:
-        return f"Classified as {category} because the description includes '{category_keyword}'."
-
-    return f"Classified as {category} based on the complaint description."
-
+# ---------------------------------------------------------------------------
+# Skill: classify_complaint
+# ---------------------------------------------------------------------------
 
 def classify_complaint(row: dict) -> dict:
-    complaint_id = find_complaint_id(row)
-    description = find_description_field(row)
+    """
+    Classify a single citizen complaint row.
 
-    if not normalize_text(description):
+    Input:  dict with at least a 'description' key (raw complaint text).
+    Output: dict with keys — complaint_id, category, priority, reason, flag.
+
+    Enforcement (agents.md):
+      - Category must be one of ALLOWED_CATEGORIES only.
+      - Priority is Urgent if any URGENT_KEYWORDS appear in description.
+      - Reason must cite specific words from the description.
+      - Flag set to NEEDS_REVIEW when category is ambiguous.
+    """
+    complaint_id  = row.get("complaint_id", "").strip()
+    description   = row.get("description", "").strip()
+
+    # --- Guard: empty / unparseable description (skills.md error_handling) ---
+    if not description:
         return {
             "complaint_id": complaint_id,
-            "category": "Other",
-            "priority": "Low",
-            "reason": "Description is missing or unusable, so the complaint could not be classified.",
-            "flag": "NEEDS_REVIEW",
+            "category":     "Other",
+            "priority":     "Low",
+            "reason":       "Description missing or unreadable.",
+            "flag":         "NEEDS_REVIEW",
         }
 
-    category, category_keyword = detect_category(description)
-    priority, priority_keyword = detect_priority(description)
+    desc_lower = description.lower()
 
-    flag = ""
-    if category == "Other":
-        flag = "NEEDS_REVIEW"
+    # --- Determine priority (enforcement rule 2) ---
+    triggered_keyword = _find_urgent_keyword(desc_lower)
+    priority = "Urgent" if triggered_keyword else _default_priority(desc_lower)
 
-    reason = build_reason(description, category, category_keyword, priority, priority_keyword)
+    # --- Determine category (enforcement rule 1) ---
+    category, matched_word, is_ambiguous = _infer_category(desc_lower)
 
-    if category not in ALLOWED_CATEGORIES:
-        category = "Other"
-        priority = "Standard"
-        flag = "NEEDS_REVIEW"
-        reason = "Detected category was invalid, so the complaint was reassigned to Other and flagged for review."
+    # --- Build reason (enforcement rule 3) ---
+    if triggered_keyword and is_ambiguous:
+        reason = (
+            f"Classified as {category} based on keyword '{matched_word}'; "
+            f"marked Urgent because description contains '{triggered_keyword}'."
+        )
+    elif triggered_keyword:
+        reason = (
+            f"Classified as {category} based on '{matched_word}' in description; "
+            f"priority set to Urgent because description contains '{triggered_keyword}'."
+        )
+    elif matched_word:
+        reason = f"Classified as {category} because description contains '{matched_word}'."
+    else:
+        reason = "Category could not be determined from description text alone."
 
-    if priority not in ["Urgent", "Standard", "Low"]:
-        priority = "Standard"
+    # --- Set NEEDS_REVIEW flag (enforcement rule 4) ---
+    flag = "NEEDS_REVIEW" if is_ambiguous else ""
 
     return {
         "complaint_id": complaint_id,
-        "category": category,
-        "priority": priority,
-        "reason": reason,
-        "flag": flag,
+        "category":     category,
+        "priority":     priority,
+        "reason":       reason,
+        "flag":         flag,
     }
 
 
-def batch_classify(input_path: str, output_path: str):
-    output_fields = ["complaint_id", "category", "priority", "reason", "flag"]
+# ---------------------------------------------------------------------------
+# Skill: batch_classify
+# ---------------------------------------------------------------------------
 
-    with open(input_path, "r", encoding="utf-8-sig", newline="") as infile, \
-         open(output_path, "w", encoding="utf-8", newline="") as outfile:
+def batch_classify(input_path: str, output_path: str) -> None:
+    """
+    Read input CSV, apply classify_complaint to every row, write results CSV.
 
-        reader = csv.DictReader(infile)
-        writer = csv.DictWriter(outfile, fieldnames=output_fields)
-        writer.writeheader()
+    Input:  Path to test_[city].csv (15 rows, category + priority_flag stripped).
+    Output: results_[city].csv with category, priority, reason, flag appended.
 
-        for row in reader:
-            try:
-                result = classify_complaint(row)
-            except Exception as e:
-                complaint_id = ""
+    Error handling (skills.md): logs bad rows and continues — never halts the batch.
+    """
+    output_fields = ["complaint_id", "description", "category", "priority", "reason", "flag"]
+    results       = []
+    errors        = []
+
+    try:
+        with open(input_path, newline="", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for idx, row in enumerate(reader, start=1):
                 try:
-                    complaint_id = find_complaint_id(row)
-                except Exception:
-                    complaint_id = ""
+                    result = classify_complaint(row)
+                    # Preserve any extra columns from input
+                    merged = {**row, **result}
+                    results.append(merged)
+                except Exception as e:
+                    errors.append((idx, str(e)))
+                    print(f"[WARN] Row {idx} failed: {e} — writing NEEDS_REVIEW default.", file=sys.stderr)
+                    results.append({
+                        "complaint_id": row.get("complaint_id", f"row_{idx}"),
+                        "description":  row.get("description", ""),
+                        "category":     "Other",
+                        "priority":     "Low",
+                        "reason":       "Row processing error — could not classify.",
+                        "flag":         "NEEDS_REVIEW",
+                    })
+    except FileNotFoundError:
+        print(f"[ERROR] Input file not found: {input_path}", file=sys.stderr)
+        sys.exit(1)
 
-                result = {
-                    "complaint_id": complaint_id,
-                    "category": "Other",
-                    "priority": "Low",
-                    "reason": f"Row could not be safely classified due to processing error: {str(e)}.",
-                    "flag": "NEEDS_REVIEW",
-                }
+    if not results:
+        print("[WARN] No rows were processed. Output file will be empty.", file=sys.stderr)
 
-            writer.writerow(result)
+    # Determine full field list (input columns + output columns, no duplicates)
+    all_fields = list(dict.fromkeys(
+        list(results[0].keys()) if results else output_fields
+    ))
 
+    with open(output_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=all_fields, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(results)
+
+    print(f"[INFO] {len(results)} rows written to {output_path}")
+    if errors:
+        print(f"[INFO] {len(errors)} row(s) had errors and were written with NEEDS_REVIEW defaults.")
+
+
+# ---------------------------------------------------------------------------
+# Private helpers
+# ---------------------------------------------------------------------------
+
+def _find_urgent_keyword(desc_lower: str) -> Optional[str]:
+    """Return the first URGENT_KEYWORDS match found, or None."""
+    for kw in URGENT_KEYWORDS:
+        if kw in desc_lower:
+            return kw
+    return None
+
+
+def _infer_category(desc_lower: str) -> tuple[str, str, bool]:
+    """
+    Return (category, matched_word, is_ambiguous).
+
+    Scans CATEGORY_KEYWORDS in order. If exactly one category matches → confident.
+    If multiple categories match → pick first but mark ambiguous.
+    If none match → Other + NEEDS_REVIEW.
+    """
+    matches: list[tuple[str, str]] = []  # (category, matched_word)
+
+    for category, keywords in CATEGORY_KEYWORDS:
+        for kw in keywords:
+            if kw in desc_lower:
+                matches.append((category, kw))
+                break  # one match per category is enough
+
+    if len(matches) == 1:
+        return matches[0][0], matches[0][1], False   # confident
+    elif len(matches) > 1:
+        return matches[0][0], matches[0][1], True    # ambiguous — first wins, flag set
+    else:
+        return "Other", "", True                     # no match → NEEDS_REVIEW
+
+
+def _default_priority(desc_lower: str) -> str:
+    """Assign Standard or Low based on description tone when no urgent keyword fires."""
+    standard_signals = {"broken", "damaged", "blocked", "overflowing", "not working", "danger"}
+    for signal in standard_signals:
+        if signal in desc_lower:
+            return "Standard"
+    return "Low"
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input", required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser = argparse.ArgumentParser(
+        description="UC-0A Complaint Classifier — classifies city complaint CSVs."
+    )
+    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
+    parser.add_argument("--output", required=True, help="Path to write results_[city].csv")
     args = parser.parse_args()
 
     batch_classify(args.input, args.output)
