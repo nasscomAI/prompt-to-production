@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Complaint classified as Heritage Damage due to presence of 'heritage' in description.,
+KM-202402,Road Damage,Standard,Complaint classified as Road Damage due to presence of 'road' in description.,
+KM-202405,Other,Standard,No clear category match. Description contains: wedding band playing near tagore museum at 11pm. f...,NEEDS_REVIEW
+KM-202409,Other,Standard,"Ambiguous complaint matching multiple categories: Pothole, Road Damage. Cited words: pothole, road.",NEEDS_REVIEW
+KM-202410,Pothole,Standard,Complaint classified as Pothole due to presence of 'pothole' in description.,
+KM-202411,Other,Standard,"Ambiguous complaint matching multiple categories: Pothole, Flooding. Cited words: pothole, water.",NEEDS_REVIEW
+KM-202415,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Road Damage, Drain Blockage. Cited words: rain, road, drain.",NEEDS_REVIEW
+KM-202418,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Waste, Heat Hazard. Cited words: overflow, waste, hot.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Complaint classified as Road Damage due to presence of 'broken' in description. Marked as Urgent due to 'hospital, fell'.",
+KM-202422,Road Damage,Standard,Complaint classified as Road Damage due to presence of 'road' in description.,
+KM-202426,Heritage Damage,Standard,Complaint classified as Heritage Damage due to presence of 'heritage' in description.,
+KM-202430,Other,Standard,"Ambiguous complaint matching multiple categories: Road Damage, Drain Blockage. Cited words: road, pipe.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Complaint classified as Heritage Damage due to presence of 'heritage' in description.,
+KM-202436,Streetlight,Standard,Complaint classified as Streetlight due to presence of 'dark' in description.,
+KM-202438,Heritage Damage,Standard,Complaint classified as Heritage Damage due to presence of 'heritage' in description.,

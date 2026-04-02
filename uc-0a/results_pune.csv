@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Other,Standard,"Ambiguous complaint matching multiple categories: Pothole, Road Damage, Heritage Damage. Cited words: pothole, damage, damage.",NEEDS_REVIEW
+PM-202402,Pothole,Urgent,"Complaint classified as Pothole due to presence of 'pothole' in description. Marked as Urgent due to 'child, school'.",
+PM-202406,Flooding,Standard,Complaint classified as Flooding due to presence of 'flood' in description.,
+PM-202408,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Drain Blockage. Cited words: flood, drain.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Complaint classified as Streetlight due to presence of 'streetlight' in description.,
+PM-202411,Streetlight,Urgent,Complaint classified as Streetlight due to presence of 'streetlight' in description. Marked as Urgent due to 'hazard'.,
+PM-202413,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Waste. Cited words: overflow, garbage.",NEEDS_REVIEW
+PM-202418,Noise,Standard,Complaint classified as Noise due to presence of 'music' in description.,
+PM-202419,Road Damage,Standard,Complaint classified as Road Damage due to presence of 'road' in description.,
+PM-202420,Pothole,Urgent,Complaint classified as Pothole due to presence of 'hole' in description. Marked as Urgent due to 'injury'.,
+PM-202427,Flooding,Standard,Complaint classified as Flooding due to presence of 'flood' in description.,
+PM-202428,Other,Standard,No clear category match. Description contains: dead animal not removed for 36 hours. health conce...,NEEDS_REVIEW
+PM-202430,Other,Standard,"Ambiguous complaint matching multiple categories: Streetlight, Heritage Damage. Cited words: light, heritage.",NEEDS_REVIEW
+PM-202433,Other,Standard,"Ambiguous complaint matching multiple categories: Waste, Road Damage. Cited words: waste, road.",NEEDS_REVIEW
+PM-202446,Road Damage,Urgent,Complaint classified as Road Damage due to presence of 'broken' in description. Marked as Urgent due to 'fell'.,
