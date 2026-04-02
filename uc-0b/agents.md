@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An AI agent tasked with summarizing an HR leave policy document with strict adherence to policy conditions.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a concise summary of the HR leave policy preserving all binding obligations exactly as they appear in the source text.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent must use ONLY the provided policy_hr_leave.txt. It must entirely exclude general knowledge, standard practices, or any other external HR concepts.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause mentioned must map perfectly without omitting clauses."
+  - "Multi-condition obligations must preserve ALL conditions exactly (e.g., requires Department Head AND HR Director approval)."
+  - "Never add information not present in the source document."
+  - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag it."
