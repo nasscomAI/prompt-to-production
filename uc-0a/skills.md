@@ -1,4 +1,4 @@
-# skills.md — UC-0A Complaint Classifier
+# skills.md — UC-0A Complaint Classifie r
 
 skills:
   - name: classify_complaint
@@ -18,6 +18,8 @@ skills:
       not a valid civic complaint.", flag: NEEDS_REVIEW.
 
 
+
+
   - name: batch_classify
     description: Reads an input CSV of citizen complaints, applies classify_complaint to each row, and writes the results to an output CSV.
     input: >
@@ -32,3 +34,6 @@ skills:
       file path. If individual rows fail classification, write them to the output
       with category: Other, priority: Low, flag: NEEDS_REVIEW, and reason
       describing the failure — do not skip or silently drop rows.
+
+
+
