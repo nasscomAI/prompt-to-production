@@ -1,16 +1,25 @@
 # skills.md
 # INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
 # Delete these comments before committing.
+skills
+- name: classify_complaint
+  description: Classify a single complaint row into category, priority, reason, and flag
+  input:
+    type: dict
+    format: {description: string}
+  output:
+    type: dict
+    format: {category: string, priority: string, reason: string, flag: string}
+  error_handling: >
+    If description is missing, empty, or ambiguous, set flag to NEEDS_REVIEW and reason to indicate ambiguity.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: batch_classify
+  description: Read input CSV, apply classify_complaint to each row, write results to output CSV
+  input:
+    type: string
+    format: path to input CSV file
+  output:
+    type: string
+    format: path to output CSV file with category, priority, reason, and flag
+  error_handling: >
+    Skip rows with missing description and log a warning. Preserve original row data with flag set to NEEDS_REVIEW.
