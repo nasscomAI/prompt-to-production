@@ -1,0 +1,44 @@
+D:\prompt-to-production\uc-x\app.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+=== UC-X 'Ask My Documents' ===
+All documents loaded and indexed successfully.
+Type your questions below, or type 'exit' or 'quit' to close.
+
+Employee: 
+Agent:
+Yes, employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December. (policy_hr_leave.txt, 2.6)
+
+Employee: 
+Agent:
+Employees must not install software on corporate devices without written approval from the IT Department. Software approved for installation must be sourced from the CMC-approved software catalogue only. (policy_it_acceptable_use.txt, 2.3, 2.4)
+
+Employee: 
+Agent:
+Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000. This allowance covers a desk, chair, monitor, keyboard, mouse, and networking equipment only. It does not cover personal computers, laptops, smartphones, printers, or air conditioning equipment. Employees on temporary or partial work-from-home arrangements are not eligible for this allowance. (policy_finance_reimbursement.txt, 3.1, 3.2, 3.3, 3.5)
+
+Employee: 
+Agent:
+Personal devices must not be used to access, store, or transmit classified or sensitive CMC data (policy_it_acceptable_use.txt, 3.2). CMC data classified as Confidential or Restricted must not be stored on personal devices (policy_it_acceptable_use.txt, 5.1). Personal devices may only be used to access CMC email and the CMC employee self-service portal (policy_it_acceptable_use.txt, 3.1).
+
+Employee: 
+Agent:
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+Employee: 
+Agent:
+DA and meal receipts cannot be claimed simultaneously for the same day. (policy_finance_reimbursement.txt, 2.6)
+
+Employee: 
+Agent:
+Leave Without Pay (LWP) requires approval from the Department Head and the HR Director (policy_hr_leave.txt, 5.2). If the LWP exceeds 30 continuous days, it also requires approval from the Municipal Commissioner (policy_hr_leave.txt, 5.3).
+
+Employee: Exiting...
