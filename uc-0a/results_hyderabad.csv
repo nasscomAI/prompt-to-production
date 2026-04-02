@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Found Flooding indicators in description: 'Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.'.,
+GH-202402,Other,Standard,Could not confidently classify: 'Market area flooded. Traders suffering losses. Drain completely blocked.'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Found Drain Blockage indicators in description: 'Main stormwater drain 100% blocked with construction debris.'.,
+GH-202407,Drain Blockage,Standard,Found Drain Blockage indicators in description: 'Drain blocked and mosquito breeding. Dengue concern.'.,
+GH-202410,Pothole,Low,Found Pothole indicators in description: 'Potholes causing vehicles to slow to 20kmph on fast road.'.,
+GH-202411,Pothole,Urgent,Found Pothole indicators in description: 'Pothole swallowed entire motorcycle wheel. Rider hospitalised.'.,
+GH-202412,Pothole,Urgent,Found Pothole indicators in description: 'School bus struggling to navigate 6 potholes in 200m stretch.'.,
+GH-202417,Other,Low,Could not confidently classify: 'Heritage zone garbage overflow. Tourist photographs showing piles of waste.'.,NEEDS_REVIEW
+GH-202420,Other,Standard,Could not confidently classify: 'Construction drilling from 5am daily near residential towers.'.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Could not confidently classify: 'Road collapsed partially. Crater 1m deep near residential gate.'.,NEEDS_REVIEW
+GH-202424,Other,Standard,Could not confidently classify: 'Underpass floods in light rain. Cars regularly abandoned.'.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Found Waste indicators in description: 'Post-market waste not cleared. Area unusable by Sunday morning.'.,
+GH-202432,Other,Standard,Could not confidently classify: '24hr supermarket delivery trucks idling with engines on.'.,NEEDS_REVIEW
+GH-202448,Other,Standard,Could not confidently classify: 'Main drain blocked — entire locality at flooding risk this week.'.,NEEDS_REVIEW
+GH-202438,Other,Standard,Could not confidently classify: 'Colony surrounded by fields that channel rainwater through main road.'.,NEEDS_REVIEW
