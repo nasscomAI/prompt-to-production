@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: "classify_complaint"
+  description: "Processes a single complaint record and determines its classification according to rigid schema constraints. Identifies category, assigns severity priority, extracts justification reason, and flags ambiguity."
+  input: "Single complaint row (string or dictionary)"
+  output: "Dictionary with four keys: category, priority, reason, flag"
+  error_handling: "Return default low confidence/ambiguous 'NEEDS_REVIEW' flag if classification fails, rather than crashing."
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: "save_results"
+  description: "Reads a dataset of classified complaint rows and writes the collated results into the final output CSV."
+  input: "List of classified records and an output file path string"
+  output: "CSV file written to the local filesystem"
+  error_handling: "Must flag nulls and handle bad rows without crashing. Guarantee output CSV is produced even if individual rows fail processing."
