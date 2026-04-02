@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Assigned Standard priority and categorized as Pothole because of the word 'pothole'.,
+PM-202402,Pothole,Urgent,"Priority escalated to Urgent due to finding 'child', classified as Pothole based on 'pothole'.",
+PM-202406,Flooding,Standard,Assigned Standard priority and categorized as Flooding because of the word 'flood'.,
+PM-202408,Flooding,Standard,Assigned Standard priority and categorized as Flooding because of the word 'flood'.,
+PM-202410,Streetlight,Standard,Assigned Standard priority and categorized as Streetlight because of the word 'light'.,
+PM-202411,Streetlight,Urgent,"Priority escalated to Urgent due to finding 'hazard', classified as Streetlight based on 'light'.",
+PM-202413,Waste,Standard,Assigned Standard priority and categorized as Waste because of the word 'garbage'.,
+PM-202418,Noise,Standard,Assigned Standard priority and categorized as Noise because of the word 'music'.,
+PM-202419,Road Damage,Standard,Assigned Standard priority and categorized as Road Damage because of the word 'crack'.,
+PM-202420,Drain Blockage,Urgent,"Priority escalated to Urgent due to finding 'injury', classified as Drain Blockage based on 'manhole'.",
+PM-202427,Flooding,Standard,Assigned Standard priority and categorized as Flooding because of the word 'flood'.,
+PM-202428,Other,Standard,Assigned Standard priority and categorized as Other because of the word 'complaint'.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Assigned Standard priority and categorized as Streetlight because of the word 'light'.,
+PM-202433,Waste,Standard,Assigned Standard priority and categorized as Waste because of the word 'waste'.,
+PM-202446,Road Damage,Urgent,"Priority escalated to Urgent due to finding 'fell', classified as Road Damage based on 'broken'.",
