@@ -10,7 +10,7 @@
 ```
 15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
 
-## Your Output File
+## Your Ou   tput File
 ```
 uc-0a/results_[your-city].csv
 ```
