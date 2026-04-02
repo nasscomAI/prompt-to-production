@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No clear category match. Description contains: tarmac surface melting at 44°c. footwear sticking....,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Complaint classified as Heat Hazard due to presence of 'temperature' in description.,
+AM-202405,Other,Standard,No clear category match. Description contains: dead trees with split branches. fall risk to walke...,NEEDS_REVIEW
+AM-202406,Other,Standard,"Ambiguous complaint matching multiple categories: Road Damage, Heat Hazard. Cited words: broken, heat.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,Complaint classified as Road Damage due to presence of 'broken' in description. Marked as Urgent due to 'child'.,
+AM-202410,Pothole,Standard,Complaint classified as Pothole due to presence of 'pothole' in description.,
+AM-202414,Other,Standard,No clear category match. Description contains: residential colony unlit after 9pm. wiring theft r...,NEEDS_REVIEW
+AM-202417,Other,Standard,"Ambiguous complaint matching multiple categories: Waste, Heritage Damage. Cited words: waste, heritage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Complaint classified as Noise due to presence of 'music' in description.,
+AM-202424,Road Damage,Standard,Complaint classified as Road Damage due to presence of 'road' in description.,
+AM-202429,Heat Hazard,Standard,Complaint classified as Heat Hazard due to presence of 'temperature' in description.,
+AM-202431,Other,Standard,"Ambiguous complaint matching multiple categories: Road Damage, Heritage Damage. Cited words: road, heritage.",NEEDS_REVIEW
+AM-202435,Other,Standard,"Ambiguous complaint matching multiple categories: Road Damage, Heat Hazard. Cited words: road, heat.",NEEDS_REVIEW
+AM-202444,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Waste, Heat Hazard. Cited words: overflow, waste, sun.",NEEDS_REVIEW
+AM-202445,Other,Standard,"Ambiguous complaint matching multiple categories: Road Damage, Heat Hazard. Cited words: broken, sun.",NEEDS_REVIEW
