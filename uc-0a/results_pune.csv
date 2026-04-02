@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description mentions the 'pothole' issue.,
+PM-202402,Pothole,Urgent,The description mentions 'child'.,
+PM-202406,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202408,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description mentions the 'streetlight' issue.,
+PM-202411,Streetlight,Urgent,The description mentions 'hazard'.,
+PM-202413,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202418,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202419,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202427,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202428,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202430,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+PM-202433,Waste,Standard,The description mentions the 'waste' issue.,
+PM-202446,Other,Urgent,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
