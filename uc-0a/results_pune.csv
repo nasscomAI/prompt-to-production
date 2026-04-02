@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,"Classified based on words from complaint like 'Large, pothole'.",
+Pothole,Urgent,"Classified based on words from complaint like 'Deep, pothole'.",
+Flooding,Standard,"Classified based on words from complaint like 'Underpass, flooded'.",
+Flooding,Standard,"Classified based on words from complaint like 'stand, flooded.'.",NEEDS_REVIEW
+Streetlight,Standard,"Classified based on words from complaint like 'Three, consecutive'.",
+Streetlight,Urgent,"Classified based on words from complaint like 'Streetlight, flickering'.",
+Waste,Standard,"Classified based on words from complaint like 'Overflowing, garbage'.",
+Other,Standard,"Classified based on words from complaint like 'Wedding, venue'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified based on words from complaint like 'Road, surface'.",
+Other,Urgent,"Classified based on words from complaint like 'Manhole, cover'.",NEEDS_REVIEW
+Flooding,Standard,"Classified based on words from complaint like 'Bridge, approach'.",
+Other,Standard,"Classified based on words from complaint like 'Dead, animal'.",NEEDS_REVIEW
+Streetlight,Standard,"Classified based on words from complaint like 'Heritage, street,'.",NEEDS_REVIEW
+Waste,Standard,"Classified based on words from complaint like 'Bulk, waste'.",NEEDS_REVIEW
+Other,Urgent,"Classified based on words from complaint like 'Footpath, tiles'.",NEEDS_REVIEW
