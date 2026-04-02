@@ -72,7 +72,8 @@ def batch_classify(input_path: str, output_path: str):
     try:
         with open(input_path, 'r', encoding='utf-8') as fin:
             reader = csv.DictReader(fin)
-            fieldnames = list(reader.fieldnames) if reader.fieldnames else []
+            _fieldnames = reader.fieldnames
+            fieldnames = list(_fieldnames) if _fieldnames is not None else []
             for col in ["category", "priority", "reason", "flag"]:
                 if col not in fieldnames:
                     fieldnames.append(col)
