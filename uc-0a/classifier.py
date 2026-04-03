@@ -40,6 +40,7 @@ def classify_complaint_category(description: str) -> str:
 
     if any(word in description_lower for word in ['drain']):
         return "Drain Blockage"
+
         
     return "Other"
 
