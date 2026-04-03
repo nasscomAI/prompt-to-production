@@ -3,7 +3,6 @@ import csv
 import sys
 import os
 
-
 def load_dataset(file_path):
     """
     Skill 1: Reads the CSV dataset, validates expected columns, counts nulls,
