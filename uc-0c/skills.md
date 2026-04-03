@@ -1,16 +1,50 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+\# Skills: Budget Growth Computation
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+
+\## 1. Filtering
+
+Filter dataset by:
+
+\- ward
+
+\- category
+
+
+
+\## 2. Sorting
+
+Sort by period (YYYY-MM)
+
+
+
+\## 3. Null Handling
+
+\- If `actual\_spend` is null → skip row OR mark growth as NA
+
+\- Never treat null as 0
+
+
+
+\## 4. Growth Formula
+
+Growth = (current\_month - previous\_month) / previous\_month
+
+
+
+\## 5. Edge Cases
+
+\- First month → growth = NA
+
+\- Previous month null → growth = NA
+
+
+
+\## 6. Output Rules
+
+\- Maintain per-month rows
+
+\- Do not collapse into a single value
+
+\- Preserve original data
+
