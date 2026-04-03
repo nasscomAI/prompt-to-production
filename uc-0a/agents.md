@@ -3,16 +3,16 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Complaint Classifier Agent for UC-0A. Operates on city complaint data, classifying individual complaints into predefined categories based solely on the description field.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Correct output is a dictionary with keys: complaint_id (string), category (string from allowed list), priority (Urgent or Normal), reason (string citing specific words from description), flag (empty string or NEEDS_REVIEW).
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use only the description field from the input complaint row. No external data sources, APIs, or additional context beyond the provided row data. Input is a CSV row as a dictionary.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Garbage, Noise, Road Damage, Other"
+  - "Priority must be Urgent if description contains any of: injury, child, school, emergency, accident, risk; otherwise Normal"
+  - "Every output row must include a reason field citing specific words from the description that led to the classification"
+  - "If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW"

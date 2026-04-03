@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,Keywords found: pothole,
+PM-202402,Pothole,Urgent,Keywords found: pothole,
+PM-202406,Flooding,Normal,Keywords found: flood,
+PM-202408,Flooding,Normal,Keywords found: flood,
+PM-202410,Streetlight,Normal,Keywords found: streetlight,
+PM-202411,Streetlight,Normal,Keywords found: streetlight,
+PM-202413,Garbage,Normal,Keywords found: garbage,
+PM-202418,Noise,Normal,Keywords found: music,
+PM-202419,Road Damage,Normal,Keywords found: crack,
+PM-202420,Other,Urgent,No matching keywords found in description,NEEDS_REVIEW
+PM-202427,Flooding,Normal,Keywords found: flood,
+PM-202428,Other,Normal,No matching keywords found in description,NEEDS_REVIEW
+PM-202430,Streetlight,Normal,Keywords found: light,
+PM-202433,Garbage,Normal,Keywords found: waste,
+PM-202446,Road Damage,Normal,Keywords found: broken,
