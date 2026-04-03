@@ -208,3 +208,4 @@ Git confusion → ask your assistant tutor or check the [Git Cheat Sheet](https:
 AI tool not working → switch to any other available tool.
 The workflow is tool-agnostic. Your RICE prompt, agents.md, and skills.md are identical
 regardless of whether you use Claude, Gemini, Copilot, or Cursor.
+
