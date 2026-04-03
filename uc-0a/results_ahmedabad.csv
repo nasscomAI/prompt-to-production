@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Identified as Heat Hazard based on keywords like 'melting'.,
+AM-202402,Heat Hazard,Standard,Identified as Heat Hazard based on keywords like 'temperatures'.,
+AM-202405,Other,Standard,Category ambiguous; requires manual review.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Identified as Heat Hazard based on keywords like 'heat'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage with Urgent priority because description mentions 'child'.,
+AM-202410,Pothole,Standard,Identified as Pothole based on keywords like 'pothole'.,
+AM-202414,Streetlight,Standard,Identified as Streetlight based on keywords like 'unlit'.,
+AM-202417,Heritage Damage,Standard,Identified as Heritage Damage based on keywords like 'heritage'.,
+AM-202421,Noise,Standard,Identified as Noise based on keywords like 'music'.,
+AM-202424,Road Damage,Standard,Identified as Road Damage based on keywords like 'road surface'.,
+AM-202429,Other,Standard,Category ambiguous; requires manual review.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Identified as Heritage Damage based on keywords like 'heritage'.,
+AM-202435,Heat Hazard,Standard,Identified as Heat Hazard based on keywords like 'heat'.,
+AM-202444,Waste,Standard,Identified as Waste based on keywords like 'waste'.,
+AM-202445,Heat Hazard,Standard,Identified as Heat Hazard based on keywords like 'full sun'.,

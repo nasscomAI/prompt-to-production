@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_context
+    description: Loads policy files (HR, IT, Finance) and parses them into sectional dictionaries to ensure precise citation and zero document blending.
+    input: File paths to the 3 documents.
+    output: A dictionary indexed by [policy_name][section_number].
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: generate_answer
+    description: Executes the single-source reasoning logic. Returns an answer + citation OR the refusal template.
+    input: Query text and policy index.
+    output: String response.
+    error_handling: Detects cross-document keywords (e.g., 'phone' + 'work files') and applies the IT Section 3.1 restrictive override.
