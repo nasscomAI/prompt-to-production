@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected keywords in description: large pothole 60cm wide causing tyre damage. three,
+PM-202402,Pothole,Urgent,Detected keywords in description: deep pothole near bus stop. school children at ris,
+PM-202406,Flooding,Standard,Detected keywords in description: underpass flooded knee-deep after 2hrs rain. commu,
+PM-202408,Flooding,Standard,Detected keywords in description: bus stand flooded. passengers standing in water. d,
+PM-202410,Streetlight,Standard,Detected keywords in description: three consecutive streetlights out for 10 days. ar,
+PM-202411,Streetlight,Urgent,Detected keywords in description: streetlight flickering and sparking. electrical ha,
+PM-202413,Waste,Standard,Detected keywords in description: overflowing garbage bins near vegetable market. sm,
+PM-202418,Other,Standard,Detected keywords in description: wedding venue playing music past midnight on weekn,NEEDS_REVIEW
+PM-202419,Other,Standard,Detected keywords in description: road surface cracked and sinking near utility work,NEEDS_REVIEW
+PM-202420,Other,Urgent,Detected keywords in description: manhole cover missing. risk of serious injury to c,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected keywords in description: bridge approach floods in 30mins of rain. bridge b,
+PM-202428,Other,Standard,Detected keywords in description: dead animal not removed for 36 hours. health conce,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Detected keywords in description: heritage street, lights out. safety concern for pe",
+PM-202433,Waste,Standard,Detected keywords in description: bulk waste from apartment renovation dumped on pub,
+PM-202446,Other,Urgent,Detected keywords in description: footpath tiles broken and upturned. elderly reside,NEEDS_REVIEW
