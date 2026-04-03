@@ -1,0 +1,31 @@
+# HR Leave Policy Summary
+
+Clause 1.1: Policy governs all leave for permanent/contractual employees of CMC.
+Clause 1.2: Policy does not apply to daily wage workers or consultants.
+Clause 2.1: 18 days paid annual leave per year.
+Clause 2.2: Annual leave accrues 1.5 days/month from joining date.
+Clause 2.3: 14-day advance notice required using Form HR-L1.
+Clause 2.4: Written approval required before leave commences. Verbal not valid.
+Clause 2.5: Unapproved absence = LOP regardless of subsequent approval.
+Clause 2.6: Max 5 days carry-forward. Above 5 forfeited on 31 Dec.
+Clause 2.7: Carry-forward days must be used Jan-Mar or forfeited.
+Clause 3.1: 12 days paid sick leave per year.
+Clause 3.2: 3+ consecutive sick days requires medical cert within 48hrs.
+Clause 3.3: Sick leave cannot be carried forward.
+Clause 3.4: Sick leave before/after holiday requires cert regardless of duration.
+Clause 4.1: 26 weeks paid maternity leave (first two births).
+Clause 4.2: 12 weeks paid maternity leave (third+ birth).
+Clause 4.3: 5 days paid paternity leave within 30 days of birth.
+Clause 4.4: Paternity leave cannot be split.
+Clause 5.1: LWP only after exhausting all applicable paid leave.
+Clause 5.2: LWP requires approval from Department Head AND HR Director.
+Clause 5.3: LWP >30 days requires Municipal Commissioner approval.
+Clause 5.4: LWP does not count toward service benefits (seniority, increments, retirement).
+Clause 6.1: Entitled to gazetted public holidays declared by State Government.
+Clause 6.2: Work on holiday = 1 compensatory off day within 60 days.
+Clause 6.3: Compensatory off cannot be encashed.
+Clause 7.1: Max 60 days annual leave encashment at retirement/resignation only.
+Clause 7.2: Leave encashment during service not permitted under any circumstances.
+Clause 7.3: Sick leave and LWP cannot be encashed under any circumstances.
+Clause 8.1: Grievances must be raised with HR within 10 working days of disputed decision.
+Clause 8.2: Grievances after 10 days not considered without written exceptional circumstances.
