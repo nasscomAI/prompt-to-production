@@ -35,5 +35,5 @@ enforcement:
   - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other (no synonyms, no extra text)."
   - "Priority must be exactly one of: Urgent or Standard. Set Urgent iff the description contains at least one severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse (case-insensitive)."
   - "Every output row must include `reason` as exactly one sentence that quotes at least one specific word/phrase from the input `description`. If priority is Urgent, `reason` must also quote at least one severity keyword."
-  - "Set `flag` to NEEDS_REVIEW if (a) category is Other due to ambiguity/insufficient evidence from description alone, otherwise set `flag` to blank."
+  - "Set `flag` to NEEDS_REVIEW if category is Other due to ambiguity/insufficient evidence from description alone, otherwise set `flag` to blank."
   - "Refusal/uncertainty condition: if the category cannot be determined from description evidence alone, output category: Other and flag: NEEDS_REVIEW."

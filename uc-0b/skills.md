@@ -1,30 +1,26 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
   - name: retrieve_policy
     description: >
-      Load the policy .txt file and return a mapping from clause number
-      (e.g., '2.3') to the exact clause text as it appears in the document.
+      Loads a .txt policy file and extracts its content as structured, numbered sections.
     input: >
-      input_path: string path to a .txt policy document.
+      A string representing the path to the policy .txt file.
+      Format: absolute or relative file path (e.g., '../data/policy-documents/policy_hr_leave.txt').
     output: >
-      dict mapping clause_number -> clause_text (string with normalized spacing).
+      A dictionary mapping clause IDs (str) to the exact text of each clause (str).
     error_handling: >
-      If a required clause number is missing, return an error object or raise a
-      clear exception; do not fabricate clause text.
+      If the file is missing or unreadable, return a descriptive error dictionary or string (e.g., {"error": "File not found"}).
+      If the format is invalid or clauses are missing, do not crash but return the structured sections successfully parsed so far.
 
   - name: summarize_policy
     description: >
-      Build the final summary by selecting the required clauses from the
-      retrieved mapping and emitting a compliant summary that preserves all
-      conditions.
+      Takes structured clause sections and produces a compliant summary with correct clause references,
+      preserving all conditions, binding obligations, and clauses without dropping details or adding scope bleed.
     input: >
-      policy_clauses: dict mapping clause_number -> clause_text.
+      A dictionary of structured sections mapping clause numbers to text (output of retrieve_policy).
     output: >
-      A string representing summary_hr_leave.txt that contains all required clause
-      numbers and their clause texts (verbatim/meaning-preserving).
+      A formatted summary string containing the verbatim or fully preserved representation of all required clauses.
     error_handling: >
-      If any required clause is absent in policy_clauses, include a placeholder
-      line noting the missing clause number and fail fast (never add invented content).
+      If any mandated clause is completely missing from the input, explicitly flag the omission in the output summary.
+      If a clause is structurally complex and cannot be summarised without meaning loss (e.g. multi-condition obligations like 'Department Head AND HR Director'), 
+      quote it verbatim and flag it rather than dropping a condition.
+      If out-of-scope information is detected (scope bleed), remove it or refuse execution, citing the refusal condition.

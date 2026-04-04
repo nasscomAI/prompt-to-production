@@ -97,10 +97,14 @@ def main():
     parser.add_argument("--output", required=True, help="Path to write summary_hr_leave.txt")
     args = parser.parse_args()
 
-    policy_clauses = retrieve_policy(args.input)
-    summary = summarize_policy(policy_clauses)
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
+    try:
+        policy_clauses = retrieve_policy(args.input)
+        summary = summarize_policy(policy_clauses)
+        with open(args.output, "w", encoding="utf-8") as f:
+            f.write(summary)
+        print(f"Success! Summary written to {args.output}")
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()
