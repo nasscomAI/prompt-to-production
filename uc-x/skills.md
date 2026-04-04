@@ -1,8 +1,6 @@
-# Skills
+# UC-X Skills
 
-## Classification Skill
-
-- Detect keywords like water, road, garbage
-- Identify critical words like injury, hospital, school
-- Ensure no complaint is left unclassified
-- Maintain consistency in output
+- Single-source attribution (no cross-doc blending)
+- CSV input/output handling
+- Simple keyword-based question answering
+- Reproducible output for testing

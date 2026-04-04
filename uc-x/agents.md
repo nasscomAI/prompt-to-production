@@ -1,23 +1,7 @@
-# Agents
+# UC-X Agents
 
-## Complaint Classifier Agent
-
-### Role
-Classifies citizen complaints into categories with priority handling.
-
-### Input
-Complaint text from CSV file
-
-### Output
-Category (Water / Road / Sanitation / Other)
-
-### Rules
-- Detect keywords
-- Handle critical cases (injury, hospital, school)
-- Always assign a category
-
-### Steps
-1. Read complaint
-2. Identify keywords
-3. Apply rules
-4. Return category
+## Document Query Agent
+- Reads policy documents CSV and answers questions.
+- Each answer comes from a single document; cross-document blending forbidden.
+- Input: CSV (doc_id, text)
+- Output: CSV (doc_id, answer)
