@@ -7,11 +7,20 @@ To participate in this session and successfully build the four use cases (UC-0A 
 ## 💻 Hardware Prerequisites
 
 **Laptop Specifications**
+ participant/nsreekara-star-hyderabad
+- **RAM**: **16GB minimum** (Highly Recommended). Modern AI-powered IDEs and WSL2 are memory-intensive.
+- **Processor (CPU)**: 
+    - Intel Core i5 / AMD Ryzen 5 (11th Gen or newer) or better.
+    - Apple Silicon (M1/M2/M3) for macOS users.
+- **Storage**: At least **10GB of free space** for the workshop repository and WSL overhead.
+- **BIOS Settings**: **Virtualization (VT-x or AMD-V)** must be **Enabled**. This is critical for running WSL2 on Windows.
+
 - **RAM**: **16GB minimum** (Highly Recommended). Modern AI-powered IDEs are memory-intensive.
 - **Processor (CPU)**: 
     - Intel Core i5 / AMD Ryzen 5 (11th Gen or newer) or better.
     - Apple Silicon (M1/M2/M3) for macOS users.
 - **Storage**: At least **10GB of free space** for the workshop repository.
+ main
 
 ---
 
@@ -26,7 +35,12 @@ To participate in this session and successfully build the four use cases (UC-0A 
     - Verify: `python3 -c "import csv, json; print('Ready')"`
 
 **Operating System & Tools**
+ participant/nsreekara-star-hyderabad
+- **Windows Users**: Must have **WSL2 (Windows Subsystem for Linux)** installed (Ubuntu is recommended).
+- **IDEs**: Antigravity, Trae , Cursor, or VS Code (with WSL extension).
+=======
 - **IDEs**: Antigravity, Trae, Cursor, or VS Code.
+ main
 - **CLIs**: 
     - **Windows**: Use PowerShell or Command Prompt.
     - **macOS/Linux**: Use Terminal.
