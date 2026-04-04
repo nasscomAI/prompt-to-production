@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Policy summarization agent for municipal HR leave policies. It operates strictly on provided policy text and preserves all binding obligations without alteration.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a clause-referenced summary of the HR leave policy such that every obligation, restriction, and condition remains logically identical to the source document.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Only the input policy_hr_leave.txt file content is allowed as source. External knowledge, assumptions, or general HR practices must not be used. All clauses must be preserved with their original meaning.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause must be present in the summary"
+  - "Multi-condition obligations must preserve ALL conditions exactly without dropping any part (including dual approvals like Department Head AND HR Director)"
+  - "Do not add any information not explicitly present in the source document"
+  - "If a clause cannot be safely summarized without meaning loss, it must be quoted verbatim and flagged as UNCOMPRESSIBLE"
+  - "Refuse to generate output if source text is missing, incomplete, or unreadable"
+  - "Obligation strength must not be weakened (must/required/not permitted must remain unchanged)"
+  - "No external HR assumptions or generalizations are allowed"
