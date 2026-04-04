@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions ""pothole"", ""hole"", ""tyre"", indicating Pothole.",
+PM-202402,Pothole,Urgent,"Description mentions ""pothole"", ""hole"", indicating Pothole.",
+PM-202406,Flooding,Standard,"Description mentions ""flood"", ""flooded"", ""knee-deep"", indicating Flooding.",
+PM-202408,Flooding,Standard,"Description mentions ""flood"", ""flooded"", ""water"", indicating Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions ""streetlight"", ""light"", ""out"", indicating Streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions ""streetlight"", ""light"", ""flickering"", indicating Streetlight.",
+PM-202413,Waste,Standard,"Description mentions ""garbage"", ""bins"", ""overflowing"", indicating Waste.",
+PM-202418,Noise,Standard,"Description mentions ""music"", ""midnight"", indicating Noise.",
+PM-202419,Road Damage,Standard,"Description mentions ""road"", ""surface"", ""cracked"", indicating Road Damage.",
+PM-202420,Road Damage,Urgent,"Description mentions ""manhole"", ""cyclists"", ""missing"", indicating Road Damage.",
+PM-202427,Flooding,Standard,"Description mentions ""flood"", ""inaccessible"", indicating Flooding.",
+PM-202428,Waste,Standard,"Description mentions ""dead animal"", ""health"", indicating Waste.",
+PM-202430,Heritage Damage,Standard,"Description mentions ""heritage"", ""lights"", ""safety"", indicating Heritage Damage.",
+PM-202433,Waste,Standard,"Description mentions ""waste"", ""dumped"", ""renovation"", indicating Waste.",
+PM-202446,Road Damage,Urgent,"Description mentions ""footpath"", ""tiles"", ""broken"", indicating Road Damage.",
