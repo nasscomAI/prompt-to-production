@@ -203,7 +203,7 @@ Plus a CRAFT reflection and one forward-looking application of the framework.
 
 Blocked for more than 5 minutes → flag your tutor. Do not debug alone.
 
-Git confusion → ask your assistant tutor.
+Git confusion → ask your assistant tutor or check the [Git Cheat Sheet](https://git-scm.com/cheat-sheet).
 
 AI tool not working → switch to any other available tool.
 The workflow is tool-agnostic. Your RICE prompt, agents.md, and skills.md are identical
