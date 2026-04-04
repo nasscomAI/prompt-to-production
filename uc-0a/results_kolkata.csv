@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Mentions multiple keywords ('lamp', 'Heritage') making category ambiguous.",NEEDS_REVIEW
+KM-202402,Other,Standard,No category keyword matched; description excerpt: 'Historic tram road cobblestones broken up'.,NEEDS_REVIEW
+KM-202405,Other,Standard,No category keyword matched; description excerpt: 'Wedding band playing near Tagore Museum'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Mentions 'potholes' in the description, indicating Pothole.",
+KM-202410,Pothole,Standard,"Mentions 'Pothole' in the description, indicating Pothole.",
+KM-202411,Pothole,Standard,"Mentions 'pothole' in the description, indicating Pothole.",
+KM-202415,Other,Standard,No category keyword matched; description excerpt: 'New residential complex draining directly onto'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"Mentions 'waste' in the description, indicating Waste.",
+KM-202421,Other,Urgent,No category keyword matched but mentions severity word 'Hospital'.,NEEDS_REVIEW
+KM-202422,Other,Standard,No category keyword matched; description excerpt: 'Road surface buckled near bridge. Structural'.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Mentions 'Heritage' in the description, indicating Heritage Damage.",
+KM-202430,Other,Standard,No category keyword matched; description excerpt: 'Road subsided near gas pipeline. Gas'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Mentions 'heritage' in the description, indicating Heritage Damage.",
+KM-202436,Other,Standard,No category keyword matched; description excerpt: 'Entire colony substation tripped. Darkness for'.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Mentions 'heritage' in the description, indicating Heritage Damage.",
