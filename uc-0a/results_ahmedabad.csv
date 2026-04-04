@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+AM-202402,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+AM-202405,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Standard complaint without specific urgency keywords.,
+AM-202407,Other,Urgent,Urgent severity keyword(s) found: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Standard complaint without specific urgency keywords.,
+AM-202414,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Standard complaint without specific urgency keywords.,
+AM-202421,Noise,Standard,Standard complaint without specific urgency keywords.,
+AM-202424,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+AM-202429,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Standard complaint without specific urgency keywords.,
+AM-202435,Heat Hazard,Standard,Standard complaint without specific urgency keywords.,
+AM-202444,Flooding,Standard,Standard complaint without specific urgency keywords.,
+AM-202445,Heat Hazard,Standard,Standard complaint without specific urgency keywords.,
