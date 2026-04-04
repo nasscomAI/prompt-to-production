@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: read_file
+    description: Reads the input policy document from a file
+    input: File path (string)
+    output: File content (string)
+    error_handling: Returns error message if file cannot be read
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_text
+    description: Generates a concise summary of the policy document
+    input: Raw text (string)
+    output: Summary text (string)
+    error_handling: Returns original text if input is empty or invalid
