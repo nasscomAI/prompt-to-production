@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,general query,low,keyword based classification,no
+GH-202402,general query,low,keyword based classification,no
+GH-202406,general query,low,keyword based classification,no
+GH-202407,general query,low,keyword based classification,no
+GH-202410,general query,low,keyword based classification,no
+GH-202411,general query,low,keyword based classification,no
+GH-202412,general query,low,keyword based classification,no
+GH-202417,general query,low,keyword based classification,no
+GH-202420,general query,low,keyword based classification,no
+GH-202422,general query,low,keyword based classification,no
+GH-202424,general query,low,keyword based classification,no
+GH-202428,general query,low,keyword based classification,no
+GH-202432,general query,low,keyword based classification,no
+GH-202448,general query,low,keyword based classification,no
+GH-202438,general query,low,keyword based classification,no
