@@ -23,4 +23,4 @@ skills:
     enforcement:
       - "Must ensure computation strictly restricts calculations explicitly within the requested ward and category boundaries."
       - "Must output a visible, exact representation of the mathematical formula used in every row alongside the computed growth percentage."
-      - "Must intercept null `actual_spend` triggers and clearly return the explicit warning from `notes` rather than executing computation across empty references."
+      - "Must intercept null `actual_spend` triggers and clearly return the explicit warning from `notes` rather than executing computation across empty references. "
