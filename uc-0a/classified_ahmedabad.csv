@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description text was too ambiguous to extract clear categorization triggers.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description text was too ambiguous to extract clear categorization triggers.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description text was too ambiguous to extract clear categorization triggers.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,The classification is based on the specific word 'broken' extracted from the description.,
+AM-202407,Road Damage,Urgent,The classification is based on the specific word 'Broken' extracted from the description.,
+AM-202410,Pothole,Standard,The classification is based on the specific word 'Pothole' extracted from the description.,
+AM-202414,Other,Standard,The description text was too ambiguous to extract clear categorization triggers.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The classification is based on the specific word 'waste' extracted from the description.,
+AM-202421,Noise,Standard,The classification is based on the specific word 'music' extracted from the description.,
+AM-202424,Road Damage,Standard,The classification is based on the specific word 'road surface' extracted from the description.,
+AM-202429,Other,Standard,The description text was too ambiguous to extract clear categorization triggers.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The classification is based on the specific word 'Heritage' extracted from the description.,
+AM-202435,Heat Hazard,Standard,The classification is based on the specific word 'heat' extracted from the description.,
+AM-202444,Waste,Standard,The classification is based on the specific word 'waste' extracted from the description.,
+AM-202445,Road Damage,Standard,The classification is based on the specific word 'broken' extracted from the description.,
