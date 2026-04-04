@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole'; community impact indicated — classified as Pothole/Standard.,
+PM-202402,Pothole,Urgent,"Description mentions 'pothole'; severity keyword 'child, school' triggers Urgent — classified as Pothole/Urgent.",
+PM-202406,Flooding,Standard,"Description mentions 'flood, flooded'; community impact indicated — classified as Flooding/Standard.",
+PM-202408,Drain Blockage,Standard,Description mentions 'drain'; community impact indicated — classified as Drain Blockage/Standard.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions 'streetlight, lights out'; community impact indicated — classified as Streetlight/Standard.",
+PM-202411,Streetlight,Urgent,"Description mentions 'streetlight, flickering'; severity keyword 'hazard' triggers Urgent — classified as Streetlight/Urgent.",
+PM-202413,Waste,Standard,"Description mentions 'garbage, overflowing'; community impact indicated — classified as Waste/Standard.",
+PM-202418,Noise,Low,"Description mentions 'music, midnight' — classified as Noise/Low.",
+PM-202419,Road Damage,Low,"Description mentions 'road surface, cracked' — classified as Road Damage/Low.",
+PM-202420,Road Damage,Urgent,Description mentions 'manhole'; severity keyword 'injury' triggers Urgent — classified as Road Damage/Urgent.,
+PM-202427,Flooding,Standard,Description mentions 'flood'; community impact indicated — classified as Flooding/Standard.,
+PM-202428,Waste,Standard,Description mentions 'dead animal'; community impact indicated — classified as Waste/Standard.,
+PM-202430,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions 'waste, dump'; community impact indicated — classified as Waste/Standard.",
+PM-202446,Road Damage,Urgent,"Description mentions 'footpath, tiles broken'; severity keyword 'fell' triggers Urgent — classified as Road Damage/Urgent.",

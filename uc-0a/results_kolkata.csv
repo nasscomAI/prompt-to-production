@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,NEEDS_REVIEW
+KM-202402,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
+KM-202405,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole'; community impact indicated — classified as Pothole/Standard.,
+KM-202410,Pothole,Low,Description mentions 'pothole' — classified as Pothole/Low.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'; community impact indicated — classified as Pothole/Standard.,
+KM-202415,Drain Blockage,Standard,Description mentions 'drain'; community impact indicated — classified as Drain Blockage/Standard.,
+KM-202418,Waste,Standard,"Description mentions 'waste, overflowing'; community impact indicated — classified as Waste/Standard.",
+KM-202421,Road Damage,Urgent,"Description mentions 'sinking, footpath'; severity keyword 'hospital, fell' triggers Urgent — classified as Road Damage/Urgent.",
+KM-202422,Road Damage,Standard,Description mentions 'road surface'; community impact indicated — classified as Road Damage/Standard.,
+KM-202426,Heritage Damage,Low,Description mentions 'heritage' — classified as Heritage Damage/Low.,
+KM-202430,Waste,Standard,Description mentions 'smell'; community impact indicated — classified as Waste/Standard.,
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,
+KM-202436,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,
