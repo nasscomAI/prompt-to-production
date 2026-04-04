@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified based on the mention of the word 'heritage'.,
+KM-202402,Other,Standard,Could not identify clear and specific keywords from the description to confidently classify.,NEEDS_REVIEW
+KM-202405,Other,Standard,Could not identify clear and specific keywords from the description to confidently classify.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified based on the mention of the word 'pothole'.,
+KM-202410,Pothole,Standard,Classified based on the mention of the word 'pothole'.,
+KM-202411,Pothole,Standard,Classified based on the mention of the word 'pothole'.,
+KM-202415,Drain Blockage,Standard,Classified based on the mention of the word 'drain'.,
+KM-202418,Waste,Standard,Classified based on the mention of the word 'waste'.,
+KM-202421,Road Damage,Urgent,Description contains category keyword 'sinking' and severity keyword 'hospital'.,
+KM-202422,Other,Standard,Could not identify clear and specific keywords from the description to confidently classify.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified based on the mention of the word 'heritage'.,
+KM-202430,Other,Standard,Could not identify clear and specific keywords from the description to confidently classify.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified based on the mention of the word 'heritage'.,
+KM-202436,Other,Standard,Could not identify clear and specific keywords from the description to confidently classify.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classified based on the mention of the word 'heritage'.,
