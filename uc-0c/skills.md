@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Growth Calculator
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## load_dataset
+**Description:** Reads CSV, validates columns, and reports null count and which rows.
+**Inputs:** filepath
+**Outputs:** Checked rows.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## compute_growth
+**Description:** Takes ward, category, and growth_type, returns per-period table with formula shown. 
+**Rules:**
+- Validates the requested inputs
+- Computes period over period growth based on growth type
+- Ensures formulas are in output
