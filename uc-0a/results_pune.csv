@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as 'Pothole' based on keywords ['pothole'] found in the description.,
+PM-202402,Pothole,Urgent,"Classified as 'Pothole' based on keywords ['pothole']; priority set to Urgent due to severity indicators ['child', 'school'].",
+PM-202406,Flooding,Standard,"Classified as 'Flooding' based on keywords ['flooded', 'flood'] found in the description.",
+PM-202408,Flooding,Standard,"Classified as 'Flooding' based on keywords ['flooded', 'flood'] found in the description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as 'Streetlight' based on keywords ['streetlight'] found in the description.,
+PM-202411,Streetlight,Urgent,Classified as 'Streetlight' based on keywords ['streetlight']; priority set to Urgent due to severity indicators ['hazard'].,
+PM-202413,Waste,Standard,"Classified as 'Waste' based on keywords ['overflowing garbage', 'garbage bins', 'garbage'] found in the description.",NEEDS_REVIEW
+PM-202418,Noise,Standard,Classified as 'Noise' based on keywords ['music'] found in the description.,
+PM-202419,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['road surface'] found in the description.,
+PM-202420,Drain Blockage,Urgent,Classified as 'Drain Blockage' based on keywords ['manhole']; priority set to Urgent due to severity indicators ['injury'].,
+PM-202427,Flooding,Standard,Classified as 'Flooding' based on keywords ['flood'] found in the description.,
+PM-202428,Waste,Standard,Classified as 'Waste' based on keywords ['dead animal'] found in the description.,
+PM-202430,Heritage Damage,Standard,Classified as 'Heritage Damage' based on keywords ['heritage'] found in the description.,
+PM-202433,Waste,Standard,"Classified as 'Waste' based on keywords ['waste', 'dump'] found in the description.",
+PM-202446,Road Damage,Urgent,"Classified as 'Road Damage' based on keywords ['tiles broken', 'footpath']; priority set to Urgent due to severity indicators ['fell'].",
