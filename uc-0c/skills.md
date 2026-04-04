@@ -1,4 +1,4 @@
-# skills.md — UC-0C Budget Growth Calculator
+# skills.md — UC-0C Budget Growth Calculator 
 
 skills:
   - name: load_dataset
