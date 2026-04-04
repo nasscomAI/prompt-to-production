@@ -1,0 +1,16 @@
+id,category,priority,reason,flag
+N/A,Pothole,Standard,"Classified as Pothole with Standard priority based on description details (citing: pothole, hole).",
+N/A,Pothole,Urgent,"Classified as Pothole with Urgent priority based on description details (citing: pothole, hole, school, child).",
+N/A,Flooding,Standard,Classified as Flooding with Standard priority based on description details (citing: flood).,
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: drain, flood, water).",NEEDS_REVIEW
+N/A,Streetlight,Standard,Classified as Streetlight with Standard priority based on description details (citing: light).,
+N/A,Streetlight,Urgent,"Classified as Streetlight with Urgent priority based on description details (citing: light, hazard).",
+N/A,Waste,Standard,Classified as Waste with Standard priority based on description details (citing: garbage).,
+N/A,Noise,Standard,Classified as Noise with Standard priority based on description details (citing: music).,
+N/A,Road Damage,Standard,Classified as Road Damage with Standard priority based on description details (citing: road).,
+N/A,Pothole,Urgent,"Classified as Pothole with Urgent priority based on description details (citing: injury, hole).",
+N/A,Flooding,Standard,Classified as Flooding with Standard priority based on description details (citing: flood).,
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: light, heritage).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: waste, road, dump).",NEEDS_REVIEW
+N/A,Road Damage,Urgent,"Classified as Road Damage with Urgent priority based on description details (citing: broken, fell).",
