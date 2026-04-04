@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No category keyword matched; description excerpt: 'Tarmac surface melting at 44°C. Footwear'.,NEEDS_REVIEW
+AM-202402,Other,Standard,No category keyword matched; description excerpt: 'Metal bus shelter reaching dangerous temperatures.'.,NEEDS_REVIEW
+AM-202405,Other,Standard,No category keyword matched; description excerpt: 'Dead trees with split branches. Fall'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Mentions 'heatwave' in the description, indicating Heat Hazard.",
+AM-202407,Other,Urgent,No category keyword matched but mentions severity word 'Child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Mentions 'Pothole' in the description, indicating Pothole.",
+AM-202414,Other,Standard,No category keyword matched; description excerpt: 'Residential colony unlit after 9pm. Wiring'.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Mentions multiple keywords ('waste', 'Heritage') making category ambiguous.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Mentions 'music' in the description, indicating Noise.",
+AM-202424,Other,Standard,No category keyword matched; description excerpt: 'Zoo approach road surface bubbling at'.,NEEDS_REVIEW
+AM-202429,Other,Standard,No category keyword matched; description excerpt: 'River walk surface temperature unbearable. Installed'.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Mentions 'Heritage' in the description, indicating Heritage Damage.",
+AM-202435,Heat Hazard,Standard,"Mentions 'heat' in the description, indicating Heat Hazard.",
+AM-202444,Waste,Standard,"Mentions 'waste' in the description, indicating Waste.",
+AM-202445,Other,Standard,No category keyword matched; description excerpt: 'BRT shelter roof glass broken. Users'.,NEEDS_REVIEW
