@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Standard complaint without specific urgency keywords.,
+KM-202402,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+KM-202405,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Standard complaint without specific urgency keywords.,
+KM-202410,Pothole,Standard,Standard complaint without specific urgency keywords.,
+KM-202411,Pothole,Standard,Standard complaint without specific urgency keywords.,
+KM-202415,Drain Blockage,Standard,Standard complaint without specific urgency keywords.,
+KM-202418,Flooding,Standard,Standard complaint without specific urgency keywords.,
+KM-202421,Other,Urgent,"Urgent severity keyword(s) found: hospital, fell.",NEEDS_REVIEW
+KM-202422,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Standard complaint without specific urgency keywords.,
+KM-202430,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Standard complaint without specific urgency keywords.,
+KM-202436,Streetlight,Standard,Standard complaint without specific urgency keywords.,
+KM-202438,Heritage Damage,Standard,Standard complaint without specific urgency keywords.,
