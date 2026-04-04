@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Complaint mentions pothole and requires action.,
+PM-202402,Pothole,Urgent,"Complaint mentions pothole, child, school and requires action.",
+PM-202406,Flooding,Standard,Complaint mentions flood and requires action.,
+PM-202408,Flooding,Standard,"Complaint mentions flood, drain and requires action.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Complaint mentions streetlight and requires action.,
+PM-202411,Streetlight,Urgent,Complaint mentions streetlight and requires action.,
+PM-202413,Waste,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+PM-202418,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+PM-202419,Other,Standard,Complaint mentions road and requires action.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Complaint mentions injury and requires action.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Complaint mentions flood and requires action.,
+PM-202428,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Complaint mentions heritage and requires action.,
+PM-202433,Waste,Standard,"Complaint mentions waste, road and requires action.",
+PM-202446,Other,Urgent,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
