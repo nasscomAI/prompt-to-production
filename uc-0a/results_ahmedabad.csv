@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['tar'] found in the description.,
+AM-202402,Heat Hazard,Standard,Classified as 'Heat Hazard' based on keywords ['temperature'] found in the description.,
+AM-202405,Other,Urgent,Category could not be determined from description; priority set to Urgent due to severity indicators ['fall'].,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as 'Heat Hazard' based on keywords ['heatwave', 'heat'] found in the description.",
+AM-202407,Road Damage,Urgent,"Classified as 'Road Damage' based on keywords ['upturned paving', 'paving']; priority set to Urgent due to severity indicators ['injured', 'child'].",
+AM-202410,Pothole,Standard,Classified as 'Pothole' based on keywords ['pothole'] found in the description.,
+AM-202414,Streetlight,Standard,Classified as 'Streetlight' based on keywords ['unlit'] found in the description.,
+AM-202417,Waste,Standard,Classified as 'Waste' based on keywords ['waste'] found in the description.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as 'Noise' based on keywords ['music'] found in the description.,
+AM-202424,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['road surface'] found in the description.,
+AM-202429,Heat Hazard,Standard,Classified as 'Heat Hazard' based on keywords ['temperature'] found in the description.,
+AM-202431,Heritage Damage,Standard,"Classified as 'Heritage Damage' based on keywords ['heritage', 'ancient'] found in the description.",
+AM-202435,Heat Hazard,Standard,Classified as 'Heat Hazard' based on keywords ['heat'] found in the description.,
+AM-202444,Waste,Standard,"Classified as 'Waste' based on keywords ['bins overflowing', 'waste'] found in the description.",NEEDS_REVIEW
+AM-202445,Other,Standard,Description did not match any known category keywords; flagged for manual review.,NEEDS_REVIEW
