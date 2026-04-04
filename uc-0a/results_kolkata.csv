@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+KM-202401,Heritage lamp post knocked over by delivery vehicle. Not restored.,Other,Standard,"Ambiguous categories matched: Streetlight, Heritage Damage.",NEEDS_REVIEW
+KM-202402,Historic tram road cobblestones broken up by cable laying work.,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+KM-202405,Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+KM-202409,Airport access road full of potholes. Diplomatic complaint received.,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+KM-202410,Pothole causing tyre blowouts. Three incidents this week.,Pothole,Low,Contains 'pothole'.,
+KM-202411,Deep pothole filling with rainwater. Depth invisible. Accident risk.,Pothole,Standard,Contains 'pothole'.,
+KM-202415,New residential complex draining directly onto public road.,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+KM-202418,Tourist zone waste overflowing. Foreign visitors photographing piles.,Waste,Low,Contains 'waste'.,
+KM-202421,Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.,Other,Urgent,Could not confidently determine category from description.,NEEDS_REVIEW
+KM-202422,Road surface buckled near bridge. Structural concern raised.,Other,Standard,Could not confidently determine category from description.,NEEDS_REVIEW
+KM-202426,Heritage residential building exterior defaced by billboard installation.,Heritage Damage,Standard,Contains 'heritage'.,
+KM-202430,Road subsided near gas pipeline. Gas leak smell reported too.,Waste,Standard,Contains 'smell'.,
+KM-202434,Street paving removed for utility work — heritage stone not replaced.,Heritage Damage,Standard,Contains 'heritage'.,
+KM-202436,Entire colony substation tripped. Darkness for 3 nights.,Streetlight,Standard,Contains 'darkness'.,
+KM-202438,Street vendors using amplifiers illegally in heritage precinct.,Heritage Damage,Standard,Contains 'heritage'.,
