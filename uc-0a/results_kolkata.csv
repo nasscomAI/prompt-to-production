@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description correctly cites 'heritage'.,
+KM-202402,Road Damage,Standard,The description correctly cites 'broken'.,
+KM-202405,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description correctly cites 'pothole'.,
+KM-202410,Pothole,Standard,The description correctly cites 'pothole'.,
+KM-202411,Pothole,Standard,The description correctly cites 'pothole'.,
+KM-202415,Drain Blockage,Standard,The description correctly cites 'drain'.,
+KM-202418,Waste,Standard,The description correctly cites 'waste'.,
+KM-202421,Road Damage,Urgent,The description correctly cites 'broken'.,
+KM-202422,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,The description correctly cites 'heritage'.,
+KM-202430,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The description correctly cites 'heritage'.,
+KM-202436,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The description correctly cites 'heritage'.,
