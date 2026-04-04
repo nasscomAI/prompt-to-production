@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Aggregation Agent
+- Role: Reads input CSV with numbers, wards, and categories.
+- Input: CSV file with columns: ward, category, value
+- Output: CSV with total value per ward per category
+- Behavior: Each ward is treated separately; each category is aggregated independently.
+- Constraints: No silent aggregation; totals must reflect only scoped ward/category combinations.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Execution Flow
+1. Read input CSV (`read_input()`).
+2. Aggregate numbers per ward per category (`aggregate_per_ward_category()`).
+3. Save results to `growth_output.csv`.
+4. Print completion message.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+## Notes
+- Agent follows CRAFT rules: completeness, correctness, clarity.
