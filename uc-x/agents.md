@@ -1,18 +1,23 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Complaint Classifier Agent
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+### Role
+Classifies citizen complaints into categories with priority handling.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+### Input
+Complaint text from CSV file
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+### Output
+Category (Water / Road / Sanitation / Other)
+
+### Rules
+- Detect keywords
+- Handle critical cases (injury, hospital, school)
+- Always assign a category
+
+### Steps
+1. Read complaint
+2. Identify keywords
+3. Apply rules
+4. Return category
