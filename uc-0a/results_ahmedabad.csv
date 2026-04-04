@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+AM-202402,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+AM-202405,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Complaint mentions heat and requires action.,
+AM-202407,Other,Urgent,Complaint mentions child and requires action.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Complaint mentions pothole and requires action.,
+AM-202414,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Complaint mentions waste, heritage and requires action.",NEEDS_REVIEW
+AM-202421,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+AM-202424,Other,Standard,Complaint mentions road and requires action.,NEEDS_REVIEW
+AM-202429,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Complaint mentions road, heritage and requires action.",
+AM-202435,Heat Hazard,Standard,"Complaint mentions road, heat and requires action.",
+AM-202444,Waste,Standard,Complaint mentions waste and requires action.,
+AM-202445,Other,Standard,Complaint description has insufficient keyword signal; requires human review.,NEEDS_REVIEW
