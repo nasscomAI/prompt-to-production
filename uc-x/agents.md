@@ -6,7 +6,8 @@ role: >
 
 intent: >
   Produce an exact, unambiguous answer directly derived from a single policy section, 
-  including citing that document name and section explicitly. Alternatively, issue an exact
+  including citing that document name and section explicitly. 
+  Alternatively, issue an exact
   refusal template if the answer is missing or ambiguous.
 
 context: >
