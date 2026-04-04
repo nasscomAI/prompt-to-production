@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category 'Pothole' and priority 'Standard' assigned because the description contains the specific words: 'pothole'.,
+PM-202402,Pothole,Urgent,"Category 'Pothole' and priority 'Urgent' assigned because the description contains the specific words: 'child, school, pothole'.",
+PM-202406,Flooding,Standard,Category 'Flooding' and priority 'Standard' assigned because the description contains the specific words: 'flood'.,
+PM-202408,Other,Standard,"Category 'Other' and priority 'Standard' assigned because the description contains the specific words: 'flood, drain blocked, water, drain'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category 'Streetlight' and priority 'Standard' assigned because the description contains the specific words: 'streetlight, lights, lights out, dark'.",
+PM-202411,Streetlight,Urgent,"Category 'Streetlight' and priority 'Urgent' assigned because the description contains the specific words: 'hazard, streetlight, sparking'.",
+PM-202413,Waste,Standard,Category 'Waste' and priority 'Standard' assigned because the description contains the specific words: 'garbage'.,
+PM-202418,Noise,Standard,Category 'Noise' and priority 'Standard' assigned because the description contains the specific words: 'music'.,
+PM-202419,Road Damage,Standard,"Category 'Road Damage' and priority 'Standard' assigned because the description contains the specific words: 'sinking, road surface, cracked'.",
+PM-202420,Drain Blockage,Urgent,"Category 'Drain Blockage' and priority 'Urgent' assigned because the description contains the specific words: 'manhole, injury'.",
+PM-202427,Flooding,Standard,Category 'Flooding' and priority 'Standard' assigned because the description contains the specific words: 'flood'.,
+PM-202428,Waste,Standard,Category 'Waste' and priority 'Standard' assigned because the description contains the specific words: 'dead animal'.,
+PM-202430,Other,Standard,"Category 'Other' and priority 'Standard' assigned because the description contains the specific words: 'lights out, lights, heritage, dark'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category 'Waste' and priority 'Standard' assigned because the description contains the specific words: 'waste, dumped'.",
+PM-202446,Road Damage,Urgent,"Category 'Road Damage' and priority 'Urgent' assigned because the description contains the specific words: 'fell, footpath tiles, broken'.",
