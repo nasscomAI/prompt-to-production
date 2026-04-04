@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding due to 'flood' and priority set to Urgent because of 'ambulance' in the description.,
+GH-202402,Flooding,Standard,Identified as Flooding based on the mention of 'flood' in the complaint.,
+GH-202406,Drain Blockage,Standard,Identified as Drain Blockage based on the mention of 'drain' in the complaint.,
+GH-202407,Drain Blockage,Standard,Identified as Drain Blockage based on the mention of 'drain' in the complaint.,
+GH-202410,Pothole,Standard,Identified as Pothole based on the mention of 'pothole' in the complaint.,
+GH-202411,Pothole,Urgent,Classified as Pothole due to 'pothole' and priority set to Urgent because of 'hospital' in the description.,
+GH-202412,Pothole,Urgent,Classified as Pothole due to 'pothole' and priority set to Urgent because of 'school' in the description.,
+GH-202417,Waste,Standard,Identified as Waste based on the mention of 'waste' in the complaint.,
+GH-202420,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Classified as Pothole due to 'crater' and priority set to Urgent because of 'collapse' in the description.,
+GH-202424,Flooding,Standard,Identified as Flooding based on the mention of 'flood' in the complaint.,
+GH-202428,Waste,Standard,Identified as Waste based on the mention of 'waste' in the complaint.,
+GH-202432,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Identified as Flooding based on the mention of 'flood' in the complaint.,
+GH-202438,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
