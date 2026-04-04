@@ -7,7 +7,6 @@ import argparse
 import json
 from pathlib import Path
 
-
 def retrieve_policy(filepath):
     """
     Loads and parses a .txt policy file, returning content as structured numbered sections.
