@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Identified as Road Damage based on the mention of 'surface' in the complaint.,
+AM-202402,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+AM-202405,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Identified as Heat Hazard based on the mention of 'heat' in the complaint.,
+AM-202407,Other,Urgent,Set to Urgent due to high-risk keyword 'child' found in the text.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Identified as Pothole based on the mention of 'pothole' in the complaint.,
+AM-202414,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Identified as Waste based on the mention of 'waste' in the complaint.,
+AM-202421,Noise,Standard,Identified as Noise based on the mention of 'music' in the complaint.,
+AM-202424,Road Damage,Standard,Identified as Road Damage based on the mention of 'surface' in the complaint.,
+AM-202429,Road Damage,Standard,Identified as Road Damage based on the mention of 'surface' in the complaint.,
+AM-202431,Heritage Damage,Standard,Identified as Heritage Damage based on the mention of 'heritage' in the complaint.,
+AM-202435,Heat Hazard,Standard,Identified as Heat Hazard based on the mention of 'heat' in the complaint.,
+AM-202444,Waste,Standard,Identified as Waste based on the mention of 'waste' in the complaint.,
+AM-202445,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
