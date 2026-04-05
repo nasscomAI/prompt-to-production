@@ -1,18 +1,18 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Summary Generator
+- Role: Reads policy documents and generates human-readable summaries.
+- Input: CSV file with document IDs and text content.
+- Output: CSV or TXT file containing summaries.
+- Behavior: Must include **every numbered clause** from input.
+- Constraints: Do not drop or modify clauses, preserve original meaning.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Execution Flow
+1. Read input CSV (`read_input()`).
+2. Process each document: split into clauses, include all.
+3. Generate summary text per document.
+4. Save results to output file.
+5. Print completion message.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+## Notes
+- This agent is CRAFT-tested: follows completeness, relevance, and clarity.

@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Core Skills
+- Data aggregation: sum values per ward per category
+- CSV input/output handling
+- Handle invalid or missing numeric values gracefully
+- Maintain correct scope for aggregation (no blending)
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Additional Skills
+- Use of Python `defaultdict` for structured aggregation
+- Output reproducibility for testing
+- Clear mapping from input to output for verification
+
+## Output
+- growth_output.csv with columns: ward, category, total
