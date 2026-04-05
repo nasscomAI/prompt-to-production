@@ -1,0 +1,153 @@
+PS D:\c\1_april_2026\prompt-to-production> cd uc-x
+PS D:\c\1_april_2026\prompt-to-production\uc-x> python app.py
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+API Key not found in environment.
+Please paste your Gemini API Key (input will be hidden): AIzaSyAeXJk0CcB13E0pwG2RVzDruQ_9e5-bVdo
+UC-X Ask My Documents
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+API Key not found in environment.
+Please paste your Gemini API Key (input will be hidden): AIzaSyAeXJk0CcB13E0pwG2RVzDruQ_9e5-bVdo
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+API Key not found in environment.
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+API Key not found in environment.
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+D:\c\1_april_2026\prompt-to-production\uc-x\app.py:6: FutureWarning:
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+API Key not found in environment.
+Please paste your Gemini API Key (input will be hidden): [Key]
+UC-X Ask My Documents
+Type 'exit' to quit.
+------------------------------
+
+Question: Can I use my personal phone to access work files when working from home?
+
+Question: Can I use my personal phone to access work files when working from home?
+
+Answer:
+
+Question: Can I use my personal phone to access work files when working from home?
+
+Answer:
+Personal devices may be used to access CMC email and the CMC employee self-service portal only (policy_it_acceptable_use.txt, Section 3.1). Personal devices must not be used to access, store, or transmit classified or sensitive CMC data (policy_it_acceptable_use.txt, Section 3.2).
+
+
+Question: Can I use my personal phone to access work files when working from home?
+
+Answer:
+Personal devices may be used to access CMC email and the CMC employee self-service portal only (policy_it_acceptable_use.txt, Section 3.1). Personal devices must not be used to access, store, or transmit classified or sensitive CMC data (policy_i
+
+Question: Can I use my personal phone to access work files when working from home?
+
+Answer:
+Personal devices may be used to access CMC email and the CMC employee self-service portal only (policy_it_acceptable_use.tx
+
+Question: Can I use my personal phone to access work files when working from home?
+
+Answer:
+
+Answer:
+Personal devices may be used to access CMC email and the CMC employee self-service portal only (policy_it_acceptable_use.txPersonal devices may be used to access CMC email and the CMC employee self-service portal only (policy_it_acceptable_use.txt, Section 3.1). Personal devices must not be used to access, store, or transmit classified or sensitive CMC data (policy_it_acceptable_use.txt, Section 3.2).
+
+Question: Can I carry forward unused annual leave?
+
+Answer:
+Yes, employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. (policy_hr_leave.txt, Section 2.6)
+
+Question: Can I install Slack on my work laptop?
+
+Answer:
+Employees must not install software on corporate devices without written approval from the IT Department (policy_it_acceptable_use.txt, Section 2.3). Software approved for installation must be sourced from the CMC-approved software catalogue only (policy_it_acceptable_use.txt, Section 2.4).
+
+Question: What is the home office equipment allowance?
+
+Answer:
+Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000 (policy_finance_reimbursement.txt, Section 3.1).
+
+Question: Can I use my personal phone for work files from home?
+
+Answer:
+Personal devices may be used to access CMC email and the CMC employee self-service portal only (policy_it_acceptable_use.txt, Section 3.1). Personal devices must not be used to access, store, or transmit classified or sensitive CMC data (policy_it_acceptable_use.txt, Section 3.2). CMC data classified as Confidential or Restricted must not be stored on personal devices (policy_it_acceptable_use.txt, Section 5.1).
+
+Question: What is the company view on flexible working culture?
+
+Answer:
+This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact Irelevant teaml for guidance.
+
+Question: Can I claim DA and meal receipts on the same day?
+
+Answer:
+DA and meal receipts cannot be claimed simultaneously for the same day. (policy_finance_reimbursement.txt, 2.6)
+
+Question: ho approves leave without pay?
+
+Answer:
+Leave Without Pay (LWP) requires approval from the Department Head and the HR Director (policy_hr_leave.txt, Section 5.2). LWP exceeding 30 continuous days requires approval from the Municipal Commissioner (policy_hr_leave.txt, Section 5.3).     
+
+Question: exit
+PS D:\c\1_april_2026\prompt-to-production\uc-x> 
