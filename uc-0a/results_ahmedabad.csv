@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,The description cites conflicting issues like 'broken' and 'heat'.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,The description correctly cites 'broken'.,
+AM-202410,Pothole,Standard,The description correctly cites 'pothole'.,
+AM-202414,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description cites conflicting issues like 'waste' and 'heritage'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,The description correctly cites 'music'.,
+AM-202424,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description correctly cites 'heritage'.,
+AM-202435,Heat Hazard,Standard,The description correctly cites 'heat'.,
+AM-202444,Waste,Standard,The description correctly cites 'waste'.,
+AM-202445,Road Damage,Standard,The description correctly cites 'broken'.,
