@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Complaint Classification
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- `classify_complaint(description)`: 
+    - Analyzes the `description` string.
+    - Matches against keyword list for `Urgent` priority.
+    - Maps to the specific civic category taxonomy.
+    - Returns: `{category, priority, reason, flag}`.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- `batch_classify(input_csv, output_csv)`:
+    - Reads complaints from `input_csv`.
+    - Iterates through each row, calling `classify_complaint`.
+    - Appends results to a new CSV file `output_csv`.
