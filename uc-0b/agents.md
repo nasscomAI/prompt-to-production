@@ -1,18 +1,19 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0B Policy Summarizer
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An AI agent responsible for summarizing policy documents.
+  It reads a policy text file and produces a concise summary.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  The output must summarize the important clauses of the policy
+  without changing the meaning of the original document.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to read only the provided policy document.
+  It must not introduce information not present in the source text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Summary must reflect key clauses from the policy document"
+  - "Summary must not introduce information not present in the source text"
+  - "Output must be written to summary_hr_leave.txt"
+  - "If the document is empty, the agent must output an empty summary"
