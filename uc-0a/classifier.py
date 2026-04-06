@@ -7,70 +7,55 @@ import csv
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+    Classify a single complaint row using an Expert System approach.
+    Strictly adheres to agents.md and skills.md enforcement rules.
     """
     description = row.get("description", "")
     desc_lower = description.lower()
     
-    # Priority Enforcement
+    # 1. Priority Enforcement (RICE: Urgent if severity keywords present)
     severity_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
     found_severities = [kw for kw in severity_keywords if kw in desc_lower]
-    
     priority = "Urgent" if found_severities else "Standard"
 
-    # Category Enforcement (Exact Strings Only)
-    # Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other
+    # 2. Category Enforcement (Expert System with Expanded Taxonomy)
     category = "Other"
-    flag = "NEEDS_REVIEW"
     cited_word = ""
+    flag = ""
 
-    # Priority mapping for categorization
-    if "pothole" in desc_lower:
-        category = "Pothole"
-        cited_word = "pothole"
-        flag = ""
-    elif "flood" in desc_lower:
-        category = "Flooding"
-        cited_word = "flood"
-        flag = ""
-    elif "streetlight" in desc_lower or "lights out" in desc_lower:
-        category = "Streetlight"
-        cited_word = "streetlight" if "streetlight" in desc_lower else "lights out"
-        flag = ""
-    elif "waste" in desc_lower or "garbage" in desc_lower:
-        category = "Waste"
-        cited_word = "waste" if "waste" in desc_lower else "garbage"
-        flag = ""
-    elif "noise" in desc_lower or "music" in desc_lower:
-        category = "Noise"
-        cited_word = "music" if "music" in desc_lower else "noise"
-        flag = ""
-    elif "crack" in desc_lower or "sinking" in desc_lower or "road surface" in desc_lower:
-        category = "Road Damage"
-        cited_word = "crack" if "crack" in desc_lower else "road surface"
-        flag = ""
-    elif "heritage" in desc_lower and "damage" in desc_lower:
-        category = "Heritage Damage"
-        cited_word = "heritage"
-        flag = ""
-    elif "heat" in desc_lower:
-        category = "Heat Hazard"
-        cited_word = "heat"
-        flag = ""
-    elif "drain" in desc_lower:
-        category = "Drain Blockage"
-        cited_word = "drain"
-        flag = ""
+    # Taxonomy Keyword Groups
+    taxonomy = {
+        "Pothole": ["pothole", "crater", "dip in road"],
+        "Flooding": ["flood", "waterlogged", "inundated", "submerged", "standing water"],
+        "Streetlight": ["streetlight", "street light", "lights out", "dark at night", "flickering light", "unlit"],
+        "Waste": ["waste", "garbage", "trash", "debris", "litter", "overflowing bin", "dumped", "dead animal", "animal carcass", "smell"],
+        "Noise": ["noise", "loud", "music", "construction sound", "drilling", "shouting"],
+        "Road Damage": ["road damage", "crack", "subsidence", "sinking", "paving", "tiles", "broken footpath", "manhole", "uneven surface"],
+        "Heritage Damage": ["heritage", "antique", "monument", "ancient", "statue", "historic"],
+        "Heat Hazard": ["heat", "hot", "temperature", "melting", "burns", "sun", "heatwave", "dehydration"],
+        "Drain Blockage": ["drain", "sewage", "gutter", "culvert", "blocked pipe", "overflowing manhole"]
+    }
 
-    # Reason Enforcement
+    # Match Logic
+    for cat, keywords in taxonomy.items():
+        for kw in keywords:
+            if kw in desc_lower:
+                category = cat
+                cited_word = kw
+                break
+        if category != "Other":
+            break
+
+    # 3. Ambiguity & Needs Review Handling
     if category == "Other":
-        reason = "The description is genuinely ambiguous and cannot be determined from the text alone."
+        flag = "NEEDS_REVIEW"
+        reason = "The description is genuinely ambiguous or lacks specific keywords for classification."
     else:
+        # One sentence reason citing specific words as per RICE
         if found_severities:
-            reason = f"The complaint is prioritized as Urgent due to the word '{found_severities[0]}', and categorized as {category} focusing on '{cited_word}'."
+            reason = f"Classified as {category} based on '{cited_word}', and marked Urgent due to safety keyword '{found_severities[0]}'."
         else:
-            reason = f"The description primarily addresses a {category} issue, explicitly citing '{cited_word}'."
+            reason = f"The issue is categorized as {category} because the description explicitly mentions '{cited_word}'."
 
     return {
         "complaint_id": row.get("complaint_id", ""),
@@ -128,6 +113,7 @@ def batch_classify(input_path: str, output_path: str):
             writer.writerows(results)
     except Exception as e:
         print(f"Error writing to '{output_path}': {e}")
+
 
 
 if __name__ == "__main__":
