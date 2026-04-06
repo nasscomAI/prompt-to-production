@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,notes,growth_type,growth,formula,flag
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,,MoM,,MoM growth cannot be computed for the first available period or when prior actual_spend is missing.,
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.2,,MoM,-8.3%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (12.2 - 13.3) / 13.3 * 100,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.3,,MoM,+0.8%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (12.3 - 12.2) / 12.2 * 100,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.4,,MoM,+8.9%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (13.4 - 12.3) / 12.3 * 100,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.1,,MoM,+5.2%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (14.1 - 13.4) / 13.4 * 100,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.8,,MoM,+5.0%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (14.8 - 14.1) / 14.1 * 100,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,13.0,19.7,,MoM,+33.1%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (19.7 - 14.8) / 14.8 * 100,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.2,,MoM,+2.5%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (20.2 - 19.7) / 19.7 * 100,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.1,,MoM,-0.5%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (20.1 - 20.2) / 20.2 * 100,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.1,,MoM,-34.8%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (13.1 - 20.1) / 20.1 * 100,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.2,,MoM,+8.4%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (14.2 - 13.1) / 13.1 * 100,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.7,,MoM,-10.6%,MoM growth = (current_actual - previous_actual) / previous_actual * 100 = (12.7 - 14.2) / 14.2 * 100,
