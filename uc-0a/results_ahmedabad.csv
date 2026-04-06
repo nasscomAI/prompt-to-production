@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other since no recognized category keywords were found. Marked Standard as no severe keywords were present.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because description explicitly states 'temperature'. Marked Standard as no severe keywords were present.,
+AM-202405,Other,Standard,Classified as Other since no recognized category keywords were found. Marked Standard as no severe keywords were present.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,Classified as Road Damage because description explicitly states 'broken'. Marked Standard as no severe keywords were present.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage because description explicitly states 'broken'. Marked Urgent because the severe keyword 'child' was detected.,
+AM-202410,Pothole,Standard,Classified as Pothole because description explicitly states 'pothole'. Marked Standard as no severe keywords were present.,
+AM-202414,Other,Standard,Classified as Other since no recognized category keywords were found. Marked Standard as no severe keywords were present.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because description explicitly states 'waste'. Marked Standard as no severe keywords were present.,
+AM-202421,Noise,Standard,Classified as Noise because description explicitly states 'music'. Marked Standard as no severe keywords were present.,
+AM-202424,Other,Standard,Classified as Other since no recognized category keywords were found. Marked Standard as no severe keywords were present.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description explicitly states 'temperature'. Marked Standard as no severe keywords were present.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because description explicitly states 'heritage'. Marked Standard as no severe keywords were present.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description explicitly states 'heat'. Marked Standard as no severe keywords were present.,
+AM-202444,Waste,Standard,Classified as Waste because description explicitly states 'waste'. Marked Standard as no severe keywords were present.,
+AM-202445,Road Damage,Standard,Classified as Road Damage because description explicitly states 'broken'. Marked Standard as no severe keywords were present.,
