@@ -1,29 +1,119 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+Updated using the RICE → agents.md → skills.md → CRAFT workflow.
 """
 import argparse
 import csv
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
+    Classify a single complaint row using an Expert System approach.
+    Strictly adheres to agents.md and skills.md enforcement rules.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    description = row.get("description", "")
+    desc_lower = description.lower()
+    
+    # 1. Priority Enforcement (RICE: Urgent if severity keywords present)
+    severity_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
+    found_severities = [kw for kw in severity_keywords if kw in desc_lower]
+    priority = "Urgent" if found_severities else "Standard"
+
+    # 2. Category Enforcement (Expert System with Expanded Taxonomy)
+    category = "Other"
+    cited_word = ""
+    flag = ""
+
+    # Taxonomy Keyword Groups
+    taxonomy = {
+        "Pothole": ["pothole", "crater", "dip in road"],
+        "Flooding": ["flood", "waterlogged", "inundated", "submerged", "standing water"],
+        "Streetlight": ["streetlight", "street light", "lights out", "dark at night", "flickering light", "unlit"],
+        "Waste": ["waste", "garbage", "trash", "debris", "litter", "overflowing bin", "dumped", "dead animal", "animal carcass", "smell"],
+        "Noise": ["noise", "loud", "music", "construction sound", "drilling", "shouting"],
+        "Road Damage": ["road damage", "crack", "subsidence", "sinking", "paving", "tiles", "broken footpath", "manhole", "uneven surface"],
+        "Heritage Damage": ["heritage", "antique", "monument", "ancient", "statue", "historic"],
+        "Heat Hazard": ["heat", "hot", "temperature", "melting", "burns", "sun", "heatwave", "dehydration"],
+        "Drain Blockage": ["drain", "sewage", "gutter", "culvert", "blocked pipe", "overflowing manhole"]
+    }
+
+    # Match Logic
+    for cat, keywords in taxonomy.items():
+        for kw in keywords:
+            if kw in desc_lower:
+                category = cat
+                cited_word = kw
+                break
+        if category != "Other":
+            break
+
+    # 3. Ambiguity & Needs Review Handling
+    if category == "Other":
+        flag = "NEEDS_REVIEW"
+        reason = "The description is genuinely ambiguous or lacks specific keywords for classification."
+    else:
+        # One sentence reason citing specific words as per RICE
+        if found_severities:
+            reason = f"Classified as {category} based on '{cited_word}', and marked Urgent due to safety keyword '{found_severities[0]}'."
+        else:
+            reason = f"The issue is categorized as {category} because the description explicitly mentions '{cited_word}'."
+
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
     Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    results = []
+    
+    try:
+        with open(input_path, mode='r', encoding='utf-8') as infile:
+            reader = csv.DictReader(infile)
+            for row in reader:
+                try:
+                    # Apply the skills.md constraints
+                    classification = classify_complaint(row)
+                    
+                    # Merge classification into original row, extending the dict
+                    out_row = {**row, **classification}
+                    results.append(out_row)
+                except Exception as e:
+                    # Error handling specified in skills.md
+                    out_row = {**row}
+                    out_row["category"] = "Other"
+                    out_row["priority"] = "Low"
+                    out_row["reason"] = f"Row parsing failed: {e}"
+                    out_row["flag"] = "NEEDS_REVIEW"
+                    results.append(out_row)
+    except FileNotFoundError:
+        print(f"Error: Input file '{input_path}' not found.")
+        return
+
+    if not results:
+        print("No data extracted. Aborting CSV generation.")
+        return
+
+    out_keys = ["complaint_id", "date_raised", "city", "ward", "location", "description", "reported_by", "days_open", "category", "priority", "reason", "flag"]
+    # Ensure keys in results that aren't in out_keys don't get lost
+    actual_keys = list(results[0].keys())
+    ordered_keys = out_keys + [k for k in actual_keys if k not in out_keys]
+    ordered_keys = [k for k in ordered_keys if k in actual_keys]
+    
+    try:
+        with open(output_path, mode='w', encoding='utf-8', newline='') as outfile:
+            writer = csv.DictWriter(outfile, fieldnames=ordered_keys)
+            writer.writeheader()
+            writer.writerows(results)
+    except Exception as e:
+        print(f"Error writing to '{output_path}': {e}")
+
 
 
 if __name__ == "__main__":
