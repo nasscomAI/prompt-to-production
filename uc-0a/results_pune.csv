@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Mentioned terms related to Pothole,
+PM-202402,Pothole,Urgent,Mentioned terms related to Pothole and contains severe keyword 'child',
+PM-202406,Flooding,Standard,Mentioned terms related to Flooding,
+PM-202408,Flooding,Standard,Mentioned terms related to Flooding,
+PM-202410,Streetlight,Standard,Mentioned terms related to Streetlight,
+PM-202411,Streetlight,Urgent,Mentioned terms related to Streetlight and contains severe keyword 'hazard',
+PM-202413,Waste,Standard,Mentioned terms related to Waste,
+PM-202418,Noise,Standard,Mentioned terms related to Noise,
+PM-202419,Road Damage,Standard,Mentioned terms related to Road Damage,
+PM-202420,Other,Urgent,Mentioned terms related to Other and contains severe keyword 'injury',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Mentioned terms related to Flooding,
+PM-202428,Other,Standard,Mentioned terms related to Other,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Mentioned terms related to Streetlight,
+PM-202433,Waste,Standard,Mentioned terms related to Waste,
+PM-202446,Other,Urgent,Mentioned terms related to Other and contains severe keyword 'fell',NEEDS_REVIEW
