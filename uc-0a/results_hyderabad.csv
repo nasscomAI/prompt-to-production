@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Contains ""flood"" indicating Flooding category. contains severity keywords ""ambulance"" requiring Urgent priority.",
+GH-202402,Flooding,Standard,"Multiple categories detected: Flooding, Drain Blockage",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Contains ""drain"" indicating Drain Blockage category. Standard priority.",
+GH-202407,Drain Blockage,Standard,"Contains ""Drain"" indicating Drain Blockage category. Standard priority.",
+GH-202410,Pothole,Standard,"Multiple categories detected: Pothole, Road Damage",NEEDS_REVIEW
+GH-202411,Pothole,Urgent,"Contains ""Pothole"" indicating Pothole category. contains severity keywords ""hospital"" requiring Urgent priority.",
+GH-202412,Pothole,Urgent,"Contains ""pothole"" indicating Pothole category. contains severity keywords ""school"" requiring Urgent priority.",
+GH-202417,Waste,Standard,"Multiple categories detected: Waste, Heritage Damage",NEEDS_REVIEW
+GH-202420,Other,Low,Description does not match known complaint categories,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Multiple categories detected: Pothole, Road Damage",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Multiple categories detected: Flooding, Streetlight",NEEDS_REVIEW
+GH-202428,Waste,Standard,"Contains ""waste"" indicating Waste category. Standard priority.",
+GH-202432,Other,Low,Description does not match known complaint categories,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Multiple categories detected: Flooding, Drain Blockage",NEEDS_REVIEW
+GH-202438,Road Damage,Standard,"Contains ""road"" indicating Road Damage category. Standard priority.",
