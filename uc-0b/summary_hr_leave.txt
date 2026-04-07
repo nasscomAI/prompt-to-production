@@ -1,0 +1,49 @@
+POLICY SUMMARY — EMPLOYEE LEAVE POLICY (HR-POL-001)
+======================================================================
+
+CLAUSE 2.3: Employees must submit a leave application at least 14 calendar
+  • using Form HR-L1
+
+CLAUSE 2.4: Leave applications must receive written approval from the
+  • written approval from direct manager
+  • before leave commences
+  • verbal approval not valid
+
+CLAUSE 2.5: Unapproved absence will be recorded as Loss of Pay (LOP)
+  • unapproved absence recorded as Loss of Pay (LOP)
+  • regardless of subsequent approval
+
+CLAUSE 2.6: Employees may carry forward a maximum of 5 unused annual leave
+  • maximum 5 days carry-forward
+  • days above 5 forfeited on 31 December
+
+CLAUSE 2.7: Carry-forward days must be used within the first quarter
+  • carry-forward days must be used in first quarter (January-March)
+  • days not used by end of March are forfeited
+
+CLAUSE 3.2: Sick leave of 3 or more consecutive days requires a medical
+  • 3 or more consecutive sick days
+  • requires medical certificate
+  • submitted within 48 hours of returning to work
+
+CLAUSE 3.4: Sick leave taken immediately before or after a public holiday
+  • sick leave taken before or after public holiday or annual leave
+  • requires medical certificate regardless of duration
+
+CLAUSE 5.2: LWP requires approval from the Department Head and the
+  • requires approval from Department Head
+  • requires approval from HR Director
+  • BOTH approvals required (manager approval alone insufficient)
+
+CLAUSE 5.3: LWP exceeding 30 continuous days requires approval from
+  • LWP exceeding 30 continuous days
+  • requires approval from Municipal Commissioner
+
+CLAUSE 7.2: Leave encashment during service is not permitted under any
+  • leave encashment during service is not permitted
+  • applies under any circumstances (no exceptions)
+
+======================================================================
+VERIFICATION
+Total clauses extracted: 10/10
+✓ All expected clauses present.
