@@ -1,0 +1,16 @@
+description,category,priority,reason,flag
+Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.,Other,Standard,Classified as Other because description mentions 'Tarmac surface melting at 44°C. Footwear sticking. Park user',
+Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'Metal bus shelter reaching dangerous temperatures',
+Dead trees with split branches. Fall risk to walkers. 3 trees affected.,Other,Standard,Classified as Other because description mentions 'Dead trees with split branches. Fall risk to walkers. 3 tree',
+Irrigation system broken. Grass dying in heatwave conditions.,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'Grass dying in heatwave conditions',
+Broken bench and upturned paving. Child injured last week.,Other,Urgent,Classified as Other because description mentions 'Broken bench and upturned paving. Child injured last week.',
+Pothole on main highway causing morning rush lane closure.,Pothole,Standard,Classified as Pothole because description mentions 'Pothole on main highway causing morning rush lane closure',
+Residential colony unlit after 9pm. Wiring theft reported.,Other,Standard,Classified as Other because description mentions 'Residential colony unlit after 9pm. Wiring theft reported.',
+Night market waste not cleared before morning. Heritage area affected.,Waste,Standard,Classified as Waste because description mentions 'Night market waste not cleared before morning',NEEDS_REVIEW
+Club music audible at residential buildings at 2am.,Noise,Standard,Classified as Noise because description mentions 'Club music audible at residential buildings at 2am',
+Zoo approach road surface bubbling at 45°C. Visitor complaints.,Other,Standard,Classified as Other because description mentions 'Zoo approach road surface bubbling at 45°C. Visitor complain',
+River walk surface temperature unbearable. Installed temperature reads 52°C.,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'River walk surface temperature unbearable',
+Old city road subsidence near ancient step well. Heritage concern.,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'Old city road subsidence near ancient step well',
+Black metal road dividers storing heat. Motorists reporting burns on contact.,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'Black metal road dividers storing heat',
+Restaurant waste bins overflowing on Sunday night. Health risk.,Waste,Standard,Classified as Waste because description mentions 'Restaurant waste bins overflowing on Sunday night',
+BRT shelter roof glass broken. Users exposed to full sun.,Other,Standard,Classified as Other because description mentions 'BRT shelter roof glass broken. Users exposed to full sun.',
