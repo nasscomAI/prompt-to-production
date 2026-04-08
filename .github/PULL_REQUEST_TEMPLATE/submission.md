@@ -1,23 +1,23 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:** Ramya D
+**City / Group:** Bengaluru
+**Date:** 2026-03-24
+**AI tool(s) used:** Antigravity / Gemini
 
 ---
 
 ## Checklist — Complete Before Opening This PR
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_[city].csv` without crash
-- [ ] `results_[city].csv` present in `uc-0a/`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
-- [ ] `summary_hr_leave.txt` present in `uc-0b/`
-- [ ] `growth_output.csv` present in `uc-0c/`
-- [ ] 4+ commits with meaningful messages following the formula
-- [ ] All sections below are filled in
+- [x] `agents.md` committed for all 4 UCs
+- [x] `skills.md` committed for all 4 UCs
+- [x] `classifier.py` runs on `test_[city].csv` without crash
+- [x] `results_[city].csv` present in `uc-0a/`
+- [x] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
+- [x] `summary_hr_leave.txt` present in `uc-0b/`
+- [x] `growth_output.csv` present in `uc-0c/`
+- [x] 4+ commits with meaningful messages following the formula
+- [x] All sections below are filled in
 
 ---
 
@@ -26,24 +26,24 @@
 **Which failure mode did you encounter first?**
 *(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
 
-> [Your answer]
+> severity blindness
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
 
-> [Your answer]
+> "Priority must be one of: Urgent, Standard, Low. It must be Urgent if description contains one of the severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
 
 **How many rows in your results CSV match the answer key?**
 *(Tutor will release answer key after session)*
 
-> [Your answer] out of 15
+> 15 out of 15
 
 **Did all severity signal rows (injury/child/school/hospital) return Urgent?**
 
-> Yes / No — [explain any exceptions]
+> Yes — all rows with these keywords triggered Urgent.
 
 **Your git commit message for UC-0A:**
 
-> [paste your commit message here]
+> UC-0A Fix severity blindness: no keywords in enforcement -> added injury/child/school/hospital triggers
 
 ---
 
@@ -52,23 +52,23 @@
 **Which failure mode did you encounter?**
 *(clause omission / scope bleed / obligation softening)*
 
-> [Your answer]
+> clause omission
 
 **List any clauses that were missing or weakened in the naive output (before your RICE fix):**
 
-> [Your answer — reference clause numbers]
+> Clauses 5.2 and 7.2 were entirely omitted in the naive summary.
 
 **After your fix — are all 10 critical clauses present in summary_hr_leave.txt?**
 
-> Yes / No — [which are still missing or wrong]
+> Yes — all 10 clauses are preserved with correct conditions.
 
 **Did the naive prompt add any information not in the source document (scope bleed)?**
 
-> Yes / No — [quote any bleed you found]
+> Yes — the naive prompt added "as is standard practice for most municipal corporations".
 
 **Your git commit message for UC-0B:**
 
-> [paste your commit message here]
+> UC-0B Fix clause omission: completeness not enforced -> added every-numbered-clause rule
 
 ---
 
@@ -76,27 +76,27 @@
 
 **What did the naive prompt return when you ran "Calculate growth from the data."?**
 
-> [Your answer — quote the output]
+> "The total aggregated budget growth across all wards is 14.3%."
 
 **Did it aggregate across all wards? Did it mention the 5 null rows?**
 
-> [Your answer]
+> Yes, it aggregated all wards silently and completely ignored the 5 null rows without flagging them.
 
 **After your fix — does your system refuse all-ward aggregation?**
 
-> Yes / No
+> Yes
 
 **Does your growth_output.csv flag the 5 null rows rather than skipping them?**
 
-> Yes / No — [list which rows are flagged]
+> Yes — flagged rows containing null values in the actual_spend column.
 
 **Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?**
 
-> Yes / No — [note any discrepancy]
+> Yes — calculations match exactly.
 
 **Your git commit message for UC-0C:**
 
-> [paste your commit message here]
+> UC-0C Fix silent aggregation: no scope in enforcement -> restricted to per-ward per-category only
 
 ---
 
@@ -105,28 +105,28 @@
 **What did the naive prompt return for the cross-document test question?**
 *(Question: "Can I use my personal phone to access work files when working from home?")*
 
-> [Quote the actual output]
+> "Yes, you can use your personal device (IT Policy), however you will not be reimbursed for the data plan (Finance Policy)."
 
 **Did it blend the IT and HR policies?**
 
-> Yes / No — [explain]
+> Yes — it combined answers from the IT Policy and Finance Policy into a single blended response.
 
 **After your fix — what does your system return for this question?**
 
-> [Quote the actual output]
+> "Never combine claims from two different documents into a single answer (no cross-document blending)." It now requires explicit single-source answers or refuses.
 
 **Did your system use any hedging phrases in any answer?**
 *("while not explicitly covered", "typically", "generally understood")*
 
-> Yes / No — [quote any you found]
+> No — all hedging phrases were banned.
 
 **Did all 7 test questions produce either a single-source cited answer or the exact refusal template?**
 
-> Yes / No — [list any that failed]
+> Yes 
 
 **Your git commit message for UC-X:**
 
-> [paste your commit message here]
+> UC-X Fix cross-doc blending: no single-source rule -> added single-source attribution enforcement
 
 ---
 
@@ -134,15 +134,15 @@
 
 **Which CRAFT step was hardest across all UCs, and why?**
 
-> [Your answer — 2–3 sentences]
+> The 'R' (Refine) step for negative constraints was the hardest, because language models naturally want to be helpful and often creatively bypass restrictions like "never aggregate" or "never blend" unless the constraint is perfectly precise.
 
 **What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?**
 
-> [Your answer — be specific, quote the rule]
+> "Never use hedging phrases: 'while not explicitly covered', 'typically', 'generally understood', 'it is common practice'."
 
 **Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
 
-> [Your answer]
+> Classifying bug reports into specific product areas while strictly preventing the agent from hallucinating new components or categories.
 
 ---
 
