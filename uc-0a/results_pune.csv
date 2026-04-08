@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Description mentions 'pothole'. Flagged Urgent because it mentions 'child'.,
+PM-202406,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+PM-202408,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+PM-202410,Streetlight,Standard,Description notes 'light' or 'dark'.,
+PM-202411,Streetlight,Urgent,Description notes 'light' or 'dark'. Flagged Urgent because it mentions 'hazard'.,
+PM-202413,Waste,Standard,"Description mentions 'garbage', 'waste', or 'smell'.",
+PM-202418,Noise,Standard,Description cites 'music' or 'noise'.,
+PM-202419,Road Damage,Standard,Description details a 'cracked' 'road'.,
+PM-202420,Other,Urgent,No clear category keywords found. Flagged Urgent because it mentions 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+PM-202428,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Description notes 'light' or 'dark'.,
+PM-202433,Waste,Standard,"Description mentions 'garbage', 'waste', or 'smell'.",
+PM-202446,Other,Urgent,No clear category keywords found. Flagged Urgent because it mentions 'fell'.,NEEDS_REVIEW
