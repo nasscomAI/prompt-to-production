@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on presence of: pothole.,
+PM-202402,Pothole,Urgent,"Classified as Pothole based on presence of: pothole, school, child.",
+PM-202406,Flooding,Standard,Classified as Flooding based on presence of: flood.,
+PM-202408,Flooding,Standard,"Classified as Flooding based on presence of: flood, drain blocked.",
+PM-202410,Streetlight,Standard,Classified as Streetlight based on presence of: streetlight.,
+PM-202411,Streetlight,Urgent,"Classified as Streetlight based on presence of: streetlight, hazard.",
+PM-202413,Waste,Standard,Classified as Waste based on presence of: garbage.,
+PM-202418,Noise,Standard,Classified as Noise based on presence of: music.,
+PM-202419,Road Damage,Standard,Classified as Road Damage based on presence of: road surface.,
+PM-202420,Other,Urgent,Classified as Other based on presence of: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on presence of: flood.,
+PM-202428,Waste,Standard,Classified as Waste based on presence of: dead animal.,
+PM-202430,Streetlight,Standard,"Classified as Streetlight based on presence of: lights out, heritage.",
+PM-202433,Waste,Standard,Classified as Waste based on presence of: waste.,
+PM-202446,Road Damage,Urgent,"Classified as Road Damage based on presence of: tiles broken, fell.",
