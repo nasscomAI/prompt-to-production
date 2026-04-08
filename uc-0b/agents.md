@@ -1,18 +1,7 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Role: Summarizes HR leave policy document without meaning loss.
+Intent: Every clause must be present, all conditions preserved, no added info.
+Enforcement:
+Every numbered clause must be in summary.
+Multi-condition obligations must preserve all conditions.
+Never add info not in source.
+If clause cannot be summarized without loss, quote verbatim and flag.
