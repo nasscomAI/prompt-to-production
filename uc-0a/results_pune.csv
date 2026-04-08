@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Detected keywords in complaint: Large pothole 60cm wide causing tyre damage. Three,
+Pothole,Urgent,Detected keywords in complaint: Deep pothole near bus stop. School children at ris,
+Flooding,Standard,Detected keywords in complaint: Underpass flooded knee-deep after 2hrs rain. Commu,
+Flooding,Standard,Detected keywords in complaint: Bus stand flooded. Passengers standing in water. D,
+Streetlight,Standard,Detected keywords in complaint: Three consecutive streetlights out for 10 days. Ar,
+Streetlight,Urgent,Detected keywords in complaint: Streetlight flickering and sparking. Electrical ha,
+Waste,Standard,Detected keywords in complaint: Overflowing garbage bins near vegetable market. Sm,
+Other,Standard,Detected keywords in complaint: Wedding venue playing music past midnight on weekn,NEEDS_REVIEW
+Road Damage,Standard,Detected keywords in complaint: Road surface cracked and sinking near utility work,
+Other,Urgent,Detected keywords in complaint: Manhole cover missing. Risk of serious injury to c,NEEDS_REVIEW
+Flooding,Standard,Detected keywords in complaint: Bridge approach floods in 30mins of rain. Bridge b,
+Other,Standard,Detected keywords in complaint: Dead animal not removed for 36 hours. Health conce,NEEDS_REVIEW
+Streetlight,Standard,"Detected keywords in complaint: Heritage street, lights out. Safety concern for pe",
+Waste,Standard,Detected keywords in complaint: Bulk waste from apartment renovation dumped on pub,
+Other,Urgent,Detected keywords in complaint: Footpath tiles broken and upturned. Elderly reside,NEEDS_REVIEW
