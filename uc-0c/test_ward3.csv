@@ -1,0 +1,13 @@
+period,actual_spend,growth_value,formula_used,note
+2024-01,3.3,N/A,N/A,First period - no previous month for comparison
+2024-02,3.3,0.0%,MoM = (3.3 - 3.3) / 3.3 × 100%,
+2024-03,3.4,3.0%,MoM = (3.4 - 3.3) / 3.3 × 100%,
+2024-04,2.8,-17.6%,MoM = (2.8 - 3.4) / 3.4 × 100%,
+2024-05,2.9,3.6%,MoM = (2.9 - 2.8) / 2.8 × 100%,
+2024-06,4.0,37.9%,MoM = (4.0 - 2.9) / 2.9 × 100%,
+2024-07,3.8,-5.0%,MoM = (3.8 - 4.0) / 4.0 × 100%,
+2024-08,NULL,NULL_FLAGGED,N/A,Null value: Project suspended — pending approval
+2024-09,4.4,NULL_FLAGGED,N/A,Previous period null: Project suspended — pending approval
+2024-10,3.5,-20.5%,MoM = (3.5 - 4.4) / 4.4 × 100%,
+2024-11,3.6,2.9%,MoM = (3.6 - 3.5) / 3.5 × 100%,
+2024-12,2.8,-22.2%,MoM = (2.8 - 3.6) / 3.6 × 100%,
