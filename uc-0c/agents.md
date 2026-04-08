@@ -1,18 +1,32 @@
 # agents.md
+
 # INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+
 # Delete these comments before committing.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+agents:
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+&nbsp; - name: number\_agent
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+&nbsp;   role: Extracts and formats numbers from text.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+&nbsp;   skills\_used: \[extract\_numbers]
+
+&nbsp;   decision\_logic: Pulls numeric values and prepares them for reporting.
+
+&nbsp;   error\_handling: Returns empty list if no numbers found.
+
+
+
+&nbsp; - name: check\_agent
+
+&nbsp;   role: Validates whether numbers look correct.
+
+&nbsp;   skills\_used: \[validate\_range]
+
+&nbsp;   decision\_logic: Checks if numbers are within expected ranges.
+
+&nbsp;   error\_handling: Flags as "invalid" if out of range.
+
+
+

@@ -1,18 +1,32 @@
 # agents.md
+
 # INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+
 # Delete these comments before committing.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+agents:
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+&nbsp; - name: qa\_agent
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+&nbsp;   role: Answers user questions from documents.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+&nbsp;   skills\_used: \[search\_documents, extract\_answer]
+
+&nbsp;   decision\_logic: Finds relevant documents and extracts answers.
+
+&nbsp;   error\_handling: Returns "answer not found" if no match.
+
+
+
+&nbsp; - name: index\_agent
+
+&nbsp;   role: Builds a searchable index of documents.
+
+&nbsp;   skills\_used: \[search\_documents]
+
+&nbsp;   decision\_logic: Organizes documents for faster search.
+
+&nbsp;   error\_handling: Skips documents that cannot be indexed.
+
+
+
