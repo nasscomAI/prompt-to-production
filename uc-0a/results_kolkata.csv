@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Category is Heritage Damage as the description mentions 'heritage'.,
+KM-202402,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+KM-202405,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+KM-202409,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+KM-202410,Pothole,Standard,Category is Pothole as the description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Category is Pothole as the description mentions 'pothole'.,
+KM-202415,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+KM-202418,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+KM-202421,Other,Urgent,"Priority is Urgent because it mentions 'hospital', and category is Other as it contains no clearly identifiable category keywords.",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Category is Road Damage as the description mentions 'road'.,
+KM-202426,Heritage Damage,Standard,Category is Heritage Damage as the description mentions 'heritage'.,
+KM-202430,Road Damage,Standard,Category is Road Damage as the description mentions 'road'.,
+KM-202434,Heritage Damage,Standard,Category is Heritage Damage as the description mentions 'heritage'.,
+KM-202436,Streetlight,Standard,Category is Streetlight as the description mentions 'dark'.,
+KM-202438,Heritage Damage,Standard,Category is Heritage Damage as the description mentions 'heritage'.,
