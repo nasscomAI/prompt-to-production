@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Normal,Detected flooding related keywords,
+GH-202402,Flooding,Normal,Detected flooding related keywords,
+GH-202406,Other,Normal,Category not clearly identified from description,NEEDS_REVIEW
+GH-202407,Other,Normal,Category not clearly identified from description,NEEDS_REVIEW
+GH-202410,Pothole,Normal,Detected words related to pothole or road damage,
+GH-202411,Pothole,Urgent,Detected words related to pothole or road damage; urgent keyword detected: hospital,
+GH-202412,Pothole,Urgent,Detected words related to pothole or road damage; urgent keyword detected: school,
+GH-202417,Garbage,Normal,Detected garbage or waste keywords,
+GH-202420,Other,Normal,Category not clearly identified from description,NEEDS_REVIEW
+GH-202422,Other,Normal,Category not clearly identified from description,NEEDS_REVIEW
+GH-202424,Flooding,Normal,Detected flooding related keywords,
+GH-202428,Garbage,Normal,Detected garbage or waste keywords,
+GH-202432,Other,Normal,Category not clearly identified from description,NEEDS_REVIEW
+GH-202448,Flooding,Normal,Detected flooding related keywords,
+GH-202438,Other,Normal,Category not clearly identified from description,NEEDS_REVIEW
