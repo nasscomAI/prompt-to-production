@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category Pothole is supported by words pothole.,
+PM-202402,Pothole,Urgent,Category Pothole is supported by words pothole and priority is Urgent because of words school.,
+PM-202406,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,"Category Drain Blockage is supported by words drain, blocked.",
+PM-202410,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,Category Streetlight is supported by words streetlight and priority is Urgent because of words hazard.,
+PM-202413,Waste,Standard,Category Waste is supported by words garbage.,
+PM-202418,Noise,Standard,Category Noise is supported by words music.,
+PM-202419,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+PM-202420,Other,Urgent,Description includes urgency words injury but lacks clear category terms so it is marked Other for review.,NEEDS_REVIEW
+PM-202427,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+PM-202428,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Category Heritage Damage is supported by words heritage.,
+PM-202433,Waste,Standard,Category Waste is supported by words waste.,
+PM-202446,Other,Urgent,Description includes urgency words fell but lacks clear category terms so it is marked Other for review.,NEEDS_REVIEW

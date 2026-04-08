@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category Heat Hazard is supported by words heatwave.,
+AM-202407,Other,Urgent,Description includes urgency words child but lacks clear category terms so it is marked Other for review.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category Pothole is supported by words pothole.,
+AM-202414,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+AM-202417,Other,Standard,"Description contains overlapping words waste, heritage so category is marked Other for review.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Category Noise is supported by words music.,
+AM-202424,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+AM-202429,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Category Heritage Damage is supported by words heritage.,
+AM-202435,Heat Hazard,Standard,Category Heat Hazard is supported by words heat.,
+AM-202444,Waste,Standard,Category Waste is supported by words waste.,
+AM-202445,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
