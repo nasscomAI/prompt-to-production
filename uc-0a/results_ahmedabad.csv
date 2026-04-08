@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard based on key terms: 'tarmac, surface, melting' in the description.",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard based on key terms: 'metal, shelter, reaching' in the description.",
+AM-202405,Other,Standard,"Classified as Other based on key terms: 'trees, split, branches.' in the description.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,"Classified as Heat Hazard based on key terms: 'irrigation, system, broken.' in the description.",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage based on key terms: 'broken, bench, upturned' in the description.",
+AM-202410,Pothole,Standard,"Classified as Pothole based on key terms: 'pothole, highway, causing' in the description.",
+AM-202414,Streetlight,Low,"Classified as Streetlight based on key terms: 'residential, colony, unlit' in the description.",
+AM-202417,Waste,Low,"Classified as Waste based on key terms: 'night, market, waste' in the description.",
+AM-202421,Noise,Low,"Classified as Noise based on key terms: 'music, audible, residential' in the description.",
+AM-202424,Heat Hazard,Low,"Classified as Heat Hazard based on key terms: 'approach, surface, bubbling' in the description.",
+AM-202429,Heat Hazard,Low,"Classified as Heat Hazard based on key terms: 'river, surface, temperature' in the description.",
+AM-202431,Heritage Damage,Low,"Classified as Heritage Damage based on key terms: 'subsidence, ancient, well.' in the description.",
+AM-202435,Heat Hazard,Low,"Classified as Heat Hazard based on key terms: 'black, metal, dividers' in the description.",
+AM-202444,Waste,Standard,"Classified as Waste based on key terms: 'restaurant, waste, overflowing' in the description.",
+AM-202445,Other,Low,"Classified as Other based on key terms: 'shelter, glass, broken.' in the description.",NEEDS_REVIEW
