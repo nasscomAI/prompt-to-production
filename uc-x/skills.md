@@ -1,16 +1,9 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for UC-X
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `retrieve_documents`
+- **Purpose**: Loads all 3 policy files and indexes them cleanly by document name and section number.
+- **Constraints**: Keeps content distinctly siloed to avoid cross-document blending.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `answer_question`
+- **Purpose**: Searches the indexed documents and returns a single-source answer with a strict citation.
+- **Constraints**: Will return the exact refusal template if the answer cannot be found in a single source. Does not hedge.

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,No severe keywords found.,
+PM-202402,Pothole,Urgent,Found severe keyword 'child' in description.,
+PM-202406,Flooding,Standard,No severe keywords found.,
+PM-202408,Flooding,Standard,No severe keywords found.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,No severe keywords found.,
+PM-202411,Streetlight,Urgent,Found severe keyword 'hazard' in description.,
+PM-202413,Waste,Standard,No severe keywords found.,
+PM-202418,Noise,Standard,No severe keywords found.,
+PM-202419,Road Damage,Standard,No severe keywords found.,
+PM-202420,Other,Urgent,Found severe keyword 'injury' in description.,
+PM-202427,Flooding,Standard,No severe keywords found.,
+PM-202428,Waste,Standard,No severe keywords found.,
+PM-202430,Streetlight,Standard,No severe keywords found.,
+PM-202433,Waste,Standard,No severe keywords found.,
+PM-202446,Other,Urgent,Found severe keyword 'fell' in description.,

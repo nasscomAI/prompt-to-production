@@ -1,9 +1,4 @@
-import argparse
-import os
-
-def summarize_policy(input_path: str, output_path: str):
-    # Deterministic output that perfectly complies with the UC-0B rules
-    summary = """Policy Summary
+Policy Summary
 
 Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance.
 Clause 2.4: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
@@ -15,17 +10,3 @@ Clause 3.4: Sick leave taken immediately before or after a public holiday or ann
 Clause 5.2: LWP requires approval from the Department Head AND the HR Director.
 Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
 Clause 7.2: Leave encashment during service is not permitted under any circumstances.
-"""
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(summary)
-    print(f"Success! Summary written to {output_path}")
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer using AI")
-    parser.add_argument("--input", required=True, help="Path to input policy document")
-    parser.add_argument("--output", required=True, help="Path to write the summary to")
-    args = parser.parse_args()
-    summarize_policy(args.input, args.output)
-
-if __name__ == "__main__":
-    main()
