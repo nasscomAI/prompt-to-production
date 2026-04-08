@@ -1,0 +1,8 @@
+Query: garbage collection
+
+Matches:
+Garbage collection in the city has been irregular, causing sanitation issues.
+---
+
+Answer:
+Garbage collection in the city has been irregular, causing sanitation issues.
