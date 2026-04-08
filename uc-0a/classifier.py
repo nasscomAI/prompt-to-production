@@ -1,35 +1,55 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
-import csv
+def add(x, y):
+    return x + y
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def subtract(x, y):
+    return x - y
 
+def multiply(x, y):
+    return x * y
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    return x / y
 
+def main():
+    print("Welcome to the Simple Calculator!")
+    print("Select operation:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+
+    while True:
+        choice = input("Enter choice (1/2/3/4) or 'q' to quit: ")
+
+        if choice.lower() == 'q':
+            print("Exiting calculator. Goodbye!")
+            break
+
+        if choice in ('1', '2', '3', '4'):
+            try:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+            except ValueError:
+                print("Invalid input! Please enter valid numbers.")
+                continue
+
+            if choice == '1':
+                print(f"Result: {num1} + {num2} = {add(num1, num2)}")
+            elif choice == '2':
+                print(f"Result: {num1} - {num2} = {subtract(num1, num2)}")
+            elif choice == '3':
+                print(f"Result: {num1} * {num2} = {multiply(num1, num2)}")
+            elif choice == '4':
+                result = divide(num1, num2)
+                if isinstance(result, str):
+                    print(result)
+                else:
+                    print(f"Result: {num1} / {num2} = {result}")
+        else:
+            print("Invalid input! Please select a valid operation (1/2/3/4).")
+        print("-" * 30)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    main()
