@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: search_documents
+    description: Searches policy documents for relevant content.
+    input: User question.
+    output: Relevant document excerpts.
+    error_handling: Return NEEDS_REVIEW if no match found.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: generate_answer
+    description: Generates answer from retrieved document text.
+    input: Question and document excerpts.
+    output: Short factual answer.
+    error_handling: Return Information not found if no answer exists.
