@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description contains category keyword: 'heritage',
+KM-202402,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+KM-202405,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description contains category keyword: 'pothole',
+KM-202410,Pothole,Standard,Description contains category keyword: 'pothole',
+KM-202411,Pothole,Standard,Description contains category keyword: 'pothole',
+KM-202415,Flooding,Standard,Description contains category keyword: 'drain',
+KM-202418,Waste,Standard,Description contains category keyword: 'waste',
+KM-202421,Other,Urgent,"Could not determine category from description alone, but contains severity keyword: 'hospital'",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Description contains category keyword: 'road surface',
+KM-202426,Heritage Damage,Standard,Description contains category keyword: 'heritage',
+KM-202430,Waste,Standard,Description contains category keyword: 'smell',
+KM-202434,Heritage Damage,Standard,Description contains category keyword: 'heritage',
+KM-202436,Streetlight,Standard,Description contains category keyword: 'darkness',
+KM-202438,Heritage Damage,Standard,Description contains category keyword: 'heritage',
