@@ -1,11 +1,4 @@
-import argparse
-
-def retrieve_policy(input_path):
-    with open(input_path, "r", encoding="utf-8") as f:
-        return f.read()
-
-def summarize_policy(content):
-    summary = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
 Document Reference: HR-POL-001 | Version 2.3 | Effective: 1 April 2024
 
 ANNUAL LEAVE
@@ -25,24 +18,3 @@ LEAVE WITHOUT PAY (LWP)
 
 LEAVE ENCASHMENT
 - Clause 7.2: Leave encashment during service is NOT PERMITTED under any circumstances.
-"""
-    return summary
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-
-    content = retrieve_policy(args.input)
-    summary = summarize_policy(content)
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
-
-    print(f"Done! Summary saved to {args.output}")
-    print("\n--- SUMMARY PREVIEW ---\n")
-    print(summary)
-
-if __name__ == "__main__":
-    main()
