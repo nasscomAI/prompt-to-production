@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Ambiguous category match: Streetlight, Heritage Damage.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage based on: historic.,
+KM-202405,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole based on: pothole.,
+KM-202410,Pothole,Standard,Classified as Pothole based on: pothole.,
+KM-202411,Pothole,Standard,Classified as Pothole based on: pothole.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage based on: drain.,
+KM-202418,Other,Standard,"Ambiguous category match: Waste, Heat Hazard.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Classified as Road Damage and Urgent priority due to 'hospital, fell' and 'sinking, footpath'.",
+KM-202422,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on: heritage.,
+KM-202430,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on: heritage.,
+KM-202436,Streetlight,Standard,Classified as Streetlight based on: dark.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage based on: heritage.,

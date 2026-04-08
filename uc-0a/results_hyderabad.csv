@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding and Urgent priority due to 'ambulance' and 'flood'.,
+GH-202402,Other,Standard,"Ambiguous category match: Flooding, Drain Blockage.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on: drain.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on: drain.,
+GH-202410,Pothole,Standard,Classified as Pothole based on: pothole.,
+GH-202411,Pothole,Urgent,Classified as Pothole and Urgent priority due to 'hospital' and 'pothole'.,
+GH-202412,Pothole,Urgent,Classified as Pothole and Urgent priority due to 'school' and 'pothole'.,
+GH-202417,Other,Standard,"Ambiguous category match: Waste, Heritage Damage, Heat Hazard.",NEEDS_REVIEW
+GH-202420,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Classified as Pothole and Urgent priority due to 'collapse' and 'crater'.,
+GH-202424,Flooding,Standard,Classified as Flooding based on: flood.,
+GH-202428,Waste,Standard,Classified as Waste based on: waste.,
+GH-202432,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Ambiguous category match: Flooding, Drain Blockage.",NEEDS_REVIEW
+GH-202438,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
