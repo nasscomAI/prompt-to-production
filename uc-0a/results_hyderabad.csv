@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,"The description includes underpass flooded, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,"The description mentions drain, indicating Drain Blockage.",
+GH-202406,Drain Blockage,Standard,"The description mentions drain, indicating Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"The description mentions drain, indicating Drain Blockage.",
+GH-202410,Other,Standard,"The description includes potholes causing, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202411,Pothole,Standard,"The description mentions pothole, indicating Pothole.",
+GH-202412,Other,Urgent,"The description includes school bus, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202417,Other,Standard,"The description includes heritage zone, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202420,Other,Standard,"The description includes construction drilling, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202422,Other,Standard,"The description includes road collapsed, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202424,Other,Standard,"The description includes underpass floods, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202428,Waste,Standard,"The description mentions waste, indicating Waste.",
+GH-202432,Other,Standard,"The description includes supermarket delivery, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202448,Other,Standard,"The description includes main drain, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+GH-202438,Other,Standard,"The description includes colony surrounded, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
