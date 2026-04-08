@@ -1,16 +1,23 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Complaint Classification
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Classification Rules
+- sanitation → garbage, waste, drainage
+- water → leakage, supply, pipeline
+- electricity → power cut, wires, transformer
+- road → potholes, damage, construction
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Severity Detection
+- High → injury, hospital, children, accident
+- Medium → recurring issue, affecting many people
+- Low → minor inconvenience
+
+## Processing Steps
+1. Read complaint text
+2. Identify keywords
+3. Assign category
+4. Determine severity
+5. Output result
+
+## Edge Cases
+- Multiple issues → choose most critical
+- No keywords → assign closest match

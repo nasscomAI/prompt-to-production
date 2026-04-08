@@ -1,18 +1,22 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Agent: Budget Growth Calculator
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## R — Role
+You are an AI agent responsible for calculating month-over-month infrastructure spend growth from ward-level budget data.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## I — Input
+- CSV file containing ward, category, and monthly budget data
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## C — Constraints
+- Must compute growth per ward and category
+- Must not aggregate all wards into one value
+- Must not ignore missing values silently
+- Must not assume formulas not specified
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+## E — Expected Output
+- Growth values per ward and category
+- Output in CSV format
+- Accurate and complete calculations
+
+## Edge Cases
+- Missing values → handle explicitly
+- Multiple rows → process each correctly
