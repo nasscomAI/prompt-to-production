@@ -1,0 +1,26 @@
+ward,category,total_actual_spend,missing_months,note
+Ward 1 – Kasba,Drainage & Flooding,109.7,0,
+Ward 1 – Kasba,Parks & Greening,30.4,0,
+Ward 1 – Kasba,Roads & Pothole Repair,180.1,0,
+Ward 1 – Kasba,Streetlight Maintenance,42.3,0,
+Ward 1 – Kasba,Waste Management,72.4,1,1 month(s) excluded — actual_spend not reported
+Ward 2 – Shivajinagar,Drainage & Flooding,122.4,1,1 month(s) excluded — actual_spend not reported
+Ward 2 – Shivajinagar,Parks & Greening,24.0,0,
+Ward 2 – Shivajinagar,Roads & Pothole Repair,216.8,0,
+Ward 2 – Shivajinagar,Streetlight Maintenance,57.0,0,
+Ward 2 – Shivajinagar,Waste Management,87.5,0,
+Ward 3 – Kothrud,Drainage & Flooding,106.7,0,
+Ward 3 – Kothrud,Parks & Greening,37.8,1,1 month(s) excluded — actual_spend not reported
+Ward 3 – Kothrud,Roads & Pothole Repair,163.5,0,
+Ward 3 – Kothrud,Streetlight Maintenance,52.8,0,
+Ward 3 – Kothrud,Waste Management,67.0,0,
+Ward 4 – Warje,Drainage & Flooding,87.3,0,
+Ward 4 – Warje,Parks & Greening,20.2,0,
+Ward 4 – Warje,Roads & Pothole Repair,126.5,1,1 month(s) excluded — actual_spend not reported
+Ward 4 – Warje,Streetlight Maintenance,38.9,0,
+Ward 4 – Warje,Waste Management,57.6,0,
+Ward 5 – Hadapsar,Drainage & Flooding,136.0,0,
+Ward 5 – Hadapsar,Parks & Greening,33.6,0,
+Ward 5 – Hadapsar,Roads & Pothole Repair,197.4,0,
+Ward 5 – Hadapsar,Streetlight Maintenance,45.0,1,1 month(s) excluded — actual_spend not reported
+Ward 5 – Hadapsar,Waste Management,81.0,0,

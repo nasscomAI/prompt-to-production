@@ -1,0 +1,16 @@
+complaint_id,category,severity
+GH-202401,water,high
+GH-202402,sanitation,medium
+GH-202406,sanitation,medium
+GH-202407,sanitation,high
+GH-202410,roads,medium
+GH-202411,roads,high
+GH-202412,roads,high
+GH-202417,sanitation,medium
+GH-202420,other,medium
+GH-202422,roads,high
+GH-202424,water,medium
+GH-202428,sanitation,medium
+GH-202432,other,low
+GH-202448,sanitation,high
+GH-202438,water,medium
