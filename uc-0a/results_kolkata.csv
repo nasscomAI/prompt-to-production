@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The description contains 'heritage', justifying the Heritage Damage classification with Standard priority.",
+KM-202402,Other,Standard,The category is set to Other because the description indicates a general issue.,NEEDS_REVIEW
+KM-202405,Noise,Standard,"The description contains 'wedding', justifying the Noise classification with Standard priority.",
+KM-202409,Pothole,Standard,"The description contains 'pothole', justifying the Pothole classification with Standard priority.",
+KM-202410,Pothole,Standard,"The description contains 'pothole', justifying the Pothole classification with Standard priority.",
+KM-202411,Pothole,Standard,"The description contains 'pothole', justifying the Pothole classification with Standard priority.",
+KM-202415,Drain Blockage,Standard,"The description contains 'drain', justifying the Drain Blockage classification with Standard priority.",
+KM-202418,Waste,Standard,"The description contains 'waste', justifying the Waste classification with Standard priority.",
+KM-202421,Road Damage,Urgent,"The description contains 'hospital' and 'sinking', justifying the Road Damage classification with Urgent priority.",
+KM-202422,Road Damage,Standard,"The description contains 'road surface', justifying the Road Damage classification with Standard priority.",
+KM-202426,Heritage Damage,Standard,"The description contains 'heritage', justifying the Heritage Damage classification with Standard priority.",
+KM-202430,Other,Standard,The category is set to Other because the description indicates a general issue.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The description contains 'heritage', justifying the Heritage Damage classification with Standard priority.",
+KM-202436,Streetlight,Standard,"The description contains 'dark', justifying the Streetlight classification with Standard priority.",
+KM-202438,Heritage Damage,Standard,"The description contains 'heritage', justifying the Heritage Damage classification with Standard priority.",
