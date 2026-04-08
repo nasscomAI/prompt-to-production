@@ -6,25 +6,58 @@ import argparse
 import csv
 
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    complaint = row.get("complaint", "").lower()
 
+    category = "other"
+    priority = "normal"
+    reason = "default rule"
+    flag = ""
+
+    if "garbage" in complaint or "waste" in complaint:
+        category = "sanitation"
+        reason = "garbage keyword"
+
+    elif "road" in complaint or "pothole" in complaint:
+        category = "roads"
+        reason = "road keyword"
+
+    elif "water" in complaint or "pipe" in complaint:
+        category = "water"
+        reason = "water keyword"
+
+    elif "electric" in complaint or "power" in complaint:
+        category = "electricity"
+        reason = "electric keyword"
+
+    if "accident" in complaint or "hospital" in complaint or "child" in complaint:
+        priority = "high"
+        flag = "urgent"
+
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
 
+    with open(input_path, "r") as infile:
+        reader = csv.DictReader(infile)
+
+        with open(output_path, "w", newline="") as outfile:
+            fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+            writer.writeheader()
+
+            for row in reader:
+                try:
+                    result = classify_complaint(row)
+                    writer.writerow(result)
+                except Exception as e:
+                    print("Error processing row:", e)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
@@ -33,3 +66,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
     batch_classify(args.input, args.output)
     print(f"Done. Results written to {args.output}")
+
