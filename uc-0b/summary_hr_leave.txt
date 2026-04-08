@@ -1,13 +1,3 @@
-import argparse
-
-def retrieve_policy(file_path):
-    with open(file_path, 'r', encoding='utf-8') as f:
-        return f.read()
-
-
-def summarize_policy(policy_text):
-    # STRICT summary preserving all clauses
-    summary = """
 Clause 2.3: Employees must provide at least 14-day advance notice before taking leave.
 
 Clause 2.4: Leave must be approved in writing before commencement. Verbal approval is not valid.
@@ -27,24 +17,3 @@ Clause 5.2: Leave Without Pay (LWP) requires approval from BOTH the Department H
 Clause 5.3: LWP exceeding 30 days requires approval from the Municipal Commissioner.
 
 Clause 7.2: Leave encashment during service is not permitted under any circumstances.
-"""
-    return summary.strip()
-
-
-def main(input_file, output_file):
-    policy_text = retrieve_policy(input_file)
-    summary = summarize_policy(policy_text)
-
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(summary)
-
-    print(f"✅ Summary saved to {output_file}")
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-
-    args = parser.parse_args()
-    main(args.input, args.output)
