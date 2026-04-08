@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,Detected keyword pothole,
+PM-202402,Pothole,Urgent,Detected keyword pothole; urgent keyword: child,
+PM-202406,Flooding,Normal,Detected flooding related keyword,
+PM-202408,Flooding,Normal,Detected flooding related keyword,
+PM-202410,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202411,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202413,Garbage,Normal,Detected garbage related keyword,
+PM-202418,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202419,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202420,Other,Urgent,No clear keyword found; urgent keyword: injury,NEEDS_REVIEW
+PM-202427,Flooding,Normal,Detected flooding related keyword,
+PM-202428,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202430,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202433,Other,Normal,No clear keyword found,NEEDS_REVIEW
+PM-202446,Other,Normal,No clear keyword found,NEEDS_REVIEW
