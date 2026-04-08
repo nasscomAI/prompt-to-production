@@ -1,0 +1,8 @@
+POLICY: policy_hr_leave.txt
+STATUS: RISKY
+
+SUMMARY:
+CITY MUNICIPAL CORPORATION HUMAN RESOURCES DEPARTMENT EMPLOYEE LEAVE POLICY Document Reference: HR-POL-001 Version: 2.3 | Effective: 1 April 2024 ═══════════════════════════════════════════════════════════ 1. PURPOSE AND SCOPE ═══════════════════════════════════════════════════════════ 1.1 This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC). 1.2 This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts. ═══════════════════════════════════════════════════════════ 2. ANNUAL LEAVE ═══════════════════════════════════════════════════════════ 2.1 Each permanent employee is entitled to 18 days of paid annual...
+
+OMITTED CRITICAL: 5 days, 12 days, 48 hours, 26 weeks, 12 weeks, 30 days, 60 days, within 48 hours, within 30 days, within
+    60 days

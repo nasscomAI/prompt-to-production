@@ -1,0 +1,16 @@
+complaint_id,category,reason,confidence
+GH-202401,water,flooded,medium
+GH-202402,water,"drain, flooded",high
+GH-202406,water,"drain, stormwater",high
+GH-202407,sanitation,"dengue, mosquito",high
+GH-202410,roads,"road, potholes",high
+GH-202411,roads,pothole,medium
+GH-202412,roads,potholes,medium
+GH-202417,sanitation,"garbage, waste, overflow",high
+GH-202420,others,No matching keywords found,low
+GH-202422,roads,road,medium
+GH-202424,water,floods,medium
+GH-202428,sanitation,waste,medium
+GH-202432,others,No matching keywords found,low
+GH-202448,water,drain,medium
+GH-202438,roads,road,medium
