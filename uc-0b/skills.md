@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: "retrieve_policy"
+  [cite_start]description: "Loads a .txt policy file and returns the content as structured, numbered sections for precise analysis[cite: 235, 243]."
+  [cite_start]input: "File path to a .txt policy document[cite: 244]."
+  [cite_start]output: "A dictionary or list of strings where each element represents a numbered clause[cite: 245]."
+  [cite_start]error_handling: "If the file is missing, empty, or unreadable, the skill must return an error and stop the process[cite: 246, 255]."
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: "summarize_policy"
+  [cite_start]description: "Takes structured sections and produces a compliant summary that maintains all binding obligations and clause references[cite: 235, 243]."
+  [cite_start]input: "Structured numbered sections of the policy[cite: 244]."
+  [cite_start]output: "A summarized text file (summary_hr_leave.txt) that includes all 10 mandatory clauses[cite: 154, 245]."
+  [cite_start]error_handling: "If a clause summary results in 'clause omission' or 'condition dropping,' the skill must revert to a verbatim quote of that clause[cite: 152, 153, 246, 255]."
