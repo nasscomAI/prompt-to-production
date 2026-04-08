@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description contains 'ambulance' and 'flood', justifying the Flooding classification with Urgent priority.",
+GH-202402,Flooding,Standard,"The description contains 'flood', justifying the Flooding classification with Standard priority.",
+GH-202406,Waste,Standard,"The description contains 'debris', justifying the Waste classification with Standard priority.",
+GH-202407,Drain Blockage,Standard,"The description contains 'drain', justifying the Drain Blockage classification with Standard priority.",
+GH-202410,Pothole,Standard,"The description contains 'pothole', justifying the Pothole classification with Standard priority.",
+GH-202411,Pothole,Urgent,"The description contains 'hospital' and 'pothole', justifying the Pothole classification with Urgent priority.",
+GH-202412,Pothole,Urgent,"The description contains 'school' and 'pothole', justifying the Pothole classification with Urgent priority.",
+GH-202417,Heritage Damage,Standard,"The description contains 'heritage', justifying the Heritage Damage classification with Standard priority.",
+GH-202420,Other,Standard,The category is set to Other because the description indicates a general issue.,NEEDS_REVIEW
+GH-202422,Other,Urgent,"The description contains 'collapse', justifying the Other classification with Urgent priority.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"The description contains 'flood', justifying the Flooding classification with Standard priority.",
+GH-202428,Waste,Standard,"The description contains 'waste', justifying the Waste classification with Standard priority.",
+GH-202432,Other,Standard,The category is set to Other because the description indicates a general issue.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"The description contains 'flood', justifying the Flooding classification with Standard priority.",
+GH-202438,Other,Standard,The category is set to Other because the description indicates a general issue.,NEEDS_REVIEW
