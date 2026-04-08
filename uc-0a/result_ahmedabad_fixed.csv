@@ -1,0 +1,17 @@
+
+complaint_id,category,priority,reason,flag
+AM-202401,Infrastructure,Urgent,Description mentions road/paving/infrastructure terms. Contains urgent keyword: 'unsafe'.,
+AM-202402,Other,Urgent,Could not map to exact category Contains urgent keyword: 'dangerous'.,NEEDS_REVIEW
+AM-202405,Park & Flora,Urgent,Description mentions park/flora terms like 'tree' or 'grass'. Contains urgent keyword: 'fall risk'.,
+AM-202406,Heat Extremes,Urgent,Description mentions heat or temperatures. Contains urgent keyword: 'broken'.,
+AM-202407,Infrastructure,Urgent,Description mentions road/paving/infrastructure terms. Contains urgent keyword: 'child'.,
+AM-202410,Infrastructure,Normal,Description mentions road/paving/infrastructure terms.,
+AM-202414,Electrical,Normal,Description mentions wiring/lighting.,
+AM-202417,Waste & Health,Normal,Description mentions waste/bins.,
+AM-202421,Noise,Normal,Description mentions noise/music.,
+AM-202424,Infrastructure,Normal,Description mentions road/paving/infrastructure terms.,
+AM-202429,Infrastructure,Normal,Description mentions road/paving/infrastructure terms.,
+AM-202431,Infrastructure,Normal,Description mentions road/paving/infrastructure terms.,
+AM-202435,Infrastructure,Urgent,Description mentions road/paving/infrastructure terms. Contains urgent keyword: 'burns'.,
+AM-202444,Waste & Health,Urgent,Description mentions waste/bins. Contains urgent keyword: 'health risk'.,
+AM-202445,Heat Extremes,Urgent,Description mentions heat or temperatures. Contains urgent keyword: 'broken'.,
