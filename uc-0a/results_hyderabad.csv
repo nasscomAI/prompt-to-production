@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority because the description mentions 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description mentions 'drain'.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description mentions 'drain'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description mentions 'drain'.,
+GH-202410,Pothole,Low,"Classified as Pothole with Low priority because the description mentions 'vehicles, causing, potholes'.",
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority because the description mentions 'pothole'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority because the description mentions 'school'.,
+GH-202417,Waste,Low,Classified as Waste with Low priority because the description mentions 'waste'.,
+GH-202420,Other,Standard,"Classified as Other with Standard priority because the description mentions 'from, construction, drilling'.",NEEDS_REVIEW
+GH-202422,Other,Urgent,"Classified as Other with Urgent priority because the description mentions 'partially., road, collapsed'.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority because the description mentions 'in'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority because the description mentions 'waste'.,
+GH-202432,Other,Standard,"Classified as Other with Standard priority because the description mentions '24hr, delivery, supermarket'.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description mentions 'drain'.,
+GH-202438,Flooding,Standard,"Classified as Flooding with Standard priority because the description mentions 'surrounded, colony, by'.",
