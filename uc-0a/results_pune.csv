@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classification is based on the mention of 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Classification is based on the mention of 'pothole' and 'child' in the description.,
+PM-202406,Flooding,Standard,Classification is based on the mention of 'flood' in the description.,
+PM-202408,Flooding,Standard,Classification is based on the mention of 'flood' in the description.,
+PM-202410,Streetlight,Standard,Classification is based on the mention of 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,Classification is based on the mention of 'streetlight' and 'hazard' in the description.,
+PM-202413,Waste,Standard,Classification is based on the mention of 'garbage' in the description.,
+PM-202418,Other,Standard,No predefined category keywords were identified in the provided description.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Classification is based on the mention of 'crack' in the description.,
+PM-202420,Other,Urgent,Category is 'Other' but flagged as Urgent due to the word 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classification is based on the mention of 'flood' in the description.,
+PM-202428,Other,Standard,No predefined category keywords were identified in the provided description.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classification is based on the mention of 'heritage' in the description.,
+PM-202433,Waste,Standard,Classification is based on the mention of 'waste' in the description.,
+PM-202446,Other,Urgent,Category is 'Other' but flagged as Urgent due to the word 'fell'.,NEEDS_REVIEW
