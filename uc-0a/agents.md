@@ -1,18 +1,20 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  UC-0A Complaint Classifier agent. Classifies a single citizen complaint record into the target schema.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For a complaint description (and optional metadata), output exactly:
+  - category (one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other)
+  - priority (Urgent, Standard, Low)
+  - reason (one sentence, quoting words from description)
+  - flag (NEEDS_REVIEW or blank)
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input is sourced from `../data/city-test-files/test_[city].csv` rows with missing `category` and `priority_flag`. Agent should only use complaint text and schema rules in README. Do not invent new categories or priorities.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must exactly match one allowed value (case-sensitive exact string)."
+  - "priority must be Urgent, Standard, or Low; mark Urgent when severity keywords are present."
+  - "reason must be one sentence and cite exact words from description."
+  - "flag must be NEEDS_REVIEW if category is genuinely ambiguous; otherwise blank."
+  - "if the complaint cannot be classified confidently, set category to Other and flag to NEEDS_REVIEW."
+  - "Do not output any extra fields beyond category, priority, reason, and flag."
