@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Complaint mentions 'pothole' and is classified as Pothole.,
+Pothole,Urgent,Complaint mentions 'pothole' and is classified as Pothole.,
+Flooding,Standard,Complaint mentions 'flooded' and is classified as Flooding.,
+Drain Blockage,Standard,Complaint mentions 'drain blocked' and is classified as Drain Blockage.,NEEDS_REVIEW
+Streetlight,Standard,Complaint mentions 'streetlight' and is classified as Streetlight.,
+Streetlight,Urgent,Complaint mentions 'streetlight' and is classified as Streetlight.,
+Waste,Standard,Complaint mentions 'garbage' and is classified as Waste.,
+Noise,Standard,Complaint mentions 'music past midnight' and is classified as Noise.,
+Road Damage,Standard,Complaint mentions 'road surface cracked' and is classified as Road Damage.,
+Road Damage,Urgent,Complaint mentions 'manhole cover missing' and is classified as Road Damage.,
+Flooding,Standard,Complaint mentions 'flood' and is classified as Flooding.,
+Waste,Standard,Complaint mentions 'dead animal' and is classified as Waste.,
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,NEEDS_REVIEW
+Waste,Standard,Complaint mentions 'waste' and is classified as Waste.,
+Road Damage,Urgent,Complaint mentions 'tiles broken' and is classified as Road Damage.,

@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,
+Road Damage,Standard,Complaint mentions 'broken' and is classified as Road Damage.,
+Other,Standard,Description mentions 'Wedding band playing near Tagore Museum at 11pm' which does not match any defined category.,NEEDS_REVIEW
+Pothole,Standard,Complaint mentions 'pothole' and is classified as Pothole.,
+Pothole,Standard,Complaint mentions 'pothole' and is classified as Pothole.,
+Pothole,Standard,Complaint mentions 'pothole' and is classified as Pothole.,
+Other,Standard,Description mentions 'New residential complex draining directly onto public road' which does not match any defined category.,NEEDS_REVIEW
+Waste,Standard,Complaint mentions 'waste' and is classified as Waste.,
+Road Damage,Urgent,Complaint mentions 'sinking' and is classified as Road Damage.,
+Road Damage,Standard,Complaint mentions 'road surface' and is classified as Road Damage.,
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,
+Other,Standard,Description mentions 'Road subsided near gas pipeline' which does not match any defined category.,NEEDS_REVIEW
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,
+Other,Standard,Description mentions 'Entire colony substation tripped' which does not match any defined category.,NEEDS_REVIEW
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,
