@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,This complaint was classified based on noting the specific keyword 'tarmac' in the description.,NEEDS_REVIEW
+AM-202402,Other,Standard,This complaint was classified based on noting the specific keyword 'metal' in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,This complaint was classified based on noting the specific keyword 'dead' in the description.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'broken' in the description.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,This complaint was classified based on noting the specific keyword 'child' in the description.,
+AM-202410,Pothole,Standard,This complaint was classified based on noting the specific keyword 'pothole' in the description.,
+AM-202414,Other,Standard,This complaint was classified based on noting the specific keyword 'residential' in the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,This complaint was classified based on noting the specific keyword 'waste' in the description.,NEEDS_REVIEW
+AM-202421,Noise,Standard,This complaint was classified based on noting the specific keyword 'music' in the description.,
+AM-202424,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'road' in the description.,
+AM-202429,Other,Standard,This complaint was classified based on noting the specific keyword 'river' in the description.,NEEDS_REVIEW
+AM-202431,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'road' in the description.,NEEDS_REVIEW
+AM-202435,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'road' in the description.,NEEDS_REVIEW
+AM-202444,Waste,Standard,This complaint was classified based on noting the specific keyword 'waste' in the description.,
+AM-202445,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'broken' in the description.,
