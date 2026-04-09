@@ -1,12 +1,20 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
 import argparse
 
+def answer_question(policy_text, question):
+    if question.lower() in policy_text.lower():
+        return "Relevant information found in the policy."
+    else:
+        return "Answer not found in policy"
+
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--policy", type=str, required=True, help="Policy text")
+    parser.add_argument("--question", type=str, required=True, help="Question")
+    args = parser.parse_args()
+
+    answer = answer_question(args.policy, args.question)
+    print("Answer:")
+    print(answer)
 
 if __name__ == "__main__":
     main()

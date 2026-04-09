@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: route_request
+  description: Determines which agent should process the user request.
+  inputs: user_request (string)
+  outputs: agent_name (string)
+  error_handling: If request type cannot be determined, return "unknown".
+
+- name: coordinate_agents
+  description: Coordinates the interaction between multiple agents to produce the final response.
+  inputs: user_request (string)
+  outputs: final_response (string)
+  error_handling: If processing fails, return "Request could not be processed".

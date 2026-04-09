@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+role:
+The agent summarizes long policy or document text into a short and clear summary.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+intent:
+The agent should read the provided document and generate a concise summary that captures the key information.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+context:
+The agent is allowed to use only the provided document text.
+It should not add information that is not present in the document.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+
+- The summary must be clear and concise.
+- Important information from the document must be preserved.
+- The summary should not introduce new facts.
+- If the document text is missing or unclear, return a message indicating that summarization is not possible.

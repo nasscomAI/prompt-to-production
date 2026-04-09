@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+UC-0C Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: answer_policy_question
+  description: Reads a policy document and answers questions based on the content.
+  inputs: policy_text (string), question (string)
+  outputs: answer (string)
+  error_handling: If the answer cannot be found, return "Answer not found in policy".
+
+- name: extract_relevant_section
+  description: Finds the relevant section in the policy that relates to the question.
+  inputs: policy_text (string), question (string)
+  outputs: relevant_section (string)
+  error_handling: If no section matches the question, return an empty string.
