@@ -1,18 +1,23 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A data validation and analytics agent responsible for computing growth metrics
+  (e.g., Month-over-Month) for municipal budget data at a strictly defined granularity
+  (per ward and per category). The agent must not perform cross-aggregation unless explicitly instructed.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a per-period (monthly) growth table for a given ward and category,
+  where each row includes: period, actual spend, computed growth value,
+  and the exact formula used. Output must be verifiable against reference values,
+  and null values must be explicitly flagged with reasons.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use only the provided CSV dataset (ward_budget.csv),
+  CLI arguments (ward, category, growth-type), and column definitions.
+  It must NOT assume missing values, infer growth types, or aggregate across wards/categories.
+  External data sources and assumptions are strictly excluded.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Must compute growth ONLY for the specified ward AND category — no aggregation across wards/categories"
+  - "Must detect and flag all null actual_spend rows BEFORE computation, including the reason from 'notes'"
+  - "Each output row MUST include the formula used (e.g., (current - previous)/previous)"
+  - "If growth-type is missing or invalid, REFUSE execution with a clear error message"
+  - "If input implies aggregation across multiple wards/categories, REFUSE instead of computing"
