@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+Pothole,Urgent,Classified as Pothole because description contains 'pothole'.,
+Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+Streetlight,Standard,Classified as Streetlight because description contains 'streetlight'.,
+Streetlight,Urgent,Classified as Streetlight because description contains 'streetlight'.,
+Waste,Standard,Classified as Waste because description contains 'garbage'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Road Damage,Standard,Classified as Road Damage because description contains 'crack'.,
+Other,Urgent,"Classified as Other due to ambiguity, but marked Urgent because description contains 'injury'.",NEEDS_REVIEW
+Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Streetlight,Standard,Classified as Streetlight because description contains 'light'.,
+Waste,Standard,Classified as Waste because description contains 'waste'.,
+Other,Urgent,"Classified as Other due to ambiguity, but marked Urgent because description contains 'fell'.",NEEDS_REVIEW
