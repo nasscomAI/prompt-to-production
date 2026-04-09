@@ -1,0 +1,16 @@
+category,priority,reason,flag,complaint_id
+Flooding,Urgent,Classified as Flooding because the description mentions 'flood (severity: ambulance)'.,,GH-202401
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,GH-202402
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,GH-202406
+Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,,GH-202407
+Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,,GH-202410
+Pothole,Urgent,Classified as Pothole because the description mentions 'pothole (severity: hospital)'.,,GH-202411
+Pothole,Urgent,Classified as Pothole because the description mentions 'pothole (severity: school)'.,,GH-202412
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,GH-202417
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,GH-202420
+Other,Urgent,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,GH-202422
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,GH-202424
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,GH-202428
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,GH-202432
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,GH-202448
+Flooding,Standard,Classified as Flooding because the description mentions 'water'.,,GH-202438
