@@ -1,0 +1,16 @@
+id,description,category,priority,reason,flag
+PM-202401,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Standard,Description contains 'pothole' related terms,
+PM-202402,Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,"Contains severity keyword(s): child, school. Description contains 'pothole' related terms",
+PM-202406,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Standard,Description contains 'flooding' related terms,
+PM-202408,Bus stand flooded. Passengers standing in water. Drain blocked.,Flooding,Standard,"Multiple categories apply: Flooding, Drain Blockage",NEEDS_REVIEW
+PM-202410,Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,Description contains 'streetlight' related terms,
+PM-202411,Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,Contains severity keyword(s): hazard. Description contains 'streetlight' related terms,
+PM-202413,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Waste,Standard,Description contains 'waste' related terms,
+PM-202418,Wedding venue playing music past midnight on weeknights.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+PM-202419,Road surface cracked and sinking near utility work done 1 month ago.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+PM-202420,Manhole cover missing. Risk of serious injury to cyclists.,Drain Blockage,Urgent,Contains severity keyword(s): injury. Description contains 'drain blockage' related terms,
+PM-202427,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Standard,Description contains 'flooding' related terms,
+PM-202428,Dead animal not removed for 36 hours. Health concern.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+PM-202430,"Heritage street, lights out. Safety concern for pedestrians after dark.",Heritage Damage,Standard,"Multiple categories apply: Heritage Damage, Streetlight",NEEDS_REVIEW
+PM-202433,Bulk waste from apartment renovation dumped on public road.,Waste,Standard,Description contains 'waste' related terms,
+PM-202446,Footpath tiles broken and upturned. Elderly resident fell last week.,Other,Urgent,No clear category indicators found in description,NEEDS_REVIEW
