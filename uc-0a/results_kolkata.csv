@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Category is exactly mapped to Heritage Damage due to the word 'heritage' in the text.,
+KM-202402,Road Damage,Standard,Category is exactly mapped to Road Damage due to the word 'road' in the text.,
+KM-202405,Other,Standard,Category is Other because the text starting with 'wedding band playing' lacks known category keywords.,NEEDS_REVIEW
+KM-202409,Other,Standard,Category is Other because the text contains conflicting keywords like 'pothole' and 'road'.,NEEDS_REVIEW
+KM-202410,Pothole,Standard,Category is exactly mapped to Pothole due to the word 'pothole' in the text.,
+KM-202411,Pothole,Standard,Category is exactly mapped to Pothole due to the word 'pothole' in the text.,
+KM-202415,Other,Standard,Category is Other because the text contains conflicting keywords like 'road' and 'drain'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Category is exactly mapped to Waste due to the word 'waste' in the text.,
+KM-202421,Other,Urgent,Priority is Urgent and category is Other because the text cites 'fell'.,NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Category is exactly mapped to Road Damage due to the word 'road' in the text.,
+KM-202426,Heritage Damage,Standard,Category is exactly mapped to Heritage Damage due to the word 'heritage' in the text.,
+KM-202430,Other,Standard,Category is Other because the text contains conflicting keywords like 'smell' and 'road'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Category is exactly mapped to Heritage Damage due to the word 'heritage' in the text.,
+KM-202436,Streetlight,Standard,Category is exactly mapped to Streetlight due to the word 'dark' in the text.,
+KM-202438,Heritage Damage,Standard,Category is exactly mapped to Heritage Damage due to the word 'heritage' in the text.,
