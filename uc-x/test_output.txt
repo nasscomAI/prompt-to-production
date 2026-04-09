@@ -1,0 +1,45 @@
+﻿Indexed policy_hr_leave.txt: 8 sections, 29 clauses
+Indexed policy_it_acceptable_use.txt: 7 sections, 27 clauses
+Indexed policy_finance_reimbursement.txt: 6 sections, 25 clauses
+
+============================================================
+
+Q: Can I carry forward unused annual leave?
+A: Per policy_hr_leave.txt section 2.6: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+Per policy_hr_leave.txt section 2.7: Carry-forward days must be used within the first quarter (JanuaryûMarch) of the following year or they are forfeited.
+------------------------------------------------------------
+
+Q: Can I install Slack on my work laptop?
+A: Per policy_it_acceptable_use.txt section 2.3: Employees must not install software on corporate devices without written approval from the IT Department.
+
+Per policy_it_acceptable_use.txt section 2.4: Software approved for installation must be sourced from the CMC-approved software catalogue only.
+------------------------------------------------------------
+
+Q: What is the home office equipment allowance?
+A: Per policy_finance_reimbursement.txt section 3.1: Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+
+Per policy_finance_reimbursement.txt section 3.5: Employees on temporary or partial work-from-home arrangements are not eligible for this allowance.
+------------------------------------------------------------
+
+Q: Can I use my personal phone for work files from home?
+A: Per policy_it_acceptable_use.txt section 3.1: Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+
+Per policy_it_acceptable_use.txt section 3.2: Personal devices must not be used to access, store, or transmit classified or sensitive CMC data.
+
+NOTE: This answer is sourced exclusively from the IT Acceptable Use Policy. No other permissions are granted by any document.
+------------------------------------------------------------
+
+Q: What is the company view on flexible working culture?
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+------------------------------------------------------------
+
+Q: Can I claim DA and meal receipts on the same day?
+A: Per policy_finance_reimbursement.txt section 2.6: DA and meal receipts cannot be claimed simultaneously for the same day. If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day.
+------------------------------------------------------------
+
+Q: Who approves leave without pay?
+A: Per policy_hr_leave.txt section 5.2: LWP requires approval from BOTH the Department Head AND the HR Director. Manager approval alone is not sufficient.
+
+Per policy_hr_leave.txt section 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+------------------------------------------------------------
