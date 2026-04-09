@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Matched category 'Pothole' due to words: pothole. No severity keywords found, defaulting to 'Standard'.",
+PM-202402,Pothole,Urgent,"Matched category 'Pothole' due to words: pothole. Triggered 'Urgent' priority due to severity words: child, school.",
+PM-202406,Flooding,Standard,"Matched category 'Flooding' due to words: flood. No severity keywords found, defaulting to 'Standard'.",
+PM-202408,Flooding,Standard,"Matched category 'Flooding' due to words: flood, water, drain. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Matched category 'Streetlight' due to words: streetlight, light, dark. No severity keywords found, defaulting to 'Standard'.",
+PM-202411,Streetlight,Urgent,"Matched category 'Streetlight' due to words: streetlight, light. Triggered 'Urgent' priority due to severity words: hazard.",
+PM-202413,Waste,Standard,"Matched category 'Waste' due to words: garbage. No severity keywords found, defaulting to 'Standard'.",
+PM-202418,Noise,Standard,"Matched category 'Noise' due to words: music. No severity keywords found, defaulting to 'Standard'.",
+PM-202419,Road Damage,Standard,"Matched category 'Road Damage' due to words: road surface, crack, sink. No severity keywords found, defaulting to 'Standard'.",
+PM-202420,Pothole,Urgent,Matched category 'Pothole' due to words: manhole. Triggered 'Urgent' priority due to severity words: injury.,
+PM-202427,Flooding,Standard,"Matched category 'Flooding' due to words: flood. No severity keywords found, defaulting to 'Standard'.",
+PM-202428,Waste,Standard,"Matched category 'Waste' due to words: animal. No severity keywords found, defaulting to 'Standard'.",
+PM-202430,Streetlight,Standard,"Matched category 'Streetlight' due to words: light, dark, heritage. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Matched category 'Waste' due to words: waste, dump. No severity keywords found, defaulting to 'Standard'.",
+PM-202446,Road Damage,Urgent,"Matched category 'Road Damage' due to words: tile, footpath. Triggered 'Urgent' priority due to severity words: fell.",

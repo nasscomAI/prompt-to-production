@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+AM-202402,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+AM-202405,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Matched category 'Heat Hazard' due to words: heat. No severity keywords found, defaulting to 'Standard'.",
+AM-202407,Other,Urgent,No specific category keywords found. Triggered 'Urgent' priority due to severity words: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Matched category 'Pothole' due to words: pothole. No severity keywords found, defaulting to 'Standard'.",
+AM-202414,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+AM-202417,Waste,Standard,"Matched category 'Waste' due to words: waste, heritage. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Matched category 'Noise' due to words: music. No severity keywords found, defaulting to 'Standard'.",
+AM-202424,Road Damage,Standard,"Matched category 'Road Damage' due to words: road surface. No severity keywords found, defaulting to 'Standard'.",
+AM-202429,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Matched category 'Heritage Damage' due to words: heritage. No severity keywords found, defaulting to 'Standard'.",
+AM-202435,Heat Hazard,Standard,"Matched category 'Heat Hazard' due to words: heat. No severity keywords found, defaulting to 'Standard'.",
+AM-202444,Waste,Standard,"Matched category 'Waste' due to words: waste. No severity keywords found, defaulting to 'Standard'.",
+AM-202445,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
