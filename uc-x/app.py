@@ -1,12 +1,24 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
 import argparse
 
+def validate(data):
+    if not data:
+        return "Invalid Data"
+    return "Valid Data"
+
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
+
+    args = parser.parse_args()
+
+    with open(args.input,'r') as f:
+        data = f.read()
+
+    result = validate(data)
+
+    with open(args.output,'w') as f:
+        f.write(result)
 
 if __name__ == "__main__":
     main()
