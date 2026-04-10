@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,formula,growth_percent,status,null_reason
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.3,MoM,(current_actual - previous_actual) / previous_actual * 100,,BASE_PERIOD,
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,12.2,MoM,(current_actual - previous_actual) / previous_actual * 100,-8.3,OK,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,12.3,MoM,(current_actual - previous_actual) / previous_actual * 100,0.8,OK,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.4,MoM,(current_actual - previous_actual) / previous_actual * 100,8.9,OK,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,14.1,MoM,(current_actual - previous_actual) / previous_actual * 100,5.2,OK,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,14.8,MoM,(current_actual - previous_actual) / previous_actual * 100,5.0,OK,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,19.7,MoM,(current_actual - previous_actual) / previous_actual * 100,33.1,OK,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,20.2,MoM,(current_actual - previous_actual) / previous_actual * 100,2.5,OK,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,20.1,MoM,(current_actual - previous_actual) / previous_actual * 100,-0.5,OK,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.1,MoM,(current_actual - previous_actual) / previous_actual * 100,-34.8,OK,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,14.2,MoM,(current_actual - previous_actual) / previous_actual * 100,8.4,OK,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,12.7,MoM,(current_actual - previous_actual) / previous_actual * 100,-10.6,OK,

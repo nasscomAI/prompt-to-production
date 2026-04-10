@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Matched category 'Pothole' from description words: pothole, tyre damage.",
+PM-202402,Pothole,Urgent,Matched category 'Pothole' from description words: pothole. Urgent due to severity keyword(s): school.,
+PM-202406,Flooding,Standard,"Matched category 'Flooding' from description words: flood, flooded.",
+PM-202408,Other,Standard,"Description matches multiple categories: Drain Blockage, Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Matched category 'Streetlight' from description words: streetlight, dark at night.",
+PM-202411,Streetlight,Urgent,"Matched category 'Streetlight' from description words: streetlight, flickering. Urgent due to severity keyword(s): hazard.",
+PM-202413,Waste,Standard,"Matched category 'Waste' from description words: garbage, smell.",
+PM-202418,Other,Standard,No allowed category keywords found in description text.,NEEDS_REVIEW
+PM-202419,Other,Standard,No allowed category keywords found in description text.,NEEDS_REVIEW
+PM-202420,Other,Urgent,No allowed category keywords found in description text. Urgent due to severity keyword(s): injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Matched category 'Flooding' from description words: flood.,
+PM-202428,Other,Standard,No allowed category keywords found in description text.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Matched category 'Heritage Damage' from description words: heritage.,
+PM-202433,Waste,Standard,Matched category 'Waste' from description words: waste.,
+PM-202446,Other,Urgent,No allowed category keywords found in description text. Urgent due to severity keyword(s): fell.,NEEDS_REVIEW
