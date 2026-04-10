@@ -1,16 +1,34 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for UC-0A Complaint Classifier
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## classify_complaint
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+This skill classifies a single citizen complaint description.
+
+Input:
+A complaint description text.
+
+Output:
+- category
+- priority
+- reason
+- flag
+
+Rules:
+The category must be one of the allowed values such as Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, or Other.
+
+The priority becomes Urgent if severity keywords appear such as injury, child, school, hospital, ambulance, fire, hazard, fell, or collapse.
+
+The reason explains which words in the complaint description triggered the classification.
+
+If the complaint is unclear, the flag NEEDS_REVIEW is added.
+
+
+## batch_classify
+
+This skill processes multiple complaints from a CSV file.
+
+Steps:
+1. Read the input CSV file containing complaint descriptions.
+2. Apply the classify_complaint function to each row.
+3. Generate category, priority, reason, and flag fields.
+4. Write the results into a new output CSV file.
