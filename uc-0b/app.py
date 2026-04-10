@@ -14,23 +14,24 @@ def retrieve_policy(file_path):
 def summarize_policy(text):
     lines = text.split("\n")
     summary = []
+    current_clause = ""
 
     for line in lines:
         line = line.strip()
         if not line:
             continue
 
-        # Always keep numbered clauses (robust check)
-        if line[:2].replace(".", "").isdigit():
-            summary.append(line)
-            continue
+        # Start of new clause
+        if line.lstrip()[:2].replace(".", "").isdigit():
+            if current_clause:
+                summary.append(current_clause.strip())
+            current_clause = line
+        else:
+            # Continue previous clause
+            current_clause += " " + line
 
-        # Keep obligation lines
-        if any(
-            keyword in line.lower()
-            for keyword in ["must", "requires", "not permitted", "will"]
-        ):
-            summary.append(line)
+    if current_clause:
+        summary.append(current_clause.strip())
 
     return "\n".join(summary)
 
