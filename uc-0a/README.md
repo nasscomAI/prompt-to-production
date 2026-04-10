@@ -1,61 +1,93 @@
-# UC-0A — Complaint Classifier
+import pandas as pd
+import argparse
 
-**Core failure modes:** Taxonomy drift · Severity blindness · Missing justification · Hallucinated sub-categories · False confidence on ambiguity
+# Allowed categories
+CATEGORIES = [
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard",
+    "Drain Blockage", "Other"
+]
 
----
+# Severity keywords that trigger Urgent
+SEVERITY_KEYWORDS = [
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell", "collapse"
+]
 
-## Your Input File
-```
-../data/city-test-files/test_[your-city].csv
-```
-15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
 
-## Your Output File
-```
-uc-0a/results_[your-city].csv
-```
+def classify_complaint(description):
+    text = str(description).lower()
 
-## Run Command
-```bash
-python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
-```
+    # Category detection
+    if "pothole" in text:
+        category = "Pothole"
+    elif "flood" in text or "water" in text:
+        category = "Flooding"
+    elif "streetlight" in text or "light" in text:
+        category = "Streetlight"
+    elif "garbage" in text or "waste" in text or "trash" in text:
+        category = "Waste"
+    elif "noise" in text or "loud" in text:
+        category = "Noise"
+    elif "road damage" in text or "broken road" in text:
+        category = "Road Damage"
+    elif "heritage" in text:
+        category = "Heritage Damage"
+    elif "heat" in text:
+        category = "Heat Hazard"
+    elif "drain" in text or "block" in text:
+        category = "Drain Blockage"
+    else:
+        category = "Other"
 
----
+    # Priority detection
+    priority = "Standard"
+    for word in SEVERITY_KEYWORDS:
+        if word in text:
+            priority = "Urgent"
+            break
 
-## Classification Schema — Your Enforcement Must Reference These Exactly
+    # Reason (must reference description)
+    reason = f"Classification based on keywords found in description: '{description}'"
 
-| Field | Allowed values | Rule |
-|---|---|---|
-| `category` | Pothole · Flooding · Streetlight · Waste · Noise · Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other | Exact strings only — no variations |
-| `priority` | Urgent · Standard · Low | Urgent if severity keywords present |
-| `reason` | One sentence | Must cite specific words from description |
-| `flag` | NEEDS_REVIEW or blank | Set when category is genuinely ambiguous |
+    # Flag for ambiguous cases
+    flag = ""
+    if category == "Other":
+        flag = "NEEDS_REVIEW"
 
-**Severity keywords that must trigger Urgent:**
-`injury`, `child`, `school`, `hospital`, `ambulance`, `fire`, `hazard`, `fell`, `collapse`
+    return category, priority, reason, flag
 
----
 
-## Skills to Define in skills.md
-- `classify_complaint` — one complaint row in → category + priority + reason + flag out
-- `batch_classify` — reads input CSV, applies classify_complaint per row, writes output CSV
+def batch_classify(input_file, output_file):
+    df = pd.read_csv(input_file)
 
----
+    categories = []
+    priorities = []
+    reasons = []
+    flags = []
 
-## What Will Fail From the Naive Prompt
-Run `"Classify this citizen complaint by category and priority."` first.
-Then look for:
-1. Category names that vary across rows for the same type of complaint
-2. Injury/child/school complaints classified as Standard instead of Urgent
-3. No reason field in the output
-4. Category names that are not in the allowed list above
-5. Confident classification on genuinely ambiguous complaints
+    for desc in df["description"]:
+        category, priority, reason, flag = classify_complaint(desc)
 
----
+        categories.append(category)
+        priorities.append(priority)
+        reasons.append(reason)
+        flags.append(flag)
 
-## Commit Formula
-```
-UC-0A Fix [failure mode]: [why it failed] → [what you changed]
-```
+    df["category"] = categories
+    df["priority"] = priorities
+    df["reason"] = reasons
+    df["flag"] = flags
+
+    df.to_csv(output_file, index=False)
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
+
+    args = parser.parse_args()
+
+    batch_classify(args.input, args.output)
