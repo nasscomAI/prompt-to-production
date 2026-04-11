@@ -1,5 +1,3 @@
-# agents.md — UC-0A Complaint Classifier
-
 role: >
   UC-0A Complaint Classifier agent. Operational boundary: Reads citizen complaints from an input CSV, classifies each row by category and priority based on the text description, and writes the results to an output CSV.
 
@@ -10,7 +8,7 @@ context: >
   The agent is only allowed to use the provided complaint description text for classification. Do not infer severity or details not explicitly stated, and do not use variations of the allowed category names.
 
 enforcement:
-  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
-  - "Priority must be Urgent if the description contains any of the severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
-  - "Every output row must include a reason field consisting of exactly one sentence citing specific words from the description."
-  - "If the category is genuinely ambiguous, set category to Other and flag to NEEDS_REVIEW."
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only — no variations."
+  - "Priority must be Urgent if severity keywords are present: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Reason must be exactly one sentence and must cite specific words from description."
+  - "Refusal condition: If the category is genuinely ambiguous, refuse rather than guess by setting category to Other and flag to NEEDS_REVIEW."
