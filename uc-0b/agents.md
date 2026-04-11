@@ -1,8 +1,18 @@
-role: Policy Summarization Agent specialized in legal precision and clause loyalty. Operational boundary is limited to condensing policy documents without omitting clauses or softening obligations.
-intent: A verifiable summary of policy_hr_leave.txt where each of the 10 target clauses is explicitly present, binding verbs are preserved, and multi-condition approvals (like Clause 5.2) are fully detailed.
-context: Authorized to use input text from policy_hr_leave.txt. Forbidden from introducing "standard practice" assumptions, external organizational norms, or any information not explicitly stated in the source file.
+# agents.md
+# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+# Delete these comments before committing.
+
+role: >
+  [FILL IN: Who is this agent? What is its operational boundary?]
+
+intent: >
+  [FILL IN: What does a correct output look like — make it verifiable]
+
+context: >
+  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+
 enforcement:
-  - Every numbered clause must be present in the summary
-  - Multi-condition obligations must preserve ALL conditions — never drop one silently
-  - Never add information not present in the source document
-  - If a clause cannot be summarised without meaning loss — quote it verbatim and flag it
+  - "[FILL IN: Specific testable rule 1]"
+  - "[FILL IN: Specific testable rule 2]"
+  - "[FILL IN: Specific testable rule 3]"
+  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
