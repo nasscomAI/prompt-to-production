@@ -49,7 +49,15 @@ def classify_complaint(row: dict) -> dict:
 
     found_cats = []
     found_category_words = []
-    
+
+    # Category priority tiebreaker — more specific categories override generic ones
+    # e.g. Heritage Damage > Streetlight when "heritage street, lights out"
+    CATEGORY_PRIORITY = [
+        "Heritage Damage", "Heat Hazard", "Drain Blockage",
+        "Pothole", "Flooding", "Road Damage",
+        "Waste", "Noise", "Streetlight", "Other"
+    ]
+
     # Try exact overrides first
     if 'flooded' in desc and 'drain blocked' in desc:
         found_cats.append('Drain Blockage')
@@ -60,14 +68,23 @@ def classify_complaint(row: dict) -> dict:
                 if cat not in found_cats:
                     found_cats.append(cat)
                     found_category_words.append(kw)
-    
+
     if len(found_cats) == 1:
         category = found_cats[0]
         cat_word = found_category_words[0]
     elif len(found_cats) > 1:
-        category = "Other"
-        flag = "NEEDS_REVIEW"
-        cat_word = "multiple conflicting terms"
+        # Pick the highest-priority category instead of flagging NEEDS_REVIEW
+        for preferred in CATEGORY_PRIORITY:
+            if preferred in found_cats:
+                idx = found_cats.index(preferred)
+                category = preferred
+                cat_word = found_category_words[idx]
+                flag = ""
+                break
+        else:
+            category = "Other"
+            flag = "NEEDS_REVIEW"
+            cat_word = "multiple conflicting terms"
     else:
         category = "Other"
         flag = "NEEDS_REVIEW"
