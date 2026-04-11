@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_rate,formula_shown,flag
+2024-01,Ward 5 – Hadapsar,Roads & Pothole Repair,15.3,,N/A — first period,
+2024-02,Ward 5 – Hadapsar,Roads & Pothole Repair,12.9,-15.7%,MoM: (12.9 − 15.3) / 15.3 = -15.7%,
+2024-03,Ward 5 – Hadapsar,Roads & Pothole Repair,13.1,+1.6%,MoM: (13.1 − 12.9) / 12.9 = +1.6%,
+2024-04,Ward 5 – Hadapsar,Roads & Pothole Repair,12.2,-6.9%,MoM: (12.2 − 13.1) / 13.1 = -6.9%,
+2024-05,Ward 5 – Hadapsar,Roads & Pothole Repair,12.6,+3.3%,MoM: (12.6 − 12.2) / 12.2 = +3.3%,
+2024-06,Ward 5 – Hadapsar,Roads & Pothole Repair,17.9,+42.1%,MoM: (17.9 − 12.6) / 12.6 = +42.1%,
+2024-07,Ward 5 – Hadapsar,Roads & Pothole Repair,22.8,+27.4%,MoM: (22.8 − 17.9) / 17.9 = +27.4%,
+2024-08,Ward 5 – Hadapsar,Roads & Pothole Repair,24.6,+7.9%,MoM: (24.6 − 22.8) / 22.8 = +7.9%,
+2024-09,Ward 5 – Hadapsar,Roads & Pothole Repair,20.6,-16.3%,MoM: (20.6 − 24.6) / 24.6 = -16.3%,
+2024-10,Ward 5 – Hadapsar,Roads & Pothole Repair,18.4,-10.7%,MoM: (18.4 − 20.6) / 20.6 = -10.7%,
+2024-11,Ward 5 – Hadapsar,Roads & Pothole Repair,14.4,-21.7%,MoM: (14.4 − 18.4) / 18.4 = -21.7%,
+2024-12,Ward 5 – Hadapsar,Roads & Pothole Repair,12.6,-12.5%,MoM: (12.6 − 14.4) / 14.4 = -12.5%,
