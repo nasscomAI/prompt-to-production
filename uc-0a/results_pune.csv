@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Other,Standard,"Justified by keywords 'damage', 'pothole' found in the report description.",NEEDS_REVIEW
+PM-202402,Pothole,Urgent,"Justified by keywords 'child', 'pothole', 'school' found in the report description.",
+PM-202406,Flooding,Standard,"Justified by keywords 'flood', 'rain' found in the report description.",
+PM-202408,Other,Standard,"Justified by keywords 'drain', 'flood', 'rain', 'water' found in the report description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Justified by keywords 'dark', 'streetlight' found in the report description.",
+PM-202411,Streetlight,Urgent,"Justified by keywords 'hazard', 'streetlight' found in the report description.",
+PM-202413,Other,Standard,"Justified by keywords 'garbage', 'overflow' found in the report description.",NEEDS_REVIEW
+PM-202418,Noise,Standard,Justified by keywords 'music' found in the report description.,
+PM-202419,Road Damage,Standard,Justified by keywords 'crack' found in the report description.,
+PM-202420,Other,Urgent,Justified by keywords 'injury' found in the report description.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Justified by keywords 'flood', 'rain' found in the report description.",
+PM-202428,Other,Standard,Categorized as Other because no specific infrastructure or severity keywords were found in the description.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Justified by keywords 'dark', 'heritage' found in the report description.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Justified by keywords 'dump', 'waste' found in the report description.",
+PM-202446,Other,Urgent,Justified by keywords 'fell' found in the report description.,NEEDS_REVIEW

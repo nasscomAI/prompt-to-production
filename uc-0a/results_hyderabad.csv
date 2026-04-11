@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Justified by keywords 'ambulance', 'flood', 'rain' found in the report description.",
+GH-202402,Other,Standard,"Justified by keywords 'drain', 'flood', 'rain' found in the report description.",NEEDS_REVIEW
+GH-202406,Other,Standard,"Justified by keywords 'drain', 'rain', 'water' found in the report description.",NEEDS_REVIEW
+GH-202407,Other,Standard,"Justified by keywords 'drain', 'rain' found in the report description.",NEEDS_REVIEW
+GH-202410,Pothole,Standard,Justified by keywords 'pothole' found in the report description.,
+GH-202411,Pothole,Urgent,"Justified by keywords 'hospital', 'pit', 'pothole' found in the report description.",
+GH-202412,Pothole,Urgent,"Justified by keywords 'pothole', 'school' found in the report description.",
+GH-202417,Other,Standard,"Justified by keywords 'garbage', 'heritage', 'hot', 'overflow', 'waste' found in the report description.",NEEDS_REVIEW
+GH-202420,Other,Standard,Categorized as Other because no specific infrastructure or severity keywords were found in the description.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Justified by keywords 'collapse', 'crater' found in the report description.",
+GH-202424,Flooding,Standard,"Justified by keywords 'flood', 'rain' found in the report description.",
+GH-202428,Other,Standard,"Justified by keywords 'sun', 'waste' found in the report description.",NEEDS_REVIEW
+GH-202432,Other,Standard,Categorized as Other because no specific infrastructure or severity keywords were found in the description.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Justified by keywords 'drain', 'flood', 'rain' found in the report description.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Justified by keywords 'rain', 'water' found in the report description.",

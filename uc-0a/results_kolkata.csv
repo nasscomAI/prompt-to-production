@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Justified by keywords 'heritage', 'lamp' found in the report description.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Justified by keywords 'historic' found in the report description.,
+KM-202405,Heritage Damage,Standard,Justified by keywords 'museum' found in the report description.,
+KM-202409,Pothole,Standard,Justified by keywords 'pothole' found in the report description.,
+KM-202410,Pothole,Standard,Justified by keywords 'pothole' found in the report description.,
+KM-202411,Other,Standard,"Justified by keywords 'pothole', 'rain', 'water' found in the report description.",NEEDS_REVIEW
+KM-202415,Other,Standard,"Justified by keywords 'drain', 'rain' found in the report description.",NEEDS_REVIEW
+KM-202418,Other,Standard,"Justified by keywords 'hot', 'overflow', 'waste' found in the report description.",NEEDS_REVIEW
+KM-202421,Pothole,Urgent,"Justified by keywords 'fell', 'hospital', 'pit' found in the report description.",
+KM-202422,Other,Standard,Categorized as Other because no specific infrastructure or severity keywords were found in the description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Justified by keywords 'heritage' found in the report description.,
+KM-202430,Drain Blockage,Standard,Justified by keywords 'pipe' found in the report description.,
+KM-202434,Heritage Damage,Standard,Justified by keywords 'heritage' found in the report description.,
+KM-202436,Streetlight,Standard,Justified by keywords 'dark' found in the report description.,
+KM-202438,Heritage Damage,Standard,Justified by keywords 'heritage' found in the report description.,
