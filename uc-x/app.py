@@ -72,12 +72,78 @@ def retrieve_documents(policy_dir: str, filenames: list) -> dict:
     return index
 
 
+# ─── Stem helper ─────────────────────────────────────────────────────────────
+def _stem_matches(token: str, text_lower: str) -> bool:
+    """
+    Returns True if any reasonable stem of `token` appears in `text_lower`.
+    Handles common English inflection so 'approves' matches 'approval',
+    'approve', 'approving'; 'carries' matches 'carry', 'carried', etc.
+    """
+    # Direct hit
+    if token in text_lower:
+        return True
+    # Strip common suffixes and test the root
+    stems = []
+    if token.endswith('es') and len(token) > 4:
+        stems.append(token[:-2])   # approves → approv
+        stems.append(token[:-1])   # approves → approve
+    if token.endswith('ing') and len(token) > 5:
+        stems.append(token[:-3])   # approving → approv
+        stems.append(token[:-3] + 'e')  # approving → approve
+    if token.endswith('ed') and len(token) > 4:
+        stems.append(token[:-2])   # approved → approv
+        stems.append(token[:-1])   # approved → approve
+    if token.endswith('s') and len(token) > 3:
+        stems.append(token[:-1])   # approvals → approval
+    # Also expand common short stems to longer forms
+    # e.g. 'approv' should match 'approval', 'approve', 'approves'
+    for stem in stems:
+        if stem and stem in text_lower:
+            return True
+        # check if stem is a prefix of any word in text
+        if stem and re.search(r'\b' + re.escape(stem), text_lower):
+            return True
+    return False
+
+
+def _phrase_score(tokens: list, text_lower: str) -> float:
+    """
+    Bonus score for adjacent token pairs (bigrams) and triples (trigrams)
+    that appear together in the section text.
+    Each matching bigram adds 1.5, each trigram adds 2.5.
+    This rewards sections that match the *intent cluster* of the question,
+    not just individual word soup.
+    """
+    bonus = 0.0
+    # Bigrams
+    for i in range(len(tokens) - 1):
+        bigram = tokens[i] + ' ' + tokens[i + 1]
+        if bigram in text_lower:
+            bonus += 1.5
+        # also try stem of first word + second word
+        if _stem_matches(tokens[i], tokens[i + 1]):
+            pass  # avoid self-matching, skip
+    # Trigrams
+    for i in range(len(tokens) - 2):
+        trigram = tokens[i] + ' ' + tokens[i + 1] + ' ' + tokens[i + 2]
+        if trigram in text_lower:
+            bonus += 2.5
+    return bonus
+
+
 # ─── Skill: answer_question ───────────────────────────────────────────────────
 def answer_question(question: str, doc_index: dict) -> str:
     """
     Searches the index for a single-source answer.
     Returns answer + citation, or the mandatory refusal template.
     Never blends across documents. Never hedges.
+
+    Scoring:
+      - +1 per token that stem-matches a word in the section
+      - +1.5 per adjacent token bigram present in the section
+      - +2.5 per adjacent token trigram present in the section
+    This ensures intent clusters ('approves leave without pay') beat
+    sections that only share individual high-frequency words.
     """
     q_lower = question.lower().strip()
 
@@ -102,9 +168,18 @@ def answer_question(question: str, doc_index: dict) -> str:
     for filename, sections in doc_index.items():
         for section_id, section_text in sections.items():
             text_lower = section_text.lower()
-            score = sum(1 for t in tokens if t in text_lower)
-            if score > 0:
-                candidates.append((score, filename, section_id, section_text))
+
+            # Base score: stem-aware token matching
+            base = sum(1 for t in tokens if _stem_matches(t, text_lower))
+
+            if base == 0:
+                continue  # No relevant tokens at all — skip
+
+            # Phrase bonus: bigrams and trigrams
+            phrase = _phrase_score(tokens, text_lower)
+
+            total = base + phrase
+            candidates.append((total, filename, section_id, section_text))
 
     if not candidates:
         return REFUSAL_TEMPLATE
@@ -114,16 +189,14 @@ def answer_question(question: str, doc_index: dict) -> str:
 
     best_score = candidates[0][0]
 
-    # Collect all top-scoring candidates
-    top = [c for c in candidates if c[0] == best_score]
+    # Collect all top-scoring candidates (within 0.5 of best to handle float)
+    top = [c for c in candidates if c[0] >= best_score - 0.01]
 
     # Cross-document blend guard: if best matches span more than one document
     # with equal confidence, refuse rather than blend
     top_docs = {c[1] for c in top}
 
     if len(top_docs) > 1:
-        # Check if there's a clear single-document winner at score+1 above others
-        # i.e., one doc has significantly higher relevance
         per_doc_best = {}
         for score, filename, section_id, section_text in candidates:
             if filename not in per_doc_best:
@@ -134,11 +207,9 @@ def answer_question(question: str, doc_index: dict) -> str:
         second_doc_score = doc_scores[1][1][0] if len(doc_scores) > 1 else 0
 
         if top_doc_score > second_doc_score:
-            # Clear winner in one document
             winner_doc = doc_scores[0][0]
             _, section_id, section_text = doc_scores[0][1]
         else:
-            # Genuinely ambiguous across documents — refuse rather than blend
             return REFUSAL_TEMPLATE
     else:
         winner_doc = top[0][1]
