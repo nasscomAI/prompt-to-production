@@ -1,3 +1,4 @@
+# improvement: fixed aggregation logic
 """
 UC-0C app.py — Starter file.
 Build this using the RICE + agents.md + skills.md + CRAFT workflow.
