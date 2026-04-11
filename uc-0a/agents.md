@@ -1,18 +1,13 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+role: Expert Complaint Classifier for urban infrastructure issues responsible for identifying and prioritizing citizen reports within a fixed taxonomy.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+intent: A CSV file where every row contains a valid category from the schema, a priority level, a one-sentence reason citing specific description keywords, and an optional review flag for ambiguity.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+context: Use the provided city-specific CSV test files and the defined classification schema including categories, priority levels, and severity keywords; do not use any categories or priority levels outside the provided list.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - Use exact category strings only: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other.
+  - Set priority to Urgent if description contains any severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse.
+  - The reason field must be exactly one sentence and must cite specific words from the complaint description.
+  - The flag field must be set to NEEDS_REVIEW when the category is genuinely ambiguous; otherwise, leave blank.
+  - Do not hallucinate sub-categories or use variations of the allowed taxonomy.
+  - Ensure every row in the output CSV contains a reason field.
