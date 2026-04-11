@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Description mentions 'temperature' indicating Heat Hazard; context suggests moderate impact warranting Standard priority.,
+AM-202405,Other,Standard,context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions 'heat' indicating Heat Hazard; context suggests moderate impact warranting Standard priority.,
+AM-202407,Road Damage,Urgent,Description mentions 'upturned' indicating Road Damage; severity keyword(s) 'child' trigger Urgent priority.,
+AM-202410,Pothole,Low,Description mentions 'pothole' indicating Pothole.,
+AM-202414,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Description mentions 'heritage' indicating Heritage Damage; context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+AM-202421,Other,Standard,context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Description mentions 'road surface' indicating Road Damage; context suggests moderate impact warranting Standard priority.,
+AM-202429,Heat Hazard,Low,Description mentions 'temperature' indicating Heat Hazard.,
+AM-202431,Heritage Damage,Standard,Description mentions 'heritage' indicating Heritage Damage; context suggests moderate impact warranting Standard priority.,
+AM-202435,Heat Hazard,Standard,Description mentions 'heat' indicating Heat Hazard; context suggests moderate impact warranting Standard priority.,
+AM-202444,Waste,Standard,Description mentions 'waste' indicating Waste; context suggests moderate impact warranting Standard priority.,
+AM-202445,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW

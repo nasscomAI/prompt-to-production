@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole' indicating Pothole; context suggests moderate impact warranting Standard priority.,
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' indicating Pothole; severity keyword(s) 'child', 'school' trigger Urgent priority.",
+PM-202406,Flooding,Standard,Description mentions 'flood' indicating Flooding; context suggests moderate impact warranting Standard priority.,
+PM-202408,Drain Blockage,Standard,Description mentions 'drain blocked' indicating Drain Blockage; context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description mentions 'streetlight' indicating Streetlight; context suggests moderate impact warranting Standard priority.,
+PM-202411,Streetlight,Urgent,Description mentions 'streetlight' indicating Streetlight; severity keyword(s) 'hazard' trigger Urgent priority.,
+PM-202413,Waste,Standard,Description mentions 'garbage' indicating Waste; context suggests moderate impact warranting Standard priority.,
+PM-202418,Noise,Low,Description mentions 'midnight' indicating Noise.,
+PM-202419,Road Damage,Low,Description mentions 'road surface' indicating Road Damage.,
+PM-202420,Drain Blockage,Urgent,Description mentions 'manhole' indicating Drain Blockage; severity keyword(s) 'injury' trigger Urgent priority.,
+PM-202427,Flooding,Low,Description mentions 'flood' indicating Flooding.,
+PM-202428,Waste,Standard,Description mentions 'dead animal' indicating Waste; context suggests moderate impact warranting Standard priority.,
+PM-202430,Heritage Damage,Standard,Description mentions 'heritage' indicating Heritage Damage; context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Description mentions 'waste' indicating Waste; context suggests moderate impact warranting Standard priority.,
+PM-202446,Road Damage,Urgent,Description mentions 'footpath' indicating Road Damage; severity keyword(s) 'fell' trigger Urgent priority.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'heritage' indicating Heritage Damage; context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+KM-202402,Other,Standard,context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+KM-202405,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
+KM-202409,Pothole,Low,Description mentions 'pothole' indicating Pothole.,
+KM-202410,Pothole,Low,Description mentions 'pothole' indicating Pothole.,
+KM-202411,Pothole,Standard,Description mentions 'pothole' indicating Pothole; context suggests moderate impact warranting Standard priority.,
+KM-202415,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Description mentions 'waste' indicating Waste; context suggests moderate impact warranting Standard priority.,
+KM-202421,Road Damage,Urgent,"Description mentions 'footpath' indicating Road Damage; severity keyword(s) 'hospital', 'fell' trigger Urgent priority.",
+KM-202422,Road Damage,Standard,Description mentions 'road surface' indicating Road Damage; context suggests moderate impact warranting Standard priority.,
+KM-202426,Heritage Damage,Low,Description mentions 'heritage' indicating Heritage Damage.,
+KM-202430,Waste,Standard,Description mentions 'smell' indicating Waste; context suggests moderate impact warranting Standard priority.,
+KM-202434,Heritage Damage,Low,Description mentions 'heritage' indicating Heritage Damage.,
+KM-202436,Other,Standard,context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Description mentions 'heritage' indicating Heritage Damage; context suggests moderate impact warranting Standard priority.,
