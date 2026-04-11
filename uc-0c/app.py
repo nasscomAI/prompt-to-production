@@ -1,12 +1,12 @@
+text = """
+Artificial Intelligence is transforming industries by automating tasks,
+improving decision making and enabling new innovations.
+Organizations are increasingly using AI to analyze large volumes of data
+and generate insights that help them stay competitive.
 """
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+sentences = text.split(".")
+summary = sentences[0] + "."
 
-if __name__ == "__main__":
-    main()
+print("Original Text:\n", text)
+print("\nSummary:\n", summary)
