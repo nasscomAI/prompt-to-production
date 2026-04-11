@@ -1,18 +1,26 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+
+&#x20; A data processing agent that transforms input data into structured output based on defined rules.
+
+
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+
+&#x20; Produce accurate computed output without ambiguity or missing values.
+
+
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+
+&#x20; Only input provided should be used. No external assumptions.
+
+
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+
+&#x20; - "Must process all valid inputs"
+
+&#x20; - "Must not skip edge cases"
+
+&#x20; - "Output must be consistent and deterministic"
+
