@@ -26,4 +26,4 @@ enforcement:
   - "Never use hedging phrases: 'while not explicitly covered', 'typically', 'generally understood', 'it is common practice'"
   - "If the question spans multiple documents and creates ambiguity, refuse — do not blend"
   - "Every factual claim must cite the source document name and section number"
-  - "If question is not in any document, output exactly: 'This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.' — no variations allowed"
+  - "If question is not in any document, output exactly the refusal template — no variations allowed"

@@ -71,12 +71,10 @@ def get_best_paragraph(question_lower, content):
 def answer_question(question, docs):
     question_lower = question.lower()
 
-    # explicit refusal triggers
     for trigger in REFUSAL_TRIGGERS:
         if trigger in question_lower:
             return REFUSAL_TEMPLATE
 
-    # match to specific doc using domain keywords
     doc_scores = {}
     for doc_name, keywords in SECTION_KEYWORDS.items():
         score = sum(1 for kw in keywords if kw in question_lower)
@@ -86,7 +84,6 @@ def answer_question(question, docs):
     if not doc_scores:
         return REFUSAL_TEMPLATE
 
-    # if multiple docs match check dominance
     if len(doc_scores) > 1:
         sorted_docs = sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)
         if sorted_docs[0][1] > sorted_docs[1][1]:
