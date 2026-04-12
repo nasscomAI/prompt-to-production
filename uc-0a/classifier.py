@@ -31,58 +31,56 @@ CATEGORY_MAPPING = {
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classifies a single complaint row using the municipal taxonomy and safety rules.
+    Classifies a single complaint row using the municipal taxonomy and safety rules defined in agents.md.
     """
-    # Find description key dynamically
+    # Find description key dynamically (handle case sensitivity and common variations)
     desc_key = next((k for k in row.keys() if 'desc' in k.lower()), None)
     description = row.get(desc_key, "") if desc_key else ""
     desc_lower = description.lower()
 
     # 1. Determine Priority
-    priority = "Standard"
     found_safety_words = [w for w in SAFETY_KEYWORDS if w in desc_lower]
     if found_safety_words:
         priority = "Urgent"
-    elif "emergency" in desc_lower or "immediate" in desc_lower:
-        priority = "Standard" # Defaulting if no safety words but urgent tone
     else:
-        # Simple heuristic for 'Low'
-        if any(w in desc_lower for w in ["eventually", "non-urgent", "suggestion"]):
+        # If no safety words, default to Standard, or Low if specific keywords found
+        low_priority_keywords = ["eventually", "non-urgent", "suggestion", "low priority", "not urgent"]
+        if any(w in desc_lower for w in low_priority_keywords):
             priority = "Low"
+        else:
+            priority = "Standard"
 
     # 2. Determine Category
-    category = "Other"
-    found_cat = None
-    found_cat_words = []
-    
     matches = []
     for cat, keywords in CATEGORY_MAPPING.items():
         match_words = [w for w in keywords if w in desc_lower]
         if match_words:
             matches.append((cat, match_words))
 
+    category = "Other"
     flag = ""
+    found_cat_words = []
+
     if len(matches) == 1:
-        found_cat, found_cat_words = matches[0]
-        category = found_cat
+        category, found_cat_words = matches[0]
     elif len(matches) > 1:
-        # Ambiguous if multiple matches
+        # Genuinely ambiguous if multiple domains match
         category = "Other"
         flag = "NEEDS_REVIEW"
-        found_cat_words = [w for m in matches for w in m[1]]
+        # Collect all triggering words for the reason
+        for _, words in matches:
+            found_cat_words.extend(words)
     else:
-        # No matches
+        # No matches found in taxonomy
         category = "Other"
         flag = "NEEDS_REVIEW"
 
-    # 3. Generate Reason (Single sentence citing keywords)
-    quoted_words = sorted(list(set(found_cat_words + found_safety_words)))
-    if quoted_words:
-        reason = f"Classified as {category} with {priority} priority due to the mention of '{', '.join(quoted_words)}' in the description."
+    # 3. Generate Reason (Exactly one sentence citing specific words)
+    triggering_words = sorted(list(set(found_cat_words + found_safety_words)))
+    if triggering_words:
+        reason = f"This complaint is classified as {category} with {priority} priority because it mentions safety or municipal keywords such as '{', '.join(triggering_words)}'."
     else:
-        reason = f"Assigned to {category} as no specific municipal keywords were identified."
-        if category == "Other":
-            flag = "NEEDS_REVIEW"
+        reason = f"This complaint is assigned to {category} with {priority} priority as no specific municipal or safety keywords were identified in the description."
 
     return {
         "complaint_id": row.get("complaint_id", "N/A"),

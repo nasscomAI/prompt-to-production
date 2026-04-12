@@ -2,13 +2,13 @@
 
 skills:
   - name: classify_complaint
-    description: Performs automated triage of a single complaint into the fixed municipal taxonomy (Pothole, Flooding, etc.) and determines priority using Safety Keywords.
-    input: A single text-based complaint description.
-    output: An object containing category, priority (Urgent/Standard/Low), a one-sentence reason citing source keywords, and a NEEDS_REVIEW flag.
-    error_handling: For ambiguous or unclassifiable text, outputs category 'Other' and sets flag 'NEEDS_REVIEW' to maintain the operational boundary.
+    description: Performs automated triage of a single complaint description into the fixed municipal taxonomy and determines priority based on safety-critical severity keywords.
+    input: A single string containing the citizen's complaint description.
+    output: A dictionary object with keys 'category' (Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other), 'priority' (Urgent, Standard, Low), 'reason' (single sentence citing keywords), and 'flag' (NEEDS_REVIEW or blank).
+    error_handling: Genuinely ambiguous or unclassifiable text must be set to category 'Other' and flag 'NEEDS_REVIEW' to ensure manual oversight.
 
   - name: batch_classify
-    description: Executes a bulk triage operation by applying the classify_complaint skill to every row in an input CSV, generating a verified classification dataset.
-    input: Path to a CSV file (e.g., test_[city].csv) containing complaint descriptions.
-    output: Path to the results CSV file containing the classification taxonomy and justifications.
-    error_handling: Ensures the entire batch is processed; rows causing logic failures are assigned category 'Other' with a NEEDS_REVIEW flag.
+    description: Bulk classification workflow that reads an input CSV file and applies the 'classify_complaint' skill to each row, persisting results to a standardized output CSV.
+    input: Absolute path to the input CSV file containing raw complaint descriptions.
+    output: Absolute path to the generated results CSV file containing the full classification schema for all rows.
+    error_handling: Must handle CSV parsing errors gracefully and ensure that every row in the input file is accounted for in the output, defaulting missing data to 'Other' with a 'NEEDS_REVIEW' flag.
