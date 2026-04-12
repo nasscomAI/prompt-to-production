@@ -1,10 +1,6 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-Edited agents.md
-
 - name: retrieve_policy
   description: Loads a .txt policy file and extracts the content into structured numbered sections for precise clause mapping.
   input:
