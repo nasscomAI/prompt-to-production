@@ -1,18 +1,13 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: Specialized AI Municipal Complaint Classifier responsible for mapping citizen reports to a strict urban taxonomy and urgency level.
+intent: A verifiable classification output for each row including a specific category string, a keyword-triggered priority level, a single-sentence reason citing the source text, and an ambiguity flag.
+context: Allowed data is restricted to the input complaint description and the defined classification schema; must not use external knowledge, unlisted categories, or hallucinated sub-categories.
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "category strings must match the allowed list exactly with no variations, synonyms, or drift"
+  - "priority must be Urgent if the description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
+  - "priority must be Standard or Low if no severity keywords are present"
+  - "reason must be exactly one sentence long"
+  - "reason must cite specific words found in the complaint description"
+  - "flag must be set to NEEDS_REVIEW when the category is genuinely ambiguous"
+  - "flag must be blank if the classification is clear and confident"
+  - "Do not hallucinate sub-categories or deviate from the provided taxonomy schema"

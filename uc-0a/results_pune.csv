@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description contains the keyword 'pothole'.,
+PM-202402,Pothole,Urgent,Priority set to Urgent due to the mention of 'child' in the report.,
+PM-202406,Flooding,Standard,Classified as Flooding because the description contains the keyword 'flood'.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage because the description contains the keyword 'drain'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because the description contains the keyword 'streetlight'.,
+PM-202411,Streetlight,Urgent,Priority set to Urgent due to the mention of 'hazard' in the report.,
+PM-202413,Waste,Standard,Classified as Waste because the description contains the keyword 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise because the description contains the keyword 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because the description contains the keyword 'road surface'.,
+PM-202420,Drain Blockage,Urgent,Priority set to Urgent due to the mention of 'injury' in the report.,
+PM-202427,Flooding,Standard,Classified as Flooding because the description contains the keyword 'flood'.,
+PM-202428,Other,Standard,Flagged for review; first word 'dead' suggests an unmapped category.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight because the description contains the keyword 'lights'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because the description contains the keyword 'waste'.,
+PM-202446,Road Damage,Urgent,Priority set to Urgent due to the mention of 'fell' in the report.,
