@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Assigned category Heritage Damage as the description contains the word ""heritage"".",
+KM-202402,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"".",
+KM-202405,Other,Standard,Could not determine category as no specific keywords were found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Assigned category Pothole as the description contains the word ""pothole"". (Also noticed keywords for other categories but it is still valid).",
+KM-202410,Pothole,Standard,"Assigned category Pothole as the description contains the word ""pothole"".",
+KM-202411,Pothole,Standard,"Assigned category Pothole as the description contains the word ""pothole"". (Also noticed keywords for other categories but it is still valid).",
+KM-202415,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"". (Also noticed keywords for other categories but it is still valid).",
+KM-202418,Waste,Standard,"Assigned category Waste as the description contains the word ""waste"". (Also noticed keywords for other categories but it is still valid).",
+KM-202421,Other,Urgent,"Could not determine category as no specific keywords were found and marked Urgent due to severity keyword ""hospital"".",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"".",
+KM-202426,Heritage Damage,Standard,"Assigned category Heritage Damage as the description contains the word ""heritage"".",
+KM-202430,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"".",
+KM-202434,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""paving"". (Also noticed keywords for other categories but it is still valid).",
+KM-202436,Streetlight,Standard,"Assigned category Streetlight as the description contains the word ""dark"".",
+KM-202438,Heritage Damage,Standard,"Assigned category Heritage Damage as the description contains the word ""heritage"".",

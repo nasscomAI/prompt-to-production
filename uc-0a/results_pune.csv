@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Assigned category Pothole as the description contains the word ""pothole"". (Also noticed keywords for other categories but it is still valid).",
+PM-202402,Pothole,Urgent,"Assigned category Pothole as the description contains the word ""pothole"" and marked Urgent due to severity keyword ""child"".",
+PM-202406,Flooding,Standard,"Assigned category Flooding as the description contains the word ""flood"".",
+PM-202408,Flooding,Standard,"Assigned category Flooding as the description contains the word ""flood"". (Also noticed keywords for other categories but it is still valid).",
+PM-202410,Streetlight,Standard,"Assigned category Streetlight as the description contains the word ""streetlight"".",
+PM-202411,Streetlight,Urgent,"Assigned category Streetlight as the description contains the word ""streetlight"" and marked Urgent due to severity keyword ""hazard"".",
+PM-202413,Waste,Standard,"Assigned category Waste as the description contains the word ""garbage"". (Also noticed keywords for other categories but it is still valid).",
+PM-202418,Noise,Standard,"Assigned category Noise as the description contains the word ""music"".",
+PM-202419,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"".",
+PM-202420,Other,Urgent,"Could not determine category as no specific keywords were found and marked Urgent due to severity keyword ""injury"".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Assigned category Flooding as the description contains the word ""flood"".",
+PM-202428,Other,Standard,Could not determine category as no specific keywords were found.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Assigned category Streetlight as the description contains the word ""light"". (Also noticed keywords for other categories but it is still valid).",
+PM-202433,Waste,Standard,"Assigned category Waste as the description contains the word ""waste"". (Also noticed keywords for other categories but it is still valid).",
+PM-202446,Other,Urgent,"Could not determine category as no specific keywords were found and marked Urgent due to severity keyword ""fell"".",NEEDS_REVIEW
