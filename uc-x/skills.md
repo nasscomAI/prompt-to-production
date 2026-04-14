@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all 3 policy files and indexes them by document name and section number.
+    input: None (predefined paths for HR, IT, and Finance policies)
+    output: List of document objects or sections with searchable text and metadata.
+    error_handling: Return error message if files are missing or inaccessible.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches indexed documents to return a single-source answer with citation or the verbatim refusal template.
+    input: query (string), indexed_documents (data structure)
+    output: String containing evidence-based answer + citation (Doc + Section) OR refusal template.
+    error_handling: Must return the verbatim refusal template if the answer requires cross-document blending, hedging, or is not found.
