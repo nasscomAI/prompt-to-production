@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Based on description: Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,
+GH-202402,Flooding,Standard,Based on description: Market area flooded. Traders suffering losses. Drain completely blocked.,
+GH-202406,Drain Blockage,Standard,Based on description: Main stormwater drain 100% blocked with construction debris.,
+GH-202407,Drain Blockage,Standard,Based on description: Drain blocked and mosquito breeding. Dengue concern.,
+GH-202410,Pothole,Standard,Based on description: Potholes causing vehicles to slow to 20kmph on fast road.,
+GH-202411,Pothole,Urgent,Based on description: Pothole swallowed entire motorcycle wheel. Rider hospitalised.,
+GH-202412,Pothole,Urgent,Based on description: School bus struggling to navigate 6 potholes in 200m stretch.,
+GH-202417,Waste,Standard,Based on description: Heritage zone garbage overflow. Tourist photographs showing piles of waste.,
+GH-202420,Other,Standard,Based on description: Construction drilling from 5am daily near residential towers.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Based on description: Road collapsed partially. Crater 1m deep near residential gate.,
+GH-202424,Flooding,Standard,Based on description: Underpass floods in light rain. Cars regularly abandoned.,
+GH-202428,Waste,Standard,Based on description: Post-market waste not cleared. Area unusable by Sunday morning.,
+GH-202432,Other,Standard,Based on description: 24hr supermarket delivery trucks idling with engines on.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Based on description: Main drain blocked — entire locality at flooding risk this week.,
+GH-202438,Road Damage,Standard,Based on description: Colony surrounded by fields that channel rainwater through main road.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Based on description: Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.,NEEDS_REVIEW
+AM-202402,Other,Standard,Based on description: Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.,NEEDS_REVIEW
+AM-202405,Other,Standard,Based on description: Dead trees with split branches. Fall risk to walkers. 3 trees affected.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Based on description: Irrigation system broken. Grass dying in heatwave conditions.,
+AM-202407,Other,Urgent,Based on description: Broken bench and upturned paving. Child injured last week.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Based on description: Pothole on main highway causing morning rush lane closure.,
+AM-202414,Other,Standard,Based on description: Residential colony unlit after 9pm. Wiring theft reported.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Based on description: Night market waste not cleared before morning. Heritage area affected.,
+AM-202421,Noise,Standard,Based on description: Club music audible at residential buildings at 2am.,
+AM-202424,Road Damage,Standard,Based on description: Zoo approach road surface bubbling at 45°C. Visitor complaints.,
+AM-202429,Other,Standard,Based on description: River walk surface temperature unbearable. Installed temperature reads 52°C.,NEEDS_REVIEW
+AM-202431,Road Damage,Standard,Based on description: Old city road subsidence near ancient step well. Heritage concern.,
+AM-202435,Road Damage,Standard,Based on description: Black metal road dividers storing heat. Motorists reporting burns on contact.,
+AM-202444,Waste,Standard,Based on description: Restaurant waste bins overflowing on Sunday night. Health risk.,
+AM-202445,Other,Standard,Based on description: BRT shelter roof glass broken. Users exposed to full sun.,NEEDS_REVIEW
