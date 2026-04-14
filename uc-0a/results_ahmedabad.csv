@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""surface"". (Also noticed keywords for other categories but it is still valid).",
+AM-202402,Heat Hazard,Standard,"Assigned category Heat Hazard as the description contains the word ""temperature"".",
+AM-202405,Other,Standard,Could not determine category as no specific keywords were found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Assigned category Heat Hazard as the description contains the word ""heat"".",
+AM-202407,Road Damage,Urgent,"Assigned category Road Damage as the description contains the word ""paving"" and marked Urgent due to severity keyword ""child"".",
+AM-202410,Pothole,Standard,"Assigned category Pothole as the description contains the word ""pothole"".",
+AM-202414,Streetlight,Standard,"Assigned category Streetlight as the description contains the word ""unlit"".",
+AM-202417,Waste,Standard,"Assigned category Waste as the description contains the word ""waste"". (Also noticed keywords for other categories but it is still valid).",
+AM-202421,Noise,Standard,"Assigned category Noise as the description contains the word ""music"".",
+AM-202424,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"". (Also noticed keywords for other categories but it is still valid).",
+AM-202429,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""surface"". (Also noticed keywords for other categories but it is still valid).",
+AM-202431,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"". (Also noticed keywords for other categories but it is still valid).",
+AM-202435,Road Damage,Standard,"Assigned category Road Damage as the description contains the word ""road"". (Also noticed keywords for other categories but it is still valid).",
+AM-202444,Waste,Standard,"Assigned category Waste as the description contains the word ""waste"". (Also noticed keywords for other categories but it is still valid).",
+AM-202445,Heat Hazard,Standard,"Assigned category Heat Hazard as the description contains the word ""sun"".",
