@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding in Hyderabad via 'flood'; priority elevated to Urgent due to 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Justified as Drain Blockage in Hyderabad based on the specific mention of 'drain' in the text.,
+GH-202406,Drain Blockage,Standard,Justified as Drain Blockage in Hyderabad based on the specific mention of 'drain' in the text.,
+GH-202407,Drain Blockage,Standard,Justified as Drain Blockage in Hyderabad based on the specific mention of 'drain' in the text.,
+GH-202410,Pothole,Standard,Justified as Pothole in Hyderabad based on the specific mention of 'pothole' in the text.,
+GH-202411,Pothole,Standard,Justified as Pothole in Hyderabad based on the specific mention of 'pothole' in the text.,
+GH-202412,Pothole,Urgent,Classified as Pothole in Hyderabad via 'pothole'; priority elevated to Urgent due to 'school'.,
+GH-202417,Heritage Damage,Standard,Justified as Heritage Damage in Hyderabad based on the specific mention of 'heritage' in the text.,
+GH-202420,Noise,Standard,Justified as Noise in Hyderabad based on the specific mention of 'drilling' in the text.,
+GH-202422,Pothole,Standard,Justified as Pothole in Hyderabad based on the specific mention of 'crater' in the text.,
+GH-202424,Flooding,Standard,Justified as Flooding in Hyderabad based on the specific mention of 'flood' in the text.,
+GH-202428,Heat Hazard,Standard,Justified as Heat Hazard in Hyderabad based on the specific mention of 'sun' in the text.,
+GH-202432,Other,Standard,Classification from Hyderabad is genuinely ambiguous and requires manual review (Other).,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Justified as Drain Blockage in Hyderabad based on the specific mention of 'drain' in the text.,
+GH-202438,Flooding,Standard,Justified as Flooding in Hyderabad based on the specific mention of 'rainwater' in the text.,

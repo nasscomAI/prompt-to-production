@@ -1,18 +1,24 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+### Role
+An automated classifier for municipal citizen complaints. Its boundary is limited to processing 
+raw text descriptions from citizen reports and mapping them to a predefined taxonomy and priority level for city maintenance.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+### Intent
+Produce a structured CSV output for each complaint consisting of:
+- **category**: Exactly one of [Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other].
+- **priority**: Urgent (if severity keywords present), otherwise Standard or Low.
+- **reason**: A single sentence justification that MUST cite specific words found in the description.
+- **flag**: NEEDS_REVIEW if the category is genuinely ambiguous, otherwise blank.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+### Context
+The agent is authorized to use ONLY the textual description and city metadata provided in the input. 
+It must exclude external world knowledge and MUST NOT invent sub-categories or vary category names.
+Authorized input: `complaint_id`, `city`, `description`.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+### Enforcement
+- **Taxonomy Drill**: Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations allowed.
+- **Severity Trigger**: Priority must be set to 'Urgent' if description contains one or more of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse.
+- **Justification**: Every output row must include a 'reason' field that cites specific words from the description.
+- **Ambiguity Refusal**: If the category cannot be determined from the description alone or is genuinely ambiguous, output category: Other and flag: NEEDS_REVIEW.
+- **Failure Modes**: Prevents taxonomy drift, severity blindness, missing justification, and hallucinated sub-categories.

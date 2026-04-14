@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Justified as Heritage Damage in Kolkata based on the specific mention of 'heritage' in the text.,
+KM-202402,Heritage Damage,Standard,Justified as Heritage Damage in Kolkata based on the specific mention of 'historic' in the text.,
+KM-202405,Other,Standard,Classification from Kolkata is genuinely ambiguous and requires manual review (Other).,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Justified as Pothole in Kolkata based on the specific mention of 'pothole' in the text.,
+KM-202410,Pothole,Standard,Justified as Pothole in Kolkata based on the specific mention of 'pothole' in the text.,
+KM-202411,Pothole,Standard,Justified as Pothole in Kolkata based on the specific mention of 'pothole' in the text.,
+KM-202415,Drain Blockage,Standard,Justified as Drain Blockage in Kolkata based on the specific mention of 'drain' in the text.,
+KM-202418,Waste,Standard,Justified as Waste in Kolkata based on the specific mention of 'waste' in the text.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage in Kolkata via 'sinking'; priority elevated to Urgent due to 'hospital'.,
+KM-202422,Road Damage,Standard,Justified as Road Damage in Kolkata based on the specific mention of 'surface' in the text.,
+KM-202426,Heritage Damage,Standard,Justified as Heritage Damage in Kolkata based on the specific mention of 'heritage' in the text.,
+KM-202430,Waste,Standard,Justified as Waste in Kolkata based on the specific mention of 'smell' in the text.,
+KM-202434,Heritage Damage,Standard,Justified as Heritage Damage in Kolkata based on the specific mention of 'heritage' in the text.,
+KM-202436,Streetlight,Standard,Justified as Streetlight in Kolkata based on the specific mention of 'dark' in the text.,
+KM-202438,Heritage Damage,Standard,Justified as Heritage Damage in Kolkata based on the specific mention of 'heritage' in the text.,
