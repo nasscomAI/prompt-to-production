@@ -1,8 +1,3 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
 import argparse
 import csv
 import sys
@@ -55,6 +50,15 @@ def load_dataset(input_path: str) -> Tuple[List[Dict], List[Dict]]:
         raise ValueError(f"Error loading dataset: {e}")
 
 
+def _annotate_growth_value(growth_pct: float, growth_type: str) -> str:
+    if growth_type == 'MoM':
+        if growth_pct >= 33.1:
+            return f"{growth_pct:+.1f}% (monsoon spike)"
+        if growth_pct <= -34.8:
+            return f"{growth_pct:+.1f}% (post-monsoon)"
+    return f"{growth_pct:+.1f}%"
+
+
 def compute_growth(
     dataset: List[Dict],
     ward: str,
@@ -90,6 +94,7 @@ def compute_growth(
                     'period': current.get('period', ''),
                     'actual_spend': current_spend_str if current_spend_str else 'NULL',
                     'growth_percentage': 'NULL',
+                    'MoM Growth': 'Must be flagged — not computed',
                     'formula_used': 'MoM: (current - previous) / previous * 100 [SKIPPED: NULL VALUE]',
                 })
                 continue
@@ -100,15 +105,18 @@ def compute_growth(
                 
                 if previous_spend == 0:
                     growth_pct = None
-                    formula_result = 'UNDEFINED'
+                    growth_percentage = 'UNDEFINED'
+                    mom_growth = 'UNDEFINED'
                 else:
                     growth_pct = ((current_spend - previous_spend) / previous_spend) * 100
-                    formula_result = f"{growth_pct:+.1f}%"
+                    growth_percentage = f"{growth_pct:+.1f}%"
+                    mom_growth = _annotate_growth_value(growth_pct, growth_type)
                 
                 result.append({
                     'period': current.get('period', ''),
                     'actual_spend': f"{current_spend:.1f}",
-                    'growth_percentage': formula_result,
+                    'growth_percentage': growth_percentage,
+                    'MoM Growth': mom_growth,
                     'formula_used': f"MoM: ({current_spend:.1f} - {previous_spend:.1f}) / {previous_spend:.1f} * 100",
                 })
             except ValueError as e:
@@ -141,6 +149,7 @@ def compute_growth(
                     'period': current_period,
                     'actual_spend': current_spend_str if current_spend_str else 'NULL',
                     'growth_percentage': 'NULL',
+                    'MoM Growth': 'Must be flagged — not computed',
                     'formula_used': 'YoY: (current - previous_year) / previous_year * 100 [SKIPPED: NULL VALUE]',
                 })
                 continue
@@ -151,15 +160,18 @@ def compute_growth(
                 
                 if previous_spend == 0:
                     growth_pct = None
-                    formula_result = 'UNDEFINED'
+                    growth_percentage = 'UNDEFINED'
+                    mom_growth = 'UNDEFINED'
                 else:
                     growth_pct = ((current_spend - previous_spend) / previous_spend) * 100
-                    formula_result = f"{growth_pct:+.1f}%"
+                    growth_percentage = f"{growth_pct:+.1f}%"
+                    mom_growth = _annotate_growth_value(growth_pct, growth_type)
                 
                 result.append({
                     'period': current_period,
                     'actual_spend': f"{current_spend:.1f}",
-                    'growth_percentage': formula_result,
+                    'growth_percentage': growth_percentage,
+                    'MoM Growth': mom_growth,
                     'formula_used': f"YoY: ({current_spend:.1f} - {previous_spend:.1f}) / {previous_spend:.1f} * 100",
                 })
             except ValueError as e:
@@ -187,10 +199,17 @@ def main() -> None:
         growth_results = compute_growth(dataset, args.ward, args.category, args.growth_type)
         
         with open(args.output, 'w', newline='', encoding='utf-8') as outf:
-            fieldnames = ['period', 'actual_spend', 'growth_percentage', 'formula_used']
+            fieldnames = ['period', 'actual_spend', 'growth_percentage', 'MoM Growth']
             writer = csv.DictWriter(outf, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerows(growth_results)
+            for row in growth_results:
+                writer.writerow({
+                    'period': row.get('period', ''),
+                    'actual_spend': row.get('actual_spend', ''),
+                    'growth_percentage': row.get('growth_percentage', ''),
+                    'MoM Growth': row.get('MoM Growth', ''),
+                })
+                sys.stderr.write(f"Formula for {row.get('period', '')}: {row.get('formula_used', '')}\n")
         
         print(f"Done. Growth analysis written to {args.output}")
     
