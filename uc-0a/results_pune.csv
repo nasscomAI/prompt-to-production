@@ -4,7 +4,7 @@ PM-202402,Pothole,Standard,Mentions 'pothole' in the description.,
 PM-202406,Flooding,Standard,Mentions 'flood' in the description.,
 PM-202408,Other,Standard,"Mentions 'flood', 'drain' in the description.",NEEDS_REVIEW
 PM-202410,Streetlight,Standard,"Mentions 'streetlight', 'light' in the description.",
-PM-202411,Streetlight,Urgent,"Mentions 'streetlight', 'light' in the description.",
+PM-202411,Streetlight,Standard,"Mentions 'streetlight', 'light' in the description.",
 PM-202413,Waste,Standard,Mentions 'garbage' in the description.,
 PM-202418,Noise,Low,Mentions 'music' in the description.,
 PM-202419,Road Damage,Standard,Mentions 'road' in the description.,

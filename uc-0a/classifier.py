@@ -19,7 +19,7 @@ def classify_complaint(row: Dict[str, str]) -> dict:
     description = (row.get("description") or "").strip()
     desc_lower = description.lower()
 
-    # Exact allowed categories
+    # Exact allowed categories (reverted per latest agents.md)
     categories = {
         'pothole': 'Pothole',
         'potholes': 'Pothole',
@@ -46,10 +46,10 @@ def classify_complaint(row: Dict[str, str]) -> dict:
         'blocked drain': 'Drain Blockage',
     }
 
-    # Priority keywords (from agents.md)
-    urgent_kw = ['hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse']
+    # Priority keywords (updated per latest agents.md)
+    urgent_kw = ['hospital', 'ambulance', 'fire', 'heat hazard', 'fell', 'collapse']
     standard_kw = ['injury', 'road', 'child', 'school', 'pothole', 'dark', 'flood']
-    low_kw = ['paving', 'heritage', 'waste', 'crater', 'temprature', 'music']
+    low_kw = ['paving', 'heritage', 'waste', 'crater', 'music']
 
     matched_cats = set()
     matched_words = []
@@ -73,7 +73,6 @@ def classify_complaint(row: Dict[str, str]) -> dict:
         flag = 'NEEDS_REVIEW'
 
     # Determine priority
-    priority = ''
     low_found = any(k in desc_lower for k in low_kw)
     urgent_found = any(k in desc_lower for k in urgent_kw)
     standard_found = any(k in desc_lower for k in standard_kw)
