@@ -2,10 +2,10 @@ complaint_id,category,priority,reason,flag
 KM-202401,Heritage Damage,Low,Mentions 'heritage' in the description.,
 KM-202402,Road Damage,Standard,Mentions 'road' in the description.,
 KM-202405,Other,Standard,No clear keywords found; excerpt: 'Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.'.,NEEDS_REVIEW
-KM-202409,Other,Standard,"Mentions 'pothole', 'potholes', 'road' in the description.",NEEDS_REVIEW
+KM-202409,Other,Standard,"Mentions 'potholes', 'pothole', 'road' in the description.",NEEDS_REVIEW
 KM-202410,Pothole,Standard,Mentions 'pothole' in the description.,
 KM-202411,Pothole,Standard,Mentions 'pothole' in the description.,
-KM-202415,Other,Standard,"Mentions 'road', 'drain' in the description.",NEEDS_REVIEW
+KM-202415,Other,Standard,"Mentions 'drain', 'road' in the description.",NEEDS_REVIEW
 KM-202418,Waste,Low,Mentions 'waste' in the description.,
 KM-202421,Other,Urgent,No clear keywords found; excerpt: 'Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.'.,NEEDS_REVIEW
 KM-202422,Road Damage,Standard,Mentions 'road' in the description.,

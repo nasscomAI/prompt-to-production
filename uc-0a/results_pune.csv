@@ -1,6 +1,6 @@
 complaint_id,category,priority,reason,flag
 PM-202401,Pothole,Standard,Mentions 'pothole' in the description.,
-PM-202402,Pothole,Standard,Mentions 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Mentions 'pothole' in the description.,
 PM-202406,Flooding,Standard,Mentions 'flood' in the description.,
 PM-202408,Other,Standard,"Mentions 'flood', 'drain' in the description.",NEEDS_REVIEW
 PM-202410,Streetlight,Standard,"Mentions 'streetlight', 'light' in the description.",
@@ -8,9 +8,9 @@ PM-202411,Streetlight,Standard,"Mentions 'streetlight', 'light' in the descripti
 PM-202413,Waste,Standard,Mentions 'garbage' in the description.,
 PM-202418,Noise,Low,Mentions 'music' in the description.,
 PM-202419,Road Damage,Standard,Mentions 'road' in the description.,
-PM-202420,Other,Standard,No clear keywords found; excerpt: 'Manhole cover missing. Risk of serious injury to cyclists.'.,NEEDS_REVIEW
+PM-202420,Other,Urgent,No clear keywords found; excerpt: 'Manhole cover missing. Risk of serious injury to cyclists.'.,NEEDS_REVIEW
 PM-202427,Flooding,Standard,Mentions 'flood' in the description.,
 PM-202428,Other,Standard,No clear keywords found; excerpt: 'Dead animal not removed for 36 hours. Health concern.'.,NEEDS_REVIEW
-PM-202430,Other,Standard,"Mentions 'light', 'heritage' in the description.",NEEDS_REVIEW
+PM-202430,Other,Standard,"Mentions 'heritage', 'light' in the description.",NEEDS_REVIEW
 PM-202433,Other,Standard,"Mentions 'waste', 'road' in the description.",NEEDS_REVIEW
 PM-202446,Other,Urgent,No clear keywords found; excerpt: 'Footpath tiles broken and upturned. Elderly resident fell last week.'.,NEEDS_REVIEW

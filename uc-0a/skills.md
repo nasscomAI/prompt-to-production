@@ -1,4 +1,3 @@
-
 skills:
   - name: classify_complaint
     description: Classify a single complaint into category, prioritcsv row with complaint_id, date_raised, city, ward, location, description, reported_by, days_open,string format

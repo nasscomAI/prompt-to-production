@@ -3,14 +3,14 @@ AM-202401,Other,Standard,No clear keywords found; excerpt: 'Tarmac surface melti
 AM-202402,Heat Hazard,Standard,Mentions 'temperature' in the description.,
 AM-202405,Other,Standard,No clear keywords found; excerpt: 'Dead trees with split branches. Fall risk to walkers. 3 trees affected.'.,NEEDS_REVIEW
 AM-202406,Heat Hazard,Standard,Mentions 'heat' in the description.,
-AM-202407,Other,Standard,No clear keywords found; excerpt: 'Broken bench and upturned paving. Child injured last week.'.,NEEDS_REVIEW
+AM-202407,Other,Urgent,No clear keywords found; excerpt: 'Broken bench and upturned paving. Child injured last week.'.,NEEDS_REVIEW
 AM-202410,Pothole,Standard,Mentions 'pothole' in the description.,
 AM-202414,Other,Standard,No clear keywords found; excerpt: 'Residential colony unlit after 9pm. Wiring theft reported.'.,NEEDS_REVIEW
-AM-202417,Other,Low,"Mentions 'waste', 'heritage' in the description.",NEEDS_REVIEW
+AM-202417,Other,Low,"Mentions 'heritage', 'waste' in the description.",NEEDS_REVIEW
 AM-202421,Noise,Low,Mentions 'music' in the description.,
 AM-202424,Road Damage,Standard,Mentions 'road' in the description.,
 AM-202429,Heat Hazard,Standard,Mentions 'temperature' in the description.,
-AM-202431,Other,Standard,"Mentions 'road', 'heritage' in the description.",NEEDS_REVIEW
+AM-202431,Other,Standard,"Mentions 'heritage', 'road' in the description.",NEEDS_REVIEW
 AM-202435,Other,Standard,"Mentions 'road', 'heat' in the description.",NEEDS_REVIEW
 AM-202444,Waste,Low,Mentions 'waste' in the description.,
 AM-202445,Other,Standard,No clear keywords found; excerpt: 'BRT shelter roof glass broken. Users exposed to full sun.'.,NEEDS_REVIEW
