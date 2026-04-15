@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Classified as Pothole with Standard priority because the text explicitly mentions 'pothole'.,
+Pothole,Urgent,"Classified as Pothole with Urgent priority because the text explicitly mentions 'pothole', 'child', 'school'.",
+Flooding,Standard,Classified as Flooding with Standard priority because the text explicitly mentions 'flood'.,
+Flooding,Standard,"Classified as Flooding with Standard priority because the text explicitly mentions 'flood', 'drain'.",NEEDS_REVIEW
+Streetlight,Standard,Classified as Streetlight with Standard priority because the text explicitly mentions 'streetlight'.,
+Streetlight,Urgent,"Classified as Streetlight with Urgent priority because the text explicitly mentions 'streetlight', 'hazard'.",
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'garbage', 'overflow'.",NEEDS_REVIEW
+Noise,Standard,Classified as Noise with Standard priority because the text explicitly mentions 'music'.,
+Road Damage,Standard,Classified as Road Damage with Standard priority because the text explicitly mentions 'cracked'.,
+Other,Urgent,Classified as Other with Urgent priority because the text explicitly mentions 'injury'.,NEEDS_REVIEW
+Flooding,Standard,Classified as Flooding with Standard priority because the text explicitly mentions 'flood'.,
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Dead animal not removed for 36 hours. He...'.",NEEDS_REVIEW
+Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the text explicitly mentions 'heritage'.,
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'waste', 'road'.",NEEDS_REVIEW
+Other,Urgent,Classified as Other with Urgent priority because the text explicitly mentions 'fell'.,NEEDS_REVIEW
