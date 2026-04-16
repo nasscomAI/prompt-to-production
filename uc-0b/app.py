@@ -1,12 +1,9 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+from transformers import pipeline
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+summarizer = pipline("summarization", model="facebook/bart-large-cnn")
 
-if __name__ == "__main__":
-    main()
+text = """Your HR policy text goes here..."""
+
+summary = summarizer(text, max_length=100, min_length=30,do_sample=False )
+
+print("Summary:", summary[0]['summary_text'])
