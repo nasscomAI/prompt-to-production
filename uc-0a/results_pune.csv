@@ -1,0 +1,16 @@
+id,category,priority,reason,flag
+,Pothole,Standard,Matched keyword 'pothole' in description,
+,Pothole,Urgent,Matched keyword 'pothole' in description; severity keyword 'child' found,
+,Flooding,Standard,Matched keyword 'flood' in description,
+,Flooding,Standard,Matched keyword 'flood' in description,
+,Streetlight,Standard,Matched keyword 'streetlight' in description,
+,Streetlight,Urgent,Matched keyword 'streetlight' in description; severity keyword 'hazard' found,
+,Waste,Standard,Matched keyword 'garbage' in description,
+,,Standard,Ambiguous or no valid category keyword found,NEEDS_REVIEW
+,Road Damage,Standard,Matched keyword 'road' in description,
+,,Urgent,Ambiguous or no valid category keyword found; severity keyword 'injury' found,NEEDS_REVIEW
+,Flooding,Standard,Matched keyword 'flood' in description,
+,,Standard,Ambiguous or no valid category keyword found,NEEDS_REVIEW
+,Heritage Damage,Standard,Matched keyword 'heritage' in description,
+,Waste,Standard,Matched keyword 'waste' in description,
+,,Urgent,Ambiguous or no valid category keyword found; severity keyword 'fell' found,NEEDS_REVIEW
