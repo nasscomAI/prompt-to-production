@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions "Large pothole 60cm wide causing tyre damage" with three vehicles affected.,
+PM-202402,Pothole,Urgent,Description mentions "Deep pothole near bus stop" and "School children at risk during morning hours" triggering Urgent priority.,
+PM-202406,Flooding,Standard,Description mentions "Underpass flooded knee-deep after 2hrs rain" leaving commuters stranded.,
+PM-202408,Drain Blockage,Standard,"Description mentions both ""Bus stand flooded"" and ""Drain blocked"" equally matching Flooding and Drain Blockage.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description mentions "Three consecutive streetlights out for 10 days" leaving the area very dark at night.,
+PM-202411,Streetlight,Urgent,Description mentions "Streetlight flickering and sparking" with "Electrical hazard reported" triggering Urgent priority.,
+PM-202413,Waste,Standard,Description mentions "Overflowing garbage bins near vegetable market" causing smell affecting shoppers.,
+PM-202418,Noise,Low,Description mentions "Wedding venue playing music past midnight on weeknights" with no urgency or safety signal.,
+PM-202419,Road Damage,Standard,Description mentions "Road surface cracked and sinking near utility work done 1 month ago".,
+PM-202420,Road Damage,Urgent,Description mentions "Manhole cover missing" with "Risk of serious injury to cyclists" triggering Urgent priority.,
+PM-202427,Flooding,Standard,Description mentions "Bridge approach floods in 30mins of rain" making the bridge inaccessible.,
+PM-202428,Waste,Standard,Description mentions "Dead animal not removed for 36 hours" with a stated health concern.,
+PM-202430,Streetlight,Standard,"Description mentions ""Heritage street, lights out"" which equally matches Streetlight and Heritage Damage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Description mentions "Bulk waste from apartment renovation dumped on public road".,
+PM-202446,Road Damage,Urgent,Description mentions "Footpath tiles broken and upturned" with "Elderly resident fell last week" triggering Urgent priority.,
