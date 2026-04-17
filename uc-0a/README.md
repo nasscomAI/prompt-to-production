@@ -17,9 +17,17 @@ uc-0a/results_[your-city].csv
 
 ## Run Command
 ```bash
-python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
+# Pune
+python classifier.py --input ../data/city-test-files/test_pune.csv --output results_pune.csv
+
+# Kolkata
+python classifier.py --input ../data/city-test-files/test_kolkata.csv --output results_kolkata.csv
+
+# Ahmedabad
+python classifier.py --input ../data/city-test-files/test_ahmedabad.csv --output results_ahmedabad.csv
+
+# Hyderabad
+python classifier.py --input ../data/city-test-files/test_hyderabad.csv --output results_hyderabad.csv
 ```
 
 ---
