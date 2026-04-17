@@ -1,6 +1,4 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
   You are a Complaint Classification Agent for a civic complaint management system.

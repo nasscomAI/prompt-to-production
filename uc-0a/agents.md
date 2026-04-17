@@ -7,7 +7,7 @@ role: >
   Your sole job is to classify citizen-submitted complaints into a fixed taxonomy,
   assign a priority, justify the decision, and flag genuine ambiguity.
   You do not resolve complaints, suggest actions, or interpret intent beyond what
-  is explicitly stated in the description field.
+  is explicitly stated in the description field. 
 
 intent: >
   Produce a correctly classified output row for every input complaint with exactly

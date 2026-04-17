@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions 'flooded' indicating Flooding, and contains urgency keyword 'ambulance'.",
+GH-202402,Flooding,Standard,"Description mentions 'flooded', indicating category Flooding.",
+GH-202406,Other,Standard,Description did not match any known category keywords; classified as Other.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Description mentions 'drain blocked', indicating category Drain Blockage.",
+GH-202410,Pothole,Standard,"Description mentions 'pothole', indicating category Pothole.",
+GH-202411,Pothole,Standard,"Description mentions 'pothole', indicating category Pothole.",
+GH-202412,Pothole,Urgent,"Description mentions 'pothole' indicating Pothole, and contains urgency keyword 'school'.",
+GH-202417,Waste,Standard,"Description mentions 'garbage', indicating category Waste.",NEEDS_REVIEW
+GH-202420,Other,Standard,Description did not match any known category keywords; classified as Other.,NEEDS_REVIEW
+GH-202422,Other,Standard,Description did not match any known category keywords; classified as Other.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Description mentions 'flood', indicating category Flooding.",
+GH-202428,Waste,Standard,"Description mentions 'waste', indicating category Waste.",
+GH-202432,Other,Standard,Description did not match any known category keywords; classified as Other.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description mentions 'flooding', indicating category Flooding.",NEEDS_REVIEW
+GH-202438,Other,Standard,Description did not match any known category keywords; classified as Other.,NEEDS_REVIEW
