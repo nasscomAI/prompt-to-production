@@ -38,6 +38,51 @@ def retrieve_policy(filepath: str) -> dict:
         
     return clauses
 
+def summarize_clause(clause_id: str, text: str) -> str:
+    """
+    Programmatic approximation of the LLM summarize skill enforcing RICE rules.
+    """
+    text_lower = text.lower()
+    
+    # Rule 4: If meaning loss is likely (multi-condition or strict rule), quote verbatim and flag it.
+    complex_triggers = [
+        "and the",  # E.g. Clause 5.2
+        "verbal approval is not valid", # E.g. Clause 2.4
+        "regardless of subsequent approval", # E.g. Clause 2.5
+        "unless exceptional circumstances", # E.g. Clause 8.2
+        "requires a medical certificate from", # E.g. Clause 3.2
+    ]
+    
+    for trigger in complex_triggers:
+        if trigger in text_lower:
+            return f"Clause {clause_id} [VERBATIM - MULTI-CONDITION/STRICT]: {text}"
+            
+    # Basic programmatic condensation (Rule 2 & 3: preserve binding verbs, no scope bleed)
+    condensed = text
+    replacements = [
+        (r'(?i)Each permanent employee is entitled to\s+', ''),
+        (r'(?i)Female employees are entitled to\s+', ''),
+        (r'(?i)Male employees are entitled to\s+', ''),
+        (r'(?i)Employees are entitled to\s+', ''),
+        (r'(?i)Each employee is entitled to\s+', ''),
+        (r'(?i)An employee may apply for\s+', 'May apply for '),
+        (r'(?i)This policy governs\s+', 'Governs '),
+        (r'(?i)This policy does not apply to\s+', 'Does not apply to '),
+        (r'(?i)Employees must submit\s+', 'Must submit '),
+        (r'(?i)Employees may carry forward\s+', 'May carry forward '),
+        (r'(?i)\s*per calendar year\s*', ' per year')
+    ]
+    
+    for pattern, replacement in replacements:
+        condensed = re.sub(pattern, replacement, condensed)
+        
+    if condensed != text:
+        condensed = condensed[0].upper() + condensed[1:]
+        return f"Clause {clause_id}: {condensed}"
+        
+    # If no safe condensation applies, default to verbatim to prevent obligation softening
+    return f"Clause {clause_id} [VERBATIM]: {text}"
+
 def summarize_policy(clauses: dict) -> str:
     """
     Takes structured clauses and produces a compliant summary preserving all required clauses and multi-part conditions.
@@ -47,15 +92,9 @@ def summarize_policy(clauses: dict) -> str:
     summary_lines.append("=" * 40)
     summary_lines.append("")
     
-    for clause_id in TARGET_CLAUSES:
-        if clause_id in clauses:
-            text = clauses[clause_id]
-            # Since these specific clauses contain complex, multi-part conditions (e.g. Department Head AND HR Director approval),
-            # any attempt to shorten them programmatically risks losing meaning.
-            # Following the strict enforcement rule, we quote them verbatim and flag them.
-            summary_lines.append(f"Clause {clause_id} [VERBATIM]: {text}")
-        else:
-            summary_lines.append(f"Clause {clause_id}: [ERROR - NOT FOUND IN SOURCE]")
+    # Rule 1: Every numbered clause must be present
+    for clause_id, text in clauses.items():
+        summary_lines.append(summarize_clause(clause_id, text))
             
     return "\n".join(summary_lines)
 
