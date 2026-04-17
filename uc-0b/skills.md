@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Policy Summary Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a .txt policy file and parses its content into a structured format organized by numbered clauses.
+    input: Absolute path to the policy .txt file.
+    output: A structured object containing clause numbers as keys and their full text as values.
+    error_handling: Return an error message or empty object if the file is missing, empty, or lacks numbered clauses.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Generates a compliant summary of the structured policy clauses, ensuring no conditions are dropped and all obligations remain binding.
+    input: Structured policy data (clause numbers and text).
+    output: A summarized policy document preserving all clause references and multi-condition rules.
+    error_handling: If a clause's meaning is compromised by summarization, the skill must quote the original text verbatim and add a 'NEEDS_MANUAL_REVIEW' flag.
+
