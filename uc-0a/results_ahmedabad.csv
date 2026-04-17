@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Complaint description does not clearly indicate a specific category: 'Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe....',NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Description mentions 'temperature' indicating heat hazard.,
+AM-202405,Other,Standard,Complaint description does not clearly indicate a specific category: 'Dead trees with split branches. Fall risk to walkers. 3 trees affected....',NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions 'heat' indicating heat hazard.,
+AM-202407,Other,Urgent,Complaint description does not clearly indicate a specific category: 'Broken bench and upturned paving. Child injured last week....',NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions 'pothole' indicating road surface damage.,
+AM-202414,Other,Standard,Complaint description does not clearly indicate a specific category: 'Residential colony unlit after 9pm. Wiring theft reported....',NEEDS_REVIEW
+AM-202417,Waste,Standard,Description mentions 'waste' indicating waste management issue.,
+AM-202421,Other,Standard,Complaint description does not clearly indicate a specific category: 'Club music audible at residential buildings at 2am....',NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Description mentions 'road' indicating road damage.,
+AM-202429,Heat Hazard,Standard,Description mentions 'temperature' indicating heat hazard.,
+AM-202431,Road Damage,Standard,Description mentions 'road' indicating road damage.,
+AM-202435,Road Damage,Standard,Description mentions 'road' indicating road damage.,
+AM-202444,Flooding,Standard,Description mentions 'overflow' indicating flooding.,
+AM-202445,Other,Standard,Complaint description does not clearly indicate a specific category: 'BRT shelter roof glass broken. Users exposed to full sun....',NEEDS_REVIEW
