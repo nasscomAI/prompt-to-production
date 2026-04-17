@@ -11,6 +11,7 @@ context: >
 
 enforcement:
   - "Category must be strictly one of these exact strings: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations are allowed."
+  - "Pritority has to be either Urgent, Standard, or Low."
   - "Priority must be one of: Urgent, Standard, Low. It MUST be 'Urgent' if the description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
   - "A 'reason' field must be provided. It must be exactly one sentence long and it MUST cite specific words found in the original complaint description."
   - "If the category is genuinely ambiguous, you must set the 'flag' field to 'NEEDS_REVIEW'. Do not be falsely confident. Otherwise, leave the 'flag' field blank."
