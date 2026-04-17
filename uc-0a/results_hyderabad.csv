@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding based on 'flood' in the description and severity keyword 'ambulance' indicates Urgent priority.,
+GH-202402,Flooding,Standard,Classified as Flooding based on 'flood' in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+GH-202410,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+GH-202411,Pothole,Urgent,Classified as Pothole based on 'pothole' in the description and severity keyword 'hospital' indicates Urgent priority.,
+GH-202412,Pothole,Urgent,Classified as Pothole based on 'pothole' in the description and severity keyword 'school' indicates Urgent priority.,
+GH-202417,Waste,Standard,Classified as Waste based on 'garbage' in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+GH-202420,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classified as Other based on the description in the description and severity keyword 'collapse' indicates Urgent priority; flagged for review due to ambiguity.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on 'flood' in the description.,
+GH-202428,Waste,Standard,Classified as Waste based on 'waste' in the description.,
+GH-202432,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Classified as Flooding based on 'flood' in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+GH-202438,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW

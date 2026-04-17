@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Classified as Pothole based on 'pothole' in the description and severity keyword 'child' indicates Urgent priority.,
+PM-202406,Flooding,Standard,Classified as Flooding based on 'flood' in the description.,
+PM-202408,Flooding,Standard,Classified as Flooding based on 'flood' in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight based on 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight based on 'streetlight' in the description and severity keyword 'hazard' indicates Urgent priority.,
+PM-202413,Waste,Standard,Classified as Waste based on 'garbage' in the description.,
+PM-202418,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Classified as Road Damage based on 'crack' in the description.,
+PM-202420,Other,Urgent,Classified as Other based on the description in the description and severity keyword 'injury' indicates Urgent priority; flagged for review due to ambiguity.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on 'flood' in the description.,
+PM-202428,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+PM-202433,Waste,Standard,Classified as Waste based on 'waste' in the description.,
+PM-202446,Other,Urgent,Classified as Other based on the description in the description and severity keyword 'fell' indicates Urgent priority; flagged for review due to ambiguity.,NEEDS_REVIEW
