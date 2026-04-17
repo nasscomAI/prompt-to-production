@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description includes the word 'pothole'.,
+PM-202402,Pothole,Urgent,Priority set to Urgent because the description mentions 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding because the description includes the word 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding because the description includes the word 'flood'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because the description includes the word 'light'.,
+PM-202411,Streetlight,Urgent,Priority set to Urgent because the description mentions 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste because the description includes the word 'garbage'.,
+PM-202418,Other,Standard,The description is ambiguous and does not contain specific keywords for classification.,NEEDS_REVIEW
+PM-202419,Pothole,Standard,Classified as Pothole because the description includes the word 'cracked'.,
+PM-202420,Pothole,Urgent,Priority set to Urgent because the description mentions 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding because the description includes the word 'flood'.,
+PM-202428,Other,Standard,The description is ambiguous and does not contain specific keywords for classification.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight because the description includes the word 'light'.,
+PM-202433,Waste,Standard,Classified as Waste because the description includes the word 'waste'.,
+PM-202446,Other,Urgent,Priority set to Urgent because the description mentions 'fell'.,NEEDS_REVIEW
