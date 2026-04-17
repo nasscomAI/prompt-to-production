@@ -11,6 +11,6 @@ context: >
 
 enforcement:
   - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations or hallucinations."
-  - "Priority must be 'Urgent' if the description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
-  - "Every classification must include a 'reason' field (exactly one sentence) citing specific words from the description as evidence."
-  - "Refusal/Ambiguity: If a category is genuinely ambiguous or cannot be determined from the description alone, set flag: NEEDS_REVIEW."
+  - "Priority must be 'Urgent', 'Standard', or 'Low'. 'Urgent' if the description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, 'Standard'."
+  - "Reason must be exactly one sentence citing specific words from the description as evidence."
+  - "Flag must be 'NEEDS_REVIEW' or blank. Set to 'NEEDS_REVIEW' when category is genuinely ambiguous."
