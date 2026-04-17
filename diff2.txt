@@ -1,0 +1,277 @@
+﻿diff --git a/uc-0a/agents.md b/uc-0a/agents.md
+index 4a84777..3e64e1e 100644
+--- a/uc-0a/agents.md
++++ b/uc-0a/agents.md
+@@ -1,18 +1,15 @@
+-# agents.md ΓÇö UC-0A Complaint Classifier
+-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+-# Delete these comments before committing.
+-
+ role: >
+-  [FILL IN: Who is this agent? What is its operational boundary?]
++  You are an expert citizen complaint classifier. Your operational boundary is strictly limited to classifying citizen complaint text into predefined schema fields without altering the core description or making assumptions outside the provided text.
+ 
+ intent: >
+-  [FILL IN: What does a correct output look like ΓÇö make it verifiable]
++  A correct output provides exactly one valid category, an appropriate priority level, a one-sentence reason citing original words, and an ambiguity flag if needed. The output must strictly adhere to the provided schema to ensure verifiability and consistency across batches.
+ 
+ context: >
+-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
++  You will receive rows from citizen complaint dataset files. You must use only the complaint's text to determine its classification. You must not invent or hallucinate new categories or sub-categories.
+ 
+ enforcement:
+-  - "[FILL IN: Specific testable rule 1 ΓÇö e.g. Category must be exactly one of: Pothole, Flooding, ...]"
+-  - "[FILL IN: Specific testable rule 2 ΓÇö e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
+-  - "[FILL IN: Specific testable rule 3 ΓÇö e.g. Every output row must include a reason field citing specific words from the description]"
+-  - "[FILL IN: Refusal condition ΓÇö e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
++  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only ΓÇö no variations."
++  - "Priority has to be either Urgent, Standard or Low only."
++  - "Priority must be Urgent if the description contains severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Priority must be Standard or Low otherwise."
++  - "Every output row must include a reason field that is exactly one sentence and must cite specific words from the description."
++  - "If the category is genuinely ambiguous, set the flag field to NEEDS_REVIEW."
+diff --git a/uc-0a/classifier.py b/uc-0a/classifier.py
+index 1751635..1f3f682 100644
+--- a/uc-0a/classifier.py
++++ b/uc-0a/classifier.py
+@@ -1,34 +1,108 @@
+ """
+ UC-0A ΓÇö Complaint Classifier
+-Starter file. Build this using the RICE ΓåÆ agents.md ΓåÆ skills.md ΓåÆ CRAFT workflow.
++Implementation based on constraints defined in agents.md and skills.md
+ """
+ import argparse
+ import csv
++import re
++
++SEVERITY_KEYWORDS = {
++    "injury", "child", "school", "hospital", "ambulance", 
++    "fire", "hazard", "fell", "collapse"
++}
+ 
+ def classify_complaint(row: dict) -> dict:
+     """
+-    Classify a single complaint row.
+-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+-    
+-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
+-    Your RICE enforcement rules must be reflected in this function's behaviour.
++    Classifies a single citizen complaint according to the schema.
+     """
+-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
++    desc = row.get("description", "").lower()
++    
++    category_matches = []
++    if "pothole" in desc: category_matches.append(("Pothole", "pothole"))
++    if "flood" in desc or "rain" in desc: category_matches.append(("Flooding", "flood or rain"))
++    if "light" in desc or "dark" in desc: category_matches.append(("Streetlight", "light or dark"))
++    if "garbage" in desc or "waste" in desc: category_matches.append(("Waste", "garbage or waste"))
++    if "dead animal" in desc: category_matches.append(("Waste", "dead animal"))
++    if "music" in desc or "noise" in desc: category_matches.append(("Noise", "music or noise"))
++    if "crack" in desc or "sink" in desc or "manhole" in desc or "tiles" in desc or "road" in desc: 
++        category_matches.append(("Road Damage", "road condition indicators"))
++    if "heritage" in desc: category_matches.append(("Heritage Damage", "heritage"))
++    if "heat" in desc: category_matches.append(("Heat Hazard", "heat"))
++    if "drain" in desc or "block" in desc: category_matches.append(("Drain Blockage", "drain block"))
++
++    category = "Other"
++    flag = ""
++    match_word = ""
+ 
++    unique_cats = list({c for c, w in category_matches})
++    if len(unique_cats) == 1:
++        category = unique_cats[0]
++        match_word = category_matches[0][1]
++    elif len(unique_cats) > 1:
++        # Ambiguous if multiple categories match
++        flag = "NEEDS_REVIEW"
++        category = "Other"
++    else:
++        # No clear category found
++        flag = "NEEDS_REVIEW"
++        category = "Other"
++        
++    priority = "Standard"
++    found_keyword = None
++    for kw in SEVERITY_KEYWORDS:
++        if re.search(r'\b' + re.escape(kw) + r'\b', desc):
++            priority = "Urgent"
++            found_keyword = kw
++            break
++            
++    reason_parts = []
++    if found_keyword:
++        reason_parts.append(f"severity keyword '{found_keyword}'")
++    if match_word:
++        reason_parts.append(f"category indicator '{match_word}'")
++        
++    if reason_parts:
++        reason = f"Classified based on {' and '.join(reason_parts)} found in the description."
++    else:
++        reason = "Classified as Other due to lack of clear category or severity indicators."
++        
++    return {
++        "complaint_id": row.get("complaint_id", ""),
++        "category": category,
++        "priority": priority,
++        "reason": reason,
++        "flag": flag
++    }
+ 
+ def batch_classify(input_path: str, output_path: str):
+     """
+     Read input CSV, classify each row, write results CSV.
+-    
+-    TODO: Build this using your AI tool.
+-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
++    Continues processing even if a row fails.
+     """
+-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+-
++    results = []
++    
++    with open(input_path, mode="r", encoding="utf-8") as f:
++        reader = csv.DictReader(f)
++        for row in reader:
++            try:
++                classified = classify_complaint(row)
++                results.append(classified)
++            except Exception as e:
++                print(f"Error processing row {row.get('complaint_id', 'unknown')}: {e}")
++                
++    if not results:
++        print("No results to output.")
++        return
++        
++    fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
++    with open(output_path, mode="w", newline="", encoding="utf-8") as f:
++        writer = csv.DictWriter(f, fieldnames=fieldnames)
++        writer.writeheader()
++        writer.writerows(results)
+ 
+ if __name__ == "__main__":
+     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
+-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
++    parser.add_argument("--input", required=True, help="Path to test_[city].csv")
+     parser.add_argument("--output", required=True, help="Path to write results CSV")
+     args = parser.parse_args()
+     batch_classify(args.input, args.output)
+diff --git a/uc-0a/results_ahmedabad.csv b/uc-0a/results_ahmedabad.csv
+new file mode 100644
+index 0000000..7af5ea1
+--- /dev/null
++++ b/uc-0a/results_ahmedabad.csv
+@@ -0,0 +1,16 @@
++complaint_id,category,priority,reason,flag
++AM-202401,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202402,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202405,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202406,Heat Hazard,Standard,Classified based on category indicator 'heat' found in the description.,
++AM-202407,Other,Urgent,Classified based on severity keyword 'child' found in the description.,NEEDS_REVIEW
++AM-202410,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
++AM-202414,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202417,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202421,Noise,Standard,Classified based on category indicator 'music or noise' found in the description.,
++AM-202424,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
++AM-202429,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202431,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202435,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++AM-202444,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
++AM-202445,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+diff --git a/uc-0a/results_hyderabad.csv b/uc-0a/results_hyderabad.csv
+new file mode 100644
+index 0000000..42860f0
+--- /dev/null
++++ b/uc-0a/results_hyderabad.csv
+@@ -0,0 +1,16 @@
++complaint_id,category,priority,reason,flag
++GH-202401,Flooding,Urgent,Classified based on severity keyword 'ambulance' and category indicator 'flood or rain' found in the description.,
++GH-202402,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202406,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202407,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202410,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202411,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
++GH-202412,Pothole,Urgent,Classified based on severity keyword 'school' and category indicator 'pothole' found in the description.,
++GH-202417,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202420,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202422,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
++GH-202424,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202428,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
++GH-202432,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202448,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++GH-202438,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+diff --git a/uc-0a/results_kolkata.csv b/uc-0a/results_kolkata.csv
+new file mode 100644
+index 0000000..7794055
+--- /dev/null
++++ b/uc-0a/results_kolkata.csv
+@@ -0,0 +1,16 @@
++complaint_id,category,priority,reason,flag
++KM-202401,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
++KM-202402,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
++KM-202405,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++KM-202409,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++KM-202410,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
++KM-202411,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++KM-202415,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++KM-202418,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
++KM-202421,Road Damage,Urgent,Classified based on severity keyword 'fell' and category indicator 'road condition indicators' found in the description.,
++KM-202422,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
++KM-202426,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
++KM-202430,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
++KM-202434,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
++KM-202436,Streetlight,Standard,Classified based on category indicator 'light or dark' found in the description.,
++KM-202438,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
+diff --git a/uc-0a/results_pune.csv b/uc-0a/results_pune.csv
+new file mode 100644
+index 0000000..26c7869
+--- /dev/null
++++ b/uc-0a/results_pune.csv
+@@ -0,0 +1,16 @@
++complaint_id,category,priority,reason,flag
++PM-202401,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
++PM-202402,Pothole,Urgent,Classified based on severity keyword 'school' and category indicator 'pothole' found in the description.,
++PM-202406,Flooding,Standard,Classified based on category indicator 'flood or rain' found in the description.,
++PM-202408,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++PM-202410,Streetlight,Standard,Classified based on category indicator 'light or dark' found in the description.,
++PM-202411,Streetlight,Urgent,Classified based on severity keyword 'hazard' and category indicator 'light or dark' found in the description.,
++PM-202413,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
++PM-202418,Noise,Standard,Classified based on category indicator 'music or noise' found in the description.,
++PM-202419,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
++PM-202420,Road Damage,Urgent,Classified based on severity keyword 'injury' and category indicator 'road condition indicators' found in the description.,
++PM-202427,Flooding,Standard,Classified based on category indicator 'flood or rain' found in the description.,
++PM-202428,Waste,Standard,Classified based on category indicator 'dead animal' found in the description.,
++PM-202430,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++PM-202433,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
++PM-202446,Road Damage,Urgent,Classified based on severity keyword 'fell' and category indicator 'road condition indicators' found in the description.,
+diff --git a/uc-0a/skills.md b/uc-0a/skills.md
+index 01de6be..e1862e1 100644
+--- a/uc-0a/skills.md
++++ b/uc-0a/skills.md
+@@ -1,16 +1,12 @@
+-# skills.md
+-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
+-# Delete these comments before committing.
+-
+ skills:
+-  - name: [skill_name]
+-    description: [One sentence ΓÇö what does this skill do?]
+-    input: [What does it receive? Type and format.]
+-    output: [What does it return? Type and format.]
+-    error_handling: [What does it do when input is invalid or ambiguous?]
++  - name: classify_complaint
++    description: Classifies a single citizen complaint text into strict schema fields (category, priority, reason, flag).
++    input: A single text description representing the citizen complaint.
++    output: A standardized record containing an exact-match category, priority (Urgent/Standard/Low), a one-sentence reason citing the text, and an optional flag.
++    error_handling: If the complaint text is genuinely ambiguous and a specific category cannot be confidently assigned, set the flag field to "NEEDS_REVIEW".
+ 
+-  - name: [second_skill_name]
+-    description: [One sentence]
+-    input: [Type and format]
+-    output: [Type and format]
+-    error_handling: [What does it do when input is invalid or ambiguous?]
++  - name: batch_classify
++    description: Reads an input CSV file of multiple complaints, applies classify_complaint to each row, and writes the structured results to an output CSV.
++    input: File path to a valid input CSV containing citizen complaints.
++    output: Writes a new output CSV file containing the classified rows.
++    error_handling: If a row is malformed or processing fails, log the error and continue to the next row to ensure the rest of the batch completes. If the input file is missing, halt execution and throw an error.
+\ No newline at end of file

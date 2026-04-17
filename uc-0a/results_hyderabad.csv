@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified based on severity keyword 'ambulance' and category indicator 'flood or rain' found in the description.,
+GH-202402,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202406,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202407,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202410,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202411,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
+GH-202412,Pothole,Urgent,Classified based on severity keyword 'school' and category indicator 'pothole' found in the description.,
+GH-202417,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202420,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202422,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
+GH-202424,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
+GH-202432,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202448,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+GH-202438,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
