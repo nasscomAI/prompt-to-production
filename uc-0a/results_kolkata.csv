@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
+KM-202402,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
+KM-202405,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+KM-202409,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+KM-202410,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
+KM-202411,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+KM-202415,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
+KM-202421,Road Damage,Urgent,Classified based on severity keyword 'fell' and category indicator 'road condition indicators' found in the description.,
+KM-202422,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
+KM-202426,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
+KM-202430,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
+KM-202434,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
+KM-202436,Streetlight,Standard,Classified based on category indicator 'light or dark' found in the description.,
+KM-202438,Heritage Damage,Standard,Classified based on category indicator 'heritage' found in the description.,
