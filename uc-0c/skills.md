@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Budget Analysis Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the municipal budget CSV, validates essential columns, and identifies all rows with missing actual spend data to ensure transparency.
+    input: Absolute path to the budget CSV file.
+    output: A structured collection of budget rows along with a report of null counts and specific null-row identifiers.
+    error_handling: Raises an error if mandatory columns are missing or if the file is unreadable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Calculates financial growth (MoM or YoY) for a specific ward and category, explicitly displaying the formula used and flagging null-row interruptions.
+    input: Ward name, category name, growth type (MoM/YoY), and the structured dataset.
+    output: A period-by-period table showing actual spend, the growth percentage, and the explicit formula used.
+    error_handling: Refuses calculation for periods involving null values (reporting the reason from notes) or if the growth type is unspecified.
+
