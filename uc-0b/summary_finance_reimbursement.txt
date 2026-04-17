@@ -1,0 +1,15 @@
+POLICY SUMMARY: policy_finance_reimbursement
+============================================================
+
+Section 2.6: If actual meal expenses are claimed instead of DA, receipts
+  are mandatory and the combined meal claim must not exceed
+    Rs 750 per day. DA and meal receipts cannot be claimed
+    simultaneously for the same day.
+
+═══════════════════════════════════════════════════════════
+3. WORK FROM HOME EQUIPMENT
+═══════════════════════════════════════════════════════════
+
+Section 3.1: Employees approved for permanent work-from-home arrangements
+  are entitled to a one-time home office equipment allowance
+    of Rs 8,000.
