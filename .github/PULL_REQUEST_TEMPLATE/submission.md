@@ -1,18 +1,18 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name: Aryan Kumar Sinha**  
+**City / Group: Pune/ SIT-Pune**  
+**Date: 17/04/2026**  
+**AI tool(s) used: Antigravity, Claude**  
 
 ---
 
 ## Checklist — Complete Before Opening This PR
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_[city].csv` without crash
-- [ ] `results_[city].csv` present in `uc-0a/`
+- [x] `agents.md` committed for all 4 UCs
+- [x] `skills.md` committed for all 4 UCs
+- [x] `classifier.py` runs on `test_[city].csv` without crash
+- [x] `results_[city].csv` present in `uc-0a/`
 - [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
 - [ ] `summary_hr_leave.txt` present in `uc-0b/`
 - [ ] `growth_output.csv` present in `uc-0c/`
@@ -26,24 +26,24 @@
 **Which failure mode did you encounter first?**
 *(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
 
-> [Your answer]
+>  severity blindness
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
 
-> [Your answer]
+> Priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse (case-insensitive). Otherwise Standard or Low based on urgency assessment.
 
 **How many rows in your results CSV match the answer key?**
 *(Tutor will release answer key after session)*
 
-> [Your answer] out of 15
+> 15/15
 
 **Did all severity signal rows (injury/child/school/hospital) return Urgent?**
 
-> Yes / No — [explain any exceptions]
+> Yes — all rows with keywords (school/children, hazard, injury, fell) were correctly flagged as Urgent.
 
 **Your git commit message for UC-0A:**
 
-> [paste your commit message here]
+> uc-0a work submission
 
 ---
 
