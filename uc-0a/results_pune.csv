@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on description.,
+PM-202402,Pothole,Urgent,Urgent priority due to mention of 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding based on description.,
+PM-202408,Flooding,Standard,Classified as Flooding based on description.,
+PM-202410,Streetlight,Standard,Classified as Streetlight based on description.,
+PM-202411,Streetlight,Urgent,Urgent priority due to mention of 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste based on description.,
+PM-202418,Noise,Standard,Classified as Noise based on description.,
+PM-202419,Pothole,Standard,Classified as Pothole based on description.,
+PM-202420,Other,Urgent,Urgent priority due to mention of 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on description.,
+PM-202428,Waste,Standard,Classified as Waste based on description.,
+PM-202430,Streetlight,Standard,Classified as Streetlight based on description.,
+PM-202433,Waste,Standard,Classified as Waste based on description.,
+PM-202446,Road Damage,Urgent,Urgent priority due to mention of 'fell'.,
