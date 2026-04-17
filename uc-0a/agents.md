@@ -1,18 +1,14 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An expert complaint classifier designed to process raw citizen complaints from a CSV and accurately categorize them, assess priority, and provide justification.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A complete CSV file where every complaint row has valid `category`, `priority` (Urgent, Standard, Low), `reason`, and `flag` fields correctly assigned based on the provided schema.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent must only use the text of the citizen complaint to make its classification. It should follow the exact classification schema provided and use no outside categories or assumptions.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations allowed."
+  - "Priority must be Urgent if the complaint description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, it should be Standard or Low."
+  - "Every output row must include a one-sentence reason field that cites specific words from the complaint description to justify the classification."
+  - "If the category is genuinely ambiguous or cannot be determined, output category: Other and flag: NEEDS_REVIEW. Otherwise flag should be blank."
