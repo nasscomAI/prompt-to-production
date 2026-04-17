@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,"The complaint mentions surface, which directly indicates a Road Damage issue with potential Standard implications.",
+AM-202402,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,"The complaint mentions broken, which directly indicates a Road Damage issue with potential Standard implications.",
+AM-202407,Road Damage,Urgent,"The complaint mentions child, upturned, broken, which directly indicates a Road Damage issue with potential Urgent implications.",
+AM-202410,Pothole,Standard,"The complaint mentions pothole, which directly indicates a Pothole issue with potential Standard implications.",
+AM-202414,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"The complaint mentions waste, which directly indicates a Waste issue with potential Standard implications.",
+AM-202421,Noise,Standard,"The complaint mentions music, which directly indicates a Noise issue with potential Standard implications.",
+AM-202424,Road Damage,Standard,"The complaint mentions surface, which directly indicates a Road Damage issue with potential Standard implications.",
+AM-202429,Road Damage,Standard,"The complaint mentions surface, which directly indicates a Road Damage issue with potential Standard implications.",
+AM-202431,Heritage Damage,Standard,"The complaint mentions heritage, ancient, which directly indicates a Heritage Damage issue with potential Standard implications.",
+AM-202435,Heat Hazard,Standard,"The complaint mentions heat, which directly indicates a Heat Hazard issue with potential Standard implications.",
+AM-202444,Waste,Low,"The complaint mentions bins, waste, health, which directly indicates a Waste issue with potential Low implications.",
+AM-202445,Road Damage,Standard,"The complaint mentions broken, which directly indicates a Road Damage issue with potential Standard implications.",
