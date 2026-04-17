@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Classified as Pothole because of 'pothole' and Urgent because of 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding because description mentions 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding because description mentions 'flood'.,
+PM-202410,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+PM-202411,Other,Urgent,Classified as Urgent due to safety-critical keyword 'hazard'.,NEEDS_REVIEW
+PM-202413,Waste,Standard,Classified as Waste because description mentions 'garbage'.,
+PM-202418,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Classified as Road Damage because description mentions 'road'.,
+PM-202420,Other,Urgent,Classified as Urgent due to safety-critical keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding because description mentions 'flood'.,
+PM-202428,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage'.,
+PM-202433,Road Damage,Standard,Classified as Road Damage because description mentions 'road'.,
+PM-202446,Other,Urgent,Classified as Urgent due to safety-critical keyword 'fell'.,NEEDS_REVIEW

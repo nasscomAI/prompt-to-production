@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+AM-202402,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+AM-202405,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'heat'.,
+AM-202407,Other,Urgent,Classified as Urgent due to safety-critical keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because description mentions 'pothole'.,
+AM-202414,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage'.,
+AM-202421,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Classified as Road Damage because description mentions 'road'.,
+AM-202429,Other,Standard,Classified based on general description content.,NEEDS_REVIEW
+AM-202431,Road Damage,Standard,Classified as Road Damage because description mentions 'road'.,
+AM-202435,Road Damage,Standard,Classified as Road Damage because description mentions 'road'.,
+AM-202444,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'sun'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'sun'.,
