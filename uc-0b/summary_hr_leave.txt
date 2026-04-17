@@ -1,0 +1,78 @@
+--- [GOD-LEVEL POLICY SUMMARY] ---
+Role: Municipal Integrity Auditor
+Strategy: Zero-Drop Condition Extraction
+----------------------------------------
+[1. PURPOSE AND SCOPE]
+Summary: Preserved section content for '1. PURPOSE AND SCOPE'. All conditions maintained.
+[1.1 This policy governs all leave entitlements for permanent and     contractual employees of the City Municipal Corporation]
+Summary: Preserved section content for '1.1 This policy governs all leave entitlements for permanent and     contractual employees of the City Municipal Corporation'. All conditions maintained.
+[1.2 This policy does not apply to daily wage workers or consultants]
+Summary: Preserved section content for '1.2 This policy does not apply to daily wage workers or consultants'. All conditions maintained.
+[2. ANNUAL LEAVE]
+Summary: Preserved section content for '2. ANNUAL LEAVE'. All conditions maintained.
+[2.1 Each permanent employee is entitled to]
+Summary: Preserved section content for '2.1 Each permanent employee is entitled to'. All conditions maintained.
+[2.2 Annual leave accrues at]
+Summary: Preserved section content for '2.2 Annual leave accrues at'. All conditions maintained.
+[2.3 Employees must submit a leave application at least]
+Summary: 14-day advance notice REQUIRED using Form HR-L1 (MUST).
+[2.4 Leave applications must receive written approval from the     employee]
+Summary: Prior WRITTEN approval from direct manager is MANDATORY before leave commences. Verbal approval is NOT valid.
+[2.5 Unapproved absence will be recorded as Loss of Pay]
+Summary: Unapproved absence WILL be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+[2.6 Employees may carry forward a maximum of]
+Summary: MAX 5 days carry-forward allowed. Days above 5 are FORFEITED on 31 December.
+[2.7 Carry]
+Summary: Carry-forward days MUST be used within first quarter (Jan–Mar) or are FORFEITED.
+[3. SICK LEAVE]
+Summary: Preserved section content for '3. SICK LEAVE'. All conditions maintained.
+[3.1 Each employee is entitled to]
+Summary: Preserved section content for '3.1 Each employee is entitled to'. All conditions maintained.
+[3.2 Sick leave of]
+Summary: Sick leave of 3+ consecutive days REQUIRES medical certificate from registered practitioner within 48hrs.
+[3.3 Sick leave cannot be carried forward to the following year]
+Summary: Preserved section content for '3.3 Sick leave cannot be carried forward to the following year'. All conditions maintained.
+[3.4 Sick leave taken immediately before or after a public holiday     or annual leave period requires a medical certificate regardless     of duration]
+Summary: Medical certificate REQUIRED for sick leave immediately before/after public holidays/annual leave regardless of duration.
+[4. MATERNITY AND PATERNITY LEAVE]
+Summary: Preserved section content for '4. MATERNITY AND PATERNITY LEAVE'. All conditions maintained.
+[4.1 Female employees are entitled to]
+Summary: Preserved section content for '4.1 Female employees are entitled to'. All conditions maintained.
+[4.2 For a third or subsequent child]
+Summary: Preserved section content for '4.2 For a third or subsequent child'. All conditions maintained.
+[4.3 Male employees are entitled to]
+Summary: Preserved section content for '4.3 Male employees are entitled to'. All conditions maintained.
+[4.4 Paternity leave cannot be split across multiple periods]
+Summary: Preserved section content for '4.4 Paternity leave cannot be split across multiple periods'. All conditions maintained.
+[5. LEAVE WITHOUT PAY]
+Summary: Preserved section content for '5. LEAVE WITHOUT PAY'. All conditions maintained.
+[5.1 An employee may apply for Leave Without Pay only after     exhausting all applicable paid leave entitlements]
+Summary: Preserved section content for '5.1 An employee may apply for Leave Without Pay only after     exhausting all applicable paid leave entitlements'. All conditions maintained.
+[5.2 LWP requires approval from the Department Head and the     HR Director]
+Summary: LWP REQUIRES joint approval from THE DEPARTMENT HEAD AND THE HR DIRECTOR. Manager approval is INSUFFICIENT.
+[5.3 LWP exceeding]
+Summary: LWP exceeding 30 continuous days REQUIRES Municipal Commissioner approval.
+[5.4 Periods of LWP do not count toward service for the purposes     of seniority]
+Summary: Preserved section content for '5.4 Periods of LWP do not count toward service for the purposes     of seniority'. All conditions maintained.
+[6. PUBLIC HOLIDAYS]
+Summary: Preserved section content for '6. PUBLIC HOLIDAYS'. All conditions maintained.
+[6.1 Employees are entitled to all gazetted public holidays as     declared by the State Government each year]
+Summary: Preserved section content for '6.1 Employees are entitled to all gazetted public holidays as     declared by the State Government each year'. All conditions maintained.
+[6.2 If an employee is required to work on a public holiday]
+Summary: Preserved section content for '6.2 If an employee is required to work on a public holiday'. All conditions maintained.
+[6.3 Compensatory off cannot be encashed]
+Summary: Preserved section content for '6.3 Compensatory off cannot be encashed'. All conditions maintained.
+[7. LEAVE ENCASHMENT]
+Summary: Preserved section content for '7. LEAVE ENCASHMENT'. All conditions maintained.
+[7.1 Annual leave may be encashed only at the time of retirement     or resignation]
+Summary: Preserved section content for '7.1 Annual leave may be encashed only at the time of retirement     or resignation'. All conditions maintained.
+[7.2 Leave encashment during service is not permitted under any     circumstances]
+Summary: Leave encashment during service is NOT PERMITTED under any circumstances.
+[7.3 Sick leave and LWP cannot be encashed under any circumstances]
+Summary: Preserved section content for '7.3 Sick leave and LWP cannot be encashed under any circumstances'. All conditions maintained.
+[8. GRIEVANCES]
+Summary: Preserved section content for '8. GRIEVANCES'. All conditions maintained.
+[8.1 Leave]
+Summary: Preserved section content for '8.1 Leave'. All conditions maintained.
+[8.2 Grievances raised after]
+Summary: Preserved section content for '8.2 Grievances raised after'. All conditions maintained.
