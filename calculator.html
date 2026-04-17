@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg1: #0d0d1a;
+      --bg2: #12122b;
+      --glass: rgba(255,255,255,0.04);
+      --glass-border: rgba(255,255,255,0.10);
+      --accent: #7c6af7;
+      --accent2: #c084fc;
+      --op-bg: rgba(124,106,247,0.18);
+      --op-hover: rgba(124,106,247,0.35);
+      --eq-bg: linear-gradient(135deg,#7c6af7,#c084fc);
+      --num-bg: rgba(255,255,255,0.06);
+      --num-hover: rgba(255,255,255,0.12);
+      --fn-bg: rgba(192,132,252,0.12);
+      --fn-hover: rgba(192,132,252,0.25);
+      --text: #f0eeff;
+      --text-dim: rgba(240,238,255,0.45);
+      --shadow: 0 32px 80px rgba(0,0,0,0.7);
+      --radius: 20px;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg1);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Animated background blobs */
+    .blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(90px);
+      opacity: 0.18;
+      animation: drift 12s ease-in-out infinite alternate;
+      pointer-events: none;
+    }
+    .blob1 { width: 500px; height: 500px; background: #7c6af7; top: -120px; left: -120px; animation-duration: 14s; }
+    .blob2 { width: 420px; height: 420px; background: #c084fc; bottom: -100px; right: -80px; animation-duration: 10s; animation-delay: -4s; }
+    .blob3 { width: 280px; height: 280px; background: #38bdf8; top: 40%; left: 50%; animation-duration: 17s; animation-delay: -7s; opacity: 0.10; }
+
+    @keyframes drift {
+      from { transform: translate(0,0) scale(1); }
+      to   { transform: translate(30px,20px) scale(1.06); }
+    }
+
+    /* ── Calculator shell ── */
+    .calc-wrap {
+      position: relative;
+      z-index: 10;
+    }
+
+    .calc {
+      background: rgba(18,18,43,0.75);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      width: 360px;
+      padding: 24px 20px 20px;
+      user-select: none;
+    }
+
+    /* ── Header ── */
+    .calc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .calc-title {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .mode-toggle {
+      display: flex;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+    }
+    .mode-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-dim);
+      padding: 4px 12px;
+      border-radius: 999px;
+      transition: all .25s;
+    }
+    .mode-btn.active {
+      background: linear-gradient(135deg,var(--accent),var(--accent2));
+      color: #fff;
+    }
+
+    /* ── Display ── */
+    .display {
+      background: rgba(0,0,0,0.35);
+      border: 1px solid var(--glass-border);
+      border-radius: 14px;
+      padding: 14px 18px 12px;
+      margin-bottom: 18px;
+      min-height: 92px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .display-expr {
+      font-size: 13px;
+      color: var(--text-dim);
+      min-height: 20px;
+      word-break: break-all;
+      text-align: right;
+      transition: opacity .2s;
+    }
+    .display-value {
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.1;
+      word-break: break-all;
+      text-align: right;
+      transition: transform .12s ease, color .2s;
+    }
+    .display-value.pop {
+      animation: pop .15s ease;
+    }
+    @keyframes pop {
+      0%   { transform: scale(1); }
+      40%  { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
+    .display-value.error { color: #f87171; font-size: 22px; }
+
+    /* ── History pill ── */
+    .history-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .history-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .history-scroll {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      flex: 1;
+    }
+    .history-scroll::-webkit-scrollbar { display: none; }
+    .history-pill {
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-size: 11px;
+      color: var(--text-dim);
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all .2s;
+      flex-shrink: 0;
+    }
+    .history-pill:hover {
+      background: var(--op-bg);
+      color: var(--accent2);
+      border-color: var(--accent);
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      gap: 10px;
+    }
+    .grid-basic  { grid-template-columns: repeat(4, 1fr); }
+    .grid-sci    { grid-template-columns: repeat(5, 1fr); }
+
+    /* ── Buttons ── */
+    .btn {
+      position: relative;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text);
+      padding: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .12s, box-shadow .12s, background .2s;
+      overflow: hidden;
+      outline: none;
+    }
+    .btn::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0);
+      transition: background .15s;
+      border-radius: inherit;
+    }
+    .btn:hover::after  { background: rgba(255,255,255,0.05); }
+    .btn:active { transform: scale(0.93); }
+    .btn:active::after { background: rgba(255,255,255,0.10); }
+
+    .btn-num  { background: var(--num-bg); }
+    .btn-num:hover  { background: var(--num-hover); }
+    .btn-zero { grid-column: span 2; }
+
+    .btn-op {
+      background: var(--op-bg);
+      color: var(--accent2);
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .btn-op:hover { background: var(--op-hover); }
+
+    .btn-fn {
+      background: var(--fn-bg);
+      color: #c084fc;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .btn-fn:hover { background: var(--fn-hover); }
+
+    .btn-eq {
+      background: var(--eq-bg);
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(124,106,247,0.45);
+    }
+    .btn-eq:hover { box-shadow: 0 4px 30px rgba(124,106,247,0.65); }
+
+    .btn-clear {
+      background: rgba(248,113,113,0.14);
+      color: #f87171;
+      font-weight: 700;
+    }
+    .btn-clear:hover { background: rgba(248,113,113,0.28); }
+
+    .btn-sign {
+      background: var(--num-bg);
+      color: var(--accent2);
+    }
+
+    .btn-pct {
+      background: var(--num-bg);
+      color: var(--accent2);
+    }
+
+    .btn-back {
+      background: var(--num-bg);
+      color: #f87171;
+    }
+
+    /* Scientific mode height tweaks */
+    .grid-sci .btn { height: 50px; font-size: 13px; }
+    .grid-sci .btn-eq { height: 50px; }
+
+    /* ── Ripple ── */
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      transform: scale(0);
+      animation: ripple-anim 0.5s linear;
+      pointer-events: none;
+    }
+    @keyframes ripple-anim {
+      to { transform: scale(4); opacity: 0; }
+    }
+
+    /* ── Scrollbar (history section) ── */
+    .history-section {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease;
+    }
+    .history-section.open { max-height: 200px; }
+
+    /* ── Fade in ── */
+    .calc { animation: fadeUp .4s ease both; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<div class="calc-wrap">
+  <div class="calc" id="calc">
+
+    <!-- Header -->
+    <div class="calc-header">
+      <span class="calc-title">🧮 Calc</span>
+      <div class="mode-toggle">
+        <button class="mode-btn active" id="btn-basic" onclick="setMode('basic')">Basic</button>
+        <button class="mode-btn" id="btn-sci" onclick="setMode('sci')">Sci</button>
+      </div>
+    </div>
+
+    <!-- Display -->
+    <div class="display">
+      <div class="display-expr" id="expr"></div>
+      <div class="display-value" id="disp">0</div>
+    </div>
+
+    <!-- History pills -->
+    <div class="history-bar">
+      <span class="history-label">History</span>
+      <div class="history-scroll" id="hist-scroll">
+        <span class="history-pill" style="color:var(--text-dim);cursor:default">No history yet</span>
+      </div>
+    </div>
+
+    <!-- Basic grid -->
+    <div class="grid grid-basic" id="grid-basic">
+      <button class="btn btn-clear"  onclick="action('clear')" id="btn-C">C</button>
+      <button class="btn btn-sign"   onclick="action('sign')"  id="btn-sign">+/−</button>
+      <button class="btn btn-pct"    onclick="action('pct')"   id="btn-pct">%</button>
+      <button class="btn btn-op"     onclick="action('op','÷')" id="btn-div">÷</button>
+
+      <button class="btn btn-num"    onclick="action('num','7')" id="btn-7">7</button>
+      <button class="btn btn-num"    onclick="action('num','8')" id="btn-8">8</button>
+      <button class="btn btn-num"    onclick="action('num','9')" id="btn-9">9</button>
+      <button class="btn btn-op"     onclick="action('op','×')" id="btn-mul">×</button>
+
+      <button class="btn btn-num"    onclick="action('num','4')" id="btn-4">4</button>
+      <button class="btn btn-num"    onclick="action('num','5')" id="btn-5">5</button>
+      <button class="btn btn-num"    onclick="action('num','6')" id="btn-6">6</button>
+      <button class="btn btn-op"     onclick="action('op','−')" id="btn-sub">−</button>
+
+      <button class="btn btn-num"    onclick="action('num','1')" id="btn-1">1</button>
+      <button class="btn btn-num"    onclick="action('num','2')" id="btn-2">2</button>
+      <button class="btn btn-num"    onclick="action('num','3')" id="btn-3">3</button>
+      <button class="btn btn-op"     onclick="action('op','+')" id="btn-add">+</button>
+
+      <button class="btn btn-num btn-zero" onclick="action('num','0')" id="btn-0">0</button>
+      <button class="btn btn-num"    onclick="action('dot')" id="btn-dot">.</button>
+      <button class="btn btn-eq"     onclick="action('eq')" id="btn-eq">=</button>
+    </div>
+
+    <!-- Scientific grid (hidden initially) -->
+    <div class="grid grid-sci" id="grid-sci" style="display:none; margin-top:10px;">
+      <button class="btn btn-fn" onclick="sci('sin')"   id="btn-sin">sin</button>
+      <button class="btn btn-fn" onclick="sci('cos')"   id="btn-cos">cos</button>
+      <button class="btn btn-fn" onclick="sci('tan')"   id="btn-tan">tan</button>
+      <button class="btn btn-fn" onclick="sci('log')"   id="btn-log">log</button>
+      <button class="btn btn-fn" onclick="sci('ln')"    id="btn-ln">ln</button>
+
+      <button class="btn btn-fn" onclick="sci('sqrt')"  id="btn-sqrt">√x</button>
+      <button class="btn btn-fn" onclick="sci('cbrt')"  id="btn-cbrt">∛x</button>
+      <button class="btn btn-fn" onclick="sci('sq')"    id="btn-sq">x²</button>
+      <button class="btn btn-fn" onclick="sci('cube')"  id="btn-cube">x³</button>
+      <button class="btn btn-fn" onclick="sci('inv')"   id="btn-inv">1/x</button>
+
+      <button class="btn btn-fn" onclick="sci('fact')"  id="btn-fact">n!</button>
+      <button class="btn btn-fn" onclick="sci('abs')"   id="btn-abs">|x|</button>
+      <button class="btn btn-fn" onclick="action('op','^')" id="btn-pow">xʸ</button>
+      <button class="btn btn-fn" onclick="sci('pi')"    id="btn-pi">π</button>
+      <button class="btn btn-fn" onclick="sci('e')"     id="btn-e">e</button>
+
+      <button class="btn btn-back" onclick="action('back')" id="btn-bk" style="grid-column:span 2">⌫ Back</button>
+      <button class="btn btn-fn"  onclick="action('paren','(')" id="btn-lp">(</button>
+      <button class="btn btn-fn"  onclick="action('paren',')')" id="btn-rp">)</button>
+      <button class="btn btn-back btn-clear" onclick="action('clear')" id="btn-C2">C</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // ── State ──────────────────────────────────────────────────────────────────
+  let display  = '0';
+  let expr     = '';
+  let prevVal  = null;
+  let operator = null;
+  let newInput = true;
+  let history  = [];
+
+  const dispEl = document.getElementById('disp');
+  const exprEl = document.getElementById('expr');
+  const histEl = document.getElementById('hist-scroll');
+
+  // ── Utilities ───────────────────────────────────────────────────────────────
+  function fmt(n) {
+    if (!isFinite(n)) return 'Error';
+    // Avoid floating point noise
+    const s = parseFloat(n.toPrecision(12)).toString();
+    return s.length > 15 ? parseFloat(n.toFixed(10)).toString() : s;
+  }
+
+  function setDisplay(val) {
+    dispEl.classList.remove('pop', 'error');
+    void dispEl.offsetWidth; // reflow
+    display = String(val);
+    dispEl.textContent = display;
+    if (display === 'Error' || display === 'Infinity') {
+      dispEl.classList.add('error');
+    } else {
+      dispEl.classList.add('pop');
+    }
+  }
+
+  function setExpr(val) {
+    exprEl.textContent = val;
+  }
+
+  function addHistory(entry) {
+    history.unshift(entry);
+    if (history.length > 10) history.pop();
+    renderHistory();
+  }
+
+  function renderHistory() {
+    if (history.length === 0) {
+      histEl.innerHTML = '<span class="history-pill" style="color:var(--text-dim);cursor:default">No history yet</span>';
+      return;
+    }
+    histEl.innerHTML = history.map((h, i) =>
+      `<span class="history-pill" onclick="recallHistory(${i})">${h}</span>`
+    ).join('');
+  }
+
+  function recallHistory(i) {
+    const parts = history[i].split(' = ');
+    if (parts.length === 2) {
+      setDisplay(parts[1]);
+      setExpr(parts[0]);
+      newInput = true;
+    }
+  }
+
+  // ── Ripple ──────────────────────────────────────────────────────────────────
+  document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      const r = document.createElement('span');
+      r.className = 'ripple';
+      const rect = btn.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      r.style.width = r.style.height = size + 'px';
+      r.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      r.style.top  = (e.clientY - rect.top  - size / 2) + 'px';
+      btn.appendChild(r);
+      setTimeout(() => r.remove(), 600);
+    });
+  });
+
+  // ── Keyboard support ────────────────────────────────────────────────────────
+  document.addEventListener('keydown', e => {
+    if ('0123456789'.includes(e.key)) { action('num', e.key); return; }
+    if (e.key === '.') { action('dot'); return; }
+    if (e.key === '+') { action('op', '+'); return; }
+    if (e.key === '-') { action('op', '−'); return; }
+    if (e.key === '*') { action('op', '×'); return; }
+    if (e.key === '/') { e.preventDefault(); action('op', '÷'); return; }
+    if (e.key === '^') { action('op', '^'); return; }
+    if (e.key === 'Enter' || e.key === '=') { action('eq'); return; }
+    if (e.key === 'Backspace') { action('back'); return; }
+    if (e.key === 'Escape') { action('clear'); return; }
+    if (e.key === '%') { action('pct'); return; }
+  });
+
+  // ── Mode toggle ─────────────────────────────────────────────────────────────
+  function setMode(m) {
+    const sci   = document.getElementById('grid-sci');
+    const basic = document.getElementById('grid-basic');
+    document.getElementById('btn-basic').classList.toggle('active', m === 'basic');
+    document.getElementById('btn-sci').classList.toggle('active', m === 'sci');
+    if (m === 'sci') {
+      sci.style.display = 'grid';
+    } else {
+      sci.style.display = 'none';
+    }
+  }
+
+  // ── Core actions ─────────────────────────────────────────────────────────────
+  function action(type, val) {
+    switch(type) {
+      case 'num': handleNum(val); break;
+      case 'op':  handleOp(val);  break;
+      case 'eq':  handleEq();     break;
+      case 'dot': handleDot();    break;
+      case 'clear': handleClear(); break;
+      case 'back':  handleBack();  break;
+      case 'sign':  handleSign();  break;
+      case 'pct':   handlePct();   break;
+      case 'paren': handleParen(val); break;
+    }
+  }
+
+  function handleNum(n) {
+    if (display === 'Error') handleClear();
+    if (newInput || display === '0') {
+      setDisplay(n);
+      newInput = false;
+    } else {
+      if (display.replace('-','').length >= 14) return;
+      setDisplay(display + n);
+    }
+  }
+
+  function handleDot() {
+    if (newInput) { setDisplay('0.'); newInput = false; return; }
+    if (!display.includes('.')) setDisplay(display + '.');
+  }
+
+  function handleOp(op) {
+    if (display === 'Error') return;
+    if (operator && !newInput) handleEq(true);
+    prevVal  = parseFloat(display);
+    operator = op;
+    setExpr(`${fmt(prevVal)} ${op}`);
+    newInput = true;
+  }
+
+  function handleEq(silent = false) {
+    if (display === 'Error') return;
+    if (operator === null || prevVal === null) return;
+    const cur = parseFloat(display);
+    let res;
+    const opMap = {
+      '+':  (a,b) => a + b,
+      '−':  (a,b) => a - b,
+      '×':  (a,b) => a * b,
+      '÷':  (a,b) => b === 0 ? 'Error' : a / b,
+      '^':  (a,b) => Math.pow(a, b),
+    };
+    if (opMap[operator]) {
+      res = opMap[operator](prevVal, cur);
+    } else {
+      return;
+    }
+    const entry = `${fmt(prevVal)} ${operator} ${fmt(cur)} = ${typeof res === 'string' ? res : fmt(res)}`;
+    if (!silent) {
+      setExpr(`${fmt(prevVal)} ${operator} ${fmt(cur)}`);
+      addHistory(entry);
+    }
+    setDisplay(typeof res === 'string' ? res : fmt(res));
+    if (!silent) { operator = null; prevVal = null; }
+    newInput = true;
+  }
+
+  function handleClear() {
+    display = '0'; operator = null; prevVal = null; newInput = true;
+    setDisplay('0');
+    setExpr('');
+  }
+
+  function handleBack() {
+    if (newInput || display === 'Error') { setDisplay('0'); newInput = true; return; }
+    const d = display.length > 1 ? display.slice(0,-1) : '0';
+    setDisplay(d === '-' ? '0' : d);
+  }
+
+  function handleSign() {
+    if (display === '0' || display === 'Error') return;
+    setDisplay(display.startsWith('-') ? display.slice(1) : '-' + display);
+  }
+
+  function handlePct() {
+    if (display === 'Error') return;
+    const n = parseFloat(display);
+    setDisplay(fmt(n / 100));
+    newInput = true;
+  }
+
+  // ── Scientific ───────────────────────────────────────────────────────────────
+  function handleParen(p) {
+    // Simple paren insertion (visual only, advanced expr not built here)
+    if (newInput) { setExpr(exprEl.textContent + ' ' + p); }
+  }
+
+  function sci(fn) {
+    if (display === 'Error') return;
+    const n = parseFloat(display);
+    let res, label;
+    switch(fn) {
+      case 'sin':  res = Math.sin(n * Math.PI / 180);  label = `sin(${n}°)`; break;
+      case 'cos':  res = Math.cos(n * Math.PI / 180);  label = `cos(${n}°)`; break;
+      case 'tan':  res = Math.tan(n * Math.PI / 180);  label = `tan(${n}°)`; break;
+      case 'log':  res = n<=0 ? 'Error' : Math.log10(n); label = `log(${n})`; break;
+      case 'ln':   res = n<=0 ? 'Error' : Math.log(n);   label = `ln(${n})`;  break;
+      case 'sqrt': res = n<0  ? 'Error' : Math.sqrt(n);  label = `√(${n})`;   break;
+      case 'cbrt': res = Math.cbrt(n);  label = `∛(${n})`; break;
+      case 'sq':   res = n * n;         label = `(${n})²`;  break;
+      case 'cube': res = n * n * n;     label = `(${n})³`;  break;
+      case 'inv':  res = n===0 ? 'Error' : 1/n; label = `1/(${n})`; break;
+      case 'fact': {
+        if (n < 0 || !Number.isInteger(n)) { res = 'Error'; label = `${n}!`; break; }
+        let f = 1; for(let i=2;i<=n;i++) f*=i;
+        res = f; label = `${n}!`;
+        break;
+      }
+      case 'abs':  res = Math.abs(n); label = `|${n}|`; break;
+      case 'pi':   setDisplay(fmt(Math.PI)); newInput=true; return;
+      case 'e':    setDisplay(fmt(Math.E));  newInput=true; return;
+    }
+    const result = typeof res === 'string' ? res : fmt(res);
+    const entry  = `${label} = ${result}`;
+    addHistory(entry);
+    setExpr(label);
+    setDisplay(result);
+    newInput = true;
+  }
+</script>
+</body>
+</html>
