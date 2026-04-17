@@ -1,7 +1,18 @@
 import argparse
 import csv
+import os
+
+def secure_path(path):
+    """Ensure path is within the allowed data directory."""
+    abs_data = os.path.abspath("../data")
+    abs_target = os.path.abspath(path)
+    # Allow reading from data/ or writing to current dir
+    if not (abs_target.startswith(abs_data) or abs_target.startswith(os.getcwd())):
+        raise PermissionError(f"Security violation: Access to {path} is prohibited.")
+    return path
 
 def load_dataset(file_path):
+    file_path = secure_path(file_path)
     data = []
     with open(file_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)

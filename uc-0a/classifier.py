@@ -6,9 +6,27 @@ import argparse
 import csv
 
 import re
+import os
+
+def secure_path(path):
+    """Ensure path is within the allowed data directory."""
+    abs_data = os.path.abspath("../data")
+    abs_target = os.path.abspath(path)
+    # Allow reading from data/ or writing to current dir
+    if not (abs_target.startswith(abs_data) or abs_target.startswith(os.getcwd())):
+        raise PermissionError(f"Security violation: Access to {path} is prohibited.")
+    return path
+
+def sanitize_text(text):
+    """Remove HTML tags and suspicious characters."""
+    # Strip HTML tags
+    clean = re.sub(r'<[^>]*>', '', text)
+    # Remove control characters
+    clean = "".join(char for char in clean if ord(char) >= 32)
+    return clean
 
 def classify_complaint(row: dict) -> dict:
-    description = row.get("description", "").lower()
+    description = sanitize_text(row.get("description", "")).lower()
     
     # Define taxonomy with priority ordering
     taxonomy = [
@@ -63,6 +81,8 @@ def classify_complaint(row: dict) -> dict:
 
 
 def batch_classify(input_path: str, output_path: str):
+    input_path = secure_path(input_path)
+    output_path = secure_path(output_path)
     results = []
     with open(input_path, mode='r', encoding='utf-8') as f:
         reader = csv.DictReader(f)

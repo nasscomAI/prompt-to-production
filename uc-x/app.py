@@ -1,12 +1,20 @@
 import os
 import re
 
+def secure_path(path):
+    """Ensure path is within the allowed data directory."""
+    abs_data = os.path.abspath("../data")
+    abs_target = os.path.abspath(path)
+    if not abs_target.startswith(abs_data):
+        raise PermissionError(f"Security violation: Access to {path} is prohibited.")
+    return path
+
 def retrieve_documents(folder_path):
     docs = {}
     files = ["policy_hr_leave.txt", "policy_it_acceptable_use.txt", "policy_finance_reimbursement.txt"]
     
     for filename in files:
-        path = os.path.join(folder_path, filename)
+        path = secure_path(os.path.join(folder_path, filename))
         if os.path.exists(path):
             with open(path, 'r', encoding='utf-8') as f:
                 content = f.read()
@@ -18,10 +26,14 @@ def retrieve_documents(folder_path):
 
 def answer_question(question, docs):
     question = question.lower()
+    # Handle Greetings and Small Talk
+    greetings = ["hey", "hello", "hi", "good morning", "good afternoon", "greetings"]
+    if any(word == question.strip() or question.startswith(word + " ") for word in greetings):
+        return "Hello! I am your CMC Policy Assistant. I can help you with questions about HR, IT, or Finance policies. What can I help you with today?"
+
     refusal = (
-        "This question is not covered in the available policy documents\n"
-        "(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).\n"
-        "Please contact [relevant team] for guidance."
+        "This question is not covered in the available policy documents. "
+        "Please contact the relevant department (HR, IT, or Finance) for further guidance."
     )
     
     # Hardcoded logic for the 7 key test questions to simulate high-precision RAG
