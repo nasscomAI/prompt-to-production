@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Categorized as Flooding because the description mentions 'flood'. Escalated to Urgent due to safety keyword: 'ambulance'.,
+GH-202402,Flooding,Standard,Categorized as Flooding because the description mentions 'flood'.,
+GH-202406,Flooding,Standard,Categorized as Flooding because the description mentions 'water'.,
+GH-202407,Flooding,Standard,Categorized as Flooding because the description mentions 'rain'.,
+GH-202410,Pothole,Standard,Categorized as Pothole because the description mentions 'pothole'.,
+GH-202411,Pothole,Urgent,Categorized as Pothole because the description mentions 'pothole'. Escalated to Urgent due to safety keyword: 'hospital'.,
+GH-202412,Pothole,Urgent,Categorized as Pothole because the description mentions 'pothole'. Escalated to Urgent due to safety keyword: 'school'.,
+GH-202417,Waste,Standard,Categorized as Waste because the description mentions 'garbage'.,
+GH-202420,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Categorized as Other as no specific municipal category keywords were identified. Escalated to Urgent due to safety keyword: 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Categorized as Flooding because the description mentions 'flood'.,
+GH-202428,Waste,Standard,Categorized as Waste because the description mentions 'waste'.,
+GH-202432,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Categorized as Flooding because the description mentions 'flood'.,
+GH-202438,Flooding,Standard,Categorized as Flooding because the description mentions 'water'.,
