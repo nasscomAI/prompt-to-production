@@ -1,105 +1,105 @@
 import csv
 import argparse
 import os
+import re
 
-# RAG CONTENT: Ground Truth Definitions from uc-0a/README.md
+# Lead District AI Magistrate Persona & Taxonomy
+# Grounded in uc-0a/README.md and agents.md
 TAXONOMY = {
-    "Pothole": ["pothole", "crater", "sinkhole", "road surface"],
-    "Flooding": ["flood", "waterlogging", "inundation", "overflow", "knee-deep", "rain"],
-    "Streetlight": ["streetlight", "unlit", "dark", "street light", "lamp", "flickering"],
-    "Waste": ["waste", "trash", "garbage", "bins", "dumping", "refuse", "dead animal", "overflowing"],
-    "Noise": ["noise", "loud", "music", "audible", "sound", "midnight"],
-    "Road Damage": ["road damage", "tarmac", "paving", "broken road", "surface", "divider", "subsidence", "cracked"],
-    "Heritage Damage": ["heritage", "ancient", "statue", "monument", "temple", "gate", "old city", "zoo", "step well", "riverfront"],
-    "Heat Hazard": ["heat", "hot", "melting", "44°C", "45°C", "52°C", "temperature", "sun", "burned", "bubbling", "heatwave"],
-    "Drain Blockage": ["drain", "blockage", "sewage", "gutter", "manhole"],
+    "Pothole": [r"pothole", r"crater", r"sinkhole", r"road surface"],
+    "Flooding": [r"flood", r"waterlogging", r"inundation", r"overflow", r"knee-deep", r"rain"],
+    "Streetlight": [r"streetlight", r"unlit", r"dark", r"street light", r"lamp", r"flickering"],
+    "Waste": [r"waste", r"trash", r"garbage", r"bins", r"dumping", r"refuse", r"dead animal", r"overflowing"],
+    "Noise": [r"noise", r"loud", r"music", r"audible", r"sound", r"midnight"],
+    "Road Damage": [r"road damage", r"tarmac", r"paving", r"broken road", r"surface", r"divider", r"subsidence", r"cracked"],
+    "Heritage Damage": [r"heritage", r"ancient", r"statue", r"monument", r"temple", r"gate", r"old city", r"zoo", r"step well", r"riverfront"],
+    "Heat Hazard": [r"heat", r"hot", r"melting", r"44°c", r"45°c", r"52°c", r"temperature", r"temperatures", r"sun", r"burned", r"bubbling", r"heatwave"],
+    "Drain Blockage": [r"drain", r"blockage", r"sewage", r"gutter", r"manhole"],
     "Other": []
 }
 
-URGENT_KEYWORDS = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse", "risk", "sparking"]
+URGENT_KEYWORDS = [r"injury", r"child", r"school", r"hospital", r"ambulance", r"fire", r"hazard", r"fell", r"collapse", r"risk", r"sparking"]
 
-def retrieve_vibe_context():
-    """Simulates a RAG retrieval of system rules from agents.md and README.md."""
-    return {
-        "categories": TAXONOMY,
-        "urgent_triggers": URGENT_KEYWORDS
-    }
-
-def classify_complaint(description, context):
+def classify_complaint(description):
     """
-    God-level classification logic with RAG-style grounding and exact reasoning citation.
+    Lead District AI Magistrate Classification Engine.
+    Employs regex-based word boundary detection to prevent false positives (e.g., Sun vs Sunday).
     """
     description_lower = description.lower()
     
-    # 1. Determine Category (Robust Semantic Mapping)
+    # 1. Category Determination with Priority Mapping
+    # Rule 2: Heat and Heritage mapping priority
+    category_scores = {}
+    matched_keywords = {}
+
+    for cat, keywords in TAXONOMY.items():
+        if cat == "Other": continue
+        matches = []
+        for k in keywords:
+            # Use \b for word boundaries to avoid 'sun' in 'sunday'
+            if re.search(rf"\b{k}\b", description_lower):
+                matches.append(k)
+        if matches:
+            category_scores[cat] = len(matches)
+            matched_keywords[cat] = matches
+
+    # Semantic Priority: Heat > Heritage > Others (based on count)
     assigned_category = "Other"
     found_keywords = []
-    
-    # Priority check for specific 'God-level' categories
-    # Heritage Damage
-    heritage_hits = [k for k in context["categories"]["Heritage Damage"] if k in description_lower]
-    # Heat Hazard
-    heat_hits = [k for k in context["categories"]["Heat Hazard"] if k in description_lower]
-    
-    if heat_hits:
-        assigned_category = "Heat Hazard"
-        found_keywords = heat_hits
-    elif heritage_hits:
-        assigned_category = "Heritage Damage"
-        found_keywords = heritage_hits
-    else:
-        # Standard keyword scoring
-        scores = {}
-        for cat, keywords in context["categories"].items():
-            if cat in ["Heat Hazard", "Heritage Damage", "Other"]: continue
-            hits = [k for k in keywords if k in description_lower]
-            if hits:
-                scores[cat] = (len(hits), hits)
-        
-        if scores:
-            best_cat = max(scores, key=lambda k: scores[k][0])
-            assigned_category = best_cat
-            found_keywords = scores[best_cat][1]
 
-    # 2. Determine Priority (Severity Triggers)
+    if "Heat Hazard" in category_scores:
+        assigned_category = "Heat Hazard"
+        found_keywords = matched_keywords["Heat Hazard"]
+    elif "Heritage Damage" in category_scores:
+        assigned_category = "Heritage Damage"
+        found_keywords = matched_keywords["Heritage Damage"]
+    elif category_scores:
+        # Pick the one with highest keyword density
+        assigned_category = max(category_scores, key=category_scores.get)
+        found_keywords = matched_keywords[assigned_category]
+
+    # 2. Priority Determination (Rule 3)
     priority = "Standard"
     trigger_word = ""
-    for k in context["urgent_triggers"]:
-        if k in description_lower:
+    for k in URGENT_KEYWORDS:
+        if re.search(rf"\b{k}\b", description_lower):
             priority = "Urgent"
             trigger_word = k
             break
     
-    # 3. Generate Reason (Grounded in Context - Must cite specific words)
+    # 3. Reasoning Generation (Persona: Lead District AI Magistrate)
+    # Rule 4: Must cite specific words
     if assigned_category == "Other":
-        reason = "No primary keywords detected in description."
+        reason = "Vague description; no recognized municipal category keywords found in text."
     else:
-        reason_parts = [f"Classified as {assigned_category} based on keywords: '{found_keywords[0]}'"]
+        reason = f"Classified as {assigned_category} based on detection of '{found_keywords[0]}'."
         if priority == "Urgent":
-            reason_parts.append(f"urgent priority triggered by detection of '{trigger_word}'")
-        reason = ". ".join(reason_parts) + "."
+            reason += f" Urgent priority state-actioned due to high-risk trigger '{trigger_word}'."
 
-    # 4. Ambiguity Detection (Rule 34)
+    # 4. Ambiguity Flagging (Rule 5)
     flag = ""
-    if assigned_category == "Other":
+    if assigned_category == "Other" or len(category_scores) > 1:
         flag = "NEEDS_REVIEW"
 
     return assigned_category, priority, reason, flag
 
 def batch_classify(input_path, output_path):
     if not os.path.exists(input_path):
-        print(f"Error: Input file {input_path} not found.")
+        print(f"Error: Path {input_path} does not exist.")
         return
 
-    context = retrieve_vibe_context()
     results = []
-
     with open(input_path, mode='r', encoding='utf-8') as infile:
         reader = csv.DictReader(infile)
+        # Ensure description column exists
+        if 'description' not in reader.fieldnames:
+            print(f"Error: 'description' column missing in {input_path}")
+            return
+            
         fieldnames = reader.fieldnames + ['category', 'priority', 'reason', 'flag']
         
         for row in reader:
-            cat, prio, reason, flag = classify_complaint(row['description'], context)
+            cat, prio, reason, flag = classify_complaint(row['description'])
             row['category'] = cat
             row['priority'] = prio
             row['reason'] = reason
@@ -111,12 +111,11 @@ def batch_classify(input_path, output_path):
         writer.writeheader()
         writer.writerows(results)
     
-    print(f"Success: Processed {len(results)} rows. Output saved to {output_path}")
+    print(f"Magistrate Audit Complete: {len(results)} records processed -> {output_path}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Citizen Complaint Classifier - God Level RAG Edition")
-    parser.add_argument("--input", required=True, help="Path to input CSV")
-    parser.add_argument("--output", required=True, help="Path to output CSV")
-    
+    parser = argparse.ArgumentParser(description="Urban Governance Classifier")
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
     args = parser.parse_args()
     batch_classify(args.input, args.output)
