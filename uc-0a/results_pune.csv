@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category set to Pothole based on description terms: pothole; priority set to Standard because no urgency keyword is present.,
+PM-202402,Pothole,Urgent,Category set to Pothole based on description terms: pothole; priority set to Urgent because severity keyword(s) appear: school.,
+PM-202406,Flooding,Standard,"Category set to Flooding based on description terms: flood, flooded; priority set to Standard because no urgency keyword is present.",
+PM-202408,Drain Blockage,Standard,Category set to Drain Blockage based on description terms: drain blocked; priority set to Standard because no urgency keyword is present.,
+PM-202410,Streetlight,Standard,"Category set to Streetlight based on description terms: streetlight, lights out, dark at night; priority set to Standard because no urgency keyword is present.",
+PM-202411,Streetlight,Urgent,"Category set to Streetlight based on description terms: streetlight, flickering, sparking; priority set to Urgent because severity keyword(s) appear: hazard.",
+PM-202413,Waste,Standard,Category set to Waste based on description terms: garbage; priority set to Standard because no urgency keyword is present.,
+PM-202418,Noise,Standard,"Category set to Noise based on description terms: music, midnight; priority set to Standard because no urgency keyword is present.",
+PM-202419,Road Damage,Standard,"Category set to Road Damage based on description terms: cracked, sinking, road surface; priority set to Standard because no urgency keyword is present.",
+PM-202420,Drain Blockage,Urgent,Category set to Drain Blockage based on description terms: manhole; priority set to Urgent because severity keyword(s) appear: injury.,
+PM-202427,Flooding,Standard,Category set to Flooding based on description terms: flood; priority set to Standard because no urgency keyword is present.,
+PM-202428,Waste,Standard,Category set to Waste based on description terms: dead animal; priority set to Standard because no urgency keyword is present.,
+PM-202430,Other,Standard,"Category set to Other based on description terms: ambiguous between Streetlight, Heritage Damage; priority set to Standard because no urgency keyword is present.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category set to Waste based on description terms: waste, dumped; priority set to Standard because no urgency keyword is present.",
+PM-202446,Road Damage,Urgent,"Category set to Road Damage based on description terms: footpath tiles, upturned; priority set to Urgent because severity keyword(s) appear: fell.",

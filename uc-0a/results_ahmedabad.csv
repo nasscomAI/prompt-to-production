@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Category set to Other based on description terms: insufficient explicit category evidence; priority set to Standard because no urgency keyword is present.,NEEDS_REVIEW
+AM-202402,Other,Standard,Category set to Other based on description terms: insufficient explicit category evidence; priority set to Standard because no urgency keyword is present.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category set to Other based on description terms: insufficient explicit category evidence; priority set to Standard because no urgency keyword is present.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category set to Heat Hazard based on description terms: heat, heatwave; priority set to Standard because no urgency keyword is present.",
+AM-202407,Road Damage,Urgent,Category set to Road Damage based on description terms: upturned; priority set to Urgent because severity keyword(s) appear: child.,
+AM-202410,Pothole,Standard,Category set to Pothole based on description terms: pothole; priority set to Standard because no urgency keyword is present.,
+AM-202414,Other,Standard,Category set to Other based on description terms: insufficient explicit category evidence; priority set to Standard because no urgency keyword is present.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Category set to Other based on description terms: ambiguous between Waste, Heritage Damage; priority set to Standard because no urgency keyword is present.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Category set to Noise based on description terms: music; priority set to Standard because no urgency keyword is present.,
+AM-202424,Road Damage,Standard,Category set to Road Damage based on description terms: road surface; priority set to Standard because no urgency keyword is present.,
+AM-202429,Other,Standard,Category set to Other based on description terms: insufficient explicit category evidence; priority set to Standard because no urgency keyword is present.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Category set to Heritage Damage based on description terms: heritage, old city; priority set to Standard because no urgency keyword is present.",
+AM-202435,Heat Hazard,Standard,Category set to Heat Hazard based on description terms: heat; priority set to Standard because no urgency keyword is present.,
+AM-202444,Waste,Standard,Category set to Waste based on description terms: waste; priority set to Standard because no urgency keyword is present.,
+AM-202445,Other,Standard,Category set to Other based on description terms: insufficient explicit category evidence; priority set to Standard because no urgency keyword is present.,NEEDS_REVIEW
