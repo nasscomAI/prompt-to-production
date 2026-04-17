@@ -41,71 +41,78 @@ def load_dataset(input_path):
     print(f"Dataset loaded. Total rows: {len(data)}. Null actual_spend values found: {null_count}.")
     return data
 
-def compute_growth(data, target_ward, target_category, growth_type):
+def compute_growth(data, target_ward=None, target_category=None, growth_type="MoM"):
     """
     Skill: compute_growth
-    Calculates MoM/YoY growth and handles null flagging.
+    Calculates growth metrics. If ward/category are not provided, processes the entire dataset
+    group-by-group to prevent unauthorized aggregation.
     """
-    # Filter for specific ward and category (Enforcement 1)
-    filtered = [r for r in data if r['ward'] == target_ward and r['category'] == target_category]
+    # Identify unique combinations to process
+    if target_ward and target_category:
+        combinations = [(target_ward, target_category)]
+    else:
+        # Get all unique ward-category pairs
+        combinations = sorted(list(set((r['ward'], r['category']) for r in data)))
     
-    if not filtered:
-        return []
-        
-    # Chronological sort for MoM
-    filtered.sort(key=lambda x: x['period'])
+    all_results = []
     
-    results = []
-    for i, current in enumerate(filtered):
-        res = {
-            "period": current['period'],
-            "ward": current['ward'],
-            "category": current['category'],
-            "actual_spend": current['actual_spend'] if current['actual_spend'] is not None else "NULL",
-            "growth": "n/a",
-            "formula": "n/a",
-            "flag": ""
-        }
+    for ward, category in combinations:
+        # Filter for the specific group
+        filtered = [r for r in data if r['ward'] == ward and r['category'] == category]
         
-        # Enforcement 2: Flag null rows before computing
-        if current['actual_spend'] is None:
-            res['flag'] = f"NULL: {current['notes']}"
-            results.append(res)
-            continue
+        # Chronological sort for MoM
+        filtered.sort(key=lambda x: x['period'])
+        
+        for i, current in enumerate(filtered):
+            res = {
+                "period": current['period'],
+                "ward": current['ward'],
+                "category": current['category'],
+                "actual_spend": current['actual_spend'] if current['actual_spend'] is not None else "NULL",
+                "growth": "n/a",
+                "formula": "n/a",
+                "flag": ""
+            }
             
-        if i > 0:
-            previous = filtered[i-1]
-            if previous['actual_spend'] is not None:
-                curr_val = current['actual_spend']
-                prev_val = previous['actual_spend']
+            # Enforcement 2: Flag null rows before computing
+            if current['actual_spend'] is None:
+                res['flag'] = f"NULL: {current['notes']}"
+                all_results.append(res)
+                continue
                 
-                # Calculation logic
-                growth = ((curr_val - prev_val) / prev_val) * 100
-                res['growth'] = f"{growth:+.1f}%"
-                
-                # Enforcement 3: Show formula
-                res['formula'] = f"({curr_val} - {prev_val}) / {prev_val}"
+            if i > 0:
+                previous = filtered[i-1]
+                if previous['actual_spend'] is not None:
+                    curr_val = current['actual_spend']
+                    prev_val = previous['actual_spend']
+                    
+                    # Calculation logic
+                    growth = ((curr_val - prev_val) / prev_val) * 100
+                    res['growth'] = f"{growth:+.1f}%"
+                    
+                    # Enforcement 3: Show formula
+                    res['formula'] = f"({curr_val} - {prev_val}) / {prev_val}"
+                else:
+                    res['flag'] = "Cannot compute growth: Previous period data is NULL"
             else:
-                res['flag'] = "Cannot compute growth: Previous period data is NULL"
-        else:
-            res['formula'] = "Baseline period (first in sequence)"
-            
-        results.append(res)
+                res['formula'] = "Baseline period (first in sequence)"
+                
+            all_results.append(res)
         
-    return results
+    return all_results
 
 def main():
     parser = argparse.ArgumentParser(description="UC-0C Municipal Budget Data Analyst")
     parser.add_argument("--input", required=True, help="Path to ward_budget.csv")
-    parser.add_argument("--ward", required=True, help="Target Ward name")
-    parser.add_argument("--category", required=True, help="Target budget category")
+    parser.add_argument("--ward", default=None, help="Target Ward name (optional)")
+    parser.add_argument("--category", default=None, help="Target budget category (optional)")
     parser.add_argument("--growth-type", required=True, help="Type of growth calculation (MoM/YoY)")
-    parser.add_argument("--output", required=True, help="Path to growth_output.csv")
+    parser.add_argument("--output", required=True, help="Path to output CSV")
     args = parser.parse_args()
     
-    # Enforcement 1: Refuse general aggregations
-    if args.ward.lower() in ["all", "any"] or args.category.lower() in ["all", "any"]:
-        print("ERROR: Aggregation across multiple wards or categories is not permitted. Access refused.")
+    # Enforcement 1: Refuse general aggregations (summing up multiple wards)
+    if args.ward and args.ward.lower() in ["all", "any"] and not args.category:
+        print("ERROR: Unauthorized aggregation detected. The system refuses to sum data across multiple wards into a single total.")
         return
 
     try:
@@ -113,10 +120,11 @@ def main():
         dataset = load_dataset(args.input)
         
         # Step 2: Compute
+        # If ward/category are None, compute_growth will process all groups individually
         results = compute_growth(dataset, args.ward, args.category, args.growth_type)
         
         if not results:
-            print(f"No data found for Ward: '{args.ward}' and Category: '{args.category}'")
+            print("No matching data found for the specified filters.")
             return
             
         # Step 3: Write Output
@@ -126,10 +134,11 @@ def main():
             writer.writeheader()
             writer.writerows(results)
             
-        print(f"Growth analysis complete. Output written to {args.output}")
+        print(f"Full dataset analysis complete. Output written to {args.output}")
 
     except Exception as e:
         print(f"PIPELINE_ERROR: {str(e)}")
+
 
 if __name__ == "__main__":
     main()
