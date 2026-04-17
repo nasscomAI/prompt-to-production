@@ -6,10 +6,11 @@ import argparse
 import os
 import sys
 import yaml
+import re
 from pathlib import Path
 
 try:
-    import google.generativeai as genai
+    from google import genai
 except ImportError:
     print("Error: Missing required packages. Please run: pip install google-generativeai pyyaml", file=sys.stderr)
     sys.exit(1)
@@ -36,33 +37,78 @@ def load_agent_prompt(agents_file: str) -> str:
             
     return "\n".join(prompt)
 
-def retrieve_policy(filepath: str) -> str:
-    """Skill 1: Loads the raw .txt policy file."""
+def retrieve_policy(filepath: str) -> list:
+    """Skill 1: Loads the raw .txt policy file and parses its contents into structured, numbered sections."""
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"Policy file missing: {filepath}")
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read().strip()
     if not content:
         raise ValueError(f"Policy file {filepath} is empty.")
-    return content
-
-def summarize_policy(text: str, system_instruction: str) -> str:
-    """Skill 2: Produces a compliant summary using AI."""
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        raise ValueError("GEMINI_API_KEY environment variable is not set. Please set it to proceed.")
+    
+    # Skill requirement: Parse into structured numbered sections
+    # Using regex to identify clause patterns like 1.1, 2.1, etc.
+    lines = content.splitlines()
+    clauses = []
+    current_clause = ""
+    
+    for line in lines:
+        stripped = line.strip()
+        if not stripped: continue
         
-    genai.configure(api_key=api_key)
-    
-    model = genai.GenerativeModel(
-        model_name="gemini-2.5-flash",
-        system_instruction=system_instruction
-    )
-    
-    # Prompting the model to summarize according to its loaded system instructions
-    prompt = f"Please summarize the following policy document according to your strict enforcement rules:\n\n{text}"
-    response = model.generate_content(prompt)
-    return response.text
+        # Match lines starting with "1.1", "2. ", "3.1.2 " etc.
+        if re.match(r'^\d+(\.\d+)*\s+', stripped):
+            if current_clause:
+                clauses.append(current_clause.strip())
+            current_clause = stripped
+        else:
+            if current_clause:
+                current_clause += " " + stripped
+                
+    if current_clause:
+        clauses.append(current_clause.strip())
+        
+    if not clauses:
+        # Fallback if no numbered clauses found, treat whole text as one
+        clauses = [content]
+        
+    return clauses
+
+import time
+
+def summarize_policy(clauses: list, system_instruction: str) -> str:
+    api_key = os.getenv("GEMINI_API_KEY")
+
+    text_to_summarize = "\n".join(clauses)
+
+    # ---------- TRY API FIRST ----------
+    if api_key:
+        try:
+            from google import genai
+            client = genai.Client(api_key=api_key)
+
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=f"{system_instruction}\n\n{text_to_summarize}"
+            )
+
+            return response.text
+
+        except Exception as e:
+            print(f"API failed ({e}), switching to offline mode...\n")
+
+    # ---------- FALLBACK (NO API) ----------
+    print("Using offline summarizer...")
+
+    summary = []
+
+    for clause in clauses:
+        # take first sentence of each clause
+        sentence = clause.split(".")[0].strip()
+        if sentence:
+            summary.append(f"- {sentence}.")
+
+    return "\n".join(summary)
 
 def main():
     parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
@@ -79,10 +125,11 @@ def main():
         system_instruction = load_agent_prompt(str(agents_file))
         
         print(f"Retrieving policy from {args.input}...")
-        policy_text = retrieve_policy(args.input)
+        policy_clauses = retrieve_policy(args.input)
+        print(f"Detected {len(policy_clauses)} structured clauses.")
         
         print("Generating compliant summary...")
-        summary = summarize_policy(policy_text, system_instruction)
+        summary = summarize_policy(policy_clauses, system_instruction)
         
         with open(args.output, "w", encoding="utf-8") as f:
             f.write(summary)
@@ -95,3 +142,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
