@@ -1,16 +1,17 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-X — District AI Magistrate Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill 1: Semantic Multi-Policy Search
+- **Input**: User query.
+- **Logic**: Search across IT, HR, and Finance documents simultaneously.
+- **Requirement**: Identify the specific section (e.g., "IT-POL-003 Section 4.1").
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill 2: Citation Injection
+- **Logic**: For every sentence generated, verify it matches a retrieved segment.
+- **Format**: Append [Source: DocName Section X.Y] to every factual claim.
+
+## Skill 3: Conflict Arbitration
+- **Logic**: If two policies overlap (e.g., HR says "Laptop for work" and IT says "Personal use allowed"), provide both with their specific context.
+
+## Skill 4: The Magistrate's Refusal
+- **Logic**: Check if the retrieval score is below a strict threshold (e.g., "I know this but it's not in the files").
+- **Output**: Apply the exact refusal template from `agents.md`.
