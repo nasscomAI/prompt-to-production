@@ -1,0 +1,12 @@
+POLICY SUMMARY — UC-0B COMPLIANT
+
+[2.3] Employees must submit leave applications at least 14 days in advance using Form HR-L1.
+[2.4] Written approval from the direct manager is mandatory before leave begins; verbal approval is explicitly invalid.
+[2.5] Unapproved absence will result in Loss of Pay (LOP), regardless of any later approval.
+[2.6] Maximum carry-forward is 5 days; any unused annual leave beyond this limit is forfeited on 31 December.
+[2.7] Carry-forward days must be used between January and March, otherwise they are forfeited.
+[3.2] Sick leave for 3 or more consecutive days requires a medical certificate submitted within 48 hours of return.
+[3.4] A medical certificate is required for sick leave taken immediately before or after a public holiday or annual leave, regardless of duration.
+[5.2] LWP requires dual approval from both the Department Head AND the HR Director; manager approval alone is insufficient.
+[5.3] LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+[7.2] Leave encashment during active service is strictly not permitted under any circumstances.
