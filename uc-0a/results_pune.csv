@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category assigned as Pothole because description mentioned 'pothole'.,
+PM-202402,Pothole,Urgent,Category assigned as Pothole because description mentioned 'pothole'. Priority elevated to Urgent due to safety keyword 'child'.,
+PM-202406,Flooding,Standard,Category assigned as Flooding because description mentioned 'flood'.,
+PM-202408,Flooding,Standard,Category assigned as Flooding because description mentioned 'flood'.,
+PM-202410,Streetlight,Standard,Category assigned as Streetlight because description mentioned 'streetlight'.,
+PM-202411,Streetlight,Urgent,Category assigned as Streetlight because description mentioned 'streetlight'. Priority elevated to Urgent due to safety keyword 'hazard'.,
+PM-202413,Waste,Standard,Category assigned as Waste because description mentioned 'garbage'.,
+PM-202418,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Category assigned as Road Damage because description mentioned 'crack'.,
+PM-202420,Other,Urgent,Category set to Other as no specific taxonomy keywords were detected in the description. Priority elevated to Urgent due to safety keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category assigned as Flooding because description mentioned 'flood'.,
+PM-202428,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Category assigned as Streetlight because description mentioned 'dark'.,
+PM-202433,Waste,Standard,Category assigned as Waste because description mentioned 'waste'.,
+PM-202446,Other,Urgent,Category set to Other as no specific taxonomy keywords were detected in the description. Priority elevated to Urgent due to safety keyword 'fell'.,NEEDS_REVIEW

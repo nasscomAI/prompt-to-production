@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Category assigned as Streetlight because description mentioned 'lamp'.,
+KM-202402,Heritage Damage,Standard,Category assigned as Heritage Damage because description mentioned 'historic'.,
+KM-202405,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Category assigned as Pothole because description mentioned 'pothole'.,
+KM-202410,Pothole,Standard,Category assigned as Pothole because description mentioned 'pothole'.,
+KM-202411,Pothole,Standard,Category assigned as Pothole because description mentioned 'pothole'.,
+KM-202415,Drain Blockage,Standard,Category assigned as Drain Blockage because description mentioned 'drain'.,
+KM-202418,Waste,Standard,Category assigned as Waste because description mentioned 'waste'.,
+KM-202421,Other,Urgent,Category set to Other as no specific taxonomy keywords were detected in the description. Priority elevated to Urgent due to safety keyword 'hospital'.,NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Category assigned as Road Damage because description mentioned 'surface'.,
+KM-202426,Heritage Damage,Standard,Category assigned as Heritage Damage because description mentioned 'heritage'.,
+KM-202430,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Category assigned as Heritage Damage because description mentioned 'heritage'.,
+KM-202436,Streetlight,Standard,Category assigned as Streetlight because description mentioned 'dark'.,
+KM-202438,Heritage Damage,Standard,Category assigned as Heritage Damage because description mentioned 'heritage'.,
