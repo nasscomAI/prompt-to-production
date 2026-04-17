@@ -6,7 +6,7 @@ skills:
   - name: retrieve_policy
     description: Loads a .txt policy document from disk and returns its content as structured numbered sections, one entry per top-level section heading.
     input: A string — file_path (absolute or relative path to the .txt policy document, e.g. ../data/policy-documents/policy_hr_leave.txt).
-    output: A list of dicts, each with keys — section_number (e.g. "2"), section_title (e.g. "MOBILE PHONE AND INTERNET"), and clauses (a list of dicts with clause_number e.g. "2.3" and clause_text as the full verbatim text of that clause). Returns all sections and all clauses without truncation.
+    output: A list of dicts, each with keys — section_number (e.g. "2"), section_title (e.g. "Mobile PHONE AND INTERNET"), and clauses (a list of dicts with clause_number e.g. "2.3" and clause_text as the full verbatim text of that clause). Returns all sections and all clauses without truncation.
     error_handling: If the file path does not exist or cannot be read, raises a FileNotFoundError with the path included in the message and does not return partial content. If the file is empty, raises a ValueError stating the document is empty. Never silently returns an empty structure.
 
   - name: summarize_policy
