@@ -5,6 +5,7 @@ See README.md for run command and expected behaviour.
 """
 import argparse
 import re
+from pathlib import Path
 
 SECTION_PATTERN = re.compile(r"^(\d+\.\d+)\s+(.*)$")
 
@@ -176,10 +177,12 @@ def main():
     parser = argparse.ArgumentParser(description="UC-X Policy QA Assistant")
     parser.parse_args()
 
+    repo_root = Path(__file__).resolve().parent.parent
+
     doc_paths = {
-        "policy_hr_leave.txt": "data/policy-documents/policy_hr_leave.txt",
-        "policy_it_acceptable_use.txt": "data/policy-documents/policy_it_acceptable_use.txt",
-        "policy_finance_reimbursement.txt": "data/policy-documents/policy_finance_reimbursement.txt",
+        "policy_hr_leave.txt": str(repo_root / "data" / "policy-documents" / "policy_hr_leave.txt"),
+        "policy_it_acceptable_use.txt": str(repo_root / "data" / "policy-documents" / "policy_it_acceptable_use.txt"),
+        "policy_finance_reimbursement.txt": str(repo_root / "data" / "policy-documents" / "policy_finance_reimbursement.txt"),
     }
     index = retrieve_documents(doc_paths)
 
