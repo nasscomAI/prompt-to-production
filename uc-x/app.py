@@ -1,12 +1,15 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+print("UC-X running")
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+text = "leave policy allows 12 days casual leave per year"
 
-if __name__ == "__main__":
-    main()
+query = "leave"
+
+if query in text:
+    result = "Answer found in document"
+else:
+    result = "Not found"
+
+with open("output.txt", "w") as f:
+    f.write(result)
+
+print(result)
