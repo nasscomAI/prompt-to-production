@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on the mention of related infrastructure issues.,
+PM-202402,Pothole,Urgent,Classified as Urgent because it mentions safety-critical terms like 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding based on the mention of related infrastructure issues.,
+PM-202408,Flooding,Standard,Classified as Flooding based on the mention of related infrastructure issues.,
+PM-202410,Streetlight,Standard,Classified as Streetlight based on the mention of related infrastructure issues.,
+PM-202411,Streetlight,Urgent,Classified as Urgent because it mentions safety-critical terms like 'hazard'.,
+PM-202413,Waste,Low,Classified as Waste based on the mention of related infrastructure issues.,
+PM-202418,Noise,Standard,Classified as Noise based on the mention of related infrastructure issues.,
+PM-202419,Road Damage,Standard,Classified as Road Damage based on the mention of related infrastructure issues.,
+PM-202420,Other,Urgent,Classified as Urgent because it mentions safety-critical terms like 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on the mention of related infrastructure issues.,
+PM-202428,Other,Standard,Classified as Other due to lack of specific infrastructure keywords.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight based on the mention of related infrastructure issues.,
+PM-202433,Waste,Standard,Classified as Waste based on the mention of related infrastructure issues.,
+PM-202446,Other,Urgent,Classified as Urgent because it mentions safety-critical terms like 'fell'.,NEEDS_REVIEW

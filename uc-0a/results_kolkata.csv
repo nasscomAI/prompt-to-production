@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight based on the mention of related infrastructure issues.,
+KM-202402,Road Damage,Standard,Classified as Road Damage based on the mention of related infrastructure issues.,
+KM-202405,Other,Standard,Classified as Other due to lack of specific infrastructure keywords.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole based on the mention of related infrastructure issues.,
+KM-202410,Pothole,Low,Classified as Pothole based on the mention of related infrastructure issues.,
+KM-202411,Pothole,Standard,Classified as Pothole based on the mention of related infrastructure issues.,
+KM-202415,Road Damage,Standard,Classified as Road Damage based on the mention of related infrastructure issues.,
+KM-202418,Waste,Low,Classified as Waste based on the mention of related infrastructure issues.,
+KM-202421,Other,Urgent,Classified as Urgent because it mentions safety-critical terms like 'hospital'.,NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Classified as Road Damage based on the mention of related infrastructure issues.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on the mention of related infrastructure issues.,
+KM-202430,Road Damage,Standard,Classified as Road Damage based on the mention of related infrastructure issues.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on the mention of related infrastructure issues.,
+KM-202436,Streetlight,Standard,Classified as Streetlight based on the mention of related infrastructure issues.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage based on the mention of related infrastructure issues.,
