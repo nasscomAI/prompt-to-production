@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on: Large pothole 60cm wide causing tyre damage. Three...,
+PM-202402,Pothole,Urgent,Classified based on: Deep pothole near bus stop. School children at...,
+PM-202406,Flooding,Standard,Classified based on: Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,
+PM-202408,Flooding,Standard,Classified based on: Bus stand flooded. Passengers standing in water. Drain...,
+PM-202410,Streetlight,Standard,Classified based on: Three consecutive streetlights out for 10 days. Area...,
+PM-202411,Streetlight,Urgent,Classified based on: Streetlight flickering and sparking. Electrical hazard reported.,
+PM-202413,Waste,Standard,Classified based on: Overflowing garbage bins near vegetable market. Smell affecting...,
+PM-202418,Noise,Standard,Classified based on: Wedding venue playing music past midnight on weeknights.,
+PM-202419,Road Damage,Standard,Classified based on: Road surface cracked and sinking near utility work...,
+PM-202420,Road Damage,Urgent,Classified based on: Manhole cover missing. Risk of serious injury to...,
+PM-202427,Flooding,Standard,Classified based on: Bridge approach floods in 30mins of rain. Bridge...,
+PM-202428,Other,Standard,Classified based on: Dead animal not removed for 36 hours. Health...,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Classified based on: Heritage street, lights out. Safety concern for pedestrians...",
+PM-202433,Waste,Standard,Classified based on: Bulk waste from apartment renovation dumped on public...,
+PM-202446,Road Damage,Urgent,Classified based on: Footpath tiles broken and upturned. Elderly resident fell...,
