@@ -1,0 +1,29 @@
+HR LEAVE POLICY SUMMARY (STRICT BINDING)
+==================================================
+Clause 1.1: [NEEDS_REVIEW: VERBATIM] This policy governs acceptable use of all IT systems, devices, networks, and data owned or managed by the City Municipal Corporation (CMC).
+Clause 1.2: [NEEDS_REVIEW: VERBATIM] This policy applies to all permanent employees, contractual staff, and third-party vendors with CMC system access.
+Clause 1.3: [NEEDS_REVIEW: VERBATIM] Use of CMC IT resources implies acceptance of this policy.
+Clause 2.1: [NEEDS_REVIEW: VERBATIM] Corporate devices (laptops, desktops, mobile phones issued by CMC) must be used primarily for official work purposes.
+Clause 2.2: [NEEDS_REVIEW: VERBATIM] Personal use of corporate devices is permitted in moderation, provided it does not interfere with work duties or consume excessive bandwidth.
+Clause 2.3: 14-day advance notice MUST be provided for leave applications.
+Clause 2.4: Written approval from direct manager MUST be received before leave commences. Verbal approval is invalid.
+Clause 2.5: Unapproved absence WILL be recorded as Loss of Pay (LOP), regardless of any later approval.
+Clause 2.6: Employees MAY carry forward a maximum of 5 unused annual leave days. Anything above 5 days ARE FORFEITED on 31 December.
+Clause 3.1: [NEEDS_REVIEW: VERBATIM] Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+Clause 3.2: Sick leave of 3+ consecutive days REQUIRES a medical certificate submitted within 48 hours of return.
+Clause 3.3: [NEEDS_REVIEW: VERBATIM] Personal devices must not be connected to the CMC internal network (wired or wireless). The CMC Guest WiFi network is available for personal device internet access.
+Clause 3.4: Sick leave adjacent to a public holiday or annual leave REQUIRES a medical certificate unconditionally regardless of duration.
+Clause 3.5: [NEEDS_REVIEW: VERBATIM] If a personal device containing CMC email is lost or stolen, the employee must report it to the IT helpdesk within 4 hours so that a remote wipe of CMC data can be performed.
+Clause 4.1: [NEEDS_REVIEW: VERBATIM] Employees must not share their CMC system passwords with any other person, including IT staff.
+Clause 4.2: [NEEDS_REVIEW: VERBATIM] IT staff will never ask for your password. Any request for your password should be reported to the IT Security team.
+Clause 4.3: [NEEDS_REVIEW: VERBATIM] Passwords must be changed every 90 days as prompted by the system.
+Clause 4.4: [NEEDS_REVIEW: VERBATIM] Multi-factor authentication (MFA) is mandatory for all remote access to CMC systems.
+Clause 5.1: [NEEDS_REVIEW: VERBATIM] CMC data classified as Confidential or Restricted must not be stored on personal devices, personal cloud storage, or any system not approved by the IT Department.
+Clause 5.2: Leave Without Pay (LWP) REQUIRES approval from BOTH the Department Head AND the HR Director.
+Clause 5.3: LWP exceeding 30 continuous days REQUIRES approval from the Municipal Commissioner.
+Clause 6.1: [NEEDS_REVIEW: VERBATIM] Internet use on CMC systems is monitored and logged.
+Clause 6.2: [NEEDS_REVIEW: VERBATIM] Employees must not use CMC email addresses to register for personal services, social media, or non-work subscriptions.
+Clause 6.3: [NEEDS_REVIEW: VERBATIM] Mass emails to external recipients must be approved by the Communications Department before sending.
+Clause 7.1: [NEEDS_REVIEW: VERBATIM] Violations of this policy may result in disciplinary action up to and including termination of employment.
+Clause 7.2: Leave encashment during active service is NOT PERMITTED under any circumstances.
+Clause 7.3: [NEEDS_REVIEW: VERBATIM] CMC reserves the right to monitor, access, and audit any activity on CMC-owned systems at any time without prior notice.
