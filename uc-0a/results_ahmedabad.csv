@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description contains keyword(s): heat,
+AM-202407,Other,Urgent,Category ambiguous; no clear match in description. Severity keyword: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description contains keyword(s): pothole,
+AM-202414,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Description contains keyword(s): waste, heritage",
+AM-202421,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Description contains keyword(s): road,
+AM-202429,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+AM-202431,Road Damage,Standard,"Description contains keyword(s): road, heritage",
+AM-202435,Road Damage,Standard,"Description contains keyword(s): road, heat",
+AM-202444,Waste,Standard,Description contains keyword(s): waste,
+AM-202445,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
