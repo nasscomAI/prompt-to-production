@@ -25,7 +25,7 @@ python app.py \
 
 ## Do This Before Writing Any Prompt — Clause Inventory
 
-Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
+Read `policy_hr_leave.txt` and map these 10 clauses. This is  your ground truth.
 
 | Clause | Core obligation | Binding verb |
 |---|---|---|
