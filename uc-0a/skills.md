@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single citizen complaint row based on RICE enforcement rules.
+    input: Dictionary containing complaint details (complaint_id, description, etc.).
+    output: Dictionary containing category, priority, reason, and flag fields.
+    error_handling: Return NEEDS_REVIEW flag and "Other" category if input description is ambiguous or matches multiple categories.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads input CSV, applies classify_complaint per row, writes output CSV.
+    input: Filepath string for input CSV, filepath string for output CSV.
+    output: Writes an output CSV file with results.
+    error_handling: Skip invalid rows and log errors, but continue processing the rest of the batch without crashing.
