@@ -1,0 +1,6 @@
+--- DISTRICT AUDIT MAGISTRATE LOG ---
+[REFUSAL] Row 58: Drainage & Flooding in Ward 2 – Shivajinagar (2024-03) excluded. Reason: Data not submitted by ward office
+[REFUSAL] Row 124: Streetlight Maintenance in Ward 5 – Hadapsar (2024-05) excluded. Reason: Equipment procurement delay
+[REFUSAL] Row 167: Roads & Pothole Repair in Ward 4 – Warje (2024-07) excluded. Reason: Audit freeze — figures under review
+[REFUSAL] Row 191: Parks & Greening in Ward 3 – Kothrud (2024-08) excluded. Reason: Project suspended — pending approval
+[REFUSAL] Row 255: Waste Management in Ward 1 – Kasba (2024-11) excluded. Reason: Contractor change — billing delayed
