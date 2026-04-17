@@ -24,7 +24,7 @@ python classifier.py --input ../data/city-test-files/test_pune.csv --output resu
 python classifier.py --input ../data/city-test-files/test_kolkata.csv --output results_kolkata.csv
 
 # Ahmedabad
-python classifier.py --input ../data/city-test-files/test_ahmedabad.csv --output results_ahmedabad.csv
+python classifier.py --input ../data/city-test-files/test_ahmedabad.csv --output results_ahmedabad.csv 
 
 # Hyderabad
 python classifier.py --input ../data/city-test-files/test_hyderabad.csv --output results_hyderabad.csv
