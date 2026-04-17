@@ -1,0 +1,31 @@
+POLICY SUMMARY
+==============
+Clause 1.1: [NEEDS_REVIEW] This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).
+Clause 1.2: [NEEDS_REVIEW] This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts.
+Clause 2.1: Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+Clause 2.2: [NEEDS_REVIEW] Annual leave accrues at 1.5 days per month from the date of joining.
+Clause 2.3: Employees must submit a leave application at least 14 days in advance.
+Clause 2.4: Written approval from direct manager is required before leave commences; verbal approval is not valid.
+Clause 2.5: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+Clause 2.6: Employees may carry forward max 5 unused annual leave days; excess days are forfeited on 31 Dec.
+Clause 2.7: Carry-forward days must be used in Jan-Mar or they are forfeited.
+Clause 3.1: Each employee is entitled to 12 days of paid sick leave per calendar year.
+Clause 3.2: 3 or more consecutive sick days requires a medical certificate within 48 hours.
+Clause 3.3: [NEEDS_REVIEW] Sick leave cannot be carried forward to the following year.
+Clause 3.4: Sick leave before/after a holiday/annual leave requires a medical certificate regardless of duration.
+Clause 4.1: [NEEDS_REVIEW] Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.
+Clause 4.2: [NEEDS_REVIEW] For a third or subsequent child, maternity leave is 12 weeks paid.
+Clause 4.3: Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+Clause 4.4: Paternity leave cannot be split across multiple periods.
+Clause 5.1: [NEEDS_REVIEW] An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+Clause 5.2: LWP requires approval from both the Department Head and the HR Director.
+Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+Clause 5.4: [NEEDS_REVIEW] Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits.
+Clause 6.1: Employees are entitled to all gazetted public holidays as declared by the State Government each year.
+Clause 6.2: [NEEDS_REVIEW] If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+Clause 6.3: [NEEDS_REVIEW] Compensatory off cannot be encashed.
+Clause 7.1: [NEEDS_REVIEW] Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.
+Clause 7.2: Leave encashment during service is not permitted under any circumstances.
+Clause 7.3: [NEEDS_REVIEW] Sick leave and LWP cannot be encashed under any circumstances.
+Clause 8.1: [NEEDS_REVIEW] Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.
+Clause 8.2: [NEEDS_REVIEW] Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
