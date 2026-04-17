@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"The complaint mentions lamp, which directly indicates a Streetlight issue with potential Standard implications.",
+KM-202402,Road Damage,Standard,"The complaint mentions broken, which directly indicates a Road Damage issue with potential Standard implications.",
+KM-202405,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The complaint mentions potholes, which directly indicates a Pothole issue with potential Standard implications.",
+KM-202410,Pothole,Low,"The complaint mentions pothole, which directly indicates a Pothole issue with potential Low implications.",
+KM-202411,Pothole,Standard,"The complaint mentions pothole, which directly indicates a Pothole issue with potential Standard implications.",
+KM-202415,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+KM-202418,Waste,Low,"The complaint mentions waste, which directly indicates a Waste issue with potential Low implications.",
+KM-202421,Road Damage,Urgent,"The complaint mentions hospital, sinking, footpath, broken, which directly indicates a Road Damage issue with potential Urgent implications.",
+KM-202422,Road Damage,Standard,"The complaint mentions surface, which directly indicates a Road Damage issue with potential Standard implications.",
+KM-202426,Heritage Damage,Standard,"The complaint mentions heritage, which directly indicates a Heritage Damage issue with potential Standard implications.",
+KM-202430,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The complaint mentions heritage, which directly indicates a Heritage Damage issue with potential Standard implications.",
+KM-202436,Other,Standard,The description is generic or does not contain specific keywords from the defined taxonomy.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The complaint mentions heritage, which directly indicates a Heritage Damage issue with potential Standard implications.",
