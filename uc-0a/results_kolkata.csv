@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Categorized as streetlight due to mentions of 'lamp'.,
+KM-202402,Other,Standard,Categorized as other as no specific keywords matched.,NEEDS_REVIEW
+KM-202405,Other,Standard,Categorized as other as no specific keywords matched.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Categorized as pothole due to mentions of 'pothole'.,
+KM-202410,Pothole,Standard,Categorized as pothole due to mentions of 'pothole'.,
+KM-202411,Pothole,Standard,Categorized as pothole due to mentions of 'pothole'.,
+KM-202415,Flooding,Standard,Categorized as flooding due to mentions of 'rain'.,
+KM-202418,Waste,Standard,Categorized as waste due to mentions of 'waste'.,
+KM-202421,Road Damage,Urgent,Categorized as road damage due to mentions of 'sinking' and assigned urgent priority due to keyword 'hospital'.,
+KM-202422,Road Damage,Standard,Categorized as road damage due to mentions of 'surface'.,
+KM-202426,Heritage Damage,Standard,Categorized as heritage damage due to mentions of 'heritage'.,
+KM-202430,Waste,Standard,Categorized as waste due to mentions of 'smell'.,
+KM-202434,Heritage Damage,Standard,Categorized as heritage damage due to mentions of 'heritage'.,
+KM-202436,Streetlight,Standard,Categorized as streetlight due to mentions of 'dark'.,
+KM-202438,Heritage Damage,Standard,Categorized as heritage damage due to mentions of 'heritage'.,
