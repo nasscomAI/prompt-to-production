@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Tarmac surface melting at 44°C. Footwear...'.",NEEDS_REVIEW
+Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the text explicitly mentions 'temperature'.,
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Dead trees with split branches. Fall ris...'.",NEEDS_REVIEW
+Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the text explicitly mentions 'heat'.,
+Other,Urgent,Classified as Other with Urgent priority because the text explicitly mentions 'child'.,NEEDS_REVIEW
+Pothole,Standard,Classified as Pothole with Standard priority because the text explicitly mentions 'pothole'.,
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Residential colony unlit after 9pm. Wiri...'.",NEEDS_REVIEW
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'waste', 'heritage'.",NEEDS_REVIEW
+Noise,Standard,Classified as Noise with Standard priority because the text explicitly mentions 'music'.,
+Road Damage,Standard,Classified as Road Damage with Standard priority because the text explicitly mentions 'road'.,
+Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the text explicitly mentions 'temperature'.,
+Road Damage,Standard,"Classified as Road Damage with Standard priority because the text explicitly mentions 'road', 'heritage'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified as Road Damage with Standard priority because the text explicitly mentions 'road', 'heat'.",NEEDS_REVIEW
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'waste', 'sun', 'overflow'.",NEEDS_REVIEW
+Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the text explicitly mentions 'sun'.,
