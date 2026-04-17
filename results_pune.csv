@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected 'pothole' in description,
+PM-202402,Pothole,Urgent,Detected 'pothole' in description,
+PM-202406,Flooding,Standard,Detected 'flood' in description,
+PM-202408,Other,Standard,Detected 'unclear' in description,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Detected 'streetlight' in description,
+PM-202411,Streetlight,Urgent,Detected 'streetlight' in description,
+PM-202413,Waste,Standard,Detected 'garbage' in description,
+PM-202418,Noise,Standard,Detected 'noise' in description,
+PM-202419,Other,Standard,Detected 'unclear' in description,NEEDS_REVIEW
+PM-202420,Drain Blockage,Urgent,Detected 'drain' in description,
+PM-202427,Flooding,Standard,Detected 'flood' in description,
+PM-202428,Other,Standard,Detected 'unclear' in description,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Detected 'streetlight' in description,
+PM-202433,Waste,Standard,Detected 'garbage' in description,
+PM-202446,Road Damage,Urgent,Detected 'broken road' in description,
