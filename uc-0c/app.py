@@ -1,12 +1,23 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+print("UC-0C running")
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+data = [
+    {"ward": "A", "amount": 100},
+    {"ward": "B", "amount": 200},
+    {"ward": "A", "amount": 150}
+]
 
-if __name__ == "__main__":
-    main()
+result = {}
+
+for item in data:
+    ward = item["ward"]
+    amount = item["amount"]
+
+    if ward not in result:
+        result[ward] = 0
+    result[ward] += amount
+
+with open("growth_output.csv", "w") as f:
+    for k, v in result.items():
+        f.write(f"{k},{v}\n")
+
+print("UC-0C done")
