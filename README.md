@@ -1,6 +1,6 @@
 # Vibe Coding Workshop — Participant Repo
 **Civic Tech Edition · RICE · CRAFT · agents.md · skills.md · Git**
-
+test 
 ---
 
 ## Quick Start
