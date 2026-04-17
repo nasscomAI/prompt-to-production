@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Streetlight,Standard,"Classified as Streetlight with Standard priority because the text explicitly mentions 'lamp', 'heritage'.",NEEDS_REVIEW
+Road Damage,Standard,Classified as Road Damage with Standard priority because the text explicitly mentions 'road'.,
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Wedding band playing near Tagore Museum ...'.",NEEDS_REVIEW
+Pothole,Standard,"Classified as Pothole with Standard priority because the text explicitly mentions 'pothole', 'road'.",NEEDS_REVIEW
+Pothole,Standard,Classified as Pothole with Standard priority because the text explicitly mentions 'pothole'.,
+Pothole,Standard,"Classified as Pothole with Standard priority because the text explicitly mentions 'pothole', 'water'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified as Road Damage with Standard priority because the text explicitly mentions 'road', 'drain'.",NEEDS_REVIEW
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'waste', 'hot', 'overflow'.",NEEDS_REVIEW
+Other,Urgent,"Classified as Other with Urgent priority because the text explicitly mentions 'hospital', 'fell'.",NEEDS_REVIEW
+Road Damage,Standard,Classified as Road Damage with Standard priority because the text explicitly mentions 'road'.,
+Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the text explicitly mentions 'heritage'.,
+Road Damage,Standard,Classified as Road Damage with Standard priority because the text explicitly mentions 'road'.,
+Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the text explicitly mentions 'heritage'.,
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Entire colony substation tripped. Darkne...'.",NEEDS_REVIEW
+Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the text explicitly mentions 'heritage'.,
