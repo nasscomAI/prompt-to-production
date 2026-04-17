@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+AM-202402,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+AM-202405,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as Heat Hazard because the description mentions 'heat'.,
+AM-202407,Other,Urgent,Categorized as Other as no specific municipal category keywords were identified. Escalated to Urgent due to safety keyword: 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Categorized as Pothole because the description mentions 'pothole'.,
+AM-202414,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized as Waste because the description mentions 'waste'.,
+AM-202421,Noise,Standard,Categorized as Noise because the description mentions 'music'.,
+AM-202424,Road Damage,Standard,Categorized as Road Damage because the description mentions 'road surface'.,
+AM-202429,Other,Standard,Categorized as Other as no specific municipal category keywords were identified.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Categorized as Heritage Damage because the description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Categorized as Heat Hazard because the description mentions 'heat'.,
+AM-202444,Waste,Standard,Categorized as Waste because the description mentions 'waste'.,
+AM-202445,Heat Hazard,Standard,Categorized as Heat Hazard because the description mentions 'sun'.,
