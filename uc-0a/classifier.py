@@ -5,25 +5,104 @@ Starter file. Build this using the RICE → agents.md → skills.md → CRAFT wo
 import argparse
 import csv
 
+import re
+import os
+
+def secure_path(path):
+    """Ensure path is within the allowed data directory."""
+    abs_data = os.path.abspath("../data")
+    abs_target = os.path.abspath(path)
+    # Allow reading from data/ or writing to current dir
+    if not (abs_target.startswith(abs_data) or abs_target.startswith(os.getcwd())):
+        raise PermissionError(f"Security violation: Access to {path} is prohibited.")
+    return path
+
+def sanitize_text(text):
+    """Remove HTML tags and suspicious characters."""
+    # Strip HTML tags
+    clean = re.sub(r'<[^>]*>', '', text)
+    # Remove control characters
+    clean = "".join(char for char in clean if ord(char) >= 32)
+    return clean
+
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+    description = sanitize_text(row.get("description", "")).lower()
     
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    # Define taxonomy with priority ordering
+    taxonomy = [
+        ("Heritage Damage", ["heritage"]),
+        ("Drain Blockage", ["drain", "blocked", "stormwater"]),
+        ("Flooding", ["flood", "underpass", "rainwater", r"\brain\b"]),
+        ("Pothole", ["pothole"]),
+        ("Streetlight", ["streetlight", "lamp", "light", r"\bdark\b"]),
+        ("Waste", ["waste", "garbage", "trash", "piles"]),
+        ("Noise", ["noise", "sound", "drilling", "loud", "trucks idling"]),
+        ("Road Damage", ["road damage", "crater", "collapsed"]),
+        ("Heat Hazard", ["heat", "sun", r"\bhot\b"])
+    ]
+    
+    # Determine Category
+    category = "Other"
+    matched_kw = "related content"
+    for cat, keywords in taxonomy:
+        for kw in keywords:
+            if re.search(kw, description):
+                category = cat
+                matched_kw = kw.replace(r"\b", "")
+                break
+        if category != "Other":
+            break
+            
+    # Determine Priority
+    urgent_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
+    priority = "Standard"
+    for kw in urgent_keywords:
+        if re.search(rf"\b{kw}", description):
+            priority = "Urgent"
+            matched_kw = kw
+            break
+    
+    if priority != "Urgent" and row.get("days_open") and int(row.get("days_open")) > 15:
+        priority = "Low"
+
+    # Generate Reason
+    reason = f"Classified as {category} because description mentions '{matched_kw}'."
+    
+    # Flag Ambiguity
+    flag = "NEEDS_REVIEW" if category == "Other" else ""
+    
+    return {
+        "complaint_id": row.get("complaint_id"),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    input_path = secure_path(input_path)
+    output_path = secure_path(output_path)
+    results = []
+    with open(input_path, mode='r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            try:
+                results.append(classify_complaint(row))
+            except Exception as e:
+                results.append({
+                    "complaint_id": row.get("complaint_id"),
+                    "category": "Other",
+                    "priority": "Standard",
+                    "reason": f"Error: {str(e)}",
+                    "flag": "NEEDS_REVIEW"
+                })
+                
+    keys = ["complaint_id", "category", "priority", "reason", "flag"]
+    with open(output_path, mode='w', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(results)
 
 
 if __name__ == "__main__":
