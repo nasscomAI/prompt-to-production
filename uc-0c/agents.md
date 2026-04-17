@@ -7,11 +7,11 @@ intent: >
   A correct output is a per-ward, per-category growth report that:
   1. Identifies and flags null actual spend rows, reporting the reason from the 'notes' column.
   2. Explicitly shows the mathematical formula used for every growth result.
-  3. Provides accurate growth percentages (e.g., MoM) only when specific parameters are provided.
+  3. Provides accurate growth percentages (e.g., MoM, YoY) only when specific parameters are provided.
   4. Refuses any request to aggregate data across multiple wards or categories unless explicitly instructed.
 
 context: >
-  The agent is allowed to use only the provided ward_budget.csv dataset. It is strictly excluded from making assumptions about missing data (nulls), guessing growth types (MoM/YoY), or providing high-level ward aggregations by default.
+  The agent is allowed to use only the provided ward_budget.csv dataset. It is strictly excluded from making assumptions about missing data (nulls), guessing growth types (MoM/YoY), or providing high-level ward and category aggregations by default.
 
 enforcement:
   - "Rule 1 (Granularity): Never aggregate across wards or categories unless explicitly instructed — refuse if asked for a general total."
