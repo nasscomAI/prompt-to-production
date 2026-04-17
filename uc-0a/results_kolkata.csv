@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description refers to a heritage site or structure.,
+KM-202402,Road Damage,Standard,Description refers to road or footpath damage.,
+KM-202405,Other,Standard,Ambiguous description - could not map to specific taxonomy.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole'.,
+KM-202410,Pothole,Standard,Description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'.,
+KM-202415,Drain Blockage,Standard,Description mentions blocked drains or manholes.,
+KM-202418,Waste,Standard,Description refers to waste management or garbage.,
+KM-202421,Road Damage,Urgent,"Description refers to road or footpath damage. Priority set to Urgent due to safety keywords: hospital, fell.",
+KM-202422,Road Damage,Standard,Description refers to road or footpath damage.,
+KM-202426,Heritage Damage,Standard,Description refers to a heritage site or structure.,
+KM-202430,Road Damage,Standard,Description refers to road or footpath damage.,
+KM-202434,Heritage Damage,Standard,Description refers to a heritage site or structure.,
+KM-202436,Other,Standard,Ambiguous description - could not map to specific taxonomy.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Description refers to a heritage site or structure.,
