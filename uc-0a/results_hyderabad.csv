@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Matched flooding using wording from the report: Ambulance, Underpass, flooded.",
+GH-202402,Flooding,Standard,"Matched flooding using wording from the report: Market, area, flooded.",
+GH-202406,Other,Standard,"Matched other using wording from the report: Main, stormwater, drain.",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Matched drain blockage using wording from the report: Drain, blocked, mosquito.",
+GH-202410,Pothole,Standard,"Matched pothole using wording from the report: Potholes, causing, vehicles.",
+GH-202411,Pothole,Urgent,"Matched pothole using wording from the report: hospital, Pothole, swallowed.",
+GH-202412,Pothole,Urgent,"Matched pothole using wording from the report: School, struggling.",
+GH-202417,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Heritage, zone, garbage.",
+GH-202420,Other,Standard,"Matched other using wording from the report: Construction, drilling, from.",NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Matched pothole using wording from the report: collapse, Road, collapsed.",
+GH-202424,Flooding,Standard,"Matched flooding using wording from the report: Underpass, floods, light.",
+GH-202428,Other,Standard,"Matched other using wording from the report: Post, market, waste.",NEEDS_REVIEW
+GH-202432,Other,Standard,"Matched other using wording from the report: supermarket, delivery, trucks.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Matched drain blockage using wording from the report: Main, drain, blocked.",
+GH-202438,Other,Standard,"Matched other using wording from the report: Colony, surrounded, fields.",NEEDS_REVIEW
