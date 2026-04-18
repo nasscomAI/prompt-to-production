@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority.,
+PM-202402,Pothole,Urgent,Classified as Pothole and elevated to Urgent priority because the description specifically cited 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority.,
+PM-202408,Flooding,Standard,Classified as Flooding with Standard priority.,
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight and elevated to Urgent priority because the description specifically cited 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste with Standard priority.,
+PM-202418,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+PM-202419,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified as Other and elevated to Urgent priority because the description specifically cited 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority.,
+PM-202428,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight with Standard priority.,
+PM-202433,Waste,Standard,Classified as Waste with Standard priority.,
+PM-202446,Other,Urgent,Classified as Other and elevated to Urgent priority because the description specifically cited 'fell'.,NEEDS_REVIEW

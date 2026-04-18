@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority.,
+AM-202407,Other,Urgent,Classified as Other and elevated to Urgent priority because the description specifically cited 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority.,
+AM-202414,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste with Standard priority.,
+AM-202421,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202424,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202429,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority.,
+AM-202445,Other,Standard,Could not definitively match the description to a known taxonomy subset; flagged for review.,NEEDS_REVIEW
