@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+PM-202401,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Standard,The description contains 'pothole' which indicates a Pothole issue.,NEEDS_REVIEW
+PM-202402,Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,The description contains 'pothole' which indicates a Pothole issue.,
+PM-202406,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Standard,The description contains 'flood' which indicates a Flooding issue.,
+PM-202408,Bus stand flooded. Passengers standing in water. Drain blocked.,Flooding,Standard,The description contains 'flood' which indicates a Flooding issue.,NEEDS_REVIEW
+PM-202410,Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,The description contains 'streetlight' which indicates a Streetlight issue.,
+PM-202411,Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,The description contains 'streetlight' which indicates a Streetlight issue.,
+PM-202413,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Flooding,Standard,The description contains 'overflow' which indicates a Flooding issue.,NEEDS_REVIEW
+PM-202418,Wedding venue playing music past midnight on weeknights.,Noise,Standard,The description contains 'music' which indicates a Noise issue.,
+PM-202419,Road surface cracked and sinking near utility work done 1 month ago.,Road Damage,Standard,The description contains 'road' which indicates a Road Damage issue.,
+PM-202420,Manhole cover missing. Risk of serious injury to cyclists.,Other,Urgent,The description suggests a Other issue based on context.,NEEDS_REVIEW
+PM-202427,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Standard,The description contains 'flood' which indicates a Flooding issue.,
+PM-202428,Dead animal not removed for 36 hours. Health concern.,Other,Standard,The description suggests a Other issue based on context.,NEEDS_REVIEW
+PM-202430,"Heritage street, lights out. Safety concern for pedestrians after dark.",Streetlight,Standard,The description contains 'light' which indicates a Streetlight issue.,NEEDS_REVIEW
+PM-202433,Bulk waste from apartment renovation dumped on public road.,Waste,Standard,The description contains 'waste' which indicates a Waste issue.,NEEDS_REVIEW
+PM-202446,Footpath tiles broken and upturned. Elderly resident fell last week.,Road Damage,Urgent,The description contains 'broken' which indicates a Road Damage issue.,
