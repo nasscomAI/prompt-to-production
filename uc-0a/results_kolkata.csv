@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Complaint mentions: Heritage, lamp.",
+KM-202402,Other,Standard,"Complaint mentions: Historic, tram.",
+KM-202405,Other,Standard,"Complaint mentions: Wedding, band.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Complaint about pothole involving: Airport, access.",
+KM-202410,Pothole,Standard,"Complaint about pothole involving: Pothole, causing.",
+KM-202411,Other,Standard,"Complaint mentions: Deep, pothole.",
+KM-202415,Drain Blockage,Standard,"Complaint about drain blockage involving: New, residential.",
+KM-202418,Other,Standard,"Complaint mentions: Tourist, zone.",
+KM-202421,Pothole,Urgent,"Complaint about pothole involving: Footpath, broken.",
+KM-202422,Other,Standard,"Complaint mentions: Road, surface.",
+KM-202426,Heritage Damage,Standard,"Complaint about heritage damage involving: Heritage, residential.",
+KM-202430,Other,Standard,"Complaint mentions: Road, subsided.",
+KM-202434,Heritage Damage,Standard,"Complaint about heritage damage involving: Street, paving.",
+KM-202436,Streetlight,Standard,"Complaint about streetlight involving: Entire, colony.",
+KM-202438,Heritage Damage,Standard,"Complaint about heritage damage involving: Street, vendors.",
