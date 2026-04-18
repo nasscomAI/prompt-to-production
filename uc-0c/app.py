@@ -10,6 +10,7 @@ def normalize(text):
 def load_dataset(file_path):
     try:
         df = pd.read_csv(file_path)
+    except Exception as e:
         raise Exception(f"Error loading file: {e}")
 
     required_columns = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]
@@ -106,7 +107,6 @@ def main():
     args = parser.parse_args()
 
     df = load_dataset(args.input)
-
     result = compute_growth(df, args.ward, args.category, args.growth_type)
 
     result.to_csv(args.output, index=False)

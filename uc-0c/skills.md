@@ -26,7 +26,7 @@
 
 \- name: compute\_growth
 
-&#x20; description: Computes growth metrics (MoM or YoY) for a specific ward and category and returns a per-period table.
+&#x20; description: Computes month-over-month (MoM) growth for a specific ward and category and returns a per-period table.
 
 &#x20; input:
 
