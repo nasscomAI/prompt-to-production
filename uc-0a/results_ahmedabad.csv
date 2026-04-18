@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202406,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202407,Other,Urgent,"Description is ambiguous, missing, or matches multiple categories. Priority is Urgent due to severity keyword 'child'.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole based on 'pothole'.,
+AM-202414,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste based on 'waste'.,
+AM-202421,Noise,Standard,Classified as Noise based on 'music'.,
+AM-202424,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202429,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202431,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202435,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+AM-202444,Waste,Standard,Classified as Waste based on 'waste'.,
+AM-202445,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
