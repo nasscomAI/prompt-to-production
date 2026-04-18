@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'heritage damage' related issues. No severity keywords found.,
+KM-202402,Other,Standard,Could not confidently determine category from description. No severity keywords found.,NEEDS_REVIEW
+KM-202405,Other,Standard,Could not confidently determine category from description. No severity keywords found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole' related issues. No severity keywords found.,
+KM-202410,Pothole,Standard,Description mentions 'pothole' related issues. No severity keywords found.,
+KM-202411,Pothole,Standard,"Multiple potential categories detected (Pothole, Flooding). No severity keywords found.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Description mentions 'drain blockage' related issues. No severity keywords found.,
+KM-202418,Waste,Standard,Description mentions 'waste' related issues. No severity keywords found.,
+KM-202421,Road Damage,Urgent,"Description mentions 'road damage' related issues. Contains severity keyword(s): hospital, fell.",
+KM-202422,Other,Standard,Could not confidently determine category from description. No severity keywords found.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Description mentions 'heritage damage' related issues. No severity keywords found.,
+KM-202430,Other,Standard,Could not confidently determine category from description. No severity keywords found.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage damage' related issues. No severity keywords found.,
+KM-202436,Streetlight,Standard,Description mentions 'streetlight' related issues. No severity keywords found.,
+KM-202438,Heritage Damage,Standard,Description mentions 'heritage damage' related issues. No severity keywords found.,
