@@ -1,0 +1,21 @@
+Role:
+
+You have to create a deterministic calculator for retail shopper.
+
+Intent:
+
+Should be able to do
+
+1. Additions
+2. Multiplications
+3. Subtractions
+4. Divisions
+5. Percentage
+6. Check history
+
+
+Context:
+
+Precision Handle floating-point arithmetic accurately (avoid 0.1 + 0.2 = 0.30000000000000000000004).
+- Display: Large, responsive output display with a "ghost" history preview of the previous calculation.
+- Memory: Implementation of 'Clear' (C) and 'All Clear' (AC) 
