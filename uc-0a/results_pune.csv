@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Classified as Pothole because the description mentions 'pothole'. Priority is Urgent due to 'child'.,
+PM-202406,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because the description mentions 'light'.,
+PM-202411,Streetlight,Standard,Classified as Streetlight because the description mentions 'light'.,
+PM-202413,Waste,Standard,Classified as Waste because the description mentions 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise because the description mentions 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because the description mentions 'crack'.,
+PM-202420,Pothole,Urgent,Classified as Pothole because the description mentions 'hole'. Priority is Urgent due to 'injury'.,
+PM-202427,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+PM-202428,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+PM-202430,Streetlight,Urgent,Classified as Streetlight because the description mentions 'light'. Priority is Urgent due to 'safety'.,
+PM-202433,Waste,Standard,Classified as Waste because the description mentions 'waste'.,
+PM-202446,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW

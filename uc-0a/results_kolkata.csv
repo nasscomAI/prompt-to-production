@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight because the description mentions 'lamp'.,
+KM-202402,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+KM-202405,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+KM-202410,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+KM-202411,Pothole,Urgent,Classified as Pothole because the description mentions 'pothole'. Priority is Urgent due to 'accident'.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,
+KM-202418,Waste,Standard,Classified as Waste because the description mentions 'waste'.,
+KM-202421,Pothole,Urgent,Classified as Pothole because the description mentions 'pit'. Priority is Urgent due to 'hospital'.,
+KM-202422,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,
+KM-202430,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,
+KM-202436,Streetlight,Standard,Classified as Streetlight because the description mentions 'darkness'.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,
