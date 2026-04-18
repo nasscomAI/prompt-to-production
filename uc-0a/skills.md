@@ -14,7 +14,7 @@ output:
 
 &#x20; fields:
 
-&#x20;   category: one of allowed categories
+&#x20;   category: Pothole | Flooding | Streetlight | Waste | Noise | Road Damage | Heritage Damage | Heat Hazard | Drain Blockage | Other
 
 &#x20;   priority: Urgent | Standard | Low
 
