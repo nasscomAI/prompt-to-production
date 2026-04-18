@@ -28,32 +28,69 @@ def classify_complaint(row: dict) -> dict:
     # Enforce agents.md Rule 1: Strict Categorization (No hallucinations)
     category = "Other"
     flag = ""
-    if "pothole" in desc: category = "Pothole"
-    elif "flood" in desc or "water" in desc: category = "Flooding"
-    elif "light" in desc or "dark" in desc: category = "Streetlight"
-    elif "waste" in desc or "garbage" in desc or "trash" in desc: category = "Waste"
-    elif "noise" in desc or "loud" in desc: category = "Noise"
-    elif "road" in desc and "damage" in desc: category = "Road Damage"
-    elif "heritage" in desc: category = "Heritage Damage"
-    elif "heat" in desc: category = "Heat Hazard"
-    elif "drain" in desc or "blockage" in desc: category = "Drain Blockage"
+    matched_cat_word = ""
+    
+    if "pothole" in desc:
+        category = "Pothole"
+        matched_cat_word = "pothole"
+    elif "flood" in desc or "water" in desc:
+        category = "Flooding"
+        matched_cat_word = "flood" if "flood" in desc else "water"
+    elif "light" in desc or "dark" in desc:
+        category = "Streetlight"
+        matched_cat_word = "light" if "light" in desc else "dark"
+    elif "waste" in desc or "garbage" in desc or "trash" in desc:
+        category = "Waste"
+        matched_cat_word = "waste" if "waste" in desc else ("garbage" if "garbage" in desc else "trash")
+    elif "noise" in desc or "loud" in desc:
+        category = "Noise"
+        matched_cat_word = "noise" if "noise" in desc else "loud"
+    elif "road" in desc and "damage" in desc:
+        category = "Road Damage"
+        matched_cat_word = "road damage"
+    elif "heritage" in desc:
+        category = "Heritage Damage"
+        matched_cat_word = "heritage"
+    elif "heat" in desc:
+        category = "Heat Hazard"
+        matched_cat_word = "heat"
+    elif "drain" in desc or "blockage" in desc:
+        category = "Drain Blockage"
+        matched_cat_word = "drain" if "drain" in desc else "blockage"
     else: 
         # Refusal Condition: Ambiguous
         flag = "NEEDS_REVIEW"
 
-    # Enforce agents.md Rule 2: Priority assignment
+    # Enforce agents.md Rule 2, 3, 4: Priority assignment
     severity_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
+    minor_keywords = ["minor", "small", "slight", "trivial"]
+    
     priority = "Standard"
     found_sev = [kw for kw in severity_keywords if kw in desc]
+    found_minor = [kw for kw in minor_keywords if kw in desc]
+    
     if found_sev:
         priority = "Urgent"
+    elif found_minor:
+        priority = "Low"
 
-    # Enforce agents.md Rule 3: Single sentence reason citing words
-    reason = f"Classified as {category} with {priority} priority."
+    # Enforce agents.md Rule 5: Single sentence reason citing words
+    reason_parts = []
+    if matched_cat_word:
+        reason_parts.append(f"Categorized as {category} because description mentions '{matched_cat_word}'")
+    else:
+        # Cite a specific word to satisfy the rule even for "Other"
+        first_word = desc.split()[0] if desc.split() else "empty"
+        reason_parts.append(f"Categorized as Other (needs review) as no keywords matched for description starting with '{first_word}'")
+        
     if found_sev:
-        reason = f"Classified as {category} and elevated to Urgent priority because the description specifically cited '{found_sev[0]}'."
-    elif flag == "NEEDS_REVIEW":
-        reason = "Could not definitively match the description to a known taxonomy subset; flagged for review."
+        reason_parts.append(f"assigned Urgent priority due to severity keyword '{found_sev[0]}'.")
+    elif found_minor:
+        reason_parts.append(f"assigned Low priority due to minor keyword '{found_minor[0]}'.")
+    else:
+        reason_parts.append(f"assigned Standard priority as no severity/minor keywords found.")
+        
+    reason = " and ".join(reason_parts).capitalize()
 
     return {
         "complaint_id": comp_id,
