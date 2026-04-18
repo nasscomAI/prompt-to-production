@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Categorized as Road Damage with Standard priority based on the mention of 'tarmac' in the complaint description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Categorized as Heat Hazard with Standard priority based on the mention of 'temperature' in the complaint description.,
+AM-202405,Other,Standard,Categorized as Other with Standard priority based on the mention of 'contextual cues' in the complaint description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as Heat Hazard with Standard priority based on the mention of 'heat' in the complaint description.,
+AM-202407,Road Damage,Urgent,Categorized as Road Damage with Urgent priority based on the mention of 'child' in the complaint description.,
+AM-202410,Pothole,Standard,Categorized as Pothole with Standard priority based on the mention of 'pothole' in the complaint description.,
+AM-202414,Streetlight,Standard,Categorized as Streetlight with Standard priority based on the mention of 'unlit' in the complaint description.,
+AM-202417,Waste,Standard,Categorized as Waste with Standard priority based on the mention of 'waste' in the complaint description.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Categorized as Noise with Standard priority based on the mention of 'music' in the complaint description.,
+AM-202424,Road Damage,Standard,Categorized as Road Damage with Standard priority based on the mention of 'road surface' in the complaint description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Categorized as Heat Hazard with Standard priority based on the mention of 'temperature, °c' in the complaint description.",
+AM-202431,Heritage Damage,Standard,Categorized as Heritage Damage with Standard priority based on the mention of 'heritage' in the complaint description.,
+AM-202435,Heat Hazard,Standard,Categorized as Heat Hazard with Standard priority based on the mention of 'heat' in the complaint description.,
+AM-202444,Waste,Standard,"Categorized as Waste with Standard priority based on the mention of 'waste, bin' in the complaint description.",NEEDS_REVIEW
+AM-202445,Heat Hazard,Standard,Categorized as Heat Hazard with Standard priority based on the mention of 'sun' in the complaint description.,
