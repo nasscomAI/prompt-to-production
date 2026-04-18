@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Complaint about pothole involving: Large, pothole.",
+PM-202402,Pothole,Urgent,"Complaint about pothole involving: Deep, pothole.",
+PM-202406,Flooding,Standard,"Complaint about flooding involving: Underpass, flooded.",
+PM-202408,Flooding,Standard,"Complaint about flooding involving: Bus, stand.",
+PM-202410,Streetlight,Standard,"Complaint about streetlight involving: Three, consecutive.",
+PM-202411,Streetlight,Urgent,"Complaint about streetlight involving: Streetlight, flickering.",
+PM-202413,Waste,Standard,"Complaint about waste involving: Overflowing, garbage.",
+PM-202418,Other,Standard,"Complaint mentions: Wedding, venue.",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"Complaint about road damage involving: Road, surface.",
+PM-202420,Other,Urgent,"Complaint mentions: Manhole, cover.",
+PM-202427,Flooding,Standard,"Complaint about flooding involving: Bridge, approach.",
+PM-202428,Other,Standard,"Complaint mentions: Dead, animal.",NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Complaint about streetlight involving: Heritage, street.",
+PM-202433,Waste,Standard,"Complaint about waste involving: Bulk, waste.",
+PM-202446,Other,Urgent,"Complaint mentions: Footpath, tiles.",NEEDS_REVIEW
