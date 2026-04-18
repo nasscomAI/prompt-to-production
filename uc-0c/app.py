@@ -10,7 +10,6 @@ def normalize(text):
 def load_dataset(file_path):
     try:
         df = pd.read_csv(file_path)
-    except Exception as e:
         raise Exception(f"Error loading file: {e}")
 
     required_columns = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]

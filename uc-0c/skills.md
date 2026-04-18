@@ -1,28 +1,52 @@
-- name: load_dataset
-  description: Reads the ward budget CSV dataset, validates required columns, and identifies null values.
-  input:
-    type: string
-    format: file path to CSV dataset
-  output:
-    type: object
-    format: validated dataset with metadata including null row details
-  error_handling:
-    - If file path is invalid, return an error and stop execution
-    - If required columns are missing, return an error specifying missing columns
-    - If null values are present in actual_spend, identify and report all such rows along with notes before returning dataset
+\- name: load\_dataset
 
-- name: compute_growth
-  description: Computes growth metrics (MoM or YoY) for a specific ward and category and returns a per-period table.
-  input:
-    type: object
-    format: dataset along with ward, category, and growth_type parameters
-  output:
-    type: table
-    format: per-period rows including actual spend, computed growth, and formula used
-  error_handling:
-    - If ward or category is not found, return an error
-    - If growth_type is missing or invalid, refuse to compute and ask for valid input
-    - If null values are encountered for a period, do not compute growth for that period and flag it with reason from notes
-    - If computation attempts aggregation across wards or categories, refuse execution
+&#x20; description: Reads the ward budget CSV dataset, validates required columns, and identifies null values.
 
-    
+&#x20; input:
+
+&#x20;   type: string
+
+&#x20;   format: file path to CSV dataset
+
+&#x20; output:
+
+&#x20;   type: object
+
+&#x20;   format: validated dataset with metadata including null row details
+
+&#x20; error\_handling:
+
+&#x20;   - If file path is invalid, return an error and stop execution
+
+&#x20;   - If required columns are missing, return an error specifying missing columns
+
+&#x20;   - If null values are present in actual\_spend, identify and report all such rows along with notes before returning dataset
+
+
+
+\- name: compute\_growth
+
+&#x20; description: Computes growth metrics (MoM or YoY) for a specific ward and category and returns a per-period table.
+
+&#x20; input:
+
+&#x20;   type: object
+
+&#x20;   format: dataset along with ward, category, and growth\_type parameters
+
+&#x20; output:
+
+&#x20;   type: table
+
+&#x20;   format: per-period rows including actual spend, computed growth, and formula used
+
+&#x20; error\_handling:
+
+&#x20;   - If ward or category is not found, return an error
+
+&#x20;   - If growth\_type is missing or invalid, refuse to compute and ask for valid input
+
+&#x20;   - If null values are encountered for a period, do not compute growth for that period and flag it with reason from notes
+
+&#x20;   - If computation attempts aggregation across wards or categories, refuse execution
+
