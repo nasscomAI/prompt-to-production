@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized as pothole because description mentions 'pothole' and assigned standard priority as no severity/minor keywords found.,
+PM-202402,Pothole,Urgent,Categorized as pothole because description mentions 'pothole' and assigned urgent priority due to severity keyword 'child'.,
+PM-202406,Flooding,Standard,Categorized as flooding because description mentions 'flood' and assigned standard priority as no severity/minor keywords found.,
+PM-202408,Flooding,Standard,Categorized as flooding because description mentions 'flood' and assigned standard priority as no severity/minor keywords found.,
+PM-202410,Streetlight,Standard,Categorized as streetlight because description mentions 'light' and assigned standard priority as no severity/minor keywords found.,
+PM-202411,Streetlight,Urgent,Categorized as streetlight because description mentions 'light' and assigned urgent priority due to severity keyword 'hazard'.,
+PM-202413,Waste,Standard,Categorized as waste because description mentions 'garbage' and assigned standard priority as no severity/minor keywords found.,
+PM-202418,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'wedding' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+PM-202419,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'road' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Categorized as other (needs review) as no keywords matched for description starting with 'manhole' and assigned urgent priority due to severity keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized as flooding because description mentions 'flood' and assigned standard priority as no severity/minor keywords found.,
+PM-202428,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'dead' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Categorized as streetlight because description mentions 'light' and assigned standard priority as no severity/minor keywords found.,
+PM-202433,Waste,Standard,Categorized as waste because description mentions 'waste' and assigned standard priority as no severity/minor keywords found.,
+PM-202446,Other,Urgent,Categorized as other (needs review) as no keywords matched for description starting with 'footpath' and assigned urgent priority due to severity keyword 'fell'.,NEEDS_REVIEW
