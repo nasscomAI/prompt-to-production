@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified based on 'flood' and escalated due to 'ambulance'.,
+GH-202402,Flooding,Standard,Matched against predefined keyword: 'flood'.,
+GH-202406,Drain Blockage,Standard,Matched against predefined keyword: 'drain'.,
+GH-202407,Drain Blockage,Standard,Matched against predefined keyword: 'drain'.,
+GH-202410,Pothole,Standard,Matched against predefined keyword: 'pothole'.,
+GH-202411,Pothole,Urgent,Classified based on 'pothole' and escalated due to 'hospital'.,
+GH-202412,Pothole,Urgent,Classified based on 'pothole' and escalated due to 'school'.,
+GH-202417,Waste,Standard,Matched against predefined keyword: 'waste'.,
+GH-202420,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+GH-202422,Other,Urgent,"Could not determine exact category, but severity elevated due to 'collapse'.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,Matched against predefined keyword: 'flood'.,
+GH-202428,Waste,Standard,Matched against predefined keyword: 'waste'.,
+GH-202432,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Matched against predefined keyword: 'flood'.,
+GH-202438,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
