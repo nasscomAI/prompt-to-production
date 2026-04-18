@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Matched against predefined keyword: 'heat'.,
+AM-202407,Other,Urgent,"Could not determine exact category, but severity elevated due to 'child'.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Matched against predefined keyword: 'pothole'.,
+AM-202414,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Matched against predefined keyword: 'waste'.,
+AM-202421,Noise,Standard,Matched against predefined keyword: 'music'.,
+AM-202424,Road Damage,Standard,Matched against predefined keyword: 'road surface'.,
+AM-202429,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Matched against predefined keyword: 'heritage'.,
+AM-202435,Heat Hazard,Standard,Matched against predefined keyword: 'heat'.,
+AM-202444,Waste,Standard,Matched against predefined keyword: 'waste'.,
+AM-202445,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW

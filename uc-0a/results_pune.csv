@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Matched against predefined keyword: 'pothole'.,
+PM-202402,Pothole,Urgent,Classified based on 'pothole' and escalated due to 'child'.,
+PM-202406,Flooding,Standard,Matched against predefined keyword: 'flood'.,
+PM-202408,Flooding,Standard,Matched against predefined keyword: 'flood'.,
+PM-202410,Streetlight,Standard,Matched against predefined keyword: 'streetlight'.,
+PM-202411,Streetlight,Urgent,Classified based on 'streetlight' and escalated due to 'hazard'.,
+PM-202413,Waste,Standard,Matched against predefined keyword: 'garbage'.,
+PM-202418,Noise,Standard,Matched against predefined keyword: 'music'.,
+PM-202419,Road Damage,Standard,Matched against predefined keyword: 'road surface'.,
+PM-202420,Drain Blockage,Urgent,Classified based on 'manhole' and escalated due to 'injury'.,
+PM-202427,Flooding,Standard,Matched against predefined keyword: 'flood'.,
+PM-202428,Other,Standard,Could not definitively classify based on description text.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Matched against predefined keyword: 'lights out'.,
+PM-202433,Waste,Standard,Matched against predefined keyword: 'waste'.,
+PM-202446,Other,Urgent,"Could not determine exact category, but severity elevated due to 'fell'.",NEEDS_REVIEW
