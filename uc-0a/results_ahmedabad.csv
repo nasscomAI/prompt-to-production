@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Description mentions 'surface'.,
+AM-202402,Other,Standard,The issue does not clearly match known categories.,NEEDS_REVIEW
+AM-202405,Other,Standard,The issue does not clearly match known categories.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,Description mentions 'broken'.,
+AM-202407,Road Damage,Urgent,Description mentions 'broken'. Priority escalated to Urgent due to keyword 'child'.,
+AM-202410,Pothole,Standard,Description mentions 'pothole'.,
+AM-202414,Other,Standard,The issue does not clearly match known categories.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Description mentions 'waste'.,
+AM-202421,Noise,Standard,Description mentions 'music'.,
+AM-202424,Road Damage,Standard,Description mentions 'road'.,
+AM-202429,Road Damage,Standard,Description mentions 'surface'.,
+AM-202431,Road Damage,Standard,Description mentions 'road'.,
+AM-202435,Road Damage,Standard,Description mentions 'road'.,
+AM-202444,Waste,Standard,Description mentions 'waste'.,
+AM-202445,Road Damage,Standard,Description mentions 'broken'.,
