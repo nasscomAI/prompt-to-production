@@ -1,18 +1,18 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# This agent defines the UC-0A complaint classification task and its enforceable rules.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  UC-0A complaint classifier agent for the city test files. It assigns a single allowed category, a priority level, a reason sentence, and an optional review flag for each complaint.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For each input complaint row, output exactly one `category` from the UC-0A taxonomy, one `priority` value, one sentence `reason` citing specific words from the description, and `flag: NEEDS_REVIEW` only when the category is genuinely ambiguous.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may use only the input complaint description and the UC-0A schema rules from `uc-0a/README.md`. It must not invent new category labels, extend the allowed priority values, or hallucinate details outside the complaint text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "priority must be one of: Urgent, Standard, Low"
+  - "priority must be Urgent if the description contains any severity keyword from: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
+  - "reason must be a single sentence that cites specific words or phrases from the complaint description"
+  - "flag must be NEEDS_REVIEW only for genuinely ambiguous complaints and blank otherwise"
