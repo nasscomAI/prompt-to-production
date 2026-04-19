@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description contains keywords related to potholes. Contains: large, pothole, 60cm, wide, causing, tyre, damage....",
+PM-202402,Pothole,Urgent,"Description contains keywords related to potholes. Contains: deep, pothole, near, bus, stop., school, children,...",
+PM-202406,Flooding,Standard,"Description contains keywords related to flooding. Contains: underpass, flooded, knee-deep, after, 2hrs, rain.,...",
+PM-202408,Flooding,Standard,"Description contains keywords related to flooding. Contains: bus, stand, flooded., passengers, standing, in, wa...",
+PM-202410,Streetlight,Standard,"Description contains keywords related to streetlights. Contains: three, consecutive, streetlights, out, for, days.,...",
+PM-202411,Streetlight,Urgent,"Description contains keywords related to streetlights. Contains: streetlight, flickering, and, sparking., electrica...",
+PM-202413,Waste,Standard,"Description contains keywords related to waste. Contains: overflowing, garbage, bins, near, vegetable, marke...",
+PM-202418,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"Description contains keywords related to road damage. Contains: road, surface, cracked, and, sinking, near, utilit...",
+PM-202420,Pothole,Urgent,"Description contains keywords related to potholes. Contains: manhole, cover, missing., risk, of, serious, injur...",
+PM-202427,Flooding,Standard,"Description contains keywords related to flooding. Contains: bridge, approach, floods, in, 30mins, of, rain., b...",
+PM-202428,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Description contains keywords related to heritage sites. Contains: heritage, street,, lights, out., safety, concern, ...",
+PM-202433,Waste,Standard,"Description contains keywords related to waste. Contains: bulk, waste, from, apartment, renovation, dumped, ...",
+PM-202446,Other,Urgent,Category could not be confidently determined from the description.,NEEDS_REVIEW
