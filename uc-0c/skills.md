@@ -1,12 +1,12 @@
 skills:
   - name: load_dataset
-    description: Reads the input CSV budget record, validates its structure, and reports any null `actual_spend` occurrences before returning the data.
-    input: File path to the dataset CSV (e.g., ward_budget.csv)
-    output: Validated data object containing the budget records, along with a report of the null count and specific rows holding null values.
-    error_handling: Raises an explicit error if expected columns are missing or if the file cannot be read. Does not attempt to guess missing values or drop null rows silently.
+    description: Reads the budget CSV file, validates columns, and reports the total null count and specific rows with missing values before returning the dataset.
+    input: File path to the budget dataset CSV string.
+    output: Validated dataset structure and a log/report explicitly calling out rows with a null 'actual_spend'.
+    error_handling: System halts and throws an error if the CSV is missing required columns ('period', 'ward', 'category', 'budgeted_amount', 'actual_spend', 'notes') or if the file cannot be loaded.
 
   - name: compute_growth
-    description: Processes budget records to output a per-period table calculating specified type of growth for an isolated ward and category.
-    input: Target `ward` (string), target `category` (string), and explicitly declared `growth_type` (string, e.g., 'MoM').
-    output: A per-period table containing period, budgeted_amount, actual_spend, computed growth percentage, and the exact formula used for every row.
-    error_handling: Strictly refuses to guess if `--growth-type` isn't provided. Refuses to aggregate metrics across multiple wards or categories if requested. Flags null row scenarios with the specific reason from the `notes` column instead of calculating or throwing a math error.
+    description: Calculates specific growth metrics for a provided ward and category without unauthorized aggregations, and returns a table detailing the formula applied.
+    input: Dataset object, ward (string), category (string), and growth_type (string, e.g., 'MoM').
+    output: A per-period table showing the period, raw spend values, explicit formula used, and the result (or a flagged null row with reason).
+    error_handling: Halts and refuses to guess if `growth_type` is missing or invalid. Halts and refuses if requested to aggregate across multiple wards or categories.
