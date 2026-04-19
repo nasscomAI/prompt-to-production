@@ -1,16 +1,10 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    input: A file path to the input CSV containing complaints (e.g., test_[city].csv).
+    output: A parsed list or structured representation of complaint rows.
+    error_handling: Aborts and raises an error if the input file cannot be read, is missing, or lacks the expected columns.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    input: A single complaint description string.
+    output: A structured record containing category, priority, a one-sentence reason, and an optional flag.
+    error_handling: Sets the flag to NEEDS_REVIEW if genuinely ambiguous; fails if category deviates from exact allowed list.
