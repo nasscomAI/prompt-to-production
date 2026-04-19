@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,formula,growth_percent,status,details
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.9,MoM,N/A,NULL,baseline_no_previous_period,First period in the series; MoM growth cannot be computed without a previous month.
+2024-02,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,MoM,((10.4 - 10.9) / 10.9) * 100,-4.6%,ok,Computed from current and previous month actual_spend values.
+2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,NULL,MoM,N/A,NULL,flagged_null_current,Null actual_spend for this period: Data not submitted by ward office
+2024-04,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,MoM,N/A,NULL,flagged_null_previous,Previous period actual_spend is null; growth not computed. Previous null reason: Data not submitted by ward office
+2024-05,Ward 2 – Shivajinagar,Drainage & Flooding,10.2,MoM,((10.2 - 10.0) / 10.0) * 100,+2.0%,ok,Computed from current and previous month actual_spend values.
+2024-06,Ward 2 – Shivajinagar,Drainage & Flooding,12.3,MoM,((12.3 - 10.2) / 10.2) * 100,+20.6%,ok,Computed from current and previous month actual_spend values.
+2024-07,Ward 2 – Shivajinagar,Drainage & Flooding,12.6,MoM,((12.6 - 12.3) / 12.3) * 100,+2.4%,ok,Computed from current and previous month actual_spend values.
+2024-08,Ward 2 – Shivajinagar,Drainage & Flooding,12.8,MoM,((12.8 - 12.6) / 12.6) * 100,+1.6%,ok,Computed from current and previous month actual_spend values.
+2024-09,Ward 2 – Shivajinagar,Drainage & Flooding,12.9,MoM,((12.9 - 12.8) / 12.8) * 100,+0.8%,ok,Computed from current and previous month actual_spend values.
+2024-10,Ward 2 – Shivajinagar,Drainage & Flooding,11.5,MoM,((11.5 - 12.9) / 12.9) * 100,-10.9%,ok,Computed from current and previous month actual_spend values.
+2024-11,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,MoM,((10.4 - 11.5) / 11.5) * 100,-9.6%,ok,Computed from current and previous month actual_spend values.
+2024-12,Ward 2 – Shivajinagar,Drainage & Flooding,8.4,MoM,((8.4 - 10.4) / 10.4) * 100,-19.2%,ok,Computed from current and previous month actual_spend values.
