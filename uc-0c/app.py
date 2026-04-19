@@ -1,141 +1,157 @@
 import argparse
 import csv
 import sys
-from typing import List, Dict
 
-def load_dataset(filepath: str) -> List[Dict[str, str]]:
-    """Reads CSV, validates columns, reports null count and which rows."""
-    expected_columns = {'period', 'ward', 'category', 'budgeted_amount', 'actual_spend', 'notes'}
-    dataset = []
-    null_rows = []
-    
+def load_dataset(filepath):
+    """
+    Skill: load_dataset
+    Reads CSV, validates columns, reports null count and which rows 
+    before returning. Works without pandas.
+    """
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
             reader = csv.DictReader(f)
-            if not reader.fieldnames or not expected_columns.issubset(set(reader.fieldnames)):
-                raise ValueError(f"CSV missing required columns. Expected: {expected_columns}")
-            
-            for row in reader:
-                dataset.append(row)
-                if not row['actual_spend'] or row['actual_spend'].strip().upper() == 'NULL':
-                    null_rows.append(row)
-    except FileNotFoundError:
-        raise FileNotFoundError(f"Input file not found: {filepath}")
+            headers = reader.fieldnames
+            if not headers:
+                print("Error: Empty dataset")
+                sys.exit(1)
+                
+            required_cols = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]
+            for col in required_cols:
+                if col not in headers:
+                    print(f"Error: Missing required column {col}")
+                    sys.exit(1)
+                    
+            df = list(reader)
+    except Exception as e:
+        print(f"Error reading dataset: {e}")
+        sys.exit(1)
+
+    # Report null values before computation
+    null_count = 0
+    null_rows_info = []
     
-    print(f"Dataset loaded. Total null 'actual_spend' values found: {len(null_rows)}")
-    for row in null_rows:
-        print(f"  - Flagged Null: {row['period']} | {row['ward']} | {row['category']} -> Reason: {row['notes']}")
+    for row in df:
+        val = row.get('actual_spend', '').strip()
+        if not val or val.lower() == 'null':
+            null_count += 1
+            null_rows_info.append(row)
+            
+    print(f"Dataset Validation: Found {null_count} deliberate null 'actual_spend' values.")
+    for row in null_rows_info:
+        print(f"- Null found in: {row['period']} | {row['ward']} | {row['category']} -> Reason (Notes): {row.get('notes', '')}")
+        
+    return df
 
-    return dataset
-
-def compute_growth(dataset: List[Dict[str, str]], ward: str, category: str, growth_type: str) -> List[Dict[str, str]]:
-    """Computes growth metrics per period, flagging formulas and refusing to aggregate across multiple wards/categories."""
+def compute_growth(df, ward, category, growth_type):
+    """
+    Skill: compute_growth
+    Takes ward + category + growth_type, returns per-period table with formula shown.
+    Enforces refusal conditions outlined in agents.md.
+    """
+    # Enforcement Rule 4: If growth-type not specified — refuse and ask
     if not growth_type:
-        raise ValueError("Growth type not specified. System refuses to guess default growth metric.")
-    
-    if not ward or not category or ward.lower() == 'any' or category.lower() == 'any':
-        raise ValueError("Aggregations across all wards or categories are not permitted. Please specify distinct --ward and --category.")
-    
-    filtered = [row for row in dataset if row['ward'] == ward and row['category'] == category]
-            
-    if not filtered:
+        print("REFUSAL: --growth-type not specified. System cannot assume or guess the aggregation method. Please explicitly provide it (e.g., MoM).")
+        sys.exit(1)
+        
+    # Enforcement Rule 1: Never aggregate across wards or categories
+    if ward.lower() in ("any", "all") or category.lower() in ("any", "all") or "," in ward or "," in category:
+        print("REFUSAL: Aggregation across multiple wards or categories requested. This system only calculates strictly isolated per-ward and per-category growth.")
+        sys.exit(1)
+
+    # Isolate data by ward & category
+    filtered_df = []
+    for row in df:
+        if row['ward'] == ward and row['category'] == category:
+            filtered_df.append(row)
+
+    if not filtered_df:
         print(f"Warning: No data found for ward '{ward}' and category '{category}'.")
         return []
         
-    filtered.sort(key=lambda x: x['period'])
+    # Sort by period ascending to calculate sequential growth
+    filtered_df.sort(key=lambda x: x['period'])
     
-    results = []
-    for i, row in enumerate(filtered):
+    output_rows = []
+    prev_val = None
+    
+    for row in filtered_df:
         period = row['period']
-        actual_str = row['actual_spend'].strip()
+        budgeted = row['budgeted_amount']
+        actual_raw = row.get('actual_spend', '').strip()
         notes = row.get('notes', '').strip()
-        is_null = not actual_str or actual_str.upper() == 'NULL'
         
-        res_row = {
-            'Ward': row['ward'],
-            'Category': row['category'],
-            'Period': period,
-            'Actual Spend (₹ lakh)': 'NULL' if is_null else actual_str,
-            f'{growth_type} Growth': '',
-            'Formula': ''
-        }
-        
-        if is_null:
-            res_row[f'{growth_type} Growth'] = f"NULL flagged (Reason: {notes})"
-            res_row['Formula'] = "N/A"
-            results.append(res_row)
-            continue
-            
-        current_spend = float(actual_str)
-        
-        if growth_type.upper() == 'MOM':
-            if i == 0:
-                res_row[f'{growth_type} Growth'] = "N/A (first period)"
-                res_row['Formula'] = "N/A"
-            else:
-                prev_actual_str = filtered[i-1]['actual_spend'].strip()
-                prev_is_null = not prev_actual_str or prev_actual_str.upper() == 'NULL'
-                
-                if prev_is_null:
-                    res_row[f'{growth_type} Growth'] = "Cannot compute (previous period was NULL)"
-                    res_row['Formula'] = "N/A"
-                else:
-                    prev_spend = float(prev_actual_str)
-                    if prev_spend == 0:
-                        res_row[f'{growth_type} Growth'] = "N/A (div by zero)"
-                        res_row['Formula'] = f"({current_spend} - 0) / 0 * 100"
-                    else:
-                        growth = (current_spend - prev_spend) / prev_spend * 100
-                        sign = "+" if growth > 0 else "−" if growth < 0 else ""
-                        abs_growth = abs(growth)
-                        
-                        suffix = f" ({notes})" if notes else ""
-                        res_row[f'{growth_type} Growth'] = f"{sign}{abs_growth:.1f}%{suffix}"
-                        res_row['Formula'] = f"({current_spend} - {prev_spend}) / {prev_spend} * 100"
+        # Enforcement Rule 2: Flag every null row before computing
+        if not actual_raw or actual_raw.lower() == 'null':
+            growth_str = f"Must be flagged — not computed. Reason: {notes}"
+            actual_str = "NULL"
+            formula_str = "N/A - Null actual_spend"
+            prev_val = None # Breaks continuity 
         else:
-            raise ValueError(f"Growth type '{growth_type}' is unsupported.")
-             
-        results.append(res_row)
+            try:
+                actual = float(actual_raw)
+            except ValueError:
+                print(f"Error: Non-numeric active_spend '{actual_raw}' found.")
+                sys.exit(1)
+                
+            actual_str = str(actual)
+            
+            if growth_type.lower() == "mom":
+                if prev_val is not None:
+                    growth_val = ((actual - prev_val) / prev_val) * 100
+                    sign = "+" if growth_val > 0 else "-" if growth_val < 0 else ""
+                    growth_str = f"{sign}{abs(growth_val):.1f}%"
+                    if notes:
+                        growth_str += f" ({notes})"
+                    
+                    # Enforcement Rule 3: Show formula used
+                    formula_str = f"({actual} - {prev_val}) / {prev_val} * 100"
+                else:
+                    growth_str = "n/a"
+                    formula_str = "N/A - No previous valid period"
+                prev_val = actual
+            else:
+                growth_str = "Calculation not implemented for this growth type"
+                formula_str = "N/A"
+                
+        output_rows.append({
+            "period": period,
+            "ward": ward,
+            "category": category,
+            "budgeted_amount": budgeted,
+            # we need to keep "actual_spend" matching output instructions, "NULL" vs numeric
+            "actual_spend": actual_str,
+            "calculated_growth": growth_str,
+            "formula": formula_str
+        })
         
-    return results
+    return output_rows
 
 def main():
-    parser = argparse.ArgumentParser(description="Budget Analysis Agent")
-    parser.add_argument('--input', required=True, help="Input CSV file path")
-    parser.add_argument('--ward', help="Ward name (required to avoid aggregation)")
-    parser.add_argument('--category', help="Category name (required to avoid aggregation)")
-    parser.add_argument('--growth-type', help="Type of growth to compute (e.g., MoM)")
-    parser.add_argument('--output', required=True, help="Output CSV file path")
-    
+    parser = argparse.ArgumentParser(description="UC-0C Municipal Budget Growth Tool")
+    parser.add_argument("--input", required=True, help="Input CSV file path")
+    parser.add_argument("--ward", required=True, help="Target ward for isolated calculation")
+    parser.add_argument("--category", required=True, help="Target category for isolated calculation")
+    parser.add_argument("--growth-type", help="Type of growth calculation (e.g. MoM). If absent, system will refuse.")
+    parser.add_argument("--output", required=True, help="Output CSV file path")
     args = parser.parse_args()
-    
-    if not args.growth_type:
-        print("Error: --growth-type must be specified. System refuses to guess.", file=sys.stderr)
-        sys.exit(1)
-         
-    if not args.ward or args.ward.lower() in ("all", "any") or \
-       not args.category or args.category.lower() in ("all", "any"):
-        print("Error: System refuses to aggregate across wards or categories. Explicit --ward and --category required.", file=sys.stderr)
-        sys.exit(1)
 
-    try:
-        dataset = load_dataset(args.input)
-        results = compute_growth(dataset, args.ward, args.category, args.growth_type)
-        
-        if not results:
-            print("No output generated.")
-            sys.exit(0)
-             
+    # Step 1: Load and validate dataset
+    df = load_dataset(args.input)
+    
+    # Step 2: Extract target metrics
+    result_df = compute_growth(df, args.ward, args.category, args.growth_type)
+    
+    # Step 3: Write out output
+    if result_df:
+        fieldnames = ["period", "ward", "category", "budgeted_amount", "actual_spend", "calculated_growth", "formula"]
         with open(args.output, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=results[0].keys())
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerows(results)
-            
-        print(f"Success. Analysis written to {args.output}")
-        
-    except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
-        sys.exit(1)
+            for row in result_df:
+                writer.writerow(row)
+                
+        print(f"Success! Output written to {args.output}")
 
 if __name__ == "__main__":
     main()
