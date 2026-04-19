@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Roads,MEDIUM,Keyword match: 'pothole',OK
+PM-202402,Roads,HIGH,Keyword match: 'child',OK
+PM-202406,Other,LOW,Standard complaint,OK
+PM-202408,Water,MEDIUM,Keyword match: 'blocked',OK
+PM-202410,Electricity,MEDIUM,Open for 18 days,OK
+PM-202411,Electricity,LOW,Standard complaint,OK
+PM-202413,Sanitation,MEDIUM,Open for 13 days,OK
+PM-202418,Other,LOW,Standard complaint,OK
+PM-202419,Roads,LOW,Standard complaint,OK
+PM-202420,Other,HIGH,Keyword match: 'injury',OK
+PM-202427,Other,MEDIUM,Open for 12 days,OK
+PM-202428,Other,LOW,Standard complaint,OK
+PM-202430,Electricity,MEDIUM,Open for 19 days,OK
+PM-202433,Roads,MEDIUM,Open for 20 days,OK
+PM-202446,Other,MEDIUM,Keyword match: 'broken',OK
