@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Detected keywords: pothole,
+Pothole,Urgent,"Detected keywords: pothole, school, urgent: school",
+Other,Standard,No clear matching keywords found in description,NEEDS_REVIEW
+Drain Blockage,Standard,Detected keywords: drain,
+Other,Standard,No clear matching keywords found in description,NEEDS_REVIEW
+Streetlight,Urgent,"Detected keywords: streetlight, hazard, urgent: hazard",
+Waste,Standard,Detected keywords: garbage,
+Other,Standard,No clear matching keywords found in description,NEEDS_REVIEW
+Other,Standard,No clear matching keywords found in description,NEEDS_REVIEW
+Other,Urgent,"Detected keywords: injury, urgent: injury",NEEDS_REVIEW
+Other,Standard,No clear matching keywords found in description,NEEDS_REVIEW
+Other,Standard,No clear matching keywords found in description,NEEDS_REVIEW
+Heritage Damage,Standard,Detected keywords: heritage,
+Waste,Standard,Detected keywords: waste,
+Other,Urgent,"Detected keywords: fell, urgent: fell",NEEDS_REVIEW
