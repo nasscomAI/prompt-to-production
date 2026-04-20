@@ -8,4 +8,5 @@ Use only the description field from the input row. Exclude: metadata, user profi
 enforcement:
 "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
 "Priority must be Urgent if description contains: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
-"Priority defaults to Standard w
+"Priority defaults to Standard when no Urgent keywords are present; use Low only for clearly trivial routine reports with no safety implication"
+"Set flag to NEEDS_REVIEW when category is genuinely ambiguous; otherwise leave flag blank"
