@@ -37,7 +37,7 @@ def classify_complaint(row: dict) -> dict:
     reason_fragment = "general issue"
     
     if "pothole" in desc_lower:
-        category = "Pothole"
+        category = "Pothole" 
         reason_fragment = "pothole"
     elif "flood" in desc_lower or "underpass" in desc_lower:
         category = "Flooding"
