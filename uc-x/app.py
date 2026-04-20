@@ -132,8 +132,8 @@ def answer_question(question: str, sections: list) -> str:
     """
     Find the most relevant section for a question and return a cited answer.
 
-    Uses keyword matching to find relevant sections, then applies
-    single-source attribution and hedging checks.
+    Uses multi-word phrase matching and keyword scoring to find relevant
+    sections, then applies single-source attribution and hedging checks.
 
     Args:
         question: User's question string.
@@ -144,23 +144,61 @@ def answer_question(question: str, sections: list) -> str:
     """
     question_lower = question.lower()
 
-    # Extract keywords from the question (simple approach)
-    # Remove common stop words
+    # Multi-word phrases to detect first (higher precision matching)
+    PHRASE_MAP = {
+        "leave without pay": "lwp",
+        "who approves": "approval",
+        "carry forward": "carry-forward",
+        "personal phone": "personal devices",
+        "personal device": "personal devices",
+        "work from home": "work-from-home",
+        "home office": "home office",
+        "sick leave": "sick leave",
+        "annual leave": "annual leave",
+        "maternity leave": "maternity leave",
+        "paternity leave": "paternity leave",
+        "medical certificate": "medical certificate",
+        "meal receipts": "meal",
+        "daily allowance": "daily allowance",
+        "equipment allowance": "allowance",
+        "leave encashment": "encashment",
+        "install": "install",
+    }
+
+    # Check for phrase matches
+    matched_phrases = []
+    for phrase, search_term in PHRASE_MAP.items():
+        if phrase in question_lower:
+            matched_phrases.append((phrase, search_term))
+
+    # Extract single keywords (fallback)
     stop_words = {
         "can", "i", "the", "a", "an", "is", "are", "do", "does", "what",
         "how", "who", "when", "where", "my", "for", "to", "of", "in", "on",
-        "and", "or", "if", "it", "be", "am", "was", "were"
+        "and", "or", "if", "it", "be", "am", "was", "were", "not", "this",
+        "that", "with", "from", "have", "has", "had", "but", "about", "any",
+        "same", "day", "company", "view", "culture", "flexible", "working",
     }
     words = re.findall(r"[a-z]+", question_lower)
     keywords = [w for w in words if w not in stop_words and len(w) > 2]
 
-    # Score each section by keyword overlap
+    # Score each section
     scored = []
     for section in sections:
         section_text_lower = section["text"].lower()
         section_heading_lower = section["heading"].lower()
         score = 0
 
+        # Phrase matches get high weight (count occurrences for precision)
+        for phrase, search_term in matched_phrases:
+            phrase_hits = section_text_lower.count(phrase) + section_text_lower.count(search_term)
+            if phrase_hits > 0:
+                score += 6 * phrase_hits
+            heading_hits = section_heading_lower.count(phrase) + section_heading_lower.count(search_term)
+            if heading_hits > 0:
+                score += 3
+
+        # Single keyword matches
         for kw in keywords:
             if kw in section_text_lower:
                 score += 2
@@ -179,7 +217,9 @@ def answer_question(question: str, sections: list) -> str:
     # Get top match
     best_score, best_section = scored[0]
 
-    if best_score < 2:
+    # Higher threshold when no phrase matched (prevents vague keyword hits)
+    min_score = 4 if not matched_phrases else 2
+    if best_score < min_score:
         return REFUSAL_TEMPLATE
 
     # Check if top matches span multiple documents (blending risk)
