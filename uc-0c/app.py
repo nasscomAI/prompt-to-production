@@ -17,7 +17,7 @@ import sys
 # -----------------------------------------------------------------------
 
 REQUIRED_COLUMNS = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]
-VALID_GROWTH_TYPES = ["MoM", "YoY"]
+VALID_GROWTH_TYPES = ["MoM", "YoY"] 
 
 
 # -----------------------------------------------------------------------
