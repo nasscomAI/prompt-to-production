@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on complaint description text.,
+PM-202402,Pothole,Urgent,Marked Urgent due to severity keyword present in description such as 'child'.,
+PM-202406,Flooding,Standard,Classified based on complaint description text.,
+PM-202408,Flooding,Standard,Classified based on complaint description text.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified based on complaint description text.,
+PM-202411,Streetlight,Urgent,Marked Urgent due to severity keyword present in description such as 'hazard'.,
+PM-202413,Waste,Standard,Classified based on complaint description text.,
+PM-202418,Other,Standard,Classified based on complaint description text.,
+PM-202419,Other,Standard,Classified based on complaint description text.,
+PM-202420,Other,Urgent,Marked Urgent due to severity keyword present in description such as 'injury'.,
+PM-202427,Flooding,Standard,Classified based on complaint description text.,
+PM-202428,Other,Standard,Classified based on complaint description text.,
+PM-202430,Heritage Damage,Standard,Classified based on complaint description text.,
+PM-202433,Waste,Standard,Classified based on complaint description text.,
+PM-202446,Other,Urgent,Marked Urgent due to severity keyword present in description such as 'fell'.,

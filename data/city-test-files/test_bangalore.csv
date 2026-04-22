@@ -1,0 +1,16 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open
+BLR-202401,2024-06-21,Bangalore,Ward 1 – Malleshwaram,Sampige Road near Malleshwaram Circle,Large pothole 50cm wide causing vehicle damage during peak hours.,Citizen Portal,4
+BLR-202402,2024-06-04,Bangalore,Ward 2 – Rajajinagar,Dr Rajkumar Road near Metro Station,Deep pothole near metro exit posing risk to pedestrians.,Councillor Referral,12
+BLR-202406,2024-06-08,Bangalore,Ward 3 – Shivajinagar,Queens Road underpass,Underpass flooded after continuous rain. Traffic diverted.,Councillor Referral,8
+BLR-202408,2024-06-05,Bangalore,Ward 4 – Indiranagar,100 Feet Road bus stop,Bus stop flooded. Commuters waiting on road.,Ward Office Walk-in,12
+BLR-202410,2024-06-04,Bangalore,Ward 5 – Jayanagar,4th Block Market Road,Multiple streetlights not working for over a week.,Email,18
+BLR-202411,2024-06-22,Bangalore,Ward 6 – Whitefield,ITPL Main Road,Streetlight flickering and sparking near tech park.,Social Media,9
+BLR-202413,2024-06-29,Bangalore,Ward 7 – Yeshwanthpur,Yeshwanthpur Market Area,Overflowing garbage bins near vegetable market.,WhatsApp Helpline,13
+BLR-202418,2024-06-02,Bangalore,Ward 8 – BTM Layout,2nd Stage Residential Area,Loud music from venue past midnight disturbing residents.,Citizen Portal,5
+BLR-202419,2024-06-01,Bangalore,Ward 9 – Koramangala,Sony World Junction,Road surface sinking near recent utility work.,Social Media,2
+BLR-202420,2024-06-03,Bangalore,Ward 10 – Banashankari,Outer Ring Road near PES University,Open manhole without cover creating accident risk.,Email,14
+BLR-202427,2024-06-07,Bangalore,Ward 11 – Hebbal,Hebbal Flyover Service Road,Waterlogging makes approach road inaccessible after rain.,Councillor Referral,12
+BLR-202428,2024-06-23,Bangalore,Ward 12 – Sadashivanagar,Bellary Road,Dead animal not removed for over a day. Health concern.,Email,1
+BLR-202430,2024-06-23,Bangalore,Ward 13 – Chickpet,Chickpet Market Area,Streetlights not working in heritage market area.,Social Media,19
+BLR-202433,2024-06-08,Bangalore,Ward 14 – Marathahalli,Outer Ring Road,Construction debris dumped on public road.,Phone Helpline,20
+BLR-202446,2024-06-09,Bangalore,Ward 15 – Basavanagudi,Bull Temple Road,Broken footpath tiles causing trips and falls.,Email,18
