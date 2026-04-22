@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Urgent because the description mentions the safety-critical term 'ambulance'.,
+GH-202402,Flooding,Standard,Classified as Flooding based on the mention of related terms in the description.,
+GH-202406,Flooding,Standard,Classified as Flooding based on the mention of related terms in the description.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on the mention of related terms in the description.,
+GH-202410,Pothole,Low,Classified as Pothole based on the mention of related terms in the description.,
+GH-202411,Pothole,Urgent,Classified as Urgent because the description mentions the safety-critical term 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Urgent because the description mentions the safety-critical term 'school'.,
+GH-202417,Waste,Low,Classified as Waste based on the mention of related terms in the description.,
+GH-202420,Other,Standard,Classified as Other based on the mention of related terms in the description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classified as Urgent because the description mentions the safety-critical term 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on the mention of related terms in the description.,
+GH-202428,Waste,Standard,Classified as Waste based on the mention of related terms in the description.,
+GH-202432,Other,Standard,Classified as Other based on the mention of related terms in the description.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Classified as Flooding based on the mention of related terms in the description.,
+GH-202438,Flooding,Standard,Classified as Flooding based on the mention of related terms in the description.,

@@ -7,23 +7,91 @@ import csv
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
+    Classify a single complaint row based on RICE rules.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    description = row.get('description', '').lower()
+    complaint_id = row.get('complaint_id', 'UNKNOWN')
+    
+    # 1. Category Mapping
+    category = "Other"
+    flag = ""
+    
+    if "pothole" in description:
+        category = "Pothole"
+    elif "flood" in description or "rain" in description and "water" in description:
+        category = "Flooding"
+    elif "streetlight" in description or "light" in description:
+        category = "Streetlight"
+    elif "garbage" in description or "waste" in description or "smell" in description:
+        category = "Waste"
+    elif "noise" in description or "music" in description:
+        category = "Noise"
+    elif "road" in description and "surface" in description or "cracked" in description:
+        category = "Road Damage"
+    elif "heritage" in description:
+        category = "Heritage Damage"
+    elif "heat" in description or "hot" in description:
+        category = "Heat Hazard"
+    elif "drain" in description and "block" in description:
+        category = "Drain Blockage"
+    
+    # Ambiguity check
+    if category == "Other" or not description:
+        flag = "NEEDS_REVIEW"
+
+    # 2. Priority Logic
+    urgent_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
+    priority = "Standard"
+    triggered_keyword = ""
+    for kw in urgent_keywords:
+        if kw in description:
+            priority = "Urgent"
+            triggered_keyword = kw
+            break
+    
+    if priority != "Urgent" and "low" in description:
+        priority = "Low"
+
+    # 3. Reason Generation
+    if priority == "Urgent":
+        reason = f"Classified as Urgent because the description mentions the safety-critical term '{triggered_keyword}'."
+    else:
+        reason = f"Classified as {category} based on the mention of related terms in the description."
+
+    return {
+        "complaint_id": complaint_id,
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    results = []
+    try:
+        with open(input_path, mode='r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                results.append(classify_complaint(row))
+                
+        if not results:
+            print("No data found in input file.")
+            return
+
+        keys = results[0].keys()
+        with open(output_path, mode='w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=keys)
+            writer.writeheader()
+            writer.writerows(results)
+            
+    except FileNotFoundError:
+        print(f"Error: Input file {input_path} not found.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
 
 
 if __name__ == "__main__":
