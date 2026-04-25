@@ -73,8 +73,6 @@ logging.basicConfig(
     level=logging.WARNING,
     format="%(levelname)s: %(message)s",
 )
-
-
 # ---------------------------------------------------------------------------
 # Skill 1 — classify_complaint
 # Input  : dict with keys complaint_id, date_raised, city, ward, location,
