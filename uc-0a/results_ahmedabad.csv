@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Category keyword 'temperature' found.,
+AM-202405,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category keyword 'heat' found.,
+AM-202407,Other,Urgent,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category keyword 'pothole' found.,
+AM-202414,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Ambiguous: matched multiple categories (Waste, Heritage Damage).",NEEDS_REVIEW
+AM-202421,Noise,Standard,Category keyword 'music' found.,
+AM-202424,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Category keyword 'temperature' found.,
+AM-202431,Heritage Damage,Standard,Category keyword 'heritage' found.,
+AM-202435,Heat Hazard,Standard,Category keyword 'heat' found.,
+AM-202444,Other,Standard,"Ambiguous: matched multiple categories (Flooding, Waste, Heat Hazard).",NEEDS_REVIEW
+AM-202445,Heat Hazard,Standard,Category keyword 'sun' found.,

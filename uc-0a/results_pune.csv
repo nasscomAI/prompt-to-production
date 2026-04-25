@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category keyword 'pothole' found.,
+PM-202402,Pothole,Urgent,Category keyword 'pothole' found. Priority keyword 'child' found.,
+PM-202406,Flooding,Standard,Category keyword 'flood' found.,
+PM-202408,Other,Standard,"Ambiguous: matched multiple categories (Flooding, Drain Blockage).",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category keyword 'streetlight' found.,
+PM-202411,Streetlight,Urgent,Category keyword 'streetlight' found. Priority keyword 'hazard' found.,
+PM-202413,Other,Standard,"Ambiguous: matched multiple categories (Flooding, Waste).",NEEDS_REVIEW
+PM-202418,Noise,Standard,Category keyword 'music' found.,
+PM-202419,Road Damage,Standard,Category keyword 'crack' found.,
+PM-202420,Pothole,Urgent,Category keyword 'hole' found. Priority keyword 'injury' found.,
+PM-202427,Flooding,Standard,Category keyword 'flood' found.,
+PM-202428,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Ambiguous: matched multiple categories (Streetlight, Heritage Damage).",NEEDS_REVIEW
+PM-202433,Waste,Standard,Category keyword 'waste' found.,
+PM-202446,Other,Urgent,No specific category keywords found in description.,NEEDS_REVIEW
