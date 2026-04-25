@@ -1,0 +1,73 @@
+Ward,Category,Period,Actual Spend (₹ lakh),Growth,Formula,Note
+Ward 1 – Kasba,Roads & Pothole Repair,2024-01,13.3,N/A (First),n/a,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-02,12.2,-8.3%,(12.2 - 13.3) / 13.3,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-03,12.3,+0.8%,(12.3 - 12.2) / 12.2,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-04,13.4,+8.9%,(13.4 - 12.3) / 12.3,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-05,14.1,+5.2%,(14.1 - 13.4) / 13.4,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-06,14.8,+5.0%,(14.8 - 14.1) / 14.1,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-07,19.7,+33.1%,(19.7 - 14.8) / 14.8,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-08,20.2,+2.5%,(20.2 - 19.7) / 19.7,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-09,20.1,-0.5%,(20.1 - 20.2) / 20.2,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-10,13.1,-34.8%,(13.1 - 20.1) / 20.1,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-11,14.2,+8.4%,(14.2 - 13.1) / 13.1,Computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-12,12.7,-10.6%,(12.7 - 14.2) / 14.2,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-01,10.9,N/A (First),n/a,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-02,10.4,-4.6%,(10.4 - 10.9) / 10.9,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-03,NULL,NULL,n/a,FLAGGED: Data not submitted by ward office
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-04,10.0,N/A,(10.0 - NULL) / NULL,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-05,10.2,+2.0%,(10.2 - 10.0) / 10.0,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-06,12.3,+20.6%,(12.3 - 10.2) / 10.2,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-07,12.6,+2.4%,(12.6 - 12.3) / 12.3,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-08,12.8,+1.6%,(12.8 - 12.6) / 12.6,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-09,12.9,+0.8%,(12.9 - 12.8) / 12.8,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-10,11.5,-10.9%,(11.5 - 12.9) / 12.9,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-11,10.4,-9.6%,(10.4 - 11.5) / 11.5,Computed
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-12,8.4,-19.2%,(8.4 - 10.4) / 10.4,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-01,10.2,N/A (First),n/a,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-02,10.7,+4.9%,(10.7 - 10.2) / 10.2,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-03,11.1,+3.7%,(11.1 - 10.7) / 10.7,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-04,8.8,-20.7%,(8.8 - 11.1) / 11.1,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-05,11.3,+28.4%,(11.3 - 8.8) / 8.8,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-06,12.5,+10.6%,(12.5 - 11.3) / 11.3,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-07,NULL,NULL,n/a,FLAGGED: Audit freeze — figures under review
+Ward 4 – Warje,Roads & Pothole Repair,2024-08,16.0,N/A,(16.0 - NULL) / NULL,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-09,14.7,-8.1%,(14.7 - 16.0) / 16.0,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-10,11.0,-25.2%,(11.0 - 14.7) / 14.7,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-11,9.0,-18.2%,(9.0 - 11.0) / 11.0,Computed
+Ward 4 – Warje,Roads & Pothole Repair,2024-12,11.2,+24.4%,(11.2 - 9.0) / 9.0,Computed
+Ward 1 – Kasba,Waste Management,2024-01,5.3,N/A (First),n/a,Computed
+Ward 1 – Kasba,Waste Management,2024-02,6.4,+20.8%,(6.4 - 5.3) / 5.3,Computed
+Ward 1 – Kasba,Waste Management,2024-03,6.5,+1.6%,(6.5 - 6.4) / 6.4,Computed
+Ward 1 – Kasba,Waste Management,2024-04,5.7,-12.3%,(5.7 - 6.5) / 6.5,Computed
+Ward 1 – Kasba,Waste Management,2024-05,6.1,+7.0%,(6.1 - 5.7) / 5.7,Computed
+Ward 1 – Kasba,Waste Management,2024-06,5.7,-6.6%,(5.7 - 6.1) / 6.1,Computed
+Ward 1 – Kasba,Waste Management,2024-07,7.6,+33.3%,(7.6 - 5.7) / 5.7,Computed
+Ward 1 – Kasba,Waste Management,2024-08,8.3,+9.2%,(8.3 - 7.6) / 7.6,Computed
+Ward 1 – Kasba,Waste Management,2024-09,8.9,+7.2%,(8.9 - 8.3) / 8.3,Computed
+Ward 1 – Kasba,Waste Management,2024-10,6.8,-23.6%,(6.8 - 8.9) / 8.9,Computed
+Ward 1 – Kasba,Waste Management,2024-11,NULL,NULL,n/a,FLAGGED: Contractor change — billing delayed
+Ward 1 – Kasba,Waste Management,2024-12,5.1,N/A,(5.1 - NULL) / NULL,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-01,3.3,N/A (First),n/a,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-02,3.3,+0.0%,(3.3 - 3.3) / 3.3,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-03,3.4,+3.0%,(3.4 - 3.3) / 3.3,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-04,2.8,-17.6%,(2.8 - 3.4) / 3.4,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-05,2.9,+3.6%,(2.9 - 2.8) / 2.8,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-06,4.0,+37.9%,(4.0 - 2.9) / 2.9,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-07,3.8,-5.0%,(3.8 - 4.0) / 4.0,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-08,NULL,NULL,n/a,FLAGGED: Project suspended — pending approval
+Ward 3 – Kothrud,Parks & Greening,2024-09,4.4,N/A,(4.4 - NULL) / NULL,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-10,3.5,-20.5%,(3.5 - 4.4) / 4.4,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-11,3.6,+2.9%,(3.6 - 3.5) / 3.5,Computed
+Ward 3 – Kothrud,Parks & Greening,2024-12,2.8,-22.2%,(2.8 - 3.6) / 3.6,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-01,3.4,N/A (First),n/a,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-02,3.4,+0.0%,(3.4 - 3.4) / 3.4,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-03,4.1,+20.6%,(4.1 - 3.4) / 3.4,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-04,4.1,+0.0%,(4.1 - 4.1) / 4.1,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-05,NULL,NULL,n/a,FLAGGED: Equipment procurement delay
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-06,3.8,N/A,(3.8 - NULL) / NULL,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-07,5.3,+39.5%,(5.3 - 3.8) / 3.8,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-08,5.4,+1.9%,(5.4 - 5.3) / 5.3,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-09,5.0,-7.4%,(5.0 - 5.4) / 5.4,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-10,3.8,-24.0%,(3.8 - 5.0) / 5.0,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-11,3.3,-13.2%,(3.3 - 3.8) / 3.8,Computed
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-12,3.4,+3.0%,(3.4 - 3.3) / 3.3,Computed
