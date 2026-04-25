@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202402,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202405,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202406,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,The description contains 'broken' indicating a Road Damage.,
+AM-202410,Pothole,Standard,The description contains 'pothole' indicating a Pothole.,
+AM-202414,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202417,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202421,Noise,Standard,The description contains 'music' indicating a Noise.,
+AM-202424,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202429,Other,Standard,The category is genuinely ambiguous or could not be determined from the description alone.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description contains 'heritage' indicating a Heritage Damage.,
+AM-202435,Heat Hazard,Standard,The description contains 'heat' indicating a Heat Hazard.,
+AM-202444,Waste,Standard,The description contains 'waste' indicating a Waste.,
+AM-202445,Road Damage,Standard,The description contains 'broken' indicating a Road Damage.,
