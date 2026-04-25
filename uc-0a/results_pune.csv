@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole due to mentions of pothole.,
+PM-202402,Pothole,Urgent,"Classified as Urgent because description contains safety-critical words: child, school.",
+PM-202406,Flooding,Standard,Classified as Flooding due to mentions of flooded.,
+PM-202408,Flooding,Standard,Classified as Flooding due to mentions of flooded.,
+PM-202410,Streetlight,Standard,Classified as Streetlight due to mentions of streetlight.,
+PM-202411,Streetlight,Urgent,Classified as Urgent because description contains safety-critical words: hazard.,
+PM-202413,Waste,Low,Classified as Waste due to mentions of garbage.,
+PM-202418,Noise,Standard,Classified as Noise due to mentions of music.,
+PM-202419,Road Damage,Standard,Classified as Road Damage due to mentions of cracked.,
+PM-202420,Drain Blockage,Urgent,Classified as Urgent because description contains safety-critical words: injury.,
+PM-202427,Other,Standard,Classified as Other because description did not match specific category keywords.,NEEDS_REVIEW
+PM-202428,Other,Standard,Classified as Other because description did not match specific category keywords.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight due to mentions of lights out.,
+PM-202433,Waste,Standard,Classified as Waste due to mentions of waste.,
+PM-202446,Road Damage,Urgent,Classified as Urgent because description contains safety-critical words: fell.,
