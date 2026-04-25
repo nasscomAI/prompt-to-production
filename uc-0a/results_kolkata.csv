@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight because description contains the word 'lamp'.,NEEDS_REVIEW
+KM-202402,Other,Standard,Classified as Other as no specific category keywords were found.,
+KM-202405,Other,Standard,Classified as Other as no specific category keywords were found.,
+KM-202409,Pothole,Standard,Classified as Pothole because description contains the word 'pothole'.,
+KM-202410,Pothole,Standard,Classified as Pothole because description contains the word 'pothole'.,
+KM-202411,Pothole,Standard,Classified as Pothole because description contains the word 'pothole'.,NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage because description contains the word 'drain'.,
+KM-202418,Waste,Standard,Classified as Waste because description contains the word 'waste'.,
+KM-202421,Other,Urgent,Classified as Other but marked Urgent due to keyword 'hospital'.,
+KM-202422,Other,Standard,Classified as Other as no specific category keywords were found.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because description contains the word 'heritage'.,
+KM-202430,Other,Standard,Classified as Other as no specific category keywords were found.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because description contains the word 'heritage'.,
+KM-202436,Streetlight,Standard,Classified as Streetlight because description contains the word 'dark'.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because description contains the word 'heritage'.,
