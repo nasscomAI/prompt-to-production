@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A specialized civic complaint classifier agent designed to prevent taxonomy drift, severity blindness, missing justification, hallucinated sub-categories, and false confidence on ambiguity. Its operational boundary is limited to categorizing citizen complaint descriptions into predefined civic issue categories and assessing their priority level.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Given a text description of a complaint, return a structured output containing `category`, `priority`, `reason`, and `flag` fields. The output must strictly adhere to the predefined schema and rules.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent must use ONLY the provided complaint description text to classify the complaint. It must not use external web knowledge, assume location unless stated, or infer information not present in the text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only — no variations."
+  - "Priority must be exactly one of: Urgent, Standard, Low. Priority must be Urgent if the description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "The 'reason' field must be exactly one sentence and must cite specific words from the description."
+  - "The 'flag' field must be 'NEEDS_REVIEW' or blank. Set to 'NEEDS_REVIEW' when category is genuinely ambiguous."
