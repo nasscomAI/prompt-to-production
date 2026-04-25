@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Found 'temperature' in description.,
+AM-202405,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Found 'heat' in description.,
+AM-202407,Other,Urgent,Description mentions child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Found 'pothole' in description.,
+AM-202414,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+AM-202417,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+AM-202421,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+AM-202424,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Found 'temperature' in description.,
+AM-202431,Heritage Damage,Standard,Found 'heritage' in description.,
+AM-202435,Heat Hazard,Standard,Found 'heat' in description.,
+AM-202444,Waste,Standard,Found 'waste' in description.,
+AM-202445,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
