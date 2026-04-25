@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description contains 'heritage' indicating Heritage Damage issue.,
+KM-202402,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202405,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description contains 'pothole' indicating Pothole issue.,
+KM-202410,Pothole,Standard,Description contains 'pothole' indicating Pothole issue.,
+KM-202411,Pothole,Standard,Description contains 'pothole' indicating Pothole issue.,
+KM-202415,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Description contains 'waste' indicating Waste issue.,
+KM-202421,Road Damage,Urgent,Description contains 'sinking' indicating Road Damage issue.,
+KM-202422,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Description contains 'heritage' indicating Heritage Damage issue.,
+KM-202430,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Description contains 'heritage' indicating Heritage Damage issue.,
+KM-202436,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Description contains 'heritage' indicating Heritage Damage issue.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Description contains 'temperature' indicating Heat Hazard issue.,
+AM-202405,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description contains 'heat' indicating Heat Hazard issue.,
+AM-202407,Road Damage,Urgent,Description contains 'upturned' indicating Road Damage issue.,
+AM-202410,Pothole,Standard,Description contains 'pothole' indicating Pothole issue.,
+AM-202414,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Description contains 'heritage' indicating Heritage Damage issue.,
+AM-202421,Noise,Standard,Description contains 'music' indicating Noise issue.,
+AM-202424,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Description contains 'temperature' indicating Heat Hazard issue.,
+AM-202431,Heritage Damage,Standard,Description contains 'heritage' indicating Heritage Damage issue.,
+AM-202435,Heat Hazard,Standard,Description contains 'heat' indicating Heat Hazard issue.,
+AM-202444,Waste,Standard,Description contains 'waste' indicating Waste issue.,
+AM-202445,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
