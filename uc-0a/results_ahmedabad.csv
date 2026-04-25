@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Ambiguous description or no matching category found in taxonomy.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Categorized as Heat Hazard based on detection of 'temperature' in description.,
+AM-202405,Other,Standard,Ambiguous description or no matching category found in taxonomy.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as Heat Hazard based on detection of 'heat' in description.,
+AM-202407,Other,Urgent,Classified as Urgent due to severity keyword(s): child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Categorized as Pothole based on detection of 'pothole' in description.,
+AM-202414,Other,Standard,Ambiguous description or no matching category found in taxonomy.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized as Waste based on detection of 'waste' in description.,
+AM-202421,Other,Standard,Ambiguous description or no matching category found in taxonomy.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Categorized as Road Damage based on detection of 'road' in description.,
+AM-202429,Heat Hazard,Standard,Categorized as Heat Hazard based on detection of 'temperature' in description.,
+AM-202431,Road Damage,Standard,Categorized as Road Damage based on detection of 'road' in description.,
+AM-202435,Road Damage,Standard,Categorized as Road Damage based on detection of 'road' in description.,
+AM-202444,Waste,Standard,Categorized as Waste based on detection of 'waste' in description.,
+AM-202445,Heat Hazard,Standard,Categorized as Heat Hazard based on detection of 'sun' in description.,
