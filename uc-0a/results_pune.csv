@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on the mention of 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Classified as Pothole based on the mention of 'pothole' in the description. Priority set to Urgent due to safety keyword: 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding based on the mention of 'flood' in the description.,
+PM-202408,Flooding,Standard,Classified as Flooding based on the mention of 'flood' in the description.,
+PM-202410,Streetlight,Standard,Classified as Streetlight based on the mention of 'light' in the description.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight based on the mention of 'light' in the description. Priority set to Urgent due to safety keyword: 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste based on the mention of 'garbage' in the description.,
+PM-202418,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+PM-202419,Pothole,Standard,Classified as Pothole based on the mention of 'cracked' in the description.,
+PM-202420,Pothole,Urgent,Classified as Pothole based on the mention of 'hole' in the description. Priority set to Urgent due to safety keyword: 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding based on the mention of 'flood' in the description.,
+PM-202428,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight based on the mention of 'light' in the description.,
+PM-202433,Waste,Standard,Classified as Waste based on the mention of 'waste' in the description.,
+PM-202446,Other,Urgent,Classified as Other because no matching category found in description. Priority set to Urgent due to safety keyword: 'fell'.,NEEDS_REVIEW

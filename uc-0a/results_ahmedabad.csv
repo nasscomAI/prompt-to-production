@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on the mention of 'temperature' in the description.,
+AM-202405,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on the mention of 'heat' in the description.,
+AM-202407,Other,Urgent,Classified as Other because no matching category found in description. Priority set to Urgent due to safety keyword: 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole based on the mention of 'pothole' in the description.,
+AM-202414,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste based on the mention of 'waste' in the description.,
+AM-202421,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+AM-202424,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on the mention of 'temperature' in the description.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage based on the mention of 'heritage' in the description.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on the mention of 'heat' in the description.,
+AM-202444,Waste,Standard,Classified as Waste based on the mention of 'waste' in the description.,
+AM-202445,Other,Low,Classified as Other because no matching category found in description.,NEEDS_REVIEW
