@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202402,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202405,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The complaint mentions 'general issues' indicating heat hazard.,
+AM-202407,Other,Urgent,The complaint mentions 'Child' indicating other.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The complaint mentions 'Pothole' indicating pothole.,
+AM-202414,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The complaint mentions 'waste' indicating waste.,
+AM-202421,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202424,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202429,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The complaint mentions 'general issues' indicating heritage damage.,
+AM-202435,Heat Hazard,Standard,The complaint mentions 'general issues' indicating heat hazard.,
+AM-202444,Waste,Standard,The complaint mentions 'waste' indicating waste.,
+AM-202445,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW

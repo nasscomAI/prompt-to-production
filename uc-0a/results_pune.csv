@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint mentions 'pothole' indicating pothole.,
+PM-202402,Pothole,Urgent,"The complaint mentions 'pothole, School' indicating pothole.",
+PM-202406,Flooding,Standard,The complaint mentions 'general issues' indicating flooding.,
+PM-202408,Flooding,Standard,The complaint mentions 'general issues' indicating flooding.,
+PM-202410,Streetlight,Standard,The complaint mentions 'general issues' indicating streetlight.,
+PM-202411,Streetlight,Urgent,"The complaint mentions 'Streetlight, hazard' indicating streetlight.",
+PM-202413,Waste,Standard,The complaint mentions 'general issues' indicating waste.,
+PM-202418,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+PM-202419,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The complaint mentions 'injury' indicating other.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The complaint mentions 'general issues' indicating flooding.,
+PM-202428,Other,Standard,The complaint mentions 'general issues' indicating other.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,The complaint mentions 'general issues' indicating streetlight.,
+PM-202433,Waste,Standard,The complaint mentions 'waste' indicating waste.,
+PM-202446,Other,Urgent,The complaint mentions 'fell' indicating other.,NEEDS_REVIEW
