@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""tarmac surface melting at 44°c. footwear sticking. park user"".",NEEDS_REVIEW
+AM-202402,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""metal bus shelter reaching dangerous temperatures. commuters"".",NEEDS_REVIEW
+AM-202405,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""dead trees with split branches. fall risk to walkers. 3 tree"".",NEEDS_REVIEW
+AM-202406,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""irrigation system broken. grass dying in heatwave conditions"".",NEEDS_REVIEW
+AM-202407,Other,Urgent,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""broken bench and upturned paving. child injured last week."".",NEEDS_REVIEW
+AM-202410,Road Repair,Standard,"Classified as Road Repair based on ""pothole"" in the complaint description.",
+AM-202414,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""residential colony unlit after 9pm. wiring theft reported."".",NEEDS_REVIEW
+AM-202417,Sanitation,Standard,"Classified as Sanitation based on ""waste"" in the complaint description.",
+AM-202421,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""club music audible at residential buildings at 2am."".",NEEDS_REVIEW
+AM-202424,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+AM-202429,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""river walk surface temperature unbearable. installed tempera"".",NEEDS_REVIEW
+AM-202431,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+AM-202435,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+AM-202444,Sanitation,Standard,"Classified as Sanitation based on ""waste"" in the complaint description.",
+AM-202445,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""brt shelter roof glass broken. users exposed to full sun."".",NEEDS_REVIEW

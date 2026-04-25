@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""underpass flooded after 1hr rain. ambulance diverted. lives "".",NEEDS_REVIEW
+GH-202402,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""market area flooded. traders suffering losses. drain complet"".",NEEDS_REVIEW
+GH-202406,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""main stormwater drain 100% blocked with construction debris."".",NEEDS_REVIEW
+GH-202407,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""drain blocked and mosquito breeding. dengue concern."".",NEEDS_REVIEW
+GH-202410,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+GH-202411,Road Repair,Standard,"Classified as Road Repair based on ""pothole"" in the complaint description.",
+GH-202412,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""school bus struggling to navigate 6 potholes in 200m stretch"".",NEEDS_REVIEW
+GH-202417,Sanitation,Standard,"Classified as Sanitation based on ""garbage"" in the complaint description.",
+GH-202420,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""construction drilling from 5am daily near residential towers"".",NEEDS_REVIEW
+GH-202422,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+GH-202424,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""underpass floods in light rain. cars regularly abandoned."".",NEEDS_REVIEW
+GH-202428,Sanitation,Standard,"Classified as Sanitation based on ""waste"" in the complaint description.",
+GH-202432,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""24hr supermarket delivery trucks idling with engines on."".",NEEDS_REVIEW
+GH-202448,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""main drain blocked — entire locality at flooding risk this w"".",NEEDS_REVIEW
+GH-202438,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",

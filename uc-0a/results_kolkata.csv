@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Street Light,Standard,"Classified as Street Light based on ""lamp post"" in the complaint description.",
+KM-202402,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+KM-202405,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""wedding band playing near tagore museum at 11pm. festival se"".",NEEDS_REVIEW
+KM-202409,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+KM-202410,Road Repair,Standard,"Classified as Road Repair based on ""pothole"" in the complaint description.",
+KM-202411,Road Repair,Standard,"Classified as Road Repair based on ""pothole"" in the complaint description.",
+KM-202415,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+KM-202418,Sanitation,Standard,"Classified as Sanitation based on ""waste"" in the complaint description.",
+KM-202421,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""footpath broken and sinking. elderly pedestrian fell. hospit"".",NEEDS_REVIEW
+KM-202422,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+KM-202426,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""heritage residential building exterior defaced by billboard "".",NEEDS_REVIEW
+KM-202430,Water Supply,Standard,"Classified as Water Supply based on ""leak"" in the complaint description.",
+KM-202434,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""street paving removed for utility work — heritage stone not "".",NEEDS_REVIEW
+KM-202436,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""entire colony substation tripped. darkness for 3 nights."".",NEEDS_REVIEW
+KM-202438,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""street vendors using amplifiers illegally in heritage precin"".",NEEDS_REVIEW
