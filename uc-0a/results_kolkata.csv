@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Description mentions 'historic', classifying this as Heritage Damage with Standard priority.",
+KM-202405,Heritage Damage,Standard,"Description mentions 'tagore', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description mentions 'pothole', classifying this as Pothole with Standard priority.",
+KM-202410,Pothole,Standard,"Description mentions 'pothole', classifying this as Pothole with Standard priority.",
+KM-202411,Pothole,Standard,"Description mentions 'pothole', classifying this as Pothole with Standard priority.",NEEDS_REVIEW
+KM-202415,Other,Low,No matching category keywords found in the description; classified as Other and flagged for review.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"Description mentions 'waste', classifying this as Waste with Standard priority.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Description mentions 'sinking' indicating Road Damage, and the word 'hospital' triggers Urgent priority.",
+KM-202422,Road Damage,Standard,"Description mentions 'road surface', classifying this as Road Damage with Standard priority.",
+KM-202426,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",
+KM-202430,Road Damage,Standard,"Description mentions 'subsided', classifying this as Road Damage with Standard priority.",
+KM-202434,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Description mentions 'darkness', classifying this as Streetlight with Standard priority.",
+KM-202438,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW

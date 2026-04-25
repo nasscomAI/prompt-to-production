@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,No matching category keywords found in the description; classified as Other and flagged for review.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Description mentions 'temperature', classifying this as Heat Hazard with Standard priority.",
+AM-202405,Other,Low,No matching category keywords found in the description; classified as Other and flagged for review.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions 'heat', classifying this as Heat Hazard with Standard priority.",
+AM-202407,Road Damage,Urgent,"Description mentions 'paving' indicating Road Damage, and the word 'child' triggers Urgent priority.",
+AM-202410,Pothole,Standard,"Description mentions 'pothole', classifying this as Pothole with Standard priority.",
+AM-202414,Other,Low,No matching category keywords found in the description; classified as Other and flagged for review.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Description mentions 'music', classifying this as Noise with Standard priority.",
+AM-202424,Road Damage,Standard,"Description mentions 'road surface', classifying this as Road Damage with Standard priority.",
+AM-202429,Heat Hazard,Standard,"Description mentions 'temperature', classifying this as Heat Hazard with Standard priority.",
+AM-202431,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description mentions 'heat', classifying this as Heat Hazard with Standard priority.",
+AM-202444,Waste,Standard,"Description mentions 'waste', classifying this as Waste with Standard priority.",
+AM-202445,Other,Low,No matching category keywords found in the description; classified as Other and flagged for review.,NEEDS_REVIEW
