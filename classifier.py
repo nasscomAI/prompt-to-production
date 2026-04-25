@@ -1,34 +1,35 @@
+
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
 
-# Load the CSV
+# 1. Load Data
 df = pd.read_csv("complaints.csv")
 
-# Split data into training and testing
-X_train, X_test, y_train, y_test = train_test_split(
-    df['Complaint'], df['Category'], test_size=0.2, random_state=42
-)
-
-# Convert text to numerical features
+# 2. Train Model
 vectorizer = CountVectorizer()
-X_train_vec = vectorizer.fit_transform(X_train)
-X_test_vec = vectorizer.transform(X_test)
-
-# Train a classifier
+X = vectorizer.fit_transform(df['Complaint'])
+y = df['Category']
 clf = LogisticRegression()
-clf.fit(X_train_vec, y_train)
+clf.fit(X, y)
 
-# Test the classifier
-y_pred = clf.predict(X_test_vec)
-print("Accuracy:", accuracy_score(y_test, y_pred))
+def classify_with_priority(text):
+    # Rule-based check for High Priority
+    high_priority_keywords = ["danger", "injury", "emergency", "broken", "pothole"]
+    
+    if any(word in text.lower() for word in high_priority_keywords):
+        category = clf.predict(vectorizer.transform([text]))[0]
+        return f"{category} (HIGH PRIORITY)"
+    
+    # --- ADD THIS LINE BELOW ---
+    # This handles normal complaints that aren't dangerous
+    return clf.predict(vectorizer.transform([text]))[0]
 
-# Predict new complaints
-while True:
-    text = input("\nEnter a complaint (or 'exit' to quit): ")
-    if text.lower() == "exit":
-        break
-    pred = clf.predict(vectorizer.transform([text]))
-    print("Predicted Category:", pred[0])
+# 3. Execution
+if __name__ == "__main__":
+    print("AI Code Sarathi - Complaint Classifier Loaded.")
+    while True:
+        text = input("\nEnter complaint (or 'exit'): ")
+        if text.lower() == "exit": 
+            break
+        print("Result:", classify_with_priority(text))
