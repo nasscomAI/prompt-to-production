@@ -1,0 +1,47 @@
+SECTION 1
+---------
+- Governs acceptable use of all it systems, devices, networks, and data owned or managed by the city municipal corporation (cmc).
+- Applies to all permanent employees, contractual staff, and third-party vendors with cmc system access.
+- Use of cmc it resources implies acceptance of . ═══════════════════════════════════════════════════════════ 2. corporate devices ═══════════════════════════════════════════════════════════
+
+SECTION 2
+---------
+- Corporate devices (laptops, desktops, mobile phones issued by cmc) must be used primarily for official work purposes.
+- Personal use of corporate devices is permitted in moderation, provided it does not interfere with work duties or consume excessive bandwidth.
+- Employees must not install software on corporate devices without written approval from the it department.
+- Software approved for installation must be sourced from the cmc-approved software catalogue only.
+- Corporate devices must not be used to access gambling, adult content, or any site classified as harmful by the it department.
+- Corporate devices must have the cmc endpoint security agent installed and active at all times. disabling or circumventing this agent is a disciplinary offence. ═══════════════════════════════════════════════════════════ 3. personal devices (byod) ═══════════════════════════════════════════════════════════
+
+SECTION 3
+---------
+- Personal devices used to access cmc email and the cmc employee self-service portal only.
+- Personal devices must not be used to access, store, or transmit classified or sensitive cmc data.
+- Personal devices must not be connected to the cmc internal network (wired or wireless). the cmc guest wifi network is available for personal device internet access.
+- Employees using personal devices for cmc email must enable device-level pin or biometric lock.
+- If a personal device containing cmc email is lost or stolen, the employee must report it to the it helpdesk within 4 hours so that a remote wipe of cmc data can be performed. ═══════════════════════════════════════════════════════════ 4. passwords and access control ═══════════════════════════════════════════════════════════
+
+SECTION 4
+---------
+- Employees must not share their cmc system passwords with any other person, including it staff.
+- It staff will never ask for your password. any request for your password should be reported to the it security team.
+- Passwords must be changed every 90 days as prompted by the system.
+- Multi-factor authentication (mfa) is mandatory for all remote access to cmc systems. ═══════════════════════════════════════════════════════════ 5. data handling ═══════════════════════════════════════════════════════════
+
+SECTION 5
+---------
+- Cmc data classified as confidential or restricted must not be stored on personal devices, personal cloud storage, or any system not approved by the it department.
+- Employees must not forward cmc email containing confidential data to personal email accounts.
+- Printing of confidential documents must use the secure print function. documents must not be left unattended at printers. ═══════════════════════════════════════════════════════════ 6. internet and email use ═══════════════════════════════════════════════════════════
+
+SECTION 6
+---------
+- Internet use on cmc systems is monitored and logged.
+- Employees must not use cmc email addresses to register for personal services, social media, or non-work subscriptions.
+- Mass emails to external recipients must be approved by the communications department before sending. ═══════════════════════════════════════════════════════════ 7. violations and consequences ═══════════════════════════════════════════════════════════
+
+SECTION 7
+---------
+- Violations of may result in disciplinary action up to and including termination of employment.
+- Violations involving unauthorised access to restricted data will be reported to law enforcement.
+- Cmc reserves the right to monitor, access, and audit any activity on cmc-owned systems at any time without prior notice.

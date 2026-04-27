@@ -1,16 +1,23 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: extract_rules
+    description: >
+      Extracts enforceable rules from policy text as structured data.
+    input: Raw policy text
+    output: List of rule objects (section, obligation, conditions)
+    error_handling: Refuse if rules cannot be unambiguously extracted
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_rules
+    description: >
+      Condenses extracted rules into concise summary statements
+      without changing meaning.
+    input: Structured rule list
+    output: Human-readable concise summary
+    error_handling: Emit verbatim rule if condensation risks loss
+
+  - name: validate_summary
+    description: >
+      Ensures all rules from the source appear in the summary.
+    input: Source rules and generated summary
+    output: Pass/fail with missing-rule list
+    error_handling: Fail hard on any missing rule

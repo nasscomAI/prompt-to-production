@@ -1,0 +1,13 @@
+period,actual_spend,growth,formula,status
+2024-01,10.9,,(current - previous) / previous,Growth not computable (missing base period)
+2024-02,10.4,-4.59,(current - previous) / previous,OK
+2024-03,,,,NULL actual_spend — Data not submitted by ward office
+2024-04,10.0,-3.85,(current - previous) / previous,OK
+2024-05,10.2,2.0,(current - previous) / previous,OK
+2024-06,12.3,20.59,(current - previous) / previous,OK
+2024-07,12.6,2.44,(current - previous) / previous,OK
+2024-08,12.8,1.59,(current - previous) / previous,OK
+2024-09,12.9,0.78,(current - previous) / previous,OK
+2024-10,11.5,-10.85,(current - previous) / previous,OK
+2024-11,10.4,-9.57,(current - previous) / previous,OK
+2024-12,8.4,-19.23,(current - previous) / previous,OK
