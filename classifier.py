@@ -33,3 +33,4 @@ if __name__ == "__main__":
         if text.lower() == "exit": 
             break
         print("Result:", classify_with_priority(text))
+        
