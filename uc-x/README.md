@@ -18,7 +18,6 @@ python app.py
 Interactive CLI — type questions, read answers.
 
 ---
-
 ## Do This Before Writing Any Prompt
 
 Define your **refusal template** — the exact wording the system must use when a question is not in the documents. Write it here before opening your AI tool:
@@ -30,7 +29,7 @@ Please contact [relevant team] for guidance.
 ```
 
 This template goes verbatim into your RICE Enforcement and agents.md.
-It is what prevents hedged hallucination — the system has a required response format that leaves no room for "while not explicitly covered..."
+It is what prevents hedged hallucination - the system has a required response format that leaves no room for "while not explicitly covered..."
 
 ---
 
@@ -53,6 +52,7 @@ A correctly built system must either:
 
 ---
 
+
 ## The 7 Test Questions — Run All of These
 
 | Question | Expected behaviour |
@@ -71,7 +71,7 @@ A correctly built system must either:
 1. Never combine claims from two different documents into a single answer
 2. Never use hedging phrases: "while not explicitly covered", "typically", "generally understood", "it is common practice"
 3. If question is not in the documents — use the refusal template exactly, no variations
-4. Cite source document name + section number for every factual claim
+4. Cite source document name + section number for every factual claim.
 
 ---
 

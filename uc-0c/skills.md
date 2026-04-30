@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: [load_dataset]
+    description: [Reads the CSV dataset, validates required columns, and explicitly reports the total count and specific rows containing null values before returning the data.]
+    input: [type: string format: Filepath to the CSV dataset]
+    output: [type: object format: Validated dataset structure containing the data and a metadata report of all null rows.]
+    error_handling: [If required columns are missing, throw an error; if null actual_spend values exist, flag them and report the null reason from the notes column instead of silently handling them.]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: [compute_growth]
+    description: [Computes the specified growth metric for a specific ward and category over time, outputting the result and the exact formula used. ]
+    input: [type: object format: Parameters including ward (string), category (string), and growth_type (string)]
+    output: [type: table format: Per-period table output showing actual spend, computed growth, and the explicit formula used for every row]
+    error_handling: [If growth_type is not specified, refuse and ask instead of guessing; if asked to aggregate across wards or categories, refuse; if a null actual_spend row is encountered, flag it and do not compute the result.]
