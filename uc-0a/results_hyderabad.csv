@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description explicitly mentions that an ambulance was diverted.,
+GH-202402,Flooding,Standard,The description mentions both flooded area and completely blocked drain.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description states main stormwater drain 100% blocked.,
+GH-202407,Drain Blockage,Standard,The description states the drain is blocked.,
+GH-202410,Pothole,Standard,The description states potholes are causing vehicles to slow.,
+GH-202411,Pothole,Urgent,The description mentions the rider was hospitalised.,
+GH-202412,Pothole,Urgent,The description explicitly mentions a school bus struggling.,
+GH-202417,Waste,Standard,The description mentions heritage zone garbage overflow.,NEEDS_REVIEW
+GH-202420,Noise,Standard,The description mentions construction drilling from 5am.,
+GH-202422,Road Damage,Urgent,The description mentions the road collapsed partially.,
+GH-202424,Flooding,Standard,The description mentions the underpass floods in light rain.,
+GH-202428,Waste,Standard,The description states post-market waste not cleared.,
+GH-202432,Noise,Standard,The description states delivery trucks idling with engines on.,
+GH-202448,Drain Blockage,Standard,The description mentions the main drain is blocked.,
+GH-202438,Flooding,Standard,The description mentions channeling rainwater through main road.,NEEDS_REVIEW
