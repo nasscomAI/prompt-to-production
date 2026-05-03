@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,Pothole,
+PM-202402,Pothole,Urgent,"Pothole, school",
+PM-202406,Flooding,Normal,water/flood,
+PM-202408,Flooding,Normal,water/flood,
+PM-202410,Streetlight,Normal,Streetlight,
+PM-202411,Streetlight,Normal,Streetlight,
+PM-202413,Garbage,Normal,Garbage,
+PM-202418,Other,Normal,ambiguous,NEEDS_REVIEW
+PM-202419,Pothole,Normal,road/hole,
+PM-202420,Pothole,Urgent,"road/hole, injury",
+PM-202427,Flooding,Normal,water/flood,
+PM-202428,Other,Normal,ambiguous,NEEDS_REVIEW
+PM-202430,Streetlight,Normal,light/lamp,
+PM-202433,Pothole,Normal,road/hole,
+PM-202446,Other,Normal,ambiguous,NEEDS_REVIEW
