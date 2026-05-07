@@ -20,6 +20,7 @@ ALLOWED_CATEGORIES = [
     "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other"
 ]
 
+
 ALLOWED_PRIORITIES = ["Urgent", "Standard", "Low"]
 
 SEVERITY_KEYWORDS = [
