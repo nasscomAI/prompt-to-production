@@ -1,86 +1,116 @@
-# UC-0C — Number That Looks Right
+import pandas as pd
+import argparse
 
-**Core failure modes:** Wrong aggregation level · Silent null handling · Formula assumption
 
----
+def load_dataset(file_path):
+    df = pd.read_csv(file_path)
 
-## Your Input File
-```
-../data/budget/ward_budget.csv
-```
-300 rows · 5 wards · 5 categories · 12 months (Jan–Dec 2024) · **5 deliberate null actual_spend values**
+    required_columns = [
+        "period",
+        "ward",
+        "category",
+        "budgeted_amount",
+        "actual_spend",
+        "notes"
+    ]
 
-## Your Output File
-```
-uc-0c/growth_output.csv
-```
-Must be a per-ward per-category table — not a single aggregated number.
+    for col in required_columns:
+        if col not in df.columns:
+            raise ValueError(f"Missing required column: {col}")
 
-## Run Command
-```bash
-python app.py \
-  --input ../data/budget/ward_budget.csv \
-  --ward "Ward 1 – Kasba" \
-  --category "Roads & Pothole Repair" \
-  --growth-type MoM \
-  --output growth_output.csv
-```
+    null_rows = df[df["actual_spend"].isnull()]
 
----
+    if not null_rows.empty:
+        print("\nNull rows found:")
+        print(null_rows[["period", "ward", "category", "notes"]])
 
-## Dataset Structure
-| Column | Type | Notes |
-|---|---|---|
-| period | YYYY-MM | 2024-01 through 2024-12 |
-| ward | string | 5 wards |
-| category | string | 5 categories |
-| budgeted_amount | float | Always present |
-| actual_spend | float or blank | **5 rows are deliberately null** |
-| notes | string | Explains null reason |
+    return df
 
-**The 5 null rows:**
-- 2024-03 · Ward 2 – Shivajinagar · Drainage & Flooding
-- 2024-07 · Ward 4 – Warje · Roads & Pothole Repair
-- 2024-11 · Ward 1 – Kasba · Waste Management
-- 2024-08 · Ward 3 – Kothrud · Parks & Greening
-- 2024-05 · Ward 5 – Hadapsar · Streetlight Maintenance
 
----
+def compute_growth(df, ward, category, growth_type):
 
-## Reference Values — Verify Your Output Against These
+    if growth_type is None:
+        raise ValueError("growth-type is required. Do not guess.")
 
-| Ward | Category | Period | Actual Spend (₹ lakh) | MoM Growth |
-|---|---|---|---|---|
-| Ward 1 – Kasba | Roads & Pothole Repair | 2024-07 | 19.7 | +33.1% (monsoon spike) |
-| Ward 1 – Kasba | Roads & Pothole Repair | 2024-10 | 13.1 | −34.8% (post-monsoon) |
-| Ward 2 – Shivajinagar | Drainage & Flooding | 2024-03 | NULL | Must be flagged — not computed |
-| Ward 4 – Warje | Roads & Pothole Repair | 2024-07 | NULL | Must be flagged — not computed |
-| Any | Any | Any | n/a | All-ward aggregation → system must REFUSE |
+    if growth_type != "MoM":
+        raise ValueError("Only MoM growth is supported.")
 
----
+    filtered = df[
+        (df["ward"] == ward) &
+        (df["category"] == category)
+    ].copy()
 
-## Enforcement Rules Your agents.md Must Include
-1. Never aggregate across wards or categories unless explicitly instructed — refuse if asked
-2. Flag every null row before computing — report null reason from the notes column
-3. Show formula used in every output row alongside the result
-4. If `--growth-type` not specified — refuse and ask, never guess
+    filtered = filtered.sort_values("period")
 
----
+    results = []
 
-## Skills to Define in skills.md
-- `load_dataset` — reads CSV, validates columns, reports null count and which rows before returning
-- `compute_growth` — takes ward + category + growth_type, returns per-period table with formula shown
+    previous_value = None
 
----
+    for _, row in filtered.iterrows():
 
-## What Will Fail From the Naive Prompt
-Run `"Calculate growth from the data."` on the full CSV first.
-Watch for: one single number returned for all wards combined; no mention of the 5 null rows;
-formula chosen silently (MoM or YoY picked without being asked).
+        current_value = row["actual_spend"]
 
----
+        if pd.isna(current_value):
+            growth = "NULL"
+            formula = "Cannot compute because actual_spend is NULL"
 
-## Commit Formula
-```
-UC-0C Fix [failure mode]: [why it failed] → [what you changed]
-```
+        elif previous_value is None or pd.isna(previous_value):
+            growth = "N/A"
+            formula = "No previous month available"
+
+        else:
+            growth_value = (
+                (current_value - previous_value)
+                / previous_value
+            ) * 100
+
+            growth = round(growth_value, 1)
+
+            formula = (
+                f"(({current_value} - {previous_value}) / "
+                f"{previous_value}) * 100"
+            )
+
+        results.append({
+            "period": row["period"],
+            "ward": row["ward"],
+            "category": row["category"],
+            "actual_spend": current_value,
+            "MoM_growth_percent": growth,
+            "formula": formula
+        })
+
+        previous_value = current_value
+
+    return pd.DataFrame(results)
+
+
+def main():
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--ward", required=True)
+    parser.add_argument("--category", required=True)
+    parser.add_argument("--growth-type", required=True)
+    parser.add_argument("--output", required=True)
+
+    args = parser.parse_args()
+
+    df = load_dataset(args.input)
+
+    result_df = compute_growth(
+        df,
+        args.ward,
+        args.category,
+        args.growth_type
+    )
+
+    result_df.to_csv(args.output, index=False)
+
+    print("\nGrowth analysis completed.")
+    print(result_df)
+
+
+if __name__ == "__main__":
+    main()
