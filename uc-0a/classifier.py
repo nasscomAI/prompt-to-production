@@ -1,35 +1,93 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
+import pandas as pd
 import argparse
-import csv
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+# Allowed categories
+CATEGORIES = [
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard",
+    "Drain Blockage", "Other"
+]
+
+# Severity keywords that trigger Urgent
+SEVERITY_KEYWORDS = [
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell", "collapse"
+]
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def classify_complaint(description):
+    text = str(description).lower()
+
+    # Category detection
+    if "pothole" in text:
+        category = "Pothole"
+    elif "flood" in text or "water" in text:
+        category = "Flooding"
+    elif "streetlight" in text or "light" in text:
+        category = "Streetlight"
+    elif "garbage" in text or "waste" in text or "trash" in text:
+        category = "Waste"
+    elif "noise" in text or "loud" in text:
+        category = "Noise"
+    elif "road damage" in text or "broken road" in text:
+        category = "Road Damage"
+    elif "heritage" in text:
+        category = "Heritage Damage"
+    elif "heat" in text:
+        category = "Heat Hazard"
+    elif "drain" in text or "block" in text:
+        category = "Drain Blockage"
+    else:
+        category = "Other"
+
+    # Priority detection
+    priority = "Standard"
+    for word in SEVERITY_KEYWORDS:
+        if word in text:
+            priority = "Urgent"
+            break
+
+    # Reason (must reference description)
+    reason = f"Classification based on keywords found in description: '{description}'"
+
+    # Flag for ambiguous cases
+    flag = ""
+    if category == "Other":
+        flag = "NEEDS_REVIEW"
+
+    return category, priority, reason, flag
+
+
+def batch_classify(input_file, output_file):
+    df = pd.read_csv(input_file)
+
+    categories = []
+    priorities = []
+    reasons = []
+    flags = []
+
+    for desc in df["description"]:
+        category, priority, reason, flag = classify_complaint(desc)
+
+        categories.append(category)
+        priorities.append(priority)
+        reasons.append(reason)
+        flags.append(flag)
+
+    df["category"] = categories
+    df["priority"] = priorities
+    df["reason"] = reasons
+    df["flag"] = flags
+
+    df.to_csv(output_file, index=False)
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
+
     args = parser.parse_args()
+
     batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")

@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Enforcement Rules
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+1. Every numbered clause must appear in the summary.
+2. Never drop conditions from multi-condition obligations.
+3. Never soften obligations.
+4. Never add information not present in source.
+5. Preserve approval chains exactly.
+6. Mention clause numbers in the summary.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+# Agents
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## retrieve_policy
+Loads the HR leave policy document and returns all numbered clauses.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+## summarize_policy
+Creates a compliant summary while preserving all obligations, approvals, limits, and conditions.
