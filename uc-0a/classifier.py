@@ -6,24 +6,73 @@ import argparse
 import csv
 
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    text = str(row).lower()
 
+    if "broken" in text or "damaged" in text:
+        category = "Damaged Product"
+        priority = "High"
+        reason = "Product damage complaint"
+        flag = True
+
+    elif "late" in text or "delay" in text:
+        category = "Delivery Issue"
+        priority = "Medium"
+        reason = "Delivery delay complaint"
+        flag = True
+
+    else:
+        category = "General Complaint"
+        priority = "Low"
+        reason = "General issue"
+        flag = False
+
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
+    
+    
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
+    results = []
+
+    with open(input_path, "r", encoding="utf-8") as infile:
+        reader = csv.DictReader(infile)
+
+        for row in reader:
+            try:
+                result = classify_complaint(row)
+                results.append(result)
+
+            except Exception as e:
+                results.append({
+                    "complaint_id": row.get("complaint_id", ""),
+                    "category": "Error",
+                    "priority": "Low",
+                    "reason": str(e),
+                    "flag": False
+                })
+
+    with open(output_path, "w", newline="", encoding="utf-8") as outfile:
+
+        fieldnames = [
+            "complaint_id",
+            "category",
+            "priority",
+            "reason",
+            "flag"
+        ]
+
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        writer.writerows(results)
     
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    
 
 
 if __name__ == "__main__":
