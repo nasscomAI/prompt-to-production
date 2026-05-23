@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Category is set to Heat Hazard due to the keyword 'melting' and priority is Standard.,
+AM-202402,Heat Hazard,Standard,Category is set to Heat Hazard due to 'dangerous temperatures' and priority is Standard.,
+AM-202405,Other,Standard,"Category is set to Other because 'Dead trees' does not fit the standard taxonomy, and priority is Standard.",NEEDS_REVIEW
+AM-202406,Other,Standard,Category is set to Other because it is ambiguous between Heat Hazard and property maintenance due to 'heatwave' and 'Irrigation system broken'.,NEEDS_REVIEW
+AM-202407,Other,Urgent,"Category is set to Other because the complaint lacks a single category, and priority is Urgent because severity keywords 'Child' and 'injured' were found.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category is set to Pothole due to the keyword 'Pothole' and priority is Standard.,
+AM-202414,Streetlight,Standard,Category is set to Streetlight due to the keyword 'unlit' and priority is Standard.,
+AM-202417,Other,Standard,Category is set to Other because the complaint is ambiguous between Waste and Heritage Damage due to 'waste' and 'Heritage area'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Category is set to Noise due to the keyword 'music' and priority is Standard.,
+AM-202424,Heat Hazard,Standard,Category is set to Heat Hazard due to 'bubbling at 45°C' and priority is Standard.,
+AM-202429,Heat Hazard,Standard,Category is set to Heat Hazard due to the keyword 'unbearable' and priority is Standard.,
+AM-202431,Other,Standard,Category is set to Other because the complaint is ambiguous between Road Damage and Heritage Damage due to 'road subsidence' and 'Heritage concern'.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Category is set to Heat Hazard due to 'storing heat' and priority is Standard.,
+AM-202444,Waste,Standard,Category is set to Waste due to the keyword 'waste' and priority is Standard.,
+AM-202445,Other,Standard,"Category is set to Other because glass damage does not fit the standard taxonomy, and priority is Standard.",NEEDS_REVIEW

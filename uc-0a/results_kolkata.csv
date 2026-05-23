@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Category is set to Other because the complaint is ambiguous between Heritage Damage and Streetlight due to 'Heritage lamp post'.,NEEDS_REVIEW
+KM-202402,Other,Standard,Category is set to Other because the complaint is ambiguous between Heritage Damage and Road Damage due to 'Historic tram road' and 'broken up'.,NEEDS_REVIEW
+KM-202405,Noise,Standard,Category is set to Noise due to the keyword 'playing' and priority is Standard.,
+KM-202409,Pothole,Standard,Category is set to Pothole due to the keyword 'potholes' and priority is Standard.,
+KM-202410,Pothole,Standard,Category is set to Pothole due to the keyword 'Pothole' and priority is Standard.,
+KM-202411,Pothole,Standard,Category is set to Pothole due to the keyword 'pothole' and priority is Standard.,
+KM-202415,Drain Blockage,Standard,Category is set to Drain Blockage due to the keyword 'draining' and priority is Standard.,
+KM-202418,Waste,Standard,Category is set to Waste due to the keyword 'waste' and priority is Standard.,
+KM-202421,Road Damage,Urgent,Category is set to Road Damage due to 'Footpath broken' and priority is Urgent because the severity keywords 'fell' and 'Hospital' were found.,
+KM-202422,Road Damage,Standard,Category is set to Road Damage due to 'Road surface buckled' and priority is Standard.,
+KM-202426,Heritage Damage,Standard,Category is set to Heritage Damage due to 'Heritage residential building' and priority is Standard.,
+KM-202430,Other,Standard,Category is set to Other because the complaint is ambiguous between Road Damage and utility leak due to 'Road subsided' and 'Gas leak'.,NEEDS_REVIEW
+KM-202434,Other,Standard,Category is set to Other because the complaint is ambiguous between Road Damage and Heritage Damage due to 'Street paving' and 'heritage stone'.,NEEDS_REVIEW
+KM-202436,Other,Standard,"Category is set to Other because substation tripping does not fit the allowed categories, and priority is Standard.",NEEDS_REVIEW
+KM-202438,Other,Standard,Category is set to Other because the complaint is ambiguous between Heritage Damage and Noise due to 'heritage precinct' and 'amplifiers'.,NEEDS_REVIEW
