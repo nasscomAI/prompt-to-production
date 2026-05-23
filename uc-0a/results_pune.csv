@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category is set to Pothole due to the keyword 'pothole' and priority is Standard as no severity keywords were found.,
+PM-202402,Pothole,Urgent,Category is set to Pothole due to the keyword 'pothole' and priority is Urgent because the severity keywords 'school' and 'children' were found.,
+PM-202406,Flooding,Standard,Category is set to Flooding due to the keyword 'flooded' and priority is Standard as no severity keywords were found.,
+PM-202408,Other,Standard,Category is set to Other because the complaint is ambiguous between Flooding and Drain Blockage due to keywords 'flooded' and 'Drain blocked'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category is set to Streetlight due to the keyword 'streetlights' and priority is Standard as no severity keywords were found.,
+PM-202411,Streetlight,Urgent,Category is set to Streetlight due to the keyword 'Streetlight' and priority is Urgent because the severity keyword 'hazard' was found.,
+PM-202413,Waste,Standard,Category is set to Waste due to the keyword 'garbage' and priority is Standard as no severity keywords were found.,
+PM-202418,Noise,Standard,Category is set to Noise due to the keyword 'music' and priority is Standard as no severity keywords were found.,
+PM-202419,Road Damage,Standard,"Category is set to Road Damage due to the keywords 'Road surface cracked' and 'sinking', and priority is Standard as no severity keywords were found.",
+PM-202420,Other,Urgent,"Category is set to Other as 'Manhole cover missing' does not fit standard taxonomy, and priority is Urgent because the severity keyword 'injury' was found.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category is set to Flooding due to the keyword 'floods' and priority is Standard as no severity keywords were found.,
+PM-202428,Other,Standard,"Category is set to Other because 'Dead animal' is not part of the standard taxonomy, and priority is Standard.",NEEDS_REVIEW
+PM-202430,Other,Standard,Category is set to Other because the complaint is ambiguous between Heritage Damage and Streetlight due to 'Heritage street' and 'lights out'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Category is set to Waste due to the keyword 'waste' and priority is Standard as no severity keywords were found.,
+PM-202446,Road Damage,Urgent,Category is set to Road Damage due to the keywords 'Footpath tiles broken' and priority is Urgent because the severity keyword 'fell' was found.,
