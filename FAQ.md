@@ -96,9 +96,6 @@ If you prefer working entirely in the terminal, check out:
 3. **Mentat:** An open-source AI coding assistant that lives in your terminal and can understand your entire codebase.
 4. **Open Interpreter:** Allows the AI to run code locally in your terminal to perform tasks (highly recommended for advanced users).
 
-### Can I use these in WSL?
-Yes! All of these tools (IDEs and CLI tools) work perfectly with WSL. Just run them from your WSL terminal.
-
 ---
 
 ## 📖 Useful Resources
@@ -107,30 +104,6 @@ Yes! All of these tools (IDEs and CLI tools) work perfectly with WSL. Just run t
 - [Official GitHub Desktop](https://desktop.github.com/) (Great for those who prefer a GUI over CLI!)
 
 ---
-
-## 💻 Windows Subsystem for Linux (WSL)
-**Note:** This section is only for **Windows** users. If you are using macOS or Linux, you already have a native Unix-like terminal and do not need WSL.
-
-### How do I install WSL?
-Open **PowerShell** as Administrator and run:
-```powershell
-wsl --install
-```
-Restart your computer after it finishes. By default, this installs Ubuntu.
-
-### ❌ Error: \"Virtualization is not enabled\" (0x80370102)
-This means your computer's BIOS has \"Virtualization Technology\" (VT-x or AMD-V) disabled.
-- **Fix:** Restart your PC, enter BIOS (usually F2, F10, or Del), find the **Virtualization** setting, and set it to **Enabled**.
-
-### ❌ Error: \"WSL 2 requires an update to its kernel component\" (0x800701bc)
-- **Fix:** Download and run the [WSL2 Linux kernel update package](https://aka.ms/wsl2kernel).
-
-### How do I open my files in VS Code?
-Inside your WSL terminal, navigate to your project folder and type:
-```bash
-code .
-```
-*(Make sure you have the **WSL** extension installed in VS Code for this to work!)*
 
 ---
 
