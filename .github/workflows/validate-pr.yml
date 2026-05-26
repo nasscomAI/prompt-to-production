@@ -1,42 +1,52 @@
-name: PR Validation
+name: PR Checks
 
 on:
-  pull_request:
+  pull_request_target:
     branches: [ main ]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   commit-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Check Commit Message Format
         run: |
-          # The regex matches something like: [UC-0A] Fix severity: missing keywords -> added triggers
-          # Matches commits in the PR.
+          echo "=== Workflow version: v4-pull_request_target ==="
+          # Accepts both formats from our docs:
+          #   [UC-0A] Fix severity: missing keywords → added triggers
+          #   UC-0B Generated agents.md and skills.md from README, implemented summariser
+          # Brackets around UC-ID are optional; requires 10+ chars of description.
           for commit in $(git rev-list --no-merges HEAD ^origin/main); do
-            msg=$(git log -1 --pretty=format:%s $commit)
+            msg=$(git log -1 --pretty=format:%s "$commit")
             echo "Checking commit: $msg"
-            if [[ ! $msg =~ ^\[UC-[0-9][A-Za-z]\][[:space:]]Fix[[:space:]].+:[[:space:]].+[[:space:]]→[[:space:]].+ ]]; then
+            if [[ ! $msg =~ ^\[?UC-[0-9A-Za-z]+\]?[[:space:]].{10,} ]]; then
               echo "Error: Commit message '$msg' does not follow the format!"
               echo "Correct format: [UC-ID] Fix [what]: [why it failed] → [what you changed]"
+              echo "            or: [UC-ID] [what you built or fixed]"
               exit 1
             fi
           done
+          echo "All commit messages passed validation."
 
   smoke-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.9'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          # Add any required packages here if needed later.
       - name: Check Python Syntax (UC-0A)
         run: python -m py_compile uc-0a/classifier.py
       - name: Check Python Syntax (UC-0B, UC-0C, UC-X)
