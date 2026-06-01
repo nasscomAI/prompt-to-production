@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The complaint is categorized as Flooding and flagged as Urgent because the description mentions ""Underpass flooded after 1hr rain"".",
+GH-202402,Drain Blockage,Standard,"The complaint is categorized as Drain Blockage because the description mentions ""Market area flooded"".",
+GH-202406,Drain Blockage,Standard,"The complaint is categorized as Drain Blockage because the description mentions ""Main stormwater drain 100% blocked with construction debris"".",
+GH-202407,Drain Blockage,Standard,"The complaint is categorized as Drain Blockage because the description mentions ""Drain blocked and mosquito breeding"".",
+GH-202410,Pothole,Standard,"The complaint is categorized as Pothole because the description mentions ""Potholes causing vehicles to slow to 20kmph on fast road"".",
+GH-202411,Pothole,Urgent,"The complaint is categorized as Pothole and flagged as Urgent because the description mentions ""Pothole swallowed entire motorcycle wheel"".",
+GH-202412,Pothole,Urgent,"The complaint is categorized as Pothole and flagged as Urgent because the description mentions ""School bus struggling to navigate 6 potholes in 200m stretch"".",
+GH-202417,Waste,Standard,"The complaint is categorized as Waste because the description mentions ""Heritage zone garbage overflow"".",
+GH-202420,Noise,Standard,"The complaint is categorized as Noise because the description mentions ""Construction drilling from 5am daily near residential towers"".",
+GH-202422,Road Damage,Urgent,"The complaint is categorized as Road Damage and flagged as Urgent because the description mentions ""Road collapsed partially"".",
+GH-202424,Flooding,Standard,"The complaint is categorized as Flooding because the description mentions ""Underpass floods in light rain"".",
+GH-202428,Waste,Standard,"The complaint is categorized as Waste because the description mentions ""Post-market waste not cleared"".",
+GH-202432,Other,Standard,"The complaint is marked as Other and flagged as NEEDS_REVIEW because the description mentions ""24hr supermarket delivery trucks idling with engines on"".",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"The complaint is categorized as Drain Blockage because the description mentions ""Main drain blocked — entire locality at flooding risk this week"".",
+GH-202438,Flooding,Standard,"The complaint is categorized as Flooding because the description mentions ""Colony surrounded by fields that channel rainwater through main road"".",

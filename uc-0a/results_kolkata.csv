@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The complaint is categorized as Heritage Damage because the description mentions ""Heritage lamp post knocked over by delivery vehicle"".",
+KM-202402,Heritage Damage,Standard,"The complaint is categorized as Heritage Damage because the description mentions ""Historic tram road cobblestones broken up by cable laying work"".",
+KM-202405,Noise,Standard,"The complaint is categorized as Noise because the description mentions ""Wedding band playing near Tagore Museum at 11pm"".",
+KM-202409,Pothole,Standard,"The complaint is categorized as Pothole because the description mentions ""Airport access road full of potholes"".",
+KM-202410,Pothole,Standard,"The complaint is categorized as Pothole because the description mentions ""Pothole causing tyre blowouts"".",
+KM-202411,Pothole,Standard,"The complaint is categorized as Pothole because the description mentions ""Deep pothole filling with rainwater"".",
+KM-202415,Other,Standard,"The complaint is marked as Other and flagged as NEEDS_REVIEW because the description mentions ""New residential complex draining directly onto public road"".",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The complaint is categorized as Waste because the description mentions ""Tourist zone waste overflowing"".",
+KM-202421,Road Damage,Urgent,"The complaint is categorized as Road Damage and flagged as Urgent because the description mentions ""Footpath broken and sinking"".",
+KM-202422,Road Damage,Standard,"The complaint is categorized as Road Damage because the description mentions ""Road surface buckled near bridge"".",
+KM-202426,Heritage Damage,Standard,"The complaint is categorized as Heritage Damage because the description mentions ""Heritage residential building exterior defaced by billboard installation"".",
+KM-202430,Road Damage,Standard,"The complaint is categorized as Road Damage because the description mentions ""Road subsided near gas pipeline"".",
+KM-202434,Heritage Damage,Standard,"The complaint is categorized as Heritage Damage because the description mentions ""Street paving removed for utility work — heritage stone not replaced"".",
+KM-202436,Other,Standard,"The complaint is marked as Other and flagged as NEEDS_REVIEW because the description mentions ""Entire colony substation tripped"".",NEEDS_REVIEW
+KM-202438,Noise,Standard,"The complaint is categorized as Noise because the description mentions ""Street vendors using amplifiers illegally in heritage precinct"".",
