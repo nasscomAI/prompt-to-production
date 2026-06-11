@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Growth Calculator. Computes month-over-month or year-over-year infrastructure spend growth from a ward-level budget CSV.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A per-ward per-category table of computed growth metrics (not a single aggregated number). Output should be written to growth_output.csv.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed source is the ward_budget.csv file. The agent must strictly respect the granular groupings of wards and categories, and never combine them silently.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked to combine them into one number."
+  - "Flag every null actual_spend row before computing — report the null reason from the notes column."
+  - "Show the formula used (e.g. MoM or YoY) in every output row alongside the computed result."
+  - "If --growth-type is not specified — refuse and ask, never guess the formula."
