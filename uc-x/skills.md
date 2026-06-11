@@ -1,16 +1,7 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+name: retrieve_documents description: Loads all three policy files and indexes them by document name and section number. input: | type: none format: Automatically loads: - ../data/policy-documents/policy_hr_leave.txt - ../data/policy-documents/policy_it_acceptable_use.txt - ../data/policy-documents/policy_finance_reimbursement.txt output: | type: indexed data format: Structured index of documents by name and section number error_handling: | If files are missing or inaccessible, return an error message indicating which file could not be loaded. Do not attempt to infer or substitute content. Fail cleanly without blending or hallucination.
+
+name: answer_question description: Searches indexed documents and returns a single-source answer with citation or the refusal template. input: | type: string format: Natural language employee question output: | type: string format: Either: - Single-source factual answer with explicit citation (document name + section number), OR - Refusal template exactly as defined: "This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance." error_handling: | If the question is ambiguous, not covered, or risks cross-document blending, return the refusal template verbatim. Never combine claims from multiple documents. Never use hedging phrases such as "while not explicitly covered", "typically", "generally understood", or "it is common practice". Always cite the source document name and section number for factual claims.
