@@ -1,1 +1,1 @@
-print("Setup successful")
+print("Setup successful done")
