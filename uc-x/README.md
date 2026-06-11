@@ -1,6 +1,9 @@
 # UC-X — Ask My Documents
 
-**Core failure modes:** Cross-document blending · Hedged hallucination · Condition dropping
+A policy document Q&A system that answers employee questions strictly from
+three CMC (City Municipal Corporation) policy documents. Enforces single-source
+answers, exact citations, and a verbatim refusal template to prevent
+hallucination and cross-document blending.
 
 ---
 
