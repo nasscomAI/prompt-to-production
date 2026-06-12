@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole because the description cites 'pothole', which is the strongest category signal.",
+PM-202402,Pothole,Urgent,"Classified as Pothole because the description cites 'pothole' and includes 'child', which makes it Urgent.",
+PM-202406,Flooding,Standard,"Classified as Flooding because the description cites 'flooded', which is the strongest category signal.",
+PM-202408,Flooding,Standard,"Classified as Flooding because the description cites 'flooded', which is the strongest category signal.",
+PM-202410,Streetlight,Standard,"Classified as Streetlight because the description cites 'streetlight', which is the strongest category signal.",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight because the description cites 'streetlight' and includes 'hazard', which makes it Urgent.",
+PM-202413,Waste,Standard,"Classified as Waste because the description cites 'garbage', which is the strongest category signal.",
+PM-202418,Noise,Standard,"Classified as Noise because the description cites 'music', which is the strongest category signal.",
+PM-202419,Road Damage,Standard,"Classified as Road Damage because the description cites 'road surface cracked', which is the strongest category signal.",
+PM-202420,Other,Urgent,"Marked for review because the description is ambiguous, but it includes 'injury' so priority is Urgent.",NEEDS_REVIEW
+PM-202427,Other,Standard,Marked for review because the description does not map cleanly to one allowed category.,NEEDS_REVIEW
+PM-202428,Other,Standard,Marked for review because the description does not map cleanly to one allowed category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Classified as Heritage Damage because the description cites 'heritage', which is the strongest category signal.",
+PM-202433,Waste,Standard,"Classified as Waste because the description cites 'waste', which is the strongest category signal.",
+PM-202446,Other,Urgent,"Marked for review because the description is ambiguous, but it includes 'fell' so priority is Urgent.",NEEDS_REVIEW
