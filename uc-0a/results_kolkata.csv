@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description contains 'Heritage' indicating heritage damage.,
+KM-202402,Heritage Damage,Standard,Description contains 'Historic' indicating heritage damage.,
+KM-202405,Other,Standard,Classified as Other based on description excerpt: 'Wedding band playing near Tagore Museum at 11pm'.,
+KM-202409,Pothole,Standard,Description contains 'pothole' indicating pothole.,
+KM-202410,Pothole,Standard,Description contains 'Pothole' indicating pothole.,
+KM-202411,Pothole,Standard,Description contains 'pothole' indicating pothole.,NEEDS_REVIEW
+KM-202415,Other,Standard,Classified as Other based on description excerpt: 'New residential complex draining directly onto public road'.,
+KM-202418,Waste,Standard,Description contains 'waste' indicating waste.,
+KM-202421,Road Damage,Urgent,Description contains 'sinking' indicating road damage.,
+KM-202422,Road Damage,Standard,Description contains 'Road surface' indicating road damage.,
+KM-202426,Heritage Damage,Standard,Description contains 'Heritage' indicating heritage damage.,
+KM-202430,Other,Standard,Classified as Other based on description excerpt: 'Road subsided near gas pipeline'.,
+KM-202434,Heritage Damage,Standard,Description contains 'heritage' indicating heritage damage.,
+KM-202436,Other,Standard,Classified as Other based on description excerpt: 'Entire colony substation tripped'.,
+KM-202438,Heritage Damage,Standard,Description contains 'heritage' indicating heritage damage.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description contains 'pothole' indicating pothole.,
+PM-202402,Pothole,Urgent,Description contains 'pothole' indicating pothole.,
+PM-202406,Flooding,Standard,Description contains 'flood' indicating flooding.,
+PM-202408,Flooding,Standard,Description contains 'flood' indicating flooding.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description contains 'streetlight' indicating streetlight.,
+PM-202411,Streetlight,Urgent,Description contains 'Streetlight' indicating streetlight.,
+PM-202413,Waste,Standard,Description contains 'garbage' indicating waste.,
+PM-202418,Noise,Standard,Description contains 'playing music' indicating noise.,
+PM-202419,Road Damage,Standard,Description contains 'Road surface' indicating road damage.,
+PM-202420,Road Damage,Urgent,Description contains 'Manhole cover missing' indicating road damage.,
+PM-202427,Flooding,Standard,Description contains 'flood' indicating flooding.,
+PM-202428,Waste,Standard,Description contains 'Dead animal' indicating waste.,
+PM-202430,Streetlight,Standard,Description contains 'lights out' indicating streetlight.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Description contains 'Bulk waste' indicating waste.,
+PM-202446,Other,Urgent,Classified as Other based on description excerpt: 'Footpath tiles broken and upturned'.,
