@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Mentions ""lamp post"", so this is Streetlight with Standard priority.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Mentions ""Historic tram road cobblestones broken"" and ""cobblestones broken"", so this is Heritage Damage with Standard priority.",
+KM-202405,Other,Standard,"Mentions ""Wedding band playing near Tagore Museum at 11pm. Festival season ongoing."", so this is Other with Standard priority.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Mentions ""potholes"", so this is Pothole with Standard priority.",
+KM-202410,Pothole,Standard,"Mentions ""Pothole"", so this is Pothole with Standard priority.",
+KM-202411,Pothole,Standard,"Mentions ""pothole"", so this is Pothole with Standard priority.",
+KM-202415,Other,Standard,"Mentions ""New residential complex draining directly onto public road."", so this is Other with Standard priority.",NEEDS_REVIEW
+KM-202418,Waste,Low,"Mentions ""waste"", so this is Waste with Low priority.",
+KM-202421,Road Damage,Urgent,"Mentions ""Footpath broken and sinking"", so this is Road Damage with Urgent priority.",
+KM-202422,Road Damage,Standard,"Mentions ""Road surface buckled"" and ""surface buckled"", so this is Road Damage with Standard priority.",
+KM-202426,Heritage Damage,Standard,"Mentions ""Heritage residential building exterior defaced"", so this is Heritage Damage with Standard priority.",
+KM-202430,Other,Standard,"Mentions ""Road subsided near gas pipeline. Gas leak smell reported too."", so this is Other with Standard priority.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Mentions ""heritage stone not replaced"", so this is Heritage Damage with Standard priority.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Mentions ""Darkness"" and ""substation tripped"", so this is Streetlight with Standard priority.",
+KM-202438,Noise,Low,"Mentions ""amplifiers"", so this is Noise with Low priority.",

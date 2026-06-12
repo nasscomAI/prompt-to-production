@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Mentions ""flooded"" and ""flooded"", so this is Flooding with Urgent priority.",
+GH-202402,Flooding,Standard,"Mentions ""flooded"" and ""flooded"", so this is Flooding with Standard priority.",
+GH-202406,Drain Blockage,Standard,"Mentions ""drain 100% blocked"" and ""stormwater drain"", so this is Drain Blockage with Standard priority.",
+GH-202407,Drain Blockage,Standard,"Mentions ""Drain blocked"", so this is Drain Blockage with Standard priority.",
+GH-202410,Pothole,Standard,"Mentions ""Potholes"", so this is Pothole with Standard priority.",
+GH-202411,Pothole,Urgent,"Mentions ""Pothole"", so this is Pothole with Urgent priority.",
+GH-202412,Pothole,Urgent,"Mentions ""potholes"", so this is Pothole with Urgent priority.",
+GH-202417,Waste,Low,"Mentions ""waste"" and ""garbage"", so this is Waste with Low priority.",
+GH-202420,Noise,Low,"Mentions ""drilling"", so this is Noise with Low priority.",
+GH-202422,Pothole,Urgent,"Mentions ""Crater"", so this is Pothole with Urgent priority.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Mentions ""floods"", so this is Flooding with Standard priority.",
+GH-202428,Waste,Low,"Mentions ""waste"", so this is Waste with Low priority.",
+GH-202432,Noise,Low,"Mentions ""idling"", so this is Noise with Low priority.",
+GH-202448,Flooding,Standard,"Mentions ""flooding"" and ""flooding"", so this is Flooding with Standard priority.",
+GH-202438,Other,Standard,"Mentions ""Colony surrounded by fields that channel rainwater through main road."", so this is Other with Standard priority.",NEEDS_REVIEW

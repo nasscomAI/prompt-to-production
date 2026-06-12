@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Mentions ""44°C"" and ""melting"", so this is Heat Hazard with Standard priority.",
+AM-202402,Other,Standard,"Mentions ""Metal bus shelter reaching dangerous temperatures. Commuters refusing to use."", so this is Other with Standard priority.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Mentions ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."", so this is Other with Standard priority.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Mentions ""heatwave"", so this is Heat Hazard with Standard priority.",
+AM-202407,Other,Urgent,"Mentions ""Broken bench and upturned paving. Child injured last week."", so this is Other with Urgent priority.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Mentions ""Pothole"", so this is Pothole with Standard priority.",
+AM-202414,Streetlight,Standard,"Mentions ""unlit"", so this is Streetlight with Standard priority.",
+AM-202417,Waste,Low,"Mentions ""waste"", so this is Waste with Low priority.",
+AM-202421,Noise,Low,"Mentions ""music"", so this is Noise with Low priority.",
+AM-202424,Heat Hazard,Standard,"Mentions ""45°C"", so this is Heat Hazard with Standard priority.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Mentions ""temperature"" and ""52°C"", so this is Heat Hazard with Standard priority.",
+AM-202431,Road Damage,Standard,"Mentions ""road subsidence"", so this is Road Damage with Standard priority.",
+AM-202435,Heat Hazard,Standard,"Mentions ""heat"" and ""burns"", so this is Heat Hazard with Standard priority.",
+AM-202444,Waste,Low,"Mentions ""waste"" and ""bins overflowing"", so this is Waste with Low priority.",
+AM-202445,Other,Standard,"Mentions ""BRT shelter roof glass broken. Users exposed to full sun."", so this is Other with Standard priority.",NEEDS_REVIEW
