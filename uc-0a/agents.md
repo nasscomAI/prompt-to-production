@@ -3,7 +3,7 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  [FILL IN: Who is this agent? What is its operational ?]
 
 intent: >
   [FILL IN: What does a correct output look like — make it verifiable]
