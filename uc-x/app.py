@@ -12,7 +12,7 @@ import os
 import re
 import sys
 from collections import Counter
-from typing import Dict, List, Optional, Tuple, TypedDict
+from typing import Dict, List, Tuple, TypedDict
 
 
 # ---------------------------------------------------------------------------
@@ -59,7 +59,7 @@ STOP_WORDS = frozenset(
 RELEVANCE_THRESHOLD = 0.15
 
 # Minimum fraction of query keywords that must appear in the section text.
-KEYWORD_COVERAGE_MIN = 0.25
+KEYWORD_COVERAGE_MIN = 0.30
 
 # Domain-specific synonym expansion. When a query contains a key, the
 # corresponding synonyms are ADDED to the query tokens so that user
@@ -151,7 +151,6 @@ def parse_sections(doc_name: str, content: str) -> List[Section]:
     lines = content.split("\n")
 
     sections: List[Section] = []
-    current_top_id = ""
     current_top_title = ""
     current_sub_id = ""
     current_text_lines: List[str] = []
@@ -179,7 +178,6 @@ def parse_sections(doc_name: str, content: str) -> List[Section]:
         top_match = _TOP_SECTION_RE.match(stripped)
         if top_match:
             _flush()
-            current_top_id = top_match.group(1)
             current_top_title = top_match.group(2).strip()
             current_sub_id = ""
             current_text_lines = []
@@ -276,9 +274,10 @@ def _score_section(
     query_mag_sq = 0.0
     sec_mag_sq = 0.0
 
+    default_idf = max(idf.values()) if idf else 1.0
     all_terms = query_token_set | sec_token_set
     for term in all_terms:
-        term_idf = idf.get(term, 0.0)
+        term_idf = idf.get(term, default_idf)
         q_tfidf = (query_tf.get(term, 0) / query_max) * term_idf
         s_tfidf = (sec_tf.get(term, 0) / sec_max) * term_idf
         dot += q_tfidf * s_tfidf
@@ -379,7 +378,7 @@ def answer_question(question: str, documents: Dict[str, str]) -> str:
 
     # If no sub-sections found, fall back to just the best match.
     if not unique_related:
-        unique_related = [primary_best]
+        unique_related = [best_section]
 
     # 6. Format the answer.
     section_ids = ", ".join(s["section_id"] for s in unique_related)
