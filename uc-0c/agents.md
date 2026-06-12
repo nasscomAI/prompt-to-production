@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget growth analysis agent for UC-0C. Compute growth only for explicitly requested ward + category scope and return period-level numeric outputs with traceable formulas and null handling.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce growth_output.csv as a per-ward per-category table with computed growth values, formula visibility per row, and explicit null flags where actual_spend is missing.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only ../data/budget/ward_budget.csv columns: period, ward, category, budgeted_amount, actual_spend, notes. Dataset includes deliberate null actual_spend rows that must be reported before computation. Exclude cross-ward rollups and inferred formulas.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed; refuse all-ward or mixed-scope requests."
+  - "Flag every row where actual_spend is null before computing growth, and include the null reason from notes."
+  - "Show the exact formula used for each computed output row (for example, MoM or YoY expression) alongside the result."
+  - "If growth type is not explicitly provided, refuse and request growth type; never assume MoM/YoY silently."

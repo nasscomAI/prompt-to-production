@@ -1,18 +1,14 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic complaint classification agent for UC-0A. Classify each complaint row using only the row text into category, priority, reason, and ambiguity flag. Do not invent categories, policy, or external context.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce results_[city].csv where every row has one allowed category string, one priority (Urgent/Standard/Low), one-sentence reason citing words from the complaint, and NEEDS_REVIEW only when category is genuinely ambiguous.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only the input CSV complaint fields and the UC-0A schema. Allowed categories are exactly: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exclude outside knowledge and inferred facts not present in the complaint text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one allowed value; no synonyms, sub-categories, or spelling variations."
+  - "Set priority to Urgent if complaint text contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Every output row must include a one-sentence reason that cites specific words/phrases from the complaint description."
+  - "If category is genuinely ambiguous from complaint text alone, set category to Other and flag to NEEDS_REVIEW instead of guessing."
