@@ -46,10 +46,35 @@ CATEGORY_KEYWORDS = {
 # for Low priority when no severity keyword is present.
 LOW_IMPACT_CATEGORIES = {"Noise"}
 
+# Priority is constrained to exactly these (agents.md intent).
+ALLOWED_PRIORITIES = {"Urgent", "Standard", "Low"}
+
 
 def _find_keywords(text: str, keywords: list) -> list:
     """Return the keywords that appear in text, preserving caller order."""
     return [kw for kw in keywords if kw in text]
+
+
+def _result(complaint_id: str, category: str, priority: str,
+            reason: str, flag: str) -> dict:
+    """
+    Construct an output row, enforcing the agents.md output invariants at the
+    boundary: category MUST be one of ALLOWED_CATEGORIES and priority MUST be
+    one of ALLOWED_PRIORITIES. This makes enforcement rule #1 literal rather
+    than merely true by construction — any future keyword/category mistake
+    fails loudly instead of emitting an off-taxonomy label.
+    """
+    if category not in ALLOWED_CATEGORIES:
+        raise ValueError(f"Category {category!r} is not in the allowed taxonomy")
+    if priority not in ALLOWED_PRIORITIES:
+        raise ValueError(f"Priority {priority!r} is not Urgent/Standard/Low")
+    return {
+        "complaint_id": complaint_id,
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag,
+    }
 
 
 def classify_complaint(row: dict) -> dict:
@@ -70,13 +95,11 @@ def classify_complaint(row: dict) -> dict:
 
     # Null / empty input is flagged, never silently classified.
     if not description:
-        return {
-            "complaint_id": complaint_id,
-            "category": "Other",
-            "priority": "Standard",
-            "reason": "Description is empty or missing; cannot classify from data alone.",
-            "flag": "NEEDS_REVIEW",
-        }
+        return _result(
+            complaint_id, "Other", "Standard",
+            "Description is empty or missing; cannot classify from data alone.",
+            "NEEDS_REVIEW",
+        )
 
     text = description.lower()
 
@@ -96,14 +119,12 @@ def classify_complaint(row: dict) -> dict:
         # No taxonomy match: refuse to guess. Other + NEEDS_REVIEW.
         priority = "Urgent" if severity_hits else "Standard"
         sev = f" Severity keyword(s) {severity_hits} present." if severity_hits else ""
-        return {
-            "complaint_id": complaint_id,
-            "category": "Other",
-            "priority": priority,
-            "reason": ("No allowed category keyword found in description; "
-                       "left as Other for human review." + sev),
-            "flag": "NEEDS_REVIEW",
-        }
+        return _result(
+            complaint_id, "Other", priority,
+            ("No allowed category keyword found in description; "
+             "left as Other for human review." + sev),
+            "NEEDS_REVIEW",
+        )
 
     # Pick the highest-scoring category; detect ambiguity (a real tie).
     top_score = max(scores.values())
@@ -132,13 +153,7 @@ def classify_complaint(row: dict) -> dict:
         reason_parts.append(f"ambiguous with {others} — flagged for review")
     reason = "; ".join(reason_parts) + "."
 
-    return {
-        "complaint_id": complaint_id,
-        "category": category,
-        "priority": priority,
-        "reason": reason,
-        "flag": flag,
-    }
+    return _result(complaint_id, category, priority, reason, flag)
 
 
 def batch_classify(input_path: str, output_path: str):
