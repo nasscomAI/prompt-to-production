@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions: ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk."" — classified as Flooding with Urgent priority.",
+GH-202402,Flooding,Standard,"Description mentions: ""Market area flooded. Traders suffering losses. Drain completely blocked."" — classified as Flooding with Standard priority.",
+GH-202406,Drain Blockage,Standard,"Description mentions: ""Main stormwater drain 100% blocked with construction debris."" — classified as Drain Blockage with Standard priority.",
+GH-202407,Drain Blockage,Standard,"Description mentions: ""Drain blocked and mosquito breeding. Dengue concern."" — classified as Drain Blockage with Standard priority.",
+GH-202410,Pothole,Standard,"Description mentions: ""Potholes causing vehicles to slow to 20kmph on fast road."" — classified as Pothole with Standard priority.",
+GH-202411,Pothole,Standard,"Description mentions: ""Pothole swallowed entire motorcycle wheel. Rider hospitalised."" — classified as Pothole with Standard priority.",
+GH-202412,Pothole,Urgent,"Description mentions: ""School bus struggling to navigate 6 potholes in 200m stretch."" — classified as Pothole with Urgent priority.",
+GH-202417,Waste,Standard,"Description mentions: ""Heritage zone garbage overflow. Tourist photographs showing piles of waste."" — classified as Waste with Standard priority.",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Description mentions: ""Construction drilling from 5am daily near residential towers."" — classified as Noise with Standard priority.",
+GH-202422,Pothole,Urgent,"Description mentions: ""Road collapsed partially. Crater 1m deep near residential gate."" — classified as Pothole with Urgent priority.",
+GH-202424,Flooding,Standard,"Description mentions: ""Underpass floods in light rain. Cars regularly abandoned."" — classified as Flooding with Standard priority.",
+GH-202428,Waste,Standard,"Description mentions: ""Post-market waste not cleared. Area unusable by Sunday morning."" — classified as Waste with Standard priority.",
+GH-202432,Noise,Standard,"Description mentions: ""24hr supermarket delivery trucks idling with engines on."" — classified as Noise with Standard priority.",
+GH-202448,Flooding,Standard,"Description mentions: ""Main drain blocked — entire locality at flooding risk this week."" — classified as Flooding with Standard priority.",
+GH-202438,Flooding,Standard,"Description mentions: ""Colony surrounded by fields that channel rainwater through main road."" — classified as Flooding with Standard priority.",
