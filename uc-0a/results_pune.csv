@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category 'Pothole' from keyword(s) ['pothole'].,
+PM-202402,Pothole,Urgent,"Category 'Pothole' from keyword(s) ['pothole']; escalated to Urgent by severity keyword(s) ['child', 'school'].",
+PM-202406,Flooding,Standard,"Category 'Flooding' from keyword(s) ['flood', 'flooded', 'knee-deep', 'stranded'].",
+PM-202408,Drain Blockage,Standard,"Category 'Drain Blockage' from keyword(s) ['drain blocked', 'drain block', 'drain'].",
+PM-202410,Streetlight,Standard,"Category 'Streetlight' from keyword(s) ['streetlight', 'lights out'].",
+PM-202411,Streetlight,Urgent,"Category 'Streetlight' from keyword(s) ['streetlight', 'flickering']; escalated to Urgent by severity keyword(s) ['hazard'].",
+PM-202413,Waste,Standard,"Category 'Waste' from keyword(s) ['garbage', 'bins'].",
+PM-202418,Noise,Low,Category 'Noise' from keyword(s) ['music'].,
+PM-202419,Road Damage,Standard,"Category 'Road Damage' from keyword(s) ['road surface', 'cracked', 'sinking'].",
+PM-202420,Road Damage,Urgent,Category 'Road Damage' from keyword(s) ['manhole']; escalated to Urgent by severity keyword(s) ['injury'].,
+PM-202427,Flooding,Standard,Category 'Flooding' from keyword(s) ['flood'].,
+PM-202428,Waste,Standard,Category 'Waste' from keyword(s) ['dead animal'].,
+PM-202430,Heritage Damage,Standard,Category 'Heritage Damage' from keyword(s) ['heritage']; ambiguous with ['Streetlight'] — flagged for review.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category 'Waste' from keyword(s) ['waste', 'dumped'].",
+PM-202446,Road Damage,Urgent,"Category 'Road Damage' from keyword(s) ['footpath', 'tiles broken']; escalated to Urgent by severity keyword(s) ['fell'].",
