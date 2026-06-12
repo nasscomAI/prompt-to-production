@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Classified as Other based on description details: 'Heritage lamp post knocked over by delivery vehicle. Not restored.'.,NEEDS_REVIEW
+KM-202402,Other,Standard,Classified as Other based on description details: 'Historic tram road cobblestones broken up by cable laying work.'.,NEEDS_REVIEW
+KM-202405,Other,Standard,Classified as Other based on description details: 'Wedding band playing near Tagore Museum at 11pm. Festival season...'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole based on description details: 'Airport access road full of potholes. Diplomatic complaint received.'.,
+KM-202410,Pothole,Standard,Classified as Pothole based on description details: 'Pothole causing tyre blowouts. Three incidents this week.'.,
+KM-202411,Pothole,Standard,Classified as Pothole based on description details: 'Deep pothole filling with rainwater. Depth invisible. Accident risk.'.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage based on description details: 'New residential complex draining directly onto public road.'.,
+KM-202418,Waste,Standard,Classified as Waste based on description details: 'Tourist zone waste overflowing. Foreign visitors photographing piles.'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage with Urgent priority due to severity keyword 'hospital' in text: 'Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.'.,
+KM-202422,Other,Standard,Classified as Other based on description details: 'Road surface buckled near bridge. Structural concern raised.'.,NEEDS_REVIEW
+KM-202426,Other,Standard,Classified as Other based on description details: 'Heritage residential building exterior defaced by billboard installation.'.,NEEDS_REVIEW
+KM-202430,Other,Standard,Classified as Other based on description details: 'Road subsided near gas pipeline. Gas leak smell reported too.'.,NEEDS_REVIEW
+KM-202434,Other,Standard,Classified as Other based on description details: 'Street paving removed for utility work — heritage stone not...'.,NEEDS_REVIEW
+KM-202436,Other,Standard,Classified as Other based on description details: 'Entire colony substation tripped. Darkness for 3 nights.'.,NEEDS_REVIEW
+KM-202438,Other,Standard,Classified as Other based on description details: 'Street vendors using amplifiers illegally in heritage precinct.'.,NEEDS_REVIEW
