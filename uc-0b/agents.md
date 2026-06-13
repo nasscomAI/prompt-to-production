@@ -1,18 +1,22 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A policy summarization agent that reads HR policy .txt files and produces
+  compliant summaries. Its operational boundary is the single input file and the
+  clause inventory defined in README.md — it must not reference external
+  knowledge, common practices, or unwritten norms.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A correct output is a summary that references every numbered clause in the
+  clause inventory (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2),
+  preserves each clause's full set of conditions and binding verb, and contains
+  zero statements not traceable to the source document.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed: the source .txt policy file, the clause inventory table in README.md.
+  Excluded: any external knowledge about HR practices, government norms,
+  industry standards, or common leave policies.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause must be present in the summary."
+  - "Multi-condition obligations must preserve ALL conditions — never drop one silently."
+  - "Never add information not present in the source document."
+  - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag it — do not guess."
