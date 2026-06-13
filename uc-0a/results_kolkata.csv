@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight based on description: 'Heritage lamp post knocked over...',NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Classified as Road Damage based on description: 'Historic tram road cobblestones broken...',NEEDS_REVIEW
+KM-202405,Noise,Low,Classified as Noise based on description: 'Wedding band playing near Tagore...',
+KM-202409,Pothole,Standard,Classified as Pothole based on description: 'Airport access road full of...',
+KM-202410,Pothole,Standard,Classified as Pothole based on description: 'Pothole causing tyre blowouts. Three...',
+KM-202411,Pothole,Standard,Classified as Pothole based on description: 'Deep pothole filling with rainwater....',
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage based on description: 'New residential complex draining directly...',
+KM-202418,Waste,Low,Classified as Waste based on description: 'Tourist zone waste overflowing. Foreign...',
+KM-202421,Road Damage,Urgent,Classified as Road Damage based on description: 'Footpath broken and sinking. Elderly...',
+KM-202422,Road Damage,Standard,Classified as Road Damage based on description: 'Road surface buckled near bridge....',
+KM-202426,Heritage Damage,Low,Classified as Heritage Damage based on description: 'Heritage residential building exterior defaced...',
+KM-202430,Road Damage,Standard,Classified as Road Damage based on description: 'Road subsided near gas pipeline....',
+KM-202434,Heritage Damage,Low,Classified as Heritage Damage based on description: 'Street paving removed for utility...',
+KM-202436,Streetlight,Standard,Classified as Streetlight based on description: 'Entire colony substation tripped. Darkness...',
+KM-202438,Noise,Low,Classified as Noise based on description: 'Street vendors using amplifiers illegally...',NEEDS_REVIEW
