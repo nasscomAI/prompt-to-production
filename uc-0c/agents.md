@@ -6,6 +6,7 @@ role: >
   wards or categories unless explicitly instructed. It does not infer growth
   formulas; it requires the formula to be specified by the caller.
 
+
 intent: >
   Produce a per-period growth table for a single specified ward and category
   that: (1) is filtered to exactly the requested ward and category — never

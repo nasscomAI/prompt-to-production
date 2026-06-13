@@ -5,6 +5,7 @@ skills:
       file_path (str) — path to the CSV file.
       ward (str) — exact ward name to filter on.
       category (str) — exact category name to filter on.
+      
     output: >
       A tuple of:
         (1) filtered_df: pandas DataFrame with columns [period, ward, category,
