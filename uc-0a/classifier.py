@@ -59,7 +59,7 @@ def classify_complaint(row: dict) -> dict:
             }
         except Exception as e:
             error_str = str(e)
-            if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+            if "429" in error_str or "RESOURCE_EXHAUSTED" in error_str or "503" in error_str or "UNAVAILABLE" in error_str:
                 wait_time = INITIAL_BACKOFF * (2 ** attempt)
                 print(f"  Rate limited on {row.get('complaint_id')} (attempt {attempt+1}/{MAX_RETRIES}). Waiting {wait_time}s...")
                 time.sleep(wait_time)
