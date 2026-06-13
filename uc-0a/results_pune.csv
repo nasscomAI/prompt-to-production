@@ -1,0 +1,16 @@
+description,category,priority,reason,flag
+Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Standard,Description mentions 'pothole' which indicates pothole,
+Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,Description mentions 'child' which indicates pothole,
+Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Standard,Description mentions 'flood' which indicates flooding,
+Bus stand flooded. Passengers standing in water. Drain blocked.,Flooding,Standard,Description mentions 'flood' which indicates flooding,
+Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,Description mentions 'streetlight' which indicates streetlight,
+Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,Description mentions 'hazard' which indicates streetlight,
+Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Waste,Standard,Description mentions 'Overflowing garbage bin' which indicates waste,
+Wedding venue playing music past midnight on weeknights.,Noise,Standard,Description mentions 'music past midnight on weeknight' which indicates noise,
+Road surface cracked and sinking near utility work done 1 month ago.,Road Damage,Standard,Description mentions 'Road surface cracked and sink' which indicates road damage,
+Manhole cover missing. Risk of serious injury to cyclists.,Other,Urgent,Description mentions 'injury' which indicates other,NEEDS_REVIEW
+Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Standard,Description mentions 'flood' which indicates flooding,
+Dead animal not removed for 36 hours. Health concern.,Waste,Standard,Description mentions 'Dead animal' which indicates waste,
+"Heritage street, lights out. Safety concern for pedestrians after dark.",Other,Standard,Category ambiguous -- description does not clearly match a single category,NEEDS_REVIEW
+Bulk waste from apartment renovation dumped on public road.,Waste,Standard,Description mentions 'waste' which indicates waste,
+Footpath tiles broken and upturned. Elderly resident fell last week.,Road Damage,Urgent,Description mentions 'fell' which indicates road damage,
