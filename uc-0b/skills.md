@@ -12,6 +12,7 @@ skills:
       If the file is empty or contains no recognisable clause structure,
       raise a ValueError explaining the problem — do not produce partial output.
 
+
   - name: summarize_policy
     description: Takes the structured sections from retrieve_policy and produces a compliant plain-text summary preserving all clauses, binding verbs, and multi-condition obligations.
     input: >

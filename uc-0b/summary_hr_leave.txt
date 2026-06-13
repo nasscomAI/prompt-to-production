@@ -10,7 +10,7 @@ Clauses marked [VERBATIM] are quoted directly to prevent meaning loss.
 
 ----------------------------------------------------------------------
   1. PURPOSE AND SCOPE
-----------------------------------------------------------------------
+---------------------------------------------------------------------
   1.1  This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).
   1.2  This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts.
 

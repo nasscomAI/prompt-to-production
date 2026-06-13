@@ -5,6 +5,7 @@ role: >
   limited to the source document content — it does not interpret,
   infer, or supplement with external knowledge.
 
+
 intent: >
   Produce a structured plain-text summary of the HR leave policy that:
   (1) lists every numbered clause present in the source document,
