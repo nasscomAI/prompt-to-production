@@ -1,7 +1,7 @@
 skills:
   - name: retrieve_documents 
     description: Loads all three policy files and builds an in-memory index keyed by document filename and section number.
-    input: 
+    input:
       type: list of file paths
       format: "Ordered list of three plain-text file paths: ../data/policy-documents/policy_hr_leave.txt, ../data/policy-documents/policy_it_acceptable_use.txt, ../data/policy-documents/policy_finance_reimbursement.txt"
     output:

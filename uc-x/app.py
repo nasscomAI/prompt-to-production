@@ -119,7 +119,7 @@ def answer_question(
             scored.append((score, filename, section_num))
 
     if not scored:
-        return REFUSAL_TEMPLATE
+        return REFUSAL_TEMPLATE 
 
     scored.sort(key=lambda x: x[0], reverse=True)
     top_score = scored[0][0]
