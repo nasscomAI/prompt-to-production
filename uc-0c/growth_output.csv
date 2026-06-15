@@ -1,0 +1,13 @@
+period,ward,category,growth_type,actual_spend,comparison_period,comparison_actual_spend,growth_percent,formula,status,null_reason,message
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,MoM,13.3,2023-12,,,((2024-01 actual_spend - 2023-12 actual_spend) / 2023-12 actual_spend) * 100,not_computed,,comparison period 2023-12 is not present
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,MoM,12.2,2024-01,13.3,-8.3%,((2024-02 actual_spend - 2024-01 actual_spend) / 2024-01 actual_spend) * 100,computed,,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,MoM,12.3,2024-02,12.2,+0.8%,((2024-03 actual_spend - 2024-02 actual_spend) / 2024-02 actual_spend) * 100,computed,,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,MoM,13.4,2024-03,12.3,+8.9%,((2024-04 actual_spend - 2024-03 actual_spend) / 2024-03 actual_spend) * 100,computed,,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,MoM,14.1,2024-04,13.4,+5.2%,((2024-05 actual_spend - 2024-04 actual_spend) / 2024-04 actual_spend) * 100,computed,,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,MoM,14.8,2024-05,14.1,+5.0%,((2024-06 actual_spend - 2024-05 actual_spend) / 2024-05 actual_spend) * 100,computed,,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,MoM,19.7,2024-06,14.8,+33.1%,((2024-07 actual_spend - 2024-06 actual_spend) / 2024-06 actual_spend) * 100,computed,,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,MoM,20.2,2024-07,19.7,+2.5%,((2024-08 actual_spend - 2024-07 actual_spend) / 2024-07 actual_spend) * 100,computed,,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,MoM,20.1,2024-08,20.2,-0.5%,((2024-09 actual_spend - 2024-08 actual_spend) / 2024-08 actual_spend) * 100,computed,,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,MoM,13.1,2024-09,20.1,-34.8%,((2024-10 actual_spend - 2024-09 actual_spend) / 2024-09 actual_spend) * 100,computed,,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,MoM,14.2,2024-10,13.1,+8.4%,((2024-11 actual_spend - 2024-10 actual_spend) / 2024-10 actual_spend) * 100,computed,,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,MoM,12.7,2024-11,14.2,-10.6%,((2024-12 actual_spend - 2024-11 actual_spend) / 2024-11 actual_spend) * 100,computed,,
