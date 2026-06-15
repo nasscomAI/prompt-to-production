@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+MM-202401,Pothole,Standard,Matched words from description: pothole.,
+MM-202402,Pothole,Urgent,"Matched words from description: child, school, pothole.",
+MM-202403,Flooding,Standard,"Matched words from description: flood, flooded, knee-deep.",
+MM-202404,Flooding,Standard,"Matched words from description: flood, flooded, drain blocked.",NEEDS_REVIEW
+MM-202405,Streetlight,Standard,Matched words from description: streetlight.,
+MM-202406,Streetlight,Urgent,"Matched words from description: hazard, streetlight.",
+MM-202407,Waste,Standard,Matched words from description: garbage.,
+MM-202408,Other,Standard,"No clear category keywords found in description, so manual review is needed.",NEEDS_REVIEW
+MM-202409,Road Damage,Standard,Matched words from description: crack.,
+MM-202410,Other,Urgent,Matched words from description: injury.,NEEDS_REVIEW
+MM-202411,Flooding,Standard,Matched words from description: flood.,
+MM-202412,Other,Standard,"No clear category keywords found in description, so manual review is needed.",NEEDS_REVIEW
+MM-202413,Heritage Damage,Standard,Matched words from description: heritage.,
+MM-202414,Waste,Standard,"Matched words from description: waste, dump.",
+MM-202415,Other,Urgent,Matched words from description: fell.,NEEDS_REVIEW
