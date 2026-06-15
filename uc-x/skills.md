@@ -1,5 +1,5 @@
 skills:
-  - name: retrieve_documents
+  - name: retrieve_documents 
     description: Loads all three policy files and builds an in-memory index keyed by document filename and section number.
     input:
       type: list of file paths
