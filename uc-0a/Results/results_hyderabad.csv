@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,description mentions flooding-related terms; severity keywords detected: ambulance.,
+GH-202402,Flooding,Standard,description mentions flooding-related terms; no urgency keywords found.,
+GH-202406,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,description mentions drain blockage-related terms; no urgency keywords found.,
+GH-202410,Pothole,Standard,description mentions pothole-related terms; no urgency keywords found.,
+GH-202411,Pothole,Urgent,description mentions pothole-related terms; severity keywords detected: hospital.,
+GH-202412,Pothole,Urgent,description mentions pothole-related terms; severity keywords detected: school.,
+GH-202417,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+GH-202420,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+GH-202422,Other,Urgent,description does not clearly match any known category; severity keywords detected: collapse.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,description mentions flooding-related terms; no urgency keywords found.,
+GH-202428,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+GH-202432,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,description mentions flooding-related terms; no urgency keywords found.,
+GH-202438,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,description mentions heritage damage-related terms; no urgency keywords found.,
+KM-202402,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+KM-202405,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,description mentions pothole-related terms; no urgency keywords found.,
+KM-202410,Pothole,Standard,description mentions pothole-related terms; no urgency keywords found.,
+KM-202411,Pothole,Standard,description mentions pothole-related terms; no urgency keywords found.,
+KM-202415,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+KM-202418,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+KM-202421,Road Damage,Urgent,"description mentions road damage-related terms; severity keywords detected: hospital, fell.",
+KM-202422,Road Damage,Standard,description mentions road damage-related terms; no urgency keywords found.,
+KM-202426,Heritage Damage,Standard,description mentions heritage damage-related terms; no urgency keywords found.,
+KM-202430,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,description mentions heritage damage-related terms; no urgency keywords found.,
+KM-202436,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,description mentions heritage damage-related terms; no urgency keywords found.,

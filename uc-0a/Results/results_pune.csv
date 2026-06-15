@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,description mentions pothole-related terms; no urgency keywords found.,
+PM-202402,Pothole,Urgent,"description mentions pothole-related terms; severity keywords detected: child, school.",
+PM-202406,Flooding,Standard,description mentions flooding-related terms; no urgency keywords found.,
+PM-202408,Flooding,Standard,description mentions flooding-related terms; no urgency keywords found.,
+PM-202410,Streetlight,Standard,description mentions streetlight-related terms; no urgency keywords found.,
+PM-202411,Streetlight,Urgent,description mentions streetlight-related terms; severity keywords detected: hazard.,
+PM-202413,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+PM-202418,Noise,Standard,description mentions noise-related terms; no urgency keywords found.,
+PM-202419,Road Damage,Standard,description mentions road damage-related terms; no urgency keywords found.,
+PM-202420,Drain Blockage,Urgent,description mentions drain blockage-related terms; severity keywords detected: injury.,
+PM-202427,Flooding,Standard,description mentions flooding-related terms; no urgency keywords found.,
+PM-202428,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+PM-202430,Heritage Damage,Standard,description mentions heritage damage-related terms; no urgency keywords found.,
+PM-202433,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+PM-202446,Other,Urgent,description does not clearly match any known category; severity keywords detected: fell.,NEEDS_REVIEW

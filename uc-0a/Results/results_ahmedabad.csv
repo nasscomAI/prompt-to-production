@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+AM-202402,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+AM-202405,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,description mentions heat hazard-related terms; no urgency keywords found.,
+AM-202407,Other,Urgent,description does not clearly match any known category; severity keywords detected: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,description mentions pothole-related terms; no urgency keywords found.,
+AM-202414,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+AM-202417,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+AM-202421,Noise,Standard,description mentions noise-related terms; no urgency keywords found.,
+AM-202424,Road Damage,Standard,description mentions road damage-related terms; no urgency keywords found.,
+AM-202429,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,description mentions heritage damage-related terms; no urgency keywords found.,
+AM-202435,Heat Hazard,Standard,description mentions heat hazard-related terms; no urgency keywords found.,
+AM-202444,Waste,Standard,description mentions waste-related terms; no urgency keywords found.,
+AM-202445,Other,Standard,description does not clearly match any known category; no urgency keywords found.,NEEDS_REVIEW
