@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Complaint about heat hazard: ""Tarmac surface melting at 44°C""",
+AM-202402,Heat Hazard,Standard,"Complaint about heat hazard: ""Metal bus shelter reaching dangerous temperatures""",
+AM-202405,Other,Standard,"Complaint about other: ""Dead trees with split branches""",NEEDS_REVIEW
+AM-202406,Other,Standard,"Complaint about other: ""Irrigation system broken""",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Complaint about road damage: ""Broken bench and upturned paving""",
+AM-202410,Pothole,Standard,"Complaint about pothole: ""Pothole on main highway causing morning rush lane closure""",
+AM-202414,Streetlight,Standard,"Complaint about streetlight: ""Residential colony unlit after 9pm""",
+AM-202417,Waste,Standard,"Complaint about waste: ""Night market waste not cleared before morning""",
+AM-202421,Noise,Standard,"Complaint about noise: ""Club music audible at residential buildings at 2am""",
+AM-202424,Road Damage,Standard,"Complaint about road damage: ""Zoo approach road surface bubbling at 45°C""",
+AM-202429,Heat Hazard,Standard,"Complaint about heat hazard: ""River walk surface temperature unbearable""",
+AM-202431,Heritage Damage,Standard,"Complaint about heritage damage: ""Old city road subsidence near ancient step well""",
+AM-202435,Heat Hazard,Standard,"Complaint about heat hazard: ""Black metal road dividers storing heat""",
+AM-202444,Waste,Standard,"Complaint about waste: ""Restaurant waste bins overflowing on Sunday night""",
+AM-202445,Heat Hazard,Standard,"Complaint about heat hazard: ""BRT shelter roof glass broken""",
