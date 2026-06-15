@@ -54,10 +54,28 @@ def retrieve_policy(file_path: str) -> list[dict]:
     sections = []
     current_clause = None
     current_lines = []
-    clause_pattern = re.compile(r"^(\d+\.\d+(?:\.\d+)?)\b")
+    clause_pattern   = re.compile(r"^(\d+\.\d+(?:\.\d+)?)\b")
+    # Section headings: "1. PURPOSE AND SCOPE", "2. ANNUAL LEAVE", etc.
+    section_heading  = re.compile(r"^\d+\.\s+[A-Z]")
+    # Decorative border lines (═══, ───, ===, ---)
+    border_line      = re.compile(r"^[═─=\-]{4,}$")
 
     for line in raw.splitlines():
-        match = clause_pattern.match(line.strip())
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if border_line.match(stripped) or section_heading.match(stripped):
+            # Flush the current clause before the heading gap
+            if current_clause is not None:
+                sections.append({
+                    "clause": current_clause,
+                    "text": " ".join(current_lines).strip(),
+                })
+                current_clause = None
+                current_lines = []
+            continue  # skip the heading/border itself
+
+        match = clause_pattern.match(stripped)
         if match:
             if current_clause is not None:
                 sections.append({
@@ -65,12 +83,12 @@ def retrieve_policy(file_path: str) -> list[dict]:
                     "text": " ".join(current_lines).strip(),
                 })
             current_clause = match.group(1)
-            current_lines = [line.strip()]
+            current_lines = [stripped]
         else:
             if current_clause is not None:
-                current_lines.append(line.strip())
-            elif line.strip():
-                sections.append({"clause": None, "text": line.strip()})
+                current_lines.append(stripped)
+            else:
+                sections.append({"clause": None, "text": stripped})
 
     if current_clause is not None:
         sections.append({
