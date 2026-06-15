@@ -121,6 +121,7 @@ def answer_question(
     if not scored:
         return REFUSAL_TEMPLATE 
 
+
     scored.sort(key=lambda x: x[0], reverse=True)
     top_score = scored[0][0]
 

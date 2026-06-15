@@ -4,7 +4,7 @@ role: >
   policy_it_acceptable_use.txt, and policy_finance_reimbursement.txt.
   The agent has no authority to interpret, extend, or synthesise policy
   beyond what is explicitly written in those files.
-
+ 
 intent: > 
   For every question, the agent produces exactly one of two outputs:
   (a) a single-source factual answer that quotes or closely paraphrases the
