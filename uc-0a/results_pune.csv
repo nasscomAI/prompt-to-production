@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description explicitly mentions 'pothole' (citing 'Large').,
+PM-202402,Pothole,Urgent,The description explicitly mentions 'pothole' (citing 'Deep').,
+PM-202406,Flooding,Standard,The description mentions water accumulation or 'flooded' (citing 'Underpass').,
+PM-202408,Other,Standard,The description contains multiple overlapping concerns: 'Bus stand flooded. Passengers standing in water. D...',NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description refers to 'streetlight' or lack of street illumination (citing 'Three').,
+PM-202411,Streetlight,Urgent,The description refers to 'streetlight' or lack of street illumination (citing 'Streetlight').,
+PM-202413,Waste,Standard,"The description refers to 'garbage', 'waste', or 'dumped' material (citing 'Overflowing').",
+PM-202418,Noise,Standard,"The description reports excessive sound from 'music', 'drilling', or 'engines' (citing 'Wedding').",
+PM-202419,Road Damage,Standard,The description reports degradation of public pathways or 'road surface' (citing 'Road').,
+PM-202420,Other,Urgent,The description mentions 'manhole cover missing' which is ambiguous between Road Damage and Drain Blockage (citing 'Manhole').,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description mentions water accumulation or 'flooded' (citing 'Bridge').,
+PM-202428,Other,Standard,The description mentions a 'dead animal' which is ambiguous between Waste and animal control (citing 'Dead').,NEEDS_REVIEW
+PM-202430,Other,Standard,"The description mentions 'heritage street, lights out' which is ambiguous between Heritage Damage and Streetlight.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description refers to 'garbage', 'waste', or 'dumped' material (citing 'Bulk').",
+PM-202446,Road Damage,Urgent,The description reports degradation of public pathways or 'road surface' (citing 'Footpath').,
