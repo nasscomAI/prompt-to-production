@@ -1,66 +1,65 @@
 import os
 import argparse
-import json
-from openai import OpenAI
+from google import genai
+from google.genai import types
 
-def parse_args():
-    parser = argparse.ArgumentParser(description="UC-0B: Policy Compliance Summarizer")
-    parser.add_argument("--input", required=True, help="Path to input policy_hr_leave.txt")
-    parser.add_argument("--output", required=True, help="Path to output summary_hr_leave.txt")
-    return parser.parse_args()
+# 1. Initialize the modern GenAI Client
+# It will automatically look for the GEMINI_API_KEY environment variable.
+client = genai.Client()
 
-def retrieve_policy(file_path):
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Input policy document not found at: {file_path}")
-    with open(file_path, mode='r', encoding='utf-8') as f:
-        content = f.read()
-    return content
-
-def summarize_policy(client, policy_content):
-    system_prompt = """You are a high-stakes Corporate Governance & Compliance Auditor. 
-Your task is to summarize the provided HR Leave Policy document.
-
-You must strictly prevent these three failure modes:
-1. Clause Omission: Every numbered obligation clause (specifically 2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) must be accounted for.
-2. Scope Bleed: Never add external text or context like "as is standard practice" or "typically in government organisations". Only use facts explicitly written.
-3. Obligation Softening: Retain absolute binding metrics. Do not change "must", "will", or "requires" into "should" or "is expected to".
-
-CRITICAL ACCURACY TRAP TO AVOID:
-- Clause 5.2 requires approval from BOTH the Department Head AND the HR Director. You must include BOTH individual entities.
-
-Format your response as a clean, markdown list where each item starts directly with the clause number (e.g., "- Clause X.X: [Summary]"). If any clause cannot be summarized without dropping a condition or softening its restriction, you MUST quote it verbatim instead."""
-
+def generate_compliance_summary(policy_text, system_instruction):
+    """
+    Generates a strict compliance summary using Google Gemini 2.5 Flash,
+    adhering strictly to system rules at zero temperature.
+    """
     try:
-        response = client.chat.completions.create(
-            model="gpt-4o",
-            temperature=0.0,
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": f"Policy Document Content:\\n\\n{policy_content}"}
-            ]
+        # 2. Package configuration and system instructions
+        config = types.GenerateContentConfig(
+            system_instruction=system_instruction,
+            temperature=0.0  # Zero temperature for absolute audit accuracy
         )
-        return response.choices[0].message.content.strip()
+        
+        # 3. Request generation from Gemini
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=policy_text,
+            config=config
+        )
+        
+        return response.text
+        
     except Exception as e:
-        return f"Error executing compliance summarization LLM generation: {str(e)}"
+        print(f"Error executing compliance summarization Gemini generation: {e}")
+        return None
 
 def main():
-    args = parse_args()
-    client = OpenAI()
+    parser = argparse.ArgumentParser(description="Compliance Summarizer via Gemini")
+    parser.add_argument("--input", required=True, help="Path to input policy document txt file")
+    parser.add_argument("--output", required=True, help="Path to save output summary markdown/txt file")
+    args = parser.parse_args()
 
+    # Read the policy document
     print(f"Reading policy document from: {args.input}")
-    policy_text = retrieve_policy(args.input)
+    with open(args.input, "r", encoding="utf-8") as f:
+        policy_text = f.read()
 
-    print("Generating compliance summary...")
-    summary_result = summarize_policy(client, policy_text)
+    # Read your strict system guardrails (skills.md context)
+    system_instruction = (
+        "You are an absolute compliance auditor. Summarize the policy text into exactly 10 points. "
+        "Rule 1: NEVER omit complex conditional logic or multi-condition approvers (e.g., maintain 'AND/OR' constraints). "
+        "Rule 2: NEVER soften mandatory actions; verbatim retain terms like 'shall', 'must', and 'required'. "
+        "Rule 3: Avoid scope bleed; do NOT invent or assume industry standard practices outside the text."
+    )
 
-    output_dir = os.path.dirname(args.output)
-    if output_dir and not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    print("Generating compliance summary via Gemini...")
+    summary_output = generate_compliance_summary(policy_text, system_instruction)
 
-    with open(args.output, mode='w', encoding='utf-8') as f:
-        f.write(summary_result)
-
-    print(f"Successfully wrote compliance-mapped summary to: {args.output}")
+    if summary_output:
+        with open(args.output, "w", encoding="utf-8") as f:
+            f.write(summary_output)
+        print(f"Successfully wrote compliance-mapped summary to: {args.output}")
+    else:
+        print("Failed to generate summary.")
 
 if __name__ == "__main__":
     main()
