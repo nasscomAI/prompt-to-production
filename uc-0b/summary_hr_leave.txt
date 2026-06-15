@@ -1,0 +1,37 @@
+===========================================================
+CITY MUNICIPAL CORPORATION - LEAVE POLICY BINDING SUMMARY
+===========================================================
+This summary outlines the critical binding obligations of the Employee Leave Policy.
+Each clause is summarized while strictly preserving all conditions and binding verbs.
+
+Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+  - Binding Verb: MUST (submit application at least 14 calendar days in advance).
+
+Clause 2.4: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
+  - Binding Verb: MUST (written approval from direct manager is required before leave).
+  - Constraint: Verbal approval is NOT valid.
+
+Clause 2.5: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+  - Binding Verb: WILL (unapproved absence results in Loss of Pay regardless of subsequent approval).
+
+Clause 2.6: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+  - Binding Verb: MAY / ARE FORFEITED (maximum 5 days carry-forward; excess days are forfeited on 31 December).
+
+Clause 2.7: Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+  - Binding Verb: MUST (carry-forward days must be used January-March or are forfeited).
+
+Clause 3.2: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+  - Binding Verb: REQUIRES (sick leave of 3+ consecutive days requires medical certificate within 48 hours of return).
+
+Clause 3.4: Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+  - Binding Verb: REQUIRES (sick leave immediately before or after a public holiday or annual leave requires certificate regardless of duration).
+
+Clause 5.2: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+  - Binding Verb: REQUIRES (Leave Without Pay requires dual approval).
+  - Conditions: BOTH Department Head AND HR Director approval required. Manager approval is NOT sufficient.
+
+Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+  - Binding Verb: REQUIRES (LWP exceeding 30 continuous days requires Municipal Commissioner approval).
+
+Clause 7.2: Leave encashment during service is not permitted under any circumstances.
+  - Binding Verb: NOT PERMITTED (leave encashment during service is prohibited under any circumstances).
