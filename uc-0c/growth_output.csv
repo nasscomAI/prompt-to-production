@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,growth_type,growth_value,formula,flag
+2024-01,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,10.6,MoM,N/A,"N/A — first period, no prior month",
+2024-02,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,11.7,MoM,+10.4%,((11.7 - 10.6) / 10.6) * 100 = +10.4%,
+2024-03,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,11.1,MoM,-5.1%,((11.1 - 11.7) / 11.7) * 100 = -5.1%,
+2024-04,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,11.2,MoM,+0.9%,((11.2 - 11.1) / 11.1) * 100 = +0.9%,
+2024-05,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,13.1,MoM,+17.0%,((13.1 - 11.2) / 11.2) * 100 = +17.0%,
+2024-06,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,15.0,MoM,+14.5%,((15.0 - 13.1) / 13.1) * 100 = +14.5%,
+2024-07,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,19.0,MoM,+26.7%,((19.0 - 15.0) / 15.0) * 100 = +26.7%,
+2024-08,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,18.3,MoM,-3.7%,((18.3 - 19.0) / 19.0) * 100 = -3.7%,
+2024-09,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,17.2,MoM,-6.0%,((17.2 - 18.3) / 18.3) * 100 = -6.0%,
+2024-10,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,14.1,MoM,-18.0%,((14.1 - 17.2) / 17.2) * 100 = -18.0%,
+2024-11,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,9.9,MoM,-29.8%,((9.9 - 14.1) / 14.1) * 100 = -29.8%,
+2024-12,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,12.3,MoM,+24.2%,((12.3 - 9.9) / 9.9) * 100 = +24.2%,
