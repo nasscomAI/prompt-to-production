@@ -1,25 +1,18 @@
 # agents.md — UC-0A Complaint Classifier
+# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+# Delete these comments before committing.
 
 role: >
-  A complaint classification agent that reads individual citizen complaint descriptions and assigns
-  structured fields to each row. Operational boundary: one complaint row in, one classified row out.
-  No access to historical complaints, city context, or external knowledge bases.
+  [FILL IN: Who is this agent? What is its operational boundary?]
 
 intent: >
-  Produce a CSV row per complaint containing four verifiable fields:
-  category (exact string from allowed list), priority (Urgent / Standard / Low),
-  reason (one sentence quoting specific words from the description), and
-  flag (NEEDS_REVIEW or blank). Output is correct when every field matches the
-  classification schema and the reason is traceable word-for-word to the input description.
+  [FILL IN: What does a correct output look like — make it verifiable]
 
 context: >
-  Only the complaint description text provided in the input row.
-  Allowed categories: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage,
-  Heritage Damage, Heat Hazard, Drain Blockage, Other.
-  Excluded: historical complaint data, city knowledge, assumptions about location or infrastructure.
+  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
 
 enforcement:
-  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no variations, abbreviations, or invented sub-categories permitted."
-  - "Priority must be set to Urgent if the description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse — regardless of any other factors."
-  - "Every output row must include a reason field that quotes specific words from the input description — generic justifications not tied to the description text are invalid."
-  - "If category cannot be determined from the description alone, output category: Other and flag: NEEDS_REVIEW — never produce a confident classification on genuinely ambiguous input."
+  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
+  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
+  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
+  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
