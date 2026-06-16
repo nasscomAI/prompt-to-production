@@ -1,16 +1,6 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Processes a chronological table filtered down to a targeted subset, evaluating sequential MoM or YTD trends into decoupled columns.
+    input: Datastore row array accompanied by target string filter strings.
+    output: List of schema-compliant dictionary entries with structured growth_percent, formula, status, and null_reason text strings.
+    error_handling: Automatically generates status labels like PREVIOUS_PERIOD_NULL when context calculations are disrupted by empty cells.
