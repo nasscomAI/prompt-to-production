@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because description includes 'pothole'.,
+PM-202402,Pothole,Urgent,Classified as Pothole because description includes 'pothole' and urgency indicator 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding because description includes 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding because description includes 'flood'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because description includes 'streetlight'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description includes 'streetlight' and urgency indicator 'hazard'.,
+PM-202413,Waste,Low,Classified as Waste because description includes 'garbage' and urgency indicator 'smell'.,
+PM-202418,Noise,Low,Classified as Noise because description includes 'music past midnight' and urgency indicator 'weeknights'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because description includes 'road surface cracked'.,
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage because description includes 'manhole' and urgency indicator 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding because description includes 'flood'.,
+PM-202428,Waste,Standard,Classified as Waste because description includes 'dead animal'.,
+PM-202430,Other,Standard,"Category is ambiguous from the complaint text, so it is marked for review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because description includes 'waste'.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage because description includes 'broken' and urgency indicator 'fell'.,
