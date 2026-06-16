@@ -1,0 +1,17 @@
+POLICY SUMMARY — HR-POL-001
+==================================================
+
+
+==================================================
+COMPLIANCE WARNINGS
+----------------------------------------
+  MISSING_CLAUSE 2.3: This required clause was not found in the source document.
+  MISSING_CLAUSE 2.4: This required clause was not found in the source document.
+  MISSING_CLAUSE 2.5: This required clause was not found in the source document.
+  MISSING_CLAUSE 2.6: This required clause was not found in the source document.
+  MISSING_CLAUSE 2.7: This required clause was not found in the source document.
+  MISSING_CLAUSE 3.2: This required clause was not found in the source document.
+  MISSING_CLAUSE 3.4: This required clause was not found in the source document.
+  MISSING_CLAUSE 5.2: This required clause was not found in the source document.
+  MISSING_CLAUSE 5.3: This required clause was not found in the source document.
+  MISSING_CLAUSE 7.2: This required clause was not found in the source document.
