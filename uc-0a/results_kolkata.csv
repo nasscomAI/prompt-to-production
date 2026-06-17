@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202402,Other,Standard,Description: 'Historic tram road cobblestones broken up by cable laying work',
+KM-202405,Other,Standard,Description: 'Wedding band playing near Tagore Museum at 11pm',
+KM-202409,Pothole,Standard,"Description mentions 'pothole', 'potholes'.",
+KM-202410,Pothole,Standard,Description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'.,
+KM-202415,Drain Blockage,Standard,Description mentions 'drain'.,
+KM-202418,Waste,Standard,"Description mentions 'waste', 'hot'.",NEEDS_REVIEW
+KM-202421,Other,Urgent,"Description mentions 'hospital', 'fell'.",
+KM-202422,Other,Standard,Description: 'Road surface buckled near bridge',
+KM-202426,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202430,Other,Standard,Description: 'Road subsided near gas pipeline',
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202436,Other,Standard,Description: 'Entire colony substation tripped',
+KM-202438,Heritage Damage,Standard,Description mentions 'heritage'.,
