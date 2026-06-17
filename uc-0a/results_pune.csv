@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole 60cm wide causing tyre',
+PM-202402,Pothole,Urgent,Description mentions 'pothole near bus stop. School ',
+PM-202406,Flooding,Standard,Description mentions 'flooded knee-deep after 2hrs r',
+PM-202408,Drain Blockage,Standard,Description mentions 'Drain blocked',NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description mentions 'streetlights out for 10 days. ',
+PM-202411,Streetlight,Urgent,Description mentions 'Streetlight flickering and spa',
+PM-202413,Waste,Standard,Description mentions 'garbage bins near vegetable ma',
+PM-202418,Noise,Standard,Description mentions 'music past midnight on weeknig',
+PM-202419,Road Damage,Standard,Description mentions 'Road surface cracked and sinki',
+PM-202420,Other,Urgent,Description begins with 'Manhole cover missing. Risk of serious injury to cyclists.',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description mentions 'floods in 30mins of rain. Brid',
+PM-202428,Waste,Standard,Description mentions 'Dead animal not removed for 36',
+PM-202430,Heritage Damage,Standard,"Description mentions 'Heritage street, lights out. Safety conc'",NEEDS_REVIEW
+PM-202433,Waste,Standard,Description mentions 'waste from apartment renovatio',
+PM-202446,Road Damage,Urgent,Description mentions 'Footpath tiles broken and uptu',

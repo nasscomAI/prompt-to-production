@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flooded after 1hr rain. Ambula',
+GH-202402,Drain Blockage,Standard,Description begins with 'Market area flooded. Traders suffering losses. Drain completely blocked.',NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Description mentions 'stormwater drain 100% blocked with ',
+GH-202407,Drain Blockage,Standard,Description mentions 'Drain blocked and mosquito breeding',
+GH-202410,Pothole,Standard,Description mentions 'Potholes causing vehicles to s',
+GH-202411,Pothole,Urgent,Description mentions 'Pothole swallowed entire motor',
+GH-202412,Pothole,Urgent,Description mentions 'potholes in 200m stretch',
+GH-202417,Heritage Damage,Standard,Description mentions 'Heritage zone garbage overflow. Tourist ',NEEDS_REVIEW
+GH-202420,Noise,Standard,Description mentions 'drilling from 5am daily near r',
+GH-202422,Road Damage,Urgent,Description mentions 'Crater 1m deep near residentia',
+GH-202424,Flooding,Standard,Description mentions 'floods in light rain. Cars reg',
+GH-202428,Waste,Standard,Description mentions 'waste not cleared. Area unusab',
+GH-202432,Noise,Standard,Description mentions 'idling with engines on',
+GH-202448,Drain Blockage,Standard,Description mentions 'drain blocked — entire locality at ',
+GH-202438,Other,Standard,Description begins with 'Colony surrounded by fields that channel rainwater through main road.',NEEDS_REVIEW
