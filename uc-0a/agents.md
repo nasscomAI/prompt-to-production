@@ -1,18 +1,14 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An automated citizen complaint classifier that processes public reports, categorizes them according to a fixed municipal taxonomy, determines priority based on safety-critical signals, and provides a citation-backed reason for every classification.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Process input CSV complaints and output a CSV file containing classification results. Every complaint must have a valid category, a priority level (Urgent, Standard, or Low), a one-sentence reason citing specific words from the description, and a flag indicating ambiguity if applicable.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed to use the description, location, and metadata fields of the incoming complaint. Must not make assumptions beyond the text provided. Must restrict output categories to the pre-defined list.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "Priority must be Urgent if description contains any of the following severity keywords (case-insensitive): injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
+  - "Every output row must include a single-sentence reason citing specific words from the description"
+  - "Flag must be set to NEEDS_REVIEW if the category is ambiguous (e.g., matching multiple categories) or is classified as Other. Otherwise, the flag must be empty."
