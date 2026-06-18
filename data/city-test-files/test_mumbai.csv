@@ -1,0 +1,16 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open
+MC-202401,2024-06-01,Mumbai,Ward 1 – Colaba,Colaba Causeway near school,Large pothole causing traffic jam. School children crossing are at risk.,Citizen Portal,3
+MC-202402,2024-06-02,Mumbai,Ward 2 – Bandra,Hill Road near Holy Family Hospital,Road completely flooded. Ambulance diverted due to waterlogging.,Phone Helpline,5
+MC-202403,2024-06-03,Mumbai,Ward 3 – Andheri,Link Road near Metro Station,Three streetlights not working for a week. Very dark and unsafe at night.,Email,10
+MC-202404,2024-06-04,Mumbai,Ward 4 – Dadar,Shivaji Park outer circle,Garbage piles accumulating near the park entrance. Foul smell spreading.,Social Media,2
+MC-202405,2024-06-05,Mumbai,Ward 5 – Chembur,Deonar residential area,Loud music playing from marriage hall past midnight on weekday.,WhatsApp Helpline,1
+MC-202406,2024-06-06,Mumbai,Ward 1 – Colaba,Marine Drive promenade,Tarmac cracked and sinking near the viewing gallery.,Councillor Referral,15
+MC-202407,2024-06-07,Mumbai,Ward 1 – Colaba,Gateway of India precinct,Historic stone pillar chipped and defaced by vandals.,Ward Office Walk-in,20
+MC-202408,2024-06-08,Mumbai,Ward 3 – Andheri,Saki Naka bus shelter,Metal roof of the bus shelter reaching extremely high temperature in afternoon.,Citizen Portal,4
+MC-202409,2024-06-09,Mumbai,Ward 2 – Bandra,Carter Road promenade,Main stormwater drain blocked with plastic waste. Water stagnant.,WhatsApp Helpline,6
+MC-202410,2024-06-10,Mumbai,Ward 4 – Dadar,Gokhale Road junction,Deep pothole hidden under puddle. Elderly cyclist fell and got injured.,Email,12
+MC-202411,2024-06-11,Mumbai,Ward 5 – Chembur,Trombay Road near petrol pump,Sparking transformer and flickering streetlights. Fire risk reported.,Social Media,8
+MC-202412,2024-06-12,Mumbai,Ward 3 – Andheri,Lokayukta Marg,Strange chemical smell in the air. Genuinely ambiguous source.,Phone Helpline,1
+MC-202413,2024-06-13,Mumbai,Ward 2 – Bandra,Bandra Reclamation road,Street flooding up to ankle level after high tide. No immediate danger.,Councillor Referral,2
+MC-202414,2024-06-14,Mumbai,Ward 5 – Chembur,Opposite Sushrut Hospital,Construction site operating high-decibel drilling machines during silent hours.,Citizen Portal,7
+MC-202415,2024-06-15,Mumbai,Ward 1 – Colaba,Heritage building near Flora Fountain,Historic balcony structural collapse risk. Needs immediate inspection.,Ward Office Walk-in,19
