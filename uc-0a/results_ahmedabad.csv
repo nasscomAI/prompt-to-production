@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""44°"".",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""temperature"".",
+AM-202405,Other,Low,"Classified as Other because the description says ""trees"" and the wording remains ambiguous.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""heatwave"".",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage because the description says ""broken"" and includes urgent signal ""child"" and the wording remains ambiguous.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Classified as Pothole because the description says ""pothole"".",
+AM-202414,Streetlight,Standard,"Classified as Streetlight because the description says ""unlit"".",
+AM-202417,Waste,Standard,"Classified as Waste because the description says ""waste"".",
+AM-202421,Noise,Standard,"Classified as Noise because the description says ""music"".",
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""45°"".",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""52°"".",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage because the description says ""heritage"".",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""burns on contact"".",
+AM-202444,Waste,Standard,"Classified as Waste because the description says ""waste"".",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard because the description says ""full sun"".",

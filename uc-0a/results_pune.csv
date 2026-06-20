@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole because the description says ""pothole"".",
+PM-202402,Pothole,Urgent,"Classified as Pothole because the description says ""pothole"" and includes urgent signal ""child"".",
+PM-202406,Flooding,Standard,"Classified as Flooding because the description says ""flooded"".",
+PM-202408,Flooding,Standard,"Classified as Flooding because the description says ""flooded"" and the wording remains ambiguous.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight because the description says ""streetlight"".",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight because the description says ""streetlight"" and includes urgent signal ""hazard"".",
+PM-202413,Waste,Standard,"Classified as Waste because the description says ""garbage"".",
+PM-202418,Noise,Standard,"Classified as Noise because the description says ""music"".",
+PM-202419,Road Damage,Standard,"Classified as Road Damage because the description says ""road surface"".",
+PM-202420,Road Damage,Urgent,"Classified as Road Damage because the description says ""manhole cover missing"" and includes urgent signal ""injury"".",
+PM-202427,Flooding,Standard,"Classified as Flooding because the description says ""floods"".",
+PM-202428,Waste,Standard,"Classified as Waste because the description says ""dead animal"".",
+PM-202430,Streetlight,Standard,"Classified as Streetlight because the description says ""lights out"".",
+PM-202433,Waste,Standard,"Classified as Waste because the description says ""waste"".",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage because the description says ""broken and upturned"" and includes urgent signal ""fell"".",

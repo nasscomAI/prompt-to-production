@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because the description says ""flooded"" and includes urgent signal ""ambulance"".",
+GH-202402,Flooding,Standard,"Classified as Flooding because the description says ""flooded"" and the wording remains ambiguous.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage because the description says ""stormwater drain"".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage because the description says ""drain blocked"".",
+GH-202410,Pothole,Standard,"Classified as Pothole because the description says ""pothole"".",
+GH-202411,Pothole,Urgent,"Classified as Pothole because the description says ""pothole"" and includes urgent signal ""hospital"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole because the description says ""pothole"" and includes urgent signal ""school"".",
+GH-202417,Waste,Standard,"Classified as Waste because the description says ""garbage"".",
+GH-202420,Noise,Standard,"Classified as Noise because the description says ""drilling"".",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage because the description says ""collapsed"" and includes urgent signal ""collapse"".",
+GH-202424,Flooding,Standard,"Classified as Flooding because the description says ""floods"".",
+GH-202428,Waste,Standard,"Classified as Waste because the description says ""waste"".",
+GH-202432,Noise,Standard,"Classified as Noise because the description says ""trucks idling"".",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage because the description says ""main drain blocked"" and the wording remains ambiguous.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified as Flooding because the description says ""rainwater through main road"".",
