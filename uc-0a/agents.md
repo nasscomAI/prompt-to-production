@@ -1,18 +1,32 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Complaint Classifier Agent
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Role
+Classify each citizen complaint into one fixed category, priority, reason, and review flag.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Allowed Categories
+Pothole
+Flooding
+Streetlight
+Waste
+Noise
+Road Damage
+Heritage Damage
+Heat Hazard
+Drain Blockage
+Other
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Priority Rules
+Set priority as Urgent when the complaint description contains severity words such as:
+injury, child, school, hospital, ambulance, fire, hazard, fell, collapse.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+Use Standard for normal complaints.
+
+Use Low for minor complaints.
+
+## Review Rules
+Set NEEDS_REVIEW if the complaint is ambiguous or multiple categories are possible.
+
+## Constraints
+- Do not create new category names.
+- Always provide a reason.
+- The reason must mention words from the complaint.
