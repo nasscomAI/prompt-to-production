@@ -23,3 +23,5 @@ enforcement:
   - "Show the formula used in every output row alongside the result or the reason it was not computed."
   - "If --growth-type is not specified, refuse and ask for a formula; never guess MoM or YoY."
   - "Rows with current null actual_spend, previous null actual_spend, or previous zero actual_spend must be flagged and must not compute growth."
+  
+  
