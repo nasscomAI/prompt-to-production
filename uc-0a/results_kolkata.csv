@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Classified from description words ""lamp post"".",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Classified from description words ""historic"".",NEEDS_REVIEW
+KM-202405,Noise,Standard,"Classified from description words ""band playing"".",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Classified from description words ""potholes"".",
+KM-202410,Pothole,Standard,"Classified from description words ""pothole"".",
+KM-202411,Pothole,Standard,"Classified from description words ""pothole"".",NEEDS_REVIEW
+KM-202415,Other,Standard,"Classified from description words ""New residential complex draining directl"".",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classified from description words ""waste"", ""overflowing"", ""piles"".",
+KM-202421,Road Damage,Urgent,"Classified from description words ""hospital"", ""fell"".",
+KM-202422,Road Damage,Standard,"Classified from description words ""road surface"", ""surface buckled"", ""buckled"".",
+KM-202426,Heritage Damage,Standard,"Classified from description words ""heritage"", ""defaced"".",
+KM-202430,Road Damage,Standard,"Classified from description words ""subsided"".",
+KM-202434,Heritage Damage,Standard,"Classified from description words ""heritage"".",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Classified from description words ""darkness"".",
+KM-202438,Noise,Standard,"Classified from description words ""amplifiers"".",NEEDS_REVIEW

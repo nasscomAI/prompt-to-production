@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified from description words ""pothole"".",
+PM-202402,Pothole,Urgent,"Classified from description words ""child"", ""school"".",
+PM-202406,Flooding,Standard,"Classified from description words ""flooded"", ""knee-deep"", ""stranded"".",
+PM-202408,Drain Blockage,Standard,"Classified from description words ""drain blocked"", ""drain"".",
+PM-202410,Streetlight,Standard,"Classified from description words ""streetlights"", ""lights out"", ""dark at night"".",
+PM-202411,Streetlight,Urgent,"Classified from description words ""hazard"".",
+PM-202413,Waste,Standard,"Classified from description words ""garbage"", ""bins"", ""overflowing"".",
+PM-202418,Noise,Standard,"Classified from description words ""music"", ""midnight"".",
+PM-202419,Road Damage,Standard,"Classified from description words ""road surface"", ""surface cracked"", ""cracked"".",
+PM-202420,Drain Blockage,Urgent,"Classified from description words ""injury"".",
+PM-202427,Flooding,Standard,"Classified from description words ""floods"".",NEEDS_REVIEW
+PM-202428,Waste,Standard,"Classified from description words ""dead animal"".",
+PM-202430,Streetlight,Standard,"Classified from description words ""lights out"".",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified from description words ""waste"", ""dumped"".",
+PM-202446,Road Damage,Urgent,"Classified from description words ""fell"".",
