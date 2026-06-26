@@ -1,16 +1,29 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-X Skills Definition
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: `retrieve_documents`
+**Purpose:** Load all 3 policy files and index by document name and section number.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+**Input:** Paths to policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt
+
+**Output:** Dictionary indexed by document name and section
+
+**Rules:**
+- Load all 3 files completely — never skip one
+- Preserve section numbers exactly as in source
+- Never merge content across documents
+
+---
+
+## Skill: `answer_question`
+**Purpose:** Search indexed documents and return single-source answer with citation OR refusal.
+
+**Input:** User question + indexed documents
+
+**Output:** Answer with citation (Document name + section) OR refusal template
+
+**Rules:**
+- Search all 3 documents independently
+- If answer found in ONE document — return answer + citation
+- If answer requires combining 2+ documents — use refusal template
+- If answer not found in any document — use refusal template exactly
+- Never use hedging language
