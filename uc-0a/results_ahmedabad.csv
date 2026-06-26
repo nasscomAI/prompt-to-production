@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,The description contains 'surface'.,
+AM-202402,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The description contains 'heat'.,
+AM-202407,Other,Urgent,The description contains 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description contains 'pothole'.,
+AM-202414,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Description mentions multiple possible issues: Heritage Damage, Waste causing ambiguity.",NEEDS_REVIEW
+AM-202421,Noise,Standard,The description contains 'music'.,
+AM-202424,Road Damage,Standard,"The description contains 'road, surface'.",
+AM-202429,Road Damage,Standard,The description contains 'surface'.,
+AM-202431,Heritage Damage,Standard,The description contains 'heritage'.,
+AM-202435,Heat Hazard,Standard,The description contains 'heat'.,
+AM-202444,Waste,Standard,The description contains 'waste'.,
+AM-202445,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW

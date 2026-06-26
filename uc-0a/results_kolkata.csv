@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description contains 'heritage'.,
+KM-202402,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+KM-202405,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description contains 'pothole'.,
+KM-202410,Pothole,Standard,The description contains 'pothole'.,
+KM-202411,Pothole,Standard,The description contains 'pothole'.,
+KM-202415,Drain Blockage,Standard,The description contains 'drain'.,
+KM-202418,Waste,Standard,The description contains 'waste'.,
+KM-202421,Road Damage,Urgent,"The description contains 'sink, footpath, hospital, fell'.",
+KM-202422,Road Damage,Standard,"The description contains 'surface, road'.",
+KM-202426,Heritage Damage,Standard,The description contains 'heritage'.,
+KM-202430,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The description contains 'heritage'.,
+KM-202436,Other,Standard,Could not identify specific keywords.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The description contains 'heritage'.,

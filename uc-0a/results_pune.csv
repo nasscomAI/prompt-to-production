@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description contains 'pothole'.,
+PM-202402,Pothole,Urgent,"The description contains 'school, child, pothole'.",
+PM-202406,Flooding,Standard,The description contains 'flood'.,
+PM-202408,Other,Standard,"Description mentions multiple possible issues: Drain Blockage, Flooding causing ambiguity.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description contains 'dark, streetlight, light'.",
+PM-202411,Streetlight,Urgent,"The description contains 'streetlight, light, hazard'.",
+PM-202413,Waste,Standard,The description contains 'garbage'.,
+PM-202418,Noise,Standard,The description contains 'music'.,
+PM-202419,Road Damage,Standard,"The description contains 'road, surface, sink, crack'.",
+PM-202420,Drain Blockage,Urgent,"The description contains 'injury, manhole'.",
+PM-202427,Flooding,Standard,The description contains 'flood'.,
+PM-202428,Waste,Standard,The description contains 'dead animal'.,
+PM-202430,Other,Standard,"Description mentions multiple possible issues: Heritage Damage, Streetlight causing ambiguity.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description contains 'waste, dump'.",
+PM-202446,Road Damage,Urgent,"The description contains 'fell, footpath'.",
