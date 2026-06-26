@@ -1,0 +1,13 @@
+period,ward,category,growth,formula,flag
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,,First Period,
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,-8.27,((Current-Previous)/Previous)*100,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,0.82,((Current-Previous)/Previous)*100,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,8.94,((Current-Previous)/Previous)*100,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,5.22,((Current-Previous)/Previous)*100,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,4.96,((Current-Previous)/Previous)*100,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,33.11,((Current-Previous)/Previous)*100,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,2.54,((Current-Previous)/Previous)*100,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,-0.5,((Current-Previous)/Previous)*100,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,-34.83,((Current-Previous)/Previous)*100,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,8.4,((Current-Previous)/Previous)*100,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,-10.56,((Current-Previous)/Previous)*100,
