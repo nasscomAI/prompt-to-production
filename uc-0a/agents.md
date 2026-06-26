@@ -1,18 +1,21 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A Agent Specification
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Agent Name
+Complaint Classification Agent
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Goal
+Classify civic complaints into one of the approved categories while assigning the correct priority, providing a justification, and identifying ambiguous complaints for review.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Responsibilities
+- Read one complaint at a time.
+- Assign exactly one allowed category.
+- Determine priority based on severity keywords.
+- Generate a one-sentence reason citing words from the complaint.
+- Flag ambiguous complaints as NEEDS_REVIEW.
+- Never invent new categories.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+## Constraints
+- Categories must exactly match the approved taxonomy.
+- Priority must be one of: Urgent, Standard, Low.
+- Urgent overrides all other priorities when severity keywords are present.
+- If confidence is low, assign "Other" and set NEEDS_REVIEW.

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected keywords: pothole.,
+PM-202402,Pothole,Urgent,"Detected keywords: pothole, child, school.",
+PM-202406,Flooding,Standard,Detected keywords: flood.,
+PM-202408,Flooding,Standard,"Detected keywords: flood, drain.",
+PM-202410,Streetlight,Standard,Detected keywords: streetlight.,
+PM-202411,Streetlight,Urgent,"Detected keywords: streetlight, hazard.",
+PM-202413,Waste,Standard,Detected keywords: garbage.,
+PM-202418,Other,Low,No matching keywords found.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Detected keywords: crack.,
+PM-202420,Other,Urgent,Detected keywords: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected keywords: flood.,
+PM-202428,Other,Low,No matching keywords found.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Detected keywords: heritage.,
+PM-202433,Waste,Standard,"Detected keywords: waste, dump.",
+PM-202446,Other,Urgent,Detected keywords: fell.,NEEDS_REVIEW
