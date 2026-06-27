@@ -1,0 +1,29 @@
+Clause 1.1 [VERBATIM FLAG]: This policy governs all leave entitlements for permanent and
+Clause 1.2 [VERBATIM FLAG]: This policy does not apply to daily wage workers or consultants.
+Clause 2.1 [VERBATIM FLAG]: Each permanent employee is entitled to 18 days of paid annual
+Clause 2.2 [VERBATIM FLAG]: Annual leave accrues at 1.5 days per month from the date of
+Clause 2.3: A 14-day advance notice is strictly required (must).
+Clause 2.4: Written approval is required before leave commences. Verbal approval is not valid (must).
+Clause 2.5: Unapproved absence will result in LOP (Loss of Pay) regardless of subsequent approval (will).
+Clause 2.6: A maximum of 5 days may be carried forward; any days above 5 are forfeited on 31 December (may / are forfeited).
+Clause 2.7: Carry-forward days must be used between January and March or they are forfeited (must).
+Clause 3.1 [VERBATIM FLAG]: Each employee is entitled to 12 days of paid sick leave per
+Clause 3.2: 3 or more consecutive sick days requires a medical certificate submitted within 48 hours (requires).
+Clause 3.3 [VERBATIM FLAG]: Sick leave cannot be carried forward to the following year.
+Clause 3.4: Sick leave taken immediately before or after a holiday requires a medical certificate regardless of duration (requires).
+Clause 4.1 [VERBATIM FLAG]: Female employees are entitled to 26 weeks of paid maternity
+Clause 4.2 [VERBATIM FLAG]: For a third or subsequent child, maternity leave is 12 weeks
+Clause 4.3 [VERBATIM FLAG]: Male employees are entitled to 5 days of paid paternity leave,
+Clause 4.4 [VERBATIM FLAG]: Paternity leave cannot be split across multiple periods.
+Clause 5.1 [VERBATIM FLAG]: An employee may apply for Leave Without Pay only after
+Clause 5.2: Leave Without Pay (LWP) requires both Department Head AND HR Director approval (requires).
+Clause 5.3: Leave Without Pay (LWP) exceeding 30 days requires Municipal Commissioner approval (requires).
+Clause 5.4 [VERBATIM FLAG]: Periods of LWP do not count toward service for the purposes
+Clause 6.1 [VERBATIM FLAG]: Employees are entitled to all gazetted public holidays as
+Clause 6.2 [VERBATIM FLAG]: If an employee is required to work on a public holiday, they
+Clause 6.3 [VERBATIM FLAG]: Compensatory off cannot be encashed.
+Clause 7.1 [VERBATIM FLAG]: Annual leave may be encashed only at the time of retirement
+Clause 7.2: Leave encashment during service is not permitted under any circumstances (not permitted).
+Clause 7.3 [VERBATIM FLAG]: Sick leave and LWP cannot be encashed under any circumstances.
+Clause 8.1 [VERBATIM FLAG]: Leave-related grievances must be raised with the HR Department
+Clause 8.2 [VERBATIM FLAG]: Grievances raised after 10 working days will not be considered
