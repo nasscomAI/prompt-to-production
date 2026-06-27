@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+AM-202402,Heat Hazard,Standard,"Description mentions 'temperature', so category is Heat Hazard and priority is Standard.",
+AM-202405,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+AM-202406,Heat Hazard,Standard,"Description mentions 'heat', so category is Heat Hazard and priority is Standard.",
+AM-202407,Road Damage,Urgent,"Description mentions 'upturned' and severity keyword 'child', so category is Road Damage and priority is Urgent.",
+AM-202410,Pothole,Standard,"Description mentions 'pothole', so category is Pothole and priority is Standard.",
+AM-202414,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+AM-202417,Waste,Low,"Description mentions 'waste', so category is Waste and priority is Low.",NEEDS_REVIEW
+AM-202421,Noise,Low,"Description mentions 'music', so category is Noise and priority is Low.",
+AM-202424,Road Damage,Standard,"Description mentions 'road surface', so category is Road Damage and priority is Standard.",
+AM-202429,Heat Hazard,Standard,"Description mentions 'temperature', so category is Heat Hazard and priority is Standard.",
+AM-202431,Heritage Damage,Standard,"Description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+AM-202435,Heat Hazard,Standard,"Description mentions 'heat', so category is Heat Hazard and priority is Standard.",
+AM-202444,Waste,Low,"Description mentions 'bin', so category is Waste and priority is Low.",
+AM-202445,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,

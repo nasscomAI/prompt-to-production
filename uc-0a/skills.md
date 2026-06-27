@@ -1,16 +1,15 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A Complaint Classifier skills definitions.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classify a single citizen complaint row into category, priority, reason, and review flag.
+    input: A dict containing complaint fields including complaint_id and description.
+    output: A dict with keys complaint_id, category, priority, reason, flag.
+    error_handling: If description is missing, ambiguous, or invalid, return category Other, priority Standard, flag NEEDS_REVIEW, and a reason explaining the issue.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Read a complaint CSV, apply classify_complaint to every row, and write a normalized output CSV.
+    input: input_path string for the source CSV and output_path string for the target CSV.
+    output: A CSV file with header complaint_id, category, priority, reason, flag.
+    error_handling: Continue processing when a row fails; write a fallback output row for bad input and flag it as NEEDS_REVIEW.
