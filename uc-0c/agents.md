@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0C Growth Calculator
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Per-ward per-category growth calculation agent. Operates only on the provided `ward_budget.csv` and computes growth for a single ward and category at a time.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a per-period table for the specified ward and category that shows actual spend, computed growth percent, and the formula used. Flag any rows with null `actual_spend` and report the `notes` column as the null reason.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may only read the supplied CSV; it must not aggregate across wards/categories unless explicitly requested. It must not impute missing `actual_spend` values.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed; refuse when asked to aggregate."
+  - "Flag every null `actual_spend` row and include the `notes` value as the null reason."
+  - "Show the formula used for each computed growth value in the output (e.g., '(curr - prev) / prev')."
+  - "If `--growth-type` is not provided, refuse and ask for explicit growth type; never guess."
