@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description 'arge pothole 60cm wide causing t...' contains 'pothole', matching category 'Pothole'.",
+PM-202402,Pothole,Urgent,"The description 'Deep pothole near bus stop. Scho...' contains 'pothole', matching category 'Pothole'.",
+PM-202406,Flooding,Standard,"The description 'pass flooded knee-deep after 2hr...' contains 'flooded', matching category 'Flooding'.",
+PM-202408,Flooding,Standard,"The description 'tand flooded. Passengers standin...' contains 'flooded', matching category 'Flooding'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description 'tive streetlights out for 10 days. Ar...' contains 'streetlights', matching category 'Streetlight'.",
+PM-202411,Streetlight,Urgent,"The description 'Streetlight flickering and spar...' contains 'Streetlight', matching category 'Streetlight'.",
+PM-202413,Waste,Standard,"The description 'wing garbage bins near vegetable...' contains 'garbage', matching category 'Waste'.",
+PM-202418,Noise,Standard,"The description 'ying music past midnight on we...' contains 'music', matching category 'Noise'.",
+PM-202419,Road Damage,Standard,"The description 'Road surface cracked and sinking...' contains 'Road surface', matching category 'Road Damage'.",
+PM-202420,Drain Blockage,Urgent,"The description 'Manhole cover missing. Risk...' contains 'Manhole', matching category 'Drain Blockage'.",
+PM-202427,Flooding,Standard,"The description 'oach floods in 30mins of rain....' contains 'floods', matching category 'Flooding'.",
+PM-202428,Waste,Standard,"The description 'Dead animal not removed for 36...' contains 'Dead animal', matching category 'Waste'.",
+PM-202430,Streetlight,Standard,"The description 'eet, lights out. Safety concern for...' contains 'lights out', matching category 'Streetlight'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description 'Bulk waste from apartment reno...' contains 'waste', matching category 'Waste'.",
+PM-202446,Road Damage,Urgent,"The description 'Footpath tiles broken and up...' contains 'Footpath', matching category 'Road Damage'.",
