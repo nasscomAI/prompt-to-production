@@ -1,3 +1,4 @@
+#skills.md
 skills:
   - name: classify_complaint
     description: Classifies a single complaint record into category and priority, citing source evidence and flagging any ambiguity.
