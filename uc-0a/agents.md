@@ -1,18 +1,24 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Complaint classification agent operating on citizen grievance descriptions.
+  Its boundary is a single CSV row — it never accesses external data, never
+  invokes an LLM, and never modifies the input. It outputs only a structured
+  dict with the keys: complaint_id, category, priority, reason, flag.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Given a row containing a complaint_id and description, produce exactly one
+  output row where category is one of the 10 allowed strings, priority is
+  Urgent/Standard/Low based on severity keywords found in the description,
+  reason is a sentence that quotes at least 3 words from the description, and
+  flag is either blank or NEEDS_REVIEW. Every input row must yield an output
+  row — the tool may not skip or silently drop rows.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed: complaint_id, description, location (only for disambiguation of
+  heritage-related terms). Excluded: date_raised, city, ward, reported_by,
+  days_open — these must never influence category or priority.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No abbreviations, no casing variations."
+  - "Priority must be Urgent if description contains ANY of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise Standard. Low is reserved for future use and should NOT be assigned."
+  - "Every output row must include a reason field that is one sentence citing at least 3 consecutive words from the description."
+  - "If category cannot be determined from description alone (no keyword match), output category: Other and flag: NEEDS_REVIEW. If category IS determined, flag must be blank."
