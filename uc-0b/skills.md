@@ -1,16 +1,15 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Policy summarization skills definitions.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Load a plain-text policy document and return a mapping of numbered clauses.
+    input: Path to a policy text file.
+    output: Dict mapping clause numbers (strings like '2.3') to clause text (string).
+    error_handling: If file missing or no numbered clauses found, raise an error and return an empty mapping.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produce a conservative, verifiable summary that preserves clause meaning.
+    input: Dict of numbered clauses as produced by `retrieve_policy`.
+    output: Dict mapping clause numbers to (summary_text, needs_flag) where `needs_flag` is True if the clause was quoted and marked for review.
+    error_handling: If a clause appears to contain multi-condition obligations, return the clause verbatim and set `needs_flag` to True.
