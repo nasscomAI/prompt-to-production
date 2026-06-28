@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Classified as Other based on description: ""Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe."".",NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard based on description: ""Metal bus shelter reaching dangerous temperatures. Commuters refusing to use."".",
+AM-202405,Other,Standard,"Classified as Other based on description: ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard based on description: ""Irrigation system broken. Grass dying in heatwave conditions."".",
+AM-202407,Other,Urgent,"Classified as Other based on description: ""Broken bench and upturned paving. Child injured last week.""; marked Urgent due to keyword(s): child.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Classified as Pothole based on description: ""Pothole on main highway causing morning rush lane closure."".",
+AM-202414,Other,Standard,"Classified as Other based on description: ""Residential colony unlit after 9pm. Wiring theft reported."".",NEEDS_REVIEW
+AM-202417,Waste,Standard,"Classified as Waste based on description: ""Night market waste not cleared before morning. Heritage area affected."".",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Classified as Noise based on description: ""Club music audible at residential buildings at 2am."".",
+AM-202424,Road Damage,Standard,"Classified as Road Damage based on description: ""Zoo approach road surface bubbling at 45°C. Visitor complaints."".",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard based on description: ""River walk surface temperature unbearable. Installed temperature reads 52°C."".",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage based on description: ""Old city road subsidence near ancient step well. Heritage concern."".",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard based on description: ""Black metal road dividers storing heat. Motorists reporting burns on contact."".",
+AM-202444,Waste,Standard,"Classified as Waste based on description: ""Restaurant waste bins overflowing on Sunday night. Health risk."".",
+AM-202445,Other,Standard,"Classified as Other based on description: ""BRT shelter roof glass broken. Users exposed to full sun."".",NEEDS_REVIEW
