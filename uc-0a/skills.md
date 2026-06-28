@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single citizen complaint into the approved category and priority.
+    input: A complaint record containing complaint_id and description.
+    output: complaint_id, category, priority, reason, and flag.
+    error_handling: If the complaint is ambiguous, assign category "Other" and set flag to "NEEDS_REVIEW".
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads all complaints from an input CSV file, classifies each complaint, and writes the results to an output CSV.
+    input: Input CSV file path.
+    output: Output CSV containing complaint_id, category, priority, reason, and flag.
+    error_handling: Skip invalid rows, continue processing remaining rows, and record ambiguous complaints for review.
