@@ -12,8 +12,8 @@ import boto3
 # ---------------------------------------------------------------------------
 # AWS Bedrock configuration
 # ---------------------------------------------------------------------------
-AWS_ACCESS_KEY_ID     = "AKIA5FTZFLDKOFXLXKHQ"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID     = <aws access key>
+AWS_SECRET_ACCESS_KEY = <access key>
 AWS_REGION            = "us-east-1"
 BEDROCK_MODEL_ID      = "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
 
