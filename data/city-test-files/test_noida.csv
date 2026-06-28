@@ -1,0 +1,16 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open
+ND-202401,2024-06-15,Noida,Sector 62 – IT Hub,"Near D block main road, opposite school gate","Deep pothole has opened up near the school entrance, making it hazardous for school buses during pick-up hours.",Citizen Portal,5
+ND-202402,2024-07-05,Noida,Sector 18 – Commercial Zone,Sector 18 metro station underpass,Water logging in the underpass blocking access to the nearby hospital; ambulance had to take a long detour.,WhatsApp Helpline,2
+ND-202403,2024-06-18,Noida,Sector 137 – Residential Area,Central park walking track,Four streetlights are non-functional on the walking track, making the path pitch dark after sunset.,Email,12
+ND-202404,2024-06-20,Noida,Sector 15 – Residential Colony,"Sector 15 main market, behind Mother Dairy","Garbage dump is overflowing and domestic waste is scattered all over the road, creating an unhygienic stench.",Phone Helpline,8
+ND-202405,2024-06-22,Noida,Sector 50 – Residential Zone,"Sector 50, Block B park","Late night music from a private party in the lawn going on beyond 11 PM, disturbing residents.",Citizen Portal,1
+ND-202406,2024-06-25,Noida,Sector 62 – IT Hub,"Sector 62, near Electronic City metro station","A section of the service lane road has started to collapse after heavy rains, posing a danger to commuters.",Social Media,3
+ND-202407,2024-06-10,Noida,Sector 93A – Residential Area,Geeta Upadesh Park,Decorative stone carvings on the park's central heritage pillar have been defaced and chipped off by vandals.,Councillor Referral,15
+ND-202408,2024-06-02,Noida,Sector 18 – Commercial Zone,"Sector 18 market, pedestrian path","Metal benches installed along the footpath get extremely hot in the 45°C summer heat, making them unusable.",Ward Office Walk-in,10
+ND-202409,2024-07-02,Noida,Sector 137 – Residential Area,"Sector 137, near Paras Tierea Society","Main storm water drain is choked with plastic bags and waste, creating a major flooding hazard for the basement parking.",WhatsApp Helpline,7
+ND-202410,2024-06-28,Noida,Sector 15 – Residential Colony,"Sector 15, block C market","A large stray bull has been roaming around the market entrance, occasionally charging at customers.",Phone Helpline,4
+ND-202411,2024-06-12,Noida,Sector 50 – Residential Zone,"Sector 50, near crossing","Large pothole on the turn caused a motorcycle rider to lose control, resulting in a serious leg injury yesterday.",Social Media,9
+ND-202412,2024-06-14,Noida,Sector 15 – Residential Colony,"Sector 15, near community center","A street pole's heavy light cover fell off and missed a child by inches; the remaining fixture looks unstable.",Citizen Portal,6
+ND-202413,2024-06-16,Noida,Sector 18 – Commercial Zone,"Atta Market, street 3","Vendor waste and rotting food items left piled up at the corner of the market, attracting stray dogs.",Ward Office Walk-in,14
+ND-202414,2024-07-06,Noida,Sector 62 – IT Hub,Sector 62 commercial complex,"Basement flooding has submerged the main electrical panel room, creating a severe electrical fire hazard.",Councillor Referral,11
+ND-202415,2024-06-30,Noida,Sector 137 – Residential Area,"Opposite Felix Hospital, Sector 137","Continuous loud horn honking and construction noise right opposite the hospital, disturbing recovering patients.",Email,5

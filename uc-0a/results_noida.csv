@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+ND-202401,Pothole,Urgent,Classified as Pothole with Urgent priority due to severity keyword 'school' and reference to 'pothole'.,
+ND-202402,Flooding,Urgent,Classified as Flooding with Urgent priority due to severity keyword 'hospital' and reference to 'water logging'.,
+ND-202403,Streetlight,Standard,Classified as Streetlight with Standard priority based on the mention of 'streetlight' in the description.,
+ND-202404,Waste,Standard,Classified as Waste with Standard priority based on the mention of 'waste' in the description.,
+ND-202405,Noise,Standard,Classified as Noise with Standard priority based on the mention of 'music' in the description.,
+ND-202406,Road Damage,Urgent,Classified as Road Damage with Urgent priority due to severity keyword 'collapse' and reference to 'collapse'.,
+ND-202407,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on the mention of 'heritage' in the description.,
+ND-202408,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on the mention of 'heat' in the description.,
+ND-202409,Drain Blockage,Urgent,Classified as Drain Blockage with Urgent priority due to severity keyword 'hazard' and reference to 'storm water drain'.,
+ND-202410,Other,Standard,Classified as Other and flagged for review because the description cites 'stray bull' which is ambiguous or not covered by standard categories.,NEEDS_REVIEW
+ND-202411,Pothole,Urgent,Classified as Pothole with Urgent priority due to severity keyword 'injury' and reference to 'pothole'.,
+ND-202412,Streetlight,Urgent,Classified as Streetlight with Urgent priority due to severity keyword 'child' and reference to 'street pole'.,
+ND-202413,Waste,Standard,Classified as Waste with Standard priority based on the mention of 'waste' in the description.,
+ND-202414,Flooding,Urgent,Classified as Flooding with Urgent priority due to severity keyword 'fire' and reference to 'flooding'.,
+ND-202415,Noise,Urgent,Classified as Noise with Urgent priority due to severity keyword 'hospital' and reference to 'noise'.,
