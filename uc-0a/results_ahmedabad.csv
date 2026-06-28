@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202402,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202405,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description contains 'heatwave'.,
+AM-202407,Road Damage,Urgent,Description contains 'upturned'.,
+AM-202410,Pothole,Standard,Description contains 'pothole'.,
+AM-202414,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"Description contains 'heritage', best match is Heritage Damage.",NEEDS_REVIEW
+AM-202421,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Description contains 'road surface'.,
+AM-202429,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Description contains 'heritage'.,
+AM-202435,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Description contains 'waste'.,
+AM-202445,Other,Standard,No category keyword found in description.,NEEDS_REVIEW

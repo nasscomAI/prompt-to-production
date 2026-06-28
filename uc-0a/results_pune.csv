@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description contains 'pothole'.,
+PM-202402,Pothole,Urgent,Description contains 'pothole'.,
+PM-202406,Flooding,Standard,Description contains 'flooded'.,
+PM-202408,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+PM-202410,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,Description contains 'streetlight'.,
+PM-202413,Waste,Standard,Description contains 'garbage'.,
+PM-202418,Noise,Standard,Description contains 'music past midnight'.,
+PM-202419,Road Damage,Standard,Description contains 'cracked'.,
+PM-202420,Other,Urgent,No category keyword found in description.,NEEDS_REVIEW
+PM-202427,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+PM-202428,Waste,Standard,Description contains 'dead animal'.,
+PM-202430,Heritage Damage,Standard,Description contains 'heritage'.,
+PM-202433,Waste,Standard,Description contains 'waste'.,
+PM-202446,Road Damage,Urgent,Description contains 'footpath tiles broken'.,
