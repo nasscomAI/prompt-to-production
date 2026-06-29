@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains 'pothole', which supports category 'Pothole'.",
+PM-202402,Pothole,Urgent,"The description contains 'pothole' and the severity keyword 'child', indicating an urgent pothole issue.",
+PM-202406,Flooding,Standard,"The description contains 'flood', which supports category 'Flooding'.",
+PM-202408,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description contains 'streetlight', which supports category 'Streetlight'.",
+PM-202411,Streetlight,Urgent,"The description contains 'streetlight' and the severity keyword 'hazard', indicating an urgent streetlight issue.",
+PM-202413,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+PM-202418,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"The description contains 'cracked', which supports category 'Road Damage'.",
+PM-202420,Drain Blockage,Urgent,"The description contains 'manhole' and the severity keyword 'injury', indicating an urgent drain blockage issue.",
+PM-202427,Flooding,Standard,"The description contains 'flood', which supports category 'Flooding'.",
+PM-202428,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+PM-202430,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description contains 'waste', which supports category 'Waste'.",
+PM-202446,Road Damage,Urgent,"The description contains 'fell' and the severity keyword 'fell', indicating an urgent road damage issue.",

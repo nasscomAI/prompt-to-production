@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description contains 'ambulance' and the severity keyword 'ambulance', indicating an urgent flooding issue.",
+GH-202402,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"The description contains 'drain', which supports category 'Drain Blockage'.",
+GH-202407,Drain Blockage,Standard,"The description contains 'drain', which supports category 'Drain Blockage'.",
+GH-202410,Pothole,Standard,"The description contains 'potholes', which supports category 'Pothole'.",
+GH-202411,Pothole,Urgent,"The description contains 'hospital' and the severity keyword 'hospital', indicating an urgent pothole issue.",
+GH-202412,Pothole,Urgent,"The description contains 'potholes' and the severity keyword 'school', indicating an urgent pothole issue.",
+GH-202417,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+GH-202420,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+GH-202422,Other,Urgent,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"The description contains 'flood', which supports category 'Flooding'.",
+GH-202428,Waste,Standard,"The description contains 'waste', which supports category 'Waste'.",
+GH-202432,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+GH-202448,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"The description contains 'GH-202438 2024-07-06 Hyderabad Ward 53 – LB Nagar Hayathnagar residential colony', which supports category 'Flooding'.",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"The description contains 'temperature', which supports category 'Heat Hazard'.",
+AM-202405,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description contains 'heatwave', which supports category 'Heat Hazard'.",
+AM-202407,Road Damage,Urgent,"The description contains 'child' and the severity keyword 'child', indicating an urgent road damage issue.",
+AM-202410,Pothole,Standard,"The description contains 'pothole', which supports category 'Pothole'.",
+AM-202414,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202417,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202421,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202424,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"The description contains 'temperature', which supports category 'Heat Hazard'.",
+AM-202431,Heritage Damage,Standard,"The description contains 'heritage', which supports category 'Heritage Damage'.",
+AM-202435,Heat Hazard,Standard,"The description contains 'heat', which supports category 'Heat Hazard'.",
+AM-202444,Other,Standard,"The complaint details do not provide clear discriminating keywords for a single allowed category, so the classification is flagged for review.",NEEDS_REVIEW
+AM-202445,Road Damage,Standard,"The description contains 'AM-202445 2024-04-19 Ahmedabad Ward 13 – Sabarmati Ranip Bus Rapid Transit stop', which supports category 'Road Damage'.",
