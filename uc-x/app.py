@@ -145,9 +145,9 @@ def parse_document(text: str, doc_name: str) -> list[dict]:
     index = []
     for sec in sections:
         sec_text_combined = " ".join(c["text"] for c in sec["clauses"])
-        title_tokens = tokenize(sec["title"])
         sec_tokens = tokenize(sec_text_combined)
         for cl in sec["clauses"]:
+            combined = sec["title"] + " " + cl["text"]
             index.append({
                 "doc": doc_name,
                 "clause_num": cl["num"],
@@ -155,9 +155,8 @@ def parse_document(text: str, doc_name: str) -> list[dict]:
                 "section_title": sec["title"],
                 "text": cl["text"],
                 "doc_tokens": None,
-                "title_tokens": title_tokens,
                 "sec_tokens": sec_tokens,
-                "clause_tokens": tokenize(cl["text"]),
+                "clause_tokens": tokenize(combined),
                 "full_ref": f"{doc_name} section {cl['num']}",
             })
     return index
@@ -245,9 +244,8 @@ def answer_question(question: str, index: list[dict], idf: dict[str, float]) -> 
     scored = []
     for e in doc_entries:
         clause_idf = sum(idf.get(t, 0.0) for t in (q_tokens & e["clause_tokens"]))
-        title_idf = sum(idf.get(t, 0.0) for t in (q_tokens & e["title_tokens"]))
         sec_idf = sum(idf.get(t, 0.0) for t in (q_tokens & e["sec_tokens"]))
-        score = clause_idf * 5 + title_idf * 1.5 + sec_idf
+        score = clause_idf * 5 + sec_idf
         scored.append((score, e))
 
     best_clause_score = max(s for s, _ in scored)
