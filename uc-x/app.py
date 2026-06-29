@@ -61,6 +61,11 @@ CROSS_DOC_REFUSAL = (
 IRREGULAR_ROOTS = {
     "approval": "approv", "approve": "approv", "approves": "approv",
     "approved": "approv", "approving": "approv",
+    "entitlement": "entitle", "entitlements": "entitle",
+    "entitled": "entitle",
+    "encashed": "encash",
+    "chang": "change",
+    "instal": "install",
 }
 
 
@@ -79,14 +84,14 @@ def stem(word: str) -> str:
     # ing
     if w.endswith("ing") and len(w) > 4:
         base = w[:-3]
-        if base.endswith("tt") or base.endswith("mm"):
-            base = base[:-1]
+        if len(base) > 2 and base[-1] == base[-2]:
+            base = base[:-1]  # running → run, installing → install
         w = base
     # ed
     if w.endswith("ed") and len(w) > 3:
         base = w[:-2]
-        if base.endswith("tt") or base.endswith("mm"):
-            base = base[:-1]
+        if len(base) > 2 and base[-1] == base[-2]:
+            base = base[:-1]  # stopped → stop, submitted → submit
         w = base
 
     if w in IRREGULAR_ROOTS:
@@ -97,6 +102,7 @@ def stem(word: str) -> str:
 
 def tokenize(text: str, apply_stem: bool = True) -> set[str]:
     words = re.findall(r"[a-z0-9]+", text.lower())
+    words = [w for w in words if w not in STOPWORDS]
     if apply_stem:
         words = [stem(w) for w in words]
     return {w for w in words if w not in STOPWORDS and len(w) > 1}
@@ -139,6 +145,8 @@ def parse_document(text: str, doc_name: str) -> list[dict]:
     index = []
     for sec in sections:
         sec_text_combined = " ".join(c["text"] for c in sec["clauses"])
+        title_tokens = tokenize(sec["title"])
+        sec_tokens = tokenize(sec_text_combined)
         for cl in sec["clauses"]:
             index.append({
                 "doc": doc_name,
@@ -147,8 +155,9 @@ def parse_document(text: str, doc_name: str) -> list[dict]:
                 "section_title": sec["title"],
                 "text": cl["text"],
                 "doc_tokens": None,
-                "sec_tokens": tokenize(sec["title"] + " " + sec_text_combined),
-                "clause_tokens": tokenize(sec["title"] + " " + cl["text"]),
+                "title_tokens": title_tokens,
+                "sec_tokens": sec_tokens,
+                "clause_tokens": tokenize(cl["text"]),
                 "full_ref": f"{doc_name} section {cl['num']}",
             })
     return index
@@ -213,10 +222,12 @@ def answer_question(question: str, index: list[dict], idf: dict[str, float]) -> 
     CROSS_RATIO = 0.6
 
     doc_names = list(DOC_PATHS.keys())
+    doc_tokens_map = {}
     doc_scores = {}
     for d in doc_names:
-        doc_tokens = next(e["doc_tokens"] for e in index if e["doc"] == d)
-        doc_scores[d] = score_document(q_tokens, doc_tokens, idf)
+        dt = next(e["doc_tokens"] for e in index if e["doc"] == d)
+        doc_tokens_map[d] = dt
+        doc_scores[d] = score_document(q_tokens, dt, idf)
 
     best_doc = max(doc_scores, key=doc_scores.get)
     best_score = doc_scores[best_doc]
@@ -224,7 +235,9 @@ def answer_question(question: str, index: list[dict], idf: dict[str, float]) -> 
     if best_score < MIN_SCORE:
         return REFUSAL_TEMPLATE
 
-    close_docs = [d for d, s in doc_scores.items() if s >= best_score * CROSS_RATIO]
+    close_docs = [d for d, s in doc_scores.items()
+                  if s >= best_score * CROSS_RATIO
+                  and len(q_tokens & doc_tokens_map[d]) >= 3]
     if len(close_docs) > 1:
         return CROSS_DOC_REFUSAL
 
@@ -232,8 +245,9 @@ def answer_question(question: str, index: list[dict], idf: dict[str, float]) -> 
     scored = []
     for e in doc_entries:
         clause_idf = sum(idf.get(t, 0.0) for t in (q_tokens & e["clause_tokens"]))
+        title_idf = sum(idf.get(t, 0.0) for t in (q_tokens & e["title_tokens"]))
         sec_idf = sum(idf.get(t, 0.0) for t in (q_tokens & e["sec_tokens"]))
-        score = clause_idf * 3 + sec_idf
+        score = clause_idf * 5 + title_idf * 1.5 + sec_idf
         scored.append((score, e))
 
     best_clause_score = max(s for s, _ in scored)
