@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding based on description mentioning key terms.,
+GH-202402,Flooding,Urgent,Classified as Flooding based on description mentioning key terms.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on description mentioning key terms.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on description mentioning key terms.,
+GH-202410,Pothole,Urgent,Classified as Pothole based on description mentioning key terms.,
+GH-202411,Pothole,Urgent,Classified as Pothole based on description mentioning key terms.,
+GH-202412,Pothole,Urgent,Classified as Pothole based on description mentioning key terms.,
+GH-202417,Waste,Standard,Classified as Waste based on description mentioning key terms.,
+GH-202420,Noise,Standard,Classified as Noise based on description mentioning key terms.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage based on description mentioning key terms.,
+GH-202424,Flooding,Standard,Classified as Flooding based on description mentioning key terms.,
+GH-202428,Waste,Standard,Classified as Waste based on description mentioning key terms.,
+GH-202432,Noise,Standard,Classified as Noise based on description mentioning key terms.,
+GH-202448,Flooding,Standard,Classified as Flooding based on description mentioning key terms.,
+GH-202438,Other,Standard,Classified as Other based on description mentioning key terms.,NEEDS_REVIEW
