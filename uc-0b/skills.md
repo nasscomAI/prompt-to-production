@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a plain-text policy file and returns its full content as a string.
+    input: file_path (str) — path to the .txt policy document.
+    output: str — full text content of the policy file.
+    error_handling: Raises FileNotFoundError with the path if the file cannot be opened. Never silently returns an empty string.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Takes policy text and produces a structured clause-by-clause summary, preserving all numbered clauses and their exact obligations.
+    input: policy_text (str) — full text of the policy document.
+    output: str — formatted summary with every numbered clause present; obligations are extracted verbatim so no binding verb or condition can be softened.
+    error_handling: If a clause section is missing from the input, writes "[CLAUSE X.X NOT FOUND — REVIEW REQUIRED]" in its place rather than silently omitting it.
