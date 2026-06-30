@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Load and index all available policy documents.
+    input: Policy document text files.
+    output: Indexed document sections.
+    error_handling: Raise an error if any document cannot be loaded.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Search the indexed documents and answer from one source only.
+    input: User question.
+    output: Single-source answer with document and section citation.
+    error_handling: Return the refusal template if the answer is unavailable.
