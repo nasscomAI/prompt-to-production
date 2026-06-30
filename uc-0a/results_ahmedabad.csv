@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description cites ""melting"", ""°c"", indicating Heat Hazard.",
+AM-202402,Heat Hazard,Standard,"Description cites ""temperature"", indicating Heat Hazard.",
+AM-202405,Other,Standard,No recognizable category keyword found in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description cites ""heat"", ""heatwave"", indicating Heat Hazard.",
+AM-202407,Road Damage,Urgent,"Description cites ""paving"", indicating Road Damage. Severity term ""child"" forces Urgent.",
+AM-202410,Pothole,Standard,"Description cites ""pothole"", indicating Pothole.",
+AM-202414,Streetlight,Standard,"Description cites ""unlit"", indicating Streetlight.",
+AM-202417,Other,Standard,"Description fits Waste and Heritage Damage equally (cites ""waste"", ""heritage""); ambiguous, flagged for review.",NEEDS_REVIEW
+AM-202421,Noise,Low,"Description cites ""music"", indicating Noise.",
+AM-202424,Other,Standard,"Description fits Road Damage and Heat Hazard equally (cites ""road surface"", ""°c""); ambiguous, flagged for review.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Description cites ""temperature"", ""unbearable"", ""°c"", indicating Heat Hazard.",
+AM-202431,Other,Standard,"Description fits Road Damage and Heritage Damage equally (cites ""subsidence"", ""heritage""); ambiguous, flagged for review.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description cites ""heat"", indicating Heat Hazard.",
+AM-202444,Waste,Standard,"Description cites ""waste"", ""bins"", indicating Waste.",
+AM-202445,Heat Hazard,Standard,"Description cites ""full sun"", indicating Heat Hazard.",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Description fits Streetlight and Heritage Damage equally (cites ""lamp"", ""heritage""); ambiguous, flagged for review.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Description cites ""historic"", indicating Heritage Damage.",
+KM-202405,Noise,Low,"Description cites ""wedding band"", indicating Noise.",
+KM-202409,Pothole,Standard,"Description cites ""pothole"", indicating Pothole.",
+KM-202410,Pothole,Standard,"Description cites ""pothole"", indicating Pothole.",
+KM-202411,Pothole,Standard,"Description cites ""pothole"", indicating Pothole.",
+KM-202415,Drain Blockage,Standard,"Description cites ""drain"", indicating Drain Blockage.",
+KM-202418,Waste,Standard,"Description cites ""waste"", indicating Waste.",
+KM-202421,Road Damage,Urgent,"Description cites ""sinking"", ""footpath"", indicating Road Damage. Severity term ""hospital"" forces Urgent.",
+KM-202422,Road Damage,Standard,"Description cites ""road surface"", indicating Road Damage.",
+KM-202426,Heritage Damage,Standard,"Description cites ""heritage"", indicating Heritage Damage.",
+KM-202430,Waste,Standard,"Description cites ""smell"", indicating Waste.",
+KM-202434,Other,Standard,"Description fits Road Damage and Heritage Damage equally (cites ""paving"", ""heritage""); ambiguous, flagged for review.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Description cites ""darkness"", indicating Streetlight.",
+KM-202438,Heritage Damage,Standard,"Description cites ""heritage"", indicating Heritage Damage.",

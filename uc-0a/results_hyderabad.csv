@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description cites ""flood"", indicating Flooding. Severity term ""ambulance"" forces Urgent.",
+GH-202402,Flooding,Standard,"Description cites ""flood""; resolved to lead signal Flooding over related Drain Blockage.",
+GH-202406,Drain Blockage,Standard,"Description cites ""drain"", indicating Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Description cites ""drain"", indicating Drain Blockage.",
+GH-202410,Pothole,Standard,"Description cites ""pothole"", indicating Pothole.",
+GH-202411,Pothole,Standard,"Description cites ""pothole"", indicating Pothole.",
+GH-202412,Pothole,Urgent,"Description cites ""pothole"", indicating Pothole. Severity term ""school"" forces Urgent.",
+GH-202417,Waste,Standard,"Description cites ""garbage"", ""waste"", indicating Waste.",
+GH-202420,Noise,Low,"Description cites ""drilling"", indicating Noise.",
+GH-202422,Road Damage,Standard,"Description cites ""crater"", indicating Road Damage.",
+GH-202424,Flooding,Standard,"Description cites ""flood"", indicating Flooding.",
+GH-202428,Waste,Standard,"Description cites ""waste"", indicating Waste.",
+GH-202432,Other,Standard,No recognizable category keyword found in the description.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Description cites ""drain""; resolved to lead signal Drain Blockage over related Flooding.",
+GH-202438,Other,Standard,No recognizable category keyword found in the description.,NEEDS_REVIEW
