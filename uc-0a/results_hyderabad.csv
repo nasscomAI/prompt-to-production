@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The complaint mentions 'flooded' which indicates flooding.,
+GH-202402,Other,Low,The complaint contains 'Market' but does not clearly match any single category.,NEEDS_REVIEW
+GH-202406,Other,Low,The complaint contains 'Main' but does not clearly match any single category.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,The complaint mentions 'Drain' which indicates drain blockage.,
+GH-202410,Pothole,Standard,The complaint mentions 'Potholes' which indicates pothole.,
+GH-202411,Pothole,Standard,The complaint mentions 'Pothole' which indicates pothole.,
+GH-202412,Pothole,Urgent,The complaint mentions 'potholes' which indicates pothole.,
+GH-202417,Other,Low,The complaint contains 'Heritage' but does not clearly match any single category.,NEEDS_REVIEW
+GH-202420,Other,Low,The complaint contains 'Construction' but does not clearly match any single category.,NEEDS_REVIEW
+GH-202422,Pothole,Standard,The complaint mentions 'Crater' which indicates pothole.,
+GH-202424,Flooding,Standard,The complaint mentions 'floods' which indicates flooding.,
+GH-202428,Waste,Standard,The complaint mentions 'waste' which indicates waste.,
+GH-202432,Other,Low,The complaint contains '24hr' but does not clearly match any single category.,NEEDS_REVIEW
+GH-202448,Other,Low,The complaint contains 'Main' but does not clearly match any single category.,NEEDS_REVIEW
+GH-202438,Other,Low,The complaint contains 'Colony' but does not clearly match any single category.,NEEDS_REVIEW

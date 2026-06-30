@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Low,The complaint contains 'Heritage' but does not clearly match any single category.,NEEDS_REVIEW
+KM-202402,Other,Low,The complaint contains 'Historic' but does not clearly match any single category.,NEEDS_REVIEW
+KM-202405,Noise,Standard,The complaint mentions 'Wedding' which indicates noise.,
+KM-202409,Pothole,Standard,The complaint mentions 'potholes' which indicates pothole.,
+KM-202410,Pothole,Standard,The complaint mentions 'Pothole' which indicates pothole.,
+KM-202411,Pothole,Standard,The complaint mentions 'pothole' which indicates pothole.,
+KM-202415,Other,Low,The complaint contains 'residential' but does not clearly match any single category.,NEEDS_REVIEW
+KM-202418,Waste,Standard,The complaint mentions 'waste' which indicates waste.,
+KM-202421,Other,Urgent,The complaint mentions 'Hospital' which requires urgent attention.,NEEDS_REVIEW
+KM-202422,Road Damage,Standard,The complaint mentions 'Road surface' which indicates road damage.,
+KM-202426,Heritage Damage,Standard,The complaint mentions 'Heritage' which indicates heritage damage.,
+KM-202430,Other,Low,The complaint contains 'Road' but does not clearly match any single category.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The complaint mentions 'heritage' which indicates heritage damage.,
+KM-202436,Other,Low,The complaint contains 'Entire' but does not clearly match any single category.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The complaint mentions 'heritage' which indicates heritage damage.,

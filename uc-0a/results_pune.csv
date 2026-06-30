@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint mentions 'pothole' which indicates pothole.,
+PM-202402,Pothole,Urgent,The complaint mentions 'pothole' which indicates pothole.,
+PM-202406,Flooding,Standard,The complaint mentions 'flooded' which indicates flooding.,
+PM-202408,Other,Low,The complaint contains 'stand' but does not clearly match any single category.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The complaint mentions 'streetlights' which indicates streetlight.,
+PM-202411,Streetlight,Urgent,The complaint mentions 'Streetlight' which indicates streetlight.,
+PM-202413,Waste,Standard,The complaint mentions 'garbage' which indicates waste.,
+PM-202418,Noise,Standard,The complaint mentions 'music' which indicates noise.,
+PM-202419,Road Damage,Standard,The complaint mentions 'Road surface' which indicates road damage.,
+PM-202420,Drain Blockage,Urgent,The complaint mentions 'Manhole' which indicates drain blockage.,
+PM-202427,Flooding,Standard,The complaint mentions 'floods' which indicates flooding.,
+PM-202428,Other,Low,The complaint contains 'Dead' but does not clearly match any single category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,The complaint mentions 'Heritage' which indicates heritage damage.,
+PM-202433,Waste,Standard,The complaint mentions 'waste' which indicates waste.,
+PM-202446,Other,Urgent,The complaint mentions 'fell' which requires urgent attention.,NEEDS_REVIEW
