@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Complaint about heritage damage: ""heritage lamp post knocked over by delivery vehicle. not restored.""",
+KM-202402,Other,Standard,"Complaint about other: ""historic tram road cobblestones broken up by cable laying work.""",NEEDS_REVIEW
+KM-202405,Other,Standard,"Complaint about other: ""wedding band playing near tagore museum at 11pm. festival season ongoing.""",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Complaint about pothole: ""airport access road full of potholes. diplomatic complaint received.""",
+KM-202410,Pothole,Standard,"Complaint about pothole: ""pothole causing tyre blowouts. three incidents this week.""",
+KM-202411,Pothole,Standard,"Complaint about pothole: ""deep pothole filling with rainwater. depth invisible. accident risk.""",
+KM-202415,Other,Standard,"Complaint about other: ""new residential complex draining directly onto public road.""",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Complaint about waste: ""tourist zone waste overflowing. foreign visitors photographing piles.""",
+KM-202421,Road Damage,Urgent,"Complaint about road damage: ""footpath broken and sinking. elderly pedestrian fell. hospital visit.""",
+KM-202422,Road Damage,Standard,"Complaint about road damage: ""road surface buckled near bridge. structural concern raised.""",
+KM-202426,Heritage Damage,Standard,"Complaint about heritage damage: ""heritage residential building exterior defaced by billboard installation.""",
+KM-202430,Other,Standard,"Complaint about other: ""road subsided near gas pipeline. gas leak smell reported too.""",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Complaint about heritage damage: ""street paving removed for utility work — heritage stone not replaced.""",
+KM-202436,Streetlight,Standard,"Complaint about streetlight: ""entire colony substation tripped. darkness for 3 nights.""",
+KM-202438,Heritage Damage,Standard,"Complaint about heritage damage: ""street vendors using amplifiers illegally in heritage precinct.""",

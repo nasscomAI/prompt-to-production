@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Complaint about other: ""tarmac surface melting at 44°c. footwear sticking. park users unsafe.""",NEEDS_REVIEW
+AM-202402,Other,Standard,"Complaint about other: ""metal bus shelter reaching dangerous temperatures. commuters refusing to use.""",NEEDS_REVIEW
+AM-202405,Other,Standard,"Complaint about other: ""dead trees with split branches. fall risk to walkers. 3 trees affected.""",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Complaint about heat hazard: ""irrigation system broken. grass dying in heatwave conditions.""",
+AM-202407,Other,Urgent,"Complaint about other: ""broken bench and upturned paving. child injured last week.""",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Complaint about pothole: ""pothole on main highway causing morning rush lane closure.""",
+AM-202414,Streetlight,Standard,"Complaint about streetlight: ""residential colony unlit after 9pm. wiring theft reported.""",
+AM-202417,Waste,Standard,"Complaint about waste: ""night market waste not cleared before morning. heritage area affected.""",
+AM-202421,Noise,Standard,"Complaint about noise: ""club music audible at residential buildings at 2am.""",
+AM-202424,Road Damage,Standard,"Complaint about road damage: ""zoo approach road surface bubbling at 45°c. visitor complaints.""",
+AM-202429,Other,Standard,"Complaint about other: ""river walk surface temperature unbearable. installed temperature reads 52°c.""",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Complaint about heritage damage: ""old city road subsidence near ancient step well. heritage concern.""",
+AM-202435,Heat Hazard,Standard,"Complaint about heat hazard: ""black metal road dividers storing heat. motorists reporting burns on contact.""",
+AM-202444,Waste,Standard,"Complaint about waste: ""restaurant waste bins overflowing on sunday night. health risk.""",
+AM-202445,Other,Standard,"Complaint about other: ""brt shelter roof glass broken. users exposed to full sun.""",NEEDS_REVIEW
