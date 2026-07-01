@@ -33,6 +33,7 @@ SEVERITY_KEYWORDS = [
 
 CATEGORY_KEYWORDS = {
     "Pothole": ["pothole", "sinkhole", "road crater"],
+    "Drain Blockage": ["drain blocked", "blocked drain", "drain", "sewage"],
     "Flooding": ["flood", "flooded", "waterlogged", "knee-deep", "underpass flooded", "bridge approach floods", "commuters stranded"],
     "Streetlight": ["streetlight", "lights out", "dark at night", "flickering", "sparking", "light out"],
     "Waste": ["garbage", "bins", "dumped", "bulk waste", "waste", "trash", "refuse", "dead animal"],
@@ -40,7 +41,6 @@ CATEGORY_KEYWORDS = {
     "Road Damage": ["cracked", "sinking", "road surface", "tiles broken", "upturned", "manhole cover missing", "footpath tiles"],
     "Heritage Damage": ["heritage", "heritage street", "historic", "old city"],
     "Heat Hazard": ["heat", "temperature", "scorching", "heat hazard"],
-    "Drain Blockage": ["drain blocked", "blocked drain", "drain blocked", "drain", "sewage"],
 }
 
 OUTPUT_FIELDS = ["complaint_id", "category", "priority", "reason", "flag"]
@@ -82,13 +82,16 @@ def build_reason(description: str, category: str, priority: str) -> str:
     if not normalized:
         return "No description available for classification."
 
+    severity_keyword = _find_first_keyword(normalized, SEVERITY_KEYWORDS)
+    if priority == "Urgent" and severity_keyword:
+        return f"Urgent because description mentions \"{severity_keyword}\" and fits {category}."
+
     keyword = _find_first_keyword(normalized, CATEGORY_KEYWORDS.get(category, []))
-    if not keyword:
-        keyword = _find_first_keyword(normalized, SEVERITY_KEYWORDS)
     if keyword:
-        if priority == "Urgent" and keyword in SEVERITY_KEYWORDS:
-            return f"Urgent because description mentions \"{keyword}\" and fits {category}."
         return f"Classified as {category} because description mentions \"{keyword}\"."
+
+    if severity_keyword:
+        return f"Classified as {category} because description mentions \"{severity_keyword}\"."
 
     first_sentence = description.split(".")[0].strip()
     return f"Classified as {category} based on description: {first_sentence}."
