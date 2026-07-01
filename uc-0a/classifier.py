@@ -59,10 +59,22 @@ def _find_first_keyword(description: str, keywords: List[str]) -> Optional[str]:
 
 def classify_category(description: str) -> (str, bool):
     normalized = _normalize_text(description)
+    matched_categories = []
+
     for category, keywords in CATEGORY_KEYWORDS.items():
         citation = _find_first_keyword(normalized, keywords)
         if citation:
-            return category, False
+            matched_categories.append((category, citation))
+
+    if matched_categories:
+        matched_names = [category for category, _ in matched_categories]
+        if "Heritage Damage" in matched_names and any(term in normalized for term in ["streetlight", "lights out", "flickering", "sparking"]):
+            return "Heritage Damage", True
+        if len(matched_names) > 1:
+            if "Drain Blockage" in matched_names:
+                return "Drain Blockage", False
+            return matched_names[0], True
+        return matched_names[0], False
 
     if "manhole" in normalized or "cover missing" in normalized:
         return "Road Damage", False
