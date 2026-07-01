@@ -53,13 +53,13 @@ def retrieve_policy(input_path: str) -> List[Dict[str, str]]:
 
 def summarize_policy(policy_clauses: List[Dict[str, str]]) -> str:
     clause_map = {item["clause"]: item["text"] for item in policy_clauses}
-    lines = ["Leave policy summary (clause-preserving):", ""]
+    lines = ["Leave policy summary (required clauses):", ""]
 
     for clause in TARGET_CLAUSES:
         if clause in clause_map:
-            lines.append(f"- {clause}: {clause_map[clause]}")
+            lines.append(f"- Clause {clause}: {clause_map[clause]}")
         else:
-            lines.append(f"- {clause}: [not found in source document]")
+            lines.append(f"- Clause {clause}: [not found in source document]")
 
     return "\n".join(lines) + "\n"
 
