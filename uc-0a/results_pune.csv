@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description contains: pothole,
+PM-202402,Pothole,Urgent,"Description contains: child, school, pothole",
+PM-202406,Flooding,Standard,Description contains: flooded,
+PM-202408,Flooding,Standard,"Description contains: flooded, drain",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description contains: streetlight,
+PM-202411,Streetlight,Urgent,"Description contains: hazard, streetlight",
+PM-202413,Waste,Standard,Description contains: garbage,
+PM-202418,Noise,Standard,Description contains: music,
+PM-202419,Road Damage,Standard,Description contains: road surface,
+PM-202420,Road Damage,Urgent,"Description contains: injury, manhole cover",
+PM-202427,Flooding,Standard,Description contains: flood,
+PM-202428,Waste,Standard,Description contains: dead animal,
+PM-202430,Heritage Damage,Standard,"Description contains: lights out, heritage",NEEDS_REVIEW
+PM-202433,Waste,Standard,Description contains: waste,
+PM-202446,Road Damage,Urgent,"Description contains: fell, footpath",

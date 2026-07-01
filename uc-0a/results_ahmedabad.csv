@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Complaint about other: ""Tarmac surface melting at 44°C""",
+AM-202402,Heat Hazard,Standard,Description contains: temperature,
+AM-202405,Other,Standard,"Complaint about other: ""Dead trees with split branches""",
+AM-202406,Road Damage,Standard,"Description contains: broken, heat",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Description contains: child, broken",
+AM-202410,Pothole,Standard,Description contains: pothole,
+AM-202414,Other,Standard,"Complaint about other: ""Residential colony unlit after 9pm""",
+AM-202417,Waste,Standard,"Description contains: waste, heritage",NEEDS_REVIEW
+AM-202421,Noise,Standard,Description contains: music,
+AM-202424,Road Damage,Standard,Description contains: road surface,
+AM-202429,Heat Hazard,Standard,Description contains: temperature,
+AM-202431,Heritage Damage,Standard,Description contains: heritage,
+AM-202435,Heat Hazard,Standard,Description contains: heat,
+AM-202444,Waste,Standard,"Description contains: waste, sun",NEEDS_REVIEW
+AM-202445,Road Damage,Standard,"Description contains: broken, sun",NEEDS_REVIEW
