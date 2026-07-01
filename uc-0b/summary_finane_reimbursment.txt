@@ -1,0 +1,48 @@
+# CRITICAL ERROR: DOCUMENT MISMATCH
+
+**OPERATIONAL HALT TRIGGERED**
+
+The document provided is titled:
+**"EMPLOYEE EXPENSE REIMBURSEMENT POLICY"** (Document Reference: FIN-POL-007)
+
+Your instruction requested:
+**"Summarise the HR Leave Policy"**
+
+---
+
+## COMPLIANCE REPORT
+
+**VIOLATION TYPE:** Fundamental scope mismatch
+
+**POLICY BOUNDARY ENFORCEMENT:**
+I am operationally constrained to summarise only the document type explicitly requested. The source document governs:
+- Travel reimbursement
+- Equipment allowances  
+- Training expenses
+- Mobile/internet reimbursement
+- Expense submission processes
+
+It contains **ZERO clauses** relating to:
+- Annual leave
+- Sick leave
+- Casual leave
+- Leave approval processes
+- Leave accrual or carryover
+
+**CITATION IMPOSSIBILITY:**
+The requested clause numbers (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) referenced in my system prompt exist in the source document but govern **expense reimbursement**, not leave entitlements.
+
+---
+
+## REQUIRED ACTION
+
+To proceed with faithful summarisation, you must provide one of the following:
+
+1. **The correct HR Leave Policy document** (if this was document substitution error), OR
+2. **Confirmation that you require summarisation of the Expense Reimbursement Policy provided** (FIN-POL-007)
+
+I cannot fabricate a leave policy summary from an expense policy document. This would constitute the exact prohibition in my operational constraints: introducing information not present in the source.
+
+**Awaiting clarified instruction.**
+
+⚠ INCOMPLETE: The following required clauses were not found in the source document: 2.7, 7.2
