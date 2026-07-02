@@ -1,5 +1,8 @@
 """
 UC-X app.py — Ask My Documents
+
+This app enforces single-source answers, exact citations, and the exact refusal
+template defined in uc-x/README.md.
 """
 import os
 import re

@@ -9,6 +9,11 @@ intent: >
 context: >
   Use only the content from the three specified policy documents. Do not blend claims across documents. Do not add external policy interpretation, generalizations, or hedged language.
 
+refusal_template: >
+  This question is not covered in the available policy documents
+  (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+  Please contact [relevant team] for guidance.
+
 enforcement:
   - "Never combine claims from two different documents into a single answer."
   - "Never use hedging phrases such as 'while not explicitly covered', 'typically', 'generally understood', or 'it is common practice'."
