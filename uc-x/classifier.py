@@ -1,6 +1,7 @@
 """
-UC-X app.py — Ask My Documents
+UC-X classifier.py — Document QA engine
 """
+
 import os
 import re
 from typing import Dict, List, Tuple
@@ -28,6 +29,11 @@ QUESTION_SECTION_MAP = {
 }
 
 
+def _normalize_question_text(text: str) -> str:
+    normalized = re.sub(r"[\W_]+", " ", text.strip().lower())
+    return " ".join(normalized.split())
+
+
 def retrieve_documents() -> Dict[str, Dict[str, str]]:
     documents: Dict[str, Dict[str, str]] = {}
     section_pattern = re.compile(r"^(\d+\.\d+)\s+(.+?)(?=^\d+\.\d+\s+|\Z)", re.M | re.S)
@@ -50,17 +56,13 @@ def retrieve_documents() -> Dict[str, Dict[str, str]]:
     return documents
 
 
-def _normalize_question_text(text: str) -> str:
-    normalized = re.sub(r"[\W_]+", " ", text.strip().lower())
-    return " ".join(normalized.split())
-
-
 def answer_question(documents: Dict[str, Dict[str, str]], question: str) -> Tuple[str, List[str]]:
     normalized_question = _normalize_question_text(question)
     if normalized_question in QUESTION_SECTION_MAP:
         exact_match = QUESTION_SECTION_MAP[normalized_question]
         if exact_match is None:
             return REFUSAL_TEMPLATE, []
+
         doc_name, section_number = exact_match
         section_text = documents.get(doc_name, {}).get(section_number, "")
         if section_text:
@@ -109,7 +111,7 @@ def _question_matches_section(question: str, section_text: str) -> bool:
     return len(overlap) >= 6
 
 
-def main():
+def main() -> None:
     documents = retrieve_documents()
     print("UC-X Ask My Documents")
     print("Type your question, or enter 'exit' to quit.")
