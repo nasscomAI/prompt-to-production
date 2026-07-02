@@ -7,6 +7,7 @@ skills:
     output: A nested mapping of document names to section numbers and section text.
     error_handling: If a document is missing, raise a file-not-found error. If section parsing fails, retain the raw text and flag the issue.
 
+
   - name: answer_question
     description: Search indexed documents for the best single-source answer or refuse with the exact refusal template when the question is not covered.
     input: The indexed document set and a user question string.

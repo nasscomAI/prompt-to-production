@@ -6,6 +6,7 @@ role: >
 intent: >
   A correct output answers a policy question using a single source and exact document citation, or refuses with the exact refusal template when the question is not covered or is genuinely ambiguous across documents.
 
+
 context: >
   Use only the content from the three specified policy documents. Do not blend claims across documents. Do not add external policy interpretation, generalizations, or hedged language.
 

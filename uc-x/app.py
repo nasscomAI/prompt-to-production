@@ -69,6 +69,7 @@ def answer_question(documents: Dict[str, Dict[str, str]], question: str) -> Tupl
         if section_text:
             answer = f"{section_text} (Source: {doc_name}, Section {section_number})"
             return answer, [f"{doc_name} Section {section_number}"]
+        # If a mapped section is unavailable, refuse rather than guessing.
         return REFUSAL_TEMPLATE, []
 
     candidates = []
