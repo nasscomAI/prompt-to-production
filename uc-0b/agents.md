@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An HR leave policy summarization agent.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A complete, obligation-preserving summary of the 10 critical leave clauses, verifying that all conditions and binding verbs are intact.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The `policy_hr_leave.txt` file only. Excludes external assumptions, general industry HR practices, or standard policy summaries.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every one of the 10 critical clauses (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) must be present in the summary."
+  - "All binding verbs (must, will, requires, not permitted) and multi-condition obligations must be preserved exactly as written without softening or drop."
+  - "No information outside the source document (such as 'typical business practice') may be added."
+  - "If any clause cannot be summarized without losing meaning or softening a condition, quote it verbatim and add a [VERBATIM] tag."
