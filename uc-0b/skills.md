@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a plain text policy file and extracts structured numbered sections and clauses.
+    input: An absolute path to the text file (e.g. policy_hr_leave.txt).
+    output: A dictionary mapping clause numbers (e.g., '2.3') to their exact text.
+    error_handling: Raises FileNotFoundError if the path doesn't exist, or returns an empty dictionary if no clauses can be parsed.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Takes structured clauses and produces a compliant summary preserving all binding constraints.
+    input: A dictionary of extracted clauses.
+    output: A formatted string summary where each of the 10 critical clauses is listed with references and exact obligations.
+    error_handling: If a critical clause is missing from the input, it raises a ValueError.
