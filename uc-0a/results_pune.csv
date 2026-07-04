@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description cites 'pothole', which supports the Pothole classification.",
+PM-202402,Pothole,Urgent,"The description cites 'pothole', 'children', 'school', which supports the Pothole classification.",
+PM-202406,Flooding,Standard,"The description cites 'flooded', which supports the Flooding classification.",
+PM-202408,Flooding,Standard,"The description cites 'flooded', 'drain', which supports the Flooding classification.",
+PM-202410,Streetlight,Standard,"The description cites 'streetlight', which supports the Streetlight classification.",
+PM-202411,Streetlight,Urgent,"The description cites 'streetlight', 'hazard', which supports the Streetlight classification.",
+PM-202413,Waste,Standard,"The description cites 'garbage', which supports the Waste classification.",
+PM-202418,Noise,Standard,"The description cites 'music', which supports the Noise classification.",
+PM-202419,Road Damage,Standard,"The description cites 'cracked', which supports the Road Damage classification.",
+PM-202420,Road Damage,Urgent,"The description cites 'manhole', 'injury', which supports the Road Damage classification.",
+PM-202427,Flooding,Standard,The description says 'Bridge approach floods in 30mins of rain' and supports the Flooding classification.,
+PM-202428,Other,Standard,The description says 'Dead animal not removed for 36 hours' and supports the Other classification.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The description cites 'heritage', which supports the Streetlight classification.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description cites 'waste', which supports the Waste classification.",
+PM-202446,Road Damage,Urgent,"The description cites 'fell', which supports the Road Damage classification.",
