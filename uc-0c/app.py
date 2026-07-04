@@ -1,12 +1,12 @@
 import argparse
 
+from __future__ import annotations
+
 """
 UC-0C budget growth analysis CLI.
 Script to load budget CSV, validate requested scope. It flags null actual_spend rows, and writes a per-period growth table
 for a single ward and category.
 """  
-
-from __future__ import annotations
 
 import argparse
 import csv
