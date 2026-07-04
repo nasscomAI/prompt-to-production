@@ -1,10 +1,5 @@
 import argparse
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
-if __name__ == "__main__":
-    main()
 """
 UC-0C budget growth analysis CLI.
 Script to load budget CSV, validate requested scope. It flags null actual_spend rows, and writes a per-period growth table
