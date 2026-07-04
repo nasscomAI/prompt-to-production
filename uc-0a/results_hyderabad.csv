@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description mentions 'flood' as supporting evidence for flooding.,
+GH-202402,Flooding,Standard,The description mentions 'flood' as supporting evidence for flooding.,
+GH-202406,Flooding,Standard,The description mentions 'drain' as supporting evidence for flooding.,
+GH-202407,Flooding,Standard,The description mentions 'drain' as supporting evidence for flooding.,
+GH-202410,Pothole,Standard,The description mentions 'pothole' as supporting evidence for pothole.,
+GH-202411,Pothole,Urgent,The description mentions 'pothole' as supporting evidence for pothole.,
+GH-202412,Pothole,Urgent,The description mentions 'pothole' as supporting evidence for pothole.,
+GH-202417,Waste,Standard,The description mentions 'waste' as supporting evidence for waste.,
+GH-202420,Other,Standard,The description is too ambiguous to justify a specific category.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,The description mentions 'road' as supporting evidence for road damage.,
+GH-202424,Flooding,Standard,The description mentions 'flood' as supporting evidence for flooding.,
+GH-202428,Waste,Standard,The description mentions 'waste' as supporting evidence for waste.,
+GH-202432,Other,Standard,The description is too ambiguous to justify a specific category.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description mentions 'flood' as supporting evidence for flooding.,
+GH-202438,Flooding,Standard,The description mentions 'road' as supporting evidence for flooding.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,The description mentions 'heritage' as supporting evidence for streetlight.,
+KM-202402,Road Damage,Standard,The description mentions 'road' as supporting evidence for road damage.,
+KM-202405,Other,Standard,The description is too ambiguous to justify a specific category.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description mentions 'pothole' as supporting evidence for pothole.,
+KM-202410,Pothole,Standard,The description mentions 'pothole' as supporting evidence for pothole.,
+KM-202411,Pothole,Standard,The description mentions 'pothole' as supporting evidence for pothole.,
+KM-202415,Flooding,Standard,The description mentions 'road' as supporting evidence for flooding.,
+KM-202418,Waste,Standard,The description mentions 'waste' as supporting evidence for waste.,
+KM-202421,Road Damage,Urgent,The description mentions 'hospital' as supporting evidence for road damage.,
+KM-202422,Road Damage,Standard,The description mentions 'road' as supporting evidence for road damage.,
+KM-202426,Heritage Damage,Standard,The description mentions 'heritage' as supporting evidence for heritage damage.,
+KM-202430,Waste,Standard,The description mentions 'road' as supporting evidence for waste.,
+KM-202434,Heritage Damage,Standard,The description mentions 'heritage' as supporting evidence for heritage damage.,
+KM-202436,Other,Standard,The description is too ambiguous to justify a specific category.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The description mentions 'heritage' as supporting evidence for heritage damage.,
