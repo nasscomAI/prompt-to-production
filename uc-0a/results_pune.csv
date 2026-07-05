@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority citing category-related terms like 'pothole' from description.,
+PM-202402,Pothole,Urgent,Classified as Pothole with Urgent priority citing category-related terms like 'pothole' and severity keywords like 'child' from description.,
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority citing category-related terms like 'flooded/rainwater' from description.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority citing category-related terms like 'flooded/rainwater' from description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority citing category-related terms like 'lights/darkness' from description.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight with Urgent priority citing category-related terms like 'lights/darkness' and severity keywords like 'hazard' from description.,
+PM-202413,Waste,Standard,Classified as Waste with Standard priority citing category-related terms like 'garbage/waste' from description.,
+PM-202418,Noise,Low,Classified as Noise with Low priority citing category-related terms like 'music/noise' from description.,
+PM-202419,Road Damage,Standard,Classified as Road Damage with Standard priority citing category-related terms like 'road/footpath' from description.,
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage with Urgent priority citing category-related terms like 'drain/manhole' and severity keywords like 'injury' from description.,
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority citing category-related terms like 'flooded/rainwater' from description.,NEEDS_REVIEW
+PM-202428,Waste,Standard,Classified as Waste with Standard priority citing category-related terms like 'garbage/waste' from description.,
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority citing category-related terms like 'lights/darkness' from description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste with Standard priority citing category-related terms like 'garbage/waste' from description.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage with Urgent priority citing category-related terms like 'road/footpath' and severity keywords like 'fell' from description.,
