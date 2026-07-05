@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified because description cites 'pothole'.,
+PM-202402,Pothole,Urgent,Classified because description cites 'pothole' and 'child' and 'School'.,
+PM-202406,Flooding,Standard,Classified because description cites 'flood'.,
+PM-202408,Drain Blockage,Standard,Category is ambiguous; cites 'flood' and 'Drain'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified because description cites 'streetlight'.,
+PM-202411,Streetlight,Urgent,Classified because description cites 'Streetlight' and 'hazard'.,
+PM-202413,Waste,Standard,Classified because description cites 'garbage'.,
+PM-202418,Noise,Standard,Classified because description cites 'music'.,
+PM-202419,Road Damage,Standard,Classified because description cites 'Road surface'.,
+PM-202420,Other,Urgent,Category is ambiguous; cites 'Manhole' and 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified because description cites 'flood'.,
+PM-202428,Waste,Standard,Classified because description cites 'animal'.,
+PM-202430,Heritage Damage,Standard,Category is ambiguous; cites 'light' and 'Heritage'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified because description cites 'waste'.,
+PM-202446,Road Damage,Urgent,Classified because description cites 'Footpath' and 'fell'.,
