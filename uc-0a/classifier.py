@@ -3,7 +3,6 @@ UC-0A — Complaint Classifier
 """
 import argparse
 import csv
-import re
 import sys
 
 CATEGORIES = [
@@ -53,10 +52,15 @@ def _is_ambiguous(desc_lower: str, chosen: str) -> bool:
     return len(matches) > 1
 
 
-def _determine_priority(desc_lower: str) -> str:
+LOW_CATEGORIES = {"Streetlight", "Noise"}
+
+
+def _determine_priority(desc_lower: str, category: str) -> str:
     for kw in SEVERITY_KEYWORDS:
         if kw in desc_lower:
             return "Urgent"
+    if category in LOW_CATEGORIES:
+        return "Low"
     return "Standard"
 
 
@@ -93,7 +97,7 @@ def classify_complaint(row: dict) -> dict:
 
     category = _categorize(desc_lower)
     ambiguous = _is_ambiguous(desc_lower, category) if category != "Other" else False
-    priority = _determine_priority(desc_lower)
+    priority = _determine_priority(desc_lower, category)
     reason = _build_reason(category, description)
     flag = "NEEDS_REVIEW" if (ambiguous or category == "Other") else ""
 
