@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Low,Classified as Heritage Damage based on description containing: Heritage.,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Classified as Road Damage based on description containing: road cobblestones broken.,
+KM-202405,Other,Low,Classified as Other based on overall context of the complaint description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Classified as Pothole based on description containing: pothole, road full of pothole.",
+KM-202410,Pothole,Standard,Classified as Pothole based on description containing: Pothole.,
+KM-202411,Flooding,Low,Classified as Flooding based on description containing: rainwater.,NEEDS_REVIEW
+KM-202415,Other,Low,Classified as Other based on overall context of the complaint description.,NEEDS_REVIEW
+KM-202418,Heritage Damage,Low,Classified as Heritage Damage based on description containing: Tourist.,NEEDS_REVIEW
+KM-202421,Other,Urgent,"Classified as Other based on description containing: Hospital, fell.",NEEDS_REVIEW
+KM-202422,Other,Low,Classified as Other based on overall context of the complaint description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on description containing: Heritage.,
+KM-202430,Other,Low,Classified as Other based on overall context of the complaint description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on description containing: heritage.,
+KM-202436,Other,Low,Classified as Other based on overall context of the complaint description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage based on description containing: heritage.,
