@@ -11,8 +11,8 @@ CATEGORIES = [
 ]
 
 SEVERITY_KEYWORDS = [
-    "injury", "injured", "child", "children", "school", "hospital",
-    "ambulance", "fire", "hazard", "fell", "collapse", "collapsed",
+    "injury", "child", "school", "hospital",
+    "ambulance", "fire", "hazard", "fell", "collapse",
 ]
 
 CATEGORY_RULES = [
@@ -29,6 +29,7 @@ CATEGORY_RULES = [
                          "road deteriorated"]),
 ]
 
+LOW_CATEGORIES = {"Streetlight", "Noise"}
 
 def _find_matches(desc_lower: str) -> list[str]:
     matches = []
@@ -47,12 +48,9 @@ def _categorize(desc_lower: str) -> str:
     return matches[0]
 
 
-def _is_ambiguous(desc_lower: str, chosen: str) -> bool:
+def _is_ambiguous(desc_lower: str) -> bool:
     matches = _find_matches(desc_lower)
     return len(matches) > 1
-
-
-LOW_CATEGORIES = {"Streetlight", "Noise"}
 
 
 def _determine_priority(desc_lower: str, category: str) -> str:
@@ -70,10 +68,6 @@ def _build_reason(category: str, description: str) -> str:
         if cat == category:
             for kw in keywords:
                 if kw in desc_lower:
-                    idx = desc_lower.index(kw)
-                    start = max(0, idx)
-                    end = min(len(description), idx + 80)
-                    snippet = description[start:end].strip()
                     return f"Description mentions '{kw}' — classified as {category}"
     if category == "Other":
         return f"No category keywords found in description — classified as Other"
@@ -96,7 +90,7 @@ def classify_complaint(row: dict) -> dict:
     desc_lower = description.lower()
 
     category = _categorize(desc_lower)
-    ambiguous = _is_ambiguous(desc_lower, category) if category != "Other" else False
+    ambiguous = _is_ambiguous(desc_lower) if category != "Other" else False
     priority = _determine_priority(desc_lower, category)
     reason = _build_reason(category, description)
     flag = "NEEDS_REVIEW" if (ambiguous or category == "Other") else ""
