@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Classification based on keywords: tarmac found in description.,
+AM-202402,Other,Standard,"Classification based on keywords: metal, shelter, reaching found in description.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Classification based on keywords: dead, trees, with found in description.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classification based on keywords: heat, heatwave found in description.",
+AM-202407,Other,Urgent,"Classification based on keywords: broken, bench, upturned found in description.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classification based on keywords: pothole found in description.,
+AM-202414,Other,Standard,"Classification based on keywords: residential, colony, unlit found in description.",NEEDS_REVIEW
+AM-202417,Waste,Standard,Classification based on keywords: waste found in description.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classification based on keywords: music found in description.,
+AM-202424,Road Damage,Standard,Classification based on keywords: road surface found in description.,
+AM-202429,Other,Standard,"Classification based on keywords: river, walk, surface found in description.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Classification based on keywords: heritage, ancient found in description.",
+AM-202435,Heat Hazard,Standard,Classification based on keywords: heat found in description.,
+AM-202444,Waste,Standard,"Classification based on keywords: waste, bins found in description.",NEEDS_REVIEW
+AM-202445,Other,Standard,"Classification based on keywords: shelter, roof, glass found in description.",NEEDS_REVIEW
