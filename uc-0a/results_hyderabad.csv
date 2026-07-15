@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Category set to Flooding from 'flood', 'flooded', and priority set to Urgent due to severity word 'ambulance'.",
+GH-202402,Flooding,Standard,"Category set to Flooding from 'flood', 'flooded', and priority set to Standard because no urgent severity keywords were present.",
+GH-202406,Drain Blockage,Standard,"Category set to Drain Blockage from 'stormwater drain', 'drain 100% blocked', and priority set to Standard because no urgent severity keywords were present.",
+GH-202407,Drain Blockage,Standard,"Category set to Drain Blockage from 'drain blocked', and priority set to Standard because no urgent severity keywords were present.",
+GH-202410,Pothole,Standard,"Category set to Pothole from 'pothole', and priority set to Standard because no urgent severity keywords were present.",
+GH-202411,Pothole,Urgent,"Category set to Pothole from 'pothole', and priority set to Urgent due to severity word 'hospital'.",
+GH-202412,Pothole,Urgent,"Category set to Pothole from 'pothole', and priority set to Urgent due to severity word 'school'.",
+GH-202417,Waste,Standard,"Category set to Waste from 'waste', 'garbage', and priority set to Standard because no urgent severity keywords were present.",
+GH-202420,Noise,Low,"Category set to Noise from 'drilling', and priority set to Low because no urgent severity keywords were present.",
+GH-202422,Road Damage,Urgent,"Category set to Road Damage from 'collapsed', 'collapse', and priority set to Urgent due to severity word 'collapse'.",
+GH-202424,Flooding,Standard,"Category set to Flooding from 'flood', 'underpass', and priority set to Standard because no urgent severity keywords were present.",
+GH-202428,Waste,Standard,"Category set to Waste from 'waste', 'not cleared', and priority set to Standard because no urgent severity keywords were present.",
+GH-202432,Noise,Low,"Category set to Noise from 'idling', 'engines on', and priority set to Low because no urgent severity keywords were present.",
+GH-202448,Other,Standard,"Category set to Other because description words did not map uniquely to one allowed category, so flag is NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Category set to Flooding from 'rainwater through main road', and priority set to Standard because no urgent severity keywords were present.",
