@@ -70,7 +70,7 @@ intent: >
 
 context: >
   Allowed inputs: the complaint `description` and any other columns present in
-  the same CSV row (e.g., location, timestamp). Also allowed: the list of
+  the same CSV row (e.g. location, timestamp). Also allowed: the list of
   permitted `category` values and the severity keyword list defined in
   `README.md`. Disallowed: web searches, external databases, guessing facts not
   present in the row, or inventing sub-categories not in the allowed list.
