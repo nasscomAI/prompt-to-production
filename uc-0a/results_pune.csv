@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Contains ""pothole"" indicating Pothole.",
+PM-202402,Pothole,Urgent,"Contains ""pothole"" indicating Pothole; marked urgent due to ""child"".",
+PM-202406,Flooding,Standard,"Contains ""flood"" indicating Flooding.",
+PM-202408,Flooding,Standard,"Contains ""flood"" indicating Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Urgent,"Contains ""streetlight"" indicating Streetlight; marked urgent due to 18 days open.",
+PM-202411,Streetlight,Urgent,"Contains ""streetlight"" indicating Streetlight; marked urgent due to ""hazard"".",
+PM-202413,Waste,Standard,"Contains ""garbage"" indicating Waste.",
+PM-202418,Noise,Standard,"Contains ""music past midnight"" indicating Noise.",
+PM-202419,Road Damage,Standard,"Contains ""road surface"" indicating Road Damage.",
+PM-202420,Drain Blockage,Urgent,"Contains ""manhole"" indicating Drain Blockage; marked urgent due to ""injury"".",
+PM-202427,Flooding,Standard,"Contains ""flood"" indicating Flooding.",
+PM-202428,Waste,Standard,"Contains ""dead animal"" indicating Waste.",
+PM-202430,Streetlight,Urgent,"Contains ""lights out"" indicating Streetlight; marked urgent due to 19 days open.",NEEDS_REVIEW
+PM-202433,Waste,Urgent,"Contains ""waste"" indicating Waste; marked urgent due to 20 days open.",
+PM-202446,Road Damage,Urgent,"Contains ""broken"" indicating Road Damage; marked urgent due to ""fell"".",
