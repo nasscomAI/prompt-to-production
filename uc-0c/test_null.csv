@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,growth_value,formula,notes
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.9,MOM,n/a,((actual_2024-01 - actual_2023-12) / actual_2023-12) * 100,Cannot compute: Previous period data unavailable in dataset.
+2024-02,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,MOM,-4.6%,((actual_2024-02 - actual_2024-01) / actual_2024-01) * 100,
+2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,NULL,MOM,NULL,((actual_2024-03 - actual_2024-02) / actual_2024-02) * 100,Cannot compute: Current period actual_spend is null. Reason: Data not submitted by ward office
+2024-04,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,MOM,NULL,((actual_2024-04 - actual_2024-03) / actual_2024-03) * 100,Cannot compute: Previous period actual_spend is null.
+2024-05,Ward 2 – Shivajinagar,Drainage & Flooding,10.2,MOM,+2.0%,((actual_2024-05 - actual_2024-04) / actual_2024-04) * 100,
+2024-06,Ward 2 – Shivajinagar,Drainage & Flooding,12.3,MOM,+20.6%,((actual_2024-06 - actual_2024-05) / actual_2024-05) * 100,
+2024-07,Ward 2 – Shivajinagar,Drainage & Flooding,12.6,MOM,+2.4%,((actual_2024-07 - actual_2024-06) / actual_2024-06) * 100,
+2024-08,Ward 2 – Shivajinagar,Drainage & Flooding,12.8,MOM,+1.6%,((actual_2024-08 - actual_2024-07) / actual_2024-07) * 100,
+2024-09,Ward 2 – Shivajinagar,Drainage & Flooding,12.9,MOM,+0.8%,((actual_2024-09 - actual_2024-08) / actual_2024-08) * 100,
+2024-10,Ward 2 – Shivajinagar,Drainage & Flooding,11.5,MOM,-10.9%,((actual_2024-10 - actual_2024-09) / actual_2024-09) * 100,
+2024-11,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,MOM,-9.6%,((actual_2024-11 - actual_2024-10) / actual_2024-10) * 100,
+2024-12,Ward 2 – Shivajinagar,Drainage & Flooding,8.4,MOM,-19.2%,((actual_2024-12 - actual_2024-11) / actual_2024-11) * 100,
