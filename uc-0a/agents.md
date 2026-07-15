@@ -61,7 +61,7 @@ role: >
 
 intent: >
   Produce a correct, verifiable classification for the input complaint where:
-  - `category` is one of the allowed exact strings.
+  - `category` is  one of the allowed exact strings.
   - `priority` is `Urgent`, `Standard`, or `Low` and follows severity rules.
   - `reason` is a one-sentence justification that cites specific words from
     the complaint description.

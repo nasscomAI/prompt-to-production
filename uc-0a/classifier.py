@@ -10,12 +10,13 @@ from typing import Dict, Tuple
 def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
+    Returns: dict with keys: category, priority, reason, flag.
+
+    This function applies the UC-0A schema and the RICE enforcement rules from
+    agents.md and skills.md. It uses keyword matching to assign an exact
+    allowed category, promote urgent complaints, and produce a one-sentence reason.
     """
-    # Rule-based implementation derived from agents.md and skills.md.
+    # Allowed categories are enforced via schema_enforcer later.
     ALLOWED_CATEGORIES = [
         "Pothole",
         "Flooding",
@@ -29,6 +30,7 @@ def classify_complaint(row: dict) -> dict:
         "Other",
     ]
 
+    # Category mapping is intentionally conservative to reduce hallucination.
     CATEGORY_KEYWORDS = {
         "Pothole": ["pothole", "hole in the road", "open pothole"],
         "Flooding": ["flood", "flooding", "waterlogged", "water on the road", "overflow"],
@@ -41,15 +43,17 @@ def classify_complaint(row: dict) -> dict:
         "Drain Blockage": ["drain", "drainage", "blocked drain", "sewer", "gully"]
     }
 
+    # Severity keywords force Urgent priority when present.
     SEVERITY_KEYWORDS = [
         "injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"
     ]
 
-    # Prepare inputs
+    # Normalize the complaint description for matching.
     description = (row.get("description") or "").strip()
     desc_low = description.lower()
 
     if not description:
+        # Missing description is considered ambiguous and needs review.
         return {
             "category": "Other",
             "priority": "",
@@ -57,7 +61,7 @@ def classify_complaint(row: dict) -> dict:
             "flag": "NEEDS_REVIEW",
         }
 
-    # Find category matches
+    # Find all matching categories based on keyword presence.
     matches = []
     matched_phrase = None
     for cat, kws in CATEGORY_KEYWORDS.items():
@@ -68,16 +72,15 @@ def classify_complaint(row: dict) -> dict:
                     matched_phrase = kw
                 break
 
-    # Decide category and flagging
+    # If exactly one category matches, use it; otherwise treat as ambiguous.
     if len(matches) == 1:
         category = matches[0]
         flag = ""
     else:
-        # ambiguous or no matches -> Other + NEEDS_REVIEW
         category = "Other"
         flag = "NEEDS_REVIEW"
 
-    # Priority: Urgent if any severity keyword present
+    # Default priority is Standard, upgrade to Urgent on severity keywords.
     priority = "Standard"
     for sk in SEVERITY_KEYWORDS:
         if sk in desc_low:
@@ -86,11 +89,10 @@ def classify_complaint(row: dict) -> dict:
                 matched_phrase = sk
             break
 
-    # Construct reason: one sentence citing words from description
+    # Build a one-sentence reason that cites text from the description.
     if matched_phrase:
         reason = f"Mentions '{matched_phrase}' in description."
     else:
-        # fallback: use first 6 words as short quote
         snippet = " ".join(description.split()[:6])
         reason = f"Mentions '{snippet}' in description."
 
@@ -105,11 +107,11 @@ def classify_complaint(row: dict) -> dict:
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
+
+    This function preserves the input columns, appends the required UC-0A
+    classification columns, and writes the final CSV atomically to avoid
+    partial writes on failure.
     """
-    # Read input CSV
     temp_out = output_path + ".tmp"
     rows_processed = 0
     flagged_count = 0
@@ -129,6 +131,7 @@ def batch_classify(input_path: str, output_path: str):
                 try:
                     classified = classify_complaint(row)
                 except Exception:
+                    # If classification fails, preserve the row and flag for review.
                     errors += 1
                     classified = {
                         "category": "Other",
@@ -137,7 +140,7 @@ def batch_classify(input_path: str, output_path: str):
                         "flag": "NEEDS_REVIEW",
                     }
 
-                # Ensure keys exist and enforce basic schema
+                # Validate the classifier output against the expected schema.
                 validated = schema_enforcer(classified)
 
                 if validated.get("flag") == "NEEDS_REVIEW":
@@ -153,7 +156,7 @@ def batch_classify(input_path: str, output_path: str):
 
                 writer.writerow(out_row)
 
-    # Atomic replace
+    # Replace the destination file atomically to avoid partial writes.
     os.replace(temp_out, output_path)
 
     summary = {"rows_processed": rows_processed, "flagged_count": flagged_count, "errors": errors}
@@ -177,27 +180,28 @@ def schema_enforcer(classified: Dict[str, str]) -> Dict[str, str]:
     ALLOWED_PRIORITIES = ["Urgent", "Standard", "Low", ""]
 
     out = {
+        # Default missing or blank values to safe fallbacks.
         "category": (classified.get("category") or "Other").strip(),
         "priority": (classified.get("priority") or "Standard").strip(),
         "reason": (classified.get("reason") or "").strip(),
         "flag": (classified.get("flag") or "").strip(),
     }
 
-    # Normalize category
+    # If the category is invalid, classify it as Other and flag for review.
     if out["category"] not in ALLOWED_CATEGORIES:
         out["category"] = "Other"
         out["flag"] = "NEEDS_REVIEW"
 
-    # Priority enforcement
+    # If priority is invalid, fall back to Standard.
     if out["priority"] not in ALLOWED_PRIORITIES:
         out["priority"] = "Standard"
 
-    # Reason enforcement
+    # Ensure reason is present; otherwise flag the output.
     if not out["reason"]:
         out["flag"] = "NEEDS_REVIEW"
         out["reason"] = "No reason provided"
 
-    # Ensure flag exists
+    # Guarantee the flag key exists in all outputs.
     if out.get("flag") is None:
         out["flag"] = ""
 
