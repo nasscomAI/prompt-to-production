@@ -11,7 +11,7 @@ POLICY_DIR = Path(__file__).parent.parent / "data" / "policy-documents"
 POLICY_FILES = [
     "policy_hr_leave.txt",
     "policy_it_acceptable_use.txt",
-    "policy_finance_reimbursement.txt",
+    "policy_finance_reimbursement.txt", 
 ]
 
 REFUSAL_TEMPLATE = (
