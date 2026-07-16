@@ -1,6 +1,6 @@
 """
 UC-X — Ask My Documents
-Policy Q&A assistant with single-source citation enforcement and clean refusal.
+Policy Q&A assistant with single-source citation enforcement and clean refusal. 
 """
 import sys
 from pathlib import Path
