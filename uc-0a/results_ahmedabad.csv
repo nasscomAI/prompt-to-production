@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard based on ""44°C"", ""melting"" in the description.",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard based on ""temperatures"" in the description.",
+AM-202405,Other,Standard,"Ambiguous category cues in description (""Dead trees with split branches. Fall risk to walkers. 3 trees affected.""); flagged for review as Other.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard based on ""heatwave"" in the description.",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage based on ""paving"", ""child""; severity keyword(s) present.",
+AM-202410,Pothole,Standard,"Classified as Pothole based on ""Pothole"" in the description.",
+AM-202414,Streetlight,Standard,"Classified as Streetlight based on ""unlit"" in the description.",
+AM-202417,Other,Standard,"Ambiguous category cues in description (""waste"", ""Heritage""); flagged for review as Other.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Classified as Noise based on ""music"", ""audible"" in the description.",
+AM-202424,Other,Standard,"Ambiguous category cues in description (""road surface"", ""45°C""); flagged for review as Other.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard based on ""52°C"", ""temperature"", ""unbearable"" in the description.",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage based on ""Heritage"", ""step well"" in the description.",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard based on ""burns"", ""heat"" in the description.",
+AM-202444,Waste,Standard,"Classified as Waste based on ""waste"", ""bins"", ""overflowing"" in the description.",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard based on ""full sun"" in the description.",
