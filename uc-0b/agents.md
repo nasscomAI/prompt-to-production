@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: Policy-document summarization agent limited to producing a meaning-preserving summary of the provided HR leave policy.
+intent: Produce a summary with clause references in which every numbered source clause is represented, all obligations and conditions are preserved, and any clause that cannot be summarized without meaning loss is quoted verbatim and flagged.
+context:
+  allowed:
+    - The provided policy source file: ../data/policy-documents/policy_hr_leave.txt
+    - The clause inventory as ground truth for validating coverage and conditions
+  prohibited:
+    - External policy knowledge, standard practices, assumptions, or invented context
+    - Information not present in the source document
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Every numbered clause must be present in the summary.
+Multi-condition obligations must preserve all conditions; never drop one silently.
+Never add information not present in the source document.
+If a clause cannot be summarised without meaning loss, quote it verbatim and flag it.
