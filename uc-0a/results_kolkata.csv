@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Description mentions: Heritage, lamp, post, knocked, over, delivery",NEEDS_REVIEW
+KM-202402,Other,Standard,"Description mentions: Historic, tram, road, cobblestones, broken, cable",NEEDS_REVIEW
+KM-202405,Other,Standard,"Description mentions: Wedding, band, playing, near, Tagore, Museum",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description mentions: Airport, access, road, full, potholes, Diplomatic",
+KM-202410,Pothole,Standard,"Description mentions: Pothole, causing, tyre, blowouts, Three, incidents",
+KM-202411,Pothole,Standard,"Description mentions: Deep, pothole, filling, with, rainwater, Depth",
+KM-202415,Drain Blockage,Standard,"Description mentions: residential, complex, draining, directly, onto, public",
+KM-202418,Waste,Standard,"Description mentions: Tourist, zone, waste, overflowing, Foreign, visitors",
+KM-202421,Road Damage,Urgent,"Description mentions: Footpath, broken, sinking, Elderly, pedestrian, fell",
+KM-202422,Road Damage,Standard,"Description mentions: Road, surface, buckled, near, bridge, Structural",
+KM-202426,Heritage Damage,Standard,"Description mentions: Heritage, residential, building, exterior, defaced, billboard",
+KM-202430,Other,Standard,"Description mentions: Road, subsided, near, pipeline, leak, smell",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Description mentions: Street, paving, removed, utility, work, heritage",
+KM-202436,Other,Standard,"Description mentions: Entire, colony, substation, tripped, Darkness, nights",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description mentions: Street, vendors, using, amplifiers, illegally, heritage",

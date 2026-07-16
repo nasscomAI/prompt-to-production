@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions: Underpass, flooded, after, rain, Ambulance, diverted",
+GH-202402,Other,Standard,"Description mentions: Market, area, flooded, Traders, suffering, losses",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Description mentions: Main, stormwater, drain, 100%, blocked, with",
+GH-202407,Drain Blockage,Standard,"Description mentions: Drain, blocked, mosquito, breeding, Dengue, concern",
+GH-202410,Pothole,Standard,"Description mentions: Potholes, causing, vehicles, slow, 20kmph, fast",
+GH-202411,Pothole,Urgent,"Description mentions: Pothole, swallowed, entire, motorcycle, wheel, Rider",
+GH-202412,Pothole,Urgent,"Description mentions: School, struggling, navigate, potholes, 200m, stretch",
+GH-202417,Other,Standard,"Description mentions: Heritage, zone, garbage, overflow, Tourist, photographs",NEEDS_REVIEW
+GH-202420,Other,Standard,"Description mentions: Construction, drilling, from, daily, near, residential",NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Description mentions: Road, collapsed, partially, Crater, deep, near",
+GH-202424,Flooding,Standard,"Description mentions: Underpass, floods, light, rain, Cars, regularly",
+GH-202428,Waste,Standard,"Description mentions: Post-market, waste, cleared, Area, unusable, Sunday",
+GH-202432,Other,Standard,"Description mentions: 24hr, supermarket, delivery, trucks, idling, with",NEEDS_REVIEW
+GH-202448,Other,Standard,"Description mentions: Main, drain, blocked, entire, locality, flooding",NEEDS_REVIEW
+GH-202438,Other,Standard,"Description mentions: Colony, surrounded, fields, that, channel, rainwater",NEEDS_REVIEW

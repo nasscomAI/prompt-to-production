@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Description mentions: Tarmac, surface, melting, 44°C, Footwear, sticking",NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Description mentions: Metal, shelter, reaching, dangerous, temperatures, Commuters",
+AM-202405,Other,Standard,"Description mentions: Dead, trees, with, split, branches, Fall",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions: Irrigation, system, broken, Grass, dying, heatwave",
+AM-202407,Other,Urgent,"Description mentions: Broken, bench, upturned, paving, Child, injured",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Description mentions: Pothole, main, highway, causing, morning, rush",
+AM-202414,Other,Standard,"Description mentions: Residential, colony, unlit, after, Wiring, theft",NEEDS_REVIEW
+AM-202417,Other,Standard,"Description mentions: Night, market, waste, cleared, before, morning",NEEDS_REVIEW
+AM-202421,Other,Standard,"Description mentions: Club, music, audible, residential, buildings",NEEDS_REVIEW
+AM-202424,Road Damage,Standard,"Description mentions: approach, road, surface, bubbling, 45°C, Visitor",
+AM-202429,Heat Hazard,Standard,"Description mentions: River, walk, surface, temperature, unbearable, Installed",
+AM-202431,Heritage Damage,Standard,"Description mentions: city, road, subsidence, near, ancient, step",
+AM-202435,Heat Hazard,Standard,"Description mentions: Black, metal, road, dividers, storing, heat",
+AM-202444,Waste,Standard,"Description mentions: Restaurant, waste, bins, overflowing, Sunday, night",
+AM-202445,Other,Standard,"Description mentions: shelter, roof, glass, broken, Users, exposed",NEEDS_REVIEW
