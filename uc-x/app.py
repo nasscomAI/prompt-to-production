@@ -22,7 +22,7 @@ REFUSAL_TEMPLATE = (
 
 _BANNED_PHRASES = [
     "while not explicitly covered",
-    "typically",
+    "typically", 
     "generally understood",
     "it is common practice",
 ]
