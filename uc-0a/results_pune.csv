@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains 'pothole', indicating a pothole complaint.",
+PM-202402,Pothole,Urgent,"The description contains 'pothole', indicating a pothole complaint.",
+PM-202406,Flooding,Standard,"The description contains 'flood', indicating a flooding complaint.",
+PM-202408,Other,Standard,"The description matches multiple categories ['Flooding', 'Drain Blockage'] starting with 'Bus stand flooded. Passengers standing', indicating ambiguity.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description contains 'streetlight', indicating a streetlight complaint.",
+PM-202411,Streetlight,Urgent,"The description contains 'streetlight', indicating a streetlight complaint.",
+PM-202413,Waste,Standard,"The description contains 'garbage', indicating a waste complaint.",
+PM-202418,Other,Standard,The description reads 'Wedding venue playing music past' but does not clearly match a known category.,NEEDS_REVIEW
+PM-202419,Other,Standard,The description reads 'Road surface cracked and sinking' but does not clearly match a known category.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The description reads 'Manhole cover missing. Risk of' but does not clearly match a known category.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description contains 'flood', indicating a flooding complaint.",
+PM-202428,Other,Standard,The description reads 'Dead animal not removed for' but does not clearly match a known category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description contains 'heritage', indicating a heritage damage complaint.",
+PM-202433,Waste,Standard,"The description contains 'waste', indicating a waste complaint.",
+PM-202446,Other,Urgent,The description reads 'Footpath tiles broken and upturned.' but does not clearly match a known category.,NEEDS_REVIEW
