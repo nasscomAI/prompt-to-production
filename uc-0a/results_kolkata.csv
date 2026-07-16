@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Low,"Classified as Other because the description contains 'lamp post', 'Heritage', with Low priority.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Classified as Heritage Damage because the description contains 'Historic', with Standard priority.",
+KM-202405,Other,Low,Classified as Other because the description 'Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202409,Other,Low,Classified as Other because the description 'Airport access road full of potholes. Diplomatic complaint received.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202410,Pothole,Standard,"Classified as Pothole because the description contains 'Pothole', with Standard priority.",
+KM-202411,Pothole,Standard,"Classified as Pothole because the description contains 'pothole', with Standard priority.",
+KM-202415,Other,Low,Classified as Other because the description 'New residential complex draining directly onto public road.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classified as Waste because the description contains 'waste', with Standard priority.",
+KM-202421,Other,Urgent,Classified as Other because the description 'Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202422,Other,Low,Classified as Other because the description 'Road surface buckled near bridge. Structural concern raised.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Classified as Heritage Damage because the description contains 'Heritage', with Standard priority.",
+KM-202430,Other,Low,Classified as Other because the description 'Road subsided near gas pipeline. Gas leak smell reported too.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage because the description contains 'heritage', with Standard priority.",
+KM-202436,Other,Low,Classified as Other because the description 'Entire colony substation tripped. Darkness for 3 nights.' does not clearly match an approved category.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Classified as Heritage Damage because the description contains 'heritage', with Standard priority.",
