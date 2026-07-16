@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Matched keyword ""pothole"" -> Pothole, no severity keyword found.",
+PM-202402,Pothole,Urgent,"Contains severity keyword ""child"" and matched ""pothole"" -> Pothole, Urgent.",
+PM-202406,Flooding,Standard,"Matched keyword ""flood"" -> Flooding, no severity keyword found.",
+PM-202408,Flooding,Standard,"Description supports multiple categories (Flooding, Drain Blockage); best match ""Flooding"" via ""flood"" -> flagged for review.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Matched keyword ""streetlight"" -> Streetlight, no severity keyword found.",
+PM-202411,Streetlight,Urgent,"Contains severity keyword ""hazard"" and matched ""streetlight"" -> Streetlight, Urgent.",
+PM-202413,Waste,Standard,"Matched keyword ""garbage"" -> Waste, no severity keyword found.",
+PM-202418,Noise,Standard,"Matched keyword ""music"" -> Noise, no severity keyword found.",
+PM-202419,Road Damage,Standard,"Matched keyword ""cracked"" -> Road Damage, no severity keyword found.",
+PM-202420,Road Damage,Urgent,"Contains severity keyword ""injury"" and matched ""manhole"" -> Road Damage, Urgent.",
+PM-202427,Flooding,Standard,"Description supports multiple categories (Flooding, Road Damage); best match ""Flooding"" via ""flood"" -> flagged for review.",NEEDS_REVIEW
+PM-202428,Waste,Standard,"Matched keyword ""dead animal"" -> Waste, no severity keyword found.",
+PM-202430,Streetlight,Standard,"Description supports multiple categories (Streetlight, Heritage Damage); best match ""Streetlight"" via ""light"" -> flagged for review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Matched keyword ""waste"" -> Waste, no severity keyword found.",
+PM-202446,Road Damage,Urgent,"Contains severity keyword ""fell"" and matched ""footpath"" -> Road Damage, Urgent.",
