@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,"The description mentions ""Large pothole 60cm wide causing t"" which indicates a Pothole issue.",
+PM-202402,Pothole,Urgent,"The description mentions ""Deep pothole near bus stop. Scho"" which indicates a Pothole issue.",
+PM-202406,Flooding,Low,"The description mentions ""Underpass flooded knee-deep after 2"" which indicates a Flooding issue.",
+PM-202408,Flooding,Low,"The description mentions ""Bus stand flooded. Passengers stand"" which indicates a Flooding issue.",NEEDS_REVIEW
+PM-202410,Streetlight,Low,"The description mentions ""Three consecutive streetlights out for 10 days. A"" which indicates a Streetlight issue.",
+PM-202411,Streetlight,Urgent,"The description mentions ""Streetlight flickering and spar"" which indicates a Streetlight issue.",
+PM-202413,Waste,Low,"The description mentions ""Overflowing garbage bins near vegetable"" which indicates a Waste issue.",
+PM-202418,Noise,Low,"The description mentions ""Wedding venue playing music past midnight"" which indicates a Noise issue.",
+PM-202419,Road Damage,Low,"The description mentions ""Road surface cracked and sinking"" which indicates a Road Damage issue.",
+PM-202420,Drain Blockage,Urgent,"The description mentions ""Manhole cover missing. Risk"" which indicates a Drain Blockage issue.",
+PM-202427,Flooding,Low,"The description mentions ""Bridge approach floods in 30mins of rain."" which indicates a Flooding issue.",
+PM-202428,Waste,Low,"The description mentions ""Dead animal not removed for 36"" which indicates a Waste issue.",
+PM-202430,Streetlight,Low,"The description mentions ""Heritage street, lights out. Safety concern for"" which indicates a Streetlight issue.",NEEDS_REVIEW
+PM-202433,Waste,Low,"The description mentions ""Bulk waste from apartment reno"" which indicates a Waste issue.",
+PM-202446,Road Damage,Urgent,"The description mentions ""Footpath tiles broken and up"" which indicates a Road Damage issue.",

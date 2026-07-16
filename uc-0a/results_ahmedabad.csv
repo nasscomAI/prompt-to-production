@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Low,"The description mentions ""Tarmac surface melting at 44°C. Footwear s"" which indicates a Heat Hazard issue.",
+AM-202402,Heat Hazard,Standard,"The description mentions ""reaching dangerous temperatures. Commuters refusin"" which indicates a Heat Hazard issue.",
+AM-202405,Other,Standard,"No specific category keywords found in the description mentioning ""Dead trees with split branches. Fall risk to walkers. 3 trees affected"".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions ""ken. Grass dying in heatwave conditions."" which indicates a Heat Hazard issue.",
+AM-202407,Road Damage,Urgent,"The description mentions ""bench and upturned paving. Child injured last"" which indicates a Road Damage issue.",
+AM-202410,Pothole,Low,"The description mentions ""Pothole on main highway cau"" which indicates a Pothole issue.",
+AM-202414,Streetlight,Low,"The description mentions ""Residential colony unlit after 9pm. Wiring t"" which indicates a Streetlight issue.",
+AM-202417,Waste,Low,"The description mentions ""Night market waste not cleared before"" which indicates a Waste issue.",NEEDS_REVIEW
+AM-202421,Noise,Low,"The description mentions ""Club music audible at residential buil"" which indicates a Noise issue.",
+AM-202424,Heat Hazard,Low,"The description mentions ""rface bubbling at 45°C. Visitor complaints"" which indicates a Heat Hazard issue.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Low,"The description mentions ""River walk surface temperature unbearable. Install"" which indicates a Heat Hazard issue.",
+AM-202431,Heritage Damage,Low,"The description mentions ""oad subsidence near ancient step well. Heritage"" which indicates a Heritage Damage issue.",
+AM-202435,Heat Hazard,Low,"The description mentions ""ad dividers storing heat. Motorists reportin"" which indicates a Heat Hazard issue.",
+AM-202444,Waste,Standard,"The description mentions ""Restaurant waste bins overflowing on"" which indicates a Waste issue.",
+AM-202445,Other,Standard,"No specific category keywords found in the description mentioning ""BRT shelter roof glass broken. Users exposed to full sun"".",NEEDS_REVIEW
