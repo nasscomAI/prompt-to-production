@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight because the complaint description explicitly mentions 'Heritage lamp post knocked over by delivery vehicle'.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage because the complaint description explicitly mentions 'Historic tram road cobblestones broken up by cable laying work'.,NEEDS_REVIEW
+KM-202405,Heritage Damage,Standard,Classified as Heritage Damage because the complaint description explicitly mentions 'Wedding band playing near Tagore Museum at 11pm'.,
+KM-202409,Pothole,Standard,Classified as Pothole because the complaint description explicitly mentions 'Airport access road full of potholes'.,
+KM-202410,Pothole,Standard,Classified as Pothole because the complaint description explicitly mentions 'Pothole causing tyre blowouts'.,
+KM-202411,Pothole,Standard,Classified as Pothole because the complaint description explicitly mentions 'Deep pothole filling with rainwater'.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage because the complaint description explicitly mentions 'New residential complex draining directly onto public road'.,
+KM-202418,Waste,Standard,Classified as Waste because the complaint description explicitly mentions 'Tourist zone waste overflowing'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage because the complaint description explicitly mentions 'Footpath broken and sinking'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage because the complaint description explicitly mentions 'Road surface buckled near bridge'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because the complaint description explicitly mentions 'Heritage residential building exterior defaced by billboard installation'.,NEEDS_REVIEW
+KM-202430,Road Damage,Standard,Classified as Road Damage because the complaint description explicitly mentions 'Road subsided near gas pipeline'.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because the complaint description explicitly mentions 'Street paving removed for utility work — heritage stone not replaced'.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight because the complaint description explicitly mentions 'Entire colony substation tripped'.,
+KM-202438,Noise,Standard,Classified as Noise because the complaint description explicitly mentions 'Street vendors using amplifiers illegally in heritage precinct'.,NEEDS_REVIEW
