@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+AM-202402,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+AM-202405,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classification based on keywords: heat found in description.,
+AM-202407,Other,Urgent,Classification based on keywords: child found in description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classification based on keywords: pothole found in description.,
+AM-202414,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Classification based on keywords: waste, heritage found in description.",
+AM-202421,Noise,Standard,Classification based on keywords: music found in description.,
+AM-202424,Road Damage,Standard,Classification based on keywords: road surface found in description.,
+AM-202429,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Classification based on keywords: heritage, old city found in description.",
+AM-202435,Heat Hazard,Standard,Classification based on keywords: heat found in description.,
+AM-202444,Waste,Standard,Classification based on keywords: waste found in description.,
+AM-202445,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
