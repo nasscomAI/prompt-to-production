@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding based on keywords matching 'flooding'. Set priority to Urgent due to severity keyword(s): ambulance.,
+GH-202402,Flooding,Standard,"Ambiguous complaint matching multiple categories (Flooding, Drain Blockage); defaulted to Flooding.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on keywords matching 'drain blockage'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on keywords matching 'drain blockage'.,
+GH-202410,Pothole,Standard,Classified as Pothole based on keywords matching 'pothole'.,
+GH-202411,Pothole,Urgent,Classified as Pothole based on keywords matching 'pothole'. Set priority to Urgent due to severity keyword(s): hospital.,
+GH-202412,Pothole,Urgent,Classified as Pothole based on keywords matching 'pothole'. Set priority to Urgent due to severity keyword(s): school.,
+GH-202417,Waste,Standard,"Ambiguous complaint matching multiple categories (Waste, Heritage Damage); defaulted to Waste.",NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise based on keywords matching 'noise/music/drilling'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage based on keywords matching 'road/footpath/paving damage'. Set priority to Urgent due to severity keyword(s): collapse.,
+GH-202424,Flooding,Standard,Classified as Flooding based on keywords matching 'flooding'.,
+GH-202428,Waste,Standard,Classified as Waste based on keywords matching 'garbage/waste'.,
+GH-202432,Noise,Standard,Classified as Noise based on keywords matching 'noise/music/drilling'.,
+GH-202448,Flooding,Standard,"Ambiguous complaint matching multiple categories (Flooding, Drain Blockage); defaulted to Flooding.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding based on keywords matching 'flooding'.,

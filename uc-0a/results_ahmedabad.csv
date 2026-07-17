@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard based on keywords matching 'extreme heat/temperature'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on keywords matching 'extreme heat/temperature'.,
+AM-202405,Other,Standard,Could not determine category from the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on keywords matching 'extreme heat/temperature'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage based on keywords matching 'road/footpath/paving damage'. Set priority to Urgent due to severity keyword(s): child.,
+AM-202410,Pothole,Standard,Classified as Pothole based on keywords matching 'pothole'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on keywords matching 'lights/substation out'.,
+AM-202417,Waste,Standard,"Ambiguous complaint matching multiple categories (Waste, Heritage Damage); defaulted to Waste.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise based on keywords matching 'noise/music/drilling'.,
+AM-202424,Road Damage,Standard,"Ambiguous complaint matching multiple categories (Road Damage, Heat Hazard); defaulted to Road Damage.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on keywords matching 'extreme heat/temperature'.,
+AM-202431,Road Damage,Standard,"Ambiguous complaint matching multiple categories (Road Damage, Heritage Damage); defaulted to Road Damage.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on keywords matching 'extreme heat/temperature'.,
+AM-202444,Waste,Standard,Classified as Waste based on keywords matching 'garbage/waste'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard based on keywords matching 'extreme heat/temperature'.,
