@@ -34,8 +34,10 @@ AGGREGATION_PATTERNS = (
     re.compile(r"^\*$"),
 )
 
-MOM_FORMULA = "MoM: (current − previous) / previous × 100"
-YOY_FORMULA = "YoY: (current − same_month_prior_year) / same_month_prior_year × 100"
+GROWTH_LABELS = {
+    "MoM": "MoM",
+    "YoY": "YoY",
+}
 
 
 class GrowthError(ValueError):
@@ -79,6 +81,34 @@ def _format_growth(pct: float) -> str:
     if rounded > 0:
         return f"+{rounded:.1f}%"
     return f"{rounded:.1f}%"
+
+
+def _fmt_val(value: float | None, *, missing: str = "null") -> str:
+    """Render a spend value for the formula; use a placeholder when absent."""
+    if value is None:
+        return missing
+    return f"{value:g}"
+
+
+def _build_formula(
+    growth_type: str,
+    current: float | None,
+    previous: float | None,
+    *,
+    prev_missing: str,
+    result: str | None = None,
+) -> str:
+    """
+    Build the formula string with the actual processed values substituted in,
+    e.g. "MoM: (19.7 − 14.8) / 14.8 × 100 = +33.1%".
+    """
+    label = GROWTH_LABELS[growth_type]
+    cur = _fmt_val(current)
+    prev = _fmt_val(previous, missing=prev_missing)
+    expr = f"{label}: ({cur} − {prev}) / {prev} × 100"
+    if result is not None:
+        expr = f"{expr} = {result}"
+    return expr
 
 
 def load_dataset(input_path: str | Path) -> dict[str, Any]:
@@ -192,7 +222,6 @@ def compute_growth(
             f"Supported: {', '.join(SUPPORTED_GROWTH_TYPES)} — refusing to guess."
         )
     growth_type_canon = growth_lookup[growth_type_norm.lower()]
-    formula = MOM_FORMULA if growth_type_canon == "MoM" else YOY_FORMULA
 
     ward = ward.strip()
     category = category.strip()
@@ -235,6 +264,10 @@ def compute_growth(
         prev_row = by_period.get(prev_period) if prev_period else None
         previous = prev_row["actual_spend"] if prev_row is not None else None
 
+        # Placeholder used for the previous value when no prior row exists at
+        # all (distinct from a prior row whose actual_spend is null).
+        prev_missing = "null" if prev_row is not None else "n/a"
+
         out: dict[str, Any] = {
             "period": period,
             "ward": ward,
@@ -242,7 +275,9 @@ def compute_growth(
             "actual_spend": "" if current is None else current,
             "growth_pct": "",
             "status": "",
-            "formula": formula,
+            "formula": _build_formula(
+                growth_type_canon, current, previous, prev_missing=prev_missing
+            ),
             "notes": "",
         }
 
@@ -281,7 +316,11 @@ def compute_growth(
             continue
 
         pct = (current - previous) / previous * 100.0
-        out["growth_pct"] = _format_growth(pct)
+        result = _format_growth(pct)
+        out["growth_pct"] = result
+        out["formula"] = _build_formula(
+            growth_type_canon, current, previous, prev_missing=prev_missing, result=result
+        )
         out["status"] = "OK"
         output_rows.append(out)
 
