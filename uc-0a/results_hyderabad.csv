@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"category is Flooding because description contains ""flooded""; priority is Urgent because the description contains the severity keyword ""Ambulance"".",
+GH-202402,Flooding,Standard,"category is Flooding (matched ""flooded"") but also matched Drain Blockage -- genuinely ambiguous; priority is Standard because no severity keywords or explicit low-urgency wording were found.",NEEDS_REVIEW
+GH-202406,Other,Standard,"no category keywords matched in: ""Main stormwater drain 100% blocked with construction debris.""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202407,Drain Blockage,Standard,"category is Drain Blockage because description contains ""Drain blocked""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202410,Pothole,Standard,"category is Pothole because description contains ""Potholes""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202411,Pothole,Standard,"category is Pothole because description contains ""Pothole""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202412,Pothole,Urgent,"category is Pothole because description contains ""potholes""; priority is Urgent because the description contains the severity keyword ""School"".",
+GH-202417,Heritage Damage,Standard,"category is Heritage Damage (matched ""Heritage"") but also matched Waste -- genuinely ambiguous; priority is Standard because no severity keywords or explicit low-urgency wording were found.",NEEDS_REVIEW
+GH-202420,Noise,Standard,"category is Noise because description contains ""drilling""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202422,Road Damage,Standard,"category is Road Damage because description contains ""Road collapsed""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202424,Flooding,Standard,"category is Flooding because description contains ""floods""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202428,Waste,Standard,"category is Waste because description contains ""waste""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202432,Other,Standard,"no category keywords matched in: ""24hr supermarket delivery trucks idling with engines on.""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
+GH-202448,Drain Blockage,Standard,"category is Drain Blockage (matched ""Main drain blocked"") but also matched Flooding -- genuinely ambiguous; priority is Standard because no severity keywords or explicit low-urgency wording were found.",NEEDS_REVIEW
+GH-202438,Other,Standard,"no category keywords matched in: ""Colony surrounded by fields that channel rainwater throug...""; priority is Standard because no severity keywords or explicit low-urgency wording were found.",
