@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Category Flooding: matched ""flooded""; priority Urgent: severity keyword ""Ambulance"" forces Urgent.",
+GH-202402,Flooding,Standard,"Category Flooding: matched ""flooded""; priority Standard: no severity keywords present, flagged because ""Drain"" equally suggests Drain Blockage.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Category Drain Blockage: matched ""drain""; priority Standard: no severity keywords present.",
+GH-202407,Drain Blockage,Standard,"Category Drain Blockage: matched ""Drain""; priority Standard: no severity keywords present.",
+GH-202410,Pothole,Standard,"Category Pothole: matched ""Potholes""; priority Standard: no severity keywords present.",
+GH-202411,Pothole,Urgent,"Category Pothole: matched ""Pothole""; priority Urgent: severity keyword ""hospitalised"" forces Urgent.",
+GH-202412,Pothole,Urgent,"Category Pothole: matched ""potholes""; priority Urgent: severity keyword ""School"" forces Urgent.",
+GH-202417,Waste,Standard,"Category Waste: matched ""garbage"", ""waste""; priority Standard: no severity keywords present.",
+GH-202420,Noise,Low,"Category Noise: matched ""drilling""; priority Low: non-safety nuisance with no severity keywords.",
+GH-202422,Road Damage,Urgent,"Category Road Damage: matched ""Road collapsed"", ""Crater""; priority Urgent: severity keyword ""collapsed"" forces Urgent.",
+GH-202424,Flooding,Standard,"Category Flooding: matched ""floods""; priority Standard: no severity keywords present.",
+GH-202428,Waste,Standard,"Category Waste: matched ""waste""; priority Standard: no severity keywords present.",
+GH-202432,Noise,Low,"Category Noise: matched ""idling""; priority Low: non-safety nuisance with no severity keywords.",
+GH-202448,Flooding,Standard,"Category Flooding: matched ""flooding""; priority Standard: no severity keywords present, flagged because ""drain"" equally suggests Drain Blockage.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Category Flooding: matched ""rainwater""; priority Standard: no severity keywords present.",

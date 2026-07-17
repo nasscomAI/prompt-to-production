@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category Pothole: matched ""pothole""; priority Standard: no severity keywords present.",
+PM-202402,Pothole,Urgent,"Category Pothole: matched ""pothole""; priority Urgent: severity keyword ""children"", ""School"" forces Urgent.",
+PM-202406,Flooding,Standard,"Category Flooding: matched ""flooded"", ""knee-deep""; priority Standard: no severity keywords present.",
+PM-202408,Flooding,Standard,"Category Flooding: matched ""flooded"", ""standing in water""; priority Standard: no severity keywords present.",
+PM-202410,Streetlight,Standard,"Category Streetlight: matched ""streetlights"", ""streetlights out""; priority Standard: no severity keywords present.",
+PM-202411,Streetlight,Urgent,"Category Streetlight: matched ""Streetlight""; priority Urgent: severity keyword ""hazard"" forces Urgent.",
+PM-202413,Waste,Standard,"Category Waste: matched ""garbage"", ""bins""; priority Standard: no severity keywords present.",
+PM-202418,Noise,Low,"Category Noise: matched ""music""; priority Low: non-safety nuisance with no severity keywords.",
+PM-202419,Road Damage,Standard,"Category Road Damage: matched ""Road surface"", ""cracked"", ""sinking""; priority Standard: no severity keywords present.",
+PM-202420,Drain Blockage,Urgent,"Category Drain Blockage: matched ""Manhole""; priority Urgent: severity keyword ""injury"" forces Urgent.",
+PM-202427,Flooding,Standard,"Category Flooding: matched ""floods""; priority Standard: no severity keywords present.",
+PM-202428,Waste,Standard,"Category Waste: weakly matched ""Dead animal""; priority Standard: no severity keywords present, flagged because ""Dead animal"" is only a weak indicator.",NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Category Streetlight: matched ""lights out""; priority Standard: no severity keywords present, flagged because ""Heritage"" equally suggests Heritage Damage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category Waste: matched ""waste"", ""dumped""; priority Standard: no severity keywords present.",
+PM-202446,Road Damage,Urgent,"Category Road Damage: matched ""Footpath"", ""tiles broken""; priority Urgent: severity keyword ""fell"" forces Urgent.",
