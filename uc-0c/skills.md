@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads CSV, validates columns, reports null count and which rows before returning.
+    input: str — file path to ward_budget.csv
+    output: dict — keys: "data" (list of dicts), "null_rows" (list of dicts with null info)
+    error_handling: If file not found or missing required columns, raises ValueError with message
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Takes ward + category + growth_type, returns per-period table with formula shown.
+    input: dict — keys: "data" (list), "ward" (str), "category" (str), "growth_type" (str: MoM or YoY)
+    output: list of dicts — each with period, actual_spend, growth_pct, formula, flag
+    error_handling: If ward/category not found, returns empty list. Null rows flagged with reason.
