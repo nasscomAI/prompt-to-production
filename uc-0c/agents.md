@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0C Budget Growth
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Computes growth metrics for ward budget data at per-ward, per-category granularity.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output a CSV with per-period growth calculations, formula shown in every row. Null rows flagged before computation. Verifiable: check against reference values for Ward 1 roads (33.1% Jul, -34.8% Oct).
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Only the input CSV data may be used. No aggregation across wards or categories unless explicitly instructed.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked"
+  - "Flag every null actual_spend row before computing — report null reason from notes column"
+  - "Show formula used in every output row alongside the result"
+  - "If --growth-type not specified — refuse and ask, never guess"

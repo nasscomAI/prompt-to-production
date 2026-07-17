@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions: Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,
+PM-202402,Pothole,Urgent,Description mentions: Deep pothole near bus stop. School children at risk during morning hours.,
+PM-202406,Flooding,Standard,Description mentions: Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,
+PM-202408,Other,Standard,Description mentions: Bus stand flooded. Passengers standing in water. Drain blocked.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description mentions: Three consecutive streetlights out for 10 days. Area very dark at night.,
+PM-202411,Streetlight,Urgent,Description mentions: Streetlight flickering and sparking. Electrical hazard reported.,
+PM-202413,Other,Standard,Description mentions: Overflowing garbage bins near vegetable market. Smell affecting shoppers.,NEEDS_REVIEW
+PM-202418,Noise,Standard,Description mentions: Wedding venue playing music past midnight on weeknights.,
+PM-202419,Road Damage,Standard,Description mentions: Road surface cracked and sinking near utility work done 1 month ago.,
+PM-202420,Other,Urgent,Description mentions: Manhole cover missing. Risk of serious injury to cyclists.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description mentions: Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,
+PM-202428,Other,Standard,Description mentions: Dead animal not removed for 36 hours. Health concern.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Description mentions: Heritage street, lights out. Safety concern for pedestrians after dark.",
+PM-202433,Waste,Standard,Description mentions: Bulk waste from apartment renovation dumped on public road.,
+PM-202446,Other,Urgent,Description mentions: Footpath tiles broken and upturned. Elderly resident fell last week.,NEEDS_REVIEW
