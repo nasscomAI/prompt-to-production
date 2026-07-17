@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole (matched 'pothole'); no severity keyword present.,
+PM-202402,Pothole,Urgent,"Classified as Pothole (matched 'pothole'); severity term(s) ['child', 'school'] present -> Urgent.",
+PM-202406,Flooding,Standard,Classified as Flooding (matched 'flood'); no severity keyword present.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage (matched 'drain'); no severity keyword present.,
+PM-202410,Streetlight,Standard,Classified as Streetlight (matched 'streetlight'); no severity keyword present.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight (matched 'streetlight'); severity term(s) ['hazard'] present -> Urgent.,
+PM-202413,Waste,Standard,Classified as Waste (matched 'garbage'); no severity keyword present.,
+PM-202418,Noise,Low,Classified as Noise (matched 'music'); no severity keyword present.,
+PM-202419,Other,Standard,Classified as Other (no category keyword matched the description); no severity keyword present.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified as Other (no category keyword matched the description); severity term(s) ['injury'] present -> Urgent.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding (matched 'flood'); no severity keyword present.,
+PM-202428,Other,Standard,Classified as Other (no category keyword matched the description); no severity keyword present.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage (matched 'heritage'); no severity keyword present.,
+PM-202433,Waste,Standard,Classified as Waste (matched 'waste'); no severity keyword present.,
+PM-202446,Other,Urgent,Classified as Other (no category keyword matched the description); severity term(s) ['fell'] present -> Urgent.,NEEDS_REVIEW
