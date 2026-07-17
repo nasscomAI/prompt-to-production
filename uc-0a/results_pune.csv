@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description cites 'large pothole 60cm wide causing tyre damage. three vehicles affected this week.' as the basis for the classification.,
+PM-202402,Pothole,Urgent,"The description mentions child, school; these severity words require urgent priority.",
+PM-202406,Flooding,Standard,The description cites 'underpass flooded knee-deep after 2hrs rain. commuters stranded.' as the basis for the classification.,
+PM-202408,Other,Standard,The description cites 'bus stand flooded. passengers standing in water. drain blocked.' as the basis for the classification.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description cites 'three consecutive streetlights out for 10 days. area very dark at night.' as the basis for the classification.,
+PM-202411,Streetlight,Urgent,The description mentions hazard; these severity words require urgent priority.,
+PM-202413,Waste,Standard,The description cites 'overflowing garbage bins near vegetable market. smell affecting shoppers.' as the basis for the classification.,
+PM-202418,Noise,Standard,The description cites 'wedding venue playing music past midnight on weeknights.' as the basis for the classification.,
+PM-202419,Road Damage,Standard,The description cites 'road surface cracked and sinking near utility work done 1 month ago.' as the basis for the classification.,
+PM-202420,Drain Blockage,Urgent,The description mentions injury; these severity words require urgent priority.,
+PM-202427,Flooding,Standard,The description cites 'bridge approach floods in 30mins of rain. bridge becomes inaccessible.' as the basis for the classification.,
+PM-202428,Waste,Standard,The description cites 'dead animal not removed for 36 hours. health concern.' as the basis for the classification.,
+PM-202430,Other,Standard,"The description cites 'heritage street, lights out. safety concern for pedestrians after dark.' as the basis for the classification.",NEEDS_REVIEW
+PM-202433,Other,Standard,The description cites 'bulk waste from apartment renovation dumped on public road.' as the basis for the classification.,NEEDS_REVIEW
+PM-202446,Other,Urgent,The description mentions fell; these severity words require urgent priority.,NEEDS_REVIEW
