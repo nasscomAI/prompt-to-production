@@ -1,0 +1,16 @@
+[2.3] Employees must not install software on corporate devices
+[2.4] Software approved for installation must be sourced from the
+[2.5] Corporate devices must not be used to access gambling, adult
+[2.6] Corporate devices must have the CMC endpoint security agent
+[3.2] Personal devices must not be used to access, store, or
+[VERBATIM: 3.3] Personal devices must not be connected to the CMC internal
+[3.4] Employees using personal devices for CMC email must enable
+[VERBATIM: 4.1] Employees must not share their CMC system passwords with
+[VERBATIM: 4.2] IT staff will never ask for your password. Any request for
+[VERBATIM: 4.3] Passwords must be changed every 90 days as prompted by the
+[VERBATIM: 5.1] CMC data classified as Confidential or Restricted must not
+[5.2] Employees must not forward CMC email containing Confidential
+[5.3] Printing of Confidential documents must use the secure print
+[VERBATIM: 6.2] Employees must not use CMC email addresses to register for
+[VERBATIM: 6.3] Mass emails to external recipients must be approved by the
+[7.2] Violations involving unauthorised access to restricted data
