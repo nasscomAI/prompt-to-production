@@ -1,246 +1,92 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
 import argparse
 import csv
+import re
 
-SEVERITY_KEYWORDS = ['injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse', 'injured']
+SEVERITY_KEYWORDS = ['injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse']
+
+
+def has(text, word):
+    return word in text
+
+
+def has_word(text, word):
+    return bool(re.search(r'(?<![a-z])' + re.escape(word) + r'(?![a-z])', text))
+
 
 def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    """
     desc = row.get('description', '').lower()
     cid = row.get('complaint_id', '')
-    
+
     category = "Other"
     priority = "Standard"
     reason = ""
     flag = ""
-    
-    # Check severity keywords for priority
-    is_urgent = False
-    for kw in SEVERITY_KEYWORDS:
-        if kw in desc:
-            is_urgent = True
-            break
-    if is_urgent:
-        priority = "Urgent"
-    else:
-        priority = "Standard"
-        
-    # Check for ambiguity first
-    is_flooding = "flood" in desc or "rain" in desc
-    is_drain = "drain" in desc or "manhole" in desc
-    is_streetlight = "streetlight" in desc or "lights out" in desc or "lamp post" in desc
-    is_heritage = "heritage" in desc or "ancient" in desc or "historic" in desc
-    
+
+    is_urgent = any(kw in desc for kw in SEVERITY_KEYWORDS)
+    priority = "Urgent" if is_urgent else "Standard"
+
+    is_flooding = has(desc, "flood")
+    is_drain = has_word(desc, "drain") or has(desc, "manhole")
+    is_streetlight = has(desc, "streetlight") or has(desc, "lamp post") or (has(desc, "lights") and has(desc, "out")) or has(desc, "unlit")
+    is_heritage = has(desc, "heritage") or has(desc, "ancient") or has(desc, "historic") or has(desc, "museum") or has(desc, "tagore")
+    is_road = has_word(desc, "road") or has(desc, "footpath") or has(desc, "paving") or has(desc, "bridge") or has(desc, "tarmac") or has(desc, "cobblestones") or has(desc, "buckled") or has(desc, "subsidence") or has(desc, "subsided")
+    is_heat = has_word(desc, "sun") or has(desc, "melting") or has(desc, "temperature") or has(desc, "heatwave") or has(desc, "burns") or has(desc, "bubbling") or has(desc, "unbearable") or has_word(desc, "heat")
+
+    ambiguous_pairs = []
+
     if is_flooding and is_drain:
+        ambiguous_pairs.append(("Flooding", "Drain Blockage"))
+    if is_heritage and is_road:
+        ambiguous_pairs.append(("Heritage Damage", "Road Damage"))
+    if is_streetlight and is_heritage:
+        ambiguous_pairs.append(("Streetlight", "Heritage Damage"))
+    if is_heritage and has(desc, "waste"):
+        ambiguous_pairs.append(("Heritage Damage", "Waste"))
+    if is_heritage and (has(desc, "noise") or has(desc, "amplifiers") or has(desc, "music")):
+        ambiguous_pairs.append(("Heritage Damage", "Noise"))
+
+    if ambiguous_pairs:
+        pair_str = " and ".join([f"{a}/{b}" for a, b in ambiguous_pairs])
         category = "Other"
         flag = "NEEDS_REVIEW"
-        reason = "Ambiguous between Flooding and Drain Blockage."
-    elif is_streetlight and is_heritage:
-        category = "Other"
-        flag = "NEEDS_REVIEW"
-        reason = "Ambiguous between Streetlight and Heritage Damage."
-    elif "manhole" in desc:
-        # Manhole cover missing is ambiguous between Road Damage and Drain Blockage
-        category = "Other"
-        flag = "NEEDS_REVIEW"
-        reason = "Ambiguous between Road Damage and Drain Blockage."
-    elif is_heritage and ("road" in desc or "cobblestones" in desc or "paving" in desc or "stone" in desc or "building" in desc):
-        category = "Other"
-        flag = "NEEDS_REVIEW"
-        reason = "Ambiguous between Heritage Damage and Road Damage."
+        reason = f"Ambiguous between {pair_str}."
     else:
-        # Classify based on category keywords
-        if "pothole" in desc:
+        if has(desc, "pothole"):
             category = "Pothole"
-            reason = "Classified as Pothole based on description."
-        elif "flood" in desc or "water" in desc or "rain" in desc:
+        elif is_flooding:
             category = "Flooding"
-            reason = "Classified as Flooding based on description."
-        elif "drain" in desc:
-            category = "Drain Blockage"
-            reason = "Classified as Drain Blockage based on description."
-        elif "streetlight" in desc or "lights out" in desc or "lamp post" in desc:
-            category = "Streetlight"
-            reason = "Classified as Streetlight based on description."
-        elif "garbage" in desc or "waste" in desc or "dead animal" in desc:
-            category = "Waste"
-            reason = "Classified as Waste based on description."
-        elif "music" in desc or "drilling" in desc or "delivery" in desc or "amplifiers" in desc or "noise" in desc:
-            category = "Noise"
-            reason = "Classified as Noise based on description."
-        elif "road" in desc or "footpath" in desc or "paving" in desc or "bench" in desc or "bridge" in desc or "tarmac" in desc or "structural" in desc:
-            category = "Road Damage"
-            reason = "Classified as Road Damage based on description."
-        elif "heritage" in desc or "historic" in desc or "ancient" in desc or "museum" in desc:
-            category = "Heritage Damage"
-            reason = "Classified as Heritage Damage based on description."
-        elif "melting" in desc or "temperature" in desc or "heatwave" in desc or "burns" in desc or "sun" in desc or "heat" in desc:
+        elif is_heat:
             category = "Heat Hazard"
-            reason = "Classified as Heat Hazard based on description."
+        elif is_drain:
+            category = "Drain Blockage"
+        elif is_streetlight:
+            category = "Streetlight"
+        elif has(desc, "garbage") or has(desc, "waste") or (has(desc, "dead") and has(desc, "animal")):
+            category = "Waste"
+        elif has(desc, "music") or has(desc, "drilling") or has(desc, "delivery") or has(desc, "amplifiers") or has(desc, "noise"):
+            category = "Noise"
+        elif is_heritage:
+            category = "Heritage Damage"
+        elif is_road:
+            category = "Road Damage"
         else:
             category = "Other"
-            reason = "No specific category keywords matched."
-            
-    # Tailor specific reasons citing words from the description for Pune data specifically
-    if "PM-202401" in cid:
-        category = "Pothole"
-        priority = "Standard"
-        reason = "Large pothole causing tyre damage."
-        flag = ""
-    elif "PM-202402" in cid:
-        category = "Pothole"
-        priority = "Urgent"
-        reason = "Deep pothole near school children."
-        flag = ""
-    elif "PM-202406" in cid:
-        category = "Flooding"
-        priority = "Standard"
-        reason = "Underpass flooded knee-deep."
-        flag = ""
-    elif "PM-202408" in cid:
-        category = "Other"
-        priority = "Standard"
-        reason = "Bus stand flooded with blocked drain."
-        flag = "NEEDS_REVIEW"
-    elif "PM-202410" in cid:
-        category = "Streetlight"
-        priority = "Standard"
-        reason = "Three consecutive streetlights out."
-        flag = ""
-    elif "PM-202411" in cid:
-        category = "Streetlight"
-        priority = "Urgent"
-        reason = "Streetlight flickering and electrical hazard."
-        flag = ""
-    elif "PM-202413" in cid:
-        category = "Waste"
-        priority = "Standard"
-        reason = "Overflowing garbage bins near market."
-        flag = ""
-    elif "PM-202418" in cid:
-        category = "Noise"
-        priority = "Standard"
-        reason = "Wedding venue playing music past midnight."
-        flag = ""
-    elif "PM-202419" in cid:
-        category = "Road Damage"
-        priority = "Standard"
-        reason = "Road surface cracked and sinking."
-        flag = ""
-    elif "PM-202420" in cid:
-        category = "Other"
-        priority = "Urgent"
-        reason = "Manhole cover missing causing injury risk."
-        flag = "NEEDS_REVIEW"
-    elif "PM-202427" in cid:
-        category = "Flooding"
-        priority = "Standard"
-        reason = "Bridge approach floods in rain."
-        flag = ""
-    elif "PM-202428" in cid:
-        category = "Waste"
-        priority = "Standard"
-        reason = "Dead animal not removed."
-        flag = ""
-    elif "PM-202430" in cid:
-        category = "Other"
-        priority = "Standard"
-        reason = "Heritage street lights out safety concern."
-        flag = "NEEDS_REVIEW"
-    elif "PM-202433" in cid:
-        category = "Waste"
-        priority = "Standard"
-        reason = "Bulk waste dumped on public road."
-        flag = ""
-    elif "PM-202446" in cid:
-        category = "Road Damage"
-        priority = "Urgent"
-        reason = "Footpath tiles broken and resident fell."
-        flag = ""
-        
-    # Tailor specific reasons citing words from the description for Hyderabad data specifically
-    elif "GH-202401" in cid:
-        category = "Flooding"
-        priority = "Urgent"
-        reason = "Underpass flooded and ambulance diverted."
-        flag = ""
-    elif "GH-202402" in cid:
-        category = "Other"
-        priority = "Standard"
-        reason = "Market area flooded and drain completely blocked."
-        flag = "NEEDS_REVIEW"
-    elif "GH-202406" in cid:
-        category = "Drain Blockage"
-        priority = "Standard"
-        reason = "Main stormwater drain blocked."
-        flag = ""
-    elif "GH-202407" in cid:
-        category = "Drain Blockage"
-        priority = "Standard"
-        reason = "Blocked drain causing mosquito breeding."
-        flag = ""
-    elif "GH-202410" in cid:
-        category = "Pothole"
-        priority = "Standard"
-        reason = "Potholes causing slow vehicles."
-        flag = ""
-    elif "GH-202411" in cid:
-        category = "Pothole"
-        priority = "Urgent"
-        reason = "Pothole causing a rider to be hospitalised."
-        flag = ""
-    elif "GH-202412" in cid:
-        category = "Pothole"
-        priority = "Urgent"
-        reason = "School bus struggling to navigate potholes."
-        flag = ""
-    elif "GH-202417" in cid:
-        category = "Other"
-        priority = "Standard"
-        reason = "Heritage zone garbage overflow."
-        flag = "NEEDS_REVIEW"
-    elif "GH-202420" in cid:
-        category = "Noise"
-        priority = "Standard"
-        reason = "Construction drilling from 5am daily."
-        flag = ""
-    elif "GH-202422" in cid:
-        category = "Road Damage"
-        priority = "Urgent"
-        reason = "Road collapsed partially near residential gate."
-        flag = ""
-    elif "GH-202424" in cid:
-        category = "Flooding"
-        priority = "Standard"
-        reason = "Underpass floods in light rain."
-        flag = ""
-    elif "GH-202428" in cid:
-        category = "Waste"
-        priority = "Standard"
-        reason = "Post-market waste not cleared."
-        flag = ""
-    elif "GH-202432" in cid:
-        category = "Noise"
-        priority = "Standard"
-        reason = "Supermarket delivery trucks idling."
-        flag = ""
-    elif "GH-202448" in cid:
-        category = "Other"
-        priority = "Standard"
-        reason = "Main drain blocked with flooding risk."
-        flag = "NEEDS_REVIEW"
-    elif "GH-202438" in cid:
-        category = "Flooding"
-        priority = "Standard"
-        reason = "Colony surrounded by fields channelling rainwater."
-        flag = ""
-        
+
+        if not flag and category == "Other" and has(desc, "heritage") and has(desc, "streetlight"):
+            flag = "NEEDS_REVIEW"
+
+        if not reason:
+            matched_words = []
+            for w in SEVERITY_KEYWORDS + ["pothole", "flood", "drain", "streetlight", "garbage", "waste", "music", "noise", "road", "heritage", "melting", "temperature"]:
+                if w in desc:
+                    matched_words.append(f"'{w}'")
+                    if len(matched_words) >= 3:
+                        break
+            if matched_words:
+                reason = f"Classified as {category} based on keywords: {', '.join(matched_words)}."
+            else:
+                reason = f"Classified as {category} based on description."
+
     return {
         "complaint_id": cid,
         "category": category,
@@ -251,9 +97,6 @@ def classify_complaint(row: dict) -> dict:
 
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    """
     results = []
     with open(input_path, mode='r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -262,7 +105,6 @@ def batch_classify(input_path: str, output_path: str):
                 classified = classify_complaint(row)
                 results.append(classified)
             except Exception as e:
-                # Handle error gracefully
                 results.append({
                     "complaint_id": row.get("complaint_id", ""),
                     "category": "Other",
@@ -270,7 +112,7 @@ def batch_classify(input_path: str, output_path: str):
                     "reason": f"Error during classification: {str(e)}",
                     "flag": "NEEDS_REVIEW"
                 })
-                
+
     fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
     with open(output_path, mode='w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -280,7 +122,7 @@ def batch_classify(input_path: str, output_path: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
+    parser.add_argument("--input", required=True, help="Path to test_[city].csv")
     parser.add_argument("--output", required=True, help="Path to write results CSV")
     args = parser.parse_args()
     batch_classify(args.input, args.output)
