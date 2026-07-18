@@ -76,7 +76,8 @@ def classify_complaint(row: dict) -> dict:
     quote_str = ", ".join([f"'{w}'" for w in words_in_desc])
     
     if priority == "Urgent":
-        reason = f"Classified as {category} because description mentions {quote_str} and contains severity words like {', '.join([f'\'{w}\'' for w in urgent_words])}."
+        urgent_quoted = [f"'{w}'" for w in urgent_words]
+        reason = f"Classified as {category} because description mentions {quote_str} and contains severity words like {', '.join(urgent_quoted)}."
     else:
         reason = f"Classified as {category} because description mentions {quote_str}."
         
