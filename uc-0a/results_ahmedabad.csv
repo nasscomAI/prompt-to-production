@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
+AM-202405,Other,Standard,Classified as Other since description does not match any primary category keywords.,
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage citing road/footpath/surface damage.,
+AM-202410,Pothole,Standard,Classified as Pothole citing description words: 'pothole'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight citing lighting/darkness indicators.,
+AM-202417,Waste,Standard,Classified as Waste citing waste/garbage/litter words.,
+AM-202421,Noise,Standard,Classified as Noise citing noise/music/playing words.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
+AM-202431,Other,Standard,Genuinely ambiguous category between Heritage and municipal infrastructure.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
+AM-202444,Waste,Standard,Classified as Waste citing waste/garbage/litter words.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard citing heat/temperature indicators.,
