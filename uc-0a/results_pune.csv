@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions pothole, which supports category Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions pothole, school, which supports category Pothole.",
+PM-202406,Flooding,Standard,"The description mentions flooded, which supports category Flooding.",
+PM-202408,Other,Standard,The description mentions 'Bus stand flooded. Passengers standing in water. Drain block…' without enough detail for a confident category assignment.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions streetlight, which supports category Streetlight.",
+PM-202411,Streetlight,Urgent,"The description mentions streetlight, hazard, which supports category Streetlight.",
+PM-202413,Waste,Standard,The description supports category Waste based on the provided complaint text.,
+PM-202418,Noise,Low,The description supports category Noise based on the provided complaint text.,
+PM-202419,Road Damage,Standard,"The description mentions road, which supports category Road Damage.",
+PM-202420,Other,Urgent,The description mentions 'Manhole cover missing. Risk of serious injury to cyclists.…' without enough detail for a confident category assignment.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description supports category Flooding based on the provided complaint text.,
+PM-202428,Other,Standard,The description mentions 'Dead animal not removed for 36 hours. Health concern.…' without enough detail for a confident category assignment.,NEEDS_REVIEW
+PM-202430,Other,Standard,"The description mentions 'Heritage street, lights out. Safety concern for pedestrians…' without enough detail for a confident category assignment.",NEEDS_REVIEW
+PM-202433,Other,Standard,The description mentions 'Bulk waste from apartment renovation dumped on public road.…' without enough detail for a confident category assignment.,NEEDS_REVIEW
+PM-202446,Road Damage,Urgent,"The description mentions fell, which supports category Road Damage.",
