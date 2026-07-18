@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category 'Pothole' assigned based on keyword 'pothole' found in: ""Large pothole 60cm wide causing tyre damage""",
+PM-202402,Pothole,Urgent,"Priority set to Urgent due to severity keyword 'child' found in: ""School children at risk during morning hours""",
+PM-202406,Flooding,Standard,"Category 'Flooding' assigned based on keyword 'flood' found in: ""Underpass flooded knee-deep after 2hrs rain""",
+PM-202408,Flooding,Standard,"Category 'Flooding' assigned based on keyword 'flood' found in: ""Bus stand flooded""",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category 'Streetlight' assigned based on keyword 'streetlight' found in: ""Three consecutive streetlights out for 10 days""",
+PM-202411,Streetlight,Urgent,"Priority set to Urgent due to severity keyword 'hazard' found in: ""Electrical hazard reported""",
+PM-202413,Waste,Standard,"Category 'Waste' assigned based on keyword 'garbage' found in: ""Overflowing garbage bins near vegetable market""",
+PM-202418,Noise,Standard,"Category 'Noise' assigned based on keyword 'music' found in: ""Wedding venue playing music past midnight on weeknights""",
+PM-202419,Road Damage,Standard,"Category 'Road Damage' assigned based on keyword 'road surface cracked' found in: ""Road surface cracked and sinking near utility work done 1 month ago""",
+PM-202420,Road Damage,Urgent,"Priority set to Urgent due to severity keyword 'injury' found in: ""Risk of serious injury to cyclists""",
+PM-202427,Flooding,Standard,"Category 'Flooding' assigned based on keyword 'flood' found in: ""Bridge approach floods in 30mins of rain""",
+PM-202428,Waste,Standard,"Category 'Waste' assigned based on keyword 'dead animal' found in: ""Dead animal not removed for 36 hours""",
+PM-202430,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Heritage street, lights out""",
+PM-202433,Waste,Standard,"Category 'Waste' assigned based on keyword 'waste' found in: ""Bulk waste from apartment renovation dumped on public road""",
+PM-202446,Road Damage,Urgent,"Priority set to Urgent due to severity keyword 'fell' found in: ""Elderly resident fell last week""",
