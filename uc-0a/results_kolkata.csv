@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The words ""Heritage"" identify Heritage Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202402,Heritage Damage,Standard,"The words ""Historic"" identify Heritage Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202405,Other,Standard,"The words ""Wedding band playing near Tagore Museum at 11pm"" do not identify an allowed complaint category, so it is Other with Standard priority.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The words ""potholes"" identify Pothole, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202410,Pothole,Standard,"The words ""Pothole"" identify Pothole, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202411,Pothole,Standard,"The words ""pothole"" identify Pothole, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202415,Other,Standard,"The words ""New residential complex draining directly onto public road"" do not identify an allowed complaint category, so it is Other with Standard priority.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The words ""waste"" identify Waste, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202421,Road Damage,Urgent,"The words ""Footpath"" identify Road Damage, while ""Hospital"" requires Urgent priority.",
+KM-202422,Road Damage,Standard,"The words ""Road surface buckled"" identify Road Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202426,Heritage Damage,Standard,"The words ""Heritage"" identify Heritage Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202430,Road Damage,Standard,"The words ""Road subsided"" identify Road Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202434,Heritage Damage,Standard,"The words ""heritage"" identify Heritage Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202436,Streetlight,Standard,"The words ""Darkness"" identify Streetlight, with no mandatory urgent keyword present, so the priority is Standard.",
+KM-202438,Noise,Standard,"The words ""amplifiers"" identify Noise, with no mandatory urgent keyword present, so the priority is Standard.",
