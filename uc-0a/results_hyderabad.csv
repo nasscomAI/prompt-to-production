@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding due to the word 'flood' in description, and priority set to Urgent because of keyword 'ambulance'.",
+GH-202402,Other,Standard,Ambiguous: contains references to both Flooding and Drain Blockage.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage due to the word 'stormwater drain' in description, and priority set to Standard as no severity keywords were found.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage due to the word 'drain' in description, and priority set to Standard as no severity keywords were found.",
+GH-202410,Pothole,Standard,"Classified as Pothole due to the word 'pothole' in description, and priority set to Standard as no severity keywords were found.",
+GH-202411,Pothole,Urgent,"Classified as Pothole due to the word 'pothole' in description, and priority set to Urgent because of keyword 'hospital'.",
+GH-202412,Pothole,Urgent,"Classified as Pothole due to the word 'pothole' in description, and priority set to Urgent because of keyword 'school'.",
+GH-202417,Other,Standard,Ambiguous: contains references to both Heritage and Waste.,NEEDS_REVIEW
+GH-202420,Noise,Standard,"Classified as Noise due to the word 'drilling' in description, and priority set to Standard as no severity keywords were found.",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage due to the word 'road collapsed' in description, and priority set to Urgent because of keyword 'collapse'.",
+GH-202424,Flooding,Standard,"Classified as Flooding due to the word 'flood' in description, and priority set to Standard as no severity keywords were found.",
+GH-202428,Waste,Standard,"Classified as Waste due to the word 'waste' in description, and priority set to Standard as no severity keywords were found.",
+GH-202432,Noise,Standard,"Classified as Noise due to the word 'engine' in description, and priority set to Standard as no severity keywords were found.",
+GH-202448,Other,Standard,Ambiguous: contains references to both Flooding and Drain Blockage.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified as Flooding due to the word 'rainwater' in description, and priority set to Standard as no severity keywords were found.",
