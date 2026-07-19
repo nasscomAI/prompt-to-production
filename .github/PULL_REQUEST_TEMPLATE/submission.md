@@ -76,27 +76,27 @@
 
 **What did the naive prompt return when you ran "Calculate growth from the data."?**
 
-> [Your answer — quote the output]
+> An aggregated single city-wide average spend value without ward or category breakdown.
 
 **Did it aggregate across all wards? Did it mention the 5 null rows?**
 
-> [Your answer]
+> Yes, it aggregated all wards together. No, it silently ignored the 5 null rows without any note or explanation.
 
 **After your fix — does your system refuse all-ward aggregation?**
 
-> Yes / No
+> Yes
 
 **Does your growth_output.csv flag the 5 null rows rather than skipping them?**
 
-> Yes / No — [list which rows are flagged]
+> Yes — the 5 null rows are flagged with their specific notes: Line 58 (Ward 2 Drainage, 2024-03), Line 124 (Ward 5 Streetlights, 2024-05), Line 167 (Ward 4 Roads, 2024-07), Line 191 (Ward 3 Parks, 2024-08), and Line 255 (Ward 1 Waste, 2024-11).
 
 **Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?**
 
-> Yes / No — [note any discrepancy]
+> Yes
 
 **Your git commit message for UC-0C:**
 
-> [paste your commit message here]
+> [UC-0C] Fix wrong aggregation level: naive query calculated global growth → implemented per-ward per-category analysis with strict refusal and null flagging
 
 ---
 
