@@ -9,15 +9,15 @@
 
 ## Checklist — Complete Before Opening This PR
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_[city].csv` without crash
-- [ ] `results_[city].csv` present in `uc-0a/`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
-- [ ] `summary_hr_leave.txt` present in `uc-0b/`
-- [ ] `growth_output.csv` present in `uc-0c/`
-- [ ] 4+ commits with meaningful messages following the formula
-- [ ] All sections below are filled in
+- [x] `agents.md` committed for all 4 UCs
+- [x] `skills.md` committed for all 4 UCs
+- [x] `classifier.py` runs on `test_[city].csv` without crash
+- [x] `results_[city].csv` present in `uc-0a/`
+- [x] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
+- [x] `summary_hr_leave.txt` present in `uc-0b/`
+- [x] `growth_output.csv` present in `uc-0c/`
+- [x] 4+ commits with meaningful messages following the formula
+- [x] All sections below are filled in
 
 ---
 
@@ -105,28 +105,28 @@
 **What did the naive prompt return for the cross-document test question?**
 *(Question: "Can I use my personal phone to access work files when working from home?")*
 
-> [Quote the actual output]
+> "Yes, you can use your personal phone to access work files as long as you follow the HR remote work guidelines and security policies."
 
 **Did it blend the IT and HR policies?**
 
-> Yes / No — [explain]
+> Yes — it incorrectly combined the IT policy about personal devices (email and self-service portal only) with the HR remote work tools guidelines, giving a false sense of security clearance.
 
 **After your fix — what does your system return for this question?**
 
-> [Quote the actual output]
+> According to policy_it_acceptable_use.txt Section 3.1, personal devices may be used to access CMC email and the CMC employee self-service portal only. Section 3.2 states that personal devices must not be used to access, store, or transmit classified or sensitive CMC data.
 
 **Did your system use any hedging phrases in any answer?**
 *("while not explicitly covered", "typically", "generally understood")*
 
-> Yes / No — [quote any you found]
+> No
 
 **Did all 7 test questions produce either a single-source cited answer or the exact refusal template?**
 
-> Yes / No — [list any that failed]
+> Yes
 
 **Your git commit message for UC-X:**
 
-> [paste your commit message here]
+> [UC-X] Fix cross-doc blending: naive prompt combined IT and HR rules → implemented single-source policy retrieval with exact citation enforcement
 
 ---
 
@@ -134,15 +134,15 @@
 
 **Which CRAFT step was hardest across all UCs, and why?**
 
-> [Your answer — 2–3 sentences]
+> The 'Refining' step was the hardest because it required identifying subtle failure modes like condition dropping and cross-document blending. Writing precise Python heuristic models to mimic the intended prompt behavior was the most effective way to eliminate these failure modes permanently.
 
 **What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?**
 
-> [Your answer — be specific, quote the rule]
+> The exact refusal template in uc-x/agents.md: "This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance."
 
 **Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
 
-> [Your answer]
+> Building an automated compliance auditor for verifying software purchase orders against municipal spending guidelines.
 
 ---
 
