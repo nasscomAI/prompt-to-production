@@ -138,7 +138,7 @@
 
 **What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?**
 
-> The exact refusal template in uc-x/agents.md: "This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance."
+> The severity keyword enforcement rule in uc-0a/agents.md: "Priority must be Urgent if description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse." The naive AI output had no explicit keyword list, which caused severity blindness on injury and school-related complaints.
 
 **Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
 
