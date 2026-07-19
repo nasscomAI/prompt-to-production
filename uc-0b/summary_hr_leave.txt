@@ -1,0 +1,53 @@
+CITY MUNICIPAL CORPORATION - EMPLOYEE LEAVE POLICY SUMMARY
+==========================================================
+Policy Document Reference: HR-POL-001 (Version: 2.3 | Effective: 1 April 2024)
+
+Summary of Critical Binding Clauses:
+
+1. Clause 2.3 (Annual Leave Notice Period)
+   Summary: Application must be submitted at least 14 calendar days in advance using Form HR-L1.
+   [VERBATIM QUOTE]: "Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1."
+
+2. Clause 2.4 (Annual Leave Approval Requirement)
+   Summary: Written approval from the direct manager is mandatory before leave starts; verbal approval is invalid.
+   [VERBATIM QUOTE]: "Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid."
+
+3. Clause 2.5 (Unapproved Absence Penalty)
+   Summary: Unapproved absence is recorded as Loss of Pay (LOP) and cannot be corrected by subsequent approval.
+   [VERBATIM QUOTE]: "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
+
+4. Clause 2.6 (Leave Carry-forward Limits)
+   Summary: A maximum of 5 unused annual leave days can be carried forward; any excess is forfeited on 31 December.
+   [VERBATIM QUOTE]: "Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December."
+
+5. Clause 2.7 (Carry-forward Expiration)
+   Summary: Carry-forward days must be used within the first quarter (January-March) of the following year or they are forfeited.
+   [VERBATIM QUOTE]: "Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited."
+
+6. Clause 3.2 (Sick Leave Medical Certification)
+   Summary: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+   [VERBATIM QUOTE]: "Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work."
+
+7. Clause 3.4 (Sick Leave Adjacent to Holidays)
+   Summary: Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+   [VERBATIM QUOTE]: "Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration."
+
+8. Clause 5.2 (Leave Without Pay Approvals)
+   Summary: LWP requires approval from both the Department Head and the HR Director. Manager approval alone is not sufficient.
+   [VERBATIM QUOTE]: "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+
+9. Clause 5.3 (Extended Leave Without Pay Approvals)
+   Summary: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+   [VERBATIM QUOTE]: "LWP exceeding 30 continuous days requires approval from the Municipal Commissioner."
+
+10. Clause 7.2 (Leave Encashment Restrictions)
+   Summary: Leave encashment during active service is strictly prohibited under any circumstances.
+   [VERBATIM QUOTE]: "Leave encashment during service is not permitted under any circumstances."
+
+==========================================================
+CRITICAL OBLIGATION FLAG:
+- All 10 clauses listed above represent binding obligations and restrictions.
+- Under Clause 5.2, approval MUST be obtained from BOTH the Department Head AND the HR Director.
+- Under Clause 2.3, application must be submitted 14 calendar days in advance via Form HR-L1.
+- Under Clause 3.2, a medical certificate from a registered medical practitioner must be submitted within 48 hours of returning to work for sick leave of 3+ consecutive days.
+- No external standard practices or assumptions apply; these rules are the exclusive authority for CMC employee leave.
