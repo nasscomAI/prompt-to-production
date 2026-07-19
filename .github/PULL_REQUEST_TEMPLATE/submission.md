@@ -52,23 +52,23 @@
 **Which failure mode did you encounter?**
 *(clause omission / scope bleed / obligation softening)*
 
-> [Your answer]
+> clause omission
 
 **List any clauses that were missing or weakened in the naive output (before your RICE fix):**
 
-> [Your answer — reference clause numbers]
+> 5.2 (dropped the requirement for approvals from both the Department Head and the HR Director) and 7.2 (softened absolute restriction on leave encashment during service)
 
 **After your fix — are all 10 critical clauses present in summary_hr_leave.txt?**
 
-> Yes / No — [which are still missing or wrong]
+> Yes
 
 **Did the naive prompt add any information not in the source document (scope bleed)?**
 
-> Yes / No — [quote any bleed you found]
+> No
 
 **Your git commit message for UC-0B:**
 
-> [paste your commit message here]
+> [UC-0B] Fix clause omission: naive summary dropped multi-approver conditions → enforced exact condition mapping for critical clauses
 
 ---
 
