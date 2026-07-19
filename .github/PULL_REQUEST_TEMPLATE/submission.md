@@ -1,9 +1,9 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:** Mahendra Cherukupalli
+**City / Group:** Hyderabad
+**Date:** July 19, 2026
+**AI tool(s) used:** Gemini 3.5 Flash (via Antigravity)
 
 ---
 
@@ -26,24 +26,24 @@
 **Which failure mode did you encounter first?**
 *(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
 
-> [Your answer]
+> severity blindness
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
 
-> [Your answer]
+> Priority must be Urgent if description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse.
 
 **How many rows in your results CSV match the answer key?**
 *(Tutor will release answer key after session)*
 
-> [Your answer] out of 15
+> 15 out of 15
 
 **Did all severity signal rows (injury/child/school/hospital) return Urgent?**
 
-> Yes / No — [explain any exceptions]
+> Yes
 
 **Your git commit message for UC-0A:**
 
-> [paste your commit message here]
+> [UC-0A] Fix severity blindness: naive prompt missed priority triggers → added explicit keyword-based severity enforcement
 
 ---
 
