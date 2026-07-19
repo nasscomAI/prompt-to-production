@@ -142,7 +142,7 @@
 
 **Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
 
-> Building an automated compliance auditor for verifying software purchase orders against municipal spending guidelines.
+> Building a theme-based stock analyzer where I input a sector theme like green energy or EV, and the system fetches all related stocks along with their key stats like price, market cap, PE ratio, and 52-week range. RICE will define the role, what counts as a valid themed output, and the enforcement rules to prevent hallucinated tickers or blended data from different sectors.
 
 ---
 
