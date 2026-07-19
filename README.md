@@ -26,9 +26,12 @@ git checkout -b participant/[your-name]-[city]
 **Step 3 — Confirm your environment**
 ```bash
 python --version          # Must be 3.9+
+# Python 3.12.4
 git --version             # Must be installed
+#git version 2.50.1.windows.1
 python -c "import csv, json; print('Ready')"
 ```
+# Ready
 
 **Step 4 — Confirm data files are present**
 ```
@@ -45,6 +48,26 @@ data/budget/             ward_budget.csv
 ```
 
 ---
+
+PS C:\Users\umasr\nasscomai\prompt-to-production\data> tree /F
+Folder PATH listing for volume Acer
+Volume serial number is 000000E2 F2EC:7CE6
+C:.
+├───budget
+│       ward_budget.csv
+│
+├───city-test-files
+│       test_ahmedabad.csv
+│       test_hyderabad.csv
+│       test_kolkata.csv
+│       test_pune.csv
+│
+└───policy-documents
+        policy_finance_reimbursement.txt
+        policy_hr_leave.txt
+        policy_it_acceptable_use.txt
+
+
 
 ## Repo Structure
 
@@ -83,6 +106,72 @@ workshop-repo/
     └── PULL_REQUEST_TEMPLATE/
         └── submission.md   Fill this when opening your PR
 ```
+Volume serial number is 000000B3 F2EC:7CE6
+C:.
+│   .gitignore
+│   CODE_OF_CONDUCT.md
+│   CONTRIBUTING.md
+│   FAQ.md
+│   LICENSE
+│   PREREQUISITES.md
+│   README.md
+│
+├───.github
+│   │   commit-lint.sh
+│   │
+│   ├───PULL_REQUEST_TEMPLATE
+│   │       submission.md
+│   │
+│   └───workflows
+│           validate-pr.yml
+│           welcome.yml
+│
+├───data
+│   ├───budget
+│   │       ward_budget.csv
+│   │
+│   ├───city-test-files
+│   │       test_ahmedabad.csv
+│   │       test_hyderabad.csv
+│   │       test_kolkata.csv
+│   │       test_pune.csv
+│   │
+│   └───policy-documents
+│           policy_finance_reimbursement.txt
+│           policy_hr_leave.txt
+│           policy_it_acceptable_use.txt
+│
+├───resources
+│       books.md
+│       code-review-tools.md
+│       coding-tools.md
+│       courses.md
+│       offline_guide.md
+│       platforms.md
+│
+├───uc-0a
+│       agents.md
+│       classifier.py
+│       README.md
+│       skills.md
+│
+├───uc-0b
+│       agents.md
+│       app.py
+│       README.md
+│       skills.md
+│
+├───uc-0c
+│       agents.md
+│       app.py
+│       README.md
+│       skills.md
+│
+└───uc-x
+        agents.md
+        app.py
+        README.md
+        skills.md
 
 ---
 
