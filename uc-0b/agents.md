@@ -28,3 +28,13 @@ enforcement:
   - "Binding verbs (must, will, requires, not permitted) must not be softened to weaker language (should, may, can, generally)."
   - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag it with [VERBATIM — meaning loss risk]."
   - "If the input is not a policy document or is unreadable, refuse to summarise and state the reason rather than guessing."
+
+configuration:
+  model_providers:
+    - name: OpenAI
+      default_model: gpt-4o-mini
+      api_key_env: OPENAI_API_KEY
+    - name: Gemini (via OpenAI compatibility)
+      default_model: gemini-3.5-flash
+      api_key_env: GEMINI_API_KEY
+      api_base_url: https://generativelanguage.googleapis.com/v1beta/openai/
