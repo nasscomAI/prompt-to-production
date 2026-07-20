@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flood'; indicating Flooding; with urgent keyword(s): ambulance.,
+GH-202402,Other,Standard,"Description mentions 'flood', 'Drain'.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Description mentions 'drain'; indicating Drain Blockage.,
+GH-202407,Drain Blockage,Standard,Description mentions 'Drain'; indicating Drain Blockage.,
+GH-202410,Pothole,Standard,Description mentions 'Pothole'; indicating Pothole.,
+GH-202411,Pothole,Urgent,Description mentions 'Pothole'; indicating Pothole; with urgent keyword(s): hospital.,
+GH-202412,Pothole,Urgent,Description mentions 'pothole'; indicating Pothole; with urgent keyword(s): school.,
+GH-202417,Other,Standard,"Description mentions 'garbage', 'waste'.",NEEDS_REVIEW
+GH-202420,Noise,Standard,Description mentions 'drilling'; indicating Noise.,
+GH-202422,Pothole,Urgent,Description mentions 'Crater'; indicating Pothole; with urgent keyword(s): collapse.,
+GH-202424,Flooding,Standard,Description mentions 'flood'; indicating Flooding.,
+GH-202428,Waste,Standard,Description mentions 'waste'; indicating Waste.,
+GH-202432,Other,Standard,Description does not clearly match any category.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Description mentions 'flood', 'drain'.",NEEDS_REVIEW
+GH-202438,Other,Standard,Description does not clearly match any category.,NEEDS_REVIEW
