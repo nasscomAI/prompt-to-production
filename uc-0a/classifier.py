@@ -31,28 +31,28 @@ def classify_complaint(row: dict) -> dict:
     if re.search(r"\bpotholes?\b", desc_lower):
         matched_categories.append("Pothole")
         
-    if re.search(r"\bdrains?\b|\bdrainage\b|\bmanholes?\b", desc_lower):
+    if re.search(r"\bdrain(?:s|age|ing)?\b|\bmanholes?\b|\bchoked\b|\bclogged\b", desc_lower):
         matched_categories.append("Drain Blockage")
         
-    if re.search(r"\bfloods?\b|\bflooded\b|\bflooding\b|\bwater\b|\brainwater\b", desc_lower):
+    if re.search(r"\bfloods?\b|\bflooded\b|\bflooding\b|\bwaterlogged\b|\bwater\s+logging\b|\bwaterlogging\b|\bsubmerged\b|\bknee[-\s]?deep\b|\brainwater\b|\bflood\s+risk\b", desc_lower):
         matched_categories.append("Flooding")
         
-    if re.search(r"\bstreetlights?\b|\blights?\s+out\b|\bflickering\b|\bsparking\b", desc_lower):
+    if re.search(r"\bstreetlights?\b|\blamp\s+posts?\b|\blamp\b|\blights?\s+out\b|\bunlit\b|\bdarkness\b|\bdark\b|\bflickering\b|\bsparking\b", desc_lower):
         matched_categories.append("Streetlight")
         
-    if re.search(r"\bgarbage\b|\bwaste\b|\banimals?\b|\bdumped\b", desc_lower):
+    if re.search(r"\bgarbage\b|\bwaste\b|\btrash\b|\bbins?\b|\bdead\s+animal(?:s)?\b|\banimals?\b|\bdumped\b", desc_lower):
         matched_categories.append("Waste")
         
-    if re.search(r"\bmusic\b|\bnoise\b|\bdrilling\b", desc_lower):
+    if re.search(r"\bmusic\b|\bnoise\b|\bamplifiers?\b|\bdrilling\b|\bblaring\b", desc_lower):
         matched_categories.append("Noise")
         
-    if re.search(r"\broad\s+surface\b|\bcracked\b|\bsinking\b|\bcollapsed\b|\bcrater\b|\bfootpath\b|\btiles\b", desc_lower):
+    if re.search(r"\broad\s+surface\b|\bcracked\b|\bbroken\b|\bbuckled\b|\bsubsided\b|\bsubsidence\b|\bsinking\b|\bcollapsed\b|\bcrater\b|\bupturned\b|\bbubbling\b|\bfootpath\b|\btiles\b|\bcobblestones?\b", desc_lower):
         matched_categories.append("Road Damage")
         
-    if re.search(r"\bheritage\b", desc_lower):
+    if re.search(r"\bheritage\b|\bhistoric\b|\bhistorical\b|\bancient\b|\bold\s+city\b|\bmuseum\b|\bmonument\b|\bpalace\b|\bstep\s+well\b|\btram\s+road\b", desc_lower):
         matched_categories.append("Heritage Damage")
         
-    if re.search(r"\bheat\b|\bhigh\s+temp\b", desc_lower):
+    if re.search(r"\bheat\b|\bhigh\s+temp\b|\btemperature(?:s)?\b|\btemp\b|\bmelting\b|\bhot\b|\bscorching\b|\bsweltering\b|\bburn(?:ing|s)?\b|\bfull\s+sun\b|\b\d{2}\s*°?\s*c\b", desc_lower):
         matched_categories.append("Heat Hazard")
         
     # Remove duplicate matching (maintaining order)
@@ -71,14 +71,14 @@ def classify_complaint(row: dict) -> dict:
     matched_words = []
     patterns = [
         r"\bpotholes?\b",
-        r"\bdrains?\b|\bdrainage\b|\bmanholes?\b",
-        r"\bfloods?\b|\bflooded\b|\bflooding\b|\bwater\b|\brainwater\b",
-        r"\bstreetlights?\b|\blights?\s+out\b|\bflickering\b|\bsparking\b",
-        r"\bgarbage\b|\bwaste\b|\banimals?\b|\bdumped\b",
-        r"\bmusic\b|\bnoise\b|\bdrilling\b",
-        r"\broad\s+surface\b|\bcracked\b|\bsinking\b|\bcollapsed\b|\bcrater\b|\bfootpath\b|\btiles\b",
-        r"\bheritage\b",
-        r"\bheat\b|\bhigh\s+temp\b"
+        r"\bdrain(?:s|age|ing)?\b|\bmanholes?\b|\bchoked\b|\bclogged\b",
+        r"\bfloods?\b|\bflooded\b|\bflooding\b|\bwaterlogged\b|\bwater\s+logging\b|\bwaterlogging\b|\bsubmerged\b|\bknee[-\s]?deep\b|\brainwater\b|\bflood\s+risk\b",
+        r"\bstreetlights?\b|\blamp\s+posts?\b|\blamp\b|\blights?\s+out\b|\bunlit\b|\bdarkness\b|\bdark\b|\bflickering\b|\bsparking\b",
+        r"\bgarbage\b|\bwaste\b|\btrash\b|\bbins?\b|\bdead\s+animal(?:s)?\b|\banimals?\b|\bdumped\b",
+        r"\bmusic\b|\bnoise\b|\bamplifiers?\b|\bdrilling\b|\bblaring\b",
+        r"\broad\s+surface\b|\bcracked\b|\bbroken\b|\bbuckled\b|\bsubsided\b|\bsubsidence\b|\bsinking\b|\bcollapsed\b|\bcrater\b|\bupturned\b|\bbubbling\b|\bfootpath\b|\btiles\b|\bcobblestones?\b",
+        r"\bheritage\b|\bhistoric\b|\bhistorical\b|\bancient\b|\bold\s+city\b|\bmuseum\b|\bmonument\b|\bpalace\b|\bstep\s+well\b|\btram\s+road\b",
+        r"\bheat\b|\bhigh\s+temp\b|\btemperature(?:s)?\b|\btemp\b|\bmelting\b|\bhot\b|\bscorching\b|\bsweltering\b|\bburn(?:ing|s)?\b|\bfull\s+sun\b|\b\d{2}\s*°?\s*c\b"
     ]
     for pattern in patterns:
         m = re.search(pattern, desc_lower)
