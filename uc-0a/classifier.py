@@ -109,7 +109,8 @@ def classify_complaint(row: dict) -> dict:
     if len(unique_categories) == 1:
         category = unique_categories[0]
         if is_urgent:
-            reason = f"Classified as {category} due to '{citation}', with priority set to Urgent because the description mentions {', '.join([f'\"{w}\"' for w in matched_severity])}."
+            severity_str = ", ".join([f'"{w}"' for w in matched_severity])
+            reason = f"Classified as {category} due to '{citation}', with priority set to Urgent because the description mentions {severity_str}."
         else:
             reason = f"Classified as {category} due to '{citation}', with priority set to Standard."
     elif len(unique_categories) > 1:
@@ -119,14 +120,16 @@ def classify_complaint(row: dict) -> dict:
         if "manhole" in desc_lower and "injury" in desc_lower:
             category = "Road Damage"
         if is_urgent:
-            reason = f"Ambiguous between {', '.join(unique_categories)} (assigned primary {category} due to '{citation}'), with priority set to Urgent because the description mentions {', '.join([f'\"{w}\"' for w in matched_severity])}."
+            severity_str = ", ".join([f'"{w}"' for w in matched_severity])
+            reason = f"Ambiguous between {', '.join(unique_categories)} (assigned primary {category} due to '{citation}'), with priority set to Urgent because the description mentions {severity_str}."
         else:
             reason = f"Ambiguous between {', '.join(unique_categories)} (assigned primary {category} due to '{citation}'), with priority set to Standard."
     else:
         category = "Other"
         flag = "NEEDS_REVIEW"
         if is_urgent:
-            reason = f"Classified as Other because no specific category keywords were found, with priority set to Urgent because the description mentions {', '.join([f'\"{w}\"' for w in matched_severity])}."
+            severity_str = ", ".join([f'"{w}"' for w in matched_severity])
+            reason = f"Classified as Other because no specific category keywords were found, with priority set to Urgent because the description mentions {severity_str}."
         else:
             reason = "Classified as Other because no specific category keywords were found, with priority set to Standard."
             
