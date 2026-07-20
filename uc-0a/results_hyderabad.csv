@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Cited: flood, ambulance from description.",
+GH-202402,Flooding,Standard,Cited: flood from description.,
+GH-202406,Drain Blockage,Standard,Cited: drain from description.,
+GH-202407,Drain Blockage,Standard,Cited: drain from description.,
+GH-202410,Pothole,Standard,Cited: pothole from description.,
+GH-202411,Pothole,Standard,Cited: pothole from description.,
+GH-202412,Pothole,Urgent,"Cited: pothole, school from description.",
+GH-202417,Other,Standard,Cited: waste from description.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Cited: drilling from description.,
+GH-202422,Pothole,Standard,Cited: crater from description.,
+GH-202424,Flooding,Standard,Cited: flood from description.,
+GH-202428,Waste,Standard,Cited: waste from description.,
+GH-202432,Noise,Standard,Cited: idling from description.,
+GH-202448,Flooding,Standard,Cited: flood from description.,
+GH-202438,Flooding,Standard,Cited: rainwater from description.,
