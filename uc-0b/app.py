@@ -92,6 +92,7 @@ def summarize_policy(sections: list[dict]) -> str:
     """
     Takes structured policy sections and produces a compliant summary
     using an LLM guided by the RICE enforcement rules.
+    Supports both OpenAI models and Gemini models via OpenAI compatibility.
     """
     # Build the structured input for the LLM
     policy_text = ""
