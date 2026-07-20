@@ -129,7 +129,7 @@ SOURCE DOCUMENT:
             api_key=gemini_key,
             base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
         )
-        model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+        model = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash")
     else:
         client = OpenAI(
             api_key=os.environ.get("OPENAI_API_KEY")
