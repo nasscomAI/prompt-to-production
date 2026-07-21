@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Marked Urgent due to severity keyword(s): ambulance. Classified as Flooding based on keyword(s): flooded.,
+GH-202402,Flooding,Standard,"Classified as Flooding based on keyword(s): flooded. Description also matched other categories (Drain Blockage), so this needs human review.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage based on keyword(s): drain, stormwater.",
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on keyword(s): drain.,
+GH-202410,Pothole,Standard,Classified as Pothole based on keyword(s): potholes.,
+GH-202411,Pothole,Urgent,Marked Urgent due to severity keyword(s): hospital. Classified as Pothole based on keyword(s): pothole.,
+GH-202412,Pothole,Urgent,Marked Urgent due to severity keyword(s): school. Classified as Pothole based on keyword(s): potholes.,
+GH-202417,Heritage Damage,Standard,"Classified as Heritage Damage based on keyword(s): heritage, heritage zone. Description also matched other categories (Waste), so this needs human review.",NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise based on keyword(s): drilling.,
+GH-202422,Pothole,Urgent,"Marked Urgent due to severity keyword(s): collapse. Classified as Pothole based on keyword(s): crater. Description also matched other categories (Road Damage), so this needs human review.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on keyword(s): floods.,
+GH-202428,Waste,Standard,Classified as Waste based on keyword(s): waste.,
+GH-202432,Noise,Standard,Classified as Noise based on keyword(s): idling.,
+GH-202448,Flooding,Standard,"Classified as Flooding based on keyword(s): flooding, flooding risk. Description also matched other categories (Drain Blockage), so this needs human review.",NEEDS_REVIEW
+GH-202438,Other,Low,No category keywords matched the description; category could not be confidently determined.,NEEDS_REVIEW
