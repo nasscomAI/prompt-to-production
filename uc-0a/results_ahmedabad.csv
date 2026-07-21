@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard (matched on ""melting""); no severity term present, so Standard.",
+AM-202402,Other,Standard,"Classified as Other (no listed category keyword found in description); no severity term present, so Standard.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Classified as Other (no listed category keyword found in description); no severity term present, so Standard.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard (matched on ""heatwave""); no severity term present, so Standard.",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage (matched on ""paving""); marked Urgent due to severity term ""child"".",
+AM-202410,Pothole,Standard,"Classified as Pothole (matched on ""pothole""); no severity term present, so Standard.",
+AM-202414,Streetlight,Standard,"Classified as Streetlight (matched on ""unlit""); no severity term present, so Standard.",
+AM-202417,Heritage Damage,Standard,"Classified as Heritage Damage (matched on ""heritage""); no severity term present, so Standard.",
+AM-202421,Noise,Standard,"Classified as Noise (matched on ""music""); no severity term present, so Standard.",
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard (matched on ""45°c""); no severity term present, so Standard.",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard (matched on ""52°c""); no severity term present, so Standard.",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage (matched on ""heritage""); no severity term present, so Standard.",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard (matched on ""heat""); no severity term present, so Standard.",
+AM-202444,Waste,Standard,"Classified as Waste (matched on ""waste""); no severity term present, so Standard.",
+AM-202445,Other,Standard,"Classified as Other (no listed category keyword found in description); no severity term present, so Standard.",NEEDS_REVIEW
