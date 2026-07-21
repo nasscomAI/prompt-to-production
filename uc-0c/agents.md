@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0C Number That Looks Right
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget Analysis Agent responsible for calculating month-over-month growth for civic ward budgets without silent null handling or unrequested aggregation.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a per-ward, per-category growth calculation table containing explicit formula derivations and flagging missing actual_spend rows.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed to use only the provided ward_budget.csv file text. Must explicitly require ward, category, and growth-type parameters.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked for combined all-ward growth."
+  - "Flag every null row before computing — report null reason from the notes column and set growth calculation to NULL."
+  - "Show the explicit calculation formula used in every output row (e.g. (Current - Previous) / Previous * 100)."
+  - "If growth-type is not specified, refuse and ask user for clarification rather than assuming MoM or YoY."
