@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"matched 'flood' in description; matched 'flooded' in description; severity keyword(s) present: ambulance; quoted: ""Underpass flooded after 1hr rain."" / ""after 1hr rain. Ambulance diverted. Lives""",
+GH-202402,Flooding,Standard,"matched 'flood' in description; matched 'flooded' in description; no severity keyword; quoted: ""Market area flooded. Traders""",
+GH-202406,Drain Blockage,Standard,"matched 'stormwater drain' in description; matched 'drain 100%' in description; no severity keyword; quoted: ""Main stormwater drain 100% blocked with""",
+GH-202407,Drain Blockage,Standard,"matched 'drain blocked' in description; no severity keyword; quoted: ""Drain blocked and mosquito""",
+GH-202410,Pothole,Standard,"matched 'pothole' in description; no severity keyword; quoted: ""Potholes causing vehicles""",
+GH-202411,Pothole,Urgent,"matched 'pothole' in description; severity keyword(s) present: hospital; quoted: ""Pothole swallowed entire"" / ""wheel. Rider hospitalised.""",
+GH-202412,Pothole,Urgent,"matched 'pothole' in description; severity keyword(s) present: school; quoted: ""to navigate 6 potholes in 200m stretch."" / ""School bus struggling to""",
+GH-202417,Other,Standard,"ambiguous between Heritage Damage, Waste — equal keyword hits: Heritage Damage:heritage|charminar; Waste:garbage|waste; no severity keyword; quoted: ""Heritage zone garbage overflow. Tourist photographs showing""",NEEDS_REVIEW
+GH-202420,Noise,Standard,"matched 'drilling' in description; no severity keyword; quoted: ""Construction drilling from 5am daily""",
+GH-202422,Road Damage,Urgent,"matched 'road collapsed' in description; matched 'road collapse' in description; matched 'crater' in description; severity keyword(s) present: collapse; quoted: ""Road collapsed partially. Crater"" / ""Road collapsed partially.""",
+GH-202424,Flooding,Standard,"matched 'flood' in description; no severity keyword; quoted: ""Underpass floods in light rain.""",
+GH-202428,Waste,Standard,"matched 'waste' in description; no severity keyword; quoted: ""Post-market waste not cleared. Area""",
+GH-202432,Noise,Standard,"matched 'idling' in description; no severity keyword; quoted: ""delivery trucks idling with engines on.""",
+GH-202448,Other,Standard,"ambiguous between Drain Blockage, Flooding — equal keyword hits: Drain Blockage:drain blocked|main drain; Flooding:flood|flooding; no severity keyword; quoted: ""Main drain blocked — entire locality at flooding risk this w""",NEEDS_REVIEW
+GH-202438,Other,Standard,"no category keyword matched the description; no severity keyword; quoted: ""Colony surrounded by fields that channel rainwater through m""",NEEDS_REVIEW
