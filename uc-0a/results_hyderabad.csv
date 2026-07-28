@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Detected keywords from complaint: underpass flooded after 1hr rain. ambulance diverted. lives ,
+GH-202402,Flooding,Standard,Detected keywords from complaint: market area flooded. traders suffering losses. drain complet,
+GH-202406,Drain Blockage,Standard,Detected keywords from complaint: main stormwater drain 100% blocked with construction debris.,
+GH-202407,Drain Blockage,Standard,Detected keywords from complaint: drain blocked and mosquito breeding. dengue concern.,
+GH-202410,Pothole,Standard,Detected keywords from complaint: potholes causing vehicles to slow to 20kmph on fast road.,
+GH-202411,Pothole,Urgent,Detected keywords from complaint: pothole swallowed entire motorcycle wheel. rider hospitalise,
+GH-202412,Pothole,Urgent,Detected keywords from complaint: school bus struggling to navigate 6 potholes in 200m stretch,
+GH-202417,Waste,Standard,Detected keywords from complaint: heritage zone garbage overflow. tourist photographs showing ,
+GH-202420,Other,Standard,Detected keywords from complaint: construction drilling from 5am daily near residential towers,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Detected keywords from complaint: road collapsed partially. crater 1m deep near residential ga,
+GH-202424,Flooding,Standard,Detected keywords from complaint: underpass floods in light rain. cars regularly abandoned.,
+GH-202428,Waste,Standard,Detected keywords from complaint: post-market waste not cleared. area unusable by sunday morni,
+GH-202432,Other,Standard,Detected keywords from complaint: 24hr supermarket delivery trucks idling with engines on.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Detected keywords from complaint: main drain blocked — entire locality at flooding risk this w,
+GH-202438,Road Damage,Standard,Detected keywords from complaint: colony surrounded by fields that channel rainwater through m,
