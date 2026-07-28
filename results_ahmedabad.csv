@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Contains keywords 'melting' indicating heat hazard.,
+AM-202402,Heat Hazard,Standard,Contains keywords 'temperature' indicating heat hazard.,
+AM-202405,Other,Low,Description 'Dead trees with split branches. Fall risk to walkers. 3 trees affected....' is ambiguous; no category strongly matches.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Contains keywords 'heatwave', 'heat' indicating heat hazard.",
+AM-202407,Road Damage,Urgent,Contains keywords 'upturned' indicating road damage.,
+AM-202410,Pothole,Standard,Contains keywords 'pothole' indicating pothole.,
+AM-202414,Streetlight,Standard,"Contains keywords 'unlit', 'wiring theft' indicating streetlight.",
+AM-202417,Waste,Standard,"Contains keywords 'waste', 'not cleared' indicating waste.",
+AM-202421,Noise,Standard,Contains keywords 'music' indicating noise.,
+AM-202424,Road Damage,Standard,Contains keywords 'road surface' indicating road damage.,
+AM-202429,Heat Hazard,Standard,Contains keywords 'temperature' indicating heat hazard.,
+AM-202431,Heritage Damage,Standard,"Contains keywords 'heritage', 'ancient' indicating heritage damage.",
+AM-202435,Heat Hazard,Standard,Contains keywords 'heat' indicating heat hazard.,
+AM-202444,Waste,Standard,"Contains keywords 'waste', 'overflow', 'bin', 'health risk' indicating waste.",
+AM-202445,Other,Low,Description 'BRT shelter roof glass broken. Users exposed to full sun....' is ambiguous; no category strongly matches.,NEEDS_REVIEW
