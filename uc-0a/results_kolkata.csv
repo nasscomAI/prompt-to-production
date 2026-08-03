@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description mentions ""lamp post"", which maps to Streetlight; flagged because Heritage Damage fits the description equally well.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Description mentions ""Historic"", which maps to Heritage Damage.",
+KM-202405,Noise,Standard,"Description mentions ""band playing"", which maps to Noise.",
+KM-202409,Pothole,Standard,"Description mentions ""pothole"", which maps to Pothole.",
+KM-202410,Pothole,Standard,"Description mentions ""Pothole"", which maps to Pothole.",
+KM-202411,Pothole,Standard,"Description mentions ""pothole"", which maps to Pothole.",
+KM-202415,Other,Standard,"No allowed category matches the description, so it needs human review.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Description mentions ""waste"", which maps to Waste.",
+KM-202421,Road Damage,Urgent,"Description mentions ""sinking"", which maps to Road Damage; priority is Urgent because it contains ""Hospital"".",
+KM-202422,Road Damage,Standard,"Description mentions ""Road surface"", which maps to Road Damage.",
+KM-202426,Heritage Damage,Standard,"Description mentions ""Heritage"", which maps to Heritage Damage.",
+KM-202430,Road Damage,Standard,"Description mentions ""subsid"", which maps to Road Damage.",
+KM-202434,Road Damage,Standard,"Description mentions ""paving"", which maps to Road Damage; flagged because Heritage Damage fits the description equally well.",NEEDS_REVIEW
+KM-202436,Other,Standard,"No allowed category matches the description, so it needs human review.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description mentions ""heritage"", which maps to Heritage Damage.",
