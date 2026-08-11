@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C Number That Looks Right
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: load_dataset
+- **Input**: CSV file path (`ward_budget.csv`)
+- **Process**: Read CSV, validate column schemas, identify all null rows in `actual_spend`, report null counts and notes before proceeding.
+- **Output**: Clean dataset structure + list of flagged null records.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: compute_growth
+- **Input**: Filtered dataset (by single `ward` and single `category`), `growth_type` (`MoM` or `YoY`).
+- **Process**:
+  1. Verify target ward and category are single, valid entities (refuse if All/Any or missing).
+  2. Sort data chronologically by `period`.
+  3. Calculate growth period over period using formula: `((Current - Previous) / Previous) * 100`.
+  4. For periods with current or previous value as NULL, flag as `NULL_DATA (Reason: <notes>)` without computing invalid numbers.
+- **Output**: Rows containing `period`, `ward`, `category`, `actual_spend`, `growth_type`, `growth_pct`, `formula`, `flag`.
