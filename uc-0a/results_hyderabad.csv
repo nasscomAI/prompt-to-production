@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,category Flooding because the description mentions 'flooded'; priority Urgent because it contains severity word(s) 'ambulance'.,
+GH-202402,Flooding,Standard,category Flooding because the description mentions 'flooded'; priority Standard because no severity keyword is present; flag NEEDS_REVIEW because a second category signal ties the primary signal.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"category Drain Blockage because the description mentions 'stormwater drain', '100% blocked'; priority Standard because no severity keyword is present.",
+GH-202407,Drain Blockage,Standard,category Drain Blockage because the description mentions 'drain blocked'; priority Standard because no severity keyword is present.,
+GH-202410,Pothole,Standard,category Pothole because the description mentions 'pothole'; priority Standard because no severity keyword is present.,
+GH-202411,Pothole,Urgent,category Pothole because the description mentions 'pothole'; priority Urgent because it contains severity word(s) 'hospital'.,
+GH-202412,Pothole,Urgent,category Pothole because the description mentions 'pothole'; priority Urgent because it contains severity word(s) 'school'.,
+GH-202417,Waste,Standard,"category Waste because the description mentions 'garbage', 'waste', 'overflow'; priority Standard because no severity keyword is present.",
+GH-202420,Noise,Standard,category Noise because the description mentions 'drilling'; priority Standard because no severity keyword is present.,
+GH-202422,Road Damage,Urgent,"category Road Damage because the description mentions 'road collapsed', 'crater'; priority Urgent because it contains severity word(s) 'collapse'.",
+GH-202424,Flooding,Standard,category Flooding because the description mentions 'floods'; priority Standard because no severity keyword is present.,
+GH-202428,Waste,Standard,"category Waste because the description mentions 'waste', 'not cleared'; priority Standard because no severity keyword is present.",
+GH-202432,Noise,Standard,"category Noise because the description mentions 'idling', 'engines', 'delivery trucks'; priority Standard because no severity keyword is present.",
+GH-202448,Drain Blockage,Standard,"category Drain Blockage because the description mentions 'drain blocked', 'main drain blocked'; priority Standard because no severity keyword is present.",
+GH-202438,Flooding,Standard,category Flooding because the description mentions 'rainwater'; priority Standard because no severity keyword is present.,
