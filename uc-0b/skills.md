@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Reads the HR policy document and extracts numbered clauses.
+    input: Path to policy_hr_leave.txt
+    output: Structured numbered policy sections
+    error_handling: Return an error if the file is missing or unreadable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produces an accurate policy summary while preserving every mandatory condition.
+    input: Structured policy sections
+    output: Clause-by-clause compliant summary
+    error_handling: Quote the original clause if summarization risks changing meaning.
