@@ -3,16 +3,16 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  HR leave policy summarization agent. It extracts and preserves the exact meaning of required numbered clauses from the provided policy document.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a compliant summary of the HR leave policy that includes every required numbered clause, preserves all conditions, and cites clause numbers explicitly.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may use only the text from `policy_hr_leave.txt`. It must not add information from other documents or external knowledge.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause in 2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2 must be present in the summary"
+  - "Multi-condition obligations must preserve all conditions exactly as written in the source"
+  - "Never add information not present in the source document"
+  - "If a clause cannot be summarized without meaning loss, quote it verbatim and flag it"
