@@ -1,16 +1,17 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A Complaint Classifier Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Defined Skills
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+### 1. `classify_complaint`
+- **Description**: Evaluates a single citizen complaint row and determines category, priority, reason, and flag according to strict taxonomy rules.
+- **Input**: Complaint dictionary containing `description`, `location`, `days_open`, etc.
+- **Rules**:
+  - `category`: Must be one of `Pothole`, `Flooding`, `Streetlight`, `Waste`, `Noise`, `Road Damage`, `Heritage Damage`, `Heat Hazard`, `Drain Blockage`, `Other`.
+  - `priority`: Urgent if severity keywords (`injury`, `child`, `school`, `hospital`, `ambulance`, `fire`, `hazard`, `fell`, `collapse`) are present.
+  - `reason`: One sentence referencing exact keywords from description.
+  - `flag`: Set to `NEEDS_REVIEW` if ambiguous.
+
+### 2. `batch_classify`
+- **Description**: Reads input CSV, invokes `classify_complaint` for every record, and writes the output CSV.
+- **Input**: Input CSV file path, Output CSV file path.
+- **Output**: Output CSV populated with classification results.
