@@ -51,8 +51,8 @@ def classify_complaint(row: dict) -> dict:
     is_flooding = "flood" in desc_lower or "water" in desc_lower
     is_streetlight = "light" in desc_lower or "dark" in desc_lower or "sparking" in desc_lower
     is_waste = "garbage" in desc_lower or "waste" in desc_lower or "bins" in desc_lower or "dumped" in desc_lower or "dead animal" in desc_lower
-    is_noise = "music" in desc_lower or "noise" in desc_lower or "loud" in desc_lower
-    is_road_damage = "cracked" in desc_lower or "sinking" in desc_lower or "footpath" in desc_lower or "tiles broken" in desc_lower or "road surface" in desc_lower
+    is_noise = "music" in desc_lower or "noise" in desc_lower or "loud" in desc_lower or "drilling" in desc_lower or "idling" in desc_lower
+    is_road_damage = "cracked" in desc_lower or "sinking" in desc_lower or "footpath" in desc_lower or "tiles broken" in desc_lower or "road surface" in desc_lower or "collapsed" in desc_lower or "crater" in desc_lower
     is_heritage = "heritage" in desc_lower
     is_heat = "heat" in desc_lower
     is_drain = "drain" in desc_lower or "manhole" in desc_lower
