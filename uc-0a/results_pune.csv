@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Issue reports ""Large pothole 60cm wide causing"" requiring attention.",NONE
+PM-202402,Pothole,Urgent,"Issue reports ""Deep pothole near bus stop."" requiring attention.",NONE
+PM-202406,Flooding,Standard,"Issue reports ""Underpass flooded knee-deep after 2hrs"" requiring attention.",NONE
+PM-202408,Flooding,Standard,"Issue reports ""Bus stand flooded. Passengers standing"" requiring attention.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Issue reports ""Three consecutive streetlights out for"" requiring attention.",NONE
+PM-202411,Streetlight,Standard,"Issue reports ""Streetlight flickering and sparking. Electrical"" requiring attention.",NONE
+PM-202413,Waste,Standard,"Issue reports ""Overflowing garbage bins near vegetable"" requiring attention.",NEEDS_REVIEW
+PM-202418,Noise,Standard,"Issue reports ""Wedding venue playing music past"" requiring attention.",NONE
+PM-202419,Other,Standard,"Issue reports ""Road surface cracked and sinking"" requiring attention.",NONE
+PM-202420,Other,Urgent,"Issue reports ""Manhole cover missing. Risk of"" requiring attention.",NONE
+PM-202427,Flooding,Standard,"Issue reports ""Bridge approach floods in 30mins"" requiring attention.",NONE
+PM-202428,Other,Standard,"Issue reports ""Dead animal not removed for"" requiring attention.",NONE
+PM-202430,Streetlight,Standard,"Issue reports ""Heritage street, lights out. Safety"" requiring attention.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Issue reports ""Bulk waste from apartment renovation"" requiring attention.",NONE
+PM-202446,Other,Urgent,"Issue reports ""Footpath tiles broken and upturned."" requiring attention.",NONE
