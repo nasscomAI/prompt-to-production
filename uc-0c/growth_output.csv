@@ -1,5 +1,5 @@
 period,ward,category,budgeted_amount,actual_spend,mom_growth,formula_used,status_notes
-2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,N/A (Baseline),N/A - First available period,Baseline period
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,N/A (Baseline),N/A - First available period or post-null reset,Baseline period
 2024-02,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.2,-8.3%,((12.2 - 13.3) / 13.3) * 100,Computed successfully
 2024-03,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.3,+0.8%,((12.3 - 12.2) / 12.2) * 100,Computed successfully
 2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.4,+8.9%,((13.4 - 12.3) / 12.3) * 100,Computed successfully
