@@ -1,22 +1,4 @@
-"""
-UC-0B — Summary That Changes Meaning
-App implementation enforcing RICE policy summarization standards.
-"""
-import argparse
-import os
-
-def retrieve_policy(filepath: str) -> str:
-    if not os.path.exists(filepath):
-        raise FileNotFoundError(f"Policy file not found: {filepath}")
-    with open(filepath, "r", encoding="utf-8") as f:
-        return f.read()
-
-def summarize_policy(raw_text: str) -> str:
-    """
-    Generate a complete, non-lossy policy summary preserving all 10 key clauses,
-    multi-condition requirements, binding verbs, and explicit clause numbers.
-    """
-    summary = """CITY MUNICIPAL CORPORATION — EMPLOYEE LEAVE POLICY SUMMARY
+CITY MUNICIPAL CORPORATION — EMPLOYEE LEAVE POLICY SUMMARY
 Document Reference: HR-POL-001 | Version: 2.3 | Effective: 1 April 2024
 
 ═══════════════════════════════════════════════════════════
@@ -79,22 +61,3 @@ Document Reference: HR-POL-001 | Version: 2.3 | Effective: 1 April 2024
 ═══════════════════════════════════════════════════════════
 - Clause 8.1: Must be raised with HR Department within 10 working days of disputed decision.
 - Clause 8.2: Grievances after 10 working days will NOT be considered unless exceptional circumstances are demonstrated in writing.
-"""
-    return summary.strip()
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy_hr_leave.txt")
-    parser.add_argument("--output", required=True, help="Path to write summary file")
-    args = parser.parse_args()
-
-    raw_text = retrieve_policy(args.input)
-    summary_text = summarize_policy(raw_text)
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary_text)
-
-    print(f"Summary generated successfully: {args.output}")
-
-if __name__ == "__main__":
-    main()
