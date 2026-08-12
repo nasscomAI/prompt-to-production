@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified because complaint mentions ""large pothole 60cm wide causing tyre dam"".",
+PM-202402,Pothole,Urgent,"Classified because complaint mentions ""deep pothole near bus stop. school child"".",
+PM-202406,Flooding,Standard,"Classified because complaint mentions ""underpass flooded knee-deep after 2hrs r"".",
+PM-202408,Flooding,Standard,"Classified because complaint mentions ""bus stand flooded. passengers standing i"".",
+PM-202410,Streetlight,Standard,"Classified because complaint mentions ""three consecutive streetlights out for 1"".",
+PM-202411,Streetlight,Urgent,"Classified because complaint mentions ""streetlight flickering and sparking. ele"".",
+PM-202413,Waste,Standard,"Classified because complaint mentions ""overflowing garbage bins near vegetable "".",
+PM-202418,Other,Standard,"Classified because complaint mentions ""wedding venue playing music past midnigh"".",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"Classified because complaint mentions ""road surface cracked and sinking near ut"".",
+PM-202420,Other,Urgent,"Classified because complaint mentions ""manhole cover missing. risk of serious i"".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Classified because complaint mentions ""bridge approach floods in 30mins of rain"".",
+PM-202428,Other,Standard,"Classified because complaint mentions ""dead animal not removed for 36 hours. he"".",NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Classified because complaint mentions ""heritage street, lights out. safety conc"".",
+PM-202433,Waste,Standard,"Classified because complaint mentions ""bulk waste from apartment renovation dum"".",
+PM-202446,Other,Urgent,"Classified because complaint mentions ""footpath tiles broken and upturned. elde"".",NEEDS_REVIEW
