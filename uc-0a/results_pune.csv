@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,category Pothole from matched term(s) 'pothole'; priority Standard because no severity term is present but impact term(s) 'damage' are.,
+PM-202402,Pothole,Urgent,"category Pothole from matched term(s) 'pothole'; priority Urgent because the description contains severity term(s) 'children', 'School'.",
+PM-202406,Flooding,Standard,"category Flooding from matched term(s) 'flooded', 'knee-deep'; priority Standard because no severity term is present but impact term(s) 'flooded', 'stranded' are.",
+PM-202408,Flooding,Standard,"category Flooding chosen from matched term(s) 'flooded', 'standing in water', but Drain Blockage also matched on comparable evidence; priority Standard because no severity term is present but impact term(s) 'flooded', 'blocked' are; flagged NEEDS_REVIEW for human confirmation.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,category Streetlight from matched term(s) 'streetlights'; priority Standard because no severity term is present but impact term(s) 'dark' are.,
+PM-202411,Streetlight,Urgent,category Streetlight from matched term(s) 'Streetlight'; priority Urgent because the description contains severity term(s) 'hazard'.,
+PM-202413,Waste,Standard,"category Waste from matched term(s) 'garbage', 'bins'; priority Standard because no severity term is present but impact term(s) 'Overflowing', 'Smell' are.",
+PM-202418,Noise,Low,category Noise from matched term(s) 'music'; priority Low because Noise is a nuisance-class category and neither a severity nor an impact term appears in the description.,
+PM-202419,Road Damage,Standard,"category Road Damage from matched term(s) 'Road surface', 'cracked', 'sinking'; priority Standard because no severity term is present but impact term(s) 'sinking', 'cracked' are.",
+PM-202420,Road Damage,Urgent,"category Road Damage chosen from matched term(s) 'Manhole cover', but Drain Blockage also matched on comparable evidence; priority Urgent because the description contains severity term(s) 'injury'; flagged NEEDS_REVIEW for human confirmation.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"category Flooding from matched term(s) 'floods'; priority Standard because no severity term is present but impact term(s) 'floods', 'inaccessible' are.",
+PM-202428,Waste,Standard,"category Waste from matched term(s) 'Dead animal'; priority Standard because no severity term is present but impact term(s) 'Health', 'Dead', 'not removed' are.",
+PM-202430,Streetlight,Standard,"category Streetlight chosen from matched term(s) 'lights out', but Heritage Damage also matched on comparable evidence; priority Standard because no severity term is present but impact term(s) 'dark' are; flagged NEEDS_REVIEW for human confirmation.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"category Waste from matched term(s) 'waste', 'dumped'; priority Standard because no severity term is present but impact term(s) 'dumped' are.",
+PM-202446,Road Damage,Urgent,"category Road Damage from matched term(s) 'Footpath', 'tiles broken', 'upturned'; priority Urgent because the description contains severity term(s) 'fell'.",
