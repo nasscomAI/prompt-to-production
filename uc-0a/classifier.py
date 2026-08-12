@@ -25,6 +25,29 @@ SEVERITY_KEYWORDS = [
     "fire", "hazard", "fell", "collapse"
 ]
 
+# Single source of truth: these keywords decide the category AND supply the exact
+# words quoted in the reason sentence. Keeping one list prevents the two from drifting.
+CATEGORY_KEYWORDS = {
+    "Pothole": ["pothole"],
+    "Flooding": ["flood", "water", "rainwater"],
+    "Streetlight": ["light", "dark", "sparking", "unlit"],
+    "Waste": ["garbage", "waste", "bins", "dumped", "dead animal", "litter"],
+    "Noise": ["music", "noise", "loud", "drilling", "idling", "amplifier", "band playing"],
+    "Road Damage": ["cracked", "sinking", "subsid", "buckled", "footpath", "paving",
+                    "tiles broken", "road surface", "collapsed", "crater", "cobblestones"],
+    "Heritage Damage": ["heritage", "historic", "ancient"],
+    "Heat Hazard": ["heat", "melting", "temperature", "full sun"],
+    "Drain Blockage": ["drain", "manhole", "stormwater"],
+}
+
+# Low is reserved for nuisance-class complaints carrying no safety implication.
+# Any risk signal in the text keeps the row at Standard.
+MINOR_CATEGORIES = ["Noise", "Heritage Damage"]
+RISK_SIGNALS = [
+    "risk", "unsafe", "safety", "danger", "accident",
+    "health", "concern", "injured", "burns", "structural"
+]
+
 def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row according to RICE rules:
@@ -37,77 +60,53 @@ def classify_complaint(row: dict) -> dict:
     description = row.get("description", "").strip()
     desc_lower = description.lower()
     
-    # 1. Determine priority based on severity keywords
-    is_urgent = any(kw in desc_lower for kw in SEVERITY_KEYWORDS)
-    priority = "Urgent" if is_urgent else "Standard"
-    
-    # 2. Category matching logic
-    cat = "Other"
+    # 1. Category matching — record which keywords fired so the reason can quote them
+    matched = {}
+    for category, keywords in CATEGORY_KEYWORDS.items():
+        hits = [kw for kw in keywords if kw in desc_lower]
+        if hits:
+            matched[category] = hits
+
+    # A pothole is a more specific report than general road damage; standing water
+    # from a blocked drain is already covered by Flooding.
+    if "Pothole" in matched:
+        matched.pop("Road Damage", None)
+    if "Flooding" in matched:
+        matched.pop("Drain Blockage", None)
+
     flag = ""
-    reasons = []
-
-    # Checks
-    is_pothole = "pothole" in desc_lower
-    is_flooding = "flood" in desc_lower or "water" in desc_lower
-    is_streetlight = "light" in desc_lower or "dark" in desc_lower or "sparking" in desc_lower
-    is_waste = "garbage" in desc_lower or "waste" in desc_lower or "bins" in desc_lower or "dumped" in desc_lower or "dead animal" in desc_lower
-    is_noise = "music" in desc_lower or "noise" in desc_lower or "loud" in desc_lower or "drilling" in desc_lower or "idling" in desc_lower
-    is_road_damage = "cracked" in desc_lower or "sinking" in desc_lower or "footpath" in desc_lower or "tiles broken" in desc_lower or "road surface" in desc_lower or "collapsed" in desc_lower or "crater" in desc_lower
-    is_heritage = "heritage" in desc_lower
-    is_heat = "heat" in desc_lower
-    is_drain = "drain" in desc_lower or "manhole" in desc_lower
-    
-    matched_categories = []
-    if is_pothole: matched_categories.append("Pothole")
-    if is_flooding: matched_categories.append("Flooding")
-    if is_streetlight: matched_categories.append("Streetlight")
-    if is_waste: matched_categories.append("Waste")
-    if is_noise: matched_categories.append("Noise")
-    if is_road_damage and not is_pothole: matched_categories.append("Road Damage")
-    if is_heritage: matched_categories.append("Heritage Damage")
-    if is_heat: matched_categories.append("Heat Hazard")
-    if is_drain and not is_flooding: matched_categories.append("Drain Blockage")
-
-    if len(matched_categories) == 1:
-        cat = matched_categories[0]
-    elif len(matched_categories) > 1:
-        # Heritage overrides or lights out on heritage street
-        if "Heritage Damage" in matched_categories:
-            cat = "Heritage Damage"
-            flag = "NEEDS_REVIEW"
-        elif "Pothole" in matched_categories:
+    if len(matched) == 1:
+        cat = next(iter(matched))
+    elif len(matched) > 1:
+        # Heritage context outranks the physical symptom but is never unambiguous.
+        if "Heritage Damage" in matched:
+            cat, flag = "Heritage Damage", "NEEDS_REVIEW"
+        elif "Pothole" in matched:
             cat = "Pothole"
-        elif "Flooding" in matched_categories:
+        elif "Flooding" in matched:
             cat = "Flooding"
         else:
-            cat = matched_categories[0]
-            flag = "NEEDS_REVIEW"
+            cat, flag = next(iter(matched)), "NEEDS_REVIEW"
     else:
-        # Fallback keyword checks
-        if "manhole" in desc_lower or "drain" in desc_lower:
-            cat = "Drain Blockage"
-        elif "animal" in desc_lower or "garbage" in desc_lower:
-            cat = "Waste"
-        else:
-            cat = "Other"
-            flag = "NEEDS_REVIEW"
+        cat, flag = "Other", "NEEDS_REVIEW"
 
-    # Citation sentence
-    quoted_words = []
-    for word in re.findall(r'\b\w+\b', description):
-        if word.lower() in desc_lower and word.lower() in [
-            "pothole", "flooded", "flooding", "water", "streetlights", "lights", "garbage",
-            "waste", "music", "cracked", "sinking", "manhole", "drain", "heritage", "child",
-            "children", "school", "fell", "injury", "hazard", "dark", "bus", "underpass"
-        ]:
-            if word not in quoted_words:
-                quoted_words.append(word)
-
-    if quoted_words:
-        cited_str = ", ".join([f"'{w}'" for w in quoted_words[:3]])
-        reason = f"Classified as {cat} with {priority} priority due to key terms {cited_str} in description."
+    # 2. Priority — severity keywords force Urgent; Low only for nuisance-class
+    #    categories with no severity keyword and no risk signal in the text.
+    severity_hits = [kw for kw in SEVERITY_KEYWORDS if kw in desc_lower]
+    if severity_hits:
+        priority = "Urgent"
+    elif cat in MINOR_CATEGORIES and not any(s in desc_lower for s in RISK_SIGNALS):
+        priority = "Low"
     else:
-        reason = f"Classified as {cat} with {priority} priority based on issue description."
+        priority = "Standard"
+
+    # 3. Reason — quote the words that actually drove the decision. Falls back to the
+    #    opening words of the description so every row cites the source text.
+    quoted = (matched.get(cat, []) + severity_hits)[:3]
+    if not quoted:
+        quoted = re.findall(r"\b\w+\b", description)[:4]
+    cited_str = ", ".join(f"'{w}'" for w in quoted)
+    reason = f"Classified as {cat} with {priority} priority due to key terms {cited_str} in description."
 
     return {
         "complaint_id": complaint_id,
@@ -147,10 +146,57 @@ def batch_classify(input_path: str, output_path: str):
     print(f"Batch classification complete. {len(results)} rows processed.")
 
 
+def selftest(data_dir: str = "../data/city-test-files"):
+    """
+    Assert the four agents.md enforcement rules hold on every available city file.
+    Run: python classifier.py --selftest
+    """
+    import glob
+
+    files = sorted(glob.glob(os.path.join(data_dir, "test_*.csv")))
+    assert files, f"No city test files found under {data_dir}"
+
+    checked = 0
+    for path in files:
+        with open(path, encoding="utf-8") as fh:
+            for row in csv.DictReader(fh):
+                out = classify_complaint(row)
+                desc = row["description"].lower()
+                cid = out["complaint_id"]
+
+                assert out["category"] in ALLOWED_CATEGORIES, f"{cid}: category off-taxonomy"
+                assert out["priority"] in ("Urgent", "Standard", "Low"), f"{cid}: priority off-taxonomy"
+
+                if any(kw in desc for kw in SEVERITY_KEYWORDS):
+                    assert out["priority"] == "Urgent", f"{cid}: severity keyword not Urgent"
+
+                quoted = re.findall(r"'([^']+)'", out["reason"])
+                assert quoted, f"{cid}: reason cites no words from the description"
+                for word in quoted:
+                    assert word.lower() in desc, f"{cid}: reason cites '{word}' which is absent from description"
+
+                if out["category"] == "Other":
+                    assert out["flag"] == "NEEDS_REVIEW", f"{cid}: unclassified row not flagged"
+
+                checked += 1
+
+    print(f"Self-test passed: {checked} rows across {len(files)} city files.")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser.add_argument("--input",  help="Path to test_[city].csv")
+    parser.add_argument("--output", help="Path to write results CSV")
+    parser.add_argument("--selftest", action="store_true",
+                        help="Verify enforcement rules against every city test file")
+    parser.add_argument("--data-dir", default="../data/city-test-files",
+                        help="Directory of city test files (used by --selftest)")
     args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+
+    if args.selftest:
+        selftest(args.data_dir)
+    else:
+        if not args.input or not args.output:
+            parser.error("--input and --output are required unless --selftest is used")
+        batch_classify(args.input, args.output)
+        print(f"Done. Results written to {args.output}")
