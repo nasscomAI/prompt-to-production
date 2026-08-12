@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Policy Summarizer Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Defined Skills
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+### 1. `retrieve_policy`
+- **Description**: Reads policy text files, parses sections and numbered clauses into a structured representation.
+- **Input**: Path to policy document file.
+- **Output**: Dictionary of structured clause items (clause number, raw text, section title).
+
+### 2. `summarize_policy`
+- **Description**: Evaluates structured clause items against compliance rules, ensuring all binding conditions and dual-approvers are preserved.
+- **Input**: Structured clause dictionary.
+- **Output**: Verbatim/compliant text summary mapped clause by clause.
