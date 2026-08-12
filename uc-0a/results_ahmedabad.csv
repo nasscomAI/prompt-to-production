@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Citing 'melting' from description.,
+AM-202402,Heat Hazard,Standard,Citing 'temperature' from description.,
+AM-202405,Other,Urgent,Category could not be determined conclusively from description alone.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Citing 'heatwave' from description.,
+AM-202407,Road Damage,Urgent,"Citing 'paving' from description and severity trigger word(s): injured, child.",
+AM-202410,Pothole,Standard,Citing 'pothole' from description.,
+AM-202414,Streetlight,Standard,Citing 'unlit' from description.,
+AM-202417,Waste,Standard,Citing 'garbage in heritage zone' from description.,
+AM-202421,Noise,Standard,Citing 'music' from description.,
+AM-202424,Heat Hazard,Standard,Citing 'heat issue' from description.,
+AM-202429,Heat Hazard,Standard,Citing 'temperature' from description.,
+AM-202431,Heritage Damage,Standard,Citing 'heritage concern' from description.,
+AM-202435,Heat Hazard,Standard,Citing 'burns' from description.,
+AM-202444,Waste,Standard,Citing 'waste' from description.,
+AM-202445,Heat Hazard,Standard,Citing 'full sun' from description.,
