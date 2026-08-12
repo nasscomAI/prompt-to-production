@@ -10,10 +10,8 @@ env:
 jobs:
   commit-lint:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout PR code
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
@@ -22,6 +20,11 @@ jobs:
       - name: Check Commit Message Format
         run: |
           echo "=== Workflow version: v6-pull_request_target ==="
+
+          # Accepts both formats from our docs:
+          #   [UC-0A] Fix severity: missing keywords → added triggers
+          #   UC-0B Generated agents.md and skills.md from README, implemented summariser
+          # Brackets around UC-ID are optional; requires 10+ chars of description.
 
           for commit in $(git rev-list --no-merges HEAD ^origin/main); do
             msg=$(git log -1 --pretty=format:%s "$commit")
@@ -39,10 +42,8 @@ jobs:
 
   smoke-test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout PR code
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           allow-unsafe-pr-checkout: true
