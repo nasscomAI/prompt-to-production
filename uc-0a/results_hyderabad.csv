@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Contains 'flooded' → Flooding; severity keyword 'ambulance' found in description,
+GH-202402,Flooding,Standard,Contains 'flooded' → Flooding,
+GH-202406,Drain Blockage,Standard,Contains 'drain 100% blocked' → Drain Blockage,
+GH-202407,Drain Blockage,Standard,Contains 'drain blocked' → Drain Blockage,
+GH-202410,Pothole,Standard,Contains 'potholes' → Pothole,
+GH-202411,Pothole,Urgent,Contains 'pothole' → Pothole; severity keyword 'hospital' found in description,
+GH-202412,Pothole,Urgent,Contains 'potholes' → Pothole; severity keyword 'school' found in description,
+GH-202417,Waste,Standard,Contains 'garbage' → Waste,
+GH-202420,Noise,Standard,Contains 'drilling' → Noise,
+GH-202422,Road Damage,Urgent,Contains 'collapsed' → Road Damage; severity keyword 'collapse' found in description,
+GH-202424,Flooding,Standard,Contains 'floods' → Flooding,
+GH-202428,Waste,Standard,Contains 'waste' → Waste,
+GH-202432,Noise,Low,Contains 'idling' → Noise,
+GH-202448,Drain Blockage,Standard,Contains 'drain blocked' → Drain Blockage,
+GH-202438,Other,Standard,No category keyword matched description 'Colony surrounded by fields that channel rainwater through m',NEEDS_REVIEW

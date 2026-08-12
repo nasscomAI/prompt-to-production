@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Contains 'heritage lamp' → Heritage Damage,
+KM-202402,Heritage Damage,Standard,Contains 'cobblestones' → Heritage Damage,
+KM-202405,Noise,Standard,Contains 'band playing' → Noise,
+KM-202409,Pothole,Standard,Contains 'potholes' → Pothole,
+KM-202410,Pothole,Low,Contains 'pothole' → Pothole,
+KM-202411,Pothole,Standard,Contains 'pothole' → Pothole,
+KM-202415,Other,Standard,No category keyword matched description 'New residential complex draining directly onto public road.',NEEDS_REVIEW
+KM-202418,Waste,Standard,Contains 'waste' → Waste,
+KM-202421,Road Damage,Urgent,Contains 'sinking' → Road Damage; severity keyword 'hospital' found in description,
+KM-202422,Road Damage,Low,Contains 'buckled' → Road Damage,
+KM-202426,Heritage Damage,Low,Contains 'heritage residential' → Heritage Damage,
+KM-202430,Road Damage,Standard,Contains 'subsided' → Road Damage,
+KM-202434,Heritage Damage,Standard,Contains 'heritage stone' → Heritage Damage,
+KM-202436,Streetlight,Standard,Contains 'darkness' → Streetlight,
+KM-202438,Noise,Standard,Contains 'amplifiers' → Noise,
