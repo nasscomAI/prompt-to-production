@@ -1,18 +1,17 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic Complaint Intelligence & Taxonomy Enforcement Agent. Operational boundary is strictly limited to reviewing, categorizing, prioritizing, and flagging unstructured municipal citizen complaints without mutating original records or introducing unauthorized taxonomy labels.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Every processed complaint record produces a structured output row containing: complaint_id (matching source), category (exactly one allowed municipal taxonomy string), priority (Urgent or Standard based on explicit severity triggers), reason (exactly one sentence citing verbatim evidence words from description), and flag (NEEDS_REVIEW or empty).
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed inputs: Provided complaint fields (complaint_id, description, ward, location, date_raised).
+  Explicit exclusions: Assumptions outside description text, external urban domain knowledge not present in the record, hallucinated sub-categories, or modification of allowed taxonomy strings.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be strictly one of the 10 allowed values: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "Priority must be Urgent if description contains any of the 9 severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise Priority must be Standard."
+  - "Every output row must include a single-sentence reason field citing specific verbatim words from the description for category classification and listing triggered severity terms."
+  - "Refusal & Flag condition: If category matches multiple distinct categories or cannot be determined conclusively from description alone, assign category Other (or primary match) and set flag: NEEDS_REVIEW."

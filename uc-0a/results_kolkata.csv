@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight with Standard priority citing description text 'lamp post'.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority citing description text 'historic'.,NEEDS_REVIEW
+KM-202405,Noise,Standard,Classified as Noise with Standard priority citing description text 'wedding band'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole with Standard priority citing description text 'potholes'.,
+KM-202410,Pothole,Standard,Classified as Pothole with Standard priority citing description text 'pothole'.,
+KM-202411,Pothole,Standard,Classified as Pothole with Standard priority citing description text 'pothole'.,NEEDS_REVIEW
+KM-202415,Other,Standard,Category ambiguous or unrecognized from description text; flagged for manual review.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste with Standard priority citing description text 'waste'.,
+KM-202421,Road Damage,Urgent,"Classified as Road Damage with Urgent priority citing description text 'sinking' and severity trigger 'hospital', 'fell'.",
+KM-202422,Road Damage,Standard,Classified as Road Damage with Standard priority citing description text 'road surface'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority citing description text 'heritage'.,
+KM-202430,Waste,Standard,Classified as Waste with Standard priority citing description text 'smell'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority citing description text 'heritage'.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight with Standard priority citing description text 'darkness'.,
+KM-202438,Noise,Standard,Classified as Noise with Standard priority citing description text 'amplifiers'.,NEEDS_REVIEW

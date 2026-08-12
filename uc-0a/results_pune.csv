@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority citing description text 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole with Urgent priority citing description text 'pothole' and severity trigger 'child', 'school'.",
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority citing description text 'flooded'.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority citing description text 'drain blocked'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority citing description text 'streetlights'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight with Urgent priority citing description text 'streetlight' and severity trigger 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste with Standard priority citing description text 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise with Standard priority citing description text 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage with Standard priority citing description text 'road surface'.,
+PM-202420,Pothole,Urgent,Classified as Pothole with Urgent priority citing description text 'manhole' and severity trigger 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority citing description text 'floods'.,
+PM-202428,Waste,Standard,Classified as Waste with Standard priority citing description text 'dead animal'.,
+PM-202430,Streetlight,Standard,Classified as Streetlight with Standard priority citing description text 'lights out'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste with Standard priority citing description text 'waste'.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage with Urgent priority citing description text 'footpath' and severity trigger 'fell'.,
