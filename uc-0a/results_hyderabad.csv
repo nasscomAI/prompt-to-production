@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified Flooding on 'flooded'; priority Urgent because severity term 'Ambulance' is present.,
+GH-202402,Drain Blockage,Standard,"Classified Drain Blockage on 'Drain', 'blocked'; priority Standard — no severity term in description. Competing category Flooding also matched, so the row is flagged for review.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified Drain Blockage on 'drain', 'stormwater', 'blocked'; priority Standard — no severity term in description.",
+GH-202407,Drain Blockage,Standard,"Classified Drain Blockage on 'Drain', 'blocked', 'mosquito breeding'; priority Standard — no severity term in description.",
+GH-202410,Pothole,Standard,Classified Pothole on 'Potholes'; priority Standard — no severity term in description.,
+GH-202411,Pothole,Urgent,Classified Pothole on 'Pothole'; priority Urgent because severity term 'hospitalised' is present.,
+GH-202412,Pothole,Urgent,Classified Pothole on 'potholes'; priority Urgent because severity term 'School' is present.,
+GH-202417,Waste,Standard,"Classified Waste on 'garbage', 'waste', 'overflow'; priority Standard — no severity term in description.",
+GH-202420,Noise,Low,"Classified Noise on 'drilling', '5am'; priority Low — amenity complaint with no severity or risk wording.",
+GH-202422,Road Damage,Urgent,"Classified Road Damage on 'Road collapsed', 'Crater', 'collapsed'; priority Urgent because severity term 'collapsed' is present.",
+GH-202424,Flooding,Standard,Classified Flooding on 'floods'; priority Standard — no severity term in description.,
+GH-202428,Waste,Standard,"Classified Waste on 'waste', 'not cleared'; priority Standard — no severity term in description.",
+GH-202432,Noise,Low,"Classified Noise on 'idling', 'engines on'; priority Low — amenity complaint with no severity or risk wording.",
+GH-202448,Drain Blockage,Standard,"Classified Drain Blockage on 'drain', 'blocked'; priority Standard — no severity term in description. Competing category Flooding also matched, so the row is flagged for review.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified Flooding on 'rainwater'; priority Standard — no severity term in description. Evidence is circumstantial only, so the row is flagged for review.",NEEDS_REVIEW
