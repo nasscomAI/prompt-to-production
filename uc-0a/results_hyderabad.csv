@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description cites 'flood', so category is Flooding, priority is Urgent because it cites 'ambulance'.",
+GH-202402,Flooding,Standard,"The description cites 'flood', 'drain ... blocked', so category is Flooding, priority is Standard because no severity keyword is cited.",
+GH-202406,Drain Blockage,Standard,"The description cites 'drain ... blocked', so category is Drain Blockage, priority is Standard because no severity keyword is cited.",
+GH-202407,Drain Blockage,Standard,"The description cites 'drain blocked', so category is Drain Blockage, priority is Standard because no severity keyword is cited.",
+GH-202410,Pothole,Standard,"The description cites 'pothole', so category is Pothole, priority is Standard because no severity keyword is cited.",
+GH-202411,Pothole,Urgent,"The description cites 'pothole', so category is Pothole, priority is Urgent because it cites 'hospital'.",
+GH-202412,Pothole,Urgent,"The description cites 'pothole', so category is Pothole, priority is Urgent because it cites 'school'.",
+GH-202417,Waste,Standard,"The description cites 'garbage', 'waste', 'heritage', so category is Waste, priority is Standard because no severity keyword is cited, and flag is NEEDS_REVIEW because it maps to multiple categories with comparable confidence.",NEEDS_REVIEW
+GH-202420,Noise,Low,"The description cites 'drilling', so category is Noise, priority is Low because no severity keyword is cited and the issue is a minor nuisance.",
+GH-202422,Road Damage,Urgent,"The description cites 'collapsed', 'crater', so category is Road Damage, priority is Urgent because it cites 'collapse'.",
+GH-202424,Flooding,Standard,"The description cites 'flood', 'band', so category is Flooding, priority is Standard because no severity keyword is cited.",
+GH-202428,Waste,Standard,"The description cites 'waste', so category is Waste, priority is Standard because no severity keyword is cited.",
+GH-202432,Noise,Low,"The description cites 'idling', so category is Noise, priority is Low because no severity keyword is cited and the issue is a minor nuisance.",
+GH-202448,Flooding,Standard,"The description cites 'flood', 'drain blocked', so category is Flooding, priority is Standard because no severity keyword is cited.",
+GH-202438,Flooding,Standard,"The description cites 'rainwater', so category is Flooding, priority is Standard because no severity keyword is cited.",

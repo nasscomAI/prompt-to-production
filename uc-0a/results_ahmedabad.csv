@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description cites 'melting', 'tarmac', so category is Heat Hazard, priority is Standard because no severity keyword is cited.",
+AM-202402,Heat Hazard,Standard,"The description cites 'temperature', so category is Heat Hazard, priority is Standard because no severity keyword is cited.",
+AM-202405,Other,Standard,"The description cites no known category keyword, so category is Other, priority is Standard because no severity keyword is cited, and flag is NEEDS_REVIEW because it maps to multiple categories with comparable confidence.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description cites 'heat', 'heatwave', so category is Heat Hazard, priority is Standard because no severity keyword is cited.",
+AM-202407,Road Damage,Urgent,"The description cites 'paving', 'upturned', so category is Road Damage, priority is Urgent because it cites 'child'.",
+AM-202410,Pothole,Standard,"The description cites 'pothole', so category is Pothole, priority is Standard because no severity keyword is cited.",
+AM-202414,Streetlight,Standard,"The description cites 'unlit', so category is Streetlight, priority is Standard because no severity keyword is cited.",
+AM-202417,Waste,Standard,"The description cites 'waste', 'heritage', so category is Waste, priority is Standard because no severity keyword is cited, and flag is NEEDS_REVIEW because it maps to multiple categories with comparable confidence.",NEEDS_REVIEW
+AM-202421,Noise,Low,"The description cites 'music', so category is Noise, priority is Low because no severity keyword is cited and the issue is a minor nuisance.",
+AM-202424,Road Damage,Standard,"The description cites 'road surface', so category is Road Damage, priority is Standard because no severity keyword is cited.",
+AM-202429,Heat Hazard,Standard,"The description cites 'temperature', so category is Heat Hazard, priority is Standard because no severity keyword is cited.",
+AM-202431,Heritage Damage,Standard,"The description cites 'heritage', so category is Heritage Damage, priority is Standard because no severity keyword is cited.",
+AM-202435,Heat Hazard,Standard,"The description cites 'heat', so category is Heat Hazard, priority is Standard because no severity keyword is cited.",
+AM-202444,Waste,Standard,"The description cites 'waste', 'bins', 'bin', so category is Waste, priority is Standard because no severity keyword is cited.",
+AM-202445,Other,Standard,"The description cites no known category keyword, so category is Other, priority is Standard because no severity keyword is cited, and flag is NEEDS_REVIEW because it maps to multiple categories with comparable confidence.",NEEDS_REVIEW

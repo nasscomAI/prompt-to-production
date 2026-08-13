@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description cites 'pothole', so category is Pothole, priority is Standard because no severity keyword is cited.",
+PM-202402,Pothole,Urgent,"The description cites 'pothole', so category is Pothole, priority is Urgent because it cites 'child', 'school'.",
+PM-202406,Flooding,Standard,"The description cites 'flood', so category is Flooding, priority is Standard because no severity keyword is cited.",
+PM-202408,Flooding,Standard,"The description cites 'flood', 'standing in water', 'drain blocked', so category is Flooding, priority is Standard because no severity keyword is cited.",
+PM-202410,Streetlight,Standard,"The description cites 'streetlight', 'lights out', 'dark', so category is Streetlight, priority is Standard because no severity keyword is cited.",
+PM-202411,Streetlight,Urgent,"The description cites 'streetlight', 'flickering', so category is Streetlight, priority is Urgent because it cites 'hazard'.",
+PM-202413,Waste,Low,"The description cites 'garbage', 'bins', 'bin', so category is Waste, priority is Low because no severity keyword is cited and the issue is a minor nuisance.",
+PM-202418,Noise,Low,"The description cites 'music', so category is Noise, priority is Low because no severity keyword is cited and the issue is a minor nuisance.",
+PM-202419,Road Damage,Standard,"The description cites 'cracked', 'sinking', 'road surface', so category is Road Damage, priority is Standard because no severity keyword is cited.",
+PM-202420,Pothole,Urgent,"The description cites 'manhole', so category is Pothole, priority is Urgent because it cites 'injury'.",
+PM-202427,Flooding,Standard,"The description cites 'flood', so category is Flooding, priority is Standard because no severity keyword is cited.",
+PM-202428,Waste,Standard,"The description cites 'dead animal', so category is Waste, priority is Standard because no severity keyword is cited.",
+PM-202430,Streetlight,Standard,"The description cites 'lights out', 'dark', 'heritage', so category is Streetlight, priority is Standard because no severity keyword is cited, and flag is NEEDS_REVIEW because it maps to multiple categories with comparable confidence.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description cites 'waste', 'dumped', so category is Waste, priority is Standard because no severity keyword is cited.",
+PM-202446,Road Damage,Urgent,"The description cites 'footpath', 'tiles', 'upturned', so category is Road Damage, priority is Urgent because it cites 'fell'.",
