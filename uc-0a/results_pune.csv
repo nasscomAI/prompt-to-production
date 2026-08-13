@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Pothole because the description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Pothole because the description mentions 'pothole'; urgent because it contains 'child'.,
+PM-202406,Flooding,Standard,Flooding because the description mentions 'flood'.,
+PM-202408,Other,Standard,Ambiguous: matches both 'Flooding' and 'Drain Blockage'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Streetlight because the description mentions 'streetlight', 'lights out', 'dark at night', 'dark'.",
+PM-202411,Streetlight,Urgent,"Streetlight because the description mentions 'streetlight', 'flickering', 'sparking'; urgent because it contains 'hazard'.",
+PM-202413,Waste,Standard,"Waste because the description mentions 'garbage', 'bins', 'bin', 'smell'.",
+PM-202418,Noise,Low,"Noise because the description mentions 'music', 'midnight'.",
+PM-202419,Road Damage,Standard,"Road Damage because the description mentions 'road surface', 'cracked', 'sinking'.",
+PM-202420,Road Damage,Urgent,Road Damage because the description mentions 'manhole'; urgent because it contains 'injury'.,
+PM-202427,Flooding,Standard,Flooding because the description mentions 'flood'.,
+PM-202428,Waste,Standard,Waste because the description mentions 'dead animal'.,
+PM-202430,Streetlight,Standard,"Streetlight because the description mentions 'lights out', 'after dark', 'dark'.",
+PM-202433,Waste,Standard,"Waste because the description mentions 'waste', 'dumped'.",
+PM-202446,Road Damage,Urgent,"Road Damage because the description mentions 'footpath', 'tiles', 'broken and'; urgent because it contains 'fell'.",

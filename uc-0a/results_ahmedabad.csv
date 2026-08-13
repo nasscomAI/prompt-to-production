@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Heat Hazard because the description mentions '°c', 'melting'.",
+AM-202402,Heat Hazard,Standard,Heat Hazard because the description mentions 'temperature'.,
+AM-202405,Other,Urgent,Ambiguous: no category matches the description; urgent because it contains 'fall'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Heat Hazard because the description mentions 'heat', 'heatwave'.",
+AM-202407,Road Damage,Urgent,Road Damage because the description mentions 'paving'; urgent because it contains 'child'.,
+AM-202410,Pothole,Standard,Pothole because the description mentions 'pothole'.,
+AM-202414,Streetlight,Standard,Streetlight because the description mentions 'unlit'.,
+AM-202417,Other,Standard,Ambiguous: matches both 'Waste' and 'Heritage Damage'.,NEEDS_REVIEW
+AM-202421,Noise,Low,Noise because the description mentions 'music'.,
+AM-202424,Heat Hazard,Standard,"Heat Hazard because the description mentions '°c', 'bubbling'.",
+AM-202429,Heat Hazard,Standard,"Heat Hazard because the description mentions 'temperature', '°c'.",
+AM-202431,Other,Standard,Ambiguous: matches both 'Road Damage' and 'Heritage Damage'.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Heat Hazard because the description mentions 'heat', 'burns'.",
+AM-202444,Waste,Standard,"Waste because the description mentions 'waste', 'bins', 'bin'.",
+AM-202445,Road Damage,Standard,Road Damage because the description mentions 'glass'.,
