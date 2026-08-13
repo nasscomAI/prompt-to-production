@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category ""Pothole"" based on description containing ""pothole"" (citing: ""pothole"" from the description); priority Standard because description has no severity keywords.",
+PM-202402,Pothole,Urgent,"Category ""Pothole"" based on description containing ""pothole"" (citing: ""pothole"" from the description); priority Urgent because description contains 'child'.",
+PM-202406,Flooding,Standard,"Category ""Flooding"" based on description containing ""flood"" (citing: ""flood"" from the description); priority Standard because description has no severity keywords.",
+PM-202408,Flooding,Standard,"Category ""Flooding"" based on description containing ""flood"" (citing: ""flood"" from the description); priority Standard because description has no severity keywords.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category ""Streetlight"" based on description containing ""streetlight"" (citing: ""streetlight"" from the description); priority Standard because description has no severity keywords.",
+PM-202411,Streetlight,Urgent,"Category ""Streetlight"" based on description containing ""streetlight"" (citing: ""streetlight"" from the description); priority Urgent because description contains 'hazard'.",
+PM-202413,Waste,Standard,"Category ""Waste"" based on description containing ""garbage"" (citing: ""garbage"" from the description); priority Standard because description has no severity keywords.",
+PM-202418,Noise,Standard,"Category ""Noise"" based on description containing ""music"" (citing: ""music"" from the description); priority Standard because description has no severity keywords.",
+PM-202419,Road Damage,Standard,"Category ""Road Damage"" based on description containing ""road surface"" (citing: ""road surface"" from the description); priority Standard because description has no severity keywords.",
+PM-202420,Road Damage,Urgent,"Category ""Road Damage"" based on description containing ""manhole cover"" (citing: ""manhole cover"" from the description); priority Urgent because description contains 'injury'.",
+PM-202427,Flooding,Standard,"Category ""Flooding"" based on description containing ""flood"" (citing: ""flood"" from the description); priority Standard because description has no severity keywords.",
+PM-202428,Waste,Standard,"Category ""Waste"" based on description containing ""dead animal"" (citing: ""dead animal"" from the description); priority Standard because description has no severity keywords.",
+PM-202430,Streetlight,Standard,"Category ""Streetlight"" based on description containing ""lights out"" (citing: ""lights out"" from the description); priority Standard because description has no severity keywords.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category ""Waste"" based on description containing ""waste"" (citing: ""waste"" from the description); priority Standard because description has no severity keywords.",
+PM-202446,Road Damage,Urgent,"Category ""Road Damage"" based on description containing ""footpath"" (citing: ""footpath"" from the description); priority Urgent because description contains 'fell'.",
