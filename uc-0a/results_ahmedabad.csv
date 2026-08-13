@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Heat Hazard because description cites 'Tarmac surface melting at 44°C. Footwear sticki'.,
+AM-202402,Heat Hazard,Standard,Heat Hazard because description cites 'hing dangerous temperatures. Commuters refusing to'.,
+AM-202405,Other,Standard,Category not determinable from description alone; flagged NEEDS_REVIEW.,NEEDS_REVIEW
+AM-202406,Other,Standard,Category not determinable from description alone; flagged NEEDS_REVIEW.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,Road Damage because description cites 'h and upturned paving. Child injured last week'; severity keyword 'child' triggers Urgent.,
+AM-202410,Pothole,Standard,Pothole because description cites 'Pothole on main highway causing'.,
+AM-202414,Streetlight,Standard,Streetlight because description cites 'dential colony unlit after 9pm. Wiring theft'.,
+AM-202417,Waste,Standard,Waste because description cites 'Night market waste not cleared before morni'.,
+AM-202421,Noise,Standard,Noise because description cites 'Club music audible at residential b'.,
+AM-202424,Heat Hazard,Standard,Heat Hazard because description cites 'h road surface bubbling at 45°C. Visitor complai'.,
+AM-202429,Heat Hazard,Standard,Heat Hazard because description cites 'r walk surface temperature unbearable. Installed te'.,
+AM-202431,Heritage Damage,Standard,Heritage Damage because description cites 'ent step well. Heritage concern.'.,
+AM-202435,Heat Hazard,Standard,Heat Hazard because description cites 'road dividers storing heat. Motorists reporting bur'.,
+AM-202444,Waste,Standard,Waste because description cites 'Restaurant waste bins overflowing on Sund'.,
+AM-202445,Other,Standard,Category not determinable from description alone; flagged NEEDS_REVIEW.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Flooding because description cites 'Underpass flooded after 1hr rain. Ambula'; severity keyword 'ambulance' triggers Urgent.,
+GH-202402,Flooding,Standard,Flooding because description cites 'Market area flooded. Traders suffering los'.,
+GH-202406,Drain Blockage,Standard,Drain Blockage because description cites 'ain stormwater drain 100% blocked with constr'.,
+GH-202407,Drain Blockage,Standard,Drain Blockage because description cites 'Drain blocked and mosquito bre'.,
+GH-202410,Pothole,Standard,Pothole because description cites 'Potholes causing vehicles to slo'.,
+GH-202411,Pothole,Urgent,Pothole because description cites 'Pothole swallowed entire motorcy'; severity keyword 'hospital' triggers Urgent.,
+GH-202412,Pothole,Urgent,Pothole because description cites 'to navigate 6 potholes in 200m stretch.'; severity keyword 'school' triggers Urgent.,
+GH-202417,Waste,Standard,Waste because description cites 'owing piles of waste.'.,
+GH-202420,Noise,Standard,Noise because description cites 'Construction drilling from 5am daily near resi'.,
+GH-202422,Road Damage,Urgent,Road Damage because description cites 'Road collapsed partially. Cra'; severity keyword 'collapse' triggers Urgent.,
+GH-202424,Flooding,Standard,Flooding because description cites 'Underpass floods in light rain. Cars reg'.,
+GH-202428,Waste,Standard,Waste because description cites 'Post-market waste not cleared. Area unusab'.,
+GH-202432,Other,Standard,Category not determinable from description alone; flagged NEEDS_REVIEW.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Flooding because description cites 're locality at flooding risk this week.'.,
+GH-202438,Flooding,Standard,Flooding because description cites 's that channel rainwater through main road.'.,
