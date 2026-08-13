@@ -34,7 +34,7 @@ def retrieve_documents(docs_dir: str = "../data/policy-documents") -> list[dict]
         fpath = dir_path / fname
         if not fpath.is_file():
             # Try workspace root fallback if relative path issue
-            fallback_path = Path("c:/Users/HP/12 august/prompt-to-production/data/policy-documents") / fname
+            fallback_path = Path(__file__).resolve().parent.parent / "data" / "policy-documents" / fname
             if fallback_path.is_file():
                 fpath = fallback_path
             else:
