@@ -22,6 +22,6 @@ context: >
 
 enforcement:
   - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations, no invented sub-categories."
-  - "Priority must be Urgent if the description contains any of these severity keywords (case-insensitive): injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise Standard (or Low for minor noise complaints only)."
+  - "Priority must be Urgent if the description contains any of these severity keywords (case-insensitive): injury, child, school, hospital (including hospitalised/hospitalized), ambulance, fire, hazard, fell (including fall/falling/fallen), collapse. Otherwise Standard (or Low for minor noise complaints only)."
   - "Every output row must include a reason field containing one sentence that cites specific words from the complaint description justifying the category and priority assignment."
   - "If the complaint description is empty, null, or too ambiguous to map to a single category, output category: Other, priority: Low, and flag: NEEDS_REVIEW. Never guess confidently on ambiguous input."

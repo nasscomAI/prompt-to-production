@@ -20,7 +20,7 @@ SEVERITY_KEYWORDS_PATTERNS = [
     (r"\binjur(?:y|ies|ed|ing)\b", "injury"),
     (r"\bchild(?:ren)?\b", "child"),
     (r"\bschools?\b", "school"),
-    (r"\bhospitals?\b", "hospital"),
+    (r"\bhospital(?:s|ised|ized)?\b", "hospital"),
     (r"\bambulances?\b", "ambulance"),
     (r"\bfires?\b", "fire"),
     (r"\bhazards?\b", "hazard"),
