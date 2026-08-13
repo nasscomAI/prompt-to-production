@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard citing 'melting' from: ""Tarmac surface melting at 44°C. Footwear sticking. Park user...""",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard citing 'temperature, temp' from: ""Metal bus shelter reaching dangerous temperatures. Commuters...""",
+AM-202405,Other,Standard,"Classified as Other due to lack of distinct category keywords in description: ""Dead trees with split branches. Fall risk to walkers. 3 tree...""",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard citing 'heat' from: ""Irrigation system broken. Grass dying in heatwave conditions...""",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage citing 'child' from: ""Broken bench and upturned paving. Child injured last week....""",
+AM-202410,Pothole,Standard,"Classified as Pothole citing 'pothole' from: ""Pothole on main highway causing morning rush lane closure....""",
+AM-202414,Other,Standard,"Classified as Other due to lack of distinct category keywords in description: ""Residential colony unlit after 9pm. Wiring theft reported....""",NEEDS_REVIEW
+AM-202417,Waste,Standard,"Classified as Waste citing 'waste, heritage' from: ""Night market waste not cleared before morning. Heritage area...""",
+AM-202421,Noise,Standard,"Classified as Noise citing 'music, audible' from: ""Club music audible at residential buildings at 2am....""",
+AM-202424,Road Damage,Standard,"Classified as Road Damage citing 'road' from: ""Zoo approach road surface bubbling at 45°C. Visitor complain...""",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard citing 'temperature, temp' from: ""River walk surface temperature unbearable. Installed tempera...""",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage citing 'road, heritage, ancient' from: ""Old city road subsidence near ancient step well. Heritage co...""",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard citing 'road, heat, burn' from: ""Black metal road dividers storing heat. Motorists reporting ...""",
+AM-202444,Waste,Standard,"Classified as Waste citing 'waste, sun' from: ""Restaurant waste bins overflowing on Sunday night. Health ri...""",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard citing 'sun' from: ""BRT shelter roof glass broken. Users exposed to full sun....""",
