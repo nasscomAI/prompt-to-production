@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Matched category 'Heat Hazard' via: melting, °c",
+AM-202402,Heat Hazard,Standard,Matched category 'Heat Hazard' via: temperature,
+AM-202405,Other,Standard,Matched category 'Other' via: no category keyword found,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Matched category 'Heat Hazard' via: heatwave, heat",
+AM-202407,Road Damage,Urgent,Description mentions 'child'; matched category 'Road Damage' via: paving,
+AM-202410,Pothole,Standard,Matched category 'Pothole' via: pothole,
+AM-202414,Streetlight,Standard,Matched category 'Streetlight' via: unlit,
+AM-202417,Waste,Standard,Matched category 'Waste' via: waste,
+AM-202421,Noise,Low,Routine Noise complaint with no urgency keywords; matched via: music,
+AM-202424,Road Damage,Standard,Matched category 'Road Damage' via: road surface,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Matched category 'Heat Hazard' via: temperature, °c",
+AM-202431,Road Damage,Standard,Matched category 'Road Damage' via: subsidence,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Matched category 'Heat Hazard' via: heat,
+AM-202444,Waste,Standard,"Matched category 'Waste' via: waste, bins, bin",
+AM-202445,Heat Hazard,Standard,Matched category 'Heat Hazard' via: sun,
