@@ -1,7 +1,3 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
   - name: classify_complaint
     description: Classifies a single complaint row into category, priority, reason, and flag fields with strict taxonomy enforcement and severity keyword detection.

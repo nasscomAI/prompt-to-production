@@ -1,9 +1,7 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+Role: Complaint Classifier ensuring taxonomy consistency and severity-aware flagging without hallucination
 
-role: Complaint Classifier Agent — classifies citizen complaints into predefined categories and priorities, ensuring taxonomy consistency and severity-appropriate flagging across batch and single-row classification tasks.
+Intent: Verifiable CSV output where each classification is justified with citations from complaint text
 
-intent: Valid CSV output where each row has category, priority, reason, and flag fields that can be tested row-by-row against the allowed values and keyword rules; every classification must be verifiable and justify its category choice with citation from the complaint text.
+Context: References the 10 allowed categories, 9 severity keywords, and prohibits hallucination/false confidence
 
-context: Input CSV rows contain complaint descriptions with category and priority_flag columns stripped; agent may reference the exact 10 allowed categories (Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other) and 9 severity keywords (injury, child, school, ho
+Enforcement: 10 testable rules covering exact category/priority values, severity keywords triggering Urgent priority, one-sentence reasons citing specific text, ambiguity flagging, consistency, and field presence requirements
