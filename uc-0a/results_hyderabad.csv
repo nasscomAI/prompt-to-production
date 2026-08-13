@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description mentions ""flooded"" (""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.""), so the category is Flooding; severity trigger(s) ambulance make the priority Urgent",
+GH-202402,Flooding,Standard,"The description mentions ""flooded"" (""Market area flooded. Traders suffering losses. Drain completely blocked.""), so the category is Flooding",
+GH-202406,Drain Blockage,Standard,"The description mentions ""drain"" (""Main stormwater drain 100% blocked with construction debris.""), so the category is Drain Blockage",
+GH-202407,Drain Blockage,Standard,"The description mentions ""Drain"" (""Drain blocked and mosquito breeding. Dengue concern.""), so the category is Drain Blockage",
+GH-202410,Pothole,Standard,"The description mentions ""Pothole"" (""Potholes causing vehicles to slow to 20kmph on fast road.""), so the category is Pothole",
+GH-202411,Pothole,Urgent,"The description mentions ""Pothole"" (""Pothole swallowed entire motorcycle wheel. Rider hospitalised.""), so the category is Pothole; severity trigger(s) hospital make the priority Urgent",
+GH-202412,Pothole,Urgent,"The description mentions ""pothole"" (""School bus struggling to navigate 6 potholes in 200m stretch.""), so the category is Pothole; severity trigger(s) school make the priority Urgent",
+GH-202417,Waste,Standard,"The description mentions ""garbage"" (""Heritage zone garbage overflow. Tourist photographs showing piles of waste.""), so the category is Waste",
+GH-202420,Noise,Standard,"The description mentions ""drilling"" (""Construction drilling from 5am daily near residential towers.""), so the category is Noise",
+GH-202422,Road Damage,Urgent,"The description mentions ""Crater"" (""Road collapsed partially. Crater 1m deep near residential gate.""), so the category is Road Damage; severity trigger(s) collapse, collapsed make the priority Urgent",
+GH-202424,Flooding,Standard,"The description mentions ""floods"" (""Underpass floods in light rain. Cars regularly abandoned.""), so the category is Flooding",
+GH-202428,Waste,Standard,"The description mentions ""waste"" (""Post-market waste not cleared. Area unusable by Sunday morning.""), so the category is Waste",
+GH-202432,Noise,Standard,"The description mentions ""idling"" (""24hr supermarket delivery trucks idling with engines on.""), so the category is Noise",
+GH-202448,Flooding,Standard,"The description mentions ""flooding"" (""Main drain blocked — entire locality at flooding risk this week.""), so the category is Flooding",
+GH-202438,Other,Standard,"No allowed category keyword found in the description (""Colony surrounded by fields that channel rainwater through main road."") — category cannot be determined, so it is marked NEEDS_REVIEW",NEEDS_REVIEW
