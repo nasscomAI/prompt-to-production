@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified as Heritage Damage based on keywords: heritage; priority Standard.,
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage based on keywords: historic al; priority Standard.,
+KM-202405,Noise,Low,Classified as Noise based on keywords: wedding band; priority Low.,
+KM-202409,Pothole,Standard,Classified as Pothole based on keywords: potholes; priority Standard.,
+KM-202410,Pothole,Standard,Classified as Pothole based on keywords: potholes; priority Standard.,
+KM-202411,Pothole,Standard,Classified as Pothole based on keywords: potholes; priority Standard.,
+KM-202415,Other,Standard,Classified as Other; priority Standard.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste based on keywords: waste; priority Standard.,
+KM-202421,Road Damage,Urgent,"Classified as Road Damage based on keywords: sink ing|ed|s, footpaths broken; marked Urgent due to severity keywords: hospital, fell.",
+KM-202422,Road Damage,Standard,Classified as Road Damage based on keywords: buckl e|ed|ing; priority Standard.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on keywords: heritage; priority Standard.,
+KM-202430,Road Damage,Standard,Classified as Road Damage based on keywords: subsid e|ed|ence|ing; priority Standard.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on keywords: heritage; priority Standard.,
+KM-202436,Streetlight,Standard,Classified as Streetlight based on keywords: darkness; priority Standard.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage based on keywords: heritage; priority Standard.,
