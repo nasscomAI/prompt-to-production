@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"The description matches no category keywords, so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202402,Other,Urgent,"The description matches no category keywords and contains the imminent-risk phrase 'dangerous', so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202405,Other,Urgent,"The description matches no category keywords and contains the imminent-risk phrase 'risk', so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions 'heatwave', so category is Heat Hazard and priority is Standard.",
+AM-202407,Other,Urgent,"The description matches no category keywords and contains the severity keyword 'injured', so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The description mentions 'pothole', so category is Pothole and priority is Standard.",
+AM-202414,Other,Standard,"The description matches no category keywords, so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"The description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+AM-202421,Noise,Standard,"The description mentions 'music', so category is Noise and priority is Standard.",
+AM-202424,Road Damage,Standard,"The description mentions 'road surface', so category is Road Damage and priority is Standard.",
+AM-202429,Other,Standard,"The description matches no category keywords, so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"The description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+AM-202435,Heat Hazard,Standard,"The description mentions 'heat', so category is Heat Hazard and priority is Standard.",
+AM-202444,Waste,Urgent,"The description mentions 'waste', 'bin' and contains the imminent-risk phrase 'risk', so category is Waste and priority is Urgent.",
+AM-202445,Other,Standard,"The description matches no category keywords, so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW

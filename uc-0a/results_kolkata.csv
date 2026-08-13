@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"The description mentions 'lamp post', 'lamp', so category is Streetlight and priority is Standard.",
+KM-202402,Heritage Damage,Standard,"The description mentions 'historic', so category is Heritage Damage and priority is Standard.",
+KM-202405,Other,Standard,"The description matches no category keywords, so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The description mentions 'pothole', so category is Pothole and priority is Standard.",
+KM-202410,Pothole,Standard,"The description mentions 'pothole', so category is Pothole and priority is Standard.",
+KM-202411,Pothole,Urgent,"The description mentions 'pothole' and contains the imminent-risk phrase 'risk', so category is Pothole and priority is Urgent.",
+KM-202415,Drain Blockage,Standard,"The description mentions 'drain', so category is Drain Blockage and priority is Standard.",
+KM-202418,Waste,Standard,"The description mentions 'waste', so category is Waste and priority is Standard.",
+KM-202421,Other,Urgent,"The description matches no category keywords and contains the severity keyword 'hospital', so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,"The description mentions 'road surface', so category is Road Damage and priority is Standard.",
+KM-202426,Heritage Damage,Standard,"The description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+KM-202430,Other,Urgent,"The description matches no category keywords and contains the imminent-risk phrase 'gas leak', so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+KM-202436,Other,Standard,"The description matches no category keywords, so category is Other and the row is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
