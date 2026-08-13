@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The description mentions both ""Heritage"" and ""lamp"", so the category cannot be decided from the description alone and is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"The description mentions both ""Historic"" and ""cobblestone"", so the category cannot be decided from the description alone and is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202405,Noise,Standard,"The description mentions ""band"", so this is classified as Noise.",
+KM-202409,Pothole,Standard,"The description mentions ""potholes"", so this is classified as Pothole.",
+KM-202410,Pothole,Standard,"The description mentions ""Pothole"", so this is classified as Pothole.",
+KM-202411,Pothole,Standard,"The description mentions ""pothole"", so this is classified as Pothole.",
+KM-202415,Drain Blockage,Standard,"The description mentions ""drain"", so this is classified as Drain Blockage.",
+KM-202418,Waste,Standard,"The description mentions ""waste"", so this is classified as Waste.",
+KM-202421,Road Damage,Urgent,"The description mentions ""Footpath"", so this is classified as Road Damage.",
+KM-202422,Road Damage,Standard,"The description mentions ""Road surface buckled"", so this is classified as Road Damage.",
+KM-202426,Heritage Damage,Standard,"The description mentions ""Heritage"", so this is classified as Heritage Damage.",
+KM-202430,Road Damage,Standard,"The description mentions ""subsided"", so this is classified as Road Damage.",
+KM-202434,Heritage Damage,Standard,"The description mentions ""heritage"", so this is classified as Heritage Damage.",
+KM-202436,Streetlight,Standard,"The description mentions ""substation"", so this is classified as Streetlight.",
+KM-202438,Noise,Standard,"The description mentions ""amplifier"", so this is classified as Noise.",
