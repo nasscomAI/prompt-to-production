@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Cited 'Large pothole 60cm wide causing tyre damage' from complaint description.,
+PM-202402,Pothole,Urgent,Cited 'Deep pothole near bus stop' from complaint description.,
+PM-202406,Flooding,Standard,Cited 'Underpass flooded knee-deep after 2hrs rain' from complaint description.,
+PM-202408,Other,Standard,Cited 'Bus stand flooded' from complaint description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Cited 'Three consecutive streetlights out for 10 days' from complaint description.,
+PM-202411,Streetlight,Urgent,Cited 'Streetlight flickering and sparking' from complaint description.,
+PM-202413,Waste,Standard,Cited 'Overflowing garbage bins near vegetable market' from complaint description.,
+PM-202418,Noise,Standard,Cited 'Wedding venue playing music past midnight on weeknights' from complaint description.,
+PM-202419,Road Damage,Standard,Cited 'Road surface cracked and sinking near utility work done 1 month ago' from complaint description.,
+PM-202420,Road Damage,Urgent,Cited 'Manhole cover missing' from complaint description.,
+PM-202427,Flooding,Standard,Cited 'Bridge approach floods in 30mins of rain' from complaint description.,
+PM-202428,Waste,Standard,Cited 'Dead animal not removed for 36 hours' from complaint description.,
+PM-202430,Streetlight,Standard,"Cited 'Heritage street, lights out' from complaint description.",
+PM-202433,Waste,Standard,Cited 'Bulk waste from apartment renovation dumped on public road' from complaint description.,
+PM-202446,Road Damage,Urgent,Cited 'Footpath tiles broken and upturned' from complaint description.,
