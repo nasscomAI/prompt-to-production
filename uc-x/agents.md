@@ -26,5 +26,12 @@ context: >
 enforcement:
   - "Never combine claims from two different documents into one answer. One answer = one source document."
   - "Never use hedging phrases: 'while not explicitly covered', 'typically', 'generally understood', 'it is common practice'."
-  - "If the question is not answered by any single document, output the refusal template EXACTLY, with no variation in wording."
+  - "If the question is not answered by any single document, output the refusal_template below EXACTLY — character for character, no variation in wording."
   - "Every factual claim must cite its source document name and section number (e.g. 'policy_it_acceptable_use.txt § 3.1')."
+
+# The verbatim refusal text the third enforcement rule refers to. This is the
+# single source of truth; uc-x/app.py's REFUSAL_TEMPLATE must match it exactly.
+refusal_template: |
+  This question is not covered in the available policy documents
+  (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+  Please contact the relevant department (HR, IT, or Finance) for guidance.
