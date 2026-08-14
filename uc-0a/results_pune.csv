@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on keyword(s): pothole.,
+PM-202402,Pothole,Urgent,"Marked Urgent due to keyword(s): child, school.",
+PM-202406,Flooding,Standard,"Classified as Flooding based on keyword(s): flood, flooded, waterlog.",
+PM-202408,Other,Standard,"Ambiguous: description matches multiple categories (Flooding, Drain Blockage); flagged for manual review.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight based on keyword(s): streetlight, street light, flickering, sparking.",
+PM-202411,Streetlight,Urgent,Marked Urgent due to keyword(s): hazard.,
+PM-202413,Waste,Standard,"Classified as Waste based on keyword(s): garbage, waste, dumped, dead animal, bin.",
+PM-202418,Noise,Standard,"Classified as Noise based on keyword(s): noise, music, loud.",
+PM-202419,Road Damage,Standard,"Classified as Road Damage based on keyword(s): road surface, cracked, sinking, footpath, manhole.",
+PM-202420,Road Damage,Urgent,Marked Urgent due to keyword(s): injury.,
+PM-202427,Flooding,Standard,"Classified as Flooding based on keyword(s): flood, flooded, waterlog.",
+PM-202428,Waste,Standard,"Classified as Waste based on keyword(s): garbage, waste, dumped, dead animal, bin.",
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage based on keyword(s): heritage.,
+PM-202433,Waste,Standard,"Classified as Waste based on keyword(s): garbage, waste, dumped, dead animal, bin.",
+PM-202446,Road Damage,Urgent,Marked Urgent due to keyword(s): fell.,
