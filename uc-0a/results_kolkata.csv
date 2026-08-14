@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Heritage Damage because description mentions ""heritage"", ""lamp"", ""post"".",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Heritage Damage because description mentions ""historic"", ""tram"", ""road"".",NEEDS_REVIEW
+KM-202405,Other,Standard,"Other because description mentions ""wedding"", ""band"", ""playing"".",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Pothole because description mentions ""airport"", ""access"", ""road"".",NEEDS_REVIEW
+KM-202410,Pothole,Standard,"Pothole because description mentions ""pothole"", ""causing"", ""tyre"".",NEEDS_REVIEW
+KM-202411,Pothole,Standard,"Pothole because description mentions ""deep"", ""pothole"", ""filling"".",NEEDS_REVIEW
+KM-202415,Other,Standard,"Other because description mentions ""residential"", ""complex"", ""draining"".",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Waste because description mentions ""tourist"", ""zone"", ""waste"".",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Road Damage because description mentions ""footpath"", ""broken"", ""sinking"".",NEEDS_REVIEW
+KM-202422,Other,Standard,"Other because description mentions ""road"", ""surface"", ""buckled"".",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Heritage Damage because description mentions ""heritage"", ""residential"", ""building"".",NEEDS_REVIEW
+KM-202430,Other,Standard,"Other because description mentions ""road"", ""subsided"", ""near"".",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Heritage Damage because description mentions ""street"", ""paving"", ""removed"".",NEEDS_REVIEW
+KM-202436,Other,Standard,"Other because description mentions ""entire"", ""colony"", ""substation"".",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Heritage Damage because description mentions ""street"", ""vendors"", ""using"".",NEEDS_REVIEW
