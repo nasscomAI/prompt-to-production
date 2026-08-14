@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+AM-202402,Heat Hazard,Low,Description indicates heat-related hazard,
+AM-202405,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,Description indicates heat-related hazard,
+AM-202407,Other,Urgent,Cannot confidently categorize from description,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions 'pothole',
+AM-202414,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+AM-202417,Waste,Low,Description indicates waste management issue,
+AM-202421,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Description indicates road surface damage,
+AM-202429,Heat Hazard,Low,Description indicates heat-related hazard,
+AM-202431,Heritage Damage,Low,Description mentions heritage area concerns,
+AM-202435,Heat Hazard,Low,Description indicates heat-related hazard,
+AM-202444,Waste,Low,Description indicates waste management issue,
+AM-202445,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
