@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Cites large pothole causing tyre damage.,
+PM-202402,Pothole,Urgent,Cites risk to school children.,
+PM-202406,Flooding,Standard,Cites underpass flooded knee-deep.,
+PM-202408,Drain Blockage,Standard,Cites blocked drain causing flooding.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Cites three consecutive streetlights out.,
+PM-202411,Streetlight,Urgent,Cites electrical hazard from flickering streetlight.,
+PM-202413,Waste,Standard,Cites overflowing garbage bins.,
+PM-202418,Noise,Standard,Cites wedding venue playing music past midnight.,
+PM-202419,Road Damage,Standard,Cites cracked and sinking road surface.,
+PM-202420,Road Damage,Urgent,Cites missing manhole cover posing injury risk.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Cites bridge approach flooding.,
+PM-202428,Waste,Standard,Cites dead animal not removed.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Cites lights out on heritage street.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Cites bulk waste dumped on public road.,
+PM-202446,Road Damage,Urgent,Cites broken footpath tiles where resident fell.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Cites heritage lamp post knocked over.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Cites historic tram road cobblestones broken.,NEEDS_REVIEW
+KM-202405,Noise,Standard,Cites wedding band playing near museum at 11pm.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Cites airport access road full of potholes.,
+KM-202410,Pothole,Standard,Cites pothole causing tyre blowouts.,
+KM-202411,Pothole,Standard,Cites deep pothole filling with rainwater.,NEEDS_REVIEW
+KM-202415,Flooding,Standard,Cites residential complex draining onto public road.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Cites tourist zone waste overflowing.,
+KM-202421,Road Damage,Urgent,Cites pedestrian fell requiring hospital visit.,
+KM-202422,Road Damage,Standard,Cites road surface buckled near bridge.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Cites heritage building exterior defaced.,
+KM-202430,Road Damage,Standard,Cites road subsided near gas pipeline.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Cites paving removed and heritage stone not replaced.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Cites substation tripped causing darkness.,NEEDS_REVIEW
+KM-202438,Noise,Standard,Cites vendors using amplifiers in heritage precinct.,NEEDS_REVIEW
