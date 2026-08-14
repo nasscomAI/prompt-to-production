@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,growth_result,formula,note
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.9,MoM,N/A,(current_actual - previous_actual) / previous_actual * 100,No prior comparable month
+2024-02,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,MoM,-4.6%,(current_actual - previous_actual) / previous_actual * 100,
+2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,NULL,MoM,NULL,(current_actual - previous_actual) / previous_actual * 100,Data not submitted by ward office
+2024-04,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,MoM,N/A,(current_actual - previous_actual) / previous_actual * 100,No prior comparable month
+2024-05,Ward 2 – Shivajinagar,Drainage & Flooding,10.2,MoM,+2.0%,(current_actual - previous_actual) / previous_actual * 100,
+2024-06,Ward 2 – Shivajinagar,Drainage & Flooding,12.3,MoM,+20.6%,(current_actual - previous_actual) / previous_actual * 100,
+2024-07,Ward 2 – Shivajinagar,Drainage & Flooding,12.6,MoM,+2.4%,(current_actual - previous_actual) / previous_actual * 100,
+2024-08,Ward 2 – Shivajinagar,Drainage & Flooding,12.8,MoM,+1.6%,(current_actual - previous_actual) / previous_actual * 100,
+2024-09,Ward 2 – Shivajinagar,Drainage & Flooding,12.9,MoM,+0.8%,(current_actual - previous_actual) / previous_actual * 100,
+2024-10,Ward 2 – Shivajinagar,Drainage & Flooding,11.5,MoM,-10.9%,(current_actual - previous_actual) / previous_actual * 100,
+2024-11,Ward 2 – Shivajinagar,Drainage & Flooding,10.4,MoM,-9.6%,(current_actual - previous_actual) / previous_actual * 100,
+2024-12,Ward 2 – Shivajinagar,Drainage & Flooding,8.4,MoM,-19.2%,(current_actual - previous_actual) / previous_actual * 100,
