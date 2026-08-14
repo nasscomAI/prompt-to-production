@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding (Urgent) citing description: 'Underpass flooded after 1hr rain. Ambulance diverted. Lives at...'.,
+GH-202402,Flooding,Standard,Classified as Flooding (Standard) citing description: 'Market area flooded. Traders suffering losses. Drain completel...'.,NEEDS_REVIEW
+GH-202406,Waste,Standard,Classified as Waste (Standard) citing description: 'Main stormwater drain 100% blocked with construction debris.'.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage (Standard) citing description: 'Drain blocked and mosquito breeding. Dengue concern.'.,
+GH-202410,Pothole,Standard,Classified as Pothole (Standard) citing description: 'Potholes causing vehicles to slow to 20kmph on fast road.'.,
+GH-202411,Pothole,Urgent,Classified as Pothole (Urgent) citing description: 'Pothole swallowed entire motorcycle wheel. Rider hospitalised.'.,
+GH-202412,Pothole,Urgent,Classified as Pothole (Urgent) citing description: 'School bus struggling to navigate 6 potholes in 200m stretch.'.,
+GH-202417,Waste,Standard,Classified as Waste (Standard) citing description: 'Heritage zone garbage overflow. Tourist photographs showing pi...'.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise (Standard) citing description: 'Construction drilling from 5am daily near residential towers.'.,
+GH-202422,Pothole,Urgent,Classified as Pothole (Urgent) citing description: 'Road collapsed partially. Crater 1m deep near residential gate.'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding (Standard) citing description: 'Underpass floods in light rain. Cars regularly abandoned.'.,
+GH-202428,Waste,Standard,Classified as Waste (Standard) citing description: 'Post-market waste not cleared. Area unusable by Sunday morning.'.,
+GH-202432,Noise,Standard,Classified as Noise (Standard) citing description: '24hr supermarket delivery trucks idling with engines on.'.,
+GH-202448,Flooding,Standard,Classified as Flooding (Standard) citing description: 'Main drain blocked — entire locality at flooding risk this week.'.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding (Standard) citing description: 'Colony surrounded by fields that channel rainwater through mai...'.,

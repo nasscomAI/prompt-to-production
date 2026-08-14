@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight (Standard) citing description: 'Heritage lamp post knocked over by delivery vehicle. Not resto...'.,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Classified as Road Damage (Standard) citing description: 'Historic tram road cobblestones broken up by cable laying work.'.,NEEDS_REVIEW
+KM-202405,Heritage Damage,Standard,Classified as Heritage Damage (Standard) citing description: 'Wedding band playing near Tagore Museum at 11pm. Festival seas...'.,
+KM-202409,Pothole,Standard,Classified as Pothole (Standard) citing description: 'Airport access road full of potholes. Diplomatic complaint rec...'.,
+KM-202410,Pothole,Standard,Classified as Pothole (Standard) citing description: 'Pothole causing tyre blowouts. Three incidents this week.'.,
+KM-202411,Pothole,Standard,Classified as Pothole (Standard) citing description: 'Deep pothole filling with rainwater. Depth invisible. Accident...'.,NEEDS_REVIEW
+KM-202415,Other,Standard,Classified as Other (Standard) citing description: 'New residential complex draining directly onto public road.'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste (Standard) citing description: 'Tourist zone waste overflowing. Foreign visitors photographing...'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage (Urgent) citing description: 'Footpath broken and sinking. Elderly pedestrian fell. Hospital...'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage (Standard) citing description: 'Road surface buckled near bridge. Structural concern raised.'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage (Standard) citing description: 'Heritage residential building exterior defaced by billboard in...'.,
+KM-202430,Other,Standard,Classified as Other (Standard) citing description: 'Road subsided near gas pipeline. Gas leak smell reported too.'.,NEEDS_REVIEW
+KM-202434,Road Damage,Standard,Classified as Road Damage (Standard) citing description: 'Street paving removed for utility work — heritage stone not re...'.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight (Standard) citing description: 'Entire colony substation tripped. Darkness for 3 nights.'.,
+KM-202438,Noise,Standard,Classified as Noise (Standard) citing description: 'Street vendors using amplifiers illegally in heritage precinct.'.,NEEDS_REVIEW
