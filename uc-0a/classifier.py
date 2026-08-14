@@ -32,14 +32,16 @@ SEVERITY_KEYWORDS = [
 # but we also track *how many distinct categories* matched to detect ambiguity.
 CATEGORY_SIGNALS = [
     ("Drain Blockage", ["drain block", "drain blocked", "blocked drain", "manhole", "sewer"]),
-    ("Flooding",       ["flood", "flooded", "knee-deep", "waterlogged", "water logging", "standing in water", "inundat"]),
+    # Pothole precedes Flooding: an explicit "pothole" is a more specific signal
+    # than a generic water word (e.g. "pothole filling with rainwater").
     ("Pothole",        ["pothole", "pot hole"]),
-    ("Streetlight",    ["streetlight", "street light", "lights out", "light out", "lamp", "dark at night", "darkness", "substation tripped"]),
+    ("Flooding",       ["flood", "flooded", "knee-deep", "waterlog", "water logging", "standing in water", "inundat", "rainwater"]),
+    ("Streetlight",    ["streetlight", "street light", "lights out", "light out", "lamp", "dark at night", "darkness", "substation tripped", "unlit"]),
     ("Heritage Damage",["heritage", "monument", "old city", "historic"]),
-    ("Heat Hazard",    ["heat", "heatstroke", "heat wave", "heatwave", "shade", "temperature"]),
-    ("Road Damage",    ["cracked", "sinking", "sunk", "footpath", "pavement", "road surface", "tiles broken", "upturned", "bridge"]),
+    ("Heat Hazard",    ["heat", "heatstroke", "heat wave", "heatwave", "shade", "temperature", "melting", "°c", "full sun", "exposed to sun"]),
+    ("Road Damage",    ["cracked", "sinking", "sunk", "subsid", "footpath", "pavement", "road surface", "tiles broken", "upturned", "bridge", "crater", "buckled", "road collapsed", "tarmac"]),
     ("Waste",          ["garbage", "waste", "dumped", "dump", "trash", "dead animal", "bins", "rubbish", "debris"]),
-    ("Noise",          ["music", "noise", "loud", "loudspeaker", "dj", "past midnight", "band playing", "wedding band", "amplifier", "amplifiers"]),
+    ("Noise",          ["music", "noise", "loud", "loudspeaker", "dj", "past midnight", "band playing", "wedding band", "amplifier", "amplifiers", "drilling", "idling", "engines on"]),
 ]
 
 
