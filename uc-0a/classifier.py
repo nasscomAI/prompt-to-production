@@ -53,6 +53,10 @@ SEVERITY_KEYWORDS = [
     "fire", "hazard", "fell", "collapse",
 ]
 
+# Clearly-minor triggers: Low is only allowed when none of the severity
+# keywords applies AND the description marks the issue as minor.
+LOW_TRIGGERS = ["minor", "cosmetic", "mild", "slight"]
+
 
 def _score_categories(description: str) -> dict:
     """Return a dict mapping each category to the number of keyword hits."""
@@ -92,7 +96,14 @@ def classify_complaint(row: dict) -> dict:
     tied = [cat for cat, score in scores.items() if score == top_score and score > 0]
 
     severity_hits = [kw for kw in SEVERITY_KEYWORDS if kw in description.lower()]
-    priority = "Urgent" if severity_hits else "Standard"
+    low_hits = [kw for kw in LOW_TRIGGERS if kw in description.lower()]
+    determined = top_score > 0 and len(tied) <= 1
+    if severity_hits:
+        priority = "Urgent"
+    elif determined and low_hits:
+        priority = "Low"
+    else:
+        priority = "Standard"
 
     flagged = []
     if top_score == 0:
@@ -101,7 +112,7 @@ def classify_complaint(row: dict) -> dict:
         reason = f'No category keyword found in "{snippet}".'
     elif len(tied) > 1:
         category, flag = "Other", "NEEDS_REVIEW"
-        snippet = _sentence_around(description, tied[0])
+        snippet = _sentence_around(description, _first_keyword_hit(description, tied[0]))
         reason = (
             f'"{snippet}" supports both {tied[0]} and {tied[1]}, '
             "so no single category can be determined."
@@ -115,16 +126,23 @@ def classify_complaint(row: dict) -> dict:
             flagged.append(f"also supports {runner_up}")
         else:
             flag = ""
+        reason = f'"{snippet}" indicates {category}.'
 
-    if severity_hits and top_score > 0 and flag == "":
+    if severity_hits and flag == "":
         reason = (
             f'"{snippet}" indicates {category} and contains severity keyword '
             f'"{severity_hits[0]}".'
         )
-    elif top_score > 0 and flag == "":
-        reason = f'"{snippet}" indicates {category}.'
+    elif severity_hits:
+        note = f' Priority Urgent: severity keyword "{severity_hits[0]}" present.'
+        if flagged:
+            reason = f'"{snippet}" indicates {category}; {flagged[0]}, needs review.' + note
+        else:
+            reason = reason + note
     elif flagged:
         reason = f'"{snippet}" indicates {category}; {flagged[0]}, needs review.'
+    elif priority == "Low":
+        reason = reason + f' No severity keywords; "{low_hits[0]}" marks it as minor.'
 
     return {
         "complaint_id": complaint_id,

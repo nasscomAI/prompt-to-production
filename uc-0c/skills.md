@@ -2,13 +2,13 @@
 
 skills:
   - name: load_dataset
-    description: Reads the budget CSV file, validates column schema, and logs detected null actual_spend rows.
+    description: Reads the budget CSV file, validates the column schema, and reports every deliberate null actual_spend row with its period, ward, category, and recorded note before any computation.
     input: File path (string) to ward_budget.csv.
-    output: A list of row dicts with validated types and a list of identified null rows with notes.
-    error_handling: Refuses if required columns are missing; explicitly reports all null actual_spend rows.
+    output: A list of row dicts with validated types plus a list of null rows (period, ward, category, notes).
+    error_handling: Refuses if required columns (period, ward, category, budgeted_amount, actual_spend, notes) are missing; explicitly lists all null actual_spend rows with their notes.
 
   - name: compute_growth
-    description: Calculates period-over-period growth (MoM or YoY) for a specific ward and category without unauthorized aggregation.
-    input: Filtered row list, growth_type (MoM/YoY), ward (string), category (string).
-    output: A list of dicts containing period, actual_spend, growth_pct, formula_used, flag, and notes.
-    error_handling: Flags missing values with reason; sets growth to N/A or NULL when prior or current period is missing; refuses cross-ward merging.
+    description: Calculates month-over-month (MoM) growth for one specific ward and category, showing the exact formula used in every output row and never aggregating across wards or categories.
+    input: Filtered row list, growth_type (MoM), ward (string), category (string).
+    output: A list of dicts containing period, ward, category, budgeted_amount, actual_spend, growth_type, growth_pct, formula, flag, and notes.
+    error_handling: Refuses all-ward or multi-category requests; refuses when growth_type is missing or unsupported (never guesses MoM vs YoY); flags each null actual_spend row with FLAGGED_NULL, sets growth_pct to NULL, and carries the recorded note; sets growth to N/A when the prior period is unavailable.

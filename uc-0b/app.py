@@ -2,90 +2,121 @@
 UC-0B — Policy Summarizer (Lossless Clause-Preserving Summarizer)
 
 Implements the enforcement rules from agents.md and skills from skills.md:
-- retrieve_policy: Loads .txt file and extracts sections and clauses.
-- summarize_policy: Produces a structured summary preserving all obligations,
-  multi-condition rules (e.g. 5.2 Department Head AND HR Director approval),
-  exact notice periods, and forfeiture dates without scope bleed or softening.
+- retrieve_policy: loads a .txt policy file and parses header + sections + clauses.
+- summarize_policy: renders a structured, lossless summary that preserves every
+  numbered clause and every multi-condition obligation verbatim — no clause
+  omission, no condition drop, no obligation softening, no scope bleed.
+
+Classification only: never edits the source, never adds external information,
+and only renders what the document actually says.
 """
 import argparse
 import re
 from pathlib import Path
 
+SECTION_RE = re.compile(r"^(\d+)\.\s+([A-Za-z&()\s\-]+)$")
+CLAUSE_RE = re.compile(r"^(\d+\.\d+)\s+(.*)$")
+SEPARATOR_RE = re.compile(r"^[=\u2550\u2500\u2501\-\s]+$")
+
+
+def _collapse(text: str) -> str:
+    """Collapse runs of whitespace into a single space."""
+    return re.sub(r"\s+", " ", text).strip()
+
 
 def retrieve_policy(input_path: str) -> dict:
-    """Load text policy file and return parsed sections and clauses."""
+    """Load text policy file and return header plus structured sections/clauses."""
     path = Path(input_path)
     if not path.exists():
         raise FileNotFoundError(f"Input policy file not found: {input_path}")
 
     text = path.read_text(encoding="utf-8")
-    sections = {}
-    current_section = "Header"
-    sections[current_section] = []
+
+    header = []
+    sections = []
+    current_section = None
+    current_clause = None
+
+    def flush_clause():
+        nonlocal current_clause
+        if current_clause is None:
+            return
+        current_clause["text"] = _collapse(current_clause["text"])
+        if current_clause["text"]:
+            current_section["clauses"].append(current_clause)
+        current_clause = None
+
+    def flush_section():
+        nonlocal current_section
+        if current_section is None:
+            return
+        flush_clause()
+        if current_section["clauses"]:
+            sections.append(current_section)
+        current_section = None
 
     for line in text.splitlines():
-        sec_match = re.match(r"^(\d+)\.\s+([A-Z\s\(\)]+)$", line.strip())
-        if sec_match:
-            current_section = f"{sec_match.group(1)}. {sec_match.group(2).strip()}"
-            sections[current_section] = []
-        elif line.strip():
-            sections[current_section].append(line.strip())
+        stripped = line.strip()
+        if not stripped or SEPARATOR_RE.match(stripped):
+            continue
 
-    return {"raw_text": text, "sections": sections}
+        if SECTION_RE.match(stripped) and not CLAUSE_RE.match(stripped):
+            flush_section()
+            current_section = {
+                "title": f"{SECTION_RE.match(stripped).group(1)}. {SECTION_RE.match(stripped).group(2).strip()}",
+                "clauses": [],
+            }
+            continue
+
+        clause_match = CLAUSE_RE.match(stripped)
+        if clause_match:
+            flush_clause()
+            current_clause = {"num": clause_match.group(1), "text": clause_match.group(2)}
+        elif current_clause is not None:
+            current_clause["text"] += " " + stripped
+        elif current_section is None and not sections:
+            header.append(stripped)
+
+    flush_section()
+
+    return {
+        "raw_text": text,
+        "header": header,
+        "sections": sections,
+        "clause_count": sum(len(s["clauses"]) for s in sections),
+    }
 
 
 def summarize_policy(policy_data: dict) -> str:
-    """Generate structured summary preserving all 10 key clauses and dual conditions."""
-    summary_lines = [
-        "===========================================================",
-        "SUMMARY: EMPLOYEE LEAVE POLICY (HR-POL-001 v2.3)",
-        "City Municipal Corporation (CMC) — Effective 1 April 2024",
-        "===========================================================",
-        "",
-        "1. PURPOSE AND SCOPE",
-        "- Applies to: Permanent and contractual employees of CMC (Clause 1.1).",
-        "- Exclusions: Daily wage workers and consultants are NOT covered (Clause 1.2).",
-        "",
-        "2. ANNUAL LEAVE",
-        "- Entitlement: 18 paid days per calendar year, accrued at 1.5 days/month (Clauses 2.1, 2.2).",
-        "- [CRITICAL] Clause 2.3: Leave application MUST be submitted at least 14 calendar days in advance via Form HR-L1.",
-        "- [CRITICAL] Clause 2.4: Written approval MUST be obtained before leave commences. Verbal approval is NOT valid.",
-        "- [CRITICAL] Clause 2.5: Unapproved absence WILL be recorded as Loss of Pay (LOP) regardless of subsequent approval.",
-        "- [CRITICAL] Clause 2.6: Maximum 5 days carry-forward allowed to following year. All days above 5 are forfeited on 31 December.",
-        "- [CRITICAL] Clause 2.7: Carry-forward days MUST be used within Q1 (January–March) or they are forfeited.",
-        "",
-        "3. SICK LEAVE",
-        "- Entitlement: 12 paid days per calendar year; cannot be carried forward (Clauses 3.1, 3.3).",
-        "- [CRITICAL] Clause 3.2: Sick leave of 3 or more consecutive days REQUIRES a medical certificate from a registered practitioner, submitted within 48 hours of return to work.",
-        "- [CRITICAL] Clause 3.4: Sick leave taken immediately before or after a public holiday or annual leave REQUIRES a medical certificate regardless of duration.",
-        "",
-        "4. MATERNITY AND PATERNITY LEAVE",
-        "- Maternity: 26 weeks paid for first 2 live births; 12 weeks paid for 3rd or subsequent child (Clauses 4.1, 4.2).",
-        "- Paternity: 5 days paid, must be taken within 30 days of child's birth and CANNOT be split (Clauses 4.3, 4.4).",
-        "",
-        "5. LEAVE WITHOUT PAY (LWP)",
-        "- Prerequisite: May only be applied for after exhausting ALL paid leave entitlements (Clause 5.1).",
-        "- [CRITICAL] Clause 5.2: LWP REQUIRES approval from BOTH the Department Head AND the HR Director. Manager approval alone is NOT sufficient.",
-        "- [CRITICAL] Clause 5.3: LWP exceeding 30 continuous days REQUIRES approval from the Municipal Commissioner.",
-        "- Service Impact: LWP periods do NOT count toward seniority, increments, or retirement benefits (Clause 5.4).",
-        "",
-        "6. PUBLIC HOLIDAYS & COMPENSATORY OFF",
-        "- Entitlement: All gazetted State Government public holidays (Clause 6.1).",
-        "- Work on Holiday: Entitled to 1 comp off day, to be taken within 60 days of holiday worked (Clause 6.2).",
-        "- Encashment: Comp off CANNOT be encashed (Clause 6.3).",
-        "",
-        "7. LEAVE ENCASHMENT",
-        "- Separation Only: Annual leave may be encashed ONLY upon retirement or resignation (max 60 days) (Clause 7.1).",
-        "- [CRITICAL] Clause 7.2: Leave encashment during service is NOT PERMITTED under any circumstances.",
-        "- Ineligible Leaves: Sick leave and LWP CANNOT be encashed under any circumstances (Clause 7.3).",
-        "",
-        "8. GRIEVANCES",
-        "- Timeline: Grievances must be raised with HR Department within 10 working days of disputed decision (Clause 8.1).",
-        "- Late Submissions: Not considered unless exceptional circumstances are demonstrated in writing (Clause 8.2).",
-        "",
-        "===========================================================",
+    """Render a lossless, clause-by-clause summary of the policy."""
+    header = policy_data.get("header", [])
+    sections = policy_data.get("sections", [])
+
+    title = header[2] if len(header) > 2 else "POLICY SUMMARY"
+    doc_ref = next(
+        (l.split(":", 1)[1].strip() for l in header if "Document Reference" in l),
+        "N/A",
+    )
+    version_line = next((l for l in header if l.lower().startswith("version")), "")
+
+    lines = [
+        "=" * 60,
+        f"SUMMARY: {title}",
+        f"Document Reference: {doc_ref}",
     ]
-    return "\n".join(summary_lines)
+    if version_line:
+        lines.append(version_line)
+    lines.append("=" * 60)
+    lines.append("")
+
+    for section in sections:
+        lines.append(section["title"])
+        for clause in section["clauses"]:
+            lines.append(f"- Clause {clause['num']}: {clause['text']}")
+        lines.append("")
+
+    lines.append("=" * 60)
+    return "\n".join(lines)
 
 
 def main():
@@ -100,7 +131,10 @@ def main():
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(summary, encoding="utf-8")
-    print(f"Done. Summary written to {args.output}")
+    print(
+        f"Done. Summary written to {args.output} "
+        f"({data['clause_count']} clauses preserved)"
+    )
 
 
 if __name__ == "__main__":
