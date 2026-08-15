@@ -1,0 +1,6 @@
+city,ward,complaint_count,days_open_min,days_open_avg,days_open_max
+Hyderabad,Ward 51 – Jubilee Hills,1,2.0,2.0,2.0
+Hyderabad,Ward 52 – Madhapur,3,1.0,4.67,8.0
+Hyderabad,Ward 53 – LB Nagar,3,4.0,8.67,11.0
+Hyderabad,Ward 54 – Kukatpally,2,3.0,5.5,8.0
+Hyderabad,Ward 55 – Secunderabad,6,4.0,14.0,20.0

@@ -1,0 +1,6 @@
+city,ward,complaint_count,days_open_min,days_open_avg,days_open_max
+Kolkata,Ward 23 – Park Street,4,3.0,13.25,21.0
+Kolkata,Ward 24 – Shyambazar,2,1.0,1.0,1.0
+Kolkata,Ward 25 – Jadavpur,3,10.0,15.0,19.0
+Kolkata,Ward 26 – Behala,4,1.0,8.25,13.0
+Kolkata,Ward 27 – Salt Lake,2,17.0,17.0,17.0
