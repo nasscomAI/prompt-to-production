@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .venv/
 tutor-only/
+uc-*/summary_*.txt
+uc-*/growth_*.csv
+uc-*/output_*.csv
