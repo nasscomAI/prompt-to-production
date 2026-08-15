@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description says ""Heritage lamp post knocked over by delivery vehicle"".",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"The description says ""Historic tram road cobblestones broken up by cable laying work"".",
+KM-202405,Noise,Standard,"The description says ""Wedding band playing near Tagore Museum at 11pm"".",
+KM-202409,Pothole,Standard,"The description says ""Airport access road full of potholes"".",
+KM-202410,Pothole,Standard,"The description says ""Pothole causing tyre blowouts"".",
+KM-202411,Pothole,Standard,"The description says ""Deep pothole filling with rainwater"".",
+KM-202415,Drain Blockage,Standard,"The description says ""New residential complex draining directly onto public road"".",
+KM-202418,Waste,Standard,"The description says ""Tourist zone waste overflowing"".",
+KM-202421,Road Damage,Urgent,"The description says ""Footpath broken and sinking"".",
+KM-202422,Road Damage,Standard,"The description says ""Road surface buckled near bridge"".",
+KM-202426,Heritage Damage,Standard,"The description says ""Heritage residential building exterior defaced by billboard installation"".",
+KM-202430,Road Damage,Standard,"The description says ""Road subsided near gas pipeline"".",
+KM-202434,Heritage Damage,Standard,"The description says ""Street paving removed for utility work — heritage stone not replaced"".",
+KM-202436,Streetlight,Standard,"The description says ""Entire colony substation tripped"".",
+KM-202438,Noise,Standard,"The description says ""Street vendors using amplifiers illegally in heritage precinct"".",
