@@ -55,11 +55,11 @@ def compute_growth(rows, ward, category, growth_type):
 
     for row in rows:
         if (
-            row["ward"].strip() == ward.strip()
+            row["ward"].strip().replace("–", "-")
+            == ward.strip().replace("–", "-")
             and row["category"].strip() == category.strip()
         ):
             selected.append(row)
-
     if not selected:
         raise ValueError(
             f"No data found for ward '{ward}' and category '{category}'."
