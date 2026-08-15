@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions 'pothole', which supports the Pothole category.",
+PM-202402,Pothole,Urgent,"The description mentions 'pothole' and 'school', supporting Pothole classification and triggering Urgent priority.",
+PM-202406,Flooding,Standard,"The description mentions 'flood', which supports the Flooding category.",
+PM-202408,Other,Standard,The description does not provide enough specific information to determine one category confidently.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions 'streetlight', which supports the Streetlight category.",
+PM-202411,Streetlight,Urgent,"The description mentions 'streetlight' and 'hazard', supporting Streetlight classification and triggering Urgent priority.",
+PM-202413,Waste,Standard,"The description mentions 'garbage', which supports the Waste category.",
+PM-202418,Other,Standard,The description does not provide enough specific information to determine one category confidently.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"The description mentions 'road surface', which supports the Road Damage category.",
+PM-202420,Other,Urgent,"The description mentions 'injury', which triggers Urgent priority; the category is ambiguous.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description mentions 'flood', which supports the Flooding category.",
+PM-202428,Other,Standard,The description does not provide enough specific information to determine one category confidently.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions 'heritage', which supports the Heritage Damage category.",
+PM-202433,Waste,Standard,"The description mentions 'waste', which supports the Waste category.",
+PM-202446,Other,Urgent,"The description mentions 'fell', which triggers Urgent priority; the category is ambiguous.",NEEDS_REVIEW
