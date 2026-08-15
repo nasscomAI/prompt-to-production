@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions 'pothole', which indicates the Pothole category.",
+PM-202402,Pothole,Urgent,"The description mentions 'pothole', which indicates the Pothole category.",
+PM-202406,Flooding,Standard,"The description mentions 'flooded', which indicates the Flooding category.",
+PM-202408,Drain Blockage,Standard,"The description mentions 'Drain', which indicates the Drain Blockage category.",
+PM-202410,Streetlight,Standard,"The description mentions 'streetlights', which indicates the Streetlight category.",
+PM-202411,Streetlight,Urgent,"The description mentions 'Streetlight', which indicates the Streetlight category.",
+PM-202413,Waste,Standard,"The description mentions 'garbage', which indicates the Waste category.",
+PM-202418,Other,Standard,"No supported category matches the description ('Wedding venue playing music past midnight on weeknights.'), so it is classified as Other for review.",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"The description mentions 'Road surface', which indicates the Road Damage category.",
+PM-202420,Drain Blockage,Urgent,"The description mentions 'Manhole', which indicates the Drain Blockage category.",
+PM-202427,Flooding,Standard,"The description mentions 'floods', which indicates the Flooding category.",
+PM-202428,Other,Standard,"No supported category matches the description ('Dead animal not removed for 36 hours. Health concern.'), so it is classified as Other for review.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions 'Heritage', which indicates the Heritage Damage category.",
+PM-202433,Waste,Standard,"The description mentions 'waste', which indicates the Waste category.",
+PM-202446,Other,Urgent,"No supported category matches the description ('Footpath tiles broken and upturned. Elderly resident fell la...'), so it is classified as Other for review.",NEEDS_REVIEW

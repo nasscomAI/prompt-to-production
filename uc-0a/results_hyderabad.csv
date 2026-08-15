@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description mentions 'flooded', which indicates the Flooding category.",
+GH-202402,Drain Blockage,Standard,"The description mentions 'Drain', which indicates the Drain Blockage category.",
+GH-202406,Drain Blockage,Standard,"The description mentions 'drain', which indicates the Drain Blockage category.",
+GH-202407,Drain Blockage,Standard,"The description mentions 'Drain', which indicates the Drain Blockage category.",
+GH-202410,Pothole,Standard,"The description mentions 'Potholes', which indicates the Pothole category.",
+GH-202411,Pothole,Standard,"The description mentions 'Pothole', which indicates the Pothole category.",
+GH-202412,Pothole,Urgent,"The description mentions 'potholes', which indicates the Pothole category.",
+GH-202417,Heritage Damage,Standard,"The description mentions 'Heritage', which indicates the Heritage Damage category.",
+GH-202420,Other,Standard,"No supported category matches the description ('Construction drilling from 5am daily near residential towers...'), so it is classified as Other for review.",NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"The description mentions 'Crater', which indicates the Pothole category.",
+GH-202424,Flooding,Standard,"The description mentions 'floods', which indicates the Flooding category.",
+GH-202428,Waste,Standard,"The description mentions 'waste', which indicates the Waste category.",
+GH-202432,Other,Standard,"No supported category matches the description ('24hr supermarket delivery trucks idling with engines on.'), so it is classified as Other for review.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"The description mentions 'drain', which indicates the Drain Blockage category.",
+GH-202438,Flooding,Standard,"The description mentions 'rainwater', which indicates the Flooding category.",
