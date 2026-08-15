@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category ""Pothole"" fits because the description says ""pothole"".",
+PM-202402,Pothole,Urgent,"Category ""Pothole"" fits because the description says ""pothole"".",
+PM-202406,Flooding,Standard,"Category ""Flooding"" fits because the description says ""flooded"".",
+PM-202408,Drain Blockage,Standard,"Category ""Drain Blockage"" fits because the description says ""Drain"", ""blocked"".",
+PM-202410,Streetlight,Standard,"Category ""Streetlight"" fits because the description says ""streetlights"", ""streetlights out"".",
+PM-202411,Streetlight,Urgent,"Category ""Streetlight"" fits because the description says ""Streetlight"".",
+PM-202413,Waste,Standard,"Category ""Waste"" fits because the description says ""garbage"", ""bins"".",
+PM-202418,Noise,Standard,"Category ""Noise"" fits because the description says ""music"".",
+PM-202419,Road Damage,Standard,"Category ""Road Damage"" fits because the description says ""cracked"", ""sinking"".",
+PM-202420,Road Damage,Urgent,"Category ""Road Damage"" fits because the description says ""Manhole"".",
+PM-202427,Flooding,Standard,"Category ""Flooding"" fits because the description says ""floods"".",
+PM-202428,Waste,Standard,"Category ""Waste"" fits because the description says ""Dead animal"".",
+PM-202430,Other,Standard,"Category is ambiguous because the description says ""Heritage"" (suggesting Heritage Damage) and ""lights out"" (suggesting Streetlight); this needs review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category ""Waste"" fits because the description says ""waste"".",
+PM-202446,Road Damage,Urgent,"Category ""Road Damage"" fits because the description says ""broken"", ""Footpath"".",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Category ""Heat Hazard"" fits because the description says ""melting"".",
+AM-202402,Heat Hazard,Standard,"Category ""Heat Hazard"" fits because the description says ""temperatures"".",
+AM-202405,Other,Standard,"No allowed category fits the description ""Dead trees with""; this needs review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category ""Heat Hazard"" fits because the description says ""heatwave"".",
+AM-202407,Road Damage,Urgent,"Category ""Road Damage"" fits because the description says ""Broken"", ""paving"".",
+AM-202410,Pothole,Standard,"Category ""Pothole"" fits because the description says ""Pothole"".",
+AM-202414,Streetlight,Standard,"Category ""Streetlight"" fits because the description says ""unlit"".",
+AM-202417,Other,Standard,"Category is ambiguous because the description says ""Heritage"" (suggesting Heritage Damage) and ""waste"" (suggesting Waste); this needs review.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Category ""Noise"" fits because the description says ""music"".",
+AM-202424,Heat Hazard,Standard,"Category ""Heat Hazard"" fits because the description says ""bubbling"".",
+AM-202429,Heat Hazard,Standard,"Category ""Heat Hazard"" fits because the description says ""temperature"".",
+AM-202431,Road Damage,Standard,"Category ""Road Damage"" fits because the description says ""subsidence"", ""road"".",
+AM-202435,Heat Hazard,Standard,"Category ""Heat Hazard"" fits because the description says ""heat"".",
+AM-202444,Waste,Standard,"Category ""Waste"" fits because the description says ""waste"", ""bins"".",
+AM-202445,Road Damage,Standard,"Category ""Road Damage"" fits because the description says ""broken"".",
