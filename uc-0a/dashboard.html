@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic AI Dispatch System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --primary-text: #ffffff;
+            --secondary-text: #a0aab2;
+            --accent-blue: #3b82f6;
+            --urgent-color: #ef4444;
+            --standard-color: #10b981;
+            --review-color: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top left, #1a1e2c, var(--bg-color));
+            color: var(--primary-text);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #fff, #a0aab2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h1::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-blue);
+        }
+
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .kpi-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .kpi-card h3 {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .kpi-card .value {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .kpi-card .value.urgent { color: var(--urgent-color); }
+        .kpi-card .value.review { color: var(--review-color); }
+
+        .table-container {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        th {
+            font-size: 0.85rem;
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge.category {
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .badge.priority-urgent {
+            background: rgba(239, 68, 68, 0.15);
+            color: #f87171;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            position: relative;
+        }
+
+        .badge.priority-urgent::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #f87171;
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: pulse 1.5s infinite;
+        }
+
+        .badge.priority-standard {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .badge.flag-review {
+            background: rgba(245, 158, 11, 0.15);
+            color: #fbbf24;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .reason-text {
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0.7); }
+            70% { box-shadow: 0 0 0 4px rgba(248, 113, 113, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(248, 113, 113, 0); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Civic AI Dispatch System</h1>
+            <div class="badge category">Location: Bangalore</div>
+        </header>
+
+        <div class="kpi-container">
+            <div class="kpi-card">
+                <h3>Total Complaints</h3>
+                <div class="value" id="kpi-total">0</div>
+            </div>
+            <div class="kpi-card">
+                <h3>Urgent Incidents</h3>
+                <div class="value urgent" id="kpi-urgent">0</div>
+            </div>
+            <div class="kpi-card">
+                <h3>Pending Review</h3>
+                <div class="value review" id="kpi-review">0</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Category</th>
+                        <th>Priority</th>
+                        <th>AI Reasoning</th>
+                        <th>Status Flag</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Rows injected via JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Data derived directly from the AI's CSV output for standalone execution
+        const complaintsData = [
+            { id: "PM-202401", category: "Pothole", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202402", category: "Pothole", priority: "Urgent", reason: "Cites 'school' and 'child', indicating immediate risk.", flag: "" },
+            { id: "PM-202406", category: "Flooding", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202408", category: "Other", priority: "Standard", reason: "Standard maintenance requested.", flag: "NEEDS_REVIEW" },
+            { id: "PM-202410", category: "Streetlight", priority: "Standard", reason: "Issue is ongoing but lacks immediate physical hazard keywords.", flag: "" },
+            { id: "PM-202411", category: "Streetlight", priority: "Urgent", reason: "Contains severity keyword(s): hazard.", flag: "" },
+            { id: "PM-202413", category: "Waste", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202418", category: "Noise", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202419", category: "Road Damage", priority: "Standard", reason: "Issue is ongoing but lacks immediate physical hazard keywords.", flag: "" },
+            { id: "PM-202420", category: "Road Damage", priority: "Urgent", reason: "Cites risk of 'injury'.", flag: "" },
+            { id: "PM-202427", category: "Flooding", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202428", category: "Waste", priority: "Standard", reason: "Issue is ongoing but lacks immediate physical hazard keywords.", flag: "" },
+            { id: "PM-202430", category: "Heritage Damage", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202433", category: "Waste", priority: "Standard", reason: "Standard maintenance requested.", flag: "" },
+            { id: "PM-202446", category: "Road Damage", priority: "Urgent", reason: "Contains severity keyword(s): fell.", flag: "" }
+        ];
+
+        // Process data
+        const total = complaintsData.length;
+        const urgent = complaintsData.filter(c => c.priority === 'Urgent').length;
+        const review = complaintsData.filter(c => c.flag === 'NEEDS_REVIEW').length;
+
+        // Update KPIs
+        document.getElementById('kpi-total').textContent = total;
+        document.getElementById('kpi-urgent').textContent = urgent;
+        document.getElementById('kpi-review').textContent = review;
+
+        // Populate Table
+        const tbody = document.getElementById('table-body');
+        
+        complaintsData.forEach(complaint => {
+            const tr = document.createElement('tr');
+            
+            const pBadgeClass = complaint.priority === 'Urgent' ? 'priority-urgent' : 'priority-standard';
+            const fBadge = complaint.flag ? `<span class="badge flag-review">⚠️ ${complaint.flag.replace('_', ' ')}</span>` : `<span style="color:var(--secondary-text)">✓ Auto-processed</span>`;
+
+            tr.innerHTML = `
+                <td style="font-family: monospace; font-weight:600">${complaint.id}</td>
+                <td><span class="badge category">${complaint.category}</span></td>
+                <td><span class="badge ${pBadgeClass}">${complaint.priority}</span></td>
+                <td class="reason-text">${complaint.reason}</td>
+                <td>${fBadge}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    </script>
+</body>
+</html>
