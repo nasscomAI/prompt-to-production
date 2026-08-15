@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description says ""Large pothole 60cm wide causing tyre damage"".",
+PM-202402,Pothole,Urgent,"The description says ""Deep pothole near bus stop"".",
+PM-202406,Flooding,Standard,"The description says ""Underpass flooded knee-deep after 2hrs rain"".",
+PM-202408,Flooding,Standard,"The description says ""Bus stand flooded"".",
+PM-202410,Streetlight,Standard,"The description says ""Three consecutive streetlights out for 10 days"".",
+PM-202411,Streetlight,Urgent,"The description says ""Streetlight flickering and sparking"".",
+PM-202413,Waste,Standard,"The description says ""Overflowing garbage bins near vegetable market"".",
+PM-202418,Noise,Standard,"The description says ""Wedding venue playing music past midnight on weeknights"".",
+PM-202419,Road Damage,Standard,"The description says ""Road surface cracked and sinking near utility work done 1 month ago"".",
+PM-202420,Road Damage,Urgent,"The description says ""Manhole cover missing"".",
+PM-202427,Flooding,Standard,"The description says ""Bridge approach floods in 30mins of rain"".",
+PM-202428,Waste,Standard,"The description says ""Dead animal not removed for 36 hours"".",
+PM-202430,Other,Standard,"The description says ""Heritage street, lights out"".",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description says ""Bulk waste from apartment renovation dumped on public road"".",
+PM-202446,Road Damage,Urgent,"The description says ""Footpath tiles broken and upturned"".",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description says ""Tarmac surface melting at 44°C"".",
+AM-202402,Heat Hazard,Standard,"The description says ""Metal bus shelter reaching dangerous temperatures"".",
+AM-202405,Other,Standard,"The description says ""Dead trees with split branches"".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description says ""Irrigation system broken"".",
+AM-202407,Road Damage,Urgent,"The description says ""Broken bench and upturned paving"".",
+AM-202410,Pothole,Standard,"The description says ""Pothole on main highway causing morning rush lane closure"".",
+AM-202414,Streetlight,Standard,"The description says ""Residential colony unlit after 9pm"".",
+AM-202417,Waste,Standard,"The description says ""Night market waste not cleared before morning"".",
+AM-202421,Noise,Standard,"The description says ""Club music audible at residential buildings at 2am"".",
+AM-202424,Heat Hazard,Standard,"The description says ""Zoo approach road surface bubbling at 45°C"".",
+AM-202429,Heat Hazard,Standard,"The description says ""River walk surface temperature unbearable"".",
+AM-202431,Heritage Damage,Standard,"The description says ""Old city road subsidence near ancient step well"".",
+AM-202435,Heat Hazard,Standard,"The description says ""Black metal road dividers storing heat"".",
+AM-202444,Waste,Standard,"The description says ""Restaurant waste bins overflowing on Sunday night"".",
+AM-202445,Heat Hazard,Standard,"The description says ""BRT shelter roof glass broken"".",
