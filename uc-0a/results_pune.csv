@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description indicates a pothole issue.,
+PM-202402,Pothole,Urgent,The description contains the severity keyword 'child'.,
+PM-202406,Flooding,Standard,The description indicates a flooding issue.,
+PM-202408,Flooding,Standard,The description indicates a flooding issue.,
+PM-202410,Streetlight,Standard,The description indicates a streetlight issue.,
+PM-202411,Streetlight,Urgent,The description contains the severity keyword 'hazard'.,
+PM-202413,Waste,Standard,The description indicates a waste issue.,
+PM-202418,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+PM-202419,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The description contains the severity keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description indicates a flooding issue.,
+PM-202428,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,The description indicates a heritage damage issue.,
+PM-202433,Waste,Standard,The description indicates a waste issue.,
+PM-202446,Other,Urgent,The description contains the severity keyword 'fell'.,NEEDS_REVIEW
