@@ -1,6 +1,7 @@
 # Vibe Coding Workshop — Submission PR
 
 **Name:** Vinodha
+**Email:** vinodha235@gmail.com
 **City / Group:** Chennai
 **Date:** 2026-08-16
 **AI tool(s) used:** Antigravity
