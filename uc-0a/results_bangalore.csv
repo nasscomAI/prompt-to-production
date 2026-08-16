@@ -1,0 +1,4 @@
+complaint_id,description,category,priority,reason,flag
+1,Pothole on main road causing hazard,Pothole,Urgent,Contains keyword hazard,
+2,Loud noise at night,Noise,Standard,No severity keywords,
+3,Garbage dumped near school,Waste,Urgent,Contains keyword school,
