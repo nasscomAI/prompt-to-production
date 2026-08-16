@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md - UC-0A Complaint Classifier
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: read_csv
+    description: >
+      Ability to read citizen complaints from data/city-test-files/test_pune.csv (handling any missing or malformed rows gracefully).
+  
+  - name: call_llm
+    description: >
+      Ability to pass each complaint description to an LLM using the rules defined in agents.md to get structured classification data.
+      
+  - name: write_csv
+    description: >
+      Ability to write the classified output (category, priority, reason, flag) to a new file named results_pune.csv inside the uc-0a folder.
