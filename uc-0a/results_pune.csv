@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Observed pothole issue in description.,
+PM-202402,Pothole,Urgent,Observed pothole issue in description.,
+PM-202406,Flooding,Standard,Observed flooded area in description.,
+PM-202408,Flooding,Standard,Observed flooded area in description.,
+PM-202410,Streetlight,Standard,Observed streetlight out in description.,
+PM-202411,Streetlight,Urgent,Issue identified: streetlight flickering and sparking. electrical.,
+PM-202413,Waste,Standard,Observed waste issue in description.,
+PM-202418,Other,Standard,Issue identified: wedding venue playing music past.,NEEDS_REVIEW
+PM-202419,Pothole,Standard,Issue identified: road surface cracked and sinking.,
+PM-202420,Other,Urgent,Issue identified: manhole cover missing. risk of.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Issue identified from complaint description.,
+PM-202428,Other,Standard,Issue identified: dead animal not removed for.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Observed streetlight out in description.,
+PM-202433,Pothole,Standard,Issue identified: bulk waste from apartment renovation.,
+PM-202446,Other,Urgent,Issue identified: footpath tiles broken and upturned.,NEEDS_REVIEW
