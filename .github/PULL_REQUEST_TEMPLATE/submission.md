@@ -1,7 +1,7 @@
 # Vibe Coding Workshop — Submission PR
 
 **Name:** Vinodha
-**City / Group:** Pune
+**City / Group:** Chennai
 **Date:** 2026-08-16
 **AI tool(s) used:** Antigravity
 
