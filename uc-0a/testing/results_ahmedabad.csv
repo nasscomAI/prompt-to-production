@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Issue identified: tarmac surface melting at 44°c. footwear sticking. park.,NEEDS_REVIEW
+AM-202402,Other,Standard,Issue identified: metal bus shelter reaching dangerous temperatures. commuters refusing.,NEEDS_REVIEW
+AM-202405,Other,Standard,Issue identified: dead trees with split branches. fall risk to.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Issue identified: heatwave mentioned in complaint.,
+AM-202407,Other,Urgent,Issue identified: broken bench and upturned paving. child injured last.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Issue identified: pothole mentioned in complaint.,
+AM-202414,Other,Standard,Issue identified: residential colony unlit after 9pm. wiring theft reported.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Issue identified: heritage mentioned in complaint.,
+AM-202421,Other,Standard,Issue identified: club music audible at residential buildings at 2am.,NEEDS_REVIEW
+AM-202424,Other,Standard,Issue identified: zoo approach road surface bubbling at 45°c. visitor.,NEEDS_REVIEW
+AM-202429,Other,Standard,Issue identified: river walk surface temperature unbearable. installed temperature reads.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Issue identified: heritage mentioned in complaint.,
+AM-202435,Other,Standard,Issue identified: black metal road dividers storing heat. motorists reporting.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Issue identified: waste mentioned in complaint.,
+AM-202445,Other,Standard,Issue identified: brt shelter roof glass broken. users exposed to.,NEEDS_REVIEW
