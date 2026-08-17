@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category Pothole from the phrase ""pothole""; priority Standard as no severity term is present.",
+PM-202402,Pothole,Urgent,"Category Pothole from the phrase ""pothole""; priority Urgent because the description contains ""children"", ""School"".",
+PM-202406,Flooding,Standard,"Category Flooding from the phrase ""flooded""; priority Standard as no severity term is present.",
+PM-202408,Flooding,Standard,"Category Flooding from the phrase ""flooded""; priority Standard as no severity term is present. Ambiguous: Drain Blockage also explicitly evidenced in the same description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category Streetlight from the phrase ""streetlights""; priority Standard as no severity term is present.",
+PM-202411,Streetlight,Urgent,"Category Streetlight from the phrase ""Streetlight""; priority Urgent because the description contains ""hazard"".",
+PM-202413,Waste,Standard,"Category Waste from the phrase ""garbage""; priority Standard as no severity term is present.",
+PM-202418,Noise,Standard,"Category Noise from the phrase ""music""; priority Standard as no severity term is present.",
+PM-202419,Road Damage,Standard,"Category Road Damage from the phrase ""Road surface""; priority Standard as no severity term is present.",
+PM-202420,Road Damage,Urgent,"Category Road Damage from the phrase ""Manhole cover missing""; priority Urgent because the description contains ""injury"".",
+PM-202427,Flooding,Standard,"Category Flooding from the phrase ""floods""; priority Standard as no severity term is present.",
+PM-202428,Waste,Standard,"Category Waste from the phrase ""Dead animal""; priority Standard as no severity term is present.",
+PM-202430,Streetlight,Standard,"Category Streetlight from the phrase ""lights out""; priority Standard as no severity term is present.",
+PM-202433,Waste,Standard,"Category Waste from the phrase ""waste""; priority Standard as no severity term is present.",
+PM-202446,Road Damage,Urgent,"Category Road Damage from the phrase ""Footpath""; priority Urgent because the description contains ""fell"".",
