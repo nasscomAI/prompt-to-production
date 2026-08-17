@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains the specific word ""pothole"".",
+PM-202402,Pothole,Urgent,"The description contains the specific word ""pothole"".",
+PM-202406,Flooding,Standard,"The description contains ""flood"", ""flooded"", or ""flooding"".",
+PM-202408,Flooding,Standard,"The description contains ""flood"", ""flooded"", or ""flooding"".",
+PM-202410,Streetlight,Standard,"The description contains ""streetlight"" or ""streetlights"".",
+PM-202411,Streetlight,Urgent,"The description contains ""streetlight"" or ""streetlights"".",
+PM-202413,Waste,Standard,"The description mentions garbage, waste, or dumped material.",
+PM-202418,Noise,Standard,The description mentions music or noise.,
+PM-202419,Road Damage,Standard,"The description mentions cracked, sinking, broken, or damaged road infrastructure.",
+PM-202420,Other,Urgent,"The description contains terms such as ""manhole"" that do not match an allowed category.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description contains ""flood"", ""flooded"", or ""flooding"".",
+PM-202428,Other,Standard,"The description contains terms such as ""manhole"" that do not match an allowed category.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description contains the specific word ""heritage"".",
+PM-202433,Waste,Standard,"The description mentions garbage, waste, or dumped material.",
+PM-202446,Road Damage,Urgent,"The description mentions cracked, sinking, broken, or damaged road infrastructure.",
