@@ -1,0 +1,193 @@
+SUMMARY — CLAUSE-PRESERVING
+CITY MUNICIPAL CORPORATION
+HUMAN RESOURCES DEPARTMENT
+EMPLOYEE LEAVE POLICY
+Document Reference: HR-POL-001
+Version: 2.3 | Effective: 1 April 2024
+
+Method: every numbered clause below is represented and cited by its
+own number. Meaning-critical clauses are quoted verbatim and marked
+[VERBATIM]. Multi-condition obligations are marked [MULTI-CONDITION]
+with each condition listed separately, so a dropped approver is
+visible rather than invisible. No clause is paraphrased, because
+paraphrase is what changes meaning.
+
+==================================================================
+SECTION 1 — PURPOSE AND SCOPE
+==================================================================
+1.1
+    "This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC)."
+
+1.2 [VERBATIM]
+    "This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts."
+
+==================================================================
+SECTION 2 — ANNUAL LEAVE
+==================================================================
+2.1 [VERBATIM]
+    "Each permanent employee is entitled to 18 days of paid annual leave per calendar year."
+
+2.2 [VERBATIM]
+    "Annual leave accrues at 1.5 days per month from the date of joining."
+
+2.3 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1."
+    conditions preserved (every one below is stated in the clause):
+      - qualifier: at least 14 calendar days in advance using Form HR-L1
+      - quantity: 14 calendar days
+
+2.4 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid."
+    conditions preserved (every one below is stated in the clause):
+      - required approver: direct manager
+      - prohibition: not valid
+
+2.5 [VERBATIM] [CRITICAL]
+    "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
+
+2.6 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December."
+    conditions preserved (every one below is stated in the clause):
+      - qualifier: maximum of 5 unused annual leave days to the following calendar year
+      - prohibition: are forfeited
+
+2.7 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited."
+    conditions preserved (every one below is stated in the clause):
+      - qualifier: within the first quarter (January–March) of the following year or they are forfeited
+      - prohibition: are forfeited
+
+==================================================================
+SECTION 3 — SICK LEAVE
+==================================================================
+3.1 [VERBATIM]
+    "Each employee is entitled to 12 days of paid sick leave per calendar year."
+
+3.2 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work."
+    conditions preserved (every one below is stated in the clause):
+      - required approver: registered medical practitioner
+      - qualifier: within 48 hours of returning to work
+      - quantity: 48 hours
+
+3.3 [VERBATIM]
+    "Sick leave cannot be carried forward to the following year."
+
+3.4 [VERBATIM] [CRITICAL]
+    "Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration."
+
+==================================================================
+SECTION 4 — MATERNITY AND PATERNITY LEAVE
+==================================================================
+4.1 [VERBATIM]
+    "Female employees are entitled to 26 weeks of paid maternity leave for the first two live births."
+
+4.2 [VERBATIM]
+    "For a third or subsequent child, maternity leave is 12 weeks paid."
+
+4.3 [VERBATIM] [MULTI-CONDITION]
+    "Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth."
+    conditions preserved (every one below is stated in the clause):
+      - qualifier: within 30 days of the child's birth
+      - quantity: 5 days
+      - quantity: 30 days
+
+4.4 [VERBATIM]
+    "Paternity leave cannot be split across multiple periods."
+
+==================================================================
+SECTION 5 — LEAVE WITHOUT PAY (LWP)
+==================================================================
+5.1 [VERBATIM]
+    "An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements."
+
+5.2 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+    conditions preserved (every one below is stated in the clause):
+      - required approver: Department Head
+      - required approver: HR Director
+      - NOT sufficient alone: Manager
+      - prohibition: not sufficient
+
+5.3 [VERBATIM] [MULTI-CONDITION] [CRITICAL]
+    "LWP exceeding 30 continuous days requires approval from the Municipal Commissioner."
+    conditions preserved (every one below is stated in the clause):
+      - required approver: Municipal Commissioner
+      - qualifier: exceeding 30 continuous days requires approval from the Municipal Commissioner
+
+5.4
+    "Periods of LWP do not count toward service seniority, increments, or retirement benefits."
+
+==================================================================
+SECTION 6 — PUBLIC HOLIDAYS
+==================================================================
+6.1 [VERBATIM]
+    "Employees are entitled to all gazetted public holidays as declared by the State Government each year."
+
+6.2 [VERBATIM] [MULTI-CONDITION]
+    "If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked."
+    conditions preserved (every one below is stated in the clause):
+      - qualifier: within 60 days of the holiday worked
+      - quantity: 60 days
+
+6.3 [VERBATIM]
+    "Compensatory off cannot be encashed."
+
+==================================================================
+SECTION 7 — LEAVE ENCASHMENT
+==================================================================
+7.1 [VERBATIM] [MULTI-CONDITION]
+    "Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days."
+    conditions preserved (every one below is stated in the clause):
+      - qualifier: maximum of 60 days
+      - quantity: 60 days
+
+7.2 [VERBATIM] [CRITICAL]
+    "Leave encashment during service is not permitted under any circumstances."
+
+7.3 [VERBATIM]
+    "Sick leave and LWP cannot be encashed under any circumstances."
+
+==================================================================
+SECTION 8 — GRIEVANCES
+==================================================================
+8.1 [VERBATIM] [MULTI-CONDITION]
+    "Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision."
+    conditions preserved (every one below is stated in the clause):
+      - required approver: HR Department
+      - qualifier: within 10 working days of the disputed decision
+      - quantity: 10 working days
+
+8.2 [VERBATIM] [MULTI-CONDITION]
+    "Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing."
+    conditions preserved (every one below is stated in the clause):
+      - quantity: 10 working days
+      - prohibition: will not be considered
+
+==================================================================
+COVERAGE AND VERIFICATION
+==================================================================
+Clauses in source document      : 29
+Clauses represented in summary   : 29
+Coverage                         : 29/29 (100%)
+Quoted verbatim (meaning-critical): 27
+Multi-condition clauses enumerated: 12
+README ground-truth clauses present: 10/10
+
+Checks run before this file was written:
+  [PASS] every numbered clause in the source is present, cited by number
+  [PASS] no binding verb was softened (must/will/requires/not permitted)
+  [PASS] no token appears in any entry that is absent from its source clause
+  [PASS] no scope-bleed phrase present in this output
+
+Ground-truth clause check:
+  2.3   present  — 14-day advance notice required
+  2.4   present  — written approval required before leave commences; verbal not valid
+  2.5   present  — unapproved absence = LOP regardless of subsequent approval
+  2.6   present  — max 5 days carry-forward; above 5 forfeited on 31 Dec
+  2.7   present  — carry-forward days must be used Jan-Mar or forfeited
+  3.2   present  — 3+ consecutive sick days requires medical certificate within 48hrs
+  3.4   present  — sick leave before/after holiday requires certificate regardless of duration
+  5.2   present  — LWP requires Department Head AND HR Director approval
+  5.3   present  — LWP >30 days requires Municipal Commissioner approval
+  7.2   present  — leave encashment during service not permitted under any circumstances
