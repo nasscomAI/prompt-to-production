@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Category ""Flooding"" fits because the description says ""flooded"".",
+GH-202402,Drain Blockage,Standard,"Category ""Drain Blockage"" fits because the description says ""Drain"", ""blocked"".",
+GH-202406,Drain Blockage,Standard,"Category ""Drain Blockage"" fits because the description says ""drain"", ""blocked"".",
+GH-202407,Drain Blockage,Standard,"Category ""Drain Blockage"" fits because the description says ""Drain"", ""blocked"".",
+GH-202410,Pothole,Standard,"Category ""Pothole"" fits because the description says ""Potholes"".",
+GH-202411,Pothole,Urgent,"Category ""Pothole"" fits because the description says ""Pothole"".",
+GH-202412,Pothole,Urgent,"Category ""Pothole"" fits because the description says ""potholes"".",
+GH-202417,Waste,Standard,"Category ""Waste"" fits because the description says ""garbage"", ""waste"".",
+GH-202420,Noise,Standard,"Category ""Noise"" fits because the description says ""drilling"".",
+GH-202422,Road Damage,Urgent,"Category ""Road Damage"" fits because the description says ""collapsed"", ""Crater"".",
+GH-202424,Flooding,Standard,"Category ""Flooding"" fits because the description says ""floods"".",
+GH-202428,Waste,Standard,"Category ""Waste"" fits because the description says ""waste"".",
+GH-202432,Noise,Standard,"Category ""Noise"" fits because the description says ""idling"".",
+GH-202448,Drain Blockage,Standard,"Category ""Drain Blockage"" fits because the description says ""drain"", ""blocked"".",
+GH-202438,Other,Standard,"Category is ambiguous because the description says ""rainwater"" (suggesting Flooding) and ""road"" (suggesting Road Damage); this needs review.",NEEDS_REVIEW

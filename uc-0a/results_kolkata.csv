@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Category is ambiguous because the description says ""Heritage"" (suggesting Heritage Damage) and ""lamp post"" (suggesting Streetlight); this needs review.",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,"Category ""Road Damage"" fits because the description says ""broken"", ""road"".",
+KM-202405,Noise,Standard,"Category ""Noise"" fits because the description says ""band playing"".",
+KM-202409,Pothole,Standard,"Category ""Pothole"" fits because the description says ""potholes"".",
+KM-202410,Pothole,Standard,"Category ""Pothole"" fits because the description says ""Pothole"".",
+KM-202411,Pothole,Standard,"Category ""Pothole"" fits because the description says ""pothole"".",
+KM-202415,Drain Blockage,Standard,"Category ""Drain Blockage"" fits because the description says ""draining"".",
+KM-202418,Waste,Standard,"Category ""Waste"" fits because the description says ""waste"".",
+KM-202421,Road Damage,Urgent,"Category ""Road Damage"" fits because the description says ""sinking"", ""broken"".",
+KM-202422,Road Damage,Standard,"Category ""Road Damage"" fits because the description says ""buckled"", ""Road"".",
+KM-202426,Heritage Damage,Standard,"Category ""Heritage Damage"" fits because the description says ""Heritage"", ""defaced"".",
+KM-202430,Road Damage,Standard,"Category ""Road Damage"" fits because the description says ""subsided"", ""Road"".",
+KM-202434,Heritage Damage,Standard,"Category ""Heritage Damage"" fits because the description says ""heritage"".",
+KM-202436,Other,Standard,"No allowed category fits the description ""Entire colony substation""; this needs review.",NEEDS_REVIEW
+KM-202438,Other,Standard,"Category is ambiguous because the description says ""heritage"" (suggesting Heritage Damage) and ""amplifiers"" (suggesting Noise); this needs review.",NEEDS_REVIEW
