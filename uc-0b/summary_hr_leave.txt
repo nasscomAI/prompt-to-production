@@ -1,0 +1,52 @@
+POLICY SUMMARY — Leave Management
+
+
+Clause 2.3:
+[VERBATIM] Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+
+Clause 2.4:
+[VERBATIM] Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
+
+Clause 2.5:
+[VERBATIM] Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+
+Clause 2.6:
+[VERBATIM] Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+Clause 2.7:
+Carried-forward leave days must be used between January and March; unused days are forfeited.
+
+Clause 3.2:
+Sick leave for 3 or more consecutive days requires a medical certificate within 48 hours.
+
+Clause 3.4:
+Sick leave taken before or after a holiday requires a medical certificate regardless of duration.
+
+Clause 5.2:
+[VERBATIM] LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+
+Clause 5.3:
+[VERBATIM] LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+
+Clause 7.2:
+[VERBATIM] Leave encashment during service is not permitted under any circumstances.
+
+
+============================================================
+COMPLIANCE VALIDATION
+============================================================
+Clause 2.3: PASS
+Clause 2.4: PASS
+Clause 2.5: PASS
+Clause 2.6: PASS
+Clause 2.7: PASS
+Clause 3.2: PASS
+Clause 3.4: PASS
+Clause 5.2: PASS
+Clause 5.3: PASS
+Clause 7.2: PASS
+
+All 10 clauses present: YES
+All conditions preserved: YES
+Scope bleed detected: NO
+Binding verbs preserved: YES

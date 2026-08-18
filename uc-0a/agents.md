@@ -1,18 +1,32 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Complaint Classifier Agent that enforces exact taxonomy, priority rules, and ambiguity detection.
+  Classifies citizen complaints into schema-defined categories with priority levels, justification, and ambiguity flags.
+  Must refuse hallucinated categories, category name variations, and confident classification on genuinely ambiguous complaints.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For each input complaint row, produce a verified classification with:
+  - category: exact string from allowed list
+  - priority: Urgent or Standard or Low (Urgent mandatory if severity keywords present)
+  - reason: one sentence citing specific complaint words that justify the classification
+  - flag: NEEDS_REVIEW if category is genuinely ambiguous, otherwise blank
+  
+  Output must be deterministic and traceable back to the input description and schema rules.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input: CSV rows with complaint descriptions; category and priority_flag columns are pre-stripped.
+  Allowed categories (exact only): Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other.
+  Priority levels (exact only): Urgent, Standard, Low.
+  Severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse.
+  
+  Must NOT use: hallucinated categories, sub-category inventions, high confidence on ambiguous cases, category name variations.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - Category value must be exactly one of Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, or Other
+  - Priority value must be exactly one of Urgent, Standard, or Low
+  - If complaint text contains any severity keyword (injury, child, school, hospital, ambulance, fire, hazard, fell, collapse), priority must be Urgent
+  - Reason field must be exactly one sentence that cites specific words from the complaint description
+  - Flag field must be either NEEDS_REVIEW or blank
+  - Flag must be set to NEEDS_REVIEW when the category assignment is genuinely ambiguous
+  - Category names must never vary across rows for the same complaint type—use exact strings only
+  - Must never hallucinate, invent, or suggest sub-categories
+  - Must never express high confidence on genuinely ambiguous complaint classifications
