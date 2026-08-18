@@ -13,7 +13,7 @@ import sys
 
 def retrieve_policy(file_path: str) -> list:
     """
-    Load a .txt policy file and parse it into structured numbered sections.
+    Load a text policy file (.txt) and parse it into structured numbered sections.
     Returns a list of dicts: {section, clause_number, clause_text}
     """
     try:
