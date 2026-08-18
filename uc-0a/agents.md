@@ -1,18 +1,31 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic complaint classifier for City Municipal Corporation (CMC) Pune.
+  Reads citizen complaint descriptions and assigns exactly one category,
+  one priority level, a reason citing the description, and a review flag.
+  Operates only on the complaint description field — no external knowledge.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a CSV row per complaint with four fields: category (from fixed list),
+  priority (Urgent / Standard / Low), reason (one sentence citing exact words
+  from the description), and flag (NEEDS_REVIEW or blank).
+  Every Urgent row must contain at least one severity keyword.
+  Every category must match the allowed enum exactly.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input: a single complaint row with complaint_id, description, ward, location.
+  Allowed: description text only.
+  Excluded: ward name, location, reporter type, days_open must NOT influence
+  category or priority decisions.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise,
+    Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no spelling
+    variations, no invented sub-categories allowed"
+  - "priority must be Urgent if description contains any of: injury, child, school,
+    hospital, ambulance, fire, hazard, fell, collapse, risk, sparking, stranded,
+    missing cover, elderly — Standard if no severity keyword — Low only for minor
+    aesthetic complaints with no safety element"
+  - "reason must quote specific words from the description — e.g. 'Description states
+    school children at risk' — generic reasons like 'road issue' are rejected"
+  - "if category cannot be determined from description alone, output category: Other
+    and flag: NEEDS_REVIEW — never assign a specific category with low confidence"

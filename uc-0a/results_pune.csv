@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description states 'Large pothole 60cm wide causing tyre damage. Three vehicles affected this week....' — classified as Pothole.,
+PM-202402,Pothole,Urgent,Description mentions 'child' — 'Deep pothole near bus stop. School children at risk during morning hours....' — classified as Pothole with Urgent priority.,
+PM-202406,Flooding,Urgent,Description mentions 'stranded' — 'Underpass flooded knee-deep after 2hrs rain. Commuters stranded....' — classified as Flooding with Urgent priority.,
+PM-202408,Flooding,Standard,Description states 'Bus stand flooded. Passengers standing in water. Drain blocked....' — classified as Flooding.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description states 'Three consecutive streetlights out for 10 days. Area very dark at night....' — classified as Streetlight.,
+PM-202411,Streetlight,Urgent,Description mentions 'hazard' — 'Streetlight flickering and sparking. Electrical hazard reported....' — classified as Streetlight with Urgent priority.,
+PM-202413,Waste,Standard,Description states 'Overflowing garbage bins near vegetable market. Smell affecting shoppers....' — classified as Waste.,
+PM-202418,Noise,Standard,Description states 'Wedding venue playing music past midnight on weeknights....' — classified as Noise.,
+PM-202419,Road Damage,Standard,Description states 'Road surface cracked and sinking near utility work done 1 month ago....' — classified as Road Damage.,
+PM-202420,Drain Blockage,Urgent,Description mentions 'injury' — 'Manhole cover missing. Risk of serious injury to cyclists....' — classified as Drain Blockage with Urgent priority.,
+PM-202427,Flooding,Standard,Description states 'Bridge approach floods in 30mins of rain. Bridge becomes inaccessible....' — classified as Flooding.,
+PM-202428,Waste,Standard,Description states 'Dead animal not removed for 36 hours. Health concern....' — classified as Waste.,
+PM-202430,Streetlight,Standard,"Description states 'Heritage street, lights out. Safety concern for pedestrians after dark....' — classified as Streetlight.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Description states 'Bulk waste from apartment renovation dumped on public road....' — classified as Waste.,
+PM-202446,Road Damage,Urgent,Description mentions 'fell' — 'Footpath tiles broken and upturned. Elderly resident fell last week....' — classified as Road Damage with Urgent priority.,
