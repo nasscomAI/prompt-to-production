@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: [classify_complaint]
+    description: Classifies a single civic complaint into category, priority, reason, and review flag.
+    input: A string containing the complaint description text.
+    output: A dictionary with fields {category: string, priority: string, reason: string, flag: string}.
+    error_handling: If the description is empty or unclear, assigns category "Other" and sets flag to "NEEDS_REVIEW".
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: [batch_classify]
+    description: Processes a CSV file of complaints and generates a structured classification output CSV.
+    input: CSV file with at least a "description" column.
+    output: CSV file with columns [complaint_id, description, category, priority, reason, flag].
+    error_handling: Skips rows with missing description or marks them as "Other" with "NEEDS_REVIEW".
