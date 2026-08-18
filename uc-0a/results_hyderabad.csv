@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description states ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk."" and contains the severity keyword ""ambulance"", so the priority is Urgent.",
+GH-202402,Drain Blockage,Standard,"The description states ""Market area flooded. Traders suffering losses. Drain completely blocked."", which supports the category Drain Blockage.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"The description states ""Main stormwater drain 100% blocked with construction debris."", which supports the category Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"The description states ""Drain blocked and mosquito breeding. Dengue concern."", which supports the category Drain Blockage.",
+GH-202410,Pothole,Standard,"The description states ""Potholes causing vehicles to slow to 20kmph on fast road."", which supports the category Pothole.",
+GH-202411,Pothole,Standard,"The description states ""Pothole swallowed entire motorcycle wheel. Rider hospitalised."", which supports the category Pothole.",
+GH-202412,Pothole,Urgent,"The description states ""School bus struggling to navigate 6 potholes in 200m stretch."" and contains the severity keyword ""school"", so the priority is Urgent.",
+GH-202417,Waste,Standard,"The description states ""Heritage zone garbage overflow. Tourist photographs showing piles of waste."", which supports the category Waste.",
+GH-202420,Noise,Standard,"The description states ""Construction drilling from 5am daily near residential towers."", which supports the category Noise.",
+GH-202422,Road Damage,Urgent,"The description states ""Road collapsed partially. Crater 1m deep near residential gate."" and contains the severity keyword ""collapse"", so the priority is Urgent.",
+GH-202424,Flooding,Standard,"The description states ""Underpass floods in light rain. Cars regularly abandoned."", which supports the category Flooding.",
+GH-202428,Waste,Standard,"The description states ""Post-market waste not cleared. Area unusable by Sunday morning."", which supports the category Waste.",
+GH-202432,Noise,Standard,"The description states ""24hr supermarket delivery trucks idling with engines on."", which supports the category Noise.",
+GH-202448,Drain Blockage,Standard,"The description states ""Main drain blocked — entire locality at flooding risk this week."", which supports the category Drain Blockage.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"The description states ""Colony surrounded by fields that channel rainwater through main road."", which supports the category Flooding.",
