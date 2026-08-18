@@ -12,7 +12,7 @@ import sys
 
 def load_dataset(file_path: str) -> list:
     """
-    Read ward budget CSV, validate columns, report nulls before returning data.
+    Read ward budget CSV data, validate columns, report nulls before returning data.
     Returns list of row dicts with all fields preserved.
     """
     try:
