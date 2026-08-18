@@ -79,7 +79,7 @@ CATEGORY_RULES = [
 
 def _match_category(description_lower: str) -> tuple:
     """
-    Match description text against category rules.
+    Match description text against civic category rules.
     Returns (category, matched_keywords) or ("Other", []) if no match.
     """
     for category, patterns in CATEGORY_RULES:
