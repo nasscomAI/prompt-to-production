@@ -1,5 +1,5 @@
 """
-UC-0C app.py — Starter file.
+UC-0C app.py — Budget Growth Calculator Starter file.
 Build this using the RICE + agents.md + skills.md + CRAFT workflow.
 See README.md for run command and expected behaviour.
 """

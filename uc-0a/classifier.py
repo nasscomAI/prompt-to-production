@@ -7,7 +7,7 @@ import csv
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
+    Classify a single civic complaint row.
     Returns: dict with keys: complaint_id, category, priority, reason, flag
     
     TODO: Build this using your AI tool guided by your agents.md and skills.md.

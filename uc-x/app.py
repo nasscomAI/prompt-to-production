@@ -1,5 +1,5 @@
 """
-UC-X app.py — Starter file.
+UC-X app.py — Policy Q&A System Starter file.
 Build this using the RICE + agents.md + skills.md + CRAFT workflow.
 See README.md for run command and expected behaviour.
 """
