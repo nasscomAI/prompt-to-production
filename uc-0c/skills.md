@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Read the ward budget CSV, validate required columns, and report any null rows before returning structured records.
+    input: Path string to `ward_budget.csv`.
+    output: List of dictionaries representing each row, with parsed numeric fields and null markers.
+    error_handling: Raises a descriptive error if required columns are missing or input rows are malformed.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Compute per-period growth for a single ward and category using the requested growth type.
+    input: Filtered dataset rows, ward string, category string, growth_type string (`MoM` or `YoY`).
+    output: List of dictionaries containing period, actual_spend, previous_period, growth_pct, formula, status, and notes.
+    error_handling: Returns rows with a not-computed status when prior values are missing or null, and refuses if ward/category selection is ambiguous.

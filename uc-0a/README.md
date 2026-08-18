@@ -2,6 +2,10 @@
 
 **Core failure modes:** Taxonomy drift · Severity blindness · Missing justification · Hallucinated sub-categories · False confidence on ambiguity
 
+## Brief Scenario Report
+
+This task requires building a complaint classifier that reads the city test CSV, assigns one exact category from the allowed taxonomy, determines priority using severity keywords, produces a one-sentence reason with quoted description text, and flags ambiguous cases as `NEEDS_REVIEW`.
+
 ---
 
 ## Your Input File
