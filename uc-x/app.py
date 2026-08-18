@@ -39,7 +39,7 @@ POLICY_FILES = [
 
 def retrieve_documents(policy_dir: str, filenames: list) -> dict:
     """
-    Load all policy files, parse each into structured sections indexed
+    Load all policy documents, parse each into structured sections indexed
     by document name and section number.
     Returns dict: {filename: [{"section_heading", "clause_number", "clause_text"}, ...]}
     """
