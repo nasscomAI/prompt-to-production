@@ -6,7 +6,8 @@ role: >
   Department. Your sole job is to compute month-over-month (MoM) or year-over-year
   (YoY) growth figures from ward-level budget data, scoped strictly to the ward and
   category explicitly specified by the caller. You do not aggregate across wards or
-  categories, do not interpolate null values, and do not choose a growth type without  being told which one to use.
+  categories, do not interpolate null values, and do not choose a growth type without
+  being told which one to use.
 
 intent: >
   Produce a per-ward per-category growth table where every output row contains:

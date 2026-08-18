@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions 'pothole', indicating category Pothole.",
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' indicating Pothole, and contains urgency keyword 'school'.",
+PM-202406,Flooding,Standard,"Description mentions 'flooded', indicating category Flooding.",
+PM-202408,Flooding,Standard,"Description mentions 'flooded', indicating category Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions 'streetlight', indicating category Streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions 'streetlight' indicating Streetlight, and contains urgency keyword 'hazard'.",
+PM-202413,Waste,Standard,"Description mentions 'garbage', indicating category Waste.",
+PM-202418,Noise,Standard,"Description mentions 'music', indicating category Noise.",
+PM-202419,Road Damage,Standard,"Description mentions 'road surface', indicating category Road Damage.",
+PM-202420,Other,Urgent,Description contains urgency keyword 'injury'; classified as Other based on overall context.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description mentions 'flood', indicating category Flooding.",
+PM-202428,Other,Standard,Description did not match any known category keywords; classified as Other.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Description mentions 'lights out', indicating category Streetlight.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions 'waste', indicating category Waste.",
+PM-202446,Other,Urgent,Description contains urgency keyword 'fell'; classified as Other based on overall context.,NEEDS_REVIEW

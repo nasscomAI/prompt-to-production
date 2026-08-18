@@ -1,8 +1,4 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-# agents.md — UC-0B Policy Summary Agent
+## agents.md — UC-0B Policy Summary Agent
 
 role: >
   You are a Policy Summary Agent for the City Municipal Corporation HR Department.
