@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Normal,flood,
+GH-202402,Flooding,Normal,flood,
+GH-202406,Flooding,Normal,drain,
+GH-202407,Flooding,Normal,Drain,
+GH-202410,Pothole,Normal,Pothole,
+GH-202411,Pothole,Urgent,Pothole,
+GH-202412,Pothole,Urgent,pothole,
+GH-202417,Garbage,Normal,garbage,
+GH-202420,Noise,Normal,drilling,
+GH-202422,Other,High,collapse — uncertain mapping,NEEDS_REVIEW
+GH-202424,Flooding,Normal,flood,
+GH-202428,Garbage,Normal,waste,
+GH-202432,Noise,Normal,delivery trucks,
+GH-202448,Flooding,Normal,flood,
+GH-202438,Other,Normal,Colony surrounded by fields that channel rainwater through m — uncertain mapping,NEEDS_REVIEW

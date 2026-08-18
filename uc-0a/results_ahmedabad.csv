@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Normal,Tarmac surface melting at 44°C. Footwear sticking. Park user — uncertain mapping,NEEDS_REVIEW
+AM-202402,Other,Normal,Metal bus shelter reaching dangerous temperatures. Commuters — uncertain mapping,NEEDS_REVIEW
+AM-202405,Other,Normal,Dead trees with split branches. Fall risk to walkers. 3 tree — uncertain mapping,NEEDS_REVIEW
+AM-202406,Other,Normal,Irrigation system broken. Grass dying in heatwave conditions — uncertain mapping,NEEDS_REVIEW
+AM-202407,Other,Urgent,injured — uncertain mapping,NEEDS_REVIEW
+AM-202410,Pothole,Normal,Pothole,
+AM-202414,Other,Normal,Residential colony unlit after 9pm. Wiring theft reported. — uncertain mapping,NEEDS_REVIEW
+AM-202417,Garbage,Normal,waste,
+AM-202421,Noise,Normal,Club music,
+AM-202424,Other,Normal,Zoo approach road surface bubbling at 45°C. Visitor complain — uncertain mapping,NEEDS_REVIEW
+AM-202429,Other,Normal,River walk surface temperature unbearable. Installed tempera — uncertain mapping,NEEDS_REVIEW
+AM-202431,Pothole,Normal,subsidence,
+AM-202435,Other,Normal,Black metal road dividers storing heat. Motorists reporting — uncertain mapping,NEEDS_REVIEW
+AM-202444,Garbage,Normal,waste,
+AM-202445,Other,Normal,BRT shelter roof glass broken. Users exposed to full sun. — uncertain mapping,NEEDS_REVIEW
