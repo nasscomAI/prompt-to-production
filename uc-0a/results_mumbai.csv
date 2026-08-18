@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+MM-202401,Pothole,Standard,Cites 'pothole' causing tyre damage.,
+MM-202402,Pothole,Urgent,Cites 'pothole' near bus stop with 'school' 'children' at risk.,
+MM-202406,Flooding,Standard,Cites underpass 'flooded' knee-deep.,
+MM-202408,Flooding,Standard,Cites bus stand 'flooded' and 'drain' blocked.,NEEDS_REVIEW
+MM-202410,Streetlight,Standard,Cites 'streetlights' out for 10 days.,
+MM-202411,Streetlight,Urgent,Cites 'streetlight' flickering and sparking as an electrical 'hazard'.,
+MM-202413,Waste,Standard,Cites overflowing 'garbage' bins near vegetable market.,
+MM-202418,Noise,Standard,Cites wedding venue playing 'music' past midnight.,
+MM-202419,Road Damage,Standard,Cites 'road' surface cracked and sinking.,
+MM-202420,Road Damage,Urgent,Cites 'manhole' cover missing with risk of 'injury' to cyclists.,
+MM-202427,Flooding,Standard,Cites bridge approach 'floods' in rain.,
+MM-202428,Waste,Standard,Cites 'dead animal' not removed.,
+MM-202430,Streetlight,Standard,Cites 'heritage' street with 'lights' out.,NEEDS_REVIEW
+MM-202433,Waste,Standard,Cites bulk 'waste' dumped on public road.,
+MM-202446,Road Damage,Urgent,Cites broken 'footpath' where resident 'fell' last week.,

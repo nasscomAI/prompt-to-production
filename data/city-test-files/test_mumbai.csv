@@ -1,0 +1,16 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open
+MM-202401,2024-06-21,Mumbai,A Ward,Marine Drive near Nariman Point,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Citizen Portal,4
+MM-202402,2024-06-04,Mumbai,D Ward,Colaba Causeway near Gateway of India,Deep pothole near bus stop. School children at risk during morning hours.,Councillor Referral,12
+MM-202406,2024-06-08,Mumbai,H-West Ward,Milan Subway underpass,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Councillor Referral,8
+MM-202408,2024-06-05,Mumbai,K-West Ward,Andheri West Depot,Bus stand flooded. Passengers standing in water. Drain blocked.,Ward Office Walk-in,12
+MM-202410,2024-06-04,Mumbai,G-South Ward,Senapati Bapat Marg near Phoenix Mall,Three consecutive streetlights out for 10 days. Area very dark at night.,Email,18
+MM-202411,2024-06-22,Mumbai,H-West Ward,"Linking Road, Bandra West",Streetlight flickering and sparking. Electrical hazard reported.,Social Media,9
+MM-202413,2024-06-29,Mumbai,G-North Ward,Dadar Market area,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,WhatsApp Helpline,13
+MM-202418,2024-06-02,Mumbai,K-West Ward,Juhu residential zone,Wedding venue playing music past midnight on weeknights.,Citizen Portal,5
+MM-202419,2024-06-01,Mumbai,G-South Ward,Worli Sea Face,Road surface cracked and sinking near utility work done 1 month ago.,Social Media,2
+MM-202420,2024-06-03,Mumbai,F-North Ward,Sion Circle near station,Manhole cover missing. Risk of serious injury to cyclists.,Email,14
+MM-202427,2024-06-07,Mumbai,M-East Ward,Chembur depression near bridge,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Councillor Referral,12
+MM-202428,2024-06-23,Mumbai,L Ward,Kurla West Road,Dead animal not removed for 36 hours. Health concern.,Email,1
+MM-202430,2024-06-23,Mumbai,G-North Ward,"Khotachiwadi, heritage precinct","Heritage street, lights out. Safety concern for pedestrians after dark.",Social Media,19
+MM-202433,2024-06-08,Mumbai,D Ward,Malabar Hill Road,Bulk waste from apartment renovation dumped on public road.,Phone Helpline,20
+MM-202446,2024-06-09,Mumbai,F-South Ward,"Parel, Ambedkar Road",Footpath tiles broken and upturned. Elderly resident fell last week.,Email,18
