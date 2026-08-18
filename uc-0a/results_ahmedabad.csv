@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The complaint is classified as Heat Hazard because the tarmac is melting at 44 degrees Celsius and footwear is sticking, though no explicit urgent keywords are present.",
+AM-202402,Heat Hazard,Standard,The description mentions dangerous temperatures affecting commuters at the bus shelter.,
+AM-202405,Other,Urgent,"The priority is urgent because the description contains the keyword 'fall', and the category is 'Other' as it does not fit standard municipal complaint types.",
+AM-202406,Other,Standard,"The description mentions an irrigation system and dying grass which does not fit any specific category, containing no urgency keywords.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,The complaint is classified as Road Damage due to upturned paving and priority is Urgent because the description explicitly mentions the keyword 'injured'.,
+AM-202410,Pothole,Standard,The description explicitly mentions a pothole on the main highway.,
+AM-202414,Streetlight,Standard,"The complaint describes the residential colony being unlit after 9pm, matching the Streetlight category.",
+AM-202417,Waste,Standard,The complaint describes night market waste not cleared before morning.,
+AM-202421,Noise,Standard,"The complaint describes club music audible at residential buildings at 2am, which falls under Noise.",
+AM-202424,Road Damage,Standard,"The category is Road Damage because the description mentions road surface bubbling, and the priority is Standard as no urgent keywords are present.",
+AM-202429,Heat Hazard,Standard,The complaint describes unbearable river walk surface temperature of 52 degrees Celsius.,
+AM-202431,Heritage Damage,Standard,The complaint specifically mentions heritage concern regarding an ancient step well.,
+AM-202435,Heat Hazard,Urgent,"The priority is set to Urgent because the description contains the keyword burns, which is categorized under hazard, and the category is Heat Hazard due to the mention of storing heat.",
+AM-202444,Waste,Standard,"The complaint describes restaurant waste bins overflowing, which falls under Waste.",
+AM-202445,Other,Standard,"The complaint describes a broken BRT shelter roof glass and sun exposure, which does not fit into the other specific categories.",NEEDS_REVIEW

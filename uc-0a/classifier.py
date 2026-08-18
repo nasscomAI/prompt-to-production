@@ -1,30 +1,88 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
 """
 import argparse
 import csv
+import json
+import os
+from google import genai
+from pydantic import BaseModel
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+class ClassificationResult(BaseModel):
+    category: str
+    priority: str
+    reason: str
+    flag: str
+
+def get_system_instruction():
+    agents_path = os.path.join(os.path.dirname(__file__), 'agents.md')
+    with open(agents_path, 'r', encoding='utf-8') as f:
+        return f.read()
+
+def classify_complaint(client: genai.Client, row: dict, system_instruction: str) -> dict:
+    prompt = f"Please classify the following complaint:\n\nDescription: {row.get('description', '')}"
     
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
+    response = client.models.generate_content(
+        model='gemini-3.5-flash-lite',
+        contents=prompt,
+        config=genai.types.GenerateContentConfig(
+            system_instruction=system_instruction,
+            temperature=0.0,
+            response_mime_type="application/json",
+            response_schema=ClassificationResult
+        )
+    )
+    
+    try:
+        data = json.loads(response.text)
+        return {
+            "complaint_id": row.get("complaint_id"),
+            "category": data.get("category", "Other"),
+            "priority": data.get("priority", "Standard"),
+            "reason": data.get("reason", ""),
+            "flag": data.get("flag", "")
+        }
+    except Exception as e:
+        return {
+            "complaint_id": row.get("complaint_id"),
+            "category": "Other",
+            "priority": "Standard",
+            "reason": "Failed to parse AI output",
+            "flag": "NEEDS_REVIEW"
+        }
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
+    client = genai.Client()
+    system_instruction = get_system_instruction()
     
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
+    results = []
+    
+    with open(input_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if not row.get("description") or not row.get("description").strip():
+                results.append({
+                    "complaint_id": row.get("complaint_id", ""),
+                    "category": "Other",
+                    "priority": "Low",
+                    "reason": "Null or empty description",
+                    "flag": "NEEDS_REVIEW"
+                })
+                continue
+            
+            res = classify_complaint(client, row, system_instruction)
+            results.append(res)
+            
+            # Free tier API rate limit: 5 requests per minute
+            # Wait 13 seconds between requests to avoid RESOURCE_EXHAUSTED errors
+            import time
+            time.sleep(13)
+            
+    with open(output_path, 'w', encoding='utf-8', newline='') as f:
+        fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(results)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
