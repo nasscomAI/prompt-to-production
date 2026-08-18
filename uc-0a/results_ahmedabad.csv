@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The description indicates a heat hazard issue.,
+AM-202407,Other,Urgent,The description contains the severity keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description indicates a pothole issue.,
+AM-202414,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description indicates a waste issue.,
+AM-202421,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202424,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description indicates a heritage damage issue.,
+AM-202435,Heat Hazard,Standard,The description indicates a heat hazard issue.,
+AM-202444,Waste,Standard,The description indicates a waste issue.,
+AM-202445,Other,Standard,The description indicates a other issue.,NEEDS_REVIEW
