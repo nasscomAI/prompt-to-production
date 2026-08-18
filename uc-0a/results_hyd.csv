@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on cited words: ""flooded"", ""flood"". Severity keywords present: ""ambulance"".",
+GH-202402,Flooding,Standard,"Classified as Flooding based on cited words: ""flooded"", ""flood"".",
+GH-202406,Other,Low,"No taxonomy keyword match in description; cited words: ""Main"", ""stormwater"", ""drain"", ""100%"", ""blocked"".",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage based on cited words: ""drain blocked"".",
+GH-202410,Pothole,Standard,"Classified as Pothole based on cited words: ""pothole"".",
+GH-202411,Pothole,Standard,"Classified as Pothole based on cited words: ""pothole"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole based on cited words: ""pothole"". Severity keywords present: ""school"".",
+GH-202417,Waste,Standard,"Classified as Waste based on cited words: ""garbage"", ""waste"".",
+GH-202420,Other,Low,"No taxonomy keyword match in description; cited words: ""Construction"", ""drilling"", ""from"", ""5am"", ""daily"".",NEEDS_REVIEW
+GH-202422,Other,Low,"No taxonomy keyword match in description; cited words: ""Road"", ""collapsed"", ""partially."", ""Crater"", ""1m"".",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Classified as Flooding based on cited words: ""flood"".",
+GH-202428,Waste,Standard,"Classified as Waste based on cited words: ""waste"".",
+GH-202432,Other,Low,"No taxonomy keyword match in description; cited words: ""24hr"", ""supermarket"", ""delivery"", ""trucks"", ""idling"".",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage based on cited words: ""drain blocked"".",
+GH-202438,Other,Low,"No taxonomy keyword match in description; cited words: ""Colony"", ""surrounded"", ""by"", ""fields"", ""that"".",NEEDS_REVIEW
