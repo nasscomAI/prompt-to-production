@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole because description contains 'pothole'. Priority set to Urgent due to severity keyword(s): 'child', 'school'.",
+PM-202406,Flooding,Urgent,Classified as Flooding because description contains 'flood' and 'flooded' and 'underpass flooded'.,
+PM-202408,Other,Low,"Ambiguous description; matched multiple categories (Flooding, Drain Blockage) on words: 'flood', 'flooded', 'drain blocked'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight because description contains 'streetlight' and 'streetlights' and 'lights out'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description contains 'streetlight' and 'flickering' and 'sparking'. Priority set to Urgent due to severity keyword(s): 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste because description contains 'garbage' and 'overflowing'.,
+PM-202418,Noise,Standard,Classified as Noise because description contains 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because description contains 'cracked' and 'sinking'.,
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage because description contains 'manhole'. Priority set to Urgent due to severity keyword(s): 'injury'.,
+PM-202427,Flooding,Urgent,Classified as Flooding because description contains 'flood'.,
+PM-202428,Waste,Standard,Classified as Waste because description contains 'animal'.,
+PM-202430,Other,Low,"Ambiguous description; matched multiple categories (Streetlight, Heritage Damage) on words: 'lights out', 'heritage'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because description contains 'waste'.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage because description contains 'broken' and 'footpath' and 'tiles'. Priority set to Urgent due to severity keyword(s): 'fell'.,
