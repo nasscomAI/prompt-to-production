@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Mapped to Pothole due to description mentioning relevant environmental issues.,
+PM-202402,Pothole,Urgent,"Urgent priority set due to the presence of severity keyword(s): child, school.",
+PM-202406,Flooding,Standard,Mapped to Flooding due to description mentioning relevant environmental issues.,
+PM-202408,Flooding,Standard,Mapped to Flooding due to description mentioning relevant environmental issues.,
+PM-202410,Streetlight,Standard,Mapped to Streetlight due to description mentioning relevant environmental issues.,
+PM-202411,Streetlight,Urgent,Urgent priority set due to the presence of severity keyword(s): hazard.,
+PM-202413,Waste,Standard,Mapped to Waste due to description mentioning relevant environmental issues.,
+PM-202418,Other,Standard,Classified based on description content.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Mapped to Road Damage due to description mentioning relevant environmental issues.,
+PM-202420,Pothole,Urgent,Urgent priority set due to the presence of severity keyword(s): injury.,
+PM-202427,Flooding,Standard,Mapped to Flooding due to description mentioning relevant environmental issues.,
+PM-202428,Other,Standard,Classified based on description content.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Mapped to Streetlight due to description mentioning relevant environmental issues.,
+PM-202433,Waste,Standard,Mapped to Waste due to description mentioning relevant environmental issues.,
+PM-202446,Other,Urgent,Urgent priority set due to the presence of severity keyword(s): fell.,NEEDS_REVIEW
