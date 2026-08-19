@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Reads and parses a policy text file into structured sections and individual numbered clauses.
+    input: File path to policy document (e.g., policy_hr_leave.txt).
+    output: A dictionary or list of structured sections mapping section titles and numbered clause keys (e.g., 2.3, 5.2) to text content.
+    error_handling: Raises FileNotFoundError if file is missing; flags unparsed or unnumbered paragraphs.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Generates a complete policy summary adhering strictly to all RICE enforcement rules and preserving all binding obligations.
+    input: Structured policy sections dictionary produced by retrieve_policy.
+    output: Plain text policy summary with explicit section headings, clause references, and exact multi-condition requirements.
+    error_handling: If a clause cannot be summarized without losing critical condition details, quotes the exact clause verbatim.
