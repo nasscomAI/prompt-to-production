@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,The complaint cites 'Large pothole 60cm wide causing tyre damage.' as the core issue.,
+PM-202402,Pothole,Urgent,The complaint cites 'Deep pothole near bus stop.' as the core issue.,
+PM-202406,Flooding,Standard,The complaint cites 'Underpass flooded knee-deep after 2hrs rain.' as the core issue.,
+PM-202408,Other,Standard,The complaint cites 'Bus stand flooded.' as the core issue.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The complaint cites 'Three consecutive streetlights out for 10 days.' as the core issue.,
+PM-202411,Streetlight,Urgent,The complaint cites 'Streetlight flickering and sparking.' as the core issue.,
+PM-202413,Waste,Standard,The complaint cites 'Overflowing garbage bins near vegetable market.' as the core issue.,
+PM-202418,Noise,Low,The complaint cites 'Wedding venue playing music past midnight on weeknights.' as the core issue.,
+PM-202419,Road Damage,Low,The complaint cites 'Road surface cracked and sinking near utility work done 1 month ago.' as the core issue.,
+PM-202420,Road Damage,Urgent,The complaint cites 'Manhole cover missing.' as the core issue.,
+PM-202427,Flooding,Standard,The complaint cites 'Bridge approach floods in 30mins of rain.' as the core issue.,
+PM-202428,Waste,Low,The complaint cites 'Dead animal not removed for 36 hours.' as the core issue.,
+PM-202430,Other,Standard,"The complaint cites 'Heritage street, lights out.' as the core issue.",NEEDS_REVIEW
+PM-202433,Waste,Standard,The complaint cites 'Bulk waste from apartment renovation dumped on public road.' as the core issue.,
+PM-202446,Road Damage,Urgent,The complaint cites 'Footpath tiles broken and upturned.' as the core issue.,
