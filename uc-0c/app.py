@@ -1,12 +1,9 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+from transformers import pipeline
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+qa = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
 
-if __name__ == "__main__":
-    main()
+context = """Infosys Springboard is a learning platform offering courses in IT, E&C, and more."""
+question = "What is Infosys Springboard?"
+
+answer = qa(question= question, context= context)
+print("Answer:",answer['answer'])
