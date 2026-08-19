@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The description contains the specific word ""heritage"".",
+KM-202402,Road Damage,Standard,"The description mentions cracked, sinking, broken, or damaged road infrastructure.",
+KM-202405,Other,Standard,"The description contains terms such as ""manhole"" that do not match an allowed category.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The description contains the specific word ""pothole"".",
+KM-202410,Pothole,Standard,"The description contains the specific word ""pothole"".",
+KM-202411,Pothole,Standard,"The description contains the specific word ""pothole"".",
+KM-202415,Other,Standard,"The description contains terms such as ""manhole"" that do not match an allowed category.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The description mentions garbage, waste, or dumped material.",
+KM-202421,Road Damage,Urgent,"The description mentions cracked, sinking, broken, or damaged road infrastructure.",
+KM-202422,Road Damage,Standard,"The description mentions cracked, sinking, broken, or damaged road infrastructure.",
+KM-202426,Heritage Damage,Standard,"The description contains the specific word ""heritage"".",
+KM-202430,Other,Standard,"The description contains terms such as ""manhole"" that do not match an allowed category.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The description contains the specific word ""heritage"".",
+KM-202436,Other,Standard,"The description contains terms such as ""manhole"" that do not match an allowed category.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The description contains the specific word ""heritage"".",
