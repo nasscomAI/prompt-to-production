@@ -1,6 +1,4 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Skills
 
 skills:
   - name: retrieve_policy

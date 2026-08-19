@@ -1,64 +1,39 @@
-"""
-UC-0B - Summary That Changes Meaning
-"""
-
 import argparse
 import re
 
 
-# These clauses are the ground truth required by the workshop.
 REQUIRED_CLAUSES = [
-    "2.3",
-    "2.4",
-    "2.5",
-    "2.6",
-    "2.7",
-    "3.2",
-    "3.4",
-    "5.2",
-    "5.3",
-    "7.2",
+    "2.3", "2.4", "2.5", "2.6", "2.7",
+    "3.2", "3.4", "5.2", "5.3", "7.2"
 ]
 
 
-def retrieve_policy(input_path):
-    """
-    Read the policy document and extract its numbered clauses.
-    Returns a dictionary: clause number -> clause text.
-    """
-    with open(input_path, "r", encoding="utf-8") as file:
+def retrieve_policy(path):
+    with open(path, "r", encoding="utf-8") as file:
         text = file.read()
 
     clauses = {}
 
-    pattern = re.compile(
-    r"(?ms)^(\d+\.\d+)\s+(.*?)(?=^\d+\.\d+\s|^\d+\.\s+[A-Z]|^$|\Z)"
-   )
+    for clause in REQUIRED_CLAUSES:
+        pattern = rf"(?m)^\s*{re.escape(clause)}\s+.*?(?=^\s*\d+\.\d+\s+|\Z)"
+        match = re.search(pattern, text, re.DOTALL)
 
-    for match in pattern.finditer(text):
-        clause_number = match.group(1)
-        clause_text = " ".join(match.group(2).split())
-        clauses[clause_number] = clause_text
+        if match:
+            clauses[clause] = " ".join(match.group(0).split())
 
     return clauses
 
 
 def summarize_policy(clauses):
-    """
-    Create a summary containing every required clause.
-
-    The original clause wording is retained so that conditions,
-    numbers, deadlines, approvers, and obligations are not lost.
-    """
     lines = []
 
     for clause in REQUIRED_CLAUSES:
-        if clause not in clauses:
+        if clause in clauses:
+            lines.append(f"{clause}: {clauses[clause]}")
+        else:
             lines.append(
                 f"{clause}: [REVIEW REQUIRED - clause missing from source]"
             )
-        else:
-            lines.append(f"{clause}: {clauses[clause]}")
 
     return "\n".join(lines)
 
@@ -68,17 +43,8 @@ def main():
         description="HR Leave Policy Summarizer"
     )
 
-    parser.add_argument(
-        "--input",
-        required=True,
-        help="Path to the policy text file"
-    )
-
-    parser.add_argument(
-        "--output",
-        required=True,
-        help="Path for the summary output file"
-    )
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
 
     args = parser.parse_args()
 
