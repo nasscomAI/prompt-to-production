@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description states ""tarmac surface melting at 44°c. footwear sticking. park users"".",
+AM-202402,Heat Hazard,Standard,"Description states ""metal bus shelter reaching dangerous temperatures. commuters refusing to use"".",
+AM-202405,Other,Standard,Description indicates a other issue.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description states ""rrigation system broken. grass dying in heatwave conditions"".",
+AM-202407,Road Damage,Urgent,"Description states ""broken bench and upturned paving. child injured last week"".",
+AM-202410,Pothole,Standard,"Description states ""pothole on main highway causing morning rush la"".",
+AM-202414,Streetlight,Standard,"Description states ""residential colony unlit after 9pm. wiring theft reported"".",
+AM-202417,Heritage Damage,Standard,"Description states ""arket waste not cleared before morning. heritage area affected"".",
+AM-202421,Noise,Standard,"Description states ""club music audible at residential buildings at 2am"".",
+AM-202424,Heat Hazard,Standard,"Description states ""zoo approach road surface bubbling at 45°c. visitor complaints"".",
+AM-202429,Heat Hazard,Standard,"Description states ""river walk surface temperature unbearable. installed temperature reads"".",
+AM-202431,Heritage Damage,Standard,"Description states ""road subsidence near ancient step well. heritage concern"".",
+AM-202435,Heat Hazard,Standard,"Description states ""black metal road dividers storing heat. motorists reporting burns on contact"".",
+AM-202444,Waste,Standard,"Description states ""restaurant waste bins overflowing on sunday night. healt"".",
+AM-202445,Other,Standard,Description indicates a other issue.,NEEDS_REVIEW
