@@ -1,0 +1,13 @@
+ward,category,period,growth_type,status,actual_spend,comparison_period,comparison_spend,formula,growth_pct,detail
+Ward 1 – Kasba,Roads & Pothole Repair,2024-01,MoM,FLAGGED,13.3,,,,,no MoM comparison period (2023-12) available — not computed
+Ward 1 – Kasba,Roads & Pothole Repair,2024-02,MoM,COMPUTED,12.2,2024-01,13.3,(12.2 - 13.3) / 13.3 x 100,-8.3%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-03,MoM,COMPUTED,12.3,2024-02,12.2,(12.3 - 12.2) / 12.2 x 100,+0.8%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-04,MoM,COMPUTED,13.4,2024-03,12.3,(13.4 - 12.3) / 12.3 x 100,+8.9%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-05,MoM,COMPUTED,14.1,2024-04,13.4,(14.1 - 13.4) / 13.4 x 100,+5.2%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-06,MoM,COMPUTED,14.8,2024-05,14.1,(14.8 - 14.1) / 14.1 x 100,+5.0%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-07,MoM,COMPUTED,19.7,2024-06,14.8,(19.7 - 14.8) / 14.8 x 100,+33.1%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-08,MoM,COMPUTED,20.2,2024-07,19.7,(20.2 - 19.7) / 19.7 x 100,+2.5%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-09,MoM,COMPUTED,20.1,2024-08,20.2,(20.1 - 20.2) / 20.2 x 100,-0.5%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-10,MoM,COMPUTED,13.1,2024-09,20.1,(13.1 - 20.1) / 20.1 x 100,-34.8%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-11,MoM,COMPUTED,14.2,2024-10,13.1,(14.2 - 13.1) / 13.1 x 100,+8.4%,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-12,MoM,COMPUTED,12.7,2024-11,14.2,(12.7 - 14.2) / 14.2 x 100,-10.6%,
