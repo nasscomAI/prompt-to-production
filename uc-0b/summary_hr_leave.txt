@@ -1,11 +1,4 @@
-"""
-UC-0B app.py — HR Leave Policy Summarizer
-RICE → agents.md → skills.md → CRAFT workflow implementation.
-"""
-import argparse
-import os
-
-CLAUSE_SUMMARY = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
 Document Reference: HR-POL-001 (Version 2.3)
 
 MANDATORY CLAUSE INVENTORY & OBLIGATIONS:
@@ -39,27 +32,3 @@ LWP exceeding 30 continuous days REQUIRES written approval from the Municipal Co
 
 [Clause 7.2] In-Service Leave Encashment Prohibition:
 Leave encashment during active service is NOT PERMITTED under any circumstances. (Annual leave encashment is permitted only upon retirement or resignation up to max 60 days per Clause 7.1).
-"""
-
-def summarize_policy(input_path: str, output_path: str):
-    if not os.path.exists(input_path):
-        raise FileNotFoundError(f"Input policy file not found: {input_path}")
-        
-    with open(input_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # Write non-softened summary with complete clause inventory
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(CLAUSE_SUMMARY.strip())
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B HR Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy_hr_leave.txt")
-    parser.add_argument("--output", required=True, help="Path to write summary_hr_leave.txt")
-    args = parser.parse_args()
-
-    summarize_policy(args.input, args.output)
-    print(f"Done. Policy summary written to {args.output}")
-
-if __name__ == "__main__":
-    main()

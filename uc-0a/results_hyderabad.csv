@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Cites flooding conditions: 'Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.',
+GH-202402,Flooding,Standard,Cites flooding conditions: 'Market area flooded. Traders suffering losses. Drain completely blocked.',
+GH-202406,Drain Blockage,Standard,Cites drain blockage or drainage issue: 'Main stormwater drain 100% blocked with construction debris.',
+GH-202407,Drain Blockage,Standard,Cites drain blockage or drainage issue: 'Drain blocked and mosquito breeding. Dengue concern.',
+GH-202410,Pothole,Standard,Cites pothole issue: 'Potholes causing vehicles to slow to 20kmph on fast road.',
+GH-202411,Pothole,Urgent,Cites pothole issue: 'Pothole swallowed entire motorcycle wheel. Rider hospitalised.',
+GH-202412,Pothole,Urgent,Cites pothole issue: 'School bus struggling to navigate 6 potholes in 200m stretch.',
+GH-202417,Heritage Damage,Standard,Cites heritage zone impact: 'Heritage zone garbage overflow. Tourist photographs showing piles of waste.',
+GH-202420,Noise,Standard,Cites noise/disturbance: 'Construction drilling from 5am daily near residential towers.',
+GH-202422,Road Damage,Urgent,Cites road structural damage: 'Road collapsed partially. Crater 1m deep near residential gate.',
+GH-202424,Flooding,Standard,Cites flooding conditions: 'Underpass floods in light rain. Cars regularly abandoned.',
+GH-202428,Waste,Standard,Cites waste accumulation: 'Post-market waste not cleared. Area unusable by Sunday morning.',
+GH-202432,Noise,Standard,Cites noise/disturbance: '24hr supermarket delivery trucks idling with engines on.',
+GH-202448,Drain Blockage,Standard,Cites drain blockage or drainage issue: 'Main drain blocked — entire locality at flooding risk this week.',
+GH-202438,Other,Standard,Ambiguous cause between flooding and road drainage: 'Colony surrounded by fields that channel rainwater through main road.',NEEDS_REVIEW
