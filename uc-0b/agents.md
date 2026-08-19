@@ -1,18 +1,23 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Policy Summary Agent
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Summarize the HR leave policy using only information contained in the
+  source document, while preserving every required condition and clause.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a verifiable policy summary that contains all required numbered
+  clauses and preserves their obligations, conditions, limits, approvers,
+  deadlines, and exceptions without changing their meaning.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may use only the contents of the supplied policy_hr_leave.txt
+  document. It must not use outside knowledge, assumptions, common practice,
+  or information from other policies.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause in the source must be represented in the summary."
+  - "Every multi-condition obligation must preserve all conditions, including both Department Head and HR Director approval in clause 5.2."
+  - "All numbers, deadlines, limits, approvers, exceptions, and binding requirements must be preserved exactly from the source."
+  - "The summary must not add information that is not present in the source document."
+  - "If a clause cannot be summarized without losing meaning, quote it verbatim and flag it for review."
+  
