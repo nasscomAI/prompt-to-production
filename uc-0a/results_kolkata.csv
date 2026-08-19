@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified based on matched keywords 'lamp post' in description.,
+KM-202402,Heritage Damage,Standard,Classified based on matched keywords 'historic' in description.,
+KM-202405,Other,Standard,Classified based on no standard category keywords found in description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Classified based on matched keywords 'pothole, potholes' in description.",
+KM-202410,Pothole,Standard,Classified based on matched keywords 'pothole' in description.,
+KM-202411,Pothole,Standard,Classified based on matched keywords 'pothole' in description.,
+KM-202415,Drain Blockage,Standard,Classified based on matched keywords 'drain' in description.,
+KM-202418,Waste,Standard,Classified based on matched keywords 'waste' in description.,
+KM-202421,Road Damage,Urgent,"Classified based on matched keywords 'sinking, footpath'; severity indicators 'hospital, fell' in description.",
+KM-202422,Road Damage,Standard,"Classified based on matched keywords 'road surface, buckled' in description.",
+KM-202426,Heritage Damage,Standard,"Classified based on matched keywords 'heritage, defaced' in description.",
+KM-202430,Road Damage,Standard,Classified based on matched keywords 'subsided' in description.,
+KM-202434,Heritage Damage,Standard,Classified based on matched keywords 'heritage' in description.,
+KM-202436,Streetlight,Standard,Classified based on matched keywords 'darkness' in description.,
+KM-202438,Noise,Standard,Classified based on matched keywords 'amplifiers' in description.,
