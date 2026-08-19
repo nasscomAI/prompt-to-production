@@ -1,18 +1,25 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0B Summary That Changes Meaning
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  HR Policy Summary Agent — reads the employee leave policy document
+  (policy_hr_leave.txt) and produces a comprehensive summary text
+  preserving every binding obligation, condition, and section structure.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Given policy_hr_leave.txt, produce summary_hr_leave.txt preserving all
+  numbered clauses (1.1 through 8.2). The summary must preserve all binding
+  verbs (must, will, requires, not permitted) and dual/multi-condition
+  approvals without softening or clause omission.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input: policy_hr_leave.txt text document. Source text is the sole authority.
+  No external HR policies, assumptions, or standard industry practices may be
+  added or inferred.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Every numbered clause (1.1 through 8.2) must be present in the summary.
+  - Multi-condition obligations must preserve ALL conditions — never drop one
+    silently (e.g. Clause 5.2 requires approval from BOTH Department Head AND HR Director).
+  - Never add information not present in the source document (no scope bleed).
+  - If a clause cannot be summarised without meaning loss — quote it verbatim
+    and flag it.
