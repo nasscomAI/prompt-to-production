@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description contains: heritage,
+KM-202402,Road Damage,Standard,Description contains: road,
+KM-202405,Noise,Standard,"Description contains: band, festival",
+KM-202409,Pothole,Standard,"Description contains: pothole, potholes, hole",
+KM-202410,Pothole,Standard,"Description contains: pothole, hole",
+KM-202411,Pothole,Standard,"Description contains: pothole, hole",
+KM-202415,Road Damage,Standard,Description contains: road,
+KM-202418,Waste,Standard,Description contains: waste,
+KM-202421,Pothole,Urgent,"Description contains: pit, hospital, fell",
+KM-202422,Road Damage,Standard,"Description contains: road surface, road",
+KM-202426,Heritage Damage,Standard,Description contains: heritage,
+KM-202430,Road Damage,Standard,Description contains: road,
+KM-202434,Heritage Damage,Standard,Description contains: heritage,
+KM-202436,Other,Standard,"General complaint, no specific category keywords detected",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Description contains: heritage,
