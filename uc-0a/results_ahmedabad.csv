@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified based on matched keywords '44°c, melting' in description.",
+AM-202402,Other,Standard,Classified based on no standard category keywords found in description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Classified based on no standard category keywords found in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified based on matched keywords 'heatwave' in description.,
+AM-202407,Road Damage,Urgent,Classified based on matched keywords 'upturned'; severity indicators 'child' in description.,
+AM-202410,Pothole,Standard,Classified based on matched keywords 'pothole' in description.,
+AM-202414,Streetlight,Standard,Classified based on matched keywords 'unlit' in description.,
+AM-202417,Waste,Standard,Classified based on matched keywords 'waste' in description.,
+AM-202421,Noise,Standard,"Classified based on matched keywords 'music, audible' in description.",
+AM-202424,Heat Hazard,Standard,Classified based on matched keywords '45°c' in description.,
+AM-202429,Heat Hazard,Standard,Classified based on matched keywords '52°c' in description.,
+AM-202431,Heritage Damage,Standard,"Classified based on matched keywords 'heritage, ancient' in description.",
+AM-202435,Other,Standard,Classified based on no standard category keywords found in description.,NEEDS_REVIEW
+AM-202444,Waste,Standard,"Classified based on matched keywords 'waste, bin, bins' in description.",
+AM-202445,Heat Hazard,Standard,Classified based on matched keywords 'full sun' in description.,
