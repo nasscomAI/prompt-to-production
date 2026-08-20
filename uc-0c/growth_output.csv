@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,growth_type,growth_percentage,formula,flag_notes
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,MOM,N/A (Base Period),MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.2,MOM,-8.3%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.3,MOM,+0.8%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.4,MOM,+8.9%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.1,MOM,+5.2%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.8,MOM,+5.0%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,13.0,19.7,MOM,+33.1%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.2,MOM,+2.5%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.1,MOM,-0.5%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.1,MOM,-34.8%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.2,MOM,+8.4%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.7,MOM,-10.6%,MoM Growth % = ((Actual_t - Actual_{t-1}) / Actual_{t-1}) * 100,

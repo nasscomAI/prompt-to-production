@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority citing description text 'flooded' and severity trigger 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority citing description text 'drain completely blocked'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority citing description text 'drain 100% blocked'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority citing description text 'drain blocked'.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority citing description text 'potholes'.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority citing description text 'pothole' and severity trigger 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority citing description text 'potholes' and severity trigger 'school'.,
+GH-202417,Waste,Standard,Classified as Waste with Standard priority citing description text 'garbage'.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise with Standard priority citing description text 'drilling'.,
+GH-202422,Pothole,Urgent,Classified as Pothole with Urgent priority citing description text 'crater' and severity trigger 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority citing description text 'floods'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority citing description text 'waste'.,
+GH-202432,Other,Standard,Category ambiguous or unrecognized from description text; flagged for manual review.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority citing description text 'drain blocked'.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding with Standard priority citing description text 'rainwater'.,
