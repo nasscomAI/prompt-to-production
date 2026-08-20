@@ -1,0 +1,11 @@
+clause,title,core_obligation,binding_verb,omission_check,condition_drop_check,status
+2.3,Annual Leave Notice,Employees must submit leave application at least 14 calendar days in advance using Form HR-L1.,must,PRESENT,PRESERVED,PASS
+2.4,Written Approval Required,Leave applications must receive written approval from direct manager before leave commences; verbal approval is not valid.,must,PRESENT,PRESERVED,PASS
+2.5,Unapproved Absence as LOP,Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.,will,PRESENT,PRESERVED,PASS
+2.6,Carry-Forward Limits,Employees may carry forward a maximum of 5 unused annual leave days to following year; days above 5 are forfeited on 31 December.,may / are forfeited,PRESENT,PRESERVED,PASS
+2.7,Carry-Forward Expiry Window,Carry-forward days must be used within Q1 (January–March) of following year or they are forfeited.,must,PRESENT,PRESERVED,PASS
+3.2,Sick Leave Medical Certificate,Sick leave of 3 or more consecutive days requires a medical certificate from registered medical practitioner submitted within 48 hours of return.,requires,PRESENT,PRESERVED,PASS
+3.4,Sick Leave Adjacent to Holidays,Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.,requires,PRESENT,PRESERVED,PASS
+5.2,Dual Approval for LWP,Leave Without Pay (LWP) requires approval from both Department Head AND HR Director; manager approval alone is not sufficient.,requires,PRESENT,PRESERVED,PASS
+5.3,Extended LWP Approval,LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.,requires,PRESENT,PRESERVED,PASS
+7.2,In-Service Leave Encashment Prohibition,Leave encashment during service is not permitted under any circumstances.,not permitted,PRESENT,PRESERVED,PASS
