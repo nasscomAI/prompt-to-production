@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description mentions ""melting"" (""Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.""), so the category is Heat Hazard",
+AM-202402,Heat Hazard,Standard,"The description mentions ""dangerous temperature"" (""Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.""), so the category is Heat Hazard",
+AM-202405,Other,Standard,"No allowed category keyword found in the description (""Dead trees with split branches. Fall risk to walkers. 3 trees affected."") — category cannot be determined, so it is marked NEEDS_REVIEW",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions ""heat"" (""Irrigation system broken. Grass dying in heatwave conditions.""), so the category is Heat Hazard",
+AM-202407,Road Damage,Urgent,"The description mentions ""upturned"" (""Broken bench and upturned paving. Child injured last week.""), so the category is Road Damage; severity trigger(s) injured, child make the priority Urgent",
+AM-202410,Pothole,Standard,"The description mentions ""Pothole"" (""Pothole on main highway causing morning rush lane closure.""), so the category is Pothole",
+AM-202414,Streetlight,Standard,"The description mentions ""unlit"" (""Residential colony unlit after 9pm. Wiring theft reported.""), so the category is Streetlight",
+AM-202417,Waste,Standard,"The description mentions ""waste"" (""Night market waste not cleared before morning. Heritage area affected.""), so the category is Waste",
+AM-202421,Noise,Standard,"The description mentions ""music"" (""Club music audible at residential buildings at 2am.""), so the category is Noise",
+AM-202424,Road Damage,Standard,"The description mentions ""road surface"" (""Zoo approach road surface bubbling at 45°C. Visitor complaints.""), so the category is Road Damage",
+AM-202429,Heat Hazard,Standard,"The description mentions ""°C"" (""temperature unbearable. Installed temperature reads 52°C.""), so the category is Heat Hazard",
+AM-202431,Road Damage,Standard,"The description mentions ""subsidence"" (""Old city road subsidence near ancient step well. Heritage concern.""), so the category is Road Damage",
+AM-202435,Heat Hazard,Standard,"The description mentions ""heat"" (""Black metal road dividers storing heat. Motorists reporting burns on contact.""), so the category is Heat Hazard",
+AM-202444,Waste,Standard,"The description mentions ""waste"" (""Restaurant waste bins overflowing on Sunday night. Health risk.""), so the category is Waste",
+AM-202445,Heat Hazard,Standard,"The description mentions ""full sun"" (""BRT shelter roof glass broken. Users exposed to full sun.""), so the category is Heat Hazard",
