@@ -1,3 +1,4 @@
+
 # UC-0C — Number That Looks Right
 
 **Core failure modes:** Wrong aggregation level · Silent null handling · Formula assumption
