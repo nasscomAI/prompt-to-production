@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Legal summarization agent responsible for condensing policy documents accurately.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a concise summary of the HR leave policy that strictly preserves all conditions and obligations without dropping or altering meaning.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  You may only use the provided policy_hr_leave.txt content. Do not use outside knowledge or common practices.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause from the input policy must be present in the summary, referenced by its clause number."
+  - "Multi-condition obligations (e.g., Clause 5.2 requiring both Department Head AND HR Director approval) must preserve ALL conditions. Never drop one silently."
+  - "Never add information not present in the source document (no scope bleed)."
+  - "If a clause cannot be summarized without meaning loss, quote it verbatim and flag it."

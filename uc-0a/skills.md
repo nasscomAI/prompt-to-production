@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single citizen complaint into structured fields.
+    input: String containing the complaint 'description'.
+    output: JSON object containing 'category', 'priority', 'reason', and 'flag'.
+    error_handling: Return a default 'Other' category fallback if classification fails.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads an input CSV of complaints, applies classify_complaint to each, and writes the results to an output CSV.
+    input: File paths for input CSV and output CSV.
+    output: Writes CSV to file system.
+    error_handling: Ignore and skip rows that fail parsing to ensure batch process completes.
