@@ -3,16 +3,16 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Policy Summary Agent. Responsible for summarizing HR leave policy documents into concise, clause-complete summaries. Operates only on provided policy text files.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output must be a summary that includes every numbered clause, preserves all multi-condition obligations, and does not add information not present in the source. Clauses that cannot be summarized without meaning loss are quoted verbatim and flagged.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed to use only the content of the provided policy document (e.g., policy_hr_leave.txt). Excludes any external data, prior knowledge, or assumptions not present in the document.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause must be present in the summary."
+  - "Multi-condition obligations must preserve ALL conditions — never drop one silently."
+  - "Never add information not present in the source document."
+  - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag it."
