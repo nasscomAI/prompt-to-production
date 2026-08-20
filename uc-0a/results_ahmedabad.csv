@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"description mentions ""melting"", ""44""",
+AM-202402,Heat Hazard,Standard,"description mentions ""temperature""",
+AM-202405,Other,Standard,"ambiguous: no single category keyword dominates the description ("""")",NEEDS_REVIEW
+AM-202406,Other,Standard,"ambiguous: no single category keyword dominates the description ("""")",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"description mentions ""paving"", ""upturned""",
+AM-202410,Pothole,Standard,"description mentions ""pothole""",
+AM-202414,Streetlight,Standard,"description mentions ""unlit"", ""wiring theft""",
+AM-202417,Waste,Standard,"description mentions ""heritage"", ""waste"", ""not cleared""",
+AM-202421,Noise,Low,"description mentions ""music"", ""audible""",
+AM-202424,Heat Hazard,Standard,"description mentions ""road surface"", ""bubbling"", ""45""",
+AM-202429,Heat Hazard,Standard,"description mentions ""temperature"", ""52""",
+AM-202431,Heritage Damage,Standard,"description mentions ""heritage"", ""step well"", ""ancient""",
+AM-202435,Heat Hazard,Standard,"description mentions ""burns"", ""storing heat""",
+AM-202444,Waste,Standard,"description mentions ""waste"", ""bin"", ""overflowing""",
+AM-202445,Heat Hazard,Standard,"ambiguous: no single category keyword dominates the description (""glass broken"", ""exposed to full sun"")",NEEDS_REVIEW

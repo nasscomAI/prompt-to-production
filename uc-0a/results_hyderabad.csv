@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"description mentions ""flood""",
+GH-202402,Flooding,Standard,"ambiguous: no single category keyword dominates the description (""flood"", ""drain"")",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"description mentions ""debris"", ""drain"", ""stormwater""",
+GH-202407,Drain Blockage,Standard,"description mentions ""drain"", ""mosquito""",
+GH-202410,Pothole,Standard,"description mentions ""pothole""",
+GH-202411,Pothole,Urgent,"description mentions ""pothole""",
+GH-202412,Pothole,Urgent,"description mentions ""pothole""",
+GH-202417,Waste,Standard,"description mentions ""heritage"", ""garbage"", ""waste""",
+GH-202420,Noise,Low,"description mentions ""drilling""",
+GH-202422,Road Damage,Urgent,"ambiguous: no single category keyword dominates the description (""crater"", ""collaps"")",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"description mentions ""flood""",
+GH-202428,Waste,Standard,"description mentions ""waste"", ""not cleared""",
+GH-202432,Noise,Low,"description mentions ""idling""",
+GH-202448,Flooding,Standard,"ambiguous: no single category keyword dominates the description (""flood"", ""drain"")",NEEDS_REVIEW
+GH-202438,Other,Standard,"ambiguous: no single category keyword dominates the description ("""")",NEEDS_REVIEW
