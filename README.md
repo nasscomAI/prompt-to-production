@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vibe Coding Workshop — Participant Repo
 **Civic Tech Edition · RICE · CRAFT · agents.md · skills.md · Git**
 
@@ -142,3 +143,6 @@ Check out the [resources/](./resources) directory for curated lists of tools, co
 - [AI & Data Platforms](./resources/platforms.md)
 
 **Blocked for more than 5 minutes? Flag your tutor. Do not debug alone.**
+=======
+
+>>>>>>> origin/main
