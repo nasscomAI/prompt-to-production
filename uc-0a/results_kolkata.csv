@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"description mentions ""heritage"", ""knocked"", ""not restored""",
+KM-202402,Heritage Damage,Standard,"description mentions ""historic"", ""broken"", ""cobblestones broken"", ""cobblestone""",
+KM-202405,Noise,Low,"description mentions ""tagore museum"", ""band""",
+KM-202409,Pothole,Standard,"description mentions ""pothole""",
+KM-202410,Pothole,Standard,"description mentions ""pothole"", ""tyre blowout""",
+KM-202411,Pothole,Standard,"description mentions ""pothole""",
+KM-202415,Drain Blockage,Standard,"description mentions ""drain""",
+KM-202418,Waste,Standard,"description mentions ""waste"", ""overflowing""",
+KM-202421,Road Damage,Urgent,"description mentions ""sinking"", ""footpath""",
+KM-202422,Road Damage,Standard,"description mentions ""buckled"", ""road surface""",
+KM-202426,Heritage Damage,Standard,"description mentions ""heritage"", ""defaced"", ""billboard""",
+KM-202430,Road Damage,Standard,"ambiguous: no single category keyword dominates the description (""subsid"")",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"description mentions ""heritage"", ""removed"", ""paving removed"", ""heritage stone""",
+KM-202436,Streetlight,Standard,"description mentions ""substation"", ""darkness""",
+KM-202438,Noise,Low,"description mentions ""heritage"", ""amplifier""",
