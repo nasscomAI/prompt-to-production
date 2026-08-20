@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions ""melting"", ""44°c"".",
+AM-202402,Heat Hazard,Standard,"Description mentions ""temperatures"".",
+AM-202405,Other,Standard,No classification keyword matched the description; category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions ""heatwave"".",
+AM-202407,Road Damage,Urgent,"Description mentions ""paving"". Severity keyword ""child"" present -> Urgent.",
+AM-202410,Pothole,Standard,"Description mentions ""pothole"".",
+AM-202414,Streetlight,Standard,"Description mentions ""unlit"".",
+AM-202417,Waste,Standard,"Description mentions ""waste"", ""not cleared"". Also matches Heritage Damage; category is ambiguous.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Description mentions ""music"", ""club"".",
+AM-202424,Road Damage,Standard,"Description mentions ""road surface"", ""road"". Also matches Heat Hazard; category is ambiguous.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Description mentions ""unbearable"", ""52°c"", ""temperature"".",
+AM-202431,Heritage Damage,Standard,"Description mentions ""heritage"", ""ancient"", ""step well"". Also matches Road Damage; category is ambiguous.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description mentions ""burns"", ""storing heat"", ""heat"".",
+AM-202444,Waste,Standard,"Description mentions ""waste"", ""overflowing"", ""bins"".",
+AM-202445,Heat Hazard,Standard,"Description mentions ""sun"".",

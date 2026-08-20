@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions ""pothole"".",
+PM-202402,Pothole,Urgent,"Description mentions ""pothole"". Severity keyword ""children"" present -> Urgent.",
+PM-202406,Flooding,Standard,"Description mentions ""flooded"", ""knee-deep"", ""rain"".",
+PM-202408,Flooding,Standard,"Description mentions ""flooded"", ""water"". Also matches Drain Blockage; category is ambiguous.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions ""dark"".",
+PM-202411,Streetlight,Urgent,"Description mentions ""streetlight"", ""sparking"", ""flickering"". Severity keyword ""hazard"" present -> Urgent.",
+PM-202413,Waste,Standard,"Description mentions ""garbage"", ""overflowing"", ""bins"".",
+PM-202418,Noise,Standard,"Description mentions ""music"".",
+PM-202419,Road Damage,Standard,"Description mentions ""road surface"", ""cracked"", ""sinking"", ""road"".",
+PM-202420,Road Damage,Urgent,"Description mentions ""manhole"". Severity keyword ""injury"" present -> Urgent.",
+PM-202427,Flooding,Standard,"Description mentions ""floods"", ""rain"".",
+PM-202428,Waste,Standard,"Description mentions ""dead animal"".",
+PM-202430,Streetlight,Standard,"Description mentions ""lights out"", ""dark"". Also matches Heritage Damage; category is ambiguous.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions ""waste"", ""dumped"".",
+PM-202446,Road Damage,Urgent,"Description mentions ""footpath"", ""tiles"". Severity keyword ""fell"" present -> Urgent.",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions ""flooded"", ""rain"". Severity keyword ""ambulance"" present -> Urgent.",
+GH-202402,Flooding,Standard,"Description mentions ""flooded"". Also matches Drain Blockage; category is ambiguous.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Description mentions ""stormwater"", ""drain"", ""blocked"".",
+GH-202407,Drain Blockage,Standard,"Description mentions ""mosquito"", ""drain"", ""blocked"".",
+GH-202410,Pothole,Standard,"Description mentions ""potholes"".",
+GH-202411,Pothole,Urgent,"Description mentions ""pothole"". Severity keyword ""hospitalised"" present -> Urgent.",
+GH-202412,Pothole,Urgent,"Description mentions ""potholes"". Severity keyword ""school"" present -> Urgent.",
+GH-202417,Waste,Standard,"Description mentions ""garbage"", ""waste"", ""piles"". Also matches Heritage Damage; category is ambiguous.",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Description mentions ""drilling"".",
+GH-202422,Road Damage,Urgent,"Description mentions ""crater"", ""collapsed"", ""road"". Severity keyword ""collapsed"" present -> Urgent.",
+GH-202424,Flooding,Standard,"Description mentions ""floods"", ""rain"".",
+GH-202428,Waste,Standard,"Description mentions ""waste"", ""not cleared"", ""unusable"".",
+GH-202432,Noise,Standard,"Description mentions ""idling"", ""engines"".",
+GH-202448,Drain Blockage,Standard,"Description mentions ""drain"", ""blocked"". Also matches Flooding; category is ambiguous.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Description mentions ""rainwater"".",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description mentions ""lamp post"". Also matches Heritage Damage; category is ambiguous.",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,"Description mentions ""cobblestones"", ""road"". Also matches Heritage Damage; category is ambiguous.",NEEDS_REVIEW
+KM-202405,Noise,Standard,"Description mentions ""wedding band"", ""band"".",
+KM-202409,Pothole,Standard,"Description mentions ""potholes"".",
+KM-202410,Pothole,Standard,"Description mentions ""pothole"".",
+KM-202411,Pothole,Standard,"Description mentions ""pothole"".",
+KM-202415,Drain Blockage,Standard,"Description mentions ""draining"".",
+KM-202418,Waste,Standard,"Description mentions ""waste"", ""overflowing"", ""piles"".",
+KM-202421,Road Damage,Urgent,"Description mentions ""footpath"", ""sinking"". Severity keyword ""hospital"" present -> Urgent.",
+KM-202422,Road Damage,Standard,"Description mentions ""road surface"", ""buckled"", ""road"".",
+KM-202426,Heritage Damage,Standard,"Description mentions ""heritage"", ""defaced"".",
+KM-202430,Road Damage,Standard,"Description mentions ""subsided"", ""gas pipeline"", ""gas leak"", ""road"".",
+KM-202434,Heritage Damage,Standard,"Description mentions ""heritage"". Also matches Road Damage; category is ambiguous.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Description mentions ""darkness"", ""substation"", ""tripped"".",
+KM-202438,Noise,Standard,"Description mentions ""amplifiers"". Also matches Heritage Damage; category is ambiguous.",NEEDS_REVIEW
