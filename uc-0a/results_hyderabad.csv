@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding (matched on ""flooded""); marked Urgent due to severity term ""ambulance"".",
+GH-202402,Drain Blockage,Standard,"Classified as Drain Blockage (matched on ""drain completely blocked""); no severity term present, so Standard.",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage (matched on ""stormwater drain""); no severity term present, so Standard.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage (matched on ""drain blocked""); no severity term present, so Standard.",
+GH-202410,Pothole,Standard,"Classified as Pothole (matched on ""potholes""); no severity term present, so Standard.",
+GH-202411,Pothole,Standard,"Classified as Pothole (matched on ""pothole""); no severity term present, so Standard.",
+GH-202412,Pothole,Urgent,"Classified as Pothole (matched on ""potholes""); marked Urgent due to severity term ""school"".",
+GH-202417,Heritage Damage,Standard,"Classified as Heritage Damage (matched on ""heritage""); no severity term present, so Standard.",
+GH-202420,Noise,Standard,"Classified as Noise (matched on ""drilling""); no severity term present, so Standard.",
+GH-202422,Road Damage,Standard,"Classified as Road Damage (matched on ""collapsed""); no severity term present, so Standard.",
+GH-202424,Flooding,Standard,"Classified as Flooding (matched on ""floods""); no severity term present, so Standard.",
+GH-202428,Waste,Standard,"Classified as Waste (matched on ""waste""); no severity term present, so Standard.",
+GH-202432,Noise,Standard,"Classified as Noise (matched on ""idling""); no severity term present, so Standard.",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage (matched on ""drain blocked""); no severity term present, so Standard.",
+GH-202438,Other,Standard,"Classified as Other (no listed category keyword found in description); no severity term present, so Standard.",NEEDS_REVIEW
