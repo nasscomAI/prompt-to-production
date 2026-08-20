@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: process_data
+    description: Processes input text and generates cleaned output with basic metrics.
+    input: A string containing input text data.
+    output: A dictionary with processed text, metrics (word count), and optional flag.
+    error_handling: If input is empty or invalid, returns empty result with word_count 0 and flag "NEEDS_REVIEW".
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: validate_input
+    description: Validates input data before processing to ensure it meets requirements.
+    input: A string containing raw input text.
+    output: Boolean indicating validity and cleaned text.
+    error_handling: If input is null or malformed, returns False and triggers "NEEDS_REVIEW" in processing.
