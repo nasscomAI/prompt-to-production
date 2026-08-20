@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Description contains 'melting' which matches category Heat Hazard.,
+AM-202402,Heat Hazard,Standard,Description contains 'temperatures' which matches category Heat Hazard.,
+AM-202405,Other,Standard,No taxonomy keyword matched the description; category is genuinely ambiguous.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description contains 'heatwave' which matches category Heat Hazard.,
+AM-202407,Road Damage,Urgent,Description contains 'paving' which matches category Road Damage.,
+AM-202410,Pothole,Standard,Description contains 'pothole' which matches category Pothole.,
+AM-202414,Streetlight,Standard,Description contains 'unlit' which matches category Streetlight.,
+AM-202417,Heritage Damage,Standard,Description contains 'heritage' which matches category Heritage Damage.,
+AM-202421,Noise,Standard,Description contains 'music' which matches category Noise.,
+AM-202424,Heat Hazard,Standard,Description contains 'bubbling' which matches category Heat Hazard.,
+AM-202429,Heat Hazard,Standard,Description contains 'temperature' which matches category Heat Hazard.,
+AM-202431,Heritage Damage,Standard,Description contains 'heritage' which matches category Heritage Damage.,
+AM-202435,Heat Hazard,Standard,Description contains 'heat' which matches category Heat Hazard.,
+AM-202444,Waste,Standard,Description contains 'waste' which matches category Waste.,
+AM-202445,Heat Hazard,Standard,Description contains 'sun' which matches category Heat Hazard.,

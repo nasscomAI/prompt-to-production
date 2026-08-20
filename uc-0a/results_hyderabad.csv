@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description contains 'flooded' which matches category Flooding.,
+GH-202402,Flooding,Standard,Description matches 'flooded' (Flooding) and 'drain' (Drain Blockage); category is genuinely ambiguous.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Description contains 'drain' which matches category Drain Blockage.,
+GH-202407,Drain Blockage,Standard,Description contains 'drain' which matches category Drain Blockage.,
+GH-202410,Pothole,Standard,Description contains 'potholes' which matches category Pothole.,
+GH-202411,Pothole,Urgent,Description contains 'pothole' which matches category Pothole.,
+GH-202412,Pothole,Urgent,Description contains 'potholes' which matches category Pothole.,
+GH-202417,Waste,Standard,Description contains 'garbage' which matches category Waste.,
+GH-202420,Noise,Standard,Description contains 'drilling' which matches category Noise.,
+GH-202422,Pothole,Urgent,Description matches 'crater' (Pothole) and 'road collapsed' (Road Damage); category is genuinely ambiguous.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Description contains 'floods' which matches category Flooding.,
+GH-202428,Waste,Standard,Description contains 'waste' which matches category Waste.,
+GH-202432,Noise,Standard,Description contains 'idling' which matches category Noise.,
+GH-202448,Flooding,Standard,Description matches 'flooding' (Flooding) and 'drain' (Drain Blockage); category is genuinely ambiguous.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Description contains 'rainwater' which matches category Flooding.,
