@@ -5,3 +5,14 @@ __pycache__/
 *.pyc
 .venv/
 tutor-only/
+
+# Generated UC-0A classifier artifacts
+uc-0a/results_*.csv
+uc-0a/review_*.csv
+
+# Generated UC-0B/UC-0C/UC-X run artifacts
+uc-0b/summary_*.txt
+uc-0c/growth_*.csv
+uc-0c/inputs.txt
+uc-x/inputs.txt
+uc-x/*run_output*.txt
