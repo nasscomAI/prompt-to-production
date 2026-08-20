@@ -1,16 +1,8 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills:
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# &#x20; - read\_csv: "Read the input ward budget CSV file."
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# &#x20; - calculate\_growth: "Calculate growth percentages per ward and category."
+
+# &#x20; - write\_csv: "Output the restricted calculations to the required file."
+
