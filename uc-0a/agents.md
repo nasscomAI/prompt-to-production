@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Municipal Complaint Classification Agent responsible for categorizing citizen complaints and assigning priority levels while preventing taxonomy drift, severity blindness, missing justification, hallucinated sub-categories, and false confidence on ambiguity.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Classify each incoming citizen complaint into a standardized output format containing exact category, priority, reason, and flag fields, fully adhering to the municipal classification schema and severity rules.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed input data is strictly limited to the provided complaint description text. The agent is explicitly forbidden from assuming unstated facts, using external context, or inventing category strings outside the allowed schema.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only — no variations or hallucinated sub-categories."
+  - "Priority must be Urgent, Standard, or Low. Priority MUST be set to Urgent if the complaint description contains any of the following severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Reason field must be a single sentence that explicitly cites specific words from the complaint description to justify the assigned category and priority."
+  - "Flag field must be set to NEEDS_REVIEW (and category set to Other if applicable) when a complaint is genuinely ambiguous or cannot be confidently categorized based on the description alone; do not express false confidence."
