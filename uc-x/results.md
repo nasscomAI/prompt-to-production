@@ -15,7 +15,8 @@
   > Yes, employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December, and carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited. [Source: policy_hr_leave.txt, Section 2.6 & Section 2.7]
 - **Verification:**
   - Preserves exact cap (5 days).
-  - Preserves forfeiture date (31 December).
+  - Preserves forfeiture 
+  date (31 December).
   - Preserves Q1 usage restriction.
   - **Status:** PASS
 

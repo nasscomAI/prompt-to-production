@@ -1,0 +1,8 @@
+test_id,test_name,description,expected,actual,status
+1,Null Spend Detection,Verify that all 5 deliberate null rows are discovered and flagged with notes,5 null rows with notes,5 null rows detected,PASS
+2,Monsoon Spike Calculation (Ward 1 July),Verify Ward 1 Kasba Roads July 2024 MoM growth matches reference value (+33.1%),+33.1%,+33.1%,PASS
+3,Post-Monsoon Drop Calculation (Ward 1 Oct),Verify Ward 1 Kasba Roads Oct 2024 MoM growth matches reference value (-34.8%),-34.8%,-34.8%,PASS
+4,Ward 2 March Null Handling,Verify Ward 2 Shivajinagar Drainage March 2024 is flagged as NULL with note reason,FLAGGED_NULL,FLAGGED_NULL,PASS
+5,Ward 4 July Null Handling,Verify Ward 4 Warje Roads July 2024 is flagged as NULL rather than computed,FLAGGED_NULL,FLAGGED_NULL,PASS
+6,All-Ward Aggregation Refusal,Verify system strictly refuses cross-ward / city-wide aggregation requests,Refusal / Exception raised,Refused with clear policy error,PASS
+7,Formula Assumption Refusal,Verify system refuses to guess formula when --growth-type is omitted,Refusal / Exception raised,Refused with clarification prompt,PASS
