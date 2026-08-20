@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Sanitation,Low,General maintenance request.,None
+GH-202402,Water Supply,Low,General maintenance request.,None
+GH-202406,Water Supply,Low,General maintenance request.,None
+GH-202407,Water Supply,Low,General maintenance request.,None
+GH-202410,Road Repair,Low,General maintenance request.,None
+GH-202411,Road Repair,Critical,Safety hazard or critical infrastructure access at risk.,None
+GH-202412,Road Repair,Low,General maintenance request.,None
+GH-202417,Sanitation,Low,General maintenance request.,None
+GH-202420,Sanitation,Low,General maintenance request.,None
+GH-202422,Road Repair,Low,General maintenance request.,None
+GH-202424,Street Lighting,Low,General maintenance request.,None
+GH-202428,Sanitation,Low,General maintenance request.,None
+GH-202432,Sanitation,Low,General maintenance request.,None
+GH-202448,Water Supply,Critical,Safety hazard or critical infrastructure access at risk.,None
+GH-202438,Water Supply,Low,General maintenance request.,None
