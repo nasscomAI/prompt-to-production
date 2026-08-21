@@ -3,14 +3,17 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
+  - name: [identifying and reporting]
+    description: [reporting agent for identifying and reporting
+  broken/non-working streetlights and damaged or malfunctioning traffic signals]
+    input: [the user's description, uploaded photo, and provided
+  location information]
     output: [What does it return? Type and format.]
     error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
+  - name: [ available ]
+    description: [  Use only the information provided by the user and the available image/location context. Do not guess missing details.]
+    input: [the user's description, uploaded photo, and provided
+  location information]
     output: [Type and format]
     error_handling: [What does it do when input is invalid or ambiguous?]
