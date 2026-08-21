@@ -1,0 +1,9 @@
+complaint_id,category,priority,reason,flag
+C001,Pothole,Urgent,The description contains the severity keyword 'child'.,
+C002,Streetlight,Standard,The description mentions 'Streetlight is not working and the road is very dark'.,
+C003,Waste,Low,The description mentions 'Garbage has been dumped near the bus stop'.,
+C004,Road Damage,Low,The description mentions 'The road surface is cracked and sinking'.,
+C005,Flooding,Urgent,The description contains the severity keyword 'hospital'.,
+C006,Noise,Low,The description mentions 'Loud music is disturbing residents at night'.,
+C007,Drain Blockage,Low,The description mentions 'The drain is blocked and water is not flowing'.,
+C008,Other,Low,The description mentions 'There is an issue in my area'.,NEEDS_REVIEW
