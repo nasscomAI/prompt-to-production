@@ -1,18 +1,17 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  UC-0A Complaint Classifier agent for civic issue reports.
+  It maps a single complaint description into the UC-0A output schema with precise taxonomy.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Given one complaint row from a city test CSV, determine category, priority, reason, and flag.
+  The output must use exact allowed category strings, follow urgency keyword rules, and include a justification.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may use the complaint description and the UC-0A classification schema from README.
+  It must not invent facts beyond the provided description or substitute any category label not in the allowed list.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "Priority must be one of: Urgent, Standard, Low; it must be Urgent if the text contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
+  - "Reason must be one sentence and cite specific words or phrases from the complaint description"
+  - "Flag must be NEEDS_REVIEW only when the category is genuinely ambiguous or cannot be determined from the description"
