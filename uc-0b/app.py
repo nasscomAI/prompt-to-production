@@ -2,9 +2,10 @@
 UC-0B — Summary That Changes Meaning
 
 Summarises a single CMC policy document into a clause register that provably
-preserves every numbered clause and every condition inside it.
+preserves every numbered clause and every condition inside it, and that cannot
+contain language the source document does not contain.
 
-CRAFT cycle 2 fix: condition dropping.
+CRAFT cycle 3 fix: scope bleed.
 
 Two paths are implemented so the CRAFT loop is reproducible from the CLI:
 
@@ -13,10 +14,9 @@ Two paths are implemented so the CRAFT loop is reproducible from the CLI:
                       section, drops the rest, and closes with a generalisation
                       that is nowhere in the source. Fails validation.
 
-    --mode enforced   the agents.md rules applied: every clause, every condition
-                      enumerated, binding verb named, multi-approver clauses
-                      marked, and a verbatim fallback for any clause that cannot
-                      be condensed without dropping a critical token.
+    --mode enforced   the agents.md rules applied: every clause, every condition,
+                      binding verb named, banned language blocked, verbatim
+                      fallback when a clause cannot be condensed losslessly.
 
 Both paths are scored by the same validator, so the difference is measured,
 not asserted.
@@ -42,6 +42,26 @@ import sys
 
 # agents.md / COMPLETENESS — the ten clauses the UC-0B ground truth asserts.
 CRITICAL_CLAUSES = ["2.3", "2.4", "2.5", "2.6", "2.7", "3.2", "3.4", "5.2", "5.3", "7.2"]
+
+# agents.md / NO ADDED INFORMATION — scope-bleed and hedging language.
+BANNED_PHRASES = [
+    "as is standard practice",
+    "standard practice",
+    "typically",
+    "generally",
+    "usually",
+    "commonly",
+    "it is common practice",
+    "in most organisations",
+    "in most organizations",
+    "in government organisations",
+    "in government organizations",
+    "employees are generally expected",
+    "best practice",
+    "industry norm",
+    "while not explicitly",
+    "it is understood that",
+]
 
 # agents.md / TOKEN SURVIVAL — binding verbs, longest first so "must not"
 # is matched before "must".
@@ -357,6 +377,9 @@ def validate_summary(structured, candidate_text):
         if missing:
             token_failures[clause["id"]] = missing
 
+    lowered = candidate_text.lower()
+    banned_hits = [phrase for phrase in BANNED_PHRASES if phrase in lowered]
+
     critical_missing = [cid for cid in CRITICAL_CLAUSES if cid in missing_ids]
     critical_token_drop = {
         cid: token_failures[cid] for cid in CRITICAL_CLAUSES if cid in token_failures
@@ -370,6 +393,7 @@ def validate_summary(structured, candidate_text):
         "missing_ids": missing_ids,
         "extra_ids": extra_ids,
         "token_failures": token_failures,
+        "banned_phrases": banned_hits,
         "critical_gate_missing": critical_missing,
         "critical_gate_token_drop": critical_token_drop,
         "flagged_verbatim": flagged,
@@ -378,6 +402,7 @@ def validate_summary(structured, candidate_text):
         not missing_ids
         and not extra_ids
         and not token_failures
+        and not banned_hits
         and not critical_missing
     )
     return report
@@ -406,6 +431,7 @@ def _render_report(report, total):
         "Missing clause IDs         : {}".format(report["missing_ids"] or "none"),
         "Unsourced clause IDs       : {}".format(report["extra_ids"] or "none"),
         "Clauses losing a condition : {}".format(report["token_failures"] or "none"),
+        "Banned / scope-bleed phrases: {}".format(report["banned_phrases"] or "none"),
         "Critical 10 gate           : {}".format(
             "PASS" if not report["critical_gate_missing"]
             and not report["critical_gate_token_drop"] else "FAIL"

@@ -149,6 +149,7 @@ Clauses in summary         : 29
 Missing clause IDs         : none
 Unsourced clause IDs       : none
 Clauses losing a condition : none
+Banned / scope-bleed phrases: none
 Critical 10 gate           : PASS
 Flagged verbatim           : none
 RESULT                     : PASS
