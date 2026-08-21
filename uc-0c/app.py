@@ -1,7 +1,7 @@
 """
 UC-0C — Number That Looks Right
 
-CRAFT cycle 2 fix: silent null handling.
+CRAFT cycle 3 fix: formula assumption.
 
 The baseline returned +0.5% average growth across the whole dataset. That number
 is arithmetically fine and analytically worthless — it averages five wards and
@@ -17,6 +17,12 @@ were being skipped, which silently bridged growth across the gap — Warje Roads
 was computing August against June and presenting it as a month-on-month figure.
 Enforcement rule NULL VISIBILITY now emits a row for every null with the reason
 from the notes column, and refuses to compute growth against a null prior.
+
+Cycle 3 caught the last one: MoM was hardcoded. Nothing ever asked which growth
+figure was wanted, and a YoY question answered with a MoM number is wrong in a
+way the output does not show. Enforcement rule FORMULA now requires
+--growth-type explicitly, refuses to guess, and prints the arithmetic used in
+every single row.
 
 Usage:
     python app.py --input ../data/budget/ward_budget.csv \
@@ -39,12 +45,42 @@ class ScopeRefusal(Exception):
     """Raised when the request would aggregate across wards or categories."""
 
 
+class FormulaRefusal(Exception):
+    """Raised when the growth formula was not specified and would have to be guessed."""
+
+
 REQUIRED_COLUMNS = [
     "period", "ward", "category", "budgeted_amount", "actual_spend", "notes",
 ]
 
 # agents.md / SCOPE — tokens that mean "collapse the breakdown".
 AGGREGATION_TOKENS = ["all", "*", "any", "total", "overall", "everything", "combined"]
+
+# agents.md / FORMULA — the growth types this tool knows, and the step in months
+# between a period and the period it is compared against.
+GROWTH_TYPES = {"MoM": 1, "YoY": 12}
+
+
+def shift_period(period, months_back):
+    """'2024-07' shifted back 1 month is '2024-06'; back 12 is '2023-07'."""
+    year, month = period.split("-")
+    index = int(year) * 12 + (int(month) - 1) - months_back
+    return "{:04d}-{:02d}".format(index // 12, index % 12 + 1)
+
+
+def check_formula(growth_type):
+    """agents.md / FORMULA — refuse to pick the formula on the user's behalf."""
+    if growth_type is None or not str(growth_type).strip():
+        raise FormulaRefusal(
+            "--growth-type was not specified. Refused rather than guessed: MoM and "
+            "YoY answer different questions, and a YoY question answered with a MoM "
+            "number is wrong in a way the output cannot show. Re-run with "
+            "--growth-type MoM or --growth-type YoY."
+        )
+    if growth_type not in GROWTH_TYPES:
+        raise FormulaRefusal(
+            "Unknown --growth-type '{}'. Known types: {}".format(
+                growth_type, sorted(GROWTH_TYPES)))
 
 
 def null_report(rows):
@@ -104,66 +140,77 @@ def check_scope(rows, ward, category):
         )
 
 
-def compute_growth(rows, ward, category):
+def compute_growth(rows, ward, category, growth_type):
     """
-    Per-period month-on-month growth for exactly one ward + category pair.
+    Per-period growth for exactly one ward + category pair, using the growth
+    type the caller explicitly asked for.
 
-    Every source period produces exactly one output row. A null produces a
-    NULL_FLAGGED row carrying its reason, and the period after a null produces
-    a PRIOR_NULL row with no growth figure — the gap is never bridged, because
-    a bridged figure is indistinguishable from a real one once it is in a table.
+    Every source period produces exactly one output row, and every row states
+    the arithmetic behind it. A null produces a NULL_FLAGGED row carrying its
+    reason; a period whose comparison period is null produces a PRIOR_NULL row
+    with no figure. The gap is never bridged, because a bridged figure is
+    indistinguishable from a real one once it is in a table.
     """
+    step = GROWTH_TYPES[growth_type]
     selected = sorted(
         (r for r in rows if r["ward"] == ward and r["category"] == category),
         key=lambda r: r["period"],
     )
+    by_period = {r["period"]: r for r in selected}
 
     results = []
-    previous = None
-    previous_period = ""
     for row in selected:
+        period = row["period"]
         raw = row["actual_spend"].strip()
+        prior_period = shift_period(period, step)
+        prior_row = by_period.get(prior_period)
+        prior_raw = prior_row["actual_spend"].strip() if prior_row else ""
+
         record = {
             "ward": ward,
             "category": category,
-            "period": row["period"],
+            "period": period,
+            "growth_type": growth_type,
             "budgeted_amount": row["budgeted_amount"],
             "actual_spend": raw,
-            "prior_period": previous_period,
-            "prior_value": "" if previous is None else previous,
+            "prior_period": prior_period,
+            "prior_value": prior_raw,
             "growth_pct": "",
+            "formula": "",
             "status": "",
             "note": "",
         }
 
         if not raw:
             record["status"] = "NULL_FLAGGED"
+            record["formula"] = "not computed"
             record["note"] = row["notes"].strip() or "no reason given in notes"
-            results.append(record)
-            previous = None                    # the chain is broken here
-            previous_period = row["period"]
-            continue
-
-        value = float(raw)
-        if previous is None:
-            record["status"] = "NO_PRIOR" if not previous_period else "PRIOR_NULL"
+        elif prior_row is None:
+            record["status"] = "NO_PRIOR"
+            record["formula"] = "not computed"
+            record["note"] = "comparison period {} is not in the dataset".format(prior_period)
+        elif not prior_raw:
+            record["status"] = "PRIOR_NULL"
+            record["formula"] = "not computed"
             record["note"] = (
-                "no prior period in the dataset" if not previous_period else
-                "prior period {} has no actual_spend — growth not computed rather "
-                "than bridged across the gap".format(previous_period)
+                "comparison period {} has no actual_spend ({}) — growth not computed "
+                "rather than bridged across the gap".format(
+                    prior_period, prior_row["notes"].strip() or "no reason given")
             )
         else:
-            record["growth_pct"] = round((value - previous) / previous * 100.0, 1)
+            value, prior = float(raw), float(prior_raw)
+            record["growth_pct"] = round((value - prior) / prior * 100.0, 1)
             record["status"] = "COMPUTED"
+            record["formula"] = "{} = (actual[{}] - actual[{}]) / actual[{}] * 100 = ({} - {}) / {} * 100".format(
+                growth_type, period, prior_period, prior_period, value, prior, prior)
 
         results.append(record)
-        previous = value
-        previous_period = row["period"]
     return results
 
 
-FIELDNAMES = ["ward", "category", "period", "budgeted_amount", "actual_spend",
-              "prior_period", "prior_value", "growth_pct", "status", "note"]
+FIELDNAMES = ["ward", "category", "period", "growth_type", "budgeted_amount",
+              "actual_spend", "prior_period", "prior_value", "growth_pct",
+              "formula", "status", "note"]
 
 
 def main():
@@ -172,6 +219,8 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--ward", help="Exactly one ward. Aggregate values are refused.")
     parser.add_argument("--category", help="Exactly one category. Aggregate values are refused.")
+    parser.add_argument("--growth-type", dest="growth_type",
+                        help="MoM or YoY. Required — this tool will not guess.")
     args = parser.parse_args()
 
     try:
@@ -186,11 +235,17 @@ def main():
         print("REFUSED: {}".format(exc), file=sys.stderr)
         return 3
 
+    try:
+        check_formula(args.growth_type)
+    except FormulaRefusal as exc:
+        print("REFUSED: {}".format(exc), file=sys.stderr)
+        return 4
+
     audit, _ = null_report(rows)
     print(audit)
     print("")
 
-    results = compute_growth(rows, args.ward, args.category)
+    results = compute_growth(rows, args.ward, args.category, args.growth_type)
 
     with open(args.output, "w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=FIELDNAMES)
