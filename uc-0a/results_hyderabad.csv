@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on ""flood"" in the description. Priority Urgent due to severity keyword(s): ""ambulance"".",
+GH-202402,Flooding,Standard,"Classified as Flooding based on ""flood"" in the description.",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage based on ""drain"" in the description.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage based on ""drain"", ""drain blocked"" in the description.",
+GH-202410,Pothole,Standard,"Classified as Pothole based on ""pothole"" in the description.",
+GH-202411,Pothole,Urgent,"Classified as Pothole based on ""pothole"" in the description. Priority Urgent due to severity keyword(s): ""hospital"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole based on ""pothole"" in the description. Priority Urgent due to severity keyword(s): ""school"".",
+GH-202417,Waste,Standard,"Classified as Waste based on ""garbage"", ""waste"" in the description.",
+GH-202420,Noise,Standard,"Classified as Noise based on ""drilling"" in the description.",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage based on ""collapse"", ""crater"" in the description. Priority Urgent due to severity keyword(s): ""collapse"".",
+GH-202424,Flooding,Standard,"Classified as Flooding based on ""flood"" in the description.",
+GH-202428,Waste,Standard,"Classified as Waste based on ""waste"" in the description.",
+GH-202432,Noise,Standard,"Classified as Noise based on ""idling"" in the description.",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage based on ""drain"", ""drain blocked"" in the description.",
+GH-202438,Other,Standard,No known category keywords found in the description; classified as Other pending human review.,NEEDS_REVIEW
