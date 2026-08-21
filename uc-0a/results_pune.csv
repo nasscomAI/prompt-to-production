@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint is classified as Pothole with Standard priority due to the mention of 'pothole' in the description.,
+PM-202402,Pothole,Urgent,The complaint is classified as Pothole with Urgent priority due to the mention of 'child' in the description.,
+PM-202406,Flooding,Standard,The complaint is classified as Flooding with Standard priority due to the mention of 'flooding' in the description.,
+PM-202408,Flooding,Standard,The complaint is classified as Flooding with Standard priority due to the mention of 'flooding' in the description.,
+PM-202410,Streetlight,Standard,The complaint is classified as Streetlight with Standard priority due to the mention of 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,The complaint is classified as Streetlight with Urgent priority due to the mention of 'hazard' in the description.,
+PM-202413,Waste,Low,The complaint is classified as Waste with Low priority due to the mention of 'waste' in the description.,
+PM-202418,Noise,Standard,The complaint is classified as Noise with Standard priority due to the mention of 'noise' in the description.,
+PM-202419,Road Damage,Standard,The complaint is classified as Road Damage with Standard priority due to the mention of 'road damage' in the description.,
+PM-202420,Pothole,Urgent,The complaint is classified as Pothole with Urgent priority due to the mention of 'injury' in the description.,
+PM-202427,Flooding,Standard,The complaint is classified as Flooding with Standard priority due to the mention of 'flooding' in the description.,
+PM-202428,Waste,Standard,The complaint is classified as Waste with Standard priority due to the mention of 'waste' in the description.,
+PM-202430,Streetlight,Standard,The complaint is classified as Streetlight with Standard priority due to the mention of 'streetlight' in the description.,
+PM-202433,Waste,Standard,The complaint is classified as Waste with Standard priority due to the mention of 'waste' in the description.,
+PM-202446,Other,Urgent,The complaint is classified as Other with Urgent priority due to the mention of 'fell' in the description.,NEEDS_REVIEW
