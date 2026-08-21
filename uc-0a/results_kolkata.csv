@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Matched category 'Streetlight' via: lamp,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Matched category 'Road Damage' via: cobblestone,NEEDS_REVIEW
+KM-202405,Noise,Low,Routine Noise complaint with no urgency keywords; matched via: band,
+KM-202409,Pothole,Standard,"Matched category 'Pothole' via: pothole, potholes",
+KM-202410,Pothole,Standard,Matched category 'Pothole' via: pothole,
+KM-202411,Pothole,Standard,Matched category 'Pothole' via: pothole,
+KM-202415,Drain Blockage,Standard,Matched category 'Drain Blockage' via: drain,
+KM-202418,Waste,Standard,Matched category 'Waste' via: waste,
+KM-202421,Road Damage,Urgent,"Description mentions 'hospital'; matched category 'Road Damage' via: sinking, footpath",
+KM-202422,Road Damage,Standard,"Matched category 'Road Damage' via: buckled, road surface",
+KM-202426,Heritage Damage,Standard,Matched category 'Heritage Damage' via: heritage + damage context,
+KM-202430,Road Damage,Standard,Matched category 'Road Damage' via: subsided,
+KM-202434,Road Damage,Standard,Matched category 'Road Damage' via: paving,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Matched category 'Streetlight' via: darkness, substation",
+KM-202438,Noise,Low,Routine Noise complaint with no urgency keywords; matched via: amplifier,
