@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0B Policy Summariser
+# DRAFT 1 — generated from the naive RICE prompt, before running anything.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A summariser for City Municipal Corporation policy documents.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a clear, readable summary of the policy that a busy employee can scan.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The policy document passed to --input.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "The summary should cover all the main points of the policy."
+  - "The summary should be accurate and should not misrepresent the policy."
+  - "The summary should be concise."
+  - "If something is unclear, say so."
