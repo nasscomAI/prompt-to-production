@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority as description reports 'tarmac surface melting at 44°c'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority as description reports 'metal bus shelter reaching dangerous temperatures'.,
+AM-202405,Other,Standard,Assigned category Other and flagged as NEEDS_REVIEW because description citing 'Dead trees with split branches' is ambiguous or outside standard municipal categories.,NEEDS_REVIEW
+AM-202406,Other,Standard,Assigned category Other and flagged as NEEDS_REVIEW because description citing 'Irrigation system broken' is ambiguous or outside standard municipal categories.,NEEDS_REVIEW
+AM-202407,Other,Urgent,Assigned category Other and flagged as NEEDS_REVIEW with Urgent priority because description cites 'Broken bench and upturned paving' with severity trigger 'Child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority as description reports 'pothole on main highway'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight with Standard priority as description reports 'residential colony unlit'.,
+AM-202417,Waste,Standard,Classified as Waste with Standard priority as description reports 'night market waste not cleared'.,
+AM-202421,Noise,Standard,Classified as Noise with Standard priority as description reports 'club music audible'.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority as description reports 'road surface bubbling at 45°c'.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority as description reports 'surface temperature unbearable'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority as description reports 'ancient step well'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority as description reports 'metal road dividers storing heat'.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority as description reports 'restaurant waste bins overflowing'.,
+AM-202445,Other,Standard,Assigned category Other and flagged as NEEDS_REVIEW because description citing 'BRT shelter roof glass broken' is ambiguous or outside standard municipal categories.,NEEDS_REVIEW
