@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description references 'flood', 'water', or 'rain'. Flagged Urgent because it mentions 'ambulance'.",
+GH-202402,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+GH-202406,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+GH-202407,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+GH-202410,Pothole,Standard,Description mentions 'pothole'.,
+GH-202411,Pothole,Urgent,Description mentions 'pothole'. Flagged Urgent because it mentions 'hospital'.,
+GH-202412,Pothole,Urgent,Description mentions 'pothole'. Flagged Urgent because it mentions 'school'.,
+GH-202417,Waste,Standard,"Description mentions 'garbage', 'waste', or 'smell'.",
+GH-202420,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
+GH-202422,Other,Urgent,No clear category keywords found. Flagged Urgent because it mentions 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+GH-202428,Waste,Standard,"Description mentions 'garbage', 'waste', or 'smell'.",
+GH-202432,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
+GH-202438,Flooding,Standard,"Description references 'flood', 'water', or 'rain'.",
