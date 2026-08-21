@@ -1,18 +1,21 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Budget Growth Analysis Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Agent 1 — Data Filtering Agent
+Filters dataset by ward and category.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+Rules:
+- Only one ward allowed
+- No multi-ward aggregation
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Agent 2 — Growth Calculation Agent
+Calculates month-over-month growth.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Formula:
+(Current − Previous) / Previous
+
+## Agent 3 — Data Quality Agent
+Detects null values.
+
+Responsibilities:
+- Flag rows with missing data
+- Skip growth calculation for null entries

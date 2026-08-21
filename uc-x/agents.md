@@ -1,18 +1,29 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-X Ask-My-Documents Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Agent 1 — Query Understanding Agent
+Interprets user question.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+Responsibilities:
+- Detect intent
+- Identify relevant policy domain
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Agent 2 — Document Retrieval Agent
+Selects the correct policy document.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Documents:
+- HR Leave Policy
+- IT Acceptable Use Policy
+- Finance Reimbursement Policy
+
+## Agent 3 — Policy Answer Agent
+Generate answer using only one document.
+
+Rules:
+- Do not mix documents
+- Cite relevant section
+
+## Agent 4 — Refusal Agent
+Handles unsupported questions.
+
+Action:
+Return standard refusal template when answer not found.

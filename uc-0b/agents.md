@@ -1,18 +1,22 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Policy Summary Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Agent 1 — Policy Reader Agent
+Reads the full HR policy document.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+Responsibilities:
+- Parse document sections
+- Identify numbered clauses
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+## Agent 2 — Clause Preservation Agent
+Ensures all mandatory clauses remain in the summary.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Responsibilities:
+- Detect clauses like 2.3, 2.4, etc.
+- Prevent clause omission
+
+## Agent 3 — Policy Summarizer Agent
+Produces a concise summary while preserving rules.
+
+Rules:
+- Do not weaken policy conditions
+- Do not merge separate clauses
