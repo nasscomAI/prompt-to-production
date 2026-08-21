@@ -5,6 +5,8 @@ EMPLOYEE LEAVE POLICY
 Document Reference: HR-POL-001
 Version: 2.3 | Effective: 1 April 2024
 
+Scope: this register restates the obligations in the source document above.
+It adds nothing. Where the source is silent, this register is silent.
 Every numbered clause in the source appears below under its own clause ID.
 
 ======================================================================
@@ -28,20 +30,25 @@ SECTION 2 — ANNUAL LEAVE
 
 [2.3]  binding verb: MUST
       obligation : Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+      qualifiers : at least
 
 [2.4]  binding verb: MUST
       obligation : Leave applications must receive written approval from the employee's direct manager before the leave commences.
       condition  : Verbal approval is not valid.
+      qualifiers : before, not valid
 
 [2.5]  binding verb: WILL
       obligation : Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+      qualifiers : regardless
 
 [2.6]  binding verb: MAY
       obligation : Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year.
       condition  : Any days above 5 are forfeited on 31 December.
+      qualifiers : maximum
 
 [2.7]  binding verb: MUST
       obligation : Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+      qualifiers : within
 
 ======================================================================
 SECTION 3 — SICK LEAVE
@@ -51,12 +58,14 @@ SECTION 3 — SICK LEAVE
 
 [3.2]  binding verb: REQUIRES
       obligation : Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+      qualifiers : within
 
 [3.3]  binding verb: CANNOT
       obligation : Sick leave cannot be carried forward to the following year.
 
 [3.4]  binding verb: REQUIRES
       obligation : Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+      qualifiers : after, before, regardless
 
 ======================================================================
 SECTION 4 — MATERNITY AND PATERNITY LEAVE
@@ -69,6 +78,7 @@ SECTION 4 — MATERNITY AND PATERNITY LEAVE
 
 [4.3]  binding verb: ARE ENTITLED
       obligation : Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+      qualifiers : within
 
 [4.4]  binding verb: CANNOT
       obligation : Paternity leave cannot be split across multiple periods.
@@ -78,10 +88,13 @@ SECTION 5 — LEAVE WITHOUT PAY (LWP)
 ======================================================================
 [5.1]  binding verb: MAY
       obligation : An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+      qualifiers : after, only
 
 [5.2]  binding verb: REQUIRES
       obligation : LWP requires approval from the Department Head and the HR Director.
       condition  : Manager approval alone is not sufficient.
+      >> MULTI-APPROVER — ALL 2 REQUIRED: Department Head; HR Director
+      qualifiers : not sufficient
 
 [5.3]  binding verb: REQUIRES
       obligation : LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
@@ -97,6 +110,7 @@ SECTION 6 — PUBLIC HOLIDAYS
 
 [6.2]  binding verb: REQUIRED
       obligation : If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+      qualifiers : within
 
 [6.3]  binding verb: CANNOT
       obligation : Compensatory off cannot be encashed.
@@ -106,21 +120,26 @@ SECTION 7 — LEAVE ENCASHMENT
 ======================================================================
 [7.1]  binding verb: MAY
       obligation : Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.
+      qualifiers : maximum, only, subject to
 
 [7.2]  binding verb: NOT PERMITTED
       obligation : Leave encashment during service is not permitted under any circumstances.
+      qualifiers : under any circumstances
 
 [7.3]  binding verb: CANNOT
       obligation : Sick leave and LWP cannot be encashed under any circumstances.
+      qualifiers : under any circumstances
 
 ======================================================================
 SECTION 8 — GRIEVANCES
 ======================================================================
 [8.1]  binding verb: MUST
       obligation : Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.
+      qualifiers : within
 
 [8.2]  binding verb: WILL NOT
       obligation : Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
+      qualifiers : after, unless
 
 ======================================================================
 COMPLIANCE CHECK (generated by validate_summary, not by hand)
@@ -129,5 +148,7 @@ Clauses in source          : 29
 Clauses in summary         : 29
 Missing clause IDs         : none
 Unsourced clause IDs       : none
+Clauses losing a condition : none
 Critical 10 gate           : PASS
+Flagged verbatim           : none
 RESULT                     : PASS
