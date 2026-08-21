@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0C Growth Calculator
+# DRAFT 1 — generated from the naive RICE prompt, before running anything.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An analyst that calculates spending growth from the ward budget dataset.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Return the growth figures the user asked for, clearly presented.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The CSV passed to --input.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "The calculation should be correct."
+  - "Handle missing data sensibly."
+  - "Present the result clearly."
