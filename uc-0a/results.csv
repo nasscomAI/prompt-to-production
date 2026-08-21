@@ -1,0 +1,6 @@
+Category,Location,Priority,Reason
+Pothole,Main Road,Urgent,school
+Pothole,Park Lane,Normal,small
+Pothole,Market Street,Urgent,danger
+Pothole,Old Town,Urgent,hospital
+Pothole,Nagar,Urgent,accident
