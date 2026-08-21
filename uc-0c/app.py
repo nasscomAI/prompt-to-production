@@ -1,7 +1,7 @@
 """
 UC-0C — Number That Looks Right
 
-CRAFT cycle 1 fix: wrong aggregation level.
+CRAFT cycle 2 fix: silent null handling.
 
 The baseline returned +0.5% average growth across the whole dataset. That number
 is arithmetically fine and analytically worthless — it averages five wards and
@@ -9,8 +9,14 @@ five categories together, so Ward 1's +33.1% monsoon road spike and its −34.8%
 October collapse cancel against unrelated streetlight and parks spending and
 vanish. Nobody can act on +0.5%.
 
-Enforcement rule SCOPE now requires an explicit ward and category, and refuses
-any request to aggregate across either.
+Enforcement rule SCOPE requires an explicit ward and category and refuses any
+request to aggregate across either.
+
+Cycle 2 then caught the second failure: the 5 deliberate null actual_spend rows
+were being skipped, which silently bridged growth across the gap — Warje Roads
+was computing August against June and presenting it as a month-on-month figure.
+Enforcement rule NULL VISIBILITY now emits a row for every null with the reason
+from the notes column, and refuses to compute growth against a null prior.
 
 Usage:
     python app.py --input ../data/budget/ward_budget.csv \
@@ -39,6 +45,17 @@ REQUIRED_COLUMNS = [
 
 # agents.md / SCOPE — tokens that mean "collapse the breakdown".
 AGGREGATION_TOKENS = ["all", "*", "any", "total", "overall", "everything", "combined"]
+
+
+def null_report(rows):
+    """agents.md / NULL VISIBILITY — every null named before any arithmetic runs."""
+    nulls = [r for r in rows if not r["actual_spend"].strip()]
+    lines = ["NULL AUDIT — {} row(s) with no actual_spend, reported before computing:".format(len(nulls))]
+    for row in nulls:
+        lines.append("  {} · {} · {} — reason: {}".format(
+            row["period"], row["ward"], row["category"],
+            row["notes"].strip() or "no reason given in notes"))
+    return "\n".join(lines), nulls
 
 
 def load_dataset(path):
@@ -88,7 +105,14 @@ def check_scope(rows, ward, category):
 
 
 def compute_growth(rows, ward, category):
-    """Per-period month-on-month growth for exactly one ward + category pair."""
+    """
+    Per-period month-on-month growth for exactly one ward + category pair.
+
+    Every source period produces exactly one output row. A null produces a
+    NULL_FLAGGED row carrying its reason, and the period after a null produces
+    a PRIOR_NULL row with no growth figure — the gap is never bridged, because
+    a bridged figure is indistinguishable from a real one once it is in a table.
+    """
     selected = sorted(
         (r for r in rows if r["ward"] == ward and r["category"] == category),
         key=lambda r: r["period"],
@@ -96,27 +120,50 @@ def compute_growth(rows, ward, category):
 
     results = []
     previous = None
+    previous_period = ""
     for row in selected:
         raw = row["actual_spend"].strip()
-        if not raw:
-            continue          # <- still silently skipped; fixed in cycle 2
-        value = float(raw)
-        growth = ""
-        if previous is not None:
-            growth = round((value - previous) / previous * 100.0, 1)
-        results.append({
+        record = {
             "ward": ward,
             "category": category,
             "period": row["period"],
             "budgeted_amount": row["budgeted_amount"],
-            "actual_spend": value,
-            "growth_pct": growth,
-        })
+            "actual_spend": raw,
+            "prior_period": previous_period,
+            "prior_value": "" if previous is None else previous,
+            "growth_pct": "",
+            "status": "",
+            "note": "",
+        }
+
+        if not raw:
+            record["status"] = "NULL_FLAGGED"
+            record["note"] = row["notes"].strip() or "no reason given in notes"
+            results.append(record)
+            previous = None                    # the chain is broken here
+            previous_period = row["period"]
+            continue
+
+        value = float(raw)
+        if previous is None:
+            record["status"] = "NO_PRIOR" if not previous_period else "PRIOR_NULL"
+            record["note"] = (
+                "no prior period in the dataset" if not previous_period else
+                "prior period {} has no actual_spend — growth not computed rather "
+                "than bridged across the gap".format(previous_period)
+            )
+        else:
+            record["growth_pct"] = round((value - previous) / previous * 100.0, 1)
+            record["status"] = "COMPUTED"
+
+        results.append(record)
         previous = value
+        previous_period = row["period"]
     return results
 
 
-FIELDNAMES = ["ward", "category", "period", "budgeted_amount", "actual_spend", "growth_pct"]
+FIELDNAMES = ["ward", "category", "period", "budgeted_amount", "actual_spend",
+              "prior_period", "prior_value", "growth_pct", "status", "note"]
 
 
 def main():
@@ -139,6 +186,10 @@ def main():
         print("REFUSED: {}".format(exc), file=sys.stderr)
         return 3
 
+    audit, _ = null_report(rows)
+    print(audit)
+    print("")
+
     results = compute_growth(rows, args.ward, args.category)
 
     with open(args.output, "w", encoding="utf-8", newline="") as handle:
@@ -146,7 +197,11 @@ def main():
         writer.writeheader()
         writer.writerows(results)
 
-    print("{} rows written to {}".format(len(results), args.output))
+    flagged = [r for r in results if r["status"] != "COMPUTED"]
+    print("{} rows written to {} ({} computed, {} flagged)".format(
+        len(results), args.output, len(results) - len(flagged), len(flagged)))
+    for row in flagged:
+        print("  {} {} — {}".format(row["period"], row["status"], row["note"]))
     return 0
 
 
