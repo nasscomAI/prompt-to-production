@@ -1,0 +1,40 @@
+UC-X TEST SUITE — the 7 questions from the README
+
+[PASS] Q1: Can I carry forward unused annual leave?
+      policy_hr_leave.txt section 2.6 — Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+      Source: policy_hr_leave.txt — section 2.6
+
+[PASS] Q2: Can I install Slack on my work laptop?
+      policy_it_acceptable_use.txt section 2.1 — Corporate devices (laptops, desktops, mobile phones issued by CMC) must be used primarily for official work purposes.
+      policy_it_acceptable_use.txt section 2.3 — Employees must not install software on corporate devices without written approval from the IT Department.
+      Source: policy_it_acceptable_use.txt — sections 2.1, 2.3
+
+[PASS] Q3: What is the home office equipment allowance?
+      policy_finance_reimbursement.txt section 3.1 — Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+      Source: policy_finance_reimbursement.txt — section 3.1
+
+[PASS] Q4: Can I use my personal phone to access work files when working from home?
+      policy_it_acceptable_use.txt section 3.1 — Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+      policy_it_acceptable_use.txt section 3.2 — Personal devices must not be used to access, store, or transmit classified or sensitive CMC data.
+      policy_it_acceptable_use.txt section 3.4 — Employees using personal devices for CMC email must enable device-level PIN or biometric lock.
+      policy_it_acceptable_use.txt section 3.5 — If a personal device containing CMC email is lost or stolen, the employee must report it to the IT helpdesk within 4 hours so that a remote wipe of CMC data can be performed.
+      Source: policy_it_acceptable_use.txt — sections 3.1, 3.2, 3.4, 3.5
+
+[PASS] Q5: What is the company view on flexible working culture?
+      This question is not covered in the available policy documents
+      (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+      Please contact the relevant department for guidance.
+
+[PASS] Q6: Can I claim DA and meal receipts on the same day?
+      policy_finance_reimbursement.txt section 2.5 — Daily allowance (DA) for outstation travel is Rs 750 per day. DA covers meals and incidentals. No separate meal receipts are required if DA is claimed.
+      policy_finance_reimbursement.txt section 2.6 — If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day.
+      Source: policy_finance_reimbursement.txt — sections 2.5, 2.6
+
+[PASS] Q7: Who approves leave without pay?
+      policy_hr_leave.txt section 5.1 — An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+      policy_hr_leave.txt section 5.2 — LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+      policy_hr_leave.txt section 5.3 — LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+      Source: policy_hr_leave.txt — sections 5.1, 5.2, 5.3
+
+======================================================================
+7 of 7 passed.
