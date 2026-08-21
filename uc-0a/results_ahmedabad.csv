@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions 'melting', '44°c' indicating heat hazard; no severity keywords present so Standard.",
+AM-202402,Heat Hazard,Standard,Description mentions 'temperatures' indicating heat hazard; no severity keywords present so Standard.,
+AM-202405,Other,Standard,No recognised category keywords in description; no severity keywords present so Standard.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions 'heatwave' indicating heat hazard; no severity keywords present so Standard.,
+AM-202407,Road Damage,Urgent,"Description mentions 'upturned', 'paving' indicating road damage; severity terms 'child' present so Urgent.",
+AM-202410,Pothole,Standard,Description mentions 'pothole' indicating pothole; no severity keywords present so Standard.,
+AM-202414,Streetlight,Standard,Description mentions 'unlit' indicating streetlight; no severity keywords present so Standard.,
+AM-202417,Waste,Standard,Description mentions 'waste' indicating waste; no severity keywords present so Standard.,NEEDS_REVIEW
+AM-202421,Noise,Low,Description mentions 'music' indicating noise; pure nuisance issue with no severity terms so Low.,
+AM-202424,Heat Hazard,Standard,"Description mentions 'bubbling', '45°c' indicating heat hazard; no severity keywords present so Standard.",
+AM-202429,Heat Hazard,Standard,"Description mentions 'temperature', '52°c' indicating heat hazard; no severity keywords present so Standard.",
+AM-202431,Road Damage,Standard,Description mentions 'subsidence' indicating road damage; no severity keywords present so Standard.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description mentions 'heat', 'burns' indicating heat hazard; no severity keywords present so Standard.",
+AM-202444,Waste,Standard,"Description mentions 'waste bins', 'waste', 'bins' indicating waste; no severity keywords present so Standard.",
+AM-202445,Other,Standard,No recognised category keywords in description; no severity keywords present so Standard.,NEEDS_REVIEW

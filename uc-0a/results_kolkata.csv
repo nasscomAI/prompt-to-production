@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Description mentions 'lamp post' indicating streetlight; no severity keywords present so Standard.,
+KM-202402,Heritage Damage,Standard,Description mentions 'historic' indicating heritage damage; no severity keywords present so Standard.,NEEDS_REVIEW
+KM-202405,Noise,Low,Description mentions 'band playing' indicating noise; pure nuisance issue with no severity terms so Low.,
+KM-202409,Pothole,Standard,Description mentions 'potholes' indicating pothole; no severity keywords present so Standard.,
+KM-202410,Pothole,Standard,Description mentions 'pothole' indicating pothole; no severity keywords present so Standard.,
+KM-202411,Pothole,Standard,Description mentions 'pothole' indicating pothole; no severity keywords present so Standard.,NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Description mentions 'draining' indicating drain blockage; no severity keywords present so Standard.,
+KM-202418,Waste,Standard,Description mentions 'waste' indicating waste; no severity keywords present so Standard.,
+KM-202421,Road Damage,Urgent,"Description mentions 'footpath', 'sinking' indicating road damage; severity terms 'fell', 'hospital' present so Urgent.",
+KM-202422,Road Damage,Standard,"Description mentions 'road surface', 'buckled' indicating road damage; no severity keywords present so Standard.",
+KM-202426,Heritage Damage,Standard,Description mentions 'heritage' indicating heritage damage; no severity keywords present so Standard.,
+KM-202430,Road Damage,Standard,Description mentions 'subsided' indicating road damage; no severity keywords present so Standard.,
+KM-202434,Road Damage,Standard,Description mentions 'paving' indicating road damage; no severity keywords present so Standard.,NEEDS_REVIEW
+KM-202436,Other,Standard,No recognised category keywords in description; no severity keywords present so Standard.,NEEDS_REVIEW
+KM-202438,Noise,Low,Description mentions 'amplifiers' indicating noise; pure nuisance issue with no severity terms so Low.,NEEDS_REVIEW

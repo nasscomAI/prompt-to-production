@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flood' indicating flooding; severity terms 'ambulance' present so Urgent.,
+GH-202402,Drain Blockage,Standard,Description mentions 'drain completely blocked' indicating drain blockage; no severity keywords present so Standard.,
+GH-202406,Drain Blockage,Standard,Description mentions 'drain 100% blocked' indicating drain blockage; no severity keywords present so Standard.,
+GH-202407,Drain Blockage,Standard,Description mentions 'drain blocked' indicating drain blockage; no severity keywords present so Standard.,
+GH-202410,Pothole,Standard,Description mentions 'potholes' indicating pothole; no severity keywords present so Standard.,
+GH-202411,Pothole,Urgent,Description mentions 'pothole' indicating pothole; severity terms 'hospital' present so Urgent.,
+GH-202412,Pothole,Urgent,Description mentions 'potholes' indicating pothole; severity terms 'school' present so Urgent.,
+GH-202417,Waste,Standard,"Description mentions 'garbage', 'waste' indicating waste; no severity keywords present so Standard.",
+GH-202420,Noise,Low,Description mentions 'drilling' indicating noise; pure nuisance issue with no severity terms so Low.,
+GH-202422,Road Damage,Urgent,"Description mentions 'collapsed', 'crater' indicating road damage; severity terms 'collapse' present so Urgent.",
+GH-202424,Flooding,Standard,Description mentions 'flood' indicating flooding; no severity keywords present so Standard.,
+GH-202428,Waste,Standard,Description mentions 'waste' indicating waste; no severity keywords present so Standard.,
+GH-202432,Other,Standard,No recognised category keywords in description; no severity keywords present so Standard.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Description mentions 'drain blocked' indicating drain blockage; no severity keywords present so Standard.,
+GH-202438,Flooding,Standard,Description mentions 'rainwater' indicating flooding; no severity keywords present so Standard.,
