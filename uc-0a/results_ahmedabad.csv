@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'melting' in the text.,
+AM-202402,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'temperature' in the text.,
+AM-202405,Other,Standard,Classification from Ahmedabad is genuinely ambiguous and requires manual review (Other).,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'heat' in the text.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage in Ahmedabad via 'broken'; priority elevated to Urgent due to 'child'.,
+AM-202410,Pothole,Standard,Justified as Pothole in Ahmedabad based on the specific mention of 'pothole' in the text.,
+AM-202414,Streetlight,Standard,Justified as Streetlight in Ahmedabad based on the specific mention of 'unlit' in the text.,
+AM-202417,Heritage Damage,Standard,Justified as Heritage Damage in Ahmedabad based on the specific mention of 'heritage' in the text.,
+AM-202421,Noise,Standard,Justified as Noise in Ahmedabad based on the specific mention of 'music' in the text.,
+AM-202424,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'bubbling' in the text.,
+AM-202429,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'temperature' in the text.,
+AM-202431,Heritage Damage,Standard,Justified as Heritage Damage in Ahmedabad based on the specific mention of 'heritage' in the text.,
+AM-202435,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'heat' in the text.,
+AM-202444,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'sun' in the text.,
+AM-202445,Heat Hazard,Standard,Justified as Heat Hazard in Ahmedabad based on the specific mention of 'sun' in the text.,
