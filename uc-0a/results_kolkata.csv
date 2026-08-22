@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Low,Description mentions heritage area concerns,
+KM-202402,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+KM-202405,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole',
+KM-202410,Pothole,Standard,Description mentions 'pothole',
+KM-202411,Pothole,Standard,Description mentions 'pothole',
+KM-202415,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+KM-202418,Waste,Low,Description indicates waste management issue,
+KM-202421,Road Damage,Urgent,"Description indicates footpath/tile damage; contains severity keyword(s): hospital, fell",
+KM-202422,Road Damage,Standard,Description indicates road surface damage,
+KM-202426,Heritage Damage,Low,Description mentions heritage area concerns,
+KM-202430,Waste,Low,Description indicates waste management issue,
+KM-202434,Heritage Damage,Low,Description mentions heritage area concerns,
+KM-202436,Other,Low,Cannot confidently categorize from description,NEEDS_REVIEW
+KM-202438,Heritage Damage,Low,Description mentions heritage area concerns,
