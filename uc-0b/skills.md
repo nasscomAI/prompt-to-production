@@ -1,16 +1,8 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Summarizes an HR leave policy document into a concise summary that includes all numbered clauses with their core obligations and binding verbs preserved, ensuring no omissions, softenings, or additions.
+    input: Path to the input policy document file (string, .txt format).
+    output: Writes the summary text to the specified output file path (string).
+    error_handling: Raises exceptions for file I/O errors; ensures summary is generated only from valid input text.
