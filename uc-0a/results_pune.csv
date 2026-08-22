@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category 'Pothole' is supported by the evidence 'pothole'.,
+PM-202402,Pothole,Urgent,Category 'Pothole' is supported by the evidence 'pothole'. Priority is Urgent because the description contains the urgent trigger 'school'.,
+PM-202406,Flooding,Standard,Category 'Flooding' is supported by the evidence 'flooded'.,
+PM-202408,Flooding,Standard,Category 'Flooding' is supported by the evidence 'flooded'.,
+PM-202410,Streetlight,Standard,Category 'Streetlight' is supported by the evidence 'streetlights'.,
+PM-202411,Streetlight,Urgent,Category 'Streetlight' is supported by the evidence 'streetlight'. Priority is Urgent because the description contains the urgent trigger 'hazard'.,
+PM-202413,Waste,Standard,Category 'Waste' is supported by the evidence 'garbage'.,
+PM-202418,Noise,Standard,Category 'Noise' is supported by the evidence 'music'.,
+PM-202419,Road Damage,Standard,Category 'Road Damage' is supported by the evidence 'road surface'.,
+PM-202420,Other,Urgent,No allowed category can be determined reliably from the complaint description. Priority is Urgent because the description contains the urgent trigger 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category 'Flooding' is supported by the evidence 'floods'.,
+PM-202428,Waste,Standard,Category 'Waste' is supported by the evidence 'dead animal'.,
+PM-202430,Heritage Damage,Standard,Category 'Heritage Damage' is supported by the evidence 'heritage'.,
+PM-202433,Waste,Standard,Category 'Waste' is supported by the evidence 'waste'.,
+PM-202446,Road Damage,Urgent,Category 'Road Damage' is supported by the evidence 'footpath'. Priority is Urgent because the description contains the urgent trigger 'fell'.,
