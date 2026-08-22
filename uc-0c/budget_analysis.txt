@@ -1,0 +1,430 @@
+Municipal Budget Variance Analysis
+========================================
+
+Total records: 300
+Valid records: 295
+Missing actual-spend records: 5
+Invalid records: 0
+
+SIGNIFICANT OVERSPENDING
+----------------------------------------
+2024-01 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.80 | Variance: 0.30 | Variance %: 12.00%
+2024-02 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 7.10 | Variance: 0.70 | Variance %: 10.94%
+2024-03 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 6.50 | Variance: 0.60 | Variance %: 10.17%
+2024-03 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 9.20 | Variance: 1.00 | Variance %: 12.20%
+2024-03 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 4.10 | Variance: 0.40 | Variance %: 10.81%
+2024-04 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.10 | Variance: 0.20 | Variance %: 10.53%
+2024-04 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.50 | Variance: 0.50 | Variance %: 12.50%
+2024-04 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 4.10 | Variance: 0.40 | Variance %: 10.81%
+2024-04 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.80 | Variance: 0.30 | Variance %: 12.00%
+2024-05 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 13.10 | Variance: 1.30 | Variance %: 11.02%
+2024-06 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 14.80 | Variance: 1.80 | Variance %: 13.85%
+2024-06 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.90 | Variance: 0.60 | Variance %: 26.09%
+2024-06 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 19.70 | Variance: 3.90 | Variance %: 24.68%
+2024-06 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.30 | Variance: 2.30 | Variance %: 23.00%
+2024-06 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.40 | Variance: 0.50 | Variance %: 26.32%
+2024-06 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 15.00 | Variance: 3.20 | Variance %: 27.12%
+2024-06 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.50 | Variance: 0.50 | Variance %: 12.50%
+2024-06 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 4.00 | Variance: 0.70 | Variance %: 21.21%
+2024-06 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 12.50 | Variance: 2.20 | Variance %: 21.36%
+2024-06 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 3.40 | Variance: 0.40 | Variance %: 13.33%
+2024-06 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 5.00 | Variance: 0.60 | Variance %: 13.64%
+2024-06 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 17.90 | Variance: 3.60 | Variance %: 25.17%
+2024-06 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 11.70 | Variance: 1.10 | Variance %: 10.38%
+2024-06 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.90 | Variance: 0.80 | Variance %: 13.11%
+2024-06 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.00 | Variance: 0.50 | Variance %: 20.00%
+2024-07 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 19.70 | Variance: 6.70 | Variance %: 51.54%
+2024-07 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 13.00 | Variance: 4.40 | Variance %: 51.16%
+2024-07 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 4.50 | Variance: 1.20 | Variance %: 36.36%
+2024-07 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 7.60 | Variance: 1.70 | Variance %: 28.81%
+2024-07 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 3.10 | Variance: 0.80 | Variance %: 34.78%
+2024-07 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 23.40 | Variance: 7.60 | Variance %: 48.10%
+2024-07 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.60 | Variance: 2.60 | Variance %: 26.00%
+2024-07 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 6.00 | Variance: 1.60 | Variance %: 36.36%
+2024-07 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 7.80 | Variance: 1.40 | Variance %: 21.87%
+2024-07 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.30 | Variance: 0.40 | Variance %: 21.05%
+2024-07 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 19.00 | Variance: 7.20 | Variance %: 61.02%
+2024-07 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 10.00 | Variance: 1.80 | Variance %: 21.95%
+2024-07 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 5.90 | Variance: 1.90 | Variance %: 47.50%
+2024-07 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 7.50 | Variance: 2.40 | Variance %: 47.06%
+2024-07 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.80 | Variance: 0.50 | Variance %: 15.15%
+2024-07 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 8.20 | Variance: 1.50 | Variance %: 22.39%
+2024-07 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 4.20 | Variance: 1.20 | Variance %: 40.00%
+2024-07 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 5.40 | Variance: 1.00 | Variance %: 22.73%
+2024-07 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.90 | Variance: 0.30 | Variance %: 18.75%
+2024-07 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 22.80 | Variance: 8.50 | Variance %: 59.44%
+2024-07 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 13.90 | Variance: 3.30 | Variance %: 31.13%
+2024-07 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 5.30 | Variance: 1.60 | Variance %: 43.24%
+2024-07 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 8.80 | Variance: 2.70 | Variance %: 44.26%
+2024-07 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.00 | Variance: 0.50 | Variance %: 20.00%
+2024-08 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 20.20 | Variance: 7.20 | Variance %: 55.38%
+2024-08 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 11.10 | Variance: 2.50 | Variance %: 29.07%
+2024-08 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 4.30 | Variance: 1.00 | Variance %: 30.30%
+2024-08 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 8.30 | Variance: 2.40 | Variance %: 40.68%
+2024-08 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 3.20 | Variance: 0.90 | Variance %: 39.13%
+2024-08 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 22.80 | Variance: 7.00 | Variance %: 44.30%
+2024-08 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.80 | Variance: 2.80 | Variance %: 28.00%
+2024-08 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 5.60 | Variance: 1.20 | Variance %: 27.27%
+2024-08 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 9.40 | Variance: 3.00 | Variance %: 46.88%
+2024-08 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.30 | Variance: 0.40 | Variance %: 21.05%
+2024-08 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 18.30 | Variance: 6.50 | Variance %: 55.08%
+2024-08 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 10.60 | Variance: 2.40 | Variance %: 29.27%
+2024-08 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.90 | Variance: 0.90 | Variance %: 22.50%
+2024-08 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 6.30 | Variance: 1.20 | Variance %: 23.53%
+2024-08 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 16.00 | Variance: 5.70 | Variance %: 55.34%
+2024-08 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 9.80 | Variance: 3.10 | Variance %: 46.27%
+2024-08 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 4.10 | Variance: 1.10 | Variance %: 36.67%
+2024-08 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 5.10 | Variance: 0.70 | Variance %: 15.91%
+2024-08 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 2.40 | Variance: 0.80 | Variance %: 50.00%
+2024-08 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 24.60 | Variance: 10.30 | Variance %: 72.03%
+2024-08 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 15.80 | Variance: 5.20 | Variance %: 49.06%
+2024-08 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 5.40 | Variance: 1.70 | Variance %: 45.95%
+2024-08 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 7.30 | Variance: 1.20 | Variance %: 19.67%
+2024-08 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.30 | Variance: 0.80 | Variance %: 32.00%
+2024-09 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 20.10 | Variance: 7.10 | Variance %: 54.62%
+2024-09 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 9.90 | Variance: 1.30 | Variance %: 15.12%
+2024-09 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 4.20 | Variance: 0.90 | Variance %: 27.27%
+2024-09 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 8.90 | Variance: 3.00 | Variance %: 50.85%
+2024-09 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.80 | Variance: 0.50 | Variance %: 21.74%
+2024-09 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 24.60 | Variance: 8.80 | Variance %: 55.70%
+2024-09 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.90 | Variance: 2.90 | Variance %: 29.00%
+2024-09 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 6.60 | Variance: 2.20 | Variance %: 50.00%
+2024-09 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 9.70 | Variance: 3.30 | Variance %: 51.56%
+2024-09 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.50 | Variance: 0.60 | Variance %: 31.58%
+2024-09 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 17.20 | Variance: 5.40 | Variance %: 45.76%
+2024-09 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 10.20 | Variance: 2.00 | Variance %: 24.39%
+2024-09 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 6.00 | Variance: 2.00 | Variance %: 50.00%
+2024-09 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 7.00 | Variance: 1.90 | Variance %: 37.25%
+2024-09 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 4.40 | Variance: 1.10 | Variance %: 33.33%
+2024-09 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 14.70 | Variance: 4.40 | Variance %: 42.72%
+2024-09 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 9.10 | Variance: 2.40 | Variance %: 35.82%
+2024-09 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 4.00 | Variance: 1.00 | Variance %: 33.33%
+2024-09 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 6.40 | Variance: 2.00 | Variance %: 45.45%
+2024-09 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.90 | Variance: 0.30 | Variance %: 18.75%
+2024-09 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 20.60 | Variance: 6.30 | Variance %: 44.06%
+2024-09 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 12.80 | Variance: 2.20 | Variance %: 20.75%
+2024-09 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 5.00 | Variance: 1.30 | Variance %: 35.14%
+2024-09 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 8.50 | Variance: 2.40 | Variance %: 39.34%
+2024-09 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.10 | Variance: 0.60 | Variance %: 24.00%
+2024-10 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 10.80 | Variance: 2.20 | Variance %: 25.58%
+2024-10 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 6.80 | Variance: 0.90 | Variance %: 15.25%
+2024-10 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.70 | Variance: 0.40 | Variance %: 17.39%
+2024-10 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 11.50 | Variance: 1.50 | Variance %: 15.00%
+2024-10 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 5.00 | Variance: 0.60 | Variance %: 13.64%
+2024-10 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 8.10 | Variance: 1.70 | Variance %: 26.56%
+2024-10 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 14.10 | Variance: 2.30 | Variance %: 19.49%
+2024-10 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.40 | Variance: 0.40 | Variance %: 10.00%
+2024-10 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 6.10 | Variance: 1.00 | Variance %: 19.61%
+2024-10 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 8.10 | Variance: 1.40 | Variance %: 20.90%
+2024-10 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.90 | Variance: 0.50 | Variance %: 11.36%
+2024-10 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 2.00 | Variance: 0.40 | Variance %: 25.00%
+2024-10 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 18.40 | Variance: 4.10 | Variance %: 28.67%
+2024-10 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.20 | Variance: 0.70 | Variance %: 28.00%
+2024-11 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 7.20 | Variance: 0.80 | Variance %: 12.50%
+2024-12 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 7.40 | Variance: 0.70 | Variance %: 10.45%
+
+MISSING ACTUAL SPEND
+----------------------------------------
+2024-03 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.0 | Actual: MISSING | Notes: Data not submitted by ward office
+2024-05 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.7 | Actual: MISSING | Notes: Equipment procurement delay
+2024-07 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.3 | Actual: MISSING | Notes: Audit freeze — figures under review
+2024-08 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.3 | Actual: MISSING | Notes: Project suspended — pending approval
+2024-11 | Ward 1 – Kasba | Waste Management | Budget: 5.9 | Actual: MISSING | Notes: Contractor change — billing delayed
+
+ALL VALID VARIANCES
+----------------------------------------
+2024-01 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 13.30 | Variance: 0.30 | Variance %: 2.31%
+2024-01 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 7.30 | Variance: -1.30 | Variance %: -15.12%
+2024-01 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.00 | Variance: -0.30 | Variance %: -9.09%
+2024-01 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 5.30 | Variance: -0.60 | Variance %: -10.17%
+2024-01 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.40 | Variance: 0.10 | Variance %: 4.35%
+2024-01 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 16.20 | Variance: 0.40 | Variance %: 2.53%
+2024-01 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 10.90 | Variance: 0.90 | Variance %: 9.00%
+2024-01 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 3.80 | Variance: -0.60 | Variance %: -13.64%
+2024-01 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 6.10 | Variance: -0.30 | Variance %: -4.69%
+2024-01 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.60 | Variance: -0.30 | Variance %: -15.79%
+2024-01 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 10.60 | Variance: -1.20 | Variance %: -10.17%
+2024-01 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.00 | Variance: -0.20 | Variance %: -2.44%
+2024-01 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 3.40 | Variance: -0.60 | Variance %: -15.00%
+2024-01 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 4.60 | Variance: -0.50 | Variance %: -9.80%
+2024-01 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.30 | Variance: 0.00 | Variance %: 0.00%
+2024-01 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 10.20 | Variance: -0.10 | Variance %: -0.97%
+2024-01 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 6.10 | Variance: -0.60 | Variance %: -8.96%
+2024-01 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 3.10 | Variance: 0.10 | Variance %: 3.33%
+2024-01 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.70 | Variance: 0.30 | Variance %: 6.82%
+2024-01 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.30 | Variance: -0.30 | Variance %: -18.75%
+2024-01 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 15.30 | Variance: 1.00 | Variance %: 6.99%
+2024-01 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 11.00 | Variance: 0.40 | Variance %: 3.77%
+2024-01 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 3.40 | Variance: -0.30 | Variance %: -8.11%
+2024-01 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 5.40 | Variance: -0.70 | Variance %: -11.48%
+2024-01 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.80 | Variance: 0.30 | Variance %: 12.00%
+2024-02 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 12.20 | Variance: -0.80 | Variance %: -6.15%
+2024-02 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 7.40 | Variance: -1.20 | Variance %: -13.95%
+2024-02 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 2.80 | Variance: -0.50 | Variance %: -15.15%
+2024-02 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 6.40 | Variance: 0.50 | Variance %: 8.47%
+2024-02 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.30 | Variance: 0.00 | Variance %: 0.00%
+2024-02 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 16.80 | Variance: 1.00 | Variance %: 6.33%
+2024-02 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 10.40 | Variance: 0.40 | Variance %: 4.00%
+2024-02 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 4.40 | Variance: 0.00 | Variance %: 0.00%
+2024-02 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 7.10 | Variance: 0.70 | Variance %: 10.94%
+2024-02 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.80 | Variance: -0.10 | Variance %: -5.26%
+2024-02 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 11.70 | Variance: -0.10 | Variance %: -0.85%
+2024-02 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.80 | Variance: 0.60 | Variance %: 7.32%
+2024-02 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.00 | Variance: 0.00 | Variance %: 0.00%
+2024-02 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 5.60 | Variance: 0.50 | Variance %: 9.80%
+2024-02 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.30 | Variance: 0.00 | Variance %: 0.00%
+2024-02 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 10.70 | Variance: 0.40 | Variance %: 3.88%
+2024-02 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 5.70 | Variance: -1.00 | Variance %: -14.93%
+2024-02 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 2.80 | Variance: -0.20 | Variance %: -6.67%
+2024-02 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.10 | Variance: -0.30 | Variance %: -6.82%
+2024-02 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.40 | Variance: -0.20 | Variance %: -12.50%
+2024-02 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 12.90 | Variance: -1.40 | Variance %: -9.79%
+2024-02 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 9.20 | Variance: -1.40 | Variance %: -13.21%
+2024-02 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 3.40 | Variance: -0.30 | Variance %: -8.11%
+2024-02 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.20 | Variance: 0.10 | Variance %: 1.64%
+2024-02 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.40 | Variance: -0.10 | Variance %: -4.00%
+2024-03 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 12.30 | Variance: -0.70 | Variance %: -5.38%
+2024-03 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 7.70 | Variance: -0.90 | Variance %: -10.47%
+2024-03 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.00 | Variance: -0.30 | Variance %: -9.09%
+2024-03 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 6.50 | Variance: 0.60 | Variance %: 10.17%
+2024-03 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.40 | Variance: 0.10 | Variance %: 4.35%
+2024-03 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 15.90 | Variance: 0.10 | Variance %: 0.63%
+2024-03 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 3.90 | Variance: -0.50 | Variance %: -11.36%
+2024-03 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 6.70 | Variance: 0.30 | Variance %: 4.69%
+2024-03 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.70 | Variance: -0.20 | Variance %: -10.53%
+2024-03 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 11.10 | Variance: -0.70 | Variance %: -5.93%
+2024-03 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 9.20 | Variance: 1.00 | Variance %: 12.20%
+2024-03 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.10 | Variance: 0.10 | Variance %: 2.50%
+2024-03 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 5.10 | Variance: 0.00 | Variance %: 0.00%
+2024-03 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.40 | Variance: 0.10 | Variance %: 3.03%
+2024-03 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 11.10 | Variance: 0.80 | Variance %: 7.77%
+2024-03 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 7.10 | Variance: 0.40 | Variance %: 5.97%
+2024-03 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 2.80 | Variance: -0.20 | Variance %: -6.67%
+2024-03 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 3.70 | Variance: -0.70 | Variance %: -15.91%
+2024-03 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.50 | Variance: -0.10 | Variance %: -6.25%
+2024-03 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 13.10 | Variance: -1.20 | Variance %: -8.39%
+2024-03 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 9.50 | Variance: -1.10 | Variance %: -10.38%
+2024-03 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 4.10 | Variance: 0.40 | Variance %: 10.81%
+2024-03 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.60 | Variance: 0.50 | Variance %: 8.20%
+2024-03 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.30 | Variance: -0.20 | Variance %: -8.00%
+2024-04 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 13.40 | Variance: 0.40 | Variance %: 3.08%
+2024-04 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 8.20 | Variance: -0.40 | Variance %: -4.65%
+2024-04 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.60 | Variance: 0.30 | Variance %: 9.09%
+2024-04 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 5.70 | Variance: -0.20 | Variance %: -3.39%
+2024-04 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.10 | Variance: -0.20 | Variance %: -8.70%
+2024-04 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 14.30 | Variance: -1.50 | Variance %: -9.49%
+2024-04 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 10.00 | Variance: 0.00 | Variance %: 0.00%
+2024-04 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 4.00 | Variance: -0.40 | Variance %: -9.09%
+2024-04 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 6.40 | Variance: 0.00 | Variance %: 0.00%
+2024-04 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.10 | Variance: 0.20 | Variance %: 10.53%
+2024-04 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 11.20 | Variance: -0.60 | Variance %: -5.08%
+2024-04 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 7.40 | Variance: -0.80 | Variance %: -9.76%
+2024-04 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.50 | Variance: 0.50 | Variance %: 12.50%
+2024-04 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 5.10 | Variance: 0.00 | Variance %: 0.00%
+2024-04 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 2.80 | Variance: -0.50 | Variance %: -15.15%
+2024-04 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 8.80 | Variance: -1.50 | Variance %: -14.56%
+2024-04 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 5.80 | Variance: -0.90 | Variance %: -13.43%
+2024-04 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 3.10 | Variance: 0.10 | Variance %: 3.33%
+2024-04 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.70 | Variance: 0.30 | Variance %: 6.82%
+2024-04 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.50 | Variance: -0.10 | Variance %: -6.25%
+2024-04 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 12.20 | Variance: -2.10 | Variance %: -14.69%
+2024-04 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 10.00 | Variance: -0.60 | Variance %: -5.66%
+2024-04 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 4.10 | Variance: 0.40 | Variance %: 10.81%
+2024-04 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.00 | Variance: -0.10 | Variance %: -1.64%
+2024-04 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.80 | Variance: 0.30 | Variance %: 12.00%
+2024-05 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 14.10 | Variance: 1.10 | Variance %: 8.46%
+2024-05 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 7.20 | Variance: -1.40 | Variance %: -16.28%
+2024-05 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.40 | Variance: 0.10 | Variance %: 3.03%
+2024-05 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 6.10 | Variance: 0.20 | Variance %: 3.39%
+2024-05 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.30 | Variance: 0.00 | Variance %: 0.00%
+2024-05 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 14.40 | Variance: -1.40 | Variance %: -8.86%
+2024-05 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 10.20 | Variance: 0.20 | Variance %: 2.00%
+2024-05 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 3.80 | Variance: -0.60 | Variance %: -13.64%
+2024-05 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 6.20 | Variance: -0.20 | Variance %: -3.13%
+2024-05 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.80 | Variance: -0.10 | Variance %: -5.26%
+2024-05 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 13.10 | Variance: 1.30 | Variance %: 11.02%
+2024-05 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.90 | Variance: 0.70 | Variance %: 8.54%
+2024-05 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 3.60 | Variance: -0.40 | Variance %: -10.00%
+2024-05 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 5.00 | Variance: -0.10 | Variance %: -1.96%
+2024-05 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 2.90 | Variance: -0.40 | Variance %: -12.12%
+2024-05 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 11.30 | Variance: 1.00 | Variance %: 9.71%
+2024-05 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 7.30 | Variance: 0.60 | Variance %: 8.96%
+2024-05 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 2.80 | Variance: -0.20 | Variance %: -6.67%
+2024-05 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.50 | Variance: 0.10 | Variance %: 2.27%
+2024-05 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.60 | Variance: 0.00 | Variance %: 0.00%
+2024-05 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 12.60 | Variance: -1.70 | Variance %: -11.89%
+2024-05 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 11.20 | Variance: 0.60 | Variance %: 5.66%
+2024-05 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.00 | Variance: -0.10 | Variance %: -1.64%
+2024-05 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.70 | Variance: 0.20 | Variance %: 8.00%
+2024-06 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 14.80 | Variance: 1.80 | Variance %: 13.85%
+2024-06 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 8.30 | Variance: -0.30 | Variance %: -3.49%
+2024-06 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.50 | Variance: 0.20 | Variance %: 6.06%
+2024-06 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 5.70 | Variance: -0.20 | Variance %: -3.39%
+2024-06 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.90 | Variance: 0.60 | Variance %: 26.09%
+2024-06 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 19.70 | Variance: 3.90 | Variance %: 24.68%
+2024-06 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.30 | Variance: 2.30 | Variance %: 23.00%
+2024-06 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 4.70 | Variance: 0.30 | Variance %: 6.82%
+2024-06 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 6.30 | Variance: -0.10 | Variance %: -1.56%
+2024-06 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.40 | Variance: 0.50 | Variance %: 26.32%
+2024-06 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 15.00 | Variance: 3.20 | Variance %: 27.12%
+2024-06 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.10 | Variance: -0.10 | Variance %: -1.22%
+2024-06 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.50 | Variance: 0.50 | Variance %: 12.50%
+2024-06 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 5.10 | Variance: 0.00 | Variance %: 0.00%
+2024-06 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 4.00 | Variance: 0.70 | Variance %: 21.21%
+2024-06 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 12.50 | Variance: 2.20 | Variance %: 21.36%
+2024-06 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 6.80 | Variance: 0.10 | Variance %: 1.49%
+2024-06 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 3.40 | Variance: 0.40 | Variance %: 13.33%
+2024-06 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 5.00 | Variance: 0.60 | Variance %: 13.64%
+2024-06 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.70 | Variance: 0.10 | Variance %: 6.25%
+2024-06 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 17.90 | Variance: 3.60 | Variance %: 25.17%
+2024-06 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 11.70 | Variance: 1.10 | Variance %: 10.38%
+2024-06 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 3.80 | Variance: 0.10 | Variance %: 2.70%
+2024-06 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.90 | Variance: 0.80 | Variance %: 13.11%
+2024-06 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.00 | Variance: 0.50 | Variance %: 20.00%
+2024-07 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 19.70 | Variance: 6.70 | Variance %: 51.54%
+2024-07 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 13.00 | Variance: 4.40 | Variance %: 51.16%
+2024-07 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 4.50 | Variance: 1.20 | Variance %: 36.36%
+2024-07 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 7.60 | Variance: 1.70 | Variance %: 28.81%
+2024-07 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 3.10 | Variance: 0.80 | Variance %: 34.78%
+2024-07 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 23.40 | Variance: 7.60 | Variance %: 48.10%
+2024-07 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.60 | Variance: 2.60 | Variance %: 26.00%
+2024-07 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 6.00 | Variance: 1.60 | Variance %: 36.36%
+2024-07 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 7.80 | Variance: 1.40 | Variance %: 21.87%
+2024-07 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.30 | Variance: 0.40 | Variance %: 21.05%
+2024-07 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 19.00 | Variance: 7.20 | Variance %: 61.02%
+2024-07 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 10.00 | Variance: 1.80 | Variance %: 21.95%
+2024-07 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 5.90 | Variance: 1.90 | Variance %: 47.50%
+2024-07 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 7.50 | Variance: 2.40 | Variance %: 47.06%
+2024-07 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.80 | Variance: 0.50 | Variance %: 15.15%
+2024-07 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 8.20 | Variance: 1.50 | Variance %: 22.39%
+2024-07 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 4.20 | Variance: 1.20 | Variance %: 40.00%
+2024-07 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 5.40 | Variance: 1.00 | Variance %: 22.73%
+2024-07 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.90 | Variance: 0.30 | Variance %: 18.75%
+2024-07 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 22.80 | Variance: 8.50 | Variance %: 59.44%
+2024-07 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 13.90 | Variance: 3.30 | Variance %: 31.13%
+2024-07 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 5.30 | Variance: 1.60 | Variance %: 43.24%
+2024-07 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 8.80 | Variance: 2.70 | Variance %: 44.26%
+2024-07 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.00 | Variance: 0.50 | Variance %: 20.00%
+2024-08 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 20.20 | Variance: 7.20 | Variance %: 55.38%
+2024-08 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 11.10 | Variance: 2.50 | Variance %: 29.07%
+2024-08 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 4.30 | Variance: 1.00 | Variance %: 30.30%
+2024-08 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 8.30 | Variance: 2.40 | Variance %: 40.68%
+2024-08 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 3.20 | Variance: 0.90 | Variance %: 39.13%
+2024-08 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 22.80 | Variance: 7.00 | Variance %: 44.30%
+2024-08 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.80 | Variance: 2.80 | Variance %: 28.00%
+2024-08 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 5.60 | Variance: 1.20 | Variance %: 27.27%
+2024-08 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 9.40 | Variance: 3.00 | Variance %: 46.88%
+2024-08 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.30 | Variance: 0.40 | Variance %: 21.05%
+2024-08 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 18.30 | Variance: 6.50 | Variance %: 55.08%
+2024-08 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 10.60 | Variance: 2.40 | Variance %: 29.27%
+2024-08 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.90 | Variance: 0.90 | Variance %: 22.50%
+2024-08 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 6.30 | Variance: 1.20 | Variance %: 23.53%
+2024-08 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 16.00 | Variance: 5.70 | Variance %: 55.34%
+2024-08 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 9.80 | Variance: 3.10 | Variance %: 46.27%
+2024-08 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 4.10 | Variance: 1.10 | Variance %: 36.67%
+2024-08 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 5.10 | Variance: 0.70 | Variance %: 15.91%
+2024-08 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 2.40 | Variance: 0.80 | Variance %: 50.00%
+2024-08 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 24.60 | Variance: 10.30 | Variance %: 72.03%
+2024-08 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 15.80 | Variance: 5.20 | Variance %: 49.06%
+2024-08 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 5.40 | Variance: 1.70 | Variance %: 45.95%
+2024-08 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 7.30 | Variance: 1.20 | Variance %: 19.67%
+2024-08 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.30 | Variance: 0.80 | Variance %: 32.00%
+2024-09 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 20.10 | Variance: 7.10 | Variance %: 54.62%
+2024-09 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 9.90 | Variance: 1.30 | Variance %: 15.12%
+2024-09 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 4.20 | Variance: 0.90 | Variance %: 27.27%
+2024-09 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 8.90 | Variance: 3.00 | Variance %: 50.85%
+2024-09 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.80 | Variance: 0.50 | Variance %: 21.74%
+2024-09 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 24.60 | Variance: 8.80 | Variance %: 55.70%
+2024-09 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 12.90 | Variance: 2.90 | Variance %: 29.00%
+2024-09 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 6.60 | Variance: 2.20 | Variance %: 50.00%
+2024-09 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 9.70 | Variance: 3.30 | Variance %: 51.56%
+2024-09 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 2.50 | Variance: 0.60 | Variance %: 31.58%
+2024-09 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 17.20 | Variance: 5.40 | Variance %: 45.76%
+2024-09 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 10.20 | Variance: 2.00 | Variance %: 24.39%
+2024-09 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 6.00 | Variance: 2.00 | Variance %: 50.00%
+2024-09 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 7.00 | Variance: 1.90 | Variance %: 37.25%
+2024-09 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 4.40 | Variance: 1.10 | Variance %: 33.33%
+2024-09 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 14.70 | Variance: 4.40 | Variance %: 42.72%
+2024-09 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 9.10 | Variance: 2.40 | Variance %: 35.82%
+2024-09 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 4.00 | Variance: 1.00 | Variance %: 33.33%
+2024-09 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 6.40 | Variance: 2.00 | Variance %: 45.45%
+2024-09 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.90 | Variance: 0.30 | Variance %: 18.75%
+2024-09 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 20.60 | Variance: 6.30 | Variance %: 44.06%
+2024-09 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 12.80 | Variance: 2.20 | Variance %: 20.75%
+2024-09 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 5.00 | Variance: 1.30 | Variance %: 35.14%
+2024-09 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 8.50 | Variance: 2.40 | Variance %: 39.34%
+2024-09 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.10 | Variance: 0.60 | Variance %: 24.00%
+2024-10 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 13.10 | Variance: 0.10 | Variance %: 0.77%
+2024-10 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 10.80 | Variance: 2.20 | Variance %: 25.58%
+2024-10 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.40 | Variance: 0.10 | Variance %: 3.03%
+2024-10 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 6.80 | Variance: 0.90 | Variance %: 15.25%
+2024-10 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.70 | Variance: 0.40 | Variance %: 17.39%
+2024-10 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 17.30 | Variance: 1.50 | Variance %: 9.49%
+2024-10 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 11.50 | Variance: 1.50 | Variance %: 15.00%
+2024-10 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 5.00 | Variance: 0.60 | Variance %: 13.64%
+2024-10 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 8.10 | Variance: 1.70 | Variance %: 26.56%
+2024-10 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.90 | Variance: 0.00 | Variance %: 0.00%
+2024-10 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 14.10 | Variance: 2.30 | Variance %: 19.49%
+2024-10 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.50 | Variance: 0.30 | Variance %: 3.66%
+2024-10 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 4.40 | Variance: 0.40 | Variance %: 10.00%
+2024-10 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 6.10 | Variance: 1.00 | Variance %: 19.61%
+2024-10 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.50 | Variance: 0.20 | Variance %: 6.06%
+2024-10 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 11.00 | Variance: 0.70 | Variance %: 6.80%
+2024-10 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 8.10 | Variance: 1.40 | Variance %: 20.90%
+2024-10 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 3.00 | Variance: 0.00 | Variance %: 0.00%
+2024-10 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.90 | Variance: 0.50 | Variance %: 11.36%
+2024-10 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 2.00 | Variance: 0.40 | Variance %: 25.00%
+2024-10 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 18.40 | Variance: 4.10 | Variance %: 28.67%
+2024-10 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 10.50 | Variance: -0.10 | Variance %: -0.94%
+2024-10 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 3.80 | Variance: 0.10 | Variance %: 2.70%
+2024-10 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.40 | Variance: 0.30 | Variance %: 4.92%
+2024-10 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 3.20 | Variance: 0.70 | Variance %: 28.00%
+2024-11 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 14.20 | Variance: 1.20 | Variance %: 9.23%
+2024-11 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 9.40 | Variance: 0.80 | Variance %: 9.30%
+2024-11 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.10 | Variance: -0.20 | Variance %: -6.06%
+2024-11 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.00 | Variance: -0.30 | Variance %: -13.04%
+2024-11 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 17.00 | Variance: 1.20 | Variance %: 7.59%
+2024-11 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 10.40 | Variance: 0.40 | Variance %: 4.00%
+2024-11 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 4.50 | Variance: 0.10 | Variance %: 2.27%
+2024-11 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 7.20 | Variance: 0.80 | Variance %: 12.50%
+2024-11 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.90 | Variance: 0.00 | Variance %: 0.00%
+2024-11 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 9.90 | Variance: -1.90 | Variance %: -16.10%
+2024-11 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.80 | Variance: 0.60 | Variance %: 7.32%
+2024-11 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 3.70 | Variance: -0.30 | Variance %: -7.50%
+2024-11 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 5.30 | Variance: 0.20 | Variance %: 3.92%
+2024-11 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 3.60 | Variance: 0.30 | Variance %: 9.09%
+2024-11 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 9.00 | Variance: -1.30 | Variance %: -12.62%
+2024-11 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 5.90 | Variance: -0.80 | Variance %: -11.94%
+2024-11 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 2.60 | Variance: -0.40 | Variance %: -13.33%
+2024-11 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.40 | Variance: 0.00 | Variance %: 0.00%
+2024-11 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.40 | Variance: -0.20 | Variance %: -12.50%
+2024-11 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 14.40 | Variance: 0.10 | Variance %: 0.70%
+2024-11 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 11.10 | Variance: 0.50 | Variance %: 4.72%
+2024-11 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 3.30 | Variance: -0.40 | Variance %: -10.81%
+2024-11 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.20 | Variance: 0.10 | Variance %: 1.64%
+2024-11 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.30 | Variance: -0.20 | Variance %: -8.00%
+2024-12 | Ward 1 – Kasba | Roads & Pothole Repair | Budget: 13.00 | Actual: 12.70 | Variance: -0.30 | Variance %: -2.31%
+2024-12 | Ward 1 – Kasba | Drainage & Flooding | Budget: 8.60 | Actual: 9.40 | Variance: 0.80 | Variance %: 9.30%
+2024-12 | Ward 1 – Kasba | Streetlight Maintenance | Budget: 3.30 | Actual: 3.50 | Variance: 0.20 | Variance %: 6.06%
+2024-12 | Ward 1 – Kasba | Waste Management | Budget: 5.90 | Actual: 5.10 | Variance: -0.80 | Variance %: -13.56%
+2024-12 | Ward 1 – Kasba | Parks & Greening | Budget: 2.30 | Actual: 2.20 | Variance: -0.10 | Variance %: -4.35%
+2024-12 | Ward 2 – Shivajinagar | Roads & Pothole Repair | Budget: 15.80 | Actual: 14.40 | Variance: -1.40 | Variance %: -8.86%
+2024-12 | Ward 2 – Shivajinagar | Drainage & Flooding | Budget: 10.00 | Actual: 8.40 | Variance: -1.60 | Variance %: -16.00%
+2024-12 | Ward 2 – Shivajinagar | Streetlight Maintenance | Budget: 4.40 | Actual: 4.70 | Variance: 0.30 | Variance %: 6.82%
+2024-12 | Ward 2 – Shivajinagar | Waste Management | Budget: 6.40 | Actual: 6.50 | Variance: 0.10 | Variance %: 1.56%
+2024-12 | Ward 2 – Shivajinagar | Parks & Greening | Budget: 1.90 | Actual: 1.70 | Variance: -0.20 | Variance %: -10.53%
+2024-12 | Ward 3 – Kothrud | Roads & Pothole Repair | Budget: 11.80 | Actual: 12.30 | Variance: 0.50 | Variance %: 4.24%
+2024-12 | Ward 3 – Kothrud | Drainage & Flooding | Budget: 8.20 | Actual: 8.20 | Variance: 0.00 | Variance %: 0.00%
+2024-12 | Ward 3 – Kothrud | Streetlight Maintenance | Budget: 4.00 | Actual: 3.80 | Variance: -0.20 | Variance %: -5.00%
+2024-12 | Ward 3 – Kothrud | Waste Management | Budget: 5.10 | Actual: 4.30 | Variance: -0.80 | Variance %: -15.69%
+2024-12 | Ward 3 – Kothrud | Parks & Greening | Budget: 3.30 | Actual: 2.80 | Variance: -0.50 | Variance %: -15.15%
+2024-12 | Ward 4 – Warje | Roads & Pothole Repair | Budget: 10.30 | Actual: 11.20 | Variance: 0.90 | Variance %: 8.74%
+2024-12 | Ward 4 – Warje | Drainage & Flooding | Budget: 6.70 | Actual: 7.40 | Variance: 0.70 | Variance %: 10.45%
+2024-12 | Ward 4 – Warje | Streetlight Maintenance | Budget: 3.00 | Actual: 3.00 | Variance: 0.00 | Variance %: 0.00%
+2024-12 | Ward 4 – Warje | Waste Management | Budget: 4.40 | Actual: 4.70 | Variance: 0.30 | Variance %: 6.82%
+2024-12 | Ward 4 – Warje | Parks & Greening | Budget: 1.60 | Actual: 1.60 | Variance: 0.00 | Variance %: 0.00%
+2024-12 | Ward 5 – Hadapsar | Roads & Pothole Repair | Budget: 14.30 | Actual: 12.60 | Variance: -1.70 | Variance %: -11.89%
+2024-12 | Ward 5 – Hadapsar | Drainage & Flooding | Budget: 10.60 | Actual: 9.30 | Variance: -1.30 | Variance %: -12.26%
+2024-12 | Ward 5 – Hadapsar | Streetlight Maintenance | Budget: 3.70 | Actual: 3.40 | Variance: -0.30 | Variance %: -8.11%
+2024-12 | Ward 5 – Hadapsar | Waste Management | Budget: 6.10 | Actual: 6.70 | Variance: 0.60 | Variance %: 9.84%
+2024-12 | Ward 5 – Hadapsar | Parks & Greening | Budget: 2.50 | Actual: 2.70 | Variance: 0.20 | Variance %: 8.00%
