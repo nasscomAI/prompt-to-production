@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Roads & Traffic,HIGH,High priority triggers found: pothole,VALID
+PM-202402,Roads & Traffic,CRITICAL,"Escalated due to critical triggers: school, child, children",ESCALATED_SAFETY
+PM-202406,Public Safety,MEDIUM,Standard routine grievance,VALID
+PM-202408,Sanitation,HIGH,High priority triggers found: blocked,VALID
+PM-202410,Roads & Traffic,MEDIUM,Standard routine grievance,VALID
+PM-202411,Roads & Traffic,CRITICAL,Escalated due to critical triggers: spark,ESCALATED_SAFETY
+PM-202413,Sanitation,HIGH,High priority triggers found: overflow,VALID
+PM-202418,Public Safety,MEDIUM,Standard routine grievance,VALID
+PM-202419,Roads & Traffic,MEDIUM,Standard routine grievance,VALID
+PM-202420,Sanitation,CRITICAL,"Escalated due to critical triggers: injury, manhole",ESCALATED_SAFETY
+PM-202427,Public Safety,MEDIUM,Standard routine grievance,VALID
+PM-202428,Public Safety,MEDIUM,Standard routine grievance,VALID
+PM-202430,Roads & Traffic,MEDIUM,Standard routine grievance,VALID
+PM-202433,Sanitation,MEDIUM,Standard routine grievance,VALID
+PM-202446,Public Safety,MEDIUM,Standard routine grievance,VALID

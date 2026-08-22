@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: complaint_categorizer
+    description: Maps grievance keywords to municipal operational categories.
+    input: Raw text string.
+    output: String category name.
+    error_handling: Defaults to Unclassified if empty.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: severity_priority_evaluator
+    description: Enforces escalation rules for civic hazards.
+    input: Lowercase text string.
+    output: Tuple of priority and reason.
+    error_handling: Returns LOW with EMPTY_TEXT flag if empty.
