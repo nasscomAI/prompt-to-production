@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,description mentions 'pothole' indicating Pothole.,
+PM-202402,Pothole,Urgent,"description mentions 'pothole' indicating Pothole; priority Urgent because 'child', 'School' signals a safety risk.",
+PM-202406,Flooding,Standard,description mentions 'flood' indicating Flooding.,
+PM-202408,Drain Blockage,Standard,"description mentions 'Drain', 'Drain blocked' indicating Drain Blockage.",
+PM-202410,Streetlight,Standard,"description mentions 'streetlight', 'lights out' indicating Streetlight.",
+PM-202411,Streetlight,Urgent,description mentions 'Streetlight' indicating Streetlight; priority Urgent because 'hazard' signals a safety risk.,
+PM-202413,Waste,Standard,description mentions 'garbage' indicating Waste.,
+PM-202418,Noise,Standard,description mentions 'music' indicating Noise.,
+PM-202419,Road Damage,Standard,"description mentions 'cracked', 'sinking' indicating Road Damage.",
+PM-202420,Other,Urgent,"No taxonomy indicator found in description, so defaulted to Other pending review.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,description mentions 'flood' indicating Flooding.,
+PM-202428,Waste,Standard,description mentions 'Dead animal' indicating Waste.,
+PM-202430,Streetlight,Standard,description mentions 'lights out' indicating Streetlight; ambiguous with Heritage Damage (Heritage) so flagged for review.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"description mentions 'waste', 'dumped' indicating Waste.",
+PM-202446,Road Damage,Urgent,"description mentions 'upturned', 'tiles broken', 'Footpath' indicating Road Damage; priority Urgent because 'fell' signals a safety risk.",
