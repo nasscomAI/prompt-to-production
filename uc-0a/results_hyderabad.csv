@@ -1,0 +1,16 @@
+﻿complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flood' -> classified as Flooding. Priority Urgent due to severity keyword(s): ambulance.,
+GH-202402,Flooding,Standard,Description mentions 'flood' -> classified as Flooding.,
+GH-202406,Drain Blockage,Standard,"Description mentions 'blocked', 'stormwater drain' -> classified as Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Description mentions 'drain blocked', 'blocked' -> classified as Drain Blockage.",
+GH-202410,Pothole,Standard,Description mentions 'pothole' -> classified as Pothole.,
+GH-202411,Pothole,Urgent,Description mentions 'pothole' -> classified as Pothole. Priority Urgent due to severity keyword(s): hospital.,
+GH-202412,Pothole,Urgent,Description mentions 'pothole' -> classified as Pothole. Priority Urgent due to severity keyword(s): school.,
+GH-202417,Waste,Standard,"Description mentions 'garbage', 'waste' -> classified as Waste.",
+GH-202420,Noise,Standard,Description mentions 'drilling' -> classified as Noise.,
+GH-202422,Road Damage,Urgent,"Description mentions 'crater', 'collapsed', 'collapse' -> classified as Road Damage. Priority Urgent due to severity keyword(s): collaps.",
+GH-202424,Flooding,Standard,Description mentions 'flood' -> classified as Flooding.,
+GH-202428,Waste,Standard,Description mentions 'waste' -> classified as Waste.,
+GH-202432,Other,Standard,Description mentions no matching keywords -> classified as Other.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description mentions 'flood', 'drain blocked', 'blocked' -> classified as Flooding.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,Description mentions 'rainwater' -> classified as Flooding.,

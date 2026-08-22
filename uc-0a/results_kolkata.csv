@@ -1,0 +1,16 @@
+﻿complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description mentions 'heritage', 'knocked over' -> classified as Heritage Damage.",
+KM-202402,Heritage Damage,Standard,Description mentions 'historic' -> classified as Heritage Damage.,
+KM-202405,Noise,Standard,"Description mentions 'wedding band', 'band playing' -> classified as Noise.",
+KM-202409,Pothole,Standard,Description mentions 'pothole' -> classified as Pothole.,
+KM-202410,Pothole,Standard,Description mentions 'pothole' -> classified as Pothole.,
+KM-202411,Pothole,Standard,Description mentions 'pothole' -> classified as Pothole.,
+KM-202415,Other,Standard,Description mentions no matching keywords -> classified as Other.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Description mentions 'waste' -> classified as Waste.,
+KM-202421,Road Damage,Urgent,"Description mentions 'sinking', 'footpath' -> classified as Road Damage. Priority Urgent due to severity keyword(s): fell, hospital.",
+KM-202422,Road Damage,Standard,Description mentions 'road surface' -> classified as Road Damage.,
+KM-202426,Heritage Damage,Standard,"Description mentions 'heritage', 'defaced' -> classified as Heritage Damage.",
+KM-202430,Road Damage,Standard,Description mentions 'subsided' -> classified as Road Damage.,
+KM-202434,Road Damage,Standard,"Description mentions 'paving', 'heritage' -> classified as Road Damage.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Description mentions 'darkness' -> classified as Streetlight.,
+KM-202438,Noise,Standard,"Description mentions 'amplifier', 'heritage' -> classified as Noise.",NEEDS_REVIEW
