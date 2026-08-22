@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Category Heritage Damage based on ""Heritage"", ""lamp post"" in the description.",
+KM-202402,Other,Standard,No allowed taxonomy category could be determined from the description.,NEEDS_REVIEW
+KM-202405,Noise,Standard,"Category Noise based on ""band"" in the description.",
+KM-202409,Pothole,Standard,"Category Pothole based on ""potholes"" in the description.",
+KM-202410,Pothole,Standard,"Category Pothole based on ""Pothole"" in the description.",
+KM-202411,Flooding,Standard,"Category Flooding based on ""rainwater"", ""pothole"" in the description.",
+KM-202415,Drain Blockage,Standard,"Category Drain Blockage based on ""draining"" in the description.",
+KM-202418,Waste,Standard,"Category Waste based on ""waste"" in the description.",
+KM-202421,Road Damage,Urgent,"Category Road Damage based on ""sinking"", ""Footpath"" in the description; priority Urgent due to ""Hospital"", ""fell"".",
+KM-202422,Road Damage,Standard,"Category Road Damage based on ""Road surface"" in the description.",
+KM-202426,Heritage Damage,Standard,"Category Heritage Damage based on ""Heritage"" in the description.",
+KM-202430,Road Damage,Standard,"Category Road Damage based on ""subsided"" in the description.",
+KM-202434,Heritage Damage,Standard,"Category Heritage Damage based on ""heritage"" in the description.",
+KM-202436,Streetlight,Standard,"Category Streetlight based on ""Darkness"" in the description.",
+KM-202438,Heritage Damage,Standard,"Category Heritage Damage based on ""heritage"" in the description.",

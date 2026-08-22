@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Category Heat Hazard based on ""melting"" in the description.",
+AM-202402,Heat Hazard,Standard,"Category Heat Hazard based on ""temperatures"" in the description.",
+AM-202405,Other,Standard,No allowed taxonomy category could be determined from the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category Heat Hazard based on ""heatwave"" in the description.",
+AM-202407,Road Damage,Urgent,"Category Road Damage based on ""upturned"" in the description; priority Urgent due to ""injured"", ""Child"".",
+AM-202410,Pothole,Standard,"Category Pothole based on ""Pothole"" in the description.",
+AM-202414,Streetlight,Standard,"Category Streetlight based on ""unlit"" in the description.",
+AM-202417,Heritage Damage,Standard,"Category Heritage Damage based on ""Heritage"", ""waste"" in the description.",
+AM-202421,Noise,Standard,"Category Noise based on ""music"" in the description.",
+AM-202424,Road Damage,Standard,"Category Road Damage based on ""road surface"" in the description.",
+AM-202429,Heat Hazard,Standard,"Category Heat Hazard based on ""temperature"" in the description.",
+AM-202431,Heritage Damage,Standard,"Category Heritage Damage based on ""Heritage"", ""subsidence"" in the description.",
+AM-202435,Heat Hazard,Standard,"Category Heat Hazard based on ""heat"" in the description.",
+AM-202444,Waste,Standard,"Category Waste based on ""waste"" in the description.",
+AM-202445,Other,Standard,No allowed taxonomy category could be determined from the description.,NEEDS_REVIEW
