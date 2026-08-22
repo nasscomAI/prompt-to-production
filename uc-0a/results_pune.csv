@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority based on description phrase 'Large pothole 60cm wide causing tyre damage'.,
+PM-202402,Pothole,Urgent,Classified as Pothole with Urgent priority due to 'child' safety trigger in 'Deep pothole near bus stop'.,
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority based on description phrase 'Underpass flooded knee-deep after 2hrs rain'.,
+PM-202408,Flooding,Standard,Classified as Flooding with Standard priority based on description phrase 'Bus stand flooded'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority based on description phrase 'Three consecutive streetlights out for 10 days'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight with Urgent priority due to 'hazard' safety trigger in 'Streetlight flickering and sparking'.,
+PM-202413,Waste,Standard,Classified as Waste with Standard priority based on description phrase 'Overflowing garbage bins near vegetable market'.,
+PM-202418,Noise,Standard,Classified as Noise with Standard priority based on description phrase 'Wedding venue playing music past midnight on weeknights'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage with Standard priority based on description phrase 'Road surface cracked and sinking near utility work done 1 month ago'.,
+PM-202420,Road Damage,Urgent,Classified as Road Damage with Urgent priority due to 'injury' safety trigger in 'Manhole cover missing'.,
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority based on description phrase 'Bridge approach floods in 30mins of rain'.,
+PM-202428,Waste,Standard,Classified as Waste with Standard priority based on description phrase 'Dead animal not removed for 36 hours'.,
+PM-202430,Streetlight,Standard,"Classified as Streetlight with Standard priority based on description phrase 'Heritage street, lights out'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste with Standard priority based on description phrase 'Bulk waste from apartment renovation dumped on public road'.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage with Urgent priority due to 'fell' safety trigger in 'Footpath tiles broken and upturned'.,
