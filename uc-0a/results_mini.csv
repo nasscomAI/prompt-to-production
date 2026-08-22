@@ -1,0 +1,4 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The complaint states the 'Underpass flooded' which directly threatens lives as 'Ambulance diverted. Lives at risk.',
+GH-202402,Flooding,Urgent,The description explicitly states that the market area is 'flooded' and causing losses to traders.,
+GH-202406,Drain Blockage,Urgent,The complaint specifically states that the main stormwater drain is 100% blocked with construction debris.,

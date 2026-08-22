@@ -1,0 +1,4 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open
+GH-202401,2024-07-01,Hyderabad,Ward 55 – Secunderabad,Tank Bund Road underpass,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,WhatsApp Helpline,13
+GH-202402,2024-07-13,Hyderabad,Ward 55 – Secunderabad,Dilsukhnagar Monda Market area,Market area flooded. Traders suffering losses. Drain completely blocked.,Citizen Portal,20
+GH-202406,2024-07-26,Hyderabad,Ward 54 – Kukatpally,"Mehdipatnam, Rethibowli Road",Main stormwater drain 100% blocked with construction debris.,Phone Helpline,3
