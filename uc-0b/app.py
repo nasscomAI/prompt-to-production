@@ -13,9 +13,9 @@ import argparse
 import re
 from collections import OrderedDict
 
-CLAUSE_RE = re.compile(r"^\s*(\d+\.\d+)\s+(.*)$")
-SECTION_RE = re.compile(r"^\s*(\d+)\.\s+([A-Z][A-Z &()\-]+)\s*$")
-DIVIDER_RE = re.compile(r"^[\s═─=_-]+$")
+CLAUSE_RE = re.compile(r"^(\d+\.\d+)\s+(.*)$")  # anchored: no indent
+SECTION_RE = re.compile(r"^\s*(\d+)\.\s+([A-Za-z][A-Za-z &()\-]+)\s*$")
+DIVIDER_RE = re.compile(r"^[\s═─=_\u2013\u2014-]+$")
 
 # A sentence is kept only if it carries an obligation, condition, negation,
 # entitlement, or boundary. Everything else is descriptive filler.
@@ -23,7 +23,16 @@ KEEP_RE = re.compile(
     r"\b(must|shall|will|may|requires?|required|entitled|forfeit\w*|cannot|"
     r"not\s+permitted|not\s+valid|not\s+sufficient|not\s+apply|not\s+count|"
     r"regardless|within|before|after|unless|exceeding|maximum|minimum|"
-    r"only|at\s+least|under\s+any\s+circumstances|if\b|or\b|and\b)\b",
+    r"only|at\s+least|under\s+any\s+circumstances)\b",
+    re.IGNORECASE,
+)
+
+# Stronger subset: if dropping such a sentence would lose an obligation,
+# the whole clause is quoted verbatim instead of summarised.
+OBLIGATION_RE = re.compile(
+    r"\b(must|shall|requires?|required|entitled|forfeit\w*|cannot|"
+    r"not\s+permitted|not\s+valid|not\s+sufficient|regardless|exceeding|"
+    r"maximum|at\s+least|under\s+any\s+circumstances)\b",
     re.IGNORECASE,
 )
 
@@ -45,7 +54,11 @@ def _parse_clauses(raw_text):
         m = CLAUSE_RE.match(line)
         if m:
             current = m.group(1)
-            clauses[current] = m.group(2)
+            if current in clauses:
+                # duplicate numbering (annex/amendment): merge, never lose text
+                clauses[current] += " " + m.group(2)
+            else:
+                clauses[current] = m.group(2)
         elif current is not None and line.strip() and \
                 not SECTION_RE.match(line):
             clauses[current] += " " + line.strip()
@@ -72,16 +85,20 @@ def summarize_policy(clauses: dict) -> str:
     ]
     for num in sorted(clauses, key=lambda k: tuple(map(int, k.split(".")))):
         text = clauses[num]
-        kept = [s for s in _sentences(text) if KEEP_RE.search(s)]
-        if not kept or len(kept) < len(_sentences(text)):
-            # Anything filtered (or nothing filterable safely) -> quote whole
-            # clause verbatim and flag rather than risk a dropped condition.
+        sentences = _sentences(text)
+        kept = [s for s in sentences if KEEP_RE.search(s)]
+        lost = any(OBLIGATION_RE.search(s) and not KEEP_RE.search(s)
+                   for s in sentences)
+        if not kept or lost:
+            # Nothing keepable, or a sentence carrying an obligation would be
+            # dropped: the clause cannot be summarised without meaning loss,
+            # so quote it verbatim and flag it.
             body = re.sub(r"\s+", " ", text)
             lines.append(f"{num} {body}")
             lines.append(f"   {FLAG}")
         else:
-            body = " ".join(kept)
-            lines.append(f"{num} {body}")
+            # Real compression: obligations kept, pure filler dropped.
+            lines.append(f"{num} " + " ".join(kept))
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
