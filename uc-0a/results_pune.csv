@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions 'pothole' suggesting Pothole, but also matches Road Damage; classified as Pothole with review flag.",NEEDS_REVIEW
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' suggesting Pothole, but also matches Road Damage; classified as Pothole with review flag.",NEEDS_REVIEW
+PM-202406,Flooding,Standard,"Description contains 'flood', 'knee-deep' indicating Flooding, assigned Standard priority as no severity keywords detected.",
+PM-202408,Drain Blockage,Standard,"Description mentions 'drain block' suggesting Drain Blockage, but also matches Flooding; classified as Drain Blockage with review flag.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description contains 'streetlight', 'lights out', 'dark at night' indicating Streetlight, assigned Standard priority as no severity keywords detected.",
+PM-202411,Streetlight,Urgent,"Description contains 'streetlight', 'flickering', 'sparking' indicating Streetlight, and severity keyword(s) 'hazard' trigger Urgent priority.",
+PM-202413,Waste,Standard,"Description contains 'garbage' indicating Waste, assigned Standard priority as no severity keywords detected.",
+PM-202418,Noise,Standard,"Description contains 'music past midnight' indicating Noise, assigned Standard priority as no severity keywords detected.",
+PM-202419,Road Damage,Standard,"Description contains 'road surface' indicating Road Damage, assigned Standard priority as no severity keywords detected.",
+PM-202420,Road Damage,Urgent,"Description contains 'manhole' indicating Road Damage, and severity keyword(s) 'injury' trigger Urgent priority.",
+PM-202427,Flooding,Standard,"Description contains 'flood' indicating Flooding, assigned Standard priority as no severity keywords detected.",
+PM-202428,Waste,Standard,"Description contains 'dead animal', 'not removed' indicating Waste, assigned Standard priority as no severity keywords detected.",
+PM-202430,Heritage Damage,Standard,"Description mentions 'heritage' suggesting Heritage Damage, but also matches Streetlight; classified as Heritage Damage with review flag.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description contains 'waste', 'dump' indicating Waste, assigned Standard priority as no severity keywords detected.",
+PM-202446,Road Damage,Urgent,"Description contains 'footpath' indicating Road Damage, and severity keyword(s) 'fell' trigger Urgent priority.",
