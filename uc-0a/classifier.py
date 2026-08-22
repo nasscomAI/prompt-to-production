@@ -3,12 +3,14 @@ import csv
 import json
 import os
 import time
+from dotenv import load_dotenv
 from groq import Groq
 
-client = Groq(max_retries=3)
+# Load API key from root .env file
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
-# Initialize the Groq client (It automatically looks for the GROQ_API_KEY env variable)
-client = Groq()
+# Initialize the Groq client (reads GROQ_API_KEY from environment)
+client = Groq(max_retries=3)
 
 def classify_complaint(row: dict) -> dict:
     """
