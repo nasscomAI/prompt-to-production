@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"category indicated by 'flooded, flood' priority 'Urgent' due to 'ambulance'.",
+GH-202402,Flooding,Low,"category indicated by 'flooded, flood'.",
+GH-202406,Drain Blockage,Low,"category indicated by 'stormwater drain, construction debris'.",
+GH-202407,Drain Blockage,Standard,"category indicated by 'drain blocked, mosquito breeding, drain blocked'.",
+GH-202410,Pothole,Low,category indicated by 'pothole'.,
+GH-202411,Pothole,Urgent,"category indicated by 'pothole, wheel, swallowed' priority 'Urgent' due to 'hospital'.",
+GH-202412,Pothole,Urgent,category indicated by 'pothole' priority 'Urgent' due to 'school'.,
+GH-202417,Waste,Low,"category indicated by 'garbage, waste, piles'.",
+GH-202420,Noise,Low,"category indicated by 'drilling, construction drilling'.",
+GH-202422,Road Damage,Urgent,"category indicated by 'crater, collapsed, road collapsed' priority 'Urgent' due to 'collapse'.",
+GH-202424,Flooding,Low,"category indicated by 'flood, underpass floods, abandoned'.",
+GH-202428,Waste,Low,"category indicated by 'waste, not cleared'.",
+GH-202432,Noise,Low,"category indicated by 'idling, engines on'.",
+GH-202448,Other,Urgent,priority 'Urgent' due to 'risk'.,NEEDS_REVIEW
+GH-202438,Flooding,Low,category indicated by 'channel rainwater'.,

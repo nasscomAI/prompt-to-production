@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Low,"category indicated by 'heritage, knocked over'.",
+KM-202402,Other,Low,Classified as Other with Low priority based on description.,NEEDS_REVIEW
+KM-202405,Noise,Low,"category indicated by 'wedding band, band playing'.",
+KM-202409,Pothole,Standard,category indicated by 'pothole'.,
+KM-202410,Pothole,Low,"category indicated by 'pothole, tyre blowouts'.",
+KM-202411,Pothole,Urgent,category indicated by 'pothole' priority 'Urgent' due to 'risk'.,
+KM-202415,Drain Blockage,Low,category indicated by 'draining directly'.,
+KM-202418,Waste,Low,"category indicated by 'waste, overflowing, piles, photographing piles'.",
+KM-202421,Road Damage,Urgent,"category indicated by 'sinking, broken' priority 'Urgent' due to 'hospital, fell'.",
+KM-202422,Road Damage,Standard,"category indicated by 'road surface, buckled'.",
+KM-202426,Heritage Damage,Low,"category indicated by 'heritage, heritage residential'.",
+KM-202430,Road Damage,Low,"category indicated by 'subsided, road subsided, gas pipeline'.",
+KM-202434,Heritage Damage,Low,"category indicated by 'heritage, utility work, stone not replaced'.",
+KM-202436,Streetlight,Low,"category indicated by 'darkness, substation tripped'.",
+KM-202438,Heritage Damage,Low,"category indicated by 'heritage, heritage precinct'.",
