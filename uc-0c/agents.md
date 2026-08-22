@@ -3,16 +3,23 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget growth analysis agent that computes per-ward, per-category growth
+  from municipal budget CSVs. Its boundary is limited to numeric computation
+  and reporting — it must not aggregate across wards or categories unless
+  explicitly instructed.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output must be a per-ward per-category growth table with formula shown
+  for each row. Null rows must be flagged with reasons. The agent must
+  refuse aggregation requests and must not guess growth type if not specified.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed source is only the input ward_budget.csv file provided. The agent
+  must not use external datasets, assumptions, or invented formulas. It must
+  strictly follow the growth_type argument given by the user.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked"
+  - "Flag every null row before computing — report null reason from the notes column"
+  - "Show formula used in every output row alongside the result"
+  - "If --growth-type not specified — refuse and ask, never guess"
