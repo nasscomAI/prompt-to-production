@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Low,"category indicated by 'melting, 44°c'.",
+AM-202402,Heat Hazard,Urgent,"category indicated by 'temperature, dangerous temperatures' priority 'Urgent' due to 'danger'.",
+AM-202405,Other,Urgent,priority 'Urgent' due to 'risk'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,"category indicated by 'heat, heatwave'.",
+AM-202407,Road Damage,Urgent,"category indicated by 'broken, upturned, paving, bench' priority 'Urgent' due to 'child'.",
+AM-202410,Pothole,Low,"category indicated by 'pothole, lane closure'.",
+AM-202414,Streetlight,Low,"category indicated by 'unlit, wiring theft'.",
+AM-202417,Other,Low,Classified as Other with Low priority based on description.,NEEDS_REVIEW
+AM-202421,Noise,Low,"category indicated by 'music, audible at'.",
+AM-202424,Road Damage,Standard,"category indicated by 'road surface, bubbling'.",
+AM-202429,Heat Hazard,Low,"category indicated by 'temperature, 52°c, unbearable'.",
+AM-202431,Heritage Damage,Standard,"category indicated by 'heritage, old city, ancient, step well'.",
+AM-202435,Heat Hazard,Low,"category indicated by 'heat, burns, storing heat'.",
+AM-202444,Waste,Urgent,"category indicated by 'waste, bins overflowing, overflowing' priority 'Urgent' due to 'risk'.",
+AM-202445,Road Damage,Low,"category indicated by 'broken, shelter roof'.",

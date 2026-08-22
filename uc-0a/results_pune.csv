@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,"category indicated by 'pothole, tyre damage'.",
+PM-202402,Pothole,Urgent,"category indicated by 'pothole' priority 'Urgent' due to 'child, school'.",
+PM-202406,Flooding,Low,"category indicated by 'flooded, flood, knee-deep, stranded'.",
+PM-202408,Other,Low,Classified as Other with Low priority based on description.,NEEDS_REVIEW
+PM-202410,Streetlight,Low,"category indicated by 'streetlight, lights out, dark at night'.",
+PM-202411,Streetlight,Urgent,"category indicated by 'streetlight, flickering, sparking' priority 'Urgent' due to 'hazard'.",
+PM-202413,Waste,Standard,"category indicated by 'garbage, smell, overflowing'.",
+PM-202418,Noise,Low,"category indicated by 'music, playing music, past midnight'.",
+PM-202419,Road Damage,Low,"category indicated by 'road surface, cracked, sinking'.",
+PM-202420,Drain Blockage,Urgent,"category indicated by 'manhole, manhole cover' priority 'Urgent' due to 'injury'.",
+PM-202427,Flooding,Low,"category indicated by 'flood, inaccessible'.",
+PM-202428,Waste,Standard,category indicated by 'dead animal'.,
+PM-202430,Heritage Damage,Standard,"category indicated by 'heritage, heritage street'.",
+PM-202433,Waste,Low,"category indicated by 'waste, dumped'.",
+PM-202446,Road Damage,Urgent,"category indicated by 'footpath tiles, broken, upturned' priority 'Urgent' due to 'fell'.",
