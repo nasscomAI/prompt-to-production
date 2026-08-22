@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Cites flooded underpass causing ambulance diversion.,
+GH-202402,Drain Blockage,Standard,Cites drain completely blocked causing flooding.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Cites stormwater drain 100% blocked.,
+GH-202407,Drain Blockage,Standard,Cites blocked drain and mosquito breeding.,
+GH-202410,Pothole,Standard,Cites potholes causing vehicles to slow down.,
+GH-202411,Pothole,Urgent,Cites rider hospitalised due to pothole.,
+GH-202412,Pothole,Urgent,Cites school bus struggling to navigate potholes.,
+GH-202417,Waste,Standard,Cites garbage overflow in heritage zone.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Cites construction drilling from 5am.,
+GH-202422,Road Damage,Urgent,Cites partially collapsed road.,
+GH-202424,Flooding,Standard,Cites underpass flooding in light rain.,
+GH-202428,Waste,Standard,Cites post-market waste not cleared.,
+GH-202432,Noise,Standard,Cites supermarket delivery trucks idling.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Cites main drain blocked causing flooding risk.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Cites fields channelling rainwater through road.,NEEDS_REVIEW

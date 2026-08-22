@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Cites tarmac surface melting at 44°C.,
+AM-202402,Heat Hazard,Standard,Cites metal bus shelter reaching dangerous temperatures.,
+AM-202405,Other,Standard,Cites dead trees with split branches posing fall risk.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Cites broken irrigation system during heatwave.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,Cites child injured by broken bench and paving.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Cites pothole on main highway.,
+AM-202414,Streetlight,Standard,Cites residential colony unlit with wiring theft.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Cites night market waste not cleared in heritage area.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Cites club music audible at 2am.,
+AM-202424,Heat Hazard,Standard,Cites road surface bubbling at 45°C.,
+AM-202429,Heat Hazard,Standard,Cites walk surface temperature unbearable at 52°C.,
+AM-202431,Heritage Damage,Standard,Cites road subsidence near ancient step well.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Cites metal road dividers storing heat causing burns.,
+AM-202444,Waste,Standard,Cites restaurant waste bins overflowing.,
+AM-202445,Heat Hazard,Standard,Cites broken glass roof exposing users to sun.,NEEDS_REVIEW
