@@ -4,6 +4,7 @@ UC-0A - Complaint Classifier
 
 import argparse
 import csv
+import re
 
 
 CATEGORIES = [
@@ -40,10 +41,6 @@ def classify_complaint(row: dict) -> dict:
     complaint_id = row.get("complaint_id", "").strip()
     description = row.get("description", "").strip()
 
-    # ---------------------------------------------------------
-    # Missing description
-    # ---------------------------------------------------------
-
     if not description:
         return {
             "complaint_id": complaint_id,
@@ -55,15 +52,10 @@ def classify_complaint(row: dict) -> dict:
 
     text = description.lower()
 
-    # ---------------------------------------------------------
     # CATEGORY
-    # ---------------------------------------------------------
-
-    # Pothole
     if "pothole" in text or "potholes" in text:
         category = "Pothole"
 
-    # Flooding
     elif any(word in text for word in [
         "flood",
         "flooded",
@@ -78,7 +70,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Flooding"
 
-    # Drain blockage
     elif any(word in text for word in [
         "drain blocked",
         "drain blockage",
@@ -91,7 +82,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Drain Blockage"
 
-    # Streetlight
     elif any(word in text for word in [
         "streetlight",
         "streetlights",
@@ -106,7 +96,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Streetlight"
 
-    # Waste
     elif any(word in text for word in [
         "garbage",
         "waste",
@@ -118,7 +107,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Waste"
 
-    # Noise
     elif any(word in text for word in [
         "music",
         "noise",
@@ -132,7 +120,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Noise"
 
-    # Heritage Damage
     elif any(word in text for word in [
         "heritage",
         "historic",
@@ -145,7 +132,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Heritage Damage"
 
-    # Heat Hazard
     elif any(word in text for word in [
         "heatwave",
         "heat wave",
@@ -163,7 +149,6 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Heat Hazard"
 
-    # Road Damage
     elif any(word in text for word in [
         "road surface",
         "road subsided",
@@ -183,25 +168,19 @@ def classify_complaint(row: dict) -> dict:
     ]):
         category = "Road Damage"
 
-    # Other
     else:
         category = "Other"
 
-    # ---------------------------------------------------------
     # PRIORITY
-    # ---------------------------------------------------------
-
     matched_keywords = [
         keyword
         for keyword in SEVERITY_KEYWORDS
-        if keyword in text
+        if re.search(rf"\b{re.escape(keyword)}\b", text)
     ]
 
-    # Urgent
     if matched_keywords:
         priority = "Urgent"
 
-    # Standard
     elif any(word in text for word in [
         "unsafe",
         "dangerous",
@@ -229,14 +208,10 @@ def classify_complaint(row: dict) -> dict:
     ]):
         priority = "Standard"
 
-    # Low
     else:
         priority = "Low"
 
-    # ---------------------------------------------------------
     # REASON
-    # ---------------------------------------------------------
-
     if matched_keywords:
         reason = (
             f"The description contains the severity keyword "
@@ -246,10 +221,7 @@ def classify_complaint(row: dict) -> dict:
         first_sentence = description.split(".")[0].strip()
         reason = f"The description mentions '{first_sentence}'."
 
-    # ---------------------------------------------------------
     # REVIEW FLAG
-    # ---------------------------------------------------------
-
     if category == "Other":
         flag = "NEEDS_REVIEW"
     else:
@@ -265,7 +237,7 @@ def classify_complaint(row: dict) -> dict:
 
 
 def batch_classify(input_path: str, output_path: str):
-    """Read CSV, classify every row, and write results."""
+    """Read CSV, classify every row, and write the results."""
 
     results = []
 
@@ -279,7 +251,6 @@ def batch_classify(input_path: str, output_path: str):
         reader = csv.DictReader(infile)
 
         for row in reader:
-
             try:
                 result = classify_complaint(row)
 
