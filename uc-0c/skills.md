@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: calculate_growth
+    description: Calculates month-over-month growth strictly within a single ward and category, refusing cross-ward aggregations.
+    input: dataset, ward, category, growth_type
+    output: period, ward, category, actual_spend, previous_period, previous_spend, growth, formula, status
+    error_handling: Refuses to calculate if previous period is missing or 0. Flags deliberate NULL values without coercion to zero.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: validate_budget_data
+    description: Validates dataset structure and identifies missing or NULL data before any arithmetic is performed.
+    input: CSV dataset
+    output: Validated records for the exact ward and category requested.
+    error_handling: Halts and raises an explicit refusal if the dataset query lacks a specific ward or category boundary.

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Pothole reported.,
+PM-202402,Pothole,Urgent,Classified based on evidence in description: 'Deep pothole near bus stop. School children at ris...',
+PM-202406,Flooding,Standard,Classified based on evidence in description: 'Underpass flooded knee-deep after 2hrs rain. Commu...',
+PM-202408,Flooding,Standard,Classified based on evidence in description: 'Bus stand flooded. Passengers standing in water. D...',
+PM-202410,Streetlight,Low,Classified based on evidence in description: 'Three consecutive streetlights out for 10 days. Ar...',
+PM-202411,Streetlight,Urgent,Classified based on evidence in description: 'Streetlight flickering and sparking. Electrical ha...',
+PM-202413,Waste,Low,Classified based on evidence in description: 'Overflowing garbage bins near vegetable market. Sm...',
+PM-202418,Noise,Low,Classified based on evidence in description: 'Wedding venue playing music past midnight on weekn...',
+PM-202419,Road Damage,Standard,Classified based on evidence in description: 'Road surface cracked and sinking near utility work...',
+PM-202420,Road Damage,Urgent,Classified based on evidence in description: 'Manhole cover missing. Risk of serious injury to c...',
+PM-202427,Flooding,Standard,Classified based on evidence in description: 'Bridge approach floods in 30mins of rain. Bridge b...',
+PM-202428,Other,Low,Dead animal found,NEEDS_REVIEW
+PM-202430,Streetlight,Low,"Classified based on evidence in description: 'Heritage street, lights out. Safety concern for pe...'",
+PM-202433,Waste,Low,Classified based on evidence in description: 'Bulk waste from apartment renovation dumped on pub...',
+PM-202446,Road Damage,Urgent,Classified based on evidence in description: 'Footpath tiles broken and upturned. Elderly reside...',
