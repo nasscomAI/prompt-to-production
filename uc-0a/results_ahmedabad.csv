@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'Tarmac surface melting at 44°C'.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'Metal bus shelter reaching dangerous temperatures'.,
+AM-202405,Other,Urgent,Classified as Other with Urgent priority due to 'fell' safety trigger in 'Dead trees with split branches'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'Irrigation system broken'.,
+AM-202407,Other,Urgent,Classified as Other with Urgent priority due to 'injury' safety trigger in 'Broken bench and upturned paving'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority based on description phrase 'Pothole on main highway causing morning rush lane closure'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight with Standard priority based on description phrase 'Residential colony unlit after 9pm'.,
+AM-202417,Waste,Standard,Classified as Waste with Standard priority based on description phrase 'Night market waste not cleared before morning'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise with Standard priority based on description phrase 'Club music audible at residential buildings at 2am'.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'Zoo approach road surface bubbling at 45°C'.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'River walk surface temperature unbearable'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on description phrase 'Old city road subsidence near ancient step well'.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'Black metal road dividers storing heat'.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority based on description phrase 'Restaurant waste bins overflowing on Sunday night'.,NEEDS_REVIEW
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description phrase 'BRT shelter roof glass broken'.,
