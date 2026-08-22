@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+MY-202401,Pothole,Standard,"The category is Pothole based on the explicit mention of 'Large pothole', and the priority is Standard because the description does not contain any of the specified urgent keywords such as 'injury' or 'hazard'.",False
+MY-202402,Pothole,Urgent,"The category is Pothole based on the explicit mention of 'pothole', and the priority is Urgent because the description contains the keywords 'school', 'child', and 'fell'.",False
+MY-202405,Flooding,Urgent,"The category is Flooding based on the phrase 'flooded waist-deep', and the priority is Urgent due to the keyword 'Ambulance'.",False
+MY-202407,Streetlight,Standard,"The category is Streetlight based on the explicit mention of 'streetlights non-functional', and the priority is Standard because the description lacks any of the specified urgent keywords.",False
+MY-202409,Waste,Standard,"The category is Waste based on the phrase 'overflowing garbage bins', and the priority is Standard because the description lacks any of the specified urgent keywords.",False
+MY-202411,Road Damage,Standard,"The category is Road Damage based on the words 'cracked and sinking,' and the priority is Standard because the description lacks any of the specified urgent keywords.",False
+MY-202413,Heritage Damage,Standard,"The category is Heritage Damage based on the explicit phrase 'Heritage wall crumbling,' and the priority is Standard because the description does not contain any of the exact urgent keywords.",False
+MY-202416,Noise,Standard,"The complaint is classified as Noise due to the mention of 'loudspeakers' playing 'past midnight', and assigned Standard priority because none of the specified urgent keywords are present.",False
+MY-202418,Road Damage,Urgent,"The category is Road Damage due to the mention of a 'missing manhole cover' on a road, and the priority is Urgent because the description explicitly contains the keyword 'injury'.",False
+MY-202420,Drain Blockage,Standard,"The category is Drain Blockage based on the phrase 'Drain completely blocked', and the priority is Standard because the description contains none of the specified urgent keywords.",False
+MY-202423,Streetlight,Urgent,"The category is Streetlight based on the mention of a 'Streetlight pole', and the priority is Urgent because the description contains the exact keyword 'hazard'.",False
+MY-202425,Waste,Standard,"The category is Waste based on the phrase 'Bulk waste dumped', and the priority is Standard because the description does not contain any of the specified urgent keywords.",False
+MY-202428,Road Damage,Urgent,"The category is Road Damage based on the phrase 'Road collapsed', and the priority is Urgent because the description contains the word 'collapsed' which matches the urgent keyword 'collapse'.",False
+MY-202431,Road Damage,Urgent,"The category is Road Damage based on the description of 'broken and raised' tiles, and the priority is Urgent because the text explicitly contains the keywords 'fell' and 'injury'.",False
+MY-202434,Other,Standard,"The complaint describes a 'factory emitting black smoke' causing 'breathing issues', which does not align with any predefined infrastructure category, and contains none of the specified urgent keywords, resulting in a Standard priority.",NEEDS_REVIEW

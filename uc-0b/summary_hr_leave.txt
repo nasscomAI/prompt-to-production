@@ -1,0 +1,78 @@
+
+<think>
+Here's a thinking process:
+
+1.  **Analyze User Input:**
+   - **Role:** Expert legal and HR policy compliance auditor.
+   - **Task:** Summarize the provided HR Leave Policy.
+   - **Rules:**
+     1. Every numbered clause MUST be represented.
+     2. Preserve all binding conditions, timelines, and multi-condition obligations exactingly.
+     3. Do NOT omit conditions or soften obligations.
+     4. Do NOT add external assumptions or standard industry practices.
+     5. If a clause cannot be summarized without risking loss of exact legal meaning, quote it verbatim and flag it.
+   - **Format:** Clearly by clause number.
+   - **Input Text:** A structured HR Leave Policy with 8 main sections, each containing numbered sub-clauses (1.1-1.2, 2.1-2.7, 3.1-3.4, 4.1-4.4, 5.1-5.4, 6.1-6.3, 7.1-7.3, 8.1-8.2).
+
+2.  **Deconstruct Input & Map to Rules:**
+   I need to go through each clause, summarize it while strictly preserving all conditions, timelines, roles, and obligations. I will format it by clause number. I will check each against the rules.
+
+   *Section 1: PURPOSE AND SCOPE*
+   - 1.1: Governs leave for permanent & contractual employees of CMC.
+   - 1.2: Excludes daily wage workers & consultants (governed by their contracts).
+   *Summary:* 1.1 Applies to all permanent and contractual CMC employees. 1.2 Excludes daily wage workers and consultants, who remain subject to their individual contracts.
+
+   *Section 2: ANNUAL LEAVE*
+   - 2.1: 18 days paid annual leave/year for permanent employees.
+   - 2.2: Accrues at 1.5 days/month from joining date.
+   - 2.3: Application via Form HR-L1 at least 14 calendar days in advance.
+   - 2.4: Requires written approval from direct manager before leave starts. Verbal approval invalid.
+   - 2.5: Unapproved absence = Loss of Pay (LOP), even if approved later.
+   - 2.6: Max 5 unused days carry forward to next calendar year. >5 days forfeited on Dec 31.
+   - 2.7: Carry-forward days must be used in Q1 (Jan-Mar) of next year or forfeited.
+   *Summary:* 2.1 Permanent employees receive 18 paid annual leave days per calendar year. 2.2 Accrual rate is 1.5 days/month from the joining date. 2.3 Applications require Form HR-L1 submitted ≥14 calendar days in advance. 2.4 Written direct manager approval is mandatory prior to leave commencement; verbal approval is invalid. 2.5 Unapproved absences are strictly recorded as Loss of Pay (LOP), irrespective of retroactive approval. 2.6 Maximum 5 unused days may be carried forward; any excess is forfeited on 31 December. 2.7 Carried-forward days must be utilized within January–March of the following year or are forfeited.
+
+   *Section 3: SICK LEAVE*
+   - 3.1: 12 days paid sick leave/year.
+   - 3.2: ≥3 consecutive days requires medical certificate from registered practitioner, submitted within 48 hours of return.
+   - 3.3: Cannot be carried forward.
+   - 3.4: Sick leave immediately before/after public holiday or annual leave requires medical certificate regardless of duration.
+   *Summary:* 3.1 Entitlement is 12 paid sick leave days per calendar year. 3.2 Absences of ≥3 consecutive days mandate a medical certificate from a registered practitioner, submitted within 48 hours of returning to work. 3.3 Sick leave is non-carry-forwardable. 3.4 Sick leave taken immediately adjacent to a public holiday or annual leave period requires a medical certificate irrespective of duration.
+
+   *Section 4: MATERNITY AND PATERNITY LEAVE*
+   - 4.1: Female: 26 weeks paid for first two live births.
+   - 4.2: Female: 12 weeks paid for third/subsequent child.
+   - 4.3: Male: 5 days paid paternity leave, within 30 days of birth.
+   - 4.4: Paternity leave cannot be split.
+   *Summary:* 4.1 Female employees receive 26 weeks paid maternity leave for the first two live births. 4.2 For a third or subsequent child, maternity leave is reduced to 12 weeks paid. 4.3 Male employees receive 5 days paid paternity leave, strictly to be taken within 30 days of the child’s birth. 4.4 Paternity leave must be taken continuously and cannot be split across multiple periods.
+
+   *Section 5: LEAVE WITHOUT PAY (LWP)*
+   - 5.1: Apply only after exhausting all applicable paid leave.
+   - 5.2: Requires approval from Department Head AND HR Director. Manager approval alone insufficient.
+   - 5.3: >30 continuous days requires Municipal Commissioner approval.
+   - 5.4: LWP periods do not count toward seniority, increments, or retirement benefits.
+   *Summary:* 5.1 LWP applications are permitted only after complete exhaustion of all applicable paid leave entitlements. 5.2 Dual approval from both the Department Head and HR Director is mandatory; direct manager approval alone is insufficient. 5.3 LWP exceeding 30 continuous days additionally requires Municipal Commissioner approval. 5.4 LWP periods are strictly excluded from calculations for seniority, increments, and retirement benefits.
+
+   *Section 6: PUBLIC HOLIDAYS*
+   - 6.1: Entitled to all gazetted public holidays declared by State Government.
+   - 6.2: If required to work, entitled to 1 compensatory off day, to be taken within 60 days of the holiday worked.
+   - 6.3: Compensatory off cannot be encashed.
+   *Summary:* 6.1 Employees are entitled to all State Government-declared gazetted public holidays. 6.2 Mandatory work on a public holiday entitles the employee to exactly one compensatory off day, which must be utilized within 60 days of the holiday worked. 6.3 Compensatory off days are strictly non-encashable.
+
+   *Section 7: LEAVE ENCASHMENT*
+   - 7.1: Annual leave encashable only at retirement/resignation, max 60 days.
+   - 7.2: Encashment during service prohibited under any circumstances.
+   - 7.3: Sick leave and LWP cannot be encashed under any circumstances.
+   *Summary:* 7.1 Annual leave encashment is permitted exclusively upon retirement or resignation, capped at a maximum of 60 days. 7.2 Leave encashment during active service is strictly prohibited under all circumstances. 7.3 Sick leave and LWP are strictly non-encashable under all circumstances.
+
+   *Section 8: GRIEVANCES*
+   - 8.1: Must be raised with HR within 10 working days of disputed decision.
+   - 8.2: Late grievances (>10 working days) not considered unless exceptional circumstances demonstrated in writing.
+   *Summary:* 8.1 Leave-related grievances must be formally submitted to the HR Department within 10 working days of the disputed decision. 8.2 Grievances submitted after the 10-working-day deadline will be dismissed unless exceptional circumstances are formally documented and demonstrated in writing.
+
+3.  **Check Against Rules:**
+   - *Rule 1: Every numbered clause represented?* Yes, 1.1 through 8.2 are all present.
+   - *Rule 2: Preserve binding conditions, timelines, multi-condition obligations exactingly?* Checked. All numbers (18, 1.5, 14, 5, 31 Dec, Jan-Mar, 12, 3, 48 hrs, 26 weeks, 12 weeks, 5 days, 30 days, 30 days, 60 days, 60 days, 10 working days) and roles (direct manager, Department Head AND HR Director, Municipal Commissioner, HR Department) are preserved exactly. Conditions like "verbal approval invalid", "LOP regardless of subsequent approval", "cannot be split", "exhausting all paid leave", "non-encashable" are kept.
+   - *Rule 3: Do NOT omit conditions or soften obligations?* Checked. Language is strict and matches the original's mandatory tone ("strictly", "mandatory", "exclusively", "prohibited").
+   - *Rule 4: Do NOT add external assumptions?* Checked. No external info added. Strictly derived from text.
+   - *Rule 5: Quote verbatim if risk of loss?* The summaries are tight and preserve exact legal meaning. I will ensure the phrasing closely mirrors the original to avoid any ambiguity. I'll format it
