@@ -1,0 +1,48 @@
+ACCEPTABLE USE POLICY — IT SYSTEMS AND DEVICES — SUMMARY
+Two-tier: descriptive clauses grouped & condensed; [CRITICAL] clauses kept
+individually with binding words UPPERCASED. Every clause is validated against
+the source (numbers, binding verbs, named approvers, negations preserved).
+
+1. PURPOSE AND SCOPE
+  - Clauses 1.1, 1.2, 1.3: This policy governs acceptable use of all IT systems, devices, networks, and data owned or managed by the City Municipal Corporation (CMC); This policy applies to all permanent employees, contractual staff, and third-party vendors with CMC system access; Use of CMC IT resources implies acceptance of this policy.
+
+2. CORPORATE DEVICES
+  - Clause 2.1 [CRITICAL]: Corporate devices (laptops, desktops, mobile phones issued by CMC) MUST be used primarily for official work purposes.
+  - Clause 2.2 [CRITICAL]: Personal use of corporate devices is permitted in moderation, provided it does NOT interfere with work duties or consume excessive bandwidth.
+  - Clause 2.3 [CRITICAL]: Employees MUST NOT install software on corporate devices without written approval from the IT Department.
+  - Clause 2.4 [CRITICAL]: Software approved for installation MUST be sourced from the CMC-approved software catalogue ONLY.
+  - Clause 2.5 [CRITICAL]: Corporate devices MUST NOT be used to access gambling, adult content, or any site classified as harmful by the IT Department.
+  - Clause 2.6 [CRITICAL]: Corporate devices MUST have the CMC endpoint security agent installed and active at all times. Disabling or circumventing this agent is a disciplinary offence.
+
+3. PERSONAL DEVICES (BYOD)
+  - Clause 3.1 [CRITICAL]: Personal devices may be used to access CMC email and the CMC employee self-service portal ONLY.
+  - Clause 3.2 [CRITICAL]: Personal devices MUST NOT be used to access, store, or transmit classified or sensitive CMC data.
+  - Clause 3.3 [CRITICAL]: Personal devices MUST NOT be connected to the CMC internal network (wired or wireless). The CMC Guest WiFi network is available for personal device internet access.
+  - Clause 3.4 [CRITICAL]: Employees using personal devices for CMC email MUST enable device-level PIN or biometric lock.
+  - Clause 3.5 [CRITICAL]: If a personal device containing CMC email is lost or stolen, the employee MUST report it to the IT helpdesk within 4 hours so that a remote wipe of CMC data can be performed.
+
+4. PASSWORDS AND ACCESS CONTROL
+  - Clause 4.1 [CRITICAL]: Employees MUST NOT share their CMC system passwords with any other person, including IT staff.
+  - Clause 4.2 [CRITICAL]: IT staff WILL NEVER ask for your password. Any request for your password should be reported to the IT Security team.
+  - Clause 4.3 [CRITICAL]: Passwords MUST be changed every 90 days as prompted by the system.
+  - Clause 4.4 [CRITICAL]: Multi-factor authentication (MFA) is MANDATORY for all remote access to CMC systems.
+
+5. DATA HANDLING
+  - Clause 5.1 [CRITICAL]: CMC data classified as Confidential or Restricted MUST NOT be stored on personal devices, personal cloud storage, or any system NOT approved by the IT Department.
+  - Clause 5.2 [CRITICAL]: Employees MUST NOT forward CMC email containing Confidential data to personal email accounts.
+  - Clause 5.3 [CRITICAL]: Printing of Confidential documents MUST use the secure print function. Documents MUST NOT be left unattended at printers.
+
+6. INTERNET AND EMAIL USE
+  - Clause 6.1: Internet use on CMC systems is monitored and logged.
+  - Clause 6.2 [CRITICAL]: Employees MUST NOT use CMC email addresses to register for personal services, social media, or non-work subscriptions.
+  - Clause 6.3 [CRITICAL]: Mass emails to external recipients MUST be approved by the Communications Department before sending.
+
+7. VIOLATIONS AND CONSEQUENCES
+  - Clause 7.1: Violations of this policy may result in disciplinary action up to and including termination of employment.
+  - Clause 7.2 [CRITICAL]: Violations involving unauthorised access to restricted data WILL be reported to law enforcement.
+  - Clause 7.3 [CRITICAL]: CMC reserves the right to monitor, access, and audit any activity on CMC-owned systems at any time without prior notice.
+
+---
+Clauses represented: 27 (critical: 22, descriptive: 5)
+Quoted verbatim (exception): 0
+Character reduction vs source clauses: -0.1%

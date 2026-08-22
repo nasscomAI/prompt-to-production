@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions ""pothole"", which maps to Pothole.",
+PM-202402,Pothole,Urgent,"Description mentions ""pothole"", which maps to Pothole; priority is Urgent because it contains ""child"".",
+PM-202406,Flooding,Standard,"Description mentions ""flood"", which maps to Flooding.",
+PM-202408,Drain Blockage,Standard,"Description mentions ""Drain block"", which maps to Drain Blockage.",
+PM-202410,Streetlight,Standard,"Description mentions ""streetlight"", which maps to Streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions ""Streetlight"", which maps to Streetlight; priority is Urgent because it contains ""hazard"".",
+PM-202413,Waste,Standard,"Description mentions ""garbage"", which maps to Waste.",
+PM-202418,Noise,Standard,"Description mentions ""music"", which maps to Noise.",
+PM-202419,Road Damage,Standard,"Description mentions ""Road surface"", which maps to Road Damage.",
+PM-202420,Road Damage,Urgent,"Description mentions ""Manhole cover"", which maps to Road Damage; priority is Urgent because it contains ""injury""; flagged because Drain Blockage fits the description equally well.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description mentions ""flood"", which maps to Flooding.",
+PM-202428,Waste,Standard,"Description mentions ""Dead animal"", which maps to Waste.",
+PM-202430,Streetlight,Standard,"Description mentions ""lights out"", which maps to Streetlight; flagged because Heritage Damage fits the description equally well.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions ""waste"", which maps to Waste.",
+PM-202446,Road Damage,Urgent,"Description mentions ""Footpath"", which maps to Road Damage; priority is Urgent because it contains ""fell"".",
