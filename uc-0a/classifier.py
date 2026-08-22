@@ -26,30 +26,32 @@ LOW_KEYWORDS = ["minor", "cosmetic", "trivial"]
 
 # Cue phrases per category. Ordered: earlier entries win ties.
 CATEGORY_CUES = [
-    ("Heritage Damage", [r"heritage"]),
-    ("Pothole", [r"pothole"]),
-    ("Flooding", [r"flood", r"inundat", r"knee-?deep water", r"waterlog"]),
-    ("Drain Blockage", [r"drain\s+block", r"clogged drain", r"blocked drain"]),
-    ("Streetlight", [r"streetlight", r"street light", r"lights?\s+(out|flicker|sparking)", r"lamp post"]),
-    ("Waste", [r"garbage", r"waste", r"trash", r"dump(ed|ing)?\b", r"dead animal", r"bins?"]),
-    ("Noise", [r"\bnoise\b", r"music", r"loudspeaker"]),
-    ("Road Damage", [r"road\s+(surface|crack|sink)", r"footpath", r"sinking", r"upturned"]),
-    ("Heat Hazard", [r"heat\s?(wave|hazard|stroke)", r"extreme heat"]),
+    ("Heritage Damage", [r"\bheritage\b"]),
+    ("Pothole", [r"\bpotholes?\b"]),
+    ("Flooding", [r"\bflood", r"\binundat", r"\bknee-?deep water\b", r"\bwaterlog"]),
+    ("Drain Blockage", [r"\bdrain(s)?\s+block", r"\bclogged drain\b", r"\bblocked drain\b"]),
+    ("Streetlight", [r"\bstreetlights?\b", r"\bstreet lights?\b", r"\blights?\s+(out|flickering|sparking)\b", r"\blamp posts?\b"]),
+    ("Waste", [r"\bgarbage\b", r"\bwaste\b", r"\btrash\b", r"\bdump(ed|ing)?\b", r"\bdead animal\b", r"\bbins?\b"]),
+    ("Noise", [r"\bnoise\b", r"\bmusic\b", r"\bloudspeakers?\b"]),
+    ("Road Damage", [r"\broad\s+(surface|crack|sinking)", r"\bfootpaths?\b", r"\bsinking\b", r"\bupturned\b"]),
+    ("Heat Hazard", [r"\bheat\s?(wave|hazard|stroke)\b", r"\bextreme heat\b"]),
 ]
 
 
 def _find_cue_matches(text):
-    """Return list of (category, matched_term) preserving CATEGORY_CUES order."""
+    """Return list of (category, quoted_words) preserving CATEGORY_CUES order."""
     matches = []
     lowered = text.lower()
     for category, patterns in CATEGORY_CUES:
         for pattern in patterns:
             m = re.search(pattern, lowered)
             if m:
-                start = max(0, m.start() - 15)
-                end = min(len(lowered), m.end() + 15)
-                snippet = lowered[start:end].strip()
-                matches.append((category, snippet))
+                start, end = m.start(), m.end()
+                while start > 0 and lowered[start - 1].isalnum():
+                    start -= 1
+                while end < len(lowered) and lowered[end].isalnum():
+                    end += 1
+                matches.append((category, text[start:end]))
                 break
     return matches
 
@@ -99,11 +101,20 @@ def classify_complaint(row: dict) -> dict:
     }
 
 
+def _matches_word(text: str, keywords) -> bool:
+    """Whole-word match allowing plural/verb inflections (child->children)."""
+    for keyword in keywords:
+        if re.search(r"\b" + re.escape(keyword) + r"(s|es|ed|d|ing|ren)?\b",
+                     text):
+            return True
+    return False
+
+
 def _priority(description: str) -> str:
     lowered = (description or "").lower()
-    if any(k in lowered for k in SEVERITY_KEYWORDS):
+    if _matches_word(lowered, SEVERITY_KEYWORDS):
         return "Urgent"
-    if any(k in lowered for k in LOW_KEYWORDS):
+    if _matches_word(lowered, LOW_KEYWORDS):
         return "Low"
     return "Standard"
 
