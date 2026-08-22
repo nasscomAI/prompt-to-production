@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions 'flood, flooded, ambulance' → classified as Flooding with Urgent priority.",
+GH-202402,Flooding,Standard,"Description mentions 'flood, flooded' → classified as Flooding with Standard priority.",
+GH-202406,Flooding,Standard,Description mentions 'stormwater' → classified as Flooding with Standard priority.,
+GH-202407,Drain Blockage,Standard,"Description mentions 'drain block, mosquito breeding, dengue' → classified as Drain Blockage with Standard priority.",
+GH-202410,Pothole,Standard,Description mentions 'pothole' → classified as Pothole with Standard priority.,
+GH-202411,Pothole,Urgent,"Description mentions 'pothole, wheel, hospital' → classified as Pothole with Urgent priority.",
+GH-202412,Pothole,Urgent,"Description mentions 'pothole, school' → classified as Pothole with Urgent priority.",
+GH-202417,Waste,Standard,"Description mentions 'waste, garbage' → classified as Waste with Standard priority.",
+GH-202420,Noise,Standard,Description mentions 'drilling' → classified as Noise with Standard priority.,
+GH-202422,Road Damage,Urgent,"Description mentions 'road collapse, collapsed, collapse' → classified as Road Damage with Urgent priority.",
+GH-202424,Flooding,Standard,Description mentions 'flood' → classified as Flooding with Standard priority.,
+GH-202428,Waste,Standard,"Description mentions 'waste, not cleared' → classified as Waste with Standard priority.",
+GH-202432,Noise,Standard,"Description mentions 'idling, engines on' → classified as Noise with Standard priority.",
+GH-202448,Flooding,Standard,Description mentions 'flood' → classified as Flooding with Standard priority.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Description mentions 'rainwater' → classified as Flooding with Standard priority.,
