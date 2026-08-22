@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description mentions ""lamp post"", which indicates Streetlight.",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,"Description mentions ""road cobblestones broken"", which indicates Road Damage.",
+KM-202405,Noise,Low,"Description mentions ""Wedding band"", which indicates Noise.",
+KM-202409,Pothole,Standard,"Description mentions ""potholes"", which indicates Pothole.",
+KM-202410,Pothole,Standard,"Description mentions ""Pothole"", which indicates Pothole.",
+KM-202411,Pothole,Standard,"Description mentions ""pothole"", which indicates Pothole.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,"Description mentions ""draining"", which indicates Drain Blockage.",
+KM-202418,Waste,Standard,"Description mentions ""waste"", which indicates Waste.",
+KM-202421,Road Damage,Urgent,"Description mentions ""fell"" and ""Footpath broken and sinking"", so this is urgent Road Damage.",
+KM-202422,Road Damage,Standard,"Description mentions ""Road surface buckled"", which indicates Road Damage.",
+KM-202426,Heritage Damage,Standard,"Description mentions ""Heritage"", which indicates Heritage Damage.",
+KM-202430,Road Damage,Standard,"Description mentions ""Road subsided"", which indicates Road Damage.",
+KM-202434,Heritage Damage,Standard,"Description mentions ""heritage"", which indicates Heritage Damage.",
+KM-202436,Other,Low,"Description ""Entire colony substation tripped. Darkness for 3 nights."" does not match any known category.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description mentions ""heritage"", which indicates Heritage Damage.",

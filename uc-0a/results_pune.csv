@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions ""pothole"", which indicates Pothole.",
+PM-202402,Pothole,Urgent,"Description mentions ""School"" and ""pothole"", so this is urgent Pothole.",
+PM-202406,Flooding,Standard,"Description mentions ""flooded"", which indicates Flooding.",
+PM-202408,Flooding,Standard,"Description mentions ""flooded"", which indicates Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions ""streetlights"", which indicates Streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions ""hazard"" and ""Streetlight"", so this is urgent Streetlight.",
+PM-202413,Waste,Standard,"Description mentions ""garbage"", which indicates Waste.",
+PM-202418,Noise,Low,"Description mentions ""music"", which indicates Noise.",
+PM-202419,Road Damage,Standard,"Description mentions ""Road surface cracked and sinking"", which indicates Road Damage.",
+PM-202420,Other,Urgent,"Description ""Manhole cover missing. Risk of serious injury to cyclists."" does not match any known category.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description mentions ""floods"", which indicates Flooding.",
+PM-202428,Waste,Standard,"Description mentions ""Dead animal"", which indicates Waste.",
+PM-202430,Heritage Damage,Standard,"Description mentions ""Heritage"", which indicates Heritage Damage.",
+PM-202433,Waste,Standard,"Description mentions ""waste"", which indicates Waste.",
+PM-202446,Road Damage,Urgent,"Description mentions ""fell"" and ""Footpath tiles broken and upturned"", so this is urgent Road Damage.",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions ""Ambulance"" and ""flooded"", so this is urgent Flooding.",
+GH-202402,Flooding,Standard,"Description mentions ""flooded"", which indicates Flooding.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Description mentions ""drain"", which indicates Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Description mentions ""Drain"", which indicates Drain Blockage.",
+GH-202410,Pothole,Standard,"Description mentions ""Potholes"", which indicates Pothole.",
+GH-202411,Pothole,Standard,"Description mentions ""Pothole"", which indicates Pothole.",
+GH-202412,Pothole,Urgent,"Description mentions ""School"" and ""potholes"", so this is urgent Pothole.",
+GH-202417,Waste,Standard,"Description mentions ""garbage"", which indicates Waste.",NEEDS_REVIEW
+GH-202420,Noise,Low,"Description mentions ""drilling"", which indicates Noise.",
+GH-202422,Road Damage,Urgent,"Description mentions ""collapsed"" and ""Road collapsed"", so this is urgent Road Damage.",
+GH-202424,Flooding,Standard,"Description mentions ""floods"", which indicates Flooding.",
+GH-202428,Waste,Standard,"Description mentions ""waste"", which indicates Waste.",
+GH-202432,Other,Low,"Description ""24hr supermarket delivery trucks idling with engines on."" does not match any known category.",NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description mentions ""flooding"", which indicates Flooding.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Description mentions ""rainwater"", which indicates Flooding.",
