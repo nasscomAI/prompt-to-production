@@ -1,16 +1,16 @@
-Category,Location,Priority,Reason
-Pothole,Karve Road near Deccan Gymkhana,High,Large
-Pothole,FC Road near MIT College junction,Urgent,School
-Pothole,Ambedkar Road underpass,High,deep
-Pothole,Kothrud Depot bus stand,Urgent,blocked
-Pothole,JM Road near Goodluck Chowk,Normal,Three
-Pothole,"Viman Nagar, Vadgaon Sheri Road",Urgent,hazard
-Pothole,Shivajinagar market area,Normal,Overflowing
-Pothole,Kalyani Nagar residential zone,Normal,Wedding
-Pothole,Senapati Bapat Road,Normal,Road
-Pothole,Paud Road near Kothrud,Urgent,injury
-Pothole,Erandwane depression near bridge,Normal,Bridge
-Pothole,Pune University Road,Normal,Dead
-Pothole,"Rasta Peth, old city area",Normal,Heritage
-Pothole,Dhole Patil Road,Normal,road
-Pothole,"Swargate, Tilak Road",Urgent,fell
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole; no required urgent severity keyword was found.",
+PM-202402,Pothole,Urgent,"Priority is Urgent because the description contains \"School\".",
+PM-202406,Flooding,Standard,"Classified as Flooding; no required urgent severity keyword was found.",
+PM-202408,Other,Standard,"Category could not be determined confidently because the description contains both flooding and drain-blockage evidence.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight; no required urgent severity keyword was found.",
+PM-202411,Streetlight,Urgent,"Priority is Urgent because the description contains \"hazard\".",
+PM-202413,Waste,Standard,"Classified as Waste; no required urgent severity keyword was found.",
+PM-202418,Noise,Standard,"Classified as Noise; no required urgent severity keyword was found.",
+PM-202419,Road Damage,Standard,"Classified as Road Damage; no required urgent severity keyword was found.",
+PM-202420,Other,Urgent,"Category could not be determined confidently; the missing manhole cover is not one of the defined categories.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Classified as Flooding; no required urgent severity keyword was found.",
+PM-202428,Other,Standard,"Category could not be determined confidently because the complaint describes a dead animal, which is outside the defined taxonomy.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Classified as Heritage Damage from the description phrase \"Heritage street\"; no required urgent severity keyword was found.",
+PM-202433,Waste,Standard,"Classified as Waste; no required urgent severity keyword was found.",
+PM-202446,Other,Urgent,"Category could not be determined confidently because broken footpath tiles are outside the defined categories; the description contains \"fell\".",NEEDS_REVIEW
