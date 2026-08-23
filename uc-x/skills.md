@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: retrieve_traffic_evidence
-    description: Collect or accept traffic, route, incident, and civic evidence with freshness information.
-    input: Origin, destination, permitted source or supplied evidence.
-    output: Verified route candidates and evidence status.
-    error_handling: Mark live traffic unavailable when it cannot be verified.
+  - name: retrieve_documents
+    description: Load the three policy files and index their numbered sections without merging their contents.
+    input: Paths to policy_hr_leave.txt, policy_it_acceptable_use.txt, and policy_finance_reimbursement.txt.
+    output: Document-indexed sections keyed by source filename and section number.
+    error_handling: Report a missing or unreadable document clearly and do not substitute another source.
 
-  - name: recommend_route
-    description: Compare supplied routes and recommend the least affected supported option.
-    input: Origin, destination, route candidates, and evidence.
-    output: Recommended route, condition, reason, and traffic-data status.
-    error_handling: Ask for missing origin or destination; do not guess routes.
+  - name: answer_question
+    description: Find a single-source answer with document and section citation or return the exact refusal template.
+    input: Natural-language policy question and indexed documents.
+    output: Clear answer with one source citation, or the required refusal text.
+    error_handling: Refuse when no single source supports the answer or when answering would require blending documents.
