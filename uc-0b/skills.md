@@ -1,19 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [identifying and reporting]
-    description: [reporting agent for identifying and reporting
-  broken/non-working streetlights and damaged or malfunctioning traffic signals]
-    input: [the user's description, uploaded photo, and provided
-  location information]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Load a policy text file and identify its numbered clauses.
+    input: Policy text file path.
+    output: Ordered list of numbered policy clauses.
+    error_handling: Report a missing or unreadable source file clearly.
 
-  - name: [ available ]
-    description: [  Use only the information provided by the user and the available image/location context. Do not guess missing details.]
-    input: [the user's description, uploaded photo, and provided
-  location information]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produce a clause-referenced summary while preserving all obligations and conditions.
+    input: Ordered list of numbered policy clauses.
+    output: Clause-referenced policy summary text.
+    error_handling: Preserve the source wording when summarization could lose meaning.

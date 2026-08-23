@@ -160,10 +160,31 @@ def batch_classify(input_path: str, output_path: str):
         writer.writerows(rows)
 
 
+def classify_text(text: str) -> dict:
+    """Classify a free-form report without requiring a CSV row."""
+    report = (text or "").strip()
+    location_match = re.search(r"\b(?:in|near|at|on)\s+([A-Za-z][A-Za-z .'-]*?)(?=\s+(?:with|and|that|which|there|is|was|has|causing|due|because|injury|injured|accident|school|children|child|hospital|danger|dangerous|blocked|blockage|traffic|large|deep|severe)\b|[,.!?]|$)", report, re.IGNORECASE)
+    location = location_match.group(1).strip() if location_match else ""
+    description = report
+    if location:
+        description = report[:location_match.start()] + report[location_match.end():]
+    return classify_pothole_report(location, description)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input", required=True, help="Path to the input CSV file")
-    parser.add_argument("--output", required=True, help="Path to the output CSV file")
+    parser.add_argument("--input", help="Path to the input CSV file")
+    parser.add_argument("--output", help="Path to the output CSV file")
+    parser.add_argument("--location", help="Location for a single free-form report")
+    parser.add_argument("--description", help="Description for a single free-form report")
+    parser.add_argument("--text", help="Complete natural-language pothole report")
     args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    if args.text:
+        print(classify_text(args.text))
+    elif args.location is not None or args.description is not None:
+        print(classify_pothole_report(args.location or "", args.description or ""))
+    elif args.input and args.output:
+        batch_classify(args.input, args.output)
+        print(f"Done. Results written to {args.output}")
+    else:
+        parser.error("provide --text, --location/--description, or both --input and --output")
