@@ -1,36 +1,43 @@
-# UC-X - Smart City Route Recommendation
+# UC-X — Ask My Documents
 
-This agent recommends a route only from supplied route candidates and verified traffic or civic evidence. It does not invent live traffic, closures, incidents, or routes.
+## Purpose
+Answer questions using the three supplied CMC policy documents without blending claims across documents.
 
-## Natural-language request
+## Input documents
+- `../data/policy-documents/policy_hr_leave.txt`
+- `../data/policy-documents/policy_it_acceptable_use.txt`
+- `../data/policy-documents/policy_finance_reimbursement.txt`
 
-```powershell
-python app.py --text "Find a route from Vellore to Katpadi"
+## Run
+
+```bash
+python app.py
 ```
 
-Without verified route data, the result explicitly reports that live traffic information is unavailable.
+If your working directory is different:
 
-## Explicit locations
-
-```powershell
-python app.py --origin "Vellore" --destination "Katpadi" --traffic "heavy traffic on Main Road" --civic-reports "flooding reported on Main Road"
+```bash
+python app.py --data-dir ../data/policy-documents
 ```
 
-## Supplied route candidates
+## Output
+Each supported answer includes the source document and section number. If no single document supports the answer, the program returns the exact refusal template required by this UC.
 
-Use a JSON file containing route objects, for example:
+## Refusal template
 
-```json
-[
-  {"name": "Main Road", "duration_minutes": 20, "evidence": "heavy traffic and flooding reported"},
-  {"name": "East Bypass", "duration_minutes": 28, "evidence": "normal traffic"}
-]
+```text
+This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
 ```
 
-Run it with:
+## Required tests
 
-```powershell
-python app.py --origin "Vellore" --destination "Katpadi" --routes-file routes.json
-```
+1. `Can I carry forward unused annual leave?`
+2. `Can I install Slack on my work laptop?`
+3. `What is the home office equipment allowance?`
+4. `Can I use my personal phone for work files from home?`
+5. `What is the company view on flexible working culture?`
+6. `Can I claim DA and meal receipts on the same day?`
+7. `Who approves leave without pay?`
 
-Required output fields are `Origin`, `Destination`, `Recommended Route`, `Condition`, `Reason`, and `Traffic Data`.
+The implementation must never invent permissions, blend HR/IT/Finance claims, or use hedged policy language.
