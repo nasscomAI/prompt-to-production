@@ -21,7 +21,7 @@ Interactive CLI — type questions, read answers.
 
 ## Do This Before Writing Any Prompt
 
-Define your **refusal template** — the exact wording the system must use when a question is not in the documents. Write it here before opening your AI tool:
+Define your **refusal template** — the exact wording the systemmust use when a question is not in the documents. Write it here before opening your AI tool:
 
 ```
 This question is not covered in the available policy documents
