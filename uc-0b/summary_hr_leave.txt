@@ -1,7 +1,4 @@
-import argparse
-
-def summarize_policy(text):
-    return """HR Leave Policy Summary
+HR Leave Policy Summary
 
 1. Employees must submit leave applications at least 14 days in advance.
 2. Written approval is mandatory before leave begins. Verbal approval is not accepted.
@@ -13,23 +10,3 @@ def summarize_policy(text):
 8. Leave Without Pay requires approval from BOTH the Department Head AND the HR Director.
 9. Leave Without Pay exceeding 30 days additionally requires Municipal Commissioner approval.
 10. Leave encashment during service is not permitted.
-"""
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-
-    with open(args.input, "r", encoding="utf-8", errors="ignore") as f:
-        text = f.read()
-
-    summary = summarize_policy(text)
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
-
-    print(f"Summary written to {args.output}")
-
-if __name__ == "__main__":
-    main()
