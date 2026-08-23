@@ -1,94 +1,91 @@
-"""Evidence-based smart-city traffic and route recommendation agent."""
+"""UC-X — Ask My Documents."""
 
 import argparse
-import json
 import re
-from typing import Any
+from pathlib import Path
 
-CONDITION_TERMS = {
-    "traffic jam": "Traffic Jam",
-    "jammed": "Traffic Jam",
-    "standstill": "Traffic Jam",
-    "heavy traffic": "Heavy Traffic",
-    "congested": "Heavy Traffic",
-    "moderate traffic": "Moderate Traffic",
-    "slow traffic": "Moderate Traffic",
-}
+DOCUMENTS = (
+    "policy_hr_leave.txt",
+    "policy_it_acceptable_use.txt",
+    "policy_finance_reimbursement.txt",
+)
+REFUSAL = "This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).\nPlease contact [relevant team] for guidance."
+CLAUSE_PATTERN = re.compile(r"^(\d+\.\d+)\s+(.+)$")
 
 
-def _condition(text: str) -> str:
-    lowered = text.lower()
-    for phrase, condition in CONDITION_TERMS.items():
-        if phrase in lowered:
-            return condition
-    if any(word in lowered for word in ("clear", "normal traffic", "free flowing")):
-        return "Normal"
-    return "Unknown"
+def retrieve_documents(paths: dict[str, Path]) -> dict[str, list[tuple[str, str]]]:
+    """Load each policy independently and preserve source/section boundaries."""
+    index = {}
+    for name in DOCUMENTS:
+        path = paths[name]
+        if not path.exists():
+            raise FileNotFoundError(f"Required policy document not found: {path}")
+        clauses = []
+        current = None
+        text_parts = []
+        for raw_line in path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            match = CLAUSE_PATTERN.match(line)
+            if match:
+                if current is not None:
+                    clauses.append((current, " ".join(text_parts)))
+                current = match.group(1)
+                text_parts = [match.group(2)]
+            elif current is not None and line:
+                text_parts.append(line)
+        if current is not None:
+            clauses.append((current, " ".join(text_parts)))
+        index[name] = clauses
+    return index
 
 
-def recommend_route(origin: str, destination: str, routes: list[dict[str, Any]] | None = None, traffic_evidence: str = "", civic_reports: str = "", live_traffic_available: bool = False) -> dict[str, Any]:
-    """Recommend the best supplied route without inventing live conditions."""
-    origin = origin.strip()
-    destination = destination.strip()
-    if not origin or not destination:
-        return {"Status": "Missing information", "Message": "Please provide both origin and destination."}
-
-    routes = routes or []
-    evidence = " ".join(part.strip() for part in (traffic_evidence, civic_reports) if part.strip())
-    if not routes:
-        return {
-            "Origin": origin,
-            "Destination": destination,
-            "Recommended Route": "Unavailable",
-            "Condition": _condition(evidence),
-            "Reason": "No verified route options were provided.",
-            "Traffic Data": "Live traffic information unavailable" if not live_traffic_available else "Available",
-        }
-
-    def route_score(route: dict[str, Any]) -> tuple[int, float]:
-        text = json.dumps(route).lower()
-        penalty = 100 if any(term in text for term in ("flood", "closed", "blocked", "accident", "traffic jam")) else 0
-        if "heavy traffic" in text:
-            penalty += 50
-        return penalty, float(route.get("duration_minutes", 0) or 0)
-
-    selected = min(routes, key=route_score)
-    route_name = str(selected.get("name") or selected.get("route") or "Unnamed route")
-    selected_evidence = str(selected.get("evidence") or selected.get("condition") or "")
-    return {
-        "Origin": origin,
-        "Destination": destination,
-        "Recommended Route": route_name,
-        "Condition": _condition(selected_evidence or evidence),
-        "Reason": selected_evidence or "Selected from the supplied route options using the available evidence.",
-        "Traffic Data": "Live traffic information unavailable" if not live_traffic_available else "Available",
-    }
+def _score(question: str, clause: str) -> int:
+    stop = {"can", "i", "the", "what", "is", "my", "for", "from", "to", "and", "of", "on", "in", "a", "an"}
+    q_words = {word for word in re.findall(r"[a-z0-9]+", question.lower()) if word not in stop and len(word) > 2}
+    c_words = set(re.findall(r"[a-z0-9]+", clause.lower()))
+    return len(q_words & c_words)
 
 
-def _extract_places(text: str) -> tuple[str, str]:
-    match = re.search(r"from\s+(.+?)\s+to\s+(.+?)(?:\.|,|$)", text, re.IGNORECASE)
-    return (match.group(1).strip(), match.group(2).strip()) if match else ("", "")
+def answer_question(question: str, index: dict[str, list[tuple[str, str]]]) -> str:
+    """Return a single-source answer with citation, or the exact refusal."""
+    candidates = []
+    for document, clauses in index.items():
+        for section, text in clauses:
+            score = _score(question, text)
+            if score:
+                candidates.append((score, document, section, text))
+    if not candidates:
+        return REFUSAL
+    candidates.sort(reverse=True)
+    best_score = candidates[0][0]
+    best = [candidate for candidate in candidates if candidate[0] == best_score]
+    if len({candidate[1] for candidate in best}) > 1:
+        return REFUSAL
+    _, document, section, text = best[0]
+    return f"{text}\nSource: {document}, section {section}."
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Recommend routes from verified traffic evidence.")
-    parser.add_argument("--origin", help="Starting location")
-    parser.add_argument("--destination", help="Travel destination")
-    parser.add_argument("--text", help="Natural-language travel request")
-    parser.add_argument("--routes-file", help="JSON file containing supplied route candidates")
-    parser.add_argument("--traffic", default="", help="Verified traffic evidence")
-    parser.add_argument("--civic-reports", default="", help="Verified civic issue reports")
-    parser.add_argument("--live-traffic", action="store_true", help="Use only when a trusted live source was obtained")
+    parser = argparse.ArgumentParser(description="UC-X policy document question answering")
+    parser.add_argument("--data-dir", default="../data/policy-documents", help="Directory containing the three policy files")
     args = parser.parse_args()
-
-    origin, destination = args.origin or "", args.destination or ""
-    if args.text:
-        origin, destination = _extract_places(args.text)
-    routes = []
-    if args.routes_file:
-        with open(args.routes_file, encoding="utf-8") as route_file:
-            routes = json.load(route_file)
-    print(recommend_route(origin, destination, routes, args.traffic, args.civic_reports, args.live_traffic))
+    base = Path(args.data_dir)
+    paths = {name: base / name for name in DOCUMENTS}
+    index = retrieve_documents(paths)
+    print("UC-X — Ask My Documents")
+    print("Type a policy question. Type 'exit' to quit.")
+    while True:
+        try:
+            question = input("Question: ").strip()
+        except EOFError:
+            break
+        if question.lower() in {"exit", "quit"}:
+            break
+        if not question:
+            print("Please enter a question.")
+            continue
+        print(answer_question(question, index))
+        print()
 
 
 if __name__ == "__main__":
