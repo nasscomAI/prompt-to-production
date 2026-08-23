@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on 'pothole'; priority Standard.,
+PM-202402,Pothole,Urgent,Classified as Pothole based on 'pothole'; priority Urgent due to severity word(s) School.,
+PM-202406,Flooding,Standard,Classified as Flooding based on 'flood'; priority Standard.,
+PM-202408,Flooding,Standard,Classified as Flooding based on 'flood'; priority Standard.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight based on 'streetlight', 'lights out'; priority Standard.",
+PM-202411,Streetlight,Urgent,Classified as Streetlight based on 'Streetlight'; priority Urgent due to severity word(s) hazard.,
+PM-202413,Waste,Standard,Classified as Waste based on 'garbage'; priority Standard.,
+PM-202418,Noise,Standard,Classified as Noise based on 'music'; priority Standard.,
+PM-202419,Road Damage,Standard,Classified as Road Damage based on 'sinking'; priority Standard.,
+PM-202420,Other,Urgent,Classified as Other based on 'Manhole cover missing. Risk of serious injury to cyclists'; priority Urgent due to severity word(s) injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on 'flood'; priority Standard.,
+PM-202428,Waste,Standard,Classified as Waste based on 'Dead animal'; priority Standard.,
+PM-202430,Streetlight,Standard,Classified as Streetlight based on 'lights out'; priority Standard.,
+PM-202433,Waste,Standard,Classified as Waste based on 'waste'; priority Standard.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage based on 'Footpath'; priority Urgent due to severity word(s) fell.,

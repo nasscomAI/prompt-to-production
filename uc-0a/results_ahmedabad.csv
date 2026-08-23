@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard based on 'melting'; priority Standard.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on 'temperature'; priority Standard.,
+AM-202405,Other,Standard,Classified as Other based on 'Dead trees with split branches. Fall risk to walkers. 3 trees affected'; priority Standard.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on 'heatwave'; priority Standard.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage based on 'upturned paving'; priority Urgent due to severity word(s) Child.,
+AM-202410,Pothole,Standard,Classified as Pothole based on 'Pothole'; priority Standard.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on 'unlit'; priority Standard.,
+AM-202417,Waste,Standard,Classified as Waste based on 'waste'; priority Standard.,
+AM-202421,Noise,Standard,Classified as Noise based on 'music'; priority Standard.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard based on 'bubbling'; priority Standard.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on 'temperature'; priority Standard.,
+AM-202431,Road Damage,Standard,Classified as Road Damage based on 'subsidence'; priority Standard.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on 'storing heat'; priority Standard.,
+AM-202444,Waste,Standard,Classified as Waste based on 'waste'; priority Standard.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard based on 'full sun'; priority Standard.,
