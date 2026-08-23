@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-X Ask My Documents
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all three CMC policy files and indexes them by document name and section number, returning one searchable structure covering every numbered clause of every document.
+    input: Optional directory path (defaults to ../data/policy-documents/ relative to app.py) containing exactly these UTF-8 .txt documents — policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt — using the CMC layout of banner-divided ALL-CAPS section headings ("5. LEAVE WITHOUT PAY (LWP)") and clauses beginning with decimal numbers ("5.2 LWP requires...") with wrapped continuation lines.
+    output: Index dict with keys "documents" (ordered list, one per file) where each document is {"name", "meta", "sections"} and each section is {"number", "title", "clauses"} with clauses {"id", "text"} holding whitespace-normalised but otherwise character-for-character source text, plus "clauses" — a flat lookup list of {"doc", "section_number", "section_title", "id", "text", "terms"} used for scoring.
+    error_handling: A missing or unreadable file raises PolicyCorpusError so the caller prints the reason to stderr and exits non-zero instead of answering from a partial corpus; a file that parses to zero sections or zero clauses raises the same error; wrapped continuation lines are joined into their owning clause without altering words; unrecognised non-blank lines attach to the preceding clause rather than being dropped; duplicate clause numbers within a document raise an error.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches the index for the question's terms, selects at most ONE winning document, and returns either a single-source answer with per-clause citations or the exact refusal template.
+    input: Question string in plain English plus the index dict returned by retrieve_documents. Query terms are lowercased, stopword-stripped, suffix-stemmed, and expanded through a fixed symmetric synonym table shared with clause indexing (e.g. phone↔device, slack→software, files→data/document, LWP→leave without pay, approves→approval); each clause is scored by IDF-weighted presence of distinct query terms (no term-frequency inflation), with three deterministic adjustments — a binding-language bonus for clauses carrying operative obligation wording ("must not", "requires", "cannot", "only", ...), a permission-intent bonus when the question seeks permission ("can I...") and the clause is permissive ("may be used", "entitled to"), and a device-plus-access pairing bonus for personal-device/data questions.
+    output: Dict {"type", "text", "sources"}. On success type is "answer": text opens by naming the single source document, then quotes each supporting clause verbatim with its citation (document name + section number), strongest clause first; sources lists only that one document and its cited sections. When no document clears the score floor, too few significant terms match anywhere in the corpus, or two different documents score too close to call, type is "refusal" and text is byte-for-byte this template — This question is not covered in the available policy documents\n(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).\nPlease contact [relevant team] for guidance.
+    error_handling: Never guesses on failure — weak evidence, cross-document ambiguity, and empty questions all return the refusal template unchanged; the composed answer passes a banned-phrase guard before returning (hedging formulations such as "while not explicitly covered", "typically", "generally understood", "it is common practice" abort the answer rather than print) and supporting clauses are hard-capped at one document; multi-condition clauses are quoted whole so no approver or condition is dropped (HR 5.2 Department Head AND HR Director; Finance 3.1 Rs 8,000 AND one-time AND permanent WFH); scoring is pure arithmetic over loaded text with no network, clock, or randomness.
