@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as flooding because the description cites ""flood""; urgent keywords present (""ambulance"").",
+GH-202402,Flooding,Standard,"Classified as flooding because the description cites ""flood""; no urgent keywords present.",
+GH-202406,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Classified as drain blockage because the description cites ""drain block""; no urgent keywords present.",
+GH-202410,Pothole,Standard,"Classified as pothole because the description cites ""pothole""; no urgent keywords present.",
+GH-202411,Pothole,Urgent,"Classified as pothole because the description cites ""pothole""; urgent keywords present (""hospital"").",
+GH-202412,Pothole,Urgent,"Classified as pothole because the description cites ""pothole""; urgent keywords present (""school"").",
+GH-202417,Other,Standard,"Ambiguous between heritage damage and waste because the description cites ""garbage"", ""heritage"", ""waste""; no urgent keywords present.",NEEDS_REVIEW
+GH-202420,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+GH-202422,Other,Urgent,"No allowed category fits the description; urgent keywords present (""collapse"").",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Classified as flooding because the description cites ""flood""; no urgent keywords present.",
+GH-202428,Waste,Standard,"Classified as waste because the description cites ""waste""; no urgent keywords present.",
+GH-202432,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Ambiguous between drain blockage and flooding because the description cites ""drain block"", ""flood""; no urgent keywords present.",NEEDS_REVIEW
+GH-202438,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW

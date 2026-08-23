@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+AM-202402,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+AM-202405,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+AM-202406,Other,Standard,"Ambiguous between heat hazard and road damage because the description cites ""broken"", ""heat"", ""heatwave""; no urgent keywords present.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Classified as road damage because the description cites ""broken""; urgent keywords present (""child"").",
+AM-202410,Pothole,Standard,"Classified as pothole because the description cites ""pothole""; no urgent keywords present.",
+AM-202414,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Ambiguous between heritage damage and waste because the description cites ""heritage"", ""waste""; no urgent keywords present.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Classified as noise because the description cites ""music""; no urgent keywords present.",
+AM-202424,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+AM-202429,Other,Standard,No allowed category fits the description; no urgent keywords present.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Classified as heritage damage because the description cites ""heritage""; no urgent keywords present.",
+AM-202435,Heat Hazard,Standard,"Classified as heat hazard because the description cites ""heat""; no urgent keywords present.",
+AM-202444,Waste,Standard,"Classified as waste because the description cites ""waste""; no urgent keywords present.",
+AM-202445,Road Damage,Standard,"Classified as road damage because the description cites ""broken""; no urgent keywords present.",

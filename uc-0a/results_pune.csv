@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as pothole because the description cites ""pothole""; no urgent keywords present.",
+PM-202402,Pothole,Urgent,"Classified as pothole because the description cites ""pothole""; urgent keywords present (""child"").",
+PM-202406,Flooding,Standard,"Classified as flooding because the description cites ""flood""; no urgent keywords present.",
+PM-202408,Other,Standard,"Ambiguous between drain blockage and flooding because the description cites ""drain block"", ""flood""; no urgent keywords present.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as streetlight because the description cites ""streetlight"", ""lights out""; no urgent keywords present.",
+PM-202411,Streetlight,Urgent,"Classified as streetlight because the description cites ""streetlight""; urgent keywords present (""hazard"").",
+PM-202413,Waste,Standard,"Classified as waste because the description cites ""garbage""; no urgent keywords present.",
+PM-202418,Noise,Standard,"Classified as noise because the description cites ""music""; no urgent keywords present.",
+PM-202419,Road Damage,Standard,"Classified as road damage because the description cites ""crack"", ""sink""; no urgent keywords present.",
+PM-202420,Road Damage,Urgent,"Classified as road damage because the description cites ""manhole""; urgent keywords present (""injury"").",
+PM-202427,Flooding,Standard,"Classified as flooding because the description cites ""flood""; no urgent keywords present.",
+PM-202428,Waste,Standard,"Classified as waste because the description cites ""dead animal""; no urgent keywords present.",
+PM-202430,Other,Standard,"Ambiguous between heritage damage and streetlight because the description cites ""heritage"", ""lights out""; no urgent keywords present.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as waste because the description cites ""waste"", ""dump""; no urgent keywords present.",
+PM-202446,Road Damage,Urgent,"Classified as road damage because the description cites ""broken"", ""footpath"", ""tile""; urgent keywords present (""fell"").",
