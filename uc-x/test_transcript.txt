@@ -1,0 +1,181 @@
+==============================================================================
+UC-X — the 7 test questions from uc-x/README.md
+==============================================================================
+
+Q1. Can I carry forward unused annual leave?
+    expected: HR policy section 2.6 — exact limit, exact forfeiture date
+    kind    : ANSWER
+------------------------------------------------------------------------------
+ANSWER — single source: policy_hr_leave.txt
+
+  policy_hr_leave.txt § 2.6 — Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+  policy_hr_leave.txt § 2.7 — Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+
+  Source: policy_hr_leave.txt, section(s) 2.6, 2.7
+  Vocabulary recognised: 100% of the words you typed (floor 50%)
+  Excluded by the single-source rule: no other document matched materially
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+Q2. Can I install Slack on my work laptop?
+    expected: IT policy section 2.3 — requires written IT approval
+    kind    : ANSWER
+------------------------------------------------------------------------------
+ANSWER — single source: policy_it_acceptable_use.txt
+
+  policy_it_acceptable_use.txt § 2.1 — Corporate devices (laptops, desktops, mobile phones issued by CMC) must be used primarily for official work purposes.
+  policy_it_acceptable_use.txt § 2.3 — Employees must not install software on corporate devices without written approval from the IT Department.
+  policy_it_acceptable_use.txt § 2.4 — Software approved for installation must be sourced from the CMC-approved software catalogue only.
+
+  Source: policy_it_acceptable_use.txt, section(s) 2.1, 2.3, 2.4
+  Vocabulary recognised: 75% of the words you typed (floor 50%)
+  Excluded by the single-source rule: policy_hr_leave.txt, policy_finance_reimbursement.txt
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+Q3. What is the home office equipment allowance?
+    expected: Finance section 3.1 — Rs 8,000 one-time, permanent WFH only
+    kind    : ANSWER
+------------------------------------------------------------------------------
+ANSWER — single source: policy_finance_reimbursement.txt
+
+  policy_finance_reimbursement.txt § 3.1 — Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+
+  Source: policy_finance_reimbursement.txt, section(s) 3.1
+  Vocabulary recognised: 100% of the words you typed (floor 50%)
+  Excluded by the single-source rule: no other document matched materially
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+Q4. Can I use my personal phone to access work files when working from home?
+    expected: Single-source IT answer OR clean refusal — must NOT blend
+    kind    : REFUSAL
+    why     : two documents (policy_it_acceptable_use.txt, policy_finance_reimbursement.txt) score within 80% of each other, so no single document decides the question and combining them is forbidden
+------------------------------------------------------------------------------
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact the IT Department for guidance.
+------------------------------------------------------------------------------
+
+Q5. What is the company view on flexible working culture?
+    expected: Refusal template — not in any document
+    kind    : REFUSAL
+    why     : 4 of the 5 content words in this question (company, view, flexible, culture) appear nowhere in any of the three documents, so there is nothing here to cite
+------------------------------------------------------------------------------
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact the HR Department for guidance.
+------------------------------------------------------------------------------
+
+Q6. Can I claim DA and meal receipts on the same day?
+    expected: Finance section 2.6 — NO, explicitly prohibited
+    kind    : ANSWER
+------------------------------------------------------------------------------
+ANSWER — single source: policy_finance_reimbursement.txt
+
+  policy_finance_reimbursement.txt § 2.5 — Daily allowance (DA) for outstation travel is Rs 750 per day. DA covers meals and incidentals. No separate meal receipts are required if DA is claimed.
+  policy_finance_reimbursement.txt § 2.6 — If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day.
+
+  Source: policy_finance_reimbursement.txt, section(s) 2.5, 2.6
+  Vocabulary recognised: 100% of the words you typed (floor 50%)
+  Excluded by the single-source rule: no other document matched materially
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+Q7. Who approves leave without pay?
+    expected: HR section 5.2 — Department Head AND HR Director, both required
+    kind    : ANSWER
+------------------------------------------------------------------------------
+ANSWER — single source: policy_hr_leave.txt
+
+  policy_hr_leave.txt § 5.1 — An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+  policy_hr_leave.txt § 5.2 — LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+  policy_hr_leave.txt § 5.3 — LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+
+  Source: policy_hr_leave.txt, section(s) 5.1, 5.2, 5.3
+  Vocabulary recognised: 75% of the words you typed (floor 50%)
+  Excluded by the single-source rule: no other document matched materially
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+==============================================================================
+ADDITIONAL PROBES — evidence beyond the seven
+==============================================================================
+
+?  Can I use a personal device to access CMC email?
+   why asked: The same subject as Q4, narrowed to one document. Proves the system can and does answer from IT 3.1 alone — Q4 is refused for ambiguity, not because IT 3.1 is unreachable.
+------------------------------------------------------------------------------
+ANSWER — single source: policy_it_acceptable_use.txt
+
+  policy_it_acceptable_use.txt § 3.1 — Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+  policy_it_acceptable_use.txt § 3.4 — Employees using personal devices for CMC email must enable device-level PIN or biometric lock.
+  policy_it_acceptable_use.txt § 3.5 — If a personal device containing CMC email is lost or stolen, the employee must report it to the IT helpdesk within 4 hours so that a remote wipe of CMC data can be performed.
+
+  Source: policy_it_acceptable_use.txt, section(s) 3.1, 3.4, 3.5
+  Vocabulary recognised: 100% of the words you typed (floor 50%)
+  Excluded by the single-source rule: no other document matched materially
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+?  Can I install software on a corporate laptop without approval?
+   why asked: IT 2.3 — checks the answer is the rule clause, not the definition clause.
+------------------------------------------------------------------------------
+ANSWER — single source: policy_it_acceptable_use.txt
+
+  policy_it_acceptable_use.txt § 2.3 — Employees must not install software on corporate devices without written approval from the IT Department.
+  policy_it_acceptable_use.txt § 2.4 — Software approved for installation must be sourced from the CMC-approved software catalogue only.
+
+  Source: policy_it_acceptable_use.txt, section(s) 2.3, 2.4
+  Vocabulary recognised: 100% of the words you typed (floor 50%)
+  Excluded by the single-source rule: policy_hr_leave.txt, policy_finance_reimbursement.txt
+  Retrieval coverage: 79% (floor 30%)
+------------------------------------------------------------------------------
+
+?  How many days of sick leave am I entitled to?
+   why asked: HR 3.1 — a plain single-clause lookup.
+------------------------------------------------------------------------------
+ANSWER — single source: policy_hr_leave.txt
+
+  policy_hr_leave.txt § 3.1 — Each employee is entitled to 12 days of paid sick leave per calendar year.
+  policy_hr_leave.txt § 3.2 — Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+  policy_hr_leave.txt § 3.3 — Sick leave cannot be carried forward to the following year.
+
+  Source: policy_hr_leave.txt, section(s) 3.1, 3.2, 3.3
+  Vocabulary recognised: 80% of the words you typed (floor 50%)
+  Excluded by the single-source rule: no other document matched materially
+  Retrieval coverage: 100% (floor 30%)
+------------------------------------------------------------------------------
+
+?  What is the parking policy?
+   why asked: Adversarial. Caught a false answer during testing: this matched only the word 'policy' and returned IT 1.1-1.3 with full confidence. Must refuse.
+------------------------------------------------------------------------------
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact the HR Department for guidance.
+------------------------------------------------------------------------------
+
+?  What is my notice period?
+   why asked: Adversarial. 'notice' and 'period' both exist in the corpus in unrelated senses. Must refuse rather than cite them.
+------------------------------------------------------------------------------
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact the HR Department for guidance.
+------------------------------------------------------------------------------
+
+?  What time does the office open?
+   why asked: Adversarial. 'office' appears in 'home office'; 'time' in 'one-time'. Must refuse.
+------------------------------------------------------------------------------
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact the HR Department for guidance.
+------------------------------------------------------------------------------
+
+==============================================================================
+ENFORCEMENT CHECKS across all 13 responses
+==============================================================================
+  answers: 8 | refusals: 5
+  answers citing more than one document (must be 0)        0 PASS
+  responses containing a banned hedging phrase (must be 0) 0 PASS
+  answers with a missing or malformed citation (must be 0) 0 PASS
+  refusals not byte-identical to the template (must be 0)  0 PASS
+  quotes not matching the indexed clause (must be 0)       0 PASS
