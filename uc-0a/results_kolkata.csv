@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description cites ""Heritage"" indicating Heritage Damage, with no severity keyword so priority is Standard; multiple categories matched (Heritage Damage, Streetlight), flagged NEEDS_REVIEW.",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,"Description cites ""cobblestones broken"" indicating Road Damage, with no severity keyword so priority is Standard.",
+KM-202405,Noise,Low,"Description cites ""band"" indicating Noise, a nuisance with no severity keyword so priority is Low.",
+KM-202409,Pothole,Standard,"Description cites ""potholes"" indicating Pothole, with no severity keyword so priority is Standard.",
+KM-202410,Pothole,Standard,"Description cites ""Pothole"" indicating Pothole, with no severity keyword so priority is Standard.",
+KM-202411,Pothole,Standard,"Description cites ""pothole"" indicating Pothole, with no severity keyword so priority is Standard.",
+KM-202415,Flooding,Standard,"Description cites ""draining"" indicating Flooding, with no severity keyword so priority is Standard.",
+KM-202418,Waste,Standard,"Description cites ""waste"" indicating Waste, with no severity keyword so priority is Standard.",
+KM-202421,Road Damage,Urgent,"Description cites ""Footpath"" indicating Road Damage, and severity word ""Hospital"" makes this Urgent.",
+KM-202422,Road Damage,Standard,"Description cites ""Road surface"" indicating Road Damage, with no severity keyword so priority is Standard.",
+KM-202426,Heritage Damage,Standard,"Description cites ""Heritage"" indicating Heritage Damage, with no severity keyword so priority is Standard.",
+KM-202430,Road Damage,Standard,"Description cites ""subside"" indicating Road Damage, with no severity keyword so priority is Standard.",
+KM-202434,Heritage Damage,Standard,"Description cites ""heritage"" indicating Heritage Damage, with no severity keyword so priority is Standard.",
+KM-202436,Other,Standard,"No schema category keyword found in the description, so it is classified Other.",NEEDS_REVIEW
+KM-202438,Noise,Low,"Description cites ""amplifiers"" indicating Noise, a nuisance with no severity keyword so priority is Low; multiple categories matched (Noise, Heritage Damage), flagged NEEDS_REVIEW.",NEEDS_REVIEW

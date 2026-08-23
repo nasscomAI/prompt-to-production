@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description cites ""melting"" indicating Heat Hazard, with no severity keyword so priority is Standard.",
+AM-202402,Heat Hazard,Standard,"Description cites ""temperatures"" indicating Heat Hazard, with no severity keyword so priority is Standard.",
+AM-202405,Other,Standard,"No schema category keyword found in the description, so it is classified Other.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description cites ""heatwave"" indicating Heat Hazard, with no severity keyword so priority is Standard.",
+AM-202407,Road Damage,Urgent,"Description cites ""upturned"" indicating Road Damage, and severity word ""injured"" makes this Urgent.",
+AM-202410,Pothole,Standard,"Description cites ""Pothole"" indicating Pothole, with no severity keyword so priority is Standard.",
+AM-202414,Other,Standard,"No schema category keyword found in the description, so it is classified Other.",NEEDS_REVIEW
+AM-202417,Waste,Standard,"Description cites ""waste"" indicating Waste, with no severity keyword so priority is Standard; multiple categories matched (Waste, Heritage Damage), flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202421,Noise,Low,"Description cites ""music"" indicating Noise, a nuisance with no severity keyword so priority is Low.",
+AM-202424,Road Damage,Standard,"Description cites ""road surface"" indicating Road Damage, with no severity keyword so priority is Standard; multiple categories matched (Road Damage, Heat Hazard), flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Description cites ""temperature"" indicating Heat Hazard, with no severity keyword so priority is Standard.",
+AM-202431,Road Damage,Standard,"Description cites ""subside"" indicating Road Damage, with no severity keyword so priority is Standard; multiple categories matched (Road Damage, Heritage Damage), flagged NEEDS_REVIEW.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description cites ""storing heat"" indicating Heat Hazard, with no severity keyword so priority is Standard.",
+AM-202444,Waste,Standard,"Description cites ""waste"" indicating Waste, with no severity keyword so priority is Standard.",
+AM-202445,Other,Standard,"No schema category keyword found in the description, so it is classified Other.",NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description cites ""pothole"" indicating Pothole, with no severity keyword so priority is Standard.",
+PM-202402,Pothole,Urgent,"Description cites ""pothole"" indicating Pothole, and severity word ""children"" makes this Urgent.",
+PM-202406,Flooding,Standard,"Description cites ""flooded"" indicating Flooding, with no severity keyword so priority is Standard.",
+PM-202408,Flooding,Standard,"Description cites ""flooded"" indicating Flooding, with no severity keyword so priority is Standard; multiple categories matched (Flooding, Drain Blockage), flagged NEEDS_REVIEW.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description cites ""streetlights"" indicating Streetlight, with no severity keyword so priority is Standard.",
+PM-202411,Streetlight,Urgent,"Description cites ""Streetlight"" indicating Streetlight, and severity word ""hazard"" makes this Urgent.",
+PM-202413,Waste,Standard,"Description cites ""garbage"" indicating Waste, with no severity keyword so priority is Standard.",
+PM-202418,Noise,Low,"Description cites ""music"" indicating Noise, a nuisance with no severity keyword so priority is Low.",
+PM-202419,Road Damage,Standard,"Description cites ""Road surface"" indicating Road Damage, with no severity keyword so priority is Standard.",
+PM-202420,Other,Urgent,"No schema category keyword found in the description, but severity word ""injury"" requires Urgent.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description cites ""floods"" indicating Flooding, with no severity keyword so priority is Standard.",
+PM-202428,Waste,Standard,"Description cites ""Dead animal"" indicating Waste, with no severity keyword so priority is Standard.",
+PM-202430,Heritage Damage,Standard,"Description cites ""Heritage"" indicating Heritage Damage, with no severity keyword so priority is Standard; multiple categories matched (Heritage Damage, Streetlight), flagged NEEDS_REVIEW.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description cites ""waste"" indicating Waste, with no severity keyword so priority is Standard.",
+PM-202446,Road Damage,Urgent,"Description cites ""Footpath"" indicating Road Damage, and severity word ""fell"" makes this Urgent.",
