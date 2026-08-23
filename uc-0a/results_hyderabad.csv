@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority because description cites 'flooded' and severity keyword 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description cites 'flooded'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description cites 'drain blocked'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description cites 'drain blocked'.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority because description cites 'potholes'.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority because description cites 'pothole' and severity keyword 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority because description cites 'potholes' and severity keyword 'school'.,
+GH-202417,Waste,Standard,Classified as Waste with Standard priority because description cites 'garbage'.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise with Standard priority because description cites 'drilling'.,
+GH-202422,Pothole,Urgent,Classified as Pothole with Urgent priority because description cites 'crater' and severity keyword 'collapse'.,
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority because description cites 'floods'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority because description cites 'waste'.,
+GH-202432,Noise,Low,Classified as Noise with Low priority because description cites 'idling'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description cites 'flooding'.,NEEDS_REVIEW
+GH-202438,Other,Standard,Classified as Other with Standard priority because description cites 'Colony surrounded by fields th'.,NEEDS_REVIEW
