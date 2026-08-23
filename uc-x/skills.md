@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: read_documents
+    description: Reads policy documents from the dataset.
+    input: Path to policy document folder.
+    output: Dictionary of document names and text content.
+    error_handling: If a document cannot be read, skip it and continue.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: search_answer
+    description: Searches documents to find relevant information for a user query.
+    input: User question and document contents.
+    output: Text answer and source document name.
+    error_handling: If no answer is found, return INFORMATION_NOT_FOUND.

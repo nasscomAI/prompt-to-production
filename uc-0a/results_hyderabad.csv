@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,general,low,Complaint text missing,missing_text
+GH-202402,general,low,Complaint text missing,missing_text
+GH-202406,general,low,Complaint text missing,missing_text
+GH-202407,general,low,Complaint text missing,missing_text
+GH-202410,general,low,Complaint text missing,missing_text
+GH-202411,general,low,Complaint text missing,missing_text
+GH-202412,general,low,Complaint text missing,missing_text
+GH-202417,general,low,Complaint text missing,missing_text
+GH-202420,general,low,Complaint text missing,missing_text
+GH-202422,general,low,Complaint text missing,missing_text
+GH-202424,general,low,Complaint text missing,missing_text
+GH-202428,general,low,Complaint text missing,missing_text
+GH-202432,general,low,Complaint text missing,missing_text
+GH-202448,general,low,Complaint text missing,missing_text
+GH-202438,general,low,Complaint text missing,missing_text
