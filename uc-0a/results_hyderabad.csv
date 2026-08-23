@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Categorised Flooding on the evidence ""flooded""; priority Urgent because severity keyword ""Ambulance"" is present.",
+GH-202402,Flooding,Standard,"Categorised Flooding on the evidence ""flooded""; priority Standard because no severity keyword but ""flooded"" reports a service disruption; flagged for review — competing category evidence for Drain Blockage in the same description.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Categorised Drain Blockage on the evidence ""drain"", ""blocked""; priority Standard because no severity keyword but ""blocked"" reports a service disruption.",
+GH-202407,Drain Blockage,Standard,"Categorised Drain Blockage on the evidence ""Drain"", ""blocked""; priority Standard because no severity keyword but ""blocked"" reports a service disruption.",
+GH-202410,Pothole,Standard,"Categorised Pothole on the evidence ""Potholes""; priority Standard because no severity keyword but ""slow"" reports a service disruption.",
+GH-202411,Pothole,Urgent,"Categorised Pothole on the evidence ""Pothole""; priority Urgent because severity keyword ""hospitalised"" is present.",
+GH-202412,Pothole,Urgent,"Categorised Pothole on the evidence ""potholes""; priority Urgent because severity keyword ""School"" is present.",
+GH-202417,Waste,Standard,"Categorised Waste on the evidence ""garbage"", ""waste""; priority Standard because no severity keyword but ""overflow"" reports a service disruption; flagged for review — description names a heritage location without reporting damage to it, so the heritage angle needs a human decision.",NEEDS_REVIEW
+GH-202420,Noise,Low,"Categorised Noise on the evidence ""drilling""; priority Low because no severity keyword and no reported blockage, damage or health impact.",
+GH-202422,Road Damage,Urgent,"Categorised Road Damage on the evidence ""Road collapsed"", ""collapsed"", ""Crater""; priority Urgent because severity keyword ""collapsed"" is present.",
+GH-202424,Flooding,Standard,"Categorised Flooding on the evidence ""floods""; priority Standard because no severity keyword but ""floods"" reports a service disruption.",
+GH-202428,Waste,Standard,"Categorised Waste on the evidence ""waste""; priority Standard because no severity keyword but ""not cleared"" reports a service disruption.",
+GH-202432,Noise,Low,"Categorised Noise on the evidence ""idling"", ""engines on""; priority Low because no severity keyword and no reported blockage, damage or health impact; flagged for review — only indirect evidence (""idling"", ""engines on"" names no explicit defect).",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Categorised Drain Blockage on the evidence ""drain"", ""blocked""; priority Standard because no severity keyword but ""blocked"" reports a service disruption.",
+GH-202438,Flooding,Low,"Categorised Flooding on the evidence ""rainwater""; priority Low because no severity keyword and no reported blockage, damage or health impact; flagged for review — only indirect evidence (""rainwater"" names no explicit defect).",NEEDS_REVIEW
