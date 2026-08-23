@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Pothole inferred from description terms 'pothole'; no severity signals present, priority Standard.",
+PM-202402,Pothole,Urgent,"Pothole inferred from description terms 'pothole'; priority Urgent triggered by severity signal(s) 'School', 'children'.",
+PM-202406,Flooding,Standard,"Flooding inferred from description terms 'flooded', 'knee-deep'; no severity signals present, priority Standard.",
+PM-202408,Flooding,Standard,"Flooding inferred from description terms 'flooded', 'standing in water'; no severity signals present, priority Standard.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Streetlight inferred from description terms 'streetlights', 'lights out'; no severity signals present, priority Standard.",
+PM-202411,Streetlight,Urgent,Streetlight inferred from description terms 'Streetlight'; priority Urgent triggered by severity signal(s) 'hazard'.,
+PM-202413,Waste,Standard,"Waste inferred from description terms 'garbage'; no severity signals present, priority Standard.",
+PM-202418,Noise,Standard,"Noise inferred from description terms 'music'; no severity signals present, priority Standard.",
+PM-202419,Road Damage,Standard,"Road Damage inferred from description terms 'Road surface', 'cracked', 'sinking'; no severity signals present, priority Standard.",
+PM-202420,Road Damage,Urgent,Road Damage inferred from description terms 'Manhole'; priority Urgent triggered by severity signal(s) 'injury'.,
+PM-202427,Flooding,Standard,"Flooding inferred from description terms 'floods'; no severity signals present, priority Standard.",
+PM-202428,Waste,Standard,"Waste inferred from description terms 'Dead animal'; no severity signals present, priority Standard.",
+PM-202430,Heritage Damage,Standard,"Heritage Damage inferred from description terms 'Heritage'; no severity signals present, priority Standard.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Waste inferred from description terms 'waste', 'dumped'; no severity signals present, priority Standard.",
+PM-202446,Road Damage,Urgent,"Road Damage inferred from description terms 'Footpath', 'tiles', 'upturned', 'broken'; priority Urgent triggered by severity signal(s) 'fell'.",
