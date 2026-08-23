@@ -1,27 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Load and validate the ward budget CSV and report all null actual_spend rows before calculation.
+    input: CSV file path.
+    output: Validated records, column status, and null-row report.
+    error_handling: Stop with a clear error when required columns are missing; never silently discard malformed rows.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-  - name: detect_flooding
-    description: Analyze a report and supplied image evidence for flooding or waterlogging.
-    input: Natural-language description, optional location, and optional image evidence text.
-    output: Location, Fault, and Situation fields.
-    error_handling: Return Unknown fields when evidence is insufficient or location is missing.
-
-  - name: extract_location
-    description: Extract the place name explicitly supplied in a report.
-    input: Natural-language report or explicit location value.
-    output: Location string or Unknown.
-    error_handling: Never infer a location that was not supplied.
+  - name: compute_growth
+    description: Compute MoM or YoY actual-spend growth for one ward and one category with a formula shown for each result.
+    input: Validated dataset, one ward, one category, and explicit growth type.
+    output: Per-period table containing actual spend, previous comparison value, formula, growth, and null status.
+    error_handling: Refuse missing growth type, all-ward aggregation, or calculations that cross null values.
