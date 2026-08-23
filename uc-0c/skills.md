@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C Ward Budget Growth Calculator Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the budget CSV dataset, validates required columns, inspects null `actual_spend` values, and reports null count and affected rows before returning.
+    input: `file_path` (str, path to CSV file, e.g., `ward_budget.csv`).
+    output: Tuple containing parsed row dictionaries and a null report list specifying affected periods, wards, categories, and notes explanations.
+    error_handling: If the input file is missing, unreadable, or missing required headers (`period`, `ward`, `category`, `budgeted_amount`, `actual_spend`), raises a ValueError or FileNotFoundError.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Calculates per-period budget spend growth for a specific ward and category based on the specified growth type (MoM or YoY), including explicit formulas and null flags.
+    input: `data` (list of row dicts), `ward` (str), `category` (str), and `growth_type` (str, e.g., `MoM` or `YoY`).
+    output: List of formatted row dictionaries containing `ward`, `category`, `period`, `actual_spend`, `growth_pct`, `formula_used`, and `flag_notes`.
+    error_handling: Refuses execution if cross-ward/cross-category aggregation is requested, or if `growth_type` is omitted/unspecified. Flags null spend rows as `NULL` without computing growth and includes the reason from the `notes` column.

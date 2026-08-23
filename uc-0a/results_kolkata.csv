@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight with Standard priority because description cites 'lamp post'.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because description cites 'historic'.,NEEDS_REVIEW
+KM-202405,Noise,Standard,Classified as Noise with Standard priority because description cites 'band'.,
+KM-202409,Pothole,Standard,Classified as Pothole with Standard priority because description cites 'potholes'.,
+KM-202410,Pothole,Standard,Classified as Pothole with Standard priority because description cites 'pothole'.,
+KM-202411,Pothole,Standard,Classified as Pothole with Standard priority because description cites 'pothole'.,
+KM-202415,Flooding,Standard,Classified as Flooding with Standard priority because description cites 'draining'.,
+KM-202418,Waste,Standard,Classified as Waste with Standard priority because description cites 'waste'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage with Urgent priority because description cites 'footpath' and severity keyword 'hospital'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage with Standard priority because description cites 'road surface'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because description cites 'heritage'.,
+KM-202430,Road Damage,Standard,Classified as Road Damage with Standard priority because description cites 'Road subsided near gas pipelin'.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because description cites 'heritage'.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight with Standard priority because description cites 'darkness'.,
+KM-202438,Noise,Standard,Classified as Noise with Standard priority because description cites 'amplifiers'.,NEEDS_REVIEW
