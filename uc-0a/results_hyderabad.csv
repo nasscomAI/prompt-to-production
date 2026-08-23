@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Cites 'ambulance' in complaint description indicating critical public safety risk.,
+GH-202402,Drain Blockage,Standard,Cites 'Market area flooded. Traders suffering losses...' from citizen complaint description.,
+GH-202406,Drain Blockage,Standard,Cites 'Main stormwater drain 100% blocked with const...' from citizen complaint description.,
+GH-202407,Drain Blockage,Standard,Cites 'Drain blocked and mosquito breeding. Dengue c...' from citizen complaint description.,
+GH-202410,Pothole,Standard,Cites 'Potholes causing vehicles to slow to 20kmph o...' from citizen complaint description.,
+GH-202411,Pothole,Urgent,Cites 'hospital' in complaint description indicating critical public safety risk.,
+GH-202412,Pothole,Urgent,Cites 'school' in complaint description indicating critical public safety risk.,
+GH-202417,Waste,Standard,Cites 'Heritage zone garbage overflow. Tourist photo...' from citizen complaint description.,NEEDS_REVIEW
+GH-202420,Other,Standard,Cites 'Construction drilling from 5am daily near res...' from citizen complaint description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Cites 'collapse' in complaint description indicating critical public safety risk.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Cites 'Underpass floods in light rain. Cars regularl...' from citizen complaint description.,
+GH-202428,Waste,Standard,Cites 'Post-market waste not cleared. Area unusable ...' from citizen complaint description.,
+GH-202432,Other,Standard,Cites '24hr supermarket delivery trucks idling with ...' from citizen complaint description.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Cites 'Main drain blocked — entire locality at flood...' from citizen complaint description.,
+GH-202438,Other,Standard,Cites 'Colony surrounded by fields that channel rain...' from citizen complaint description.,NEEDS_REVIEW

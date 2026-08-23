@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Cites 'Tarmac surface melting at 44°C. Footwear stic...' from citizen complaint description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Cites 'Metal bus shelter reaching dangerous temperat...' from citizen complaint description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Cites 'Dead trees with split branches. Fall risk to ...' from citizen complaint description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Cites 'Irrigation system broken. Grass dying in heat...' from citizen complaint description.,
+AM-202407,Other,Urgent,Cites 'child' in complaint description indicating critical public safety risk.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Cites 'Pothole on main highway causing morning rush ...' from citizen complaint description.,
+AM-202414,Other,Standard,Cites 'Residential colony unlit after 9pm. Wiring th...' from citizen complaint description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Cites 'Night market waste not cleared before morning...' from citizen complaint description.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Cites 'Club music audible at residential buildings a...' from citizen complaint description.,
+AM-202424,Road Damage,Standard,Cites 'Zoo approach road surface bubbling at 45°C. V...' from citizen complaint description.,
+AM-202429,Other,Standard,Cites 'River walk surface temperature unbearable. In...' from citizen complaint description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Cites 'Old city road subsidence near ancient step we...' from citizen complaint description.,
+AM-202435,Other,Standard,Cites 'Black metal road dividers storing heat. Motor...' from citizen complaint description.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Cites 'Restaurant waste bins overflowing on Sunday n...' from citizen complaint description.,
+AM-202445,Other,Standard,Cites 'BRT shelter roof glass broken. Users exposed ...' from citizen complaint description.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Cites 'Heritage lamp post knocked over by delivery v...' from citizen complaint description.,
+KM-202402,Other,Standard,Cites 'Historic tram road cobblestones broken up by ...' from citizen complaint description.,NEEDS_REVIEW
+KM-202405,Other,Standard,Cites 'Wedding band playing near Tagore Museum at 11...' from citizen complaint description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Cites 'Airport access road full of potholes. Diploma...' from citizen complaint description.,
+KM-202410,Pothole,Standard,Cites 'Pothole causing tyre blowouts. Three incident...' from citizen complaint description.,
+KM-202411,Pothole,Standard,Cites 'Deep pothole filling with rainwater. Depth in...' from citizen complaint description.,
+KM-202415,Drain Blockage,Standard,Cites 'New residential complex draining directly ont...' from citizen complaint description.,
+KM-202418,Waste,Standard,Cites 'Tourist zone waste overflowing. Foreign visit...' from citizen complaint description.,
+KM-202421,Road Damage,Urgent,Cites 'hospital' in complaint description indicating critical public safety risk.,
+KM-202422,Road Damage,Standard,Cites 'Road surface buckled near bridge. Structural ...' from citizen complaint description.,
+KM-202426,Heritage Damage,Standard,Cites 'Heritage residential building exterior deface...' from citizen complaint description.,
+KM-202430,Waste,Standard,Cites 'Road subsided near gas pipeline. Gas leak sme...' from citizen complaint description.,
+KM-202434,Heritage Damage,Standard,Cites 'Street paving removed for utility work — heri...' from citizen complaint description.,
+KM-202436,Other,Standard,Cites 'Entire colony substation tripped. Darkness fo...' from citizen complaint description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Cites 'Street vendors using amplifiers illegally in ...' from citizen complaint description.,

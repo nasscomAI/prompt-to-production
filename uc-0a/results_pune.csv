@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Cites 'Large pothole 60cm wide causing tyre damage. ...' from citizen complaint description.,
+PM-202402,Pothole,Urgent,Cites 'child' in complaint description indicating critical public safety risk.,
+PM-202406,Flooding,Standard,Cites 'Underpass flooded knee-deep after 2hrs rain. ...' from citizen complaint description.,
+PM-202408,Drain Blockage,Standard,Cites 'Bus stand flooded. Passengers standing in wat...' from citizen complaint description.,
+PM-202410,Streetlight,Standard,Cites 'Three consecutive streetlights out for 10 day...' from citizen complaint description.,
+PM-202411,Streetlight,Urgent,Cites 'hazard' in complaint description indicating critical public safety risk.,
+PM-202413,Waste,Standard,Cites 'Overflowing garbage bins near vegetable marke...' from citizen complaint description.,
+PM-202418,Noise,Standard,Cites 'Wedding venue playing music past midnight on ...' from citizen complaint description.,
+PM-202419,Road Damage,Standard,Cites 'Road surface cracked and sinking near utility...' from citizen complaint description.,
+PM-202420,Drain Blockage,Urgent,Cites 'injury' in complaint description indicating critical public safety risk.,
+PM-202427,Flooding,Standard,Cites 'Bridge approach floods in 30mins of rain. Bri...' from citizen complaint description.,
+PM-202428,Waste,Standard,Cites 'Dead animal not removed for 36 hours. Health ...' from citizen complaint description.,
+PM-202430,Streetlight,Standard,"Cites 'Heritage street, lights out. Safety concern f...' from citizen complaint description.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Cites 'Bulk waste from apartment renovation dumped o...' from citizen complaint description.,
+PM-202446,Road Damage,Urgent,Cites 'fell' in complaint description indicating critical public safety risk.,
