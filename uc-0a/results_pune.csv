@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because description mentions 'pothole' and 'Large'.,
+PM-202402,Pothole,Urgent,Classified as Pothole because description mentions 'pothole' and 'Deep'.,
+PM-202406,Flooding,Standard,Classified as Flooding because description mentions 'flooded' and 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding because description mentions 'flooded' and 'flood'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because description mentions 'streetlight' and 'lights out'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description mentions 'Streetlight' and 'sparking'.,
+PM-202413,Waste,Standard,Classified as Waste because description mentions 'garbage' and 'Overflowing'.,
+PM-202418,Noise,Standard,Classified as Noise because description mentions 'music past midnight' and 'Wedding'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because description mentions 'Road surface' and 'sinking'.,
+PM-202420,Road Damage,Urgent,Classified as Road Damage because description mentions 'Manhole cover' and 'Manhole'.,
+PM-202427,Flooding,Standard,Classified as Flooding because description mentions 'flood' and 'Bridge'.,
+PM-202428,Waste,Standard,Classified as Waste because description mentions 'Dead animal' and 'Dead'.,
+PM-202430,Other,Standard,Description is ambiguous: 'Heritage' and 'street' could indicate multiple categories.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste because description mentions 'waste' and 'Bulk'.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage because description mentions 'Footpath' and 'tiles'.,

@@ -1,0 +1,39 @@
+Policy Summary
+========================================
+1. Purpose and Scope
+1.1 [FLAGGED] "This policy governs all leave entitlements for permanent and"
+1.2 [FLAGGED] "This policy does not apply to daily wage workers or consultants."
+2. Annual Leave
+2.1 [FLAGGED] "Each permanent employee is entitled to 18 days of paid annual"
+2.2 [FLAGGED] "Annual leave accrues at 1.5 days per month from the date of"
+2.3 [FLAGGED] "Employees must submit a leave application at least 14 calendar"
+2.4 [FLAGGED] "Leave applications must receive written approval from the"
+2.5 [FLAGGED] "Unapproved absence will be recorded as Loss of Pay (LOP)"
+2.6 [FLAGGED] "Employees may carry forward a maximum of 5 unused annual leave"
+2.7 [FLAGGED] "Carry-forward days must be used within the first quarter"
+3. Sick Leave
+3.1 [FLAGGED] "Each employee is entitled to 12 days of paid sick leave per"
+3.2 [FLAGGED] "Sick leave of 3 or more consecutive days requires a medical"
+3.3 [FLAGGED] "Sick leave cannot be carried forward to the following year."
+3.4 [FLAGGED] "Sick leave taken immediately before or after a public holiday"
+4. Maternity and Paternity Leave
+4.1 [FLAGGED] "Female employees are entitled to 26 weeks of paid maternity"
+4.2 [FLAGGED] "For a third or subsequent child, maternity leave is 12 weeks"
+4.3 [FLAGGED] "Male employees are entitled to 5 days of paid paternity leave,"
+4.4 [FLAGGED] "Paternity leave cannot be split across multiple periods."
+5. Leave Without Pay (LWP)
+5.1 [FLAGGED] "An employee may apply for Leave Without Pay only after"
+5.2 [FLAGGED] "LWP requires approval from the Department Head and the"
+5.3 [FLAGGED] "LWP exceeding 30 continuous days requires approval from"
+5.4 [FLAGGED] "Periods of LWP do not count toward service for the purposes"
+6. Public Holidays
+6.1 [FLAGGED] "Employees are entitled to all gazetted public holidays as"
+6.2 [FLAGGED] "If an employee is required to work on a public holiday, they"
+6.3 [FLAGGED] "Compensatory off cannot be encashed."
+7. Leave Encashment
+7.1 [FLAGGED] "Annual leave may be encashed only at the time of retirement"
+7.2 [FLAGGED] "Leave encashment during service is not permitted under any"
+7.3 [FLAGGED] "Sick leave and LWP cannot be encashed under any circumstances."
+8. Grievances
+8.1 [FLAGGED] "Leave-related grievances must be raised with the HR Department"
+8.2 [FLAGGED] "Grievances raised after 10 working days will not be considered"

@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all 3 policy files and indexes their content by document name and section number.
+    input: List of file paths to policy text files (strings).
+    output: Structured in-memory index mapping document name → section number → section content (dict).
+    error_handling: If a file is missing or unreadable, log the error and continue with the remaining available files.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches the indexed policy documents for a relevant section and returns a single-source answer with citation, or the refusal template.
+    input: A user question string.
+    output: Answer string with source document name and section number, OR the refusal template string if not covered.
+    error_handling: If input is empty or no matching section is found in any document, return the refusal template with no elaboration.

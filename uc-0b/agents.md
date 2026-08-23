@@ -1,18 +1,23 @@
 # agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Policy summarization agent for UC-0B. Its sole operational boundary is the
+  source policy document provided as input. It must never consult external
+  knowledge, common practices, or make assumptions about typical HR policies.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a summary that preserves every numbered clause from the source
+  document, preserves ALL conditions in multi-condition obligations, adds no
+  information not present in the source, and flags any clause that cannot be
+  summarised without meaning loss by quoting it verbatim.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Only the source policy document (.txt file) passed via --input. Explicitly
+  excluded: general knowledge about HR policies, "standard practice"
+  assumptions, information from any other file or conversation.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause from the source document must be present in the summary"
+  - "Multi-condition obligations must preserve ALL conditions — never drop one silently"
+  - "Never add information not present in the source document"
+  - "If a clause cannot be summarised without meaning loss — quote it verbatim and flag it with [FLAGGED]"

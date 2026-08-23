@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Description is ambiguous: 'Heritage' and 'lamp' could indicate multiple categories.,NEEDS_REVIEW
+KM-202402,Other,Standard,Description is ambiguous: 'Historic' and 'tram' could indicate multiple categories.,NEEDS_REVIEW
+KM-202405,Other,Standard,Description is ambiguous: 'Wedding' and 'band' could indicate multiple categories.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole because description mentions 'pothole' and 'Airport'.,
+KM-202410,Pothole,Standard,Classified as Pothole because description mentions 'Pothole' and 'causing'.,
+KM-202411,Pothole,Standard,Classified as Pothole because description mentions 'pothole' and 'Deep'.,
+KM-202415,Other,Standard,Description is ambiguous: 'New' and 'residential' could indicate multiple categories.,NEEDS_REVIEW
+KM-202418,Other,Standard,Description is ambiguous: 'Tourist' and 'zone' could indicate multiple categories.,NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,Classified as Road Damage because description mentions 'Footpath' and 'sinking'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage because description mentions 'Road surface' and 'Road'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'Heritage' and 'residential'.,
+KM-202430,Other,Standard,Description is ambiguous: 'Road' and 'subsided' could indicate multiple categories.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage' and 'Street'.,
+KM-202436,Other,Standard,Description is ambiguous: 'Entire' and 'colony' could indicate multiple categories.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage' and 'Street'.,
