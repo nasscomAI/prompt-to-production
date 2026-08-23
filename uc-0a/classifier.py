@@ -1,190 +1,90 @@
-"""UC-0A pothole complaint classifier.
-
-This version handles natural-language descriptions, severity keywords, and CSV batch processing.
-The output follows the project's rules for category, priority, location, and reason.
-"""
+"""UC-0A — Complaint Classifier."""
 
 import argparse
 import csv
 import re
-from typing import Iterable
 
-URGENT_KEYWORDS = [
-    "injury",
-    "injured",
-    "accident",
-    "school",
-    "student",
-    "students",
-    "children",
-    "child",
-    "hospital",
-    "ambulance",
-    "danger",
-    "dangerous",
-    "unsafe",
-    "blockage",
-    "blocked",
-    "hazard",
-    "collapse",
-    "crash",
-    "fell",
-    "fall",
-    "risk",
-    "fire",
-]
+CATEGORIES = (
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other",
+)
 
-HIGH_KEYWORDS = [
-    "large",
-    "big",
-    "deep",
-    "severe",
-    "major",
-    "wide",
-    "massive",
-    "enormous",
-    "gaping",
-    "crater",
-    "traffic",
-    "traffic jam",
-    "jam",
-    "road closed",
-    "road closure",
-    "blocking traffic",
-    "affecting traffic",
-]
+URGENT_TERMS = ("injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse")
 
-NORMAL_FALLBACK_KEYWORDS = [
-    "small",
-    "minor",
-    "pothole",
-    "road",
-    "surface",
-    "rough",
-]
+CATEGORY_PATTERNS = (
+    ("Drain Blockage", ("drain blocked", "blocked drain", "drain blockage", "drain is blocked")),
+    ("Flooding", ("flood", "flooded", "flooding", "waterlogged", "water logged", "standing water", "inundated")),
+    ("Streetlight", ("streetlight", "street light", "lamp post", "street lamp")),
+    ("Pothole", ("pothole", "pot hole")),
+    ("Waste", ("garbage", "waste", "rubbish", "litter", "dumped")),
+    ("Noise", ("noise", "loud music", "loudspeaker", "sound")),
+    ("Heritage Damage", ("heritage", "historic building", "monument", "heritage site")),
+    ("Heat Hazard", ("heat", "extreme heat", "heatwave", "hot surface")),
+    ("Road Damage", ("road damage", "road surface", "cracked road", "sinking road", "damaged road")),
+)
 
 
-def _match_exact_phrase(description: str, phrase: str) -> str:
-    """Return the exact matching substring from the description, preserving case."""
-    if not description:
-        return ""
-    pattern = re.compile(r"(?i)\b" + re.escape(phrase.strip()) + r"\b")
-    match = pattern.search(description)
-    if match:
-        return match.group(0)
-    return ""
+def _find_category(description: str) -> tuple[str, bool, str]:
+    text = description.lower()
+    matches = [(category, phrase) for category, patterns in CATEGORY_PATTERNS for phrase in patterns if phrase in text]
+    categories = {category for category, _ in matches}
+    if len(categories) == 1:
+        category = next(iter(categories))
+        phrase = next(phrase for cat, phrase in matches if cat == category)
+        return category, False, phrase
+    return "Other", True, "ambiguous complaint" if matches else "no supported category evidence"
 
 
-def _find_supporting_phrase(description: str, keywords: Iterable[str]) -> str:
-    """Find the first exact phrase from the description that matches a keyword."""
-    if not description:
-        return ""
-
-    text = description.strip()
-    for keyword in keywords:
-        phrase = _match_exact_phrase(text, keyword)
-        if phrase:
-            return phrase
-
-    # Handle multi-word phrases explicitly.
-    for phrase in ["affecting traffic", "traffic jam", "road closed", "road closure", "blocking traffic"]:
-        if phrase.lower() in text.lower():
-            return phrase
-
-    return ""
-
-
-def classify_pothole_report(location: str, description: str) -> dict:
-    """Classify a single pothole report into category, location, priority, and reason."""
-    location_value = (location or "").strip()
-    description_value = (description or "").strip()
-
-    urgent_phrase = _find_supporting_phrase(description_value, URGENT_KEYWORDS)
-    if urgent_phrase:
-        priority = "Urgent"
-        reason = urgent_phrase
-    else:
-        high_phrase = _find_supporting_phrase(description_value, HIGH_KEYWORDS)
-        if high_phrase:
-            priority = "High"
-            reason = high_phrase
-        else:
-            priority = "Normal"
-            reason = _find_supporting_phrase(description_value, NORMAL_FALLBACK_KEYWORDS)
-            if not reason:
-                reason = "pothole" if "pothole" in description_value.lower() else description_value.split()[0] if description_value else ""
-
-    return {
-        "Category": "Pothole",
-        "Location": location_value,
-        "Priority": priority,
-        "Reason": reason,
-    }
+def _find_priority(description: str) -> tuple[str, str]:
+    text = description.lower()
+    for term in URGENT_TERMS:
+        if re.search(rf"\b{re.escape(term)}\b", text):
+            return "Urgent", term
+    return "Standard", "no urgent severity keyword"
 
 
 def classify_complaint(row: dict) -> dict:
-    """Compatibility wrapper for complaint rows in different CSV column layouts."""
-    location = (
-        row.get("location")
-        or row.get("Location")
-        or row.get("address")
-        or row.get("Address")
-        or row.get("street")
-        or row.get("Street")
-        or ""
-    )
-    description = (
-        row.get("description")
-        or row.get("Description")
-        or row.get("details")
-        or row.get("Details")
-        or row.get("issue")
-        or row.get("Issue")
-        or ""
-    )
-    return classify_pothole_report(location, description)
+    """Classify one complaint using only the supplied row."""
+    complaint_id = str(row.get("complaint_id", "")).strip()
+    description = str(row.get("description", "")).strip()
+    if not description:
+        return {"complaint_id": complaint_id, "category": "Other", "priority": "Low", "reason": "Description is missing.", "flag": "NEEDS_REVIEW"}
+
+    category, ambiguous, category_evidence = _find_category(description)
+    priority, priority_evidence = _find_priority(description)
+    flag = "NEEDS_REVIEW" if ambiguous else ""
+    if ambiguous:
+        reason = f'Category could not be determined confidently from the description; evidence: "{category_evidence}".'
+    elif priority == "Urgent":
+        reason = f'Classified as {category}; priority is Urgent because the description contains "{priority_evidence}".'
+    else:
+        reason = f'Classified as {category}; no required urgent severity keyword was found.'
+    return {"complaint_id": complaint_id, "category": category, "priority": priority, "reason": reason, "flag": flag}
 
 
-def batch_classify(input_path: str, output_path: str):
-    """Read CSV input, classify every row, and write the result CSV."""
-    rows = []
-    with open(input_path, newline="", encoding="utf-8") as infile:
-        reader = csv.DictReader(infile)
-        for raw_row in reader:
-            rows.append(classify_complaint(raw_row))
-
-    fieldnames = ["Category", "Location", "Priority", "Reason"]
-    with open(output_path, "w", newline="", encoding="utf-8") as outfile:
-        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+def batch_classify(input_path: str, output_path: str) -> None:
+    """Classify every CSV row and keep processing if one row is malformed."""
+    fields = ["complaint_id", "category", "priority", "reason", "flag"]
+    with open(input_path, newline="", encoding="utf-8") as input_file, open(output_path, "w", newline="", encoding="utf-8") as output_file:
+        reader = csv.DictReader(input_file)
+        writer = csv.DictWriter(output_file, fieldnames=fields)
         writer.writeheader()
-        writer.writerows(rows)
+        for row in reader:
+            try:
+                result = classify_complaint(row)
+            except Exception as exc:
+                result = {"complaint_id": str(row.get("complaint_id", "")).strip(), "category": "Other", "priority": "Low", "reason": f"Classification failed safely: {exc}.", "flag": "NEEDS_REVIEW"}
+            writer.writerow(result)
 
 
-def classify_text(text: str) -> dict:
-    """Classify a free-form report without requiring a CSV row."""
-    report = (text or "").strip()
-    location_match = re.search(r"\b(?:in|near|at|on)\s+([A-Za-z][A-Za-z .'-]*?)(?=\s+(?:with|and|that|which|there|is|was|has|causing|due|because|injury|injured|accident|school|children|child|hospital|danger|dangerous|blocked|blockage|traffic|large|deep|severe)\b|[,.!?]|$)", report, re.IGNORECASE)
-    location = location_match.group(1).strip() if location_match else ""
-    description = report
-    if location:
-        description = report[:location_match.start()] + report[location_match.end():]
-    return classify_pothole_report(location, description)
+def main() -> None:
+    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
+    parser.add_argument("--input", required=True, help="Path to test_[city].csv")
+    parser.add_argument("--output", required=True, help="Path to results_[city].csv")
+    args = parser.parse_args()
+    batch_classify(args.input, args.output)
+    print(f"Done. Results written to {args.output}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input", help="Path to the input CSV file")
-    parser.add_argument("--output", help="Path to the output CSV file")
-    parser.add_argument("--location", help="Location for a single free-form report")
-    parser.add_argument("--description", help="Description for a single free-form report")
-    parser.add_argument("--text", help="Complete natural-language pothole report")
-    args = parser.parse_args()
-    if args.text:
-        print(classify_text(args.text))
-    elif args.location is not None or args.description is not None:
-        print(classify_pothole_report(args.location or "", args.description or ""))
-    elif args.input and args.output:
-        batch_classify(args.input, args.output)
-        print(f"Done. Results written to {args.output}")
-    else:
-        parser.error("provide --text, --location/--description, or both --input and --output")
+    main()
