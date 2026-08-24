@@ -27,6 +27,10 @@ ALLOWED_CATEGORIES = [
 #                                    heritage structure
 #   Flooding before Drain Blockage -- standing water is the citizen-facing
 #                                    impact; a blocked drain is the cause
+# "manhole" is a cue for both Drain Blockage and Road Damage. That is not a
+# mistake: a manhole defect on a carriageway is simultaneously a drainage asset
+# fault and a road surface hazard, so it should surface as ambiguous rather than
+# be silently resolved to either one.
 CATEGORY_RULES = [
     ("Pothole",         ["pothole"]),
     ("Streetlight",     ["streetlight", "street light", "lights out"]),
@@ -36,13 +40,23 @@ CATEGORY_RULES = [
     ("Waste",           ["garbage", "waste", "dumped", "dead animal", "refuse"]),
     ("Heritage Damage", ["heritage"]),
     ("Heat Hazard",     ["heat", "heatwave"]),
-    ("Road Damage",     ["road surface", "cracked", "sinking", "footpath", "tiles"]),
+    ("Road Damage",     ["road surface", "cracked", "sinking", "footpath", "tiles",
+                         "manhole"]),
 ]
 
 
 def _quote(words):
-    """Render matched words as a quoted list so the reason cites source text."""
-    return ", ".join("'{}'".format(w) for w in words)
+    """Render matched words as a quoted list so the reason cites source text.
+
+    De-duplicates while preserving order: one cue can belong to more than one
+    category, and citing it twice reads as two pieces of evidence when there is
+    only one.
+    """
+    seen = []
+    for word in words:
+        if word not in seen:
+            seen.append(word)
+    return ", ".join("'{}'".format(w) for w in seen)
 
 
 def classify_complaint(row: dict) -> dict:

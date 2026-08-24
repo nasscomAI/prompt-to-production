@@ -8,7 +8,7 @@ PM-202411,Streetlight,Urgent,Description contains 'streetlight'. Priority Urgent
 PM-202413,Waste,Standard,Description contains 'garbage'.,
 PM-202418,Noise,Standard,Description contains 'music'.,
 PM-202419,Road Damage,Standard,"Description contains 'road surface', 'cracked', 'sinking'.",
-PM-202420,Drain Blockage,Urgent,Description contains 'manhole'. Priority Urgent: description contains 'injury'.,
+PM-202420,Drain Blockage,Urgent,Description cues 'manhole' match competing categories Drain Blockage and Road Damage. Priority Urgent: description contains 'injury'.,NEEDS_REVIEW
 PM-202427,Flooding,Standard,Description contains 'flood'.,
 PM-202428,Waste,Standard,Description contains 'dead animal'.,
 PM-202430,Streetlight,Standard,"Description cues 'lights out', 'heritage' match competing categories Streetlight and Heritage Damage.",NEEDS_REVIEW

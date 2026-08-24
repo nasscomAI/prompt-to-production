@@ -55,3 +55,9 @@ enforcement:
   - "When no category rule matches and the output is Other, set flag to
      NEEDS_REVIEW. Falling outside the taxonomy is itself a reviewable event."
   - "flag must be exactly NEEDS_REVIEW or an empty string. No other value."
+  - "Low is a permitted priority value but is never emitted by this classifier.
+     The specification defines a trigger for Urgent only and states no criterion
+     that separates Low from Standard. Inventing one would be an unsourced
+     judgement of exactly the kind this classifier exists to prevent, so every
+     non-severity complaint is Standard. If a Low criterion is supplied later,
+     it belongs here as a rule before it appears in code."
