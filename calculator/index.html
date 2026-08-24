@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniCalc - Premium Calculator & Unit Converter</title>
+    <meta name="description" content="A premium, state-of-the-art calculator with scientific functions, history log, and unit converter.">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="brand">
+                <span class="logo-icon">🎛️</span>
+                <h1>OmniCalc</h1>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Light/Dark Theme" title="Toggle Light/Dark Theme">
+                    <span class="theme-icon-light">☀️</span>
+                    <span class="theme-icon-dark">🌙</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="app-tabs">
+            <button class="tab-btn active" id="tab-calculator" data-target="calculator-view">Calculator</button>
+            <button class="tab-btn" id="tab-converter" data-target="converter-view">Unit Converter</button>
+        </nav>
+
+        <main class="app-main">
+            <!-- 1. CALCULATOR VIEW -->
+            <section id="calculator-view" class="tab-content active">
+                <div class="calculator-layout">
+                    <!-- Calculator Device -->
+                    <div class="calculator-card">
+                        <!-- Screen Display -->
+                        <div class="calc-screen">
+                            <div class="calc-expression-row">
+                                <span id="calc-expression"></span>
+                            </div>
+                            <div class="calc-result-row">
+                                <span id="calc-display">0</span>
+                            </div>
+                        </div>
+
+                        <!-- Mode Switcher (Standard / Scientific) -->
+                        <div class="mode-bar">
+                            <span class="mode-label">Standard Mode</span>
+                            <label class="switch">
+                                <input type="checkbox" id="mode-toggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="mode-label">Scientific Mode</span>
+                        </div>
+
+                        <!-- Buttons Grid -->
+                        <div class="calc-buttons-container">
+                            <!-- Scientific Keys (Hidden in standard mode) -->
+                            <div class="scientific-keys" id="scientific-keys">
+                                <button class="btn btn-sci" data-action="sin">sin</button>
+                                <button class="btn btn-sci" data-action="cos">cos</button>
+                                <button class="btn btn-sci" data-action="tan">tan</button>
+                                <button class="btn btn-sci" data-action="deg-rad" id="deg-rad-btn">deg</button>
+                                
+                                <button class="btn btn-sci" data-action="log">log</button>
+                                <button class="btn btn-sci" data-action="ln">ln</button>
+                                <button class="btn btn-sci" data-action="sqrt">√</button>
+                                <button class="btn btn-sci" data-action="power">xʸ</button>
+                                
+                                <button class="btn btn-sci" data-action="pi">π</button>
+                                <button class="btn btn-sci" data-action="e">e</button>
+                                <button class="btn btn-sci" data-action="factorial">x!</button>
+                                <button class="btn btn-sci" data-action="percent">%</button>
+
+                                <button class="btn btn-sci" data-action="open-paren">(</button>
+                                <button class="btn btn-sci" data-action="close-paren">)</button>
+                                <button class="btn btn-sci" data-action="square">x²</button>
+                                <button class="btn btn-sci" data-action="exp">Exp</button>
+                            </div>
+
+                            <!-- Standard Keys -->
+                            <div class="standard-keys">
+                                <button class="btn btn-action" data-action="clear">AC</button>
+                                <button class="btn btn-action" data-action="backspace">⌫</button>
+                                <button class="btn btn-action" data-action="negate">±</button>
+                                <button class="btn btn-operator" data-action="operator" data-val="/">÷</button>
+
+                                <button class="btn btn-num" data-val="7">7</button>
+                                <button class="btn btn-num" data-val="8">8</button>
+                                <button class="btn btn-num" data-val="9">9</button>
+                                <button class="btn btn-operator" data-action="operator" data-val="*">×</button>
+
+                                <button class="btn btn-num" data-val="4">4</button>
+                                <button class="btn btn-num" data-val="5">5</button>
+                                <button class="btn btn-num" data-val="6">6</button>
+                                <button class="btn btn-operator" data-action="operator" data-val="-">−</button>
+
+                                <button class="btn btn-num" data-val="1">1</button>
+                                <button class="btn btn-num" data-val="2">2</button>
+                                <button class="btn btn-num" data-val="3">3</button>
+                                <button class="btn btn-operator" data-action="operator" data-val="+">+</button>
+
+                                <button class="btn btn-num span-two" data-val="0">0</button>
+                                <button class="btn btn-num" data-val=".">.</button>
+                                <button class="btn btn-equals" data-action="equals">=</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculator History Side Panel -->
+                    <div class="history-panel">
+                        <div class="panel-header">
+                            <h2>History</h2>
+                            <button id="clear-history-btn" class="text-btn">Clear</button>
+                        </div>
+                        <div class="history-list" id="history-list">
+                            <div class="empty-state">No recent calculations</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. CONVERTER VIEW -->
+            <section id="converter-view" class="tab-content">
+                <div class="converter-card">
+                    <h2>Unit Converter</h2>
+                    
+                    <!-- Category Selector -->
+                    <div class="form-group">
+                        <label for="converter-category">Category</label>
+                        <select id="converter-category" class="form-control">
+                            <option value="length">Length</option>
+                            <option value="weight">Weight / Mass</option>
+                            <option value="temperature">Temperature</option>
+                            <option value="area">Area</option>
+                        </select>
+                    </div>
+
+                    <div class="converter-inputs">
+                        <!-- Left/From Unit -->
+                        <div class="unit-group">
+                            <label for="unit-from">From</label>
+                            <input type="number" id="input-from" value="1" class="form-control">
+                            <select id="unit-from" class="form-control unit-select"></select>
+                        </div>
+
+                        <!-- Swap Icon -->
+                        <button id="swap-units-btn" class="swap-btn" title="Swap Units">⇄</button>
+
+                        <!-- Right/To Unit -->
+                        <div class="unit-group">
+                            <label for="unit-to">To</label>
+                            <input type="number" id="input-to" readonly class="form-control result-input">
+                            <select id="unit-to" class="form-control unit-select"></select>
+                        </div>
+                    </div>
+
+                    <!-- Quick Reference Table -->
+                    <div class="quick-ref-section">
+                        <h3>Common Equivalents</h3>
+                        <div class="quick-ref-grid" id="quick-ref-grid">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Designed with utility & aesthetics in mind. Fully offline & keyboard accessible.</p>
+        </footer>
+    </div>
+
+    <!-- JS Logic -->
+    <script src="app.js"></script>
+</body>
+</html>
