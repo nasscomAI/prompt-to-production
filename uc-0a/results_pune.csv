@@ -10,7 +10,7 @@ PM-202418,Noise,Standard,Description contains 'music'.,
 PM-202419,Road Damage,Standard,"Description contains 'road surface', 'cracked', 'sinking'.",
 PM-202420,Drain Blockage,Urgent,Description cues 'manhole' match competing categories Drain Blockage and Road Damage. Priority Urgent: description contains 'injury'.,NEEDS_REVIEW
 PM-202427,Flooding,Standard,Description contains 'flood'.,
-PM-202428,Waste,Standard,Description contains 'dead animal'.,
+PM-202428,Other,Standard,"No category cue found in the description, so classified Other.",NEEDS_REVIEW
 PM-202430,Streetlight,Standard,"Description cues 'lights out', 'heritage' match competing categories Streetlight and Heritage Damage.",NEEDS_REVIEW
 PM-202433,Waste,Standard,"Description contains 'waste', 'dumped'.",
 PM-202446,Road Damage,Urgent,"Description contains 'footpath', 'tiles'. Priority Urgent: description contains 'fell'.",

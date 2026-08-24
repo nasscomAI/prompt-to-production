@@ -37,7 +37,12 @@ CATEGORY_RULES = [
     ("Flooding",        ["flood", "waterlogg", "standing in water"]),
     ("Drain Blockage",  ["drain block", "blocked drain", "manhole", "sewage"]),
     ("Noise",           ["noise", "music", "loudspeaker"]),
-    ("Waste",           ["garbage", "waste", "dumped", "dead animal", "refuse"]),
+    # "dead animal" is deliberately NOT a Waste cue. Carcass removal is a
+    # separate statutory public-health service in Indian municipal corporations,
+    # not solid waste collection, and this taxonomy has no category for it.
+    # Filing it under Waste would route it to the wrong department, so it falls
+    # through to Other and is flagged for a human.
+    ("Waste",           ["garbage", "waste", "dumped", "refuse", "litter"]),
     ("Heritage Damage", ["heritage"]),
     ("Heat Hazard",     ["heat", "heatwave"]),
     ("Road Damage",     ["road surface", "cracked", "sinking", "footpath", "tiles",
@@ -104,6 +109,16 @@ def classify_complaint(row: dict) -> dict:
     if severity_hits:
         reason += " Priority Urgent: description contains {}.".format(_quote(severity_hits))
 
+    # Enforcement rule 4 is a claim about output, so it is checked against output
+    # rather than trusted. A mistyped rule name would otherwise emit an invalid
+    # category silently -- the exact failure this classifier exists to prevent.
+    if category not in ALLOWED_CATEGORIES:
+        raise ValueError(
+            "category {!r} is not one of the ten permitted values: {}".format(
+                category, ", ".join(ALLOWED_CATEGORIES)
+            )
+        )
+
     return {
         "complaint_id": row.get("complaint_id", ""),
         "category": category,
@@ -166,6 +181,23 @@ def selftest():
 
     # Rule 9: falling outside the taxonomy is itself reviewable.
     assert c("")["flag"] == "NEEDS_REVIEW"
+    # Carcass removal is a real municipal service this taxonomy has no slot for.
+    # It must fall through to Other and be flagged, not be forced into Waste.
+    carcass = c("Dead animal not removed for 36 hours. Health concern.")
+    assert carcass["category"] == "Other", carcass
+    assert carcass["flag"] == "NEEDS_REVIEW", carcass
+
+    # Rule 4 is enforced against output, not merely asserted in agents.md.
+    _saved = CATEGORY_RULES[0]
+    try:
+        CATEGORY_RULES[0] = ("Potholes", ["pothole"])  # a plausible typo
+        try:
+            c("large pothole")
+            raise AssertionError("invalid category was emitted without error")
+        except ValueError:
+            pass
+    finally:
+        CATEGORY_RULES[0] = _saved
 
     # Rule 10: Low is documented as never emitted.
     assert c("wedding music past midnight")["priority"] != "Low"

@@ -42,7 +42,18 @@ enforcement:
      more than one issue, the earlier rule in that order wins and the ordering
      decision is recorded in the code."
   - "If no category rule matches the description, output Other. Never invent a
-     new category name to fit a complaint that falls outside the ten."
+     new category name to fit a complaint that falls outside the ten, and never
+     stretch an existing category to absorb it. Dead animal removal is the
+     worked example: Indian municipal corporations run carcass disposal as a
+     separate statutory public-health service, not as solid waste collection,
+     so filing it under Waste would route it to the wrong department. This
+     taxonomy has no category for it, and the correct output is therefore Other
+     with flag NEEDS_REVIEW -- a visible gap in the taxonomy, not a silent
+     misfile."
+  - "Rule 4 is checked against the emitted value, not merely asserted here. A
+     category outside the ten permitted strings raises rather than being written
+     to the results file, because an invalid value in a results CSV looks
+     exactly like a valid one."
   - "Every output row must carry a reason of one sentence that quotes the actual
      words from that row's description which drove the decision. Generic
      justifications such as 'matches pothole category' or 'appears urgent' are
