@@ -1,0 +1,6 @@
+city,ward,complaint_count,days_open_min,days_open_avg,days_open_max
+Pune,Ward 1 – Kasba,4,8.0,13.5,19.0
+Pune,Ward 2 – Shivajinagar,5,2.0,13.4,20.0
+Pune,Ward 3 – Kothrud,3,1.0,8.33,12.0
+Pune,Ward 4 – Warje,2,4.0,4.5,5.0
+Pune,Ward 5 – Hadapsar,1,12.0,12.0,12.0

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"No supported category matches the description ('Tarmac surface melting at 44°C. Footwear sticking. Park user...'), so it is classified as Other for review.",NEEDS_REVIEW
+AM-202402,Other,Standard,"No supported category matches the description ('Metal bus shelter reaching dangerous temperatures. Commuters...'), so it is classified as Other for review.",NEEDS_REVIEW
+AM-202405,Other,Standard,"No supported category matches the description ('Dead trees with split branches. Fall risk to walkers. 3 tree...'), so it is classified as Other for review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions 'heatwave', which indicates the Heat Hazard category.",
+AM-202407,Other,Urgent,"No supported category matches the description ('Broken bench and upturned paving. Child injured last week.'), so it is classified as Other for review.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The description mentions 'Pothole', which indicates the Pothole category.",
+AM-202414,Other,Standard,"No supported category matches the description ('Residential colony unlit after 9pm. Wiring theft reported.'), so it is classified as Other for review.",NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"The description mentions 'Heritage', which indicates the Heritage Damage category.",
+AM-202421,Other,Standard,"No supported category matches the description ('Club music audible at residential buildings at 2am.'), so it is classified as Other for review.",NEEDS_REVIEW
+AM-202424,Road Damage,Standard,"The description mentions 'road surface', which indicates the Road Damage category.",
+AM-202429,Heat Hazard,Standard,"The description mentions 'temperature', which indicates the Heat Hazard category.",
+AM-202431,Heritage Damage,Standard,"The description mentions 'Heritage', which indicates the Heritage Damage category.",
+AM-202435,Heat Hazard,Standard,"The description mentions 'heat', which indicates the Heat Hazard category.",
+AM-202444,Waste,Standard,"The description mentions 'waste', which indicates the Waste category.",
+AM-202445,Heat Hazard,Standard,"The description mentions 'sun', which indicates the Heat Hazard category.",

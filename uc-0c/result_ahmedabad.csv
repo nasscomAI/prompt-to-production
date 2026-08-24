@@ -1,0 +1,6 @@
+city,ward,complaint_count,days_open_min,days_open_avg,days_open_max
+Ahmedabad,Ward 11 – Vastrapur,4,3.0,14.25,19.0
+Ahmedabad,Ward 12 – Maninagar,3,4.0,9.33,20.0
+Ahmedabad,Ward 13 – Sabarmati,3,1.0,10.33,21.0
+Ahmedabad,Ward 14 – Odhav,3,10.0,15.33,18.0
+Ahmedabad,Ward 15 – Chandkheda,2,18.0,19.0,20.0
