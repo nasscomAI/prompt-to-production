@@ -1,7 +1,4 @@
-import argparse
-
-def summarize(input_path: str, output_path: str):
-    summary = """Summary of HR Leave Policy:
+Summary of HR Leave Policy:
 
 Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
 Clause 2.4: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
@@ -13,13 +10,3 @@ Clause 3.4: Sick leave taken immediately before or after a public holiday or ann
 Clause 5.2: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
 Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
 Clause 7.2: Leave encashment during service is not permitted under any circumstances.
-"""
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(summary)
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-    summarize(args.input, args.output)
