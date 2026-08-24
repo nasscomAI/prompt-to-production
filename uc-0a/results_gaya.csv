@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Cited ""pothole"" from description indicates Pothole.",
+PM-202402,Pothole,Urgent,"Cited ""pothole"" from description indicates Pothole Severity trigger 'child' present → Urgent.",
+PM-202406,Flooding,Standard,"Cited ""flooded, flood, underpass flooded"" from description indicates Flooding.",
+PM-202408,Flooding,Standard,"Cited ""flooded, flood"" from description indicates Flooding.",
+PM-202410,Streetlight,Standard,"Cited ""streetlight, streetlights, lights out"" from description indicates Streetlight.",
+PM-202411,Streetlight,Urgent,"Cited ""streetlight, flickering, sparking"" from description indicates Streetlight Severity trigger 'hazard' present → Urgent.",
+PM-202413,Waste,Standard,"Cited ""garbage, overflowing, bins"" from description indicates Waste.",
+PM-202418,Noise,Standard,"Cited ""music, wedding, venue playing"" from description indicates Noise.",
+PM-202419,Road Damage,Standard,"Cited ""road surface, cracked, sinking"" from description indicates Road Damage.",
+PM-202420,Road Damage,Urgent,"Cited ""manhole"" from description indicates Road Damage Severity trigger 'injury' present → Urgent.",
+PM-202427,Flooding,Standard,"Cited ""floods, flood, bridge becomes inaccessible"" from description indicates Flooding.",
+PM-202428,Waste,Standard,"Cited ""dead animal, health concern"" from description indicates Waste.",
+PM-202430,Heritage Damage,Standard,"Cited ""heritage"" suggests Heritage Damage but also matched [Streetlight, Heritage Damage] — flagged as ambiguous.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Cited ""waste, dumped, bulk waste"" from description indicates Waste.",
+PM-202446,Road Damage,Urgent,"Cited ""footpath, tiles broken, upturned"" from description indicates Road Damage Severity trigger 'fell' present → Urgent.",
