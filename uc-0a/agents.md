@@ -43,3 +43,15 @@ enforcement:
      decision is recorded in the code."
   - "If no category rule matches the description, output Other. Never invent a
      new category name to fit a complaint that falls outside the ten."
+  - "Every output row must carry a reason of one sentence that quotes the actual
+     words from that row's description which drove the decision. Generic
+     justifications such as 'matches pothole category' or 'appears urgent' are
+     invalid -- a reviewer must be able to find the quoted words in the source
+     description."
+  - "When the description matches the cues of more than one category, output the
+     first category in rule order AND set flag to NEEDS_REVIEW, naming the
+     competing categories in the reason. An ambiguous complaint is never
+     classified silently."
+  - "When no category rule matches and the output is Other, set flag to
+     NEEDS_REVIEW. Falling outside the taxonomy is itself a reviewable event."
+  - "flag must be exactly NEEDS_REVIEW or an empty string. No other value."

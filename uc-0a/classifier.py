@@ -40,6 +40,11 @@ CATEGORY_RULES = [
 ]
 
 
+def _quote(words):
+    """Render matched words as a quoted list so the reason cites source text."""
+    return ", ".join("'{}'".format(w) for w in words)
+
+
 def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row.
@@ -47,24 +52,50 @@ def classify_complaint(row: dict) -> dict:
     """
     text = row.get("description", "").lower()
 
-    category = "Other"
+    # Collect every category whose cues appear, not just the first. More than one
+    # match means the complaint is genuinely ambiguous and must be flagged rather
+    # than resolved silently (enforcement rule 8).
+    matched = []
     for name, cues in CATEGORY_RULES:
-        if any(cue in text for cue in cues):
-            category = name
-            break
+        hits = [cue for cue in cues if cue in text]
+        if hits:
+            matched.append((name, hits))
+
+    if matched:
+        category, cues_hit = matched[0]
+    else:
+        category, cues_hit = "Other", []
 
     # Enforcement: severity keywords force Urgent, checked before any other
     # priority logic. days_open is deliberately not consulted -- elapsed time is
     # a backlog metric, not a risk signal.
-    if any(keyword in text for keyword in SEVERITY_KEYWORDS):
-        priority = "Urgent"
+    severity_hits = [kw for kw in SEVERITY_KEYWORDS if kw in text]
+    priority = "Urgent" if severity_hits else "Standard"
+
+    # Enforcement rule 9: Other is itself a reviewable event.
+    # Enforcement rule 8: more than one competing category is too.
+    if not matched:
+        flag = "NEEDS_REVIEW"
+        reason = "No category cue found in the description, so classified Other."
+    elif len(matched) > 1:
+        flag = "NEEDS_REVIEW"
+        competing = " and ".join(name for name, _ in matched)
+        reason = "Description cues {} match competing categories {}.".format(
+            _quote(cue for _, hits in matched for cue in hits), competing
+        )
     else:
-        priority = "Standard"
+        flag = ""
+        reason = "Description contains {}.".format(_quote(cues_hit))
+
+    if severity_hits:
+        reason += " Priority Urgent: description contains {}.".format(_quote(severity_hits))
 
     return {
         "complaint_id": row.get("complaint_id", ""),
         "category": category,
         "priority": priority,
+        "reason": reason,
+        "flag": flag,
     }
 
 
@@ -76,7 +107,7 @@ def batch_classify(input_path: str, output_path: str):
     results = [classify_complaint(row) for row in rows]
 
     with open(output_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["complaint_id", "category", "priority"])
+        writer = csv.DictWriter(f, fieldnames=["complaint_id", "category", "priority", "reason", "flag"])
         writer.writeheader()
         writer.writerows(results)
 
