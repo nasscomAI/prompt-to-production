@@ -223,7 +223,8 @@ def retrieve_policy(path):
 
 
 def _verbatim(num, text):
-    return f"{num} {re.sub(r'\s+', ' ', text).strip()} {FLAG_MARK}"
+    flat = re.sub(r"\s+", " ", text).strip()
+    return f"{num} {flat} {FLAG_MARK}"
 
 
 def summarize_policy(sections):
