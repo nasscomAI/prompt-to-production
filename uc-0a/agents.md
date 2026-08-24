@@ -32,3 +32,14 @@ enforcement:
      administrative backlog, not risk to a citizen."
   - "Priority must be exactly one of: Urgent, Standard, Low. Any other string is
      invalid output."
+  - "Category must be exactly one of these ten strings, character for character:
+     Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage,
+     Heat Hazard, Drain Blockage, Other. Pluralised forms, reworded forms and
+     invented categories are all invalid output -- 'Potholes', 'Garbage',
+     'Street Light Issue' and 'Sanitation' are rejected, not corrected."
+  - "Category rules are evaluated in one fixed documented order so that the same
+     description always produces the same category. Where a description mentions
+     more than one issue, the earlier rule in that order wins and the ordering
+     decision is recorded in the code."
+  - "If no category rule matches the description, output Other. Never invent a
+     new category name to fit a complaint that falls outside the ten."

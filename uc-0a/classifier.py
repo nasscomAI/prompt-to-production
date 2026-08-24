@@ -13,6 +13,33 @@ SEVERITY_KEYWORDS = [
 ]
 
 
+ALLOWED_CATEGORIES = [
+    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
+    "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other",
+]
+
+# Enforcement rules 4-6 -- see agents.md. Evaluated top to bottom; the first rule
+# whose cue appears in the description wins, so the same text always yields the
+# same category. Ordering decisions that matter:
+#   Pothole before Road Damage    -- a pothole is the more specific defect
+#   Streetlight before Heritage   -- "heritage street, lights out" is a lighting
+#                                    fault on a heritage street, not damage to a
+#                                    heritage structure
+#   Flooding before Drain Blockage -- standing water is the citizen-facing
+#                                    impact; a blocked drain is the cause
+CATEGORY_RULES = [
+    ("Pothole",         ["pothole"]),
+    ("Streetlight",     ["streetlight", "street light", "lights out"]),
+    ("Flooding",        ["flood", "waterlogg", "standing in water"]),
+    ("Drain Blockage",  ["drain block", "blocked drain", "manhole", "sewage"]),
+    ("Noise",           ["noise", "music", "loudspeaker"]),
+    ("Waste",           ["garbage", "waste", "dumped", "dead animal", "refuse"]),
+    ("Heritage Damage", ["heritage"]),
+    ("Heat Hazard",     ["heat", "heatwave"]),
+    ("Road Damage",     ["road surface", "cracked", "sinking", "footpath", "tiles"]),
+]
+
+
 def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row.
@@ -20,22 +47,11 @@ def classify_complaint(row: dict) -> dict:
     """
     text = row.get("description", "").lower()
 
-    if "pothole" in text:
-        category = "Potholes"
-    elif "flood" in text or "water" in text:
-        category = "Waterlogging"
-    elif "streetlight" in text or "lights out" in text:
-        category = "Street Light Issue"
-    elif "garbage" in text or "waste" in text or "dumped" in text:
-        category = "Garbage"
-    elif "music" in text or "noise" in text:
-        category = "Noise Complaint"
-    elif "road" in text or "footpath" in text or "manhole" in text:
-        category = "Road Maintenance"
-    elif "animal" in text:
-        category = "Sanitation"
-    else:
-        category = "General"
+    category = "Other"
+    for name, cues in CATEGORY_RULES:
+        if any(cue in text for cue in cues):
+            category = name
+            break
 
     # Enforcement: severity keywords force Urgent, checked before any other
     # priority logic. days_open is deliberately not consulted -- elapsed time is
