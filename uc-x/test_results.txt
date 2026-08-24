@@ -1,0 +1,60 @@
+UC-X POLICY Q&A SYSTEM — TEST RESULTS
+================================================================================
+
+Test Results — All 7 Questions Passed:
+
+================================================================================
+✅ Question 1: Can I carry forward unused annual leave?
+
+Answer: HR policy section 2.6 — 5 days max, forfeited on 31 Dec
+No blending, exact citation
+
+================================================================================
+✅ Question 2: Can I install Slack on my work laptop?
+
+Answer: IT policy section 2.3 — requires written IT approval
+Single source, exact citation
+
+================================================================================
+✅ Question 3: What is the home office equipment allowance?
+
+Answer: Finance policy section 3.1 — Rs 8,000 one-time for permanent WFH
+Exact amount, exact conditions preserved
+
+================================================================================
+✅ Question 4: Can I use my personal phone for work files from home? [CRITICAL TRAP]
+
+Answer: IT policy section 3.1 — email and self-service portal ONLY
+CORRECTLY DID NOT BLEND with HR policy
+DID NOT CREATE PERMISSION THAT DOESN'T EXIST
+Single-source, precise answer
+
+================================================================================
+✅ Question 5: What is the company view on flexible working culture?
+
+Answer: Exact refusal template (not in any document)
+No hedging, no generalization, no assumption
+
+================================================================================
+✅ Question 6: Can I claim DA and meal receipts on the same day?
+
+Answer: Finance policy section 2.6 — NO, explicitly prohibited
+Condition preserved fully (cannot claim simultaneously)
+
+================================================================================
+✅ Question 7: Who approves leave without pay?
+
+Answer: HR policy section 5.2 — Department Head AND HR Director (both required)
+Multi-condition answer fully preserved
+
+================================================================================
+SUMMARY:
+- All 7 test questions passed
+- No cross-document blending detected
+- No hedging phrases used
+- All answers properly cited with source and section number
+- Critical trap question (personal phone) correctly refused to blend documents
+- Refusal template used exactly for out-of-scope questions
+- All multi-condition obligations fully preserved
+- System ready for production deployment
+================================================================================
