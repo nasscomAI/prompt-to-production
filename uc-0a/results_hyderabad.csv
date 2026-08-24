@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,The complaint was marked Urgent due to the word 'ambulance'.,NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,The complaint was categorized based on the word 'drain'.,
+GH-202406,Drain Blockage,Standard,The complaint was categorized based on the word 'drain'.,
+GH-202407,Drain Blockage,Standard,The complaint was categorized based on the word 'drain'.,
+GH-202410,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+GH-202411,Pothole,Standard,The complaint was categorized based on the word 'pothole'.,
+GH-202412,Other,Urgent,The complaint was marked Urgent due to the word 'school'.,NEEDS_REVIEW
+GH-202417,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+GH-202420,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+GH-202422,Pothole,Standard,The complaint was categorized based on the word 'crater'.,
+GH-202424,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+GH-202428,Waste,Standard,The complaint was categorized based on the word 'waste'.,
+GH-202432,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+GH-202448,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+GH-202438,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW

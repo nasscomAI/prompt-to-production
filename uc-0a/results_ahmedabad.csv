@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202402,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202406,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202407,Other,Urgent,The complaint was marked Urgent due to the word 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The complaint was categorized based on the word 'pothole'.,
+AM-202414,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202417,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202421,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202424,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202429,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The complaint was categorized based on the word 'heritage'.,
+AM-202435,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+AM-202444,Waste,Standard,The complaint was categorized based on the word 'waste'.,
+AM-202445,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW

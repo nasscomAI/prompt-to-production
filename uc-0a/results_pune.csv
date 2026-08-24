@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint was categorized based on the word 'pothole'.,
+PM-202402,Pothole,Urgent,The complaint was categorized based on the word 'pothole' and marked Urgent due to the word 'school'.,
+PM-202406,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,The complaint was categorized based on the word 'drain'.,
+PM-202410,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,The complaint was categorized based on the word 'streetlight' and marked Urgent due to the word 'hazard'.,
+PM-202413,Waste,Standard,The complaint was categorized based on the word 'garbage'.,
+PM-202418,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+PM-202419,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The complaint was marked Urgent due to the word 'injury'.,NEEDS_REVIEW
+PM-202427,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+PM-202428,Other,Standard,No recognizable keywords were found in the description.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,The complaint was categorized based on the word 'heritage'.,
+PM-202433,Waste,Standard,The complaint was categorized based on the word 'waste'.,
+PM-202446,Other,Urgent,The complaint was marked Urgent due to the word 'fell'.,NEEDS_REVIEW
