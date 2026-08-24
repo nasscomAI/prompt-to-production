@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth,formula,null_flag,notes
+2024-01,Ward 3 – Kothrud,Parks & Greening,3.3,,(this_period - prev_period) / prev_period * 100,False,
+2024-02,Ward 3 – Kothrud,Parks & Greening,3.3,0.0,(this_period - prev_period) / prev_period * 100,False,
+2024-03,Ward 3 – Kothrud,Parks & Greening,3.4,3.0303,(this_period - prev_period) / prev_period * 100,False,
+2024-04,Ward 3 – Kothrud,Parks & Greening,2.8,-17.6471,(this_period - prev_period) / prev_period * 100,False,
+2024-05,Ward 3 – Kothrud,Parks & Greening,2.9,3.5714,(this_period - prev_period) / prev_period * 100,False,
+2024-06,Ward 3 – Kothrud,Parks & Greening,4.0,37.931,(this_period - prev_period) / prev_period * 100,False,
+2024-07,Ward 3 – Kothrud,Parks & Greening,3.8,-5.0,(this_period - prev_period) / prev_period * 100,False,
+2024-08,Ward 3 – Kothrud,Parks & Greening,,,(this_period - prev_period) / prev_period * 100,True,Project suspended — pending approval
+2024-09,Ward 3 – Kothrud,Parks & Greening,4.4,,(this_period - prev_period) / prev_period * 100,False,
+2024-10,Ward 3 – Kothrud,Parks & Greening,3.5,-20.4545,(this_period - prev_period) / prev_period * 100,False,
+2024-11,Ward 3 – Kothrud,Parks & Greening,3.6,2.8571,(this_period - prev_period) / prev_period * 100,False,
+2024-12,Ward 3 – Kothrud,Parks & Greening,2.8,-22.2222,(this_period - prev_period) / prev_period * 100,False,
