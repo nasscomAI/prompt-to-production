@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Specific details: pothole, tyre, damage.",
+PM-202402,Pothole,Urgent,Specific details: pothole.,
+PM-202406,Flooding,Standard,"Specific details: flooded, knee-deep, stranded.",
+PM-202408,Flooding,Standard,"Specific details: flooded, water.",
+PM-202410,Streetlight,Standard,"Specific details: streetlights, dark.",
+PM-202411,Streetlight,Urgent,"Specific details: streetlight, flickering, sparking.",
+PM-202413,Waste,Standard,"Specific details: overflowing, garbage, bins.",
+PM-202418,Noise,Standard,"Specific details: music, midnight, weeknights.",
+PM-202419,Road Damage,Standard,"Specific details: surface, cracked, sinking.",
+PM-202420,Drain Blockage,Urgent,Specific details: manhole.,
+PM-202427,Other,Standard,"Reported: bridge, approach, floods.",NEEDS_REVIEW
+PM-202428,Other,Standard,"Reported: dead, animal, removed.",NEEDS_REVIEW
+PM-202430,Other,Standard,"Reported: heritage, lights, safety.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Specific details: waste, dumped.",
+PM-202446,Road Damage,Urgent,"Specific details: tiles, broken, upturned.",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Reported: heritage, lamp, post.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Specific details: historic.,
+KM-202405,Other,Standard,"Reported: wedding, band, playing.",NEEDS_REVIEW
+KM-202409,Other,Standard,"Reported: airport, access, full.",NEEDS_REVIEW
+KM-202410,Pothole,Standard,"Specific details: pothole, tyre.",
+KM-202411,Pothole,Urgent,Specific details: pothole.,
+KM-202415,Other,Standard,"Reported: residential, complex, draining.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Specific details: waste, overflowing.",
+KM-202421,Road Damage,Urgent,"Specific details: broken, sinking.",
+KM-202422,Road Damage,Standard,Specific details: surface.,
+KM-202426,Heritage Damage,Standard,Specific details: heritage.,
+KM-202430,Other,Standard,"Reported: subsided, pipeline, leak.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Specific details: heritage.,
+KM-202436,Other,Standard,"Reported: entire, colony, substation.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Specific details: heritage.,

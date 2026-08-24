@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Specific details: surface.,
+AM-202402,Other,Standard,"Reported: metal, shelter, reaching.",NEEDS_REVIEW
+AM-202405,Other,Urgent,"Reported: dead, trees, with.",NEEDS_REVIEW
+AM-202406,Other,Standard,"Reported: irrigation, system, broken.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Specific details: broken, upturned.",
+AM-202410,Pothole,Standard,Specific details: pothole.,
+AM-202414,Other,Standard,"Reported: residential, colony, unlit.",NEEDS_REVIEW
+AM-202417,Other,Standard,"Reported: night, market, waste.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Specific details: music.,
+AM-202424,Road Damage,Standard,Specific details: surface.,
+AM-202429,Other,Standard,"Reported: river, walk, surface.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Specific details: heritage.,
+AM-202435,Heat Hazard,Standard,Specific details: heat.,
+AM-202444,Waste,Urgent,"Specific details: waste, bins, overflowing.",
+AM-202445,Heat Hazard,Standard,"Reported: shelter, roof, glass.",

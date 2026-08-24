@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Specific details: flooded.,
+GH-202402,Other,Standard,"Reported: market, flooded, traders.",NEEDS_REVIEW
+GH-202406,Other,Standard,"Reported: main, stormwater, drain.",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Specific details: drain.,
+GH-202410,Other,Standard,"Reported: potholes, causing, vehicles.",NEEDS_REVIEW
+GH-202411,Pothole,Standard,"Specific details: pothole, hospitalised.",
+GH-202412,Other,Urgent,"Reported: school, struggling, navigate.",NEEDS_REVIEW
+GH-202417,Waste,Standard,"Specific details: garbage, overflow, waste.",
+GH-202420,Other,Standard,"Reported: construction, drilling, from.",NEEDS_REVIEW
+GH-202422,Pothole,Standard,Specific details: crater.,
+GH-202424,Streetlight,Standard,Specific details: light.,
+GH-202428,Waste,Standard,Specific details: waste.,
+GH-202432,Other,Standard,"Reported: 24hr, supermarket, delivery.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Urgent,Specific details: drain.,
+GH-202438,Other,Standard,"Reported: colony, surrounded, fields.",NEEDS_REVIEW
