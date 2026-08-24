@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Ingests the 3 municipal policy text files, parses sections and numbered clauses, and builds an in-memory single-source document index with document names and section citations.
+    input: Base directory path containing policy document txt files.
+    output: Indexed dictionary mapping document names and section IDs to section headers, texts, and rules.
+    error_handling: Raises FileNotFoundError if any of the three policy files are missing; logs warnings on malformed section headers.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Queries the indexed policy repository, identifies the single authoritative source section, formulates a precise citation-backed answer without hedging or blending, or returns the exact refusal template.
+    input: Question string from user and the document index.
+    output: String containing single-source factual answer with [document Section X.X] citation, or the exact refusal template.
+    error_handling: Detects cross-document blending hazards and ungrounded queries, defaulting directly to the mandatory refusal response.

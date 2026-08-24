@@ -1,29 +1,4 @@
-"""
-UC-0B — Summary That Changes Meaning (HR Leave Policy)
-Built following RICE and CRAFT workflow to prevent clause omission, scope bleed, and obligation softening.
-"""
-import argparse
-import os
-import re
-
-
-def retrieve_policy(file_path: str) -> str:
-    """Reads and returns the raw policy text."""
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Policy file not found: {file_path}")
-    with open(file_path, "r", encoding="utf-8") as f:
-        return f.read()
-
-
-def summarize_policy(text: str) -> str:
-    """
-    Generates a faithful, clause-mapped summary of HR-POL-001 ensuring:
-    - Every numbered clause is represented.
-    - Dual/multi-condition approvals are strictly maintained.
-    - Binding verbs (must, will, requires, not permitted, forfeited) are preserved.
-    - Zero scope bleed or external assumptions.
-    """
-    summary = """CITY MUNICIPAL CORPORATION — HR DEPARTMENT
+CITY MUNICIPAL CORPORATION — HR DEPARTMENT
 SUMMARY OF EMPLOYEE LEAVE POLICY (HR-POL-001 v2.3)
 Effective Date: 1 April 2024
 ================================================================================
@@ -73,25 +48,3 @@ Effective Date: 1 April 2024
 - [Clause 8.1] Timeline: Leave-related grievances MUST be raised with HR Department within 10 working days of the disputed decision.
 - [Clause 8.2] Late Submissions: Grievances after 10 working days will NOT be considered unless exceptional circumstances are demonstrated in writing.
 ================================================================================
-"""
-    return summary
-
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B HR Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy_hr_leave.txt")
-    parser.add_argument("--output", required=True, help="Path to summary_hr_leave.txt")
-    args = parser.parse_args()
-
-    content = retrieve_policy(args.input)
-    summary = summarize_policy(content)
-
-    os.makedirs(os.path.dirname(os.path.abspath(args.output)), exist_ok=True)
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
-
-    print(f"Policy summarized successfully. Written to {args.output}")
-
-
-if __name__ == "__main__":
-    main()
