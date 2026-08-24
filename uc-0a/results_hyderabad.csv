@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classification is based on description mention of: flooded, flood. Severity keywords present: ambulance.",
+GH-202402,Flooding,Standard,"Classification is based on description mention of: flooded, flood.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classification is based on description mention of: stormwater drain, debris, drain.",
+GH-202407,Drain Blockage,Standard,"Classification is based on description mention of: drain blocked, mosquito, drain.",
+GH-202410,Pothole,Standard,"Classification is based on description mention of: pothole, potholes.",
+GH-202411,Pothole,Urgent,"Classification is based on description mention of: pothole. Severity keywords present: hospital, hospitalised.",
+GH-202412,Pothole,Urgent,"Classification is based on description mention of: pothole, potholes. Severity keywords present: school.",
+GH-202417,Waste,Standard,"Classification is based on description mention of: garbage, overflow, waste.",
+GH-202420,Noise,Standard,Classification is based on description mention of: drilling.,
+GH-202422,Road Damage,Urgent,"Classification is based on description mention of: road collapsed, collapsed, road. Severity keywords present: collapse, collapsed.",
+GH-202424,Flooding,Standard,"Classification is based on description mention of: floods, flood.",
+GH-202428,Waste,Standard,"Classification is based on description mention of: not cleared, waste.",
+GH-202432,Noise,Standard,Classification is based on description mention of: idling.,
+GH-202448,Drain Blockage,Standard,"Classification is based on description mention of: drain blocked, main drain, drain.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classification is based on description mention of: rainwater, channel rainwater.",
