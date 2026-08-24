@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Cited from description: 'Heritage lamp post knocked over by delivery vehicle'.,
+KM-202402,Heritage Damage,Standard,Cited from description: 'Historic tram road cobblestones broken up by cable laying work'.,
+KM-202405,Other,Standard,Cited from description: 'Wedding band playing near Tagore Museum at 11pm'.,NEEDS_REVIEW
+KM-202409,Pothole,Urgent,Cited from description: 'Airport access road full of potholes'.,
+KM-202410,Pothole,Low,Cited from description: 'Pothole causing tyre blowouts'.,
+KM-202411,Pothole,Standard,Cited from description: 'Deep pothole filling with rainwater'.,
+KM-202415,Other,Standard,Cited from description: 'New residential complex draining directly onto public road'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Cited from description: 'Tourist zone waste overflowing'.,
+KM-202421,Road Damage,Urgent,Cited from description: 'Footpath broken and sinking'.,
+KM-202422,Road Damage,Low,Cited from description: 'Road surface buckled near bridge'.,
+KM-202426,Heritage Damage,Low,Cited from description: 'Heritage residential building exterior defaced by billboard installation'.,
+KM-202430,Other,Urgent,Cited from description: 'Road subsided near gas pipeline'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Cited from description: 'Street paving removed for utility work — heritage stone not replaced'.,
+KM-202436,Streetlight,Standard,Cited from description: 'Entire colony substation tripped'.,
+KM-202438,Heritage Damage,Standard,Cited from description: 'Street vendors using amplifiers illegally in heritage precinct'.,
