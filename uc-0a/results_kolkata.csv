@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Classified as Heritage Damage with Standard priority based on citizen report citing ""Heritage lamp post knocked over by delivery vehicle"".",
+KM-202402,Heritage Damage,Standard,"Classified as Heritage Damage with Standard priority based on citizen report citing ""Historic tram road cobblestones broken up by cable laying work"".",
+KM-202405,Noise,Standard,"Classified as Noise with Standard priority based on citizen report citing ""Wedding band playing near Tagore Museum at 11pm"".",
+KM-202409,Pothole,Standard,"Classified as Pothole with Standard priority based on citizen report citing ""Airport access road full of potholes"".",
+KM-202410,Pothole,Standard,"Classified as Pothole with Standard priority based on citizen report citing ""Pothole causing tyre blowouts"".",
+KM-202411,Pothole,Standard,"Classified as Pothole with Standard priority based on citizen report citing ""Deep pothole filling with rainwater"".",
+KM-202415,Drain Blockage,Standard,"Classified as Drain Blockage with Standard priority based on citizen report citing ""New residential complex draining directly onto public road"".",
+KM-202418,Waste,Standard,"Classified as Waste with Standard priority based on citizen report citing ""Tourist zone waste overflowing"".",
+KM-202421,Road Damage,Urgent,"Classified as Road Damage with Urgent priority because the complaint description explicitly reports ""Hospital visit"".",
+KM-202422,Road Damage,Standard,"Classified as Road Damage with Standard priority based on citizen report citing ""Road surface buckled near bridge"".",
+KM-202426,Heritage Damage,Standard,"Classified as Heritage Damage with Standard priority based on citizen report citing ""Heritage residential building exterior defaced by billboard installation"".",
+KM-202430,Other,Standard,"Classified as Other with Standard priority based on citizen report citing ""Road subsided near gas pipeline"".",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage with Standard priority based on citizen report citing ""Street paving removed for utility work — heritage stone not replaced"".",
+KM-202436,Streetlight,Standard,"Classified as Streetlight with Standard priority based on citizen report citing ""Entire colony substation tripped"".",
+KM-202438,Noise,Standard,"Classified as Noise with Standard priority based on citizen report citing ""Street vendors using amplifiers illegally in heritage precinct"".",
