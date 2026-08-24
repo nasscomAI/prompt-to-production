@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Streetlight: description cites 'lamp post'.,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Road Damage: description cites 'cobblestones'.,NEEDS_REVIEW
+KM-202405,Noise,Standard,Noise: description cites 'band'.,
+KM-202409,Pothole,Standard,Pothole: description cites 'potholes'.,
+KM-202410,Pothole,Standard,Pothole: description cites 'Pothole'.,
+KM-202411,Pothole,Standard,Pothole: description cites 'pothole'.,
+KM-202415,Other,Standard,No schema category matches the described problem ('New residential complex draining directly onto public road.').,NEEDS_REVIEW
+KM-202418,Waste,Standard,Waste: description cites 'waste'.,
+KM-202421,Road Damage,Urgent,"Road Damage: description cites 'sinking', 'Footpath'; urgent due to 'Hospital'.",
+KM-202422,Road Damage,Standard,"Road Damage: description cites 'buckled', 'Road surface'.",
+KM-202426,Heritage Damage,Standard,"Heritage Damage: description cites 'Heritage', 'defaced'.",
+KM-202430,Road Damage,Standard,Road Damage: description cites 'subsided'.,
+KM-202434,Road Damage,Standard,Road Damage: description cites 'paving'.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Streetlight: description cites 'Darkness'.,
+KM-202438,Noise,Standard,Noise: description cites 'amplifiers'.,NEEDS_REVIEW
