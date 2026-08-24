@@ -126,10 +126,68 @@ def batch_classify(input_path: str, output_path: str):
         writer.writerows(results)
 
 
+def selftest():
+    """Assert the enforcement rules in agents.md actually hold. Run with --selftest."""
+
+    def c(description, **extra):
+        row = {"complaint_id": "T-1", "description": description}
+        row.update(extra)
+        return classify_complaint(row)
+
+    # Rule 1: every severity keyword forces Urgent, whatever the category.
+    for keyword in SEVERITY_KEYWORDS:
+        assert c("pothole and %s here" % keyword)["priority"] == "Urgent", keyword
+    # Substring matching is what makes the plural forms work.
+    assert c("school children at risk")["priority"] == "Urgent"
+
+    # Rule 2: days_open must never influence priority.
+    assert c("overflowing garbage bins", days_open="999")["priority"] == "Standard"
+
+    # Rule 3 and 4: values stay inside the permitted sets.
+    for text in ["pothole", "flooded", "streetlight out", "garbage", "loud music", ""]:
+        out = c(text)
+        assert out["category"] in ALLOWED_CATEGORIES, out
+        assert out["priority"] in ("Urgent", "Standard", "Low"), out
+        assert out["flag"] in ("NEEDS_REVIEW", ""), out
+
+    # Rule 6: no cue means Other, never an invented category.
+    assert c("the ward office was unhelpful")["category"] == "Other"
+
+    # Rule 7: the reason must quote words that are really in the description.
+    reason = c("deep pothole near the school")["reason"]
+    assert "'pothole'" in reason and "'school'" in reason, reason
+
+    # Rule 8: competing categories are flagged, not silently resolved.
+    ambiguous = c("bus stand flooded, drain blocked")
+    assert ambiguous["flag"] == "NEEDS_REVIEW", ambiguous
+    assert "Flooding" in ambiguous["reason"] and "Drain Blockage" in ambiguous["reason"]
+    # A single cue shared by two categories is cited once, not twice.
+    assert c("manhole cover missing")["reason"].count("'manhole'") == 1
+
+    # Rule 9: falling outside the taxonomy is itself reviewable.
+    assert c("")["flag"] == "NEEDS_REVIEW"
+
+    # Rule 10: Low is documented as never emitted.
+    assert c("wedding music past midnight")["priority"] != "Low"
+
+    # skills.md contract: a row missing its id is still emitted, not dropped.
+    assert classify_complaint({"description": "pothole"})["complaint_id"] == ""
+
+    print("selftest: all enforcement rules hold")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser.add_argument("--input",  help="Path to test_[city].csv")
+    parser.add_argument("--output", help="Path to write results CSV")
+    parser.add_argument("--selftest", action="store_true",
+                        help="Check the agents.md enforcement rules and exit")
     args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+
+    if args.selftest:
+        selftest()
+    else:
+        if not args.input or not args.output:
+            parser.error("--input and --output are required unless --selftest is given")
+        batch_classify(args.input, args.output)
+        print("Done. Results written to {}".format(args.output))
