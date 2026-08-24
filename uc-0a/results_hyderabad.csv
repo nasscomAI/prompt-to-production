@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because the description states ""Underpass flooded after 1hr rain"".",
+GH-202402,Drain Blockage,Standard,"Classified as Drain Blockage because the description states ""Drain completely blocked"".",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage because the description states ""Main stormwater drain 100% blocked with const..."".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage because the description states ""Drain blocked and mosquito breeding"".",
+GH-202410,Pothole,Standard,"Classified as Pothole because the description states ""Potholes causing vehicles to slow to 20kmph o..."".",
+GH-202411,Pothole,Urgent,"Classified as Pothole because the description states ""Pothole swallowed entire motorcycle wheel"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole because the description states ""School bus struggling to navigate 6 potholes ..."".",
+GH-202417,Waste,Standard,"Classified as Waste because the description states ""Heritage zone garbage overflow"".",
+GH-202420,Noise,Low,"Classified as Noise because the description states ""Construction drilling from 5am daily near res..."".",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage because the description states ""Road collapsed partially"".",
+GH-202424,Flooding,Standard,"Classified as Flooding because the description states ""Underpass floods in light rain"".",
+GH-202428,Waste,Standard,"Classified as Waste because the description states ""Post-market waste not cleared"".",
+GH-202432,Noise,Low,"Classified as Noise because the description states ""24hr supermarket delivery trucks idling with ..."".",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage because the description states ""Main drain blocked — entire locality at flood..."".",NEEDS_REVIEW
+GH-202438,Other,Standard,"Classified as Other because the description states ""Colony surrounded by fields that channel rain..."".",NEEDS_REVIEW
