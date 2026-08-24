@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Category Streetlight, priority Standard because description contains: 'Heritage lamp post knocked over by delivery vehicle'.",
+KM-202402,Heritage Damage,Standard,"Category Heritage Damage, priority Standard because description contains: 'Historic tram road cobblestones broken up by cable laying work'.",
+KM-202405,Noise,Standard,"Category Noise, priority Standard because description contains: 'Wedding band playing near Tagore Museum at 11pm'.",
+KM-202409,Pothole,Standard,"Category Pothole, priority Standard because description contains: 'Airport access road full of potholes'.",
+KM-202410,Pothole,Standard,"Category Pothole, priority Standard because description contains: 'Pothole causing tyre blowouts'.",
+KM-202411,Pothole,Standard,"Category Pothole, priority Standard because description contains: 'Deep pothole filling with rainwater'.",
+KM-202415,Other,Standard,Category unclear from description: 'New residential complex draining directly onto public road.'; flagging NEEDS_REVIEW.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"Category Waste, priority Standard because description contains: 'Tourist zone waste overflowing'.",
+KM-202421,Road Damage,Urgent,"Category Road Damage, priority Urgent because description contains: 'Footpath broken and sinking' and 'fell'.",
+KM-202422,Road Damage,Standard,"Category Road Damage, priority Standard because description contains: 'Road surface buckled near bridge'.",
+KM-202426,Heritage Damage,Standard,"Category Heritage Damage, priority Standard because description contains: 'Heritage residential building exterior defaced by billboard installation'.",
+KM-202430,Road Damage,Standard,"Category Road Damage, priority Standard because description contains: 'Road subsided near gas pipeline'.",
+KM-202434,Heritage Damage,Standard,"Category Heritage Damage, priority Standard because description contains: 'Street paving removed for utility work — heritage stone not replaced'.",
+KM-202436,Streetlight,Standard,"Category Streetlight, priority Standard because description contains: 'Entire colony substation tripped'.",
+KM-202438,Noise,Standard,"Category Noise, priority Standard because description contains: 'Street vendors using amplifiers illegally in heritage precinct'.",
