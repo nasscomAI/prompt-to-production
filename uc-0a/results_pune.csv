@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Cited large pothole causing tyre damage to vehicles.,
+PM-202402,Pothole,Urgent,Cited deep pothole near bus stop placing school children at risk.,
+PM-202406,Flooding,Standard,Cited underpass flooded knee-deep stranding commuters.,
+PM-202408,Drain Blockage,Standard,Cited blocked drain causing flooding and water accumulation.,
+PM-202410,Streetlight,Standard,Cited consecutive streetlights out causing dark area at night.,
+PM-202411,Streetlight,Urgent,Cited streetlight flickering and sparking creating an electrical hazard.,
+PM-202413,Waste,Standard,Cited overflowing garbage bins near market with smell affecting shoppers.,
+PM-202418,Noise,Standard,Cited wedding venue playing loud music past midnight on weeknights.,
+PM-202419,Road Damage,Standard,Cited cracked and sinking road surface near previous utility work.,
+PM-202420,Road Damage,Urgent,Cited missing manhole cover creating risk of serious injury to cyclists.,
+PM-202427,Flooding,Urgent,Cited bridge approach flooding making bridge inaccessible after rain.,
+PM-202428,Waste,Standard,Cited dead animal not removed for 36 hours causing health concern.,
+PM-202430,Heritage Damage,Standard,Cited heritage street with lights out creating safety concern for pedestrians.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Cited bulk renovation waste dumped on public road.,
+PM-202446,Road Damage,Urgent,Cited broken and upturned footpath tiles where an elderly resident fell.,
