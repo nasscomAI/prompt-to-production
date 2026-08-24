@@ -6,6 +6,16 @@ filename + section number, conditions survive verbatim, cross-document
 ambiguity (runner-up >= 75% of leader) refuses instead of blending, uncovered
 questions get the refusal template verbatim with [relevant team] resolved
 deterministically, and a hedging-ban scan vets every rendered answer.
+Retrieval relevance: symmetric stemming so inflected forms of a word always
+converge to one stem (previously "leaves" stemmed to "leav" while clauses
+containing "leave" kept a different stem, letting one mismatched keyword
+pull an irrelevant clause ahead), rarity-weighted evidence sums rank answers,
+a leader needs at least two corroborating query terms so one stray keyword
+can never decide a topic alone, and exact-score ties inside a document
+resolve by section order — any section of the same document is a valid
+single source — instead of dropping the whole document (previously a tie
+among one-term matches silently discarded the correct document and let a
+weak keyword from another document win).
 """
 import argparse
 import math
@@ -52,6 +62,11 @@ MIN_EVIDENCE = 2.8
 RUNNER_UP_RATIO = 0.75
 RUNNER_MIN_COVERAGE = 0.6
 
+ANCHOR_MIN_DF = 8
+ANCHOR_DOC_SHARE = 0.7
+QUANTITY_QUERY_RE = re.compile(r"\bhow\s+(?:many|much)\b")
+DIGIT_RE = re.compile(r"\d")
+
 STOPWORDS = frozenset("""
 a an the and or but if then else when while of to in on at by for with from as
 is are was were be been being am do does did doing have has had having i me my
@@ -75,23 +90,34 @@ CANONICAL = {
     "installation": "install", "installing": "install", "installed": "install",
 }
 
-VERBS = frozenset((
+
+def _raw_stem(word):
+    changed = True
+    while changed:
+        changed = False
+        for suffix in ("ing", "ed", "es", "s"):
+            if word.endswith(suffix) and len(word) - len(suffix) >= 3:
+                word = word[: len(word) - len(suffix)]
+                changed = True
+                break
+    if len(word) >= 4 and word.endswith("e"):
+        word = word[:-1]
+    return word
+
+
+def canonicalise(word):
+    base = CANONICAL.get(word, word)
+    if base.endswith("ies") and len(base) > 4:
+        base = base[:-3] + "y"
+    return _raw_stem(base)
+
+
+VERBS = frozenset(canonicalise(v) for v in (
     "approv", "carry", "claim", "chang", "connect", "encash", "forward",
     "install", "print", "reimburse", "report", "share", "submit",
 ))
 
 APPROVAL_QUERY_RE = re.compile(r"^\s*who\b|\bwhich\s+(?:team|department|person|role)s?\b")
-
-
-def canonicalise(word):
-    if word in CANONICAL:
-        return CANONICAL[word]
-    if word.endswith("ies") and len(word) > 4:
-        return word[:-3] + "y"
-    for suffix in ("ing", "ed", "es", "s"):
-        if word.endswith(suffix) and len(word) - len(suffix) >= 3:
-            return word[: len(word) - len(suffix)]
-    return word
 
 
 def tokenize(text):
@@ -108,7 +134,8 @@ class Clause(object):
         self.sid = sid
         self.text = text
         self.heading = heading
-        self.vocab = set(tokenize(text)) | set(tokenize(heading))
+        self.heading_vocab = set(tokenize(heading))
+        self.vocab = set(tokenize(text)) | self.heading_vocab
 
 
 def load_documents(data_dir):
@@ -194,7 +221,29 @@ def render_answer(clause):
 
 
 def answer_question(question, index, total_clauses, df):
-    """answer_question skill: score, single-source gate, answer or refuse."""
+    """answer_question skill: score, single-source gate, answer or refuse.
+
+    Evidence score is the sum of matched term idfs; section headings
+    contribute their words to the clause vocabulary, so heading matches
+    count like body matches. Symmetric stemming guarantees inflected query
+    words match the index at all. A leader must clear MIN_EVIDENCE with at
+    least TWO corroborating query terms: a single keyword — however rare —
+    is never coverage on its own, but when the question also carries words
+    the corpus lacks (product names, typos), a corpus-known action verb in
+    the clause counts as the second term, keeping "install <unknown app>"
+    retrievable while a stray keyword like "office" cannot hijack the
+    answer. "wfh" is expanded to work-from-home vocabulary before matching.
+    A how-many/much question whose sole corpus evidence is one document-
+    dominant topic term (e.g. "leave", which appears almost exclusively in
+    the HR policy) resolves inside that owning document — preferring its
+    first clause that states a figure — instead of refusing: concentration,
+    not raw score, proves ownership there. Exact-score ties inside one
+    document are resolved by section order — any section of the same
+    document is a valid single-source answer; only cross-document ambiguity
+    triggers refusal.
+    """
+    question = re.sub(r"\bwfh\b", "work from home", question,
+                      flags=re.IGNORECASE)
     seen = set()
     qtokens = []
     unseen_terms = 0
@@ -216,11 +265,12 @@ def answer_question(question, index, total_clauses, df):
 
     approval_routing = (bool(APPROVAL_QUERY_RE.search(question))
                         and "approv" in seen)
-    shared_verb_bonus = 0.0
+    verb_bonus = 0.0
+    question_verbs = set()
     if unseen_terms:
         question_verbs = seen & VERBS
         if question_verbs:
-            shared_verb_bonus = math.log(1.0 + float(total_clauses))
+            verb_bonus = math.log(1.0 + float(total_clauses))
 
     best_per_doc = {}
     for doc in DOC_FILES:
@@ -228,39 +278,56 @@ def answer_question(question, index, total_clauses, df):
         for clause in index[doc]:
             if approval_routing and "approv" not in clause.vocab:
                 continue
+            verb_hit = bool(verb_bonus) and bool(question_verbs & clause.vocab)
             matched = [(t, w) for t, w in qtokens if t in clause.vocab]
-            if not matched:
+            if not matched and not verb_hit:
                 continue
-            smax = max(w for _, w in matched)
+            smax = max(w for _, w in matched) if matched else 0.0
             ssum = sum(w for _, w in matched)
             n = len(matched)
-            if shared_verb_bonus and question_verbs & clause.vocab:
-                smax = max(smax, shared_verb_bonus)
-                ssum += shared_verb_bonus
-            cand = (smax, ssum, n, clause)
+            if verb_hit:
+                smax = max(smax, verb_bonus)
+                ssum += verb_bonus
+                n += 1
+            terms = frozenset(t for t, _ in matched)
+            cand = (ssum, smax, n, terms, clause)
             if doc_best is None or cand[:3] > doc_best[:3]:
                 doc_best = cand
-        if doc_best is not None:
-            best_per_doc[doc] = doc_best
+        if doc_best is None:
+            continue
+        best_per_doc[doc] = doc_best
 
     if not best_per_doc:
         return refusal_text(None)
 
     ranked = sorted(best_per_doc.items(), key=lambda kv: kv[1][:3], reverse=True)
     leader_doc, leader = ranked[0]
-    leader_ssum = leader[1]
+    leader_ssum = leader[0]
 
-    if leader_ssum < MIN_EVIDENCE:
+    if leader[2] == 1 and leader[3] and QUANTITY_QUERY_RE.search(question):
+        anchor = next(iter(leader[3]))
+        hits = df.get(anchor, 0)
+        owner_clauses = index[leader_doc]
+        in_owner = sum(1 for c in owner_clauses if anchor in c.vocab)
+        if hits >= ANCHOR_MIN_DF and in_owner >= ANCHOR_DOC_SHARE * hits:
+            pool = [c for c in owner_clauses
+                    if anchor in c.vocab
+                    and not (approval_routing and "approv" not in c.vocab)]
+            chosen = next((c for c in pool if DIGIT_RE.search(c.text)),
+                          pool[0])
+            return render_answer(chosen)
+
+    if leader_ssum < MIN_EVIDENCE or leader[2] < 2:
         return refusal_text(leader_doc)
 
     if len(ranked) > 1:
         runner = ranked[1][1]
         comparable = (runner[2] >= RUNNER_MIN_COVERAGE * leader[2]
-                      and runner[1] >= RUNNER_UP_RATIO * leader_ssum)
+                      and runner[0] >= RUNNER_UP_RATIO * leader_ssum)
         if comparable:
             return refusal_text(leader_doc)
 
-    return render_answer(leader[3])
+    return render_answer(leader[4])
 
 
 def main():
