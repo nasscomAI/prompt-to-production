@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Flooding: description cites 'flooded'; urgent due to 'Ambulance'.,
+GH-202402,Flooding,Standard,Flooding: description cites 'flooded'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Drain Blockage: description cites 'blocked', 'stormwater drain'.",
+GH-202407,Drain Blockage,Standard,Drain Blockage: description cites 'blocked'.,
+GH-202410,Pothole,Standard,Pothole: description cites 'Potholes'.,
+GH-202411,Pothole,Urgent,Pothole: description cites 'Pothole'; urgent due to 'hospitalised'.,
+GH-202412,Pothole,Urgent,Pothole: description cites 'potholes'; urgent due to 'School'.,
+GH-202417,Waste,Standard,"Waste: description cites 'waste', 'garbage'.",
+GH-202420,Noise,Standard,Noise: description cites 'drilling'.,
+GH-202422,Road Damage,Urgent,"Road Damage: description cites 'Crater', 'collapsed'; urgent due to 'collapsed'.",
+GH-202424,Flooding,Standard,Flooding: description cites 'floods'.,
+GH-202428,Waste,Standard,Waste: description cites 'waste'.,
+GH-202432,Other,Standard,No schema category matches the described problem ('24hr supermarket delivery trucks idling with engines on.').,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Drain Blockage: description cites 'blocked', 'Main drain'.",
+GH-202438,Other,Standard,No schema category matches the described problem ('Colony surrounded by fields that channel rainwater throug...').,NEEDS_REVIEW

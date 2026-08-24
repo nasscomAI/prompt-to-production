@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Pothole: description cites 'pothole'.,
+PM-202402,Pothole,Urgent,Pothole: description cites 'pothole'; urgent due to 'children'.,
+PM-202406,Flooding,Standard,Flooding: description cites 'flooded'.,
+PM-202408,Flooding,Standard,Flooding: description cites 'flooded'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Streetlight: description cites 'streetlights', 'dark'.",
+PM-202411,Streetlight,Urgent,Streetlight: description cites 'Streetlight'; urgent due to 'hazard'.,
+PM-202413,Waste,Standard,"Waste: description cites 'garbage', 'bins'.",
+PM-202418,Noise,Standard,Noise: description cites 'music'.,
+PM-202419,Road Damage,Standard,"Road Damage: description cites 'cracked', 'sinking'.",
+PM-202420,Other,Urgent,No schema category matches the described problem ('Manhole cover missing. Risk of serious injury to cyclists.').,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Flooding: description cites 'floods'.,
+PM-202428,Waste,Standard,Waste: description cites 'Dead animal'.,
+PM-202430,Streetlight,Standard,"Streetlight: description cites 'lights out', 'dark'.",
+PM-202433,Waste,Standard,"Waste: description cites 'waste', 'dumped'.",
+PM-202446,Road Damage,Urgent,"Road Damage: description cites 'Footpath', 'tiles'; urgent due to 'fell'.",

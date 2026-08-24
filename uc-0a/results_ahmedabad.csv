@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Heat Hazard: description cites '°C', 'melting'.",
+AM-202402,Heat Hazard,Standard,Heat Hazard: description cites 'temperatures'.,
+AM-202405,Other,Urgent,No schema category matches the described problem ('Dead trees with split branches. Fall risk to walkers. 3 t...').,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Heat Hazard: description cites 'heatwave'.,
+AM-202407,Road Damage,Urgent,"Road Damage: description cites 'paving', 'upturned'; urgent due to 'injured'.",
+AM-202410,Pothole,Standard,Pothole: description cites 'Pothole'.,
+AM-202414,Streetlight,Standard,Streetlight: description cites 'unlit'.,
+AM-202417,Waste,Standard,Waste: description cites 'waste'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Noise: description cites 'music'.,
+AM-202424,Heat Hazard,Standard,"Heat Hazard: description cites '°C', 'bubbling'.",
+AM-202429,Heat Hazard,Standard,"Heat Hazard: description cites '°C', 'temperature'.",
+AM-202431,Heritage Damage,Standard,"Heritage Damage: description cites 'Heritage', 'ancient'.",
+AM-202435,Heat Hazard,Standard,Heat Hazard: description cites 'heat'.,
+AM-202444,Waste,Standard,"Waste: description cites 'waste', 'bins'.",
+AM-202445,Heat Hazard,Standard,Heat Hazard: description cites 'exposed to full sun'.,
