@@ -1,0 +1,87 @@
+Company Policy Q&A. Type 'exit' or 'quit' to stop.
+
+Your question: 
+# Carrying Forward Unused Annual Leave
+
+Yes, you can carry forward unused annual leave, but there are important limitations:
+
+**Maximum Carry-Forward:**
+- You may carry forward a **maximum of 5 unused annual leave days** to the following calendar year
+- Any days above 5 are **forfeited on 31 December**
+
+**Timeline for Using Carry-Forward Days:**
+- Carry-forward days must be used within the **first quarter (January–March)** of the following year
+- If not used by the end of March, they are **forfeited**
+
+So in summary, you can carry forward up to 5 days, but you must use them within the first three months of the next year or lose them.
+
+Your question: 
+# Installation of Slack on Work Laptop
+
+According to the IT Acceptable Use Policy (IT-POL-003, Section 2.3-2.4):
+
+**You cannot install Slack on your work laptop without written approval from the IT Department.**
+
+The policy states:
+- **Section 2.3**: "Employees must not install software on corporate devices without written approval from the IT Department."
+- **Section 2.4**: "Software approved for installation must be sourced from the CMC-approved software catalogue only."
+
+**To install Slack, you must:**
+1. Request written approval from the IT Department
+2. Confirm that Slack is available in the CMC-approved software catalogue
+
+If you proceed without approval, you may face disciplinary action.
+
+Your question: 
+According to the Employee Expense Reimbursement Policy (FIN-POL-007), the home office equipment allowance is **Rs 8,000**.
+
+This is a one-time allowance for employees approved for permanent work-from-home arrangements. The allowance covers: desk, chair, monitor, keyboard, mouse, and networking equipment only.
+
+Your question: 
+Based on the IT Acceptable Use Policy, **no, you cannot use your personal phone to access work files when working from home**.
+
+Here's why:
+
+According to section 3.1 of the IT Acceptable Use Policy, personal devices may be used to access **only**:
+- CMC email
+- CMC employee self-service portal
+
+Section 3.2 explicitly states that personal devices must **not** be used to access, store, or transmit classified or sensitive CMC data.
+
+Work files would fall outside the limited permitted uses for personal devices. If you need to access work files while working from home, you should use a corporate device provided by CMC instead.
+
+Your question: 
+Based on the provided policy documents, there is **no explicit statement about the company's view on flexible working culture** in general.
+
+However, the documents do contain some relevant information:
+
+1. **Work-from-Home**: The Finance Policy (FIN-POL-007) references "permanent work-from-home arrangements" and "temporary or partial work-from-home arrangements," which suggests the company does have mechanisms for flexible working. However, the policy does not articulate an overall philosophy or stance on flexible working culture.
+
+2. **What the documents focus on**: The policies provided are primarily concerned with governing specific aspects (leave entitlements, IT acceptable use, and expense reimbursement) rather than outlining a broader flexible working culture or philosophy.
+
+To obtain a comprehensive understanding of the company's view on flexible working culture, you would need to consult additional company policies or HR documentation that specifically address flexible working arrangements, remote work policies, or workforce culture statements.
+
+Your question: 
+No, you cannot claim DA (Daily Allowance) and meal receipts on the same day.
+
+According to Section 2.6 of the Finance Department's Employee Expense Reimbursement Policy:
+
+> "DA and meal receipts cannot be claimed simultaneously for the same day."
+
+You must choose one or the other:
+- **Claim DA**: Rs 750 per day (which covers meals and incidentals, no receipts needed)
+- **Claim actual meal expenses**: Submit receipts, but the combined meal claim must not exceed Rs 750 per day
+
+Your question: 
+According to the Leave Without Pay (LWP) policy (Section 5):
+
+**Leave Without Pay requires approval from:**
+
+1. **The Department Head** and
+2. **The HR Director**
+
+Manager approval alone is not sufficient (Section 5.2).
+
+Additionally, if the LWP exceeds 30 continuous days, approval from the **Municipal Commissioner** is also required (Section 5.3).
+
+Your question: Goodbye.

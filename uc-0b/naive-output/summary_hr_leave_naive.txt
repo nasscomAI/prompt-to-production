@@ -1,0 +1,36 @@
+# Summary: CMC Employee Leave Policy (HR-POL-001, v2.3)
+
+## Scope
+Applies to permanent and contractual employees only — excludes daily wage workers and consultants (governed by separate contracts).
+
+## Key Leave Categories
+
+**Annual Leave**
+- 18 days/year, accruing at 1.5 days/month
+- Requires 14 days' advance notice (Form HR-L1) and **written** manager approval (verbal approval invalid)
+- Unapproved absence = Loss of Pay, even if approved later
+- Max 5 days carry-forward, must be used by Q1 of next year or forfeited
+
+**Sick Leave**
+- 12 days/year, no carry-forward
+- Medical certificate required for 3+ consecutive days (submit within 48 hrs of return)
+- Certificate also required regardless of duration if taken adjacent to holidays/annual leave
+
+**Maternity/Paternity Leave**
+- Maternity: 26 weeks (first two children), 12 weeks (third+ child)
+- Paternity: 5 days, must be taken within 30 days of birth, cannot be split
+
+**Leave Without Pay (LWP)**
+- Only after exhausting paid leave
+- Needs **both** Department Head and HR Director approval; 30+ continuous days needs Municipal Commissioner approval
+- Does not count toward seniority, increments, or retirement benefits
+
+**Public Holidays**
+- Gazetted holidays granted; working on one earns a compensatory off (use within 60 days, non-encashable)
+
+**Leave Encashment**
+- Annual leave encashable only at retirement/resignation (max 60 days)
+- No mid-service encashment; sick leave and LWP never encashable
+
+## Grievances
+Must be filed within 10 working days of the disputed decision; late grievances rejected unless exceptional circumstances are proven in writing.

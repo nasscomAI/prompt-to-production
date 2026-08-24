@@ -1,0 +1,40 @@
+# Summary: CMC Acceptable Use Policy (IT-POL-003, v1.7)
+
+**Scope:** Applies to all employees, contractors, and vendors using CMC IT systems, devices, networks, or data. Effective January 1, 2024.
+
+## Key Provisions by Section
+
+**Corporate Devices**
+- Primarily for work use; limited personal use allowed if it doesn't disrupt duties
+- No software installation without IT approval (must come from approved catalogue)
+- Blocked from harmful/adult/gambling content
+- Endpoint security agent must remain active—disabling it is a disciplinary offense
+
+**Personal Devices (BYOD)**
+- Limited to CMC email and self-service portal access only
+- Cannot store/transmit classified data or connect to internal network (Guest WiFi only for internet)
+- Requires PIN/biometric lock
+- Lost/stolen devices with CMC email must be reported within 4 hours for remote wipe
+
+**Passwords & Access**
+- No password sharing (even with IT staff—IT will never ask)
+- 90-day mandatory password rotation
+- MFA required for all remote access
+
+**Data Handling**
+- Confidential/Restricted data barred from personal devices, personal cloud, or unapproved systems
+- No forwarding confidential emails to personal accounts
+- Secure print required for confidential documents; no unattended printouts
+
+**Internet & Email**
+- All internet activity is monitored/logged
+- CMC email cannot be used for personal registrations/subscriptions
+- External mass emails require Communications Department approval
+
+**Enforcement**
+- Violations can lead to disciplinary action, including termination
+- Unauthorized access to restricted data will be reported to law enforcement
+- CMC reserves unrestricted right to monitor and audit systems at any time
+
+---
+**Bottom line:** The policy enforces strict separation between personal and corporate device use, mandates strong access controls (MFA, password hygiene), restricts handling of sensitive data to approved systems only, and establishes broad monitoring rights alongside serious consequences for violations.

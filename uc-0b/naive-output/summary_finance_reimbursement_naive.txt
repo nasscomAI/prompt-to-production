@@ -1,0 +1,36 @@
+# CMC Employee Expense Reimbursement Policy — Summary
+
+**Document:** FIN-POL-007, v3.1, effective April 1, 2024
+
+## General Rules
+- Only official expenses are reimbursable (no personal expenses)
+- Claims must be submitted within **30 days** of expense; late claims are rejected
+
+## Travel
+- **Local travel:** Actual cost (public transport) or Rs 4/km (personal vehicle); receipts required above Rs 200
+- **Outstation travel:** Requires pre-approval via Form FIN-T1
+- **Air travel:** Only for trips >500 km; economy class only
+- **Hotels:** Up to Rs 3,500/night (Grade A cities) or Rs 2,500/night (other cities)
+- **Daily Allowance:** Rs 750/day covering meals/incidentals — either claim DA OR itemized meal receipts (capped at Rs 750/day), not both
+
+## Work-From-Home Equipment
+- One-time Rs 8,000 allowance for **permanent** WFH employees only
+- Covers desk, chair, monitor, keyboard, mouse, networking gear (not laptops/phones/printers/AC)
+- Must submit receipts within 60 days of written WFH approval
+
+## Training & Development
+- Requires pre-approval via Form FIN-TR1
+- Course fees: up to Rs 15,000/year/employee
+- Certification exam fees: up to Rs 5,000 per attempt
+- **Clawback:** Must repay 100% if resigning within 12 months of training; 50% if within 12–24 months
+
+## Mobile & Internet
+- Mobile: Rs 500/month for Grade C and above
+- Internet: Rs 800/month for Grade B and above (approved WFH only)
+- Original bills required monthly (no estimates/self-declarations)
+
+## Submission Process
+- Submit via employee portal using Form FIN-EXP1
+- Original receipts required (photocopies/screenshots only if vendor doesn't issue physical receipts)
+- Processing time: 15 working days
+- Disputes must be raised within 10 working days of decision

@@ -1,0 +1,55 @@
+# Compressed Policy Summary
+
+**Clause 1.1** — Governs use of all IT systems, devices, networks, and data owned or managed by CMC.
+
+**Clause 1.2** — Applies to all permanent employees, contractual staff, and third-party vendors with CMC system access.
+
+**Clause 1.3** — Using CMC IT resources counts as accepting this policy.
+
+**Clause 2.1** — CMC-issued laptops, desktops, and phones must be used mainly for official work.
+
+**Clause 2.2** — Personal use of corporate devices is allowed in moderation, provided it doesn't interfere with work duties or use excessive bandwidth.
+
+**Clause 2.3** — Installing software on corporate devices requires written IT Department approval first.
+
+**Clause 2.4** — Approved software must be sourced only from the CMC-approved software catalogue.
+
+**Clause 2.5** — Corporate devices must not access gambling sites, adult content, or sites the IT Department classifies as harmful.
+
+**Clause 2.6** — The CMC endpoint security agent must stay installed and active at all times; disabling or bypassing it is a disciplinary offence.
+
+**Clause 3.1** — Personal devices may be used only for CMC email and the employee self-service portal.
+
+**Clause 3.2** — Personal devices must not access, store, or transmit classified or sensitive CMC data.
+
+**Clause 3.3** — Personal devices must not connect to the CMC internal network, wired or wireless; CMC Guest WiFi is available instead for personal device internet access.
+
+**Clause 3.4** — Employees using personal devices for CMC email must enable a device-level PIN or biometric lock.
+
+**Clause 3.5** — A lost or stolen personal device containing CMC email must be reported to the IT helpdesk within 4 hours, so CMC data can be remotely wiped.
+
+**Clause 4.1** — Employees must not share CMC passwords with anyone, including IT staff.
+
+**Clause 4.2** — IT staff will never ask for your password; any such request should be reported to IT Security.
+
+**Clause 4.3** — Passwords must be changed every 90 days when the system prompts.
+
+**Clause 4.4** — MFA is mandatory for all remote access to CMC systems.
+
+**Clause 5.1** — Confidential or Restricted CMC data must not be stored on personal devices, personal cloud storage, or any IT-unapproved system.
+
+**Clause 5.2** — CMC email containing Confidential data must not be forwarded to personal email accounts.
+
+**Clause 5.3** — Confidential documents must be printed via secure print, and must not be left unattended at the printer.
+
+**Clause 6.1** — CMC monitors and logs internet use on its systems.
+
+**Clause 6.2** — CMC email addresses must not be used to register for personal services, social media, or non-work subscriptions.
+
+**Clause 6.3** — Mass emails to external recipients require Communications Department approval before sending.
+
+**Clause 7.1** — Policy violations may lead to disciplinary action, up to and including termination.
+
+**Clause 7.2** — Violations involving unauthorised access to restricted data will be reported to law enforcement.
+
+**Clause 7.3** — CMC reserves the right to monitor, access, and audit any activity on CMC-owned systems at any time, without prior notice.
