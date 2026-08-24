@@ -1,0 +1,88 @@
+CITY MUNICIPAL CORPORATION,complaint_id,category,priority,reason,flag
+HUMAN RESOURCES DEPARTMENT,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+EMPLOYEE LEAVE POLICY,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+Document Reference: HR-POL-001,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+Version: 2.3 | Effective: 1 April 2024,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+1. PURPOSE AND SCOPE,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+1.1 This policy governs all leave entitlements for permanent and,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    contractual employees of the City Municipal Corporation (CMC).,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+1.2 This policy does not apply to daily wage workers or consultants.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    Those categories are governed by their respective contracts.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2. ANNUAL LEAVE,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.1 Each permanent employee is entitled to 18 days of paid annual,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    leave per calendar year.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.2 Annual leave accrues at 1.5 days per month from the date of,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    joining.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.3 Employees must submit a leave application at least 14 calendar,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    days in advance using Form HR-L1.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.4 Leave applications must receive written approval from the,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    employee's direct manager before the leave commences.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    Verbal approval is not valid.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.5 Unapproved absence will be recorded as Loss of Pay (LOP),,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    regardless of subsequent approval.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.6 Employees may carry forward a maximum of 5 unused annual leave,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    days to the following calendar year. Any days above 5 are,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    forfeited on 31 December.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+2.7 Carry-forward days must be used within the first quarter,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    (January–March) of the following year or they are forfeited.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+3. SICK LEAVE,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+3.1 Each employee is entitled to 12 days of paid sick leave per,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    calendar year.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+3.2 Sick leave of 3 or more consecutive days requires a medical,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    certificate from a registered medical practitioner,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    within 48 hours of returning to work.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+3.3 Sick leave cannot be carried forward to the following year.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+3.4 Sick leave taken immediately before or after a public holiday,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    or annual leave period requires a medical certificate regardless,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    of duration.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+4. MATERNITY AND PATERNITY LEAVE,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+4.1 Female employees are entitled to 26 weeks of paid maternity,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    leave for the first two live births.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+4.2 For a third or subsequent child,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    paid.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+4.3 Male employees are entitled to 5 days of paid paternity leave,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    to be taken within 30 days of the child's birth.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+4.4 Paternity leave cannot be split across multiple periods.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+5. LEAVE WITHOUT PAY (LWP),,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+5.1 An employee may apply for Leave Without Pay only after,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    exhausting all applicable paid leave entitlements.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+5.2 LWP requires approval from the Department Head and the,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    HR Director. Manager approval alone is not sufficient.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+5.3 LWP exceeding 30 continuous days requires approval from,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    the Municipal Commissioner.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+5.4 Periods of LWP do not count toward service for the purposes,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    of seniority,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+6. PUBLIC HOLIDAYS,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+6.1 Employees are entitled to all gazetted public holidays as,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    declared by the State Government each year.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+6.2 If an employee is required to work on a public holiday,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    are entitled to one compensatory off day,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    60 days of the holiday worked.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+6.3 Compensatory off cannot be encashed.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+7. LEAVE ENCASHMENT,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+7.1 Annual leave may be encashed only at the time of retirement,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    or resignation,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+7.2 Leave encashment during service is not permitted under any,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    circumstances.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+7.3 Sick leave and LWP cannot be encashed under any circumstances.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+8. GRIEVANCES,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+═══════════════════════════════════════════════════════════,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+8.1 Leave-related grievances must be raised with the HR Department,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    within 10 working days of the disputed decision.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+8.2 Grievances raised after 10 working days will not be considered,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW
+    unless exceptional circumstances are demonstrated in writing.,,Other,Low,Description missing or unreadable.,NEEDS_REVIEW

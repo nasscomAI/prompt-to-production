@@ -1,0 +1,174 @@
+UC-0B — HR Leave Policy Summary
+============================================================
+NOTES:
+  VERBATIM — clause quoted verbatim to prevent meaning loss
+  NEEDS_REVIEW — clause body missing or violations detected
+============================================================
+
+Clause 1.1 [NEEDS_REVIEW]
+----------------------------------------
+contractual employees of the City Municipal Corporation (CMC).
+
+Clause 1.2 [NEEDS_REVIEW]
+----------------------------------------
+Those categories are governed by their respective contracts.
+
+═══════════════════════════════════════════════════════════
+2. ANNUAL LEAVE
+═══════════════════════════════════════════════════════════
+
+Clause 2.1 [NEEDS_REVIEW]
+----------------------------------------
+leave per calendar year.
+
+Clause 2.2 [NEEDS_REVIEW]
+----------------------------------------
+joining.
+
+Clause 2.3 [NEEDS_REVIEW]
+----------------------------------------
+days in advance using Form HR-L1.
+
+Clause 2.4 [VERBATIM]
+----------------------------------------
+employee's direct manager before the leave commences.
+    Verbal approval is not valid.
+
+Clause 2.5 [VERBATIM]
+----------------------------------------
+regardless of subsequent approval.
+
+Clause 2.6 [NEEDS_REVIEW]
+----------------------------------------
+days to the following calendar year. Any days above 5 are
+    forfeited on 31 December.
+
+Clause 2.7
+----------------------------------------
+(January–March) of the following year or they are forfeited.
+
+═══════════════════════════════════════════════════════════
+3. SICK LEAVE
+═══════════════════════════════════════════════════════════
+
+Clause 3.1 [NEEDS_REVIEW]
+----------------------------------------
+calendar year.
+
+Clause 3.2 [NEEDS_REVIEW]
+----------------------------------------
+certificate from a registered medical practitioner, submitted
+    within 48 hours of returning to work.
+
+Clause 3.3 [NEEDS_REVIEW]
+----------------------------------------
+(body missing)
+
+Clause 3.4
+----------------------------------------
+or annual leave period requires a medical certificate regardless
+    of duration.
+
+═══════════════════════════════════════════════════════════
+4. MATERNITY AND PATERNITY LEAVE
+═══════════════════════════════════════════════════════════
+
+Clause 4.1 [NEEDS_REVIEW]
+----------------------------------------
+leave for the first two live births.
+
+Clause 4.2 [NEEDS_REVIEW]
+----------------------------------------
+paid.
+
+Clause 4.3 [NEEDS_REVIEW]
+----------------------------------------
+to be taken within 30 days of the child's birth.
+
+Clause 4.4 [NEEDS_REVIEW]
+----------------------------------------
+═══════════════════════════════════════════════════════════
+5. LEAVE WITHOUT PAY (LWP)
+═══════════════════════════════════════════════════════════
+
+Clause 5.1 [NEEDS_REVIEW]
+----------------------------------------
+exhausting all applicable paid leave entitlements.
+
+Clause 5.2 [VERBATIM]
+----------------------------------------
+HR Director. Manager approval alone is not sufficient.
+
+Clause 5.3 [NEEDS_REVIEW]
+----------------------------------------
+the Municipal Commissioner.
+
+Clause 5.4 [NEEDS_REVIEW]
+----------------------------------------
+of seniority, increments, or retirement benefits.
+
+═══════════════════════════════════════════════════════════
+6. PUBLIC HOLIDAYS
+═══════════════════════════════════════════════════════════
+
+Clause 6.1 [NEEDS_REVIEW]
+----------------------------------------
+declared by the State Government each year.
+
+Clause 6.2 [NEEDS_REVIEW]
+----------------------------------------
+are entitled to one compensatory off day, to be taken within
+    60 days of the holiday worked.
+
+Clause 6.3 [NEEDS_REVIEW]
+----------------------------------------
+═══════════════════════════════════════════════════════════
+7. LEAVE ENCASHMENT
+═══════════════════════════════════════════════════════════
+
+Clause 7.1 [NEEDS_REVIEW]
+----------------------------------------
+or resignation, subject to a maximum of 60 days.
+
+Clause 7.2 [VERBATIM]
+----------------------------------------
+circumstances.
+
+Clause 7.3 [NEEDS_REVIEW]
+----------------------------------------
+═══════════════════════════════════════════════════════════
+8. GRIEVANCES
+═══════════════════════════════════════════════════════════
+
+Clause 8.1 [NEEDS_REVIEW]
+----------------------------------------
+within 10 working days of the disputed decision.
+
+Clause 8.2 [NEEDS_REVIEW]
+----------------------------------------
+unless exceptional circumstances are demonstrated in writing.
+
+============================================================
+ENFORCEMENT VIOLATIONS DETECTED:
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 1.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 1.2.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 2.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 2.2.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 2.3.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 2.6.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 3.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 3.2.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 4.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 4.2.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 4.3.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 4.4.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 5.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 5.3.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 5.4.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 6.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 6.2.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 6.3.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 7.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 7.3.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 8.1.
+  - OBLIGATION_SOFTENING: No binding verb detected in clause 8.2.
