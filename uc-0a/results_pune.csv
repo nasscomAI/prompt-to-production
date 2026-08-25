@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description contains the word 'pothole'.,
+PM-202402,Pothole,Urgent,The description contains the word 'pothole'.,
+PM-202406,Flooding,Standard,The description contains the word 'flooded' or another flooding-related term.,
+PM-202408,Drain Blockage,Standard,The description states that the drain is blocked.,
+PM-202410,Streetlight,Standard,The description mentions 'streetlight' or 'streetlights'.,
+PM-202411,Streetlight,Urgent,The description mentions 'streetlight' or 'streetlights'.,
+PM-202413,Waste,Standard,"The description mentions waste-related material such as 'garbage', 'dumped', or 'dead animal'.",
+PM-202418,Noise,Standard,The description mentions music or noise.,
+PM-202419,Road Damage,Standard,The description mentions road or surface damage such as 'cracked' or 'sinking'.,
+PM-202420,Other,Urgent,The description does not clearly match one of the defined complaint categories.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description contains the word 'flooded' or another flooding-related term.,
+PM-202428,Waste,Standard,"The description mentions waste-related material such as 'garbage', 'dumped', or 'dead animal'.",
+PM-202430,Other,Standard,The description does not clearly match one of the defined complaint categories.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description mentions waste-related material such as 'garbage', 'dumped', or 'dead animal'.",
+PM-202446,Road Damage,Urgent,The description mentions road or surface damage such as 'cracked' or 'sinking'.,
