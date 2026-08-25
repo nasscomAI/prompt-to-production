@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Contains keywords 'heritage' indicating heritage damage.,
+KM-202402,Heritage Damage,Standard,"Contains keywords 'historic', 'cobblestone' indicating heritage damage.",
+KM-202405,Noise,Standard,"Contains keywords 'band', 'festival', 'wedding' indicating noise.",
+KM-202409,Pothole,Standard,Contains keywords 'pothole' indicating pothole.,
+KM-202410,Pothole,Standard,Contains keywords 'pothole' indicating pothole.,
+KM-202411,Pothole,Standard,Contains keywords 'pothole' indicating pothole.,
+KM-202415,Other,Low,Description 'New residential complex draining directly onto public road....' is ambiguous; no category strongly matches.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"Contains keywords 'waste', 'overflow' indicating waste.",
+KM-202421,Road Damage,Urgent,"Contains keywords 'sinking', 'footpath' indicating road damage.",
+KM-202422,Road Damage,Standard,"Contains keywords 'road surface', 'buckled' indicating road damage.",
+KM-202426,Heritage Damage,Standard,Contains keywords 'heritage' indicating heritage damage.,
+KM-202430,Road Damage,Standard,"Contains keywords 'subsided', 'gas pipeline', 'gas leak' indicating road damage.",
+KM-202434,Heritage Damage,Standard,Contains keywords 'heritage' indicating heritage damage.,
+KM-202436,Streetlight,Standard,"Contains keywords 'darkness', 'substation' indicating streetlight.",
+KM-202438,Noise,Standard,Contains keywords 'amplifier' indicating noise.,
