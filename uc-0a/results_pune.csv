@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The complaint is classified as Pothole because the description contains ""pothole"".",
+PM-202402,Pothole,Urgent,"The complaint is classified as Pothole because the description contains ""child"", which requires Urgent priority.",
+PM-202406,Flooding,Standard,"The complaint is classified as Flooding because the description contains ""flood"".",
+PM-202408,Drain Blockage,Standard,"The complaint is classified as Drain Blockage because the description contains ""drain"".",
+PM-202410,Streetlight,Standard,"The complaint is classified as Streetlight because the description contains ""streetlight"".",
+PM-202411,Streetlight,Urgent,"The complaint is classified as Streetlight because the description contains ""hazard"", which requires Urgent priority.",
+PM-202413,Waste,Standard,"The complaint is classified as Waste because the description contains ""waste"".",
+PM-202418,Noise,Standard,"The complaint is classified as Noise because the description contains ""music"".",
+PM-202419,Road Damage,Standard,"The complaint is classified as Road Damage because the description contains ""cracked"".",
+PM-202420,Other,Urgent,"The description contains ""Manhole cover missing. Risk of serious injury to cyclists."" but does not clearly match an allowed category.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The complaint is classified as Flooding because the description contains ""flood"".",
+PM-202428,Other,Standard,"The description contains ""Dead animal not removed for 36 hours. Health concern."" but does not clearly match an allowed category.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The complaint is classified as Heritage Damage because the description contains ""heritage"".",
+PM-202433,Waste,Standard,"The complaint is classified as Waste because the description contains ""waste"".",
+PM-202446,Other,Urgent,"The description contains ""Footpath tiles broken and upturned. Elderly resident fell last week."" but does not clearly match an allowed category.",NEEDS_REVIEW
