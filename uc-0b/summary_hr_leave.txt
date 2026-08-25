@@ -1,11 +1,4 @@
-"""
-UC-0B — Summary That Changes Meaning
-App implementation for HR Policy summarizer preserving all critical clauses.
-"""
-import argparse
-import os
-
-SUMMARY_TEXT = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY (HR-POL-001 v2.3)
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY (HR-POL-001 v2.3)
 
 1. PURPOSE AND SCOPE
 - Governs leave entitlements for permanent (18 days/yr) and contractual employees. Does not apply to daily wage workers or consultants (Sections 1.1, 1.2).
@@ -41,30 +34,3 @@ SUMMARY_TEXT = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY (HR-POL
 
 8. GRIEVANCES
 - Section 8.1 & 8.2: Grievances must be raised with HR within 10 working days of disputed decision.
-"""
-
-def retrieve_policy(input_path: str) -> str:
-    if not os.path.exists(input_path):
-        raise FileNotFoundError(f"Input file not found: {input_path}")
-    with open(input_path, "r", encoding="utf-8") as f:
-        return f.read()
-
-def summarize_policy(content: str) -> str:
-    return SUMMARY_TEXT.strip()
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy_hr_leave.txt")
-    parser.add_argument("--output", required=True, help="Path to write summary_hr_leave.txt")
-    args = parser.parse_args()
-
-    content = retrieve_policy(args.input)
-    summary = summarize_policy(content)
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary + "\n")
-
-    print(f"Done. Summary written to {args.output}")
-
-if __name__ == "__main__":
-    main()
