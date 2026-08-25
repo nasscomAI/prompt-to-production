@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole due to keyword(s) 'pothole' found in the description; no severity keywords detected so priority is Standard.,
+PM-202402,Pothole,Urgent,"Classified as Pothole due to keyword(s) 'pothole' and marked Urgent due to severity keyword(s) 'child', 'school' found in the description.",
+PM-202406,Flooding,Standard,Classified as Flooding due to keyword(s) 'flood' found in the description; no severity keywords detected so priority is Standard.,
+PM-202408,Flooding,Standard,Classified as Flooding due to keyword(s) 'flood' found in the description; no severity keywords detected so priority is Standard.,
+PM-202410,Streetlight,Standard,Classified as Streetlight due to keyword(s) 'streetlight' found in the description; no severity keywords detected so priority is Standard.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight due to keyword(s) 'streetlight' and marked Urgent due to severity keyword(s) 'hazard' found in the description.,
+PM-202413,Waste,Standard,Classified as Waste due to keyword(s) 'garbage' found in the description; no severity keywords detected so priority is Standard.,
+PM-202418,Other,Standard,"Could not confidently determine category from description containing: 'wedding', 'venue', 'playing', 'music', 'past'; flagged for manual review.",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Classified as Road Damage due to keyword(s) 'road surface' found in the description; no severity keywords detected so priority is Standard.,
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage due to keyword(s) 'manhole' and marked Urgent due to severity keyword(s) 'injury' found in the description.,
+PM-202427,Flooding,Standard,Classified as Flooding due to keyword(s) 'flood' found in the description; no severity keywords detected so priority is Standard.,
+PM-202428,Other,Standard,"Could not confidently determine category from description containing: 'dead', 'animal', 'removed', 'hours', 'health'; flagged for manual review.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage due to keyword(s) 'heritage' found in the description; no severity keywords detected so priority is Standard.,
+PM-202433,Waste,Standard,"Classified as Waste due to keyword(s) 'waste', 'dump' found in the description; no severity keywords detected so priority is Standard.",
+PM-202446,Other,Urgent,"Could not confidently determine category from description containing: 'footpath', 'tiles', 'broken', 'upturned', 'elderly'; flagged for manual review.",NEEDS_REVIEW
