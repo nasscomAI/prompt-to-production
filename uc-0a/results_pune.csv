@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Matched 'Pothole' via 'pothole',
+PM-202402,Pothole,Urgent,Matched 'Pothole' via 'pothole'; Urgent because description contains 'child',
+PM-202406,Flooding,Standard,"Matched 'Flooding' via 'flood', 'knee-deep'",
+PM-202408,Flooding,Standard,Ambiguous: matched 'Flooding' via 'flood' but other categories also fit,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Matched 'Streetlight' via 'streetlight', 'lights out', 'light'",
+PM-202411,Streetlight,Urgent,"Matched 'Streetlight' via 'streetlight', 'light'; Urgent because description contains 'hazard'",
+PM-202413,Waste,Standard,"Matched 'Waste' via 'garbage', 'bin'",
+PM-202418,Noise,Standard,Matched 'Noise' via 'music',
+PM-202419,Road Damage,Standard,"Matched 'Road Damage' via 'road surface', 'cracked', 'sinking'",
+PM-202420,Road Damage,Urgent,Matched 'Road Damage' via 'manhole'; Urgent because description contains 'injury',
+PM-202427,Flooding,Standard,Matched 'Flooding' via 'flood',
+PM-202428,Waste,Standard,Matched 'Waste' via 'dead animal',
+PM-202430,Streetlight,Standard,"Ambiguous: matched 'Streetlight' via 'lights out', 'light' but other categories also fit",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Matched 'Waste' via 'waste', 'dumped'",
+PM-202446,Road Damage,Urgent,"Matched 'Road Damage' via 'footpath', 'upturned'; Urgent because description contains 'fell'",
