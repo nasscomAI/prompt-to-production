@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description includes 'heatwave', so category is Heat Hazard.",
+AM-202407,Road Damage,Urgent,"Description includes 'upturned' and contains 'child', so category is Road Damage and priority is Urgent.",
+AM-202410,Pothole,Standard,"Description includes 'pothole', so category is Pothole.",
+AM-202414,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+AM-202417,Waste,Standard,"Description includes 'waste', so category is Waste.",
+AM-202421,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+AM-202424,Road Damage,Standard,"Description includes 'road surface', so category is Road Damage.",
+AM-202429,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Description includes 'heritage', so category is Heritage Damage.",
+AM-202435,Heat Hazard,Standard,"Description includes 'heat', so category is Heat Hazard.",
+AM-202444,Waste,Standard,"Description includes 'waste', so category is Waste.",
+AM-202445,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW

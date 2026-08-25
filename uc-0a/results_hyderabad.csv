@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description includes 'flooded' and contains 'ambulance', so category is Flooding and priority is Urgent.",
+GH-202402,Flooding,Standard,"Description includes 'flooded', so category is Flooding.",
+GH-202406,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Description includes 'drain blocked', so category is Drain Blockage.",
+GH-202410,Pothole,Standard,"Description includes 'pothole', so category is Pothole.",
+GH-202411,Pothole,Urgent,"Description includes 'pothole' and contains 'hospital', so category is Pothole and priority is Urgent.",
+GH-202412,Pothole,Urgent,"Description includes 'pothole' and contains 'school', so category is Pothole and priority is Urgent.",
+GH-202417,Waste,Standard,"Description includes 'garbage', so category is Waste.",
+GH-202420,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+GH-202422,Other,Urgent,"Description is not explicit and contains 'collapse', so category is Other and priority is Urgent.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Description includes 'flood', so category is Flooding.",
+GH-202428,Waste,Standard,"Description includes 'waste', so category is Waste.",
+GH-202432,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Description includes 'drain blocked', so category is Drain Blockage.",
+GH-202438,Other,Standard,"Description is not explicit, so category is Other.",NEEDS_REVIEW

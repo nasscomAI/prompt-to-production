@@ -1,0 +1,301 @@
+period,ward,category,budgeted_amount,actual_spend,growth_value,formula
+2024-01,Ward 1 – Kasba,Drainage & Flooding,8.6,7.3,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 1 – Kasba,Drainage & Flooding,8.6,7.4,+1.4%,MoM = (current − previous) / previous × 100
+2024-03,Ward 1 – Kasba,Drainage & Flooding,8.6,7.7,+4.1%,MoM = (current − previous) / previous × 100
+2024-04,Ward 1 – Kasba,Drainage & Flooding,8.6,8.2,+6.5%,MoM = (current − previous) / previous × 100
+2024-05,Ward 1 – Kasba,Drainage & Flooding,8.6,7.2,-12.2%,MoM = (current − previous) / previous × 100
+2024-06,Ward 1 – Kasba,Drainage & Flooding,8.6,8.3,+15.3%,MoM = (current − previous) / previous × 100
+2024-07,Ward 1 – Kasba,Drainage & Flooding,8.6,13.0,+56.6%,MoM = (current − previous) / previous × 100
+2024-08,Ward 1 – Kasba,Drainage & Flooding,8.6,11.1,-14.6%,MoM = (current − previous) / previous × 100
+2024-09,Ward 1 – Kasba,Drainage & Flooding,8.6,9.9,-10.8%,MoM = (current − previous) / previous × 100
+2024-10,Ward 1 – Kasba,Drainage & Flooding,8.6,10.8,+9.1%,MoM = (current − previous) / previous × 100
+2024-11,Ward 1 – Kasba,Drainage & Flooding,8.6,9.4,-13.0%,MoM = (current − previous) / previous × 100
+2024-12,Ward 1 – Kasba,Drainage & Flooding,8.6,9.4,+0.0%,MoM = (current − previous) / previous × 100
+2024-01,Ward 1 – Kasba,Parks & Greening,2.3,2.4,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 1 – Kasba,Parks & Greening,2.3,2.3,-4.2%,MoM = (current − previous) / previous × 100
+2024-03,Ward 1 – Kasba,Parks & Greening,2.3,2.4,+4.3%,MoM = (current − previous) / previous × 100
+2024-04,Ward 1 – Kasba,Parks & Greening,2.3,2.1,-12.5%,MoM = (current − previous) / previous × 100
+2024-05,Ward 1 – Kasba,Parks & Greening,2.3,2.3,+9.5%,MoM = (current − previous) / previous × 100
+2024-06,Ward 1 – Kasba,Parks & Greening,2.3,2.9,+26.1%,MoM = (current − previous) / previous × 100
+2024-07,Ward 1 – Kasba,Parks & Greening,2.3,3.1,+6.9%,MoM = (current − previous) / previous × 100
+2024-08,Ward 1 – Kasba,Parks & Greening,2.3,3.2,+3.2%,MoM = (current − previous) / previous × 100
+2024-09,Ward 1 – Kasba,Parks & Greening,2.3,2.8,-12.5%,MoM = (current − previous) / previous × 100
+2024-10,Ward 1 – Kasba,Parks & Greening,2.3,2.7,-3.6%,MoM = (current − previous) / previous × 100
+2024-11,Ward 1 – Kasba,Parks & Greening,2.3,2.0,-25.9%,MoM = (current − previous) / previous × 100
+2024-12,Ward 1 – Kasba,Parks & Greening,2.3,2.2,+10.0%,MoM = (current − previous) / previous × 100
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.2,-8.3%,MoM = (current − previous) / previous × 100
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.3,+0.8%,MoM = (current − previous) / previous × 100
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.4,+8.9%,MoM = (current − previous) / previous × 100
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.1,+5.2%,MoM = (current − previous) / previous × 100
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.8,+5.0%,MoM = (current − previous) / previous × 100
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,13.0,19.7,+33.1%,MoM = (current − previous) / previous × 100
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.2,+2.5%,MoM = (current − previous) / previous × 100
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.1,-0.5%,MoM = (current − previous) / previous × 100
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.1,-34.8%,MoM = (current − previous) / previous × 100
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.2,+8.4%,MoM = (current − previous) / previous × 100
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.7,-10.6%,MoM = (current − previous) / previous × 100
+2024-01,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.0,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 1 – Kasba,Streetlight Maintenance,3.3,2.8,-6.7%,MoM = (current − previous) / previous × 100
+2024-03,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.0,+7.1%,MoM = (current − previous) / previous × 100
+2024-04,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.6,+20.0%,MoM = (current − previous) / previous × 100
+2024-05,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.4,-5.6%,MoM = (current − previous) / previous × 100
+2024-06,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.5,+2.9%,MoM = (current − previous) / previous × 100
+2024-07,Ward 1 – Kasba,Streetlight Maintenance,3.3,4.5,+28.6%,MoM = (current − previous) / previous × 100
+2024-08,Ward 1 – Kasba,Streetlight Maintenance,3.3,4.3,-4.4%,MoM = (current − previous) / previous × 100
+2024-09,Ward 1 – Kasba,Streetlight Maintenance,3.3,4.2,-2.3%,MoM = (current − previous) / previous × 100
+2024-10,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.4,-19.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.1,-8.8%,MoM = (current − previous) / previous × 100
+2024-12,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.5,+12.9%,MoM = (current − previous) / previous × 100
+2024-01,Ward 1 – Kasba,Waste Management,5.9,5.3,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 1 – Kasba,Waste Management,5.9,6.4,+20.8%,MoM = (current − previous) / previous × 100
+2024-03,Ward 1 – Kasba,Waste Management,5.9,6.5,+1.6%,MoM = (current − previous) / previous × 100
+2024-04,Ward 1 – Kasba,Waste Management,5.9,5.7,-12.3%,MoM = (current − previous) / previous × 100
+2024-05,Ward 1 – Kasba,Waste Management,5.9,6.1,+7.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 1 – Kasba,Waste Management,5.9,5.7,-6.6%,MoM = (current − previous) / previous × 100
+2024-07,Ward 1 – Kasba,Waste Management,5.9,7.6,+33.3%,MoM = (current − previous) / previous × 100
+2024-08,Ward 1 – Kasba,Waste Management,5.9,8.3,+9.2%,MoM = (current − previous) / previous × 100
+2024-09,Ward 1 – Kasba,Waste Management,5.9,8.9,+7.2%,MoM = (current − previous) / previous × 100
+2024-10,Ward 1 – Kasba,Waste Management,5.9,6.8,-23.6%,MoM = (current − previous) / previous × 100
+2024-11,Ward 1 – Kasba,Waste Management,5.9,,NULL — Contractor change — billing delayed,Not computed (null actual_spend)
+2024-12,Ward 1 – Kasba,Waste Management,5.9,5.1,-25.0%,MoM = (current − previous) / previous × 100
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.9,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.4,-4.6%,MoM = (current − previous) / previous × 100
+2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,,NULL — Data not submitted by ward office,Not computed (null actual_spend)
+2024-04,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.0,-3.8%,MoM = (current − previous) / previous × 100
+2024-05,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.2,+2.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.3,+20.6%,MoM = (current − previous) / previous × 100
+2024-07,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.6,+2.4%,MoM = (current − previous) / previous × 100
+2024-08,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.8,+1.6%,MoM = (current − previous) / previous × 100
+2024-09,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.9,+0.8%,MoM = (current − previous) / previous × 100
+2024-10,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,11.5,-10.9%,MoM = (current − previous) / previous × 100
+2024-11,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.4,-9.6%,MoM = (current − previous) / previous × 100
+2024-12,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,8.4,-19.2%,MoM = (current − previous) / previous × 100
+2024-01,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.6,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.8,+12.5%,MoM = (current − previous) / previous × 100
+2024-03,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.7,-5.6%,MoM = (current − previous) / previous × 100
+2024-04,Ward 2 – Shivajinagar,Parks & Greening,1.9,2.1,+23.5%,MoM = (current − previous) / previous × 100
+2024-05,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.8,-14.3%,MoM = (current − previous) / previous × 100
+2024-06,Ward 2 – Shivajinagar,Parks & Greening,1.9,2.4,+33.3%,MoM = (current − previous) / previous × 100
+2024-07,Ward 2 – Shivajinagar,Parks & Greening,1.9,2.3,-4.2%,MoM = (current − previous) / previous × 100
+2024-08,Ward 2 – Shivajinagar,Parks & Greening,1.9,2.3,+0.0%,MoM = (current − previous) / previous × 100
+2024-09,Ward 2 – Shivajinagar,Parks & Greening,1.9,2.5,+8.7%,MoM = (current − previous) / previous × 100
+2024-10,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.9,-24.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.9,+0.0%,MoM = (current − previous) / previous × 100
+2024-12,Ward 2 – Shivajinagar,Parks & Greening,1.9,1.7,-10.5%,MoM = (current − previous) / previous × 100
+2024-01,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,16.2,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,16.8,+3.7%,MoM = (current − previous) / previous × 100
+2024-03,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,15.9,-5.4%,MoM = (current − previous) / previous × 100
+2024-04,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,14.3,-10.1%,MoM = (current − previous) / previous × 100
+2024-05,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,14.4,+0.7%,MoM = (current − previous) / previous × 100
+2024-06,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,19.7,+36.8%,MoM = (current − previous) / previous × 100
+2024-07,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,23.4,+18.8%,MoM = (current − previous) / previous × 100
+2024-08,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,22.8,-2.6%,MoM = (current − previous) / previous × 100
+2024-09,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,24.6,+7.9%,MoM = (current − previous) / previous × 100
+2024-10,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,17.3,-29.7%,MoM = (current − previous) / previous × 100
+2024-11,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,17.0,-1.7%,MoM = (current − previous) / previous × 100
+2024-12,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,14.4,-15.3%,MoM = (current − previous) / previous × 100
+2024-01,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,3.8,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,4.4,+15.8%,MoM = (current − previous) / previous × 100
+2024-03,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,3.9,-11.4%,MoM = (current − previous) / previous × 100
+2024-04,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,4.0,+2.6%,MoM = (current − previous) / previous × 100
+2024-05,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,3.8,-5.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,4.7,+23.7%,MoM = (current − previous) / previous × 100
+2024-07,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,6.0,+27.7%,MoM = (current − previous) / previous × 100
+2024-08,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,5.6,-6.7%,MoM = (current − previous) / previous × 100
+2024-09,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,6.6,+17.9%,MoM = (current − previous) / previous × 100
+2024-10,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,5.0,-24.2%,MoM = (current − previous) / previous × 100
+2024-11,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,4.5,-10.0%,MoM = (current − previous) / previous × 100
+2024-12,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,4.7,+4.4%,MoM = (current − previous) / previous × 100
+2024-01,Ward 2 – Shivajinagar,Waste Management,6.4,6.1,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 2 – Shivajinagar,Waste Management,6.4,7.1,+16.4%,MoM = (current − previous) / previous × 100
+2024-03,Ward 2 – Shivajinagar,Waste Management,6.4,6.7,-5.6%,MoM = (current − previous) / previous × 100
+2024-04,Ward 2 – Shivajinagar,Waste Management,6.4,6.4,-4.5%,MoM = (current − previous) / previous × 100
+2024-05,Ward 2 – Shivajinagar,Waste Management,6.4,6.2,-3.1%,MoM = (current − previous) / previous × 100
+2024-06,Ward 2 – Shivajinagar,Waste Management,6.4,6.3,+1.6%,MoM = (current − previous) / previous × 100
+2024-07,Ward 2 – Shivajinagar,Waste Management,6.4,7.8,+23.8%,MoM = (current − previous) / previous × 100
+2024-08,Ward 2 – Shivajinagar,Waste Management,6.4,9.4,+20.5%,MoM = (current − previous) / previous × 100
+2024-09,Ward 2 – Shivajinagar,Waste Management,6.4,9.7,+3.2%,MoM = (current − previous) / previous × 100
+2024-10,Ward 2 – Shivajinagar,Waste Management,6.4,8.1,-16.5%,MoM = (current − previous) / previous × 100
+2024-11,Ward 2 – Shivajinagar,Waste Management,6.4,7.2,-11.1%,MoM = (current − previous) / previous × 100
+2024-12,Ward 2 – Shivajinagar,Waste Management,6.4,6.5,-9.7%,MoM = (current − previous) / previous × 100
+2024-01,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.0,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.8,+10.0%,MoM = (current − previous) / previous × 100
+2024-03,Ward 3 – Kothrud,Drainage & Flooding,8.2,9.2,+4.5%,MoM = (current − previous) / previous × 100
+2024-04,Ward 3 – Kothrud,Drainage & Flooding,8.2,7.4,-19.6%,MoM = (current − previous) / previous × 100
+2024-05,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.9,+20.3%,MoM = (current − previous) / previous × 100
+2024-06,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.1,-9.0%,MoM = (current − previous) / previous × 100
+2024-07,Ward 3 – Kothrud,Drainage & Flooding,8.2,10.0,+23.5%,MoM = (current − previous) / previous × 100
+2024-08,Ward 3 – Kothrud,Drainage & Flooding,8.2,10.6,+6.0%,MoM = (current − previous) / previous × 100
+2024-09,Ward 3 – Kothrud,Drainage & Flooding,8.2,10.2,-3.8%,MoM = (current − previous) / previous × 100
+2024-10,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.5,-16.7%,MoM = (current − previous) / previous × 100
+2024-11,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.8,+3.5%,MoM = (current − previous) / previous × 100
+2024-12,Ward 3 – Kothrud,Drainage & Flooding,8.2,8.2,-6.8%,MoM = (current − previous) / previous × 100
+2024-01,Ward 3 – Kothrud,Parks & Greening,3.3,3.3,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 3 – Kothrud,Parks & Greening,3.3,3.3,+0.0%,MoM = (current − previous) / previous × 100
+2024-03,Ward 3 – Kothrud,Parks & Greening,3.3,3.4,+3.0%,MoM = (current − previous) / previous × 100
+2024-04,Ward 3 – Kothrud,Parks & Greening,3.3,2.8,-17.6%,MoM = (current − previous) / previous × 100
+2024-05,Ward 3 – Kothrud,Parks & Greening,3.3,2.9,+3.6%,MoM = (current − previous) / previous × 100
+2024-06,Ward 3 – Kothrud,Parks & Greening,3.3,4.0,+37.9%,MoM = (current − previous) / previous × 100
+2024-07,Ward 3 – Kothrud,Parks & Greening,3.3,3.8,-5.0%,MoM = (current − previous) / previous × 100
+2024-08,Ward 3 – Kothrud,Parks & Greening,3.3,,NULL — Project suspended — pending approval,Not computed (null actual_spend)
+2024-09,Ward 3 – Kothrud,Parks & Greening,3.3,4.4,+15.8%,MoM = (current − previous) / previous × 100
+2024-10,Ward 3 – Kothrud,Parks & Greening,3.3,3.5,-20.5%,MoM = (current − previous) / previous × 100
+2024-11,Ward 3 – Kothrud,Parks & Greening,3.3,3.6,+2.9%,MoM = (current − previous) / previous × 100
+2024-12,Ward 3 – Kothrud,Parks & Greening,3.3,2.8,-22.2%,MoM = (current − previous) / previous × 100
+2024-01,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,10.6,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,11.7,+10.4%,MoM = (current − previous) / previous × 100
+2024-03,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,11.1,-5.1%,MoM = (current − previous) / previous × 100
+2024-04,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,11.2,+0.9%,MoM = (current − previous) / previous × 100
+2024-05,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,13.1,+17.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,15.0,+14.5%,MoM = (current − previous) / previous × 100
+2024-07,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,19.0,+26.7%,MoM = (current − previous) / previous × 100
+2024-08,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,18.3,-3.7%,MoM = (current − previous) / previous × 100
+2024-09,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,17.2,-6.0%,MoM = (current − previous) / previous × 100
+2024-10,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,14.1,-18.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,9.9,-29.8%,MoM = (current − previous) / previous × 100
+2024-12,Ward 3 – Kothrud,Roads & Pothole Repair,11.8,12.3,+24.2%,MoM = (current − previous) / previous × 100
+2024-01,Ward 3 – Kothrud,Streetlight Maintenance,4.0,3.4,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 3 – Kothrud,Streetlight Maintenance,4.0,4.0,+17.6%,MoM = (current − previous) / previous × 100
+2024-03,Ward 3 – Kothrud,Streetlight Maintenance,4.0,4.1,+2.5%,MoM = (current − previous) / previous × 100
+2024-04,Ward 3 – Kothrud,Streetlight Maintenance,4.0,4.5,+9.8%,MoM = (current − previous) / previous × 100
+2024-05,Ward 3 – Kothrud,Streetlight Maintenance,4.0,3.6,-20.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 3 – Kothrud,Streetlight Maintenance,4.0,4.5,+25.0%,MoM = (current − previous) / previous × 100
+2024-07,Ward 3 – Kothrud,Streetlight Maintenance,4.0,5.9,+31.1%,MoM = (current − previous) / previous × 100
+2024-08,Ward 3 – Kothrud,Streetlight Maintenance,4.0,4.9,-16.9%,MoM = (current − previous) / previous × 100
+2024-09,Ward 3 – Kothrud,Streetlight Maintenance,4.0,6.0,+22.4%,MoM = (current − previous) / previous × 100
+2024-10,Ward 3 – Kothrud,Streetlight Maintenance,4.0,4.4,-26.7%,MoM = (current − previous) / previous × 100
+2024-11,Ward 3 – Kothrud,Streetlight Maintenance,4.0,3.7,-15.9%,MoM = (current − previous) / previous × 100
+2024-12,Ward 3 – Kothrud,Streetlight Maintenance,4.0,3.8,+2.7%,MoM = (current − previous) / previous × 100
+2024-01,Ward 3 – Kothrud,Waste Management,5.1,4.6,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 3 – Kothrud,Waste Management,5.1,5.6,+21.7%,MoM = (current − previous) / previous × 100
+2024-03,Ward 3 – Kothrud,Waste Management,5.1,5.1,-8.9%,MoM = (current − previous) / previous × 100
+2024-04,Ward 3 – Kothrud,Waste Management,5.1,5.1,+0.0%,MoM = (current − previous) / previous × 100
+2024-05,Ward 3 – Kothrud,Waste Management,5.1,5.0,-2.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 3 – Kothrud,Waste Management,5.1,5.1,+2.0%,MoM = (current − previous) / previous × 100
+2024-07,Ward 3 – Kothrud,Waste Management,5.1,7.5,+47.1%,MoM = (current − previous) / previous × 100
+2024-08,Ward 3 – Kothrud,Waste Management,5.1,6.3,-16.0%,MoM = (current − previous) / previous × 100
+2024-09,Ward 3 – Kothrud,Waste Management,5.1,7.0,+11.1%,MoM = (current − previous) / previous × 100
+2024-10,Ward 3 – Kothrud,Waste Management,5.1,6.1,-12.9%,MoM = (current − previous) / previous × 100
+2024-11,Ward 3 – Kothrud,Waste Management,5.1,5.3,-13.1%,MoM = (current − previous) / previous × 100
+2024-12,Ward 3 – Kothrud,Waste Management,5.1,4.3,-18.9%,MoM = (current − previous) / previous × 100
+2024-01,Ward 4 – Warje,Drainage & Flooding,6.7,6.1,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 4 – Warje,Drainage & Flooding,6.7,5.7,-6.6%,MoM = (current − previous) / previous × 100
+2024-03,Ward 4 – Warje,Drainage & Flooding,6.7,7.1,+24.6%,MoM = (current − previous) / previous × 100
+2024-04,Ward 4 – Warje,Drainage & Flooding,6.7,5.8,-18.3%,MoM = (current − previous) / previous × 100
+2024-05,Ward 4 – Warje,Drainage & Flooding,6.7,7.3,+25.9%,MoM = (current − previous) / previous × 100
+2024-06,Ward 4 – Warje,Drainage & Flooding,6.7,6.8,-6.8%,MoM = (current − previous) / previous × 100
+2024-07,Ward 4 – Warje,Drainage & Flooding,6.7,8.2,+20.6%,MoM = (current − previous) / previous × 100
+2024-08,Ward 4 – Warje,Drainage & Flooding,6.7,9.8,+19.5%,MoM = (current − previous) / previous × 100
+2024-09,Ward 4 – Warje,Drainage & Flooding,6.7,9.1,-7.1%,MoM = (current − previous) / previous × 100
+2024-10,Ward 4 – Warje,Drainage & Flooding,6.7,8.1,-11.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 4 – Warje,Drainage & Flooding,6.7,5.9,-27.2%,MoM = (current − previous) / previous × 100
+2024-12,Ward 4 – Warje,Drainage & Flooding,6.7,7.4,+25.4%,MoM = (current − previous) / previous × 100
+2024-01,Ward 4 – Warje,Parks & Greening,1.6,1.3,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 4 – Warje,Parks & Greening,1.6,1.4,+7.7%,MoM = (current − previous) / previous × 100
+2024-03,Ward 4 – Warje,Parks & Greening,1.6,1.5,+7.1%,MoM = (current − previous) / previous × 100
+2024-04,Ward 4 – Warje,Parks & Greening,1.6,1.5,+0.0%,MoM = (current − previous) / previous × 100
+2024-05,Ward 4 – Warje,Parks & Greening,1.6,1.6,+6.7%,MoM = (current − previous) / previous × 100
+2024-06,Ward 4 – Warje,Parks & Greening,1.6,1.7,+6.2%,MoM = (current − previous) / previous × 100
+2024-07,Ward 4 – Warje,Parks & Greening,1.6,1.9,+11.8%,MoM = (current − previous) / previous × 100
+2024-08,Ward 4 – Warje,Parks & Greening,1.6,2.4,+26.3%,MoM = (current − previous) / previous × 100
+2024-09,Ward 4 – Warje,Parks & Greening,1.6,1.9,-20.8%,MoM = (current − previous) / previous × 100
+2024-10,Ward 4 – Warje,Parks & Greening,1.6,2.0,+5.3%,MoM = (current − previous) / previous × 100
+2024-11,Ward 4 – Warje,Parks & Greening,1.6,1.4,-30.0%,MoM = (current − previous) / previous × 100
+2024-12,Ward 4 – Warje,Parks & Greening,1.6,1.6,+14.3%,MoM = (current − previous) / previous × 100
+2024-01,Ward 4 – Warje,Roads & Pothole Repair,10.3,10.2,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 4 – Warje,Roads & Pothole Repair,10.3,10.7,+4.9%,MoM = (current − previous) / previous × 100
+2024-03,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.1,+3.7%,MoM = (current − previous) / previous × 100
+2024-04,Ward 4 – Warje,Roads & Pothole Repair,10.3,8.8,-20.7%,MoM = (current − previous) / previous × 100
+2024-05,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.3,+28.4%,MoM = (current − previous) / previous × 100
+2024-06,Ward 4 – Warje,Roads & Pothole Repair,10.3,12.5,+10.6%,MoM = (current − previous) / previous × 100
+2024-07,Ward 4 – Warje,Roads & Pothole Repair,10.3,,NULL — Audit freeze — figures under review,Not computed (null actual_spend)
+2024-08,Ward 4 – Warje,Roads & Pothole Repair,10.3,16.0,+28.0%,MoM = (current − previous) / previous × 100
+2024-09,Ward 4 – Warje,Roads & Pothole Repair,10.3,14.7,-8.1%,MoM = (current − previous) / previous × 100
+2024-10,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.0,-25.2%,MoM = (current − previous) / previous × 100
+2024-11,Ward 4 – Warje,Roads & Pothole Repair,10.3,9.0,-18.2%,MoM = (current − previous) / previous × 100
+2024-12,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.2,+24.4%,MoM = (current − previous) / previous × 100
+2024-01,Ward 4 – Warje,Streetlight Maintenance,3.0,3.1,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 4 – Warje,Streetlight Maintenance,3.0,2.8,-9.7%,MoM = (current − previous) / previous × 100
+2024-03,Ward 4 – Warje,Streetlight Maintenance,3.0,2.8,+0.0%,MoM = (current − previous) / previous × 100
+2024-04,Ward 4 – Warje,Streetlight Maintenance,3.0,3.1,+10.7%,MoM = (current − previous) / previous × 100
+2024-05,Ward 4 – Warje,Streetlight Maintenance,3.0,2.8,-9.7%,MoM = (current − previous) / previous × 100
+2024-06,Ward 4 – Warje,Streetlight Maintenance,3.0,3.4,+21.4%,MoM = (current − previous) / previous × 100
+2024-07,Ward 4 – Warje,Streetlight Maintenance,3.0,4.2,+23.5%,MoM = (current − previous) / previous × 100
+2024-08,Ward 4 – Warje,Streetlight Maintenance,3.0,4.1,-2.4%,MoM = (current − previous) / previous × 100
+2024-09,Ward 4 – Warje,Streetlight Maintenance,3.0,4.0,-2.4%,MoM = (current − previous) / previous × 100
+2024-10,Ward 4 – Warje,Streetlight Maintenance,3.0,3.0,-25.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 4 – Warje,Streetlight Maintenance,3.0,2.6,-13.3%,MoM = (current − previous) / previous × 100
+2024-12,Ward 4 – Warje,Streetlight Maintenance,3.0,3.0,+15.4%,MoM = (current − previous) / previous × 100
+2024-01,Ward 4 – Warje,Waste Management,4.4,4.7,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 4 – Warje,Waste Management,4.4,4.1,-12.8%,MoM = (current − previous) / previous × 100
+2024-03,Ward 4 – Warje,Waste Management,4.4,3.7,-9.8%,MoM = (current − previous) / previous × 100
+2024-04,Ward 4 – Warje,Waste Management,4.4,4.7,+27.0%,MoM = (current − previous) / previous × 100
+2024-05,Ward 4 – Warje,Waste Management,4.4,4.5,-4.3%,MoM = (current − previous) / previous × 100
+2024-06,Ward 4 – Warje,Waste Management,4.4,5.0,+11.1%,MoM = (current − previous) / previous × 100
+2024-07,Ward 4 – Warje,Waste Management,4.4,5.4,+8.0%,MoM = (current − previous) / previous × 100
+2024-08,Ward 4 – Warje,Waste Management,4.4,5.1,-5.6%,MoM = (current − previous) / previous × 100
+2024-09,Ward 4 – Warje,Waste Management,4.4,6.4,+25.5%,MoM = (current − previous) / previous × 100
+2024-10,Ward 4 – Warje,Waste Management,4.4,4.9,-23.4%,MoM = (current − previous) / previous × 100
+2024-11,Ward 4 – Warje,Waste Management,4.4,4.4,-10.2%,MoM = (current − previous) / previous × 100
+2024-12,Ward 4 – Warje,Waste Management,4.4,4.7,+6.8%,MoM = (current − previous) / previous × 100
+2024-01,Ward 5 – Hadapsar,Drainage & Flooding,10.6,11.0,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 5 – Hadapsar,Drainage & Flooding,10.6,9.2,-16.4%,MoM = (current − previous) / previous × 100
+2024-03,Ward 5 – Hadapsar,Drainage & Flooding,10.6,9.5,+3.3%,MoM = (current − previous) / previous × 100
+2024-04,Ward 5 – Hadapsar,Drainage & Flooding,10.6,10.0,+5.3%,MoM = (current − previous) / previous × 100
+2024-05,Ward 5 – Hadapsar,Drainage & Flooding,10.6,11.2,+12.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 5 – Hadapsar,Drainage & Flooding,10.6,11.7,+4.5%,MoM = (current − previous) / previous × 100
+2024-07,Ward 5 – Hadapsar,Drainage & Flooding,10.6,13.9,+18.8%,MoM = (current − previous) / previous × 100
+2024-08,Ward 5 – Hadapsar,Drainage & Flooding,10.6,15.8,+13.7%,MoM = (current − previous) / previous × 100
+2024-09,Ward 5 – Hadapsar,Drainage & Flooding,10.6,12.8,-19.0%,MoM = (current − previous) / previous × 100
+2024-10,Ward 5 – Hadapsar,Drainage & Flooding,10.6,10.5,-18.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 5 – Hadapsar,Drainage & Flooding,10.6,11.1,+5.7%,MoM = (current − previous) / previous × 100
+2024-12,Ward 5 – Hadapsar,Drainage & Flooding,10.6,9.3,-16.2%,MoM = (current − previous) / previous × 100
+2024-01,Ward 5 – Hadapsar,Parks & Greening,2.5,2.8,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 5 – Hadapsar,Parks & Greening,2.5,2.4,-14.3%,MoM = (current − previous) / previous × 100
+2024-03,Ward 5 – Hadapsar,Parks & Greening,2.5,2.3,-4.2%,MoM = (current − previous) / previous × 100
+2024-04,Ward 5 – Hadapsar,Parks & Greening,2.5,2.8,+21.7%,MoM = (current − previous) / previous × 100
+2024-05,Ward 5 – Hadapsar,Parks & Greening,2.5,2.7,-3.6%,MoM = (current − previous) / previous × 100
+2024-06,Ward 5 – Hadapsar,Parks & Greening,2.5,3.0,+11.1%,MoM = (current − previous) / previous × 100
+2024-07,Ward 5 – Hadapsar,Parks & Greening,2.5,3.0,+0.0%,MoM = (current − previous) / previous × 100
+2024-08,Ward 5 – Hadapsar,Parks & Greening,2.5,3.3,+10.0%,MoM = (current − previous) / previous × 100
+2024-09,Ward 5 – Hadapsar,Parks & Greening,2.5,3.1,-6.1%,MoM = (current − previous) / previous × 100
+2024-10,Ward 5 – Hadapsar,Parks & Greening,2.5,3.2,+3.2%,MoM = (current − previous) / previous × 100
+2024-11,Ward 5 – Hadapsar,Parks & Greening,2.5,2.3,-28.1%,MoM = (current − previous) / previous × 100
+2024-12,Ward 5 – Hadapsar,Parks & Greening,2.5,2.7,+17.4%,MoM = (current − previous) / previous × 100
+2024-01,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,15.3,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,12.9,-15.7%,MoM = (current − previous) / previous × 100
+2024-03,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,13.1,+1.6%,MoM = (current − previous) / previous × 100
+2024-04,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,12.2,-6.9%,MoM = (current − previous) / previous × 100
+2024-05,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,12.6,+3.3%,MoM = (current − previous) / previous × 100
+2024-06,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,17.9,+42.1%,MoM = (current − previous) / previous × 100
+2024-07,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,22.8,+27.4%,MoM = (current − previous) / previous × 100
+2024-08,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,24.6,+7.9%,MoM = (current − previous) / previous × 100
+2024-09,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,20.6,-16.3%,MoM = (current − previous) / previous × 100
+2024-10,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,18.4,-10.7%,MoM = (current − previous) / previous × 100
+2024-11,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,14.4,-21.7%,MoM = (current − previous) / previous × 100
+2024-12,Ward 5 – Hadapsar,Roads & Pothole Repair,14.3,12.6,-12.5%,MoM = (current − previous) / previous × 100
+2024-01,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.4,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.4,+0.0%,MoM = (current − previous) / previous × 100
+2024-03,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,4.1,+20.6%,MoM = (current − previous) / previous × 100
+2024-04,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,4.1,+0.0%,MoM = (current − previous) / previous × 100
+2024-05,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,,NULL — Equipment procurement delay,Not computed (null actual_spend)
+2024-06,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.8,-7.3%,MoM = (current − previous) / previous × 100
+2024-07,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,5.3,+39.5%,MoM = (current − previous) / previous × 100
+2024-08,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,5.4,+1.9%,MoM = (current − previous) / previous × 100
+2024-09,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,5.0,-7.4%,MoM = (current − previous) / previous × 100
+2024-10,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.8,-24.0%,MoM = (current − previous) / previous × 100
+2024-11,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.3,-13.2%,MoM = (current − previous) / previous × 100
+2024-12,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.4,+3.0%,MoM = (current − previous) / previous × 100
+2024-01,Ward 5 – Hadapsar,Waste Management,6.1,5.4,N/A (first period),No previous month for MoM comparison
+2024-02,Ward 5 – Hadapsar,Waste Management,6.1,6.2,+14.8%,MoM = (current − previous) / previous × 100
+2024-03,Ward 5 – Hadapsar,Waste Management,6.1,6.6,+6.5%,MoM = (current − previous) / previous × 100
+2024-04,Ward 5 – Hadapsar,Waste Management,6.1,6.0,-9.1%,MoM = (current − previous) / previous × 100
+2024-05,Ward 5 – Hadapsar,Waste Management,6.1,6.0,+0.0%,MoM = (current − previous) / previous × 100
+2024-06,Ward 5 – Hadapsar,Waste Management,6.1,6.9,+15.0%,MoM = (current − previous) / previous × 100
+2024-07,Ward 5 – Hadapsar,Waste Management,6.1,8.8,+27.5%,MoM = (current − previous) / previous × 100
+2024-08,Ward 5 – Hadapsar,Waste Management,6.1,7.3,-17.0%,MoM = (current − previous) / previous × 100
+2024-09,Ward 5 – Hadapsar,Waste Management,6.1,8.5,+16.4%,MoM = (current − previous) / previous × 100
+2024-10,Ward 5 – Hadapsar,Waste Management,6.1,6.4,-24.7%,MoM = (current − previous) / previous × 100
+2024-11,Ward 5 – Hadapsar,Waste Management,6.1,6.2,-3.1%,MoM = (current − previous) / previous × 100
+2024-12,Ward 5 – Hadapsar,Waste Management,6.1,6.7,+8.1%,MoM = (current − previous) / previous × 100

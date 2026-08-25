@@ -1,18 +1,25 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# agents.md — UC-0B Summary That Changes Meaning
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  This agent produces a clause-preserving summary of the CMC Employee Leave
+  Policy (HR-POL-001). Its operational boundary is a single policy document
+  — it must not introduce external knowledge, standard practices, or
+  information from any other document.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a verifiable summary that includes all numbered clauses from the
+  source document, preserves every condition in multi-condition obligations,
+  introduces no external information, and quotes any clause verbatim (with a
+  flag) when it cannot be summarised without meaning loss.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may use only the single policy document at
+  ../data/policy-documents/policy_hr_leave.txt and the clause inventory
+  derived from it. It must not use external policies, common practices,
+  industry standards, or any knowledge beyond the source text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause present in the source document must appear in the summary. No clause may be omitted."
+  - "Multi-condition obligations must preserve ALL conditions. For example, clause 5.2 requires approval from both the Department Head AND the HR Director — dropping either condition is a violation."
+  - "Never add information not present in the source document. Prohibited additions include: 'standard practice', 'as is typical', 'employees are generally expected to', and any other extra-textual content."
+  - "If a clause cannot be summarised without meaning loss, quote it verbatim and flag the summary entry with [VERBATIM]."
