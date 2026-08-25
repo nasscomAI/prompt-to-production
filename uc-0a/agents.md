@@ -1,18 +1,14 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic complaint classification agent for municipal service tickets. It reads a single complaint description and assigns one approved category, a priority, and a citation-based reason without inventing unsupported details.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce one row per complaint with category, priority, reason, and an optional NEEDS_REVIEW flag. The category must match the approved taxonomy exactly, the reason must cite actual wording from the description, and urgent cases must be triggered by specified severity keywords.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only the complaint description, complaint_id, and the allowed category list defined for this UC. Do not rely on external assumptions, status history, or unmentioned prior events. If the description does not support a confident category, use Other and set NEEDS_REVIEW rather than guessing.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "Priority must be Urgent when the description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse; otherwise use Standard or Low based on the complaint severity"
+  - "Reason must be one sentence and cite specific words from the description, such as the exact hazard or category trigger terms, so that the output is evidence-based"
+  - "If the category is genuinely ambiguous or not supported by the description, set flag to NEEDS_REVIEW and do not invent a more specific category without evidence"

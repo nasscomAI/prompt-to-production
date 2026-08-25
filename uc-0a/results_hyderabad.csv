@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions ""flooded, flood, underpass, rain"" which supports the Flooding classification.",
+GH-202402,Flooding,Standard,"Description mentions ""flooded, flood, rain"" which supports the Flooding classification.",
+GH-202406,Flooding,Standard,"Description mentions ""rain"" which supports the Flooding classification.",
+GH-202407,Flooding,Standard,"Description mentions ""rain"" which supports the Flooding classification.",
+GH-202410,Pothole,Standard,"Description mentions ""pothole"" which supports the Pothole classification.",
+GH-202411,Pothole,Urgent,"Description mentions ""pothole"" which supports the Pothole classification.",
+GH-202412,Pothole,Urgent,"Description mentions ""pothole"" which supports the Pothole classification.",
+GH-202417,Heritage Damage,Standard,"Description mentions ""heritage"" which supports the Heritage Damage classification.",
+GH-202420,Other,Standard,Description does not provide enough direct evidence for a specific category.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Description does not provide enough direct evidence for a specific category.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Description mentions ""flood, underpass, rain"" which supports the Flooding classification.",
+GH-202428,Waste,Standard,"Description mentions ""waste"" which supports the Waste classification.",
+GH-202432,Other,Standard,Description does not provide enough direct evidence for a specific category.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description mentions ""flooding, flood, rain"" which supports the Flooding classification.",
+GH-202438,Flooding,Standard,"Description mentions ""rain"" which supports the Flooding classification.",
