@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": ["README.md", ".opencode/skills/commit-convention/SKILL.md"],
+  "permission": {
+    "skill": {
+      "*": "allow",
+      "commit-convention": "allow"
+    }
+  }
+}
