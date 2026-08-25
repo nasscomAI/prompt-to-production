@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected words from complaint: 'Large pothole 60cm wide causing tyre dam',
+PM-202402,Pothole,Urgent,Detected words from complaint: 'Deep pothole near bus stop. School child',
+PM-202406,Flooding,Standard,Detected words from complaint: 'Underpass flooded knee-deep after 2hrs r',
+PM-202408,Flooding,Standard,Detected words from complaint: 'Bus stand flooded. Passengers standing i',
+PM-202410,Streetlight,Standard,Detected words from complaint: 'Three consecutive streetlights out for 1',
+PM-202411,Streetlight,Urgent,Detected words from complaint: 'Streetlight flickering and sparking. Ele',
+PM-202413,Waste,Standard,Detected words from complaint: 'Overflowing garbage bins near vegetable ',
+PM-202418,Other,Standard,Detected words from complaint: 'Wedding venue playing music past midnigh',NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Detected words from complaint: 'Road surface cracked and sinking near ut',
+PM-202420,Other,Urgent,Detected words from complaint: 'Manhole cover missing. Risk of serious i',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected words from complaint: 'Bridge approach floods in 30mins of rain',
+PM-202428,Other,Standard,Detected words from complaint: 'Dead animal not removed for 36 hours. He',NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Detected words from complaint: 'Heritage street, lights out. Safety conc'",
+PM-202433,Waste,Standard,Detected words from complaint: 'Bulk waste from apartment renovation dum',
+PM-202446,Other,Urgent,Detected words from complaint: 'Footpath tiles broken and upturned. Elde',NEEDS_REVIEW
