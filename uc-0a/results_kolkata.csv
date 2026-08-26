@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"No standard category applies; description includes ""lamp post"".",NEEDS_REVIEW
+KM-202402,Other,Standard,"No standard category applies; description includes ""Historic"".",NEEDS_REVIEW
+KM-202405,Other,Standard,"No standard category applies; description includes ""Wedding"".",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The description mentions ""potholes"", which indicates Pothole.",
+KM-202410,Pothole,Standard,"The description mentions ""pothole"", which indicates Pothole.",
+KM-202411,Pothole,Standard,"The description mentions ""pothole"", which indicates Pothole.",
+KM-202415,Drain Blockage,Standard,"The description mentions ""draining"", which indicates Drain Blockage.",
+KM-202418,Other,Standard,"No standard category applies; description includes ""waste"".",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"The description mentions ""sinking"", which indicates Road Damage.",
+KM-202422,Road Damage,Standard,"The description mentions ""road surface"", which indicates Road Damage.",
+KM-202426,Heritage Damage,Standard,"The description mentions ""heritage"", which indicates Heritage Damage.",
+KM-202430,Road Damage,Standard,"The description mentions ""subsided"", which indicates Road Damage.",
+KM-202434,Other,Standard,"No standard category applies; description includes ""Street"".",NEEDS_REVIEW
+KM-202436,Other,Standard,"No standard category applies; description includes ""Entire"".",NEEDS_REVIEW
+KM-202438,Noise,Standard,"The description mentions ""amplifiers"", which indicates Noise.",
