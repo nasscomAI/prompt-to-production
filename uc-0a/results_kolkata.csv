@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The description contains ""Heritage"", supporting the Heritage Damage category.",
+KM-202402,Heritage Damage,Standard,"The description contains ""Historic"", supporting the Heritage Damage category.",
+KM-202405,Noise,Standard,"The description contains ""Wedding band"", supporting the Noise category.",
+KM-202409,Pothole,Standard,"The description contains ""potholes"", supporting the Pothole category.",
+KM-202410,Pothole,Standard,"The description contains ""Pothole"", supporting the Pothole category.",
+KM-202411,Flooding,Standard,"The description contains ""rainwater"", supporting the Flooding category.",
+KM-202415,Other,Standard,"The description does not provide enough evidence for one allowed category, so it requires review.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The description contains ""waste"", supporting the Waste category.",
+KM-202421,Road Damage,Urgent,"The description contains ""Footpath"", supporting the Road Damage category.",
+KM-202422,Road Damage,Standard,"The description contains ""Road surface"", supporting the Road Damage category.",
+KM-202426,Heritage Damage,Standard,"The description contains ""Heritage"", supporting the Heritage Damage category.",
+KM-202430,Road Damage,Standard,"The description contains ""Road subsided"", supporting the Road Damage category.",
+KM-202434,Heritage Damage,Standard,"The description contains ""heritage"", supporting the Heritage Damage category.",
+KM-202436,Streetlight,Standard,"The description contains ""Darkness"", supporting the Streetlight category.",
+KM-202438,Noise,Standard,"The description contains ""amplifiers"", supporting the Noise category.",
