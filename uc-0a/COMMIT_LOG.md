@@ -1,0 +1,9 @@
+UC-0A Fix Taxonomy drift: Category names varied across rows for same complaint type (e.g., 'Potholes' vs 'Pothole', 'Street Light' vs 'Streetlight'). → Defined exact 10-value taxonomy in agents.md and classifier.py with strict pattern matching, no synonyms allowed; all 60 output rows use exact canonical strings.
+
+UC-0A Fix Severity blindness: Injury/child/school complaints classified as Standard instead of Urgent. → Implemented severity keyword enforcement in classify_complaint(): case-insensitive substring match on 8 keywords (injury, child, school, hospital, ambulance, fire, hazard, fell, collapse); any match → Urgent; severity keyword row never Low or Standard per enforcement rule.
+
+UC-0A Fix Missing justification: No reason field or non-cited reasons in output. → Required every output row to include a one-sentence reason citing at least one verbatim word/phrase from the description via regex extraction; empty descriptions produce a generic reason referencing available detail.
+
+UC-0A Fix Hallucinated sub-categories: Output contained categories not in the allowed taxonomy (e.g., 'Potholes', 'Garbage', 'Drainage'). → Closed output schema to exactly 5 fields (complaint_id, category, priority, reason, flag); category enforcement restricts to the 10 exact strings; batch_classify writes only those categories.
+
+UC-0A Fix False confidence on ambiguity: Confident classification on genuinely ambiguous complaints (e.g., Flooding+Drain Blockage co-occurring, heritage street+lout). → Added tie-detection: when multiple categories score equal top matches → category=Other, flag=NEEDS_REVIEW; heritage damage post-filter requires damage-word co-occurrence; empty/ambiguous descriptions → Other+NEEDS_REVIEW rather than silent guessing.
