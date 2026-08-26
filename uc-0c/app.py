@@ -1,4 +1,5 @@
 """
+
 UC-0C app.py — Number That Looks Right
 Build this using the RICE + agents.md + CRAFT workflow.
 """
