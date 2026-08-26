@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard based on keywords ('melting') with Standard priority.,
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard based on keywords ('temperature', 'temperatures') with Standard priority.",
+AM-202405,Other,Urgent,"Urgent priority assigned due to severity terms ('Fall', 'ambiguous description') in complaint for category Other.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard based on keywords ('heat', 'heatwave') with Standard priority.",
+AM-202407,Road Damage,Urgent,"Urgent priority assigned due to severity terms ('injured', 'Child', 'paving') in complaint for category Road Damage.",
+AM-202410,Pothole,Standard,Classified as Pothole based on keywords ('pothole') with Standard priority.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on keywords ('unlit') with Standard priority.,
+AM-202417,Waste,Standard,Classified as Waste based on keywords ('waste') with Standard priority.,
+AM-202421,Noise,Standard,"Classified as Noise based on keywords ('music', 'club') with Standard priority.",
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard based on keywords ('Zoo approach road surface...') with Standard priority.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on keywords ('temperature') with Standard priority.,
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage based on keywords ('heritage', 'ancient') with Standard priority.",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard based on keywords ('heat', 'burns') with Standard priority.",
+AM-202444,Waste,Standard,"Classified as Waste based on keywords ('waste', 'bins', 'overflowing') with Standard priority.",
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard based on keywords ('sun') with Standard priority.,

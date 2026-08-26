@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Citizen complaint classification agent operating strictly within the municipal civic tech taxonomy and priority framework.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Classify raw citizen complaint descriptions into structured, verifiable JSON/dict records with exact taxonomy categories, explicit severity-based priority levels, a single-sentence reason citing source words, and review flags for ambiguous inputs.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed to use only the complaint description text and complaint ID provided in the CSV input row. Excludes external assumptions, regional slang interpretation not supported by text, or category names outside the allowed schema.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations or missing values allowed."
+  - "Priority must be Urgent if complaint description contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise priority is Standard or Low."
+  - "Every output row must include a single-sentence reason field explicitly citing specific words from the complaint description."
+  - "Flag must be set to NEEDS_REVIEW when the complaint category is genuinely ambiguous or missing critical details; otherwise leave blank."
