@@ -9,21 +9,94 @@ def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row.
     Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    desc = row.get("description", "")
+    if not desc:
+        return {
+            "complaint_id": row.get("complaint_id", ""),
+            "category": "Other",
+            "priority": "Low",
+            "reason": "Missing description.",
+            "flag": "NEEDS_REVIEW"
+        }
+        
+    desc_lower = desc.lower()
+    
+    severity_keywords = ['injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse']
+    
+    priority = "Standard"
+    matched_sev = None
+    for kw in severity_keywords:
+        if kw in desc_lower:
+            priority = "Urgent"
+            matched_sev = kw
+            break
+            
+    category_keywords = {
+        'Pothole': ['pothole', 'crater'],
+        'Flooding': ['flood', 'waterlogging', 'floods'],
+        'Streetlight': ['streetlight', 'lights out', 'dark', 'lamp'],
+        'Waste': ['waste', 'garbage', 'trash', 'animal'],
+        'Noise': ['noise', 'loud', 'music', 'speaker'],
+        'Road Damage': ['cracked', 'broken', 'uneven', 'surface cracked', 'tiles broken', 'road surface', 'footpath'],
+        'Heritage Damage': ['heritage', 'monument', 'historic'],
+        'Heat Hazard': ['heat', 'sun', 'hot', 'temperature'],
+        'Drain Blockage': ['drain', 'manhole', 'sewage', 'gutter']
+    }
+    
+    category = "Other"
+    flag = "NEEDS_REVIEW"
+    matched_cat = None
+    
+    for cat, kws in category_keywords.items():
+        for kw in kws:
+            if kw in desc_lower:
+                category = cat
+                flag = ""
+                matched_cat = kw
+                break
+        if not flag:
+            break
+            
+    if category == "Other":
+        reason = "The description lacks clear categorization details, so we classify as Other."
+    else:
+        reason = f"Classified as {category} because the description mentions '{matched_cat}'."
+        if matched_sev:
+            reason += f" Also marked Urgent due to keyword '{matched_sev}'."
+            
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    results = []
+    fieldnames = []
+    
+    with open(input_path, 'r', encoding='utf-8') as fin:
+        reader = csv.DictReader(fin)
+        fieldnames = list(reader.fieldnames) + ['category', 'priority', 'reason', 'flag']
+        for i, row in enumerate(reader):
+            try:
+                res = classify_complaint(row)
+                out_row = dict(row)
+                out_row.update(res)
+                results.append(out_row)
+            except Exception as e:
+                print(f"Error on row {i+1}: {e}")
+                
+    with open(output_path, 'w', encoding='utf-8', newline='') as fout:
+        writer = csv.DictWriter(fout, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(results)
 
 
 if __name__ == "__main__":
