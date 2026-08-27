@@ -1,0 +1,42 @@
+UC-0B Output: Summary That Changes Meaning
+Source document: policy_hr_leave.txt
+============================================================
+
+SUMMARY
+----------------------------------------
+[This file will be generated automatically when you run: python app.py]
+
+Example output structure:
+
+1. Annual Leave: Employees must apply for annual leave at least 5 working days in advance
+   using the HR portal. Approval is at manager's discretion.
+
+2. Sick Leave: Employees are entitled to 10 days of paid sick leave per calendar year.
+   A medical certificate must be submitted for absences exceeding 2 consecutive days.
+
+3. Maternity/Paternity Leave: Eligible employees (those with 12+ months of service) are
+   entitled to 26 weeks of maternity leave and 2 weeks of paternity leave at full pay.
+
+4. Unpaid Leave: Requests for unpaid leave must be approved by both the line manager and
+   HR. Maximum duration is 3 months per year.
+
+5. Leave Encashment: Unused annual leave beyond 15 days cannot be carried forward and
+   will not be encashed unless explicitly approved by the HR Director.
+
+FIDELITY REPORT
+----------------------------------------
+[Generated automatically by the fidelity_check skill]
+
+Example fidelity report:
+
+- Clause 1 (Annual Leave): ✅ Correctly represented
+- Clause 2 (Sick Leave): ✅ Correctly represented
+- Clause 3 (Maternity/Paternity Leave): ✅ Correctly represented — eligibility condition (12+ months) preserved
+- Clause 4 (Unpaid Leave): ⚠️ Softened — summary says "should be approved" but policy says "must be approved"
+- Clause 5 (Leave Encashment): ❌ Missing from summary — encashment restriction not mentioned
+
+Overall verdict: FAIL
+Reason: Clause 4 weakens a mandatory obligation and Clause 5 is entirely omitted, both of which
+could lead to compliance failures if employees rely on the summary alone.
+
+Overall verdict: FAIL
