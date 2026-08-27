@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description mentions a 'heritage lamp post' knocked over, causing ambiguity (citing 'Heritage').",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,The description refers to damage or issues in a 'heritage' or 'historic' site (citing 'Historic').,
+KM-202405,Other,Standard,No primary keyword matched for: 'Wedding band playing near Tagore Museum at 11pm. F...',NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description explicitly mentions 'pothole' (citing 'Airport').,
+KM-202410,Pothole,Standard,The description explicitly mentions 'pothole' (citing 'Pothole').,
+KM-202411,Pothole,Standard,The description explicitly mentions 'pothole' (citing 'Deep').,
+KM-202415,Other,Standard,"The description mentions a complex 'draining directly onto public road', which is ambiguous (citing 'New').",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The description refers to 'garbage', 'waste', or 'dumped' material (citing 'Tourist').",
+KM-202421,Road Damage,Urgent,The description reports degradation of public pathways or 'road surface' (citing 'Footpath').,
+KM-202422,Road Damage,Standard,The description reports degradation of public pathways or 'road surface' (citing 'Road').,
+KM-202426,Heritage Damage,Standard,The description refers to damage or issues in a 'heritage' or 'historic' site (citing 'Heritage').,
+KM-202430,Other,Standard,No primary keyword matched for: 'Road subsided near gas pipeline. Gas leak smell re...',NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The description refers to damage or issues in a 'heritage' or 'historic' site (citing 'Street').,
+KM-202436,Other,Standard,The description mentions a 'substation' trip which is ambiguous for Streetlight (citing 'Entire').,NEEDS_REVIEW
+KM-202438,Other,Standard,"The description mentions 'amplifiers' in a 'heritage precinct', causing ambiguity (citing 'Street').",NEEDS_REVIEW

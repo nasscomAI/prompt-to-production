@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description mentions water accumulation or 'flooded' (citing 'Underpass').,
+GH-202402,Other,Standard,"The description mentions 'flooded' and 'drain completely blocked', causing ambiguity (citing 'Market').",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description refers to a 'drain' blockage (citing 'Main').,
+GH-202407,Drain Blockage,Standard,The description refers to a 'drain' blockage (citing 'Drain').,
+GH-202410,Pothole,Standard,The description explicitly mentions 'pothole' (citing 'Potholes').,
+GH-202411,Pothole,Urgent,The description explicitly mentions 'pothole' (citing 'Pothole').,
+GH-202412,Pothole,Urgent,The description explicitly mentions 'pothole' (citing 'School').,
+GH-202417,Other,Standard,"The description mentions 'garbage overflow' in a 'heritage zone', causing ambiguity (citing 'Heritage').",NEEDS_REVIEW
+GH-202420,Noise,Standard,"The description reports excessive sound from 'music', 'drilling', or 'engines' (citing 'Construction').",
+GH-202422,Road Damage,Urgent,The description reports degradation of public pathways or 'road surface' (citing 'Road').,
+GH-202424,Flooding,Standard,The description mentions water accumulation or 'flooded' (citing 'Underpass').,
+GH-202428,Waste,Standard,"The description refers to 'garbage', 'waste', or 'dumped' material.",
+GH-202432,Noise,Standard,"The description reports excessive sound from 'music', 'drilling', or 'engines' (citing '24hr').",
+GH-202448,Drain Blockage,Standard,The description refers to a 'drain' blockage (citing 'Main').,
+GH-202438,Flooding,Standard,The description mentions water accumulation or 'flooded' (citing 'Colony').,

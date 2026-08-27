@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,The description reports hazard from high ambient 'temperature' or 'heatwave' (citing 'Tarmac').,
+AM-202402,Heat Hazard,Standard,The description reports hazard from high ambient 'temperature' or 'heatwave' (citing 'Metal').,
+AM-202405,Other,Standard,The description mentions 'dead trees' which is ambiguous and does not fit any primary category (citing 'Dead').,NEEDS_REVIEW
+AM-202406,Other,Standard,"The description mentions 'irrigation system broken' during a heatwave, causing ambiguity (citing 'Irrigation').",NEEDS_REVIEW
+AM-202407,Other,Urgent,The description mentions 'broken bench and upturned paving' which overlaps park furniture and Road Damage (citing 'Broken').,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description explicitly mentions 'pothole' (citing 'Pothole').,
+AM-202414,Streetlight,Standard,The description refers to 'streetlight' or lack of street illumination (citing 'Residential').,
+AM-202417,Other,Standard,"The description mentions 'waste' in a 'heritage area', creating ambiguity (citing 'Night').",NEEDS_REVIEW
+AM-202421,Noise,Standard,"The description reports excessive sound from 'music', 'drilling', or 'engines' (citing 'Club').",
+AM-202424,Road Damage,Standard,The description reports degradation of public pathways or 'road surface' (citing 'Zoo').,
+AM-202429,Heat Hazard,Standard,The description reports hazard from high ambient 'temperature' or 'heatwave' (citing 'River').,
+AM-202431,Road Damage,Standard,The description reports degradation of public pathways or 'road surface' (citing 'Old').,
+AM-202435,Heat Hazard,Standard,The description reports hazard from high ambient 'temperature' or 'heatwave' (citing 'Black').,
+AM-202444,Waste,Standard,"The description refers to 'garbage', 'waste', or 'dumped' material (citing 'Restaurant').",
+AM-202445,Other,Standard,"The description mentions a broken 'shelter' exposing users to sun, which is ambiguous (citing 'BRT').",NEEDS_REVIEW
