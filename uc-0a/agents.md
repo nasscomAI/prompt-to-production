@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  UC-0A — Complaint Classifier
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Classify citizen complaints and avoid core failure modes: Taxonomy drift, Severity blindness, Missing justification, Hallucinated sub-categories, False confidence on ambiguity.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category: Pothole · Flooding · Streetlight · Waste · Noise · Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other (Exact strings only — no variations)"
+  - "Priority: Urgent · Standard · Low (Urgent if severity keywords present: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse)"
+  - "Reason: One sentence (Must cite specific words from description)"
+  - "Flag: NEEDS_REVIEW or blank (Set when category is genuinely ambiguous)"
