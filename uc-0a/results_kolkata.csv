@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Category 'Heritage Damage' and priority 'Standard' assigned because the description contains the specific words: 'heritage'.,
+KM-202402,Road Damage,Standard,Category 'Road Damage' and priority 'Standard' assigned because the description contains the specific words: 'broken'.,
+KM-202405,Other,Standard,Category 'Other' and priority 'Standard' assigned because the description contains the specific words: 'ambiguous description'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Category 'Pothole' and priority 'Standard' assigned because the description contains the specific words: 'pothole'.,
+KM-202410,Pothole,Standard,Category 'Pothole' and priority 'Standard' assigned because the description contains the specific words: 'pothole'.,
+KM-202411,Other,Standard,"Category 'Other' and priority 'Standard' assigned because the description contains the specific words: 'water, pothole'.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Category 'Drain Blockage' and priority 'Standard' assigned because the description contains the specific words: 'drain'.,
+KM-202418,Waste,Standard,Category 'Waste' and priority 'Standard' assigned because the description contains the specific words: 'waste'.,
+KM-202421,Road Damage,Urgent,"Category 'Road Damage' and priority 'Urgent' assigned because the description contains the specific words: 'broken, hospital, fell, sinking'.",
+KM-202422,Road Damage,Standard,Category 'Road Damage' and priority 'Standard' assigned because the description contains the specific words: 'road surface'.,
+KM-202426,Heritage Damage,Standard,Category 'Heritage Damage' and priority 'Standard' assigned because the description contains the specific words: 'heritage'.,
+KM-202430,Other,Standard,Category 'Other' and priority 'Standard' assigned because the description contains the specific words: 'ambiguous description'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Category 'Heritage Damage' and priority 'Standard' assigned because the description contains the specific words: 'heritage'.,
+KM-202436,Streetlight,Standard,Category 'Streetlight' and priority 'Standard' assigned because the description contains the specific words: 'dark'.,
+KM-202438,Heritage Damage,Standard,Category 'Heritage Damage' and priority 'Standard' assigned because the description contains the specific words: 'heritage'.,

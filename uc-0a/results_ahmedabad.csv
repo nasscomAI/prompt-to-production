@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description matches the following rule-based keywords: 'ambiguous description'.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description matches the following rule-based keywords: 'ambiguous description'.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description matches the following rule-based keywords: 'ambiguous description'.,NEEDS_REVIEW
+AM-202406,Other,Standard,"The description matches the following rule-based keywords: 'heat, broken'.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"The description matches the following rule-based keywords: 'child, broken'.",
+AM-202410,Pothole,Standard,The description matches the following rule-based keywords: 'pothole'.,
+AM-202414,Other,Standard,The description matches the following rule-based keywords: 'ambiguous description'.,NEEDS_REVIEW
+AM-202417,Other,Standard,"The description matches the following rule-based keywords: 'waste, heritage'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,The description matches the following rule-based keywords: 'music'.,
+AM-202424,Road Damage,Standard,The description matches the following rule-based keywords: 'road surface'.,
+AM-202429,Other,Standard,The description matches the following rule-based keywords: 'ambiguous description'.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description matches the following rule-based keywords: 'heritage'.,
+AM-202435,Heat Hazard,Standard,The description matches the following rule-based keywords: 'heat'.,
+AM-202444,Waste,Standard,The description matches the following rule-based keywords: 'waste'.,
+AM-202445,Road Damage,Standard,The description matches the following rule-based keywords: 'broken'.,
