@@ -1,18 +1,14 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An AI agent responsible for classifying citizen complaints into specific categories and determining priority based on the complaint description.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Correctly classify each complaint into exactly one of the allowed categories, assign priority based on the presence of severity keywords, and provide a one-sentence reason citing specific words from the description.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent must only use the provided complaint description text. It must strictly exclude any external taxonomy or rules not explicitly provided below.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "Priority must be set to 'Urgent' if the description contains any of the following severity keywords: 'injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse'. Otherwise, Priority should be 'Standard' or 'Low'."
+  - "Reason must be exactly one sentence and must cite specific words from the description."
+  - "If the category is genuinely ambiguous, set 'flag' to 'NEEDS_REVIEW'. Otherwise, leave 'flag' blank."
