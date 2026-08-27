@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+KM-202401,Heritage lamp post knocked over by delivery vehicle. Not restored.,Streetlight,Standard,"Multiple categories matched (Streetlight, Heritage Damage). Defaulted to Streetlight.",NEEDS_REVIEW
+KM-202402,Historic tram road cobblestones broken up by cable laying work.,Road Damage,Standard,"Identified as Road Damage due to mentions of road, broken.",
+KM-202405,Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.,Other,Standard,The description does not clearly match any specific category.,NEEDS_REVIEW
+KM-202409,Airport access road full of potholes. Diplomatic complaint received.,Pothole,Standard,"Multiple categories matched (Pothole, Road Damage). Defaulted to Pothole.",NEEDS_REVIEW
+KM-202410,Pothole causing tyre blowouts. Three incidents this week.,Pothole,Low,Identified as Pothole due to mentions of pothole.,
+KM-202411,Deep pothole filling with rainwater. Depth invisible. Accident risk.,Pothole,Standard,"Multiple categories matched (Pothole, Flooding). Defaulted to Pothole.",NEEDS_REVIEW
+KM-202415,New residential complex draining directly onto public road.,Road Damage,Standard,"Multiple categories matched (Road Damage, Drain Blockage). Defaulted to Road Damage.",NEEDS_REVIEW
+KM-202418,Tourist zone waste overflowing. Foreign visitors photographing piles.,Waste,Low,"Multiple categories matched (Waste, Heat Hazard). Defaulted to Waste.",NEEDS_REVIEW
+KM-202421,Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.,Pothole,Urgent,"Multiple categories matched (Pothole, Road Damage). Defaulted to Pothole. Priority set to Urgent due to keywords: hospital, fell.",NEEDS_REVIEW
+KM-202422,Road surface buckled near bridge. Structural concern raised.,Road Damage,Standard,Identified as Road Damage due to mentions of road.,
+KM-202426,Heritage residential building exterior defaced by billboard installation.,Heritage Damage,Standard,Identified as Heritage Damage due to mentions of heritage.,
+KM-202430,Road subsided near gas pipeline. Gas leak smell reported too.,Road Damage,Standard,Identified as Road Damage due to mentions of road.,
+KM-202434,Street paving removed for utility work — heritage stone not replaced.,Heritage Damage,Standard,Identified as Heritage Damage due to mentions of heritage.,
+KM-202436,Entire colony substation tripped. Darkness for 3 nights.,Streetlight,Standard,Identified as Streetlight due to mentions of dark.,
+KM-202438,Street vendors using amplifiers illegally in heritage precinct.,Heritage Damage,Standard,Identified as Heritage Damage due to mentions of heritage.,

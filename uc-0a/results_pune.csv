@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+PM-202401,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Standard,Identified as Pothole due to mentions of pothole.,
+PM-202402,Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,"Identified as Pothole due to mentions of pothole. Priority set to Urgent due to keywords: child, school.",
+PM-202406,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Standard,Identified as Flooding due to mentions of flood.,
+PM-202408,Bus stand flooded. Passengers standing in water. Drain blocked.,Flooding,Standard,"Multiple categories matched (Flooding, Drain Blockage). Defaulted to Flooding.",NEEDS_REVIEW
+PM-202410,Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,"Identified as Streetlight due to mentions of light, dark.",
+PM-202411,Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,Identified as Streetlight due to mentions of light. Priority set to Urgent due to keywords: hazard.,
+PM-202413,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Waste,Low,Identified as Waste due to mentions of garbage.,
+PM-202418,Wedding venue playing music past midnight on weeknights.,Other,Standard,The description does not clearly match any specific category.,NEEDS_REVIEW
+PM-202419,Road surface cracked and sinking near utility work done 1 month ago.,Road Damage,Standard,"Identified as Road Damage due to mentions of road, crack.",
+PM-202420,Manhole cover missing. Risk of serious injury to cyclists.,Other,Urgent,The description does not clearly match any specific category. Priority set to Urgent due to keywords: injury.,NEEDS_REVIEW
+PM-202427,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Standard,Identified as Flooding due to mentions of flood.,
+PM-202428,Dead animal not removed for 36 hours. Health concern.,Other,Standard,The description does not clearly match any specific category.,NEEDS_REVIEW
+PM-202430,"Heritage street, lights out. Safety concern for pedestrians after dark.",Streetlight,Standard,"Multiple categories matched (Streetlight, Heritage Damage). Defaulted to Streetlight.",NEEDS_REVIEW
+PM-202433,Bulk waste from apartment renovation dumped on public road.,Waste,Standard,"Multiple categories matched (Waste, Road Damage). Defaulted to Waste.",NEEDS_REVIEW
+PM-202446,Footpath tiles broken and upturned. Elderly resident fell last week.,Road Damage,Urgent,Identified as Road Damage due to mentions of broken. Priority set to Urgent due to keywords: fell.,

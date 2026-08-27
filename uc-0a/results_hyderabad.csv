@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+GH-202401,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,Flooding,Urgent,Identified as Flooding due to mentions of flood. Priority set to Urgent due to keywords: ambulance.,
+GH-202402,Market area flooded. Traders suffering losses. Drain completely blocked.,Flooding,Standard,"Multiple categories matched (Flooding, Drain Blockage). Defaulted to Flooding.",NEEDS_REVIEW
+GH-202406,Main stormwater drain 100% blocked with construction debris.,Flooding,Standard,"Multiple categories matched (Flooding, Drain Blockage). Defaulted to Flooding.",NEEDS_REVIEW
+GH-202407,Drain blocked and mosquito breeding. Dengue concern.,Drain Blockage,Standard,"Identified as Drain Blockage due to mentions of drain, block.",
+GH-202410,Potholes causing vehicles to slow to 20kmph on fast road.,Pothole,Low,"Multiple categories matched (Pothole, Road Damage). Defaulted to Pothole.",NEEDS_REVIEW
+GH-202411,Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Pothole,Urgent,"Identified as Pothole due to mentions of pothole, pit. Priority set to Urgent due to keywords: hospital.",
+GH-202412,School bus struggling to navigate 6 potholes in 200m stretch.,Pothole,Urgent,Identified as Pothole due to mentions of pothole. Priority set to Urgent due to keywords: school.,
+GH-202417,Heritage zone garbage overflow. Tourist photographs showing piles of waste.,Waste,Low,"Multiple categories matched (Waste, Heritage Damage, Heat Hazard). Defaulted to Waste.",NEEDS_REVIEW
+GH-202420,Construction drilling from 5am daily near residential towers.,Other,Standard,The description does not clearly match any specific category.,NEEDS_REVIEW
+GH-202422,Road collapsed partially. Crater 1m deep near residential gate.,Road Damage,Urgent,Identified as Road Damage due to mentions of road. Priority set to Urgent due to keywords: collapse.,
+GH-202424,Underpass floods in light rain. Cars regularly abandoned.,Flooding,Standard,"Multiple categories matched (Flooding, Streetlight). Defaulted to Flooding.",NEEDS_REVIEW
+GH-202428,Post-market waste not cleared. Area unusable by Sunday morning.,Waste,Standard,"Multiple categories matched (Waste, Heat Hazard). Defaulted to Waste.",NEEDS_REVIEW
+GH-202432,24hr supermarket delivery trucks idling with engines on.,Other,Standard,The description does not clearly match any specific category.,NEEDS_REVIEW
+GH-202448,Main drain blocked — entire locality at flooding risk this week.,Flooding,Standard,"Multiple categories matched (Flooding, Drain Blockage). Defaulted to Flooding.",NEEDS_REVIEW
+GH-202438,Colony surrounded by fields that channel rainwater through main road.,Flooding,Standard,"Multiple categories matched (Flooding, Road Damage). Defaulted to Flooding.",NEEDS_REVIEW
