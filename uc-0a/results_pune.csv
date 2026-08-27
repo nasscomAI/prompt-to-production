@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Contains ""pothole"" indicating Pothole category. Standard priority.",
+PM-202402,Pothole,Urgent,"Contains ""pothole"" indicating Pothole category. contains severity keywords ""child"", ""school"" requiring Urgent priority.",
+PM-202406,Flooding,Standard,"Contains ""flood"" indicating Flooding category. Standard priority.",
+PM-202408,Flooding,Standard,"Multiple categories detected: Flooding, Drain Blockage",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Contains ""streetlight"" indicating Streetlight category. Standard priority.",
+PM-202411,Streetlight,Urgent,"Contains ""Streetlight"" indicating Streetlight category. contains severity keywords ""hazard"" requiring Urgent priority.",
+PM-202413,Waste,Standard,"Contains ""garbage"" indicating Waste category. Standard priority.",
+PM-202418,Noise,Standard,"Contains ""music"" indicating Noise category. Standard priority.",
+PM-202419,Road Damage,Standard,"Contains ""Road"" indicating Road Damage category. Standard priority.",
+PM-202420,Road Damage,Urgent,"Contains ""Manhole"" indicating Road Damage category. contains severity keywords ""injury"" requiring Urgent priority.",
+PM-202427,Flooding,Standard,"Contains ""flood"" indicating Flooding category. Standard priority.",
+PM-202428,Other,Low,Description does not match known complaint categories,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Multiple categories detected: Streetlight, Heritage Damage",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Multiple categories detected: Waste, Road Damage",NEEDS_REVIEW
+PM-202446,Road Damage,Urgent,"Contains ""Footpath"" indicating Road Damage category. contains severity keywords ""fell"" requiring Urgent priority.",
