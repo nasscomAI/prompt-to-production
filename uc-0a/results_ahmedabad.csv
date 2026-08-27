@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Multiple or zero categories were matched when evaluating 'Tarmac surface melting at 44°C. Footwear sticking. Park...'.,NEEDS_REVIEW
+AM-202402,Other,Standard,Multiple or zero categories were matched when evaluating 'Metal bus shelter reaching dangerous temperatures. Commuters refusing...'.,NEEDS_REVIEW
+AM-202405,Other,Standard,Multiple or zero categories were matched when evaluating 'Dead trees with split branches. Fall risk to...'.,NEEDS_REVIEW
+AM-202406,Other,Standard,Multiple or zero categories were matched when evaluating 'Irrigation system broken. Grass dying in heatwave conditions....'.,NEEDS_REVIEW
+AM-202407,Other,Urgent,Multiple or zero categories were matched when evaluating 'Broken bench and upturned paving. Child injured last...'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because the description specifically cited relevant structural issues.,
+AM-202414,Other,Standard,Multiple or zero categories were matched when evaluating 'Residential colony unlit after 9pm. Wiring theft reported....'.,NEEDS_REVIEW
+AM-202417,Other,Standard,Multiple or zero categories were matched when evaluating 'Night market waste not cleared before morning. Heritage...'.,NEEDS_REVIEW
+AM-202421,Other,Standard,Multiple or zero categories were matched when evaluating 'Club music audible at residential buildings at 2am....'.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Classified as Road Damage because the description specifically cited relevant structural issues.,
+AM-202429,Other,Standard,Multiple or zero categories were matched when evaluating 'River walk surface temperature unbearable. Installed temperature reads...'.,NEEDS_REVIEW
+AM-202431,Other,Standard,Multiple or zero categories were matched when evaluating 'Old city road subsidence near ancient step well....'.,NEEDS_REVIEW
+AM-202435,Other,Standard,Multiple or zero categories were matched when evaluating 'Black metal road dividers storing heat. Motorists reporting...'.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Classified as Waste because the description specifically cited relevant structural issues.,
+AM-202445,Other,Standard,Multiple or zero categories were matched when evaluating 'BRT shelter roof glass broken. Users exposed to...'.,NEEDS_REVIEW

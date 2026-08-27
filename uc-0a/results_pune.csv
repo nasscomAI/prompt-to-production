@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description specifically cited relevant structural issues.,
+PM-202402,Pothole,Urgent,Classified as Pothole because the description specifically cited relevant structural issues.,
+PM-202406,Other,Standard,Multiple or zero categories were matched when evaluating 'Underpass flooded knee-deep after 2hrs rain. Commuters stranded....'.,NEEDS_REVIEW
+PM-202408,Other,Standard,Multiple or zero categories were matched when evaluating 'Bus stand flooded. Passengers standing in water. Drain...'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight because the description specifically cited relevant structural issues.,
+PM-202411,Other,Urgent,Multiple or zero categories were matched when evaluating 'Streetlight flickering and sparking. Electrical hazard reported....'.,NEEDS_REVIEW
+PM-202413,Waste,Standard,Classified as Waste because the description specifically cited relevant structural issues.,
+PM-202418,Other,Standard,Multiple or zero categories were matched when evaluating 'Wedding venue playing music past midnight on weeknights....'.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Classified as Road Damage because the description specifically cited relevant structural issues.,
+PM-202420,Other,Urgent,Multiple or zero categories were matched when evaluating 'Manhole cover missing. Risk of serious injury to...'.,NEEDS_REVIEW
+PM-202427,Other,Standard,Multiple or zero categories were matched when evaluating 'Bridge approach floods in 30mins of rain. Bridge...'.,NEEDS_REVIEW
+PM-202428,Other,Standard,Multiple or zero categories were matched when evaluating 'Dead animal not removed for 36 hours. Health...'.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Multiple or zero categories were matched when evaluating 'Heritage street, lights out. Safety concern for pedestrians...'.",NEEDS_REVIEW
+PM-202433,Other,Standard,Multiple or zero categories were matched when evaluating 'Bulk waste from apartment renovation dumped on public...'.,NEEDS_REVIEW
+PM-202446,Other,Urgent,Multiple or zero categories were matched when evaluating 'Footpath tiles broken and upturned. Elderly resident fell...'.,NEEDS_REVIEW

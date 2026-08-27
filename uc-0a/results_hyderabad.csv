@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,Multiple or zero categories were matched when evaluating 'Underpass flooded after 1hr rain. Ambulance diverted. Lives...'.,NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage because the description specifically cited relevant structural issues.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage because the description specifically cited relevant structural issues.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage because the description specifically cited relevant structural issues.,
+GH-202410,Road Damage,Standard,Classified as Road Damage because the description specifically cited relevant structural issues.,
+GH-202411,Pothole,Urgent,Classified as Pothole because the description specifically cited relevant structural issues.,
+GH-202412,Other,Urgent,Multiple or zero categories were matched when evaluating 'School bus struggling to navigate 6 potholes in...'.,NEEDS_REVIEW
+GH-202417,Other,Standard,Multiple or zero categories were matched when evaluating 'Heritage zone garbage overflow. Tourist photographs showing piles...'.,NEEDS_REVIEW
+GH-202420,Other,Standard,Multiple or zero categories were matched when evaluating 'Construction drilling from 5am daily near residential towers....'.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Classified as Road Damage because the description specifically cited relevant structural issues.,
+GH-202424,Streetlight,Standard,Classified as Streetlight because the description specifically cited relevant structural issues.,
+GH-202428,Waste,Standard,Classified as Waste because the description specifically cited relevant structural issues.,
+GH-202432,Other,Standard,Multiple or zero categories were matched when evaluating '24hr supermarket delivery trucks idling with engines on....'.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage because the description specifically cited relevant structural issues.,
+GH-202438,Road Damage,Standard,Classified as Road Damage because the description specifically cited relevant structural issues.,
