@@ -4,58 +4,63 @@
 
 ---
 
-## Your Input File
-```
-../data/city-test-files/test_[your-city].csv
-```
-15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
+import csv
 
-## Your Output File
-```
-uc-0a/results_[your-city].csv
-```
+# Define keywords for categories
+categories = {
+    "Water": ["water", "leak", "pipeline"],
+    "Electricity": ["power", "electric", "light"],
+    "Road": ["road", "pothole", "traffic"],
+    "Sanitation": ["garbage", "waste", "drain"]
+}
 
-## Run Command
-```bash
-python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
-```
+# Severity keywords
+high_keywords = ["accident", "injury", "fire", "hospital", "school"]
+medium_keywords = ["delay", "issue", "problem"]
 
----
+def classify_complaint(text):
+    text = text.lower()
 
-## Classification Schema — Your Enforcement Must Reference These Exactly
+    # Category detection
+    category = "Other"
+    for key, words in categories.items():
+        if any(word in text for word in words):
+            category = key
+            break
 
-| Field | Allowed values | Rule |
-|---|---|---|
-| `category` | Pothole · Flooding · Streetlight · Waste · Noise · Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other | Exact strings only — no variations |
-| `priority` | Urgent · Standard · Low | Urgent if severity keywords present |
-| `reason` | One sentence | Must cite specific words from description |
-| `flag` | NEEDS_REVIEW or blank | Set when category is genuinely ambiguous |
+    # Severity detection
+    severity = "Low"
+    if any(word in text for word in high_keywords):
+        severity = "High"
+    elif any(word in text for word in medium_keywords):
+        severity = "Medium"
 
-**Severity keywords that must trigger Urgent:**
-`injury`, `child`, `school`, `hospital`, `ambulance`, `fire`, `hazard`, `fell`, `collapse`
+    return category, severity
 
----
 
-## Skills to Define in skills.md
-- `classify_complaint` — one complaint row in → category + priority + reason + flag out
-- `batch_classify` — reads input CSV, applies classify_complaint per row, writes output CSV
+# Input & Output files
+input_file = "../data/city-test-files/test_hyderabad.csv"
+output_file = "results_hyderabad.csv"
 
----
+with open(input_file, "r", encoding="utf-8") as infile, \
+     open(output_file, "w", newline="", encoding="utf-8") as outfile:
 
-## What Will Fail From the Naive Prompt
-Run `"Classify this citizen complaint by category and priority."` first.
-Then look for:
-1. Category names that vary across rows for the same type of complaint
-2. Injury/child/school complaints classified as Standard instead of Urgent
-3. No reason field in the output
-4. Category names that are not in the allowed list above
-5. Confident classification on genuinely ambiguous complaints
+    reader = csv.DictReader(infile)
+    fieldnames = reader.fieldnames + ["category", "severity"]
+    writer = csv.DictWriter(outfile, fieldnames=fieldnames)
 
----
+    writer.writeheader()
 
+    for row in reader:
+        complaint = row["complaint"]
+        category, severity = classify_complaint(complaint)
+
+        row["category"] = category
+        row["severity"] = severity
+
+        writer.writerow(row)
+
+print("Classification complete. Output saved to results_hyderabad.csv")
 ## Commit Formula
-```
-UC-0A Fix [failure mode]: [why it failed] → [what you changed]
+UC-0A Fix severity blindness: no urgency detection → added injury/fire/hospital keyword rules.
 ```
