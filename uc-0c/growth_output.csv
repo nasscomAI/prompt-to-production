@@ -1,0 +1,13 @@
+period|ward|category|value|formula(MoM)
+2024-01|Ward 1 – Kasba|Roads & Pothole Repair|n/a (MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100; no prior month)|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-02|Ward 1 – Kasba|Roads & Pothole Repair|-8.3%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-03|Ward 1 – Kasba|Roads & Pothole Repair|0.8%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-04|Ward 1 – Kasba|Roads & Pothole Repair|8.9%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-05|Ward 1 – Kasba|Roads & Pothole Repair|5.2%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-06|Ward 1 – Kasba|Roads & Pothole Repair|5.0%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-07|Ward 1 – Kasba|Roads & Pothole Repair|33.1%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-08|Ward 1 – Kasba|Roads & Pothole Repair|2.5%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-09|Ward 1 – Kasba|Roads & Pothole Repair|-0.5%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-10|Ward 1 – Kasba|Roads & Pothole Repair|-34.8%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-11|Ward 1 – Kasba|Roads & Pothole Repair|8.4%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
+2024-12|Ward 1 – Kasba|Roads & Pothole Repair|-10.6%|FORMULA: MoM = (actual_spend[current month] - actual_spend[previous month]) / actual_spend[previous month] * 100
