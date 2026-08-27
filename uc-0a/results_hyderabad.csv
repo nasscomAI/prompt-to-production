@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description contains 'flooded'.,
+GH-202402,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202406,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Description contains 'drain blocked'.,
+GH-202410,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202411,Pothole,Standard,Description contains 'pothole'.,
+GH-202412,Other,Urgent,No category keyword found in description.,NEEDS_REVIEW
+GH-202417,Heritage Damage,Standard,"Description contains 'heritage', best match is Heritage Damage.",NEEDS_REVIEW
+GH-202420,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202422,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202424,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Description contains 'waste'.,
+GH-202432,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Description contains 'drain blocked'.,
+GH-202438,Other,Standard,No category keyword found in description.,NEEDS_REVIEW
