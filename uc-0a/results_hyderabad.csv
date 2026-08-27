@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions 'flood' indicating Flooding, and contains severity keyword(s) 'ambulance' triggering Urgent priority.",
+GH-202402,Flooding,Standard,Description mentions 'flood' indicating Flooding.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Description mentions 'drain' indicating Drain Blockage.,
+GH-202407,Drain Blockage,Standard,Description mentions 'drain' indicating Drain Blockage.,
+GH-202410,Pothole,Standard,Description mentions 'pothole' indicating Pothole.,
+GH-202411,Pothole,Urgent,"Description mentions 'pothole' indicating Pothole, and contains severity keyword(s) 'hospital' triggering Urgent priority.",
+GH-202412,Pothole,Urgent,"Description mentions 'pothole' indicating Pothole, and contains severity keyword(s) 'school' triggering Urgent priority.",
+GH-202417,Waste,Standard,Description mentions 'waste' indicating Waste.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Description mentions 'drilling' indicating Noise.,
+GH-202422,Road Damage,Urgent,"Description mentions 'road collapsed' indicating Road Damage, and contains severity keyword(s) 'collapse' triggering Urgent priority.",
+GH-202424,Flooding,Standard,Description mentions 'flood' indicating Flooding.,
+GH-202428,Waste,Standard,Description mentions 'waste' indicating Waste.,
+GH-202432,Noise,Standard,Description mentions 'idling' indicating Noise.,
+GH-202448,Flooding,Standard,Description mentions 'flood' indicating Flooding.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Description mentions 'rainwater' indicating Flooding.,
