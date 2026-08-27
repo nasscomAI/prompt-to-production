@@ -1,16 +1,4 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Document Q&A Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- `retrieve_documents() -> dict`: Loads and segments the provided policy files (`policy_hr_leave.txt`, `policy_it_acceptable_use.txt`, `policy_finance_reimbursement.txt`) into section-indexed content for precise retrieval.
+- `answer_question(query: str, indexed_docs: dict) -> str`: Analyzes the query, identifies the single most relevant source, and provides an answer citing the document and section number. It returns the refusal template if the answer is multiple-sourced or not in the documents.

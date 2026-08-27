@@ -1,18 +1,4 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Policy Summary Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+- `PolicySummaryAgent`: A high-precision extraction agent that summarizes policy documents. It is programmed to identify and preserve all numbered clauses, especially those with multiple binding conditions. It avoids "scope bleed" by strictly adhering to the source text.
+- `ComplianceAuditor`: (Internal) Ensures that all 10 mandatory clauses (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) are present in the final output with their original binding verbs.

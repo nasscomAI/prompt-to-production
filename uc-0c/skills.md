@@ -1,16 +1,4 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Budget Analysis Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- `load_dataset(file_path: str) -> list`: Loads the CSV budget data, validates the presence of required columns (period, ward, category, budgeted_amount, actual_spend), and identifies/reports the count and locations of null `actual_spend` values.
+- `compute_growth(data: list, ward: str, category: str, growth_type: str) -> list`: Performs period-over-period growth calculations based on the specified `growth_type` (e.g., 'MoM'). It returns a table including the original data, the calculated growth, and the formula used. It explicitly flags null rows with the reason from the notes column.
