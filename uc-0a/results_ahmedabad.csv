@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description states 'Park users unsafe' due to 'Tarmac surface melting at 44°C', which indicates a heat-caused danger to people.",
+AM-202402,Heat Hazard,Standard,Metal bus shelter reaching dangerous temperatures.,
+AM-202405,Other,Standard,The description mentions 'Fall risk to walkers' which indicates a concern but does not fit into the specified categories.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,Grass dying in heatwave conditions.,
+AM-202407,Road Damage,Urgent,The description states 'Child injured last week' which indicates a serious concern related to the broken bench and upturned paving.,
+AM-202410,Pothole,Standard,Pothole on main highway causing morning rush lane closure.,
+AM-202414,Streetlight,Standard,Residential colony unlit after 9pm connects to the classification of Streetlight due to lighting failure.,
+AM-202417,Waste,Standard,Night market waste not cleared before morning.,
+AM-202421,Noise,Standard,Club music audible at residential buildings at 2am connects to the classification of Noise due to the disturbance caused to residents.,
+AM-202424,Heat Hazard,Standard,Zoo approach road surface bubbling at 45°C.,
+AM-202429,Heat Hazard,Standard,"The description states that the ""surface temperature unbearable"" and ""temperature reads 52°C,"" indicating a heat-caused danger to people.",
+AM-202431,Road Damage,Standard,Old city road subsidence near ancient step well.,
+AM-202435,Heat Hazard,Standard,Motorists reporting burns on contact.,
+AM-202444,Waste,Standard,Restaurant waste bins overflowing on Sunday night.,
+AM-202445,Other,Low,Users exposed to full sun.,NEEDS_REVIEW
