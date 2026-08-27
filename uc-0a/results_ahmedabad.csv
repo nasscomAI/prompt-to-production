@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"The description mentions tarmac, surface, melting and supports the Other category with standard priority.",NEEDS_REVIEW
+AM-202402,Other,Standard,"The description mentions metal, shelter, reaching and supports the Other category with standard priority.",NEEDS_REVIEW
+AM-202405,Other,Standard,"The description mentions trees, split, branches and supports the Other category with standard priority.",NEEDS_REVIEW
+AM-202406,Other,Standard,"The description mentions irrigation, system, broken and supports the Other category with standard priority.",NEEDS_REVIEW
+AM-202407,Other,Urgent,"The description mentions broken, bench, upturned and supports the Other category with urgent priority.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The description mentions pothole, highway, causing and supports the Pothole category with standard priority.",
+AM-202414,Other,Standard,"The description mentions residential, colony, unlit and supports the Other category with standard priority.",NEEDS_REVIEW
+AM-202417,Waste,Standard,"The description mentions night, market, waste and supports the Waste category with standard priority.",
+AM-202421,Noise,Standard,"The description mentions music, audible, residential and supports the Noise category with standard priority.",
+AM-202424,Road Damage,Standard,"The description mentions approach, road, surface and supports the Road Damage category with standard priority.",
+AM-202429,Heat Hazard,Standard,"The description mentions river, surface, temperature and supports the Heat Hazard category with standard priority.",
+AM-202431,Road Damage,Standard,"The description mentions road, subsidence, ancient and supports the Road Damage category with standard priority.",
+AM-202435,Road Damage,Standard,"The description mentions black, metal, road and supports the Road Damage category with standard priority.",
+AM-202444,Waste,Standard,"The description mentions restaurant, waste, overflowing and supports the Waste category with standard priority.",
+AM-202445,Other,Standard,"The description mentions shelter, glass, broken and supports the Other category with standard priority.",NEEDS_REVIEW

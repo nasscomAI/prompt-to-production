@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions pothole, causing, damage and supports the Pothole category with standard priority.",
+PM-202402,Pothole,Urgent,"The description mentions pothole, school, children and supports the Pothole category with urgent priority.",
+PM-202406,Flooding,Standard,"The description mentions underpass, flooded, commuters and supports the Flooding category with standard priority.",
+PM-202408,Flooding,Standard,"The description mentions stand, flooded, passengers and supports the Flooding category with standard priority.",
+PM-202410,Other,Standard,"The description mentions three, consecutive, streetlights and supports the Other category with standard priority.",NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"The description mentions streetlight, flickering, sparking and supports the Streetlight category with urgent priority.",
+PM-202413,Waste,Standard,"The description mentions overflowing, garbage, vegetable and supports the Waste category with standard priority.",
+PM-202418,Noise,Standard,"The description mentions wedding, venue, playing and supports the Noise category with standard priority.",
+PM-202419,Road Damage,Standard,"The description mentions road, surface, cracked and supports the Road Damage category with standard priority.",
+PM-202420,Drain Blockage,Urgent,"The description mentions manhole, cover, missing and supports the Drain Blockage category with urgent priority.",
+PM-202427,Flooding,Standard,"The description mentions bridge, approach, floods and supports the Flooding category with standard priority.",
+PM-202428,Other,Standard,"The description mentions animal, removed, health and supports the Other category with standard priority.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions heritage, street, lights and supports the Heritage Damage category with standard priority.",
+PM-202433,Waste,Standard,"The description mentions waste, apartment, renovation and supports the Waste category with standard priority.",
+PM-202446,Road Damage,Urgent,"The description mentions footpath, tiles, broken and supports the Road Damage category with urgent priority.",

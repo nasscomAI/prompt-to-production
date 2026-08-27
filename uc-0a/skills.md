@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies one civic complaint into the UC-0A schema.
+    input: A dictionary-like row with at least a description field and optionally a complaint_id.
+    output: A dictionary with complaint_id, category, priority, reason, and flag.
+    error_handling: Returns Other, Low, and NEEDS_REVIEW when the description is empty or ambiguous.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads a CSV of complaints and writes a classified results CSV.
+    input: A path to an input CSV file and a path to an output CSV file.
+    output: A CSV file containing one classified row per input row.
+    error_handling: Continues processing even if one row fails and writes a fallback result for that row.

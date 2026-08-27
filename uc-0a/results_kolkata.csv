@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The description mentions heritage, knocked, delivery and supports the Heritage Damage category with standard priority.",
+KM-202402,Road Damage,Standard,"The description mentions historic, road, cobblestones and supports the Road Damage category with standard priority.",
+KM-202405,Other,Standard,"The description mentions wedding, playing, tagore and supports the Other category with standard priority.",NEEDS_REVIEW
+KM-202409,Road Damage,Standard,"The description mentions airport, access, road and supports the Road Damage category with standard priority.",
+KM-202410,Pothole,Standard,"The description mentions pothole, causing, blowouts and supports the Pothole category with standard priority.",
+KM-202411,Pothole,Standard,"The description mentions pothole, filling, rainwater and supports the Pothole category with standard priority.",
+KM-202415,Road Damage,Standard,"The description mentions residential, complex, draining and supports the Road Damage category with standard priority.",
+KM-202418,Waste,Standard,"The description mentions tourist, waste, overflowing and supports the Waste category with standard priority.",
+KM-202421,Road Damage,Urgent,"The description mentions footpath, broken, sinking and supports the Road Damage category with urgent priority.",
+KM-202422,Road Damage,Standard,"The description mentions road, surface, buckled and supports the Road Damage category with standard priority.",
+KM-202426,Heritage Damage,Standard,"The description mentions heritage, residential, building and supports the Heritage Damage category with standard priority.",
+KM-202430,Road Damage,Standard,"The description mentions road, subsided, pipeline and supports the Road Damage category with standard priority.",
+KM-202434,Heritage Damage,Standard,"The description mentions street, paving, removed and supports the Heritage Damage category with standard priority.",
+KM-202436,Other,Standard,"The description mentions entire, colony, substation and supports the Other category with standard priority.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The description mentions street, vendors, using and supports the Heritage Damage category with standard priority.",
