@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description contains: lamp post, heritage",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Description contains: broken,
+KM-202405,Other,Standard,"Complaint about other: ""Wedding band playing near Tagore Museum at 11pm""",
+KM-202409,Pothole,Standard,Description contains: pothole,
+KM-202410,Pothole,Standard,Description contains: pothole,
+KM-202411,Pothole,Standard,Description contains: pothole,
+KM-202415,Drain Blockage,Standard,Description contains: drain,
+KM-202418,Waste,Standard,Description contains: waste,
+KM-202421,Road Damage,Urgent,"Description contains: hospital, fell, sinking",
+KM-202422,Road Damage,Standard,Description contains: road surface,
+KM-202426,Heritage Damage,Standard,Description contains: heritage,
+KM-202430,Waste,Standard,Description contains: smell,
+KM-202434,Heritage Damage,Standard,Description contains: heritage,
+KM-202436,Other,Standard,"Complaint about other: ""Entire colony substation tripped""",
+KM-202438,Heritage Damage,Standard,Description contains: heritage,
