@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description contains keyword 'pothole',
+PM-202402,Pothole,Urgent,Description contains keyword 'pothole'; severity keyword 'child' detected,
+PM-202406,Flooding,Standard,Description contains keyword 'flood',
+PM-202408,Flooding,Standard,Description contains keyword 'flood',
+PM-202410,Streetlight,Standard,Description mentions streetlight issue,
+PM-202411,Streetlight,Urgent,Description mentions streetlight issue; severity keyword 'hazard' detected,
+PM-202413,Waste,Standard,Description contains keyword 'garbage',
+PM-202418,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202419,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202420,Other,Urgent,No known category keywords detected; severity keyword 'injury' detected,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description contains keyword 'flood',
+PM-202428,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202430,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+PM-202433,Waste,Standard,Description contains keyword 'garbage',
+PM-202446,Other,Urgent,No known category keywords detected; severity keyword 'fell' detected,NEEDS_REVIEW

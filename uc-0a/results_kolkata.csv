@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202402,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202405,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description contains keyword 'pothole',
+KM-202410,Pothole,Standard,Description contains keyword 'pothole',
+KM-202411,Pothole,Standard,Description contains keyword 'pothole',
+KM-202415,Drain Blockage,Standard,Description mentions drain blockage,
+KM-202418,Waste,Standard,Description contains keyword 'garbage',
+KM-202421,Other,Urgent,No known category keywords detected; severity keyword 'hospital' detected,NEEDS_REVIEW
+KM-202422,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202426,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202430,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202434,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202436,Other,Standard,No known category keywords detected,NEEDS_REVIEW
+KM-202438,Other,Standard,No known category keywords detected,NEEDS_REVIEW
