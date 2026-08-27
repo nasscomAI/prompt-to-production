@@ -1,0 +1,27 @@
+============================================================
+HR LEAVE POLICY SUMMARY
+Source: policy_hr_leave.txt
+============================================================
+
+
+[MUST] Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+
+[MUST] Clause 2.4: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
+
+[WILL] Clause 2.5: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+
+[MAY] Clause 2.6: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+  ⚠ Both conditions required: max 5 days AND forfeited 31 Dec
+
+[MUST] Clause 2.7: Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.   3. SICK LEAVE
+
+[REQUIRES] Clause 3.2: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+
+[REQUIRES] Clause 3.4: Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.   4. MATERNITY AND PATERNITY LEAVE
+
+[REQUIRES] Clause 5.2: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+  ⚠ Both approvers required: Department Head AND HR Director
+
+[REQUIRES] Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+
+[NOT PERMITTED] Clause 7.2: Leave encashment during service is not permitted under any circumstances.
