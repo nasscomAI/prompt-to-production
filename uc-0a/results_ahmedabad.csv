@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description contains heat-related conditions such as high temperature or heatwave, indicating Heat Hazard.",
+AM-202402,Heat Hazard,Standard,"The description contains heat-related conditions such as high temperature or heatwave, indicating Heat Hazard.",
+AM-202405,Other,Standard,The description does not contain enough category-specific information to determine a category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description contains heat-related conditions such as high temperature or heatwave, indicating Heat Hazard.",
+AM-202407,Road Damage,Urgent,"The description contains road or paving damage, indicating Road Damage.",
+AM-202410,Pothole,Standard,"The description contains ""pothole"", indicating Pothole.",
+AM-202414,Streetlight,Standard,"The description contains streetlight-related terms such as ""streetlight"", ""lights out"", or ""unlit"", indicating Streetlight.",
+AM-202417,Waste,Standard,"The description contains a waste-related term, indicating Waste.",
+AM-202421,Noise,Standard,"The description contains a noise-related term such as music, amplifiers, or loud sound, indicating Noise.",
+AM-202424,Heat Hazard,Standard,"The description contains heat-related conditions such as high temperature or heatwave, indicating Heat Hazard.",
+AM-202429,Heat Hazard,Standard,"The description contains heat-related conditions such as high temperature or heatwave, indicating Heat Hazard.",
+AM-202431,Heritage Damage,Standard,"The description contains heritage-related terms such as ""heritage"", ""historic"", or ""heritage stone"", indicating Heritage Damage.",
+AM-202435,Heat Hazard,Standard,"The description contains heat-related conditions such as high temperature or heatwave, indicating Heat Hazard.",
+AM-202444,Waste,Standard,"The description contains a waste-related term, indicating Waste.",
+AM-202445,Other,Standard,The description does not contain enough category-specific information to determine a category.,NEEDS_REVIEW
