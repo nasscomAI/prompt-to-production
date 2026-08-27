@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description cites a 'Large pothole' causing tyre damage.,
+PM-202402,Pothole,Urgent,The description mentions 'school children at risk' near a 'Deep pothole'.,
+PM-202406,Flooding,Standard,The description cites the underpass being 'flooded knee-deep'.,
+PM-202408,Other,Standard,"The description reports the bus stand is 'flooded' and the 'Drain blocked', making the primary category ambiguous.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description reports three 'streetlights out' leaving the area dark.,
+PM-202411,Streetlight,Urgent,The description reports a 'Streetlight flickering and sparking' representing an electrical 'hazard'.,
+PM-202413,Waste,Standard,The description cites 'Overflowing garbage bins' near the vegetable market.,
+PM-202418,Noise,Standard,The description reports a wedding venue 'playing music past midnight'.,
+PM-202419,Road Damage,Standard,The description reports the 'Road surface cracked and sinking'.,
+PM-202420,Other,Urgent,"The description reports a missing 'Manhole cover' with risk of serious 'injury', which does not fit standard categories.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description reports that the bridge approach 'floods' in rain.,
+PM-202428,Other,Standard,A 'Dead animal' is ambiguous between waste and other health concerns.,NEEDS_REVIEW
+PM-202430,Other,Standard,"The description cites 'Heritage street' and 'lights out', which presents ambiguity between streetlight and heritage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,The description cites 'Bulk waste' dumped on a public road.,
+PM-202446,Road Damage,Urgent,The description reports 'Footpath tiles broken and upturned' where a resident 'fell'.,

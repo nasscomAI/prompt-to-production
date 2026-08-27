@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description reports an underpass 'flooded' and an 'ambulance' diverted.,
+GH-202402,Other,Standard,"The description reports the market area 'flooded' and a 'Drain' blocked, creating ambiguity.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description reports a stormwater 'drain' blocked with debris.,
+GH-202407,Drain Blockage,Standard,The description reports a 'Drain blocked' causing mosquito breeding.,
+GH-202410,Pothole,Standard,The description reports 'Potholes' slowing down vehicles.,
+GH-202411,Pothole,Urgent,The description reports a 'Pothole' swallow causing a rider to be 'hospitalised'.,
+GH-202412,Pothole,Urgent,The description reports a 'school' bus navigating 6 'potholes'.,
+GH-202417,Other,Standard,"The description reports garbage/waste in a 'Heritage' zone, creating ambiguity.",NEEDS_REVIEW
+GH-202420,Noise,Standard,The description reports construction 'drilling' from 5am daily.,
+GH-202422,Road Damage,Urgent,The description reports the 'road' partially 'collapsed'.,
+GH-202424,Flooding,Standard,The description reports that the underpass 'floods' in light rain.,
+GH-202428,Waste,Standard,The description reports post-market 'waste' not cleared.,
+GH-202432,Noise,Standard,The description reports delivery trucks idling with 'engines' on.,
+GH-202448,Other,Standard,"The description reports a 'drain blocked' and a 'flooding' risk, causing ambiguity.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,The description reports fields channelling 'rainwater' through the main road.,

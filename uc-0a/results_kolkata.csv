@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description reports a 'Heritage lamp post' knocked over, causing ambiguity between Heritage Damage and Streetlight.",NEEDS_REVIEW
+KM-202402,Other,Standard,"The description reports historic cobblestones broken, creating ambiguity between Heritage Damage and Road Damage.",NEEDS_REVIEW
+KM-202405,Other,Standard,"The description reports a 'Wedding band playing' near 'Tagore Museum', causing ambiguity between Noise and Heritage Damage.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description reports a road 'full of potholes'.,
+KM-202410,Pothole,Standard,The description reports a 'Pothole' causing tyre blowouts.,
+KM-202411,Other,Standard,"The description reports a 'pothole' filling with 'rainwater', causing ambiguity between Pothole and Flooding.",NEEDS_REVIEW
+KM-202415,Other,Standard,A complex draining directly onto a public road does not fit one specific category clearly.,NEEDS_REVIEW
+KM-202418,Waste,Standard,The description reports 'waste' overflowing in a tourist zone.,
+KM-202421,Road Damage,Urgent,The description reports a broken footpath where a pedestrian 'fell' and required a 'hospital' visit.,
+KM-202422,Road Damage,Standard,The description reports the 'Road surface' buckled near a bridge.,
+KM-202426,Heritage Damage,Standard,The description reports a 'Heritage' building exterior defaced.,
+KM-202430,Road Damage,Standard,The description reports that the 'Road subsided' near a gas pipeline.,
+KM-202434,Other,Standard,"The description reports street paving removed and heritage stones not replaced, causing ambiguity.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,The description reports a substation trip causing 'darkness' for 3 nights.,
+KM-202438,Other,Standard,"The description reports amplifiers used in a heritage precinct, causing ambiguity between Noise and Heritage Damage.",NEEDS_REVIEW

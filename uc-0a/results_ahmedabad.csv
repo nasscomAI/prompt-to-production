@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,The description reports 'Tarmac surface melting' at 44°C.,
+AM-202402,Heat Hazard,Standard,The description reports a metal bus shelter reaching dangerous 'temperatures'.,
+AM-202405,Other,Standard,A report of 'Dead trees with split branches' does not match any allowed category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The description reports grass dying in 'heatwave' conditions.,
+AM-202407,Other,Urgent,"The description reports a 'Child injured' near 'upturned paving', creating ambiguity.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description reports a 'Pothole on main highway'.,
+AM-202414,Streetlight,Standard,The description reports a residential colony 'unlit after 9pm'.,
+AM-202417,Other,Standard,"The description reports 'waste' in a 'Heritage' area, causing category ambiguity.",NEEDS_REVIEW
+AM-202421,Noise,Standard,The description reports 'Club music audible' at 2am.,
+AM-202424,Other,Standard,"The description reports a 'road surface' bubbling due to 45°C heat, causing ambiguity between Road Damage and Heat Hazard.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,The description reports a walk surface 'temperature' reading 52°C.,
+AM-202431,Other,Standard,"The description reports 'road subsidence' near an ancient step well, creating ambiguity between Road Damage and Heritage Damage.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,The description reports metal dividers storing 'heat' and causing burns.,
+AM-202444,Waste,Standard,The description reports 'waste bins overflowing'.,
+AM-202445,Other,Standard,"The description reports a broken BRT shelter roof exposing users to full 'sun', which does not fit one clear category.",NEEDS_REVIEW
