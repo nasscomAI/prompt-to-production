@@ -16,8 +16,3 @@ enforcement:
   - "[FILL IN: Specific testable rule 2]"
   - "[FILL IN: Specific testable rule 3]"
   - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
-
-  1. Every clause must be included
-2. Multi-condition clauses must preserve ALL conditions
-3. No assumptions or added information allowed
-4. Use verbatim quoting if meaning may change
