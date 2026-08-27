@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The category is Pothole because the description mentions 'pothole' (Large pothole 60cm wide causing tyre damage.).,
+PM-202402,Pothole,Urgent,The priority is Urgent because the description contains the severity keyword 'child' (School children at risk during morning hours.).,
+PM-202406,Flooding,Standard,The category is Flooding because the description mentions 'flood' (Underpass flooded knee-deep after 2hrs rain.).,
+PM-202408,Other,Standard,The category is genuinely ambiguous because the description mentions multiple categories such as 'flood' and 'drain blocked'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The category is Streetlight because the description mentions 'streetlight' (Three consecutive streetlights out for 10 days.).,
+PM-202411,Streetlight,Urgent,The priority is Urgent because the description contains the severity keyword 'hazard' (Electrical hazard reported.).,
+PM-202413,Waste,Standard,The category is Waste because the description mentions 'garbage' (Overflowing garbage bins near vegetable market.).,
+PM-202418,Noise,Standard,The category is Noise because the description mentions 'music' (Wedding venue playing music past midnight on weeknights.).,
+PM-202419,Road Damage,Standard,The category is Road Damage because the description mentions 'crack' (Road surface cracked and sinking near utility work done 1 month ago.).,
+PM-202420,Drain Blockage,Urgent,The priority is Urgent because the description contains the severity keyword 'injury' (Risk of serious injury to cyclists.).,
+PM-202427,Flooding,Standard,The category is Flooding because the description mentions 'flood' (Bridge approach floods in 30mins of rain.).,
+PM-202428,Waste,Standard,The category is Waste because the description mentions 'animal' (Dead animal not removed for 36 hours.).,
+PM-202430,Other,Standard,The category is genuinely ambiguous because the description mentions multiple categories such as 'lights' and 'heritage'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,The category is Waste because the description mentions 'waste' (Bulk waste from apartment renovation dumped on public road.).,
+PM-202446,Road Damage,Urgent,The priority is Urgent because the description contains the severity keyword 'fell' (Elderly resident fell last week.).,
