@@ -1,18 +1,20 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: "Policy Summarization Agent"
+intent: "Summarize the provided HR leave policy document without any meaning loss, scope bleed, or obligation softening."
+context: "Strictly restrict your understanding and summary to the provided input text only. Do not include external knowledge, 'standard practices', or assumptions not present in the source document."
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Ground Truth Mapping: You must accurately reflect the following 10 clauses precisely:"
+  - "Clause 2.3 - Core obligation: 14-day advance notice required. Binding verb: must."
+  - "Clause 2.4 - Core obligation: Written approval required before leave commences. Verbal not valid. Binding verb: must."
+  - "Clause 2.5 - Core obligation: Unapproved absence = LOP regardless of subsequent approval. Binding verb: will."
+  - "Clause 2.6 - Core obligation: Max 5 days carry-forward. Above 5 forfeited on 31 Dec. Binding verb: may / are forfeited."
+  - "Clause 2.7 - Core obligation: Carry-forward days must be used Jan-Mar or forfeited. Binding verb: must."
+  - "Clause 3.2 - Core obligation: 3+ consecutive sick days requires medical cert within 48hrs. Binding verb: requires."
+  - "Clause 3.4 - Core obligation: Sick leave before/after holiday requires cert regardless of duration. Binding verb: requires."
+  - "Clause 5.2 - Core obligation: LWP requires Department Head AND HR Director approval. Binding verb: requires. TRAP WARNING: Ensure TWO approvers are preserved. Never drop 'from both Department Head and HR Director'."
+  - "Clause 5.3 - Core obligation: LWP >30 days requires Municipal Commissioner approval. Binding verb: requires."
+  - "Clause 7.2 - Core obligation: Leave encashment during service not permitted under any circumstances. Binding verb: not permitted."
+  - "Every numbered clause must be present in the summary."
+  - "Multi-condition obligations must preserve ALL conditions — never drop one silently."
+  - "Never add information not present in the source document."
+  - "If a clause cannot be summarised without meaning loss — quote it verbatim and flag it."
+  - "Explicit refusal condition: If the input is empty or unrelated to the HR leave policy, refuse to process the request."

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Categorized as road damage due to mentions of 'surface'.,
+AM-202402,Other,Standard,Categorized as other as no specific keywords matched.,NEEDS_REVIEW
+AM-202405,Other,Standard,Categorized as other as no specific keywords matched.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as heat hazard due to mentions of 'heat'.,
+AM-202407,Other,Urgent,Categorized as other as no specific keywords matched and assigned urgent priority due to keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Categorized as pothole due to mentions of 'pothole'.,
+AM-202414,Other,Standard,Categorized as other as no specific keywords matched.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized as waste due to mentions of 'waste'.,
+AM-202421,Noise,Standard,Categorized as noise due to mentions of 'music'.,
+AM-202424,Road Damage,Standard,Categorized as road damage due to mentions of 'surface'.,
+AM-202429,Road Damage,Standard,Categorized as road damage due to mentions of 'surface'.,
+AM-202431,Heritage Damage,Standard,Categorized as heritage damage due to mentions of 'heritage'.,
+AM-202435,Heat Hazard,Standard,Categorized as heat hazard due to mentions of 'heat'.,
+AM-202444,Waste,Standard,Categorized as waste due to mentions of 'waste'.,
+AM-202445,Heat Hazard,Standard,Categorized as heat hazard due to mentions of 'sun'.,
