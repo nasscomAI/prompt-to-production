@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Cited: restored from description.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Cited: historic from description.,
+KM-202405,Noise,Standard,Cited: band from description.,
+KM-202409,Pothole,Standard,Cited: pothole from description.,
+KM-202410,Pothole,Standard,Cited: pothole from description.,
+KM-202411,Pothole,Standard,Cited: pothole from description.,
+KM-202415,Drain Blockage,Standard,Cited: drain from description.,
+KM-202418,Waste,Standard,Cited: waste from description.,
+KM-202421,Road Damage,Urgent,"Cited: footpath, hospital from description.",
+KM-202422,Road Damage,Standard,Cited: road surface from description.,
+KM-202426,Heritage Damage,Standard,Cited: heritage from description.,
+KM-202430,Road Damage,Standard,Cited: subsided from description.,
+KM-202434,Heritage Damage,Standard,Cited: heritage from description.,
+KM-202436,Streetlight,Standard,Cited: darkness from description.,
+KM-202438,Other,Standard,Cited: precinct from description.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Cited: melting from description.,
+AM-202402,Heat Hazard,Standard,Cited: temperature from description.,
+AM-202405,Other,Standard,Cited: affected from description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Cited: heat from description.,
+AM-202407,Other,Urgent,Cited: child from description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Cited: pothole from description.,
+AM-202414,Streetlight,Standard,Cited: unlit from description.,
+AM-202417,Other,Standard,Cited: affected from description.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Cited: music from description.,
+AM-202424,Other,Standard,Cited: complaints from description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Cited: temperature from description.,
+AM-202431,Other,Standard,Cited: concern from description.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Cited: heat from description.,
+AM-202444,Waste,Standard,Cited: waste from description.,
+AM-202445,Heat Hazard,Standard,Cited: sun from description.,
