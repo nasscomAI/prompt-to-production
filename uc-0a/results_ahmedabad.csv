@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions ""Heat Hazard"", matching category ""Heat Hazard""",
+AM-202402,Heat Hazard,Standard,"Description mentions ""Heat Hazard"", matching category ""Heat Hazard""",
+AM-202405,Other,Standard,"Description mentions ""the complaint"", matching category ""Other""",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions ""Heat Hazard"", matching category ""Heat Hazard""",
+AM-202407,Road Damage,Urgent,"""child"" present in description, requiring Urgent priority",
+AM-202410,Pothole,Standard,"Description mentions ""Pothole"", matching category ""Pothole""",
+AM-202414,Streetlight,Standard,"Description mentions ""Streetlight"", matching category ""Streetlight""",
+AM-202417,Waste,Standard,"Description mentions ""Waste"", matching category ""Waste""",
+AM-202421,Noise,Standard,"Description mentions ""Noise"", matching category ""Noise""",
+AM-202424,Road Damage,Standard,"Description mentions ""Road Damage"", matching category ""Road Damage""",
+AM-202429,Heat Hazard,Standard,"Description mentions ""Heat Hazard"", matching category ""Heat Hazard""",
+AM-202431,Heritage Damage,Standard,"Description mentions ""Heritage Damage"", matching category ""Heritage Damage""",
+AM-202435,Heat Hazard,Standard,"Description mentions ""Heat Hazard"", matching category ""Heat Hazard""",
+AM-202444,Waste,Standard,"Description mentions ""Waste"", matching category ""Waste""",
+AM-202445,Heat Hazard,Standard,"Description mentions ""Heat Hazard"", matching category ""Heat Hazard""",
