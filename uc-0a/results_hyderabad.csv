@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding; matched ""flood""; severity term(s): ""ambulance"".",
+GH-202402,Drain Blockage,Standard,"Classified as Drain Blockage; matched ""drain completely block""; also matched ""Flooding"".",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage; matched ""stormwater drain""; also matched ""Flooding"".",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage; matched ""drain block"".",
+GH-202410,Pothole,Standard,"Classified as Pothole; matched ""pothole"".",
+GH-202411,Pothole,Urgent,"Classified as Pothole; matched ""pothole""; severity term(s): ""hospitalised"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole; matched ""pothole""; severity term(s): ""school"".",
+GH-202417,Waste,Standard,"Classified as Waste; matched ""garbage""; also matched ""Heritage Damage"".",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Classified as Noise; matched ""drilling"".",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage; matched ""road collapsed""; severity term(s): ""collapsed"".",
+GH-202424,Flooding,Standard,"Classified as Flooding; matched ""flood"".",
+GH-202428,Waste,Standard,"Classified as Waste; matched ""waste"".",
+GH-202432,Noise,Standard,"Classified as Noise; matched ""idling"".",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage; matched ""drain block""; also matched ""Flooding"".",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified as Flooding; matched ""rainwater"".",
