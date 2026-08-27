@@ -1,0 +1,32 @@
+[ROLE EXECUTED - MOCK RESPONSE]
+Here is the structured policy summary, strictly enforcing all extraction rules and multi-condition requirements:
+
+Clause 1.1 (Summarized): This policy covers leave entitlements for permanent and contractual CMC employees.
+Clause 1.2 (Summarized): This policy excludes daily wage workers and consultants, who follow their own contracts.
+Clause 2.1 (Summarized): Permanent employees receive 18 days of paid annual leave per year.
+Clause 2.2 (Summarized): Annual leave accrues at 1.5 days per month from the joining date.
+Clause 2.3 (Summarized): Annual leave requires at least 14 calendar days advance notice via Form HR-L1.
+Clause 2.4 [FLAG VERBATIM QUOTE]: "Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid."
+Clause 2.5 [FLAG VERBATIM QUOTE]: "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
+Clause 2.6 (Summarized): Up to 5 unused annual leave days can be carried forward, while any excess is forfeited on December 31.
+Clause 2.7 (Summarized): Carried-forward days must be used by the end of the first quarter (January-March) or they will be forfeited.
+Clause 3.1 (Summarized): Employees receive 12 days of paid sick leave per year.
+Clause 3.2 [FLAG VERBATIM QUOTE]: "Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work."
+Clause 3.3 (Summarized): Sick leave cannot be carried forward.
+Clause 3.4 [FLAG VERBATIM QUOTE]: "Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration."
+Clause 4.1 (Summarized): Female employees receive 26 weeks of paid maternity leave for their first two live births.
+Clause 4.2 (Summarized): Female employees receive 12 weeks of paid maternity leave for their third or subsequent child.
+Clause 4.3 (Summarized): Male employees receive 5 days of paid paternity leave, which must be used within 30 days of the child's birth.
+Clause 4.4 (Summarized): Paternity leave cannot be split into multiple periods.
+Clause 5.1 (Summarized): Leave Without Pay (LWP) can only be applied for after all other applicable paid leave is exhausted.
+Clause 5.2 [FLAG VERBATIM QUOTE]: "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+Clause 5.3 (Summarized): LWP longer than 30 continuous days needs Municipal Commissioner approval.
+Clause 5.4 [FLAG VERBATIM QUOTE]: "Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits."
+Clause 6.1 (Summarized): Employees are granted all State Government gazetted public holidays.
+Clause 6.2 [FLAG VERBATIM QUOTE]: "If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked."
+Clause 6.3 (Summarized): Compensatory off days cannot be encashed.
+Clause 7.1 [FLAG VERBATIM QUOTE]: "Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days."
+Clause 7.2 [FLAG VERBATIM QUOTE]: "Leave encashment during service is not permitted under any circumstances."
+Clause 7.3 (Summarized): Encasement of sick leave and LWP is entirely prohibited.
+Clause 8.1 (Summarized): Grievances regarding leave must be escalated to the HR Department within 10 working days of the decision.
+Clause 8.2 [FLAG VERBATIM QUOTE]: "Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing."

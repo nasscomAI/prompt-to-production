@@ -1,18 +1,16 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Financial Data Integrity Agent.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Process and compute Month-over-Month budget growth for specific wards and categories without data aggregation, ensuring all formulas are transparently included and null spend reports are appropriately flagged.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The dataset resides at ../data/budget/ward_budget.csv. Allowed to read data using the local load_dataset skill. Explicitly excluded from aggregating data across wards or categories.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Rule 1: Extract configuration via argparse parsing for --input, --ward, --category, --growth-type, and --output."
+  - "Rule 2: Refuse to aggregate. Only process the specific --ward and --category requested."
+  - "Rule 3: Use load_dataset skill. If actual_spend is null, FLAG it and report the 'notes' column for that row. Do not calculate growth for null rows."
+  - "Rule 4: Use a compute_growth skill to calculate Month-over-Month (MoM) growth."
+  - "Rule 5: MUST show the formula used: ((Current - Previous) / Previous) * 100 in every output row."
+  - "Refusal condition: If --growth-type is missing, immediately refuse execution, exit, and ask the user for it."

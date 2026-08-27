@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+JND-202401,Streetlight,Urgent,Classification based on municipal keywords found in description.,
+JND-202402,Waste,Standard,Classification based on municipal keywords found in description.,
+JND-202403,Drain Blockage,Urgent,Classification based on municipal keywords found in description.,
+JND-202404,Other,Standard,Classification based on municipal keywords found in description.,NEEDS_REVIEW
+JND-202405,Pothole,Urgent,Classification based on municipal keywords found in description.,
+JND-202406,Flooding,Urgent,Classification based on municipal keywords found in description.,
+JND-202407,Streetlight,Standard,Classification based on municipal keywords found in description.,
+JND-202408,Waste,Standard,Classification based on municipal keywords found in description.,
+JND-202409,Other,Standard,Classification based on municipal keywords found in description.,NEEDS_REVIEW
+JND-202410,Other,Standard,Classification based on municipal keywords found in description.,NEEDS_REVIEW
+JND-202411,Other,Standard,Classification based on municipal keywords found in description.,NEEDS_REVIEW
+JND-202412,Waste,Standard,Classification based on municipal keywords found in description.,
+JND-202413,Drain Blockage,Standard,Classification based on municipal keywords found in description.,
+JND-202414,Waste,Standard,Classification based on municipal keywords found in description.,
+JND-202415,Road Damage,Standard,Classification based on municipal keywords found in description.,
