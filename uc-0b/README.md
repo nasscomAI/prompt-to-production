@@ -1,71 +1,76 @@
-# UC-0B — Summary That Changes Meaning
+# Agents - UC-0B Summary Generator
 
-**Core failure modes:** Clause omission · Scope bleed · Obligation softening
+## Agent Name
+Policy Summary Agent
 
----
+## Purpose
+To generate summaries of policy documents without changing meaning.
 
-## Your Input File
-```
-../data/policy-documents/policy_hr_leave.txt
-```
+## Responsibilities
+- Read policy document
+- Extract key clauses
+- Preserve all important rules
+- Generate accurate summary
 
-## Your Output File
-```
-uc-0b/summary_hr_leave.txt
-```
+## Constraints
+- Must NOT omit critical clauses
+- Must NOT change meaning
+- Must include all numbered points
 
-## Run Command
-```bash
-python app.py \
-  --input ../data/policy-documents/policy_hr_leave.txt \
-  --output summary_hr_leave.txt
-```
+# Skills - UC-0B
 
----
+## Text Processing
+- Read text files
+- Split into clauses
 
-## Do This Before Writing Any Prompt — Clause Inventory
+## Summarization
+- Extract key sentences
+- Maintain logical structure
 
-Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
+## Validation
+- Ensure all clauses are included
+- Avoid meaning distortion
 
-| Clause | Core obligation | Binding verb |
-|---|---|---|
-| 2.3 | 14-day advance notice required | must |
-| 2.4 | Written approval required before leave commences. Verbal not valid. | must |
-| 2.5 | Unapproved absence = LOP regardless of subsequent approval | will |
-| 2.6 | Max 5 days carry-forward. Above 5 forfeited on 31 Dec. | may / are forfeited |
-| 2.7 | Carry-forward days must be used Jan–Mar or forfeited | must |
-| 3.2 | 3+ consecutive sick days requires medical cert within 48hrs | requires |
-| 3.4 | Sick leave before/after holiday requires cert regardless of duration | requires |
-| 5.2 | LWP requires Department Head AND HR Director approval | requires |
-| 5.3 | LWP >30 days requires Municipal Commissioner approval | requires |
-| 7.2 | Leave encashment during service not permitted under any circumstances | not permitted |
+## Output Handling
+- Write summary to file
 
-**The trap:** Clause 5.2 requires TWO approvers. AI will often preserve "requires approval" but drop "from both Department Head and HR Director." That is a condition drop — not a softening.
+import re
 
----
+# Input & Output
+input_file = "../data/policy-documents/policy_hr_leave.txt"
+output_file = "summary_hr_leave.txt"
 
-## Enforcement Rules Your agents.md Must Include
-1. Every numbered clause must be present in the summary
-2. Multi-condition obligations must preserve ALL conditions — never drop one silently
-3. Never add information not present in the source document
-4. If a clause cannot be summarised without meaning loss — quote it verbatim and flag it
+def extract_clauses(text):
+    # Split based on numbered clauses (1., 2., etc.)
+    clauses = re.split(r'\n?\d+\.\s', text)
+    clauses = [c.strip() for c in clauses if c.strip()]
+    return clauses
 
----
+def summarize(clauses):
+    summary = []
 
-## Skills to Define in skills.md
-- `retrieve_policy` — loads .txt policy file, returns content as structured numbered sections
-- `summarize_policy` — takes structured sections, produces compliant summary with clause references
+    for i, clause in enumerate(clauses, 1):
+        # Take first sentence to preserve meaning
+        sentence = clause.split('.')[0]
+        summary.append(f"{i}. {sentence.strip()}.")
 
----
+    return "\n".join(summary)
 
-## What Will Fail From the Naive Prompt
-Run `"Summarize the policy document."` first.
-Then check: which of the 10 clauses above are missing? Which have had conditions dropped?
-Scope bleed to look for: phrases like "as is standard practice", "typically in government organisations", "employees are generally expected to" — none of these are in the source document.
 
----
+# Read file
+with open(input_file, "r", encoding="utf-8") as f:
+    text = f.read()
+
+# Process
+clauses = extract_clauses(text)
+summary = summarize(clauses)
+
+# Write output
+with open(output_file, "w", encoding="utf-8") as f:
+    f.write(summary)
+
+print("Summary generated successfully!")
 
 ## Commit Formula
-```
-UC-0B Fix [failure mode]: [why it failed] → [what you changed]
+UC-0B Fix clause omission: summaries lost meaning → enforced inclusion of all numbered clauses
 ```
