@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions pothole, indicating Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions pothole, indicating Pothole.",
+PM-202406,Other,Standard,"The description includes underpass flooded, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,"The description mentions drain, indicating Drain Blockage.",
+PM-202410,Other,Standard,"The description includes three consecutive, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"The description mentions streetlight, indicating Streetlight.",
+PM-202413,Waste,Standard,"The description mentions garbage, indicating Waste.",
+PM-202418,Other,Standard,"The description includes wedding venue, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202419,Other,Standard,"The description includes road surface, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202420,Other,Urgent,"The description includes manhole cover, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202427,Other,Standard,"The description includes bridge approach, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202428,Other,Standard,"The description includes dead animal, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions heritage, indicating Heritage Damage.",
+PM-202433,Waste,Standard,"The description mentions waste, indicating Waste.",
+PM-202446,Other,Urgent,"The description includes footpath tiles, but the category is not clearly one of the allowed options.",NEEDS_REVIEW
