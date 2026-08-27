@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding because the description mentions 'flood' and urgent keyword 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,
+GH-202410,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+GH-202411,Pothole,Urgent,Classified as Pothole because the description mentions 'pothole' and urgent keyword 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole because the description mentions 'pothole' and urgent keyword 'school'.,
+GH-202417,Waste,Standard,Classified as Waste because the description mentions 'garbage'.,
+GH-202420,Noise,Standard,Classified as Noise because the description mentions 'drilling'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage because the description mentions 'collapsed' and urgent keyword 'collapse'.,
+GH-202424,Flooding,Standard,Classified as Flooding because the description mentions 'flood'.,
+GH-202428,Waste,Standard,Classified as Waste because the description mentions 'waste'.,
+GH-202432,Noise,Standard,Classified as Noise because the description mentions 'engines on'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage because the description mentions 'drain'.,
+GH-202438,Flooding,Standard,Classified as Flooding because the description mentions 'rainwater'.,
