@@ -1,16 +1,29 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A Complaint Classifier skills definition.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classify one complaint row into UC-0A output fields.
+    input: dict representing a CSV row.
+    output: dict with keys [category, priority, reason, and flag].
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads the input CSV, applies classify_complaint, and writes results_pune.csv.
+    input: input_path, output_path
+    output: CSV file.
+
+allowed_categories:
+  - Pothole
+  - Flooding
+  - Streetlight
+  - Waste
+  - Noise
+  - Road Damage
+  - Heritage Damage
+  - Heat Hazard
+  - Drain Blockage
+  - Other
+
+priority_rules:
+  - Urgent: Must trigger if words like [injury, child, school, hospital, ambulance, fire, hazard, fell, collapse] appear.
+  - Standard/Low: Based on general severity.
