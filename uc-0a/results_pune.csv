@@ -1,0 +1,16 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open,category,priority,reason,flag
+PM-202401,21-06-2024,Pune,Ward 4 – Warje,Karve Road near Deccan Gymkhana,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Citizen Portal,4,Pothole,Standard,Large pothole 60cm wide causing tyre damage.,
+PM-202402,04-06-2024,Pune,Ward 3 – Kothrud,FC Road near MIT College junction,Deep pothole near bus stop. School children at risk during morning hours.,Councillor Referral,12,Pothole,Urgent,Deep pothole near bus stop.,
+PM-202406,08-06-2024,Pune,Ward 1 – Kasba,Ambedkar Road underpass,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Councillor Referral,8,Flooding,Standard,Underpass flooded knee-deep after 2hrs rain.,
+PM-202408,05-06-2024,Pune,Ward 3 – Kothrud,Kothrud Depot bus stand,Bus stand flooded. Passengers standing in water. Drain blocked.,Ward Office Walk-in,12,Flooding,Standard,Bus stand flooded.,
+PM-202410,04-06-2024,Pune,Ward 2 – Shivajinagar,JM Road near Goodluck Chowk,Three consecutive streetlights out for 10 days. Area very dark at night.,Email,18,Streetlight,Standard,Three consecutive streetlights out for 10 days.,
+PM-202411,22-06-2024,Pune,Ward 2 – Shivajinagar,"Viman Nagar, Vadgaon Sheri Road",Streetlight flickering and sparking. Electrical hazard reported.,Social Media,9,Streetlight,Urgent,Streetlight flickering and sparking.,
+PM-202413,29-06-2024,Pune,Ward 1 – Kasba,Shivajinagar market area,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,WhatsApp Helpline,13,Waste,Standard,Overflowing garbage bins near vegetable market.,
+PM-202418,02-06-2024,Pune,Ward 4 – Warje,Kalyani Nagar residential zone,Wedding venue playing music past midnight on weeknights.,Citizen Portal,5,Noise,Standard,Wedding venue playing music past midnight on weeknights.,
+PM-202419,01-06-2024,Pune,Ward 2 – Shivajinagar,Senapati Bapat Road,Road surface cracked and sinking near utility work done 1 month ago.,Social Media,2,Road Damage,Standard,Road surface cracked and sinking near utility work done 1 month ago.,
+PM-202420,03-06-2024,Pune,Ward 1 – Kasba,Paud Road near Kothrud,Manhole cover missing. Risk of serious injury to cyclists.,Email,14,Pothole,Urgent,Manhole cover missing.,
+PM-202427,07-06-2024,Pune,Ward 5 – Hadapsar,Erandwane depression near bridge,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Councillor Referral,12,Flooding,Standard,Bridge approach floods in 30mins of rain.,
+PM-202428,23-06-2024,Pune,Ward 3 – Kothrud,Pune University Road,Dead animal not removed for 36 hours. Health concern.,Email,1,Other,Standard,Dead animal not removed for 36 hours.,NEEDS_REVIEW
+PM-202430,23-06-2024,Pune,Ward 1 – Kasba,"Rasta Peth, old city area","Heritage street, lights out. Safety concern for pedestrians after dark.",Social Media,19,Streetlight,Standard,"Heritage street, lights out.",
+PM-202433,08-06-2024,Pune,Ward 2 – Shivajinagar,Dhole Patil Road,Bulk waste from apartment renovation dumped on public road.,Phone Helpline,20,Waste,Standard,Bulk waste from apartment renovation dumped on public road.,
+PM-202446,09-06-2024,Pune,Ward 2 – Shivajinagar,"Swargate, Tilak Road",Footpath tiles broken and upturned. Elderly resident fell last week.,Email,18,Road Damage,Urgent,Footpath tiles broken and upturned.,
