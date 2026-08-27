@@ -1,0 +1,59 @@
+================================================================================
+CITY MUNICIPAL CORPORATION - EMPLOYEE LEAVE POLICY SUMMARY
+================================================================================
+
+This high-fidelity summary contains the binding clauses extracted directly from
+the Employee Leave Policy document. To ensure absolute compliance, prevent obligation
+softening, and avoid dropping critical approval conditions or introducing scope bleed,
+each target clause has been quoted verbatim and flagged accordingly.
+
+--------------------------------------------------------------------------------
+BINDING OBLIGATIONS & CLAUSES INVENTORY
+--------------------------------------------------------------------------------
+[VERBATIM OBLIGATION] Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+  - Binding Verb: must (14-day advance notice required)
+  - Instrument Required: Form HR-L1
+
+[VERBATIM OBLIGATION] Clause 2.4: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
+  - Binding Verb: must (written approval required before leave commences)
+  - Exclusions: Verbal approval is strictly invalid
+  - Approver: Direct manager
+
+[VERBATIM OBLIGATION] Clause 2.5: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+  - Binding Verb: will (unapproved absence recorded as Loss of Pay)
+  - Constraint: Applies regardless of subsequent approval
+
+[VERBATIM OBLIGATION] Clause 2.6: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+  - Binding Verb: may / are forfeited (maximum 5 carry-forward days)
+  - Constraint: Excess days are forfeited on 31 December
+
+[VERBATIM OBLIGATION] Clause 2.7: Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+  - Binding Verb: must / are forfeited (carry-forward usage timeline)
+  - Condition: Must be used within Jan-Mar of the following year
+
+[VERBATIM OBLIGATION] Clause 3.2: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+  - Binding Verb: requires (medical certificate for sick leave)
+  - Condition: 3 or more consecutive sick days
+  - Authority: Registered medical practitioner
+  - Timeline: Submitted within 48 hours of returning to work
+
+[VERBATIM OBLIGATION] Clause 3.4: Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+  - Binding Verb: requires (medical certificate regardless of duration)
+  - Condition: Sick leave taken immediately before/after public holiday or annual leave
+
+[VERBATIM OBLIGATION] Clause 5.2: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+  - Binding Verb: requires (Leave Without Pay approvals)
+  - Approvers: BOTH Department Head AND HR Director (Manager approval alone is not sufficient)
+
+[VERBATIM OBLIGATION] Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+  - Binding Verb: requires (extended Leave Without Pay approval)
+  - Condition: LWP exceeding 30 continuous days
+  - Approver: Municipal Commissioner
+
+[VERBATIM OBLIGATION] Clause 7.2: Leave encashment during service is not permitted under any circumstances.
+  - Binding Verb: not permitted (leave encashment prohibition)
+  - Constraint: Absolute prohibition during service under any circumstances
+
+================================================================================
+END OF POLICY SUMMARY
+================================================================================
