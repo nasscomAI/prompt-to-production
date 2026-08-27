@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description mentions ""tarmac surface melting"", ""tarmac surface"", supporting the category ""Heat Hazard"".",
+AM-202402,Heat Hazard,Standard,"The description mentions ""dangerous temperatures"", supporting the category ""Heat Hazard"".",
+AM-202405,Other,Standard,"The description states ""Dead trees with split branches. Fall risk to"", but it does not clearly match an allowed category.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions ""heatwave"", supporting the category ""Heat Hazard"".",
+AM-202407,Road Damage,Urgent,"The description mentions ""upturned paving"", ""broken bench"", supporting the category ""Road Damage"".",
+AM-202410,Pothole,Standard,"The description mentions ""pothole"", supporting the category ""Pothole"".",
+AM-202414,Streetlight,Standard,"The description mentions ""unlit"", ""colony unlit"", supporting the category ""Streetlight"".",
+AM-202417,Other,Standard,"The description contains ""waste"", ""heritage"", which supports multiple allowed categories (Waste, Heritage Damage).",NEEDS_REVIEW
+AM-202421,Noise,Standard,"The description mentions ""club music"", ""music audible"", supporting the category ""Noise"".",
+AM-202424,Road Damage,Standard,"The description mentions ""road surface"", supporting the category ""Road Damage"".",
+AM-202429,Heat Hazard,Standard,"The description mentions ""temperature unbearable"", ""surface temperature"", supporting the category ""Heat Hazard"".",
+AM-202431,Heritage Damage,Standard,"The description mentions ""heritage"", supporting the category ""Heritage Damage"".",
+AM-202435,Other,Standard,"The description contains ""road dividers"", ""storing heat"", which supports multiple allowed categories (Road Damage, Heat Hazard).",NEEDS_REVIEW
+AM-202444,Waste,Standard,"The description mentions ""waste"", supporting the category ""Waste"".",
+AM-202445,Road Damage,Standard,"The description mentions ""shelter roof"", supporting the category ""Road Damage"".",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description contains ""lamp post"", ""heritage"", which supports multiple allowed categories (Streetlight, Heritage Damage).",NEEDS_REVIEW
+KM-202402,Other,Standard,"The description states ""Historic tram road cobblestones broken up by cable"", but it does not clearly match an allowed category.",NEEDS_REVIEW
+KM-202405,Other,Standard,"The description states ""Wedding band playing near Tagore Museum at 11pm"", but it does not clearly match an allowed category.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"The description mentions ""potholes"", supporting the category ""Pothole"".",
+KM-202410,Pothole,Standard,"The description mentions ""pothole"", supporting the category ""Pothole"".",
+KM-202411,Pothole,Standard,"The description mentions ""pothole"", supporting the category ""Pothole"".",
+KM-202415,Other,Standard,"The description states ""New residential complex draining directly onto public road"", but it does not clearly match an allowed category.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The description mentions ""waste"", supporting the category ""Waste"".",
+KM-202421,Road Damage,Urgent,"The description mentions ""footpath"", supporting the category ""Road Damage"".",
+KM-202422,Road Damage,Standard,"The description mentions ""road surface"", supporting the category ""Road Damage"".",
+KM-202426,Heritage Damage,Standard,"The description mentions ""heritage"", supporting the category ""Heritage Damage"".",
+KM-202430,Road Damage,Standard,"The description mentions ""road subsided"", ""subsided"", supporting the category ""Road Damage"".",
+KM-202434,Heritage Damage,Standard,"The description mentions ""heritage"", supporting the category ""Heritage Damage"".",
+KM-202436,Other,Standard,"The description states ""Entire colony substation tripped. Darkness for 3 nights"", but it does not clearly match an allowed category.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The description mentions ""heritage"", supporting the category ""Heritage Damage"".",
