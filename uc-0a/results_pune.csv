@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+PM-202401,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Other,Standard,"Ambiguous description matches multiple categories: Pothole, Road Damage.",NEEDS_REVIEW
+PM-202402,Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,Description mentions 'pothole'.,
+PM-202406,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Other,Standard,Could not identify a clear category from the description.,NEEDS_REVIEW
+PM-202408,Bus stand flooded. Passengers standing in water. Drain blocked.,Drain Blockage,Standard,Description mentions 'drain'.,
+PM-202410,Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,Description mentions 'dark'.,
+PM-202411,Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,Description mentions 'streetlight'.,
+PM-202413,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Waste,Standard,Description mentions 'garbage'.,
+PM-202418,Wedding venue playing music past midnight on weeknights.,Noise,Standard,Description mentions 'music'.,
+PM-202419,Road surface cracked and sinking near utility work done 1 month ago.,Road Damage,Standard,Description mentions 'surface'.,
+PM-202420,Manhole cover missing. Risk of serious injury to cyclists.,Other,Urgent,Could not identify a clear category from the description.,NEEDS_REVIEW
+PM-202427,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Other,Standard,Could not identify a clear category from the description.,NEEDS_REVIEW
+PM-202428,Dead animal not removed for 36 hours. Health concern.,Other,Standard,Could not identify a clear category from the description.,NEEDS_REVIEW
+PM-202430,"Heritage street, lights out. Safety concern for pedestrians after dark.",Other,Standard,"Ambiguous description matches multiple categories: Streetlight, Heritage Damage.",NEEDS_REVIEW
+PM-202433,Bulk waste from apartment renovation dumped on public road.,Waste,Standard,Description mentions 'waste'.,
+PM-202446,Footpath tiles broken and upturned. Elderly resident fell last week.,Other,Urgent,Could not identify a clear category from the description.,NEEDS_REVIEW
