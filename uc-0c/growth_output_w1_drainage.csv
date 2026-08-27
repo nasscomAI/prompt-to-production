@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_rate,formula_shown,flag
+2024-01,Ward 1 – Kasba,Drainage & Flooding,7.3,,N/A — first period,
+2024-02,Ward 1 – Kasba,Drainage & Flooding,7.4,+1.4%,MoM: (7.4 − 7.3) / 7.3 = +1.4%,
+2024-03,Ward 1 – Kasba,Drainage & Flooding,7.7,+4.1%,MoM: (7.7 − 7.4) / 7.4 = +4.1%,
+2024-04,Ward 1 – Kasba,Drainage & Flooding,8.2,+6.5%,MoM: (8.2 − 7.7) / 7.7 = +6.5%,
+2024-05,Ward 1 – Kasba,Drainage & Flooding,7.2,-12.2%,MoM: (7.2 − 8.2) / 8.2 = -12.2%,
+2024-06,Ward 1 – Kasba,Drainage & Flooding,8.3,+15.3%,MoM: (8.3 − 7.2) / 7.2 = +15.3%,
+2024-07,Ward 1 – Kasba,Drainage & Flooding,13.0,+56.6%,MoM: (13.0 − 8.3) / 8.3 = +56.6%,
+2024-08,Ward 1 – Kasba,Drainage & Flooding,11.1,-14.6%,MoM: (11.1 − 13.0) / 13.0 = -14.6%,
+2024-09,Ward 1 – Kasba,Drainage & Flooding,9.9,-10.8%,MoM: (9.9 − 11.1) / 11.1 = -10.8%,
+2024-10,Ward 1 – Kasba,Drainage & Flooding,10.8,+9.1%,MoM: (10.8 − 9.9) / 9.9 = +9.1%,
+2024-11,Ward 1 – Kasba,Drainage & Flooding,9.4,-13.0%,MoM: (9.4 − 10.8) / 10.8 = -13.0%,
+2024-12,Ward 1 – Kasba,Drainage & Flooding,9.4,+0.0%,MoM: (9.4 − 9.4) / 9.4 = +0.0%,

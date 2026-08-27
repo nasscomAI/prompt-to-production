@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_rate,formula_shown,flag
+2024-01,Ward 1 – Kasba,Streetlight Maintenance,3.0,,N/A — first period,
+2024-02,Ward 1 – Kasba,Streetlight Maintenance,2.8,-6.7%,MoM: (2.8 − 3.0) / 3.0 = -6.7%,
+2024-03,Ward 1 – Kasba,Streetlight Maintenance,3.0,+7.1%,MoM: (3.0 − 2.8) / 2.8 = +7.1%,
+2024-04,Ward 1 – Kasba,Streetlight Maintenance,3.6,+20.0%,MoM: (3.6 − 3.0) / 3.0 = +20.0%,
+2024-05,Ward 1 – Kasba,Streetlight Maintenance,3.4,-5.6%,MoM: (3.4 − 3.6) / 3.6 = -5.6%,
+2024-06,Ward 1 – Kasba,Streetlight Maintenance,3.5,+2.9%,MoM: (3.5 − 3.4) / 3.4 = +2.9%,
+2024-07,Ward 1 – Kasba,Streetlight Maintenance,4.5,+28.6%,MoM: (4.5 − 3.5) / 3.5 = +28.6%,
+2024-08,Ward 1 – Kasba,Streetlight Maintenance,4.3,-4.4%,MoM: (4.3 − 4.5) / 4.5 = -4.4%,
+2024-09,Ward 1 – Kasba,Streetlight Maintenance,4.2,-2.3%,MoM: (4.2 − 4.3) / 4.3 = -2.3%,
+2024-10,Ward 1 – Kasba,Streetlight Maintenance,3.4,-19.0%,MoM: (3.4 − 4.2) / 4.2 = -19.0%,
+2024-11,Ward 1 – Kasba,Streetlight Maintenance,3.1,-8.8%,MoM: (3.1 − 3.4) / 3.4 = -8.8%,
+2024-12,Ward 1 – Kasba,Streetlight Maintenance,3.5,+12.9%,MoM: (3.5 − 3.1) / 3.1 = +12.9%,
