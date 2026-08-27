@@ -1,16 +1,18 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single complaint row into category, priority, reason, and flag.
+    input: "dict with keys complaint_id, description, location, days_open (strings/int, one CSV row)"
+    output: "dict with keys complaint_id, category, priority, reason, flag"
+    error_handling: >
+      If description is empty or under 5 words, set category to Other, priority to Standard,
+      reason to "Insufficient description to classify", and flag to NEEDS_REVIEW — never guess
+      a specific category from missing information.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads the input CSV, applies classify_complaint to every row, writes the output CSV.
+    input: "input_path (str, path to test_[city].csv)"
+    output: "output_path (str, path to results_[city].csv) — one output row per input row, same order"
+    error_handling: >
+      If a row is missing the description column entirely, still write an output row for it
+      (category Other, flag NEEDS_REVIEW, reason stating the column was missing) rather than
+      skipping the row or crashing the batch.
