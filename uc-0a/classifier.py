@@ -13,7 +13,52 @@ def classify_complaint(row: dict) -> dict:
     TODO: Build this using your AI tool guided by your agents.md and skills.md.
     Your RICE enforcement rules must be reflected in this function's behaviour.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    description = row.get('description', '').lower()
+    
+    # Category classification based on keywords
+    category_keywords = {
+        'Pothole': ['pothole', 'hole in road', 'potholes'],
+        'Flooding': ['flood', 'water logging', 'drain overflow', 'flooded', 'water'],
+        'Streetlight': ['streetlight', 'light not working', 'light', 'street light'],
+        'Waste': ['waste', 'garbage', 'dump', 'rubbish'],
+        'Noise': ['noise', 'loud', 'disturbance', 'sound'],
+        'Road Damage': ['road damage', 'crack', 'pavement', 'damaged road'],
+        'Heritage Damage': ['heritage', 'monument', 'monument damage'],
+        'Heat Hazard': ['heat', 'hot', 'temperature'],
+        'Drain Blockage': ['drain block', 'clogged drain', 'drain', 'blocked'],
+    }
+    
+    category = 'Other'
+    matched_keywords = []
+    for cat, keywords in category_keywords.items():
+        for keyword in keywords:
+            if keyword in description:
+                category = cat
+                matched_keywords.append(keyword)
+                break
+        if category != 'Other':
+            break
+    
+    # Priority based on severity keywords
+    severity_keywords = ['injury', 'child', 'school', 'hospital', 'ambulance', 'fire', 'hazard', 'fell', 'collapse']
+    priority = 'Urgent' if any(keyword in description for keyword in severity_keywords) else 'Standard'
+    
+    # Reason citing specific words from description
+    if matched_keywords:
+        reason = f"Description contains '{matched_keywords[0]}' indicating {category}."
+    else:
+        reason = f"Cannot determine category from description."
+    
+    # Flag for ambiguity
+    flag = 'NEEDS_REVIEW' if category == 'Other' else ''
+    
+    return {
+        'complaint_id': row.get('complaint_id', ''),
+        'category': category,
+        'priority': priority,
+        'reason': reason,
+        'flag': flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
@@ -23,7 +68,35 @@ def batch_classify(input_path: str, output_path: str):
     TODO: Build this using your AI tool.
     Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    results = []
+    try:
+        with open(input_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                try:
+                    result = classify_complaint(row)
+                    results.append(result)
+                except Exception as e:
+                    # Log error and skip bad row
+                    print(f"Error processing row {row}: {e}")
+                    results.append({
+                        'complaint_id': row.get('complaint_id', ''),
+                        'category': 'Other',
+                        'priority': 'Standard',
+                        'reason': 'Error in processing',
+                        'flag': 'NEEDS_REVIEW'
+                    })
+    except FileNotFoundError:
+        print(f"Input file {input_path} not found.")
+        return
+    
+    try:
+        with open(output_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=['complaint_id', 'category', 'priority', 'reason', 'flag'])
+            writer.writeheader()
+            writer.writerows(results)
+    except Exception as e:
+        print(f"Error writing to {output_path}: {e}")
 
 
 if __name__ == "__main__":

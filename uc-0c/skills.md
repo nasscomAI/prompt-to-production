@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads a CSV file, validates columns, reports null count and which rows have null actual_spend before returning the data.
+    input: File path to the budget CSV (string).
+    output: List of dictionaries representing the CSV rows.
+    error_handling: If file not found or invalid CSV, reports error and returns empty list.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Takes ward, category, and growth_type, filters data, computes per-period growth with formulas shown, flags nulls.
+    input: Data list, ward (string), category (string), growth_type (string), output_path (string).
+    output: Writes a CSV file with period, actual_spend, mom_growth, formula, flag columns.
+    error_handling: Refuses if growth_type not MoM or no data for ward/category; flags null rows and skips computation.
