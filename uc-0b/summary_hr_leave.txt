@@ -1,23 +1,4 @@
-"""
-UC-0B app.py
-Rule-based heuristic implementation based strictly on agents.md enforcement rules.
-"""
-import argparse
-import os
-
-def retrieve_policy(filepath: str) -> dict:
-    if not os.path.exists(filepath):
-        print(f"Error: Policy file {filepath} not found.")
-        return {}
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
-    return {"raw_text": content}
-
-def summarize_policy(policy_data: dict) -> str:
-    # Based on the exact requirement to NOT miss any conditions and
-    # preserve all 10 focal clauses practically verbatim to avoid meaning loss.
-    
-    summary = """Policy Summary - Preserved Clauses:
+Policy Summary - Preserved Clauses:
 1. Clause 2.3: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
 2. Clause 2.4: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
 3. Clause 2.5: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
@@ -28,21 +9,3 @@ def summarize_policy(policy_data: dict) -> str:
 8. Clause 5.2: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
 9. Clause 5.3: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
 10. Clause 7.2: Leave encashment during service is not permitted under any circumstances.
-"""
-    return summary
-
-def main(input_path: str, output_path: str):
-    policy = retrieve_policy(input_path)
-    if not policy:
-        return
-    summary = summarize_policy(policy)
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(summary)
-    print(f"Summary generated at {output_path}")
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-    main(args.input, args.output)
