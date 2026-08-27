@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,Category set to Flooding based on description. priority set to Urgent because it mentions 'ambulance'.,
+Drain Blockage,Standard,Category set to Drain Blockage based on description. priority set to Standard because no urgent severity keyword is present.,
+Drain Blockage,Standard,Category set to Drain Blockage based on description. priority set to Standard because no urgent severity keyword is present.,
+Drain Blockage,Standard,Category set to Drain Blockage based on description. priority set to Standard because no urgent severity keyword is present.,
+Pothole,Standard,Category set to Pothole based on description. priority set to Standard because no urgent severity keyword is present.,
+Pothole,Urgent,Category set to Pothole based on description. priority set to Urgent because it mentions 'hospital'.,
+Pothole,Urgent,Category set to Pothole based on description. priority set to Urgent because it mentions 'school'.,
+Waste,Standard,Category set to Waste based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Other,Urgent,Category set to Other because the description is not clearly one of the predefined categories. priority set to Urgent because it mentions 'collapse'.,NEEDS_REVIEW
+Flooding,Standard,Category set to Flooding based on description. priority set to Standard because no urgent severity keyword is present.,
+Waste,Standard,Category set to Waste based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Drain Blockage,Standard,Category set to Drain Blockage based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW

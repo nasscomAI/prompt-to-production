@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Heritage Damage,Standard,Category set to Heritage Damage based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Pothole,Standard,Category set to Pothole based on description. priority set to Standard because no urgent severity keyword is present.,
+Pothole,Standard,Category set to Pothole based on description. priority set to Standard because no urgent severity keyword is present.,
+Pothole,Standard,Category set to Pothole based on description. priority set to Standard because no urgent severity keyword is present.,
+Drain Blockage,Standard,Category set to Drain Blockage based on description. priority set to Standard because no urgent severity keyword is present.,
+Waste,Standard,Category set to Waste based on description. priority set to Standard because no urgent severity keyword is present.,
+Road Damage,Urgent,Category set to Road Damage based on description. priority set to Urgent because it mentions 'hospital'.,
+Road Damage,Standard,Category set to Road Damage based on description. priority set to Standard because no urgent severity keyword is present.,
+Heritage Damage,Standard,Category set to Heritage Damage based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Heritage Damage,Standard,Category set to Heritage Damage based on description. priority set to Standard because no urgent severity keyword is present.,
+Streetlight,Standard,Category set to Streetlight based on description. priority set to Standard because no urgent severity keyword is present.,
+Heritage Damage,Standard,Category set to Heritage Damage based on description. priority set to Standard because no urgent severity keyword is present.,

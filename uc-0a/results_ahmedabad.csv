@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Heat Hazard,Standard,Category set to Heat Hazard based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Heat Hazard,Standard,Category set to Heat Hazard based on description. priority set to Standard because no urgent severity keyword is present.,
+Road Damage,Urgent,Category set to Road Damage based on description. priority set to Urgent because it mentions 'child'.,
+Pothole,Standard,Category set to Pothole based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
+Waste,Standard,Category set to Waste based on description. priority set to Standard because no urgent severity keyword is present.,
+Noise,Low,Category set to Noise based on description. priority set to Low because the description describes a noise issue without urgent severity keywords.,
+Road Damage,Standard,Category set to Road Damage based on description. priority set to Standard because no urgent severity keyword is present.,
+Heat Hazard,Standard,Category set to Heat Hazard based on description. priority set to Standard because no urgent severity keyword is present.,
+Heritage Damage,Standard,Category set to Heritage Damage based on description. priority set to Standard because no urgent severity keyword is present.,
+Heat Hazard,Standard,Category set to Heat Hazard based on description. priority set to Standard because no urgent severity keyword is present.,
+Waste,Standard,Category set to Waste based on description. priority set to Standard because no urgent severity keyword is present.,
+Other,Standard,Category set to Other because the description is not clearly one of the predefined categories. priority set to Standard because no urgent severity keyword is present.,NEEDS_REVIEW
