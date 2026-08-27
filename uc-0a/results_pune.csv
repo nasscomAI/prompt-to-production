@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Complaint mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Complaint mentions 'pothole'.,
+PM-202406,Flooding,Standard,Complaint mentions 'flood'.,
+PM-202408,Flooding,Standard,Complaint mentions 'flood'.,
+PM-202410,Streetlight,Standard,Complaint mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,Complaint mentions 'streetlight'.,
+PM-202413,Waste,Standard,Complaint mentions 'waste' or 'garbage'.,
+PM-202418,Other,Standard,Complaint does not clearly fit into predefined categories.,NEEDS_REVIEW
+PM-202419,Other,Standard,Complaint does not clearly fit into predefined categories.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Complaint does not clearly fit into predefined categories.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Complaint mentions 'flood'.,
+PM-202428,Other,Standard,Complaint does not clearly fit into predefined categories.,NEEDS_REVIEW
+PM-202430,Other,Standard,Complaint does not clearly fit into predefined categories.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Complaint mentions 'waste' or 'garbage'.,
+PM-202446,Other,Urgent,Complaint does not clearly fit into predefined categories.,NEEDS_REVIEW
