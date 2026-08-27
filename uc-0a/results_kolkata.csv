@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Complaint about heritage damage: ""Heritage lamp post knocked over by delivery vehicle""",
+KM-202402,Heritage Damage,Standard,"Complaint about heritage damage: ""Historic tram road cobblestones broken up by cable laying work""",
+KM-202405,Other,Standard,"Complaint about other: ""Wedding band playing near Tagore Museum at 11pm""",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Complaint about pothole: ""Airport access road full of potholes""",
+KM-202410,Pothole,Standard,"Complaint about pothole: ""Pothole causing tyre blowouts""",
+KM-202411,Pothole,Standard,"Complaint about pothole: ""Deep pothole filling with rainwater""",
+KM-202415,Other,Standard,"Complaint about other: ""New residential complex draining directly onto public road""",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Complaint about waste: ""Tourist zone waste overflowing""",
+KM-202421,Road Damage,Urgent,"Complaint about road damage: ""Footpath broken and sinking""",
+KM-202422,Road Damage,Standard,"Complaint about road damage: ""Road surface buckled near bridge""",
+KM-202426,Heritage Damage,Standard,"Complaint about heritage damage: ""Heritage residential building exterior defaced by billboard installation""",
+KM-202430,Road Damage,Standard,"Complaint about road damage: ""Road subsided near gas pipeline""",
+KM-202434,Heritage Damage,Standard,"Complaint about heritage damage: ""Street paving removed for utility work — heritage stone not replaced""",
+KM-202436,Other,Standard,"Complaint about other: ""Entire colony substation tripped""",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Complaint about heritage damage: ""Street vendors using amplifiers illegally in heritage precinct""",
