@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Category Heat Hazard: matched ""melting"", ""44°C""; priority Standard: no severity keywords present.",
+AM-202402,Heat Hazard,Standard,"Category Heat Hazard: matched ""temperatures""; priority Standard: no severity keywords present.",
+AM-202405,Other,Standard,"Category Other: no category keywords found in the description; priority Standard: no severity keywords present, flagged because no category keyword matched.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category Heat Hazard: matched ""heatwave""; priority Standard: no severity keywords present.",
+AM-202407,Road Damage,Urgent,"Category Road Damage: matched ""paving""; priority Urgent: severity keyword ""injured"", ""Child"" forces Urgent.",
+AM-202410,Pothole,Standard,"Category Pothole: matched ""Pothole""; priority Standard: no severity keywords present.",
+AM-202414,Streetlight,Standard,"Category Streetlight: matched ""unlit""; priority Standard: no severity keywords present.",
+AM-202417,Waste,Standard,"Category Waste: matched ""waste""; priority Standard: no severity keywords present, flagged because ""Heritage"" equally suggests Heritage Damage.",NEEDS_REVIEW
+AM-202421,Noise,Low,"Category Noise: matched ""music""; priority Low: non-safety nuisance with no severity keywords.",
+AM-202424,Road Damage,Standard,"Category Road Damage: matched ""road surface""; priority Standard: no severity keywords present, flagged because ""45°C"" equally suggests Heat Hazard.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Category Heat Hazard: matched ""temperature"", ""52°C""; priority Standard: no severity keywords present.",
+AM-202431,Heritage Damage,Standard,"Category Heritage Damage: matched ""Heritage""; priority Standard: no severity keywords present.",
+AM-202435,Heat Hazard,Standard,"Category Heat Hazard: matched ""heat""; priority Standard: no severity keywords present.",
+AM-202444,Waste,Standard,"Category Waste: matched ""waste"", ""bins""; priority Standard: no severity keywords present.",
+AM-202445,Heat Hazard,Standard,"Category Heat Hazard: matched ""full sun""; priority Standard: no severity keywords present.",

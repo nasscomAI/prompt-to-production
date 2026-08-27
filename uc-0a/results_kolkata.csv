@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Category Heritage Damage: matched ""Heritage""; priority Standard: no severity keywords present.",
+KM-202402,Heritage Damage,Standard,"Category Heritage Damage: matched ""Historic"", ""cobblestones""; priority Standard: no severity keywords present.",
+KM-202405,Noise,Low,"Category Noise: matched ""band playing""; priority Low: non-safety nuisance with no severity keywords.",
+KM-202409,Pothole,Standard,"Category Pothole: matched ""potholes""; priority Standard: no severity keywords present.",
+KM-202410,Pothole,Standard,"Category Pothole: matched ""Pothole""; priority Standard: no severity keywords present.",
+KM-202411,Pothole,Standard,"Category Pothole: matched ""pothole""; priority Standard: no severity keywords present, flagged because ""rainwater"" equally suggests Flooding.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,"Category Drain Blockage: matched ""draining""; priority Standard: no severity keywords present.",
+KM-202418,Waste,Standard,"Category Waste: matched ""waste""; priority Standard: no severity keywords present.",
+KM-202421,Road Damage,Urgent,"Category Road Damage: matched ""sinking"", ""Footpath""; priority Urgent: severity keyword ""Hospital"", ""fell"" forces Urgent.",
+KM-202422,Road Damage,Standard,"Category Road Damage: matched ""Road surface""; priority Standard: no severity keywords present.",
+KM-202426,Heritage Damage,Standard,"Category Heritage Damage: matched ""Heritage""; priority Standard: no severity keywords present.",
+KM-202430,Waste,Standard,"Category Waste: weakly matched ""smell""; priority Standard: no severity keywords present, flagged because ""smell"" is only a weak indicator.",NEEDS_REVIEW
+KM-202434,Road Damage,Standard,"Category Road Damage: matched ""paving""; priority Standard: no severity keywords present, flagged because ""heritage"" equally suggests Heritage Damage.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Category Streetlight: weakly matched ""Darkness""; priority Standard: no severity keywords present, flagged because ""Darkness"" is only a weak indicator.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Category Heritage Damage: matched ""heritage""; priority Standard: no severity keywords present.",
