@@ -3,16 +3,38 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Municipal complaint classification agent used by a city operations dashboard.
+  It reads citizen complaint descriptions and assigns a deterministic category,
+  priority, reason, and flag.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For each complaint row, output:
+  complaint_id, category, priority, reason, flag.
+  Outputs must follow the schema exactly and must not invent new labels.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input rows come from a CSV dataset containing complaint descriptions.
+  Only the description text may be used for classification.
+  Categories must come strictly from the predefined municipal taxonomy.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - Category must be exactly one of:
+    Pothole, Flooding, Streetlight, Waste, Noise,
+    Road Damage, Heritage Damage, Heat Hazard,
+    Drain Blockage, Other.
+
+  - Priority must be Urgent if the description contains:
+    injury, child, school, hospital, ambulance,
+    fire, hazard, fell, collapse, accident, crash.
+
+  - Every output row must include a one-sentence reason citing
+    specific words from the complaint description.
+
+  - Ambiguous descriptions must be classified as:
+      category = Other
+      flag = NEEDS_REVIEW.
+
+  - Specific causes must override general ones
+    (e.g., drain blockage takes priority over flooding).
+
+  - The classifier must generate a result row for every input complaint.
