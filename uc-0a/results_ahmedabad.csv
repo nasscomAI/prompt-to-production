@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+AM-202406,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+AM-202407,Other,Urgent,Classified based on explicit mention of 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified based on explicit mention of 'pothole'.,
+AM-202414,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified based on explicit mention of 'waste'.,
+AM-202421,Noise,Standard,Classified based on explicit mention of 'music'.,
+AM-202424,Road Damage,Standard,Classified based on explicit mention of 'road'.,
+AM-202429,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+AM-202431,Road Damage,Standard,Classified based on explicit mention of 'road'.,
+AM-202435,Road Damage,Standard,Classified based on explicit mention of 'road'.,
+AM-202444,Waste,Standard,Classified based on explicit mention of 'waste'.,
+AM-202445,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW

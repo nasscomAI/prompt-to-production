@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on explicit mention of 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified based on explicit mention of 'school', 'pothole'.",
+PM-202406,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,Classified based on explicit mention of 'drain'.,
+PM-202410,Streetlight,Standard,Classified based on explicit mention of 'dark'.,
+PM-202411,Streetlight,Urgent,"Classified based on explicit mention of 'hazard', 'streetlight'.",
+PM-202413,Waste,Standard,Classified based on explicit mention of 'garbage'.,
+PM-202418,Noise,Standard,Classified based on explicit mention of 'music'.,
+PM-202419,Road Damage,Standard,Classified based on explicit mention of 'road'.,
+PM-202420,Other,Urgent,Classified based on explicit mention of 'injury'.,NEEDS_REVIEW
+PM-202427,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+PM-202428,Other,Standard,Could not identify specific keywords for classification.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified based on explicit mention of 'dark'.,
+PM-202433,Waste,Standard,Classified based on explicit mention of 'waste'.,
+PM-202446,Other,Urgent,Classified based on explicit mention of 'fell'.,NEEDS_REVIEW
