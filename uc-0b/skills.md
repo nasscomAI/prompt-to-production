@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Summary Skills
+- Ensure completeness: all numbered clauses must be represented.
+- Preserve meaning: summary must not distort original content.
+- Text cleaning: remove extra spaces, fix punctuation.
+- Structured aggregation: output summaries in `doc_id + summary` format.
+- CSV input/output handling.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Additional Notes
+- Enforce rules per document, do not combine multiple documents.
+- Handle empty clauses gracefully.
