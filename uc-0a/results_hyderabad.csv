@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Complaint mentions 'flood' indicating a flooding issue.,
+GH-202402,Flooding,Standard,Complaint mentions 'flood' indicating a flooding issue.,
+GH-202406,Drain Blockage,Standard,Complaint mentions 'drain' indicating a drain blockage issue.,
+GH-202407,Drain Blockage,Standard,Complaint mentions 'drain' indicating a drain blockage issue.,
+GH-202410,Pothole,Low,Complaint mentions 'pothole' indicating a pothole issue.,
+GH-202411,Pothole,Urgent,Complaint mentions 'pothole' indicating a pothole issue.,
+GH-202412,Pothole,Urgent,Complaint mentions 'pothole' indicating a pothole issue.,
+GH-202417,Waste,Low,Complaint mentions 'garbage' indicating a waste issue.,
+GH-202420,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Complaint mentions 'crater' indicating a pothole issue.,
+GH-202424,Flooding,Low,Complaint mentions 'flood' indicating a flooding issue.,
+GH-202428,Waste,Low,Complaint mentions 'waste' indicating a waste issue.,
+GH-202432,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Complaint mentions 'flood' indicating a flooding issue.,
+GH-202438,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW

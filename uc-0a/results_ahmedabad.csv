@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202402,Other,Standard,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202405,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202406,Other,Standard,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202407,Other,Urgent,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202410,Pothole,Low,Complaint mentions 'pothole' indicating a pothole issue.,
+AM-202414,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202417,Waste,Low,Complaint mentions 'waste' indicating a waste issue.,
+AM-202421,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202424,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202429,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Low,Complaint mentions 'heritage' indicating a heritage damage issue.,
+AM-202435,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+AM-202444,Waste,Low,Complaint mentions 'waste' indicating a waste issue.,
+AM-202445,Other,Standard,Description does not clearly match any known category.,NEEDS_REVIEW

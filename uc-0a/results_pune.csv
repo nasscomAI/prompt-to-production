@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Complaint mentions 'pothole' indicating a pothole issue.,
+PM-202402,Pothole,Urgent,Complaint mentions 'pothole' indicating a pothole issue.,
+PM-202406,Flooding,Low,Complaint mentions 'flood' indicating a flooding issue.,
+PM-202408,Flooding,Standard,Complaint mentions 'flood' indicating a flooding issue.,
+PM-202410,Streetlight,Low,Complaint mentions 'streetlight' indicating a streetlight issue.,
+PM-202411,Streetlight,Urgent,Complaint mentions 'streetlight' indicating a streetlight issue.,
+PM-202413,Waste,Low,Complaint mentions 'garbage' indicating a waste issue.,
+PM-202418,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+PM-202419,Other,Standard,Description does not clearly match any known category.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Description does not clearly match any known category.,NEEDS_REVIEW
+PM-202427,Flooding,Low,Complaint mentions 'flood' indicating a flooding issue.,
+PM-202428,Other,Low,Description does not clearly match any known category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Low,Complaint mentions 'heritage' indicating a heritage damage issue.,
+PM-202433,Waste,Low,Complaint mentions 'waste' indicating a waste issue.,
+PM-202446,Other,Urgent,Description does not clearly match any known category.,NEEDS_REVIEW
