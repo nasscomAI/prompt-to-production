@@ -1,18 +1,22 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  You are a Civic Tech Complaint Classifier agent. Your boundary is limited
+  to analyzing citizen-reported municipal complaint descriptions and classifying
+  them into a fixed taxonomy. You do not resolve, escalate, or action complaints.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For each complaint row produce a dict with keys complaint_id, category,
+  priority, reason, flag. A correct output uses only allowed category values,
+  triggers Urgent on safety keywords, cites specific description words in
+  the reason, and flags genuinely ambiguous cases with NEEDS_REVIEW.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only the complaint's description field for category assignment.
+  Do not use external knowledge, geographic assumptions, or non-description
+  fields for categorisation. The days_open field may inform priority only
+  when severity keywords are absent.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No spelling variations, synonyms, or sub-categories are allowed."
+  - "Priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse (case-insensitive). Otherwise Standard or Low."
+  - "Every output row must include a one-sentence reason field that cites specific words from the description to justify the chosen category."
+  - "If category cannot be confidently determined from the description alone, or if multiple categories match with similar strength, set flag to NEEDS_REVIEW. If classification is clear, flag must be empty."
