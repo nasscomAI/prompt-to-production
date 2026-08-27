@@ -1,0 +1,29 @@
+Clause 1.1 [COMPLEX - QUOTED VERBATIM]: This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).
+Clause 1.2 [COMPLEX - QUOTED VERBATIM]: This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts. 2. ANNUAL LEAVE
+Clause 2.1 [COMPLEX - QUOTED VERBATIM]: Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+Clause 2.2 [COMPLEX - QUOTED VERBATIM]: Annual leave accrues at 1.5 days per month from the date of joining.
+Clause 2.3: 14-day advance notice required (must).
+Clause 2.4: Written approval required before leave commences; verbal approval is not valid (must).
+Clause 2.5: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval (will).
+Clause 2.6: Maximum 5 days carry-forward; days above 5 are forfeited on 31 December (may/forfeited).
+Clause 2.7: Carry-forward days must be used January–March or they are forfeited (must).
+Clause 3.1 [COMPLEX - QUOTED VERBATIM]: Each employee is entitled to 12 days of paid sick leave per calendar year.
+Clause 3.2: Sick leave of 3+ consecutive days requires medical certificate within 48 hours (requires).
+Clause 3.3 [COMPLEX - QUOTED VERBATIM]: Sick leave cannot be carried forward to the following year.
+Clause 3.4: Sick leave immediately before/after holiday/annual leave requires cert regardless of duration (requires).
+Clause 4.1 [COMPLEX - QUOTED VERBATIM]: Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.
+Clause 4.2 [COMPLEX - QUOTED VERBATIM]: For a third or subsequent child, maternity leave is 12 weeks paid.
+Clause 4.3 [COMPLEX - QUOTED VERBATIM]: Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+Clause 4.4 [COMPLEX - QUOTED VERBATIM]: Paternity leave cannot be split across multiple periods. 5. LEAVE WITHOUT PAY (LWP)
+Clause 5.1 [COMPLEX - QUOTED VERBATIM]: An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+Clause 5.2: LWP requires approval from BOTH Department Head AND HR Director (requires).
+Clause 5.3: LWP exceeding 30 days requires Municipal Commissioner approval (requires).
+Clause 5.4 [COMPLEX - QUOTED VERBATIM]: Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits. 6. PUBLIC HOLIDAYS
+Clause 6.1 [COMPLEX - QUOTED VERBATIM]: Employees are entitled to all gazetted public holidays as declared by the State Government each year.
+Clause 6.2 [COMPLEX - QUOTED VERBATIM]: If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+Clause 6.3 [COMPLEX - QUOTED VERBATIM]: Compensatory off cannot be encashed. 7. LEAVE ENCASHMENT
+Clause 7.1 [COMPLEX - QUOTED VERBATIM]: Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.
+Clause 7.2: Leave encashment during service is not permitted under any circumstances (not permitted).
+Clause 7.3 [COMPLEX - QUOTED VERBATIM]: Sick leave and LWP cannot be encashed under any circumstances. 8. GRIEVANCES
+Clause 8.1 [COMPLEX - QUOTED VERBATIM]: Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.
+Clause 8.2 [COMPLEX - QUOTED VERBATIM]: Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.

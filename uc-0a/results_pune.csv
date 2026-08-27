@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority because the description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description mentions 'child, pothole'.",
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority because the description mentions 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding with Standard priority because the description mentions 'flood'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority because the description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,"Classified as Streetlight with Urgent priority because the description mentions 'streetlight, hazard'.",
+PM-202413,Waste,Standard,Classified as Waste with Standard priority because the description mentions 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise with Standard priority because the description mentions 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage with Standard priority because the description mentions 'crack'.,
+PM-202420,Other,Urgent,Classified as Other with Urgent priority because the description mentions 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority because the description mentions 'flood'.,
+PM-202428,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight with Standard priority because the description mentions 'dark'.,
+PM-202433,Waste,Standard,Classified as Waste with Standard priority because the description mentions 'waste'.,
+PM-202446,Other,Urgent,Classified as Other with Urgent priority because the description mentions 'fell'.,NEEDS_REVIEW

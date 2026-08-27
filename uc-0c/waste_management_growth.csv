@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth,formula,status,null_reason
+2024-01,Ward 1 – Kasba,Waste Management,5.3,NULL,First period in series - No previous data for MoM,FLAGGED,n/a
+2024-02,Ward 1 – Kasba,Waste Management,6.4,+20.8%,(6.4 - 5.3) / 5.3,OK,n/a
+2024-03,Ward 1 – Kasba,Waste Management,6.5,+1.6%,(6.5 - 6.4) / 6.4,OK,n/a
+2024-04,Ward 1 – Kasba,Waste Management,5.7,-12.3%,(5.7 - 6.5) / 6.5,OK,n/a
+2024-05,Ward 1 – Kasba,Waste Management,6.1,+7.0%,(6.1 - 5.7) / 5.7,OK,n/a
+2024-06,Ward 1 – Kasba,Waste Management,5.7,-6.6%,(5.7 - 6.1) / 6.1,OK,n/a
+2024-07,Ward 1 – Kasba,Waste Management,7.6,+33.3%,(7.6 - 5.7) / 5.7,OK,n/a
+2024-08,Ward 1 – Kasba,Waste Management,8.3,+9.2%,(8.3 - 7.6) / 7.6,OK,n/a
+2024-09,Ward 1 – Kasba,Waste Management,8.9,+7.2%,(8.9 - 8.3) / 8.3,OK,n/a
+2024-10,Ward 1 – Kasba,Waste Management,6.8,-23.6%,(6.8 - 8.9) / 8.9,OK,n/a
+2024-11,Ward 1 – Kasba,Waste Management,NULL,NULL,Cannot compute MoM - Current period value is missing,FLAGGED,Contractor change — billing delayed
+2024-12,Ward 1 – Kasba,Waste Management,5.1,NULL,Cannot compute MoM - Previous period (2024-11) value is missing,FLAGGED,n/a
