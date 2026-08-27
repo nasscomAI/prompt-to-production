@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on the presence of the word 'pothole'.,
+PM-202402,Pothole,Urgent,Classified as Pothole because description mentions 'pothole'; upgraded to Urgent due to 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding based on the presence of the word 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding based on the presence of the word 'flood'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight based on the presence of the word 'light'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description mentions 'light'; upgraded to Urgent due to 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste based on the presence of the word 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise based on the presence of the word 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage based on the presence of the word 'crack'.,
+PM-202420,Other,Urgent,Classified as Other because description mentions 'problem'; upgraded to Urgent due to 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding based on the presence of the word 'flood'.,
+PM-202428,Other,Standard,No specific category keywords found in description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight based on the presence of the word 'light'.,
+PM-202433,Waste,Standard,Classified as Waste based on the presence of the word 'dump'.,
+PM-202446,Other,Urgent,Classified as Other because description mentions 'problem'; upgraded to Urgent due to 'fell'.,NEEDS_REVIEW
