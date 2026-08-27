@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Identified as Pothole due to 'pothole'.,
+PM-202402,Pothole,Urgent,Identified as Pothole due to 'pothole'. Marked Urgent because of risk associated with 'child'.,
+PM-202406,Flooding,Standard,Identified as Flooding due to 'flood'.,
+PM-202408,Flooding,Standard,Identified as Flooding due to 'flood'.,
+PM-202410,Streetlight,Standard,Identified as Streetlight due to 'streetlight'.,
+PM-202411,Streetlight,Urgent,Identified as Streetlight due to 'streetlight'. Marked Urgent because of risk associated with 'hazard'.,
+PM-202413,Waste,Standard,Identified as Waste due to 'garbage'.,
+PM-202418,Noise,Standard,Identified as Noise due to 'music'.,
+PM-202419,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Category could not be determined from the description alone. Marked Urgent because of risk associated with 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Identified as Flooding due to 'flood'.,
+PM-202428,Other,Standard,Category could not be determined from the description alone.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Identified as Heritage Damage due to 'heritage'.,
+PM-202433,Waste,Standard,Identified as Waste due to 'waste'.,
+PM-202446,Other,Urgent,Category could not be determined from the description alone. Marked Urgent because of risk associated with 'fell'.,NEEDS_REVIEW
