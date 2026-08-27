@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,The complaint is classified as Road Damage because the description mentions surface.,
+AM-202402,Other,Standard,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The complaint is classified as Heat Hazard because the description mentions heat.,
+AM-202407,Other,Urgent,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The complaint is classified as Pothole because the description mentions pothole.,
+AM-202414,Other,Standard,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The complaint is classified as Waste because the description mentions waste.,
+AM-202421,Noise,Standard,The complaint is classified as Noise because the description mentions music.,
+AM-202424,Road Damage,Standard,The complaint is classified as Road Damage because the description mentions road.,
+AM-202429,Road Damage,Standard,The complaint is classified as Road Damage because the description mentions surface.,
+AM-202431,Heritage Damage,Standard,The complaint is classified as Heritage Damage because the description mentions heritage.,
+AM-202435,Heat Hazard,Standard,The complaint is classified as Heat Hazard because the description mentions heat.,
+AM-202444,Waste,Standard,The complaint is classified as Waste because the description mentions waste.,
+AM-202445,Other,Standard,Category is genuinely ambiguous from the description provided.,NEEDS_REVIEW
