@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,comparator_period,comparator_actual,growth_value,growth_percent,formula,flag,notes
+2024-01,Ward_1_-_Kasba,Roads_and_Pothole_Repair,13.3,,,,,(current - previous)/previous,NULL_VALUE,
+2024-02,Ward_1_-_Kasba,Roads_and_Pothole_Repair,12.2,2024-01,13.3,-0.082707,-8.3%,(current - previous)/previous,,
+2024-03,Ward_1_-_Kasba,Roads_and_Pothole_Repair,12.3,2024-02,12.2,0.008197,+0.8%,(current - previous)/previous,,
+2024-04,Ward_1_-_Kasba,Roads_and_Pothole_Repair,13.4,2024-03,12.3,0.089431,+8.9%,(current - previous)/previous,,
+2024-05,Ward_1_-_Kasba,Roads_and_Pothole_Repair,14.1,2024-04,13.4,0.052239,+5.2%,(current - previous)/previous,,
+2024-06,Ward_1_-_Kasba,Roads_and_Pothole_Repair,14.8,2024-05,14.1,0.049645,+5.0%,(current - previous)/previous,,
+2024-07,Ward_1_-_Kasba,Roads_and_Pothole_Repair,19.7,2024-06,14.8,0.331081,+33.1%,(current - previous)/previous,,
+2024-08,Ward_1_-_Kasba,Roads_and_Pothole_Repair,20.2,2024-07,19.7,0.025381,+2.5%,(current - previous)/previous,,
+2024-09,Ward_1_-_Kasba,Roads_and_Pothole_Repair,20.1,2024-08,20.2,-0.00495,-0.5%,(current - previous)/previous,,
+2024-10,Ward_1_-_Kasba,Roads_and_Pothole_Repair,13.1,2024-09,20.1,-0.348259,-34.8%,(current - previous)/previous,,
+2024-11,Ward_1_-_Kasba,Roads_and_Pothole_Repair,14.2,2024-10,13.1,0.083969,+8.4%,(current - previous)/previous,,
+2024-12,Ward_1_-_Kasba,Roads_and_Pothole_Repair,12.7,2024-11,14.2,-0.105634,-10.6%,(current - previous)/previous,,
