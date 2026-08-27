@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The complaint was classified due to the presence of terms: 'heritage'.,
+KM-202402,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+KM-202405,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The complaint was classified due to the presence of terms: 'pothole'.,
+KM-202410,Pothole,Standard,The complaint was classified due to the presence of terms: 'pothole'.,
+KM-202411,Pothole,Standard,The complaint was classified due to the presence of terms: 'pothole'.,
+KM-202415,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+KM-202418,Waste,Standard,The complaint was classified due to the presence of terms: 'waste'.,
+KM-202421,Road Damage,Urgent,"The complaint was classified due to the presence of terms: 'hospital', 'fell', 'footpath'.",
+KM-202422,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,The complaint was classified due to the presence of terms: 'heritage'.,
+KM-202430,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The complaint was classified due to the presence of terms: 'heritage'.,
+KM-202436,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The complaint was classified due to the presence of terms: 'heritage'.,

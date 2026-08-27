@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint was classified due to the presence of terms: 'pothole'.,
+PM-202402,Pothole,Urgent,"The complaint was classified due to the presence of terms: 'child', 'school', 'pothole'.",
+PM-202406,Flooding,Standard,The complaint was classified due to the presence of terms: 'flood'.,
+PM-202408,Other,Standard,"The complaint was classified due to the presence of terms: 'flood', 'drain block'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The complaint was classified due to the presence of terms: 'streetlight'.,
+PM-202411,Streetlight,Urgent,"The complaint was classified due to the presence of terms: 'hazard', 'streetlight'.",
+PM-202413,Waste,Standard,The complaint was classified due to the presence of terms: 'garbage'.,
+PM-202418,Noise,Standard,The complaint was classified due to the presence of terms: 'music'.,
+PM-202419,Road Damage,Standard,The complaint was classified due to the presence of terms: 'crack'.,
+PM-202420,Road Damage,Urgent,"The complaint was classified due to the presence of terms: 'injury', 'manhole'.",
+PM-202427,Flooding,Standard,The complaint was classified due to the presence of terms: 'flood'.,
+PM-202428,Waste,Standard,The complaint was classified due to the presence of terms: 'dead animal'.,
+PM-202430,Other,Standard,"The complaint was classified due to the presence of terms: 'lights out', 'heritage'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,The complaint was classified due to the presence of terms: 'waste'.,
+PM-202446,Road Damage,Urgent,"The complaint was classified due to the presence of terms: 'fell', 'footpath'.",

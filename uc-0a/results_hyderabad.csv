@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The complaint was classified due to the presence of terms: 'ambulance', 'flood'.",
+GH-202402,Flooding,Standard,The complaint was classified due to the presence of terms: 'flood'.,
+GH-202406,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,The complaint was classified due to the presence of terms: 'drain block'.,
+GH-202410,Pothole,Standard,The complaint was classified due to the presence of terms: 'pothole'.,
+GH-202411,Pothole,Urgent,"The complaint was classified due to the presence of terms: 'hospital', 'pothole'.",
+GH-202412,Pothole,Urgent,"The complaint was classified due to the presence of terms: 'school', 'pothole'.",
+GH-202417,Other,Standard,"The complaint was classified due to the presence of terms: 'waste', 'heritage'.",NEEDS_REVIEW
+GH-202420,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The complaint was classified due to the presence of terms: 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,The complaint was classified due to the presence of terms: 'flood'.,
+GH-202428,Waste,Standard,The complaint was classified due to the presence of terms: 'waste'.,
+GH-202432,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
+GH-202448,Other,Standard,"The complaint was classified due to the presence of terms: 'flood', 'drain block'.",NEEDS_REVIEW
+GH-202438,Other,Standard,No specific classification identifiers were found in the description.,NEEDS_REVIEW
