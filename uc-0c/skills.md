@@ -1,16 +1,21 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Financial Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## load_dataset
+**Input**: Path to a budget CSV.
+**Process**:
+1. Load the CSV into memory.
+2. Validate required columns: `period`, `ward`, `category`, `budgeted_amount`, `actual_spend`, `notes`.
+3. Count rows.
+4. Scan `actual_spend` for NULLs or empties.
+5. Report NULL count and specific locations (Period/Ward/Category) and their reasons from `notes`.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## compute_growth
+**Input**: Ward name, Category name, Growth type (MoM).
+**Process**:
+1. Filter dataset for provided Ward and Category.
+2. Sort by `period`.
+3. For each period (starting from the second):
+   - Check if current or previous `actual_spend` is NULL.
+   - If NULL → output "DATA_MISSING" and cite reason.
+   - Else → Calculate: `((curr - prev) / prev) * 100`.
+4. Output a table with columns: `Period`, `Actual Spend`, `MoM Growth`, `Formula`.
