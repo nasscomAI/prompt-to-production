@@ -3,14 +3,20 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+Input: one complaint row  
+Output: category, priority, reason, flag
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+Rules:
+- Use exact allowed category names.
+- Set Urgent if severity keywords appear.
+- Give one sentence reason.
+- Use NEEDS_REVIEW for ambiguous complaints.
+
+## batch_classify
+Input: CSV file  
+Output: CSV file with complaint_id, category, priority, reason, flag
+
+Steps:
+1. Read input CSV.
+2. Apply classify_complaint to each row.
+3. Write output CSV.
