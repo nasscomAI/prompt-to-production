@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,growth,formula,notes
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.9,NULL,N/A - reference period 2023-01 not found in dataset,Cannot compute YoY: reference period 2023-01 is missing
+2024-02,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.4,NULL,N/A - reference period 2023-02 not found in dataset,Cannot compute YoY: reference period 2023-02 is missing
+2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,NULL,NULL,N/A - actual_spend is null,Data not submitted by ward office
+2024-04,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.0,NULL,N/A - reference period 2023-04 not found in dataset,Cannot compute YoY: reference period 2023-04 is missing
+2024-05,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.2,NULL,N/A - reference period 2023-05 not found in dataset,Cannot compute YoY: reference period 2023-05 is missing
+2024-06,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.3,NULL,N/A - reference period 2023-06 not found in dataset,Cannot compute YoY: reference period 2023-06 is missing
+2024-07,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.6,NULL,N/A - reference period 2023-07 not found in dataset,Cannot compute YoY: reference period 2023-07 is missing
+2024-08,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.8,NULL,N/A - reference period 2023-08 not found in dataset,Cannot compute YoY: reference period 2023-08 is missing
+2024-09,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,12.9,NULL,N/A - reference period 2023-09 not found in dataset,Cannot compute YoY: reference period 2023-09 is missing
+2024-10,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,11.5,NULL,N/A - reference period 2023-10 not found in dataset,Cannot compute YoY: reference period 2023-10 is missing
+2024-11,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.4,NULL,N/A - reference period 2023-11 not found in dataset,Cannot compute YoY: reference period 2023-11 is missing
+2024-12,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,8.4,NULL,N/A - reference period 2023-12 not found in dataset,Cannot compute YoY: reference period 2023-12 is missing

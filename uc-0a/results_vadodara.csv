@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions '°c', 'melting', 'sticking', indicating Heat Hazard.",
+AM-202402,Heat Hazard,Standard,"Description mentions 'temperature', 'dangerous temperatures', indicating Heat Hazard.",
+AM-202405,Other,Standard,Description 'Dead trees with split branches. Fall risk to walkers. 3 trees affected.' does not map clearly to one allowed category.,NEEDS_REVIEW
+AM-202406,Other,Low,"Description cites 'heatwave' but category remains ambiguous, so assigned Other for review.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Description mentions 'paving', 'upturned', indicating Road Damage.",
+AM-202410,Pothole,Standard,"Description mentions 'pothole', indicating Pothole.",
+AM-202414,Streetlight,Standard,"Description mentions 'unlit', 'wiring theft', indicating Streetlight.",
+AM-202417,Waste,Standard,"Description mentions 'waste', 'not cleared', indicating Waste.",
+AM-202421,Noise,Standard,"Description mentions 'music', 'audible', indicating Noise.",
+AM-202424,Other,Low,"Description cites '°c', 'bubbling', 'road surface' but category remains ambiguous, so assigned Other for review.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Description mentions '°c', 'temperature', 'unbearable', indicating Heat Hazard.",
+AM-202431,Other,Standard,"Description cites 'heritage concern', 'road subsidence', 'subsidence' but category remains ambiguous, so assigned Other for review.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Description mentions 'burns', indicating Heat Hazard.",
+AM-202444,Waste,Standard,"Description mentions 'waste', 'overflowing', 'bins overflowing', indicating Waste.",
+AM-202445,Other,Standard,"Description cites 'full sun' but category remains ambiguous, so assigned Other for review.",NEEDS_REVIEW
