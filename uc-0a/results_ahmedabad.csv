@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Category is Road Damage as the description mentions 'surface'.,
+AM-202402,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category is Heat Hazard as the description mentions 'heat'.,
+AM-202407,Other,Urgent,"Priority is Urgent because it mentions 'child', and category is Other as it contains no clearly identifiable category keywords.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category is Pothole as the description mentions 'pothole'.,
+AM-202414,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+AM-202417,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Category is Noise as the description mentions 'music'.,
+AM-202424,Road Damage,Standard,Category is Road Damage as the description mentions 'road'.,
+AM-202429,Road Damage,Standard,Category is Road Damage as the description mentions 'surface'.,
+AM-202431,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+AM-202435,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+AM-202444,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+AM-202445,Heat Hazard,Standard,Category is Heat Hazard as the description mentions 'sun'.,

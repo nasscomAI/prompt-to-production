@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+PM-202402,Pothole,Urgent,"Priority is Urgent because it mentions 'child', and category is Pothole as it mentions 'pothole'.",
+PM-202406,Flooding,Standard,Category is Flooding as the description mentions 'flood'.,
+PM-202408,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category is Streetlight as the description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,"Priority is Urgent because it mentions 'hazard', and category is Streetlight as it mentions 'streetlight'.",
+PM-202413,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+PM-202418,Noise,Standard,Category is Noise as the description mentions 'music'.,
+PM-202419,Road Damage,Standard,Category is Road Damage as the description mentions 'road'.,
+PM-202420,Pothole,Urgent,"Priority is Urgent because it mentions 'injury', and category is Pothole as it mentions 'hole'.",
+PM-202427,Flooding,Standard,Category is Flooding as the description mentions 'flood'.,
+PM-202428,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+PM-202430,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+PM-202433,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+PM-202446,Other,Urgent,"Priority is Urgent because it mentions 'fell', and category is Other as it contains no clearly identifiable category keywords.",NEEDS_REVIEW

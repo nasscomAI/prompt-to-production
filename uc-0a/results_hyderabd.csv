@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Priority is Urgent because it mentions 'ambulance', and category is Flooding as it mentions 'flood'.",
+GH-202402,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Category is Drain Blockage as the description mentions 'drain'.,
+GH-202407,Drain Blockage,Standard,Category is Drain Blockage as the description mentions 'drain'.,
+GH-202410,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+GH-202411,Pothole,Urgent,"Priority is Urgent because it mentions 'hospital', and category is Pothole as it mentions 'pothole'.",
+GH-202412,Pothole,Urgent,"Priority is Urgent because it mentions 'school', and category is Pothole as it mentions 'pothole'.",
+GH-202417,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+GH-202420,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+GH-202422,Other,Urgent,"Priority is Urgent because it mentions 'collapse', and category is Other as it contains conflicting category keywords.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,Category is Flooding as the description mentions 'flood'.,
+GH-202428,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+GH-202432,Other,Standard,Category is Other as the description contains no clearly identifiable category keywords.,NEEDS_REVIEW
+GH-202448,Other,Standard,Category is Other as the description contains conflicting category keywords.,NEEDS_REVIEW
+GH-202438,Road Damage,Standard,Category is Road Damage as the description mentions 'road'.,
