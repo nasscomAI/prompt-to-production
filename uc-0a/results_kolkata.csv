@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Description mentions 'lamp post', 'Heritage'.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Description mentions 'Historic', 'cobblestone'; indicating Heritage Damage.",
+KM-202405,Other,Standard,Description does not clearly match any category.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole'; indicating Pothole.,
+KM-202410,Pothole,Standard,Description mentions 'Pothole'; indicating Pothole.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'; indicating Pothole.,
+KM-202415,Drain Blockage,Standard,Description mentions 'drain'; indicating Drain Blockage.,
+KM-202418,Waste,Standard,Description mentions 'waste'; indicating Waste.,
+KM-202421,Road Damage,Urgent,"Description mentions 'Footpath'; indicating Road Damage; with urgent keyword(s): hospital, fell.",
+KM-202422,Road Damage,Standard,"Description mentions 'Road surface', 'buckled'; indicating Road Damage.",
+KM-202426,Heritage Damage,Standard,Description mentions 'Heritage'; indicating Heritage Damage.,
+KM-202430,Road Damage,Standard,Description mentions 'subsided'; indicating Road Damage.,
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage'; indicating Heritage Damage.,
+KM-202436,Streetlight,Standard,Description mentions 'Darkness'; indicating Streetlight.,
+KM-202438,Other,Standard,"Description mentions 'amplifier', 'heritage'.",NEEDS_REVIEW
