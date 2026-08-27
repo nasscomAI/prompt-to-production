@@ -1,16 +1,19 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+name: C_Code_Debugger
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+description: Analyzes C source code to identify syntax errors, logical bugs, and memory leaks while providing optimized corrections.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+input: A raw string containing C source code or a .c file path.
+
+output: A structured JSON object containing a list of identified errors, line numbers, and the corrected code snippet.
+
+error_handling: If the input is not valid C code or is empty, the system returns a "Syntax Error: Undefined Input" message and requests a valid code block.
+
+name: Physics_Formula_Solver
+
+description: Calculates experimental values for physics topics like the Hall effect, lasers, and the photoelectric effect using standard physical constants.
+
+input: A dictionary of known variables (e.g., current, magnetic field, wavelength) and the target variable to solve for.
+
+output: A numerical value with appropriate SI units and a brief explanation of the derivation.
+
+error_handling: If required variables are missing or values are physically impossible (e.g., negative Kelvin), it returns an "Incomplete Data" error and lists the missing parameters.
