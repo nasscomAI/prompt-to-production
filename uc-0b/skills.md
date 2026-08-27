@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: retrieve_policy
+  description: Loads a .txt policy file and returns its content as structured numbered sections.
+  input: file_path (string) pointing to a .txt policy document.
+  output: sections (list of objects) with clause numbers and text.
+  error_handling: Raise an invalid format error if the file is unreadable or lacks numbered clauses, refusing to parse unstructured text.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: summarize_policy
+  description: Takes structured sections and produces a compliant summary with clause references preserving all conditions and binding verbs.
+  input: sections (list of objects) containing all extracted clauses from retrieve_policy.
+  output: summary (string) containing a compliant summary without losing conditions or introducing scope bleed.
+  error_handling: If a multi-condition requirement cannot be effectively paraphrased without modifying the meaning, explicitly quote it verbatim and flag it rather than summarizing incorrectly.
