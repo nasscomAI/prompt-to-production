@@ -40,6 +40,8 @@ Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
 | 5.3 | LWP >30 days requires Municipal Commissioner approval | requires |
 | 7.2 | Leave encashment during service not permitted under any circumstances | not permitted |
 
+**Output requirement:** The summary file must include each clause listed above, preserving the exact conditions and verb structure shown in the clause inventory. If any clause cannot be safely paraphrased without changing meaning, include it verbatim and flag it.
+
 **The trap:** Clause 5.2 requires TWO approvers. AI will often preserve "requires approval" but drop "from both Department Head and HR Director." That is a condition drop — not a softening.
 
 ---
