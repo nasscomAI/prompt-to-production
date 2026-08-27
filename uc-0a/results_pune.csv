@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classification based on keywords: pothole found in description.,
+PM-202402,Pothole,Urgent,Classification based on keywords: pothole found in description.,
+PM-202406,Flooding,Standard,"Classification based on keywords: flood, flooded, knee-deep found in description.",
+PM-202408,Flooding,Standard,"Classification based on keywords: flood, flooded, standing in water found in description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classification based on keywords: streetlight, lights out found in description.",
+PM-202411,Streetlight,Urgent,Classification based on keywords: streetlight found in description.,
+PM-202413,Waste,Standard,"Classification based on keywords: garbage, bins found in description.",NEEDS_REVIEW
+PM-202418,Noise,Standard,Classification based on keywords: music found in description.,
+PM-202419,Road Damage,Standard,"Classification based on keywords: road surface, cracked found in description.",
+PM-202420,Drain Blockage,Urgent,Classification based on keywords: manhole found in description.,
+PM-202427,Flooding,Standard,Classification based on keywords: flood found in description.,
+PM-202428,Waste,Standard,Classification based on keywords: dead animal found in description.,
+PM-202430,Streetlight,Standard,Classification based on keywords: lights out found in description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classification based on keywords: waste, dump found in description.",
+PM-202446,Road Damage,Urgent,"Classification based on keywords: footpath, tiles broken found in description.",

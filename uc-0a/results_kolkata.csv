@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classification based on keywords: lamp post found in description.,NEEDS_REVIEW
+KM-202402,Other,Standard,"Classification based on keywords: historic, tram, road found in description.",NEEDS_REVIEW
+KM-202405,Other,Standard,"Classification based on keywords: wedding, band, playing found in description.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Classification based on keywords: pothole, potholes found in description.",
+KM-202410,Pothole,Standard,Classification based on keywords: pothole found in description.,
+KM-202411,Pothole,Standard,Classification based on keywords: pothole found in description.,
+KM-202415,Drain Blockage,Standard,Classification based on keywords: drain found in description.,
+KM-202418,Waste,Standard,Classification based on keywords: waste found in description.,NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,Classification based on keywords: footpath found in description.,
+KM-202422,Road Damage,Standard,Classification based on keywords: road surface found in description.,
+KM-202426,Heritage Damage,Standard,Classification based on keywords: heritage found in description.,
+KM-202430,Other,Standard,"Classification based on keywords: road, subsided, near found in description.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classification based on keywords: heritage found in description.,
+KM-202436,Other,Standard,"Classification based on keywords: entire, colony, substation found in description.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classification based on keywords: heritage found in description.,
