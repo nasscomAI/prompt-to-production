@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using Google Fonts for Windows-like typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Header -->
+        <div class="calc-header">
+            <div class="menu-icon">&#9776;</div>
+            <div class="calc-mode">Scientific</div>
+        </div>
+
+        <!-- Displays -->
+        <div class="display-container">
+            <div class="history-display" id="history"></div>
+            <div class="main-display" id="display">0</div>
+        </div>
+
+        <!-- Controls -->
+        <div class="memory-controls">
+            <button class="mem-btn">MC</button>
+            <button class="mem-btn">MR</button>
+            <button class="mem-btn">M+</button>
+            <button class="mem-btn">M-</button>
+            <button class="mem-btn">MS</button>
+        </div>
+
+        <div class="keypad">
+            <!-- Row 1 -->
+            <button class="btn fn" data-action="trig">sin</button>
+            <button class="btn fn" data-action="trig">cos</button>
+            <button class="btn fn" data-action="trig">tan</button>
+            <button class="btn action highlight-bg" data-action="clear-all">C</button>
+            <button class="btn action highlight-bg" data-action="backspace">&#9003;</button>
+
+            <!-- Row 2 -->
+            <button class="btn fn" data-action="power2">x&sup2;</button>
+            <button class="btn fn" data-action="inv">1/x</button>
+            <button class="btn fn" data-action="abs">|x|</button>
+            <button class="btn action highlight-bg" data-action="clear-entry">CE</button>
+            <button class="btn op highlight-bg" data-val="%">Mod</button>
+
+            <!-- Row 3 -->
+            <button class="btn fn" data-action="sqrt">&radic;x</button>
+            <button class="btn fn op" data-val="(">(</button>
+            <button class="btn fn op" data-val=")">)</button>
+            <button class="btn fn" data-action="fact">n!</button>
+            <button class="btn op highlight-bg" data-val="/">&divide;</button>
+
+            <!-- Row 4 -->
+            <button class="btn fn op" data-val="^">x<sup>y</sup></button>
+            <button class="btn num light-bg" data-val="7">7</button>
+            <button class="btn num light-bg" data-val="8">8</button>
+            <button class="btn num light-bg" data-val="9">9</button>
+            <button class="btn op highlight-bg" data-val="*">&times;</button>
+
+            <!-- Row 5 -->
+            <button class="btn fn" data-action="power10">10<sup>x</sup></button>
+            <button class="btn num light-bg" data-val="4">4</button>
+            <button class="btn num light-bg" data-val="5">5</button>
+            <button class="btn num light-bg" data-val="6">6</button>
+            <button class="btn op highlight-bg" data-val="-">&minus;</button>
+
+            <!-- Row 6 -->
+            <button class="btn fn" data-action="log">log</button>
+            <button class="btn num light-bg" data-val="1">1</button>
+            <button class="btn num light-bg" data-val="2">2</button>
+            <button class="btn num light-bg" data-val="3">3</button>
+            <button class="btn op highlight-bg" data-val="+">+</button>
+
+            <!-- Row 7 -->
+            <button class="btn fn" data-action="ln">ln</button>
+            <button class="btn fn" data-action="neg">+/-</button>
+            <button class="btn num light-bg" data-val="0">0</button>
+            <button class="btn num light-bg" data-val=".">.</button>
+            <button class="btn compute action" data-action="compute">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

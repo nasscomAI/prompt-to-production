@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202402,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202406,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202407,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202410,Pothole,Standard,The description mentions the 'pothole' issue.,
+GH-202411,Pothole,Urgent,The description mentions 'hospital'.,
+GH-202412,Pothole,Urgent,The description mentions 'school'.,
+GH-202417,Waste,Standard,The description mentions the 'waste' issue.,
+GH-202420,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202424,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202428,Waste,Standard,The description mentions the 'waste' issue.,
+GH-202432,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description mentions the 'flooding' issue.,
+GH-202438,Other,Standard,Category is genuinely ambiguous or could not be determined.,NEEDS_REVIEW
