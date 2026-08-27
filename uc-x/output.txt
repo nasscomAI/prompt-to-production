@@ -1,0 +1,27 @@
+UC-X Ask My Documents
+Type 'exit' or 'quit' to stop.
+
+Question: 
+policy_hr_leave.txt Section 2.6 - Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+Question: 
+policy_it_acceptable_use.txt Section 2.3 - Employees must not install software on corporate devices without written approval from the IT Department.
+
+Question: 
+policy_finance_reimbursement.txt Section 3.1 - Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+
+Question: 
+policy_it_acceptable_use.txt Section 3.1 - Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+
+Question: 
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+Question: 
+policy_finance_reimbursement.txt Section 2.6 - If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day.
+
+Question: 
+policy_hr_leave.txt Section 5.2 - LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+
+Question: 

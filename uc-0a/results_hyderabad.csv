@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description includes 'flood', classifying as Flooding. Priority mapped to Urgent because 'ambulance' was mentioned.",
+GH-202402,Drain Blockage,Standard,"Description includes 'drain', classifying as Drain Blockage.",
+GH-202406,Drain Blockage,Standard,"Description includes 'drain', classifying as Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Description includes 'drain block', classifying as Drain Blockage.",
+GH-202410,Pothole,Standard,"Description includes 'pothole', classifying as Pothole.",
+GH-202411,Pothole,Urgent,"Description includes 'pothole', classifying as Pothole. Priority mapped to Urgent because 'hospital' was mentioned.",
+GH-202412,Pothole,Urgent,"Description includes 'pothole', classifying as Pothole. Priority mapped to Urgent because 'school' was mentioned.",
+GH-202417,Waste,Standard,"Description includes 'garbage', classifying as Waste.",
+GH-202420,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Could not determine specific category from description text. Priority mapped to Urgent because 'collapse' was mentioned.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Description includes 'flood', classifying as Flooding.",
+GH-202428,Waste,Standard,"Description includes 'waste', classifying as Waste.",
+GH-202432,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Description includes 'drain block', classifying as Drain Blockage.",
+GH-202438,Flooding,Standard,"Description includes 'rain', classifying as Flooding.",

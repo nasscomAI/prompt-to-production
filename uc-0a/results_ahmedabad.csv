@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description includes 'heat', classifying as Heat Hazard.",
+AM-202407,Other,Urgent,Could not determine specific category from description text. Priority mapped to Urgent because 'child' was mentioned.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Description includes 'pothole', classifying as Pothole.",
+AM-202414,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Description includes 'waste', classifying as Waste.",
+AM-202421,Noise,Standard,"Description includes 'music', classifying as Noise.",
+AM-202424,Road Damage,Standard,"Description includes 'road surface', classifying as Road Damage.",
+AM-202429,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Description includes 'heritage', classifying as Heritage Damage.",
+AM-202435,Heat Hazard,Standard,"Description includes 'heat', classifying as Heat Hazard.",
+AM-202444,Waste,Standard,"Description includes 'waste', classifying as Waste.",
+AM-202445,Other,Standard,Could not determine specific category from description text.,NEEDS_REVIEW
