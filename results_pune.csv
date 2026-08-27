@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,Found words: pothole/road text found,OK
+PM-202402,Pothole,Urgent,"Found words: child, school, pothole/road text found",OK
+PM-202406,Flooding,Normal,Found words: flood/rain text found,OK
+PM-202408,Flooding,Normal,Found words: flood/rain text found,OK
+PM-202410,Streetlight,Normal,Found words: light/dark text found,OK
+PM-202411,Streetlight,Normal,Found words: light/dark text found,OK
+PM-202413,Sanitation,Normal,Found words: garbage/waste text found,OK
+PM-202418,Other,Normal,Found words: unclear description,NEEDS_REVIEW
+PM-202419,Pothole,Normal,Found words: pothole/road text found,OK
+PM-202420,Other,Urgent,"Found words: injury, unclear description",NEEDS_REVIEW
+PM-202427,Flooding,Normal,Found words: flood/rain text found,OK
+PM-202428,Other,Normal,Found words: unclear description,NEEDS_REVIEW
+PM-202430,Streetlight,Normal,Found words: light/dark text found,OK
+PM-202433,Pothole,Normal,Found words: pothole/road text found,OK
+PM-202446,Other,Normal,Found words: unclear description,NEEDS_REVIEW
