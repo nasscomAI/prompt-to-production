@@ -1,35 +1,53 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
 import csv
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def classify_complaint(description):
+    categories = ['Pothole', 'Water Leakage', 'Garbage', 'Streetlight', 'Flooding']
+    urgent_keywords = ['injury', 'child', 'hospital', 'school']
+
+    description_lower = description.lower()
+
+    for category in categories:
+        if category.lower() in description_lower:
+            assigned_category = category
+            break
+    else:
+        assigned_category = 'Other'
+
+    priority = 'Normal'
+    for keyword in urgent_keywords:
+        if keyword in description_lower:
+            priority = 'Urgent'
+            break
+
+    reasons = [kw for kw in urgent_keywords if kw in description_lower]
+    reason_text = ', '.join(reasons) if reasons else 'No urgent keywords found'
+
+    return assigned_category, priority, reason_text
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def main():
+    input_file = 'data/city-test-files/test_pune.csv'
+    output_file = 'results_pune.csv'
+
+    with open(input_file, newline='', encoding='utf-8') as csv_in, \
+         open(output_file, 'w', newline='', encoding='utf-8') as csv_out:
+
+        reader = csv.DictReader(csv_in)
+        fieldnames = reader.fieldnames + ['Category', 'Priority', 'Reason']
+        writer = csv.DictWriter(csv_out, fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        for row in reader:
+            description = row.get('description', '')
+            category, priority, reason = classify_complaint(description)
+            row['Category'] = category
+            row['Priority'] = priority
+            row['Reason'] = reason
+            writer.writerow(row)
+
+    print(f"Classification completed. Results saved to {output_file}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    main()

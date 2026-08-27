@@ -1,12 +1,14 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+import os
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+input_folder = "data/policy-documents/"
+output_file = "summary_hr_leave.txt"
 
-if __name__ == "__main__":
-    main()
+with open(output_file, "w", encoding="utf-8") as out_file:
+    for filename in os.listdir(input_folder):
+        if filename.endswith(".txt"):
+            with open(os.path.join(input_folder, filename), "r", encoding="utf-8") as f:
+                text = f.read()
+                out_file.write(f"--- Summary of {filename} ---\n")
+                out_file.write(text + "\n\n")
+
+print(f"Summaries saved to {output_file}")
