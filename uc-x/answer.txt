@@ -1,0 +1,1 @@
+policy_hr_leave.txt section 2.6: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
