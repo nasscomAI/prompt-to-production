@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads the three official CMC policy documents and parses them into a searchable index organized by document name and section number.
+    input: None (uses predefined paths to the three policy files).
+    output: A structured index of policy sections and their contents.
+    error_handling: Reports an error if any of the three mandatory policy files are missing or unreadable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches the policy index for information relevant to a user's question and provides a single-source answer with a citation.
+    input: User question as a string.
+    output: A string containing the answer and citation, or the mandatory refusal template if no answer is found.
+    error_handling: Strictly refuses to blend documents or provide hedged answers; defaults to the refusal template for any ambiguity.
