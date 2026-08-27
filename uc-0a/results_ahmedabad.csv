@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Description contains category keyword: 'temperature',
+AM-202405,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description contains category keyword: 'heat',
+AM-202407,Other,Urgent,"Could not determine category from description alone, but contains severity keyword: 'child'",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description contains category keyword: 'pothole',
+AM-202414,Other,Low,Could not determine category from description alone,NEEDS_REVIEW
+AM-202417,Waste,Standard,Description contains category keyword: 'waste',
+AM-202421,Noise,Standard,Description contains category keyword: 'music',
+AM-202424,Road Damage,Standard,Description contains category keyword: 'road surface',
+AM-202429,Heat Hazard,Standard,Description contains category keyword: 'temperature',
+AM-202431,Heritage Damage,Standard,Description contains category keyword: 'heritage',
+AM-202435,Heat Hazard,Standard,Description contains category keyword: 'heat',
+AM-202444,Waste,Standard,Description contains category keyword: 'waste',
+AM-202445,Heat Hazard,Standard,Description contains category keyword: 'sun',
