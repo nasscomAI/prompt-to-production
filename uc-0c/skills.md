@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: load_dataset
+  description: Loads CSV dataset
+  input: CSV file path
+  output: dataset rows
+  error_handling: return error if file missing or invalid
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: compute_growth
+  description: Calculates month-over-month growth
+  input: dataset, ward, category
+  output: growth value
+  error_handling: return error if missing or invalid data
+  
