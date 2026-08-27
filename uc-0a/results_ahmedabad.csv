@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Category 'Heat Hazard' assigned based on keyword 'melting' found in: ""Tarmac surface melting at 44°C""",
+AM-202402,Heat Hazard,Standard,"Category 'Heat Hazard' assigned based on keyword 'temperature' found in: ""Metal bus shelter reaching dangerous temperatures""",
+AM-202405,Other,Standard,Complaint classified as 'Other' based on description content,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category 'Heat Hazard' assigned based on keyword 'heat' found in: ""Grass dying in heatwave conditions""",
+AM-202407,Road Damage,Urgent,"Priority set to Urgent due to severity keyword 'child' found in: ""Child injured last week""",
+AM-202410,Pothole,Standard,"Category 'Pothole' assigned based on keyword 'pothole' found in: ""Pothole on main highway causing morning rush lane closure""",
+AM-202414,Streetlight,Standard,"Category 'Streetlight' assigned based on keyword 'unlit' found in: ""Residential colony unlit after 9pm""",
+AM-202417,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Heritage area affected""",
+AM-202421,Noise,Standard,"Category 'Noise' assigned based on keyword 'music' found in: ""Club music audible at residential buildings at 2am""",
+AM-202424,Road Damage,Standard,"Category 'Road Damage' assigned based on keyword 'surface bubbling' found in: ""Zoo approach road surface bubbling at 45°C""",
+AM-202429,Heat Hazard,Standard,"Category 'Heat Hazard' assigned based on keyword 'temperature' found in: ""River walk surface temperature unbearable""",
+AM-202431,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Heritage concern""",
+AM-202435,Heat Hazard,Standard,"Category 'Heat Hazard' assigned based on keyword 'heat' found in: ""Black metal road dividers storing heat""",
+AM-202444,Waste,Standard,"Category 'Waste' assigned based on keyword 'waste' found in: ""Restaurant waste bins overflowing on Sunday night""",
+AM-202445,Heat Hazard,Standard,"Category 'Heat Hazard' assigned based on keyword 'full sun' found in: ""Users exposed to full sun""",

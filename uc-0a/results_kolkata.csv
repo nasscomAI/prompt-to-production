@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Heritage lamp post knocked over by delivery vehicle""",
+KM-202402,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'historic' found in: ""Historic tram road cobblestones broken up by cable laying work""",
+KM-202405,Noise,Standard,"Category 'Noise' assigned based on keyword 'band playing' found in: ""Wedding band playing near Tagore Museum at 11pm""",
+KM-202409,Pothole,Standard,"Category 'Pothole' assigned based on keyword 'pothole' found in: ""Airport access road full of potholes""",
+KM-202410,Pothole,Standard,"Category 'Pothole' assigned based on keyword 'pothole' found in: ""Pothole causing tyre blowouts""",
+KM-202411,Pothole,Standard,"Category 'Pothole' assigned based on keyword 'pothole' found in: ""Deep pothole filling with rainwater""",
+KM-202415,Drain Blockage,Standard,"Category 'Drain Blockage' assigned based on keyword 'draining directly' found in: ""New residential complex draining directly onto public road""",
+KM-202418,Waste,Standard,"Category 'Waste' assigned based on keyword 'waste' found in: ""Tourist zone waste overflowing""",
+KM-202421,Road Damage,Urgent,"Priority set to Urgent due to severity keyword 'hospital' found in: ""Hospital visit""",
+KM-202422,Road Damage,Standard,"Category 'Road Damage' assigned based on keyword 'road surface buckled' found in: ""Road surface buckled near bridge""",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Heritage residential building exterior defaced by billboard installation""",
+KM-202430,Road Damage,Standard,"Category 'Road Damage' assigned based on keyword 'road subsided' found in: ""Road subsided near gas pipeline""",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Street paving removed for utility work — heritage stone not replaced""",
+KM-202436,Streetlight,Standard,"Category 'Streetlight' assigned based on keyword 'darkness for' found in: ""Darkness for 3 nights""",
+KM-202438,Heritage Damage,Standard,"Category 'Heritage Damage' assigned based on keyword 'heritage' found in: ""Street vendors using amplifiers illegally in heritage precinct""",
