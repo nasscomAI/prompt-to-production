@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,Classified as Pothole with Low priority because the description cites 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description cites 'pothole', 'School'.",
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority because the description cites 'flooded'.,
+PM-202408,Other,Standard,"Classified as Other with Standard priority because the description cites 'flooded', 'Drain', 'water'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority because the description cites 'streetlights'.,
+PM-202411,Streetlight,Urgent,"Classified as Streetlight with Urgent priority because the description cites 'Streetlight', 'sparking', 'hazard'.",
+PM-202413,Waste,Standard,Classified as Waste with Standard priority because the description cites 'garbage'.,
+PM-202418,Noise,Standard,"Classified as Noise with Standard priority because the description cites 'Wedding', 'music'.",
+PM-202419,Road Damage,Low,"Classified as Road Damage with Low priority because the description cites 'Road surface', 'cracked', 'sinking'.",
+PM-202420,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description cites 'Manhole', 'injury'.",
+PM-202427,Other,Standard,"Classified as Other with Standard priority because the description cites 'Bridge approach', 'floods'.",NEEDS_REVIEW
+PM-202428,Waste,Low,Classified as Waste with Low priority because the description cites 'Dead animal'.,
+PM-202430,Other,Standard,"Classified as Other with Standard priority because the description cites 'lights out', 'Heritage', 'lights'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as Waste with Standard priority because the description cites 'dumped', 'waste'.",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage with Urgent priority because the description cites 'Footpath', 'fell'.",
