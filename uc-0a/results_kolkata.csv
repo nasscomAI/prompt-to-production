@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Identified as Streetlight based on the mention of 'lamp' in the complaint.,
+KM-202402,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+KM-202405,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Identified as Pothole based on the mention of 'pothole' in the complaint.,
+KM-202410,Pothole,Standard,Identified as Pothole based on the mention of 'pothole' in the complaint.,
+KM-202411,Pothole,Standard,Identified as Pothole based on the mention of 'pothole' in the complaint.,
+KM-202415,Drain Blockage,Standard,Identified as Drain Blockage based on the mention of 'drain' in the complaint.,
+KM-202418,Waste,Standard,Identified as Waste based on the mention of 'waste' in the complaint.,
+KM-202421,Pothole,Urgent,Classified as Pothole due to 'pit' and priority set to Urgent because of 'hospital' in the description.,
+KM-202422,Road Damage,Standard,Identified as Road Damage based on the mention of 'surface' in the complaint.,
+KM-202426,Heritage Damage,Standard,Identified as Heritage Damage based on the mention of 'heritage' in the complaint.,
+KM-202430,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Identified as Heritage Damage based on the mention of 'heritage' in the complaint.,
+KM-202436,Streetlight,Standard,Identified as Streetlight based on the mention of 'dark' in the complaint.,
+KM-202438,Heritage Damage,Standard,Identified as Heritage Damage based on the mention of 'heritage' in the complaint.,

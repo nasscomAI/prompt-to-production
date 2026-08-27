@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Identified as Pothole based on the mention of 'pothole' in the complaint.,
+PM-202402,Pothole,Urgent,Classified as Pothole due to 'pothole' and priority set to Urgent because of 'child' in the description.,
+PM-202406,Flooding,Standard,Identified as Flooding based on the mention of 'flood' in the complaint.,
+PM-202408,Flooding,Standard,Identified as Flooding based on the mention of 'flood' in the complaint.,
+PM-202410,Streetlight,Standard,Identified as Streetlight based on the mention of 'streetlight' in the complaint.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight due to 'streetlight' and priority set to Urgent because of 'hazard' in the description.,
+PM-202413,Waste,Standard,Identified as Waste based on the mention of 'garbage' in the complaint.,
+PM-202418,Noise,Standard,Identified as Noise based on the mention of 'music' in the complaint.,
+PM-202419,Road Damage,Standard,Identified as Road Damage based on the mention of 'crack' in the complaint.,
+PM-202420,Other,Urgent,Set to Urgent due to high-risk keyword 'injury' found in the text.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Identified as Flooding based on the mention of 'flood' in the complaint.,
+PM-202428,Other,Standard,Placed in Other category as the description does not contain specific keywords from the urban schema.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Identified as Streetlight based on the mention of 'dark' in the complaint.,
+PM-202433,Waste,Standard,Identified as Waste based on the mention of 'waste' in the complaint.,
+PM-202446,Other,Urgent,Set to Urgent due to high-risk keyword 'fell' found in the text.,NEEDS_REVIEW
