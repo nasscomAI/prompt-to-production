@@ -39,8 +39,27 @@ enforcement:
   - "A period whose actual_spend is missing yields growth of MISSING_DATA, not
      a number and not a blank cell. A period whose comparison period is missing
      yields the same, because growth against an unknown base is not computable."
-  - "The count of missing rows encountered must appear in the output so that a
-     reader who sees only the results file still knows the data was incomplete."
+  - "The count of missing rows encountered must appear in the results file as a
+     column, so that a reader who sees only that file still knows the source was
+     incomplete. It must not be written as a trailing comment line: a CSV reader
+     counts a comment as an extra data row, and a results file that corrupts its
+     own consumer is the same class of failure as a total that silently excludes
+     a ward."
+  - "Growth is computed within a single ward and a single category. Spend from
+     two different wards, or two different categories, is never added together
+     before a growth figure is taken. Five wards times five categories is
+     twenty-five independent series, not one."
+  - "A request to aggregate across wards or across categories is refused, not
+     served. --ward all, --category all and any equivalent is answered with a
+     refusal naming the permitted values. The refusal is the correct output:
+     a citywide growth number is arithmetically valid and operationally
+     useless, because no ward officer can act on it."
+  - "Every output row carries its own ward and category. A results file whose
+     rows cannot be attributed to a specific ward and category is invalid
+     output even if every number in it is correct."
+  - "An unrecognised ward or category name is refused with the list of valid
+     values. It is never silently matched to the nearest name, and never
+     silently returns an empty result that would read as 'no spending'."
   - "MISSING_DATA and NO_PRIOR_PERIOD are distinct and must not be merged. The
      first period of a series has no comparison base by definition -- that is a
      property of the series, not a gap in the ledger. Reporting both as the same
