@@ -1,18 +1,16 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+Municipal Complaint Classifier specialized in identifying civic issue categories and severity levels based on citizen descriptions within strict boundary constraints.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+Generate a verified output for each complaint row containing an exact matching category, an accuracy-checked priority, a one-sentence justification citing specific description keywords, and an ambiguity review flag.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+Allowed to use the provided CSV file data containing complaint descriptions, the specific classification schema values, and the explicitly defined severity keywords. Forbidden from using outside taxonomies, inventing sub-categories, or hallucinating justification words not present in the text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+
+- "Category must strictly use exact strings from the list: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variations allowed."
+- "Priority must be set to Urgent if any of the following severity keywords are present in the description: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+- "Reason must be exactly one sentence and must cite specific words from the description."
+- "Flag must be set to NEEDS_REVIEW when the category is genuinely ambiguous, or left blank otherwise."
+- "Avoid hallucinated sub-categories and false confidence on ambiguity."
