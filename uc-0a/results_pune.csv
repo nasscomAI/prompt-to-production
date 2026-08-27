@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions: Large, pothole, 60cm, wide, causing, tyre",
+PM-202402,Pothole,Urgent,"Description mentions: Deep, pothole, near, stop, School, children",
+PM-202406,Flooding,Standard,"Description mentions: Underpass, flooded, knee-deep, after, 2hrs, rain",
+PM-202408,Other,Standard,"Description mentions: stand, flooded, Passengers, standing, water, Drain",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions: Three, consecutive, streetlights, days, Area, very",
+PM-202411,Streetlight,Urgent,"Description mentions: Streetlight, flickering, sparking, Electrical, hazard, reported",
+PM-202413,Waste,Standard,"Description mentions: Overflowing, garbage, bins, near, vegetable, market",
+PM-202418,Noise,Standard,"Description mentions: Wedding, venue, playing, music, past, midnight",
+PM-202419,Road Damage,Standard,"Description mentions: Road, surface, cracked, sinking, near, utility",
+PM-202420,Drain Blockage,Urgent,"Description mentions: Manhole, cover, missing, Risk, serious, injury",
+PM-202427,Flooding,Standard,"Description mentions: Bridge, approach, floods, 30mins, rain, Bridge",
+PM-202428,Waste,Standard,"Description mentions: Dead, animal, removed, hours, Health, concern",
+PM-202430,Other,Standard,"Description mentions: Heritage, street, lights, Safety, concern, pedestrians",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions: Bulk, waste, from, apartment, renovation, dumped",
+PM-202446,Other,Urgent,"Description mentions: Footpath, tiles, broken, upturned, Elderly, resident",NEEDS_REVIEW
