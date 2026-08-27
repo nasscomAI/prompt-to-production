@@ -1,0 +1,15 @@
+HR Policy Summary - Core Obligations
+
+Generated following RICE Audit Enforcement Rules
+
+---
+[2.3] Leave applications must be submitted at least 14 calendar days in advance via Form HR-L1.
+[2.4] Written approval from the direct manager is mandatory before leave begins; verbal approval is void.
+[2.5] Unapproved absence will be treated as Loss of Pay (LOP), regardless of any later approval.
+[2.6] Carry forward is capped at 5 days; any excess is automatically forfeited on 31 December.
+[2.7] Carry-forward days must be used by 31 March (Q1) or they are forfeited.
+[3.2] Sick leave of 3+ consecutive days requires a medical certificate within 48 hours of return.
+[3.4] Medical certificate is required for sick leave immediately before/after holidays/annual leave, regardless of length.
+[5.2] LWP requires approval from BOTH the Department Head and the HR Director; manager approval is insufficient.
+[5.3] LWP exceeding 30 continuous days requires specific approval from the Municipal Commissioner.
+[7.2] Leave encashment during active service is not permitted under any circumstances.
