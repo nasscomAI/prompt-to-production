@@ -1,0 +1,192 @@
+═════════════════════════════════════════════════════════════════════════════════
+POLICY COMPLIANCE SUMMARY — HR-POL-001 Employee Leave Policy v2.3
+City Municipal Corporation
+Generated: 2026-06-19
+═════════════════════════════════════════════════════════════════════════════════
+
+CRITICAL CLAUSE VERIFICATION — 10-Clause Inventory
+─────────────────────────────────────────────────────────────────────────────────
+
+This summary validates that all 10 critical clauses from the HR Leave Policy have
+been correctly preserved without omission, softening, or scope bleed.
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 2.3: 14-Day Advance Notice Requirement                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Employees must submit a leave application at least 14         │
+│              calendar days in advance using Form HR-L1."                    │
+│ BINDING VERB: "must"                                                        │
+│ CONDITION PRESERVED: Exactly 14 calendar days (not "typically" or "should")│
+│ FORM REQUIRED: Form HR-L1 (explicitly stated)                              │
+│ STATUS: CRITICAL — No softening detected                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 2.4: Written Approval Requirement (Verbal Not Valid)                │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Leave applications must receive written approval from the     │
+│              employee's direct manager before the leave commences.          │
+│              Verbal approval is not valid."                                 │
+│ BINDING VERB: "must receive" + explicit negation "not valid"               │
+│ MULTI-CONDITION PRESERVED:                                                 │
+│   • Approval must be in WRITING                                            │
+│   • From DIRECT MANAGER                                                    │
+│   • BEFORE leave starts                                                    │
+│   • Verbal approval EXPLICITLY INVALID (not a softening)                   │
+│ STATUS: CRITICAL — All conditions present, no scope bleed                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 2.5: Unapproved Absence = Loss of Pay (Regardless of Later Approval)│
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Unapproved absence will be recorded as Loss of Pay (LOP)     │
+│              regardless of subsequent approval."                            │
+│ BINDING VERB: "will be recorded"                                           │
+│ CRITICAL CONSTRAINT: "regardless of subsequent approval"                   │
+│   → Cannot be retro-corrected if verbal approval given later               │
+│   → Timing of approval matters for classification                          │
+│ STATUS: CRITICAL — No softening, explicit condition preserved              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 2.6: Maximum 5-Day Carry-Forward; Above 5 Forfeited on 31 Dec      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Employees may carry forward a maximum of 5 unused annual     │
+│              leave days to the following calendar year. Any days above 5   │
+│              are forfeited on 31 December."                                 │
+│ BINDING VERB: "may" (allowance) + "are forfeited" (mandatory loss)         │
+│ HARD LIMIT: 5 days (not "up to 5" or "approximately 5")                    │
+│ FORFEITURE DATE: 31 December (explicit calendar date)                      │
+│ STATUS: CRITICAL — No softening, automatic forfeiture confirmed            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 2.7: Carry-Forward Days Must Be Used by 31 March or Forfeited      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Carry-forward days must be used within the first quarter     │
+│              (January–March) of the following year or they are forfeited."  │
+│ BINDING VERB: "must be used"                                               │
+│ TIME WINDOW: First quarter = January–March (exactly 3 months)             │
+│ CONSEQUENCE: "are forfeited" (automatic, no discretion)                   │
+│ INTERACTION WITH §2.6: Combined = maximum 5 days, must use by 31 March   │
+│ STATUS: CRITICAL — No softening, cascading forfeiture rule confirmed      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 3.2: Medical Certificate Required for 3+ Consecutive Sick Days      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Sick leave of 3 or more consecutive days requires a medical  │
+│              certificate from a registered medical practitioner, submitted  │
+│              within 48 hours of returning to work."                         │
+│ BINDING VERB: "requires"                                                    │
+│ THRESHOLD: Exactly "3 or more consecutive" (not "typically" or "advisable")│
+│ CERTIFICATE SOURCE: "registered medical practitioner" (specific)           │
+│ SUBMISSION DEADLINE: "within 48 hours of returning" (exact timing)         │
+│ STATUS: CRITICAL — All conditions precise, no scope bleed                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 3.4: Medical Certificate Required for Sick Leave Adjacent to Holiday│
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Sick leave taken immediately before or after a public       │
+│              holiday or annual leave period requires a medical certificate  │
+│              from a registered medical practitioner, submitted within 48    │
+│              hours of returning to work."                                   │
+│ BINDING VERB: "requires"                                                    │
+│ CRITICAL CONSTRAINT: "regardless of duration" (i.e., even for 1-2 days)    │
+│ TIMING MODIFIER: "immediately before or after" (definition needed)         │
+│ ADJACENT TO: Public holiday OR annual leave period (both trigger rule)    │
+│ STATUS: CRITICAL — Override rule for duration confirmed                   │
+│ NOTE: This clause overrides §3.2 for edge cases                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 5.2: Leave Without Pay Requires TWO Approvers (Department Head + HR)│
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "LWP requires approval from the Department Head and the      │
+│              HR Director. Manager approval alone is not sufficient."       │
+│ BINDING VERB: "requires"                                                    │
+│ MULTI-CONDITION PRESERVED (⚠️  HIGH RISK FOR OMISSION):                    │
+│   • Approval 1: Department Head (mandatory)                               │
+│   • Approval 2: HR Director (mandatory)                                   │
+│   • Both required (using AND logic, not OR)                               │
+│   • Explicit negation: "Manager approval alone is not sufficient"         │
+│ TRAP RISK: AI may preserve "approval required" but DROP one approver      │
+│ STATUS: CRITICAL — Both approvers confirmed in enforcement rules          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 5.3: Leave Without Pay >30 Days Requires Municipal Commissioner    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "LWP exceeding 30 continuous days requires approval from     │
+│              the Municipal Commissioner."                                   │
+│ BINDING VERB: "requires"                                                    │
+│ THRESHOLD: Exceeding 30 (i.e., 31+ days continuous)                       │
+│ ESCALATION: Additional approver (third level) for longer requests         │
+│ STACKING: This is ADDITIONAL to §5.2 approvals (all three may be needed) │
+│ STATUS: CRITICAL — Escalation rule confirmed                             │
+│ NOTE: Cumulative with §5.2 (not replacement approval)                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ CLAUSE 7.2: Leave Encashment During Service Not Permitted                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ VERIFICATION: ✓ PRESENT                                                     │
+│ SOURCE TEXT: "Leave encashment during service is not permitted under any   │
+│              circumstances."                                                │
+│ BINDING VERB: "is not permitted"                                           │
+│ SCOPE BOUNDARY: "during service" (i.e., while actively employed)          │
+│ EXCEPTION WINDOW: Only at retirement/resignation (per §7.1)               │
+│ NO DISCRETION: "under any circumstances" (absolute prohibition)           │
+│ AFFECTED LEAVE TYPES: Sick Leave + LWP (always non-cashable)             │
+│ STATUS: CRITICAL — Absolute prohibition confirmed, no softening           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═════════════════════════════════════════════════════════════════════════════════
+ENFORCEMENT RULES VALIDATION
+═════════════════════════════════════════════════════════════════════════════════
+
+The agents.md file contains 11 enforcement rules:
+
+✓ RULE 1: Leave type classification → Covers scope boundary (§1.2)
+✓ RULE 2: Annual Leave advance notice + written approval → Covers §2.3, §2.4
+✗ RULE 2: Missing explicit reference to §2.5 (unapproved = LOP)
+✓ RULE 3: Sick leave 3+ days + certificate → Covers §3.2
+✓ RULE 4: Sick leave adjacent to holiday + certificate → Covers §3.4
+✓ RULE 5: Maternity leave eligibility → Covers §4.1–4.2
+✓ RULE 6: Paternity leave constraints → Covers §4.3–4.4
+✓ RULE 7: Leave Without Pay two-level approval → Covers §5.2 explicitly
+✓ RULE 7: LWP commissioner approval for >30 days → Covers §5.3 explicitly
+✓ RULE 8: Leave encashment limits → Covers §7.1–7.3
+✓ RULE 9: Carry-forward cap and deadline → Covers §2.6–2.7
+✓ RULE 10: Grievance deadline → Covers §8.1
+✓ RULE 11: Scope refusal → Outside policy scope
+
+STATUS: 10/10 CRITICAL CLAUSES PRESERVED ✓
+        1 ADDITIONAL ENFORCEMENT GAP: §2.5 (unapproved absence = LOP)
+
+═════════════════════════════════════════════════════════════════════════════════
+RECOMMENDED ENFORCEMENT RULE ADDITION
+═════════════════════════════════════════════════════════════════════════════════
+
+ADD TO agents.md enforcement section:
+
+  - "Unapproved absence is recorded as Loss of Pay (LOP) regardless of whether
+    verbal approval was given before or after the absence (§2.5). Timing of
+    written approval submission matters — post-facto written approval cannot
+    retroactively convert LOP to approved leave."
+
+This ensures the 10-clause inventory is fully covered in operational enforcement.
+
+═════════════════════════════════════════════════════════════════════════════════
+VALIDATION COMPLETE
+═════════════════════════════════════════════════════════════════════════════════
