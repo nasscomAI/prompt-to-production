@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Description mentions 'pothole'. Description contains severity keyword 'school'.,
+PM-202406,Flooding,Standard,Description mentions 'flood'.,
+PM-202408,Other,Standard,"Ambiguous description matching multiple categories: Flooding, Drain Blockage.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,Description mentions 'streetlight'. Description contains severity keyword 'hazard'.,
+PM-202413,Waste,Standard,Description mentions 'garbage'.,
+PM-202418,Noise,Standard,Description mentions 'music'.,
+PM-202419,Road Damage,Standard,Description mentions 'crack'.,
+PM-202420,Pothole,Urgent,Description mentions 'hole'. Description contains severity keyword 'injury'.,
+PM-202427,Flooding,Standard,Description mentions 'flood'.,
+PM-202428,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Ambiguous description matching multiple categories: Streetlight, Heritage Damage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Description mentions 'waste'.,
+PM-202446,Other,Urgent,Could not determine category from description. Description contains severity keyword 'fell'.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions 'heat'.,
+AM-202407,Other,Urgent,Could not determine category from description. Description contains severity keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions 'pothole'.,
+AM-202414,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Ambiguous description matching multiple categories: Waste, Heritage Damage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Description mentions 'music'.,
+AM-202424,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+AM-202429,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Description mentions 'heat'.,
+AM-202444,Other,Standard,"Ambiguous description matching multiple categories: Waste, Heat Hazard.",NEEDS_REVIEW
+AM-202445,Heat Hazard,Standard,Description mentions 'sun'.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Ambiguous description matching multiple categories: Streetlight, Heritage Damage.",NEEDS_REVIEW
+KM-202402,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+KM-202405,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole'.,
+KM-202410,Pothole,Standard,Description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'.,
+KM-202415,Drain Blockage,Standard,Description mentions 'drain'.,
+KM-202418,Other,Standard,"Ambiguous description matching multiple categories: Heat Hazard, Waste.",NEEDS_REVIEW
+KM-202421,Other,Urgent,Could not determine category from description. Description contains severity keyword 'hospital'.,NEEDS_REVIEW
+KM-202422,Other,Standard,Could not determine category from description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202430,Waste,Standard,Description mentions 'smell'.,
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202436,Streetlight,Standard,Description mentions 'dark'.,
+KM-202438,Heritage Damage,Standard,Description mentions 'heritage'.,
