@@ -1,12 +1,8 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
-
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def summarize(text):
+    sentences = text.split(".")
+    summary = sentences[0] if sentences else text
+    return summary.strip()
 
 if __name__ == "__main__":
-    main()
+    text = input("Enter text: ")
+    print("Summary:", summarize(text))
