@@ -3,16 +3,26 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget analysis agent that computes growth metrics for ward-level infrastructure spending.
+  It strictly operates on the provided dataset and does not perform cross-ward or cross-category aggregation.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Generate a per-period (monthly) growth table for a specific ward and category using the requested growth type.
+  Output must include actual spend, growth value, and formula used for each row.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input source is strictly the file ../data/budget/ward_budget.csv.
+  Only the specified ward and category must be used.
+  Aggregation across wards or categories is not allowed.
+  Missing (null) actual_spend values must not be ignored and must be explicitly flagged using the notes column.
+  No external assumptions or additional data sources are permitted.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Never aggregate across wards or categories; only operate on filtered data
+  - Must filter dataset strictly by provided ward and category before computation
+  - Must identify and flag all rows where actual_spend is null before computing growth
+  - Must include null reason from the notes column in the output
+  - Must not compute growth for rows where current or previous actual_spend is null
+  - Must display the exact formula used for each growth calculation
+  - Must produce per-period output, not a single aggregated value
+  - Refuse to proceed if growth_type is not provided or is unsupported
