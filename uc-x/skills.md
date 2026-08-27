@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: loads the 3 policy files (HR, IT, Finance) and indexes them by document name and section number.
+    input: File paths to policy documents.
+    output: A structured collection of policy sections categorized by their source document.
+    error_handling: Halt and report if any document is missing or unreadable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: searches the indexed documents for a single-source answer with a mandatory citation, or the exact refusal template.
+    input: User natural language question.
+    output: A response containing the specific policy clause and citation, or the verbatim refusal template.
+    error_handling: Trigger the refusal template if multiple documents conflict or would require blending.

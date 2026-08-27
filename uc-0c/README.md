@@ -50,7 +50,7 @@ python app.py \
 ## Reference Values — Verify Your Output Against These
 
 | Ward | Category | Period | Actual Spend (₹ lakh) | MoM Growth |
-|---|---|---|---|---|
+|------|----------|--------|-----------------------|------------|
 | Ward 1 – Kasba | Roads & Pothole Repair | 2024-07 | 19.7 | +33.1% (monsoon spike) |
 | Ward 1 – Kasba | Roads & Pothole Repair | 2024-10 | 13.1 | −34.8% (post-monsoon) |
 | Ward 2 – Shivajinagar | Drainage & Flooding | 2024-03 | NULL | Must be flagged — not computed |
