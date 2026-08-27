@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions ""melting"" — classified as Heat Hazard.",
+AM-202402,Heat Hazard,Standard,"Description mentions ""temperature"" — classified as Heat Hazard.",
+AM-202405,Other,Standard,"Description mentions ""Dead trees with split"" but category is unclear.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions ""heat"" — classified as Heat Hazard.",
+AM-202407,Road Damage,Urgent,"Description mentions ""upturned"" — classified as Road Damage.",
+AM-202410,Pothole,Standard,"Description mentions ""pothole"" — classified as Pothole.",
+AM-202414,Streetlight,Standard,"Description mentions ""unlit"" — classified as Streetlight.",
+AM-202417,Waste,Standard,"Description mentions ""waste"" — classified as Waste.",
+AM-202421,Noise,Standard,"Description mentions ""music"" — classified as Noise.",
+AM-202424,Road Damage,Standard,"Description mentions ""road surface"" — classified as Road Damage.",
+AM-202429,Heat Hazard,Standard,"Description mentions ""temperature"" — classified as Heat Hazard.",
+AM-202431,Heritage Damage,Standard,"Description mentions ""heritage"" — classified as Heritage Damage.",
+AM-202435,Heat Hazard,Standard,"Description mentions ""heat"" — classified as Heat Hazard.",
+AM-202444,Waste,Standard,"Description mentions ""waste"" — classified as Waste.",
+AM-202445,Heat Hazard,Standard,"Description mentions ""exposed to full sun"" — classified as Heat Hazard.",
