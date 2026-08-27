@@ -1,12 +1,22 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
 import argparse
 
+def route_request(request):
+    if "complaint" in request.lower():
+        return "Complaint Classifier Agent"
+    elif "summary" in request.lower():
+        return "Document Summarization Agent"
+    elif "policy" in request.lower():
+        return "Policy QA Agent"
+    else:
+        return "Unknown request type"
+
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--request", type=str, required=True, help="User request")
+    args = parser.parse_args()
+
+    agent = route_request(args.request)
+    print("Request routed to:", agent)
 
 if __name__ == "__main__":
     main()

@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: summarize_document
+  description: Reads a document and generates a concise summary.
+  inputs: document_text (string)
+  outputs: summary (string)
+  error_handling: If the input text is empty, return "No content to summarize".
+
+- name: extract_key_points
+  description: Identifies important points from the document text.
+  inputs: document_text (string)
+  outputs: key_points (list of strings)
+  error_handling: If no key points are detected, return an empty list.
