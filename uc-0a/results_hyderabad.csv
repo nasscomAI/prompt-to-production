@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on ""flooded"" in the description, and marked Urgent due to severity keywords: ambulance.",
+GH-202402,Other,Standard,"Classified as Other based on ""Market area flooded"" in the description with Standard priority; category is ambiguous and needs human review.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage based on ""drain 100% blocked"" in the description with Standard priority.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage based on ""Drain blocked"" in the description with Standard priority.",
+GH-202410,Pothole,Standard,"Classified as Pothole based on ""Potholes"" in the description with Standard priority.",
+GH-202411,Pothole,Urgent,"Classified as Pothole based on ""Pothole"" in the description, and marked Urgent due to severity keywords: hospital.",
+GH-202412,Pothole,Urgent,"Classified as Pothole based on ""potholes"" in the description, and marked Urgent due to severity keywords: school.",
+GH-202417,Waste,Standard,"Classified as Waste based on ""garbage"", ""waste"" in the description with Standard priority.",
+GH-202420,Noise,Standard,"Classified as Noise based on ""drilling"" in the description with Standard priority.",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage based on ""collapsed"" in the description, and marked Urgent due to severity keywords: collapse.",
+GH-202424,Flooding,Standard,"Classified as Flooding based on ""floods"" in the description with Standard priority.",
+GH-202428,Waste,Standard,"Classified as Waste based on ""waste"" in the description with Standard priority.",
+GH-202432,Noise,Standard,"Classified as Noise based on ""engines"", ""idling"" in the description with Standard priority.",
+GH-202448,Other,Standard,"Classified as Other based on ""Main drain blocked — entire locality at flooding risk this week"" in the description with Standard priority; category is ambiguous and needs human review.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified as Flooding based on ""rainwater"" in the description with Standard priority.",
