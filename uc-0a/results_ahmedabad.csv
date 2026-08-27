@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
+AM-202402,Other,Standard,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
+AM-202405,Other,Standard,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description contains 'heat' which maps to the category, and defaults to Standard priority.",
+AM-202407,Other,Urgent,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The description contains 'pothole' which maps to the category, and defaults to Standard priority.",
+AM-202414,Other,Standard,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
+AM-202417,Waste,Standard,"The description contains 'waste' which maps to the category, and defaults to Standard priority.",
+AM-202421,Noise,Standard,"The description contains 'music' which maps to the category, and defaults to Standard priority.",
+AM-202424,Road Damage,Standard,"The description contains 'footpath' which maps to the category, and defaults to Standard priority.",
+AM-202429,Other,Standard,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"The description contains 'heritage' which maps to the category, and defaults to Standard priority.",
+AM-202435,Heat Hazard,Standard,"The description contains 'heat' which maps to the category, and defaults to Standard priority.",
+AM-202444,Waste,Standard,"The description contains 'waste' which maps to the category, and defaults to Standard priority.",
+AM-202445,Other,Standard,"The description lacks explicit taxonomy keywords, making standard classification ambiguous without review.",NEEDS_REVIEW
