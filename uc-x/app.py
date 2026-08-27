@@ -1,12 +1,23 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+# UC-X Ask My Documents
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+file_path = "../data/policy-documents/policy_it_acceptable_use.txt"
 
-if __name__ == "__main__":
-    main()
+# read the document
+with open(file_path, "r", encoding="utf-8") as f:
+    text = f.read()
+
+print("Ask a question about the IT policy.")
+question = input("Question: ").lower()
+
+# simple keyword search
+lines = text.split("\n")
+
+found = False
+for line in lines:
+    if any(word in line.lower() for word in question.split()):
+        print("Answer:", line)
+        found = True
+        break
+
+if not found:
+    print("Answer not found in document.")

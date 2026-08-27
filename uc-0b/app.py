@@ -1,12 +1,18 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+# UC-0B Policy Summary
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+input_file = "../data/policy-documents/policy_hr_leave.txt"
+output_file = "summary_hr_leave.txt"
 
-if __name__ == "__main__":
-    main()
+# read policy file
+with open(input_file, "r", encoding="utf-8") as f:
+    text = f.read()
+
+# simple summary (first 5 lines)
+lines = text.split("\n")
+summary = "\n".join(lines[:5])
+
+# save summary
+with open(output_file, "w", encoding="utf-8") as f:
+    f.write(summary)
+
+print("Summary created in summary_hr_leave.txt")

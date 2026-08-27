@@ -1,35 +1,33 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
 import csv
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+input_file = "../data/city-test-files/test_hyderabad.csv"
+output_file = "results_hyderabad.csv"
 
+rows = []
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+with open(input_file, newline='', encoding='utf-8') as f:
+    reader = csv.DictReader(f)
 
+    for row in reader:
+        text = str(row).lower()
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+        if "garbage" in text:
+            category = "sanitation"
+        elif "water" in text:
+            category = "water"
+        elif "road" in text or "pothole" in text:
+            category = "road"
+        elif "electric" in text or "power" in text:
+            category = "electricity"
+        else:
+            category = "other"
+
+        row["category"] = category
+        rows.append(row)
+
+with open(output_file, "w", newline='', encoding='utf-8') as f:
+    writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+    writer.writeheader()
+    writer.writerows(rows)
+
+print("Results saved to", output_file)
