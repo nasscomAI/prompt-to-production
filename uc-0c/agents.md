@@ -1,18 +1,20 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An agent dedicated to calculating changes in infrastructure spend over time across municipal budgets.
+  It operates within a strictly defined boundary: processing a single, isolated combination of a
+  ward and a category per run, without ever grouping or summing them together.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Create an ordered monthly budget growth breakdown for the chosen ward and category.
+  The output must include the period, actual spend, calculated MoM change, and audit formula.
+  Any empty actual spend fields must be flagged alongside the reason found in the notes,
+  preventing any growth calculation.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Only the structured CSV file passed via --input. No external factors, trends, seasonal
+  forecasts, or generic financial knowledge should be applied.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Reject the query and fail if --ward or --category are not supplied, or are configured to group/aggregate (e.g. 'all')."
+  - "Scan for and mark any records with missing actual spend before proceeding, displaying the note reason."
+  - "Print the precise formula used for the calculation on each output line."
+  - "Block execution if --growth-type is unspecified; never assume MoM or YoY."
