@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Complaint about pothole: ""large pothole 60cm wide causing tyre damage. three vehicles affected this week.""",
+PM-202402,Pothole,Urgent,"Complaint about pothole: ""deep pothole near bus stop. school children at risk during morning hours.""",
+PM-202406,Flooding,Standard,"Complaint about flooding: ""underpass flooded knee-deep after 2hrs rain. commuters stranded.""",
+PM-202408,Flooding,Standard,"Complaint about flooding: ""bus stand flooded. passengers standing in water. drain blocked.""",
+PM-202410,Streetlight,Standard,"Complaint about streetlight: ""three consecutive streetlights out for 10 days. area very dark at night.""",
+PM-202411,Streetlight,Urgent,"Complaint about streetlight: ""streetlight flickering and sparking. electrical hazard reported.""",
+PM-202413,Waste,Standard,"Complaint about waste: ""overflowing garbage bins near vegetable market. smell affecting shoppers.""",
+PM-202418,Noise,Standard,"Complaint about noise: ""wedding venue playing music past midnight on weeknights.""",
+PM-202419,Road Damage,Standard,"Complaint about road damage: ""road surface cracked and sinking near utility work done 1 month ago.""",
+PM-202420,Other,Urgent,"Complaint about other: ""manhole cover missing. risk of serious injury to cyclists.""",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Complaint about flooding: ""bridge approach floods in 30mins of rain. bridge becomes inaccessible.""",
+PM-202428,Waste,Standard,"Complaint about waste: ""dead animal not removed for 36 hours. health concern.""",
+PM-202430,Streetlight,Standard,"Complaint about streetlight: ""heritage street, lights out. safety concern for pedestrians after dark.""",
+PM-202433,Waste,Standard,"Complaint about waste: ""bulk waste from apartment renovation dumped on public road.""",
+PM-202446,Road Damage,Urgent,"Complaint about road damage: ""footpath tiles broken and upturned. elderly resident fell last week.""",
