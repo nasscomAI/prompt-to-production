@@ -1,0 +1,16 @@
+id,description,category,priority,reason,flag
+Unknown,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Standard,"Classified as Pothole with Standard priority due to presence of: pothole, hole.",
+Unknown,Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,"Classified as Pothole with Urgent priority due to presence of: school, pothole, child, hole.",
+Unknown,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Standard,Classified as Flooding with Standard priority due to presence of: flood.,
+Unknown,Bus stand flooded. Passengers standing in water. Drain blocked.,Flooding,Standard,Classified as Flooding with Standard priority due to presence of: flood.,
+Unknown,Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,"Classified as Streetlight with Standard priority due to presence of: dark, streetlight, light.",
+Unknown,Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,"Classified as Streetlight with Urgent priority due to presence of: streetlight, light, hazard.",
+Unknown,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Waste,Standard,"Classified as Waste with Standard priority due to presence of: garbage, smell.",
+Unknown,Wedding venue playing music past midnight on weeknights.,Noise,Standard,Classified as Noise with Standard priority due to presence of: music.,
+Unknown,Road surface cracked and sinking near utility work done 1 month ago.,Pothole,Standard,Classified as Pothole with Standard priority due to presence of: cracked.,
+Unknown,Manhole cover missing. Risk of serious injury to cyclists.,Pothole,Urgent,"Classified as Pothole with Urgent priority due to presence of: injury, hole.",
+Unknown,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Standard,Classified as Flooding with Standard priority due to presence of: flood.,
+Unknown,Dead animal not removed for 36 hours. Health concern.,Other,Standard,Placed in Other category for manual review due to lack of specific taxonomy keywords.,NEEDS_REVIEW
+Unknown,"Heritage street, lights out. Safety concern for pedestrians after dark.",Streetlight,Standard,"Classified as Streetlight with Standard priority due to presence of: dark, light.",
+Unknown,Bulk waste from apartment renovation dumped on public road.,Waste,Standard,"Classified as Waste with Standard priority due to presence of: waste, dump.",
+Unknown,Footpath tiles broken and upturned. Elderly resident fell last week.,Other,Urgent,Classified as Other with Urgent priority due to presence of: fell.,NEEDS_REVIEW
