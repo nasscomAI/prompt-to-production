@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority based on 'pothole' in the description.,
+PM-202402,Pothole,Urgent,"Classified as Pothole with Urgent priority based on 'child', 'children', 'school' in the description.",
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority based on 'flooded' in the description.,
+PM-202408,Flooding,Standard,"Classified as Flooding with Standard priority based on 'flooded', 'drain blocked' in the description.",
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority based on 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,"Classified as Streetlight with Urgent priority based on 'hazard', 'streetlight', 'sparking' in the description.",
+PM-202413,Waste,Standard,Classified as Waste with Standard priority based on 'garbage' in the description.,
+PM-202418,Noise,Low,Classified as Noise with Low priority based on the complaint wording in the description.,
+PM-202419,Road Damage,Standard,Classified as Road Damage with Standard priority based on 'cracked' in the description.,
+PM-202420,Drain Blockage,Urgent,"Classified as Drain Blockage with Urgent priority based on 'injury', 'manhole' in the description.",
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority based on the complaint wording in the description.,
+PM-202428,Waste,Standard,Classified as Waste with Standard priority based on the complaint wording in the description.,
+PM-202430,Other,Standard,Classified as Other with Standard priority based on 'heritage' in the description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste with Standard priority based on the complaint wording in the description.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage with Urgent priority based on 'fell' in the description.,
