@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Contains keywords 'flooded', 'flood', 'rain' indicating flooding.",
+GH-202402,Flooding,Standard,"Contains keywords 'flooded', 'flood', 'rain' indicating flooding.",
+GH-202406,Drain Blockage,Standard,Contains keywords 'drain' indicating drain blockage.,
+GH-202407,Drain Blockage,Standard,Contains keywords 'drain' indicating drain blockage.,
+GH-202410,Pothole,Standard,Contains keywords 'pothole' indicating pothole.,
+GH-202411,Pothole,Urgent,Contains keywords 'pothole' indicating pothole.,
+GH-202412,Pothole,Urgent,Contains keywords 'pothole' indicating pothole.,
+GH-202417,Waste,Standard,"Contains keywords 'garbage', 'waste', 'overflow' indicating waste.",
+GH-202420,Noise,Standard,"Contains keywords 'drilling', 'construction' indicating noise.",
+GH-202422,Road Damage,Urgent,Contains keywords 'collapsed' indicating road damage.,
+GH-202424,Flooding,Standard,"Contains keywords 'flood', 'rain' indicating flooding.",
+GH-202428,Waste,Standard,"Contains keywords 'waste', 'not cleared' indicating waste.",
+GH-202432,Noise,Standard,"Contains keywords 'idling', 'truck', 'delivery' indicating noise.",
+GH-202448,Flooding,Standard,"Contains keywords 'flooding', 'flood', 'rain' indicating flooding.",
+GH-202438,Other,Low,Description 'Colony surrounded by fields that channel rainwater through main road....' is ambiguous; no category strongly matches.,NEEDS_REVIEW
