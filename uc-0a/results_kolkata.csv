@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202402,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202405,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified due to the presence of terms like 'pothole' in the description.,
+KM-202410,Pothole,Standard,Classified due to the presence of terms like 'pothole' in the description.,
+KM-202411,Pothole,Standard,Classified due to the presence of terms like 'pothole' in the description.,
+KM-202415,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified due to the presence of terms like 'waste' in the description.,
+KM-202421,Other,Urgent,Classified due to the presence of terms like 'hospital' in the description.,NEEDS_REVIEW
+KM-202422,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202426,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202430,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202434,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified due to the presence of terms like 'darkness' in the description.,
+KM-202438,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW

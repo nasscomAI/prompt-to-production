@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified due to the presence of terms like 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Classified due to the presence of terms like 'school' in the description.,
+PM-202406,Flooding,Standard,Classified due to the presence of terms like 'flood' in the description.,
+PM-202408,Other,Standard,Classified due to the presence of terms like 'flood' in the description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified due to the presence of terms like 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,Classified due to the presence of terms like 'hazard' in the description.,
+PM-202413,Waste,Standard,Classified due to the presence of terms like 'garbage' in the description.,
+PM-202418,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+PM-202419,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified due to the presence of terms like 'injury' in the description.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified due to the presence of terms like 'flood' in the description.,
+PM-202428,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+PM-202430,Other,Standard,Classified due to the presence of terms like 'general issue' in the description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified due to the presence of terms like 'waste' in the description.,
+PM-202446,Other,Urgent,Classified due to the presence of terms like 'fell' in the description.,NEEDS_REVIEW
