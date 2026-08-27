@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Category is 'Other' because the description lacks explicit keywords mapping to the taxonomy.,NEEDS_REVIEW
+AM-202402,Other,Low,Category is 'Other' because the description lacks explicit keywords mapping to the taxonomy.,NEEDS_REVIEW
+AM-202405,Other,Low,Category is 'Other' because the description lacks explicit keywords mapping to the taxonomy.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,Classified as 'Road Damage' because the description cites 'broken'.,
+AM-202407,Road Damage,Urgent,Classified as 'Road Damage' because the description cites 'broken' and escalated to 'Urgent' priority due to the severe keyword 'child'.,
+AM-202410,Pothole,Standard,Classified as 'Pothole' because the description cites 'pothole'.,
+AM-202414,Other,Low,Category is 'Other' because the description lacks explicit keywords mapping to the taxonomy.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as 'Waste' because the description cites 'waste'.,
+AM-202421,Noise,Standard,Classified as 'Noise' because the description cites 'music'.,
+AM-202424,Road Damage,Standard,Classified as 'Road Damage' because the description cites 'road surface'.,
+AM-202429,Other,Low,Category is 'Other' because the description lacks explicit keywords mapping to the taxonomy.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as 'Heritage Damage' because the description cites 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as 'Heat Hazard' because the description cites 'heat'.,
+AM-202444,Waste,Standard,Classified as 'Waste' because the description cites 'waste'.,
+AM-202445,Road Damage,Standard,Classified as 'Road Damage' because the description cites 'broken'.,
