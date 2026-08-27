@@ -1,35 +1,142 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
 import csv
+import argparse
+import logging
+from datetime import datetime
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+class ComplaintClassifier:
+
+    def __init__(self):
+
+        self.categories = {
+            "Pothole": ["pothole", "crater", "hole"],
+            "Flooding": ["flood", "waterlogging", "overflow"],
+            "Streetlight": ["streetlight", "lamp", "bulb", "dark"],
+            "Waste": ["garbage", "trash", "waste", "dump"],
+            "Noise": ["noise", "loud", "music", "construction"],
+            "Road Damage": ["broken road", "cracked", "pavement"],
+            "Heritage Damage": ["heritage", "monument", "statue"],
+            "Heat Hazard": ["heat", "sunstroke", "temperature"],
+            "Drain Blockage": ["drain", "sewage", "gutter"]
+        }
+
+        self.urgent_keywords = [
+            "injury",
+            "accident",
+            "hospital",
+            "school",
+            "danger",
+            "fire"
+        ]
+
+    def calculate_confidence(self, keywords):
+
+        if not keywords:
+            return 0.0
+
+        score = len(keywords) / 3
+        return round(min(score, 1.0), 2)
+
+    def classify(self, text):
+
+        text_lower = text.lower()
+
+        detected_category = "Other"
+        matched_keywords = []
+        best_match_count = 0
+
+        for category, keywords in self.categories.items():
+
+            matches = [word for word in keywords if word in text_lower]
+
+            if len(matches) > best_match_count:
+                best_match_count = len(matches)
+                detected_category = category
+                matched_keywords = matches
+
+        priority = "Standard"
+
+        severity_matches = [w for w in self.urgent_keywords if w in text_lower]
+
+        if severity_matches:
+            priority = "Urgent"
+
+        confidence = self.calculate_confidence(matched_keywords)
+
+        if matched_keywords:
+            reason = f"Detected keywords {matched_keywords} suggesting '{detected_category}'."
+        else:
+            reason = "No clear keywords detected."
+
+        if priority == "Urgent":
+            reason += f" Urgency triggered by {severity_matches}."
+
+        flag = ""
+
+        if detected_category == "Other" or confidence < 0.4:
+            flag = "NEEDS_REVIEW"
+
+        return {
+            "category": detected_category,
+            "priority": priority,
+            "reason": reason,
+            "confidence": confidence,
+            "flag": flag
+        }
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def process_csv(input_file, output_file):
+
+    classifier = ComplaintClassifier()
+
+    results = []
+
+    with open(input_file, "r", encoding="utf-8") as infile:
+
+        reader = csv.DictReader(infile)
+
+        fieldnames = reader.fieldnames + [
+            "category",
+            "priority",
+            "reason",
+            "confidence",
+            "flag",
+            "processed_time"
+        ]
+
+        for row in reader:
+
+            description = row.get("description", "")
+
+            prediction = classifier.classify(description)
+
+            row.update(prediction)
+
+            row["processed_time"] = datetime.now().isoformat()
+
+            results.append(row)
+
+    with open(output_file, "w", newline="", encoding="utf-8") as outfile:
+
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        writer.writerows(results)
+
+    logging.info(f"Processed {len(results)} complaints")
+    logging.info(f"Results saved to {output_file}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+
+    parser = argparse.ArgumentParser(description="Complaint classifier")
+
+    parser.add_argument("--input", required=True)
+
+    parser.add_argument("--output", required=True)
+
     args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+
+    process_csv(args.input, args.output)
