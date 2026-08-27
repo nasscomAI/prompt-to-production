@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains 'pothole', justifying the Pothole classification with Standard priority.",
+PM-202402,Pothole,Urgent,"The description contains 'child' and 'pothole', justifying the Pothole classification with Urgent priority.",
+PM-202406,Flooding,Standard,"The description contains 'flood', justifying the Flooding classification with Standard priority.",
+PM-202408,Flooding,Standard,"The description contains 'flood', justifying the Flooding classification with Standard priority.",
+PM-202410,Streetlight,Standard,"The description contains 'streetlight', justifying the Streetlight classification with Standard priority.",
+PM-202411,Streetlight,Urgent,"The description contains 'hazard' and 'streetlight', justifying the Streetlight classification with Urgent priority.",
+PM-202413,Waste,Standard,"The description contains 'garbage', justifying the Waste classification with Standard priority.",
+PM-202418,Noise,Standard,"The description contains 'music', justifying the Noise classification with Standard priority.",
+PM-202419,Road Damage,Standard,"The description contains 'road surface', justifying the Road Damage classification with Standard priority.",
+PM-202420,Other,Urgent,"The description contains 'injury', justifying the Other classification with Urgent priority.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description contains 'flood', justifying the Flooding classification with Standard priority.",
+PM-202428,Waste,Standard,"The description contains 'dead animal', justifying the Waste classification with Standard priority.",
+PM-202430,Streetlight,Standard,"The description contains 'light', justifying the Streetlight classification with Standard priority.",
+PM-202433,Waste,Standard,"The description contains 'waste', justifying the Waste classification with Standard priority.",
+PM-202446,Road Damage,Urgent,"The description contains 'fell' and 'tiles broken', justifying the Road Damage classification with Urgent priority.",
