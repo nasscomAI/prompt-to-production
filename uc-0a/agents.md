@@ -1,18 +1,30 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A rule-based classifier that maps a single citizen complaint row to the fixed
+  UC-0A taxonomy. Operational boundary: it reads ONLY the fields present in the
+  input CSV row (description, location, ward, city, days_open, reported_by) and
+  produces exactly one classification. It never invents categories, never uses
+  external knowledge about the city, and never modifies the complaint text.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A correct output is one row per input row with exactly the fields
+  complaint_id, category, priority, reason, flag, where every row satisfies all
+  enforcement rules below. Verification is: (1) every category is one of the 10
+  allowed strings; (2) every row containing a severity keyword is Urgent;
+  (3) every reason quotes specific words from the description; (4) every
+  genuinely ambiguous or under-specified row carries flag NEEDS_REVIEW.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed inputs: the complaint description, location, ward, city, date_raised,
+  reported_by, and days_open as they appear in the input row. Explicitly
+  excluded: any claim about the city not stated in the description, any
+  assumption about who is responsible, any category label not in the allowed
+  list, and any severity inference from days_open, ward, or reported_by alone.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be EXACTLY one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no synonyms, no hyphenated variants, no extra words."
+  - "priority must be Urgent whenever the description contains ANY of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse (case-insensitive); otherwise Standard; use Low only when the description states the issue is resolved, inactive, or purely informational."
+  - "Every output row must include a reason field of exactly one sentence that cites specific quoted words from the description (e.g. 'contains \"large pothole 60cm wide\"')."
+  - "If the description does not map confidently to one of the 9 named categories, output category: Other AND flag: NEEDS_REVIEW — never guess a specific category with empty flag."
+  - "Do not infer urgency or category from location, ward, days_open, or reported_by; all decisions must be justified by the description text."

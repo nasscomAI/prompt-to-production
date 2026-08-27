@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+AM-202402,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+AM-202405,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description contains ""heat"" and ""heatwave"".",
+AM-202407,Other,Urgent,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Description contains ""pothole"".",
+AM-202414,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+AM-202417,Other,Standard,"Description contains ""waste"" and ""heritage"", so the category is ambiguous.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Description contains ""music"".",
+AM-202424,Road Damage,Standard,"Description contains ""road surface"".",
+AM-202429,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Description contains ""heritage"".",
+AM-202435,Heat Hazard,Standard,"Description contains ""heat"".",
+AM-202444,Waste,Standard,"Description contains ""waste"" and ""bins"".",
+AM-202445,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW

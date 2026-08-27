@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description contains ""heritage"".",
+KM-202402,Heritage Damage,Standard,"Description contains ""historic"".",
+KM-202405,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description contains ""pothole"".",
+KM-202410,Pothole,Standard,"Description contains ""pothole"".",
+KM-202411,Pothole,Standard,"Description contains ""pothole"".",
+KM-202415,Drain Blockage,Standard,"Description contains ""drain"".",
+KM-202418,Waste,Standard,"Description contains ""waste"".",
+KM-202421,Road Damage,Urgent,"Description contains ""sinking"" and ""footpath"".",
+KM-202422,Road Damage,Standard,"Description contains ""road surface"".",
+KM-202426,Heritage Damage,Standard,"Description contains ""heritage"".",
+KM-202430,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Description contains ""heritage"".",
+KM-202436,Other,Standard,"No category signal found in the description, so it is under-specified.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description contains ""heritage"".",
