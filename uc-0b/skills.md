@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Parse the input text strictly into a dictionary representing the 10 specific mandatory clauses for HR-POL-001. 
+    input: File path to a policy .txt document.
+    output: A dictionary mapping the 10 required mandatory clauses to their text statements.
+    error_handling: Raise an exception if any of the 10 mandatory clauses are missing from the parsed document.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Apply compliance rules (binding verbs, multi-conditions, scope bleed prevention) and build a summary.
+    input: Dictionary of mapped clauses from retrieve_policy.
+    output: A compliant markdown summary of the required clauses.
+    error_handling: If a clause fails the complexity check or meaning loss is feared (e.g., missing multi-conditions), generate a warning and quote the clause verbatim.
