@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+AM-202402,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+AM-202405,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Cites specific words 'heat' in the description.,
+AM-202407,Other,Urgent,Cites specific words 'child' in the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Cites specific words 'pothole' in the description.,
+AM-202414,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Cites specific words 'heritage' in the description.,
+AM-202421,Noise,Standard,Cites specific words 'music' in the description.,
+AM-202424,Road Damage,Standard,Cites specific words 'road surface' in the description.,
+AM-202429,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Cites specific words 'heritage' in the description.,
+AM-202435,Heat Hazard,Standard,Cites specific words 'heat' in the description.,
+AM-202444,Waste,Standard,Cites specific words 'waste' in the description.,
+AM-202445,Other,Standard,No specific keywords found.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Cites specific words 'heritage' in the description.,
+KM-202402,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+KM-202405,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Cites specific words 'pothole' in the description.,
+KM-202410,Pothole,Standard,Cites specific words 'pothole' in the description.,
+KM-202411,Pothole,Standard,Cites specific words 'pothole' in the description.,
+KM-202415,Drain Blockage,Standard,Cites specific words 'drain' in the description.,
+KM-202418,Heat Hazard,Standard,Cites specific words 'hot' in the description.,
+KM-202421,Road Damage,Urgent,"Cites specific words 'sinking, hospital' in the description.",
+KM-202422,Road Damage,Standard,Cites specific words 'road surface' in the description.,
+KM-202426,Heritage Damage,Standard,Cites specific words 'heritage' in the description.,
+KM-202430,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Cites specific words 'heritage' in the description.,
+KM-202436,Other,Standard,No specific keywords found.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Cites specific words 'heritage' in the description.,
