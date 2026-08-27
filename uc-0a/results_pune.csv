@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,The description mentions 'school' making it urgent.,
+PM-202406,Flooding,Standard,The description mentions 'flood'.,
+PM-202408,Other,Standard,The description mentions 'flood'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description mentions 'light'.,
+PM-202411,Streetlight,Urgent,The description mentions 'hazard' making it urgent.,
+PM-202413,Waste,Standard,The description mentions 'garbage'.,
+PM-202418,Noise,Standard,The description mentions 'music'.,
+PM-202419,Road Damage,Standard,The description mentions 'cracked'.,
+PM-202420,Drain Blockage,Urgent,The description mentions 'injury' making it urgent.,
+PM-202427,Flooding,Standard,The description mentions 'flood'.,
+PM-202428,Waste,Standard,The description mentions 'dead'.,
+PM-202430,Streetlight,Standard,The description mentions 'light'.,
+PM-202433,Waste,Standard,The description mentions 'waste'.,
+PM-202446,Other,Urgent,The description mentions 'fell' making it urgent.,NEEDS_REVIEW
