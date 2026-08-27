@@ -1,3 +1,4 @@
+# improvement: enforced single-source attribution
 """
 UC-X app.py — Starter file.
 Build this using the RICE + agents.md + skills.md + CRAFT workflow.
