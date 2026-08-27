@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,"Classified as Flooding with Urgent priority because the text explicitly mentions 'flood', 'ambulance'.",
+Flooding,Standard,"Classified as Flooding with Standard priority because the text explicitly mentions 'flood', 'drain'.",NEEDS_REVIEW
+Flooding,Standard,"Classified as Flooding with Standard priority because the text explicitly mentions 'water', 'drain'.",NEEDS_REVIEW
+Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the text explicitly mentions 'drain'.,
+Pothole,Standard,"Classified as Pothole with Standard priority because the text explicitly mentions 'pothole', 'road'.",NEEDS_REVIEW
+Pothole,Urgent,"Classified as Pothole with Urgent priority because the text explicitly mentions 'pothole', 'hospital'.",
+Pothole,Urgent,"Classified as Pothole with Urgent priority because the text explicitly mentions 'pothole', 'school'.",
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'waste', 'heritage', 'hot'.",NEEDS_REVIEW
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet 'Construction drilling from 5am daily nea...'.",NEEDS_REVIEW
+Pothole,Urgent,"Classified as Pothole with Urgent priority because the text explicitly mentions 'crater', 'road', 'collapse'.",NEEDS_REVIEW
+Flooding,Standard,Classified as Flooding with Standard priority because the text explicitly mentions 'flood'.,
+Waste,Standard,"Classified as Waste with Standard priority because the text explicitly mentions 'waste', 'sun'.",NEEDS_REVIEW
+Other,Standard,"Classified as Other due to lack of distinct keywords, citing text snippet '24hr supermarket delivery trucks idling ...'.",NEEDS_REVIEW
+Flooding,Standard,"Classified as Flooding with Standard priority because the text explicitly mentions 'flood', 'drain'.",NEEDS_REVIEW
+Flooding,Standard,"Classified as Flooding with Standard priority because the text explicitly mentions 'water', 'road'.",NEEDS_REVIEW
