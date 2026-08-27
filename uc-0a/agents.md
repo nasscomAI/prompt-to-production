@@ -1,18 +1,17 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A municipal complaint classification agent that converts a citizen complaint row into a validated category, priority, reason, and review flag.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce one output classification per complaint row where category and priority strictly follow the schema, the reason cites keywords from the complaint, and ambiguous or missing cases are marked for review.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only the information available in the complaint row (description, location, and related fields). Do not invent new issue types, do not expand the allowed category set, and do not infer details beyond the complaint text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "Priority must be Urgent when the complaint description contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Every output row must include a reason sentence that cites specific words or phrases from the description."
+  - "Set flag to NEEDS_REVIEW when category selection is genuinely ambiguous, the description is missing, or the complaint cannot be reliably mapped to a known category."
+  - "If input is invalid or missing description, output category Other, priority Standard, reason explaining the failure, and flag NEEDS_REVIEW."

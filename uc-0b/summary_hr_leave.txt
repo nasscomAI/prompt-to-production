@@ -1,0 +1,32 @@
+POLICY SUMMARY — CRITICAL CLAUSES PRESERVED
+============================================================
+
+
+Annual Leave
+----------------------------------------
+  • 2.3: 14-day advance notice required
+  • 2.4: Written approval required before leave commences. Verbal not valid.
+  • 2.5: Unapproved absence = LOP regardless of subsequent approval
+  • 2.6: Max 5 days carry-forward. Above 5 forfeited on 31 Dec.
+  • 2.7: Carry-forward days must be used Jan–Mar or forfeited
+
+Sick Leave
+----------------------------------------
+  • 3.2: 3+ consecutive sick days requires medical cert within 48hrs
+  • 3.4: Sick leave before/after holiday requires cert regardless of duration
+
+Leave Without Pay (LWP)
+----------------------------------------
+  • 5.2: LWP requires Department Head AND HR Director approval (TWO approvers)
+  • 5.3: LWP >30 days requires Municipal Commissioner approval
+
+Leave Encashment
+----------------------------------------
+  • 7.2: Leave encashment during service not permitted under any circumstances
+
+============================================================
+VALIDATION REPORT
+Total Critical Clauses: 10
+Clauses Found: 10
+Clauses Missing: 0
+✓ All critical clauses preserved.
