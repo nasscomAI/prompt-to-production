@@ -19,19 +19,13 @@ Interactive CLI — type questions, read answers.
 
 ---
 
-## Do This Before Writing Any Prompt
-
-Define your **refusal template** — the exact wording the system must use when a question is not in the documents. Write it here before opening your AI tool:
+## refusal template
 
 ```
 This question is not covered in the available policy documents
 (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
-Please contact [relevant team] for guidance.
+Please contact HR team for guidance.
 ```
-
-This template goes verbatim into your RICE Enforcement and agents.md.
-It is what prevents hedged hallucination — the system has a required response format that leaves no room for "while not explicitly covered..."
-
 ---
 
 ## The Critical Cross-Document Test Question
