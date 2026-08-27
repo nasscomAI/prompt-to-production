@@ -1,35 +1,61 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
 import argparse
-import csv
+import pandas as pd
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+def classify_complaint(description):
+    description_lower = str(description).lower()
     
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
+    categories = [
+        "Pothole", "Flooding", "Streetlight", "Waste", "Noise", 
+        "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage"
+    ]
+    
+    category = "Other"
+    flag = ""
+    
+    matched_cats = [cat for cat in categories if cat.lower() in description_lower]
+    if len(matched_cats) == 1:
+        category = matched_cats[0]
+    elif len(matched_cats) > 1:
+        category = "Other"
+        flag = "NEEDS_REVIEW"
+    else:
+        category = "Other"
+        flag = "NEEDS_REVIEW"
+        
+    urgent_keywords = ["injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"]
+    found_urgent = [kw for kw in urgent_keywords if kw in description_lower]
+    
+    if found_urgent:
+        priority = "Urgent"
+        reason = f"Priority escalated to Urgent due to severity keyword '{found_urgent[0]}'."
+    else:
+        priority = "Standard"
+        reason = "Standard priority case without any identified severity criteria."
+        
+    return {
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    df = pd.read_csv(input_path)
+    print(f"Processing {len(df)} complaints...")
 
+    results = []
+    for index, row in df.iterrows():
+        prediction = classify_complaint(row.get('description', ''))
+        results.append(prediction)
+    
+    output_df = pd.DataFrame(results)
+    final_output = pd.concat([df, output_df], axis=1)
+    final_output.to_csv(output_path, index=False)
+    print(f"Success! Saved to {output_path}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
     args = parser.parse_args()
     batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
