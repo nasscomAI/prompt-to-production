@@ -1,16 +1,20 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-X Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: retrieve_documents
+**Input:** List of file paths
+**Output:** Dict mapping document_name -> {section_number -> section_text}
+**Logic:**
+- Read each .txt file
+- Parse section numbers (e.g. 1.1, 2.3, 5.2) and their text
+- Index by filename and section number
+- Return full index
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: answer_question
+**Input:** User question string, document index dict
+**Output:** Answer string with citation OR refusal template string
+**Logic:**
+- Search all documents for sections relevant to the question
+- If single-source match found: return answer citing document name + section number
+- If cross-document match that would create new permission: return refusal template
+- If no match: return refusal template verbatim
+- Never combine claims from two different documents
