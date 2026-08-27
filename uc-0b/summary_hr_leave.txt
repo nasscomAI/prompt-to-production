@@ -1,19 +1,4 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
-
-def retrieve_policy(input_path):
-    with open(input_path, 'r', encoding='utf-8') as f:
-        return f.read()
-
-def summarize_policy(content):
-    # To faithfully respect the RICE rules (no scope bleed, no clause omission,
-    # no condition dropping), we explicitly output the necessary clauses exactly 
-    # as required by the failure modes in the README.
-    summary = """Summary of HR Leave Policy Preserving All Obligations
+Summary of HR Leave Policy Preserving All Obligations
 
 2.3 Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
 2.4 Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
@@ -25,22 +10,3 @@ def summarize_policy(content):
 5.2 LWP requires approval from the Department Head AND the HR Director. Manager approval alone is not sufficient.
 5.3 LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
 7.2 Leave encashment during service is not permitted under any circumstances.
-"""
-    return summary
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-    
-    content = retrieve_policy(args.input)
-    summary = summarize_policy(content)
-    
-    with open(args.output, 'w', encoding='utf-8') as f:
-        f.write(summary)
-    
-    print(f"Summary written to {args.output}")
-
-if __name__ == "__main__":
-    main()
