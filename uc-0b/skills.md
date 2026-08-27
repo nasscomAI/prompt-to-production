@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Policy Summarizer
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## retrieve_policy
+**Description:** Opens and reads a .txt policy file, returning the text content grouped by sections.
+**Inputs:** `filepath`
+**Outputs:** Array of section texts.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## summarize_policy
+**Description:** Iterates through policy sections, extracting or summarizing critical clauses while preserving every condition strictly.
+**Rules:**
+- specifically check for dual-approval conditions and preserve both (e.g., Department Head AND HR Director).
+- if meaning might be lost, copy the clause verbatim and add `[VERBATIM]`.
+**Inputs:** Sections array
+**Outputs:** Compliant summary text.
