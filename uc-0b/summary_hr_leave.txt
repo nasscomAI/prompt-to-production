@@ -1,0 +1,33 @@
+# POLICY SUMMARY AUDIT REPORT
+
+[1.1] This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).
+[1.2] This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts.
+[2.1] Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+[2.2] Annual leave accrues at 1.5 days per month from the date of joining.
+[2.3] 14-day advance notice mandatory via Form HR-L1.
+[2.4] WRITTEN approval from direct manager REQUIRED before leave. Verbal is INVALID.
+[2.5] Unapproved absence = Loss of Pay (LOP) regardless of subsequent approval.
+[2.6] Max 5 days carry-forward. Excess forfeited on 31 Dec.
+[2.7] Carry-forward days MUST be used Jan–Mar or forfeited.
+[3.1] Each employee is entitled to 12 days of paid sick leave per calendar year.
+[3.2] 3+ consecutive sick days requires medical cert within 48hrs of return.
+[3.3] Sick leave cannot be carried forward to the following year.
+[3.4] Sick leave before/after public holidays/annual leave requires cert REGARDLESS of duration.
+[4.1] Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.
+[4.2] For a third or subsequent child, maternity leave is 12 weeks paid.
+[4.3] Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+[4.4] Paternity leave cannot be split across multiple periods.
+[5.1] An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+[5.2] LWP REQUIRES APPROVAL FROM BOTH: Department Head AND HR Director.
+[5.3] LWP > 30 days REQUIRES Municipal Commissioner approval.
+[5.4] Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits.
+[6.1] Employees are entitled to all gazetted public holidays as declared by the State Government each year.
+[6.2] If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+[6.3] Compensatory off cannot be encashed.
+[7.1] Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.
+[7.2] Leave encashment during service NOT PERMITTED under any circumstances.
+[7.3] Sick leave and LWP cannot be encashed under any circumstances.
+[8.1] Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.
+[8.2] Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
+
+[FLAG] No evidence of standard practices or external organization behavior used. Source-only summary.
