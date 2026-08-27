@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions 'flood, flooded'; severity keyword 'ambulance' triggers Urgent — classified as Flooding/Urgent.",
+GH-202402,Drain Blockage,Standard,Description mentions 'drain'; community impact indicated — classified as Drain Blockage/Standard.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Description mentions 'drain'; community impact indicated — classified as Drain Blockage/Standard.,
+GH-202407,Drain Blockage,Standard,Description mentions 'drain'; community impact indicated — classified as Drain Blockage/Standard.,
+GH-202410,Pothole,Standard,Description mentions 'pothole'; community impact indicated — classified as Pothole/Standard.,
+GH-202411,Pothole,Urgent,Description mentions 'pothole'; severity keyword 'hospital' triggers Urgent — classified as Pothole/Urgent.,
+GH-202412,Pothole,Urgent,Description mentions 'pothole'; severity keyword 'school' triggers Urgent — classified as Pothole/Urgent.,
+GH-202417,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,NEEDS_REVIEW
+GH-202420,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Description mentions 'crater'; severity keyword 'collapse' triggers Urgent — classified as Pothole/Urgent.,
+GH-202424,Flooding,Low,Description mentions 'flood' — classified as Flooding/Low.,
+GH-202428,Waste,Standard,Description mentions 'waste'; community impact indicated — classified as Waste/Standard.,
+GH-202432,Other,Low,Description: '24hr supermarket delivery trucks idling with engines on....' — classified as Other/Low.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Description mentions 'drain'; community impact indicated — classified as Drain Blockage/Standard.,NEEDS_REVIEW
+GH-202438,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW

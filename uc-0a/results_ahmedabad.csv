@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Description: 'Tarmac surface melting at 44°C. Footwear sticking. Park user...' — classified as Other/Low.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Description mentions 'temperature'; community impact indicated — classified as Heat Hazard/Standard.,
+AM-202405,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions 'heat, heatwave'; community impact indicated — classified as Heat Hazard/Standard.",
+AM-202407,Road Damage,Urgent,Description mentions 'upturned'; severity keyword 'child' triggers Urgent — classified as Road Damage/Urgent.,
+AM-202410,Pothole,Low,Description mentions 'pothole' — classified as Pothole/Low.,
+AM-202414,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Description mentions 'music'; community impact indicated — classified as Noise/Standard.,
+AM-202424,Road Damage,Standard,Description mentions 'road surface'; community impact indicated — classified as Road Damage/Standard.,
+AM-202429,Heat Hazard,Low,Description mentions 'temperature' — classified as Heat Hazard/Low.,
+AM-202431,Heritage Damage,Standard,Description mentions 'heritage'; community impact indicated — classified as Heritage Damage/Standard.,
+AM-202435,Heat Hazard,Standard,Description mentions 'heat'; community impact indicated — classified as Heat Hazard/Standard.,
+AM-202444,Waste,Standard,"Description mentions 'waste, overflowing'; community impact indicated — classified as Waste/Standard.",
+AM-202445,Other,Standard,community impact indicated — classified as Other/Standard.,NEEDS_REVIEW
