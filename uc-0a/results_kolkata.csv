@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified based on presence of the word 'heritage' in description.,
+KM-202402,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+KM-202405,Other,Standard,No distinct category identified from the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified based on presence of the word 'pothole' in description.,
+KM-202410,Pothole,Standard,Classified based on presence of the word 'pothole' in description.,
+KM-202411,Pothole,Standard,Classified based on presence of the word 'pothole' in description.,
+KM-202415,Drain Blockage,Standard,Classified based on presence of the word 'drain' in description.,
+KM-202418,Waste,Standard,Classified based on presence of the word 'waste' in description.,
+KM-202421,Road Damage,Urgent,Classified based on presence of the word 'sinking' in description.,
+KM-202422,Road Damage,Standard,Classified based on presence of the word 'road surface' in description.,
+KM-202426,Heritage Damage,Standard,Classified based on presence of the word 'heritage' in description.,
+KM-202430,Waste,Standard,Classified based on presence of the word 'smell' in description.,
+KM-202434,Heritage Damage,Standard,Classified based on presence of the word 'heritage' in description.,
+KM-202436,Streetlight,Standard,Classified based on presence of the word 'dark' in description.,
+KM-202438,Heritage Damage,Standard,Classified based on presence of the word 'heritage' in description.,
