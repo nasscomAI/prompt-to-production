@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Parses a single input row to select taxonomy category, identify severity keywords, and determine review status.
+    input: Dictionary row containing key 'description'.
+    output: Dict structure with keys: complaint_id, category, priority, reason, flag.
+    error_handling: Handles null strings safely by setting flag to 'NEEDS_REVIEW' and category to 'Other'.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Runs the file streaming engine that parses the incoming records and exports structured telemetry logs.
+    input: Path strings pointing to raw data sources and target write destinations.
+    output: Void. Emits classified dataset to specified output location.
+    error_handling: Continues processing remaining entries if a specific row encounters an execution error.

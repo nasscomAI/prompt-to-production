@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified under category Heat Hazard based on text characteristics.,
+AM-202402,Heat Hazard,Standard,Classified under category Heat Hazard based on text characteristics.,
+AM-202405,Other,Standard,Classified under category Other based on text characteristics.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified under category Heat Hazard based on text characteristics.,
+AM-202407,Other,Urgent,Priority is set to Urgent due to safety keyword present: 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified under category Pothole based on text characteristics.,
+AM-202414,Streetlight,Standard,Classified under category Streetlight based on text characteristics.,
+AM-202417,Waste,Standard,Classified under category Waste based on text characteristics.,
+AM-202421,Noise,Standard,Classified under category Noise based on text characteristics.,
+AM-202424,Heat Hazard,Standard,Classified under category Heat Hazard based on text characteristics.,
+AM-202429,Heat Hazard,Standard,Classified under category Heat Hazard based on text characteristics.,
+AM-202431,Heritage Damage,Standard,Classified under category Heritage Damage based on text characteristics.,
+AM-202435,Road Damage,Standard,Classified under category Road Damage based on text characteristics.,
+AM-202444,Waste,Standard,Classified under category Waste based on text characteristics.,
+AM-202445,Other,Standard,Classified under category Other based on text characteristics.,NEEDS_REVIEW

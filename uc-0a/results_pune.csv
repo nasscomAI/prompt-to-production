@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified under category Pothole based on text characteristics.,
+PM-202402,Pothole,Urgent,Priority is set to Urgent due to safety keyword present: 'child'.,
+PM-202406,Flooding,Standard,Classified under category Flooding based on text characteristics.,
+PM-202408,Flooding,Standard,Classified under category Flooding based on text characteristics.,
+PM-202410,Streetlight,Standard,Classified under category Streetlight based on text characteristics.,
+PM-202411,Streetlight,Urgent,Priority is set to Urgent due to safety keyword present: 'hazard'.,
+PM-202413,Waste,Standard,Classified under category Waste based on text characteristics.,
+PM-202418,Noise,Standard,Classified under category Noise based on text characteristics.,
+PM-202419,Road Damage,Standard,Classified under category Road Damage based on text characteristics.,
+PM-202420,Other,Urgent,Priority is set to Urgent due to safety keyword present: 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified under category Flooding based on text characteristics.,
+PM-202428,Other,Standard,Classified under category Other based on text characteristics.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified under category Streetlight based on text characteristics.,
+PM-202433,Waste,Standard,Classified under category Waste based on text characteristics.,
+PM-202446,Other,Urgent,Priority is set to Urgent due to safety keyword present: 'fell'.,NEEDS_REVIEW
