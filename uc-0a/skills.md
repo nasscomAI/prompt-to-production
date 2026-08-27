@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0A Complaint Classifier
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single complaint into a predefined taxonomy and priority level with a cited reason.
+    input: A complaint description string.
+    output: A JSON object or structured data containing category, priority, reason, and flag.
+    error_handling: If the text is too short or ambiguous, defaults to category 'Other' and sets flag to 'NEEDS_REVIEW'.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Orchestrates the classification of multiple complaints from an input CSV and writes results to an output CSV.
+    input: Input CSV file path containing complaint descriptions.
+    output: Output CSV file path containing categorized and prioritized complaints.
+    error_handling: Validates CSV structure; if a row fails classification, it is flagged for review rather than stopping the batch process.
