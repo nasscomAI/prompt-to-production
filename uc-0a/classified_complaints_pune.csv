@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Matched category keyword: Pothole,
+PM-202402,Pothole,Standard,Matched category keyword: Pothole,
+PM-202406,Other,Low,,NEEDS_REVIEW
+PM-202408,Other,Low,,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Matched category keyword: Streetlight,
+PM-202411,Streetlight,Standard,Matched category keyword: Streetlight,
+PM-202413,Other,Low,,NEEDS_REVIEW
+PM-202418,Other,Low,,NEEDS_REVIEW
+PM-202419,Other,Low,,NEEDS_REVIEW
+PM-202420,Other,Low,,NEEDS_REVIEW
+PM-202427,Other,Low,,NEEDS_REVIEW
+PM-202428,Other,Low,,NEEDS_REVIEW
+PM-202430,Other,Low,,NEEDS_REVIEW
+PM-202433,Waste,Standard,Matched category keyword: Waste,
+PM-202446,Other,Low,,NEEDS_REVIEW
