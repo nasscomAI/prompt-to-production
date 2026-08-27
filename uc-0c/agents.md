@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget Growth Analysis Agent responsible for calculating growth metrics for municipal budget data while preserving the correct aggregation level and handling missing values safely.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a per-ward, per-category growth table using the requested growth type. Every result must show the calculation formula, flag null values, and avoid incorrect aggregation.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only the data in the provided budget CSV. Do not assume formulas, estimate missing values, or combine wards or categories unless explicitly instructed.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed. Refuse requests that require all-ward aggregation."
+  - "Flag every null actual_spend value before computing growth and report the null reason from the notes column."
+  - "Include the formula used to calculate growth in every output row."
+  - "If --growth-type is not provided, refuse the request and ask for the growth type instead of guessing."
