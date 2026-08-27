@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Based on keywords found in description: 'tarmac surface melting at 44°c. footwear sticking.',NEEDS_REVIEW
+AM-202402,Other,Standard,Based on keywords found in description: 'metal bus shelter reaching dangerous temperatures.',NEEDS_REVIEW
+AM-202405,Other,Standard,Based on keywords found in description: 'dead trees with split branches. fall risk to walke',NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Based on keywords found in description: 'irrigation system broken. grass dying in heatwave ',
+AM-202407,Other,Urgent,Based on keywords found in description: 'broken bench and upturned paving. child injured la',NEEDS_REVIEW
+AM-202410,Pothole,Standard,Based on keywords found in description: 'pothole on main highway causing morning rush lane ',
+AM-202414,Other,Standard,Based on keywords found in description: 'residential colony unlit after 9pm. wiring theft r',NEEDS_REVIEW
+AM-202417,Waste,Standard,Based on keywords found in description: 'night market waste not cleared before morning. her',
+AM-202421,Other,Standard,Based on keywords found in description: 'club music audible at residential buildings at 2am',NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Based on keywords found in description: 'zoo approach road surface bubbling at 45°c. visito',
+AM-202429,Other,Standard,Based on keywords found in description: 'river walk surface temperature unbearable. install',NEEDS_REVIEW
+AM-202431,Road Damage,Standard,Based on keywords found in description: 'old city road subsidence near ancient step well. h',
+AM-202435,Road Damage,Standard,Based on keywords found in description: 'black metal road dividers storing heat. motorists ',
+AM-202444,Waste,Standard,Based on keywords found in description: 'restaurant waste bins overflowing on sunday night.',
+AM-202445,Other,Standard,Based on keywords found in description: 'brt shelter roof glass broken. users exposed to fu',NEEDS_REVIEW

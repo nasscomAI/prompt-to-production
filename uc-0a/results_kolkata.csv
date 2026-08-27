@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Based on keywords found in description: 'heritage lamp post knocked over by delivery vehicl',NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Based on keywords found in description: 'historic tram road cobblestones broken up by cable',
+KM-202405,Other,Standard,Based on keywords found in description: 'wedding band playing near tagore museum at 11pm. f',NEEDS_REVIEW
+KM-202409,Pothole,Standard,Based on keywords found in description: 'airport access road full of potholes. diplomatic c',
+KM-202410,Pothole,Standard,Based on keywords found in description: 'pothole causing tyre blowouts. three incidents thi',
+KM-202411,Pothole,Standard,Based on keywords found in description: 'deep pothole filling with rainwater. depth invisib',
+KM-202415,Road Damage,Standard,Based on keywords found in description: 'new residential complex draining directly onto pub',
+KM-202418,Waste,Standard,Based on keywords found in description: 'tourist zone waste overflowing. foreign visitors p',
+KM-202421,Other,Urgent,Based on keywords found in description: 'footpath broken and sinking. elderly pedestrian fe',NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Based on keywords found in description: 'road surface buckled near bridge. structural conce',
+KM-202426,Other,Standard,Based on keywords found in description: 'heritage residential building exterior defaced by ',NEEDS_REVIEW
+KM-202430,Road Damage,Standard,Based on keywords found in description: 'road subsided near gas pipeline. gas leak smell re',
+KM-202434,Other,Standard,Based on keywords found in description: 'street paving removed for utility work — heritage ',NEEDS_REVIEW
+KM-202436,Other,Standard,Based on keywords found in description: 'entire colony substation tripped. darkness for 3 n',NEEDS_REVIEW
+KM-202438,Other,Standard,Based on keywords found in description: 'street vendors using amplifiers illegally in herit',NEEDS_REVIEW

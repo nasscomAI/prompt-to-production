@@ -1,0 +1,10 @@
+Clause 2.3: Employees must provide at least 14 days advance notice before taking leave.
+Clause 2.4: Employees must obtain written approval before leave begins; verbal approval is not valid.
+Clause 2.5: Unapproved absence will be treated as Loss of Pay (LOP) regardless of later approval.
+Clause 2.6: A maximum of 5 leave days may be carried forward; any excess is forfeited on 31 December.
+Clause 2.7: Carried-forward leave must be used between January and March, otherwise it is forfeited.
+Clause 3.2: Sick leave of 3 or more consecutive days requires a medical certificate within 48 hours.
+Clause 3.4: Sick leave taken before or after a holiday requires a medical certificate regardless of duration.
+Clause 5.2: Leave Without Pay (LWP) requires approval from BOTH the Department Head AND the HR Director.
+Clause 5.3: LWP exceeding 30 days requires approval from the Municipal Commissioner.
+Clause 7.2: Leave encashment during service is not permitted under any circumstances.
