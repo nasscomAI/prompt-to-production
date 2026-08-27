@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'tarmac' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202402,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'metal' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202405,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'dead' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as heat hazard because description mentions 'heat' and assigned standard priority as no severity/minor keywords found.,
+AM-202407,Other,Urgent,Categorized as other (needs review) as no keywords matched for description starting with 'broken' and assigned urgent priority due to severity keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Categorized as pothole because description mentions 'pothole' and assigned standard priority as no severity/minor keywords found.,
+AM-202414,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'residential' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized as waste because description mentions 'waste' and assigned standard priority as no severity/minor keywords found.,
+AM-202421,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'club' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202424,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'zoo' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202429,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'river' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Categorized as heritage damage because description mentions 'heritage' and assigned standard priority as no severity/minor keywords found.,
+AM-202435,Heat Hazard,Standard,Categorized as heat hazard because description mentions 'heat' and assigned standard priority as no severity/minor keywords found.,
+AM-202444,Waste,Standard,Categorized as waste because description mentions 'waste' and assigned standard priority as no severity/minor keywords found.,
+AM-202445,Other,Standard,Categorized as other (needs review) as no keywords matched for description starting with 'brt' and assigned standard priority as no severity/minor keywords found.,NEEDS_REVIEW
