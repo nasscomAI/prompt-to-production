@@ -6,20 +6,20 @@
 
 ## Your Input File
 ```
-../data/city-test-files/test_[your-city].csv
+../data/city-test-files/test_kolkata.csv
 ```
 15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
 
 ## Your Output File
 ```
-uc-0a/results_[your-city].csv
+uc-0a/results_kolkata.csv
 ```
 
 ## Run Command
 ```bash
 python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
+  --input ../data/city-test-files/test_kolkata.csv \
+  --output results_kolkata.csv
 ```
 
 ---

@@ -1,9 +1,9 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:*Prabaharan M
+**City / Group:*Salem*  
+**Date:**27/03/2026
+**AI tool(s) used:*Antigravity*  
 
 ---
 
@@ -26,11 +26,11 @@
 **Which failure mode did you encounter first?**
 *(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
 
-> [Your answer]
+> [Severity blindness]
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
 
-> [Your answer]
+> [Every output row must include a reason field of exactly one sentence citing specific words from the description]
 
 **How many rows in your results CSV match the answer key?**
 *(Tutor will release answer key after session)*
@@ -39,11 +39,11 @@
 
 **Did all severity signal rows (injury/child/school/hospital) return Urgent?**
 
-> Yes / No — [explain any exceptions]
+> Yes
 
 **Your git commit message for UC-0A:**
 
-> [paste your commit message here]
+> [UC-0A Fix taxonomy drift and false confidence: missing explicit guardrails → enforced exact category matches and added NEEDS_REVIEW flag]
 
 ---
 
@@ -60,15 +60,15 @@
 
 **After your fix — are all 10 critical clauses present in summary_hr_leave.txt?**
 
-> Yes / No — [which are still missing or wrong]
+> Yes
 
 **Did the naive prompt add any information not in the source document (scope bleed)?**
 
-> Yes / No — [quote any bleed you found]
+> No
 
 **Your git commit message for UC-0B:**
 
-> [paste your commit message here]
+> [UC-0B Fix clause omission and scope bleed: naive summary missed 4 clauses and added external assumptions → enforced 10-clause checklist and strict single-source citation]
 
 ---
 
@@ -80,23 +80,23 @@
 
 **Did it aggregate across all wards? Did it mention the 5 null rows?**
 
-> [Your answer]
+> [Yes]
 
 **After your fix — does your system refuse all-ward aggregation?**
 
-> Yes / No
+> No
 
 **Does your growth_output.csv flag the 5 null rows rather than skipping them?**
 
-> Yes / No — [list which rows are flagged]
+> Yes
 
 **Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?**
 
-> Yes / No — [note any discrepancy]
+> Yes
 
 **Your git commit message for UC-0C:**
 
-> [paste your commit message here]
+> [UC-0C Fix aggregation and null-row handling: naive prompt aggregated across all wards and skipped null rows → enforced per-ward calculation and explicit null-row flagging]
 
 ---
 
@@ -105,15 +105,15 @@
 **What did the naive prompt return for the cross-document test question?**
 *(Question: "Can I use my personal phone to access work files when working from home?")*
 
-> [Quote the actual output]
+> [Personal devices may access CMC email and the employee self-service portal only.]
 
 **Did it blend the IT and HR policies?**
 
-> Yes / No — [explain]
+> Yes
 
 **After your fix — what does your system return for this question?**
 
-> [Quote the actual output]
+> [Personal devices may access CMC email and the employee self-service portal only.]
 
 **Did your system use any hedging phrases in any answer?**
 *("while not explicitly covered", "typically", "generally understood")*
@@ -126,7 +126,7 @@
 
 **Your git commit message for UC-X:**
 
-> [paste your commit message here]
+> UC-X Fix hedged hallucination: missing single-source constraints → implemented strict document-section citations and verbatim refusal templates to prevent cross-document blending
 
 ---
 

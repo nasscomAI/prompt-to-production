@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,The description mentions the word 'ambulance'.,NEEDS_REVIEW
+GH-202402,Other,Standard,The description mentions the word 'market'.,NEEDS_REVIEW
+GH-202406,Other,Standard,The description mentions the word 'main'.,NEEDS_REVIEW
+GH-202407,Other,Standard,The description mentions the word 'drain'.,NEEDS_REVIEW
+GH-202410,Pothole,Standard,The description mentions the word 'potholes'.,
+GH-202411,Pothole,Urgent,The description mentions the word 'hospital'.,
+GH-202412,Pothole,Urgent,The description mentions the word 'school'.,
+GH-202417,Other,Standard,The description mentions the word 'heritage'.,NEEDS_REVIEW
+GH-202420,Other,Standard,The description mentions the word 'construction'.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The description mentions the word 'collapse'.,NEEDS_REVIEW
+GH-202424,Other,Standard,The description mentions the word 'underpass'.,NEEDS_REVIEW
+GH-202428,Waste,Standard,The description mentions the word 'post-market'.,
+GH-202432,Other,Standard,The description mentions the word '24hr'.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description mentions the word 'main'.,
+GH-202438,Other,Standard,The description mentions the word 'colony'.,NEEDS_REVIEW
