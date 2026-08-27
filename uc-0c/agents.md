@@ -1,18 +1,18 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget Analysis Agent responsible for calculating budget statistics
+  for each ward and category without mixing data across wards.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce correct numerical analysis results based only on the provided
+  budget dataset, ensuring calculations are scoped per ward and category.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to read the dataset from data/budget/ward_budget.csv.
+  It must only use this dataset and must not fabricate or infer values
+  outside the file.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "All calculations must be done per ward and per category."
+  - "The agent must not aggregate data across different wards."
+  - "All numbers must come directly from the dataset."
+  - "If the dataset cannot be read, the system must stop instead of guessing."

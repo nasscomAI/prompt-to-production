@@ -1,16 +1,18 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Document Loading
+    description: Reads a policy document from the policy-documents directory.
+    input: File path (string)
+    output: List of text lines from the document
+    error_handling: Returns an empty list if the document cannot be opened.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: Query Matching
+    description: Searches the document text to find lines relevant to the user query.
+    input: Query string and list of document lines
+    output: Matching lines that contain relevant information
+    error_handling: Returns no matches if the query cannot be found.
+
+  - name: Answer Generation
+    description: Generates a response based only on the matched document text.
+    input: Matching document lines
+    output: Answer string derived from the document
+    error_handling: Returns a refusal message if no supporting text exists.
