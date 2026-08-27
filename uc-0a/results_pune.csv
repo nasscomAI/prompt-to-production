@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The complaint reports a pothole in the description.,
+PM-202402,Pothole,Urgent,"The complaint reports a pothole in the description (Urgent priority triggered by: child, school).",
+PM-202406,Flooding,Standard,The complaint reports flooding or water pooling.,
+PM-202408,Other,Standard,"The description mentions both drainage issues and flooding, making it ambiguous.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The complaint reports an issue with streetlights or public lighting.,
+PM-202411,Streetlight,Urgent,The complaint reports an issue with streetlights or public lighting (Urgent priority triggered by: hazard).,
+PM-202413,Waste,Standard,"The complaint reports waste, garbage, or trash buildup.",
+PM-202418,Noise,Standard,The complaint reports noise or music disturbance.,
+PM-202419,Road Damage,Standard,The complaint reports damage to the road surface or footpath.,
+PM-202420,Road Damage,Urgent,The complaint reports damage to the road surface or footpath (Urgent priority triggered by: injury).,
+PM-202427,Flooding,Standard,The complaint reports flooding or water pooling.,
+PM-202428,Waste,Standard,"The complaint reports waste, garbage, or trash buildup.",
+PM-202430,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The complaint reports waste, garbage, or trash buildup.",
+PM-202446,Road Damage,Urgent,The complaint reports damage to the road surface or footpath (Urgent priority triggered by: fell).,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The complaint reports flooding or water pooling (Urgent priority triggered by: ambulance).,
+GH-202402,Other,Standard,"The description mentions both drainage issues and flooding, making it ambiguous.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description mentions a blocked or issue-prone drain.,
+GH-202407,Drain Blockage,Standard,The description mentions a blocked or issue-prone drain.,
+GH-202410,Pothole,Standard,The complaint reports a pothole in the description.,
+GH-202411,Pothole,Urgent,The complaint reports a pothole in the description (Urgent priority triggered by: hospital).,
+GH-202412,Pothole,Urgent,The complaint reports a pothole in the description (Urgent priority triggered by: school).,
+GH-202417,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
+GH-202420,Noise,Standard,The complaint reports noise or music disturbance.,
+GH-202422,Road Damage,Urgent,The complaint reports damage to the road surface or footpath (Urgent priority triggered by: collapse).,
+GH-202424,Flooding,Standard,The complaint reports flooding or water pooling.,
+GH-202428,Waste,Standard,"The complaint reports waste, garbage, or trash buildup.",
+GH-202432,Noise,Standard,The complaint reports noise or music disturbance.,
+GH-202448,Other,Standard,"The description mentions both drainage issues and flooding, making it ambiguous.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,The complaint reports flooding or water pooling.,

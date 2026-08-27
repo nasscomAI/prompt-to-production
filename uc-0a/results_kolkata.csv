@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
+KM-202402,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
+KM-202405,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,The complaint reports a pothole in the description.,
+KM-202410,Pothole,Standard,The complaint reports a pothole in the description.,
+KM-202411,Pothole,Standard,The complaint reports a pothole in the description.,
+KM-202415,Other,Standard,The description does not match any of the standard categories.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"The complaint reports waste, garbage, or trash buildup.",
+KM-202421,Road Damage,Urgent,"The complaint reports damage to the road surface or footpath (Urgent priority triggered by: hospital, fell).",
+KM-202422,Road Damage,Standard,The complaint reports damage to the road surface or footpath.,
+KM-202426,Heritage Damage,Standard,The complaint reports damage or issues at a heritage site.,
+KM-202430,Other,Standard,Gas leak smell reports are hazardous and do not map cleanly to any standard category.,NEEDS_REVIEW
+KM-202434,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,The complaint reports an issue with streetlights or public lighting.,
+KM-202438,Other,Standard,"The description mentions heritage context along with another issue, making it ambiguous.",NEEDS_REVIEW
