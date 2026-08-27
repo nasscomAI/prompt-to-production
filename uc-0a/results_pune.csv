@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,Classified based on keywords: pothole.,
+PM-202402,Pothole,Urgent,"Classified based on keywords: school, child, pothole.",
+PM-202406,Flooding,Standard,Classified based on keywords: flooded.,
+PM-202408,Flooding,Standard,"Classified based on keywords: flooded, drain.",
+PM-202410,Streetlight,Standard,Classified based on general context as no specific keywords matched.,
+PM-202411,Streetlight,Urgent,Classified based on keywords: hazard.,
+PM-202413,Waste,Low,Classified based on keywords: garbage.,
+PM-202418,Noise,Low,Classified based on keywords: music.,
+PM-202419,Road Damage,Standard,Classified based on keywords: cracked.,
+PM-202420,Other,Urgent,Classified based on keywords: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified based on general context as no specific keywords matched.,
+PM-202428,Other,Low,Classified based on general context as no specific keywords matched.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Classified based on keywords: lights, heritage.",
+PM-202433,Waste,Low,"Classified based on keywords: waste, dumped.",
+PM-202446,Other,Urgent,Classified based on keywords: fell.,NEEDS_REVIEW
