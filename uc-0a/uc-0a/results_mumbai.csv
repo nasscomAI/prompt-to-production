@@ -1,0 +1,16 @@
+id,description,category,priority_flag,reason,flag
+1,Massive pothole near Gateway of India causing severe traffic delays.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+2,Streetlight is completely broken and dark on Linking Road near the school area.,Other,Urgent,Failsafe triggered. Found urgent keyword 'school'.,NEEDS_REVIEW
+3,Water logging and flooding up to knee level outside KEM hospital after heavy rain.,Other,Urgent,Failsafe triggered. Found urgent keyword 'hospital'.,NEEDS_REVIEW
+4,Uncollected garbage piles and waste spilling onto the main road in Bandra.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+5,Loud music and noise from a late night commercial wedding hall past midnight in Andheri.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+6,Major road damage and cracks on the Eastern Express Highway after the flyover.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+7,A branch fell on a parked car near Shivaji Park during high winds.,Other,Urgent,Failsafe triggered. Found urgent keyword 'fell'.,NEEDS_REVIEW
+8,Unbearable heat hazard due to failing central AC units inside a public government office.,Other,Urgent,Failsafe triggered. Found urgent keyword 'hazard'.,NEEDS_REVIEW
+9,Main drain blockage causing stinky black water to overflow onto the footpath in Dadar.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+10,The historic stone archway structure at Khotachiwadi has visible structural collapse risks.,Other,Urgent,Failsafe triggered. Found urgent keyword 'collapse'.,NEEDS_REVIEW
+11,An elderly citizen tripped and suffered an injury due to uneven pavement on Marine Drive.,Other,Urgent,Failsafe triggered. Found urgent keyword 'injury'.,NEEDS_REVIEW
+12,A stray wire sparking near an open transformer creates a severe fire hazard.,Other,Urgent,Failsafe triggered. Found urgent keyword 'fire'.,NEEDS_REVIEW
+13,The regular construction noise is echoing in the neighborhood.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+14,There is some weird smell or problem near the local market area but I am not sure what it is.,Other,Standard,Fallback classification due to system error.,NEEDS_REVIEW
+15,An ambulance was blocked trying to navigate deep craters on a broken lane in Juhu.,Other,Urgent,Failsafe triggered. Found urgent keyword 'ambulance'.,NEEDS_REVIEW
