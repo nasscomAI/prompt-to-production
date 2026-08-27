@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified based on keywords in description: ""large pothole 60cm wide causing tyre damage. three vehicles affected this week.""",
+PM-202402,Pothole,Urgent,"Classified based on keywords in description: ""deep pothole near bus stop. school children at risk during morning hours.""",
+PM-202406,Flooding,Standard,"Classified based on keywords in description: ""underpass flooded knee-deep after 2hrs rain. commuters stranded.""",
+PM-202408,Flooding,Standard,"Classified based on keywords in description: ""bus stand flooded. passengers standing in water. drain blocked.""",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified based on keywords in description: ""three consecutive streetlights out for 10 days. area very dark at night.""",
+PM-202411,Streetlight,Urgent,"Classified based on keywords in description: ""streetlight flickering and sparking. electrical hazard reported.""",
+PM-202413,Waste,Standard,"Classified based on keywords in description: ""overflowing garbage bins near vegetable market. smell affecting shoppers.""",
+PM-202418,Other,Standard,"Classified based on keywords in description: ""wedding venue playing music past midnight on weeknights.""",
+PM-202419,Other,Standard,"Classified based on keywords in description: ""road surface cracked and sinking near utility work done 1 month ago.""",
+PM-202420,Other,Urgent,"Classified based on keywords in description: ""manhole cover missing. risk of serious injury to cyclists.""",
+PM-202427,Flooding,Standard,"Classified based on keywords in description: ""bridge approach floods in 30mins of rain. bridge becomes inaccessible.""",
+PM-202428,Other,Standard,"Classified based on keywords in description: ""dead animal not removed for 36 hours. health concern.""",
+PM-202430,Heritage Damage,Standard,"Classified based on keywords in description: ""heritage street, lights out. safety concern for pedestrians after dark.""",
+PM-202433,Waste,Standard,"Classified based on keywords in description: ""bulk waste from apartment renovation dumped on public road.""",
+PM-202446,Other,Urgent,"Classified based on keywords in description: ""footpath tiles broken and upturned. elderly resident fell last week.""",
