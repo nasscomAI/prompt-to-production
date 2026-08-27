@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'tarmac surface melting at 44°c. footwear...',
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'metal bus shelter reaching dangerous tem...',
+AM-202405,Other,Standard,Classified as Other because description mentions 'dead trees with split branches. fall ris...',NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'irrigation system broken. grass dying in...',
+AM-202407,Road Damage,Urgent,Classified as Road Damage because description mentions 'broken bench and upturned paving. child ...',
+AM-202410,Pothole,Standard,Classified as Pothole because description mentions 'pothole on main highway causing morning ...',
+AM-202414,Streetlight,Standard,Classified as Streetlight because description mentions 'residential colony unlit after 9pm. wiri...',
+AM-202417,Waste,Standard,Classified as Waste because description mentions 'night market waste not cleared before mo...',
+AM-202421,Noise,Standard,Classified as Noise because description mentions 'club music audible at residential buildi...',
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'zoo approach road surface bubbling at 45...',
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'river walk surface temperature unbearabl...',
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'old city road subsidence near ancient st...',
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'black metal road dividers storing heat. ...',
+AM-202444,Waste,Standard,Classified as Waste because description mentions 'restaurant waste bins overflowing on sun...',
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because description mentions 'brt shelter roof glass broken. users exp...',
