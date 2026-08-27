@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202402,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202405,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202406,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202407,Other,Urgent,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description mentions 'pothole'.,
+AM-202414,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description mentions 'waste'.,
+AM-202421,Noise,Standard,The description mentions 'music'.,
+AM-202424,Road Damage,Standard,The description mentions 'road surface'.,
+AM-202429,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202431,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202435,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
+AM-202444,Waste,Standard,The description mentions 'waste'.,
+AM-202445,Other,Standard,No clear category keywords found. Requires manual review.,NEEDS_REVIEW
