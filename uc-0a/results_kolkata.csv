@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified as Heritage Damage based on 'knocked over'; priority Standard.,
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage based on 'broken'; priority Standard.,
+KM-202405,Noise,Standard,Classified as Noise based on 'band'; priority Standard.,
+KM-202409,Pothole,Standard,Classified as Pothole based on 'pothole'; priority Standard.,
+KM-202410,Pothole,Standard,Classified as Pothole based on 'Pothole'; priority Standard.,
+KM-202411,Pothole,Standard,Classified as Pothole based on 'pothole'; priority Standard.,
+KM-202415,Other,Standard,Category not confidently assignable from 'New residential complex draining directly onto public road.'; marked NEEDS_REVIEW. Priority Standard.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste based on 'waste'; priority Standard.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage based on 'sinking'; severity keyword 'Hospital' present; priority Urgent.,
+KM-202422,Road Damage,Standard,Classified as Road Damage based on 'Road surface'; priority Standard.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on 'defaced'; priority Standard.,
+KM-202430,Road Damage,Standard,Classified as Road Damage based on 'subsided'; priority Standard.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on 'removed'; priority Standard.,
+KM-202436,Streetlight,Standard,Classified as Streetlight based on 'Darkness'; priority Standard.,
+KM-202438,Noise,Standard,Classified as Noise based on 'amplifier'; priority Standard.,
