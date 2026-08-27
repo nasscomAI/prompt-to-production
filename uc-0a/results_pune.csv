@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Large pothole 60cm wide causing tyre damage. Three vehic,
+PM-202402,Pothole,Urgent,Deep pothole near bus stop. School children at risk dur,
+PM-202406,Flooding,Standard,Underpass flooded knee-deep after 2hrs rain. Commuters stran,
+PM-202408,Flooding,Standard,Bus stand flooded. Passengers standing in water. Drain block,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Three consecutive streetlights out for 10 days. Area very dark at ni,
+PM-202411,Streetlight,Urgent,Streetlight flickering and sparking. Electrical ha,
+PM-202413,Waste,Standard,Overflowing garbage bins near vegetable market. Smell affectin,
+PM-202418,Noise,Standard,dding venue playing music past midnight on weeknights.,
+PM-202419,Road Damage,Standard,Road surface cracked and sinking near utility work,NEEDS_REVIEW
+PM-202420,Pothole,Urgent,Manhole cover missing. Risk of serious injury to cycl,
+PM-202427,Flooding,Standard,Bridge approach floods in 30mins of rain. Bridge becomes inaccessi,
+PM-202428,Waste,Standard,Dead animal not removed for 36 hours. Health concern.,
+PM-202430,Streetlight,Standard,"Heritage street, lights out. Safety concern for pedestrians after d",
+PM-202433,Waste,Standard,Bulk waste from apartment renovation dumped on public r,
+PM-202446,Road Damage,Urgent,Footpath tiles broken and upturned. Elderly resident fell l,
