@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flood' — classified as Flooding,
+GH-202402,Drain Blockage,Standard,Description mentions 'drain' — classified as Drain Blockage,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Description mentions 'drain' — classified as Drain Blockage,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Description mentions 'drain' — classified as Drain Blockage,
+GH-202410,Pothole,Standard,Description mentions 'pothole' — classified as Pothole,
+GH-202411,Pothole,Urgent,Description mentions 'pothole' — classified as Pothole,
+GH-202412,Pothole,Urgent,Description mentions 'pothole' — classified as Pothole,
+GH-202417,Heritage Damage,Standard,Description mentions 'heritage' — classified as Heritage Damage,NEEDS_REVIEW
+GH-202420,Other,Standard,No category keywords found in description — classified as Other,NEEDS_REVIEW
+GH-202422,Other,Urgent,No category keywords found in description — classified as Other,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Description mentions 'flood' — classified as Flooding,
+GH-202428,Heat Hazard,Standard,Description mentions 'sun' — classified as Heat Hazard,NEEDS_REVIEW
+GH-202432,Other,Standard,No category keywords found in description — classified as Other,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Description mentions 'drain' — classified as Drain Blockage,NEEDS_REVIEW
+GH-202438,Other,Standard,No category keywords found in description — classified as Other,NEEDS_REVIEW
