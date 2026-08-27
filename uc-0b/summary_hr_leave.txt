@@ -1,0 +1,78 @@
+HR LEAVE POLICY SUMMARY
+============================================================
+
+CLAUSE-BY-CLAUSE BREAKDOWN (All conditions preserved):
+
+[2.3] MUST
+  Employees must submit a leave application at least 14 calendar
+    days in advance using Form HR-L1.
+
+[2.4] MUST
+  Leave applications must receive written approval from the
+    employee's direct manager before the leave commences.
+    Verbal approval is not valid.
+
+[2.5] WILL
+  Unapproved absence will be recorded as Loss of Pay (LOP)
+    regardless of subsequent approval.
+
+[2.6] MAY
+  Employees may carry forward a maximum of 5 unused annual leave
+    days to the following calendar year. Any days above 5 are
+    forfeited on 31 December.
+
+[2.7] MUST
+  Carry-forward days must be used within the first quarter
+    (January–March) of the following year or they are forfeited.
+
+═══════════════════════════════════════════════════════════
+3. SICK LEAVE
+═══════════════════════════════════════════════════════════
+
+[3.2] REQUIRES
+  Sick leave of 3 or more consecutive days requires a medical
+    certificate from a registered medical practitioner, submitted
+    within 48 hours of returning to work.
+
+[3.4] REQUIRES
+  Sick leave taken immediately before or after a public holiday
+    or annual leave period requires a medical certificate regardless
+    of duration.
+
+═══════════════════════════════════════════════════════════
+4. MATERNITY AND PATERNITY LEAVE
+═══════════════════════════════════════════════════════════
+
+[5.2] REQUIRES
+  LWP requires approval from the Department Head and the
+    HR Director. Manager approval alone is not sufficient.
+
+  ⚠️  FLAG: MULTI-CONDITION: requires approval from BOTH Department Head AND HR Director
+
+[5.3] REQUIRES
+  LWP exceeding 30 continuous days requires approval from
+    the Municipal Commissioner.
+
+  ⚠️  FLAG: requires Municipal Commissioner approval (in addition to prior approvers)
+
+[7.2] NOT PERMITTED
+  Leave encashment during service is not permitted under any
+    circumstances.
+
+============================================================
+COMPLIANCE CHECKLIST:
+
+  2.3: ✓ Present
+  2.4: ✓ Present
+  2.5: ✓ Present
+  2.6: ✓ Present
+  2.7: ✓ Present
+  3.2: ✓ Present
+  3.4: ✓ Present
+  5.2: ✓ Present
+  5.3: ✓ Present
+  7.2: ✓ Present
+
+============================================================
+Summary generated from: ../data/policy-documents/policy_hr_leave.txt
+Total clauses: 10
