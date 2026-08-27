@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads and indexes all policy documents by section and keyword for retrieval.
+    input: Directory path containing policy text files.
+    output: Dictionary mapping section IDs to text content.
+    error_handling: Fail if any of the three mandatory policy files are missing.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Finds relevant sections and generates a citation-backed answer without blending sources.
+    input: User question string.
+    output: Answer string with [Source Section] or the refusal template.
+    error_handling: Return refusal template if match confidence is low or if blending is required.
