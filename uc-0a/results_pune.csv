@@ -1,0 +1,2 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open,category,priority,reason,flag
+PM-202406,2024-06-08,Pune,Ward 1 – Kasba,Ambedkar Road underpass,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Councillor Referral,8,Flooding,Normal,"The description explicitly states ""Underpass flooded knee-deep after 2hrs rain"", indicating a flooding issue.",
