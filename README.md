@@ -15,7 +15,7 @@ Fork this repo to your GitHub account, then clone your fork locally.
 Name it exactly:
 ```bash
 git checkout -b participant/[your-name]-[city]
-# Example: participant/arshdeep-pune
+# Example: participant/arshdeep-kolkata
 ```
 
 > **One branch. All four UCs. The whole session.**

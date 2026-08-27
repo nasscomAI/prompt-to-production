@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions 'pothole, tyre damage' — classified as Pothole.",
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' — classified as Pothole. Severity keywords present: child, school.",
+PM-202406,Flooding,Standard,"Description mentions 'flooded, knee-deep' — classified as Flooding.",
+PM-202408,Flooding,Standard,"Description mentions 'flooded, drain' — classified as Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions 'streetlight, lights out, dark at night' — classified as Streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions 'streetlight, flickering' — classified as Streetlight. Severity keywords present: hazard.",
+PM-202413,Waste,Standard,Description mentions 'garbage' — classified as Waste.,
+PM-202418,Noise,Standard,"Description mentions 'music, wedding' — classified as Noise.",
+PM-202419,Road Damage,Standard,"Description mentions 'road surface, cracked and sinking, cracked' — classified as Road Damage.",
+PM-202420,Drain Blockage,Urgent,Description mentions 'manhole' — classified as Drain Blockage. Severity keywords present: injury.,
+PM-202427,Flooding,Standard,Description mentions 'floods' — classified as Flooding.,
+PM-202428,Waste,Standard,Description mentions 'dead animal' — classified as Waste.,
+PM-202430,Streetlight,Standard,"Description mentions 'lights out, heritage street, heritage' — classified as Streetlight.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions 'bulk waste, waste' — classified as Waste.",
+PM-202446,Road Damage,Urgent,"Description mentions 'footpath, tiles broken' — classified as Road Damage. Severity keywords present: fell.",
