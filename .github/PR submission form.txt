@@ -1,0 +1,129 @@
+Name: Indur Vinay
+City: Hyderabad
+Branch: participant/indurvinay-Hyderabad
+
+
+UC-0A — Complaint Classifier
+
+Which failure mode did you encounter?
+(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)
+
+Severity blindness and taxonomy drift.
+
+Provide one example where the naive prompt failed:
+
+Complaint: “Child fell into pothole near school entrance.”
+The naive classifier marked it as Standard priority and used a category like Road Issue, which is not part of the allowed taxonomy.
+
+After your fix — are all category labels restricted to the allowed list?
+
+Yes — all categories are restricted to the allowed schema values defined in the README.
+
+Does your classifier flag genuinely ambiguous complaints?
+
+Yes — ambiguous complaints are flagged using NEEDS_REVIEW.
+
+Your git commit message for UC-0A:
+
+UC-0A Fix severity blindness: urgent keywords ignored → added injury/child/school detection and strict category enforcement
+
+UC-0B — Summary That Changes Meaning
+
+Which failure mode did you encounter?
+(clause omission / scope bleed / obligation softening)
+
+Clause omission and obligation softening.
+
+List any clauses that were missing or weakened in the naive output (before your RICE fix):
+
+Clause 2.6 (carry-forward limit), Clause 5.2 (dual approval requirement), and Clause 7.2 (leave encashment prohibition) were missing or softened.
+
+After your fix — are all 10 critical clauses present in summary_hr_leave.txt?
+
+Yes — all 10 clauses are preserved in the summary with their original obligations intact.
+
+Did the naive prompt add any information not in the source document (scope bleed)?
+
+Yes — the naive summary added phrases like “as is standard HR practice,” which were not present in the source document.
+
+Your git commit message for UC-0B:
+
+UC-0B Fix clause omission: naive summary dropped conditions → enforced clause inventory and full clause preservation
+
+UC-0C — Number That Looks Right
+
+What did the naive prompt return when you ran "Calculate growth from the data."?
+
+The naive output returned a single aggregated growth value across all wards without specifying the ward or category.
+
+Did it aggregate across all wards? Did it mention the 5 null rows?
+
+Yes — it aggregated across wards and did not mention the 5 null rows in the dataset.
+
+After your fix — does your system refuse all-ward aggregation?
+
+Yes.
+
+Does your growth_output.csv flag the 5 null rows rather than skipping them?
+
+Yes — flagged rows include:
+
+2024-03 · Ward 2 – Shivajinagar · Drainage & Flooding
+
+2024-07 · Ward 4 – Warje · Roads & Pothole Repair
+
+2024-11 · Ward 1 – Kasba · Waste Management
+
+2024-08 · Ward 3 – Kothrud · Parks & Greening
+
+2024-05 · Ward 5 – Hadapsar · Streetlight Maintenance
+
+Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?
+
+Yes — the MoM growth values match the reference values in the README.
+
+Your git commit message for UC-0C:
+
+UC-0C Fix silent null handling: null rows ignored → added null detection and ward-category scoped growth computation
+
+UC-X — Ask My Documents
+
+What did the naive prompt return for the cross-document test question?
+(Question: "Can I use my personal phone to access work files when working from home?")
+
+The naive answer blended HR and IT policy and stated that personal devices could access work tools when working remotely.
+
+Did it blend the IT and HR policies?
+
+Yes — it incorrectly combined information from HR remote-work guidance and IT device policies.
+
+After your fix — what does your system return for this question?
+
+“According to policy_it_acceptable_use.txt section 3.1, personal devices may only access CMC email and the employee self-service portal.”
+
+Did your system use any hedging phrases in any answer?
+
+No — hedging phrases such as “typically,” “generally,” or “while not explicitly covered” are blocked by the enforcement rules.
+
+Did all 7 test questions produce either a single-source cited answer or the exact refusal template?
+
+Yes — all questions returned either a single-source answer with document citation or the refusal template.
+
+Your git commit message for UC-X:
+
+UC-X Fix cross-document blending: naive QA merged HR and IT policies → enforced single-source retrieval with refusal template
+
+CRAFT Loop Reflection
+
+Which CRAFT step was hardest across all UCs, and why?
+
+The hardest step was Testing and Refinement. Several naive prompts produced plausible but incorrect outputs, especially with clause omission and cross-document blending. Identifying those subtle failures required repeated testing and stricter enforcement rules.
+
+What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?
+
+A strict rule preventing cross-document blending:
+“Never combine claims from two different documents into a single answer.”
+
+Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:
+
+I will apply RICE + CRAFT when building an internal document QA assistant for project documentation, ensuring answers are sourced from a single document and include citations.
