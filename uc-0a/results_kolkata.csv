@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight based on 'lamp post' in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202402,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202405,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+KM-202410,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+KM-202411,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+KM-202418,Waste,Standard,Classified as Waste based on 'waste' in the description.,
+KM-202421,Other,Urgent,Classified as Other based on the description in the description and severity keyword 'hospital' indicates Urgent priority; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202422,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+KM-202430,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+KM-202436,Other,Standard,Classified as Other based on the description in the description; flagged for review due to ambiguity.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
