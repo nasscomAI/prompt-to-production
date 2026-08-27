@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Matched 'pothole' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202402,Pothole,Urgent,Matched 'pothole' in the complaint text and includes 'child' which requires Urgent priority.,
+PM-202406,Flooding,Standard,Matched 'flood' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202408,Other,Standard,"Found competing signals like 'flood', 'drain blocked' and no mandatory Urgent keyword is present.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Matched 'streetlight' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202411,Streetlight,Urgent,Matched 'streetlight' in the complaint text and includes 'hazard' which requires Urgent priority.,
+PM-202413,Waste,Standard,Matched 'garbage' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202418,Other,Standard,The text 'Wedding venue playing music past midnight on weeknights.' does not clearly match a single allowed category and no mandatory Urgent keyword is present.,NEEDS_REVIEW
+PM-202419,Other,Standard,The text 'Road surface cracked and sinking near utility work done 1 month ago.' does not clearly match a single allowed category and no mandatory Urgent keyword is present.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The text 'Manhole cover missing. Risk of serious injury to cyclists.' does not clearly match a single allowed category and includes 'injury' which requires Urgent priority.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Matched 'flood' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202428,Other,Standard,The text 'Dead animal not removed for 36 hours. Health concern.' does not clearly match a single allowed category and no mandatory Urgent keyword is present.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Matched 'heritage' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202433,Waste,Standard,Matched 'waste' in the complaint text and no mandatory Urgent keyword is present.,
+PM-202446,Other,Urgent,The text 'Footpath tiles broken and upturned. Elderly resident fell last week.' does not clearly match a single allowed category and includes 'fell' which requires Urgent priority.,NEEDS_REVIEW
