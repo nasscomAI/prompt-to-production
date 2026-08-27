@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding ('flood') and prioritised as Urgent due to severity keyword 'ambulance'.,
+GH-202402,Flooding,Standard,Classified as Flooding due to the mention of 'flood'.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage due to the mention of 'drain'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage due to the mention of 'drain'.,
+GH-202410,Pothole,Standard,Classified as Pothole due to the mention of 'pothole'.,
+GH-202411,Pothole,Urgent,Classified as Pothole ('pothole') and prioritised as Urgent due to severity keyword 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole ('pothole') and prioritised as Urgent due to severity keyword 'school'.,
+GH-202417,Heritage Damage,Standard,Classified as Heritage Damage due to the mention of 'heritage'.,
+GH-202420,Other,Low,Description is genuinely ambiguous and does not match specific category keywords.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Classified as Pothole ('crater') and prioritised as Urgent due to severity keyword 'collapse'.,
+GH-202424,Flooding,Standard,Classified as Flooding due to the mention of 'flood'.,
+GH-202428,Waste,Standard,Classified as Waste due to the mention of 'waste'.,
+GH-202432,Other,Low,Description is genuinely ambiguous and does not match specific category keywords.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Classified as Flooding due to the mention of 'flood'.,
+GH-202438,Flooding,Standard,Classified as Flooding due to the mention of 'rainwater'.,
