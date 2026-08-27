@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Description 'Tarmac surface melting at 44°C....' does not clearly match any known category.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Description mentions 'temperature' indicating heat hazard issue.,
+AM-202405,Other,Standard,Description 'Dead trees with split branches....' does not clearly match any known category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions 'heat', 'heatwave' indicating heat hazard issue.",
+AM-202407,Other,Urgent,Description 'Broken bench and upturned paving....' does not clearly match any known category.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions 'Pothole' indicating pothole issue.,
+AM-202414,Other,Standard,Description 'Residential colony unlit after 9pm....' does not clearly match any known category.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Description mentions 'waste' indicating waste issue.,
+AM-202421,Other,Standard,Description 'Club music audible at residential...' does not clearly match any known category.,NEEDS_REVIEW
+AM-202424,Other,Standard,Description 'Zoo approach road surface bubbling...' does not clearly match any known category.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Description mentions 'temperature' indicating heat hazard issue.,
+AM-202431,Heritage Damage,Standard,"Description mentions 'Heritage', 'ancient' indicating heritage damage issue.",
+AM-202435,Heat Hazard,Standard,Description mentions 'heat' indicating heat hazard issue.,
+AM-202444,Waste,Standard,Description mentions 'waste' indicating waste issue.,
+AM-202445,Other,Standard,Description 'BRT shelter roof glass broken....' does not clearly match any known category.,NEEDS_REVIEW
