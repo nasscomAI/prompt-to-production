@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description mentions: ""Heritage lamp post knocked over by delivery vehicle. Not restored."" — classified as Heritage Damage with Standard priority.",
+KM-202402,Road Damage,Standard,"Description mentions: ""Historic tram road cobblestones broken up by cable laying work."" — classified as Road Damage with Standard priority.",
+KM-202405,Noise,Standard,"Description mentions: ""Wedding band playing near Tagore Museum at 11pm. Festival season ongoing."" — classified as Noise with Standard priority.",
+KM-202409,Pothole,Standard,"Description mentions: ""Airport access road full of potholes. Diplomatic complaint received."" — classified as Pothole with Standard priority.",
+KM-202410,Pothole,Standard,"Description mentions: ""Pothole causing tyre blowouts. Three incidents this week."" — classified as Pothole with Standard priority.",
+KM-202411,Pothole,Standard,"Description mentions: ""Deep pothole filling with rainwater. Depth invisible. Accident risk."" — classified as Pothole with Standard priority.",
+KM-202415,Other,Standard,"Description mentions: ""New residential complex draining directly onto public road."" — classified as Other with Standard priority.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Description mentions: ""Tourist zone waste overflowing. Foreign visitors photographing piles."" — classified as Waste with Standard priority.",
+KM-202421,Road Damage,Urgent,"Description mentions: ""Footpath broken and sinking. Elderly pedestrian fell. Hospital visit."" — classified as Road Damage with Urgent priority.",
+KM-202422,Road Damage,Standard,"Description mentions: ""Road surface buckled near bridge. Structural concern raised."" — classified as Road Damage with Standard priority.",
+KM-202426,Heritage Damage,Standard,"Description mentions: ""Heritage residential building exterior defaced by billboard installation."" — classified as Heritage Damage with Standard priority.",
+KM-202430,Road Damage,Standard,"Description mentions: ""Road subsided near gas pipeline. Gas leak smell reported too."" — classified as Road Damage with Standard priority.",
+KM-202434,Heritage Damage,Standard,"Description mentions: ""Street paving removed for utility work — heritage stone not replaced."" — classified as Heritage Damage with Standard priority.",
+KM-202436,Streetlight,Standard,"Description mentions: ""Entire colony substation tripped. Darkness for 3 nights."" — classified as Streetlight with Standard priority.",
+KM-202438,Noise,Standard,"Description mentions: ""Street vendors using amplifiers illegally in heritage precinct."" — classified as Noise with Standard priority.",NEEDS_REVIEW
