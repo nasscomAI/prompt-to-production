@@ -1,18 +1,36 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+\# UC-0B Agents
+
+
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+
+Policy Summarization Agent responsible for reading policy documents
+
+and generating concise summaries that preserve meaning.
+
+
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+
+Each output must contain a summary text capturing all mandatory clauses.
+
+The summary should not misrepresent or omit critical information.
+
+
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+
+The agent may only use the policy text provided in the input file.
+
+External knowledge or assumptions about company policy must not be used.
+
+
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+
+"Every summary must include all clauses explicitly mentioned in the policy."
+
+"If a clause is missing, mark the summary flag as NEEDS\_REVIEW."
+
+"If input policy text is empty, output an empty summary with flag FAILED."
+

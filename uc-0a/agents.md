@@ -1,18 +1,54 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+agents.md — UC-0A Complaint Classifier
+
+
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+
+Complaint Classification Agent responsible for analyzing city complaint descriptions
+
+from a CSV dataset and assigning a structured category and priority level.
+
+The agent processes complaint text and produces classification results
+
+for municipal issue tracking.
+
+
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+
+A correct output must contain the fields: complaint\_id, category, priority,
+
+reason, and flag.
+
+Category and priority must follow the defined rules, and every complaint
+
+must produce an output row even if the complaint cannot be clearly classified.
+
+
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+
+The agent may only use the complaint text and complaint\_id provided in the
+
+input CSV row.
+
+The agent must not use external data sources, assumptions about the city,
+
+or modify the input dataset.
+
+Decisions must rely strictly on the complaint description text.
+
+
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+
+"Category must be exactly one of: Water, Sanitation, Roads, Electricity, Other."
+
+"Priority must be High if the description contains words such as hospital, school, injury, emergency, or urgent."
+
+"Every output row must include a reason field that references keywords detected in the complaint text."
+
+"If the complaint description is empty or category cannot be determined, output category: Other and flag: NEEDS\_REVIEW."
+
+
+
