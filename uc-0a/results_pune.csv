@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,General Complaint,Low,General issue,False
+PM-202402,General Complaint,Low,General issue,False
+PM-202406,General Complaint,Low,General issue,False
+PM-202408,General Complaint,Low,General issue,False
+PM-202410,General Complaint,Low,General issue,False
+PM-202411,General Complaint,Low,General issue,False
+PM-202413,General Complaint,Low,General issue,False
+PM-202418,General Complaint,Low,General issue,False
+PM-202419,General Complaint,Low,General issue,False
+PM-202420,General Complaint,Low,General issue,False
+PM-202427,General Complaint,Low,General issue,False
+PM-202428,General Complaint,Low,General issue,False
+PM-202430,General Complaint,Low,General issue,False
+PM-202433,General Complaint,Low,General issue,False
+PM-202446,Damaged Product,High,Product damage complaint,True

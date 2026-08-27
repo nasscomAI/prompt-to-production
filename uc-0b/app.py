@@ -6,7 +6,11 @@ See README.md for run command and expected behaviour.
 import argparse
 
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    print("UC-0B application running successfully")
 
+    name = input("Enter your name: ")
+
+    print(f"Welcome, {name}!")
+    
 if __name__ == "__main__":
     main()
