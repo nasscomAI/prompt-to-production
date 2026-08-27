@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Classification uses exact wording from the complaint such as: ""Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe."" (Other).",NEEDS_REVIEW
+AM-202402,Other,Standard,"Classification uses exact wording from the complaint such as: ""Metal bus shelter reaching dangerous temperatures. Commuters refusing to use."" (Other).",NEEDS_REVIEW
+AM-202405,Other,Standard,"Classification uses exact wording from the complaint such as: ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."" (Other).",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classification uses exact wording from the complaint such as: ""Irrigation system broken. Grass dying in heatwave conditions."" (Heat Hazard).",
+AM-202407,Road Damage,Urgent,"Classification uses exact wording from the complaint such as: ""Broken bench and upturned paving. Child injured last week."" (Road Damage).",
+AM-202410,Pothole,Standard,"Classification uses exact wording from the complaint such as: ""Pothole on main highway causing morning rush lane closure."" (Pothole).",
+AM-202414,Other,Standard,"Classification uses exact wording from the complaint such as: ""Residential colony unlit after 9pm. Wiring theft reported."" (Other).",NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Night market waste not cleared before morning. Heritage area affected."" (Heritage Damage).",
+AM-202421,Noise,Standard,"Classification uses exact wording from the complaint such as: ""Club music audible at residential buildings at 2am."" (Noise).",
+AM-202424,Road Damage,Standard,"Classification uses exact wording from the complaint such as: ""Zoo approach road surface bubbling at 45°C. Visitor complaints."" (Road Damage).",
+AM-202429,Other,Standard,"Classification uses exact wording from the complaint such as: ""River walk surface temperature unbearable. Installed temperature reads 52°C."" (Other).",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Old city road subsidence near ancient step well. Heritage concern."" (Heritage Damage).",
+AM-202435,Other,Standard,"Classification uses exact wording from the complaint such as: ""Black metal road dividers storing heat. Motorists reporting burns on contact."" (Other).",NEEDS_REVIEW
+AM-202444,Waste,Standard,"Classification uses exact wording from the complaint such as: ""Restaurant waste bins overflowing on Sunday night. Health risk."" (Waste).",
+AM-202445,Other,Standard,"Classification uses exact wording from the complaint such as: ""BRT shelter roof glass broken. Users exposed to full sun."" (Other).",NEEDS_REVIEW

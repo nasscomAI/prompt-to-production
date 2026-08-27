@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classification uses exact wording from the complaint such as: ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk."" (Flooding).",
+GH-202402,Drain Blockage,Standard,"Classification uses exact wording from the complaint such as: ""Market area flooded. Traders suffering losses. Drain completely blocked."" (Drain Blockage).",
+GH-202406,Drain Blockage,Standard,"Classification uses exact wording from the complaint such as: ""Main stormwater drain 100% blocked with construction debris."" (Drain Blockage).",
+GH-202407,Drain Blockage,Standard,"Classification uses exact wording from the complaint such as: ""Drain blocked and mosquito breeding. Dengue concern."" (Drain Blockage).",
+GH-202410,Pothole,Standard,"Classification uses exact wording from the complaint such as: ""Potholes causing vehicles to slow to 20kmph on fast road."" (Pothole).",
+GH-202411,Pothole,Urgent,"Classification uses exact wording from the complaint such as: ""Pothole swallowed entire motorcycle wheel. Rider hospitalised."" (Pothole).",
+GH-202412,Pothole,Urgent,"Classification uses exact wording from the complaint such as: ""School bus struggling to navigate 6 potholes in 200m stretch."" (Pothole).",
+GH-202417,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Heritage zone garbage overflow. Tourist photographs showing piles of waste."" (Heritage Damage).",
+GH-202420,Other,Standard,"Classification uses exact wording from the complaint such as: ""Construction drilling from 5am daily near residential towers."" (Other).",NEEDS_REVIEW
+GH-202422,Other,Urgent,"Classification uses exact wording from the complaint such as: ""Road collapsed partially. Crater 1m deep near residential gate."" (Other).",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Classification uses exact wording from the complaint such as: ""Underpass floods in light rain. Cars regularly abandoned."" (Flooding).",
+GH-202428,Other,Standard,"Classification uses exact wording from the complaint such as: ""Post-market waste not cleared. Area unusable by Sunday morning."" (Other).",NEEDS_REVIEW
+GH-202432,Other,Standard,"Classification uses exact wording from the complaint such as: ""24hr supermarket delivery trucks idling with engines on."" (Other).",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Classification uses exact wording from the complaint such as: ""Main drain blocked — entire locality at flooding risk this week."" (Drain Blockage).",
+GH-202438,Other,Standard,"Classification uses exact wording from the complaint such as: ""Colony surrounded by fields that channel rainwater through main road."" (Other).",NEEDS_REVIEW

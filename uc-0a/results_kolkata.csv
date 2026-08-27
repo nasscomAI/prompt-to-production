@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Heritage lamp post knocked over by delivery vehicle. Not restored."" (Heritage Damage).",
+KM-202402,Other,Standard,"Classification uses exact wording from the complaint such as: ""Historic tram road cobblestones broken up by cable laying work."" (Other).",NEEDS_REVIEW
+KM-202405,Noise,Standard,"Classification uses exact wording from the complaint such as: ""Wedding band playing near Tagore Museum at 11pm. Festival season ongoing."" (Noise).",
+KM-202409,Pothole,Standard,"Classification uses exact wording from the complaint such as: ""Airport access road full of potholes. Diplomatic complaint received."" (Pothole).",
+KM-202410,Pothole,Standard,"Classification uses exact wording from the complaint such as: ""Pothole causing tyre blowouts. Three incidents this week."" (Pothole).",
+KM-202411,Pothole,Standard,"Classification uses exact wording from the complaint such as: ""Deep pothole filling with rainwater. Depth invisible. Accident risk."" (Pothole).",
+KM-202415,Other,Standard,"Classification uses exact wording from the complaint such as: ""New residential complex draining directly onto public road."" (Other).",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classification uses exact wording from the complaint such as: ""Tourist zone waste overflowing. Foreign visitors photographing piles."" (Waste).",
+KM-202421,Road Damage,Urgent,"Classification uses exact wording from the complaint such as: ""Footpath broken and sinking. Elderly pedestrian fell. Hospital visit."" (Road Damage).",
+KM-202422,Road Damage,Standard,"Classification uses exact wording from the complaint such as: ""Road surface buckled near bridge. Structural concern raised."" (Road Damage).",
+KM-202426,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Heritage residential building exterior defaced by billboard installation."" (Heritage Damage).",
+KM-202430,Other,Standard,"Classification uses exact wording from the complaint such as: ""Road subsided near gas pipeline. Gas leak smell reported too."" (Other).",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Street paving removed for utility work — heritage stone not replaced."" (Heritage Damage).",
+KM-202436,Other,Standard,"Classification uses exact wording from the complaint such as: ""Entire colony substation tripped. Darkness for 3 nights."" (Other).",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Classification uses exact wording from the complaint such as: ""Street vendors using amplifiers illegally in heritage precinct."" (Heritage Damage).",
