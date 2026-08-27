@@ -1,0 +1,13 @@
+period,actual_spend,growth_pct,formula,null_flag,null_reason
+2024-01,13.3,N/A (no prior period),MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-02,12.2,-8.3%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-03,12.3,+0.8%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-04,13.4,+8.9%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-05,14.1,+5.2%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-06,14.8,+5.0%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-07,19.7,+33.1%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-08,20.2,+2.5%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-09,20.1,-0.5%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-10,13.1,-34.8%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-11,14.2,+8.4%,MoM Growth = (current - previous) / previous × 100%,FALSE,
+2024-12,12.7,-10.6%,MoM Growth = (current - previous) / previous × 100%,FALSE,
