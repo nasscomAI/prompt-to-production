@@ -1,0 +1,123 @@
+CMC EMPLOYEE LEAVE POLICY - COMPLIANT SUMMARY
+=============================================
+This summary is generated programmatically in accordance with the UC-0B agents.md rules.
+To avoid condition dropping, scope bleed, and obligation softening, all critical clauses
+containing multi-condition rules or precise legal language are quoted verbatim.
+
+SUMMARY OF CLAUSES:
+-------------------
+Clause 1.1:
+  Obligations/Verbs: None
+  Summary: This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC). [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 1.2:
+  Obligations/Verbs: None
+  Summary: This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.1:
+  Obligations/Verbs: None
+  Summary: Each permanent employee is entitled to 18 days of paid annual leave per calendar year. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.2:
+  Obligations/Verbs: None
+  Summary: Annual leave accrues at 1.5 days per month from the date of joining. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.3:
+  Obligations/Verbs: must
+  Summary: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.4:
+  Obligations/Verbs: must
+  Summary: Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.5:
+  Obligations/Verbs: will
+  Summary: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.6:
+  Obligations/Verbs: may, forfeited
+  Summary: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 2.7:
+  Obligations/Verbs: must, forfeited
+  Summary: Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 3.1:
+  Obligations/Verbs: None
+  Summary: Each employee is entitled to 12 days of paid sick leave per calendar year. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 3.2:
+  Obligations/Verbs: requires
+  Summary: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 3.3:
+  Obligations/Verbs: None
+  Summary: Sick leave cannot be carried forward to the following year. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 3.4:
+  Obligations/Verbs: requires
+  Summary: Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 4.1:
+  Obligations/Verbs: None
+  Summary: Female employees are entitled to 26 weeks of paid maternity leave for the first two live births. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 4.2:
+  Obligations/Verbs: None
+  Summary: For a third or subsequent child, maternity leave is 12 weeks paid. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 4.3:
+  Obligations/Verbs: None
+  Summary: Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 4.4:
+  Obligations/Verbs: None
+  Summary: Paternity leave cannot be split across multiple periods. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 5.1:
+  Obligations/Verbs: may
+  Summary: An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 5.2:
+  Obligations/Verbs: requires
+  Summary: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 5.3:
+  Obligations/Verbs: requires
+  Summary: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 5.4:
+  Obligations/Verbs: None
+  Summary: Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 6.1:
+  Obligations/Verbs: None
+  Summary: Employees are entitled to all gazetted public holidays as declared by the State Government each year. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 6.2:
+  Obligations/Verbs: None
+  Summary: If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 6.3:
+  Obligations/Verbs: None
+  Summary: Compensatory off cannot be encashed. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 7.1:
+  Obligations/Verbs: may
+  Summary: Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 7.2:
+  Obligations/Verbs: not permitted
+  Summary: Leave encashment during service is not permitted under any circumstances. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 7.3:
+  Obligations/Verbs: None
+  Summary: Sick leave and LWP cannot be encashed under any circumstances. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 8.1:
+  Obligations/Verbs: must
+  Summary: Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision. [FLAG: VERBATIM - PRESERVED MEANING]
+
+Clause 8.2:
+  Obligations/Verbs: will
+  Summary: Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing. [FLAG: VERBATIM - PRESERVED MEANING]
