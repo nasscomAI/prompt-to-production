@@ -1,0 +1,61 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open,category,priority,reason,flag
+AM-202401,2024-04-24,Ahmedabad,Ward 13 – Sabarmati,Kankaria Lake promenade,Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.,Email,1,unknown,low,,null complaint
+AM-202402,2024-04-23,Ahmedabad,Ward 12 – Maninagar,"Naroda Industrial Area, main gate",Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.,Citizen Portal,4,unknown,low,,null complaint
+AM-202405,2024-05-08,Ahmedabad,Ward 11 – Vastrapur,"Sabarmati Riverfront, North section",Dead trees with split branches. Fall risk to walkers. 3 trees affected.,WhatsApp Helpline,19,unknown,low,,null complaint
+AM-202406,2024-04-21,Ahmedabad,Ward 15 – Chandkheda,"Chandkheda, Sector 22 park",Irrigation system broken. Grass dying in heatwave conditions.,Phone Helpline,18,unknown,low,,null complaint
+AM-202407,2024-04-25,Ahmedabad,Ward 15 – Chandkheda,"Thaltej, residential park",Broken bench and upturned paving. Child injured last week.,Email,20,unknown,low,,null complaint
+AM-202410,2024-05-02,Ahmedabad,Ward 12 – Maninagar,SG Highway near Prahladnagar,Pothole on main highway causing morning rush lane closure.,Ward Office Walk-in,4,unknown,low,,null complaint
+AM-202414,2024-04-20,Ahmedabad,Ward 14 – Odhav,"Jodhpur Village, off SG Highway",Residential colony unlit after 9pm. Wiring theft reported.,Citizen Portal,10,unknown,low,,null complaint
+AM-202417,2024-05-08,Ahmedabad,Ward 13 – Sabarmati,"Manek Chowk, Old City",Night market waste not cleared before morning. Heritage area affected.,Councillor Referral,21,unknown,low,,null complaint
+AM-202421,2024-05-03,Ahmedabad,Ward 14 – Odhav,"CG Road, commercial zone",Club music audible at residential buildings at 2am.,Citizen Portal,18,unknown,low,,null complaint
+AM-202424,2024-05-04,Ahmedabad,Ward 11 – Vastrapur,"Shahibaug, near zoo",Zoo approach road surface bubbling at 45°C. Visitor complaints.,Councillor Referral,19,unknown,low,,null complaint
+AM-202429,2024-04-24,Ahmedabad,Ward 11 – Vastrapur,Ellis Bridge walking track,River walk surface temperature unbearable. Installed temperature reads 52°C.,Councillor Referral,3,unknown,low,,null complaint
+AM-202431,2024-04-26,Ahmedabad,Ward 14 – Odhav,"Paldi, Ratanpol area",Old city road subsidence near ancient step well. Heritage concern.,Citizen Portal,18,unknown,low,,null complaint
+AM-202435,2024-05-07,Ahmedabad,Ward 11 – Vastrapur,"New CG Road, Chandkheda",Black metal road dividers storing heat. Motorists reporting burns on contact.,WhatsApp Helpline,16,unknown,low,,null complaint
+AM-202444,2024-05-15,Ahmedabad,Ward 12 – Maninagar,"Jivraj Park, commercial area",Restaurant waste bins overflowing on Sunday night. Health risk.,Councillor Referral,20,unknown,low,,null complaint
+AM-202445,2024-04-19,Ahmedabad,Ward 13 – Sabarmati,Ranip Bus Rapid Transit stop,BRT shelter roof glass broken. Users exposed to full sun.,Councillor Referral,9,unknown,low,,null complaint
+GH-202401,2024-07-01,Hyderabad,Ward 55 – Secunderabad,Tank Bund Road underpass,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,WhatsApp Helpline,13,unknown,low,,null complaint
+GH-202402,2024-07-13,Hyderabad,Ward 55 – Secunderabad,Dilsukhnagar Monda Market area,Market area flooded. Traders suffering losses. Drain completely blocked.,Citizen Portal,20,unknown,low,,null complaint
+GH-202406,2024-07-26,Hyderabad,Ward 54 – Kukatpally,"Mehdipatnam, Rethibowli Road",Main stormwater drain 100% blocked with construction debris.,Phone Helpline,3,unknown,low,,null complaint
+GH-202407,2024-07-15,Hyderabad,Ward 55 – Secunderabad,"Santoshnagar, Saidabad",Drain blocked and mosquito breeding. Dengue concern.,WhatsApp Helpline,4,unknown,low,,null complaint
+GH-202410,2024-07-23,Hyderabad,Ward 55 – Secunderabad,"Outer Ring Road service lane, Narsingi",Potholes causing vehicles to slow to 20kmph on fast road.,Councillor Referral,18,unknown,low,,null complaint
+GH-202411,2024-07-31,Hyderabad,Ward 55 – Secunderabad,"Tolichowki, Mount Pleasant Road",Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Ward Office Walk-in,17,unknown,low,,null complaint
+GH-202412,2024-07-24,Hyderabad,Ward 53 – LB Nagar,"Nagole, Ramanthapur Road",School bus struggling to navigate 6 potholes in 200m stretch.,Citizen Portal,4,unknown,low,,null complaint
+GH-202417,2024-07-16,Hyderabad,Ward 53 – LB Nagar,"Charminar area, old city",Heritage zone garbage overflow. Tourist photographs showing piles of waste.,WhatsApp Helpline,11,unknown,low,,null complaint
+GH-202420,2024-07-10,Hyderabad,Ward 55 – Secunderabad,Hitech City co-working zone,Construction drilling from 5am daily near residential towers.,WhatsApp Helpline,12,unknown,low,,null complaint
+GH-202422,2024-07-31,Hyderabad,Ward 52 – Madhapur,"Attapur, Shaikpet Road",Road collapsed partially. Crater 1m deep near residential gate.,Social Media,1,unknown,low,,null complaint
+GH-202424,2024-07-19,Hyderabad,Ward 52 – Madhapur,Malkajgiri railway underpass,Underpass floods in light rain. Cars regularly abandoned.,Councillor Referral,5,unknown,low,,null complaint
+GH-202428,2024-07-24,Hyderabad,Ward 54 – Kukatpally,Tolichowki Friday Market area,Post-market waste not cleared. Area unusable by Sunday morning.,Ward Office Walk-in,8,unknown,low,,null complaint
+GH-202432,2024-07-19,Hyderabad,Ward 51 – Jubilee Hills,"Kukatpally, KPHB Phase 7",24hr supermarket delivery trucks idling with engines on.,Citizen Portal,2,unknown,low,,null complaint
+GH-202448,2024-07-22,Hyderabad,Ward 52 – Madhapur,Kondapur main drain,Main drain blocked — entire locality at flooding risk this week.,Councillor Referral,8,unknown,low,,null complaint
+GH-202438,2024-07-06,Hyderabad,Ward 53 – LB Nagar,Hayathnagar residential colony,Colony surrounded by fields that channel rainwater through main road.,Social Media,11,unknown,low,,null complaint
+KM-202401,2024-06-19,Kolkata,Ward 27 – Salt Lake,"Park Street, Victoria area",Heritage lamp post knocked over by delivery vehicle. Not restored.,Email,17,unknown,low,,null complaint
+KM-202402,2024-06-07,Kolkata,Ward 25 – Jadavpur,"College Street, Boi Para",Historic tram road cobblestones broken up by cable laying work.,Councillor Referral,16,unknown,low,,null complaint
+KM-202405,2024-06-13,Kolkata,Ward 25 – Jadavpur,"Jorasanko, heritage zone",Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.,Ward Office Walk-in,10,unknown,low,,null complaint
+KM-202409,2024-06-05,Kolkata,Ward 26 – Behala,VIP Road near Dum Dum Airport,Airport access road full of potholes. Diplomatic complaint received.,Councillor Referral,7,unknown,low,,null complaint
+KM-202410,2024-06-21,Kolkata,Ward 26 – Behala,EM Bypass near Science City,Pothole causing tyre blowouts. Three incidents this week.,Email,1,unknown,low,,null complaint
+KM-202411,2024-06-23,Kolkata,Ward 26 – Behala,"Tollygunge, Sardar Shankar Road",Deep pothole filling with rainwater. Depth invisible. Accident risk.,Councillor Referral,12,unknown,low,,null complaint
+KM-202415,2024-06-28,Kolkata,Ward 26 – Behala,"Kasba, off bypass",New residential complex draining directly onto public road.,WhatsApp Helpline,13,unknown,low,,null complaint
+KM-202418,2024-06-04,Kolkata,Ward 23 – Park Street,"New Market, Lindsay Street",Tourist zone waste overflowing. Foreign visitors photographing piles.,Ward Office Walk-in,15,unknown,low,,null complaint
+KM-202421,2024-06-08,Kolkata,Ward 23 – Park Street,Rashbehari Avenue,Footpath broken and sinking. Elderly pedestrian fell. Hospital visit.,Social Media,3,unknown,low,,null complaint
+KM-202422,2024-06-06,Kolkata,Ward 24 – Shyambazar,"Howrah Bridge approach, Kolkata side",Road surface buckled near bridge. Structural concern raised.,Social Media,1,unknown,low,,null complaint
+KM-202426,2024-06-17,Kolkata,Ward 24 – Shyambazar,"Bow Barracks, central Kolkata",Heritage residential building exterior defaced by billboard installation.,Phone Helpline,1,unknown,low,,null complaint
+KM-202430,2024-06-08,Kolkata,Ward 23 – Park Street,"Park Street, restaurant zone",Road subsided near gas pipeline. Gas leak smell reported too.,Social Media,21,unknown,low,,null complaint
+KM-202434,2024-06-15,Kolkata,Ward 23 – Park Street,"Marble Palace, Muktaram Babu Street",Street paving removed for utility work — heritage stone not replaced.,Email,14,unknown,low,,null complaint
+KM-202436,2024-06-26,Kolkata,Ward 27 – Salt Lake,"New Alipore, residential colony",Entire colony substation tripped. Darkness for 3 nights.,Councillor Referral,17,unknown,low,,null complaint
+KM-202438,2024-06-22,Kolkata,Ward 25 – Jadavpur,"Esplanade, near Metro",Street vendors using amplifiers illegally in heritage precinct.,Councillor Referral,19,unknown,low,,null complaint
+PM-202401,2024-06-21,Pune,Ward 4 – Warje,Karve Road near Deccan Gymkhana,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Citizen Portal,4,unknown,low,,null complaint
+PM-202402,2024-06-04,Pune,Ward 3 – Kothrud,FC Road near MIT College junction,Deep pothole near bus stop. School children at risk during morning hours.,Councillor Referral,12,unknown,low,,null complaint
+PM-202406,2024-06-08,Pune,Ward 1 – Kasba,Ambedkar Road underpass,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Councillor Referral,8,unknown,low,,null complaint
+PM-202408,2024-06-05,Pune,Ward 3 – Kothrud,Kothrud Depot bus stand,Bus stand flooded. Passengers standing in water. Drain blocked.,Ward Office Walk-in,12,unknown,low,,null complaint
+PM-202410,2024-06-04,Pune,Ward 2 – Shivajinagar,JM Road near Goodluck Chowk,Three consecutive streetlights out for 10 days. Area very dark at night.,Email,18,unknown,low,,null complaint
+PM-202411,2024-06-22,Pune,Ward 2 – Shivajinagar,"Viman Nagar, Vadgaon Sheri Road",Streetlight flickering and sparking. Electrical hazard reported.,Social Media,9,unknown,low,,null complaint
+PM-202413,2024-06-29,Pune,Ward 1 – Kasba,Shivajinagar market area,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,WhatsApp Helpline,13,unknown,low,,null complaint
+PM-202418,2024-06-02,Pune,Ward 4 – Warje,Kalyani Nagar residential zone,Wedding venue playing music past midnight on weeknights.,Citizen Portal,5,unknown,low,,null complaint
+PM-202419,2024-06-01,Pune,Ward 2 – Shivajinagar,Senapati Bapat Road,Road surface cracked and sinking near utility work done 1 month ago.,Social Media,2,unknown,low,,null complaint
+PM-202420,2024-06-03,Pune,Ward 1 – Kasba,Paud Road near Kothrud,Manhole cover missing. Risk of serious injury to cyclists.,Email,14,unknown,low,,null complaint
+PM-202427,2024-06-07,Pune,Ward 5 – Hadapsar,Erandwane depression near bridge,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Councillor Referral,12,unknown,low,,null complaint
+PM-202428,2024-06-23,Pune,Ward 3 – Kothrud,Pune University Road,Dead animal not removed for 36 hours. Health concern.,Email,1,unknown,low,,null complaint
+PM-202430,2024-06-23,Pune,Ward 1 – Kasba,"Rasta Peth, old city area","Heritage street, lights out. Safety concern for pedestrians after dark.",Social Media,19,unknown,low,,null complaint
+PM-202433,2024-06-08,Pune,Ward 2 – Shivajinagar,Dhole Patil Road,Bulk waste from apartment renovation dumped on public road.,Phone Helpline,20,unknown,low,,null complaint
+PM-202446,2024-06-09,Pune,Ward 2 – Shivajinagar,"Swargate, Tilak Road",Footpath tiles broken and upturned. Elderly resident fell last week.,Email,18,unknown,low,,null complaint
