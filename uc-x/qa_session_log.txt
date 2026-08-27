@@ -1,0 +1,58 @@
+UC-X -- Ask My Documents | Policy Q&A Session Log
+==================================================================
+Generated : 2026-04-25 13:31:14
+Documents : policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt
+Sections  : 81 total
+==================================================================
+
+SECTION 1: README VALIDATION — 7 TEST QUESTIONS
+==================================================================
+(Auto-run on every startup to validate enforcement rules per README.md)
+(Expected results are documented in README.md)
+
+------------------------------------------------------------------
+Q1: Can I carry forward unused annual leave?
+------------------------------------------------------------------
+[Source: policy_hr_leave.txt | Section 2.6]
+
+Section 2.6: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+------------------------------------------------------------------
+Q2: Can I install Slack on my work laptop?
+------------------------------------------------------------------
+[Source: policy_it_acceptable_use.txt | Section 2.3]
+
+Section 2.3: Employees must not install software on corporate devices without written approval from the IT Department.
+
+------------------------------------------------------------------
+Q3: What is the home office equipment allowance?
+------------------------------------------------------------------
+[Source: policy_finance_reimbursement.txt | Section 3.1]
+
+Section 3.1: Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+
+------------------------------------------------------------------
+Q4: Can I use my personal phone for work files from home?
+------------------------------------------------------------------
+[Source: policy_it_acceptable_use.txt | Section 2.2]
+
+Section 2.2: Personal use of corporate devices is permitted in moderation, provided it does not interfere with work duties or consume excessive bandwidth.
+
+------------------------------------------------------------------
+Q5: What is the company view on flexible working culture?
+------------------------------------------------------------------
+This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+
+------------------------------------------------------------------
+Q6: Can I claim DA and meal receipts on the same day?
+------------------------------------------------------------------
+[Source: policy_finance_reimbursement.txt | Section 2.6]
+
+Section 2.6: If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day.
+
+------------------------------------------------------------------
+Q7: Who approves leave without pay?
+------------------------------------------------------------------
+[Source: policy_hr_leave.txt | Section 5.1]
+
+Section 5.1: An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
