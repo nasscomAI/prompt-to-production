@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Tarmac surface melting at 44°C.,NEEDS_REVIEW
+AM-202402,Other,Standard,Metal bus shelter reaching dangerous temperatures.,NEEDS_REVIEW
+AM-202405,Other,Standard,Dead trees with split branches.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Grass dying in heatwave conditions.,
+AM-202407,Other,Urgent,Broken bench and upturned paving.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Pothole on main highway causing morning rush lane closure.,
+AM-202414,Other,Standard,Residential colony unlit after 9pm.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Night market waste not cleared before morning.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Club music audible at residential buildings at 2am.,
+AM-202424,Road Damage,Standard,Zoo approach road surface bubbling at 45°C.,
+AM-202429,Other,Standard,River walk surface temperature unbearable.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Heritage concern.,
+AM-202435,Heat Hazard,Standard,Black metal road dividers storing heat.,
+AM-202444,Waste,Standard,Restaurant waste bins overflowing on Sunday night.,
+AM-202445,Other,Standard,BRT shelter roof glass broken.,NEEDS_REVIEW
