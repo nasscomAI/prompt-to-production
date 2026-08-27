@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The word 'flood' places this in Flooding, and it is Urgent due to 'ambulance'.",
+GH-202402,Drain Blockage,Standard,The description justifies the Drain Blockage category due to the word 'drain'.,
+GH-202406,Drain Blockage,Standard,The description justifies the Drain Blockage category due to the word 'drain'.,
+GH-202407,Drain Blockage,Standard,The description justifies the Drain Blockage category due to the word 'drain'.,
+GH-202410,Pothole,Standard,The description justifies the Pothole category due to the word 'pothole'.,
+GH-202411,Pothole,Urgent,"The word 'pothole' places this in Pothole, and it is Urgent due to 'hospital'.",
+GH-202412,Pothole,Urgent,"The word 'pothole' places this in Pothole, and it is Urgent due to 'school'.",
+GH-202417,Heritage Damage,Standard,The description justifies the Heritage Damage category due to the word 'heritage'.,
+GH-202420,Other,Standard,The description lacks clear categorization keywords and must be reviewed.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The description is ambiguous but marked Urgent due to 'collapse'.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,The description justifies the Flooding category due to the word 'flood'.,
+GH-202428,Waste,Standard,The description justifies the Waste category due to the word 'waste'.,
+GH-202432,Other,Standard,The description lacks clear categorization keywords and must be reviewed.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,The description justifies the Drain Blockage category due to the word 'drain'.,
+GH-202438,Other,Standard,The description lacks clear categorization keywords and must be reviewed.,NEEDS_REVIEW

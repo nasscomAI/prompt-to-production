@@ -18,8 +18,8 @@ uc-0a/results_[your-city].csv
 ## Run Command
 ```bash
 python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
+  --input ../data/city-test-files/test_bangalore.csv \
+  --output results_bangalore.csv
 ```
 
 ---
@@ -38,7 +38,7 @@ python classifier.py \
 
 ---
 
-## Skills to Define in skills.md
+## Skills Defined in skills.md
 - `classify_complaint` — one complaint row in → category + priority + reason + flag out
 - `batch_classify` — reads input CSV, applies classify_complaint per row, writes output CSV
 

@@ -1,5 +1,11 @@
 # UC-X — Ask My Documents
 
+**Project Setup Status:**
+- [x] Defined Refusal Template
+- [x] Completed agents.md (RICE structure)
+- [x] Defined skills in skills.md
+- [x] Verified against failure modes
+
 **Core failure modes:** Cross-document blending · Hedged hallucination · Condition dropping
 
 ---

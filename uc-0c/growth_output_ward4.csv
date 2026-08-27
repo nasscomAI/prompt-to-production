@@ -1,0 +1,13 @@
+Ward,Category,Period,Budget,Actual Spend,MoM Growth,Formula Used,Notes
+Ward 4 – Warje,Roads & Pothole Repair,2024-01,10.3,10.2,n/a,Not enough history to compute,
+Ward 4 – Warje,Roads & Pothole Repair,2024-02,10.3,10.7,+4.9%,(10.7 - 10.2) / 10.2 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-03,10.3,11.1,+3.7%,(11.1 - 10.7) / 10.7 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-04,10.3,8.8,-20.7%,(8.8 - 11.1) / 11.1 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-05,10.3,11.3,+28.4%,(11.3 - 8.8) / 8.8 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-06,10.3,12.5,+10.6%,(12.5 - 11.3) / 11.3 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-07,10.3,NULL,FLAGGED NULL,Cannot compute: Audit freeze — figures under review,Audit freeze — figures under review
+Ward 4 – Warje,Roads & Pothole Repair,2024-08,10.3,16.0,n/a,Cannot compute: Previous period was null,
+Ward 4 – Warje,Roads & Pothole Repair,2024-09,10.3,14.7,-8.1%,(14.7 - 16.0) / 16.0 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-10,10.3,11.0,-25.2%,(11.0 - 14.7) / 14.7 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-11,10.3,9.0,-18.2%,(9.0 - 11.0) / 11.0 * 100,
+Ward 4 – Warje,Roads & Pothole Repair,2024-12,10.3,11.2,+24.4%,(11.2 - 9.0) / 9.0 * 100,
