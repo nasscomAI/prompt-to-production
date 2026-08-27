@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+name: classify_complaint
+description: Classifies a single municipal complaint into a predefined category and assigns priority.
+input: A complaint record containing a description field (string).
+output: category (string), priority (string), reason (string), flag (string).
+error_handling: If the complaint cannot be clearly categorized from the description, assign category Other and set flag to NEEDS_REVIEW.
+
+name: batch_classify
+description: Processes a CSV file of complaints and applies classify_complaint to each row.
+input: CSV file containing complaint records with a description column.
+output: CSV file containing classification results with fields category, priority, reason, and flag.
+error_handling: If a row is missing description or contains invalid input, classify it as category Other and set flag to NEEDS_REVIEW.
