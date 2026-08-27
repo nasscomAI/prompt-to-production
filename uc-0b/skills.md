@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a .txt policy file and returns its content as structured numbered sections.
+    input: A file path string pointing to a .txt policy document.
+    output: A list of dicts, each with `clause_id` (str) and `text` (str), representing each numbered clause.
+    error_handling: If the file does not exist, raise FileNotFoundError. If the file contains no numbered clauses, return an empty list.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Takes structured clause sections and produces a compliant summary preserving every clause with all original conditions.
+    input: A list of dicts from `retrieve_policy` (each with `clause_id` and `text`).
+    output: A single string containing the summary with clause references. Must satisfy enforcement rules (no omissions, no condition drops, no scope bleed, verbatim quoting with [VERBATIM] flag when needed).
+    error_handling: If input is not the expected list-of-dicts format, raise TypeError. If a clause cannot be summarised without loss, quote it verbatim and flag it with [VERBATIM] rather than silently omitting or softening.
