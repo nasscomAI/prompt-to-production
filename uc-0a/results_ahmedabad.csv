@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Flagged for review; first word 'tarmac' suggests an unmapped category.,NEEDS_REVIEW
+AM-202402,Other,Standard,Flagged for review; first word 'metal' suggests an unmapped category.,NEEDS_REVIEW
+AM-202405,Other,Standard,Flagged for review; first word 'dead' suggests an unmapped category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because the description contains the keyword 'heat'.,
+AM-202407,Other,Urgent,Flagged for review; first word 'broken' suggests an unmapped category.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because the description contains the keyword 'pothole'.,
+AM-202414,Other,Standard,Flagged for review; first word 'residential' suggests an unmapped category.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because the description contains the keyword 'waste'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise because the description contains the keyword 'music'.,
+AM-202424,Road Damage,Standard,Classified as Road Damage because the description contains the keyword 'road surface'.,
+AM-202429,Other,Standard,Flagged for review; first word 'river' suggests an unmapped category.,NEEDS_REVIEW
+AM-202431,Other,Standard,Flagged for review; first word 'old' suggests an unmapped category.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because the description contains the keyword 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because the description contains the keyword 'waste'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because the description contains the keyword 'sun'.,
