@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description contains the word 'pothole' indicating Pothole and priority is Standard.,
+PM-202402,Pothole,Urgent,The description contains the word 'pothole' indicating Pothole and priority is Urgent because it mentions 'child'.,
+PM-202406,Flooding,Standard,The description contains the word 'flood' indicating Flooding and priority is Standard.,
+PM-202408,Flooding,Standard,The description contains the word 'flood' indicating Flooding and priority is Standard.,
+PM-202410,Streetlight,Standard,The description contains the word 'light' indicating Streetlight and priority is Standard.,
+PM-202411,Streetlight,Urgent,The description contains the word 'light' indicating Streetlight and priority is Urgent because it mentions 'hazard'.,
+PM-202413,Flooding,Standard,The description contains the word 'overflow' indicating Flooding and priority is Standard.,
+PM-202418,Noise,Standard,The description contains the word 'music' indicating Noise and priority is Standard.,
+PM-202419,Road Damage,Standard,The description contains the word 'crack' indicating Road Damage and priority is Standard.,
+PM-202420,Other,Urgent,The description category could not be confidently determined from the description alone and priority is Urgent because it mentions 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description contains the word 'flood' indicating Flooding and priority is Standard.,
+PM-202428,Other,Standard,The description category could not be confidently determined from the description alone and priority is Standard.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,The description contains the word 'light' indicating Streetlight and priority is Standard.,
+PM-202433,Waste,Standard,The description contains the word 'waste' indicating Waste and priority is Standard.,
+PM-202446,Other,Urgent,The description category could not be confidently determined from the description alone and priority is Urgent because it mentions 'fell'.,NEEDS_REVIEW

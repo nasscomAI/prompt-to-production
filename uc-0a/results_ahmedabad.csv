@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,The description contains the word 'surface' indicating Road Damage and priority is Standard.,
+AM-202402,Other,Standard,The description category could not be confidently determined from the description alone and priority is Standard.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description category could not be confidently determined from the description alone and priority is Standard.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The description contains the word 'heat' indicating Heat Hazard and priority is Standard.,
+AM-202407,Other,Urgent,The description category could not be confidently determined from the description alone and priority is Urgent because it mentions 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description contains the word 'pothole' indicating Pothole and priority is Standard.,
+AM-202414,Other,Standard,The description category could not be confidently determined from the description alone and priority is Standard.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description contains the word 'waste' indicating Waste and priority is Standard.,
+AM-202421,Noise,Standard,The description contains the word 'music' indicating Noise and priority is Standard.,
+AM-202424,Road Damage,Standard,The description contains the word 'road' indicating Road Damage and priority is Standard.,
+AM-202429,Road Damage,Standard,The description contains the word 'surface' indicating Road Damage and priority is Standard.,
+AM-202431,Road Damage,Standard,The description contains the word 'road' indicating Road Damage and priority is Standard.,
+AM-202435,Road Damage,Standard,The description contains the word 'road' indicating Road Damage and priority is Standard.,
+AM-202444,Flooding,Standard,The description contains the word 'overflow' indicating Flooding and priority is Standard.,
+AM-202445,Heat Hazard,Standard,The description contains the word 'sun' indicating Heat Hazard and priority is Standard.,
