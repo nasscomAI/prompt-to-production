@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Load a .txt policy file and return its content as structured numbered sections.
+    input: Path to a .txt policy document.
+    output: List of sections, each containing clause number and full clause text.
+    error_handling: If the file is missing, empty, or unreadable, abort with an error.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Take structured sections and produce a compliant summary with clause references.
+    input: List of structured sections from retrieve_policy.
+    output: A summary text where every source clause is represented, multi-condition obligations are preserved, and no external information is added. Each clause reference must be cited.
+    error_handling: If a clause cannot be summarised without meaning loss, quote it verbatim and flag it. If the input sections are empty or malformed, abort with an error.

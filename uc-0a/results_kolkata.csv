@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Category matched on: ""lamp post"".",
+KM-202402,Road Damage,Standard,"Category matched on: ""cobblestones"", ""broken up"".",
+KM-202405,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Category matched on: ""potholes"".",
+KM-202410,Pothole,Standard,"Category matched on: ""pothole"".",
+KM-202411,Pothole,Standard,"Category matched on: ""pothole"".",
+KM-202415,Other,Standard,No clear category keywords found.,NEEDS_REVIEW
+KM-202418,Waste,Standard,"Category matched on: ""waste"".",
+KM-202421,Road Damage,Urgent,"Category matched on: ""sinking"", ""footpath broken""; Severity keywords found: ""hospital"", ""fell"".",
+KM-202422,Road Damage,Standard,"Category matched on: ""road surface"", ""buckled"".",
+KM-202426,Heritage Damage,Standard,"Category matched on: ""heritage"", ""defaced"".",
+KM-202430,Road Damage,Standard,"Category matched on: ""subsided"".",
+KM-202434,Heritage Damage,Standard,"Category matched on: ""heritage"".",
+KM-202436,Streetlight,Standard,"Category matched on: ""darkness"", ""substation tripped"".",
+KM-202438,Heritage Damage,Standard,"Category matched on: ""heritage"".",

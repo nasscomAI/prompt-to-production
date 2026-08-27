@@ -1,0 +1,54 @@
+Q: Can I carry forward unused annual leave?
+A: According to the HR Leave Policy (Section 2.6):
+
+Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+============================================================
+
+Q: Can I install Slack on my work laptop?
+A: According to the IT Acceptable Use Policy (Section 2.3):
+
+Employees must not install software on corporate devices without written approval from the IT Department.
+
+============================================================
+
+Q: What is the home office equipment allowance?
+A: According to the Finance Reimbursement Policy (Section 3.1):
+
+Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+
+============================================================
+
+Q: Can I use my personal phone for work files from home?
+A: According to the IT Acceptable Use Policy (Section 3.1):
+
+Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+
+============================================================
+
+Q: What is the company view on flexible working culture?
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+
+============================================================
+
+Q: Can I claim DA and meal receipts on the same day?
+A: According to the Finance Reimbursement Policy (Section 2.6):
+
+If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day.
+
+============================================================
+
+Q: Who approves leave without pay?
+A: According to the HR Leave Policy (Section 5.2):
+
+LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+
+============================================================
+
+Q: Can I use my personal phone to access work files when working from home?
+A: According to the IT Acceptable Use Policy (Section 3.1):
+
+Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+
+============================================================
+
