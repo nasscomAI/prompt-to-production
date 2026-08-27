@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,Description contains 'pothole' indicating Pothole.,
+PM-202402,Pothole,Urgent,Description contains 'child' indicating urgent severity; classified as Pothole.,
+PM-202406,Flooding,Low,Description contains 'flood' indicating Flooding.,
+PM-202408,Flooding,Low,Description contains 'flood' indicating Flooding.,
+PM-202410,Streetlight,Low,Description contains 'streetlight' indicating Streetlight.,
+PM-202411,Streetlight,Urgent,Description contains 'hazard' indicating urgent severity; classified as Streetlight.,
+PM-202413,Waste,Low,Description contains 'garbage' indicating Waste.,
+PM-202418,Other,Low,Unable to determine specific category from description.,NEEDS_REVIEW
+PM-202419,Other,Low,Unable to determine specific category from description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Description contains 'injury' indicating urgent severity.,NEEDS_REVIEW
+PM-202427,Flooding,Low,Description contains 'flood' indicating Flooding.,
+PM-202428,Other,Low,Unable to determine specific category from description.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Low,Description contains 'heritage' indicating Heritage Damage.,
+PM-202433,Waste,Low,Description contains 'waste' indicating Waste.,
+PM-202446,Other,Urgent,Description contains 'fell' indicating urgent severity.,NEEDS_REVIEW
