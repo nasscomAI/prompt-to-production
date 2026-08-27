@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains the specific indicator ""pothole"", which supports the Pothole category.",
+PM-202402,Pothole,Urgent,"The description contains the specific indicator ""pothole"", which supports the Pothole category.",
+PM-202406,Flooding,Standard,"The description contains the specific indicator ""flood"", which supports the Flooding category.",
+PM-202408,Other,Standard,"The description contains multiple possible category indicators: ""flood"", ""drain"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description contains the specific indicator ""streetlight"", which supports the Streetlight category.",
+PM-202411,Streetlight,Urgent,"The description contains the specific indicator ""streetlight"", which supports the Streetlight category.",
+PM-202413,Waste,Standard,"The description contains the specific indicator ""garbage"", which supports the Waste category.",
+PM-202418,Noise,Standard,"The description contains the specific indicator ""music"", which supports the Noise category.",
+PM-202419,Road Damage,Standard,"The description contains the specific indicator ""road surface"", which supports the Road Damage category.",
+PM-202420,Other,Urgent,"No allowed category was clearly identified from the description ""Manhole cover missing. Risk of serious injury to cyclists."".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description contains the specific indicator ""flood"", which supports the Flooding category.",
+PM-202428,Waste,Standard,"The description contains the specific indicator ""dead animal"", which supports the Waste category.",
+PM-202430,Heritage Damage,Standard,"The description contains the specific indicator ""heritage"", which supports the Heritage Damage category.",
+PM-202433,Waste,Standard,"The description contains the specific indicator ""waste"", which supports the Waste category.",
+PM-202446,Road Damage,Urgent,"The description contains the specific indicator ""footpath"", which supports the Road Damage category.",
