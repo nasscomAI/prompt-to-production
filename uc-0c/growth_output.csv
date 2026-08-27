@@ -1,0 +1,301 @@
+ward,category,period,spend,growth_percent,formula
+Ward 1 – Kasba,Roads & Pothole Repair,2024-01,13.3,,First period - no growth
+Ward 1 – Kasba,Drainage & Flooding,2024-01,7.3,-45.11278195488722,((7.3 - 13.3) / 13.3) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-01,3.0,-58.9041095890411,((3.0 - 7.3) / 7.3) * 100
+Ward 1 – Kasba,Waste Management,2024-01,5.3,76.66666666666666,((5.3 - 3.0) / 3.0) * 100
+Ward 1 – Kasba,Parks & Greening,2024-01,2.4,-54.71698113207547,((2.4 - 5.3) / 5.3) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-01,16.2,575.0,((16.2 - 2.4) / 2.4) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-01,10.9,-32.716049382716044,((10.9 - 16.2) / 16.2) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-01,3.8,-65.13761467889908,((3.8 - 10.9) / 10.9) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-01,6.1,60.526315789473685,((6.1 - 3.8) / 3.8) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-01,1.6,-73.77049180327869,((1.6 - 6.1) / 6.1) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-01,10.6,562.5,((10.6 - 1.6) / 1.6) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-01,8.0,-24.528301886792452,((8.0 - 10.6) / 10.6) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-01,3.4,-57.49999999999999,((3.4 - 8.0) / 8.0) * 100
+Ward 3 – Kothrud,Waste Management,2024-01,4.6,35.29411764705881,((4.6 - 3.4) / 3.4) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-01,3.3,-28.26086956521739,((3.3 - 4.6) / 4.6) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-01,10.2,209.0909090909091,((10.2 - 3.3) / 3.3) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-01,6.1,-40.19607843137255,((6.1 - 10.2) / 10.2) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-01,3.1,-49.18032786885245,((3.1 - 6.1) / 6.1) * 100
+Ward 4 – Warje,Waste Management,2024-01,4.7,51.61290322580645,((4.7 - 3.1) / 3.1) * 100
+Ward 4 – Warje,Parks & Greening,2024-01,1.3,-72.3404255319149,((1.3 - 4.7) / 4.7) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-01,15.3,1076.923076923077,((15.3 - 1.3) / 1.3) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-01,11.0,-28.1045751633987,((11.0 - 15.3) / 15.3) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-01,3.4,-69.0909090909091,((3.4 - 11.0) / 11.0) * 100
+Ward 5 – Hadapsar,Waste Management,2024-01,5.4,58.82352941176472,((5.4 - 3.4) / 3.4) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-01,2.8,-48.14814814814816,((2.8 - 5.4) / 5.4) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-02,12.2,335.71428571428567,((12.2 - 2.8) / 2.8) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-02,7.4,-39.34426229508196,((7.4 - 12.2) / 12.2) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-02,2.8,-62.16216216216217,((2.8 - 7.4) / 7.4) * 100
+Ward 1 – Kasba,Waste Management,2024-02,6.4,128.5714285714286,((6.4 - 2.8) / 2.8) * 100
+Ward 1 – Kasba,Parks & Greening,2024-02,2.3,-64.0625,((2.3 - 6.4) / 6.4) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-02,16.8,630.4347826086957,((16.8 - 2.3) / 2.3) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-02,10.4,-38.095238095238095,((10.4 - 16.8) / 16.8) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-02,4.4,-57.692307692307686,((4.4 - 10.4) / 10.4) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-02,7.1,61.363636363636346,((7.1 - 4.4) / 4.4) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-02,1.8,-74.64788732394366,((1.8 - 7.1) / 7.1) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-02,11.7,549.9999999999999,((11.7 - 1.8) / 1.8) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-02,8.8,-24.786324786324776,((8.8 - 11.7) / 11.7) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-02,4.0,-54.545454545454554,((4.0 - 8.8) / 8.8) * 100
+Ward 3 – Kothrud,Waste Management,2024-02,5.6,39.99999999999999,((5.6 - 4.0) / 4.0) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-02,3.3,-41.07142857142857,((3.3 - 5.6) / 5.6) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-02,10.7,224.24242424242422,((10.7 - 3.3) / 3.3) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-02,5.7,-46.72897196261682,((5.7 - 10.7) / 10.7) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-02,2.8,-50.877192982456144,((2.8 - 5.7) / 5.7) * 100
+Ward 4 – Warje,Waste Management,2024-02,4.1,46.42857142857142,((4.1 - 2.8) / 2.8) * 100
+Ward 4 – Warje,Parks & Greening,2024-02,1.4,-65.85365853658537,((1.4 - 4.1) / 4.1) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-02,12.9,821.4285714285716,((12.9 - 1.4) / 1.4) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-02,9.2,-28.682170542635667,((9.2 - 12.9) / 12.9) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-02,3.4,-63.043478260869556,((3.4 - 9.2) / 9.2) * 100
+Ward 5 – Hadapsar,Waste Management,2024-02,6.2,82.3529411764706,((6.2 - 3.4) / 3.4) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-02,2.4,-61.29032258064516,((2.4 - 6.2) / 6.2) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-03,12.3,412.5,((12.3 - 2.4) / 2.4) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-03,7.7,-37.398373983739845,((7.7 - 12.3) / 12.3) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-03,3.0,-61.038961038961034,((3.0 - 7.7) / 7.7) * 100
+Ward 1 – Kasba,Waste Management,2024-03,6.5,116.66666666666667,((6.5 - 3.0) / 3.0) * 100
+Ward 1 – Kasba,Parks & Greening,2024-03,2.4,-63.07692307692307,((2.4 - 6.5) / 6.5) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-03,15.9,562.5,((15.9 - 2.4) / 2.4) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-03,3.9,-75.47169811320754,((3.9 - 15.9) / 15.9) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-03,6.7,71.79487179487181,((6.7 - 3.9) / 3.9) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-03,1.7,-74.62686567164178,((1.7 - 6.7) / 6.7) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-03,11.1,552.9411764705883,((11.1 - 1.7) / 1.7) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-03,9.2,-17.117117117117118,((9.2 - 11.1) / 11.1) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-03,4.1,-55.434782608695656,((4.1 - 9.2) / 9.2) * 100
+Ward 3 – Kothrud,Waste Management,2024-03,5.1,24.39024390243903,((5.1 - 4.1) / 4.1) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-03,3.4,-33.33333333333333,((3.4 - 5.1) / 5.1) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-03,11.1,226.47058823529412,((11.1 - 3.4) / 3.4) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-03,7.1,-36.03603603603604,((7.1 - 11.1) / 11.1) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-03,2.8,-60.56338028169014,((2.8 - 7.1) / 7.1) * 100
+Ward 4 – Warje,Waste Management,2024-03,3.7,32.14285714285715,((3.7 - 2.8) / 2.8) * 100
+Ward 4 – Warje,Parks & Greening,2024-03,1.5,-59.45945945945946,((1.5 - 3.7) / 3.7) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-03,13.1,773.3333333333334,((13.1 - 1.5) / 1.5) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-03,9.5,-27.480916030534345,((9.5 - 13.1) / 13.1) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-03,4.1,-56.84210526315789,((4.1 - 9.5) / 9.5) * 100
+Ward 5 – Hadapsar,Waste Management,2024-03,6.6,60.97560975609757,((6.6 - 4.1) / 4.1) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-03,2.3,-65.15151515151516,((2.3 - 6.6) / 6.6) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-04,13.4,482.608695652174,((13.4 - 2.3) / 2.3) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-04,8.2,-38.80597014925374,((8.2 - 13.4) / 13.4) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-04,3.6,-56.09756097560976,((3.6 - 8.2) / 8.2) * 100
+Ward 1 – Kasba,Waste Management,2024-04,5.7,58.333333333333336,((5.7 - 3.6) / 3.6) * 100
+Ward 1 – Kasba,Parks & Greening,2024-04,2.1,-63.1578947368421,((2.1 - 5.7) / 5.7) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-04,14.3,580.952380952381,((14.3 - 2.1) / 2.1) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-04,10.0,-30.069930069930074,((10.0 - 14.3) / 14.3) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-04,4.0,-60.0,((4.0 - 10.0) / 10.0) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-04,6.4,60.00000000000001,((6.4 - 4.0) / 4.0) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-04,2.1,-67.18750000000001,((2.1 - 6.4) / 6.4) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-04,11.2,433.3333333333333,((11.2 - 2.1) / 2.1) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-04,7.4,-33.928571428571416,((7.4 - 11.2) / 11.2) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-04,4.5,-39.18918918918919,((4.5 - 7.4) / 7.4) * 100
+Ward 3 – Kothrud,Waste Management,2024-04,5.1,13.333333333333325,((5.1 - 4.5) / 4.5) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-04,2.8,-45.09803921568628,((2.8 - 5.1) / 5.1) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-04,8.8,214.28571428571433,((8.8 - 2.8) / 2.8) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-04,5.8,-34.0909090909091,((5.8 - 8.8) / 8.8) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-04,3.1,-46.55172413793103,((3.1 - 5.8) / 5.8) * 100
+Ward 4 – Warje,Waste Management,2024-04,4.7,51.61290322580645,((4.7 - 3.1) / 3.1) * 100
+Ward 4 – Warje,Parks & Greening,2024-04,1.5,-68.08510638297872,((1.5 - 4.7) / 4.7) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-04,12.2,713.3333333333333,((12.2 - 1.5) / 1.5) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-04,10.0,-18.032786885245898,((10.0 - 12.2) / 12.2) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-04,4.1,-59.00000000000001,((4.1 - 10.0) / 10.0) * 100
+Ward 5 – Hadapsar,Waste Management,2024-04,6.0,46.34146341463416,((6.0 - 4.1) / 4.1) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-04,2.8,-53.333333333333336,((2.8 - 6.0) / 6.0) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-05,14.1,403.57142857142867,((14.1 - 2.8) / 2.8) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-05,7.2,-48.93617021276596,((7.2 - 14.1) / 14.1) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-05,3.4,-52.77777777777778,((3.4 - 7.2) / 7.2) * 100
+Ward 1 – Kasba,Waste Management,2024-05,6.1,79.41176470588235,((6.1 - 3.4) / 3.4) * 100
+Ward 1 – Kasba,Parks & Greening,2024-05,2.3,-62.295081967213115,((2.3 - 6.1) / 6.1) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-05,14.4,526.0869565217392,((14.4 - 2.3) / 2.3) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-05,10.2,-29.166666666666675,((10.2 - 14.4) / 14.4) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-05,3.8,-62.745098039215684,((3.8 - 10.2) / 10.2) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-05,6.2,63.15789473684211,((6.2 - 3.8) / 3.8) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-05,1.8,-70.96774193548387,((1.8 - 6.2) / 6.2) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-05,13.1,627.7777777777777,((13.1 - 1.8) / 1.8) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-05,8.9,-32.06106870229007,((8.9 - 13.1) / 13.1) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-05,3.6,-59.55056179775281,((3.6 - 8.9) / 8.9) * 100
+Ward 3 – Kothrud,Waste Management,2024-05,5.0,38.888888888888886,((5.0 - 3.6) / 3.6) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-05,2.9,-42.00000000000001,((2.9 - 5.0) / 5.0) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-05,11.3,289.6551724137931,((11.3 - 2.9) / 2.9) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-05,7.3,-35.39823008849558,((7.3 - 11.3) / 11.3) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-05,2.8,-61.64383561643836,((2.8 - 7.3) / 7.3) * 100
+Ward 4 – Warje,Waste Management,2024-05,4.5,60.71428571428572,((4.5 - 2.8) / 2.8) * 100
+Ward 4 – Warje,Parks & Greening,2024-05,1.6,-64.44444444444444,((1.6 - 4.5) / 4.5) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-05,12.6,687.5,((12.6 - 1.6) / 1.6) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-05,11.2,-11.111111111111114,((11.2 - 12.6) / 12.6) * 100
+Ward 5 – Hadapsar,Waste Management,2024-05,6.0,-46.42857142857142,((6.0 - 11.2) / 11.2) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-05,2.7,-54.99999999999999,((2.7 - 6.0) / 6.0) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-06,14.8,448.1481481481482,((14.8 - 2.7) / 2.7) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-06,8.3,-43.91891891891891,((8.3 - 14.8) / 14.8) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-06,3.5,-57.83132530120483,((3.5 - 8.3) / 8.3) * 100
+Ward 1 – Kasba,Waste Management,2024-06,5.7,62.85714285714287,((5.7 - 3.5) / 3.5) * 100
+Ward 1 – Kasba,Parks & Greening,2024-06,2.9,-49.12280701754386,((2.9 - 5.7) / 5.7) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-06,19.7,579.3103448275862,((19.7 - 2.9) / 2.9) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-06,12.3,-37.56345177664974,((12.3 - 19.7) / 19.7) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-06,4.7,-61.78861788617886,((4.7 - 12.3) / 12.3) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-06,6.3,34.042553191489354,((6.3 - 4.7) / 4.7) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-06,2.4,-61.904761904761905,((2.4 - 6.3) / 6.3) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-06,15.0,525.0,((15.0 - 2.4) / 2.4) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-06,8.1,-46.0,((8.1 - 15.0) / 15.0) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-06,4.5,-44.44444444444444,((4.5 - 8.1) / 8.1) * 100
+Ward 3 – Kothrud,Waste Management,2024-06,5.1,13.333333333333325,((5.1 - 4.5) / 4.5) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-06,4.0,-21.568627450980387,((4.0 - 5.1) / 5.1) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-06,12.5,212.5,((12.5 - 4.0) / 4.0) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-06,6.8,-45.6,((6.8 - 12.5) / 12.5) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-06,3.4,-50.0,((3.4 - 6.8) / 6.8) * 100
+Ward 4 – Warje,Waste Management,2024-06,5.0,47.05882352941177,((5.0 - 3.4) / 3.4) * 100
+Ward 4 – Warje,Parks & Greening,2024-06,1.7,-65.99999999999999,((1.7 - 5.0) / 5.0) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-06,17.9,952.9411764705882,((17.9 - 1.7) / 1.7) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-06,11.7,-34.63687150837988,((11.7 - 17.9) / 17.9) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-06,3.8,-67.52136752136752,((3.8 - 11.7) / 11.7) * 100
+Ward 5 – Hadapsar,Waste Management,2024-06,6.9,81.57894736842107,((6.9 - 3.8) / 3.8) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-06,3.0,-56.52173913043479,((3.0 - 6.9) / 6.9) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-07,19.7,556.6666666666666,((19.7 - 3.0) / 3.0) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-07,13.0,-34.01015228426395,((13.0 - 19.7) / 19.7) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-07,4.5,-65.38461538461539,((4.5 - 13.0) / 13.0) * 100
+Ward 1 – Kasba,Waste Management,2024-07,7.6,68.88888888888887,((7.6 - 4.5) / 4.5) * 100
+Ward 1 – Kasba,Parks & Greening,2024-07,3.1,-59.21052631578948,((3.1 - 7.6) / 7.6) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-07,23.4,654.8387096774193,((23.4 - 3.1) / 3.1) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-07,12.6,-46.15384615384615,((12.6 - 23.4) / 23.4) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-07,6.0,-52.38095238095239,((6.0 - 12.6) / 12.6) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-07,7.8,30.0,((7.8 - 6.0) / 6.0) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-07,2.3,-70.51282051282051,((2.3 - 7.8) / 7.8) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-07,19.0,726.0869565217391,((19.0 - 2.3) / 2.3) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-07,10.0,-47.368421052631575,((10.0 - 19.0) / 19.0) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-07,5.9,-41.0,((5.9 - 10.0) / 10.0) * 100
+Ward 3 – Kothrud,Waste Management,2024-07,7.5,27.118644067796605,((7.5 - 5.9) / 5.9) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-07,3.8,-49.333333333333336,((3.8 - 7.5) / 7.5) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-07,8.2,115.7894736842105,((8.2 - 3.8) / 3.8) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-07,4.2,-48.78048780487804,((4.2 - 8.2) / 8.2) * 100
+Ward 4 – Warje,Waste Management,2024-07,5.4,28.571428571428577,((5.4 - 4.2) / 4.2) * 100
+Ward 4 – Warje,Parks & Greening,2024-07,1.9,-64.81481481481481,((1.9 - 5.4) / 5.4) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-07,22.8,1100.0000000000002,((22.8 - 1.9) / 1.9) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-07,13.9,-39.03508771929825,((13.9 - 22.8) / 22.8) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-07,5.3,-61.87050359712231,((5.3 - 13.9) / 13.9) * 100
+Ward 5 – Hadapsar,Waste Management,2024-07,8.8,66.03773584905662,((8.8 - 5.3) / 5.3) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-07,3.0,-65.90909090909092,((3.0 - 8.8) / 8.8) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-08,20.2,573.3333333333334,((20.2 - 3.0) / 3.0) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-08,11.1,-45.04950495049505,((11.1 - 20.2) / 20.2) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-08,4.3,-61.261261261261254,((4.3 - 11.1) / 11.1) * 100
+Ward 1 – Kasba,Waste Management,2024-08,8.3,93.02325581395351,((8.3 - 4.3) / 4.3) * 100
+Ward 1 – Kasba,Parks & Greening,2024-08,3.2,-61.44578313253012,((3.2 - 8.3) / 8.3) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-08,22.8,612.5,((22.8 - 3.2) / 3.2) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-08,12.8,-43.859649122807014,((12.8 - 22.8) / 22.8) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-08,5.6,-56.25,((5.6 - 12.8) / 12.8) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-08,9.4,67.85714285714288,((9.4 - 5.6) / 5.6) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-08,2.3,-75.53191489361703,((2.3 - 9.4) / 9.4) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-08,18.3,695.6521739130435,((18.3 - 2.3) / 2.3) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-08,10.6,-42.07650273224044,((10.6 - 18.3) / 18.3) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-08,4.9,-53.77358490566038,((4.9 - 10.6) / 10.6) * 100
+Ward 3 – Kothrud,Waste Management,2024-08,6.3,28.57142857142856,((6.3 - 4.9) / 4.9) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-08,16.0,153.96825396825395,((16.0 - 6.3) / 6.3) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-08,9.8,-38.74999999999999,((9.8 - 16.0) / 16.0) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-08,4.1,-58.163265306122454,((4.1 - 9.8) / 9.8) * 100
+Ward 4 – Warje,Waste Management,2024-08,5.1,24.39024390243903,((5.1 - 4.1) / 4.1) * 100
+Ward 4 – Warje,Parks & Greening,2024-08,2.4,-52.94117647058824,((2.4 - 5.1) / 5.1) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-08,24.6,925.0000000000002,((24.6 - 2.4) / 2.4) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-08,15.8,-35.77235772357724,((15.8 - 24.6) / 24.6) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-08,5.4,-65.82278481012658,((5.4 - 15.8) / 15.8) * 100
+Ward 5 – Hadapsar,Waste Management,2024-08,7.3,35.185185185185176,((7.3 - 5.4) / 5.4) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-08,3.3,-54.794520547945204,((3.3 - 7.3) / 7.3) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-09,20.1,509.0909090909092,((20.1 - 3.3) / 3.3) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-09,9.9,-50.74626865671642,((9.9 - 20.1) / 20.1) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-09,4.2,-57.57575757575758,((4.2 - 9.9) / 9.9) * 100
+Ward 1 – Kasba,Waste Management,2024-09,8.9,111.90476190476191,((8.9 - 4.2) / 4.2) * 100
+Ward 1 – Kasba,Parks & Greening,2024-09,2.8,-68.53932584269663,((2.8 - 8.9) / 8.9) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-09,24.6,778.5714285714287,((24.6 - 2.8) / 2.8) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-09,12.9,-47.5609756097561,((12.9 - 24.6) / 24.6) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-09,6.6,-48.83720930232558,((6.6 - 12.9) / 12.9) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-09,9.7,46.96969696969697,((9.7 - 6.6) / 6.6) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-09,2.5,-74.22680412371135,((2.5 - 9.7) / 9.7) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-09,17.2,588.0,((17.2 - 2.5) / 2.5) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-09,10.2,-40.69767441860465,((10.2 - 17.2) / 17.2) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-09,6.0,-41.17647058823529,((6.0 - 10.2) / 10.2) * 100
+Ward 3 – Kothrud,Waste Management,2024-09,7.0,16.666666666666664,((7.0 - 6.0) / 6.0) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-09,4.4,-37.14285714285714,((4.4 - 7.0) / 7.0) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-09,14.7,234.09090909090904,((14.7 - 4.4) / 4.4) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-09,9.1,-38.095238095238095,((9.1 - 14.7) / 14.7) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-09,4.0,-56.043956043956044,((4.0 - 9.1) / 9.1) * 100
+Ward 4 – Warje,Waste Management,2024-09,6.4,60.00000000000001,((6.4 - 4.0) / 4.0) * 100
+Ward 4 – Warje,Parks & Greening,2024-09,1.9,-70.3125,((1.9 - 6.4) / 6.4) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-09,20.6,984.2105263157897,((20.6 - 1.9) / 1.9) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-09,12.8,-37.86407766990291,((12.8 - 20.6) / 20.6) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-09,5.0,-60.9375,((5.0 - 12.8) / 12.8) * 100
+Ward 5 – Hadapsar,Waste Management,2024-09,8.5,70.0,((8.5 - 5.0) / 5.0) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-09,3.1,-63.52941176470589,((3.1 - 8.5) / 8.5) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-10,13.1,322.5806451612903,((13.1 - 3.1) / 3.1) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-10,10.8,-17.55725190839694,((10.8 - 13.1) / 13.1) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-10,3.4,-68.5185185185185,((3.4 - 10.8) / 10.8) * 100
+Ward 1 – Kasba,Waste Management,2024-10,6.8,100.0,((6.8 - 3.4) / 3.4) * 100
+Ward 1 – Kasba,Parks & Greening,2024-10,2.7,-60.29411764705882,((2.7 - 6.8) / 6.8) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-10,17.3,540.7407407407408,((17.3 - 2.7) / 2.7) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-10,11.5,-33.52601156069365,((11.5 - 17.3) / 17.3) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-10,5.0,-56.52173913043478,((5.0 - 11.5) / 11.5) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-10,8.1,61.999999999999986,((8.1 - 5.0) / 5.0) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-10,1.9,-76.5432098765432,((1.9 - 8.1) / 8.1) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-10,14.1,642.1052631578947,((14.1 - 1.9) / 1.9) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-10,8.5,-39.716312056737586,((8.5 - 14.1) / 14.1) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-10,4.4,-48.23529411764705,((4.4 - 8.5) / 8.5) * 100
+Ward 3 – Kothrud,Waste Management,2024-10,6.1,38.63636363636362,((6.1 - 4.4) / 4.4) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-10,3.5,-42.62295081967213,((3.5 - 6.1) / 6.1) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-10,11.0,214.28571428571428,((11.0 - 3.5) / 3.5) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-10,8.1,-26.363636363636367,((8.1 - 11.0) / 11.0) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-10,3.0,-62.96296296296296,((3.0 - 8.1) / 8.1) * 100
+Ward 4 – Warje,Waste Management,2024-10,4.9,63.33333333333334,((4.9 - 3.0) / 3.0) * 100
+Ward 4 – Warje,Parks & Greening,2024-10,2.0,-59.183673469387756,((2.0 - 4.9) / 4.9) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-10,18.4,819.9999999999999,((18.4 - 2.0) / 2.0) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-10,10.5,-42.93478260869565,((10.5 - 18.4) / 18.4) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-10,3.8,-63.80952380952382,((3.8 - 10.5) / 10.5) * 100
+Ward 5 – Hadapsar,Waste Management,2024-10,6.4,68.42105263157896,((6.4 - 3.8) / 3.8) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-10,3.2,-50.0,((3.2 - 6.4) / 6.4) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-11,14.2,343.75,((14.2 - 3.2) / 3.2) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-11,9.4,-33.80281690140844,((9.4 - 14.2) / 14.2) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-11,3.1,-67.02127659574468,((3.1 - 9.4) / 9.4) * 100
+Ward 1 – Kasba,Parks & Greening,2024-11,2.0,-35.483870967741936,((2.0 - 3.1) / 3.1) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-11,17.0,750.0,((17.0 - 2.0) / 2.0) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-11,10.4,-38.8235294117647,((10.4 - 17.0) / 17.0) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-11,4.5,-56.730769230769226,((4.5 - 10.4) / 10.4) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-11,7.2,60.00000000000001,((7.2 - 4.5) / 4.5) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-11,1.9,-73.61111111111111,((1.9 - 7.2) / 7.2) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-11,9.9,421.05263157894734,((9.9 - 1.9) / 1.9) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-11,8.8,-11.111111111111107,((8.8 - 9.9) / 9.9) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-11,3.7,-57.95454545454546,((3.7 - 8.8) / 8.8) * 100
+Ward 3 – Kothrud,Waste Management,2024-11,5.3,43.24324324324323,((5.3 - 3.7) / 3.7) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-11,3.6,-32.075471698113205,((3.6 - 5.3) / 5.3) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-11,9.0,150.0,((9.0 - 3.6) / 3.6) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-11,5.9,-34.444444444444436,((5.9 - 9.0) / 9.0) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-11,2.6,-55.93220338983051,((2.6 - 5.9) / 5.9) * 100
+Ward 4 – Warje,Waste Management,2024-11,4.4,69.23076923076924,((4.4 - 2.6) / 2.6) * 100
+Ward 4 – Warje,Parks & Greening,2024-11,1.4,-68.18181818181819,((1.4 - 4.4) / 4.4) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-11,14.4,928.5714285714287,((14.4 - 1.4) / 1.4) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-11,11.1,-22.91666666666667,((11.1 - 14.4) / 14.4) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-11,3.3,-70.27027027027027,((3.3 - 11.1) / 11.1) * 100
+Ward 5 – Hadapsar,Waste Management,2024-11,6.2,87.87878787878789,((6.2 - 3.3) / 3.3) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-11,2.3,-62.903225806451616,((2.3 - 6.2) / 6.2) * 100
+Ward 1 – Kasba,Roads & Pothole Repair,2024-12,12.7,452.17391304347825,((12.7 - 2.3) / 2.3) * 100
+Ward 1 – Kasba,Drainage & Flooding,2024-12,9.4,-25.98425196850393,((9.4 - 12.7) / 12.7) * 100
+Ward 1 – Kasba,Streetlight Maintenance,2024-12,3.5,-62.76595744680851,((3.5 - 9.4) / 9.4) * 100
+Ward 1 – Kasba,Waste Management,2024-12,5.1,45.7142857142857,((5.1 - 3.5) / 3.5) * 100
+Ward 1 – Kasba,Parks & Greening,2024-12,2.2,-56.86274509803921,((2.2 - 5.1) / 5.1) * 100
+Ward 2 – Shivajinagar,Roads & Pothole Repair,2024-12,14.4,554.5454545454545,((14.4 - 2.2) / 2.2) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-12,8.4,-41.666666666666664,((8.4 - 14.4) / 14.4) * 100
+Ward 2 – Shivajinagar,Streetlight Maintenance,2024-12,4.7,-44.047619047619044,((4.7 - 8.4) / 8.4) * 100
+Ward 2 – Shivajinagar,Waste Management,2024-12,6.5,38.29787234042553,((6.5 - 4.7) / 4.7) * 100
+Ward 2 – Shivajinagar,Parks & Greening,2024-12,1.7,-73.84615384615384,((1.7 - 6.5) / 6.5) * 100
+Ward 3 – Kothrud,Roads & Pothole Repair,2024-12,12.3,623.529411764706,((12.3 - 1.7) / 1.7) * 100
+Ward 3 – Kothrud,Drainage & Flooding,2024-12,8.2,-33.33333333333334,((8.2 - 12.3) / 12.3) * 100
+Ward 3 – Kothrud,Streetlight Maintenance,2024-12,3.8,-53.65853658536586,((3.8 - 8.2) / 8.2) * 100
+Ward 3 – Kothrud,Waste Management,2024-12,4.3,13.157894736842104,((4.3 - 3.8) / 3.8) * 100
+Ward 3 – Kothrud,Parks & Greening,2024-12,2.8,-34.883720930232556,((2.8 - 4.3) / 4.3) * 100
+Ward 4 – Warje,Roads & Pothole Repair,2024-12,11.2,299.99999999999994,((11.2 - 2.8) / 2.8) * 100
+Ward 4 – Warje,Drainage & Flooding,2024-12,7.4,-33.928571428571416,((7.4 - 11.2) / 11.2) * 100
+Ward 4 – Warje,Streetlight Maintenance,2024-12,3.0,-59.45945945945946,((3.0 - 7.4) / 7.4) * 100
+Ward 4 – Warje,Waste Management,2024-12,4.7,56.66666666666668,((4.7 - 3.0) / 3.0) * 100
+Ward 4 – Warje,Parks & Greening,2024-12,1.6,-65.95744680851064,((1.6 - 4.7) / 4.7) * 100
+Ward 5 – Hadapsar,Roads & Pothole Repair,2024-12,12.6,687.5,((12.6 - 1.6) / 1.6) * 100
+Ward 5 – Hadapsar,Drainage & Flooding,2024-12,9.3,-26.19047619047618,((9.3 - 12.6) / 12.6) * 100
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-12,3.4,-63.44086021505376,((3.4 - 9.3) / 9.3) * 100
+Ward 5 – Hadapsar,Waste Management,2024-12,6.7,97.05882352941177,((6.7 - 3.4) / 3.4) * 100
+Ward 5 – Hadapsar,Parks & Greening,2024-12,2.7,-59.70149253731343,((2.7 - 6.7) / 6.7) * 100
+Ward 2 – Shivajinagar,Drainage & Flooding,2024-03,NULL,FLAGGED,Missing spend value
+Ward 5 – Hadapsar,Streetlight Maintenance,2024-05,NULL,FLAGGED,Missing spend value
+Ward 4 – Warje,Roads & Pothole Repair,2024-07,NULL,FLAGGED,Missing spend value
+Ward 3 – Kothrud,Parks & Greening,2024-08,NULL,FLAGGED,Missing spend value
+Ward 1 – Kasba,Waste Management,2024-11,NULL,FLAGGED,Missing spend value
