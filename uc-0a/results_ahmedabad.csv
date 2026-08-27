@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Low,Categorized as Road Damage due to mentions of 'surface'.,
+AM-202402,Other,Low,Description is ambiguous or does not match predefined categories.,NEEDS_REVIEW
+AM-202405,Other,Standard,Description is ambiguous or does not match predefined categories.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as Heat Hazard due to mentions of 'heatwave'.,
+AM-202407,Other,Urgent,Description is ambiguous or does not match predefined categories and flagged as Urgent because of 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Low,Categorized as Pothole due to mentions of 'pothole'.,
+AM-202414,Other,Low,Description is ambiguous or does not match predefined categories.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized as Waste due to mentions of 'waste'.,
+AM-202421,Noise,Standard,Categorized as Noise based on description context.,
+AM-202424,Road Damage,Standard,Categorized as Road Damage due to mentions of 'road'.,
+AM-202429,Road Damage,Low,Categorized as Road Damage due to mentions of 'surface'.,
+AM-202431,Heritage Damage,Standard,Categorized as Heritage Damage due to mentions of 'heritage'.,
+AM-202435,Road Damage,Standard,Categorized as Road Damage due to mentions of 'road'.,
+AM-202444,Waste,Standard,Categorized as Waste due to mentions of 'waste'.,
+AM-202445,Other,Low,Description is ambiguous or does not match predefined categories.,NEEDS_REVIEW

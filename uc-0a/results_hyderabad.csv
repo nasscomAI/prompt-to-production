@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Categorized as Flooding due to mentions of 'flooded' and flagged as Urgent because of 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Categorized as Drain Blockage due to mentions of 'drain'.,
+GH-202406,Drain Blockage,Low,Categorized as Drain Blockage due to mentions of 'drain'.,
+GH-202407,Drain Blockage,Low,Categorized as Drain Blockage due to mentions of 'drain'.,
+GH-202410,Pothole,Standard,Categorized as Pothole due to mentions of 'potholes'.,
+GH-202411,Pothole,Urgent,Categorized as Pothole due to mentions of 'pothole' and flagged as Urgent because of 'hospital'.,
+GH-202412,Pothole,Urgent,Categorized as Pothole due to mentions of 'potholes' and flagged as Urgent because of 'school'.,
+GH-202417,Waste,Low,Categorized as Waste due to mentions of 'waste'.,
+GH-202420,Other,Low,Description is ambiguous or does not match predefined categories.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Categorized as Road Damage due to mentions of 'road' and flagged as Urgent because of 'collapse'.,
+GH-202424,Flooding,Low,Categorized as Flooding due to mentions of 'floods'.,
+GH-202428,Waste,Low,Categorized as Waste due to mentions of 'waste'.,
+GH-202432,Other,Low,Description is ambiguous or does not match predefined categories.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Low,Categorized as Drain Blockage due to mentions of 'drain'.,
+GH-202438,Flooding,Low,Categorized as Flooding due to mentions of 'water'.,

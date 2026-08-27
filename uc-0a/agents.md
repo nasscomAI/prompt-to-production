@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  UC-0A Complaint Classifier. This agent is responsible for triaging citizen complaints by assigning a specific category and priority based on the complaint description. Its operational boundary is limited to the provided classification schema and does not involve resolving the complaints.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A correct output must be a classification that strictly adheres to the defined taxonomy. Each output row must include: 'category' (exact string from the allowed list), 'priority' (Urgent, Standard, or Low), a 'reason' (single sentence citing the description), and a 'flag' (NEEDS_REVIEW or blank).
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use only the provided citizen complaint description and the classification schema defined in README.md. It must exclude any external knowledge, personal biases, or hallucinated categories not present in the allowed list.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only — no variations."
+  - "Priority must be 'Urgent' if the description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, use Standard or Low."
+  - "Every output row must include a 'reason' field that is a single sentence citing specific words from the description to justify the category and priority."
+  - "If the category is genuinely ambiguous or cannot be determined from the description alone, category must be 'Other' and the flag must be 'NEEDS_REVIEW'."
