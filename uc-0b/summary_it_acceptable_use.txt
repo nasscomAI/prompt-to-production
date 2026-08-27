@@ -1,0 +1,13 @@
+POLICY SUMMARY: HR LEAVE OBLIGATIONS
+========================================
+
+[2.3] Leave applications must be submitted 14 calendar days in advance via Form HR-L1.
+[2.4] Written approval from the direct manager must be obtained before leave begins; verbal approval is not valid.
+[2.5] Unapproved absence will be recorded as Loss of Pay (LOP), regardless of any later approval.
+[2.6] Maximum 5 annual leave days can be carried forward; any excess is forfeited on 31 December.
+[2.7] MISSING: Clause not found in source document.
+[3.2] Sick leave of 3+ consecutive days requires a medical certificate submitted within 48 hours of return.
+[3.4] A medical certificate is required for sick leave taken immediately before or after holidays/annual leave, regardless of duration.
+[5.2] LWP requires approval from BOTH the Department Head and the HR Director. [FLAG: VERBATIM]
+[5.3] LWP exceeding 30 continuous days mandates approval from the Municipal Commissioner.
+[7.2] Encashing leave during active service is not permitted under any circumstances.
