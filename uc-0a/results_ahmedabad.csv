@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Description mentions 'Tarmac', 'surface', 'melting', 'at', '44°C.' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Description mentions 'Metal', 'bus', 'shelter', 'reaching', 'dangerous' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Description mentions 'Dead', 'trees', 'with', 'split', 'branches.' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions 'heatwave' indicating Heat Hazard.,
+AM-202407,Other,Urgent,"Description mentions 'Broken', 'bench', 'and', 'upturned', 'paving.' ... but no category keyword matched; assigned Other for review. Contains severity keyword(s) 'Child' requiring Urgent priority.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description mentions 'Pothole' indicating Pothole.,
+AM-202414,Streetlight,Standard,Description mentions 'unlit' indicating Streetlight.,
+AM-202417,Waste,Standard,Description mentions 'waste' indicating Waste.,
+AM-202421,Noise,Standard,Description mentions 'music' indicating Noise.,
+AM-202424,Road Damage,Standard,Description mentions 'road surface' indicating Road Damage.,
+AM-202429,Other,Standard,"Description mentions 'River', 'walk', 'surface', 'temperature', 'unbearable.' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Description mentions 'Heritage' indicating Heritage Damage.,
+AM-202435,Other,Standard,"Description mentions 'Black', 'metal', 'road', 'dividers', 'storing' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW
+AM-202444,Waste,Standard,Description mentions 'waste' indicating Waste.,
+AM-202445,Other,Standard,"Description mentions 'BRT', 'shelter', 'roof', 'glass', 'broken.' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW

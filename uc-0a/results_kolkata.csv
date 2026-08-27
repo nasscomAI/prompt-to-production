@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'Heritage' indicating Heritage Damage.,
+KM-202402,Heritage Damage,Standard,Description mentions 'Historic' indicating Heritage Damage.,
+KM-202405,Noise,Standard,Description mentions 'band' indicating Noise.,
+KM-202409,Pothole,Standard,Description mentions 'pothole' indicating Pothole.,
+KM-202410,Pothole,Standard,Description mentions 'Pothole' indicating Pothole.,
+KM-202411,Pothole,Standard,Description mentions 'pothole' indicating Pothole.,
+KM-202415,Drain Blockage,Standard,Description mentions 'drain' indicating Drain Blockage.,
+KM-202418,Waste,Standard,Description mentions 'waste' indicating Waste.,
+KM-202421,Road Damage,Urgent,"Description mentions 'sinking', 'Footpath' indicating Road Damage and contains severity keyword(s) 'Hospital', 'fell' requiring Urgent priority.",
+KM-202422,Road Damage,Standard,Description mentions 'Road surface' indicating Road Damage.,
+KM-202426,Heritage Damage,Standard,Description mentions 'Heritage' indicating Heritage Damage.,
+KM-202430,Road Damage,Standard,Description mentions 'subsided' indicating Road Damage.,
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage' indicating Heritage Damage.,
+KM-202436,Other,Standard,"Description mentions 'Entire', 'colony', 'substation', 'tripped.', 'Darkness' ... but no category keyword matched; assigned Other for review.",NEEDS_REVIEW
+KM-202438,Noise,Standard,Description mentions 'amplifier' indicating Noise.,
