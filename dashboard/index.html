@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Tech Dashboard | Hyderabad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0c10;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-blue: #00d2ff;
+            --accent-gold: #ffcc33;
+            --text-main: #e0e6ed;
+            --text-dim: #94a3b8;
+            --urgent: #ff4d4d;
+            --standard: #4d94ff;
+            --low: #4dff88;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            height: 300px;
+            background: linear-gradient(rgba(10, 12, 16, 0.8), rgba(10, 12, 16, 1)), url('header.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 10%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header h1 { font-size: 2.5rem; font-weight: 700; letter-spacing: -1px; }
+        .header p { color: var(--text-dim); font-size: 1.1rem; }
+
+        .container {
+            max-width: 1200px;
+            margin: -50px auto 50px;
+            padding: 0 20px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            background: var(--card-bg);
+            padding: 5px;
+            border-radius: 12px;
+            width: fit-content;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .tab-btn {
+            padding: 10px 25px;
+            border-radius: 8px;
+            border: none;
+            background: transparent;
+            color: var(--text-dim);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-blue);
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            min-height: 500px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .content-card.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { text-align: left; padding: 15px; color: var(--text-dim); border-bottom: 1px solid rgba(255, 255, 255, 0.05); font-weight: 400; font-size: 0.9rem; }
+        td { padding: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+        .badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .badge.urgent { background: rgba(255, 77, 77, 0.1); color: var(--urgent); }
+        .badge.standard { background: rgba(77, 148, 255, 0.1); color: var(--standard); }
+        .badge.low { background: rgba(77, 255, 136, 0.1); color: var(--low); }
+
+        /* Chat UI */
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .message {
+            padding: 15px 20px;
+            border-radius: 15px;
+            max-width: 85%;
+            font-size: 0.95rem;
+        }
+        .message.user {
+            align-self: flex-end;
+            background: var(--accent-blue);
+            color: white;
+        }
+        .message.ai {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .chat-input {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            outline: none;
+        }
+        input:focus { border-color: var(--accent-blue); }
+        .send-btn {
+            padding: 0 25px;
+            border-radius: 10px;
+            border: none;
+            background: var(--accent-blue);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Metrics */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .metric-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .metric-card h3 { font-size: 0.8rem; color: var(--text-dim); margin-bottom: 5px; }
+        .metric-card .value { font-size: 1.5rem; font-weight: 700; color: var(--accent-gold); }
+
+        footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <p>City Municipal Corporation</p>
+    <h1>Vibe Coding Dashboard</h1>
+    <p>Operational Insights for Hyderabad | Participant: Kasheww</p>
+</div>
+
+<div class="container">
+    <div class="tabs">
+        <button class="tab-btn active" onclick="showTab('complaints')">Complaints</button>
+        <button class="tab-btn" onclick="showTab('policy')">Policy Bot</button>
+        <button class="tab-btn" onclick="showTab('budget')">Budget Analysis</button>
+    </div>
+
+    <div id="complaints" class="content-card active">
+        <h2>Classified Complaints</h2>
+        <p style="color: var(--text-dim); margin-bottom: 20px;">Real-time automated taxonomy and priority assignment.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Category</th>
+                    <th>Priority</th>
+                    <th>AI Reasoning</th>
+                </tr>
+            </thead>
+            <tbody id="complaint-body"></tbody>
+        </table>
+    </div>
+
+    <div id="policy" class="content-card">
+        <h2>Policy Guidance Bot</h2>
+        <p style="color: var(--text-dim); margin-bottom: 30px;">Strict guidance powered by HR, IT, and Finance policies.</p>
+        <div class="chat-container">
+            <div id="chat-box" style="display: flex; flex-direction: column; gap: 15px; height: 300px; overflow-y: auto; padding: 10px;">
+                <div class="message ai">Hello! I can answer questions about CMC policies. Ask me about leave, travel, or IT rules.</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-q" placeholder="Ask a policy question...">
+                <button class="send-btn" onclick="askQuestion()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="budget" class="content-card">
+        <h2>Ward Growth Analysis</h2>
+        <div class="metric-grid">
+            <div class="metric-card">
+                <h3>Current Ward</h3>
+                <div class="value">Ward 1 – Kasba</div>
+            </div>
+            <div class="metric-card">
+                <h3>Monsoon Peak</h3>
+                <div class="value">+33.1%</div>
+            </div>
+            <div class="metric-card">
+                <h3>Post-Monsoon</h3>
+                <div class="value">-34.8%</div>
+            </div>
+            <div class="metric-card">
+                <h3>Data Status</h3>
+                <div class="value" style="color: var(--urgent);">1 Flagged</div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Period</th>
+                    <th>Actual Spend (₹ Lakh)</th>
+                    <th>MoM Growth</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="budget-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 City Municipal Corporation | Vibe Coding Workshop Submission
+</footer>
+
+<script>
+    const complaints = [
+        {id: "GH-202401", cat: "Flooding", pri: "Urgent", reason: "mentions 'ambulance'"},
+        {id: "GH-202411", cat: "Pothole", pri: "Urgent", reason: "mentions 'hospital'"},
+        {id: "GH-202412", cat: "Pothole", pri: "Urgent", reason: "mentions 'school'"},
+        {id: "GH-202406", cat: "Drain Blockage", pri: "Standard", reason: "mentions 'drain'"},
+        {id: "GH-202422", cat: "Road Damage", pri: "Urgent", reason: "mentions 'collapse'"},
+        {id: "GH-202417", cat: "Heritage Damage", pri: "Standard", reason: "mentions 'heritage'"},
+        {id: "GH-202420", cat: "Noise", pri: "Standard", reason: "mentions 'drilling'"}
+    ];
+
+    const budget = [
+        {p: "2024-01", s: "13.3", g: "n/a", st: "OK"},
+        {p: "2024-07", s: "19.7", g: "+33.1%", st: "OK (Peak)"},
+        {p: "2024-10", s: "13.1", g: "-34.8%", st: "OK"},
+        {p: "2024-03", s: "NULL", g: "n/a", st: "FLAG: Missing"}
+    ];
+
+    const botResponses = {
+        "carry forward": "Employees may carry forward a maximum of 5 unused annual leave days. [HR Policy, 2.6]",
+        "personal phone": "Personal devices may be used for CMC email and portal ONLY. No sensitive data storage. [IT Policy, 3.1]",
+        "da": "DA and meal receipts cannot be claimed simultaneously for the same day. [Finance, 2.6]",
+        "who approves": "LWP requires approval from BOTH Department Head AND HR Director. [HR Policy, 5.2]",
+        "flexible": "This question is not covered in the available policy documents. Please contact HR for guidance."
+    };
+
+    function showTab(id) {
+        document.querySelectorAll('.content-card').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+
+    function renderComplaints() {
+        const body = document.getElementById('complaint-body');
+        complaints.forEach(c => {
+            const row = `<tr>
+                <td style="font-weight: 700; color: var(--accent-blue);">${c.id}</td>
+                <td>${c.cat}</td>
+                <td><span class="badge ${c.pri.toLowerCase()}">${c.pri}</span></td>
+                <td style="color: var(--text-dim); font-size: 0.9rem;">${c.reason}</td>
+            </tr>`;
+            body.innerHTML += row;
+        });
+    }
+
+    function renderComplaints() {
+        const body = document.getElementById('complaint-body');
+        body.innerHTML = ''; // Clear securely
+        complaints.forEach(c => {
+            const tr = document.createElement('tr');
+            
+            const tdId = document.createElement('td');
+            tdId.style.fontWeight = '700';
+            tdId.style.color = 'var(--accent-blue)';
+            tdId.textContent = c.id;
+            
+            const tdCat = document.createElement('td');
+            tdCat.textContent = c.cat;
+            
+            const tdPri = document.createElement('td');
+            const span = document.createElement('span');
+            span.className = `badge ${c.pri.toLowerCase()}`;
+            span.textContent = c.pri;
+            tdPri.appendChild(span);
+            
+            const tdReason = document.createElement('td');
+            tdReason.style.color = 'var(--text-dim)';
+            tdReason.style.fontSize = '0.9rem';
+            tdReason.textContent = c.reason;
+            
+            tr.append(tdId, tdCat, tdPri, tdReason);
+            body.appendChild(tr);
+        });
+    }
+
+    function renderBudget() {
+        const body = document.getElementById('budget-body');
+        body.innerHTML = '';
+        budget.forEach(b => {
+            const tr = document.createElement('tr');
+            
+            const tdP = document.createElement('td');
+            tdP.textContent = b.p;
+            
+            const tdS = document.createElement('td');
+            tdS.textContent = `${b.s} Lakh`;
+            
+            const tdG = document.createElement('td');
+            tdG.style.color = b.g.startsWith('+') ? 'var(--low)' : 'var(--urgent)';
+            tdG.textContent = b.g;
+            
+            const tdSt = document.createElement('td');
+            tdSt.style.fontSize = '0.8rem';
+            tdSt.textContent = b.st;
+            
+            tr.append(tdP, tdS, tdG, tdSt);
+            body.appendChild(tr);
+        });
+    }
+
+    function askQuestion() {
+        const input = document.getElementById('user-q');
+        const box = document.getElementById('chat-box');
+        const userText = input.value.trim();
+        const q = userText.toLowerCase();
+        if(!q) return;
+
+        // Securely add user message
+        const userMsg = document.createElement('div');
+        userMsg.className = 'message user';
+        userMsg.textContent = userText;
+        box.appendChild(userMsg);
+        
+        input.value = "";
+
+        setTimeout(() => {
+            let reply = "This question is not covered in the available policy documents. Please contact the relevant department (HR, IT, or Finance) for further guidance.";
+            
+            const greetings = ["hey", "hello", "hi", "good morning", "greetings"];
+            if (greetings.some(g => q === g || q.startsWith(g + " "))) {
+                reply = "Hello! I am your CMC Policy Assistant. How can I help you with our policies today?";
+            } else {
+                for(let key in botResponses) {
+                    if(q.includes(key)) {
+                        reply = botResponses[key];
+                        break;
+                    }
+                }
+            }
+            
+            // Securely add AI message
+            const aiMsg = document.createElement('div');
+            aiMsg.className = 'message ai';
+            aiMsg.textContent = reply;
+            box.appendChild(aiMsg);
+            
+            box.scrollTop = box.scrollHeight;
+        }, 500);
+    }
+
+    renderComplaints();
+    renderBudget();
+</script>
+
+</body>
+</html>
