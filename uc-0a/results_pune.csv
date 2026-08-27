@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Matched pothole keywords,
+PM-202402,Pothole,Urgent,"Matched pothole keywords | Urgent severity keywords found: child, school",
+PM-202406,Flooding,Standard,Matched flooding keywords,
+PM-202408,Flooding,Standard,Matched flooding keywords,
+PM-202410,Streetlight,Standard,Matched streetlight keywords,
+PM-202411,Streetlight,Urgent,Matched streetlight keywords | Urgent severity keywords found: hazard,
+PM-202413,Flooding,Standard,Matched flooding keywords,
+PM-202418,Noise,Standard,Matched noise keywords,
+PM-202419,Road Damage,Standard,Matched road damage keywords,
+PM-202420,Other,Urgent,No specific match found | Urgent severity keywords found: injury,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Matched flooding keywords,
+PM-202428,Other,Standard,No specific match found,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Matched streetlight keywords,
+PM-202433,Waste,Standard,Matched waste keywords,
+PM-202446,Other,Urgent,No specific match found | Urgent severity keywords found: fell,NEEDS_REVIEW
