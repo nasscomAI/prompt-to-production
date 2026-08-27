@@ -16,7 +16,7 @@ uc-0b/summary_hr_leave.txt
 
 ## Run Command
 ```bash
-python app.py \
+python3 app.py \
   --input ../data/policy-documents/policy_hr_leave.txt \
   --output summary_hr_leave.txt
 ```
