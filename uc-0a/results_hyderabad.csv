@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Complaint about flooding involving: Underpass, flooded.",
+GH-202402,Other,Standard,"Complaint mentions: Market, area.",
+GH-202406,Other,Standard,"Complaint mentions: Main, stormwater.",
+GH-202407,Drain Blockage,Standard,"Complaint about drain blockage involving: Drain, blocked.",
+GH-202410,Pothole,Standard,"Complaint about pothole involving: Potholes, causing.",
+GH-202411,Pothole,Urgent,"Complaint about pothole involving: Pothole, swallowed.",
+GH-202412,Pothole,Urgent,"Complaint about pothole involving: School, bus.",
+GH-202417,Waste,Standard,"Complaint about waste involving: Heritage, zone.",
+GH-202420,Other,Standard,"Complaint mentions: Construction, drilling.",NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Complaint about pothole involving: Road, collapsed.",
+GH-202424,Other,Standard,"Complaint mentions: Underpass, floods.",
+GH-202428,Waste,Standard,"Complaint about waste involving: Post, market.",
+GH-202432,Other,Standard,"Complaint mentions: 24hr, supermarket.",NEEDS_REVIEW
+GH-202448,Other,Standard,"Complaint mentions: Main, drain.",
+GH-202438,Flooding,Standard,"Complaint about flooding involving: Colony, surrounded.",
