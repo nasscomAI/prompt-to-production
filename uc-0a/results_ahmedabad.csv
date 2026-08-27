@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Other,Standard,Description mentions 'Tarmac surface melting at 44°C' which does not match any defined category.,NEEDS_REVIEW
+Other,Standard,Description mentions 'Metal bus shelter reaching dangerous temperatures' which does not match any defined category.,NEEDS_REVIEW
+Other,Standard,Description mentions 'Dead trees with split branches' which does not match any defined category.,NEEDS_REVIEW
+Heat Hazard,Standard,Complaint mentions 'heatwave' and is classified as Heat Hazard.,NEEDS_REVIEW
+Road Damage,Urgent,Complaint mentions 'broken' and is classified as Road Damage.,
+Pothole,Standard,Complaint mentions 'pothole' and is classified as Pothole.,
+Other,Standard,Description mentions 'Residential colony unlit after 9pm' which does not match any defined category.,NEEDS_REVIEW
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,NEEDS_REVIEW
+Other,Standard,Description mentions 'Club music audible at residential buildings at 2am' which does not match any defined category.,NEEDS_REVIEW
+Road Damage,Standard,Complaint mentions 'road surface' and is classified as Road Damage.,
+Other,Standard,Description mentions 'River walk surface temperature unbearable' which does not match any defined category.,NEEDS_REVIEW
+Heritage Damage,Standard,Complaint mentions 'heritage' and is classified as Heritage Damage.,
+Heat Hazard,Standard,Complaint mentions 'heat' and is classified as Heat Hazard.,
+Waste,Standard,Complaint mentions 'waste' and is classified as Waste.,
+Road Damage,Standard,Complaint mentions 'broken' and is classified as Road Damage.,

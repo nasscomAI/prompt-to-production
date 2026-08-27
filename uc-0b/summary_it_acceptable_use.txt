@@ -1,0 +1,22 @@
+2.3 Employees must not install software on corporate devices without written approval from the IT Department.
+
+2.4 Software approved for installation must be sourced from the CMC-approved software catalogue only.
+
+2.5 Corporate devices must not be used to access gambling, adult content, or any site classified as harmful by the IT Department.
+
+2.6 Corporate devices must have the CMC endpoint security agent installed and active at all times. Disabling or circumventing this agent is a disciplinary offence. ═══════════════════════════════════════════════════════════ 3. PERSONAL DEVICES (BYOD) ═══════════════════════════════════════════════════════════
+
+2.7 [MISSING CLAUSE TEXT — review required]
+
+3.2 Personal devices must not be used to access, store, or transmit classified or sensitive CMC data.
+
+3.4 Employees using personal devices for CMC email must enable device-level PIN or biometric lock.
+
+5.2 Employees must not forward CMC email containing Confidential data to personal email accounts.
+
+5.3 Printing of Confidential documents must use the secure print function. Documents must not be left unattended at printers. ═══════════════════════════════════════════════════════════ 6. INTERNET AND EMAIL USE ═══════════════════════════════════════════════════════════
+
+7.2 Violations involving unauthorised access to restricted data will be reported to law enforcement.
+
+
+Review note: some required clauses could not be extracted and need manual validation.
