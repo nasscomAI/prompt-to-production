@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description 'Tarmac surface melting at 44°C...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description 'Metal bus shelter reaching dan...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description 'Dead trees with split branches...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because of 'heat' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202407,Other,Urgent,The description 'Broken bench and upturned pavi...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because of 'pothole' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202414,Other,Standard,The description 'Residential colony unlit after...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because of 'waste' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202421,Noise,Standard,Classified as Noise because of 'music' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202424,Other,Standard,The description 'Zoo approach road surface bubb...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description 'River walk surface temperature...' does not clearly match any defined category.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because of 'heritage' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because of 'heat' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202444,Waste,Standard,Classified as Waste because of 'waste' and set to Standard priority due to 'lack of urgent hazards'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because of 'sun' and set to Standard priority due to 'lack of urgent hazards'.,

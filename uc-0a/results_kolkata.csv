@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as Streetlight because of 'lamp' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage because of 'historic' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202405,Other,Standard,The description 'Wedding band playing near Tago...' does not clearly match any defined category.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole because of 'pothole' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202410,Pothole,Standard,Classified as Pothole because of 'pothole' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202411,Pothole,Standard,Classified as Pothole because of 'pothole' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage because of 'drain' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202418,Waste,Standard,Classified as Waste because of 'waste' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202421,Pothole,Urgent,Classified as Pothole because of 'pit' and set to Urgent priority due to 'hospital'.,
+KM-202422,Other,Standard,The description 'Road surface buckled near brid...' does not clearly match any defined category.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because of 'heritage' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202430,Other,Standard,The description 'Road subsided near gas pipelin...' does not clearly match any defined category.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because of 'heritage' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202436,Streetlight,Standard,Classified as Streetlight because of 'dark' and set to Standard priority due to 'lack of urgent hazards'.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because of 'heritage' and set to Standard priority due to 'lack of urgent hazards'.,
