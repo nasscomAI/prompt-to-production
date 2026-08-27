@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_rate,formula,null_reason
+2024-01,Ward 2 – Shivajinagar,Streetlight Maintenance,3.8,N/A (no prior period or prior period is null),N/A — see growth_rate,
+2024-02,Ward 2 – Shivajinagar,Streetlight Maintenance,4.4,+15.8%,MoM = (current − previous) / previous × 100,
+2024-03,Ward 2 – Shivajinagar,Streetlight Maintenance,3.9,-11.4%,MoM = (current − previous) / previous × 100,
+2024-04,Ward 2 – Shivajinagar,Streetlight Maintenance,4.0,+2.6%,MoM = (current − previous) / previous × 100,
+2024-05,Ward 2 – Shivajinagar,Streetlight Maintenance,3.8,-5.0%,MoM = (current − previous) / previous × 100,
+2024-06,Ward 2 – Shivajinagar,Streetlight Maintenance,4.7,+23.7%,MoM = (current − previous) / previous × 100,
+2024-07,Ward 2 – Shivajinagar,Streetlight Maintenance,6.0,+27.7%,MoM = (current − previous) / previous × 100,
+2024-08,Ward 2 – Shivajinagar,Streetlight Maintenance,5.6,-6.7%,MoM = (current − previous) / previous × 100,
+2024-09,Ward 2 – Shivajinagar,Streetlight Maintenance,6.6,+17.9%,MoM = (current − previous) / previous × 100,
+2024-10,Ward 2 – Shivajinagar,Streetlight Maintenance,5.0,-24.2%,MoM = (current − previous) / previous × 100,
+2024-11,Ward 2 – Shivajinagar,Streetlight Maintenance,4.5,-10.0%,MoM = (current − previous) / previous × 100,
+2024-12,Ward 2 – Shivajinagar,Streetlight Maintenance,4.7,+4.4%,MoM = (current − previous) / previous × 100,
