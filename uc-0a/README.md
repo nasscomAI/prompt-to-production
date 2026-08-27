@@ -50,7 +50,7 @@ Then look for:
 1. Category names that vary across rows for the same type of complaint
 2. Injury/child/school complaints classified as Standard instead of Urgent
 3. No reason field in the output
-4. Category names that are not in the allowed list above
+4. Category and Priority names that are not in the allowed list above
 5. Confident classification on genuinely ambiguous complaints
 
 ---
