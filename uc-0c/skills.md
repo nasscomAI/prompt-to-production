@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Loads the ward budget CSV, validates the required columns, and reports rows with null actual_spend values.
+    input: Path to ward_budget.csv.
+    output: A list of row dictionaries plus metadata about null rows.
+    error_handling: Raise a clear error if required columns are missing or the file cannot be read.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Filters the dataset to one ward and one category, then computes period-by-period growth for the requested formula.
+    input: Dataset rows, ward string, category string, and growth_type string.
+    output: A per-period table with actual spend, comparison baseline, formula text, growth percentage, status, and note.
+    error_handling: Refuse missing or aggregate scope requests, and flag rows where growth cannot be computed because the current or prior value is null or unavailable.
