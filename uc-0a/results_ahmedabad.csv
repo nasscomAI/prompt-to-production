@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"The description contains specific keywords like '44°c', 'tarmac surface' justifying this classification.",NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,The description contains specific keywords like 'metal bus shelter' justifying this classification.,
+AM-202405,Other,Urgent,The description contains specific keywords like 'risk' justifying this classification.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The description contains specific keywords like 'heatwave' justifying this classification.,
+AM-202407,Road Damage,Urgent,"The description contains specific keywords like 'child', 'paving' justifying this classification.",
+AM-202410,Pothole,Standard,The description contains specific keywords like 'pothole' justifying this classification.,
+AM-202414,Other,Standard,Description ambiguous.,NEEDS_REVIEW
+AM-202417,Other,Standard,"The description contains specific keywords like 'heritage', 'waste' justifying this classification.",NEEDS_REVIEW
+AM-202421,Noise,Standard,The description contains specific keywords like 'music' justifying this classification.,
+AM-202424,Other,Standard,"The description contains specific keywords like '45°c', 'road surface' justifying this classification.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,The description contains specific keywords like '52°c' justifying this classification.,
+AM-202431,Heritage Damage,Standard,The description contains specific keywords like 'heritage' justifying this classification.,
+AM-202435,Heat Hazard,Standard,The description contains specific keywords like 'burns' justifying this classification.,
+AM-202444,Waste,Urgent,"The description contains specific keywords like 'risk', 'waste' justifying this classification.",
+AM-202445,Other,Standard,Description ambiguous.,NEEDS_REVIEW
