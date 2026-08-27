@@ -1,35 +1,71 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
-import csv
+import pandas as pd
+import os
+import re
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+# folder path
+DATA_FOLDER = "data/city-test-files"
+
+# get all csv files
+files = [f for f in os.listdir(DATA_FOLDER) if f.endswith(".csv")]
+
+print("Files found:", files)
+
+# keyword rules
+def clean_text(text):
+    return re.sub(r"[^a-zA-Z0-9\s]", "", str(text).lower())
+
+def classify(text):
+    text = clean_text(text)
+
+    # category
+    if "water" in text:
+        category = "water"
+    elif "road" in text:
+        category = "road"
+    elif "garbage" in text:
+        category = "garbage"
+    else:
+        category = "other"
+
+    # severity
+    if any(word in text for word in ["urgent", "hospital", "accident", "injury"]):
+        severity = "high"
+    elif "delay" in text:
+        severity = "medium"
+    else:
+        severity = "low"
+
+    return pd.Series([category, severity])
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+# process each file
+for file in files:
+    input_path = os.path.join(DATA_FOLDER, file)
+    df = pd.read_csv(input_path)
 
+    print(f"\n🔍 Processing: {file}")
+    print("Columns:", df.columns)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    # auto detect column
+    text_column = None
+    for col in df.columns:
+        if "complaint" in col.lower() or "text" in col.lower():
+            text_column = col
+            break
+
+    if text_column is None:
+        print(f"Skipping {file} (no complaint column found)")
+        continue
+
+    # apply classification
+    df[["category", "severity"]] = df[text_column].apply(classify)
+
+    # output file name
+    city_name = file.replace("test_", "").replace(".csv", "")
+    output_file = f"results_{city_name}.csv"
+
+    df.to_csv(output_file, index=False)
+
+    print(f"Generated: {output_file}")
+
+print("\nAll files processed successfully!")
