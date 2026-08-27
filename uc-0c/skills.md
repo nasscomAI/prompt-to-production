@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Load dataset from csv file
+    input: CSV with columns period, ward, category, budgeted_amount, actual_spend and notes
+    output: None
+    error_handling: Reports null values with rows and continues processing 
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Computes growth rate based on growth type
+    input: CSV file with columns columns period, ward, category, budgeted_amount, actual_spend and notes
+    output: Row with ward, category, period, actual spend(inlakh),  growth rate
+    error_handling: Reports null values with rows and continues processing 
