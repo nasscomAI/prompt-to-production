@@ -1,18 +1,22 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+﻿role: >
+  Complaint Classification Agent for a civic complaint management system.
+  Reads citizen complaint descriptions and classifies each into exactly one
+  category, priority, reason, and flag. Does not invent categories or
+  sub-categories outside the allowed list.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For every complaint row, output exactly: category (from allowed list only),
+  priority (Urgent/Standard/Low), reason (one sentence citing specific words
+  from the description), and flag (NEEDS_REVIEW if ambiguous, else blank).
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Input: test_hyderabad.csv with citizen complaint descriptions.
+  Allowed categories: Pothole, Flooding, Streetlight, Waste, Noise,
+  Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other.
+  No other category names permitted under any condition.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Use only the 10 allowed category strings exactly — no variations, no new categories."
+  - "Set priority=Urgent if any of these words appear in description: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "reason field must cite specific words from the complaint description — never generic."
+  - "Set flag=NEEDS_REVIEW when category is genuinely ambiguous — never guess confidently on unclear complaints."

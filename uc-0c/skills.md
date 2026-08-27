@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+﻿skills:
+  - name: load_dataset
+    description: Reads ward_budget.csv, validates required columns, and reports null count and which rows are null before returning data.
+    input: File path as string, ward as string, category as string.
+    output: Filtered dataframe for the given ward and category, plus a printed null report listing period and notes for each null row.
+    error_handling: If file not found or required columns missing, raise FileNotFoundError or ValueError with clear message. Never silently continue.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Takes filtered ward and category data plus growth_type and returns a per-period table with growth percentage and formula shown.
+    input: Filtered dataframe, growth_type as string (MoM or YoY).
+    output: CSV-ready table with columns period, actual_spend, growth_pct, formula, flag. Null rows get flag=NULL_SKIPPED.
+    error_handling: If growth_type is not MoM or YoY, refuse and print error asking user to specify. Never default silently.
