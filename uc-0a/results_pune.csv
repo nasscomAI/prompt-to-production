@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Classified as Pothole because the description mentions 'pothole'. Priority is Urgent due to safety-critical keyword: 'child'.,
+PM-202406,Flooding,Standard,Classified as Flooding because the description mentions 'flood'.,
+PM-202408,Flooding,Standard,Classified as Flooding because the description mentions 'flood'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because the description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because the description mentions 'streetlight'. Priority is Urgent due to safety-critical keyword: 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste because the description mentions 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise because the description mentions 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because the description mentions 'road surface'.,
+PM-202420,Drain Blockage,Urgent,Classified as Drain Blockage because the description mentions 'manhole'. Priority is Urgent due to safety-critical keyword: 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding because the description mentions 'flood'.,
+PM-202428,Waste,Standard,Classified as Waste because the description mentions 'dead animal'.,
+PM-202430,Streetlight,Standard,Classified as Streetlight because the description mentions 'dark'.,
+PM-202433,Waste,Standard,Classified as Waste because the description mentions 'waste'.,
+PM-202446,Other,Urgent,No specific category keywords matched in the description. Priority is Urgent due to safety-critical keyword: 'fell'.,NEEDS_REVIEW
