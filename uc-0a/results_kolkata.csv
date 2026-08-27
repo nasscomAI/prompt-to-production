@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Description matched streetlight or lighting keywords.,
+KM-202402,Road Damage,Standard,Description matched road damage or pavement keywords.,
+KM-202405,Other,Standard,No specific match found,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description matched 'pothole' or 'crater'.,
+KM-202410,Pothole,Standard,Description matched 'pothole' or 'crater'.,
+KM-202411,Pothole,Standard,Description matched 'pothole' or 'crater'.,
+KM-202415,Drain Blockage,Standard,Description matched drain or sewer blockage keywords.,
+KM-202418,Flooding,Standard,Description matched flooding-related keywords.,
+KM-202421,Other,Urgent,"No specific match found Escalated to Urgent because it mentions: hospital, fell.",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Description matched road damage or pavement keywords.,
+KM-202426,Heritage Damage,Standard,Description matched historical or heritage monument keywords.,
+KM-202430,Road Damage,Standard,Description matched road damage or pavement keywords.,
+KM-202434,Heritage Damage,Standard,Description matched historical or heritage monument keywords.,
+KM-202436,Streetlight,Standard,Description matched streetlight or lighting keywords.,
+KM-202438,Heritage Damage,Standard,Description matched historical or heritage monument keywords.,

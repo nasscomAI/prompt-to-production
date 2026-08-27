@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description matched 'pothole' or 'crater'.,
+PM-202402,Pothole,Urgent,"Description matched 'pothole' or 'crater'. Escalated to Urgent because it mentions: child, school.",
+PM-202406,Flooding,Standard,Description matched flooding-related keywords.,
+PM-202408,Flooding,Standard,Description matched flooding-related keywords.,
+PM-202410,Streetlight,Standard,Description matched streetlight or lighting keywords.,
+PM-202411,Streetlight,Urgent,Description matched streetlight or lighting keywords. Escalated to Urgent because it mentions: hazard.,
+PM-202413,Flooding,Standard,Description matched flooding-related keywords.,
+PM-202418,Noise,Standard,Description matched noise or loud sound keywords.,
+PM-202419,Road Damage,Standard,Description matched road damage or pavement keywords.,
+PM-202420,Other,Urgent,No specific match found Escalated to Urgent because it mentions: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description matched flooding-related keywords.,
+PM-202428,Other,Standard,No specific match found,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Description matched streetlight or lighting keywords.,
+PM-202433,Waste,Standard,Description matched waste or garbage keywords.,
+PM-202446,Other,Urgent,No specific match found Escalated to Urgent because it mentions: fell.,NEEDS_REVIEW
