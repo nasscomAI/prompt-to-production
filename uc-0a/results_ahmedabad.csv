@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Description contains 'melting' indicating heat hazard issue,
+AM-202402,Heat Hazard,Standard,Description contains 'temperature' indicating heat hazard issue,
+AM-202405,Other,Standard,No matching category keywords found in description,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description contains 'heat' indicating heat hazard issue,
+AM-202407,Other,Urgent,Description contains 'child' — Urgent priority assigned,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Description contains 'pothole' indicating pothole issue,
+AM-202414,Streetlight,Standard,Description contains 'unlit' indicating streetlight issue,
+AM-202417,Waste,Standard,Description contains 'waste' indicating waste issue,
+AM-202421,Noise,Standard,Description contains 'music' indicating noise issue,
+AM-202424,Road Damage,Standard,Description contains 'road surface' indicating road damage issue,
+AM-202429,Heat Hazard,Standard,Description contains 'temperature' indicating heat hazard issue,
+AM-202431,Heritage Damage,Standard,Description contains 'heritage' indicating heritage damage issue,
+AM-202435,Heat Hazard,Standard,Description contains 'heat' indicating heat hazard issue,
+AM-202444,Waste,Standard,Description contains 'waste' indicating waste issue,
+AM-202445,Other,Standard,No matching category keywords found in description,NEEDS_REVIEW

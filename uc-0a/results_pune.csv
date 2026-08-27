@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description contains 'pothole' indicating pothole issue,
+PM-202402,Pothole,Urgent,Description contains 'child' — Urgent priority assigned,
+PM-202406,Flooding,Standard,Description contains 'flooded' indicating flooding issue,
+PM-202408,Flooding,Standard,Description contains 'flooded' indicating flooding issue,
+PM-202410,Streetlight,Standard,Description contains 'streetlight' indicating streetlight issue,
+PM-202411,Streetlight,Urgent,Description contains 'hazard' — Urgent priority assigned,
+PM-202413,Waste,Standard,Description contains 'garbage' indicating waste issue,
+PM-202418,Noise,Standard,Description contains 'music' indicating noise issue,
+PM-202419,Road Damage,Standard,Description contains 'road surface' indicating road damage issue,
+PM-202420,Other,Urgent,Description contains 'injury' — Urgent priority assigned,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description contains 'flood' indicating flooding issue,
+PM-202428,Waste,Standard,Description contains 'dead animal' indicating waste issue,
+PM-202430,Streetlight,Standard,Description contains 'lights out' indicating streetlight issue,
+PM-202433,Waste,Standard,Description contains 'waste' indicating waste issue,
+PM-202446,Other,Urgent,Description contains 'fell' — Urgent priority assigned,NEEDS_REVIEW

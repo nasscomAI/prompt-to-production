@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Description contains 'lamp post' indicating streetlight issue,
+KM-202402,Heritage Damage,Standard,Description contains 'historic' indicating heritage damage issue,
+KM-202405,Noise,Standard,Description contains 'band playing' indicating noise issue,
+KM-202409,Pothole,Standard,Description contains 'pothole' indicating pothole issue,
+KM-202410,Pothole,Standard,Description contains 'pothole' indicating pothole issue,
+KM-202411,Pothole,Standard,Description contains 'pothole' indicating pothole issue,
+KM-202415,Other,Standard,No matching category keywords found in description,NEEDS_REVIEW
+KM-202418,Waste,Standard,Description contains 'waste' indicating waste issue,
+KM-202421,Road Damage,Urgent,Description contains 'hospital' — Urgent priority assigned,
+KM-202422,Road Damage,Standard,Description contains 'road surface' indicating road damage issue,
+KM-202426,Heritage Damage,Standard,Description contains 'heritage' indicating heritage damage issue,
+KM-202430,Waste,Standard,Description contains 'smell' indicating waste issue,
+KM-202434,Heritage Damage,Standard,Description contains 'heritage' indicating heritage damage issue,
+KM-202436,Streetlight,Standard,Description contains 'darkness' indicating streetlight issue,
+KM-202438,Noise,Standard,Description contains 'amplifier' indicating noise issue,
