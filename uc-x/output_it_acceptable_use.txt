@@ -1,0 +1,4 @@
+﻿Documents loaded. Ask your question (type 'exit' to quit).
+Q> A> Employees must not install software on corporate devices without written approval from the IT Department. (Source: policy_it_acceptable_use.txt section 2.3)
+Q> A> Personal devices may be used to access CMC email and the CMC employee self-service portal only. (Source: policy_it_acceptable_use.txt section 3.1)
+Q> 

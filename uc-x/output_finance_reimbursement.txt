@@ -1,0 +1,4 @@
+﻿Documents loaded. Ask your question (type 'exit' to quit).
+Q> A> Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000. (Source: policy_finance_reimbursement.txt section 3.1)
+Q> A> If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day. (Source: policy_finance_reimbursement.txt section 2.6)
+Q> 

@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,growth_type,formula,growth_result,status,flag_reason,notes
+2024-01,Ward 4 – Warje,Roads & Pothole Repair,10.3,10.2,MoM,MoM growth % = (current - previous_month) / previous_month * 100,,NO_BASELINE,No previous month available for MoM.,
+2024-02,Ward 4 – Warje,Roads & Pothole Repair,10.3,10.7,MoM,MoM growth % = (current - previous_month) / previous_month * 100,4.9%,OK,,
+2024-03,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.1,MoM,MoM growth % = (current - previous_month) / previous_month * 100,3.7%,OK,,
+2024-04,Ward 4 – Warje,Roads & Pothole Repair,10.3,8.8,MoM,MoM growth % = (current - previous_month) / previous_month * 100,-20.7%,OK,,
+2024-05,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.3,MoM,MoM growth % = (current - previous_month) / previous_month * 100,28.4%,OK,,
+2024-06,Ward 4 – Warje,Roads & Pothole Repair,10.3,12.5,MoM,MoM growth % = (current - previous_month) / previous_month * 100,10.6%,OK,,
+2024-07,Ward 4 – Warje,Roads & Pothole Repair,10.3,,MoM,Not computed due to null actual_spend,,FLAGGED_NULL,actual_spend is null. notes: Audit freeze — figures under review,Audit freeze — figures under review
+2024-08,Ward 4 – Warje,Roads & Pothole Repair,10.3,16.0,MoM,MoM growth % = (current - previous_month) / previous_month * 100,,FLAGGED_PREV_NULL,Previous month actual_spend is null. previous notes: Audit freeze — figures under review,
+2024-09,Ward 4 – Warje,Roads & Pothole Repair,10.3,14.7,MoM,MoM growth % = (current - previous_month) / previous_month * 100,-8.1%,OK,,
+2024-10,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.0,MoM,MoM growth % = (current - previous_month) / previous_month * 100,-25.2%,OK,,
+2024-11,Ward 4 – Warje,Roads & Pothole Repair,10.3,9.0,MoM,MoM growth % = (current - previous_month) / previous_month * 100,-18.2%,OK,,
+2024-12,Ward 4 – Warje,Roads & Pothole Repair,10.3,11.2,MoM,MoM growth % = (current - previous_month) / previous_month * 100,24.4%,OK,,
