@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified because description mentions 'lamp'.,
+KM-202402,Heritage Damage,Standard,Classified because description mentions 'historic'.,
+KM-202405,Other,Standard,No clear category detected from the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified because description mentions 'pothole'.,
+KM-202410,Pothole,Standard,Classified because description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Classified because description mentions 'pothole'.,
+KM-202415,Drain Blockage,Standard,Classified because description mentions 'drain'.,
+KM-202418,Waste,Standard,Classified because description mentions 'waste'.,
+KM-202421,Road Damage,Urgent,"Classified because description mentions 'hospital, footpath, fell'.",
+KM-202422,Road Damage,Standard,Classified because description mentions 'road'.,
+KM-202426,Heritage Damage,Standard,Classified because description mentions 'heritage'.,
+KM-202430,Road Damage,Standard,Classified because description mentions 'road'.,
+KM-202434,Heritage Damage,Standard,Classified because description mentions 'heritage'.,
+KM-202436,Streetlight,Standard,Classified because description mentions 'darkness'.,
+KM-202438,Heritage Damage,Standard,Classified because description mentions 'heritage'.,
