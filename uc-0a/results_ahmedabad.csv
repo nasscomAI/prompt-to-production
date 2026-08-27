@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Assigned Heat Hazard because the description says ""44°C"", ""melting""; priority is Standard because no urgent severity keyword is present.",
+AM-202402,Heat Hazard,Standard,"Assigned Heat Hazard because the description says ""temperatures""; priority is Standard because no urgent severity keyword is present.",
+AM-202405,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+AM-202406,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+AM-202407,Other,Urgent,"Assigned Other because the description does not map cleanly to the approved categories; priority is Urgent because it includes severity words ""Child""; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Assigned Pothole because the description says ""Pothole""; priority is Standard because no urgent severity keyword is present.",
+AM-202414,Streetlight,Standard,"Assigned Streetlight because the description says ""unlit""; priority is Standard because no urgent severity keyword is present.",
+AM-202417,Waste,Low,"Assigned Waste because the description says ""waste"", ""not cleared""; priority is Low because the complaint has been open for 21 days without an urgent trigger.",
+AM-202421,Noise,Standard,"Assigned Noise because the description says ""music"", ""audible""; priority is Standard because no urgent severity keyword is present.",
+AM-202424,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Assigned Heat Hazard because the description says ""temperature"", ""52°C""; priority is Standard because no urgent severity keyword is present.",
+AM-202431,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Assigned Heat Hazard because the description says ""heat"", ""burns""; priority is Standard because no urgent severity keyword is present.",
+AM-202444,Waste,Standard,"Assigned Waste because the description says ""waste"", ""bins""; priority is Standard because no urgent severity keyword is present.",
+AM-202445,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW

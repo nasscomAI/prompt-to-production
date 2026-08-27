@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Assigned Flooding because the description says ""flood"", ""flooded""; priority is Urgent because it includes severity words ""Ambulance"".",
+GH-202402,Flooding,Standard,"Assigned Flooding because the description says ""flood"", ""flooded""; priority is Standard because no urgent severity keyword is present.",
+GH-202406,Drain Blockage,Standard,"Assigned Drain Blockage because the description says ""stormwater drain"", ""blocked with construction debris""; priority is Standard because no urgent severity keyword is present.",
+GH-202407,Drain Blockage,Standard,"Assigned Drain Blockage because the description says ""Drain blocked"", ""mosquito breeding""; priority is Standard because no urgent severity keyword is present.",
+GH-202410,Pothole,Standard,"Assigned Pothole because the description says ""Pothole"", ""Potholes""; priority is Standard because no urgent severity keyword is present.",
+GH-202411,Pothole,Urgent,"Assigned Pothole because the description says ""Pothole""; priority is Urgent because it includes severity words ""hospital"".",
+GH-202412,Pothole,Urgent,"Assigned Pothole because the description says ""pothole"", ""potholes""; priority is Urgent because it includes severity words ""School"".",
+GH-202417,Waste,Standard,"Assigned Waste because the description says ""garbage"", ""overflow""; priority is Standard because no urgent severity keyword is present.",
+GH-202420,Noise,Standard,"Assigned Noise because the description says ""drilling""; priority is Standard because no urgent severity keyword is present.",
+GH-202422,Road Damage,Urgent,"Assigned Road Damage because the description says ""collapsed"", ""Crater""; priority is Urgent because it includes severity words ""collapse"".",
+GH-202424,Flooding,Standard,"Assigned Flooding because the description says ""flood"", ""floods""; priority is Standard because no urgent severity keyword is present.",
+GH-202428,Waste,Standard,"Assigned Waste because the description says ""waste"", ""not cleared""; priority is Standard because no urgent severity keyword is present.",
+GH-202432,Noise,Standard,"Assigned Noise because the description says ""trucks idling"", ""engines on""; priority is Standard because no urgent severity keyword is present.",
+GH-202448,Flooding,Standard,"Assigned Flooding because the description says ""flood"", ""flooding""; priority is Standard because no urgent severity keyword is present.",
+GH-202438,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW

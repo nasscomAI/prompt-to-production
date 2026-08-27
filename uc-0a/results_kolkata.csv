@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Assigned Streetlight because the description says ""lamp post""; priority is Standard because no urgent severity keyword is present.",
+KM-202402,Heritage Damage,Standard,"Assigned Heritage Damage because the description says ""Historic"", ""cobblestones""; priority is Standard because no urgent severity keyword is present.",
+KM-202405,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Assigned Pothole because the description says ""pothole"", ""potholes""; priority is Standard because no urgent severity keyword is present.",
+KM-202410,Pothole,Standard,"Assigned Pothole because the description says ""Pothole""; priority is Standard because no urgent severity keyword is present.",
+KM-202411,Pothole,Standard,"Assigned Pothole because the description says ""pothole""; priority is Standard because no urgent severity keyword is present.",
+KM-202415,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Assigned Waste because the description says ""waste"", ""overflowing""; priority is Standard because no urgent severity keyword is present.",
+KM-202421,Road Damage,Urgent,"Assigned Road Damage because the description says ""broken"", ""sinking""; priority is Urgent because it includes severity words ""fell"", ""Hospital"".",
+KM-202422,Road Damage,Standard,"Assigned Road Damage because the description says ""Road surface"", ""buckled""; priority is Standard because no urgent severity keyword is present.",
+KM-202426,Heritage Damage,Standard,"Assigned Heritage Damage because the description says ""Heritage"", ""defaced""; priority is Standard because no urgent severity keyword is present.",
+KM-202430,Road Damage,Standard,"Assigned Road Damage because the description says ""subsided""; priority is Standard because no urgent severity keyword is present.",
+KM-202434,Heritage Damage,Standard,"Assigned Heritage Damage because the description says ""heritage"", ""stone not replaced""; priority is Standard because no urgent severity keyword is present.",
+KM-202436,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
+KM-202438,Other,Standard,"Assigned Other because the description does not map cleanly to the approved categories; priority is Standard because no urgent severity keyword is present; flagged NEEDS_REVIEW because the issue is ambiguous or outside the taxonomy.",NEEDS_REVIEW
