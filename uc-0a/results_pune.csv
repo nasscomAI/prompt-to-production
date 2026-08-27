@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,This is classified as Pothole securely because the specific word 'pothole' is mentioned in the description.,
+PM-202402,Pothole,Urgent,This is classified as Pothole with Urgent priority due to citing the word 'pothole' along with severity indicator 'child'.,
+PM-202406,Flooding,Standard,This is classified as Flooding securely because the specific word 'flood' is mentioned in the description.,
+PM-202408,Other,Standard,"The category is genuinely ambiguous because multiple indicators (Flooding, Drain Blockage) were found.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,This is classified as Streetlight securely because the specific word 'streetlight' is mentioned in the description.,
+PM-202411,Streetlight,Urgent,This is classified as Streetlight with Urgent priority due to citing the word 'streetlight' along with severity indicator 'hazard'.,
+PM-202413,Waste,Standard,This is classified as Waste securely because the specific word 'garbage' is mentioned in the description.,
+PM-202418,Noise,Standard,This is classified as Noise securely because the specific word 'music' is mentioned in the description.,
+PM-202419,Road Damage,Standard,This is classified as Road Damage securely because the specific word 'crack' is mentioned in the description.,
+PM-202420,Pothole,Urgent,This is classified as Pothole with Urgent priority due to citing the word 'hole' along with severity indicator 'injury'.,
+PM-202427,Flooding,Standard,This is classified as Flooding securely because the specific word 'flood' is mentioned in the description.,
+PM-202428,Waste,Standard,This is classified as Waste securely because the specific word 'dead animal' is mentioned in the description.,
+PM-202430,Other,Standard,"The category is genuinely ambiguous because multiple indicators (Streetlight, Heritage Damage) were found.",NEEDS_REVIEW
+PM-202433,Waste,Standard,This is classified as Waste securely because the specific word 'waste' is mentioned in the description.,
+PM-202446,Road Damage,Urgent,This is classified as Road Damage with Urgent priority due to citing the word 'broken' along with severity indicator 'fell'.,
