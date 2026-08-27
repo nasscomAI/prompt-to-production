@@ -1,0 +1,33 @@
+CITY MUNICIPAL CORPORATION - EMPLOYEE LEAVE POLICY SUMMARY
+==========================================================
+All obligations, rules, and conditions have been preserved exactly from the source policy.
+
+1.1 [SUMMARY] Governs leave entitlements for permanent and CMC contractual employees.
+1.2 [SUMMARY] Does not apply to daily wage workers or consultants.
+2.1 [SUMMARY] Permanent employees receive 18 days of paid annual leave per calendar year.
+2.2 [SUMMARY] Annual leave accrues at 1.5 days per month from joining date.
+2.3 [FLAGGED - VERBATIM] Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+2.4 [FLAGGED - VERBATIM] Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid.
+2.5 [FLAGGED - VERBATIM] Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+2.6 [FLAGGED - VERBATIM] Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+2.7 [FLAGGED - VERBATIM] Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+3.1 [SUMMARY] Employees receive 12 days of paid sick leave per calendar year.
+3.2 [FLAGGED - VERBATIM] Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+3.3 [SUMMARY] Sick leave cannot be carried forward to the following year.
+3.4 [FLAGGED - VERBATIM] Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+4.1 [SUMMARY] Female employees get 26 weeks paid maternity leave for the first two live births.
+4.2 [SUMMARY] Maternity leave is 12 weeks paid for a third or subsequent child.
+4.3 [SUMMARY] Male employees receive 5 days paid paternity leave, within 30 days of birth.
+4.4 [SUMMARY] Paternity leave cannot be split across multiple periods.
+5.1 [SUMMARY] Leave Without Pay (LWP) can be applied for only after exhausting all paid leaves.
+5.2 [FLAGGED - VERBATIM] LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+5.3 [FLAGGED - VERBATIM] LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+5.4 [SUMMARY] LWP periods do not count toward seniority, increments, or retirement benefits.
+6.1 [SUMMARY] Employees are entitled to gazetted public holidays declared by the State Government.
+6.2 [SUMMARY] Working on a public holiday entitles the employee to one compensatory off day within 60 days.
+6.3 [SUMMARY] Compensatory off cannot be encashed.
+7.1 [SUMMARY] Annual leave can only be encashed at retirement or resignation, up to 60 days.
+7.2 [FLAGGED - VERBATIM] Leave encashment during service is not permitted under any circumstances.
+7.3 [SUMMARY] Sick leave and LWP cannot be encashed under any circumstances.
+8.1 [SUMMARY] Leave grievances must be raised with HR within 10 working days of the decision.
+8.2 [SUMMARY] Grievances after 10 working days will not be considered unless written proof of exceptional circumstances is given.
