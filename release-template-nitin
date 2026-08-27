@@ -1,0 +1,120 @@
+Vibe Coding Workshop — Submission PR
+
+Name : Nitin Kumar Agarwal
+City : Noida
+Session Date : 2026-06-27
+Submission Date : 2026-07-05
+AI tool(s) used : Opnecode and Github Copilot
+
+Checklist — Complete Before Opening This PR
+
+✅ agents.md committed for all 4 UCs
+✅ skills.md committed for all 4 UCs
+✅ classifier.py runs on test_[city].csv without crash
+✅ results_[city].csv present in uc-0a/
+✅ app.py for UC-0B, UC-0C, UC-X — all run without crash
+✅ summary_hr_leave.txt present in uc-0b/
+✅ growth_output.csv present in uc-0c/
+✅ 4+ commits with meaningful messages following the formula
+✅ All sections below are filled in
+
+UC-0A — Complaint Classifier
+
+Which failure mode did you encounter first?
+
+Severity blindness — injury/child/school complaints were classified at Standard priority instead of Urgent.
+
+What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:
+
+"Priority must be one of: Urgent, Standard, Low. Use Urgent when description contains any severity keyword: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+How many rows in your results CSV match the answer key?
+
+15 out of 15 (self-checked against the schema; pending official key)
+
+Did all severity signal rows (injury/child/school/hospital) return Urgent?
+
+Yes — PM-202402 (school, child), PM-202411 (hazard), PM-202420 (injury), PM-202446 (fell) all returned Urgent.
+
+Your git commit message for UC-0A:
+
+[UC-0A Fix taxonomy drift and severity blindness: starter classifier was unimplemented and lacked enforced category/priority rules → implemented rule-based classification, strict schema handling, and CSV batch output for uc-0a
+
+UC-0B — Summary That Changes Meaning
+
+Which failure mode did you encounter?
+
+Condition dropping (a form of obligation softening) — clause 5.2's dual-approver requirement collapsed to a generic "approval required".
+List any clauses that were missing or weakened in the naive output (before your RICE fix):
+
+5.2 (dropped "Department Head AND HR Director"), 2.6 (dropped the 31 Dec forfeiture), 2.7 (dropped the Jan–Mar usage window).
+After your fix — are all 10 critical clauses present in summary_hr_leave.txt?
+
+Yes — all 10 (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) present, verified by the VERIFICATION footer reporting 10/10.
+Did the naive prompt add any information not in the source document (scope bleed)?
+
+Yes — phrases like "as is standard practice" appeared. The fixed version emits only source-derived clause text, so no scope bleed remains.
+Your git commit message for UC-0B:
+
+[UC-0B Fix clause omission and condition loss: the starter summary logic did not preserve required clauses or multi-condition obligations → implemented clause-based policy parsing, preserved all required rules, and generated the UC-0B summary output.
+
+UC-0C — Number That Looks Right
+
+What did the naive prompt return when you ran "Calculate growth from the data."?
+
+A single aggregate growth percentage across all wards/categories, with no mention of the missing values.
+
+Did it aggregate across all wards? Did it mention the 5 null rows?
+
+Yes it aggregated; no it did not mention the 5 nulls.
+After your fix — does your system refuse all-ward aggregation?
+
+Yes — --ward all (or *) exits with a REFUSED message and computes nothing. A missing --growth-type is also refused (never guessed).
+Does your growth_output.csv flag the 5 null rows rather than skipping them?
+
+Yes — all 5 NULLs are reported with their notes reason before computing, and any period whose current/prior value is NULL is set to n/a with an explanation.
+Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?
+
+Yes — 2024-07 = +33.1% and 2024-10 = −34.8%.
+
+Your git commit message for UC-0C:
+
+[UC-0C Fix silent aggregation: no scope in enforcement → restricted toper-ward per-category only
+
+UC-X — Ask My Documents
+
+What did the naive prompt return for the cross-document test question?
+
+A blended "Yes, personal phones can be used for approved remote work tools and email" — combining IT and HR policy into permission that exists in neither.
+
+Did it blend the IT and HR policies?
+
+Yes.
+
+After your fix — what does your system return for this question?
+
+Single-source IT answer: "Personal devices may be used to access CMC email and the CMC employee self-service portal only." — Source: policy_it_acceptable_use.txt, Section 3.1. No HR content blended in.
+
+Did your system use any hedging phrases in any answer?
+
+No — hedging phrases are forbidden by enforcement and none appear in output.
+Did all 7 test questions produce either a single-source cited answer or the exact refusal template?
+
+Yes — Q1-HR 2.6, Q2-IT 2.3, Q3-Finance 3.1, Q4-IT 3.1, Q5-exact refusal template, Q6-Finance 2.6, Q7-HR 5.2.
+
+Your git commit message for UC-X:
+
+[UC-X Fix cross-doc blending: no single-source rule → added single-source attribution enforcement
+
+CRAFT Loop Reflection
+
+Which CRAFT step was hardest across all UCs, and why?
+
+Defining enforcement rules precise enough to filter out all unwanted results. The naive prompts looked like day-to-day prompts until certain scenarios failed and needed changing.
+
+What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?
+
+The role definition on the agents.md file, AI generated a role of Policy summarisation agent, while manually adding Expert as the prefix changed the outcome favourably.
+
+Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:
+
+Building a release preparation agent at Iris Software, using RICE enforcement to enforce rules and bring consistency to the release objects.

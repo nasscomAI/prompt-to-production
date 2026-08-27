@@ -67,5 +67,5 @@ Scope bleed to look for: phrases like "as is standard practice", "typically in g
 
 ## Commit Formula
 ```
-UC-0B Fix [failure mode]: [why it failed] → [what you changed]
+UC-0B Fix clause omission + obligation softening: stubs had no parsing, condition preservation, or scope bleed guards → implemented retrieve_policy (multi-line clause parser), summarize_policy (verbatim tagging + clause completeness check + scope bleed detection), and agents.md/skills.md enforcement rules
 ```
