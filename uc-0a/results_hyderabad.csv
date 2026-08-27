@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+HY-202401,Pothole,Urgent,Contains reference to 'pothole'.,
+HY-202402,Streetlight,Standard,Contains reference to 'streetlight'.,
+HY-202403,Flooding,Standard,Contains reference to 'lake overflow'.,
+HY-202404,Heritage Damage,Standard,Contains reference to 'heritage'.,
+HY-202405,Noise,Standard,Contains reference to 'noise'.,
+HY-202406,Waste,Standard,Contains reference to 'garbage'.,
+HY-202407,Drain Blockage,Standard,Contains reference to 'drain'.,
+HY-202408,Road Damage,Urgent,Contains reference to 'manhole cover missing'.,
+HY-202409,Heat Hazard,Standard,Contains reference to 'heat'.,
+HY-202410,Road Damage,Standard,Contains reference to 'crack'.,
+HY-202411,Noise,Standard,Contains reference to 'loud'.,
+HY-202412,Heritage Damage,Standard,Contains reference to 'heritage'.,
+HY-202413,Streetlight,Urgent,Contains reference to 'streetlight'.,
+HY-202414,Flooding,Standard,Contains reference to 'flood'.,
+HY-202415,Other,Urgent,Description does not clearly match a known category.,NEEDS_REVIEW
