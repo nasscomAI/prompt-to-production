@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single complaint row into a specific category, priority, reason, and flag based on the description text.
+    input: A dictionary containing the complaint data (e.g., complaint_id, description, location).
+    output: A dictionary containing the classified fields (complaint_id, category, priority, reason, flag).
+    error_handling: If input lacks a description, sets category to 'Other' and flag to 'NEEDS_REVIEW'.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads a CSV of complaints, classifies each row, and writes the results to a new CSV file.
+    input: Two strings representing the input CSV path and the output CSV path.
+    output: Writes a CSV file and returns None.
+    error_handling: Flags missing fields, does not crash on malformed rows, and ensures output is written even if some rows fail.
