@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_data
+    description: Loads and validates the dataset from CSV.
+    input: CSV file path.
+    output: Parsed dataset rows.
+    error_handling: If file missing or columns invalid, stop execution.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: analyze_data
+    description: Performs UC-X analysis and produces structured results.
+    input: Dataset rows and query parameters.
+    output: Table or structured analysis results.
+    error_handling: If data missing, flag NEEDS_REVIEW.

@@ -1,0 +1,13 @@
+period,actual_spend,growth_percent,formula,notes
+2024-01,13.3,,,
+2024-02,12.2,-8.270676691729333,(current - previous) / previous * 100,
+2024-03,12.3,0.8196721311475527,(current - previous) / previous * 100,
+2024-04,13.4,8.943089430894306,(current - previous) / previous * 100,
+2024-05,14.1,5.22388059701492,(current - previous) / previous * 100,
+2024-06,14.8,4.964539007092206,(current - previous) / previous * 100,
+2024-07,19.7,33.1081081081081,(current - previous) / previous * 100,
+2024-08,20.2,2.5380710659898478,(current - previous) / previous * 100,
+2024-09,20.1,-0.4950495049504845,(current - previous) / previous * 100,
+2024-10,13.1,-34.82587064676618,(current - previous) / previous * 100,
+2024-11,14.2,8.396946564885493,(current - previous) / previous * 100,
+2024-12,12.7,-10.563380281690142,(current - previous) / previous * 100,

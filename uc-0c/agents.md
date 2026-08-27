@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Agent responsible for executing UC-0C task logic and producing
+  structured outputs according to defined rules.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Generate verifiable outputs that match the UC-0C schema and
+  processing rules.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent only uses input data provided to the program and must
+  not invent new data or fields.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Output must follow the defined schema.
+  - All required fields must be present.
+  - No new categories or values outside the allowed list.
+  - If input is unclear, return NEEDS_REVIEW.
