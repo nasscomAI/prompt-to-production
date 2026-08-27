@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole because the description contains 'pothole', with Standard priority.",
+PM-202402,Pothole,Urgent,"Classified as Pothole because the description contains 'pothole', with Urgent priority.",
+PM-202406,Flooding,Standard,"Classified as Flooding because the description contains 'flooded', with Standard priority.",
+PM-202408,Other,Low,"Classified as Other because the description contains 'flooded', 'Drain blocked', with Low priority.",NEEDS_REVIEW
+PM-202410,Other,Low,Classified as Other because the description 'Three consecutive streetlights out for 10 days. Area very dark at night.' does not clearly match an approved category.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"Classified as Streetlight because the description contains 'Streetlight', with Urgent priority.",
+PM-202413,Waste,Standard,"Classified as Waste because the description contains 'garbage', with Standard priority.",
+PM-202418,Noise,Standard,"Classified as Noise because the description contains 'music', with Standard priority.",
+PM-202419,Other,Low,Classified as Other because the description 'Road surface cracked and sinking near utility work done 1 month ago.' does not clearly match an approved category.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified as Other because the description 'Manhole cover missing. Risk of serious injury to cyclists.' does not clearly match an approved category.,NEEDS_REVIEW
+PM-202427,Other,Low,Classified as Other because the description 'Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.' does not clearly match an approved category.,NEEDS_REVIEW
+PM-202428,Other,Low,Classified as Other because the description 'Dead animal not removed for 36 hours. Health concern.' does not clearly match an approved category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Classified as Heritage Damage because the description contains 'Heritage', with Standard priority.",
+PM-202433,Waste,Standard,"Classified as Waste because the description contains 'waste', 'dumped', with Standard priority.",
+PM-202446,Other,Urgent,Classified as Other because the description 'Footpath tiles broken and upturned. Elderly resident fell last week.' does not clearly match an approved category.,NEEDS_REVIEW
