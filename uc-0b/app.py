@@ -1,12 +1,36 @@
-"""
-UC-0B app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
+import csv
 import argparse
 
+
+def process_budget(input_file, output_file):
+
+    with open(input_file, newline='', encoding="utf-8") as infile:
+        reader = csv.DictReader(infile)
+
+        rows = list(reader)
+
+    with open(output_file, "w", newline="", encoding="utf-8") as outfile:
+
+        fieldnames = reader.fieldnames
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+
+        writer.writeheader()
+
+        for row in rows:
+            writer.writerow(row)
+
+
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
+
+    args = parser.parse_args()
+
+    process_budget(args.input, args.output)
+
 
 if __name__ == "__main__":
     main()
