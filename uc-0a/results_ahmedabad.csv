@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The complaint mentions 'Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.' but does not clearly match a specific allowed category.,NEEDS_REVIEW
+AM-202402,Other,Standard,The complaint mentions 'Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.' but does not clearly match a specific allowed category.,NEEDS_REVIEW
+AM-202405,Other,Standard,The complaint mentions 'Dead trees with split branches. Fall risk to walkers. 3 trees affected.' but does not clearly match a specific allowed category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The complaint mentions 'Irrigation system broken. Grass dying in heatwave conditions.' and describes an excessive heat hazard.,
+AM-202407,Road Damage,Urgent,"The complaint mentions 'Broken bench and upturned paving. Child injured last week.' and describes cracked, broken, or sinking road infrastructure.",
+AM-202410,Pothole,Standard,The complaint mentions 'Pothole on main highway causing morning rush lane closure.' and points to a pothole or hole in the road.,
+AM-202414,Other,Standard,The complaint mentions 'Residential colony unlit after 9pm. Wiring theft reported.' but does not clearly match a specific allowed category.,NEEDS_REVIEW
+AM-202417,Waste,Low,"The complaint mentions 'Night market waste not cleared before morning. Heritage area affected.' and describes garbage, dumping, or uncollected waste.",
+AM-202421,Noise,Low,The complaint mentions 'Club music audible at residential buildings at 2am.' and describes unwanted noise or music.,
+AM-202424,Road Damage,Standard,"The complaint mentions 'Zoo approach road surface bubbling at 45°C. Visitor complaints.' and describes cracked, broken, or sinking road infrastructure.",
+AM-202429,Other,Standard,The complaint mentions 'River walk surface temperature unbearable. Installed temperature reads 52°C.' but does not clearly match a specific allowed category.,NEEDS_REVIEW
+AM-202431,Other,Standard,The complaint mentions 'Old city road subsidence near ancient step well. Heritage concern.' but does not clearly match a specific allowed category.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,The complaint mentions 'Black metal road dividers storing heat. Motorists reporting burns on contact.' and describes an excessive heat hazard.,
+AM-202444,Waste,Low,"The complaint mentions 'Restaurant waste bins overflowing on Sunday night. Health risk.' and describes garbage, dumping, or uncollected waste.",
+AM-202445,Road Damage,Standard,"The complaint mentions 'BRT shelter roof glass broken. Users exposed to full sun.' and describes cracked, broken, or sinking road infrastructure.",
