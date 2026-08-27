@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Mentioned 'large...' in description.,
+PM-202402,Pothole,Urgent,Found urgent keyword 'child'.,
+PM-202406,Flooding,Standard,Mentioned 'underpass...' in description.,
+PM-202408,Flooding,Standard,Mentioned 'bus...' in description.,
+PM-202410,Streetlight,Standard,Mentioned 'three...' in description.,
+PM-202411,Streetlight,Urgent,Found urgent keyword 'hazard'.,
+PM-202413,Waste,Standard,Mentioned 'overflowing...' in description.,
+PM-202418,Other,Standard,Mentioned 'wedding...' in description.,NEEDS_REVIEW
+PM-202419,Other,Standard,Mentioned 'road...' in description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Found urgent keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Mentioned 'bridge...' in description.,
+PM-202428,Other,Standard,Mentioned 'dead...' in description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Mentioned 'heritage...' in description.,
+PM-202433,Waste,Standard,Mentioned 'bulk...' in description.,
+PM-202446,Other,Urgent,Found urgent keyword 'fell'.,NEEDS_REVIEW
