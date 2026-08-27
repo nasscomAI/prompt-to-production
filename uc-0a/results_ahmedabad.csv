@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,The complaint contains 'Tarmac' but does not clearly match any single category.,NEEDS_REVIEW
+AM-202402,Other,Low,The complaint contains 'Metal' but does not clearly match any single category.,NEEDS_REVIEW
+AM-202405,Other,Low,The complaint contains 'Dead' but does not clearly match any single category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The complaint mentions 'heatwave' which indicates heat hazard.,
+AM-202407,Other,Urgent,The complaint mentions 'Child' which requires urgent attention.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The complaint mentions 'Pothole' which indicates pothole.,
+AM-202414,Other,Low,The complaint contains 'Residential' but does not clearly match any single category.,NEEDS_REVIEW
+AM-202417,Other,Low,The complaint contains 'Night' but does not clearly match any single category.,NEEDS_REVIEW
+AM-202421,Noise,Standard,The complaint mentions 'music' which indicates noise.,
+AM-202424,Road Damage,Standard,The complaint mentions 'road surface' which indicates road damage.,
+AM-202429,Other,Low,The complaint contains 'River' but does not clearly match any single category.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The complaint mentions 'Heritage' which indicates heritage damage.,
+AM-202435,Heat Hazard,Standard,The complaint mentions 'heat' which indicates heat hazard.,
+AM-202444,Waste,Standard,The complaint mentions 'waste' which indicates waste.,
+AM-202445,Other,Low,The complaint contains 'shelter' but does not clearly match any single category.,NEEDS_REVIEW

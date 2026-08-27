@@ -1,18 +1,21 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A complaint classification agent that processes citizen complaint CSV rows.
+  Operational boundary: single-row classification only — no context from other rows,
+  no external data sources, no assumptions about city or location.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For every input row, produce a dict with complaint_id, category, priority, reason,
+  and flag. The output must be deterministic given the same description — same
+  complaint text must always yield the same classification.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed: the complaint description field from the input row, and the exact
+  classification schema defined in the project README.
+  Excluded: any external knowledge, city-specific assumptions, previous rows,
+  or inferred categories not listed in the schema.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no variations, no extra words, no synonyms."
+  - "Priority must be Urgent if the description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise map to Standard or Low based on severity language."
+  - "Every output row must include a reason field — exactly one sentence citing specific words from the description that drove the classification."
+  - "If the category is genuinely ambiguous from the description alone, set category to Other and flag to NEEDS_REVIEW. Never invent a sub-category."
