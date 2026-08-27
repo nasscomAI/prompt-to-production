@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description states: ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.""",
+GH-202402,Other,Standard,"Description states: ""Market area flooded. Traders suffering losses. Drain completely blocked.""",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Description states: ""Main stormwater drain 100% blocked with construction debris.""",
+GH-202407,Drain Blockage,Standard,"Description states: ""Drain blocked and mosquito breeding. Dengue concern.""",
+GH-202410,Pothole,Standard,"Description states: ""Potholes causing vehicles to slow to 20kmph on fast road.""",
+GH-202411,Pothole,Urgent,"Description states: ""Pothole swallowed entire motorcycle wheel. Rider hospitalised.""",
+GH-202412,Pothole,Urgent,"Description states: ""School bus struggling to navigate 6 potholes in 200m stretch.""",
+GH-202417,Other,Standard,"Description states: ""Heritage zone garbage overflow. Tourist photographs showing piles of waste.""",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Description states: ""Construction drilling from 5am daily near residential towers.""",
+GH-202422,Road Damage,Urgent,"Description states: ""Road collapsed partially. Crater 1m deep near residential gate.""",
+GH-202424,Flooding,Standard,"Description states: ""Underpass floods in light rain. Cars regularly abandoned.""",
+GH-202428,Waste,Standard,"Description states: ""Post-market waste not cleared. Area unusable by Sunday morning.""",
+GH-202432,Noise,Standard,"Description states: ""24hr supermarket delivery trucks idling with engines on.""",
+GH-202448,Other,Standard,"Description states: ""Main drain blocked — entire locality at flooding risk this week.""",NEEDS_REVIEW
+GH-202438,Other,Standard,"Description states: ""Colony surrounded by fields that channel rainwater through main road.""",NEEDS_REVIEW
