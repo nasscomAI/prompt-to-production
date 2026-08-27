@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on specific description content: 'heat'.,
+AM-202407,Other,Urgent,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole based on specific description content: 'pothole'.,
+AM-202414,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste based on specific description content: 'waste'.,
+AM-202421,Noise,Standard,Classified as Noise based on specific description content: 'music'.,
+AM-202424,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202429,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage based on specific description content: 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on specific description content: 'heat'.,
+AM-202444,Flooding,Standard,Classified as Flooding based on specific description content: 'overflow'.,
+AM-202445,Other,Standard,"Category is genuinely ambiguous or input is empty, requiring manual review.",NEEDS_REVIEW
