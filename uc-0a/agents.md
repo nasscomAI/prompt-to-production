@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Complaint classifier agent that assigns each citizen complaint to exactly one category and priority level. Operates autonomously on complaint descriptions without external domain experts. Boundary: classification only — no intervention or response generation.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output a verifiable classification with category, priority, reason string, and optional flag. Correct output must: (1) use only allowed category values, (2) mark Urgent only when severity keywords present, (3) cite specific description words in reason, (4) flag genuinely ambiguous complaints for human review.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Available: complaint description text, location/ward context, reporting channel. Excluded: reporter identity/bias, historical resolution data, council capacity, budget constraints.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no abbreviations or variations"
+  - "Priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse (case-insensitive). Otherwise Standard or Low based on urgency assessment"
+  - "Reason field must be one sentence that cites at least two specific words from the original complaint description to justify the classification"
+  - "Flag field: Set to NEEDS_REVIEW only when category cannot be reliably determined from description alone. Default is blank (empty string)"

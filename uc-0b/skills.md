@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Load and parse HR leave policy document into structured numbered sections.
+    input: File path to policy .txt file (e.g., policy_hr_leave.txt).
+    output: Dictionary with clause numbers as keys (e.g., '2.3', '5.2'). Each entry contains clause_text, binding_verb, obligations list, and dependency conditions if multi-part.
+    error_handling: If file missing, raise FileNotFoundError. If clause structure malformed, preserve raw text and flag MALFORMED. If binding verb absent, flag UNCLEAR_OBLIGATION.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produce policy summary preserving all clauses and multi-condition requirements with no scope bleed.
+    input: Structured policy dictionary from retrieve_policy skill.
+    output: Summary text with clause references preserved. Multi-condition clauses listed with ALL conditions. Scope bleed indicators removed. Flagged clauses marked [QUOTED] or [CONFLICT] if needed.
+    error_handling: If clause has complex nested conditions, preserve verbatim. If binding verb missing, output flag UNCLEAR. If text >300 chars and cannot be simplified, quote verbatim and mark [QUOTED]."
