@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Low,"The description mentions ""Heritage lamp post knocked over by del"" which indicates a Streetlight issue.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"The description mentions ""Historic tram road cobblestones broken"" which indicates a Heritage Damage issue.",NEEDS_REVIEW
+KM-202405,Noise,Low,"The description mentions ""Wedding band playing near Tagore Museum"" which indicates a Noise issue.",
+KM-202409,Pothole,Low,"The description mentions ""access road full of potholes. Diplomatic compla"" which indicates a Pothole issue.",
+KM-202410,Pothole,Low,"The description mentions ""Pothole causing tyre blowou"" which indicates a Pothole issue.",
+KM-202411,Pothole,Standard,"The description mentions ""Deep pothole filling with rainwa"" which indicates a Pothole issue.",
+KM-202415,Drain Blockage,Low,"The description mentions ""residential complex draining directly onto pu"" which indicates a Drain Blockage issue.",
+KM-202418,Waste,Low,"The description mentions ""Tourist zone waste overflowing. Foreig"" which indicates a Waste issue.",
+KM-202421,Road Damage,Urgent,"The description mentions ""Footpath broken and sinking."" which indicates a Road Damage issue.",
+KM-202422,Road Damage,Low,"The description mentions ""Road surface buckled near bridge"" which indicates a Road Damage issue.",
+KM-202426,Heritage Damage,Low,"The description mentions ""Heritage residential buildin"" which indicates a Heritage Damage issue.",
+KM-202430,Other,Low,"No specific category keywords found in the description mentioning ""Road subsided near gas pipeline. Gas leak smell reported too"".",NEEDS_REVIEW
+KM-202434,Heritage Damage,Low,"The description mentions ""for utility work — heritage stone not replaced."" which indicates a Heritage Damage issue.",NEEDS_REVIEW
+KM-202436,Streetlight,Low,"The description mentions ""Entire colony substation tripped. Darkness for 3 nights."" which indicates a Streetlight issue.",
+KM-202438,Noise,Low,"The description mentions ""treet vendors using amplifiers illegally in herit"" which indicates a Noise issue.",NEEDS_REVIEW
