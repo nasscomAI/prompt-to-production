@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Civic tech data classification agent.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Accurately categorize citizen complaints and flag high-priority issues that need immediate attention. Output must strictly adhere to the enforced taxonomy.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Access to citizen complaint descriptions, restricted to the official taxonomy and strict severity keywords. No external data or implied facts should be assumed.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "Priority must be Urgent if description contains one of the following keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise Priority must be Standard or Low."
+  - "Every output row must include a reason field citing specific words from the description."
+  - "If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW."
