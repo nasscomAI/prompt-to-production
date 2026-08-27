@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads the .txt policy file and returns the content as structured numbered sections.
+    input: File path to the policy document (String).
+    output: Structured document content divided into numbered sections.
+    error_handling: Returns an error message if the file is missing, unreadable, or improperly formatted.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Takes the structured sections and produces a compliant summary with correct clause references.
+    input: Structured numbered sections from the policy document.
+    output: A meaning-preserving summary of the policy (String).
+    error_handling: Flags verbatim quotes if a clause cannot be summarized without losing meaning or dropping conditions.

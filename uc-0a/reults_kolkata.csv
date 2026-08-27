@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Complaint mentions 'Heritage...' related to heritage damage.,
+KM-202402,Road Damage,Standard,Complaint mentions 'Historic...' related to road damage.,
+KM-202405,Other,Standard,Could not confidently determine category from description alone.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Complaint mentions 'Airport...' related to pothole.,
+KM-202410,Pothole,Standard,Complaint mentions 'Pothole...' related to pothole.,
+KM-202411,Pothole,Standard,"Multiple category indicators found, requires manual review.",NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Complaint mentions 'New...' related to drain blockage.,
+KM-202418,Waste,Standard,Complaint mentions 'Tourist...' related to waste.,
+KM-202421,Road Damage,Urgent,Description contains severity keyword: 'hospital'.,
+KM-202422,Road Damage,Standard,Complaint mentions 'Road...' related to road damage.,
+KM-202426,Heritage Damage,Standard,Complaint mentions 'Heritage...' related to heritage damage.,
+KM-202430,Waste,Standard,Complaint mentions 'Road...' related to waste.,
+KM-202434,Heritage Damage,Standard,Complaint mentions 'Street...' related to heritage damage.,
+KM-202436,Streetlight,Standard,Complaint mentions 'Entire...' related to streetlight.,
+KM-202438,Heritage Damage,Standard,Complaint mentions 'Street...' related to heritage damage.,
