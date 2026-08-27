@@ -1,23 +1,4 @@
-"""
-UC-0B — Summary That Changes Meaning
-App implementation to generate structured, clause-accurate policy summaries.
-"""
-import argparse
-import os
-
-def retrieve_policy(file_path: str) -> str:
-    """Reads policy text file."""
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Policy document not found: {file_path}")
-    with open(file_path, "r", encoding="utf-8") as f:
-        return f.read()
-
-def summarize_policy(content: str) -> str:
-    """
-    Generates a complete policy summary ensuring no clause omission,
-    no multi-condition dropping, and zero scope bleed.
-    """
-    summary = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY (HR-POL-001 v2.3)
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY (HR-POL-001 v2.3)
 
 1. PURPOSE AND SCOPE
 - Clause 1.1: Applies to all permanent and contractual employees of City Municipal Corporation (CMC).
@@ -63,22 +44,3 @@ def summarize_policy(content: str) -> str:
 8. GRIEVANCES
 - Clause 8.1: Leave grievances MUST be raised with HR within 10 working days of decision.
 - Clause 8.2: Grievances after 10 working days will not be considered without written proof of exceptional circumstances.
-"""
-    return summary
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy_hr_leave.txt")
-    parser.add_argument("--output", required=True, help="Path to summary_hr_leave.txt")
-    args = parser.parse_args()
-
-    content = retrieve_policy(args.input)
-    summary = summarize_policy(content)
-
-    with open(args.output, "w", encoding="utf-8") as f:
-        f.write(summary)
-    
-    print(f"Summary generated successfully at {args.output}")
-
-if __name__ == "__main__":
-    main()

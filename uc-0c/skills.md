@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C Number That Looks Right
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads ward budget CSV file, validates schema, reports null count and row details.
+    input: file_path (str)
+    output: dataset (list of dicts) + null row report
+    error_handling: Identifies missing actual_spend rows and preserves notes for null explanation.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Calculates per-period MoM or YoY growth for a specific ward and category.
+    input: dataset, ward (str), category (str), growth_type (str)
+    output: table of per-period spend, growth percentage, formula used, and null flags
+    error_handling: Refuses all-ward aggregation or missing growth_type parameters.
