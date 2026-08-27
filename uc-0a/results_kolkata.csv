@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Ambiguous: matches both 'Streetlight' and 'Heritage Damage'.,NEEDS_REVIEW
+KM-202402,Other,Standard,Ambiguous: matches both 'Road Damage' and 'Heritage Damage'.,NEEDS_REVIEW
+KM-202405,Noise,Low,Noise because the description mentions 'band'.,
+KM-202409,Pothole,Standard,Pothole because the description mentions 'pothole'.,
+KM-202410,Pothole,Standard,Pothole because the description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Pothole because the description mentions 'pothole'.,
+KM-202415,Drain Blockage,Standard,Drain Blockage because the description mentions 'drain'.,
+KM-202418,Waste,Standard,Waste because the description mentions 'waste'.,
+KM-202421,Road Damage,Urgent,"Road Damage because the description mentions 'sinking', 'footpath', 'broken and'; urgent because it contains 'hospital'.",
+KM-202422,Road Damage,Standard,"Road Damage because the description mentions 'road surface', 'buckled'.",
+KM-202426,Heritage Damage,Standard,"Heritage Damage because the description mentions 'heritage', 'defaced'.",
+KM-202430,Road Damage,Standard,Road Damage because the description mentions 'subsided'.,
+KM-202434,Other,Standard,Ambiguous: matches both 'Road Damage' and 'Heritage Damage'.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Streetlight because the description mentions 'dark'.,
+KM-202438,Other,Standard,Ambiguous: matches both 'Noise' and 'Heritage Damage'.,NEEDS_REVIEW
