@@ -1,18 +1,10 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: Complaint Classifier specializing in public service request categorization and prioritization within defined urban infrastructure taxonomies.
+intent: A CSV output where every row contains a valid category from the allowed list, a priority level based on severity keywords, a one-sentence justification citing the original description, and an ambiguity flag where necessary.
+context: Access to the citizen complaint input CSV files; restricted to using only the provided classification schema (10 specific categories) and the defined list of nine severity keywords; prohibited from hallucinating sub-categories or using category variations.
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - Use only allowed category strings: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, or Other.
+  - Set priority to Urgent if description contains: injury, child, school, hospital, ambulance, fire, hazard, fell, or collapse.
+  - Ensure the reason field is exactly one sentence and cites specific words from the complaint description.
+  - Set the flag field to NEEDS_REVIEW only when the category is genuinely ambiguous; otherwise, leave blank.
+  - Prevent taxonomy drift by ensuring no category name variations exist across the dataset.
+  - Maintain absolute compliance with the specified schema to avoid severity blindness and missing justifications.

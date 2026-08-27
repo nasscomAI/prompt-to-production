@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Classified as Pothole based on the mention of key infrastructure terms.,
+Pothole,Urgent,High priority assigned because the description mentions child.,
+Flooding,Standard,Classified as Flooding based on the mention of key infrastructure terms.,
+Flooding,Standard,Classified as Flooding based on the mention of key infrastructure terms.,
+Streetlight,Standard,Classified as Streetlight based on the mention of key infrastructure terms.,
+Streetlight,Urgent,High priority assigned because the description mentions hazard.,
+Waste,Low,Classified as Waste based on the mention of key infrastructure terms.,
+Other,Standard,Classified as Other based on the mention of key infrastructure terms.,NEEDS_REVIEW
+Other,Standard,Classified as Other based on the mention of key infrastructure terms.,NEEDS_REVIEW
+Other,Urgent,High priority assigned because the description mentions injury.,NEEDS_REVIEW
+Flooding,Standard,Classified as Flooding based on the mention of key infrastructure terms.,
+Other,Standard,Classified as Other based on the mention of key infrastructure terms.,NEEDS_REVIEW
+Streetlight,Standard,Classified as Streetlight based on the mention of key infrastructure terms.,
+Waste,Standard,Classified as Waste based on the mention of key infrastructure terms.,
+Other,Urgent,High priority assigned because the description mentions fell.,NEEDS_REVIEW
