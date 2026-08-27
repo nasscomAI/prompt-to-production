@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Analyzes a single citizen complaint description and outputs its category, priority, and reason according to the classification schema.
+    input: String containing the complaint description.
+    output: A structured object with keys: category, priority, reason, flag.
+    error_handling: Returns "Other" for category and sets flag: NEEDS_REVIEW if description is ambiguous or unclassifiable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Processes an input CSV file of complaints, applies classify_complaint to each row, and writes the results to an output CSV file.
+    input: File paths for input and output CSVs.
+    output: A CSV file containing original data and new classification columns.
+    error_handling: Aborts with clear error if input file is missing or contains malformed data.
