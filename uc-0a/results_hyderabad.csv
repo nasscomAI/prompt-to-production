@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding because description explicitly states 'flood'. Marked Urgent because the severe keyword 'ambulance' was detected.,
+GH-202402,Flooding,Standard,Classified as Flooding because description explicitly states 'flood'. Marked Standard as no severe keywords were present.,
+GH-202406,Flooding,Standard,Classified as Flooding because description explicitly states 'rain'. Marked Standard as no severe keywords were present.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage because description explicitly states 'drain block'. Marked Standard as no severe keywords were present.,
+GH-202410,Pothole,Standard,Classified as Pothole because description explicitly states 'pothole'. Marked Standard as no severe keywords were present.,
+GH-202411,Pothole,Urgent,Classified as Pothole because description explicitly states 'pothole'. Marked Urgent because the severe keyword 'hospital' was detected.,
+GH-202412,Pothole,Urgent,Classified as Pothole because description explicitly states 'pothole'. Marked Urgent because the severe keyword 'school' was detected.,
+GH-202417,Waste,Standard,Classified as Waste because description explicitly states 'garbage'. Marked Standard as no severe keywords were present.,
+GH-202420,Other,Standard,Classified as Other since no recognized category keywords were found. Marked Standard as no severe keywords were present.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classified as Other since no recognized category keywords were found. Marked Urgent because the severe keyword 'collapse' was detected.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding because description explicitly states 'flood'. Marked Standard as no severe keywords were present.,
+GH-202428,Waste,Standard,Classified as Waste because description explicitly states 'waste'. Marked Standard as no severe keywords were present.,
+GH-202432,Other,Standard,Classified as Other since no recognized category keywords were found. Marked Standard as no severe keywords were present.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage because description explicitly states 'drain block'. Marked Standard as no severe keywords were present.,
+GH-202438,Flooding,Standard,Classified as Flooding because description explicitly states 'rain'. Marked Standard as no severe keywords were present.,
