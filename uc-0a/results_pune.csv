@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category based on matched pothole; priority based on no urgent keywords found.,
+PM-202402,Pothole,Urgent,"Category based on matched pothole; priority based on urgent keywords found: child, school.",
+PM-202406,Flooding,Standard,Category based on matched flood; priority based on no urgent keywords found.,
+PM-202408,Other,Low,"Category based on multiple category signals: Flooding, Drain Blockage; priority based on no urgent keywords found.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category based on matched streetlight, streetlights; priority based on no urgent keywords found.",
+PM-202411,Streetlight,Urgent,Category based on matched streetlight; priority based on urgent keywords found: hazard.,
+PM-202413,Waste,Standard,"Category based on matched garbage, overflowing garbage; priority based on no urgent keywords found.",
+PM-202418,Other,Low,Category based on no clear category keywords found; priority based on no urgent keywords found.,NEEDS_REVIEW
+PM-202419,Other,Low,Category based on no clear category keywords found; priority based on no urgent keywords found.,NEEDS_REVIEW
+PM-202420,Drain Blockage,Urgent,Category based on matched manhole; priority based on urgent keywords found: injury.,
+PM-202427,Flooding,Standard,Category based on matched flood; priority based on no urgent keywords found.,
+PM-202428,Other,Low,Category based on no clear category keywords found; priority based on no urgent keywords found.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Category based on matched heritage; priority based on no urgent keywords found.,
+PM-202433,Waste,Standard,"Category based on matched waste, dump; priority based on no urgent keywords found.",
+PM-202446,Other,Urgent,Category based on no clear category keywords found; priority based on urgent keywords found: fell.,NEEDS_REVIEW
