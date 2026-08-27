@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected keyword 'pothole' in the complaint.,
+PM-202402,Pothole,Urgent,Detected keyword 'child' in the complaint.,
+PM-202406,Flooding,Standard,Detected keyword 'flood' in the complaint.,
+PM-202408,Flooding,Standard,Detected keyword 'flood' in the complaint.,
+PM-202410,Streetlight,Standard,Detected keyword 'streetlight' in the complaint.,
+PM-202411,Streetlight,Urgent,Detected keyword 'hazard' in the complaint.,
+PM-202413,Waste,Standard,Detected keyword 'garbage' in the complaint.,
+PM-202418,Other,Standard,Description unclear for classification.,NEEDS_REVIEW
+PM-202419,Other,Standard,Description unclear for classification.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Detected keyword 'injury' in the complaint.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected keyword 'flood' in the complaint.,
+PM-202428,Other,Standard,Description unclear for classification.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Detected keyword 'dark' in the complaint.,
+PM-202433,Waste,Standard,Detected keyword 'waste' in the complaint.,
+PM-202446,Other,Urgent,Detected keyword 'fell' in the complaint.,NEEDS_REVIEW
