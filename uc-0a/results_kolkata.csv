@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Description contains multiple complaint types (Streetlight, Heritage Damage), requires manual review",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage because description mentioned 'historic',
+KM-202405,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202409,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202410,Pothole,Standard,Classified as Pothole because description mentioned 'pothole',
+KM-202411,Pothole,Standard,Classified as Pothole because description mentioned 'pothole',
+KM-202415,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste because description mentioned 'waste',
+KM-202421,Other,Urgent,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202422,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because description mentioned 'heritage',
+KM-202430,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because description mentioned 'heritage',
+KM-202436,Other,Standard,Description does not clearly match any defined category,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because description mentioned 'heritage',
