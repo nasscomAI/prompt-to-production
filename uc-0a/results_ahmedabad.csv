@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Tarmac surface melting at...'.,NEEDS_REVIEW
+AM-202402,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Metal bus shelter reaching...'.,NEEDS_REVIEW
+AM-202405,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Dead trees with split...'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Assigned 'Heat Hazard' category and 'Standard' priority based on the context starting with 'Irrigation system broken. Grass...'.,
+AM-202407,Other,Urgent,Assigned 'Other' category and 'Urgent' priority because the description explicitly mentions the severity keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Assigned 'Pothole' category and 'Standard' priority based on the context starting with 'Pothole on main highway...'.,
+AM-202414,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Residential colony unlit after...'.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Assigned 'Waste' category and 'Standard' priority based on the context starting with 'Night market waste not...'.,
+AM-202421,Noise,Standard,Assigned 'Noise' category and 'Standard' priority based on the context starting with 'Club music audible at...'.,
+AM-202424,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Zoo approach road surface...'.,NEEDS_REVIEW
+AM-202429,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'River walk surface temperature...'.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Assigned 'Heritage Damage' category and 'Standard' priority based on the context starting with 'Old city road subsidence...'.,
+AM-202435,Heat Hazard,Standard,Assigned 'Heat Hazard' category and 'Standard' priority based on the context starting with 'Black metal road dividers...'.,
+AM-202444,Waste,Standard,Assigned 'Waste' category and 'Standard' priority based on the context starting with 'Restaurant waste bins overflowing...'.,
+AM-202445,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'BRT shelter roof glass...'.,NEEDS_REVIEW

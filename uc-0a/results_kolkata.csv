@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Assigned 'Heritage Damage' category and 'Standard' priority based on the context starting with 'Heritage lamp post knocked...'.,
+KM-202402,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Historic tram road cobblestones...'.,NEEDS_REVIEW
+KM-202405,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Wedding band playing near...'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Assigned 'Pothole' category and 'Standard' priority based on the context starting with 'Airport access road full...'.,
+KM-202410,Pothole,Standard,Assigned 'Pothole' category and 'Standard' priority based on the context starting with 'Pothole causing tyre blowouts....'.,
+KM-202411,Pothole,Standard,Assigned 'Pothole' category and 'Standard' priority based on the context starting with 'Deep pothole filling with...'.,
+KM-202415,Flooding,Standard,Assigned 'Flooding' category and 'Standard' priority based on the context starting with 'New residential complex draining...'.,
+KM-202418,Waste,Standard,Assigned 'Waste' category and 'Standard' priority based on the context starting with 'Tourist zone waste overflowing....'.,
+KM-202421,Other,Urgent,Assigned 'Other' category and 'Urgent' priority because the description explicitly mentions the severity keyword 'hospital'.,NEEDS_REVIEW
+KM-202422,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Road surface buckled near...'.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Assigned 'Heritage Damage' category and 'Standard' priority based on the context starting with 'Heritage residential building exterior...'.,
+KM-202430,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Road subsided near gas...'.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Assigned 'Heritage Damage' category and 'Standard' priority based on the context starting with 'Street paving removed for...'.,
+KM-202436,Other,Standard,Assigned 'Other' category and 'Standard' priority based on the context starting with 'Entire colony substation tripped....'.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Assigned 'Heritage Damage' category and 'Standard' priority based on the context starting with 'Street vendors using amplifiers...'.,
