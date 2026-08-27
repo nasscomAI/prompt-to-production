@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized as 'Pothole' due to keyword 'pothole'. No severity keywords found.,
+PM-202402,Pothole,Urgent,Categorized as 'Pothole' due to keyword 'pothole'. Priority upgraded to Urgent due to severity keyword 'child'.,
+PM-202406,Flooding,Standard,Categorized as 'Flooding' due to keyword 'flood'. No severity keywords found.,
+PM-202408,Flooding,Standard,Categorized as 'Flooding' due to keyword 'flood'. No severity keywords found.,
+PM-202410,Streetlight,Standard,Categorized as 'Streetlight' due to keyword 'streetlight'. No severity keywords found.,
+PM-202411,Streetlight,Urgent,Categorized as 'Streetlight' due to keyword 'streetlight'. Priority upgraded to Urgent due to severity keyword 'hazard'.,
+PM-202413,Waste,Standard,Categorized as 'Waste' due to keyword 'garbage'. No severity keywords found.,
+PM-202418,Other,Standard,Could not determine category from description. No severity keywords found.,NEEDS_REVIEW
+PM-202419,Other,Standard,Could not determine category from description. No severity keywords found.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Could not determine category from description. Priority upgraded to Urgent due to severity keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized as 'Flooding' due to keyword 'flood'. No severity keywords found.,
+PM-202428,Other,Standard,Could not determine category from description. No severity keywords found.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Categorized as 'Heritage Damage' due to keyword 'heritage'. No severity keywords found.,
+PM-202433,Waste,Standard,Categorized as 'Waste' due to keyword 'waste'. No severity keywords found.,
+PM-202446,Other,Urgent,Could not determine category from description. Priority upgraded to Urgent due to severity keyword 'fell'.,NEEDS_REVIEW
