@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,Standard processing.,
+PM-202402,Pothole,Urgent,Contains urgent keyword: school.,
+PM-202406,Other,Low,Standard processing. Unclear category.,NEEDS_REVIEW
+PM-202408,Other,Low,Standard processing. Multiple categories found.,NEEDS_REVIEW
+PM-202410,Streetlight,Low,Standard processing.,
+PM-202411,Streetlight,Urgent,Contains urgent keyword: hazard.,
+PM-202413,Waste,Low,Standard processing.,
+PM-202418,Other,Low,Standard processing. Unclear category.,NEEDS_REVIEW
+PM-202419,Road Damage,Low,Standard processing.,
+PM-202420,Other,Urgent,Contains urgent keyword: injury. Unclear category.,NEEDS_REVIEW
+PM-202427,Other,Low,Standard processing. Unclear category.,NEEDS_REVIEW
+PM-202428,Other,Low,Standard processing. Unclear category.,NEEDS_REVIEW
+PM-202430,Other,Low,Standard processing. Multiple categories found.,NEEDS_REVIEW
+PM-202433,Other,Low,Standard processing. Multiple categories found.,NEEDS_REVIEW
+PM-202446,Other,Urgent,Contains urgent keyword: fell. Unclear category.,NEEDS_REVIEW
