@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+AM-202402,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+AM-202405,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,The classification is based on explicitly citing the word 'heatwave' from the description.,
+AM-202407,Other,Urgent,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The classification is based on explicitly citing the word 'pothole' from the description.,
+AM-202414,Streetlight,Standard,The classification is based on explicitly citing the word 'unlit' from the description.,
+AM-202417,Heritage Damage,Standard,"The complaint is ambiguous, citing conflicting words like 'waste' and 'heritage'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,The classification is based on explicitly citing the word 'music' from the description.,
+AM-202424,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+AM-202429,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The classification is based on explicitly citing the word 'heritage' from the description.,
+AM-202435,Heat Hazard,Standard,The classification is based on explicitly citing the word 'heat' from the description.,
+AM-202444,Waste,Standard,The classification is based on explicitly citing the word 'waste' from the description.,
+AM-202445,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW

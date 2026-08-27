@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The classification is based on explicitly citing the word 'pothole' from the description.,
+PM-202402,Pothole,Urgent,The classification is based on explicitly citing the word 'pothole' from the description.,
+PM-202406,Flooding,Standard,The classification is based on explicitly citing the word 'flooded' from the description.,
+PM-202408,Flooding,Standard,"The complaint is ambiguous, citing conflicting words like 'flooded' and 'water'.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The classification is based on explicitly citing the word 'streetlights' from the description.,
+PM-202411,Streetlight,Urgent,The classification is based on explicitly citing the word 'streetlight' from the description.,
+PM-202413,Waste,Standard,The classification is based on explicitly citing the word 'garbage' from the description.,
+PM-202418,Noise,Standard,The classification is based on explicitly citing the word 'music' from the description.,
+PM-202419,Road Damage,Standard,The classification is based on explicitly citing the word 'cracked' from the description.,
+PM-202420,Other,Urgent,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+PM-202427,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+PM-202428,Other,Standard,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The complaint is ambiguous, citing conflicting words like 'dark' and 'heritage'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,The classification is based on explicitly citing the word 'waste' from the description.,
+PM-202446,Other,Urgent,The complaint does not contain specific keywords mapping to allowed categories.,NEEDS_REVIEW
