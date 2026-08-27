@@ -55,7 +55,6 @@ Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
 ## Skills to Define in skills.md
 - `retrieve_policy` — loads .txt policy file, returns content as structured numbered sections
 - `summarize_policy` — takes structured sections, produces compliant summary with clause references
-
 ---
 
 ## What Will Fail From the Naive Prompt
