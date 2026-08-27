@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Low,Contains 'melting' → Heat Hazard,
+AM-202402,Heat Hazard,Standard,Contains 'temperatures' → Heat Hazard,
+AM-202405,Other,Standard,No category keyword matched description 'Dead trees with split branches. Fall risk to walkers. 3 tree',NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Contains 'heatwave' → Heat Hazard,
+AM-202407,Road Damage,Urgent,Contains 'upturned' → Road Damage; severity keyword 'injury' found in description,
+AM-202410,Pothole,Standard,Contains 'pothole' → Pothole,
+AM-202414,Streetlight,Standard,Contains 'unlit' → Streetlight,
+AM-202417,Waste,Standard,Contains 'waste' → Waste,
+AM-202421,Noise,Standard,Contains 'music' → Noise,
+AM-202424,Heat Hazard,Standard,Contains '45°c' → Heat Hazard,
+AM-202429,Heat Hazard,Standard,Contains 'temperature' → Heat Hazard,
+AM-202431,Other,Standard,Tie between Road Damage and Heritage Damage — genuinely ambiguous from 'Old city road subsidence near ancient step well. Heritage co',NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Contains 'heat' → Heat Hazard,
+AM-202444,Waste,Standard,Contains 'waste' → Waste,
+AM-202445,Heat Hazard,Standard,Contains 'full sun' → Heat Hazard,
