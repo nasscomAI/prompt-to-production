@@ -4,6 +4,19 @@
 
 ---
 
+## Workflow Overview
+
+```
+RICE prompt (agents.md) → skills.md → classifier.py → results CSV
+```
+
+1. Define the agent's behaviour in `agents.md` using the RICE framework (Role · Intent · Context · Enforcement).
+2. Decompose into reusable skills in `skills.md`.
+3. Use your AI tool, guided by those files, to implement `classifier.py`.
+4. Run against the test CSV and review the output for the failure modes listed below.
+
+---
+
 ## Your Input File
 ```
 ../data/city-test-files/test_[your-city].csv
@@ -52,6 +65,17 @@ Then look for:
 3. No reason field in the output
 4. Category names that are not in the allowed list above
 5. Confident classification on genuinely ambiguous complaints
+
+---
+
+## File Checklist
+
+| File | Status | Purpose |
+|---|---|---|
+| `agents.md` | ✅ Complete | RICE prompt defining agent role, intent, context, and enforcement rules |
+| `skills.md` | 🔲 TODO | Decompose agent into `classify_complaint` and `batch_classify` skills |
+| `classifier.py` | 🔲 TODO | Implement skills using your AI tool guided by agents.md |
+| `results_[city].csv` | 🔲 TODO | Output from running classifier.py |
 
 ---
 

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"""lamp post"" indicates Streetlight.",
+KM-202402,Other,Standard,no clear category keyword found — classified as Other.,NEEDS_REVIEW
+KM-202405,Other,Standard,no clear category keyword found — classified as Other.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"""pothole"" indicates Pothole.",
+KM-202410,Pothole,Standard,"""pothole"" indicates Pothole.",
+KM-202411,Pothole,Standard,"""pothole"" indicates Pothole.",
+KM-202415,Drain Blockage,Standard,"""drain"" indicates Drain Blockage.",
+KM-202418,Waste,Standard,"""waste"" indicates Waste.",
+KM-202421,Other,Urgent,"no clear category keyword found — classified as Other; ""hospital"" triggers Urgent priority.",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,"""road surface"" indicates Road Damage.",
+KM-202426,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage.",
+KM-202430,Other,Standard,no clear category keyword found — classified as Other.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage.",
+KM-202436,Other,Standard,no clear category keyword found — classified as Other.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"""heritage"" indicates Heritage Damage.",
