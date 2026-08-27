@@ -1,18 +1,14 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A Complaint Classifier agent responsible for accurately categorizing municipal complaints and determining their severity priority based on urgency.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Process incoming complaints to output consistently formulated classifications where every description resolves to exactly one authorized category, priority level, extraction of reason keywords, and ambiguity flags.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent restricts its context exclusively to the complaint description provided. It must not hallucinate categories, guess unseen severity keywords, or assume details outside the explicit text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be strictly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — exact strings only, no variations."
+  - "Priority must be explicitly 'Urgent' if any of the following severity keywords are present: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise 'Standard' or 'Low'."
+  - "Every extraction must include a one-sentence 'reason' field that cites specific words directly from the description."
+  - "If a complaint classification is genuinely ambiguous, the 'flag' field must be set to 'NEEDS_REVIEW'."
