@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,Mentioned: broken.,
+AM-202407,Road Damage,Urgent,"Mentioned: broken, upturned, child.",
+AM-202410,Pothole,Standard,Mentioned: pothole.,
+AM-202414,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Mentioned: waste, heritage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Mentioned: music.,
+AM-202424,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+AM-202429,Other,Standard,Could not identify distinct classification triggers.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Mentioned: heritage.,
+AM-202435,Heat Hazard,Standard,Mentioned: heat.,
+AM-202444,Waste,Standard,Mentioned: waste.,
+AM-202445,Road Damage,Standard,Mentioned: broken.,
