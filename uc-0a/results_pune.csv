@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"description mentions ""pothole""",
+PM-202402,Pothole,Urgent,"description mentions ""School""",
+PM-202406,Flooding,Standard,"description mentions ""flood""",
+PM-202408,Flooding,Standard,"description mentions ""flood""",
+PM-202410,Streetlight,Standard,"description mentions ""streetlight""",
+PM-202411,Streetlight,Urgent,"description mentions ""hazard""",
+PM-202413,Waste,Standard,"description mentions ""garbage""",
+PM-202418,Other,Standard,"no taxonomy match in description: ""Wedding venue playing music past midnight on weeknights.""",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"description mentions ""Road surface""",
+PM-202420,Drain Blockage,Urgent,"description mentions ""injury""",
+PM-202427,Flooding,Standard,"description mentions ""flood""",
+PM-202428,Other,Standard,"no taxonomy match in description: ""Dead animal not removed for 36 hours. Health concern.""",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"description mentions ""Heritage""",
+PM-202433,Waste,Standard,"description mentions ""dump""",
+PM-202446,Other,Urgent,"severity term ""fell"" present but category unclear from description",NEEDS_REVIEW
