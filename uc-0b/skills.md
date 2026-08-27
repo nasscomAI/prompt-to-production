@@ -1,16 +1,31 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: retrieve_policy
+  description: >
+    Loads HR leave policy text file and extracts structured numbered clauses.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  input:
+    type: text file
+    format: policy document
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  output:
+    type: structured sections
+    format: numbered policy clauses
+
+  error_handling: >
+    Preserve clause numbering and avoid skipping malformed sections.
+
+- name: summarize_policy
+  description: >
+    Produces compliant policy summaries while preserving obligations,
+    conditions, approvals, penalties, and timelines.
+
+  input:
+    type: structured policy sections
+    format: numbered clauses
+
+  output:
+    type: text summary
+    format: clause-referenced summary
+
+  error_handling: >
+    If a clause cannot be summarized safely without meaning loss,
+    quote it directly and flag it clearly.
