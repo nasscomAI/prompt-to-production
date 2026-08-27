@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,No severity keywords detected. Assigned 'Pothole' based on 'pothole'.,
+PM-202402,Pothole,Urgent,Contains severity keyword 'child'. Assigned 'Pothole' based on 'pothole'.,
+PM-202406,Flooding,Standard,No severity keywords detected. Assigned 'Flooding' based on 'flood'.,
+PM-202408,Other,Standard,"No severity keywords detected. Ambiguous: matches multiple categories (Flooding, Drain Blockage).",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,No severity keywords detected. Assigned 'Streetlight' based on 'streetlight'.,
+PM-202411,Streetlight,Urgent,Contains severity keyword 'hazard'. Assigned 'Streetlight' based on 'streetlight'.,
+PM-202413,Waste,Standard,No severity keywords detected. Assigned 'Waste' based on 'garbage'.,
+PM-202418,Noise,Standard,No severity keywords detected. Assigned 'Noise' based on 'music'.,
+PM-202419,Road Damage,Standard,No severity keywords detected. Assigned 'Road Damage' based on 'road surface cracked'.,
+PM-202420,Drain Blockage,Urgent,Contains severity keyword 'injury'. Assigned 'Drain Blockage' based on 'manhole'.,
+PM-202427,Flooding,Standard,No severity keywords detected. Assigned 'Flooding' based on 'flood'.,
+PM-202428,Waste,Standard,No severity keywords detected. Assigned 'Waste' based on 'dead animal'.,
+PM-202430,Other,Standard,"No severity keywords detected. Ambiguous: matches multiple categories (Streetlight, Heritage Damage).",NEEDS_REVIEW
+PM-202433,Waste,Standard,No severity keywords detected. Assigned 'Waste' based on 'waste'.,
+PM-202446,Road Damage,Urgent,Contains severity keyword 'fell'. Assigned 'Road Damage' based on 'footpath tiles broken'.,
