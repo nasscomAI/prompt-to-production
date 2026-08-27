@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'us shelter reaching dangerous temperatures. Commuters refusing to use'.,
+AM-202405,Other,Standard,Needs review because the description 'Dead trees with split branches. Fall risk to walkers. 3 trees affected' does not clearly match the approved categories.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'system broken. Grass dying in heatwave conditions'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage because the description says 'Broken bench and upturned paving. Child injured las'; priority is Urgent due to 'Child'.,
+AM-202410,Pothole,Standard,Classified as Pothole because the description says 'Pothole on main highway causing morning rush lane cl'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight because the description says 'Residential colony unlit after 9pm. Wiring theft reported'.,
+AM-202417,Waste,Standard,Classified as Waste because the description says 'Night market waste not cleared before morning. Heritage area af'.,
+AM-202421,Noise,Standard,Classified as Noise because the description says 'Club music audible at residential buildings at 2am'.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'oach road surface bubbling at 45°C. Visitor complaints'.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'River walk surface temperature unbearable. Installed temperature reads 52°C'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because the description says 'Old city road subsidence near ancient step well. Heritage concern'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'k metal road dividers storing heat. Motorists reporting burns on contact'.,
+AM-202444,Waste,Standard,Classified as Waste because the description says 'Restaurant waste bins overflowing on Sunday night. Health ris'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because the description says 'lass broken. Users exposed to full sun'.,
