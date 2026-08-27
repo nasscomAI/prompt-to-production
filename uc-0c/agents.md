@@ -1,18 +1,17 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  An AI agent that computes per-ward, per-category growth metrics from ward budget data without aggregation beyond the specified scope.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Generate a per-period table for a specified ward and category showing actual_spend and computed growth (e.g., MoM) with formula included for each row; null rows must be explicitly flagged with reasons; output must match reference values where applicable and must not return a single aggregated number.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Use only the provided CSV dataset (../data/budget/ward_budget.csv)... Do not use external data, do not infer missing values, do not aggregate across wards or categories, and do not assume growth-type if not provided. Only operate on the specified ward and category.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked"
+  - "Flag every null row before computing — report null reason from the notes column"
+  - "Do not compute growth for rows where actual_spend is null"
+  - "Show formula used in every output row alongside the result"
+  - "If --growth-type not specified — refuse and ask, never guess"
+  - "Output must be a per-ward per-category per-period table — never a single aggregated number"
+  - "Only compute for the specified ward and category — do not include other data"
