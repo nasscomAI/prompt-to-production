@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard based on the description: 'Tarmac surface melting at 44°C'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on the description: 'Metal bus shelter reaching dangerous temperatures'.,
+AM-202405,Other,Standard,Classified as Other based on the description: 'Dead trees with split branches'.,NEEDS_REVIEW
+AM-202406,Other,Standard,Classified as Other based on the description: 'Irrigation system broken'.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,Urgent priority is assigned due to the phrase: 'Child injured last week'.,
+AM-202410,Pothole,Standard,Classified as Pothole based on the description: 'Pothole on main highway causing morning rush lane closure'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on the description: 'Residential colony unlit after 9pm'.,
+AM-202417,Waste,Standard,Classified as Waste based on the description: 'Night market waste not cleared before morning'.,
+AM-202421,Noise,Standard,Classified as Noise based on the description: 'Club music audible at residential buildings at 2am'.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard based on the description: 'Zoo approach road surface bubbling at 45°C'.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on the description: 'River walk surface temperature unbearable'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage based on the description: 'Old city road subsidence near ancient step well'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on the description: 'Black metal road dividers storing heat'.,
+AM-202444,Waste,Standard,Classified as Waste based on the description: 'Restaurant waste bins overflowing on Sunday night'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard based on the description: 'BRT shelter roof glass broken'.,
