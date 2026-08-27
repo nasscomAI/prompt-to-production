@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole (Standard) based on description snippet 'Large pothole 60cm wide causing tyre damage' citing pothole reported in description.,
+PM-202402,Pothole,Urgent,Classified as Pothole (Urgent) based on description snippet 'Deep pothole near bus stop' citing pothole reported in description.,
+PM-202406,Flooding,Standard,Classified as Flooding (Standard) based on description snippet 'Underpass flooded knee-deep after 2hrs rain' citing flooding or waterlogging noted in description.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage (Standard) based on description snippet 'Bus stand flooded' citing drain blockage noted in description.,
+PM-202410,Streetlight,Standard,Classified as Streetlight (Standard) based on description snippet 'Three consecutive streetlights out for 10 days' citing streetlight or lighting issue noted in description.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight (Urgent) based on description snippet 'Streetlight flickering and sparking' citing streetlight or lighting issue noted in description.,
+PM-202413,Waste,Standard,Classified as Waste (Standard) based on description snippet 'Overflowing garbage bins near vegetable market' citing waste management issue noted in description.,
+PM-202418,Noise,Standard,Classified as Noise (Standard) based on description snippet 'Wedding venue playing music past midnight on weeknights' citing noise disturbance noted in description.,
+PM-202419,Road Damage,Standard,Classified as Road Damage (Standard) based on description snippet 'Road surface cracked and sinking near utility work done 1 month ago' citing road or footpath damage noted in description.,
+PM-202420,Road Damage,Urgent,Classified as Road Damage (Urgent) based on description snippet 'Manhole cover missing' citing road or footpath damage noted in description.,
+PM-202427,Flooding,Standard,Classified as Flooding (Standard) based on description snippet 'Bridge approach floods in 30mins of rain' citing flooding or waterlogging noted in description.,
+PM-202428,Waste,Standard,Classified as Waste (Standard) based on description snippet 'Dead animal not removed for 36 hours' citing waste management issue noted in description.,
+PM-202430,Streetlight,Standard,"Classified as Streetlight (Standard) based on description snippet 'Heritage street, lights out' citing lights out in heritage area.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste (Standard) based on description snippet 'Bulk waste from apartment renovation dumped on public road' citing waste management issue noted in description.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage (Urgent) based on description snippet 'Footpath tiles broken and upturned' citing road or footpath damage noted in description.,
