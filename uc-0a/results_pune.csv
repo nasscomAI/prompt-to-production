@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Pothole because description mentions ""large"", ""pothole"", ""60cm"".",
+PM-202402,Pothole,Urgent,"Pothole because description mentions ""deep"", ""pothole"", ""near"".",NEEDS_REVIEW
+PM-202406,Flooding,Standard,"Flooding because description mentions ""underpass"", ""flooded"", ""knee-deep"".",NEEDS_REVIEW
+PM-202408,Flooding,Standard,"Flooding because description mentions ""stand"", ""flooded"", ""passengers"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Streetlight because description mentions ""three"", ""consecutive"", ""streetlights"".",NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"Streetlight because description mentions ""streetlight"", ""flickering"", ""sparking"".",
+PM-202413,Waste,Standard,"Waste because description mentions ""overflowing"", ""garbage"", ""bins"".",NEEDS_REVIEW
+PM-202418,Noise,Standard,"Noise because description mentions ""wedding"", ""venue"", ""playing"".",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"Road Damage because description mentions ""road"", ""surface"", ""cracked"".",NEEDS_REVIEW
+PM-202420,Drain Blockage,Urgent,"Drain Blockage because description mentions ""manhole"", ""cover"", ""missing"".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Flooding because description mentions ""bridge"", ""approach"", ""floods"".",NEEDS_REVIEW
+PM-202428,Other,Standard,"Other because description mentions ""dead"", ""animal"", ""removed"".",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Heritage Damage because description mentions ""heritage"", ""street"", ""lights"".",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Waste because description mentions ""bulk"", ""waste"", ""from"".",NEEDS_REVIEW
+PM-202446,Road Damage,Urgent,"Road Damage because description mentions ""footpath"", ""tiles"", ""broken"".",NEEDS_REVIEW
