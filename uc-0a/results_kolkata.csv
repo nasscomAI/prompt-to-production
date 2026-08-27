@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Categorized based on the specific mentioning of the word 'heritage'.,
+KM-202402,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+KM-202405,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Categorized based on the specific mentioning of the word 'pothole'.,
+KM-202410,Pothole,Standard,Categorized based on the specific mentioning of the word 'pothole'.,
+KM-202411,Pothole,Standard,Categorized based on the specific mentioning of the word 'pothole'.,
+KM-202415,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Categorized based on the specific mentioning of the word 'waste'.,
+KM-202421,Other,Urgent,Priority marked Urgent due to mention of 'hospital' in the complaint.,NEEDS_REVIEW
+KM-202422,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Categorized based on the specific mentioning of the word 'heritage'.,
+KM-202430,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Categorized based on the specific mentioning of the word 'heritage'.,
+KM-202436,Other,Standard,The description was ambiguous requiring manual categorization.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Categorized based on the specific mentioning of the word 'heritage'.,
