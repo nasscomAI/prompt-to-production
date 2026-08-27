@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions ""pothole"", indicating Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions ""pothole"", indicating Pothole.",
+PM-202406,Flooding,Standard,"The description mentions ""flood"", indicating Flooding.",
+PM-202408,Other,Standard,The description does not provide enough specific information to determine one allowed category.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions ""streetlight"", indicating Streetlight.",
+PM-202411,Streetlight,Urgent,"The description mentions ""streetlight"", indicating Streetlight.",
+PM-202413,Waste,Standard,"The description mentions ""garbage"", indicating Waste.",
+PM-202418,Other,Standard,The description does not provide enough specific information to determine one allowed category.,NEEDS_REVIEW
+PM-202419,Other,Standard,The description does not provide enough specific information to determine one allowed category.,NEEDS_REVIEW
+PM-202420,Other,Urgent,"The description contains ""injury"" but the category is ambiguous from the description.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description mentions ""flood"", indicating Flooding.",
+PM-202428,Other,Standard,The description does not provide enough specific information to determine one allowed category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions ""heritage"", indicating Heritage Damage.",
+PM-202433,Waste,Standard,"The description mentions ""waste"", indicating Waste.",
+PM-202446,Other,Urgent,"The description contains ""fell"" but the category is ambiguous from the description.",NEEDS_REVIEW
