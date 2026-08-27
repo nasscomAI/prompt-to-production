@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"This complaint was classified as Flooding because it mentions ambulance, flood.",
+GH-202402,Flooding,Standard,"This complaint was classified as Flooding because it mentions drain, flood.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,This complaint was classified as Drain Blockage because it mentions drain.,
+GH-202407,Drain Blockage,Standard,This complaint was classified as Drain Blockage because it mentions drain.,
+GH-202410,Pothole,Standard,This complaint was classified as Pothole because it mentions pothole.,
+GH-202411,Pothole,Urgent,"This complaint was classified as Pothole because it mentions pothole, hospital.",
+GH-202412,Pothole,Urgent,"This complaint was classified as Pothole because it mentions school, pothole.",
+GH-202417,Flooding,Standard,"This complaint was classified as Flooding because it mentions waste, hot, garbage, overflow, heritage.",NEEDS_REVIEW
+GH-202420,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+GH-202422,Pothole,Urgent,"This complaint was classified as Pothole because it mentions crater, collapse.",
+GH-202424,Flooding,Standard,This complaint was classified as Flooding because it mentions flood.,
+GH-202428,Waste,Standard,This complaint was classified as Waste because it mentions waste.,
+GH-202432,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+GH-202448,Flooding,Standard,"This complaint was classified as Flooding because it mentions drain, flood.",NEEDS_REVIEW
+GH-202438,Other,Standard,"No specific keywords were found, so it was categorized as Other.",

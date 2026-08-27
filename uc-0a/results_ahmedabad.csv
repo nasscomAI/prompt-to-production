@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202402,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202405,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202406,Heat Hazard,Standard,This complaint was classified as Heat Hazard because it mentions heat.,
+AM-202407,Other,Urgent,This complaint was classified as Other because it mentions child.,
+AM-202410,Pothole,Standard,This complaint was classified as Pothole because it mentions pothole.,
+AM-202414,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202417,Waste,Standard,"This complaint was classified as Waste because it mentions waste, heritage.",NEEDS_REVIEW
+AM-202421,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202424,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202429,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
+AM-202431,Heritage Damage,Standard,This complaint was classified as Heritage Damage because it mentions heritage.,
+AM-202435,Heat Hazard,Standard,This complaint was classified as Heat Hazard because it mentions heat.,
+AM-202444,Flooding,Standard,"This complaint was classified as Flooding because it mentions waste, overflow.",NEEDS_REVIEW
+AM-202445,Other,Standard,"No specific keywords were found, so it was categorized as Other.",
