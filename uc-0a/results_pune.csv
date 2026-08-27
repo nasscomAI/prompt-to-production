@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions large, pothole, 60cm, which matches the Pothole category.",
+PM-202402,Pothole,Urgent,The description includes urgency words such as 'child' and supports an Urgent priority.,
+PM-202406,Flooding,Standard,"The description mentions underpass, flooded, knee-deep, which matches the Flooding category.",
+PM-202408,Flooding,Standard,"The description mentions stand, flooded, passengers, which matches the Flooding category.",
+PM-202410,Streetlight,Standard,"The description mentions three, consecutive, streetlights, which matches the Streetlight category.",
+PM-202411,Streetlight,Urgent,The description includes urgency words such as 'hazard' and supports an Urgent priority.,
+PM-202413,Waste,Standard,"The description mentions overflowing, garbage, bins, which matches the Waste category.",
+PM-202418,Noise,Standard,"The description mentions wedding, venue, playing, which matches the Noise category.",
+PM-202419,Road Damage,Standard,"The description mentions road, surface, cracked, which matches the Road Damage category.",
+PM-202420,Drain Blockage,Urgent,The description includes urgency words such as 'injury' and supports an Urgent priority.,
+PM-202427,Flooding,Standard,"The description mentions bridge, approach, floods, which matches the Flooding category.",
+PM-202428,Other,Standard,"The description does not clearly match one of the allowed categories, so it is marked for review.",NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The description mentions heritage, street,, lights, which matches the Streetlight category.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description mentions bulk, waste, from, which matches the Waste category.",
+PM-202446,Road Damage,Urgent,The description includes urgency words such as 'fell' and supports an Urgent priority.,
