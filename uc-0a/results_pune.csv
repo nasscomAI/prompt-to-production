@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description cites: pothole.,
+PM-202402,Pothole,Urgent,"Description cites: pothole, school, child.",
+PM-202406,Flooding,Standard,Description cites: flood.,
+PM-202408,Other,Standard,"Description cites: drain block, flood.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description cites: streetlight.,
+PM-202411,Streetlight,Urgent,"Description cites: streetlight, hazard.",
+PM-202413,Waste,Standard,Description cites: garbage.,
+PM-202418,Noise,Standard,Description cites: music.,
+PM-202419,Other,Standard,Cannot clearly determine category or priority from description alone.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Description cites: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description cites: flood.,
+PM-202428,Other,Standard,Cannot clearly determine category or priority from description alone.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Description cites: heritage.,
+PM-202433,Waste,Standard,Description cites: waste.,
+PM-202446,Other,Urgent,Description cites: fell.,NEEDS_REVIEW
