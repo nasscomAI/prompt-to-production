@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Receives one complaint row and determines its exact category, priority severity, explicit reasoning, and ambiguity flag.
+    input: "One complaint row containing at least a description field (string)."
+    output: "Returns category (string), priority (string), reason (string), and flag (string)."
+    error_handling: "If input is invalid, ambiguous, or lacks detail, flag it as NEEDS_REVIEW and categorize as Other."
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads an input CSV containing multiple complaints, applies classification per row, and writes to an output CSV.
+    input: "input_path (string): path to input csv, output_path (string): path to write results."
+    output: "A CSV file saved at output_path containing classified details for each row."
+    error_handling: "Do not crash on bad rows; write them with processing error as reason. Create file even if some rows fail."
