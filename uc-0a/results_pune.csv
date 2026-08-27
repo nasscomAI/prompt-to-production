@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Detected 'Pothole' from: large pothole 60cm wide causing tyre damage. three vehicles affected this week.,
+PM-202402,Pothole,Urgent,Detected 'Pothole' from: deep pothole near bus stop. school children at risk during morning hours.,
+PM-202406,Flooding,Standard,Detected 'Flooding' from: underpass flooded knee-deep after 2hrs rain. commuters stranded.,
+PM-202408,Flooding,Standard,Detected 'Flooding' from: bus stand flooded. passengers standing in water. drain blocked.,
+PM-202410,Streetlight,Standard,Detected 'Streetlight' from: three consecutive streetlights out for 10 days. area very dark at night.,
+PM-202411,Streetlight,Urgent,Detected 'Streetlight' from: streetlight flickering and sparking. electrical hazard reported.,
+PM-202413,Waste,Standard,Detected 'Waste' from: overflowing garbage bins near vegetable market. smell affecting shoppers.,
+PM-202418,Other,Standard,Category unclear from: wedding venue playing music past midnight on weeknights.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Detected 'Road Damage' from: road surface cracked and sinking near utility work done 1 month ago.,
+PM-202420,Other,Urgent,Category unclear from: manhole cover missing. risk of serious injury to cyclists.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Detected 'Flooding' from: bridge approach floods in 30mins of rain. bridge becomes inaccessible.,
+PM-202428,Other,Standard,Category unclear from: dead animal not removed for 36 hours. health concern.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Detected 'Heritage Damage' from: heritage street, lights out. safety concern for pedestrians after dark.",
+PM-202433,Waste,Standard,Detected 'Waste' from: bulk waste from apartment renovation dumped on public road.,
+PM-202446,Other,Urgent,Category unclear from: footpath tiles broken and upturned. elderly resident fell last week.,NEEDS_REVIEW
