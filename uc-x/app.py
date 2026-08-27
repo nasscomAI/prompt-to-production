@@ -1,12 +1,23 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+import os
+
+DATA_FOLDER = "../data/policy-documents"
+
+def read_documents():
+
+    for file in os.listdir(DATA_FOLDER):
+
+        path = os.path.join(DATA_FOLDER, file)
+
+        with open(path, "r", encoding="utf-8") as f:
+            text = f.read()
+
+        print("\nDocument:", file)
+        print(text[:200])
+
 
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    read_documents()
+
 
 if __name__ == "__main__":
     main()
