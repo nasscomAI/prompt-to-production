@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,"Contains severity keyword(s): child, school",
+PM-202406,Flooding,Standard,Description mentions 'flood'.,
+PM-202408,Flooding,Standard,Description mentions 'flood'.,
+PM-202410,Streetlight,Standard,Description mentions 'streetlight' or 'lights out'.,
+PM-202411,Other,Urgent,Contains severity keyword(s): hazard,NEEDS_REVIEW
+PM-202413,Waste,Standard,Description mentions 'waste' or 'garbage'.,
+PM-202418,Noise,Standard,Description mentions 'noise' or 'music'.,
+PM-202419,Road Damage,Standard,Description mentions road damage/cracks.,
+PM-202420,Drain Blockage,Urgent,Contains severity keyword(s): injury,
+PM-202427,Flooding,Standard,Description mentions 'flood'.,
+PM-202428,Other,Standard,Could not definitively determine category from description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Description mentions 'streetlight' or 'lights out'.,
+PM-202433,Waste,Standard,Description mentions 'waste' or 'garbage'.,
+PM-202446,Other,Urgent,Contains severity keyword(s): fell,NEEDS_REVIEW
