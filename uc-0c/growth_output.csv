@@ -1,0 +1,18 @@
+record_type,period,ward,category,budgeted_amount,actual_spend,previous_actual_spend,growth_type,growth_percent,formula,status,notes
+growth,2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,,MoM,,,NO_PREVIOUS,
+growth,2024-02,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.2,13.3,MoM,-8.3%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-03,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.3,12.2,MoM,+0.8%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.4,12.3,MoM,+8.9%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-05,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.1,13.4,MoM,+5.2%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-06,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.8,14.1,MoM,+5.0%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-07,Ward 1 – Kasba,Roads & Pothole Repair,13.0,19.7,14.8,MoM,+33.1%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-08,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.2,19.7,MoM,+2.5%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-09,Ward 1 – Kasba,Roads & Pothole Repair,13.0,20.1,20.2,MoM,-0.5%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.1,20.1,MoM,-34.8%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-11,Ward 1 – Kasba,Roads & Pothole Repair,13.0,14.2,13.1,MoM,+8.4%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+growth,2024-12,Ward 1 – Kasba,Roads & Pothole Repair,13.0,12.7,14.2,MoM,-10.6%,((current_actual - previous_actual) / previous_actual) * 100,OK,
+null_flag,2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,,,MoM,,,NULL_ACTUAL,Data not submitted by ward office
+null_flag,2024-05,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,,,MoM,,,NULL_ACTUAL,Equipment procurement delay
+null_flag,2024-07,Ward 4 – Warje,Roads & Pothole Repair,10.3,,,MoM,,,NULL_ACTUAL,Audit freeze — figures under review
+null_flag,2024-08,Ward 3 – Kothrud,Parks & Greening,3.3,,,MoM,,,NULL_ACTUAL,Project suspended — pending approval
+null_flag,2024-11,Ward 1 – Kasba,Waste Management,5.9,,,MoM,,,NULL_ACTUAL,Contractor change — billing delayed
