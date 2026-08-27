@@ -14,7 +14,7 @@ Fork this repo to your GitHub account, then clone your fork locally.
 **Step 2 — Create your branch — one branch for the entire session**
 Name it exactly:
 ```bash
-git checkout -b participant/[your-name]-[city]
+git checkout -b participant/[nancy]-[gwalior]
 # Example: participant/arshdeep-pune
 ```
 
