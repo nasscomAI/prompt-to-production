@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,"The description mentions ""pothole"".",
+Pothole,Urgent,"The description mentions ""pothole"" and ""child"".",
+Flooding,Standard,"The description mentions ""flood"".",
+Flooding,Standard,"The description mentions ""flood"", ""drain"".",NEEDS_REVIEW
+Streetlight,Standard,"The description mentions ""streetlight"".",
+Streetlight,Urgent,"The description mentions ""streetlight"" and ""hazard"".",
+Waste,Standard,"The description mentions ""garbage"".",
+Noise,Standard,"The description mentions ""music"".",
+Road Damage,Standard,"The description mentions ""road surface"".",
+Drain Blockage,Urgent,"The description mentions ""manhole"" and ""injury"".",
+Flooding,Standard,"The description mentions ""flood"".",
+Waste,Standard,"The description mentions ""dead animal"".",
+Streetlight,Standard,"The description mentions ""lights out"", ""heritage"".",NEEDS_REVIEW
+Waste,Standard,"The description mentions ""waste"".",
+Road Damage,Urgent,"The description mentions ""footpath"" and ""fell"".",
