@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Heat Hazard inferred from '44°c, melting'; priority Standard (no severity term present).",
+AM-202402,Heat Hazard,Standard,Heat Hazard inferred from 'dangerous temperatures'; priority Standard (no severity term present).,
+AM-202405,Other,Standard,Other assigned: no category keywords matched; priority Standard (no severity term present).,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Heat Hazard inferred from 'heatwave'; priority Standard (no severity term present).,
+AM-202407,Road Damage,Urgent,Road Damage inferred from 'upturned'; marked Urgent due to severity term 'child'.,
+AM-202410,Pothole,Standard,Pothole inferred from 'pothole'; priority Standard (no severity term present).,
+AM-202414,Streetlight,Standard,Streetlight inferred from 'unlit'; priority Standard (no severity term present).,
+AM-202417,Heritage Damage,Standard,Heritage Damage inferred from 'heritage'; priority Standard (no severity term present).,
+AM-202421,Noise,Standard,Noise inferred from 'music'; priority Standard (no severity term present).,
+AM-202424,Road Damage,Standard,Road Damage inferred from 'road surface'; priority Standard (no severity term present); flagged for review due to competing category signals.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Heat Hazard inferred from '52°c, unbearable, surface temperature'; priority Standard (no severity term present).",
+AM-202431,Heritage Damage,Standard,Heritage Damage inferred from 'heritage'; priority Standard (no severity term present).,
+AM-202435,Heat Hazard,Standard,"Heat Hazard inferred from 'burns on contact, storing heat'; priority Standard (no severity term present).",
+AM-202444,Waste,Standard,"Waste inferred from 'waste bin, waste bins, overflowing, overflow'; priority Standard (no severity term present).",
+AM-202445,Heat Hazard,Standard,Heat Hazard inferred from 'full sun'; priority Standard (no severity term present).,

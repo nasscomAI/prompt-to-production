@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Streetlight inferred from 'lamp post'; priority Standard (no severity term present); flagged for review due to competing category signals.,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Road Damage inferred from 'cobblestones'; priority Standard (no severity term present).,
+KM-202405,Noise,Standard,Noise inferred from 'band playing'; priority Standard (no severity term present).,
+KM-202409,Pothole,Standard,"Pothole inferred from 'pothole, potholes'; priority Standard (no severity term present).",
+KM-202410,Pothole,Standard,Pothole inferred from 'pothole'; priority Standard (no severity term present).,
+KM-202411,Pothole,Standard,Pothole inferred from 'pothole'; priority Standard (no severity term present); flagged for review due to competing category signals.,NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Drain Blockage inferred from 'drain'; priority Standard (no severity term present).,
+KM-202418,Waste,Standard,"Waste inferred from 'overflowing, overflow'; priority Standard (no severity term present).",
+KM-202421,Road Damage,Urgent,"Road Damage inferred from 'footpath'; marked Urgent due to severity term 'hospital, fell'.",
+KM-202422,Road Damage,Standard,Road Damage inferred from 'road surface'; priority Standard (no severity term present).,
+KM-202426,Heritage Damage,Standard,Heritage Damage inferred from 'heritage'; priority Standard (no severity term present).,
+KM-202430,Road Damage,Standard,Road Damage inferred from 'subsided'; priority Standard (no severity term present).,
+KM-202434,Heritage Damage,Standard,Heritage Damage inferred from 'heritage'; priority Standard (no severity term present).,
+KM-202436,Streetlight,Standard,"Streetlight inferred from 'darkness, substation'; priority Standard (no severity term present).",
+KM-202438,Heritage Damage,Standard,Heritage Damage inferred from 'heritage'; priority Standard (no severity term present).,
