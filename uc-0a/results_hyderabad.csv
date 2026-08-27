@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classification based on keywords: flood, flooded, ambulance found in description.",
+GH-202402,Flooding,Standard,"Classification based on keywords: flood, flooded, drain found in description.",
+GH-202406,Drain Blockage,Standard,Classification based on keywords: drain found in description.,
+GH-202407,Drain Blockage,Standard,Classification based on keywords: drain found in description.,
+GH-202410,Pothole,Standard,"Classification based on keywords: pothole, potholes found in description.",
+GH-202411,Pothole,Urgent,"Classification based on keywords: pothole, hospital found in description.",
+GH-202412,Pothole,Urgent,"Classification based on keywords: pothole, potholes, school found in description.",
+GH-202417,Waste,Standard,"Classification based on keywords: garbage, waste, heritage found in description.",
+GH-202420,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Classification based on keywords: collapse found in description.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classification based on keywords: flood found in description.,
+GH-202428,Waste,Standard,Classification based on keywords: waste found in description.,
+GH-202432,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Classification based on keywords: flood, flooding, drain found in description.",
+GH-202438,Other,Standard,No strong keyword match found; classified as Other.,NEEDS_REVIEW
