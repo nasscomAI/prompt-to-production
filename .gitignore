@@ -5,3 +5,9 @@ __pycache__/
 *.pyc
 .venv/
 tutor-only/
+
+# Environment variables — NEVER commit API keys
+.env
+
+# Classifier output files
+results_*.csv
