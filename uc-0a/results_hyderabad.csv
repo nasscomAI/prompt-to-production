@@ -1,0 +1,16 @@
+description,category,priority,reason,flag
+Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,Flooding,Urgent,Classified as Flooding because description mentions 'Underpass flooded after 1hr rain',
+Market area flooded. Traders suffering losses. Drain completely blocked.,Flooding,Standard,Classified as Flooding because description mentions 'Market area flooded',NEEDS_REVIEW
+Main stormwater drain 100% blocked with construction debris.,Flooding,Standard,Classified as Flooding because description mentions 'Main stormwater drain 100% blocked with construction debris',NEEDS_REVIEW
+Drain blocked and mosquito breeding. Dengue concern.,Drain Blockage,Standard,Classified as Drain Blockage because description mentions 'Drain blocked and mosquito breeding',
+Potholes causing vehicles to slow to 20kmph on fast road.,Pothole,Standard,Classified as Pothole because description mentions 'Potholes causing vehicles to slow to 20kmph on fast road',
+Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Pothole,Urgent,Classified as Pothole because description mentions 'Pothole swallowed entire motorcycle wheel',
+School bus struggling to navigate 6 potholes in 200m stretch.,Pothole,Urgent,Classified as Pothole because description mentions 'School bus struggling to navigate 6 potholes in 200m stretch',
+Heritage zone garbage overflow. Tourist photographs showing piles of waste.,Waste,Standard,Classified as Waste because description mentions 'Heritage zone garbage overflow',
+Construction drilling from 5am daily near residential towers.,Other,Standard,Classified as Other because description mentions 'Construction drilling from 5am daily near residential towers',
+Road collapsed partially. Crater 1m deep near residential gate.,Pothole,Urgent,Classified as Pothole because description mentions 'Crater 1m deep near residential gate',
+Underpass floods in light rain. Cars regularly abandoned.,Flooding,Standard,Classified as Flooding because description mentions 'Underpass floods in light rain',NEEDS_REVIEW
+Post-market waste not cleared. Area unusable by Sunday morning.,Waste,Standard,Classified as Waste because description mentions 'Post-market waste not cleared',
+24hr supermarket delivery trucks idling with engines on.,Other,Standard,Classified as Other because description mentions '24hr supermarket delivery trucks idling with engines on.',
+Main drain blocked — entire locality at flooding risk this week.,Flooding,Standard,Classified as Flooding because description mentions 'Main drain blocked — entire locality at flooding risk this w',NEEDS_REVIEW
+Colony surrounded by fields that channel rainwater through main road.,Flooding,Standard,Classified as Flooding because description mentions 'Colony surrounded by fields that channel rainwater through m',
