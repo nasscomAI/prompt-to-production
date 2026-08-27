@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Matched other using wording from the report: Tarmac, surface, melting.",NEEDS_REVIEW
+AM-202402,Other,Standard,"Matched other using wording from the report: Metal, shelter, reaching.",NEEDS_REVIEW
+AM-202405,Other,Standard,"Matched other using wording from the report: Dead, trees, with.",NEEDS_REVIEW
+AM-202406,Other,Standard,"Matched other using wording from the report: Irrigation, system, broken.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Matched road damage using wording from the report: Child, Broken, bench.",
+AM-202410,Pothole,Standard,"Matched pothole using wording from the report: Pothole, main, highway.",
+AM-202414,Other,Standard,"Matched other using wording from the report: Residential, colony, unlit.",NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Night, market, waste.",
+AM-202421,Noise,Standard,"Matched noise using wording from the report: Club, music, audible.",
+AM-202424,Road Damage,Standard,"Matched road damage using wording from the report: approach, road, surface.",
+AM-202429,Other,Standard,"Matched other using wording from the report: River, walk, surface.",NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Matched heritage damage using wording from the report: city, road, subsidence.",
+AM-202435,Other,Standard,"Matched other using wording from the report: Black, metal, road.",NEEDS_REVIEW
+AM-202444,Waste,Standard,"Matched waste using wording from the report: Restaurant, waste, bins.",
+AM-202445,Other,Standard,"Matched other using wording from the report: shelter, roof, glass.",NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Heritage, lamp, post.",
+KM-202402,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Historic, tram, road.",
+KM-202405,Noise,Standard,"Matched noise using wording from the report: Wedding, band, playing.",
+KM-202409,Pothole,Standard,"Matched pothole using wording from the report: Airport, access, road.",
+KM-202410,Pothole,Standard,"Matched pothole using wording from the report: Pothole, causing, tyre.",
+KM-202411,Pothole,Standard,"Matched pothole using wording from the report: Deep, pothole, filling.",
+KM-202415,Other,Standard,"Matched other using wording from the report: residential, complex, draining.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Matched waste using wording from the report: Tourist, zone, waste.",
+KM-202421,Road Damage,Urgent,"Matched road damage using wording from the report: Hospital, fell, Footpath.",
+KM-202422,Road Damage,Standard,"Matched road damage using wording from the report: Road, surface, buckled.",
+KM-202426,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Heritage, residential, building.",
+KM-202430,Waste,Standard,"Matched waste using wording from the report: Road, subsided, near.",
+KM-202434,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Street, paving, removed.",
+KM-202436,Other,Standard,"Matched other using wording from the report: Entire, colony, substation.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Matched heritage damage using wording from the report: Street, vendors, using.",

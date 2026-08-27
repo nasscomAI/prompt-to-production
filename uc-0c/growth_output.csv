@@ -1,0 +1,18 @@
+row_type,period,ward,category,growth_type,actual_spend,prior_period,prior_actual_spend,growth_pct,formula,notes
+null_flag,2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,,,,,NULL,n/a — actual_spend missing,Data not submitted by ward office
+null_flag,2024-05,Ward 5 – Hadapsar,Streetlight Maintenance,,,,,NULL,n/a — actual_spend missing,Equipment procurement delay
+null_flag,2024-07,Ward 4 – Warje,Roads & Pothole Repair,,,,,NULL,n/a — actual_spend missing,Audit freeze — figures under review
+null_flag,2024-08,Ward 3 – Kothrud,Parks & Greening,,,,,NULL,n/a — actual_spend missing,Project suspended — pending approval
+null_flag,2024-11,Ward 1 – Kasba,Waste Management,,,,,NULL,n/a — actual_spend missing,Contractor change — billing delayed
+growth,2024-01,Ward 1 – Kasba,Roads & Pothole Repair,MoM,13.3,,,,MoM = ((current - previous_month) / previous_month) * 100,No prior month in series
+growth,2024-02,Ward 1 – Kasba,Roads & Pothole Repair,MoM,12.2,2024-01,13.3,-8.3%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-03,Ward 1 – Kasba,Roads & Pothole Repair,MoM,12.3,2024-02,12.2,+0.8%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-04,Ward 1 – Kasba,Roads & Pothole Repair,MoM,13.4,2024-03,12.3,+8.9%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-05,Ward 1 – Kasba,Roads & Pothole Repair,MoM,14.1,2024-04,13.4,+5.2%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-06,Ward 1 – Kasba,Roads & Pothole Repair,MoM,14.8,2024-05,14.1,+5.0%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-07,Ward 1 – Kasba,Roads & Pothole Repair,MoM,19.7,2024-06,14.8,+33.1%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-08,Ward 1 – Kasba,Roads & Pothole Repair,MoM,20.2,2024-07,19.7,+2.5%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-09,Ward 1 – Kasba,Roads & Pothole Repair,MoM,20.1,2024-08,20.2,-0.5%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-10,Ward 1 – Kasba,Roads & Pothole Repair,MoM,13.1,2024-09,20.1,-34.8%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-11,Ward 1 – Kasba,Roads & Pothole Repair,MoM,14.2,2024-10,13.1,+8.4%,MoM = ((current - previous_month) / previous_month) * 100,
+growth,2024-12,Ward 1 – Kasba,Roads & Pothole Repair,MoM,12.7,2024-11,14.2,-10.6%,MoM = ((current - previous_month) / previous_month) * 100,
