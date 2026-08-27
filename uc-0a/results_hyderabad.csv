@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as 'Flooding' based on description: ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk."" — priority set to Urgent due to keyword 'ambulance'.",
+GH-202402,Flooding,Standard,"Classified as 'Flooding' based on description: ""Market area flooded. Traders suffering losses. Drain completely blocked."" — priority set to Standard.",
+GH-202406,Drain Blockage,Standard,"Classified as 'Drain Blockage' based on description: ""Main stormwater drain 100% blocked with construction debris."" — priority set to Standard.",
+GH-202407,Drain Blockage,Standard,"Classified as 'Drain Blockage' based on description: ""Drain blocked and mosquito breeding. Dengue concern."" — priority set to Standard.",
+GH-202410,Pothole,Standard,"Classified as 'Pothole' based on description: ""Potholes causing vehicles to slow to 20kmph on fast road."" — priority set to Standard.",
+GH-202411,Pothole,Urgent,"Classified as 'Pothole' based on description: ""Pothole swallowed entire motorcycle wheel. Rider hospitalised."" — priority set to Urgent due to keyword 'hospitalised'.",
+GH-202412,Pothole,Urgent,"Classified as 'Pothole' based on description: ""School bus struggling to navigate 6 potholes in 200m stretch."" — priority set to Urgent due to keyword 'school'.",
+GH-202417,Waste,Standard,"Classified as 'Waste' based on description: ""Heritage zone garbage overflow. Tourist photographs showing piles of waste."" — priority set to Standard.",
+GH-202420,Noise,Standard,"Classified as 'Noise' based on description: ""Construction drilling from 5am daily near residential towers."" — priority set to Standard.",
+GH-202422,Road Damage,Urgent,"Classified as 'Road Damage' based on description: ""Road collapsed partially. Crater 1m deep near residential gate."" — priority set to Urgent due to keyword 'collapsed'.",
+GH-202424,Flooding,Standard,"Classified as 'Flooding' based on description: ""Underpass floods in light rain. Cars regularly abandoned."" — priority set to Standard.",
+GH-202428,Waste,Standard,"Classified as 'Waste' based on description: ""Post-market waste not cleared. Area unusable by Sunday morning."" — priority set to Standard.",
+GH-202432,Noise,Standard,"Classified as 'Noise' based on description: ""24hr supermarket delivery trucks idling with engines on."" — priority set to Standard.",
+GH-202448,Flooding,Standard,"Classified as 'Flooding' based on description: ""Main drain blocked — entire locality at flooding risk this week."" — priority set to Standard.",
+GH-202438,Other,Standard,"Classified as 'Other' based on description: ""Colony surrounded by fields that channel rainwater through main road."" — priority set to Standard.",NEEDS_REVIEW
