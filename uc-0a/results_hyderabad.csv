@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding based on 'flood'; severity keyword 'Ambulance' present; priority Urgent.,
+GH-202402,Flooding,Standard,Classified as Flooding based on 'flood'; priority Standard.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on 'stormwater drain'; priority Standard.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on 'Drain block'; priority Standard.,
+GH-202410,Pothole,Standard,Classified as Pothole based on 'Pothole'; priority Standard.,
+GH-202411,Pothole,Urgent,Classified as Pothole based on 'Pothole'; severity keyword 'hospital' present; priority Urgent.,
+GH-202412,Pothole,Urgent,Classified as Pothole based on 'pothole'; severity keyword 'School' present; priority Urgent.,
+GH-202417,Waste,Standard,Classified as Waste based on 'garbage'; priority Standard.,
+GH-202420,Noise,Standard,Classified as Noise based on 'drilling'; priority Standard.,
+GH-202422,Pothole,Urgent,Classified as Pothole based on 'Crater'; severity keyword 'collapse' present; priority Urgent.,
+GH-202424,Flooding,Standard,Classified as Flooding based on 'flood'; priority Standard.,
+GH-202428,Waste,Standard,Classified as Waste based on 'waste'; priority Standard.,
+GH-202432,Noise,Standard,Classified as Noise based on 'idling'; priority Standard.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain block'; priority Standard.,
+GH-202438,Other,Standard,Category not confidently assignable from 'Colony surrounded by fields that channel rainwater through main road.'; marked NEEDS_REVIEW. Priority Standard.,NEEDS_REVIEW
