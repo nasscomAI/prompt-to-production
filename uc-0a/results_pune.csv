@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The complaint describes a ""Large pothole"" causing ""tyre damage"", classifying it as a Pothole with Standard priority.",
+PM-202402,Pothole,Urgent,"The category is Pothole due to the mention of a 'Deep pothole', and the priority is Urgent because 'School children at risk' indicates a severe hazard.",
+PM-202406,Flooding,Standard,"The category is Flooding because the description states ""Underpass flooded knee-deep"", and the priority is Standard as ""Commuters stranded"" indicates a significant disruption but does not contain explicit urgent keywords.",
+PM-202408,Drain Blockage,Standard,"The category is 'Drain Blockage' because the description explicitly states 'Drain blocked', and the priority is 'Standard' as 'Passengers standing in water' indicates a significant issue without triggering urgent keywords.",
+PM-202410,Streetlight,Standard,"The category is Streetlight because the description states ""Three consecutive streetlights out"", and the priority is Standard as the ""Area very dark at night"" indicates a regular service issue without urgent severity keywords.",
+PM-202411,Streetlight,Urgent,"The category is Streetlight due to 'Streetlight flickering and sparking', and the priority is Urgent because an 'Electrical hazard' was reported.",
+PM-202413,Other,Standard,"Error during classification: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",NEEDS_REVIEW
+PM-202418,Noise,Standard,"The category is Noise because the description states ""playing music past midnight"", and the priority is Standard as no urgent severity keywords are present.",
+PM-202419,Road Damage,Standard,"The category is 'Road Damage' because the description states 'Road surface cracked and sinking', and the priority is 'Standard' as no urgent severity keywords are present.",
+PM-202420,Road Damage,Urgent,"The category is Road Damage because the 'Manhole cover missing' creates a road hazard, and the priority is Urgent due to the 'Risk of serious injury' to cyclists.",
+PM-202427,Flooding,Urgent,"The category is Flooding because the description states ""Bridge approach floods"" and the priority is Urgent because ""Bridge becomes inaccessible"" implies a hazard.",
+PM-202428,Waste,Urgent,"The category is Waste because the description states ""Dead animal not removed"", and the priority is Urgent due to the ""Health concern"" indicating a hazard.",
+PM-202430,Other,Standard,Error: exceeded rate limit retries,NEEDS_REVIEW
+PM-202433,Other,Standard,Error: exceeded rate limit retries,NEEDS_REVIEW
+PM-202446,Other,Standard,Error: exceeded rate limit retries,NEEDS_REVIEW
