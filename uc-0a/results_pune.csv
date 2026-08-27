@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority based on description evidence: 'Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole with Urgent priority based on description evidence: child, school.",
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority based on description evidence: 'Underpass flooded knee-deep after 2hrs rain. Commuters stranded.'.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority based on description evidence: 'Bus stand flooded. Passengers standing in water. Drain blocked.'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority based on description evidence: 'Three consecutive streetlights out for 10 days. Area very dark at night.'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight with Urgent priority based on description evidence: hazard.,
+PM-202413,Waste,Standard,Classified as Waste with Standard priority based on description evidence: 'Overflowing garbage bins near vegetable market. Smell affecting shoppers.'.,
+PM-202418,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Wedding venue playing music past midnight on weeknights.'.,
+PM-202419,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Road surface cracked and sinking near utility work done 1 month ago.'.,
+PM-202420,Other,Urgent,Classified as Other with Urgent priority based on description evidence: injury.,
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority based on description evidence: 'Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.'.,
+PM-202428,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Dead animal not removed for 36 hours. Health concern.'.,
+PM-202430,Heritage Damage,Standard,"Classified as Heritage Damage with Standard priority based on description evidence: 'Heritage street, lights out. Safety concern for pedestrians after dark.'.",
+PM-202433,Waste,Standard,Classified as Waste with Standard priority based on description evidence: 'Bulk waste from apartment renovation dumped on public road.'.,
+PM-202446,Other,Urgent,Classified as Other with Urgent priority based on description evidence: fell.,

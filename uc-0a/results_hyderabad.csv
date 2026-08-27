@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority based on description evidence: ambulance.,
+GH-202402,Flooding,Standard,Classified as Flooding with Standard priority based on description evidence: 'Market area flooded. Traders suffering losses. Drain completely blocked.'.,
+GH-202406,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Main stormwater drain 100% blocked with construction debris.'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority based on description evidence: 'Drain blocked and mosquito breeding. Dengue concern.'.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority based on description evidence: 'Potholes causing vehicles to slow to 20kmph on fast road.'.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority based on description evidence: hospital.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority based on description evidence: school.,
+GH-202417,Waste,Standard,Classified as Waste with Standard priority based on description evidence: 'Heritage zone garbage overflow. Tourist photographs showing piles of waste.'.,NEEDS_REVIEW
+GH-202420,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Construction drilling from 5am daily near residential towers.'.,
+GH-202422,Other,Urgent,Classified as Other with Urgent priority based on description evidence: collapse.,
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority based on description evidence: 'Underpass floods in light rain. Cars regularly abandoned.'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority based on description evidence: 'Post-market waste not cleared. Area unusable by Sunday morning.'.,
+GH-202432,Other,Standard,Classified as Other with Standard priority based on description evidence: '24hr supermarket delivery trucks idling with engines on.'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority based on description evidence: 'Main drain blocked — entire locality at flooding risk this week.'.,NEEDS_REVIEW
+GH-202438,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Colony surrounded by fields that channel rainwater through main road.'.,

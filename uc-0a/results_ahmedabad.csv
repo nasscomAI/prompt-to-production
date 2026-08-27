@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.'.,
+AM-202402,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.'.,
+AM-202405,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Dead trees with split branches. Fall risk to walkers. 3 trees affected.'.,
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description evidence: 'Irrigation system broken. Grass dying in heatwave conditions.'.,
+AM-202407,Other,Urgent,Classified as Other with Urgent priority based on description evidence: child.,
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority based on description evidence: 'Pothole on main highway causing morning rush lane closure.'.,
+AM-202414,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Residential colony unlit after 9pm. Wiring theft reported.'.,
+AM-202417,Waste,Standard,Classified as Waste with Standard priority based on description evidence: 'Night market waste not cleared before morning. Heritage area affected.'.,NEEDS_REVIEW
+AM-202421,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Club music audible at residential buildings at 2am.'.,
+AM-202424,Other,Standard,Classified as Other with Standard priority based on description evidence: 'Zoo approach road surface bubbling at 45°C. Visitor complaints.'.,
+AM-202429,Other,Standard,Classified as Other with Standard priority based on description evidence: 'River walk surface temperature unbearable. Installed temperature reads 52°C.'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on description evidence: 'Old city road subsidence near ancient step well. Heritage concern.'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on description evidence: 'Black metal road dividers storing heat. Motorists reporting burns on contact.'.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority based on description evidence: 'Restaurant waste bins overflowing on Sunday night. Health risk.'.,
+AM-202445,Other,Standard,Classified as Other with Standard priority based on description evidence: 'BRT shelter roof glass broken. Users exposed to full sun.'.,
