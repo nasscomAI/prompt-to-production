@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Cites 'flood' in: Underpass flooded after 1hr rain. Ambulance divert,
+GH-202402,Flooding,Standard,Cites 'flood' in: Market area flooded. Traders suffering losses. Drain,
+GH-202406,Drain Blockage,Standard,Cites 'drain' in: Main stormwater drain 100% blocked with construction deb,
+GH-202407,Drain Blockage,Standard,Cites 'drain' in: Drain blocked and mosquito breeding. Den,
+GH-202410,Pothole,Standard,Cites 'pothole' in: Potholes causing vehicles to slow to 20k,
+GH-202411,Pothole,Urgent,Cites 'pothole' in: Pothole swallowed entire motorcycle whee,
+GH-202412,Pothole,Urgent,Cites 'pothole' in: gling to navigate 6 potholes in 200m stretch.,
+GH-202417,Waste,Standard,Cites 'garbage' in: Heritage zone garbage overflow. Tourist photographs sh,
+GH-202420,Other,Standard,Ambiguous: Construction drilling from 5am daily near residential towers,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Cites 'road' in: Road collapsed partially. Crater 1m deep,
+GH-202424,Flooding,Standard,Cites 'flood' in: Underpass floods in light rain. Cars regularly aba,
+GH-202428,Waste,Standard,Cites 'waste' in: Post-market waste not cleared. Area unusable by Sund,
+GH-202432,Waste,Standard,Cites 'market' in: 24hr supermarket delivery trucks idling with engin,
+GH-202448,Flooding,Standard,Cites 'flood' in: entire locality at flooding risk this week.,
+GH-202438,Road Damage,Standard,Cites 'road' in: nwater through main road.,

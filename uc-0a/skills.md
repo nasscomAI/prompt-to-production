@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a civic complaint into one of the allowed categories and assigns a priority based on severity keywords.
+    input: Complaint description as a string.
+    output: Dictionary with fields: category (string), priority (string), reason (string), flag (string or blank).
+    error_handling: If the category cannot be determined, sets category to 'Other' and flag to 'NEEDS_REVIEW'.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: assign_priority
+    description: Assigns priority to a complaint based on presence of severity keywords.
+    input: Complaint description as a string.
+    output: String: 'Urgent', 'Standard', or 'Low'.
+    error_handling: Defaults to 'Standard' if no severity keywords are found and input is valid; raises error if input is empty or not a string.
