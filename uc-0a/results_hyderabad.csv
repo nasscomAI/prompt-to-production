@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority due to the mention of 'ambulance'.,
+GH-202402,Flooding,Standard,Classified as Flooding based on keywords found in the description.,
+GH-202406,Flooding,Standard,Classified as Flooding based on keywords found in the description.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on keywords found in the description.,
+GH-202410,Pothole,Standard,Classified as Pothole based on keywords found in the description.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority due to the mention of 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority due to the mention of 'school'.,
+GH-202417,Waste,Standard,Classified as Waste based on keywords found in the description.,
+GH-202420,Other,Standard,Classified as Other because the description does not match specific category keywords.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Classified as Road Damage with Urgent priority due to the mention of 'collapse'.,
+GH-202424,Flooding,Standard,Classified as Flooding based on keywords found in the description.,
+GH-202428,Waste,Standard,Classified as Waste based on keywords found in the description.,
+GH-202432,Other,Standard,Classified as Other because the description does not match specific category keywords.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Classified as Flooding based on keywords found in the description.,
+GH-202438,Flooding,Standard,Classified as Flooding based on keywords found in the description.,
