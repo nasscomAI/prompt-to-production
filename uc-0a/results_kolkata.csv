@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202402,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202405,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole based on 'pothole'.,
+KM-202410,Pothole,Standard,Classified as Pothole based on 'pothole'.,
+KM-202411,Pothole,Standard,Classified as Pothole based on 'pothole'.,
+KM-202415,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste based on 'waste'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage based on 'sinking'. Priority is Urgent due to severity keyword 'hospital'.,
+KM-202422,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202426,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202430,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202434,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight based on 'dark'.,
+KM-202438,Other,Standard,"Description is ambiguous, missing, or matches multiple categories.",NEEDS_REVIEW
