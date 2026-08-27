@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202402,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202405,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202406,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202407,Other,Urgent,Urgent due to severity keywords: 'child',NEEDS_REVIEW
+AM-202410,Pothole,Standard,Standard maintenance requested.,
+AM-202414,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Standard maintenance requested.,
+AM-202421,Noise,Standard,Standard maintenance requested.,
+AM-202424,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202429,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Standard maintenance requested.,
+AM-202435,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Standard maintenance requested.,
+AM-202445,Other,Low,Category is ambiguous and cannot be determined from description alone.,NEEDS_REVIEW
