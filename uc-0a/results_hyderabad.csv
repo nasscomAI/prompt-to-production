@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Priority is Urgent because the description explicitly mentions 'ambulance'.,
+GH-202402,Other,Standard,Classified as Other based on terms like 'Market' from the description.,NEEDS_REVIEW
+GH-202406,Other,Standard,Classified as Other based on terms like 'Main' from the description.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on terms like 'Drain' from the description.,
+GH-202410,Pothole,Standard,Classified as Pothole based on terms like 'Potholes' from the description.,
+GH-202411,Pothole,Urgent,Priority is Urgent because the description explicitly mentions 'hospital'.,
+GH-202412,Pothole,Urgent,Priority is Urgent because the description explicitly mentions 'school'.,
+GH-202417,Other,Standard,Classified as Other based on terms like 'Heritage' from the description.,NEEDS_REVIEW
+GH-202420,Other,Standard,Classified as Other based on terms like 'Construction' from the description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Priority is Urgent because the description explicitly mentions 'collapse'.,NEEDS_REVIEW
+GH-202424,Other,Standard,Classified as Other based on terms like 'Underpass' from the description.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Classified as Waste based on terms like 'Post-market' from the description.,
+GH-202432,Other,Standard,Classified as Other based on terms like '24hr' from the description.,NEEDS_REVIEW
+GH-202448,Other,Standard,Classified as Other based on terms like 'Main' from the description.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding based on terms like 'Colony' from the description.,
