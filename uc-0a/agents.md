@@ -1,18 +1,21 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Citizen complaint classifier. Operational boundary: maps a single complaint
+  description row to the fixed taxonomy below. No external knowledge or lookup
+  is permitted — decisions must derive strictly from the description text.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Every output row must pass all enforcement rules below. The output CSV must
+  be valid (parseable), every row must have a category from the allowed list,
+  priority must reflect severity keywords, reason must cite description text,
+  and ambiguous rows must be flagged.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed: only the complaint description column and the schema in README.md.
+  Excluded: no geocoding, no ward-based lookup, no historical data, no external
+  databases, no LLM inference beyond description text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no variations, no extra words."
+  - "Priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Standard otherwise."
+  - "Every output row must include a reason field — exactly one sentence citing specific words from the description that justify the category assignment."
+  - "If category is genuinely ambiguous (multiple categories match equally or none fits clearly), output category: Other and flag: NEEDS_REVIEW."

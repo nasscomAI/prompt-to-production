@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"The description 'tage lamp post knocked over b...' contains 'lamp', matching category 'Streetlight'.",NEEDS_REVIEW
+KM-202402,Other,Standard,The description 'Historic tram road cobblestones broken up by cable laying wo...' did not match any category keyword clearly.,
+KM-202405,Noise,Standard,"The description 'ding band playing near Tagore...' contains 'band', matching category 'Noise'.",
+KM-202409,Pothole,Standard,"The description 'l of potholes. Diplomatic complai...' contains 'potholes', matching category 'Pothole'.",
+KM-202410,Pothole,Standard,"The description 'Pothole causing tyre blowou...' contains 'Pothole', matching category 'Pothole'.",
+KM-202411,Pothole,Standard,"The description 'Deep pothole filling with rainwa...' contains 'pothole', matching category 'Pothole'.",
+KM-202415,Drain Blockage,Standard,"The description 'plex draining directly onto publi...' contains 'draining', matching category 'Drain Blockage'.",
+KM-202418,Waste,Standard,"The description 'zone waste overflowing. Foreig...' contains 'waste', matching category 'Waste'.",
+KM-202421,Road Damage,Urgent,"The description 'and sinking. Elderly pedestrian...' contains 'sinking', matching category 'Road Damage'.",
+KM-202422,Road Damage,Standard,"The description 'Road surface buckled near bridge...' contains 'Road surface', matching category 'Road Damage'.",
+KM-202426,Heritage Damage,Standard,"The description 'Heritage residential buildin...' contains 'Heritage', matching category 'Heritage Damage'.",
+KM-202430,Other,Standard,The description 'Road subsided near gas pipeline. Gas leak smell reported too...' did not match any category keyword clearly.,
+KM-202434,Heritage Damage,Standard,"The description 'rk — heritage stone not replaced....' contains 'heritage', matching category 'Heritage Damage'.",
+KM-202436,Streetlight,Standard,"The description 'ped. Darkness for 3 nights....' contains 'Darkness', matching category 'Streetlight'.",
+KM-202438,Noise,Standard,"The description 'sing amplifiers illegally in herita...' contains 'amplifiers', matching category 'Noise'.",NEEDS_REVIEW

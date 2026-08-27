@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description 'at 44°C. Footwear sticking....' contains '°C', matching category 'Heat Hazard'.",
+AM-202402,Heat Hazard,Standard,"The description 'rous temperatures. Commuters refusin...' contains 'temperature', matching category 'Heat Hazard'.",
+AM-202405,Other,Standard,The description 'Dead trees with split branches. Fall risk to walkers. 3 tree...' did not match any category keyword clearly.,
+AM-202406,Heat Hazard,Standard,"The description 'g in heatwave conditions....' contains 'heatwave', matching category 'Heat Hazard'.",
+AM-202407,Other,Urgent,The description 'Broken bench and upturned paving. Child injured last week....' did not match any category keyword clearly.,
+AM-202410,Pothole,Standard,"The description 'Pothole on main highway cau...' contains 'Pothole', matching category 'Pothole'.",
+AM-202414,Streetlight,Standard,"The description 'lony unlit after 9pm. Wiring t...' contains 'unlit', matching category 'Streetlight'.",
+AM-202417,Waste,Standard,"The description 'rket waste not cleared before...' contains 'waste', matching category 'Waste'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"The description 'Club music audible at resident...' contains 'music', matching category 'Noise'.",
+AM-202424,Road Damage,Standard,"The description 'oach road surface bubbling at 45°C. V...' contains 'road surface', matching category 'Road Damage'.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"The description 'face temperature unbearable. Install...' contains 'temperature', matching category 'Heat Hazard'.",
+AM-202431,Heritage Damage,Standard,"The description 'ell. Heritage concern....' contains 'Heritage', matching category 'Heritage Damage'.",
+AM-202435,Heat Hazard,Standard,"The description 'ring heat. Motorists reportin...' contains 'heat', matching category 'Heat Hazard'.",
+AM-202444,Waste,Standard,"The description 'rant waste bins overflowing on...' contains 'waste', matching category 'Waste'.",
+AM-202445,Other,Standard,The description 'BRT shelter roof glass broken. Users exposed to full sun....' did not match any category keyword clearly.,
