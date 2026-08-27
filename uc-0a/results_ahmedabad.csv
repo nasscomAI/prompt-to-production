@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Category set to Heat Hazard from 'melting', '44', and priority set to Standard because no urgent severity keywords were present.",
+AM-202402,Heat Hazard,Standard,"Category set to Heat Hazard from 'temperature', 'dangerous temperatures', and priority set to Standard because no urgent severity keywords were present.",
+AM-202405,Other,Standard,"Category set to Other because description words did not map uniquely to one allowed category, so flag is NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category set to Heat Hazard from 'heat', 'heatwave', and priority set to Standard because no urgent severity keywords were present.",
+AM-202407,Road Damage,Urgent,"Category set to Road Damage from 'broken', 'upturned', and priority set to Urgent due to severity word 'child'.",
+AM-202410,Pothole,Standard,"Category set to Pothole from 'pothole', and priority set to Standard because no urgent severity keywords were present.",
+AM-202414,Streetlight,Standard,"Category set to Streetlight from 'unlit', and priority set to Standard because no urgent severity keywords were present.",
+AM-202417,Waste,Standard,"Category set to Waste from 'waste', 'not cleared', and priority set to Standard because no urgent severity keywords were present.",
+AM-202421,Noise,Low,"Category set to Noise from 'music', 'audible', and priority set to Low because no urgent severity keywords were present.",
+AM-202424,Other,Standard,"Category set to Other because description words did not map uniquely to one allowed category, so flag is NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Category set to Heat Hazard from 'temperature', 'unbearable', and priority set to Standard because no urgent severity keywords were present.",
+AM-202431,Heritage Damage,Standard,"Category set to Heritage Damage from 'heritage', 'old city', and priority set to Standard because no urgent severity keywords were present.",
+AM-202435,Heat Hazard,Standard,"Category set to Heat Hazard from 'heat', 'burns', and priority set to Standard because no urgent severity keywords were present.",
+AM-202444,Waste,Standard,"Category set to Waste from 'waste', 'bins', and priority set to Standard because no urgent severity keywords were present.",
+AM-202445,Other,Standard,"Category set to Other because description words did not map uniquely to one allowed category, so flag is NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW

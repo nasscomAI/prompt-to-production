@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Category set to Other because description words did not map uniquely to one allowed category, so flag is NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Category set to Heritage Damage from 'historic', 'cobblestones', and priority set to Standard because no urgent severity keywords were present.",
+KM-202405,Heritage Damage,Standard,"Category set to Heritage Damage from 'museum', and priority set to Standard because no urgent severity keywords were present.",
+KM-202409,Pothole,Standard,"Category set to Pothole from 'pothole', and priority set to Standard because no urgent severity keywords were present.",
+KM-202410,Pothole,Standard,"Category set to Pothole from 'pothole', 'tyre', and priority set to Standard because no urgent severity keywords were present.",
+KM-202411,Pothole,Standard,"Category set to Pothole from 'pothole', and priority set to Standard because no urgent severity keywords were present.",
+KM-202415,Other,Standard,"Category set to Other because description words did not map uniquely to one allowed category, so flag is NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Category set to Waste from 'waste', 'overflow', and priority set to Standard because no urgent severity keywords were present.",
+KM-202421,Road Damage,Urgent,"Category set to Road Damage from 'sinking', 'broken', and priority set to Urgent due to severity word 'hospital'.",
+KM-202422,Road Damage,Standard,"Category set to Road Damage from 'road surface', 'buckled', and priority set to Standard because no urgent severity keywords were present.",
+KM-202426,Heritage Damage,Standard,"Category set to Heritage Damage from 'heritage', 'defaced', and priority set to Standard because no urgent severity keywords were present.",
+KM-202430,Road Damage,Standard,"Category set to Road Damage from 'subsided', and priority set to Standard because no urgent severity keywords were present.",
+KM-202434,Heritage Damage,Standard,"Category set to Heritage Damage from 'heritage', 'heritage stone', and priority set to Standard because no urgent severity keywords were present.",
+KM-202436,Streetlight,Standard,"Category set to Streetlight from 'darkness', 'substation tripped', and priority set to Standard because no urgent severity keywords were present.",
+KM-202438,Noise,Low,"Category set to Noise from 'amplifier', 'amplifiers', and priority set to Low because no urgent severity keywords were present.",
