@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions 'melting', indicating a Heat Hazard complaint.",
+AM-202402,Heat Hazard,Standard,"Description mentions 'temperature', indicating a Heat Hazard complaint.",
+AM-202405,Other,Standard,Description did not match any known category keywords; flagged for review.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions 'heat', indicating a Heat Hazard complaint.",
+AM-202407,Road Damage,Urgent,"Description contains severity keyword 'child'. Description mentions 'upturned', indicating a Road Damage complaint.",
+AM-202410,Pothole,Standard,"Description mentions 'pothole', indicating a Pothole complaint.",
+AM-202414,Streetlight,Standard,"Description mentions 'unlit', indicating a Streetlight complaint.",
+AM-202417,Waste,Standard,"Description matches multiple categories (Waste, Heritage Damage); flagged for review.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Description mentions 'music', indicating a Noise complaint.",
+AM-202424,Road Damage,Standard,"Description mentions 'road surface', indicating a Road Damage complaint.",
+AM-202429,Heat Hazard,Standard,"Description mentions 'temperature', indicating a Heat Hazard complaint.",
+AM-202431,Heritage Damage,Standard,"Description mentions 'heritage', indicating a Heritage Damage complaint.",
+AM-202435,Heat Hazard,Standard,"Description mentions 'heat', indicating a Heat Hazard complaint.",
+AM-202444,Waste,Standard,"Description mentions 'waste', indicating a Waste complaint.",
+AM-202445,Other,Standard,Description did not match any known category keywords; flagged for review.,NEEDS_REVIEW

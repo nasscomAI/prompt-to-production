@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description matches multiple categories (Streetlight, Heritage Damage); flagged for review.",NEEDS_REVIEW
+KM-202402,Other,Standard,Description did not match any known category keywords; flagged for review.,NEEDS_REVIEW
+KM-202405,Other,Standard,Description did not match any known category keywords; flagged for review.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description mentions 'pothole', indicating a Pothole complaint.",
+KM-202410,Pothole,Standard,"Description mentions 'pothole', indicating a Pothole complaint.",
+KM-202411,Pothole,Standard,"Description mentions 'pothole', indicating a Pothole complaint.",
+KM-202415,Drain Blockage,Standard,"Description mentions 'drain', indicating a Drain Blockage complaint.",
+KM-202418,Waste,Standard,"Description matches multiple categories (Waste, Heat Hazard); flagged for review.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Description contains severity keyword 'hospital'. Description mentions 'sinking', indicating a Road Damage complaint.",
+KM-202422,Road Damage,Standard,"Description mentions 'road surface', indicating a Road Damage complaint.",
+KM-202426,Heritage Damage,Standard,"Description mentions 'heritage', indicating a Heritage Damage complaint.",
+KM-202430,Waste,Standard,"Description mentions 'smell', indicating a Waste complaint.",
+KM-202434,Road Damage,Standard,"Description matches multiple categories (Road Damage, Heritage Damage); flagged for review.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Description mentions 'dark', indicating a Streetlight complaint.",
+KM-202438,Heritage Damage,Standard,"Description mentions 'heritage', indicating a Heritage Damage complaint.",
