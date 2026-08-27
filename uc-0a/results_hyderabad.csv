@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,water_logging,high,public safety risk,ok
+GH-202402,water_logging,low,no critical keywords,ok
+GH-202406,water_logging,low,no critical keywords,ok
+GH-202407,water_logging,low,no critical keywords,ok
+GH-202410,road_damage,low,no critical keywords,ok
+GH-202411,road_damage,high,public safety risk,ok
+GH-202412,road_damage,high,public safety risk,ok
+GH-202417,sanitation,low,no critical keywords,ok
+GH-202420,other,low,no critical keywords,ok
+GH-202422,road_damage,low,no critical keywords,ok
+GH-202424,water_logging,low,no critical keywords,ok
+GH-202428,sanitation,low,no critical keywords,ok
+GH-202432,other,low,no critical keywords,ok
+GH-202448,water_logging,high,public safety risk,ok
+GH-202438,other,low,no critical keywords,ok
