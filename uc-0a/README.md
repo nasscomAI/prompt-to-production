@@ -6,13 +6,13 @@
 
 ## Your Input File
 ```
-../data/city-test-files/test_[your-city].csv
+../data/city-test-files/test_pune.csv
 ```
 15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
 
 ## Your Output File
 ```
-uc-0a/results_[your-city].csv
+uc-0a/results_pune.csv
 ```
 
 ## Run Command
