@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding with Urgent priority because the description cites 'Underpass flooded after 1hr rain', containing the severity trigger word 'ambulance'.",
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description cites 'Market area flooded'.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description cites 'Main stormwater drain 100% blocked with construction debris'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description cites 'Drain blocked and mosquito breeding'.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority because the description cites 'Potholes causing vehicles to slow to 20kmph on fast road'.,
+GH-202411,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description cites 'Pothole swallowed entire motorcycle wheel', containing the severity trigger word 'hospital'.",
+GH-202412,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description cites 'School bus struggling to navigate 6 potholes in 200m stretch', containing the severity trigger word 'school'.",
+GH-202417,Other,Standard,Classified as Other with Standard priority because the description cites 'Heritage zone garbage overflow'.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise with Standard priority because the description cites 'Construction drilling from 5am daily near residential towers'.,
+GH-202422,Road Damage,Urgent,"Classified as Road Damage with Urgent priority because the description cites 'Road collapsed partially', containing the severity trigger word 'collapse'.",
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority because the description cites 'Underpass floods in light rain'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority because the description cites 'Post-market waste not cleared'.,
+GH-202432,Noise,Standard,Classified as Noise with Standard priority because the description cites '24hr supermarket delivery trucks idling with engines on'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description cites 'Main drain blocked — entire locality at flooding risk this week'.,
+GH-202438,Flooding,Standard,Classified as Flooding with Standard priority because the description cites 'Colony surrounded by fields that channel rainwater through main road'.,
