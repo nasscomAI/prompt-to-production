@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions ""pothole"", which indicates Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions ""pothole"", which indicates Pothole.",
+PM-202406,Flooding,Standard,"The description mentions ""flood"", which indicates Flooding.",
+PM-202408,Other,Standard,"The description contains multiple category signals: ""flood, flooded, drain"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions ""streetlight"", which indicates Streetlight.",
+PM-202411,Streetlight,Urgent,"The description mentions ""streetlight"", which indicates Streetlight.",
+PM-202413,Waste,Standard,"The description mentions ""waste"", which indicates Waste.",
+PM-202418,Noise,Standard,"The description mentions ""music"", which indicates Noise.",
+PM-202419,Road Damage,Standard,"The description mentions ""road surface"", which indicates Road Damage.",
+PM-202420,Other,Urgent,"The description does not clearly match a defined category: ""Manhole cover missing. Risk of serious injury to cyclists."".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description mentions ""flood"", which indicates Flooding.",
+PM-202428,Other,Standard,"The description does not clearly match a defined category: ""Dead animal not removed for 36 hours. Health concern."".",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions ""heritage"", which indicates Heritage Damage.",
+PM-202433,Waste,Standard,"The description mentions ""waste"", which indicates Waste.",
+PM-202446,Other,Urgent,"The description does not clearly match a defined category: ""Footpath tiles broken and upturned. Elderly resident fell last week."".",NEEDS_REVIEW
