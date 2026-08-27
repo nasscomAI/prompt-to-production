@@ -1,35 +1,47 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
 import csv
+import sys
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+def classify(complaint):
+    c = complaint.lower()
     
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
-
-
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
+    if any(w in c for w in ["pothole", "road damage", "road"]):
+        category = "Pothole"
+    elif any(w in c for w in ["flood", "waterlog", "flooding"]):
+        category = "Flooding"
+    elif any(w in c for w in ["streetlight", "street light", "light"]):
+        category = "Streetlight"
+    elif any(w in c for w in ["garbage", "waste", "trash"]):
+        category = "Waste"
+    elif any(w in c for w in ["noise", "sound"]):
+        category = "Noise"
+    elif any(w in c for w in ["drain", "drainage"]):
+        category = "Drain Blockage"
+    elif any(w in c for w in ["water pipe", "pipe burst"]):
+        category = "Flooding"
+    else:
+        category = "Other"
     
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    if any(w in c for w in ["child", "hospital", "school", "injury", "urgent"]):
+        priority = "Urgent"
+    elif any(w in c for w in ["broken", "not working", "burst"]):
+        priority = "Standard"
+    else:
+        priority = "Low"
+    
+    return category, priority
 
+rows = []
+with open("../data/city-test-files/test_pune.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        cat, pri = classify(row["complaint"])
+        row["category"] = cat
+        row["priority_flag"] = pri
+        rows.append(row)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+with open("results_pune.csv", "w", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+    writer.writeheader()
+    writer.writerows(rows)
+
+print("Done!")

@@ -1,16 +1,19 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+skill: classify_complaint
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+description: >
+  Reads a civic complaint text and returns exactly one category
+  and one priority flag based on keywords found in the text.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+input: complaint text string
+
+output:
+  - category: one of Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other
+  - priority_flag: one of Urgent, Standard, Low
+
+rules:
+  - Match keywords to assign category
+  - Urgent if text contains: child, hospital, school, injury, urgent
+  - Standard if text contains: broken, not working, burst
+  - Low for everything else
+  - Never leave category or priority empty
+  - Use Other if no category keyword matches

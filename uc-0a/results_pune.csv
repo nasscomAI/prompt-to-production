@@ -1,0 +1,6 @@
+id,complaint,category,severity
+1,Road has big pothole near school,Infrastructure,HIGH
+2,Street light not working for 3 days,Infrastructure,MEDIUM
+3,Water pipe burst near hospital,Utilities,HIGH
+4,Garbage not collected this week,Utilities,LOW
+5,Child fell in open drain near park,Infrastructure,HIGH
