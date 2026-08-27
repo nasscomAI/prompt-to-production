@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding; marked Urgent due to severity term(s): 'ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage based on description: 'Market area flooded'.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on description: 'Main stormwater drain 100% blocked with construction debris'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on description: 'Drain blocked and mosquito breeding'.,
+GH-202410,Pothole,Standard,Classified as Pothole based on description: 'Potholes causing vehicles to slow to 20kmph on fast road'.,
+GH-202411,Pothole,Urgent,Classified as Pothole; marked Urgent due to severity term(s): 'hospital'.,
+GH-202412,Pothole,Urgent,Classified as Pothole; marked Urgent due to severity term(s): 'school'.,
+GH-202417,Heritage Damage,Standard,Classified as Heritage Damage based on description: 'Heritage zone garbage overflow'.,
+GH-202420,Noise,Standard,Classified as Noise based on description: 'Construction drilling from 5am daily near residential towers'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage; marked Urgent due to severity term(s): 'collapse'.,
+GH-202424,Flooding,Standard,Classified as Flooding based on description: 'Underpass floods in light rain'.,
+GH-202428,Waste,Standard,Classified as Waste based on description: 'Post-market waste not cleared'.,
+GH-202432,Noise,Standard,Classified as Noise based on description: '24hr supermarket delivery trucks idling with engines on'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage based on description: 'Main drain blocked — entire locality at flooding risk this week'.,
+GH-202438,Other,Standard,Complaint type ambiguous from description ('Colony surrounded by fields that channel rainwater through m...'); needs manual review.,NEEDS_REVIEW
