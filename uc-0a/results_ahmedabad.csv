@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""Tarmac surface melting at 44°C"".",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""Metal bus shelter reaching dangerous temperatures"".",
+AM-202405,Other,Standard,"Classified as Other with Standard priority because the complaint reports ""Dead trees with split branches"".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""Irrigation system broken"".",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage with Urgent priority because the complaint reports ""Broken bench and upturned paving"" containing safety hazard trigger 'injured'.",
+AM-202410,Pothole,Standard,"Classified as Pothole with Standard priority because the complaint reports ""Pothole on main highway causing morning rush lane closure"".",
+AM-202414,Streetlight,Standard,"Classified as Streetlight with Standard priority because the complaint reports ""Residential colony unlit after 9pm"".",
+AM-202417,Waste,Standard,"Classified as Waste with Standard priority because the complaint reports ""Night market waste not cleared before morning"".",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Classified as Noise with Standard priority because the complaint reports ""Club music audible at residential buildings at 2am"".",
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""Zoo approach road surface bubbling at 45°C"".",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""River walk surface temperature unbearable"".",
+AM-202431,Road Damage,Standard,"Classified as Road Damage with Standard priority because the complaint reports ""Old city road subsidence near ancient step well"".",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""Black metal road dividers storing heat"".",
+AM-202444,Waste,Standard,"Classified as Waste with Standard priority because the complaint reports ""Restaurant waste bins overflowing on Sunday night"".",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard with Standard priority because the complaint reports ""BRT shelter roof glass broken"".",
