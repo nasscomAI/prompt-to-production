@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,"Classified based on words from complaint like 'Underpass, flooded'.",
+Flooding,Standard,"Classified based on words from complaint like 'Market, area'.",NEEDS_REVIEW
+Drain Blockage,Standard,"Classified based on words from complaint like 'Main, stormwater'.",
+Drain Blockage,Standard,"Classified based on words from complaint like 'Drain, blocked'.",
+Pothole,Standard,"Classified based on words from complaint like 'Potholes, causing'.",
+Pothole,Urgent,"Classified based on words from complaint like 'Pothole, swallowed'.",
+Pothole,Urgent,"Classified based on words from complaint like 'School, struggling'.",
+Waste,Standard,"Classified based on words from complaint like 'Heritage, zone'.",NEEDS_REVIEW
+Other,Standard,"Classified based on words from complaint like 'Construction, drilling'.",NEEDS_REVIEW
+Road Damage,Urgent,"Classified based on words from complaint like 'Road, collapsed'.",
+Flooding,Standard,"Classified based on words from complaint like 'Underpass, floods'.",NEEDS_REVIEW
+Waste,Standard,"Classified based on words from complaint like 'Post-market, waste'.",
+Other,Standard,"Classified based on words from complaint like '24hr, supermarket'.",NEEDS_REVIEW
+Flooding,Standard,"Classified based on words from complaint like 'Main, drain'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified based on words from complaint like 'Colony, surrounded'.",

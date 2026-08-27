@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Other,Standard,"Classified based on words from complaint like 'Tarmac, surface'.",NEEDS_REVIEW
+Heat Hazard,Standard,"Classified based on words from complaint like 'Metal, shelter'.",
+Other,Standard,"Classified based on words from complaint like 'Dead, trees'.",NEEDS_REVIEW
+Heat Hazard,Standard,"Classified based on words from complaint like 'Irrigation, system'.",
+Other,Urgent,"Classified based on words from complaint like 'Broken, bench'.",NEEDS_REVIEW
+Pothole,Standard,"Classified based on words from complaint like 'Pothole, main'.",
+Other,Standard,"Classified based on words from complaint like 'Residential, colony'.",NEEDS_REVIEW
+Waste,Standard,"Classified based on words from complaint like 'Night, market'.",NEEDS_REVIEW
+Other,Standard,"Classified based on words from complaint like 'Club, music'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified based on words from complaint like 'approach, road'.",
+Heat Hazard,Standard,"Classified based on words from complaint like 'River, walk'.",
+Road Damage,Standard,"Classified based on words from complaint like 'city, road'.",NEEDS_REVIEW
+Road Damage,Standard,"Classified based on words from complaint like 'Black, metal'.",NEEDS_REVIEW
+Waste,Standard,"Classified based on words from complaint like 'Restaurant, waste'.",
+Other,Standard,"Classified based on words from complaint like 'shelter, roof'.",NEEDS_REVIEW
