@@ -1,18 +1,22 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# Policy Summarization Rules
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+1. Every numbered clause from the source document must appear in the summary.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+2. Preserve ALL conditions in multi-condition obligations.
+   Example:
+   If approval requires both Department Head and HR Director,
+   both approvers must be explicitly included.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+3. Never weaken binding language.
+   Preserve terms like:
+   - must
+   - requires
+   - not permitted
+   - will
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+4. Never add assumptions, interpretations, or external HR practices.
+
+5. If summarization causes meaning loss,
+   quote the clause verbatim and flag it.
+
+6. Include clause references in summaries.
