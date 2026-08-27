@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202402,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202405,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified based on category indicator 'heat' found in the description.,
+AM-202407,Other,Urgent,Classified based on severity keyword 'child' found in the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified based on category indicator 'pothole' found in the description.,
+AM-202414,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202417,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified based on category indicator 'music or noise' found in the description.,
+AM-202424,Road Damage,Standard,Classified based on category indicator 'road condition indicators' found in the description.,
+AM-202429,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202431,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202435,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Classified based on category indicator 'garbage or waste' found in the description.,
+AM-202445,Other,Standard,Classified as Other due to lack of clear category or severity indicators.,NEEDS_REVIEW
