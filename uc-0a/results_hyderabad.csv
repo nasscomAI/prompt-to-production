@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Detected keyword 'ambulance' in description,
+GH-202402,Flooding,Standard,Detected keyword 'flood' in description,
+GH-202406,Flooding,Standard,Detected keyword 'water' in description,
+GH-202407,Drain Blockage,Standard,Detected keyword 'drain' in description,
+GH-202410,Pothole,Standard,Detected keyword 'pothole' in description,
+GH-202411,Pothole,Urgent,Detected keyword 'hospital' in description,
+GH-202412,Pothole,Urgent,Detected keyword 'school' in description,
+GH-202417,Waste,Standard,Detected keyword 'garbage' in description,
+GH-202420,Noise,Standard,Detected keyword 'construction' in description,
+GH-202422,Other,Urgent,Detected keyword 'collapse' in description,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Detected keyword 'flood' in description,
+GH-202428,Waste,Standard,Detected keyword 'waste' in description,
+GH-202432,Other,Standard,No clear keyword detected,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Detected keyword 'flood' in description,
+GH-202438,Flooding,Standard,Detected keyword 'water' in description,
