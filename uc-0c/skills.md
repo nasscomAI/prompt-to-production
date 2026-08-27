@@ -1,16 +1,9 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for UC-0C
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `load_dataset`
+- **Purpose**: Reads CSV, validates columns, reports null count, and identifies specific null rows before returning the dataset.
+- **Constraints**: Warns on nulls, extracts notes explaining them.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `compute_growth`
+- **Purpose**: Takes a specific ward, category, and growth_type to calculate growth. Output is a per-period table.
+- **Constraints**: Shows formula used. Avoids aggregate calculations. Halts if parameters are missing or general ("Any").

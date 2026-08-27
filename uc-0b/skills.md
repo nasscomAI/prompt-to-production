@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for UC-0B
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `retrieve_policy`
+- **Input**: `input_path` to a `.txt` policy file.
+- **Output**: The extracted text as structured numbered sections.
+- **Behavior**: Reads the file completely without omitting any sections.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## `summarize_policy`
+- **Input**: Structured sections from `retrieve_policy`.
+- **Output**: A compliant summary with clause references.
+- **Behavior**: Applies strict enforcement rules to ensure all clauses and multi-conditions are accurately preserved without scope bleed.
