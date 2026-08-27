@@ -1,16 +1,70 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+\# Skills for Complaint Classification Agent
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+
+text\_processing:
+
+\- Convert complaint text to lowercase
+
+\- Remove unnecessary punctuation
+
+\- Extract important words from the complaint description
+
+
+
+keyword\_detection:
+
+\- Detect keywords related to civic issues
+
+
+
+Examples:
+
+pothole → road damage
+
+flood → flooding issue
+
+garbage → sanitation issue
+
+water → water supply issue
+
+electricity → power issue
+
+
+
+priority\_detection:
+
+\- If the complaint description contains words like
+
+&#x20; injury, child, school, hospital
+
+&#x20; then priority must be set to "Urgent"
+
+
+
+classification:
+
+\- Map detected keywords to the allowed categories:
+
+&#x20; Pothole
+
+&#x20; Flooding
+
+&#x20; Garbage
+
+&#x20; Water
+
+&#x20; Electricity
+
+&#x20; Other
+
+
+
+uncertainty\_handling:
+
+\- If no clear category can be determined
+
+&#x20; category = Other
+
+&#x20; flag = NEEDS\_REVIEW
+

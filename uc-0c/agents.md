@@ -1,18 +1,62 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+\# Agent: Budget Growth Analyzer (UC-0C)
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+\## Goal
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Compute correct growth trends for ward-level budget data while avoiding misleading aggregations.
+
+
+
+\## Responsibilities
+
+\- Read ward-level budget dataset
+
+\- Filter by ward and category
+
+\- Handle null `actual\_spend` values safely
+
+\- Compute month-wise growth trends
+
+\- Output structured per-month results
+
+
+
+\## Constraints
+
+\- MUST NOT aggregate all data into a single number
+
+\- MUST operate at ward + category level
+
+\- MUST handle null values explicitly (skip or flag)
+
+\- MUST avoid assumptions when data is missing
+
+
+
+\## Output Format
+
+CSV with:
+
+\- period
+
+\- ward
+
+\- category
+
+\- actual\_spend
+
+\- growth
+
+
+
+\## Failure Modes to Avoid
+
+\- Wrong aggregation level
+
+\- Ignoring null values
+
+\- Incorrect growth formula
+
+\- Producing a single misleading number
+
