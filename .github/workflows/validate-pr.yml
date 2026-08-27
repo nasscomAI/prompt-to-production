@@ -1,11 +1,14 @@
 name: PR Checks
 
 on:
-  pull_request_target:
+  pull_request:
     branches: [ main ]
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+permissions:
+  contents: read
 
 jobs:
   commit-lint:
