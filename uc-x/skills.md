@@ -1,16 +1,19 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-X Ask My Documents
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all three policy files and indexes their content by document name and section number.
+    input: Directory or list of paths to the three .txt policy files.
+    output: A dict keyed by document name, each value a dict of section_number -> clause text.
+    error_handling: >
+      Raises a clear error if any of the three files is missing. Logs which documents
+      loaded successfully so the answerer never cites an unloaded document.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches the indexed documents and returns a single-source answer with citation, or the refusal template.
+    input: The indexed documents dict and a free-text question string.
+    output: A string: either a single-source answer citing "doc — section X.Y", or the exact refusal template.
+    error_handling: >
+      If no document contains the answer, returns the refusal template verbatim. If the
+      best match would require blending two documents, refuses rather than blending.
+      Never returns a hedged or invented answer.
