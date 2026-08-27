@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills for Document QA Agent
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Document Processing
+Ability to read and process text documents.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Keyword Search
+Identify relevant sections in the document.
+
+## Information Extraction
+Extract accurate information from policy text.
+
+## Response Generation
+Provide answers based strictly on document content.
