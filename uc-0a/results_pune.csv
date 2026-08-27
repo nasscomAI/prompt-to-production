@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions 'pothole', classifying this as Pothole with Standard priority.",
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' indicating Pothole, and the word 'child' triggers Urgent priority.",
+PM-202406,Flooding,Standard,"Description mentions 'flood', classifying this as Flooding with Standard priority.",
+PM-202408,Flooding,Standard,"Description mentions 'flood', classifying this as Flooding with Standard priority.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions 'streetlight', classifying this as Streetlight with Standard priority.",
+PM-202411,Streetlight,Urgent,"Description mentions 'streetlight' indicating Streetlight, and the word 'hazard' triggers Urgent priority.",
+PM-202413,Waste,Standard,"Description mentions 'garbage', classifying this as Waste with Standard priority.",
+PM-202418,Noise,Standard,"Description mentions 'music', classifying this as Noise with Standard priority.",
+PM-202419,Road Damage,Standard,"Description mentions 'road surface', classifying this as Road Damage with Standard priority.",
+PM-202420,Drain Blockage,Urgent,"Description mentions 'manhole' indicating Drain Blockage, and the word 'injury' triggers Urgent priority.",
+PM-202427,Flooding,Standard,"Description mentions 'flood', classifying this as Flooding with Standard priority.",
+PM-202428,Waste,Standard,"Description mentions 'dead animal', classifying this as Waste with Standard priority.",
+PM-202430,Heritage Damage,Standard,"Description mentions 'heritage', classifying this as Heritage Damage with Standard priority.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description mentions 'waste', classifying this as Waste with Standard priority.",
+PM-202446,Road Damage,Urgent,"Description mentions 'footpath tiles' indicating Road Damage, and the word 'fell' triggers Urgent priority.",
