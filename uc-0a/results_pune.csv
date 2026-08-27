@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category selected based on complaint description: 'large pothole 60cm wide causing tyre damage. three vehicles ...',
+PM-202402,Pothole,Urgent,Category selected based on complaint description: 'deep pothole near bus stop. school children at risk during m...',
+PM-202406,Flooding,Standard,Category selected based on complaint description: 'underpass flooded knee-deep after 2hrs rain. commuters stran...',
+PM-202408,Flooding,Standard,Category selected based on complaint description: 'bus stand flooded. passengers standing in water. drain block...',
+PM-202410,Streetlight,Standard,Category selected based on complaint description: 'three consecutive streetlights out for 10 days. area very da...',
+PM-202411,Streetlight,Urgent,Category selected based on complaint description: 'streetlight flickering and sparking. electrical hazard repor...',
+PM-202413,Waste,Standard,Category selected based on complaint description: 'overflowing garbage bins near vegetable market. smell affect...',
+PM-202418,Other,Standard,Category selected based on complaint description: 'wedding venue playing music past midnight on weeknights....',NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Category selected based on complaint description: 'road surface cracked and sinking near utility work done 1 mo...',
+PM-202420,Other,Urgent,Category selected based on complaint description: 'manhole cover missing. risk of serious injury to cyclists....',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category selected based on complaint description: 'bridge approach floods in 30mins of rain. bridge becomes ina...',
+PM-202428,Other,Standard,Category selected based on complaint description: 'dead animal not removed for 36 hours. health concern....',NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Category selected based on complaint description: 'heritage street, lights out. safety concern for pedestrians ...'",
+PM-202433,Waste,Standard,Category selected based on complaint description: 'bulk waste from apartment renovation dumped on public road....',
+PM-202446,Other,Urgent,Category selected based on complaint description: 'footpath tiles broken and upturned. elderly resident fell la...',NEEDS_REVIEW
