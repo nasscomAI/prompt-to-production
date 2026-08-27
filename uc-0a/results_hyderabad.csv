@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because the description mentions ""flooded"". Priority set to Urgent due to severity keyword(s): ""ambulance"".",
+GH-202402,Drain Blockage,Standard,"Classified as Drain Blockage because the description mentions ""Drain"".",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage because the description mentions ""drain"".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage because the description mentions ""Drain"".",
+GH-202410,Pothole,Standard,"Classified as Pothole because the description mentions ""Potholes"".",
+GH-202411,Pothole,Standard,"Classified as Pothole because the description mentions ""Pothole"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole because the description mentions ""potholes"". Priority set to Urgent due to severity keyword(s): ""school"".",
+GH-202417,Heritage Damage,Standard,"Classified as Heritage Damage because the description mentions ""Heritage"".",
+GH-202420,Other,Standard,No clear category keywords found in the description; flagged for manual review.,NEEDS_REVIEW
+GH-202422,Other,Standard,No clear category keywords found in the description; flagged for manual review.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Classified as Flooding because the description mentions ""floods"".",
+GH-202428,Waste,Low,"Classified as Waste because the description mentions ""waste"".",
+GH-202432,Other,Standard,No clear category keywords found in the description; flagged for manual review.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage because the description mentions ""drain"".",
+GH-202438,Other,Standard,No clear category keywords found in the description; flagged for manual review.,NEEDS_REVIEW
