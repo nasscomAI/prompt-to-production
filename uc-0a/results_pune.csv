@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized based on keyword 'pothole'.,
+PM-202402,Pothole,Urgent,Flagged as urgent due to keyword 'child'.,
+PM-202406,Flooding,Standard,Categorized based on keyword 'flood'.,
+PM-202408,Other,Standard,"Ambiguous description matching multiple categories: Flooding, Drain Blockage",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Categorized based on keyword 'streetlight'.,
+PM-202411,Streetlight,Urgent,Flagged as urgent due to keyword 'hazard'.,
+PM-202413,Waste,Standard,Categorized based on keyword 'garbage'.,
+PM-202418,Noise,Standard,Categorized based on keyword 'music'.,
+PM-202419,Road Damage,Standard,Categorized based on keyword 'road'.,
+PM-202420,Other,Urgent,Flagged as urgent due to keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized based on keyword 'flood'.,
+PM-202428,Other,Standard,Could not confidently determine a specific category from description.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Ambiguous description matching multiple categories: Streetlight, Heritage Damage",NEEDS_REVIEW
+PM-202433,Other,Standard,"Ambiguous description matching multiple categories: Waste, Road Damage",NEEDS_REVIEW
+PM-202446,Other,Urgent,Flagged as urgent due to keyword 'fell'.,NEEDS_REVIEW
