@@ -19,14 +19,16 @@ Interactive CLI — type questions, read answers.
 
 ---
 
-## Do This Before Writing Any Prompt
-
-Define your **refusal template** — the exact wording the system must use when a question is not in the documents. Write it here before opening your AI tool:
+## Refusal Template
 
 ```
 This question is not covered in the available policy documents
 (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
 Please contact [relevant team] for guidance.
+The relevant team should be determined based on the below templates:
+Questions about leave, obboarding, resignation, offboarding - HR team
+Questions about IT assets, access, software installation - IT team
+Questions about reibursements, payroll, benefits - Finance team
 ```
 
 This template goes verbatim into your RICE Enforcement and agents.md.
