@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,The issue does not clearly match known categories. Priority escalated to Urgent due to keyword 'ambulance'.,NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,Description mentions 'drain'.,
+GH-202406,Drain Blockage,Standard,Description mentions 'drain'.,
+GH-202407,Drain Blockage,Standard,Description mentions 'drain'.,
+GH-202410,Road Damage,Standard,Description mentions 'road'.,
+GH-202411,Pothole,Standard,Description mentions 'pothole'.,
+GH-202412,Other,Urgent,The issue does not clearly match known categories. Priority escalated to Urgent due to keyword 'school'.,NEEDS_REVIEW
+GH-202417,Waste,Standard,Description mentions 'garbage'.,
+GH-202420,Other,Standard,The issue does not clearly match known categories.,NEEDS_REVIEW
+GH-202422,Road Damage,Standard,Description mentions 'road'.,
+GH-202424,Other,Standard,The issue does not clearly match known categories.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Description mentions 'waste'.,
+GH-202432,Other,Standard,The issue does not clearly match known categories.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Description mentions 'drain'.,
+GH-202438,Road Damage,Standard,Description mentions 'road'.,
