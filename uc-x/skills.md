@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Load and index the three policy documents by section number so the agent can retrieve relevant content from a single source document.
+    input: The three policy files: policy_hr_leave.txt, policy_it_acceptable_use.txt, and policy_finance_reimbursement.txt.
+    output: A structured index of sections and text for each document, keyed by document name and section number.
+    error_handling: If a required document is missing or unreadable, return a clear error and do not attempt to answer using incomplete data.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Answer an employee question using only the single matching policy document that contains the relevant section, citing the document name and section number for each factual claim.
+    input: A user question and the indexed policy documents.
+    output: A concise answer grounded in one document only, with citations, or the exact refusal template if no single document covers the question.
+    error_handling: If the question cannot be answered from exactly one document, return the exact refusal template instead of blending sources or guessing.
