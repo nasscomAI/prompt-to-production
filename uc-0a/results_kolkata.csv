@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description contains keyword(s): heritage,
+KM-202402,Road Damage,Standard,Description contains keyword(s): road,
+KM-202405,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description contains keyword(s): pothole, road",
+KM-202410,Pothole,Standard,Description contains keyword(s): pothole,
+KM-202411,Pothole,Standard,Description contains keyword(s): pothole,
+KM-202415,Road Damage,Standard,"Description contains keyword(s): road, drain",
+KM-202418,Waste,Standard,Description contains keyword(s): waste,
+KM-202421,Other,Urgent,Category ambiguous; no clear match in description. Severity keyword: hospital.,NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Description contains keyword(s): road,
+KM-202426,Heritage Damage,Standard,Description contains keyword(s): heritage,
+KM-202430,Road Damage,Standard,Description contains keyword(s): road,
+KM-202434,Heritage Damage,Standard,Description contains keyword(s): heritage,
+KM-202436,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Description contains keyword(s): heritage,

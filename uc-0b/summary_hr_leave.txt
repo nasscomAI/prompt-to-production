@@ -1,0 +1,16 @@
+[SUMMARY START]
+(This is a placeholder summary. Replace with actual logic.)
+CITY MUNICIPAL CORPORATION
+HUMAN RESOURCES DEPARTMENT
+EMPLOYEE LEAVE POLICY
+Document Reference: HR-POL-001
+Version: 2.3 | Effective: 1 April 2024
+
+═══════════════════════════════════════════════════════════
+1. PURPOSE AND SCOPE
+═══════════════════════════════════════════════════════════
+1.1 This policy governs all leave entitlements for permanent and
+    contractual employees of the City Municipal Corporation (CMC).
+1.2 This policy does not apply to daily wage workers or consultants.
+    Those c
+[SUMMARY END]

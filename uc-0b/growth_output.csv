@@ -1,0 +1,12 @@
+[SUMMARY START]
+(This is a placeholder summary. Replace with actual logic.)
+period,ward,category,budgeted_amount,actual_spend,notes
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.0,13.3,
+2024-01,Ward 1 – Kasba,Drainage & Flooding,8.6,7.3,
+2024-01,Ward 1 – Kasba,Streetlight Maintenance,3.3,3.0,
+2024-01,Ward 1 – Kasba,Waste Management,5.9,5.3,
+2024-01,Ward 1 – Kasba,Parks & Greening,2.3,2.4,
+2024-01,Ward 2 – Shivajinagar,Roads & Pothole Repair,15.8,16.2,
+2024-01,Ward 2 – Shivajinagar,Drainage & Flooding,10.0,10.9,
+2024-01,Ward 2 – Shivajinagar,Streetlight Maintenance,4.
+[SUMMARY END]

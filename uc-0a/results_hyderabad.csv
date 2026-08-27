@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description contains keyword(s): flood Severity keyword: ambulance.,
+GH-202402,Flooding,Standard,"Description contains keyword(s): flood, drain",
+GH-202406,Drain Blockage,Standard,Description contains keyword(s): drain,
+GH-202407,Drain Blockage,Standard,Description contains keyword(s): drain,
+GH-202410,Pothole,Standard,"Description contains keyword(s): pothole, road",
+GH-202411,Pothole,Urgent,Description contains keyword(s): pothole Severity keyword: hospital.,
+GH-202412,Pothole,Urgent,Description contains keyword(s): pothole Severity keyword: school.,
+GH-202417,Waste,Standard,"Description contains keyword(s): waste, garbage, heritage",
+GH-202420,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,Description contains keyword(s): road Severity keyword: collapse.,
+GH-202424,Flooding,Standard,Description contains keyword(s): flood,
+GH-202428,Waste,Standard,Description contains keyword(s): waste,
+GH-202432,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description contains keyword(s): flood, drain",
+GH-202438,Road Damage,Standard,Description contains keyword(s): road,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description contains keyword(s): pothole, damage",
+PM-202402,Pothole,Urgent,Description contains keyword(s): pothole Severity keyword: child.,
+PM-202406,Flooding,Standard,Description contains keyword(s): flood,
+PM-202408,Flooding,Standard,"Description contains keyword(s): flood, drain",
+PM-202410,Streetlight,Standard,Description contains keyword(s): streetlight,
+PM-202411,Streetlight,Urgent,Description contains keyword(s): streetlight Severity keyword: hazard.,
+PM-202413,Waste,Standard,Description contains keyword(s): garbage,
+PM-202418,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Description contains keyword(s): road,
+PM-202420,Other,Urgent,Category ambiguous; no clear match in description. Severity keyword: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description contains keyword(s): flood,
+PM-202428,Other,Standard,Category ambiguous; no clear match in description.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Description contains keyword(s): heritage,
+PM-202433,Waste,Standard,"Description contains keyword(s): waste, road",
+PM-202446,Other,Urgent,Category ambiguous; no clear match in description. Severity keyword: fell.,NEEDS_REVIEW
