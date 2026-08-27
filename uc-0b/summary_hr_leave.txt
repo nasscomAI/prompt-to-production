@@ -1,0 +1,40 @@
+clause: 2.3
+Core obligation: 14-day advance notice required
+binding verb: must
+----------------------------------------
+clause: 2.4
+Core obligation: Written approval required before leave commences. Verbal not valid.
+binding verb: must
+----------------------------------------
+clause: 2.5
+Core obligation: Unapproved absence = LOP regardless of subsequent approval
+binding verb: will
+----------------------------------------
+clause: 2.6
+Core obligation: Max 5 days carry-forward. Above 5 forfeited on 31 Dec.
+binding verb: may / are forfeited
+----------------------------------------
+clause: 2.7
+Core obligation: Carry-forward days must be used Jan–Mar or forfeited
+binding verb: must
+----------------------------------------
+clause: 3.2
+Core obligation: 3+ consecutive sick days requires medical cert within 48hrs
+binding verb: requires
+----------------------------------------
+clause: 3.4
+Core obligation: Sick leave before/after holiday requires cert regardless of duration
+binding verb: requires
+----------------------------------------
+clause: 5.2
+Core obligation: LWP requires Department Head AND HR Director approval
+binding verb: requires
+----------------------------------------
+clause: 5.3
+Core obligation: LWP >30 days requires Municipal Commissioner approval
+binding verb: requires
+----------------------------------------
+clause: 7.2
+Core obligation: Leave encashment during service not permitted under any circumstances
+binding verb: not permitted
+----------------------------------------
