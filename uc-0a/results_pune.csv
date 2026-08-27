@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,This complaint was classified based on noting the specific keyword 'pothole' in the description.,
+PM-202402,Pothole,Urgent,This complaint was classified based on noting the specific keyword 'child' in the description.,
+PM-202406,Flooding,Standard,This complaint was classified based on noting the specific keyword 'flood' in the description.,
+PM-202408,Flooding,Standard,This complaint was classified based on noting the specific keyword 'flood' in the description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,This complaint was classified based on noting the specific keyword 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,This complaint was classified based on noting the specific keyword 'hazard' in the description.,
+PM-202413,Waste,Standard,This complaint was classified based on noting the specific keyword 'garbage' in the description.,
+PM-202418,Noise,Standard,This complaint was classified based on noting the specific keyword 'music' in the description.,
+PM-202419,Road Damage,Standard,This complaint was classified based on noting the specific keyword 'road' in the description.,
+PM-202420,Road Damage,Urgent,This complaint was classified based on noting the specific keyword 'injury' in the description.,
+PM-202427,Flooding,Standard,This complaint was classified based on noting the specific keyword 'flood' in the description.,
+PM-202428,Waste,Standard,This complaint was classified based on noting the specific keyword 'animal' in the description.,
+PM-202430,Streetlight,Standard,This complaint was classified based on noting the specific keyword 'light' in the description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,This complaint was classified based on noting the specific keyword 'waste' in the description.,NEEDS_REVIEW
+PM-202446,Road Damage,Urgent,This complaint was classified based on noting the specific keyword 'fell' in the description.,
