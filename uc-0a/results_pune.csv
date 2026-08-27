@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because description mentions 'pothole'; prioritized as Standard due to words like 'none'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole because description mentions 'pothole'; prioritized as Urgent due to words like 'child, school'.",
+PM-202406,Flooding,Standard,Classified as Flooding because description mentions 'flooding'; prioritized as Standard due to words like 'none'.,
+PM-202408,Flooding,Standard,Classified as Flooding because description mentions 'flooding'; prioritized as Standard due to words like 'none'.,
+PM-202410,Streetlight,Standard,Classified as Streetlight because description mentions 'streetlight'; prioritized as Standard due to words like 'none'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight because description mentions 'streetlight'; prioritized as Urgent due to words like 'hazard'.,
+PM-202413,Waste,Low,Classified as Waste because description mentions 'waste'; prioritized as Low due to words like 'none'.,
+PM-202418,Noise,Standard,Classified as Noise because description mentions 'noise'; prioritized as Standard due to words like 'none'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because description mentions 'road damage'; prioritized as Standard due to words like 'none'.,
+PM-202420,Other,Urgent,Classified as Other because description mentions 'other'; prioritized as Urgent due to words like 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding because description mentions 'flooding'; prioritized as Standard due to words like 'none'.,
+PM-202428,Waste,Standard,Classified as Waste because description mentions 'waste'; prioritized as Standard due to words like 'none'.,
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'heritage damage'; prioritized as Standard due to words like 'none'.,
+PM-202433,Waste,Standard,Classified as Waste because description mentions 'waste'; prioritized as Standard due to words like 'none'.,
+PM-202446,Other,Urgent,Classified as Other because description mentions 'other'; prioritized as Urgent due to words like 'fell'.,NEEDS_REVIEW
