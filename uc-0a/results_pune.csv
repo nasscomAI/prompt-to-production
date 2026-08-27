@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified under Pothole because the description cites 'Large pothole 60cm wide causing tyre damage'.,
+PM-202402,Pothole,Urgent,Classified under Pothole because the description cites 'Deep pothole near bus stop'.,
+PM-202406,Flooding,Standard,Classified under Flooding because the description cites 'Underpass flooded knee-deep after 2hrs rain'.,
+PM-202408,Other,Standard,"Flagged for review because the description 'Bus stand flooded' matches multiple categories: Flooding, Drain Blockage.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified under Streetlight because the description cites 'Three consecutive streetlights out for 10 days'.,
+PM-202411,Streetlight,Urgent,Classified under Streetlight because the description cites 'Streetlight flickering and sparking'.,
+PM-202413,Waste,Standard,Classified under Waste because the description cites 'Overflowing garbage bins near vegetable market'.,
+PM-202418,Noise,Standard,Classified under Noise because the description cites 'Wedding venue playing music past midnight on weeknights'.,
+PM-202419,Road Damage,Standard,Classified under Road Damage because the description cites 'Road surface cracked and sinking near utility work done 1 month ago'.,
+PM-202420,Other,Urgent,"Flagged for review because the description 'Manhole cover missing' matches multiple categories: Drain Blockage, Road Damage.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified under Flooding because the description cites 'Bridge approach floods in 30mins of rain'.,
+PM-202428,Waste,Standard,Classified under Waste because the description cites 'Dead animal not removed for 36 hours'.,
+PM-202430,Other,Standard,"Flagged for review because the description 'Heritage street, lights out' matches multiple categories: Streetlight, Heritage Damage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified under Waste because the description cites 'Bulk waste from apartment renovation dumped on public road'.,
+PM-202446,Road Damage,Urgent,Classified under Road Damage because the description cites 'Footpath tiles broken and upturned'.,
