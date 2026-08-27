@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole on the strength of ""pothole"" and ""tyre damage"" in the description; no severity term present so priority is Standard.",
+PM-202402,Pothole,Urgent,"Classified as Pothole on the strength of ""pothole"" in the description; severity term ""children"" and ""School"" present so priority raised to Urgent.",
+PM-202406,Flooding,Standard,"Classified as Flooding on the strength of ""flooded"", ""knee-deep"" and ""stranded"" in the description; no severity term present so priority is Standard.",
+PM-202408,Drain Blockage,Standard,"Ambiguous between Drain Blockage and Flooding — the description contains ""Drain"" and ""flooded"", so it is flagged for human review rather than forced into one category; no severity term present so priority is Standard.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight on the strength of ""streetlights"", ""very dark"" and ""dark at night"" in the description; no severity term present so priority is Standard.",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight on the strength of ""Streetlight"" and ""flickering"" in the description; severity term ""hazard"" present so priority raised to Urgent.",
+PM-202413,Waste,Standard,"Classified as Waste on the strength of ""garbage"", ""bins"" and ""Smell"" in the description; no severity term present so priority is Standard.",
+PM-202418,Noise,Low,"Classified as Noise on the strength of ""music"" and ""past midnight"" in the description; no severity term present so priority is Low.",
+PM-202419,Road Damage,Standard,"Classified as Road Damage on the strength of ""Road surface"", ""cracked"", ""sinking"" and ""utility work"" in the description; no severity term present so priority is Standard.",
+PM-202420,Drain Blockage,Urgent,"Classified as Drain Blockage on the strength of ""Manhole"" in the description; severity term ""injury"" present so priority raised to Urgent.",
+PM-202427,Flooding,Standard,"Classified as Flooding on the strength of ""floods"" in the description; no severity term present so priority is Standard.",
+PM-202428,Waste,Standard,"Classified as Waste on the strength of ""Dead animal"" in the description; no severity term present so priority is Standard.",
+PM-202430,Heritage Damage,Standard,"Ambiguous between Heritage Damage and Streetlight — the description contains ""Heritage"" and ""lights out"", so it is flagged for human review rather than forced into one category; no severity term present so priority is Standard.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as Waste on the strength of ""waste"" and ""dumped"" in the description; no severity term present so priority is Standard.",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage on the strength of ""Footpath"", ""tiles broken"" and ""upturned"" in the description; severity term ""fell"" present so priority raised to Urgent.",
