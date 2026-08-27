@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,No category keyword matched but mentions severity word 'Ambulance'.,NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,"Mentions 'blocked' in the description, indicating Drain Blockage.",
+GH-202406,Drain Blockage,Standard,"Mentions 'blocked' in the description, indicating Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Mentions 'blocked' in the description, indicating Drain Blockage.",
+GH-202410,Pothole,Standard,"Mentions 'Potholes' in the description, indicating Pothole.",
+GH-202411,Pothole,Standard,"Mentions 'Pothole' in the description, indicating Pothole.",
+GH-202412,Pothole,Urgent,"Mentions 'potholes' in the description, indicating Pothole.",
+GH-202417,Other,Standard,"Mentions multiple keywords ('garbage', 'Heritage') making category ambiguous.",NEEDS_REVIEW
+GH-202420,Other,Standard,No category keyword matched; description excerpt: 'Construction drilling from 5am daily near'.,NEEDS_REVIEW
+GH-202422,Other,Standard,No category keyword matched; description excerpt: 'Road collapsed partially. Crater 1m deep'.,NEEDS_REVIEW
+GH-202424,Other,Standard,No category keyword matched; description excerpt: 'Underpass floods in light rain. Cars'.,NEEDS_REVIEW
+GH-202428,Waste,Standard,"Mentions 'waste' in the description, indicating Waste.",
+GH-202432,Other,Standard,No category keyword matched; description excerpt: '24hr supermarket delivery trucks idling with'.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Mentions multiple keywords ('flooding', 'blocked') making category ambiguous.",NEEDS_REVIEW
+GH-202438,Other,Standard,No category keyword matched; description excerpt: 'Colony surrounded by fields that channel'.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Mentions 'pothole' in the description, indicating Pothole.",
+PM-202402,Pothole,Urgent,"Mentions 'pothole' in the description, indicating Pothole.",
+PM-202406,Other,Standard,No category keyword matched; description excerpt: 'Underpass flooded knee-deep after 2hrs rain.'.,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,"Mentions 'blocked' in the description, indicating Drain Blockage.",
+PM-202410,Other,Standard,No category keyword matched; description excerpt: 'Three consecutive streetlights out for 10'.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"Mentions 'Streetlight' in the description, indicating Streetlight.",
+PM-202413,Waste,Standard,"Mentions 'garbage' in the description, indicating Waste.",
+PM-202418,Noise,Standard,"Mentions 'music' in the description, indicating Noise.",
+PM-202419,Road Damage,Standard,"Mentions 'cracked' in the description, indicating Road Damage.",
+PM-202420,Other,Urgent,No category keyword matched but mentions severity word 'injury'.,NEEDS_REVIEW
+PM-202427,Other,Standard,No category keyword matched; description excerpt: 'Bridge approach floods in 30mins of'.,NEEDS_REVIEW
+PM-202428,Other,Standard,No category keyword matched; description excerpt: 'Dead animal not removed for 36'.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Mentions 'Heritage' in the description, indicating Heritage Damage.",
+PM-202433,Waste,Standard,"Mentions 'waste' in the description, indicating Waste.",
+PM-202446,Other,Urgent,No category keyword matched but mentions severity word 'fell'.,NEEDS_REVIEW
