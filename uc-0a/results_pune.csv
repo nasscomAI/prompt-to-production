@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description correctly cites 'pothole'.,
+PM-202402,Pothole,Urgent,The description correctly cites 'pothole'.,
+PM-202406,Flooding,Standard,The description correctly cites 'flood'.,
+PM-202408,Flooding,Standard,The description cites conflicting issues like 'flood' and 'drain blocked'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The description correctly cites 'lights out'.,
+PM-202411,Streetlight,Urgent,The description correctly cites 'streetlight'.,
+PM-202413,Waste,Standard,The description correctly cites 'garbage'.,
+PM-202418,Noise,Standard,The description correctly cites 'music'.,
+PM-202419,Road Damage,Standard,The description correctly cites 'crack'.,
+PM-202420,Other,Urgent,The description correctly cites 'manhole cover missing'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The description correctly cites 'flood'.,
+PM-202428,Waste,Standard,The description correctly cites 'dead animal'.,
+PM-202430,Streetlight,Standard,The description cites conflicting issues like 'lights out' and 'heritage'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,The description correctly cites 'waste'.,
+PM-202446,Road Damage,Urgent,The description correctly cites 'broken'.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,The description correctly cites 'flood'.,
+GH-202402,Flooding,Standard,The description cites conflicting issues like 'flood' and 'drain'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,The description correctly cites 'drain'.,
+GH-202407,Drain Blockage,Standard,The description correctly cites 'drain blocked'.,
+GH-202410,Pothole,Standard,The description correctly cites 'pothole'.,
+GH-202411,Pothole,Urgent,The description correctly cites 'pothole'.,
+GH-202412,Pothole,Urgent,The description correctly cites 'pothole'.,
+GH-202417,Waste,Standard,The description cites conflicting issues like 'garbage' and 'heritage'.,NEEDS_REVIEW
+GH-202420,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+GH-202422,Other,Urgent,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,The description correctly cites 'flood'.,
+GH-202428,Waste,Standard,The description correctly cites 'waste'.,
+GH-202432,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,The description cites conflicting issues like 'flood' and 'drain blocked'.,NEEDS_REVIEW
+GH-202438,Other,Standard,The description does not contain clear taxonomy keywords.,NEEDS_REVIEW
