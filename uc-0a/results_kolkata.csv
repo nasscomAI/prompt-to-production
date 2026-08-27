@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'Heritage lamp post knocked over by delivery vehicle. Not res...',
+KM-202402,Road Damage,Standard,Classified as Road Damage because description mentions 'Historic tram road cobblestones broken up by cable laying wo...',
+KM-202405,Other,Standard,Category ambiguous from description provided.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole because description mentions 'Airport access road full of potholes. Diplomatic complaint r...',
+KM-202410,Pothole,Standard,Classified as Pothole because description mentions 'Pothole causing tyre blowouts. Three incidents this week.',
+KM-202411,Pothole,Standard,Classified as Pothole because description mentions 'Deep pothole filling with rainwater. Depth invisible. Accide...',
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage because description mentions 'New residential complex draining directly onto public road.',
+KM-202418,Waste,Standard,Classified as Waste because description mentions 'Tourist zone waste overflowing. Foreign visitors photographi...',
+KM-202421,Road Damage,Urgent,Classified as Road Damage because description mentions 'Footpath broken and sinking. Elderly pedestrian fell. Hospit...',
+KM-202422,Road Damage,Standard,Classified as Road Damage because description mentions 'Road surface buckled near bridge. Structural concern raised.',
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'Heritage residential building exterior defaced by billboard ...',
+KM-202430,Road Damage,Standard,Classified as Road Damage because description mentions 'Road subsided near gas pipeline. Gas leak smell reported too...',
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'Street paving removed for utility work — heritage stone not ...',
+KM-202436,Streetlight,Standard,Classified as Streetlight because description mentions 'Entire colony substation tripped. Darkness for 3 nights.',
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because description mentions 'Street vendors using amplifiers illegally in heritage precin...',
