@@ -1,0 +1,16 @@
+id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole' indicating a pothole issue,
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' indicating a pothole issue with urgency due to 'child, School'",
+PM-202406,Flooding,Standard,"Description mentions 'flood, flooded' indicating a flooding issue",
+PM-202408,Flooding,Standard,"Description mentions 'flood, flooded' indicating a flooding issue",
+PM-202410,Streetlight,Standard,Description mentions 'streetlight' indicating a streetlight issue,
+PM-202411,Streetlight,Urgent,Description mentions 'Streetlight' indicating a streetlight issue with urgency due to 'hazard',
+PM-202413,Waste,Standard,Description mentions 'garbage' indicating a waste issue,
+PM-202418,Other,Standard,Complaint text suggests a other related problem,NEEDS_REVIEW
+PM-202419,Other,Standard,Complaint text suggests a other related problem,NEEDS_REVIEW
+PM-202420,Other,Urgent,Complaint text suggests a other related problem with urgency due to 'injury',NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description mentions 'flood' indicating a flooding issue,
+PM-202428,Other,Standard,Complaint text suggests a other related problem,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Description mentions 'Heritage' indicating a heritage damage issue,
+PM-202433,Waste,Standard,"Description mentions 'waste, dump' indicating a waste issue",
+PM-202446,Other,Urgent,Complaint text suggests a other related problem with urgency due to 'fell',NEEDS_REVIEW
