@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Classified as Heritage Damage based on: ""Heritage lamp post knocked over by delivery vehicle""",
+KM-202402,Road Damage,Standard,"Classified as Road Damage based on: ""Historic tram road cobblestones broken up by cable laying work""",
+KM-202405,Other,Standard,"Classified as Other based on: ""Wedding band playing near Tagore Museum at 11pm""",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Classified as Pothole based on: ""Airport access road full of potholes""",
+KM-202410,Pothole,Standard,"Classified as Pothole based on: ""Pothole causing tyre blowouts""",
+KM-202411,Pothole,Standard,"Classified as Pothole based on: ""Deep pothole filling with rainwater""",
+KM-202415,Drain Blockage,Standard,"Classified as Drain Blockage based on: ""New residential complex draining directly onto public road""",
+KM-202418,Waste,Standard,"Classified as Waste based on: ""Tourist zone waste overflowing""",
+KM-202421,Road Damage,Urgent,"Classified as Road Damage based on: ""Footpath broken and sinking""",
+KM-202422,Other,Standard,"Classified as Other based on: ""Road surface buckled near bridge""",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Classified as Heritage Damage based on: ""Heritage residential building exterior defaced by billboard installation""",
+KM-202430,Other,Standard,"Classified as Other based on: ""Road subsided near gas pipeline""",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage based on: ""Street paving removed for utility work — heritage stone not replaced""",
+KM-202436,Other,Standard,"Classified as Other based on: ""Entire colony substation tripped""",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Classified as Heritage Damage based on: ""Street vendors using amplifiers illegally in heritage precinct""",
