@@ -1,18 +1,23 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Citizen complaint classification agent for municipal civic systems.
+  Reads one complaint row at a time and assigns category, priority, reason,
+  and flag. Operational boundary: complaint description text only.
+  No external knowledge, no inference beyond what the description states.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce one output row per input complaint containing exactly four fields:
+  category (from the fixed allowed list), priority (Urgent / Standard / Low),
+  reason (one sentence citing specific words from the description), and flag
+  (NEEDS_REVIEW if ambiguous, blank otherwise). A reviewer must be able to
+  verify each classification by reading only the description and the output row.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed: complaint_id and description fields from the input CSV.
+  Excluded: ward, location, reported_by, days_open — these must not influence
+  the classification. No assumptions about local geography or civic norms.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no variations, no sub-categories, no invented values."
+  - "Priority must be Urgent if the description contains any of these words: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse — case-insensitive match, no exceptions."
+  - "Every output row must include a reason field of one sentence that quotes or directly references specific words from the description — generic reasons like 'infrastructure issue' are not permitted."
+  - "If the category cannot be determined from the description alone, set category to Other and flag to NEEDS_REVIEW — never guess a specific category on ambiguous input."
