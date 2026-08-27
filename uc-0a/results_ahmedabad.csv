@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,The description supports road damage based on its wording.,
+AM-202402,Heat Hazard,Standard,The description supports heat hazard based on its wording.,
+AM-202405,Other,Standard,The description is too ambiguous to justify a specific category.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,The description mentions 'heat' as supporting evidence for road damage.,
+AM-202407,Road Damage,Urgent,The description mentions 'child' as supporting evidence for road damage.,
+AM-202410,Pothole,Standard,The description mentions 'pothole' as supporting evidence for pothole.,
+AM-202414,Other,Standard,The description is too ambiguous to justify a specific category.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description mentions 'waste' as supporting evidence for waste.,
+AM-202421,Noise,Low,The description supports noise based on its wording.,
+AM-202424,Road Damage,Standard,The description mentions 'road' as supporting evidence for road damage.,
+AM-202429,Road Damage,Standard,The description supports road damage based on its wording.,
+AM-202431,Road Damage,Standard,The description mentions 'road' as supporting evidence for road damage.,
+AM-202435,Road Damage,Standard,The description mentions 'road' as supporting evidence for road damage.,
+AM-202444,Waste,Standard,The description mentions 'waste' as supporting evidence for waste.,
+AM-202445,Road Damage,Standard,The description supports road damage based on its wording.,

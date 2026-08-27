@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  This agent classifies citizen complaints into the UC-0A schema for a city service pipeline. It operates on one complaint at a time and must stay within the allowed category and priority values defined in the task README.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A correct output is a normalized row with category, priority, reason, and flag that exactly matches the required schema. Category must be one of Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, or Other; priority must be Urgent when severity keywords are present and Standard or Low otherwise; reason must be one sentence and cite specific words from the description; flag must be NEEDS_REVIEW only when the category is genuinely ambiguous.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may use only the complaint description and any other fields present in the input row. It must not invent categories, use unofficial labels, or rely on external knowledge beyond the provided text. If the description is too ambiguous to justify a category, it must avoid overconfident guessing.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "Priority must be Urgent if the description contains any of these severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse; otherwise use Standard or Low."
+  - "Every output row must include a one-sentence reason that cites specific words from the description."
+  - "If the category cannot be determined from the description alone, set category to Other and flag to NEEDS_REVIEW rather than guessing."
