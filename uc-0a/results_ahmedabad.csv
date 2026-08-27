@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Complaint mentions: Tarmac, surface.",NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Complaint about heat hazard involving: Metal, bus.",
+AM-202405,Other,Standard,"Complaint mentions: Dead, trees.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Complaint about heat hazard involving: Irrigation, system.",
+AM-202407,Other,Urgent,"Complaint mentions: Broken, bench.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Complaint about pothole involving: Pothole, main.",
+AM-202414,Other,Standard,"Complaint mentions: Residential, colony.",NEEDS_REVIEW
+AM-202417,Other,Standard,"Complaint mentions: Night, market.",
+AM-202421,Other,Standard,"Complaint mentions: Club, music.",NEEDS_REVIEW
+AM-202424,Other,Standard,"Complaint mentions: Zoo, approach.",
+AM-202429,Heat Hazard,Standard,"Complaint about heat hazard involving: River, walk.",
+AM-202431,Heritage Damage,Standard,"Complaint about heritage damage involving: Old, city.",
+AM-202435,Heat Hazard,Standard,"Complaint about heat hazard involving: Black, metal.",
+AM-202444,Waste,Standard,"Complaint about waste involving: Restaurant, waste.",
+AM-202445,Other,Standard,"Complaint mentions: BRT, shelter.",NEEDS_REVIEW
