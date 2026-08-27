@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Category assigned as Flooding because description mentioned 'flood'. Priority elevated to Urgent due to safety keyword 'ambulance'.,
+GH-202402,Flooding,Standard,Category assigned as Flooding because description mentioned 'flood'.,
+GH-202406,Waste,Standard,Category assigned as Waste because description mentioned 'debris'.,
+GH-202407,Drain Blockage,Standard,Category assigned as Drain Blockage because description mentioned 'drain'.,
+GH-202410,Pothole,Standard,Category assigned as Pothole because description mentioned 'pothole'.,
+GH-202411,Pothole,Urgent,Category assigned as Pothole because description mentioned 'pothole'. Priority elevated to Urgent due to safety keyword 'hospital'.,
+GH-202412,Pothole,Urgent,Category assigned as Pothole because description mentioned 'pothole'. Priority elevated to Urgent due to safety keyword 'school'.,
+GH-202417,Waste,Standard,Category assigned as Waste because description mentioned 'garbage'.,
+GH-202420,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,Category assigned as Pothole because description mentioned 'crater'. Priority elevated to Urgent due to safety keyword 'collapse'.,
+GH-202424,Flooding,Standard,Category assigned as Flooding because description mentioned 'flood'.,
+GH-202428,Waste,Standard,Category assigned as Waste because description mentioned 'waste'.,
+GH-202432,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Category assigned as Flooding because description mentioned 'flood'.,
+GH-202438,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW

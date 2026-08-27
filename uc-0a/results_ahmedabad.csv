@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Category assigned as Road Damage because description mentioned 'surface'.,
+AM-202402,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category assigned as Heat Hazard because description mentioned 'heat'.,
+AM-202407,Other,Urgent,Category set to Other as no specific taxonomy keywords were detected in the description. Priority elevated to Urgent due to safety keyword 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category assigned as Pothole because description mentioned 'pothole'.,
+AM-202414,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Category assigned as Waste because description mentioned 'waste'.,
+AM-202421,Other,Standard,Category set to Other as no specific taxonomy keywords were detected in the description.,NEEDS_REVIEW
+AM-202424,Road Damage,Standard,Category assigned as Road Damage because description mentioned 'surface'.,
+AM-202429,Road Damage,Standard,Category assigned as Road Damage because description mentioned 'surface'.,
+AM-202431,Heritage Damage,Standard,Category assigned as Heritage Damage because description mentioned 'heritage'.,
+AM-202435,Heat Hazard,Standard,Category assigned as Heat Hazard because description mentioned 'heat'.,
+AM-202444,Waste,Standard,Category assigned as Waste because description mentioned 'waste'.,
+AM-202445,Heat Hazard,Standard,Category assigned as Heat Hazard because description mentioned 'sun'.,
