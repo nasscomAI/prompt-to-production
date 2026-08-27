@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,water,high,auto classified,no
+GH-202402,water,high,auto classified,no
+GH-202406,water,high,auto classified,no
+GH-202407,water,high,auto classified,no
+GH-202410,infrastructure,medium,auto classified,no
+GH-202411,infrastructure,medium,auto classified,no
+GH-202412,infrastructure,medium,auto classified,no
+GH-202417,sanitation,high,auto classified,no
+GH-202420,other,low,auto classified,no
+GH-202422,infrastructure,medium,auto classified,no
+GH-202424,water,high,auto classified,no
+GH-202428,sanitation,high,auto classified,no
+GH-202432,other,low,auto classified,no
+GH-202448,water,high,auto classified,no
+GH-202438,water,high,auto classified,no

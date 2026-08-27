@@ -1,12 +1,24 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+import csv
+
+def show_complaints():
+
+    file = "../data/city-test-files/test_hyderabad.csv"
+
+    with open(file, encoding="utf-8") as f:
+
+        reader = csv.DictReader(f)
+
+        for row in reader:
+
+            print(row["complaint_id"], "-", row["description"])
+
 
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+
+    print("City Complaint Viewer\n")
+
+    show_complaints()
+
 
 if __name__ == "__main__":
     main()
