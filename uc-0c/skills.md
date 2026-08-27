@@ -3,14 +3,14 @@
 # Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: number_processing
+    description: Processes numeric input and performs basic validation or formatting.
+    input: Numeric value (int or float)
+    output: Validated or formatted numeric result
+    error_handling: If input is not a number → return "Invalid input"
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: calculation
+    description: Performs basic arithmetic operations like addition, subtraction, multiplication, or division.
+    input: Two numbers and an operation (+, -, *, /)
+    output: Result of the calculation as a number
+    error_handling: If invalid operation or division by zero → return "Calculation error"
