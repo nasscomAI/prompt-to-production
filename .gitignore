@@ -1,7 +1,4 @@
-*:Zone.Identifier
-*.Zone.Identifier
+env/
+venv/
 __pycache__/
-.DS_Store
 *.pyc
-.venv/
-tutor-only/

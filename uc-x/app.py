@@ -1,12 +1,21 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+def answer_question(question):
+    question = question.lower()
+
+    if "python" in question:
+        return "Python is a programming language."
+    elif "ai" in question:
+        return "AI stands for Artificial Intelligence."
+    elif "hello" in question:
+        return "Hello! How can I help you?"
+    else:
+        return "Sorry, I don't know the answer."
+
 
 def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    q = input("Ask a question: ")
+    ans = answer_question(q)
+    print("Answer:", ans)
+
 
 if __name__ == "__main__":
     main()
