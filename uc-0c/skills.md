@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the ward budget CSV file, validates that all required columns are present, and reports the count and specific locations of null actual_spend values before returning the dataset.
+    input: File path string pointing to ward_budget.csv containing columns period, ward, category, budgeted_amount, actual_spend, and notes.
+    output: Pandas DataFrame with all 300 rows plus a validation report showing total null count (must be 5), the specific rows containing nulls (period, ward, category), and the null reason from the notes column for each.
+    error_handling: If the file path is invalid, raise FileNotFoundError with the attempted path. If any required column is missing, refuse to proceed and list the missing columns. If the null count is not exactly 5, raise a warning that the dataset structure has changed. If the file is empty or cannot be parsed as CSV, raise ValueError with details.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Takes ward, category, and growth_type parameters, filters the dataset to the specified ward and category, and returns a per-period table with growth calculations and the formula used for each row.
+    input: Ward name (string), category name (string), growth_type (either "MoM" for month-over-month or "YoY" for year-over-year), and the loaded DataFrame from load_dataset.
+    output: CSV file with columns period, ward, category, actual_spend, growth_value, growth_formula_used, and null_flag. Each row shows the calculation formula (e.g., "(19.7 - 14.8) / 14.8 * 100 = +33.1%"). Rows with null actual_spend are flagged with the reason from notes and marked as "NOT_COMPUTABLE". Growth is only calculated when both current and comparison period values are non-null.
+    error_handling: If growth_type is not specified or is neither "MoM" nor "YoY", refuse to proceed and prompt the user to specify either MoM or YoY - never default or guess. If the specified ward or category does not exist in the dataset, return an error listing valid ward and category values. If a request attempts to aggregate across multiple wards or categories, refuse and explain that only per-ward per-category analysis is allowed. If comparison period data is missing for growth calculation (e.g., January has no prior month for MoM), mark as "NO_COMPARISON_PERIOD" instead of computing.
