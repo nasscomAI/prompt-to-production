@@ -1,6 +1,29 @@
 # UC-0C — Number That Looks Right
 
-**Core failure modes:** Wrong aggregation level · Silent null handling · Formula assumption
+Reads ward_budget.csv, calculates totals, detects suspicious numbers (overspend > 20%), and flags inconsistencies (missing data, negatives).
+
+## How to Run
+
+From the project root:
+
+```bash
+cd uc-0c
+python app.py --input ../data/budget/ward_budget.csv --output budget_report.json
+```
+
+Or use defaults:
+
+```bash
+python app.py
+```
+
+Custom overspend threshold (e.g. 15%):
+
+```bash
+python app.py --threshold 1.15 --output report.json
+```
+
+**Requirements:** Python 3.8+, standard library only (csv, json, re, pathlib).
 
 ---
 

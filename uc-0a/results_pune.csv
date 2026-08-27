@@ -1,0 +1,16 @@
+complaint_id,category,reason,confidence
+PM-202401,roads,pothole,medium
+PM-202402,roads,pothole,medium
+PM-202406,water,flooded,medium
+PM-202408,water,"drain, water, flooded",high
+PM-202410,electricity,"streetlights, dark",high
+PM-202411,electricity,"streetlight, electrical, flickering, sparking",high
+PM-202413,sanitation,"garbage, smell, garbage bins",high
+PM-202418,others,No matching keywords found,low
+PM-202419,roads,"road, surface",high
+PM-202420,roads,manhole,medium
+PM-202427,water,floods,medium
+PM-202428,sanitation,dead animal,medium
+PM-202430,electricity,"lights, lights out, dark",high
+PM-202433,sanitation,"waste, bulk waste",high
+PM-202446,roads,"footpath, tiles, upturned, broken",high

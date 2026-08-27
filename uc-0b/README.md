@@ -1,6 +1,23 @@
 # UC-0B — Summary That Changes Meaning
 
-**Core failure modes:** Clause omission · Scope bleed · Obligation softening
+Loads policy documents, generates summaries, validates that meaning is preserved, and highlights risky summaries that omit critical information.
+
+## How to Run
+
+From the project root:
+
+```bash
+cd uc-0b
+python app.py --input ../data/policy-documents --output summary_results.json
+```
+
+Or use defaults (reads from `../data/policy-documents`):
+
+```bash
+python app.py
+```
+
+**Requirements:** Python 3.8+, standard library only (json, re, pathlib).
 
 ---
 

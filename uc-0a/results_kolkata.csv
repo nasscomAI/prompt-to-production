@@ -1,0 +1,16 @@
+complaint_id,category,reason,confidence
+KM-202401,others,No matching keywords found,low
+KM-202402,roads,"road, broken",high
+KM-202405,others,No matching keywords found,low
+KM-202409,roads,"road, potholes",high
+KM-202410,roads,pothole,medium
+KM-202411,roads,pothole,medium
+KM-202415,roads,road,medium
+KM-202418,sanitation,waste,medium
+KM-202421,roads,"footpath, broken",high
+KM-202422,roads,"road, surface",high
+KM-202426,others,No matching keywords found,low
+KM-202430,sanitation,smell,medium
+KM-202434,others,No matching keywords found,low
+KM-202436,others,No matching keywords found,low
+KM-202438,others,No matching keywords found,low

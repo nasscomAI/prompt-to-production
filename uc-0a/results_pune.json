@@ -1,0 +1,96 @@
+{
+  "classifications": [
+    {
+      "complaint_id": "PM-202401",
+      "category": "roads",
+      "reason": "pothole",
+      "confidence": "medium"
+    },
+    {
+      "complaint_id": "PM-202402",
+      "category": "roads",
+      "reason": "pothole",
+      "confidence": "medium"
+    },
+    {
+      "complaint_id": "PM-202406",
+      "category": "water",
+      "reason": "flooded",
+      "confidence": "medium"
+    },
+    {
+      "complaint_id": "PM-202408",
+      "category": "water",
+      "reason": "drain, water, flooded",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202410",
+      "category": "electricity",
+      "reason": "streetlights, dark",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202411",
+      "category": "electricity",
+      "reason": "streetlight, electrical, flickering, sparking",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202413",
+      "category": "sanitation",
+      "reason": "garbage, smell, garbage bins",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202418",
+      "category": "others",
+      "reason": "No matching keywords found",
+      "confidence": "low"
+    },
+    {
+      "complaint_id": "PM-202419",
+      "category": "roads",
+      "reason": "road, surface",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202420",
+      "category": "roads",
+      "reason": "manhole",
+      "confidence": "medium"
+    },
+    {
+      "complaint_id": "PM-202427",
+      "category": "water",
+      "reason": "floods",
+      "confidence": "medium"
+    },
+    {
+      "complaint_id": "PM-202428",
+      "category": "sanitation",
+      "reason": "dead animal",
+      "confidence": "medium"
+    },
+    {
+      "complaint_id": "PM-202430",
+      "category": "electricity",
+      "reason": "lights, lights out, dark",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202433",
+      "category": "sanitation",
+      "reason": "waste, bulk waste",
+      "confidence": "high"
+    },
+    {
+      "complaint_id": "PM-202446",
+      "category": "roads",
+      "reason": "footpath, tiles, upturned, broken",
+      "confidence": "high"
+    }
+  ],
+  "total": 15,
+  "errors": []
+}
