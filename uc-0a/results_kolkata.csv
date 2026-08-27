@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Description contains keywords related to streetlights. Contains: heritage, lamp, post, knocked, over, by, delivery,...",
+KM-202402,Heritage Damage,Standard,"Description contains keywords related to heritage sites. Contains: historic, tram, road, cobblestones, broken, up, by...",
+KM-202405,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description contains keywords related to potholes. Contains: airport, access, road, full, of, potholes., diplom...",
+KM-202410,Pothole,Standard,"Description contains keywords related to potholes. Contains: pothole, causing, tyre, blowouts., three, incident...",
+KM-202411,Pothole,Standard,"Description contains keywords related to potholes. Contains: deep, pothole, filling, with, rainwater., depth, i...",
+KM-202415,Drain Blockage,Standard,"Description contains keywords related to drain blockage. Contains: new, residential, complex, draining, directly, ont...",
+KM-202418,Waste,Standard,"Description contains keywords related to waste. Contains: tourist, zone, waste, overflowing., foreign, visit...",
+KM-202421,Other,Urgent,Category could not be confidently determined from the description.,NEEDS_REVIEW
+KM-202422,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"Description contains keywords related to heritage sites. Contains: heritage, residential, building, exterior, defaced...",
+KM-202430,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Description contains keywords related to heritage sites. Contains: street, paving, removed, for, utility, work, herit...",
+KM-202436,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description contains keywords related to heritage sites. Contains: street, vendors, using, amplifiers, illegally, in,...",

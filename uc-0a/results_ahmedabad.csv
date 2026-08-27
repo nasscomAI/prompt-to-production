@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Description contains keywords related to heat hazards. Contains: metal, bus, shelter, reaching, dangerous, temperat...",
+AM-202405,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description contains keywords related to heat hazards. Contains: irrigation, system, broken., grass, dying, in, hea...",
+AM-202407,Other,Urgent,Category could not be confidently determined from the description.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Description contains keywords related to potholes. Contains: pothole, on, main, highway, causing, morning, rush...",
+AM-202414,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Description contains keywords related to waste. Contains: night, market, waste, not, cleared, before, mornin...",
+AM-202421,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+AM-202424,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Description contains keywords related to heat hazards. Contains: river, walk, surface, temperature, unbearable., in...",
+AM-202431,Heritage Damage,Standard,"Description contains keywords related to heritage sites. Contains: old, city, road, subsidence, near, ancient, step, ...",
+AM-202435,Heat Hazard,Standard,"Description contains keywords related to heat hazards. Contains: black, metal, road, dividers, storing, heat., moto...",
+AM-202444,Waste,Standard,"Description contains keywords related to waste. Contains: restaurant, waste, bins, overflowing, on, sunday, ...",
+AM-202445,Other,Standard,Category could not be confidently determined from the description.,NEEDS_REVIEW
