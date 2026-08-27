@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions '44', with Standard priority because no severity keyword is present.",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions 'temperature', with Standard priority because no severity keyword is present.",
+AM-202405,Other,Standard,"Classified as Other because the description mentions 'dead trees with split branches. fall', with Standard priority because no severity keyword is present.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions 'heat', with Standard priority because no severity keyword is present.",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage because the description mentions 'paving', with Urgent priority triggered by 'child'.",
+AM-202410,Pothole,Standard,"Classified as Pothole because the description mentions 'pothole', with Standard priority because no severity keyword is present.",
+AM-202414,Streetlight,Standard,"Classified as Streetlight because the description mentions 'unlit', with Standard priority because no severity keyword is present.",
+AM-202417,Waste,Standard,"Classified as Waste because the description mentions 'waste', with Standard priority because no severity keyword is present.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Classified as Noise because the description mentions 'music', with Standard priority because no severity keyword is present.",
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions '45', with Standard priority because no severity keyword is present.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions '52', with Standard priority because no severity keyword is present.",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage because the description mentions 'heritage', with Standard priority because no severity keyword is present.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions 'heat', with Standard priority because no severity keyword is present.",
+AM-202444,Waste,Standard,"Classified as Waste because the description mentions 'waste', with Standard priority because no severity keyword is present.",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard because the description mentions 'full sun', with Standard priority because no severity keyword is present.",

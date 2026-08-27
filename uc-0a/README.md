@@ -17,8 +17,7 @@ uc-0a/results_[your-city].csv
 
 ## Run Command
 ```bash
-python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
+python classifier.py \ --input ../data/city-test-files/test_pune.csv \
   --output results_pune.csv
 ```
 
