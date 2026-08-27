@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on explicit keywords: 'pothole' found in the description.,
+PM-202402,Pothole,Urgent,"Classified based on explicit keywords: 'child', 'pothole', 'school' found in the description.",
+PM-202406,Flooding,Standard,Classified based on explicit keywords: 'flood' found in the description.,
+PM-202408,Other,Standard,"Classified based on explicit keywords: 'drain', 'flood' found in the description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified based on explicit keywords: 'dark', 'light', 'streetlight' found in the description.",
+PM-202411,Streetlight,Urgent,"Classified based on explicit keywords: 'hazard', 'light', 'streetlight' found in the description.",
+PM-202413,Waste,Standard,"Classified based on explicit keywords: 'garbage', 'smell' found in the description.",
+PM-202418,Noise,Standard,Classified based on explicit keywords: 'music' found in the description.,
+PM-202419,Road Damage,Standard,"Classified based on explicit keywords: 'crack', 'sinking', 'surface' found in the description.",
+PM-202420,Drain Blockage,Urgent,"Classified based on explicit keywords: 'injury', 'manhole' found in the description.",
+PM-202427,Flooding,Standard,Classified based on explicit keywords: 'flood' found in the description.,
+PM-202428,Waste,Standard,Classified based on explicit keywords: 'dead animal' found in the description.,
+PM-202430,Other,Standard,"Classified based on explicit keywords: 'dark', 'heritage', 'light' found in the description.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified based on explicit keywords: 'dumped', 'waste' found in the description.",
+PM-202446,Road Damage,Urgent,"Classified based on explicit keywords: 'broken', 'fell', 'upturned' found in the description.",
