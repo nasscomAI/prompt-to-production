@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other based on description excerpt: 'Tarmac surface melting at 44°C'.,
+AM-202402,Heat Hazard,Standard,Description contains 'temperature' indicating heat hazard.,
+AM-202405,Other,Standard,Classified as Other based on description excerpt: 'Dead trees with split branches'.,
+AM-202406,Heat Hazard,Standard,Description contains 'heat' indicating heat hazard.,
+AM-202407,Other,Urgent,Classified as Other based on description excerpt: 'Broken bench and upturned paving'.,
+AM-202410,Pothole,Standard,Description contains 'Pothole' indicating pothole.,
+AM-202414,Other,Standard,Classified as Other based on description excerpt: 'Residential colony unlit after 9pm'.,
+AM-202417,Waste,Standard,Description contains 'waste' indicating waste.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Description contains 'music' indicating noise.,
+AM-202424,Road Damage,Standard,Description contains 'road surface' indicating road damage.,
+AM-202429,Heat Hazard,Standard,Description contains 'temperature' indicating heat hazard.,
+AM-202431,Heritage Damage,Standard,Description contains 'Old city' indicating heritage damage.,
+AM-202435,Heat Hazard,Standard,Description contains 'heat' indicating heat hazard.,
+AM-202444,Waste,Standard,Description contains 'waste' indicating waste.,
+AM-202445,Other,Standard,Classified as Other based on description excerpt: 'BRT shelter roof glass broken'.,
