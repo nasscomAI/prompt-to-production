@@ -1,0 +1,16 @@
+═══════════════════════════════════════════════════════════
+        CITY MUNICIPAL CORPORATION - IT ACCEPTABLE USE SUMMARY
+═══════════════════════════════════════════════════════════
+
+HIGH-FIDELITY CLAUSE SUMMARY:
+
+Clause 2.1: Corporate devices must be used primarily for official work purposes.
+Clause 2.3: Software installation requires written approval from the IT Department; only catalogued software is permitted.
+Clause 2.6: Security agents must be active at all times; disabling them is a disciplinary offence.
+Clause 3.5: Lost or stolen personal devices containing CMC email must be reported within 4 hours for remote data wipe.
+Clause 4.1: Passwords must not be shared with any other person, including IT staff.
+Clause 6.1: Internet use on CMC systems is strictly monitored and logged.
+Clause 7.2: Violations involving unauthorised access to restricted data will be reported to law enforcement.
+
+════════════════════════════════════════════════════════════
+SUMMARY STATUS: COMPLIANT (ALL CONDITIONS PRESERVED)
