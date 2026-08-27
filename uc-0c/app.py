@@ -177,15 +177,82 @@ def write_results(results, output_path, missing_count):
         writer.writerows(results)
 
 
+def selftest(input_path):
+    """Assert the enforcement rules in agents.md actually hold. Run with --selftest."""
+    rows = list(csv.DictReader(open(input_path, newline="", encoding="utf-8")))
+
+    def refuses(**kwargs):
+        try:
+            compute_growth(rows, **kwargs)
+        except Refusal:
+            return True
+        return False
+
+    # Rule: growth type is never assumed.
+    assert refuses(ward="Ward 1 – Kasba", category="Roads & Pothole Repair")
+    # Rule: a growth type this single-year ledger cannot support is refused.
+    assert refuses(growth_type="YoY")
+    assert refuses(growth_type="quarterly")
+    # Rule: aggregation across wards or categories is refused, not served.
+    assert refuses(ward="all", growth_type="MoM")
+    assert refuses(category="total", growth_type="MoM")
+    # Rule: an unknown name is refused, not matched to the nearest.
+    assert refuses(ward="Ward 1", growth_type="MoM")
+    assert refuses(category="Roads", growth_type="MoM")
+
+    out = compute_growth(rows, growth_type="MoM")
+
+    # Rule: twenty-five independent series, never summed together.
+    assert len({(r["ward"], r["category"]) for r in out}) == 25
+    assert len(out) == 300
+
+    by_key = {(r["ward"], r["category"], r["period"]): r for r in out}
+
+    # The published reference values, recomputed from the ledger.
+    kasba_roads = ("Ward 1 – Kasba", "Roads & Pothole Repair")
+    assert by_key[kasba_roads + ("2024-07",)]["growth_pct"] == 33.1
+    assert by_key[kasba_roads + ("2024-10",)]["growth_pct"] == -34.8
+
+    # Rule: a missing cell is never zero, and never silently skipped.
+    warje = ("Ward 4 – Warje", "Roads & Pothole Repair")
+    july = by_key[warje + ("2024-07",)]
+    assert july["actual_spend"] == MISSING and july["growth_pct"] == MISSING
+    assert "Audit freeze" in july["note"], july
+    # The period after a gap has no valid base, so it is missing too -- but the
+    # period after that recovers. A null damages its own series, not the year.
+    assert by_key[warje + ("2024-08",)]["growth_pct"] == MISSING
+    assert isinstance(by_key[warje + ("2024-09",)]["growth_pct"], float)
+
+    # Rule: MISSING_DATA and NO_PRIOR_PERIOD are distinct.
+    assert by_key[kasba_roads + ("2024-01",)]["growth_pct"] == NO_BASE
+
+    # Rule: every row shows the arithmetic that produced it, and it recomputes.
+    for row in out:
+        assert row["formula"], row
+        if isinstance(row["growth_pct"], float):
+            body = row["formula"].split(": ", 1)[1]
+            assert abs(eval(body) - row["growth_pct"]) < 0.05, row  # noqa: S307
+
+    print("selftest: all enforcement rules hold")
+
+
 def main():
     parser = argparse.ArgumentParser(description="UC-0C Growth Calculator")
     parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
+    parser.add_argument("--output")
+    parser.add_argument("--selftest", action="store_true",
+                        help="Check the agents.md enforcement rules and exit")
     parser.add_argument("--ward", help="One ward name. Omit for every ward, reported separately.")
     parser.add_argument("--category", help="One category name. Omit for every category, reported separately.")
     parser.add_argument("--growth-type", dest="growth_type",
                         help="MoM or YoY. Required -- it is never assumed.")
     args = parser.parse_args()
+
+    if args.selftest:
+        selftest(args.input)
+        return
+    if not args.output:
+        parser.error("--output is required unless --selftest is given")
 
     rows, missing = load_dataset(args.input)
     try:
