@@ -139,11 +139,84 @@ def verify(sections, summary):
         raise PolicyError("\n".join("  - " + p for p in problems))
 
 
+CRITICAL_CLAUSES = {
+    "2.3": "14 calendar days",
+    "2.4": "written approval",
+    "2.5": "Loss of Pay",
+    "2.6": "maximum of 5",
+    "2.7": "first quarter",
+    "3.2": "48 hours",
+    "3.4": "regardless",
+    "5.2": "HR Director",
+    "5.3": "Municipal Commissioner",
+    "7.2": "not permitted under any circumstances",
+}
+
+
+def selftest(input_path):
+    """Assert the enforcement rules in agents.md actually hold. Run with --selftest."""
+    sections = retrieve_policy(input_path)
+    summary = summarize_policy(sections)
+    verify(sections, summary)
+
+    # Rule 1: every clause number in the source appears in the summary.
+    numbers = [c["number"] for s in sections for c in s["clauses"]]
+    assert len(numbers) == 29, numbers
+    for number in numbers:
+        assert number in summary, number
+
+    # The ten clauses the README names as ground truth, substance intact.
+    for number, substance in CRITICAL_CLAUSES.items():
+        assert number in summary, number
+        assert substance.lower() in summary.lower(), (number, substance)
+
+    # Rule 2: the multi-approver trap. Both approvers, and the sufficiency line.
+    assert "Department Head and the HR Director" in summary
+    assert "Manager approval alone is not sufficient" in summary
+
+    # Rule 4: an unqualified prohibition keeps its scope phrase.
+    assert "not permitted under any circumstances" in summary
+
+    # Rule 7: no clause is left as a half sentence.
+    for section in sections:
+        for clause in section["clauses"]:
+            assert clause["text"].endswith("."), clause
+
+    # Rule 8: exclusions are obligations too.
+    assert "does not apply to daily wage workers" in summary
+
+    # Rule 5 and 3 are refusals, so prove verify() actually rejects.
+    for bad in ["as is standard practice in government organisations",
+                "employees should generally submit their leave in advance"]:
+        try:
+            verify(sections, summary + "\n" + bad)
+            raise AssertionError("verify accepted: " + bad)
+        except PolicyError:
+            pass
+
+    # Rule 1 again, as a refusal: dropping a clause must be caught.
+    try:
+        verify(sections, summary.replace("5.2 LWP requires", "LWP requires"))
+        raise AssertionError("verify accepted a summary missing clause 5.2")
+    except PolicyError:
+        pass
+
+    print("selftest: all enforcement rules hold")
+
+
 def main():
     parser = argparse.ArgumentParser(description="UC-0B Policy Summariser")
     parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
+    parser.add_argument("--output")
+    parser.add_argument("--selftest", action="store_true",
+                        help="Check the agents.md enforcement rules and exit")
     args = parser.parse_args()
+
+    if args.selftest:
+        selftest(args.input)
+        return
+    if not args.output:
+        parser.error("--output is required unless --selftest is given")
 
     sections = retrieve_policy(args.input)
     clause_count = sum(len(s["clauses"]) for s in sections)
