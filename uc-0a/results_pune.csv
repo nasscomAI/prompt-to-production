@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on the presence of words: pothole.,
+PM-202402,Pothole,Urgent,"Classified based on the presence of words: pothole, child, school.",
+PM-202406,Flooding,Standard,Classified based on the presence of words: flood/water.,
+PM-202408,Flooding,Standard,Classified based on the presence of words: flood/water.,
+PM-202410,Streetlight,Standard,Classified based on the presence of words: light.,
+PM-202411,Streetlight,Urgent,"Classified based on the presence of words: light, hazard.",
+PM-202413,Waste,Standard,Classified based on the presence of words: waste/garbage.,
+PM-202418,Noise,Standard,Classified based on the presence of words: noise.,
+PM-202419,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified based on the presence of words: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified based on the presence of words: flood/water.,
+PM-202428,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified based on the presence of words: light.,
+PM-202433,Waste,Standard,Classified based on the presence of words: waste/garbage.,
+PM-202446,Other,Urgent,Classified based on the presence of words: fell.,NEEDS_REVIEW

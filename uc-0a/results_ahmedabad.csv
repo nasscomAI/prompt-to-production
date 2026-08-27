@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified based on the presence of words: heat.,
+AM-202407,Other,Urgent,Classified based on the presence of words: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified based on the presence of words: pothole.,
+AM-202414,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified based on the presence of words: waste/garbage.,
+AM-202421,Noise,Standard,Classified based on the presence of words: noise.,
+AM-202424,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+AM-202429,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified based on the presence of words: heritage.,
+AM-202435,Heat Hazard,Standard,Classified based on the presence of words: heat.,
+AM-202444,Waste,Standard,Classified based on the presence of words: waste/garbage.,
+AM-202445,Other,Standard,Could not identify any specific target keywords in the description.,NEEDS_REVIEW
