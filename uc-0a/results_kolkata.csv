@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Classified as Heritage Damage because description mentions ""Heritage lamp post knocked o"".",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Classified as Heritage Damage because description mentions ""Historic tram road cobblesto"".",NEEDS_REVIEW
+KM-202405,Noise,Low,"Classified as Noise because description mentions ""ding band playing near Tagore"", ""ding band playing near Tagore Museum"".",
+KM-202409,Pothole,Standard,"Classified as Pothole because description mentions ""l of potholes. Diplomatic complai"".",
+KM-202410,Pothole,Standard,"Classified as Pothole because description mentions ""Pothole causing tyre blowou"".",
+KM-202411,Pothole,Standard,"Classified as Pothole because description mentions ""Deep pothole filling with rainwa"".",
+KM-202415,Other,Standard,"Classified as Other based on description: ""New residential complex draining directly onto public road."".",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classified as Waste because description mentions ""zone waste overflowing. Foreig"", ""zone waste overflowing. Foreign visitors p"".",
+KM-202421,Road Damage,Urgent,"Classified as Road Damage because description mentions ""and sinking. Elderly pedestrian"", ""Footpath broken and sinking"", ""hospital"".",
+KM-202422,Road Damage,Standard,"Classified as Road Damage because description mentions ""Road surface buckled near bridge"", ""Road surface buckled near bridge. Struct"".",
+KM-202426,Heritage Damage,Standard,"Classified as Heritage Damage because description mentions ""Heritage residential buildin"".",
+KM-202430,Road Damage,Standard,"Classified as Road Damage because description mentions ""Road subsided near gas pipeline"".",
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage because description mentions ""rk — heritage stone not replaced"", ""rk — heritage stone not replaced"".",
+KM-202436,Streetlight,Standard,"Classified as Streetlight because description mentions ""ped. Darkness for 3 nights"", ""lony substation tripped. Darkness for 3 nig"".",
+KM-202438,Heritage Damage,Standard,"Classified as Heritage Damage because description mentions ""y in heritage precinct"", ""y in heritage precinct"".",
