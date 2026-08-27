@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Contains 'pothole' identifying the issue,STABLE
+PM-202402,Pothole,Urgent,Contains 'child' indicating urgency,STABLE
+PM-202406,Flooding,Standard,Contains 'flood' identifying the issue,STABLE
+PM-202408,Flooding,Standard,Contains 'flood' identifying the issue,STABLE
+PM-202410,Streetlight,Standard,Contains 'streetlight' identifying the issue,STABLE
+PM-202411,Streetlight,Urgent,Contains 'hazard' indicating urgency,STABLE
+PM-202413,Other,Standard,No specific keywords found in description,NEEDS_REVIEW
+PM-202418,Other,Standard,No specific keywords found in description,NEEDS_REVIEW
+PM-202419,Other,Standard,No specific keywords found in description,NEEDS_REVIEW
+PM-202420,Other,Urgent,Contains 'injury' indicating urgency,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Contains 'flood' identifying the issue,STABLE
+PM-202428,Other,Standard,No specific keywords found in description,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Contains 'heritage' identifying the issue,STABLE
+PM-202433,Waste,Standard,Contains 'waste' identifying the issue,STABLE
+PM-202446,Other,Urgent,Contains 'fell' indicating urgency,NEEDS_REVIEW
