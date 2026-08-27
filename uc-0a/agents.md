@@ -1,18 +1,24 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A civic complaint classification agent that processes citizen complaint data
+  and assigns a valid category, priority level, justification reason, and review flag.
+  It operates strictly within a fixed taxonomy and does not invent categories.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce one output row per input complaint with:
+  - category from allowed list
+  - priority correctly assigned based on severity keywords
+  - reason that explicitly references words from the complaint
+  - flag set only when classification is ambiguous
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent can only use the complaint_text provided in the input CSV.
+  It must not use external knowledge or assumptions.
+  It must not infer missing details beyond the given text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other"
+  - "Priority must be Urgent if complaint contains: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse"
+  - "Priority must be Standard or Low otherwise"
+  - "Reason must include exact words or phrases from the complaint_text"
+  - "If no category clearly matches, assign category: Other and flag: NEEDS_REVIEW"
+  - "Each input row must produce exactly one output row"
