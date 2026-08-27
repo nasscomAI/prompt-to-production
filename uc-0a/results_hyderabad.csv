@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,Genuinely ambiguous: no specific keywords found in description. Priority set to Urgent due to keywords: ambulance.,NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,Category identified because description mentions 'drain'.,
+GH-202406,Drain Blockage,Standard,Category identified because description mentions 'drain'.,
+GH-202407,Drain Blockage,Standard,Category identified because description mentions 'drain'.,
+GH-202410,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+GH-202411,Pothole,Urgent,Category identified because description mentions 'pothole'. Priority set to Urgent due to keywords: hospital.,
+GH-202412,Other,Urgent,Genuinely ambiguous: no specific keywords found in description. Priority set to Urgent due to keywords: school.,NEEDS_REVIEW
+GH-202417,Other,Standard,"Ambiguous: multiple categories matched (Waste, Heritage Damage).",NEEDS_REVIEW
+GH-202420,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Genuinely ambiguous: no specific keywords found in description. Priority set to Urgent due to keywords: collapse.,NEEDS_REVIEW
+GH-202424,Streetlight,Standard,Category identified because description mentions 'light'.,
+GH-202428,Waste,Standard,Category identified because description mentions 'waste'.,
+GH-202432,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Category identified because description mentions 'drain'.,
+GH-202438,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW

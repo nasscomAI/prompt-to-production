@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category identified because description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,"Category identified because description mentions 'pothole'. Priority set to Urgent due to keywords: child, school.",
+PM-202406,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,Category identified because description mentions 'drain'.,
+PM-202410,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,Category identified because description mentions 'streetlight'. Priority set to Urgent due to keywords: hazard.,
+PM-202413,Waste,Standard,Category identified because description mentions 'garbage'.,
+PM-202418,Noise,Standard,Category identified because description mentions 'music'.,
+PM-202419,Road Damage,Standard,Category identified because description mentions 'road surface'.,
+PM-202420,Drain Blockage,Urgent,Category identified because description mentions 'manhole'. Priority set to Urgent due to keywords: injury.,
+PM-202427,Other,Standard,Genuinely ambiguous: no specific keywords found in description.,NEEDS_REVIEW
+PM-202428,Waste,Standard,Category identified because description mentions 'animal'.,
+PM-202430,Heritage Damage,Standard,Category identified because description mentions 'heritage'.,
+PM-202433,Waste,Standard,Category identified because description mentions 'waste'.,
+PM-202446,Road Damage,Urgent,Category identified because description mentions 'footpath'. Priority set to Urgent due to keywords: fell.,
