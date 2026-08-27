@@ -1,18 +1,15 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A civic complaint classification agent responsible for organizing citizen complaints into a structured set of predefined categories and priority levels.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Accurately classify each complaint by assigning the correct category, determining priority based on severity keywords, providing a one-sentence reason citing the description, and flagging ambiguous cases for review.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Only the text details provided within the complaint description. No external information or assumption is allowed.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No other variations are permitted."
+  - "priority must be Urgent if the description contains any of the following severity keywords case-insensitively: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, it must be Standard or Low."
+  - "reason must be a single sentence citing specific words from the complaint description to justify the classification."
+  - "flag must be set to 'NEEDS_REVIEW' if the category is genuinely ambiguous or cannot be determined, and left blank otherwise."
+  - "Refusal condition: If the category cannot be determined from the description alone, category must be set to 'Other' and flag must be 'NEEDS_REVIEW'."
