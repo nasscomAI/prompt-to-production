@@ -1,0 +1,16 @@
+id,description,category,priority,reason,flag
+1,Huge pothole on MG Road causing traffic jams.,Pothole,Standard,Classified because the description explicitly mentions 'pothole'.,
+2,A child fell into an open drain near the school. Please fix urgently!,Drain Blockage,Urgent,Classified because the description explicitly mentions 'a'.,
+3,Streetlight is not working since 3 days on 1st cross.,Streetlight,Standard,Classified because the description explicitly mentions 'streetlight'.,
+4,Garbage dumped near the heritage site wall.,Waste,Standard,Matches general pattern for Waste.,
+5,Loud speakers playing noise after 11 PM.,Noise,Standard,Classified because the description explicitly mentions 'noise'.,
+6,The road is completely damaged,Road Damage,Standard,Classified because the description explicitly mentions 'road'.,
+7,Water logging in the basement of hospital due to heavy rain.,Flooding,Urgent,Classified because the description explicitly mentions 'in'.,
+8,Ambulance blocked because of a collapsed tree on the main street.,Other,Urgent,Classified because the description explicitly mentions 'ambulance'.,NEEDS_REVIEW
+9,Manhole at the corner is a severe hazard. Someone might slip.,Other,Urgent,Classified because the description explicitly mentions 'the'.,NEEDS_REVIEW
+10,Some stray dogs are biting people.,Other,Standard,Matches general pattern for Other.,NEEDS_REVIEW
+11,The drain is blocked and overflowing onto the street.,Drain Blockage,Standard,Classified because the description explicitly mentions 'drain'.,
+12,Severe heat wave makes it hard to stand at the bus stop without a roof.,Heat Hazard,Standard,Classified because the description explicitly mentions 'heat'.,
+13,Heritage damage: Someone painted graffiti on the Shaniwar Wada walls.,Heritage Damage,Standard,Classified because the description explicitly mentions 'heritage'.,
+14,A streetlight pole is about to fall over the sidewalk.,Streetlight,Standard,Classified because the description explicitly mentions 'streetlight'.,
+15,There is a huge ditch and someone might fall.,Road Damage,Standard,Classified because the description explicitly mentions 'a'.,
