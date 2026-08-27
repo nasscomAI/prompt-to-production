@@ -45,6 +45,18 @@ enforcement:
      counts a comment as an extra data row, and a results file that corrupts its
      own consumer is the same class of failure as a total that silently excludes
      a ward."
+  - "The growth type is supplied by the caller and never inferred. If
+     --growth-type is absent the request is refused with the list of supported
+     types. Month-on-month and year-on-year answer different questions and a
+     silently chosen default produces a number the reader will misread as the
+     one they asked for."
+  - "Every output row shows the formula that produced its own figure, with the
+     two spend values substituted in, so that a reader can recompute that row by
+     hand without opening the source ledger or this code."
+  - "A growth type the ledger cannot support is refused, not attempted. This
+     ledger covers 2024-01 to 2024-12 only, so year-on-year growth has no
+     comparison base for any row; returning 300 uncomputable rows would look
+     like a defect in the code rather than a limit of the data."
   - "Growth is computed within a single ward and a single category. Spend from
      two different wards, or two different categories, is never added together
      before a growth figure is taken. Five wards times five categories is

@@ -19,6 +19,11 @@ NO_BASE = "NO_PRIOR_PERIOD"
 # Enforcement rule 6: words that ask for a citywide total. Refused, not served.
 AGGREGATE_WORDS = {"all", "*", "total", "citywide", "every", "combined"}
 
+GROWTH_TYPES = {
+    "MoM": "month on month, against the immediately preceding period",
+    "YoY": "year on year, against the same period twelve months earlier",
+}
+
 
 class Refusal(Exception):
     """Raised when the request is answerable but must not be answered."""
@@ -62,12 +67,43 @@ def _resolve(requested, valid, label):
     return requested
 
 
-def compute_growth(rows, ward=None, category=None):
+def _resolve_growth_type(growth_type, rows):
+    """Refuse rather than assume which growth question was asked."""
+    if growth_type is None:
+        raise Refusal(
+            "Refused: --growth-type was not given and will not be assumed. "
+            "Month-on-month and year-on-year answer different questions, and a "
+            "silently chosen default is read by the caller as the one they "
+            "asked for.\nSupported types:\n  " +
+            "\n  ".join("{} -- {}".format(k, v) for k, v in sorted(GROWTH_TYPES.items())))
+    if growth_type not in GROWTH_TYPES:
+        raise Refusal(
+            "Refused: growth type {!r} is not supported.\nSupported types:\n  ".format(
+                growth_type) +
+            "\n  ".join("{} -- {}".format(k, v) for k, v in sorted(GROWTH_TYPES.items())))
+
+    # Enforcement rule: a growth type the data cannot support is refused, not
+    # attempted. YoY needs twelve months of history before the first reported
+    # period; this ledger starts at its own first period.
+    if growth_type == "YoY":
+        years = sorted({r["period"][:4] for r in rows})
+        raise Refusal(
+            "Refused: year-on-year growth needs a comparison period twelve "
+            "months before each reported period. This ledger covers {} only, so "
+            "no row has a base to compare against. Returning 300 uncomputable "
+            "rows would read as a defect in this tool rather than a limit of "
+            "the data.\nUse --growth-type MoM, or supply a ledger that spans "
+            "more than one year.".format(" and ".join(years)))
+    return growth_type
+
+
+def compute_growth(rows, ward=None, category=None, growth_type=None):
     """Return per-period growth rows for each ward+category series separately.
 
     Enforcement rule 5: spend is never summed across wards or categories. Each
     ward+category pair is its own series.
     """
+    growth_type = _resolve_growth_type(growth_type, rows)
     wards = {r["ward"] for r in rows}
     categories = {r["category"] for r in rows}
     ward = _resolve(ward, wards, "ward")
@@ -91,12 +127,21 @@ def compute_growth(rows, ward=None, category=None):
             raw = row["actual_spend"].strip()
             spend = float(raw) if raw else None
 
+            # Enforcement: the formula travels with the number, values
+            # substituted in, so any row can be recomputed by hand.
             if is_first:
                 growth = NO_BASE
-            elif spend is None or previous is None:
+                formula = "no prior period in this series"
+            elif spend is None:
                 growth = MISSING
+                formula = "actual_spend missing for {}".format(period)
+            elif previous is None:
+                growth = MISSING
+                formula = "actual_spend missing for the prior period"
             else:
                 growth = round((spend - previous) / previous * 100, 1)
+                formula = "{}: ({} - {}) / {} * 100".format(
+                    growth_type, spend, previous, previous)
             is_first = False
 
             results.append({
@@ -104,7 +149,9 @@ def compute_growth(rows, ward=None, category=None):
                 "category": series_category,
                 "period": period,
                 "actual_spend": raw if raw else MISSING,
+                "growth_type": growth_type,
                 "growth_pct": growth,
+                "formula": formula,
                 "note": row["notes"],
             })
             previous = spend
@@ -120,8 +167,8 @@ def write_results(results, output_path, missing_count):
     data row -- a results file that silently corrupts its own consumer is the
     same class of failure as a number that silently excludes a ward.
     """
-    fields = ["ward", "category", "period", "actual_spend", "growth_pct",
-              "note", "source_missing_rows"]
+    fields = ["ward", "category", "period", "actual_spend", "growth_type",
+              "growth_pct", "formula", "note", "source_missing_rows"]
     for row in results:
         row["source_missing_rows"] = missing_count
     with open(output_path, "w", newline="", encoding="utf-8") as f:
@@ -136,11 +183,14 @@ def main():
     parser.add_argument("--output", required=True)
     parser.add_argument("--ward", help="One ward name. Omit for every ward, reported separately.")
     parser.add_argument("--category", help="One category name. Omit for every category, reported separately.")
+    parser.add_argument("--growth-type", dest="growth_type",
+                        help="MoM or YoY. Required -- it is never assumed.")
     args = parser.parse_args()
 
     rows, missing = load_dataset(args.input)
     try:
-        results = compute_growth(rows, ward=args.ward, category=args.category)
+        results = compute_growth(rows, ward=args.ward, category=args.category,
+                                 growth_type=args.growth_type)
     except Refusal as refusal:
         print("\n{}".format(refusal))
         sys.exit(2)
