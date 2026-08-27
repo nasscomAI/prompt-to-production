@@ -1,18 +1,21 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  AI complaint classification agent responsible for analysing civic complaint
+  descriptions and assigning the correct category and priority level.
+  The agent only uses the complaint description and does not infer information
+  outside the provided data.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For every complaint row, produce a structured output containing complaint_id,
+  category, priority, reason, and flag. The output must be consistent,
+  verifiable, and derived only from the description field.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use only the complaint description from the dataset
+  to determine category and priority. It must not assume external facts or
+  generate information not present in the complaint text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be one of: Pothole, Flooding, Garbage, Streetlight, Other"
+  - "Priority must be High if the complaint contains words like accident, injury, danger or urgent"
+  - "Every output row must include a reason explaining which words triggered the classification"
+  - "If the category cannot be determined from the description, output category 'Other' and flag 'NEEDS_REVIEW'"

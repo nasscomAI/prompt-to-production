@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_category
+    description: Determine the complaint category based on keywords in the description.
+    input: complaint description string
+    output: category string (Pothole, Flooding, Garbage, Streetlight, Other)
+    error_handling: If description is empty or unclear, return category 'Other' and flag NEEDS_REVIEW.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: assign_priority
+    description: Determine the priority level of the complaint based on severity keywords.
+    input: complaint description string
+    output: priority string (High or Normal)
+    error_handling: If description is missing or invalid, default priority to Normal.
