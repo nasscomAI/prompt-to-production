@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Classified as Other because the description spans multiple categories: Heritage Damage, Streetlight.",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Classified as Road Damage because the description quotes 'road'.,
+KM-202405,Other,Standard,Classified as Other because the description does not fit specific categories.,NEEDS_REVIEW
+KM-202409,Other,Standard,"Classified as Other because the description spans multiple categories: Road Damage, Pothole.",NEEDS_REVIEW
+KM-202410,Pothole,Standard,Classified as Pothole because the description quotes 'pothole'.,
+KM-202411,Other,Standard,"Classified as Other because the description spans multiple categories: Pothole, Flooding.",NEEDS_REVIEW
+KM-202415,Other,Standard,"Classified as Other because the description spans multiple categories: Drain Blockage, Road Damage.",NEEDS_REVIEW
+KM-202418,Other,Standard,"Classified as Other because the description spans multiple categories: Heat Hazard, Waste.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,Classified as Road Damage with Urgent priority because description quotes 'footpath' and mentions safety hazard 'hospital'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage because the description quotes 'road'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because the description quotes 'heritage'.,
+KM-202430,Road Damage,Standard,Classified as Road Damage because the description quotes 'road'.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage because the description quotes 'heritage'.,
+KM-202436,Streetlight,Standard,Classified as Streetlight because the description quotes 'dark'.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because the description quotes 'heritage'.,
