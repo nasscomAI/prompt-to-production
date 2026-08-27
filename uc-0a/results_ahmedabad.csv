@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description mentions: tarmac, melting.",
+AM-202402,Heat Hazard,Standard,"Description mentions: shelter, temperature.",
+AM-202405,Other,Standard,Complaint description does not match known infrastructure categories.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description mentions: broken, heat.",
+AM-202407,Road Damage,Urgent,Description mentions: paving.,
+AM-202410,Pothole,Standard,Description mentions: pothole.,
+AM-202414,Streetlight,Standard,Description mentions: unlit.,
+AM-202417,Heritage Damage,Standard,"Description mentions: waste, heritage.",
+AM-202421,Noise,Standard,Description mentions: music.,
+AM-202424,Heat Hazard,Standard,Description mentions: °c.,
+AM-202429,Heat Hazard,Standard,Description mentions: temperature.,
+AM-202431,Heritage Damage,Standard,"Description mentions: road subsidence, heritage.",
+AM-202435,Heat Hazard,Standard,"Description mentions: divider, heat.",
+AM-202444,Waste,Standard,Description mentions: waste.,
+AM-202445,Road Damage,Standard,Description mentions: shelter.,
