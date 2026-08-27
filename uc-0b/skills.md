@@ -1,16 +1,39 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0B Data Validator
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Skill: Field Validation
+The agent must check required fields.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+Required fields:
+- complaint_id
+- complaint_text
+
+Rules:
+- If complaint_id is empty → INVALID_ID
+- If complaint_text is empty → NULL_TEXT
+
+
+## Skill: Data Integrity
+The validator must not modify the input text.
+
+Rules:
+- Do not change complaint text
+- Do not generate new IDs
+- Only report validation status
+
+
+## Skill: Output Flags
+Each row must contain a validation flag.
+
+Possible flags:
+- VALID
+- INVALID_ID
+- NULL_TEXT
+- NEEDS_REVIEW
+
+
+## Skill: Robust Processing
+The validator must never crash.
+
+Rules:
+- If a row is malformed → flag NEEDS_REVIEW
+- Continue processing remaining rows
