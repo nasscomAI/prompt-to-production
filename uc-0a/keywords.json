@@ -1,0 +1,16 @@
+{
+  "categories": {
+    "Pothole / Road": ["pothole", "potholes", "road surface", "sink", "crack", "sinking", "subsided", "tyre", "tyre blowout"],
+    "Flooding": ["flood", "flooded", "underpass flooded", "knee-deep", "bridge approach floods", "water"],
+    "Streetlight / Electrical": ["streetlight", "light out", "lights out", "flicker", "sparking", "electrical hazard", "street light", "power outage", "substation", "darkness", "tripped"],
+    "Garbage / Waste": ["garbage", "overflowing", "bins", "bulk waste", "waste", "dumped", "bin"],
+    "Noise": ["music past", "noise", "loud music", "wedding venue", "music", "amplifier", "band"],
+    "Manhole / Safety": ["manhole", "missing cover", "man hole", "man-hole", "open manhole", "open drain", "drainage"],
+    "Public Health": ["dead animal", "animal not removed", "dead animal not removed"],
+    "Heritage / Conservation": ["heritage", "historic", "cobblestone", "tram", "heritage stone", "defaced", "billboard", "marble palace", "tagore"],
+    "Gas / Leak": ["gas leak", "gas smell", "gas leak smell", "pipeline", "gas pipeline"],
+    "Vendors / Nuisance": ["vendor", "vendors", "amplifier", "street vendor", "illegal vending"]
+  },
+  "high_priority_keywords": ["risk", "injury", "missing", "knee-deep", "sparking", "electrical hazard", "school", "children", "manhole", "collision", "fatal", "open manhole", "gas leak", "gas smell", "substation", "power outage"],
+  "medium_priority_keywords": ["flood", "blocked", "overflow", "garbage", "pothole", "dead animal", "broken", "cracked", "overflowing", "subsided", "sinking", "drainage"]
+}

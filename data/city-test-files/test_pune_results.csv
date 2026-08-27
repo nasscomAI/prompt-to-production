@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole / Road,medium,"pothole/road issue, days_open=4",none
+PM-202402,Pothole / Road,high,"pothole/road issue, days_open=12",none
+PM-202406,Flooding,high,"flooding / drainage, days_open=8",none
+PM-202408,Flooding,medium,"flooding / drainage, days_open=12",none
+PM-202410,Streetlight / Electrical,high,"streetlight/electrical, days_open=18",none
+PM-202411,Streetlight / Electrical,high,"streetlight/electrical, days_open=9",none
+PM-202413,Garbage / Waste,medium,"waste management, days_open=13",none
+PM-202418,Noise,low,"noise nuisance, days_open=5",none
+PM-202419,Pothole / Road,medium,"pothole/road issue, days_open=2",none
+PM-202420,Manhole / Safety,high,"missing manhole cover / safety, days_open=14",none
+PM-202427,Flooding,medium,"flooding / drainage, days_open=12",none
+PM-202428,Public Health,medium,"dead animal / health, days_open=1",none
+PM-202430,Streetlight / Electrical,high,"streetlight/electrical, days_open=19",none
+PM-202433,Garbage / Waste,high,"waste management, days_open=20",none
+PM-202446,Other,high,days_open=18,none

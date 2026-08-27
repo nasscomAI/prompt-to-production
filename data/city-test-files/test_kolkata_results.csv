@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,high,days_open=17,none
+KM-202402,Other,high,days_open=16,none
+KM-202405,Other,medium,days_open=10,none
+KM-202409,Pothole / Road,medium,"pothole / road, days_open=7",none
+KM-202410,Pothole / Road,medium,"pothole / road, days_open=1",none
+KM-202411,Pothole / Road,high,"pothole / road, days_open=12",none
+KM-202415,Other,medium,days_open=13,none
+KM-202418,Garbage / Waste,high,"garbage / waste, days_open=15",none
+KM-202421,Pothole / Road,medium,"pothole / road, days_open=3",none
+KM-202422,Pothole / Road,low,"pothole / road, days_open=1",none
+KM-202426,Other,low,days_open=1,none
+KM-202430,Other,high,days_open=21,none
+KM-202434,Other,high,days_open=14,none
+KM-202436,Other,high,days_open=17,none
+KM-202438,Other,high,days_open=19,none
