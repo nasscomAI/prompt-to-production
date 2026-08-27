@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Road Repair,Standard,"Classified as Road Repair based on ""pothole"" in the complaint description.",
+PM-202402,Road Repair,Urgent,"Classified as Road Repair based on ""pothole"" in the complaint description.",
+PM-202406,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""underpass flooded knee-deep after 2hrs rain. commuters stran"".",NEEDS_REVIEW
+PM-202408,Water Supply,Standard,"Classified as Water Supply based on ""water"" in the complaint description.",
+PM-202410,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""three consecutive streetlights out for 10 days. area very da"".",NEEDS_REVIEW
+PM-202411,Street Light,Standard,"Classified as Street Light based on ""streetlight"" in the complaint description.",
+PM-202413,Sanitation,Standard,"Classified as Sanitation based on ""garbage"" in the complaint description.",
+PM-202418,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""wedding venue playing music past midnight on weeknights."".",NEEDS_REVIEW
+PM-202419,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+PM-202420,Other,Urgent,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""manhole cover missing. risk of serious injury to cyclists."".",NEEDS_REVIEW
+PM-202427,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""bridge approach floods in 30mins of rain. bridge becomes ina"".",NEEDS_REVIEW
+PM-202428,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""dead animal not removed for 36 hours. health concern."".",NEEDS_REVIEW
+PM-202430,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""heritage street, lights out. safety concern for pedestrians "".",NEEDS_REVIEW
+PM-202433,Road Repair,Standard,"Classified as Road Repair based on ""road"" in the complaint description.",
+PM-202446,Other,Standard,"No clear Water Supply, Road Repair, Street Light, or Sanitation keywords found in ""footpath tiles broken and upturned. elderly resident fell la"".",NEEDS_REVIEW
