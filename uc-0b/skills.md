@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+#skills:
+  - name: retrieve_policy
+    description: Loads the HR leave policy file and structures it into numbered clauses for strict processing.
+    input: string (file path to policy_hr_leave.txt)
+    output: object (dictionary mapping clause numbers to full clause text)
+    error_handling: >
+      If file is missing, unreadable, or empty, return error "POLICY_LOAD_FAILURE" and stop execution.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produces a clause-referenced summary of HR leave policy while preserving all obligations and conditions exactly.
+    input: object (structured clauses from retrieve_policy)
+    output: string (strict summary with clause references, no meaning change)
+    error_handling: >
+      If any clause is missing, incomplete, or loses conditions during summarization, return error "SUMMARY_INTEGRITY_FAILURE" and do not generate output.
