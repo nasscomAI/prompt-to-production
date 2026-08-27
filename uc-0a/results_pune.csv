@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified based on the specific presence of 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Classified based on the specific presence of 'child' in the description.,
+PM-202406,Flooding,Standard,Classified based on the specific presence of 'flood' in the description.,
+PM-202408,Other,Standard,Classified based on the specific presence of 'drain' in the description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified based on the specific presence of 'light' in the description.,
+PM-202411,Streetlight,Urgent,Classified based on the specific presence of 'hazard' in the description.,
+PM-202413,Waste,Standard,Classified based on the specific presence of 'garbage' in the description.,
+PM-202418,Noise,Standard,Classified based on the specific presence of 'music' in the description.,
+PM-202419,Road Damage,Standard,Classified based on the specific presence of 'crack' in the description.,
+PM-202420,Drain Blockage,Urgent,Classified based on the specific presence of 'injury' in the description.,
+PM-202427,Flooding,Standard,Classified based on the specific presence of 'flood' in the description.,
+PM-202428,Waste,Standard,Classified based on the specific presence of 'animal' in the description.,
+PM-202430,Other,Standard,Classified based on the specific presence of 'heritage' in the description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified based on the specific presence of 'waste' in the description.,
+PM-202446,Road Damage,Urgent,Classified based on the specific presence of 'fell' in the description.,
