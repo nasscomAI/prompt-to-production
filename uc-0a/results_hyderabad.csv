@@ -1,0 +1,16 @@
+id,description,category,priority,reason,flag
+GH-202401,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,Flooding,Urgent,Contains severity keyword(s): ambulance. Description contains 'flooding' related terms,
+GH-202402,Market area flooded. Traders suffering losses. Drain completely blocked.,Flooding,Standard,"Multiple categories apply: Flooding, Drain Blockage",NEEDS_REVIEW
+GH-202406,Main stormwater drain 100% blocked with construction debris.,Drain Blockage,Standard,Description contains 'drain blockage' related terms,
+GH-202407,Drain blocked and mosquito breeding. Dengue concern.,Drain Blockage,Standard,Description contains 'drain blockage' related terms,
+GH-202410,Potholes causing vehicles to slow to 20kmph on fast road.,Pothole,Standard,Description contains 'pothole' related terms,
+GH-202411,Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Pothole,Urgent,Contains severity keyword(s): hospital. Description contains 'pothole' related terms,
+GH-202412,School bus struggling to navigate 6 potholes in 200m stretch.,Pothole,Urgent,Contains severity keyword(s): school. Description contains 'pothole' related terms,
+GH-202417,Heritage zone garbage overflow. Tourist photographs showing piles of waste.,Heritage Damage,Standard,"Multiple categories apply: Heritage Damage, Waste",NEEDS_REVIEW
+GH-202420,Construction drilling from 5am daily near residential towers.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+GH-202422,Road collapsed partially. Crater 1m deep near residential gate.,Pothole,Urgent,Contains severity keyword(s): collapse. Description contains 'pothole' related terms,
+GH-202424,Underpass floods in light rain. Cars regularly abandoned.,Flooding,Standard,Description contains 'flooding' related terms,
+GH-202428,Post-market waste not cleared. Area unusable by Sunday morning.,Waste,Standard,Description contains 'waste' related terms,
+GH-202432,24hr supermarket delivery trucks idling with engines on.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
+GH-202448,Main drain blocked — entire locality at flooding risk this week.,Flooding,Standard,"Multiple categories apply: Flooding, Drain Blockage",NEEDS_REVIEW
+GH-202438,Colony surrounded by fields that channel rainwater through main road.,Other,Standard,No clear category indicators found in description,NEEDS_REVIEW
