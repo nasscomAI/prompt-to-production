@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Complaint describes road damage with mention of surface.,
+AM-202402,Other,Standard,Complaint does not clearly match any category.,
+AM-202405,Other,Standard,Complaint does not clearly match any category.,
+AM-202406,Heat Hazard,Standard,Complaint describes heat hazard with mention of heatwave.,
+AM-202407,Other,Urgent,Complaint does not clearly match any category.,
+AM-202410,Pothole,Standard,Complaint describes pothole with mention of pothole.,
+AM-202414,Other,Standard,Complaint does not clearly match any category.,
+AM-202417,Other,Standard,Complaint does not clearly match any category.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Complaint describes noise with mention of music.,
+AM-202424,Other,Standard,Complaint does not clearly match any category.,NEEDS_REVIEW
+AM-202429,Other,Standard,Complaint does not clearly match any category.,NEEDS_REVIEW
+AM-202431,Other,Standard,Complaint does not clearly match any category.,NEEDS_REVIEW
+AM-202435,Other,Standard,Complaint does not clearly match any category.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Complaint describes waste with mention of waste.,
+AM-202445,Heat Hazard,Standard,Complaint describes heat hazard with mention of sun.,
