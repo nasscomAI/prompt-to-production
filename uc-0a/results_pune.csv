@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized as Pothole with Standard priority based on the mention of 'pothole' in the complaint description.,
+PM-202402,Pothole,Urgent,"Categorized as Pothole with Urgent priority based on the mention of 'child, school' in the complaint description.",
+PM-202406,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'flood' in the complaint description.,
+PM-202408,Flooding,Standard,"Categorized as Flooding with Standard priority based on the mention of 'flood, water' in the complaint description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Categorized as Streetlight with Standard priority based on the mention of 'streetlight, light, dark' in the complaint description.",
+PM-202411,Streetlight,Urgent,Categorized as Streetlight with Urgent priority based on the mention of 'hazard' in the complaint description.,
+PM-202413,Waste,Standard,"Categorized as Waste with Standard priority based on the mention of 'garbage, smell, bin' in the complaint description.",
+PM-202418,Noise,Standard,Categorized as Noise with Standard priority based on the mention of 'music' in the complaint description.,
+PM-202419,Road Damage,Standard,"Categorized as Road Damage with Standard priority based on the mention of 'road surface, cracked, sinking' in the complaint description.",
+PM-202420,Other,Urgent,Categorized as Other with Urgent priority based on the mention of 'injury' in the complaint description.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'flood' in the complaint description.,
+PM-202428,Waste,Standard,Categorized as Waste with Standard priority based on the mention of 'animal' in the complaint description.,
+PM-202430,Streetlight,Standard,"Categorized as Streetlight with Standard priority based on the mention of 'light, dark' in the complaint description.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Categorized as Waste with Standard priority based on the mention of 'waste, dumped' in the complaint description.",
+PM-202446,Road Damage,Urgent,Categorized as Road Damage with Urgent priority based on the mention of 'fell' in the complaint description.,

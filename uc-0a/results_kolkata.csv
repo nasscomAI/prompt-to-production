@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Categorized as Heritage Damage with Standard priority based on the mention of 'heritage' in the complaint description.,
+KM-202402,Other,Standard,Categorized as Other with Standard priority based on the mention of 'contextual cues' in the complaint description.,NEEDS_REVIEW
+KM-202405,Other,Standard,Categorized as Other with Standard priority based on the mention of 'contextual cues' in the complaint description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Categorized as Pothole with Standard priority based on the mention of 'pothole' in the complaint description.,
+KM-202410,Pothole,Standard,Categorized as Pothole with Standard priority based on the mention of 'pothole' in the complaint description.,
+KM-202411,Pothole,Standard,Categorized as Pothole with Standard priority based on the mention of 'pothole' in the complaint description.,NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Categorized as Drain Blockage with Standard priority based on the mention of 'drain' in the complaint description.,
+KM-202418,Waste,Standard,Categorized as Waste with Standard priority based on the mention of 'waste' in the complaint description.,NEEDS_REVIEW
+KM-202421,Pothole,Urgent,"Categorized as Pothole with Urgent priority based on the mention of 'hospital, fell' in the complaint description.",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,Categorized as Road Damage with Standard priority based on the mention of 'road surface' in the complaint description.,
+KM-202426,Heritage Damage,Standard,Categorized as Heritage Damage with Standard priority based on the mention of 'heritage' in the complaint description.,
+KM-202430,Waste,Standard,Categorized as Waste with Standard priority based on the mention of 'smell' in the complaint description.,
+KM-202434,Road Damage,Standard,Categorized as Road Damage with Standard priority based on the mention of 'paving' in the complaint description.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Categorized as Streetlight with Standard priority based on the mention of 'dark' in the complaint description.,
+KM-202438,Heritage Damage,Standard,Categorized as Heritage Damage with Standard priority based on the mention of 'heritage' in the complaint description.,

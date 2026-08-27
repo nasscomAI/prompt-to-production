@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Categorized as Flooding with Urgent priority based on the mention of 'ambulance' in the complaint description.,
+GH-202402,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'flood' in the complaint description.,NEEDS_REVIEW
+GH-202406,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'water' in the complaint description.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Categorized as Drain Blockage with Standard priority based on the mention of 'drain, blocked' in the complaint description.",
+GH-202410,Pothole,Standard,Categorized as Pothole with Standard priority based on the mention of 'pothole' in the complaint description.,
+GH-202411,Pothole,Urgent,Categorized as Pothole with Urgent priority based on the mention of 'hospital' in the complaint description.,
+GH-202412,Pothole,Urgent,Categorized as Pothole with Urgent priority based on the mention of 'school' in the complaint description.,
+GH-202417,Waste,Standard,"Categorized as Waste with Standard priority based on the mention of 'garbage, waste' in the complaint description.",NEEDS_REVIEW
+GH-202420,Other,Standard,Categorized as Other with Standard priority based on the mention of 'contextual cues' in the complaint description.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Categorized as Other with Urgent priority based on the mention of 'collapse' in the complaint description.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'flood' in the complaint description.,NEEDS_REVIEW
+GH-202428,Waste,Standard,Categorized as Waste with Standard priority based on the mention of 'waste' in the complaint description.,
+GH-202432,Other,Standard,Categorized as Other with Standard priority based on the mention of 'contextual cues' in the complaint description.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'flood' in the complaint description.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Categorized as Flooding with Standard priority based on the mention of 'water' in the complaint description.,
