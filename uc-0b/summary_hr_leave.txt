@@ -1,17 +1,3 @@
-import argparse
-
-
-def retrieve_policy(input_path):
-    """Read the policy document and return its contents."""
-    with open(input_path, "r", encoding="utf-8") as file:
-        return file.read()
-
-
-def summarize_policy(text):
-    """
-    Create a compliant summary while preserving key obligations.
-    """
-    summary = """
 HR Leave Policy Summary
 
 2.3 Employees must submit leave applications at least 14 days in advance using Form HR-L1.
@@ -24,25 +10,3 @@ HR Leave Policy Summary
 5.2 Leave Without Pay requires approval from BOTH the Department Head AND the HR Director. Manager approval alone is not sufficient.
 5.3 Leave Without Pay exceeding 30 continuous days also requires approval from the Municipal Commissioner.
 7.2 Leave encashment during service is not permitted under any circumstances.
-"""
-    return summary.strip()
-
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-
-    args = parser.parse_args()
-
-    policy = retrieve_policy(args.input)
-    summary = summarize_policy(policy)
-
-    with open(args.output, "w", encoding="utf-8") as file:
-        file.write(summary)
-
-    print(f"Summary written to {args.output}")
-
-
-if __name__ == "__main__":
-    main()
