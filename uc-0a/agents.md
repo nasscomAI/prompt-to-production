@@ -1,18 +1,15 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Citizen Complaint Classifier Agent responsible for reading raw civic complaint text, categorizing each complaint according to a strict taxonomy, evaluating priority based on safety triggers, and providing verifiable textual evidence for every classification decision.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a structured classification output for each complaint row containing complaint_id, category, priority, reason, and flag, ensuring 100% compliance with the allowed category enum, accurate urgency elevation for safety risk keywords, single-sentence justification citing verbatim description text, and flag setting on ambiguous cases.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed source: The complaint description string provided in the single input row of the city test dataset (data/city-test-files/test_[city].csv).
+  Exclusions: Do not use external domain knowledge, unstated assumptions, geographic inferences, or implied context outside the explicit text of the given complaint description.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must strictly be one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No variation in spelling, case, or sub-category hallucination is permitted."
+  - "Priority must be set to Urgent whenever the complaint description contains one or more severity keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Non-urgent complaints must be assigned Standard or Low."
+  - "Every output record must contain a one-sentence reason field that explicitly cites verbatim words or phrases from the complaint description to justify the category and priority assignment."
+  - "Refusal condition: If the complaint category cannot be conclusively determined from the description text alone, or if the description is genuinely ambiguous, set category to Other and flag to NEEDS_REVIEW instead of inferring or guessing."

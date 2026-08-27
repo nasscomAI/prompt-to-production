@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Citing 'heritage concern' from description.,
+KM-202402,Heritage Damage,Standard,Citing 'heritage concern' from description.,
+KM-202405,Noise,Standard,Citing 'noise in heritage precinct' from description.,
+KM-202409,Pothole,Standard,Citing 'pothole' from description.,
+KM-202410,Pothole,Standard,Citing 'pothole' from description.,
+KM-202411,Pothole,Standard,Citing 'pothole' from description.,
+KM-202415,Other,Standard,Category could not be determined conclusively from description alone.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Citing 'waste' from description.,
+KM-202421,Road Damage,Urgent,"Citing 'footpath' from description and severity trigger word(s): hospital, fell.",
+KM-202422,Road Damage,Standard,Citing 'road surface' from description.,
+KM-202426,Heritage Damage,Standard,Citing 'heritage concern' from description.,
+KM-202430,Road Damage,Standard,Citing 'subsided' from description.,
+KM-202434,Heritage Damage,Standard,Citing 'heritage concern' from description.,
+KM-202436,Streetlight,Standard,Citing 'darkness' from description.,
+KM-202438,Noise,Standard,Citing 'noise in heritage precinct' from description.,
