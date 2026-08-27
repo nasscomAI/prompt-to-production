@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Identified as Pothole because description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,"Identified as Pothole because description mentions 'pothole'. Priority set to Urgent due to: child, school.",
+PM-202406,Flooding,Standard,Identified as Flooding because description mentions 'flood'.,
+PM-202408,Other,Standard,"Ambiguous complaint matching multiple categories: flood, drain.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Identified as Streetlight because description mentions 'streetlight'.,
+PM-202411,Streetlight,Urgent,Identified as Streetlight because description mentions 'streetlight'. Priority set to Urgent due to: hazard.,
+PM-202413,Other,Standard,"Ambiguous complaint matching multiple categories: garbage, overflow.",NEEDS_REVIEW
+PM-202418,Noise,Standard,Identified as Noise because description mentions 'music'.,
+PM-202419,Road Damage,Standard,Identified as Road Damage because description mentions 'road'.,
+PM-202420,Other,Urgent,Could not determine category from description alone. Priority set to Urgent due to: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Identified as Flooding because description mentions 'flood'.,
+PM-202428,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+PM-202430,Other,Standard,"Ambiguous complaint matching multiple categories: dark, heritage.",NEEDS_REVIEW
+PM-202433,Other,Standard,"Ambiguous complaint matching multiple categories: waste, road.",NEEDS_REVIEW
+PM-202446,Other,Urgent,Could not determine category from description alone. Priority set to Urgent due to: fell.,NEEDS_REVIEW

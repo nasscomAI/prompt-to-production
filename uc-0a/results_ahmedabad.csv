@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+AM-202402,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+AM-202405,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Identified as Heat Hazard because description mentions 'heat'.,
+AM-202407,Other,Urgent,Could not determine category from description alone. Priority set to Urgent due to: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Identified as Pothole because description mentions 'pothole'.,
+AM-202414,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+AM-202417,Other,Standard,"Ambiguous complaint matching multiple categories: waste, heritage.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Identified as Noise because description mentions 'music'.,
+AM-202424,Road Damage,Standard,Identified as Road Damage because description mentions 'road'.,
+AM-202429,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+AM-202431,Other,Standard,"Ambiguous complaint matching multiple categories: road, heritage.",NEEDS_REVIEW
+AM-202435,Other,Standard,"Ambiguous complaint matching multiple categories: road, heat.",NEEDS_REVIEW
+AM-202444,Other,Standard,"Ambiguous complaint matching multiple categories: waste, overflow.",NEEDS_REVIEW
+AM-202445,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW

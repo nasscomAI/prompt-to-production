@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Identified as Flooding because description mentions 'flood'. Priority set to Urgent due to: ambulance.,
+GH-202402,Other,Standard,"Ambiguous complaint matching multiple categories: flood, drain.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Identified as Drain Blockage because description mentions 'drain'.,
+GH-202407,Drain Blockage,Standard,Identified as Drain Blockage because description mentions 'drain'.,
+GH-202410,Other,Standard,"Ambiguous complaint matching multiple categories: pothole, road.",NEEDS_REVIEW
+GH-202411,Pothole,Urgent,Identified as Pothole because description mentions 'pothole'. Priority set to Urgent due to: hospital.,
+GH-202412,Pothole,Urgent,Identified as Pothole because description mentions 'pothole'. Priority set to Urgent due to: school.,
+GH-202417,Other,Standard,"Ambiguous complaint matching multiple categories: waste, heritage, hot, overflow.",NEEDS_REVIEW
+GH-202420,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+GH-202422,Other,Urgent,"Ambiguous complaint matching multiple categories: crater, road. Priority set to Urgent due to: collapse.",NEEDS_REVIEW
+GH-202424,Flooding,Standard,Identified as Flooding because description mentions 'flood'.,
+GH-202428,Waste,Standard,Identified as Waste because description mentions 'waste'.,
+GH-202432,Other,Standard,Could not determine category from description alone.,NEEDS_REVIEW
+GH-202448,Other,Standard,"Ambiguous complaint matching multiple categories: flood, drain.",NEEDS_REVIEW
+GH-202438,Road Damage,Standard,Identified as Road Damage because description mentions 'road'.,
