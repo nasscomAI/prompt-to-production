@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,"Based on ""Underpass flooded after 1hr rain. Ambulance diverted. Lives"" in the complaint.",
+Drain Blockage,Standard,"Based on ""Market area flooded. Traders suffering losses. Drain completely"" in the complaint.",NEEDS_REVIEW
+Drain Blockage,Standard,"Based on ""Main stormwater drain 100% blocked with construction debris."" in the complaint.",
+Drain Blockage,Standard,"Based on ""Drain blocked and mosquito breeding. Dengue concern."" in the complaint.",
+Pothole,Standard,"Based on ""Potholes causing vehicles to slow to 20kmph on"" in the complaint.",
+Pothole,Urgent,"Based on ""Pothole swallowed entire motorcycle wheel. Rider hospitalised."" in the complaint.",
+Pothole,Urgent,"Based on ""School bus struggling to navigate 6 potholes in"" in the complaint.",
+Heat Hazard,Standard,"Based on ""Heritage zone garbage overflow. Tourist photographs showing piles"" in the complaint.",NEEDS_REVIEW
+Other,Standard,"Based on ""Construction drilling from 5am daily near residential towers."" in the complaint.",NEEDS_REVIEW
+Other,Urgent,"Based on ""Road collapsed partially. Crater 1m deep near residential"" in the complaint.",NEEDS_REVIEW
+Flooding,Standard,"Based on ""Underpass floods in light rain. Cars regularly abandoned."" in the complaint.",
+Waste,Standard,"Based on ""Post-market waste not cleared. Area unusable by Sunday"" in the complaint.",
+Other,Standard,"Based on ""24hr supermarket delivery trucks idling with engines on."" in the complaint.",NEEDS_REVIEW
+Drain Blockage,Standard,"Based on ""Main drain blocked — entire locality at flooding"" in the complaint.",NEEDS_REVIEW
+Other,Standard,"Based on ""Colony surrounded by fields that channel rainwater through"" in the complaint.",NEEDS_REVIEW

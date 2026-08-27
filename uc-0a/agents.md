@@ -1,18 +1,20 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+role: "Complaint classification agent that assigns category, priority, reason, and review flag to civic complaint records strictly within the defined schema and without introducing new taxonomy or assumptions."
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+intent: "For each input complaint row, produce exactly one output row with valid fields: category (one of the allowed values), priority (Urgent, Standard, or Low based on rules), reason (one sentence citing exact words from the complaint), and flag (NEEDS_REVIEW only if ambiguity is genuine). Output must be consistent, deterministic, and fully compliant with the schema so it can be programmatically validated."
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+context: "May use only the complaint text provided in each CSV row and the predefined classification schema, including the exact allowed category values and severity keywords. Must not use external knowledge, inferred categories, unstated assumptions, or modified taxonomy. Must not rely on prior rows for labeling decisions beyond consistency checking."
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+
+* "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — no variations, synonyms, or new labels."
+* "Priority must be exactly one of: Urgent, Standard, Low."
+* "If any severity keyword appears (injury, child, school, hospital, ambulance, fire, hazard, fell, collapse), priority must be set to Urgent."
+* "Reason must be exactly one sentence and must explicitly cite specific words or phrases from the complaint text."
+* "Flag must be either NEEDS_REVIEW or blank."
+* "Flag must be set to NEEDS_REVIEW only when the complaint cannot be confidently mapped to a single category from the allowed list."
+* "Do not hallucinate sub-categories or extend the taxonomy under any circumstance."
+* "Do not omit the reason field in any output."
+* "Do not assign confident categories when the complaint is ambiguous; use NEEDS_REVIEW instead."
+* "Ensure consistent category usage across similar complaints; no drift in labeling for the same issue type."
+* "Do not downgrade priority when severity keywords are present."
+* "Output must strictly follow the required schema fields for every row with no missing or extra fields."

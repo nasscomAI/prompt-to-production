@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Heritage Damage,Standard,"Based on ""Heritage lamp post knocked over by delivery vehicle."" in the complaint.",
+Other,Standard,"Based on ""Historic tram road cobblestones broken up by cable"" in the complaint.",NEEDS_REVIEW
+Other,Standard,"Based on ""Wedding band playing near Tagore Museum at 11pm."" in the complaint.",NEEDS_REVIEW
+Pothole,Standard,"Based on ""Airport access road full of potholes. Diplomatic complaint"" in the complaint.",
+Pothole,Standard,"Based on ""Pothole causing tyre blowouts. Three incidents this week."" in the complaint.",
+Pothole,Standard,"Based on ""Deep pothole filling with rainwater. Depth invisible. Accident"" in the complaint.",
+Drain Blockage,Standard,"Based on ""New residential complex draining directly onto public road."" in the complaint.",
+Waste,Standard,"Based on ""Tourist zone waste overflowing. Foreign visitors photographing piles."" in the complaint.",NEEDS_REVIEW
+Other,Urgent,"Based on ""Footpath broken and sinking. Elderly pedestrian fell. Hospital"" in the complaint.",NEEDS_REVIEW
+Other,Standard,"Based on ""Road surface buckled near bridge. Structural concern raised."" in the complaint.",NEEDS_REVIEW
+Heritage Damage,Standard,"Based on ""Heritage residential building exterior defaced by billboard installation."" in the complaint.",
+Other,Standard,"Based on ""Road subsided near gas pipeline. Gas leak smell"" in the complaint.",NEEDS_REVIEW
+Heritage Damage,Standard,"Based on ""Street paving removed for utility work — heritage"" in the complaint.",
+Other,Standard,"Based on ""Entire colony substation tripped. Darkness for 3 nights."" in the complaint.",NEEDS_REVIEW
+Heritage Damage,Standard,"Based on ""Street vendors using amplifiers illegally in heritage precinct."" in the complaint.",

@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,"Based on ""Large pothole 60cm wide causing tyre damage. Three"" in the complaint.",
+Pothole,Urgent,"Based on ""Deep pothole near bus stop. School children at"" in the complaint.",
+Flooding,Standard,"Based on ""Underpass flooded knee-deep after 2hrs rain. Commuters stranded."" in the complaint.",
+Flooding,Standard,"Based on ""Bus stand flooded. Passengers standing in water. Drain"" in the complaint.",NEEDS_REVIEW
+Streetlight,Standard,"Based on ""Three consecutive streetlights out for 10 days. Area"" in the complaint.",
+Streetlight,Urgent,"Based on ""Streetlight flickering and sparking. Electrical hazard reported."" in the complaint.",
+Waste,Standard,"Based on ""Overflowing garbage bins near vegetable market. Smell affecting"" in the complaint.",
+Other,Standard,"Based on ""Wedding venue playing music past midnight on weeknights."" in the complaint.",NEEDS_REVIEW
+Other,Standard,"Based on ""Road surface cracked and sinking near utility work"" in the complaint.",NEEDS_REVIEW
+Other,Urgent,"Based on ""Manhole cover missing. Risk of serious injury to"" in the complaint.",NEEDS_REVIEW
+Flooding,Standard,"Based on ""Bridge approach floods in 30mins of rain. Bridge"" in the complaint.",
+Other,Standard,"Based on ""Dead animal not removed for 36 hours. Health"" in the complaint.",NEEDS_REVIEW
+Heritage Damage,Standard,"Based on ""Heritage street, lights out. Safety concern for pedestrians"" in the complaint.",
+Waste,Standard,"Based on ""Bulk waste from apartment renovation dumped on public"" in the complaint.",
+Other,Urgent,"Based on ""Footpath tiles broken and upturned. Elderly resident fell"" in the complaint.",NEEDS_REVIEW
