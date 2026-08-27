@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The words ""44°C"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202402,Heat Hazard,Standard,"The words ""temperatures"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202405,Other,Standard,"The words ""Dead trees with split branches"" do not identify an allowed complaint category, so it is Other with Standard priority.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The words ""heatwave"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202407,Road Damage,Urgent,"The words ""paving"" identify Road Damage, while ""Child"" requires Urgent priority.",
+AM-202410,Pothole,Standard,"The words ""Pothole"" identify Pothole, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202414,Streetlight,Standard,"The words ""unlit"" identify Streetlight, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202417,Waste,Standard,"The words ""waste"" identify Waste, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202421,Noise,Standard,"The words ""music"" identify Noise, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202424,Heat Hazard,Standard,"The words ""45°C"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202429,Heat Hazard,Standard,"The words ""temperature"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202431,Heritage Damage,Standard,"The words ""Heritage"" identify Heritage Damage, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202435,Heat Hazard,Standard,"The words ""heat"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202444,Waste,Standard,"The words ""waste"" identify Waste, with no mandatory urgent keyword present, so the priority is Standard.",
+AM-202445,Heat Hazard,Standard,"The words ""full sun"" identify Heat Hazard, with no mandatory urgent keyword present, so the priority is Standard.",
