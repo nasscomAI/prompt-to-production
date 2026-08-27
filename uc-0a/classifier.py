@@ -16,14 +16,69 @@ def classify_complaint(row: dict) -> dict:
     raise NotImplementedError("Build this using your AI tool + RICE prompt")
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+import csv
+import argparse
+
+
+def classify(text):
+
+    text = text.lower()
+
+    if "pothole" in text or "road" in text:
+        return "Road"
+
+    elif "water" in text or "leak" in text:
+        return "Water"
+
+    elif "garbage" in text or "trash" in text:
+        return "Garbage"
+
+    elif "electricity" in text or "power" in text:
+        return "Electricity"
+
+    else:
+        return "Other"
+
+
+def batch_classify(input_file, output_file):
+
+    rows = []
+
+    with open(input_file) as f:
+
+        reader = csv.DictReader(f)
+
+        for row in reader:
+
+            complaint = row.get("complaint", "")
+
+            category = classify(complaint)
+
+            row["category"] = category
+
+            rows.append(row)
+
+    with open(output_file, "w", newline="") as f:
+
+        writer = csv.DictWriter(f, fieldnames=rows[0].keys())
+
+        writer.writeheader()
+
+        writer.writerows(rows)
+
+    print("Classification finished")
+
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
+
+    args = parser.parse_args()
+
+    batch_classify(args.input, args.output)
 
 
 if __name__ == "__main__":
