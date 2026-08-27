@@ -1,16 +1,18 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: complaint_data_reader
+    description: Read complaint records from a CSV file and convert them into structured data for processing.
+    input: CSV file containing complaint_id and description fields.
+    output: List of complaint records in dictionary format.
+    error_handling: If the file is missing or unreadable, return an empty list and display an error message.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: keyword_search
+    description: Search complaint descriptions for a specific keyword provided by the user.
+    input: Complaint records (list of dictionaries) and a keyword string.
+    output: List of complaint records where the description contains the keyword.
+    error_handling: If the keyword is empty or not found in any record, return an empty result and notify the user.
+
+  - name: result_display
+    description: Format and display the matching complaint records in a readable form.
+    input: List of complaint records that match the search keyword.
+    output: Printed output showing complaint_id and description of matching complaints.
+    error_handling: If no matching records are found, display a message indicating that no complaints match the search criteria.

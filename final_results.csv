@@ -1,0 +1,16 @@
+complaint_id,category,priority
+GH-202401,Flooding,Normal
+GH-202402,Flooding,Normal
+GH-202406,Other,Normal
+GH-202407,Other,Normal
+GH-202410,Pothole,Normal
+GH-202411,Pothole,Urgent
+GH-202412,Pothole,Urgent
+GH-202417,Garbage,Normal
+GH-202420,Other,Normal
+GH-202422,Other,Normal
+GH-202424,Flooding,Normal
+GH-202428,Garbage,Normal
+GH-202432,Other,Normal
+GH-202448,Flooding,Normal
+GH-202438,Other,Normal
