@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description uses 'pothole', which supports Pothole.",
+PM-202402,Pothole,Urgent,"The description uses 'pothole', which supports Pothole.",
+PM-202406,Flooding,Standard,"The description uses 'flood', 'flooded', 'knee-deep', which supports Flooding.",
+PM-202408,Flooding,Standard,"The description uses 'Drain block', 'flood', 'flooded', which supports Flooding.",
+PM-202410,Streetlight,Standard,"The description uses 'streetlight', 'lights out', which supports Streetlight.",
+PM-202411,Streetlight,Urgent,"The description uses 'Streetlight', 'flickering', which supports Streetlight.",
+PM-202413,Waste,Standard,"The description uses 'garbage', 'bins', 'Overflowing', which supports Waste.",
+PM-202418,Noise,Standard,"The description uses 'music', 'midnight', which supports Noise.",
+PM-202419,Road Damage,Standard,"The description uses 'cracked', 'sinking', which supports Road Damage.",
+PM-202420,Road Damage,Urgent,"The description uses 'Manhole', which supports Road Damage.",
+PM-202427,Flooding,Standard,"The description uses 'flood', which supports Flooding.",
+PM-202428,Waste,Standard,"The description uses 'Dead animal', which supports Waste.",
+PM-202430,Other,Standard,"The description uses 'Heritage', 'lights out', which supports Other.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description uses 'Bulk waste', 'dumped', which supports Waste.",
+PM-202446,Road Damage,Urgent,"The description uses 'Footpath', 'tiles broken', 'upturned', which supports Road Damage.",
