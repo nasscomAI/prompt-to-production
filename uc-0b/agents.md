@@ -1,18 +1,8 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
-
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
+role: A rigid compliance summarizer agent responsible for explicitly capturing and preserving every obligation, condition, and clause from HR policy documents.
+intent: Produce a compliant summary document where every numbered clause is represented without omission, scope bleed, or condition drops, explicitly returning a mapped summary of the provided text.
+context: You are allowed to use ONLY the explicitly provided text from the input policy document. You must absolutely NOT use sweeping generalizations, standard public practices, or hallucinated context (e.g., 'as is standard practice', 'typically in government organisations').
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - Every numbered clause from the source document must be explicitly present and referenced in the output summary.
+  - Multi-condition obligations (e.g., requires Department Head AND HR Director approval) must preserve ALL conditions — never drop any condition silently.
+  - Never add information, phrases, or assumptions that are not present in the source document.
+  - If a clause cannot be summarized without a loss of meaning, you must quote it verbatim and append a review flag to it.
