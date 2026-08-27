@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flooding' related issues. Contains severity keyword(s): ambulance.,
+GH-202402,Flooding,Standard,"Multiple potential categories detected (Flooding, Drain Blockage). No severity keywords found.",NEEDS_REVIEW
+GH-202406,Flooding,Standard,"Multiple potential categories detected (Flooding, Drain Blockage). No severity keywords found.",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Description mentions 'drain blockage' related issues. No severity keywords found.,
+GH-202410,Pothole,Standard,Description mentions 'pothole' related issues. No severity keywords found.,
+GH-202411,Pothole,Urgent,Description mentions 'pothole' related issues. Contains severity keyword(s): hospital.,
+GH-202412,Pothole,Urgent,Description mentions 'pothole' related issues. Contains severity keyword(s): school.,
+GH-202417,Waste,Standard,"Multiple potential categories detected (Waste, Heritage Damage). No severity keywords found.",NEEDS_REVIEW
+GH-202420,Other,Standard,Could not confidently determine category from description. No severity keywords found.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Could not confidently determine category from description. Contains severity keyword(s): collapse.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Multiple potential categories detected (Flooding, Streetlight). No severity keywords found.",NEEDS_REVIEW
+GH-202428,Waste,Standard,Description mentions 'waste' related issues. No severity keywords found.,
+GH-202432,Other,Standard,Could not confidently determine category from description. No severity keywords found.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Multiple potential categories detected (Flooding, Drain Blockage). No severity keywords found.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,Description mentions 'flooding' related issues. No severity keywords found.,

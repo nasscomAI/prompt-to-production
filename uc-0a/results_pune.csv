@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions 'pothole' related issues. No severity keywords found.,
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' related issues. Contains severity keyword(s): children, school, child.",
+PM-202406,Flooding,Standard,Description mentions 'flooding' related issues. No severity keywords found.,
+PM-202408,Flooding,Standard,"Multiple potential categories detected (Flooding, Drain Blockage). No severity keywords found.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description mentions 'streetlight' related issues. No severity keywords found.,
+PM-202411,Streetlight,Urgent,Description mentions 'streetlight' related issues. Contains severity keyword(s): hazard.,
+PM-202413,Waste,Standard,Description mentions 'waste' related issues. No severity keywords found.,
+PM-202418,Noise,Standard,Description mentions 'noise' related issues. No severity keywords found.,
+PM-202419,Road Damage,Standard,Description mentions 'road damage' related issues. No severity keywords found.,
+PM-202420,Road Damage,Urgent,Description mentions 'road damage' related issues. Contains severity keyword(s): injury.,
+PM-202427,Flooding,Standard,Description mentions 'flooding' related issues. No severity keywords found.,
+PM-202428,Waste,Standard,Description mentions 'waste' related issues. No severity keywords found.,
+PM-202430,Streetlight,Standard,"Multiple potential categories detected (Streetlight, Heritage Damage). No severity keywords found.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Description mentions 'waste' related issues. No severity keywords found.,
+PM-202446,Road Damage,Urgent,Description mentions 'road damage' related issues. Contains severity keyword(s): fell.,
