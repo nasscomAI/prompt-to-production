@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+PM-202402,Pothole,Urgent,Classification based on presence of the word 'pothole' indicating a pothole issue.,
+PM-202406,Flooding,Standard,Classification based on presence of the word 'flood' indicating a flooding issue.,
+PM-202408,Other,Standard,"Ambiguous description matched multiple categories: Flooding, Drain Blockage.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classification based on presence of the word 'darkness' indicating a streetlight issue.,
+PM-202411,Streetlight,Urgent,Classification based on presence of the word 'hazard' indicating a streetlight issue.,
+PM-202413,Waste,Standard,Classification based on presence of the word 'waste' indicating a waste issue.,
+PM-202418,Noise,Standard,Classification based on presence of the word 'music' indicating a noise issue.,
+PM-202419,Other,Standard,"Ambiguous description matched multiple categories: Road Damage, Road Repair.",NEEDS_REVIEW
+PM-202420,Other,Urgent,"Ambiguous description matched multiple categories: Injury, Cyclist.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classification based on presence of the word 'flood' indicating a flooding issue.,
+PM-202428,Other,Standard,"Could not determine a specific category from the description.",NEEDS_REVIEW
+PM-202430,Other,Standard,"Ambiguous description matched multiple categories: Streetlight, Heritage Damage.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classification based on presence of the word 'waste' indicating a waste issue.,
+PM-202446,Other,Urgent,"Ambiguous description matched multiple categories: Road Damage, Fell.",NEEDS_REVIEW
