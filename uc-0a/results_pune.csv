@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description contains the word 'pothole'.,
+PM-202402,Pothole,Urgent,Description contains the word 'pothole'. Priority set to Urgent due to keyword 'child'.,
+PM-202406,Flooding,Standard,Description contains the word 'flood'.,
+PM-202408,Flooding,Standard,Description contains the word 'flood'.,
+PM-202410,Streetlight,Standard,Description contains the word 'light'.,
+PM-202411,Streetlight,Urgent,Description contains the word 'light'. Priority set to Urgent due to keyword 'hazard'.,
+PM-202413,Waste,Standard,Description contains the word 'garbage'.,
+PM-202418,Noise,Standard,Description contains the word 'music'.,
+PM-202419,Road Damage,Standard,Description contains the word 'crack'.,
+PM-202420,Other,Urgent,Description contains the word 'manhole'. Priority set to Urgent due to keyword 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description contains the word 'flood'.,
+PM-202428,Waste,Standard,Description contains the word 'animal'.,
+PM-202430,Streetlight,Standard,Description contains the word 'light'.,
+PM-202433,Waste,Standard,Description contains the word 'waste'.,
+PM-202446,Road Damage,Urgent,Description contains the word 'tile'. Priority set to Urgent due to keyword 'fell'.,
