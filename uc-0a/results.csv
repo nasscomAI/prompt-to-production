@@ -1,0 +1,16 @@
+description,category,priority,reason,flag
+Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Normal,"The description contains the keyword ""pothole"" which indicates pothole.",
+Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,"The description contains the keyword ""pothole"" which indicates pothole.",
+Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Normal,"The description contains the keyword ""flood"" which indicates flooding.",
+Bus stand flooded. Passengers standing in water. Drain blocked.,Flooding,Normal,"The description contains the keyword ""flood"" which indicates flooding.",
+Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Normal,"The description contains the keyword ""light"" which indicates streetlight.",
+Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,"The description contains the keyword ""light"" which indicates streetlight.",
+Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Flooding,Normal,"The description contains the keyword ""overflow"" which indicates flooding.",
+Wedding venue playing music past midnight on weeknights.,Noise,Normal,"The description contains the keyword ""music"" which indicates noise.",
+Road surface cracked and sinking near utility work done 1 month ago.,Road Damage,Normal,"The description contains the keyword ""crack"" which indicates road damage.",
+Manhole cover missing. Risk of serious injury to cyclists.,Other,Urgent,Classification assigned based on description content analysis.,NEEDS_REVIEW
+Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Normal,"The description contains the keyword ""flood"" which indicates flooding.",
+Dead animal not removed for 36 hours. Health concern.,Other,Normal,Classification assigned based on description content analysis.,NEEDS_REVIEW
+"Heritage street, lights out. Safety concern for pedestrians after dark.",Streetlight,Normal,"The description contains the keyword ""light"" which indicates streetlight.",
+Bulk waste from apartment renovation dumped on public road.,Waste,Normal,"The description contains the keyword ""waste"" which indicates waste.",
+Footpath tiles broken and upturned. Elderly resident fell last week.,Other,Urgent,Classification assigned based on description content analysis.,NEEDS_REVIEW
