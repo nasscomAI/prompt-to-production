@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description mentions 'heritage', classified as Heritage Damage.",
+KM-202402,Heritage Damage,Standard,"Description mentions 'historic', classified as Heritage Damage.",
+KM-202405,Other,Standard,Description does not clearly map to any category,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Description mentions 'pothole', classified as Pothole.",
+KM-202410,Pothole,Standard,"Description mentions 'pothole', classified as Pothole.",
+KM-202411,Pothole,Standard,"Description mentions 'pothole', classified as Pothole.",
+KM-202415,Drain Blockage,Standard,"Description mentions 'drain', classified as Drain Blockage.",
+KM-202418,Waste,Standard,"Description mentions 'waste, overflowing', classified as Waste.",
+KM-202421,Road Damage,Urgent,"Description mentions 'sinking, footpath'; contains severity keyword 'hospital'; classified as Road Damage with Urgent priority.",
+KM-202422,Road Damage,Standard,"Description mentions 'road surface', classified as Road Damage.",
+KM-202426,Heritage Damage,Standard,"Description mentions 'heritage', classified as Heritage Damage.",
+KM-202430,Road Damage,Standard,"Description mentions 'subsided', classified as Road Damage.",
+KM-202434,Heritage Damage,Standard,"Description mentions 'heritage, paving', classified as Heritage Damage.",
+KM-202436,Other,Standard,Description does not clearly map to any category,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description mentions 'heritage', classified as Heritage Damage.",
