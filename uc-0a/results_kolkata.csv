@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Identified 'lamp' in description, suggesting Streetlight and Standard priority.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Identified 'historic' in description, suggesting Heritage Damage and Standard priority.",
+KM-202405,Other,Standard,Classification based on keywords in description.,
+KM-202409,Pothole,Standard,"Identified 'pothole' in description, suggesting Pothole and Standard priority.",
+KM-202410,Pothole,Standard,"Identified 'pothole' in description, suggesting Pothole and Standard priority.",
+KM-202411,Pothole,Standard,"Identified 'pothole' in description, suggesting Pothole and Standard priority.",
+KM-202415,Drain Blockage,Standard,"Identified 'drain' in description, suggesting Drain Blockage and Standard priority.",
+KM-202418,Waste,Standard,"Identified 'waste' in description, suggesting Waste and Standard priority.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Identified 'hospital' in description, suggesting Road Damage and Urgent priority.",
+KM-202422,Road Damage,Standard,"Identified 'road surface' in description, suggesting Road Damage and Standard priority.",
+KM-202426,Heritage Damage,Standard,"Identified 'heritage' in description, suggesting Heritage Damage and Standard priority.",
+KM-202430,Waste,Standard,"Identified 'smell' in description, suggesting Waste and Standard priority.",
+KM-202434,Heritage Damage,Standard,"Identified 'heritage' in description, suggesting Heritage Damage and Standard priority.",
+KM-202436,Other,Standard,Classification based on keywords in description.,
+KM-202438,Heritage Damage,Standard,"Identified 'heritage' in description, suggesting Heritage Damage and Standard priority.",

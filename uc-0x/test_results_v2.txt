@@ -1,0 +1,23 @@
+﻿Q: Can I carry forward unused annual leave?
+A: Employees may carry forward a maximum of 5 unused annual leave [Source: policy_hr_leave.txt Section 2.6]
+------------------------------
+Q: Can I install Slack on my work laptop?
+A: Employees must not install software on corporate devices [Source: policy_it_acceptable_use.txt Section 2.3]
+------------------------------
+Q: What is the home office equipment allowance?
+A: Daily allowance (DA) for outstation travel is Rs 750 per day. [Source: policy_finance_reimbursement.txt Section 2.5]
+------------------------------
+Q: Can I use my personal phone for work files from home?
+A: Personal devices may be used to access CMC email and the [Source: policy_it_acceptable_use.txt Section 3.1]
+------------------------------
+Q: What is the company view on flexible working culture?
+A: This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+------------------------------
+Q: Can I claim DA and meal receipts on the same day?
+A: If actual meal expenses are claimed instead of DA, receipts [Source: policy_finance_reimbursement.txt Section 2.6]
+------------------------------
+Q: Who approves leave without pay?
+A: An employee may apply for Leave Without Pay only after [Source: policy_hr_leave.txt Section 5.1]
+------------------------------

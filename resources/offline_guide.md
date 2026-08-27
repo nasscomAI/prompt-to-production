@@ -128,7 +128,7 @@ Cloning downloads your fork to your local machine so you can edit files.
 > ├── uc-0a/
 > ├── uc-0b/
 > ├── uc-0c/
-> ├── uc-x/
+> ├── uc-0x/
 > ├── data/
 > ├── README.md
 > └── CONTRIBUTING.md
@@ -182,7 +182,7 @@ You built a complaint classifier together. The files you created during the
 session are already in your `uc-0a/` folder.
 
 **Part 2 — One additional UC (done independently)**
-You choose one of: UC-0B, UC-0C, or UC-X. You follow the same process
+You choose one of: UC-0B, UC-0C, or UC-0X. You follow the same process
 independently, using the UC README as your guide.
 
 ### The Process for Every UC
@@ -296,7 +296,7 @@ python3 app.py --input ../data/budget/ward_budget.csv --ward "Ward 1 – Kasba" 
 
 ---
 
-### UC-X — Ask My Documents
+### UC-0X — Ask My Documents
 
 **What it does:** Answers staff questions strictly from three policy documents.
 
@@ -317,7 +317,7 @@ data/policy-documents/policy_finance_reimbursement.txt
 **Run command:**
 
 ```bash
-cd uc-x
+cd uc-0x
 python3 app.py
 ```
 
@@ -439,7 +439,7 @@ Each UC README lists two skills under "Skills to Define in skills.md":
 | ----- | -------------------- | ------------------ |
 | UC-0B | `retrieve_policy`    | `summarize_policy` |
 | UC-0C | `load_dataset`       | `compute_growth`   |
-| UC-X  | `retrieve_documents` | `answer_question`  |
+| UC-0X | `retrieve_documents` | `answer_question`  |
 
 ### 10.2 Generate skills.md
 
@@ -494,7 +494,7 @@ Edit the file directly if anything needs to be added or corrected. Save when don
 2. Open the starter `.py` file for your UC:
    - UC-0B: `uc-0b/app.py`
    - UC-0C: `uc-0c/app.py`
-   - UC-X: `uc-x/app.py`
+   - UC-0X: `uc-0x/app.py`
 
 3. Share the following with your AI coding tool and ask it to implement
    the script:
@@ -539,10 +539,10 @@ cd uc-0c
 python3 app.py --input ../data/budget/ward_budget.csv --ward "Ward 1 – Kasba" --category "Roads & Pothole Repair" --growth-type MoM --output growth_output.csv
 ```
 
-**UC-X:**
+**UC-0X:**
 
 ```bash
-cd uc-x
+cd uc-0x
 python3 app.py
 ```
 
@@ -566,7 +566,7 @@ Once the script runs, verify the output file was created:
 | ----- | ------------------------------------------------------------------------------- |
 | UC-0B | `uc-0b/summary_hr_leave.txt` — open and read it                                 |
 | UC-0C | `uc-0c/growth_output.csv` — open and check it has per-ward rows, not one number |
-| UC-X  | Output appears in the terminal — try asking a question                          |
+| UC-0X | Output appears in the terminal — try asking a question                          |
 
 ---
 
@@ -587,7 +587,7 @@ Every commit must follow this format:
 ```
 UC-0B Generated agents.md and skills.md from README, implemented summariser
 UC-0C Generated agents.md and skills.md from README, implemented growth calculator
-UC-X  Generated agents.md and skills.md from README, implemented document assistant
+UC-0X Generated agents.md and skills.md from README, implemented document assistant
 ```
 
 **Avoid:**
@@ -706,12 +706,12 @@ committed on your branch:
 - [ ] `uc-0a/classifier.py`
 - [ ] `uc-0a/results_[city].csv`
 
-**Your chosen UC (0B, 0C, or UC-X):**
+**Your chosen UC (0B, 0C, or UC-0X):**
 
 - [ ] `uc-[your-uc]/agents.md` — present and updated
 - [ ] `uc-[your-uc]/skills.md` — present and updated
 - [ ] `uc-[your-uc]/app.py`
-- [ ] Output file — `summary_hr_leave.txt`, `growth_output.csv`, or terminal output for UC-X
+- [ ] Output file — `summary_hr_leave.txt`, `growth_output.csv`, or terminal output for UC-0X
 
 ### If Your PR Is Missing Files
 
@@ -751,7 +751,7 @@ README: [paste README content]
 
 ### Files Required Per UC
 
-| File                       | UC-0A | UC-0B | UC-0C | UC-X |
+| File                       | UC-0A | UC-0B | UC-0C | UC-0X |
 | -------------------------- | ----- | ----- | ----- | ---- |
 | `agents.md`                | ✓     | ✓     | ✓     | ✓    |
 | `skills.md`                | ✓     | ✓     | ✓     | ✓    |

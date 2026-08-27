@@ -1,0 +1,20 @@
+{
+    "include": [
+        "uc-0a",
+        "uc-0b",
+        "uc-0c",
+        "uc-0x"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__"
+    ],
+    "venvPath": "C:\\Users\\Aditya\\AppData\\Local\\Programs\\Python\\Python311",
+    "venv": "Python311",
+    "extraPaths": [
+        "C:\\Users\\Aditya\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages"
+    ],
+    "typeCheckingMode": "basic",
+    "pythonVersion": "3.11",
+    "pythonPlatform": "Windows"
+}
