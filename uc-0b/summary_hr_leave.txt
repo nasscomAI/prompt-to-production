@@ -1,0 +1,58 @@
+POLICY SUMMARY — HR-POL-001: Employee Leave Policy
+============================================================
+
+§1. PURPOSE AND SCOPE
+--------------------------------------------------
+  §1.1 Governs all leave entitlements for permanent and contractual employees of CMC.
+  §1.2 Does not apply to daily wage workers or consultants (governed by their contracts).
+
+§2. ANNUAL LEAVE
+--------------------------------------------------
+  §2.1 Permanent employees are entitled to 18 days paid annual leave per calendar year.
+  §2.2 Annual leave accrues at 1.5 days per month from date of joining.
+  [CRITICAL] §2.3 Employees must submit leave application at least 14 calendar days in advance using Form HR-L1.
+  [CRITICAL] §2.4 Leave applications must receive written approval from employee's direct manager before leave commences. Verbal approval is not valid.
+  [CRITICAL] §2.5 Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+  [CRITICAL] §2.6 Employees may carry forward a maximum of 5 unused annual leave days. Any days above 5 are forfeited on 31 December.
+  [CRITICAL] §2.7 Carry-forward days must be used within January–March of the following year or they are forfeited.
+
+§3. SICK LEAVE
+--------------------------------------------------
+  §3.1 Each employee is entitled to 12 days paid sick leave per calendar year.
+  [CRITICAL] §3.2 Sick leave of 3 or more consecutive days requires a medical certificate from a registered practitioner, submitted within 48 hours of returning to work.
+  §3.3 Sick leave cannot be carried forward to the following year.
+  [CRITICAL] §3.4 Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+
+§4. MATERNITY AND PATERNITY LEAVE
+--------------------------------------------------
+  §4.1 Female employees are entitled to 26 weeks paid maternity leave for first two live births.
+  §4.2 For third or subsequent child, maternity leave is 12 weeks paid.
+  §4.3 Male employees are entitled to 5 days paid paternity leave, to be taken within 30 days of child's birth.
+  §4.4 Paternity leave cannot be split across multiple periods.
+
+§5. LEAVE WITHOUT PAY (LWP)
+--------------------------------------------------
+  §5.1 LWP may be applied for only after exhausting all applicable paid leave entitlements.
+  [CRITICAL] §5.2 LWP requires approval from both the Department Head and the HR Director. Manager approval alone is not sufficient.
+  [CRITICAL] §5.3 LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+  §5.4 Periods of LWP do not count toward service for seniority, increments, or retirement benefits.
+
+§6. PUBLIC HOLIDAYS
+--------------------------------------------------
+  §6.1 Employees are entitled to all gazetted public holidays declared by the State Government.
+  §6.2 Employees required to work on a public holiday are entitled to one compensatory off day, to be taken within 60 days.
+  §6.3 Compensatory off cannot be encashed.
+
+§7. LEAVE ENCASHMENT
+--------------------------------------------------
+  §7.1 Annual leave may be encashed only at retirement or resignation, subject to maximum 60 days.
+  [CRITICAL] §7.2 Leave encashment during service is not permitted under any circumstances.
+  §7.3 Sick leave and LWP cannot be encashed under any circumstances.
+
+§8. GRIEVANCES
+--------------------------------------------------
+  §8.1 Leave-related grievances must be raised with HR within 10 working days of the disputed decision.
+  §8.2 Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
+
+============================================================
+END OF SUMMARY

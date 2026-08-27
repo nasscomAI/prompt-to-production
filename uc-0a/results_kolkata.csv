@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Classified as Streetlight/Standard because description contains ""lamp post"".",NEEDS_REVIEW
+KM-202402,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+KM-202405,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Classified as Pothole/Standard because description contains ""pothole"".",
+KM-202410,Pothole,Low,"Classified as Pothole/Low because description contains ""pothole"".",
+KM-202411,Pothole,Standard,"Classified as Pothole/Standard because description contains ""pothole"".",
+KM-202415,Drain Blockage,Standard,"Classified as Drain Blockage/Standard because description contains ""drain"".",
+KM-202418,Waste,Standard,"Classified as Waste/Standard because description contains ""waste"", ""overflowing"".",
+KM-202421,Road Damage,Urgent,"Classified as Road Damage/Urgent because description contains ""sinking"", ""footpath"", ""hospital"".",
+KM-202422,Road Damage,Low,"Classified as Road Damage/Low because description contains ""road surface"".",
+KM-202426,Heritage Damage,Low,"Classified as Heritage Damage/Low because description contains ""heritage"".",
+KM-202430,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage/Standard because description contains ""heritage"".",
+KM-202436,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Classified as Heritage Damage/Standard because description contains ""heritage"".",

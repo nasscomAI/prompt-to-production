@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding/Urgent because description contains ""flood"", ""flooded"", ""ambulance"".",
+GH-202402,Flooding,Standard,"Classified as Flooding/Standard because description contains ""flood"", ""flooded"".",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage/Standard because description contains ""drain"".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage/Standard because description contains ""drain"".",
+GH-202410,Pothole,Standard,"Classified as Pothole/Standard because description contains ""pothole"".",
+GH-202411,Pothole,Urgent,"Classified as Pothole/Urgent because description contains ""pothole"", ""hospital"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole/Urgent because description contains ""pothole"", ""school"".",
+GH-202417,Waste,Standard,"Classified as Waste/Standard because description contains ""garbage"", ""waste"".",NEEDS_REVIEW
+GH-202420,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+GH-202422,Other,Urgent,"Classified as Other/Urgent because description contains ""collapse"".",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Classified as Flooding/Standard because description contains ""flood"".",
+GH-202428,Waste,Standard,"Classified as Waste/Standard because description contains ""waste"".",
+GH-202432,Other,Low,Classified as Other/Low based on overall description context.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Classified as Flooding/Standard because description contains ""flood"", ""flooding"".",NEEDS_REVIEW
+GH-202438,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole/Standard because description contains ""pothole"".",
+PM-202402,Pothole,Urgent,"Classified as Pothole/Urgent because description contains ""pothole"", ""child"", ""school"".",
+PM-202406,Flooding,Standard,"Classified as Flooding/Standard because description contains ""flood"", ""flooded"", ""knee-deep"".",
+PM-202408,Flooding,Standard,"Classified as Flooding/Standard because description contains ""flood"", ""flooded"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight/Standard because description contains ""streetlight"", ""lights out"".",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight/Urgent because description contains ""streetlight"", ""flickering"", ""sparking"".",
+PM-202413,Waste,Standard,"Classified as Waste/Standard because description contains ""garbage"", ""overflowing"", ""bins"".",
+PM-202418,Noise,Standard,"Classified as Noise/Standard because description contains ""music"", ""midnight"".",
+PM-202419,Road Damage,Low,"Classified as Road Damage/Low because description contains ""road surface"", ""cracked"", ""sinking"".",
+PM-202420,Drain Blockage,Urgent,"Classified as Drain Blockage/Urgent because description contains ""manhole"", ""injury"".",
+PM-202427,Flooding,Standard,"Classified as Flooding/Standard because description contains ""flood"".",
+PM-202428,Waste,Low,"Classified as Waste/Low because description contains ""dead animal"".",
+PM-202430,Streetlight,Standard,"Classified as Streetlight/Standard because description contains ""lights out"".",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as Waste/Standard because description contains ""waste"", ""dumped"", ""dump"".",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage/Urgent because description contains ""footpath"", ""tiles broken"", ""upturned"".",

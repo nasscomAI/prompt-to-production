@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Classified as Other/Low based on overall description context.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard/Standard because description contains ""temperature"".",
+AM-202405,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard/Standard because description contains ""heat"", ""heatwave"".",
+AM-202407,Road Damage,Urgent,"Classified as Road Damage/Urgent because description contains ""upturned"", ""child"".",
+AM-202410,Pothole,Standard,"Classified as Pothole/Standard because description contains ""pothole"".",
+AM-202414,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
+AM-202417,Waste,Standard,"Classified as Waste/Standard because description contains ""waste"".",NEEDS_REVIEW
+AM-202421,Noise,Standard,"Classified as Noise/Standard because description contains ""music"".",
+AM-202424,Road Damage,Standard,"Classified as Road Damage/Standard because description contains ""road surface"".",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard/Standard because description contains ""temperature"".",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage/Standard because description contains ""heritage"", ""old city"".",
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard/Standard because description contains ""heat"".",
+AM-202444,Waste,Standard,"Classified as Waste/Standard because description contains ""waste"", ""overflowing"", ""bins"".",
+AM-202445,Other,Standard,Classified as Other/Standard based on overall description context.,NEEDS_REVIEW
