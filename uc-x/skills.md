@@ -1,16 +1,18 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: execute_python
+    description: Executes Python code snippets within the uc-x project environment.
+    input: Python code as a string.
+    output: Execution result as a string (stdout/stderr).
+    error_handling: Returns error message if code is invalid or execution fails.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: search_codebase
+    description: Searches the uc-x project files for a given keyword or pattern.
+    input: Search query as a string.
+    output: List of matching lines with file references.
+    error_handling: Returns empty list if no matches; error message if query is invalid.
+
+  - name: summarize_file
+    description: Provides a summary of a specified file in the uc-x project.
+    input: File path as a string.
+    output: Text summary of the file's contents.
+    error_handling: Returns error if file does not exist or is unreadable.
