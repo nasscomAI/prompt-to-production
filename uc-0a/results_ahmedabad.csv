@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,
+AM-202402,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,
+AM-202405,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,
+AM-202406,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,Classified as Road Damage with Urgent priority because the text mentions 'broken' and contains severity keyword 'child'.,
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority because the text mentions 'pothole'.,
+AM-202414,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,
+AM-202417,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise with Standard priority because the text mentions 'music'.,
+AM-202424,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,
+AM-202429,Other,Standard,Classified as Other with Standard priority because the text description lacks clear single-category keywords.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because the text mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the text mentions 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority because the text mentions 'waste'.,
+AM-202445,Road Damage,Standard,Classified as Road Damage with Standard priority because the text mentions 'broken'.,
