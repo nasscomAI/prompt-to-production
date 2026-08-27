@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions ""pothole"", which indicates Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions ""pothole"", which indicates Pothole.",
+PM-202406,Flooding,Standard,"The description mentions ""flooded"", which indicates Flooding.",
+PM-202408,Other,Standard,"No standard category applies; description includes ""flooded"".",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions ""streetlights"", which indicates Streetlight.",
+PM-202411,Streetlight,Urgent,"The description mentions ""streetlight"", which indicates Streetlight.",
+PM-202413,Waste,Standard,"The description mentions ""garbage"", which indicates Waste.",
+PM-202418,Noise,Standard,"The description mentions ""music"", which indicates Noise.",
+PM-202419,Road Damage,Standard,"The description mentions ""cracked"", which indicates Road Damage.",
+PM-202420,Road Damage,Urgent,"The description mentions ""manhole cover"", which indicates Road Damage.",
+PM-202427,Flooding,Standard,"The description mentions ""floods"", which indicates Flooding.",
+PM-202428,Waste,Standard,"The description mentions ""dead animal"", which indicates Waste.",
+PM-202430,Streetlight,Standard,"The description mentions ""lights out"", which indicates Streetlight.",
+PM-202433,Waste,Standard,"The description mentions ""waste"", which indicates Waste.",
+PM-202446,Other,Urgent,"No standard category applies; description includes ""Footpath"".",NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The description mentions ""44°c"", which indicates Heat Hazard.",
+AM-202402,Other,Standard,"No standard category applies; description includes ""Metal"".",NEEDS_REVIEW
+AM-202405,Other,Standard,"No standard category applies; description includes ""Dead"".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions ""heatwave"", which indicates Heat Hazard.",
+AM-202407,Other,Urgent,"No standard category applies; description includes ""Broken"".",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The description mentions ""pothole"", which indicates Pothole.",
+AM-202414,Other,Standard,"No standard category applies; description includes ""Residential"".",NEEDS_REVIEW
+AM-202417,Waste,Standard,"The description mentions ""waste"", which indicates Waste.",
+AM-202421,Noise,Standard,"The description mentions ""music"", which indicates Noise.",
+AM-202424,Road Damage,Standard,"The description mentions ""road surface"", which indicates Road Damage.",
+AM-202429,Heat Hazard,Standard,"The description mentions ""52°c"", which indicates Heat Hazard.",
+AM-202431,Other,Standard,"No standard category applies; description includes ""Old"".",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"The description mentions ""heat"", which indicates Heat Hazard.",
+AM-202444,Waste,Standard,"The description mentions ""waste"", which indicates Waste.",
+AM-202445,Other,Standard,"No standard category applies; description includes ""BRT"".",NEEDS_REVIEW
