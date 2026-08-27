@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The category is classified as Pothole and the priority is set to Standard because the description cites 'Large pothole 60cm wide causing'.,
+PM-202402,Pothole,Urgent,The category is classified as Pothole and the priority is set to Urgent because the description cites 'Deep pothole near bus stop'.,
+PM-202406,Flooding,Standard,The category is classified as Flooding and the priority is set to Standard because the description cites 'Underpass flooded knee-deep after 2hrs'.,
+PM-202408,Drain Blockage,Standard,The category is classified as Drain Blockage and the priority is set to Standard because the description cites 'Bus stand flooded. Passengers standing'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The category is classified as Streetlight and the priority is set to Standard because the description cites 'Three consecutive streetlights out for 10'.,
+PM-202411,Streetlight,Urgent,The category is classified as Streetlight and the priority is set to Urgent because the description cites 'Streetlight flickering and sparking'.,
+PM-202413,Waste,Standard,The category is classified as Waste and the priority is set to Standard because the description cites 'Overflowing garbage bins near vegetable'.,
+PM-202418,Noise,Standard,The category is classified as Noise and the priority is set to Standard because the description cites 'venue playing music past midnight on'.,
+PM-202419,Road Damage,Standard,The category is classified as Road Damage and the priority is set to Standard because the description cites 'cracked and sinking near utility work'.,
+PM-202420,Other,Urgent,The category is classified as Other and the priority is set to Urgent because the description cites 'of serious injury to cyclists'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,The category is classified as Flooding and the priority is set to Standard because the description cites 'Bridge approach floods in 30mins of'.,
+PM-202428,Waste,Standard,The category is classified as Waste and the priority is set to Standard because the description cites 'Dead animal not removed for'.,
+PM-202430,Heritage Damage,Standard,"The category is classified as Heritage Damage and the priority is set to Standard because the description cites 'Heritage street, lights out'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,The category is classified as Waste and the priority is set to Standard because the description cites 'Bulk waste from apartment renovation'.,
+PM-202446,Road Damage,Urgent,The category is classified as Road Damage and the priority is set to Urgent because the description cites 'Footpath tiles broken and upturned'.,
