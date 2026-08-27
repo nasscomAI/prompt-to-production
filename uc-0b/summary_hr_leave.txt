@@ -1,11 +1,4 @@
-"""
-UC-0B — Summary That Changes Meaning
-App implementation with RICE enforcement & zero condition dropping.
-"""
-import argparse
-import os
-
-SUMMARY_TEMPLATE = """CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
 Document Reference: HR-POL-001 | Version: 2.3
 
 SECTION 1: PURPOSE AND SCOPE
@@ -44,35 +37,3 @@ SECTION 7: LEAVE ENCASHMENT (CLAUSES 7.1 – 7.3)
 
 SECTION 8: GRIEVANCES (CLAUSES 8.1 – 8.2)
 • Grievances must be raised in writing with HR within 10 working days of the disputed decision.
-"""
-
-def generate_summary(input_path: str, output_path: str):
-    if not os.path.exists(input_path):
-        raise FileNotFoundError(f"Input policy file not found at: {input_path}")
-    
-    with open(input_path, mode="r", encoding="utf-8") as f:
-        content = f.read()
-
-    # Verify input content has the expected sections
-    assert "HR-POL-001" in content, "Input document validation failed."
-
-    # Write summary
-    out_dir = os.path.dirname(output_path)
-    if out_dir and not os.path.exists(out_dir):
-        os.makedirs(out_dir, exist_ok=True)
-
-    with open(output_path, mode="w", encoding="utf-8") as f:
-        f.write(SUMMARY_TEMPLATE.strip())
-
-    print(f"Policy summary written successfully to {output_path}")
-
-def main():
-    parser = argparse.ArgumentParser(description="UC-0B Policy Summarizer")
-    parser.add_argument("--input", required=True, help="Path to policy txt file")
-    parser.add_argument("--output", required=True, help="Path to write output summary txt file")
-    args = parser.parse_args()
-
-    generate_summary(args.input, args.output)
-
-if __name__ == "__main__":
-    main()
