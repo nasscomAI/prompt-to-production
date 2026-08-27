@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description contains 'heritage'.,
+KM-202402,Other,Standard,The description contains 'unspecified issue'.,NEEDS_REVIEW
+KM-202405,Other,Standard,The description contains 'unspecified issue'.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description contains 'pothole'.,
+KM-202410,Pothole,Standard,The description contains 'pothole'.,
+KM-202411,Pothole,Standard,The description contains 'pothole'.,
+KM-202415,Flooding,Standard,The description contains 'rain'.,
+KM-202418,Waste,Standard,The description contains 'waste'.,
+KM-202421,Road Damage,Urgent,The description contains 'hospital'.,
+KM-202422,Road Damage,Standard,The description contains 'road surface'.,
+KM-202426,Heritage Damage,Standard,The description contains 'heritage'.,
+KM-202430,Waste,Standard,The description contains 'smell'.,
+KM-202434,Heritage Damage,Standard,The description contains 'heritage'.,
+KM-202436,Streetlight,Standard,The description contains 'dark'.,
+KM-202438,Heritage Damage,Standard,The description contains 'heritage'.,
