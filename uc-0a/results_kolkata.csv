@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Heritage lamp post knocked over by delivery vehicle.,
+KM-202402,Heritage Damage,Standard,Historic tram road cobblestones broken up by cable laying work.,
+KM-202405,Noise,Standard,Wedding band playing near Tagore Museum at 11pm.,
+KM-202409,Pothole,Standard,Airport access road full of potholes.,
+KM-202410,Pothole,Standard,Pothole causing tyre blowouts.,
+KM-202411,Pothole,Standard,Deep pothole filling with rainwater.,
+KM-202415,Other,Standard,New residential complex draining directly onto public road.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Tourist zone waste overflowing.,
+KM-202421,Road Damage,Urgent,Footpath broken and sinking.,
+KM-202422,Road Damage,Standard,Road surface buckled near bridge.,
+KM-202426,Heritage Damage,Standard,Heritage residential building exterior defaced by billboard installation.,
+KM-202430,Other,Standard,Road subsided near gas pipeline.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Street paving removed for utility work — heritage stone not replaced.,
+KM-202436,Other,Standard,Entire colony substation tripped.,NEEDS_REVIEW
+KM-202438,Other,Standard,Street vendors using amplifiers illegally in heritage precinct.,NEEDS_REVIEW
