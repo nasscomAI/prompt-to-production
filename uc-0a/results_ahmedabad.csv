@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202402,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202405,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because the description contains 'heat'.,
+AM-202407,Other,Urgent,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole because the description contains 'pothole'.,
+AM-202414,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because the description contains 'waste'.,
+AM-202421,Noise,Standard,Classified as Noise because the description contains 'music'.,
+AM-202424,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202429,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because the description contains 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because the description contains 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because the description contains 'waste'.,
+AM-202445,Other,Standard,Category cannot be determined from description alone.,NEEDS_REVIEW
