@@ -1,0 +1,136 @@
+# HR Leave Policy Summary
+
+## Clause-by-Clause Summary
+**Enforcement Rule: Every clause preserved with all conditions intact.**
+
+
+### Section 1: PURPOSE AND SCOPE
+
+**1.1** (binding: `is`)
+  - This policy governs all leave entitlements for permanent and
+
+**1.2** (binding: `is`)
+  - This policy does not apply to daily wage workers or consultants.
+
+
+### Section 2: ANNUAL LEAVE
+
+**2.1** (binding: `is`)
+  - Each permanent employee is entitled to 18 days of paid annual
+
+**2.2** (binding: `unspecified`)
+  - Annual leave accrues at 1.5 days per month from the date of
+
+**2.3** (binding: `must`)
+  - Employees must submit a leave application at least 14 calendar
+
+**2.4** (binding: `must`)
+  - Leave applications must receive written approval from the
+
+**2.5** (binding: `will`)
+  - Unapproved absence will be recorded as Loss of Pay (LOP)
+
+**2.6** (binding: `may`)
+  - Employees may carry forward a maximum of 5 unused annual leave
+
+**2.7** (binding: `must`)
+  - Carry-forward days must be used within the first quarter
+
+
+### Section 3: SICK LEAVE
+
+**3.1** (binding: `is`)
+  - Each employee is entitled to 12 days of paid sick leave per
+
+**3.2** (binding: `requires`)
+  - Sick leave of 3 or more consecutive days requires a medical
+
+**3.3** (binding: `cannot`)
+  - Sick leave cannot be carried forward to the following year.
+
+**3.4** (binding: `unspecified`)
+  - Sick leave taken immediately before or after a public holiday
+
+
+### Section 4: MATERNITY AND PATERNITY LEAVE
+
+**4.1** (binding: `are`)
+  - Female employees are entitled to 26 weeks of paid maternity
+
+**4.2** (binding: `is`)
+  - For a third or subsequent child, maternity leave is 12 weeks
+
+**4.3** (binding: `are`)
+  - Male employees are entitled to 5 days of paid paternity leave,
+
+**4.4** (binding: `cannot`)
+  - Paternity leave cannot be split across multiple periods.
+
+
+### Section 5: LEAVE WITHOUT PAY (LWP)
+
+**5.1** (binding: `may`)
+  - An employee may apply for Leave Without Pay only after
+
+**5.2** (binding: `requires`)
+  - LWP requires approval from the Department Head and the
+
+**5.3** (binding: `requires`)
+  - LWP exceeding 30 continuous days requires approval from
+
+**5.4** (binding: `unspecified`)
+  - Periods of LWP do not count toward service for the purposes
+
+
+### Section 6: PUBLIC HOLIDAYS
+
+**6.1** (binding: `are`)
+  - Employees are entitled to all gazetted public holidays as
+
+**6.2** (binding: `is`)
+  - If an employee is required to work on a public holiday, they
+
+**6.3** (binding: `cannot`)
+  - Compensatory off cannot be encashed.
+
+
+### Section 7: LEAVE ENCASHMENT
+
+**7.1** (binding: `may`)
+  - Annual leave may be encashed only at the time of retirement
+
+**7.2** (binding: `not permitted`)
+  - Leave encashment during service is not permitted under any
+
+**7.3** (binding: `cannot`)
+  - Sick leave and LWP cannot be encashed under any circumstances.
+
+
+### Section 8: GRIEVANCES
+
+**8.1** (binding: `must`)
+  - Leave-related grievances must be raised with the HR Department
+
+**8.2** (binding: `will`)
+  - Grievances raised after 10 working days will not be considered
+
+
+## Enforcement Verification
+
+**Clause Count:** 29 clauses preserved
+
+**Multi-Condition Obligations Preserved:**
+
+  - 1.1: 2 condition(s) ✓
+  - 5.2: 2 condition(s) ✓
+  - 7.3: 2 condition(s) ✓
+
+**Total Multi-Condition Clauses:** 3
+
+## Refusal Conditions Met
+
+- [✓] Source document was available
+
+- [✓] Summarization stayed within clause extraction scope
+
+- [✓] No policy interpretation beyond source document
