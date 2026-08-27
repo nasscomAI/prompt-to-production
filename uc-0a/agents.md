@@ -1,18 +1,15 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  City citizen complaint classifier. The agent's boundary is strictly to classify city complaints based on provided descriptions, without hallucinating details, sub-categories, or attempting to resolve the complaints.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output a verifiable classification for each complaint consisting strictly of an allowed category, a priority level, a one-sentence reason, and an optional review flag.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent uses raw citizen complaint data. The agent is strictly limited to using the provided text descriptions to make classification decisions. It must not use external knowledge or assume facts not present in the description.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole · Flooding · Streetlight · Waste · Noise · Road Damage · Heritage Damage · Heat Hazard · Drain Blockage · Other"
+  - "Priority can be only from "Urgent · Standard · Low"
+  - "Priority must be Urgent if description contains any of the following triggers:"injury,child,school,hospital"
+  - "Every output row must include a reason field citing specific words from the description"
+  - "If the category  cannot be  determined from the description alone, output category: Other and flag: NEEDS_REVIEW,Priority:Low"

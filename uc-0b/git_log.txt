@@ -1,0 +1,31 @@
+﻿commit ef314508b00f2d2bca86ea13704cf8c26f0c5c42
+Author: roshanshreen <roshanshreenaj@gmail.com>
+Date:   Sat Mar 28 12:33:17 2026 +0530
+
+    [UC-0B] Fix summariser: missing clause preservation ΓåÆ added strict enforcement rules and updated logic
+
+commit db1740d75253e7ac46a6747c67fcd4c6a2ace074
+Author: roshanshreen <roshanshreenaj@gmail.com>
+Date:   Sat Mar 28 12:33:17 2026 +0530
+
+    UC-0B Generated agents.md and skills.md from README, implemented summariser
+
+commit d569646a14daf97dfa10d00f4e0f009b5cc0ae2c
+Author: roshanshreen <roshanshreenaj@gmail.com>
+Date:   Sat Mar 28 12:18:10 2026 +0530
+
+    skills.md updated
+
+commit 9a27aa02d23c04aa652c80364fee9bbd7a9c6a50
+Author: roshanshreen <roshanshreenaj@gmail.com>
+Date:   Sat Mar 28 12:13:09 2026 +0530
+
+    UC-0A Updated agents.md and skills.md, implemented classifier and generated results
+
+commit f289354c68c8f2edbeebd69ddca42f08e250dfb2
+Author: arshdeep-bengaluru <t-arshdeep@mail.nasscom.in>
+Date:   Thu Mar 26 14:05:22 2026 +0530
+
+    updated the validation rull to all pull requests
+    
+    Signed-off-by: arshdeep-bengaluru <t-arshdeep@mail.nasscom.in>
