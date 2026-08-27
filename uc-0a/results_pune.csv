@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Detected word 'pothole' in description, justifying Pothole category.",
+PM-202402,Pothole,Urgent,"Detected word 'pothole' in description, justifying Pothole category.",
+PM-202406,Flooding,Standard,Classified as Flooding with Standard priority based on keywords in description.,
+PM-202408,Flooding,Standard,Classified as Flooding with Standard priority based on keywords in description.,
+PM-202410,Streetlight,Standard,Classified as Streetlight with Standard priority based on keywords in description.,
+PM-202411,Streetlight,Urgent,Urgent priority assigned due to keyword(s): hazard.,
+PM-202413,Waste,Standard,Classified as Waste with Standard priority based on keywords in description.,
+PM-202418,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+PM-202419,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Urgent priority assigned due to keyword(s): injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority based on keywords in description.,
+PM-202428,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Classified as Streetlight with Standard priority based on keywords in description.,
+PM-202433,Waste,Standard,Classified as Waste with Standard priority based on keywords in description.,
+PM-202446,Other,Urgent,Urgent priority assigned due to keyword(s): fell.,NEEDS_REVIEW

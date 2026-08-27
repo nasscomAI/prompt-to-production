@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202402,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on keywords in description.,
+AM-202407,Other,Urgent,Urgent priority assigned due to keyword(s): child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Detected word 'pothole' in description, justifying Pothole category.",
+AM-202414,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste with Standard priority based on keywords in description.,
+AM-202421,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202424,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202429,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on keywords in description.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on keywords in description.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority based on keywords in description.,
+AM-202445,Other,Standard,Classified as Other with Standard priority based on keywords in description.,NEEDS_REVIEW
