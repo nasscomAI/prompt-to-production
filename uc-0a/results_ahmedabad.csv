@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Citing description: ""Tarmac surface melting at 44°C.""",
+AM-202402,Other,Standard,"Citing description: ""Metal bus shelter reaching dangerous temperatures.""",NEEDS_REVIEW
+AM-202405,Other,Standard,"Citing description: ""Dead trees with split branches.""",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Citing description: ""Irrigation system broken.""",
+AM-202407,Road Damage,Urgent,"Citing description: ""Broken bench and upturned paving.""",
+AM-202410,Pothole,Standard,"Citing description: ""Pothole on main highway causing morning rush lane closure.""",
+AM-202414,Streetlight,Standard,"Citing description: ""Residential colony unlit after 9pm.""",
+AM-202417,Waste,Standard,"Citing description: ""Night market waste not cleared before morning.""",
+AM-202421,Noise,Standard,"Citing description: ""Club music audible at residential buildings at 2am.""",
+AM-202424,Heat Hazard,Standard,"Citing description: ""Zoo approach road surface bubbling at 45°C.""",
+AM-202429,Heat Hazard,Standard,"Citing description: ""River walk surface temperature unbearable.""",
+AM-202431,Heritage Damage,Standard,"Citing description: ""Old city road subsidence near ancient step well.""",
+AM-202435,Heat Hazard,Standard,"Citing description: ""Black metal road dividers storing heat.""",
+AM-202444,Waste,Standard,"Citing description: ""Restaurant waste bins overflowing on Sunday night.""",
+AM-202445,Heat Hazard,Standard,"Citing description: ""BRT shelter roof glass broken.""",
