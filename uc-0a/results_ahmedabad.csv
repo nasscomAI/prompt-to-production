@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Identified category and priority based on keywords: surface.,
+AM-202402,Other,Urgent,Identified category and priority based on keywords: danger.,NEEDS_REVIEW
+AM-202405,Other,Urgent,Identified category and priority based on keywords: risk.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Identified category and priority based on keywords: heat.,
+AM-202407,Other,Urgent,Identified category and priority based on keywords: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Identified category and priority based on keywords: pothole.,
+AM-202414,Other,Standard,No specific keywords found to determine category or priority.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Identified category and priority based on keywords: waste.,
+AM-202421,Noise,Standard,Identified category and priority based on keywords: music.,
+AM-202424,Road Damage,Standard,Identified category and priority based on keywords: road.,
+AM-202429,Road Damage,Standard,Identified category and priority based on keywords: surface.,
+AM-202431,Road Damage,Standard,Identified category and priority based on keywords: road.,
+AM-202435,Road Damage,Standard,Identified category and priority based on keywords: road.,
+AM-202444,Waste,Urgent,"Identified category and priority based on keywords: risk, waste.",
+AM-202445,Heat Hazard,Standard,Identified category and priority based on keywords: sun.,

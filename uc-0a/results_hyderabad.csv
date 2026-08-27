@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Identified category and priority based on keywords: flood, ambulance.",
+GH-202402,Flooding,Standard,Identified category and priority based on keywords: flood.,
+GH-202406,Flooding,Standard,Identified category and priority based on keywords: rain.,
+GH-202407,Flooding,Standard,Identified category and priority based on keywords: rain.,
+GH-202410,Pothole,Standard,Identified category and priority based on keywords: pothole.,
+GH-202411,Pothole,Urgent,"Identified category and priority based on keywords: pothole, hospital.",
+GH-202412,Pothole,Urgent,"Identified category and priority based on keywords: school, pothole.",
+GH-202417,Waste,Standard,Identified category and priority based on keywords: garbage.,
+GH-202420,Other,Standard,No specific keywords found to determine category or priority.,NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Identified category and priority based on keywords: collapse, crater.",
+GH-202424,Flooding,Standard,Identified category and priority based on keywords: flood.,
+GH-202428,Waste,Standard,Identified category and priority based on keywords: waste.,
+GH-202432,Other,Standard,No specific keywords found to determine category or priority.,NEEDS_REVIEW
+GH-202448,Flooding,Urgent,"Identified category and priority based on keywords: flood, risk.",
+GH-202438,Flooding,Standard,Identified category and priority based on keywords: rain.,

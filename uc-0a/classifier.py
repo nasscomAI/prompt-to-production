@@ -1,29 +1,107 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+Build this using the RICE → agents.md → skills.md → CRAFT workflow.
 """
 import argparse
 import csv
+import os
+
+# Taxonomy and Keyword Mappings for Heuristic Classifier
+# These reflect the 'Enforcement' rules in agents.md
+TAXONOMY_KEYWORDS = {
+    "Pothole": ["pothole", "pit", "crater"],
+    "Flooding": ["flood", "flooded", "waterlogging", "rain", "strands"],
+    "Streetlight": ["streetlight", "lights out", "dark", "flickering", "sparking"],
+    "Waste": ["garbage", "trash", "waste", "dump", "bins", "smell", "animal"],
+    "Noise": ["noise", "music", "loud", "wedding"],
+    "Road Damage": ["road", "surface", "cracked", "sinking", "utility work"],
+    "Heritage Damage": ["heritage", "monument", "old city"],
+    "Heat Hazard": ["heat", "hot", "sun", "shade"],
+    "Drain Blockage": ["drain", "sewage", "overflow", "manhole"],
+}
+
+URGENT_KEYWORDS = [
+    "injury", "child", "school", "hospital", "ambulance", 
+    "fire", "hazard", "fell", "collapse", "risk", "danger"
+]
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
+    Classify a single complaint row using rule-based heuristics.
     Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    description = row.get("description", "").lower()
+    complaint_id = row.get("complaint_id", "UNKNOWN")
+    
+    # 1. Determine Category
+    matched_category = "Other"
+    reason_words = []
+    
+    for category, keywords in TAXONOMY_KEYWORDS.items():
+        for kw in keywords:
+            if kw in description:
+                matched_category = category
+                reason_words.append(kw)
+                break
+        if matched_category != "Other":
+            break
+            
+    # 2. Determine Priority
+    priority = "Standard"
+    for ukw in URGENT_KEYWORDS:
+        if ukw in description:
+            priority = "Urgent"
+            reason_words.append(ukw)
+            break
+            
+    # 3. Determine Flag
+    flag = ""
+    if matched_category == "Other" or not reason_words:
+        flag = "NEEDS_REVIEW"
+        
+    # 4. Construct Reason citing source text
+    if reason_words:
+        reason = f"Identified category and priority based on keywords: {', '.join(set(reason_words))}."
+    else:
+        reason = "No specific keywords found to determine category or priority."
+        
+    return {
+        "complaint_id": complaint_id,
+        "category": matched_category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    if not os.path.exists(input_path):
+        print(f"Error: Input file {input_path} not found.")
+        return
+
+    try:
+        with open(input_path, mode='r', encoding='utf-8') as infile:
+            reader = csv.DictReader(infile)
+            results = []
+            
+            for row in reader:
+                results.append(classify_complaint(row))
+                
+        if not results:
+            print("Warning: No data found in input CSV.")
+            return
+
+        keys = results[0].keys()
+        with open(output_path, mode='w', encoding='utf-8', newline='') as outfile:
+            writer = csv.DictWriter(outfile, fieldnames=keys)
+            writer.writeheader()
+            writer.writerows(results)
+            
+    except Exception as e:
+        print(f"Error processing files: {e}")
 
 
 if __name__ == "__main__":
@@ -31,5 +109,6 @@ if __name__ == "__main__":
     parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
     parser.add_argument("--output", required=True, help="Path to write results CSV")
     args = parser.parse_args()
+    
     batch_classify(args.input, args.output)
     print(f"Done. Results written to {args.output}")
