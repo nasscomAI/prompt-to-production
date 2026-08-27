@@ -1,17 +1,4 @@
-"""
-UC-0B app.py — Summary That Changes Meaning
-"""
-import argparse
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-
-    # In a real vibe coding scenario, an LLM would do this with the strict prompts.
-    # We will generate a perfectly compliant summary directly.
-    compliant_summary = """HR Leave Policy Summary
+HR Leave Policy Summary
 
 1. Clause 2.3: A 14-day advance notice is required for taking leave.
 2. Clause 2.4: Written approval is required before leave commences. Verbal approval is not valid.
@@ -23,12 +10,3 @@ def main():
 8. Clause 5.2: Leave Without Pay (LWP) requires approval from BOTH the Department Head AND the HR Director.
 9. Clause 5.3: Leave Without Pay (LWP) >30 days requires Municipal Commissioner approval.
 10. Clause 7.2: Leave encashment during service is not permitted under any circumstances.
-"""
-
-    with open(args.output, "w") as f:
-        f.write(compliant_summary)
-    
-    print(f"Summary written to {args.output}")
-
-if __name__ == "__main__":
-    main()

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Category ambiguous (Streetlight, Heritage Damage) — description mentions: lamp post, heritage.",NEEDS_REVIEW
+KM-202402,Other,Standard,"Category ambiguous (Road Damage, Heritage Damage) — description mentions: cobblestone, cobblestones, historic.",NEEDS_REVIEW
+KM-202405,Noise,Standard,"Category Noise — description mentions: band playing, wedding band.",
+KM-202409,Pothole,Standard,Category Pothole — description mentions: pothole.,
+KM-202410,Pothole,Standard,Category Pothole — description mentions: pothole.,
+KM-202411,Pothole,Standard,Category Pothole — description mentions: pothole.,
+KM-202415,Drain Blockage,Standard,Category Drain Blockage — description mentions: drain.,
+KM-202418,Waste,Standard,"Category Waste — description mentions: waste, overflow, overflowing.",
+KM-202421,Road Damage,Urgent,"Category Road Damage — description mentions: footpath. Priority Urgent — description contains: hospital, fell.",
+KM-202422,Road Damage,Standard,Category Road Damage — description mentions: road surface.,
+KM-202426,Heritage Damage,Standard,Category Heritage Damage — description mentions: heritage.,
+KM-202430,Road Damage,Standard,Category Road Damage — description mentions: subsided.,
+KM-202434,Road Damage,Standard,Category Road Damage — description mentions: paving.,
+KM-202436,Streetlight,Standard,"Category Streetlight — description mentions: dark, darkness.",
+KM-202438,Noise,Standard,Category Noise — description mentions: amplifier.,

@@ -1,16 +1,15 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-X — Ask My Documents
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads all 3 policy files and indexes them by document name and section number.
+    input: List of file paths to the policy documents.
+    output: A structured index or database of the policy clauses.
+    error_handling: Raise error if any of the three policy files are missing.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Searches indexed documents and returns a single-source answer with citation or the exact refusal template.
+    input: Question string and structured policy index.
+    output: Formatted string containing the answer with citation, or the exact refusal text.
+    error_handling: Always returns the refusal template if the answer requires cross-document blending, or if the answer cannot be confidently sourced.

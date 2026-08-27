@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Category Heat Hazard — description mentions: melting.,
+AM-202402,Heat Hazard,Standard,Category Heat Hazard — description mentions: temperature.,
+AM-202405,Other,Standard,No category keywords matched the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Category Heat Hazard — description mentions: heat, heatwave.",
+AM-202407,Road Damage,Urgent,Category Road Damage — description mentions: paving. Priority Urgent — description contains: child.,
+AM-202410,Pothole,Standard,Category Pothole — description mentions: pothole.,
+AM-202414,Streetlight,Standard,Category Streetlight — description mentions: unlit.,
+AM-202417,Waste,Standard,"Category Waste — description mentions: waste, not cleared.",
+AM-202421,Noise,Standard,Category Noise — description mentions: music.,
+AM-202424,Road Damage,Standard,Category Road Damage — description mentions: road surface.,
+AM-202429,Heat Hazard,Standard,Category Heat Hazard — description mentions: temperature.,
+AM-202431,Road Damage,Standard,Category Road Damage — description mentions: subsidence.,
+AM-202435,Heat Hazard,Standard,Category Heat Hazard — description mentions: heat.,
+AM-202444,Waste,Standard,"Category Waste — description mentions: waste, overflow, overflowing.",
+AM-202445,Heat Hazard,Standard,Category Heat Hazard — description mentions: full sun.,
