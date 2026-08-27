@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified because description mentions 'temperature'; no severity keywords found so priority is Standard.,
+AM-202405,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified because description mentions 'heat'; no severity keywords found so priority is Standard.,
+AM-202407,Road Damage,Urgent,Classified because description mentions 'upturned'; severity keyword 'child' triggers Urgent priority.,
+AM-202410,Pothole,Standard,Classified because description mentions 'pothole'; no severity keywords found so priority is Standard.,
+AM-202414,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified because description mentions 'waste'; no severity keywords found so priority is Standard.,
+AM-202421,Noise,Standard,Classified because description mentions 'music'; no severity keywords found so priority is Standard.,
+AM-202424,Road Damage,Standard,Classified because description mentions 'road surface'; no severity keywords found so priority is Standard.,
+AM-202429,Heat Hazard,Standard,Classified because description mentions 'temperature'; no severity keywords found so priority is Standard.,
+AM-202431,Heritage Damage,Standard,Classified because description mentions 'heritage'; no severity keywords found so priority is Standard.,
+AM-202435,Heat Hazard,Standard,Classified because description mentions 'heat'; no severity keywords found so priority is Standard.,
+AM-202444,Waste,Standard,Classified because description mentions 'waste'; no severity keywords found so priority is Standard.,
+AM-202445,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW

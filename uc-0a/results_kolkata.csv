@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified because description mentions 'lamp post'; no severity keywords found so priority is Standard.,
+KM-202402,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+KM-202405,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified because description mentions 'pothole'; no severity keywords found so priority is Standard.,
+KM-202410,Pothole,Standard,Classified because description mentions 'pothole'; no severity keywords found so priority is Standard.,
+KM-202411,Pothole,Standard,Classified because description mentions 'pothole'; no severity keywords found so priority is Standard.,
+KM-202415,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified because description mentions 'waste'; no severity keywords found so priority is Standard.,
+KM-202421,Road Damage,Urgent,Classified because description mentions 'footpath'; severity keyword 'hospital' triggers Urgent priority.,
+KM-202422,Road Damage,Standard,Classified because description mentions 'road surface'; no severity keywords found so priority is Standard.,
+KM-202426,Heritage Damage,Standard,Classified because description mentions 'heritage'; no severity keywords found so priority is Standard.,
+KM-202430,Waste,Standard,Classified because description mentions 'smell'; no severity keywords found so priority is Standard.,
+KM-202434,Heritage Damage,Standard,Classified because description mentions 'heritage'; no severity keywords found so priority is Standard.,
+KM-202436,Other,Standard,Classified because description does not clearly match a specific category; no severity keywords found so priority is Standard.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Classified because description mentions 'heritage'; no severity keywords found so priority is Standard.,
