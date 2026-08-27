@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Heat Hazard,Standard,Classified as Heat Hazard because description contains 'temperature'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Heat Hazard,Standard,Classified as Heat Hazard because description contains 'heat'.,
+Other,Urgent,"Classified as Other due to ambiguity, but marked Urgent because description contains 'child'.",NEEDS_REVIEW
+Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Waste,Standard,Classified as Waste because description contains 'waste'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
+Heat Hazard,Standard,Classified as Heat Hazard because description contains 'temperature'.,
+Heritage Damage,Standard,Classified as Heritage Damage because description contains 'heritage'.,
+Heat Hazard,Standard,Classified as Heat Hazard because description contains 'heat'.,
+Waste,Standard,Classified as Waste because description contains 'waste'.,
+Other,Standard,Classified as Other because no clear category keywords found in description.,NEEDS_REVIEW
