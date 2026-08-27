@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Matched Streetlight from 'lamp post' and Heritage Damage from 'Heritage'; defaulted to Streetlight and flagged it for review.,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Matched Road Damage from 'cobblestones' and Heritage Damage from 'Historic'; defaulted to Road Damage and flagged it for review.,NEEDS_REVIEW
+KM-202405,Noise,Standard,Matched Noise from 'Wedding band' and Heritage Damage from 'Museum'; defaulted to Noise and flagged it for review.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole because the description contains 'potholes'.,
+KM-202410,Pothole,Standard,Classified as Pothole because the description contains 'Pothole'.,
+KM-202411,Pothole,Standard,Matched Pothole from 'pothole' and Flooding from 'rainwater'; defaulted to Pothole and flagged it for review.,NEEDS_REVIEW
+KM-202415,Other,Standard,Could not map description text 'New residential complex draining directly onto public road' to an allowed category and flagged it for review.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste because the description contains 'waste'.,
+KM-202421,Road Damage,Urgent,"Classified as Road Damage because the description contains 'Footpath'; priority is Urgent because the description contains 'hospital', 'fell'.",
+KM-202422,Road Damage,Standard,Classified as Road Damage because the description contains 'Road surface'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because the description contains 'Heritage'.,
+KM-202430,Road Damage,Standard,Classified as Road Damage because the description contains 'subsided'.,
+KM-202434,Road Damage,Standard,Matched Road Damage from 'paving' and Heritage Damage from 'heritage'; defaulted to Road Damage and flagged it for review.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight because the description contains 'Darkness'.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage because the description contains 'heritage'.,
