@@ -1,0 +1,13 @@
+period,actual_spend,growth_value,formula_used,note
+2024-01,5.3,N/A,N/A,First period - no previous month for comparison
+2024-02,6.4,20.8%,MoM = (6.4 - 5.3) / 5.3 × 100%,
+2024-03,6.5,1.6%,MoM = (6.5 - 6.4) / 6.4 × 100%,
+2024-04,5.7,-12.3%,MoM = (5.7 - 6.5) / 6.5 × 100%,
+2024-05,6.1,7.0%,MoM = (6.1 - 5.7) / 5.7 × 100%,
+2024-06,5.7,-6.6%,MoM = (5.7 - 6.1) / 6.1 × 100%,
+2024-07,7.6,33.3%,MoM = (7.6 - 5.7) / 5.7 × 100%,
+2024-08,8.3,9.2%,MoM = (8.3 - 7.6) / 7.6 × 100%,
+2024-09,8.9,7.2%,MoM = (8.9 - 8.3) / 8.3 × 100%,
+2024-10,6.8,-23.6%,MoM = (6.8 - 8.9) / 8.9 × 100%,
+2024-11,NULL,NULL_FLAGGED,N/A,Null value: Contractor change — billing delayed
+2024-12,5.1,NULL_FLAGGED,N/A,Previous period null: Contractor change — billing delayed

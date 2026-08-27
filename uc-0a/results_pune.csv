@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description mentions pothole/road damage: 'Large pothole 60cm wide causing tyre damage. Three...',
+PM-202402,Pothole,Urgent,"Description mentions pothole/road damage: 'Deep pothole near bus stop. School children at ris...' Contains severity keywords: child, school.",
+PM-202406,Flooding,Standard,Description mentions flooding/water logging: 'Underpass flooded knee-deep after 2hrs rain. Commu...',
+PM-202408,Flooding,Standard,Description mentions flooding/water logging: 'Bus stand flooded. Passengers standing in water. D...',
+PM-202410,Streetlight,Standard,Description mentions streetlight issues: 'Three consecutive streetlights out for 10 days. Ar...',
+PM-202411,Streetlight,Urgent,Description mentions streetlight issues: 'Streetlight flickering and sparking. Electrical ha...' Contains severity keywords: hazard.,
+PM-202413,Waste,Low,Description mentions waste/garbage: 'Overflowing garbage bins near vegetable market. Sm...',
+PM-202418,Noise,Low,Description mentions noise issues: 'Wedding venue playing music past midnight on weekn...',
+PM-202419,Road Damage,Standard,Description mentions road damage: 'Road surface cracked and sinking near utility work...',
+PM-202420,Drain Blockage,Urgent,Description mentions drain/drainage blockage: 'Manhole cover missing. Risk of serious injury to c...' Contains severity keywords: injury.,
+PM-202427,Flooding,Standard,Description mentions flooding/water logging: 'Bridge approach floods in 30mins of rain. Bridge b...',
+PM-202428,Other,Low,Cannot determine specific category from description: 'Dead animal not removed for 36 hours. Health conce...',NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Description mentions streetlight issues: 'Heritage street, lights out. Safety concern for pe...'",
+PM-202433,Waste,Low,Description mentions waste/garbage: 'Bulk waste from apartment renovation dumped on pub...',
+PM-202446,Road Damage,Urgent,Description mentions road damage: 'Footpath tiles broken and upturned. Elderly reside...' Contains severity keywords: fell.,

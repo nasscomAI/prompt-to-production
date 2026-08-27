@@ -1,0 +1,13 @@
+period,actual_spend,growth_value,formula_used,note
+2024-01,3.4,N/A,N/A,First period - no previous month for comparison
+2024-02,3.4,0.0%,MoM = (3.4 - 3.4) / 3.4 × 100%,
+2024-03,4.1,20.6%,MoM = (4.1 - 3.4) / 3.4 × 100%,
+2024-04,4.1,0.0%,MoM = (4.1 - 4.1) / 4.1 × 100%,
+2024-05,NULL,NULL_FLAGGED,N/A,Null value: Equipment procurement delay
+2024-06,3.8,NULL_FLAGGED,N/A,Previous period null: Equipment procurement delay
+2024-07,5.3,39.5%,MoM = (5.3 - 3.8) / 3.8 × 100%,
+2024-08,5.4,1.9%,MoM = (5.4 - 5.3) / 5.3 × 100%,
+2024-09,5.0,-7.4%,MoM = (5.0 - 5.4) / 5.4 × 100%,
+2024-10,3.8,-24.0%,MoM = (3.8 - 5.0) / 5.0 × 100%,
+2024-11,3.3,-13.2%,MoM = (3.3 - 3.8) / 3.8 × 100%,
+2024-12,3.4,3.0%,MoM = (3.4 - 3.3) / 3.3 × 100%,
