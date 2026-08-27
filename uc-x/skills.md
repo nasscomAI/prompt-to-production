@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: "retrieve_documents"
+  description: "Loads all three specified policy files (HR leave, IT acceptable use, Finance reimbursement) and systematically indexes their content by document name and subsection number."
+  input: "List of file paths representing the three policy .txt documents"
+  output: "Indexed data structure mapping the clauses cleanly by their document name and section number"
+  error_handling: "Report specific missing file names securely and fail politely if documents cannot be located or indexed properly."
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: "answer_question"
+  description: "Searches the structurally indexed documents constraints. Evaluates if the question maps safely to a single document without creating scope/rule conflicts. Returns either a single-source answer with a strict citation OR the predefined refusal template."
+  input: "String representing the user query alongside the indexed system documents"
+  output: "Strict single-source answer with document name and section number citation, OR the exact refusal template string"
+  error_handling: "Must return the rigorous refusal template verbatim if the question does not definitively map to an established policy text to prevent cross-document hallucination or hedging. Must never fail silently."
