@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Other,Urgent,Description includes urgency words ambulance but lacks clear category terms so it is marked Other for review.,NEEDS_REVIEW
+GH-202402,Drain Blockage,Standard,"Category Drain Blockage is supported by words drain, blocked.",
+GH-202406,Drain Blockage,Standard,"Category Drain Blockage is supported by words drain, blocked.",
+GH-202407,Drain Blockage,Standard,"Category Drain Blockage is supported by words drain, blocked.",
+GH-202410,Pothole,Standard,Category Pothole is supported by words potholes.,
+GH-202411,Pothole,Standard,Category Pothole is supported by words pothole.,
+GH-202412,Pothole,Urgent,Category Pothole is supported by words potholes and priority is Urgent because of words school.,
+GH-202417,Waste,Standard,"Category Waste is supported by words garbage, waste.",
+GH-202420,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+GH-202422,Pothole,Standard,Category Pothole is supported by words crater.,
+GH-202424,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+GH-202428,Waste,Standard,Category Waste is supported by words waste.,
+GH-202432,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Category Drain Blockage is supported by words drain, blocked.",
+GH-202438,Other,Standard,"Description lacks clear category words, so it is marked Other for review.",NEEDS_REVIEW
