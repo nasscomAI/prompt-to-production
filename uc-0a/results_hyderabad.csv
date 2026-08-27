@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+GH-202401,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,Flooding,Urgent,"Classified as Flooding based on 'flood', and marked Urgent due to 'ambulance'.",
+GH-202402,Market area flooded. Traders suffering losses. Drain completely blocked.,Flooding,Standard,Classified as Flooding based on 'flood' in description.,
+GH-202406,Main stormwater drain 100% blocked with construction debris.,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in description.,
+GH-202407,Drain blocked and mosquito breeding. Dengue concern.,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in description.,
+GH-202410,Potholes causing vehicles to slow to 20kmph on fast road.,Pothole,Standard,Classified as Pothole based on 'pothole' in description.,
+GH-202411,Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Pothole,Urgent,"Classified as Pothole based on 'pothole', and marked Urgent due to 'hospital'.",
+GH-202412,School bus struggling to navigate 6 potholes in 200m stretch.,Pothole,Urgent,"Classified as Pothole based on 'pothole', and marked Urgent due to 'school'.",
+GH-202417,Heritage zone garbage overflow. Tourist photographs showing piles of waste.,Waste,Standard,Classified as Waste based on 'waste' in description.,
+GH-202420,Construction drilling from 5am daily near residential towers.,Other,Low,Category is genuinely ambiguous.,NEEDS_REVIEW
+GH-202422,Road collapsed partially. Crater 1m deep near residential gate.,Road Damage,Urgent,"Classified as Road Damage based on 'road', and marked Urgent due to 'collapse'.",
+GH-202424,Underpass floods in light rain. Cars regularly abandoned.,Flooding,Standard,Classified as Flooding based on 'flood' in description.,
+GH-202428,Post-market waste not cleared. Area unusable by Sunday morning.,Waste,Standard,Classified as Waste based on 'waste' in description.,
+GH-202432,24hr supermarket delivery trucks idling with engines on.,Other,Low,Category is genuinely ambiguous.,NEEDS_REVIEW
+GH-202448,Main drain blocked — entire locality at flooding risk this week.,Flooding,Standard,Classified as Flooding based on 'flood' in description.,
+GH-202438,Colony surrounded by fields that channel rainwater through main road.,Road Damage,Standard,Classified as Road Damage based on 'road' in description.,
