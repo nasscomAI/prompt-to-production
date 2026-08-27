@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Found 'historic' in description.,
+KM-202405,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Found 'pothole' in description.,
+KM-202410,Pothole,Standard,Found 'pothole' in description.,
+KM-202411,Pothole,Standard,Found 'pothole' in description.,
+KM-202415,Drain Blockage,Standard,Found 'drain' in description.,
+KM-202418,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+KM-202421,Pothole,Urgent,"Description mentions hospital, fell. Found 'pit' in description.",
+KM-202422,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,Found 'heritage' in description.,
+KM-202430,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Found 'heritage' in description.,
+KM-202436,Streetlight,Standard,Found 'dark' in description.,
+KM-202438,Heritage Damage,Standard,Found 'heritage' in description.,

@@ -7,19 +7,44 @@
 ## Your Input File
 ```
 ../data/city-test-files/test_[your-city].csv
+OR
+../data/city-test-files/test_[your-city].xlsx
 ```
 15 rows per city. `category` and `priority_flag` columns are stripped — you must classify them.
+Supports both CSV (.csv) and Excel (.xlsx) formats.
 
 ## Your Output File
 ```
 uc-0a/results_[your-city].csv
+OR
+uc-0a/results_[your-city].xlsx
 ```
+Output format matches input format (CSV input → CSV output, Excel input → Excel output).
+Can be overridden using --output-format flag.
 
 ## Run Command
 ```bash
+# CSV input/output
 python classifier.py \
   --input ../data/city-test-files/test_pune.csv \
   --output results_pune.csv
+
+# Excel input/output
+python classifier.py \
+  --input ../data/city-test-files/test_pune.xlsx \
+  --output results_pune.xlsx
+
+# CSV input, Excel output
+python classifier.py \
+  --input ../data/city-test-files/test_pune.csv \
+  --output results_pune.xlsx \
+  --output-format xlsx
+
+# Excel input, CSV output
+python classifier.py \
+  --input ../data/city-test-files/test_pune.xlsx \
+  --output results_pune.csv \
+  --output-format csv
 ```
 
 ---

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Found 'pothole' in description.,
+PM-202402,Pothole,Urgent,"Description mentions child, school. Found 'pothole' in description.",
+PM-202406,Flooding,Standard,Found 'flood' in description.,
+PM-202408,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Found 'light' in description.,
+PM-202411,Other,Urgent,Description mentions hazard.,NEEDS_REVIEW
+PM-202413,Waste,Standard,Found 'garbage' in description.,
+PM-202418,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Found 'road' in description.,
+PM-202420,Pothole,Urgent,Description mentions injury. Found 'hole' in description.,
+PM-202427,Flooding,Standard,Found 'flood' in description.,
+PM-202428,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+PM-202430,Other,Standard,Classified as Other based on complaint description.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Found 'waste' in description.,
+PM-202446,Other,Urgent,Description mentions fell.,NEEDS_REVIEW
