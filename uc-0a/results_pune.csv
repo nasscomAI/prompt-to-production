@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized as Pothole based on detection of 'pothole' in description.,
+PM-202402,Pothole,Urgent,"Classified as Urgent due to severity keyword(s): child, school.",
+PM-202406,Flooding,Standard,Categorized as Flooding based on detection of 'flood' in description.,
+PM-202408,Flooding,Standard,Categorized as Flooding based on detection of 'flood' in description.,
+PM-202410,Streetlight,Standard,Categorized as Streetlight based on detection of 'light' in description.,
+PM-202411,Streetlight,Urgent,Classified as Urgent due to severity keyword(s): hazard.,
+PM-202413,Waste,Standard,Categorized as Waste based on detection of 'garbage' in description.,
+PM-202418,Other,Standard,Ambiguous description or no matching category found in taxonomy.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Categorized as Road Damage based on detection of 'road' in description.,
+PM-202420,Other,Urgent,Classified as Urgent due to severity keyword(s): injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized as Flooding based on detection of 'flood' in description.,
+PM-202428,Other,Standard,Ambiguous description or no matching category found in taxonomy.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Categorized as Streetlight based on detection of 'light' in description.,
+PM-202433,Waste,Standard,Categorized as Waste based on detection of 'waste' in description.,
+PM-202446,Other,Urgent,Classified as Urgent due to severity keyword(s): fell.,NEEDS_REVIEW
