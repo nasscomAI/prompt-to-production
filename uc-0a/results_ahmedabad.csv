@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Keywords found: 'melting' in description.,
+AM-202402,Heat Hazard,Standard,Keywords found: 'temperature' in description.,
+AM-202405,Other,Standard,"Description: 'Dead trees with split branches. Fall risk to walkers. 3 trees affected....' — category ambiguous, needs manual review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Keywords found: 'heat' in description.,
+AM-202407,Road Damage,Urgent,"Keywords found: 'injured', 'child', 'paving' in description.",
+AM-202410,Pothole,Standard,Keywords found: 'pothole' in description.,
+AM-202414,Streetlight,Standard,Keywords found: 'unlit' in description.,
+AM-202417,Heritage Damage,Standard,"Description: 'Night market waste not cleared before morning. Heritage area affected....' — category ambiguous, needs manual review.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Keywords found: 'music' in description.,
+AM-202424,Road Damage,Standard,Keywords found: 'road surface' in description.,
+AM-202429,Heat Hazard,Standard,Keywords found: 'temperature' in description.,
+AM-202431,Heritage Damage,Standard,Keywords found: 'heritage' in description.,
+AM-202435,Heat Hazard,Standard,Keywords found: 'heat' in description.,
+AM-202444,Waste,Standard,Keywords found: 'waste' in description.,
+AM-202445,Road Damage,Standard,Keywords found: 'broken' in description.,

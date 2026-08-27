@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Keywords found: 'pothole' in description.,
+PM-202402,Pothole,Urgent,"Keywords found: 'child', 'children', 'school' in description.",
+PM-202406,Flooding,Standard,Keywords found: 'flooded' in description.,
+PM-202408,Flooding,Standard,"Description: 'Bus stand flooded. Passengers standing in water. Drain blocked....' — category ambiguous, needs manual review.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Keywords found: 'streetlight' in description.,
+PM-202411,Streetlight,Urgent,"Keywords found: 'hazard', 'streetlight' in description.",
+PM-202413,Waste,Standard,Keywords found: 'garbage' in description.,
+PM-202418,Noise,Standard,Keywords found: 'music' in description.,
+PM-202419,Road Damage,Standard,Keywords found: 'road surface' in description.,
+PM-202420,Road Damage,Urgent,"Keywords found: 'injury', 'manhole' in description.",
+PM-202427,Flooding,Standard,Keywords found: 'flood' in description.,
+PM-202428,Waste,Standard,Keywords found: 'dead animal' in description.,
+PM-202430,Heritage Damage,Standard,"Description: 'Heritage street, lights out. Safety concern for pedestrians after dark....' — category ambiguous, needs manual review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Keywords found: 'waste' in description.,
+PM-202446,Road Damage,Urgent,"Keywords found: 'fell', 'footpath' in description.",

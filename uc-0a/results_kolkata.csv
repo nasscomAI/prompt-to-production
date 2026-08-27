@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description: 'Heritage lamp post knocked over by delivery vehicle. Not restored....' — category ambiguous, needs manual review.",NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Keywords found: 'cobblestone' in description.,
+KM-202405,Noise,Standard,Keywords found: 'band' in description.,
+KM-202409,Pothole,Standard,Keywords found: 'pothole' in description.,
+KM-202410,Pothole,Standard,Keywords found: 'pothole' in description.,
+KM-202411,Pothole,Standard,Keywords found: 'pothole' in description.,
+KM-202415,Drain Blockage,Standard,Keywords found: 'draining' in description.,
+KM-202418,Waste,Standard,Keywords found: 'waste' in description.,
+KM-202421,Road Damage,Urgent,"Keywords found: 'hospital', 'fell', 'sinking' in description.",
+KM-202422,Road Damage,Standard,Keywords found: 'road surface' in description.,
+KM-202426,Heritage Damage,Standard,Keywords found: 'heritage' in description.,
+KM-202430,Road Damage,Standard,Keywords found: 'subsided' in description.,
+KM-202434,Heritage Damage,Standard,Keywords found: 'heritage' in description.,
+KM-202436,Streetlight,Standard,Keywords found: 'darkness' in description.,
+KM-202438,Noise,Standard,"Description: 'Street vendors using amplifiers illegally in heritage precinct....' — category ambiguous, needs manual review.",NEEDS_REVIEW
