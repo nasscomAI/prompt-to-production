@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: extract_numbers
+    description: Detects numeric values present in text.
+    input: Text containing numbers.
+    output: List of numbers.
+    error_handling: Return empty list if none found.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: validate_numbers
+    description: Verifies extracted numbers against source text.
+    input: Source text and extracted numbers.
+    output: Verified numbers.
+    error_handling: Return NEEDS_REVIEW if mismatch occurs.
