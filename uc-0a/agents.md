@@ -1,18 +1,16 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  A Complaint Classifier agent responsible for categorizing citizen complaints, determining priority, and providing justification for city maintenance and public safety reports within the UC-0A project scope.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Accurately classify complaints into predefined categories, assign severity-based priority, and cite specific text from the description to justify the classification in a verifiable single-sentence reason.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent uses only the provided complaint description from the input CSV. It must exclude any external knowledge or assumptions not present in the text. It must strictly adhere to the taxonomy defined in README.md.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other."
+  - "priority must be Urgent if the description contains any of the following keywords: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Every output row must include a reason field consisting of a single sentence that cites specific words from the description."
+  - "If the category cannot be determined from the description alone, output category: Other and set flag: NEEDS_REVIEW."
