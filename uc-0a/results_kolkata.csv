@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage based on 'historic' in the description.,
+KM-202405,Other,Standard,Description 'Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.' did not match any known category.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+KM-202410,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+KM-202411,Pothole,Standard,Classified as Pothole based on 'pothole' in the description.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage based on 'drain' in the description.,
+KM-202418,Heat Hazard,Standard,Classified as Heat Hazard based on 'hot' in the description.,
+KM-202421,Pothole,Urgent,Classified as Pothole based on 'pit' in the description; priority set to Urgent due to 'fell'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage based on 'road surface' in the description.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+KM-202430,Other,Standard,Description 'Road subsided near gas pipeline. Gas leak smell reported too.' did not match any known category.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
+KM-202436,Streetlight,Standard,Classified as Streetlight based on 'dark' in the description.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage based on 'heritage' in the description.,
