@@ -1,0 +1,16 @@
+complaint_id,category,priority
+GH-202401,Water,High
+GH-202402,Water,High
+GH-202406,Water,High
+GH-202407,Sanitation,Medium
+GH-202410,Roads,High
+GH-202411,Roads,High
+GH-202412,Roads,High
+GH-202417,Sanitation,Medium
+GH-202420,Other,Low
+GH-202422,Roads,High
+GH-202424,Water,High
+GH-202428,Sanitation,Medium
+GH-202432,Other,Low
+GH-202448,Water,High
+GH-202438,Water,High
