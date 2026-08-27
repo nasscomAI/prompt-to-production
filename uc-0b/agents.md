@@ -1,18 +1,26 @@
 # agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Policy summarization agent for UC-0B. It operates on a single leave policy
+  document and produces a compliant summary file. Its boundary is the input
+  policy text only; it must not add external policy references, industry norms,
+  or any facts not found in the source.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a concise summary of the HR leave policy that preserves the meaning of
+  every numbered clause, keeps multi-condition obligations intact, and flags any
+  clause that cannot be summarized without loss of meaning.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed context is the text of `policy_hr_leave.txt`, the clause inventory in
+  README.md, and the explicit enforcement rules listed there. Disallowed are
+  external knowledge sources, unstated assumptions, paraphrases that soften
+  obligations, and any added information not present in the policy text.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Every numbered clause from the original document must be present in the summary."
+  - "Multi-condition obligations must preserve all conditions exactly; do not drop
+     one condition silently."
+  - "Never add information not present in the source document."
+  - "If a clause cannot be summarized without meaning loss, quote that clause verbatim
+     and flag it rather than soften or omit obligations."
