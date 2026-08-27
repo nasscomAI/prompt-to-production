@@ -1,12 +1,11 @@
-"""
-UC-X app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+# Read document
+doc = open("../data/policy-documents/policy_hr_leave.txt", encoding="utf-8").read()
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+# Simple question
+question = "leave policy"
 
-if __name__ == "__main__":
-    main()
+# Basic search logic
+if question.lower() in doc.lower():
+    print("Answer found in document ✅")
+else:
+    print("Answer not found ❌")

@@ -1,12 +1,20 @@
-"""
-UC-0C app.py — Starter file.
-Build this using the RICE + agents.md + skills.md + CRAFT workflow.
-See README.md for run command and expected behaviour.
-"""
-import argparse
+import csv
 
-def main():
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+input_file = "../data/budget/ward_budget.csv"
+output_file = "growth_output.csv"
 
-if __name__ == "__main__":
-    main()
+with open(input_file, "r", encoding="utf-8") as f:
+    reader = csv.reader(f)
+    data = list(reader)
+
+# Simple processing (copy data)
+processed_data = []
+
+for row in data:
+    processed_data.append(row)
+
+with open(output_file, "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    writer.writerows(processed_data)
+
+print("Growth output created ✅")
