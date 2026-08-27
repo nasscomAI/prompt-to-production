@@ -1,18 +1,32 @@
 # agents.md
+
 # INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
+
 # Delete these comments before committing.
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+agents:
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+&nbsp; - name: summary\_agent
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+&nbsp;   role: Creates summaries of documents.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+&nbsp;   skills\_used: \[summarize\_text]
+
+&nbsp;   decision\_logic: Produces concise summaries of input text.
+
+&nbsp;   error\_handling: Returns "summary unavailable" if text is too short.
+
+
+
+&nbsp; - name: validation\_agent
+
+&nbsp;   role: Checks if summaries change the meaning of the original text.
+
+&nbsp;   skills\_used: \[detect\_bias]
+
+&nbsp;   decision\_logic: Compares summary with original text.
+
+&nbsp;   error\_handling: Flags as "uncertain" if analysis fails.
+
+
+

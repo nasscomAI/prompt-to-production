@@ -1,9 +1,9 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:Begari Keerthi**  
+**City / Group:Chevella**  
+**Date:90 March 2026**  
+**AI tool(s) used:Copilot**  
 
 ---
 
@@ -24,27 +24,19 @@
 ## UC-0A — Complaint Classifier
 
 **Which failure mode did you encounter first?**
-*(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
-
-> [Your answer]
+> severity blindness
 
 **What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
+> "All complaints mentioning injury, child, school, or hospital must be flagged as Urgent."
 
-> [Your answer]
+**How many rows in your results Excel match the answer key?**
+> 12 out of 15
 
-**How many rows in your results CSV match the answer key?**
-*(Tutor will release answer key after session)*
-
-> [Your answer] out of 15
-
-**Did all severity signal rows (injury/child/school/hospital) return Urgent?**
-
-> Yes / No — [explain any exceptions]
+**Did all severity signal rows return Urgent?**
+> Yes — all flagged correctly
 
 **Your git commit message for UC-0A:**
-
-> [paste your commit message here]
-
+> Implemented complaint classifier logic with severity rules, wrote results.xlsx
 ---
 
 ## UC-0B — Summary That Changes Meaning
