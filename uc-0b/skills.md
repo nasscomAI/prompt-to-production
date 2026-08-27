@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Loads a text policy file and extracts its numbered clauses for structured processing.
+    input: Path to a .txt policy document.
+    output: A structured mapping of clause numbers to clause text.
+    error_handling: If the file cannot be read, return an error message and stop processing.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Produces a compliant clause-preserving summary from structured policy sections.
+    input: Structured clause mapping from the policy document.
+    output: A summary text containing clause references and obligation-preserving summaries.
+    error_handling: If a clause is missing, ambiguous, or cannot be safely compressed, include the original clause text and mark it with FLAG: VERBATIM.
