@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole due to description content: 'large pothole 60cm wide causing tyre damage. three...',
+PM-202402,Pothole,Urgent,"Classified as Pothole due to description content: 'deep pothole near bus stop. school children at ris...' Priority set to Urgent due to keywords: child, school.",
+PM-202406,Flooding,Standard,Classified as Flooding due to description content: 'underpass flooded knee-deep after 2hrs rain. commu...',
+PM-202408,Flooding,Standard,Classified as Flooding due to description content: 'bus stand flooded. passengers standing in water. d...',
+PM-202410,Streetlight,Standard,Classified as Streetlight due to description content: 'three consecutive streetlights out for 10 days. ar...',
+PM-202411,Streetlight,Urgent,Classified as Streetlight due to description content: 'streetlight flickering and sparking. electrical ha...' Priority set to Urgent due to keywords: hazard.,
+PM-202413,Waste,Low,Classified as Waste due to description content: 'overflowing garbage bins near vegetable market. sm...',
+PM-202418,Noise,Standard,Classified as Noise due to description content: 'wedding venue playing music past midnight on weekn...',
+PM-202419,Road Damage,Standard,Classified as Road Damage due to description content: 'road surface cracked and sinking near utility work...',
+PM-202420,Other,Urgent,Classified as Other due to description content: 'manhole cover missing. risk of serious injury to c...' Priority set to Urgent due to keywords: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding due to description content: 'bridge approach floods in 30mins of rain. bridge b...',
+PM-202428,Other,Standard,Classified as Other due to description content: 'dead animal not removed for 36 hours. health conce...',NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"Classified as Streetlight due to description content: 'heritage street, lights out. safety concern for pe...'",
+PM-202433,Waste,Standard,Classified as Waste due to description content: 'bulk waste from apartment renovation dumped on pub...',
+PM-202446,Road Damage,Urgent,Classified as Road Damage due to description content: 'footpath tiles broken and upturned. elderly reside...' Priority set to Urgent due to keywords: fell.,
