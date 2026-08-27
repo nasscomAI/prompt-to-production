@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Prioritized as Urgent because an ambulance was diverted due to the flooded underpass.,
+GH-202402,Drain Blockage,Standard,Categorized as Drain Blockage due to a completely blocked drain causing flooding.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Categorized as Drain Blockage because the stormwater drain is 100% blocked.,
+GH-202407,Drain Blockage,Standard,Categorized as Drain Blockage due to a blocked drain causing dengue concerns.,
+GH-202410,Pothole,Standard,Categorized as Pothole because potholes are causing vehicles to slow down significantly.,
+GH-202411,Pothole,Urgent,Prioritized as Urgent because the rider was hospitalised after a pothole accident.,
+GH-202412,Pothole,Urgent,Prioritized as Urgent because a school bus is struggling to navigate multiple potholes.,
+GH-202417,Heritage Damage,Standard,Flagged for review due to overlap between heritage area impact and garbage overflow.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Categorized as Noise due to early morning construction drilling near residential towers.,
+GH-202422,Road Damage,Urgent,Prioritized as Urgent due to a partial road collapse creating a deep crater.,
+GH-202424,Flooding,Standard,Categorized as Flooding because the underpass floods regularly during rain.,
+GH-202428,Waste,Standard,Categorized as Waste because post-market garbage has not been cleared.,
+GH-202432,Noise,Standard,Categorized as Noise due to 24-hour supermarket delivery trucks idling with engines on.,
+GH-202448,Drain Blockage,Standard,Flagged for review because a blocked drain creates an imminent flooding risk.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Categorized as Flooding because rainwater is channeled through the main road.,
