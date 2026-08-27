@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0B
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Reads the raw txt policy file from the given file path.
+    input: File path string pointing to the policy document (e.g. `../data/policy-documents/policy_hr_leave.txt`).
+    output: Raw string containing the text of the policy document.
+    error_handling: Raises FileNotFoundError if the file doesn't exist.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Invokes the Gemini LLM with the raw policy text and the strict system rules from agents.md to produce a highly accurate summary.
+    input: Raw text string of the policy document.
+    output: A string containing the compliant summary.
+    error_handling: Handles API rate limits or errors, and outputs a fallback error message if generation fails.
