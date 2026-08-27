@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions 'pothole', which matches Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions 'pothole', which matches Pothole. The description also includes severity cues such as 'child, school'.",
+PM-202406,Flooding,Standard,"The description mentions 'flooded', which clearly indicates Flooding.",
+PM-202408,Flooding,Standard,"The description mentions 'flooded', which clearly indicates Flooding.",
+PM-202410,Streetlight,Standard,"The description mentions 'streetlight', which supports Streetlight.",
+PM-202411,Streetlight,Urgent,"The description mentions 'flickering' and 'sparking', which point to Streetlight. The description also includes severity cues such as 'hazard'.",
+PM-202413,Waste,Standard,"The description mentions 'garbage' or 'bins', which fits Waste.",
+PM-202418,Noise,Standard,"The description mentions 'music' or 'noise', which fits Noise.",
+PM-202419,Road Damage,Standard,"The description mentions 'cracked' road surface, which fits Road Damage.",
+PM-202420,Drain Blockage,Urgent,"The description mentions 'drain' or 'blocked', which fits Drain Blockage. The description also includes severity cues such as 'injury'.",
+PM-202427,Flooding,Standard,"The description mentions 'issue', which supports Flooding.",
+PM-202428,Other,Standard,The description does not contain enough clear category keywords to assign a specific category.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The description mentions 'heritage', which supports Streetlight.",
+PM-202433,Waste,Standard,"The description mentions 'garbage' or 'bins', which fits Waste.",NEEDS_REVIEW
+PM-202446,Road Damage,Urgent,"The description mentions 'issue', which supports Road Damage. The description also includes severity cues such as 'fell'.",
