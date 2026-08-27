@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'Heritage lamp post knocked over by deliv',
+KM-202402,Heritage Damage,Standard,Description mentions 'Historic tram road cobblestones broken u',NEEDS_REVIEW
+KM-202405,Noise,Standard,Description mentions 'band playing near Tagore Museu',
+KM-202409,Pothole,Standard,Description mentions 'potholes. Diplomatic complaint',
+KM-202410,Pothole,Standard,Description mentions 'Pothole causing tyre blowouts',
+KM-202411,Pothole,Standard,Description mentions 'pothole filling with rainwater',
+KM-202415,Other,Standard,Description begins with 'New residential complex draining directly onto public road.',NEEDS_REVIEW
+KM-202418,Waste,Standard,Description mentions 'waste overflowing. Foreign vis',
+KM-202421,Road Damage,Urgent,Description mentions 'sinking. Elderly pedestrian fe',
+KM-202422,Road Damage,Standard,Description mentions 'Road surface buckled near brid',
+KM-202426,Heritage Damage,Standard,Description mentions 'Heritage residential building exterior d',
+KM-202430,Road Damage,Standard,Description mentions 'subsided near gas pipeline. Ga',
+KM-202434,Heritage Damage,Standard,Description mentions 'heritage stone not replaced',NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Description begins with 'Entire colony substation tripped. Darkness for 3 nights.',
+KM-202438,Heritage Damage,Standard,Description mentions 'heritage precinct',NEEDS_REVIEW
