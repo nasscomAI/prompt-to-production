@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified based on complaint description: ""Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk."".",
+GH-202402,Flooding,Standard,"Classified based on complaint description: ""Market area flooded. Traders suffering losses. Drain completely blocked."".",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified based on complaint description: ""Main stormwater drain 100% blocked with construction debris."".",
+GH-202407,Drain Blockage,Standard,"Classified based on complaint description: ""Drain blocked and mosquito breeding. Dengue concern."".",
+GH-202410,Pothole,Standard,"Classified based on complaint description: ""Potholes causing vehicles to slow to 20kmph on fast road."".",
+GH-202411,Pothole,Urgent,"Classified based on complaint description: ""Pothole swallowed entire motorcycle wheel. Rider hospitalised."".",
+GH-202412,Pothole,Urgent,"Classified based on complaint description: ""School bus struggling to navigate 6 potholes in 200m stretch."".",
+GH-202417,Heritage Damage,Standard,"Classified based on complaint description: ""Heritage zone garbage overflow. Tourist photographs showing piles of waste."".",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Classified based on complaint description: ""Construction drilling from 5am daily near residential towers."".",
+GH-202422,Pothole,Urgent,"Classified based on complaint description: ""Road collapsed partially. Crater 1m deep near residential gate."".",NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Classified based on complaint description: ""Underpass floods in light rain. Cars regularly abandoned."".",
+GH-202428,Waste,Standard,"Classified based on complaint description: ""Post-market waste not cleared. Area unusable by Sunday morning."".",
+GH-202432,Noise,Standard,"Classified based on complaint description: ""24hr supermarket delivery trucks idling with engines on."".",
+GH-202448,Flooding,Standard,"Classified based on complaint description: ""Main drain blocked — entire locality at flooding risk this week."".",NEEDS_REVIEW
+GH-202438,Other,Standard,"Classified based on complaint description: ""Colony surrounded by fields that channel rainwater through main road."".",NEEDS_REVIEW
