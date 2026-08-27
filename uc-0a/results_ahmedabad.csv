@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description is genuinely ambiguous and does not match known categories.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description is genuinely ambiguous and does not match known categories.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description is genuinely ambiguous and does not match known categories.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,The description mentions 'broken'.,
+AM-202407,Road Damage,Urgent,The description mentions 'broken'. Priority escalated to Urgent due to severity keyword 'child'.,
+AM-202410,Pothole,Standard,The description mentions 'pothole'.,
+AM-202414,Other,Standard,The description is genuinely ambiguous and does not match known categories.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description mentions 'waste'.,
+AM-202421,Noise,Standard,The description mentions 'music'.,
+AM-202424,Road Damage,Standard,The description mentions 'road surface'.,
+AM-202429,Other,Standard,The description is genuinely ambiguous and does not match known categories.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description mentions 'heritage'.,
+AM-202435,Heat Hazard,Standard,The description mentions 'heat'.,
+AM-202444,Waste,Standard,The description mentions 'waste'.,
+AM-202445,Road Damage,Standard,The description mentions 'broken'.,

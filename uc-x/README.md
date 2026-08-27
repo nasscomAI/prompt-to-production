@@ -1,7 +1,9 @@
 # UC-X — Ask My Documents
 
 **Core failure modes:** Cross-document blending · Hedged hallucination · Condition dropping
-
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
 ---
 
 ## Your Input Files
