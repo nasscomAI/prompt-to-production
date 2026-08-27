@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Description mentions 'flood' indicating Flooding; severity keyword(s) 'ambulance' trigger Urgent priority.,
+GH-202402,Flooding,Standard,Description mentions 'flood' indicating Flooding; context suggests moderate impact warranting Standard priority.,
+GH-202406,Waste,Standard,Description mentions 'debris' indicating Waste; context suggests moderate impact warranting Standard priority.,
+GH-202407,Drain Blockage,Standard,Description mentions 'drain blocked' indicating Drain Blockage; context suggests moderate impact warranting Standard priority.,
+GH-202410,Pothole,Standard,Description mentions 'pothole' indicating Pothole; context suggests moderate impact warranting Standard priority.,
+GH-202411,Pothole,Urgent,Description mentions 'pothole' indicating Pothole; severity keyword(s) 'hospital' trigger Urgent priority.,
+GH-202412,Pothole,Urgent,Description mentions 'pothole' indicating Pothole; severity keyword(s) 'school' trigger Urgent priority.,
+GH-202417,Heritage Damage,Low,Description mentions 'heritage' indicating Heritage Damage.,NEEDS_REVIEW
+GH-202420,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
+GH-202422,Other,Urgent,severity keyword(s) 'collapse' trigger Urgent priority.,NEEDS_REVIEW
+GH-202424,Flooding,Low,Description mentions 'flood' indicating Flooding.,
+GH-202428,Waste,Low,Description mentions 'waste' indicating Waste.,
+GH-202432,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,Description mentions 'drain blocked' indicating Drain Blockage; context suggests moderate impact warranting Standard priority.,NEEDS_REVIEW
+GH-202438,Other,Low,Description does not clearly match any specific category.,NEEDS_REVIEW
