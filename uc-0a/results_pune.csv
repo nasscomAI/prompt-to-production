@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Medium,Contains related words in description.,
+PM-202402,Pothole,Urgent,Contains related words in description.,
+PM-202406,Flooding,Medium,Contains related words in description.,
+PM-202408,Flooding,Medium,Contains related words in description.,
+PM-202410,Lighting,Medium,Contains related words in description.,
+PM-202411,Lighting,Medium,Contains related words in description.,
+PM-202413,Other,Medium,No specific category keywords found.,NEEDS_REVIEW
+PM-202418,Noise,Medium,Contains related words in description.,
+PM-202419,Pothole,Medium,Contains related words in description.,
+PM-202420,Other,Urgent,No specific category keywords found.,NEEDS_REVIEW
+PM-202427,Flooding,Medium,Contains related words in description.,
+PM-202428,Other,Medium,No specific category keywords found.,NEEDS_REVIEW
+PM-202430,Lighting,Urgent,Contains related words in description.,
+PM-202433,Vandalism,Medium,Contains related words in description.,
+PM-202446,Other,Medium,No specific category keywords found.,NEEDS_REVIEW

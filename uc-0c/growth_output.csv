@@ -1,0 +1,13 @@
+period,actual_spend,growth,formula
+2024-01,13.3,N/A,First period
+2024-02,12.2,-8.27%,(current - previous) / previous * 100
+2024-03,12.3,0.82%,(current - previous) / previous * 100
+2024-04,13.4,8.94%,(current - previous) / previous * 100
+2024-05,14.1,5.22%,(current - previous) / previous * 100
+2024-06,14.8,4.96%,(current - previous) / previous * 100
+2024-07,19.7,33.11%,(current - previous) / previous * 100
+2024-08,20.2,2.54%,(current - previous) / previous * 100
+2024-09,20.1,-0.50%,(current - previous) / previous * 100
+2024-10,13.1,-34.83%,(current - previous) / previous * 100
+2024-11,14.2,8.40%,(current - previous) / previous * 100
+2024-12,12.7,-10.56%,(current - previous) / previous * 100
