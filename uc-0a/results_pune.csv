@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category set to Pothole from 'pothole' and priority set to Standard because no severity keyword was found.,
+PM-202402,Pothole,Urgent,Category set to Pothole from 'pothole' and priority set to Urgent from 'school'.,
+PM-202406,Flooding,Standard,Category set to Flooding from 'flooded' and priority set to Standard because no severity keyword was found.,
+PM-202408,Other,Standard,"Category set to Other because description is ambiguous across 'flooded', 'Drain' and priority set to Standard.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category set to Streetlight from 'streetlights' and priority set to Standard because no severity keyword was found.,
+PM-202411,Streetlight,Urgent,Category set to Streetlight from 'Streetlight' and priority set to Urgent from 'hazard'.,
+PM-202413,Waste,Standard,Category set to Waste from 'garbage' and priority set to Standard because no severity keyword was found.,
+PM-202418,Other,Standard,Category set to Other because 'Wedding venue playing music past midnight' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+PM-202419,Other,Standard,Category set to Other because 'Road surface cracked and sinking near' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Category set to Other because 'Manhole cover missing. Risk of serious' does not match an allowed category and priority set to Urgent from 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category set to Flooding from 'floods' and priority set to Standard because no severity keyword was found.,
+PM-202428,Other,Standard,Category set to Other because 'Dead animal not removed for 36' does not match an allowed category and priority set to Standard.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Category set to Heritage Damage from 'Heritage' and priority set to Standard because no severity keyword was found.,
+PM-202433,Waste,Standard,Category set to Waste from 'waste' and priority set to Standard because no severity keyword was found.,
+PM-202446,Other,Urgent,Category set to Other because 'Footpath tiles broken and upturned. Elderly' does not match an allowed category and priority set to Urgent from 'fell'.,NEEDS_REVIEW
