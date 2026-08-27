@@ -1,0 +1,16 @@
+category,priority,reason,flag,complaint_id
+Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,,PM-202401
+Pothole,Urgent,Classified as Pothole because the description mentions 'pothole (severity: child)'.,,PM-202402
+Flooding,Standard,Classified as Flooding because the description mentions 'flood'.,,PM-202406
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,PM-202408
+Streetlight,Standard,Classified as Streetlight because the description mentions 'light'.,,PM-202410
+Streetlight,Urgent,Classified as Streetlight because the description mentions 'light (severity: hazard)'.,,PM-202411
+Waste,Standard,Classified as Waste because the description mentions 'garbage'.,,PM-202413
+Noise,Standard,Classified as Noise because the description mentions 'music'.,,PM-202418
+Road Damage,Standard,Classified as Road Damage because the description mentions 'crack'.,,PM-202419
+Other,Urgent,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,PM-202420
+Flooding,Standard,Classified as Flooding because the description mentions 'flood'.,,PM-202427
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,PM-202428
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,PM-202430
+Waste,Standard,Classified as Waste because the description mentions 'waste'.,,PM-202433
+Other,Urgent,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,PM-202446

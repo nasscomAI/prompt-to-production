@@ -1,0 +1,16 @@
+category,priority,reason,flag,complaint_id
+Road Damage,Standard,Classified as Road Damage because the description mentions 'surface'.,,AM-202401
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,AM-202402
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,AM-202405
+Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'heat'.,,AM-202406
+Other,Urgent,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,AM-202407
+Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,,AM-202410
+Other,Standard,Classification is ambiguous because no clear category found.,NEEDS_REVIEW,AM-202414
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,AM-202417
+Noise,Standard,Classified as Noise because the description mentions 'music'.,,AM-202421
+Road Damage,Standard,Classified as Road Damage because the description mentions 'surface'.,,AM-202424
+Road Damage,Standard,Classified as Road Damage because the description mentions 'surface'.,,AM-202429
+Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,,AM-202431
+Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'heat'.,,AM-202435
+Other,Standard,Classification is ambiguous because multiple categories matched.,NEEDS_REVIEW,AM-202444
+Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'sun'.,,AM-202445
