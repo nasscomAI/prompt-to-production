@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as 'Pothole' because the description contains the keyword 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified as 'Pothole' because the description contains the keyword 'pothole', and marked Urgent due to severity keyword 'school'.",
+PM-202406,Flooding,Standard,Classified as 'Flooding' because the description contains the keyword 'flood'.,
+PM-202408,Flooding,Standard,Classified as 'Flooding' because the description contains the keyword 'flood'.,
+PM-202410,Streetlight,Standard,Classified as 'Streetlight' because the description contains the keyword 'streetlight'.,
+PM-202411,Streetlight,Urgent,"Classified as 'Streetlight' because the description contains the keyword 'streetlight', and marked Urgent due to severity keyword 'hazard'.",
+PM-202413,Flooding,Standard,Classified as 'Flooding' because the description contains the keyword 'overflow'.,
+PM-202418,Other,Low,No matching category keywords found in the description; flagged for human review.,NEEDS_REVIEW
+PM-202419,Other,Low,No matching category keywords found in the description; flagged for human review.,NEEDS_REVIEW
+PM-202420,Drain Blockage,Urgent,"Classified as 'Drain Blockage' because the description contains the keyword 'manhole', and marked Urgent due to severity keyword 'injury'.",
+PM-202427,Flooding,Standard,Classified as 'Flooding' because the description contains the keyword 'flood'.,
+PM-202428,Other,Low,No matching category keywords found in the description; flagged for human review.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as 'Heritage Damage' because the description contains the keyword 'heritage'.,
+PM-202433,Waste,Standard,Classified as 'Waste' because the description contains the keyword 'waste'.,
+PM-202446,Other,Low,No matching category keywords found in the description; flagged for human review.,NEEDS_REVIEW

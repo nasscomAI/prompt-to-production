@@ -1,0 +1,41 @@
+CITY MUNICIPAL CORPORATION — HR LEAVE POLICY SUMMARY
+Document Reference: HR-POL-001  |  Version 2.3  |  Effective: 1 April 2024
+======================================================================
+
+This summary covers the 10 clauses identified as critical in agents.md.
+Each entry shows (a) the plain-English restatement and (b) the verbatim
+source text so reviewers can verify fidelity against the original document.
+
+Clause 2.3  |  Advance notice — employees MUST submit leave at least 14 calendar days in advance (Form HR-L1).
+  Source text: "Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1."
+
+Clause 2.4  |  Written approval — leave applications MUST receive written approval before leave commences; verbal approval is NOT valid.
+  Source text: "Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid."
+
+Clause 2.5  |  Unapproved absence — WILL be recorded as Loss of Pay (LOP) regardless of any subsequent approval.
+  Source text: "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
+
+Clause 2.6  |  Carry-forward cap — employees MAY carry forward a maximum of 5 unused annual leave days; days above 5 ARE FORFEITED on 31 December.
+  Source text: "Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December."
+
+Clause 2.7  |  Carry-forward deadline — carried-forward days MUST be used within January–March or they are forfeited.
+  Source text: "Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited."
+
+Clause 3.2  |  Medical certificate (duration) — sick leave of 3 or more consecutive days REQUIRES a medical certificate submitted within 48 hours of returning to work.
+  Source text: "Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work."
+
+Clause 3.4  |  Medical certificate (holiday adjacency) — sick leave immediately before or after a public holiday or annual leave REQUIRES a medical certificate regardless of duration.
+  Source text: "Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration."
+
+Clause 5.2  |  Leave Without Pay approval — LWP REQUIRES approval from the Department Head AND the HR Director; manager approval alone is NOT sufficient.
+  Source text: "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+
+Clause 5.3  |  Extended LWP — LWP exceeding 30 continuous days REQUIRES approval from the Municipal Commissioner.
+  Source text: "LWP exceeding 30 continuous days requires approval from the Municipal Commissioner."
+
+Clause 7.2  |  Leave encashment — encashment during service is NOT PERMITTED under any circumstances.
+  Source text: "Leave encashment during service is not permitted under any circumstances."
+
+======================================================================
+End of summary. All clauses above were extracted directly from the source
+document. No external knowledge, inference, or generalisation has been added.
