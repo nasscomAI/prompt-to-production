@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Roads,Medium,keywords: pothole/road/street,
+PM-202402,Roads,Urgent,keywords: pothole/road/street,
+PM-202406,Other,Low,no clear category keywords,NEEDS_REVIEW
+PM-202408,Water,Low,keywords: water/leak/pipeline,
+PM-202410,Roads,Low,keywords: pothole/road/street,
+PM-202411,Roads,Low,keywords: pothole/road/street,
+PM-202413,Sanitation,Medium,keywords: garbage/waste/sewage,
+PM-202418,Other,Low,no clear category keywords,NEEDS_REVIEW
+PM-202419,Roads,Low,keywords: pothole/road/street,
+PM-202420,Public Safety,Urgent,keywords: accident/danger/fire,
+PM-202427,Roads,Low,keywords: pothole/road/street,
+PM-202428,Other,Low,no clear category keywords,NEEDS_REVIEW
+PM-202430,Roads,Low,keywords: pothole/road/street,
+PM-202433,Sanitation,Low,keywords: garbage/waste/sewage,
+PM-202446,Other,Low,no clear category keywords,NEEDS_REVIEW

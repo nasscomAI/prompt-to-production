@@ -1,0 +1,301 @@
+ward,category,amount,flag
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
+Ward 1 – Kasba,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 1 – Kasba,Drainage & Flooding,,NEEDS_REVIEW
+Ward 1 – Kasba,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 1 – Kasba,Waste Management,,NEEDS_REVIEW
+Ward 1 – Kasba,Parks & Greening,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Waste Management,,NEEDS_REVIEW
+Ward 2 – Shivajinagar,Parks & Greening,,NEEDS_REVIEW
+Ward 3 – Kothrud,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 3 – Kothrud,Drainage & Flooding,,NEEDS_REVIEW
+Ward 3 – Kothrud,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 3 – Kothrud,Waste Management,,NEEDS_REVIEW
+Ward 3 – Kothrud,Parks & Greening,,NEEDS_REVIEW
+Ward 4 – Warje,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 4 – Warje,Drainage & Flooding,,NEEDS_REVIEW
+Ward 4 – Warje,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 4 – Warje,Waste Management,,NEEDS_REVIEW
+Ward 4 – Warje,Parks & Greening,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Roads & Pothole Repair,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Drainage & Flooding,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Streetlight Maintenance,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Waste Management,,NEEDS_REVIEW
+Ward 5 – Hadapsar,Parks & Greening,,NEEDS_REVIEW
