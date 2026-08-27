@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Standard complaint without specific urgency keywords.,
+PM-202402,Pothole,Urgent,"Urgent severity keyword(s) found: child, school.",
+PM-202406,Flooding,Standard,Standard complaint without specific urgency keywords.,
+PM-202408,Flooding,Standard,Standard complaint without specific urgency keywords.,
+PM-202410,Streetlight,Standard,Standard complaint without specific urgency keywords.,
+PM-202411,Streetlight,Urgent,Urgent severity keyword(s) found: hazard.,
+PM-202413,Flooding,Standard,Standard complaint without specific urgency keywords.,
+PM-202418,Noise,Standard,Standard complaint without specific urgency keywords.,
+PM-202419,Road Damage,Standard,Standard complaint without specific urgency keywords.,
+PM-202420,Other,Urgent,Urgent severity keyword(s) found: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Standard complaint without specific urgency keywords.,
+PM-202428,Other,Standard,Standard complaint without specific urgency keywords.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Standard complaint without specific urgency keywords.,
+PM-202433,Waste,Standard,Standard complaint without specific urgency keywords.,
+PM-202446,Other,Urgent,Urgent severity keyword(s) found: fell.,NEEDS_REVIEW
