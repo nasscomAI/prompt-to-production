@@ -1,0 +1,38 @@
+# Policy Document Summary
+
+*Enforcement Rules Applied:*
+- Every numbered clause is fully present.
+- Multi-condition obligations are preserved exactly.
+- Clauses with strict obligations are quoted verbatim to prevent meaning loss.
+
+## Structured Clauses
+
+**Clause 1.1 [VERBATIM]**: "This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC)."
+**Clause 1.2 [VERBATIM]**: "This policy does not apply to daily wage workers or consultants. Those categories are governed by their respective contracts."
+**Clause 2.1**: Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+**Clause 2.2**: Annual leave accrues at 1.5 days per month from the date of joining.
+**Clause 2.3 [VERBATIM]**: "Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1."
+**Clause 2.4 [VERBATIM]**: "Leave applications must receive written approval from the employee's direct manager before the leave commences. Verbal approval is not valid."
+**Clause 2.5 [VERBATIM]**: "Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval."
+**Clause 2.6 [VERBATIM]**: "Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December."
+**Clause 2.7 [VERBATIM]**: "Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited."
+**Clause 3.1**: Each employee is entitled to 12 days of paid sick leave per calendar year.
+**Clause 3.2 [VERBATIM]**: "Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work."
+**Clause 3.3**: Sick leave cannot be carried forward to the following year.
+**Clause 3.4 [VERBATIM]**: "Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration."
+**Clause 4.1**: Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.
+**Clause 4.2 [VERBATIM]**: "For a third or subsequent child, maternity leave is 12 weeks paid."
+**Clause 4.3**: Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+**Clause 4.4**: Paternity leave cannot be split across multiple periods.
+**Clause 5.1**: An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+**Clause 5.2 [VERBATIM]**: "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+**Clause 5.3 [VERBATIM]**: "LWP exceeding 30 continuous days requires approval from the Municipal Commissioner."
+**Clause 5.4 [VERBATIM]**: "Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits."
+**Clause 6.1**: Employees are entitled to all gazetted public holidays as declared by the State Government each year.
+**Clause 6.2**: If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+**Clause 6.3**: Compensatory off cannot be encashed.
+**Clause 7.1 [VERBATIM]**: "Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days."
+**Clause 7.2 [VERBATIM]**: "Leave encashment during service is not permitted under any circumstances."
+**Clause 7.3 [VERBATIM]**: "Sick leave and LWP cannot be encashed under any circumstances."
+**Clause 8.1 [VERBATIM]**: "Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision."
+**Clause 8.2 [VERBATIM]**: "Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing."
