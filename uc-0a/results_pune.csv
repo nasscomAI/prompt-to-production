@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Categorized as Pothole because ""pothole"" identifies it as Pothole; priority is Standard as no severity keywords were found.",
+PM-202402,Pothole,Urgent,"Categorized as Pothole because ""pothole"" identifies it as Pothole; priority is Urgent due to severity keyword ""child"".",
+PM-202406,Flooding,Standard,"Categorized as Flooding because ""flooded"" identifies it as Flooding; priority is Standard as no severity keywords were found.",
+PM-202408,Flooding,Standard,"Categorized as Flooding because ""flooded"" identifies it as Flooding; priority is Standard as no severity keywords were found.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Categorized as Streetlight because ""streetlights"" identifies it as Streetlight; priority is Standard as no severity keywords were found.",
+PM-202411,Streetlight,Urgent,"Categorized as Streetlight because ""streetlight"" identifies it as Streetlight; priority is Urgent due to severity keyword ""hazard"".",
+PM-202413,Waste,Standard,"Categorized as Waste because ""garbage"" identifies it as Waste; priority is Standard as no severity keywords were found.",
+PM-202418,Noise,Standard,"Categorized as Noise because ""music"" identifies it as Noise; priority is Standard as no severity keywords were found.",
+PM-202419,Road Damage,Standard,"Categorized as Road Damage because ""road surface"" identifies it as Road Damage; priority is Standard as no severity keywords were found.",
+PM-202420,Drain Blockage,Urgent,"Categorized as Drain Blockage because ""manhole"" identifies it as Drain Blockage; priority is Urgent due to severity keyword ""injury"".",
+PM-202427,Flooding,Standard,"Categorized as Flooding because ""floods"" identifies it as Flooding; priority is Standard as no severity keywords were found.",
+PM-202428,Other,Standard,Categorized as Other because no schema keywords matched the description; priority is Standard as no severity keywords were found.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Categorized as Heritage Damage because ""heritage"" identifies it as Heritage Damage; priority is Standard as no severity keywords were found.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Categorized as Waste because ""waste"" identifies it as Waste; priority is Standard as no severity keywords were found.",
+PM-202446,Road Damage,Urgent,"Categorized as Road Damage because ""footpath"" identifies it as Road Damage; priority is Urgent due to severity keyword ""fell"".",
