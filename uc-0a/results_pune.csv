@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Based on complaint text 'Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.'.,
+Pothole,Urgent,Based on complaint text 'Deep pothole near bus stop. School children at risk during morning hours.'.,
+Flooding,Standard,Based on complaint text 'Underpass flooded knee-deep after 2hrs rain. Commuters stranded.'.,
+Other,Standard,Based on complaint text 'Bus stand flooded. Passengers standing in water. Drain blocked.'.,NEEDS_REVIEW
+Streetlight,Standard,Based on complaint text 'Three consecutive streetlights out for 10 days. Area very dark at night.'.,
+Streetlight,Urgent,Based on complaint text 'Streetlight flickering and sparking. Electrical hazard reported.'.,
+Waste,Standard,Based on complaint text 'Overflowing garbage bins near vegetable market. Smell affecting shoppers.'.,
+Other,Standard,Based on complaint text 'Wedding venue playing music past midnight on weeknights.'.,NEEDS_REVIEW
+Road Damage,Standard,Based on complaint text 'Road surface cracked and sinking near utility work done 1 month ago.'.,
+Other,Urgent,Based on complaint text 'Manhole cover missing. Risk of serious injury to cyclists.'.,NEEDS_REVIEW
+Flooding,Standard,Based on complaint text 'Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.'.,
+Other,Standard,Based on complaint text 'Dead animal not removed for 36 hours. Health concern.'.,NEEDS_REVIEW
+Heritage Damage,Standard,"Based on complaint text 'Heritage street, lights out. Safety concern for pedestrians after dark.'.",
+Waste,Standard,Based on complaint text 'Bulk waste from apartment renovation dumped on public road.'.,
+Other,Urgent,Based on complaint text 'Footpath tiles broken and upturned. Elderly resident fell last week.'.,NEEDS_REVIEW
