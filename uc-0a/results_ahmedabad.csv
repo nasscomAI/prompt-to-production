@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified as Other and flagged for review because the description contains conflicting references to 'Tarmac' and 'melting'.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'temperature'.,
+AM-202405,Other,Standard,Classified as Other because the description contains no recognized category keywords.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'heat'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage with Urgent priority because description mentions 'paving' and indicates a risk related to 'Child'.,
+AM-202410,Pothole,Standard,Classified as Pothole because the description mentions 'Pothole'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight because the description mentions 'unlit'.,
+AM-202417,Other,Standard,Classified as Other and flagged for review because the description contains conflicting references to 'waste' and 'Heritage'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise because the description mentions 'music'.,
+AM-202424,Other,Standard,Classified as Other and flagged for review because the description contains conflicting references to 'road surface' and 'bubbling'.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'temperature'.,
+AM-202431,Other,Standard,Classified as Other and flagged for review because the description contains conflicting references to 'road subsidence' and 'Heritage'.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because the description mentions 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because the description mentions 'bins'.,
+AM-202445,Other,Standard,Classified as Other because the description contains no recognized category keywords.,NEEDS_REVIEW
