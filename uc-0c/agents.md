@@ -1,18 +1,9 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C Agents Rules
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Enforcement Rules
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
-
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
-
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+1. Never aggregate across wards or categories unless explicitly instructed — REFUSE if asked
+2. Flag every null row before computing
+3. Always show null reason from notes column
+4. Show formula used in every output row
+5. If growth-type is not specified — REFUSE and ask
