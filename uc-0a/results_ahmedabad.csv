@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description states 'Tarmac surface melting at 44°C' which justifies this classification.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description states 'Metal bus shelter reaching dangerous temperatures' which justifies this classification.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description states 'Dead trees with split branches' which justifies this classification.,NEEDS_REVIEW
+AM-202406,Road Damage,Standard,The description states 'Irrigation system broken' which justifies this classification.,
+AM-202407,Road Damage,Urgent,The description states 'Broken bench and upturned paving' which justifies this classification.,
+AM-202410,Pothole,Standard,The description states 'Pothole on main highway causing morning rush lane closure' which justifies this classification.,
+AM-202414,Other,Standard,The description states 'Residential colony unlit after 9pm' which justifies this classification.,NEEDS_REVIEW
+AM-202417,Waste,Standard,The description states 'Night market waste not cleared before morning' which justifies this classification.,
+AM-202421,Noise,Standard,The description states 'Club music audible at residential buildings at 2am' which justifies this classification.,
+AM-202424,Other,Standard,The description states 'Zoo approach road surface bubbling at 45°C' which justifies this classification.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description states 'River walk surface temperature unbearable' which justifies this classification.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,The description states 'Old city road subsidence near ancient step well' which justifies this classification.,
+AM-202435,Heat Hazard,Standard,The description states 'Black metal road dividers storing heat' which justifies this classification.,
+AM-202444,Waste,Standard,The description states 'Restaurant waste bins overflowing on Sunday night' which justifies this classification.,
+AM-202445,Road Damage,Standard,The description states 'BRT shelter roof glass broken' which justifies this classification.,

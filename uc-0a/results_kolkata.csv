@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,The description states 'Heritage lamp post knocked over by delivery vehicle' which justifies this classification.,
+KM-202402,Road Damage,Standard,The description states 'Historic tram road cobblestones broken up by cable laying work' which justifies this classification.,
+KM-202405,Other,Standard,The description states 'Wedding band playing near Tagore Museum at 11pm' which justifies this classification.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,The description states 'Airport access road full of potholes' which justifies this classification.,
+KM-202410,Pothole,Standard,The description states 'Pothole causing tyre blowouts' which justifies this classification.,
+KM-202411,Pothole,Standard,The description states 'Deep pothole filling with rainwater' which justifies this classification.,
+KM-202415,Flooding,Standard,The description states 'New residential complex draining directly onto public road' which justifies this classification.,
+KM-202418,Waste,Standard,The description states 'Tourist zone waste overflowing' which justifies this classification.,
+KM-202421,Road Damage,Urgent,The description states 'Footpath broken and sinking' which justifies this classification.,
+KM-202422,Other,Standard,The description states 'Road surface buckled near bridge' which justifies this classification.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,The description states 'Heritage residential building exterior defaced by billboard installation' which justifies this classification.,
+KM-202430,Other,Standard,The description states 'Road subsided near gas pipeline' which justifies this classification.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,The description states 'Street paving removed for utility work — heritage stone not replaced' which justifies this classification.,
+KM-202436,Other,Standard,The description states 'Entire colony substation tripped' which justifies this classification.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,The description states 'Street vendors using amplifiers illegally in heritage precinct' which justifies this classification.,
