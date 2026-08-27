@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions ""pothole"" which indicates pothole.",
+PM-202402,Pothole,Urgent,"Description mentions ""pothole"" which indicates pothole.",
+PM-202406,Flooding,Standard,"Description mentions ""flood"" which indicates flooding.",
+PM-202408,Flooding,Standard,"Description mentions ""flood"" which indicates flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions ""streetlight"" which indicates streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions ""streetlight"" which indicates streetlight.",
+PM-202413,Waste,Standard,"Description mentions ""garbage"" which indicates waste.",
+PM-202418,Noise,Standard,"Description mentions ""music past midnight"" which indicates noise.",
+PM-202419,Road Damage,Standard,"Description mentions ""road surface"" which indicates road damage.",
+PM-202420,Other,Urgent,"Description mentions ""manhole cover missing"" which indicates other.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description mentions ""flood"" which indicates flooding.",
+PM-202428,Other,Standard,"Description mentions ""dead animal not removed for 36 hours"" which indicates other.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Description mentions ""heritage"" which indicates heritage damage.",
+PM-202433,Waste,Standard,"Description mentions ""waste"" which indicates waste.",
+PM-202446,Road Damage,Urgent,"Description mentions ""upturned"" which indicates road damage.",
