@@ -1,0 +1,9 @@
+complaint_id,category,priority,reason,flag
+CMP001,Pothole,Urgent,Mentioned 'pothole',
+CMP002,Flooding,Urgent,Mentioned water or flooding issues.,
+CMP003,Streetlight,Standard,Mentioned lighting issues.,
+CMP004,Waste,Standard,Mentioned garbage or waste.,
+CMP005,Other,Standard,Description too short or missing.,NEEDS_REVIEW
+CMP006,Noise,Standard,Mentioned noise complaints.,
+CMP007,Other,Standard,Category ambiguous based on description.,NEEDS_REVIEW
+CMP008,Pothole,Standard,Mentioned 'pothole',
