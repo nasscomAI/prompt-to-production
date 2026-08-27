@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Classified as 'Streetlight' based on keywords ['lamp post'] found in the description.,NEEDS_REVIEW
+KM-202402,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['cobblestones'] found in the description.,NEEDS_REVIEW
+KM-202405,Noise,Standard,"Classified as 'Noise' based on keywords ['wedding band', 'band playing'] found in the description.",
+KM-202409,Pothole,Standard,Classified as 'Pothole' based on keywords ['pothole'] found in the description.,
+KM-202410,Pothole,Standard,Classified as 'Pothole' based on keywords ['pothole'] found in the description.,
+KM-202411,Pothole,Standard,Classified as 'Pothole' based on keywords ['pothole'] found in the description.,NEEDS_REVIEW
+KM-202415,Drain Blockage,Standard,Classified as 'Drain Blockage' based on keywords ['drain'] found in the description.,
+KM-202418,Flooding,Standard,Classified as 'Flooding' based on keywords ['overflow'] found in the description.,NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Classified as 'Road Damage' based on keywords ['footpath broken', 'footpath']; priority set to Urgent due to severity indicators ['hospital', 'fell'].",
+KM-202422,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['road surface'] found in the description.,
+KM-202426,Heritage Damage,Standard,Classified as 'Heritage Damage' based on keywords ['heritage'] found in the description.,
+KM-202430,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['road subsided'] found in the description.,
+KM-202434,Road Damage,Standard,Classified as 'Road Damage' based on keywords ['paving'] found in the description.,NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Classified as 'Streetlight' based on keywords ['substation', 'darkness'] found in the description.",
+KM-202438,Heritage Damage,Standard,Classified as 'Heritage Damage' based on keywords ['heritage'] found in the description.,

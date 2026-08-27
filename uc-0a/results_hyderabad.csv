@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as 'Flooding' based on keywords ['flooded', 'flood']; priority set to Urgent due to severity indicators ['ambulance'].",
+GH-202402,Flooding,Standard,"Classified as 'Flooding' based on keywords ['flooded', 'flood'] found in the description.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as 'Drain Blockage' based on keywords ['drain'] found in the description.,
+GH-202407,Drain Blockage,Low,"Classified as 'Drain Blockage' based on keywords ['drain block', 'drain'] found in the description.",
+GH-202410,Pothole,Standard,Classified as 'Pothole' based on keywords ['pothole'] found in the description.,
+GH-202411,Pothole,Urgent,Classified as 'Pothole' based on keywords ['pothole']; priority set to Urgent due to severity indicators ['hospital'].,
+GH-202412,Pothole,Urgent,Classified as 'Pothole' based on keywords ['pothole']; priority set to Urgent due to severity indicators ['school'].,
+GH-202417,Waste,Standard,"Classified as 'Waste' based on keywords ['garbage', 'waste'] found in the description.",NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as 'Noise' based on keywords ['drilling'] found in the description.,
+GH-202422,Pothole,Urgent,"Classified as 'Pothole' based on keywords ['crater']; priority set to Urgent due to severity indicators ['collapse', 'collapsed'].",
+GH-202424,Flooding,Standard,Classified as 'Flooding' based on keywords ['flood'] found in the description.,
+GH-202428,Waste,Standard,Classified as 'Waste' based on keywords ['waste'] found in the description.,
+GH-202432,Other,Standard,Description did not match any known category keywords; flagged for manual review.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Classified as 'Flooding' based on keywords ['flooding', 'flood'] found in the description.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as 'Flooding' based on keywords ['rainwater'] found in the description.,
