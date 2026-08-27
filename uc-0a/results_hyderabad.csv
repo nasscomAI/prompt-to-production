@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Complaint classified as Flooding due to presence of 'flood' in description. Marked as Urgent due to 'ambulance'.,
+GH-202402,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Drain Blockage. Cited words: flood, drain.",NEEDS_REVIEW
+GH-202406,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Drain Blockage. Cited words: water, drain.",NEEDS_REVIEW
+GH-202407,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Drain Blockage. Cited words: rain, drain.",NEEDS_REVIEW
+GH-202410,Other,Standard,"Ambiguous complaint matching multiple categories: Pothole, Road Damage. Cited words: pothole, road.",NEEDS_REVIEW
+GH-202411,Pothole,Urgent,Complaint classified as Pothole due to presence of 'pothole' in description. Marked as Urgent due to 'hospital'.,
+GH-202412,Pothole,Urgent,Complaint classified as Pothole due to presence of 'pothole' in description. Marked as Urgent due to 'school'.,
+GH-202417,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Waste, Heritage Damage, Heat Hazard. Cited words: overflow, waste, heritage, hot.",NEEDS_REVIEW
+GH-202420,Other,Standard,No clear category match. Description contains: construction drilling from 5am daily near resident...,NEEDS_REVIEW
+GH-202422,Other,Urgent,"Ambiguous complaint matching multiple categories: Pothole, Road Damage. Cited words: crater, road.",NEEDS_REVIEW
+GH-202424,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Streetlight. Cited words: flood, light.",NEEDS_REVIEW
+GH-202428,Other,Standard,"Ambiguous complaint matching multiple categories: Waste, Heat Hazard. Cited words: waste, sun.",NEEDS_REVIEW
+GH-202432,Other,Standard,No clear category match. Description contains: 24hr supermarket delivery trucks idling with engin...,NEEDS_REVIEW
+GH-202448,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Drain Blockage. Cited words: flood, drain.",NEEDS_REVIEW
+GH-202438,Other,Standard,"Ambiguous complaint matching multiple categories: Flooding, Road Damage. Cited words: water, road.",NEEDS_REVIEW
