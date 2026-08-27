@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+PM-202401,Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.,Pothole,Standard,The complaint mentions 'pothole' indicating Pothole.,
+PM-202402,Deep pothole near bus stop. School children at risk during morning hours.,Pothole,Urgent,The complaint mentions 'pothole' indicating Pothole.,
+PM-202406,Underpass flooded knee-deep after 2hrs rain. Commuters stranded.,Flooding,Standard,The complaint mentions 'flood' indicating Flooding.,
+PM-202408,Bus stand flooded. Passengers standing in water. Drain blocked.,Other,Standard,"The complaint mentions 'flood, drain' which maps to multiple categories, requiring review.",NEEDS_REVIEW
+PM-202410,Three consecutive streetlights out for 10 days. Area very dark at night.,Streetlight,Standard,The complaint mentions 'streetlight' indicating Streetlight.,
+PM-202411,Streetlight flickering and sparking. Electrical hazard reported.,Streetlight,Urgent,The complaint mentions 'streetlight' indicating Streetlight.,
+PM-202413,Overflowing garbage bins near vegetable market. Smell affecting shoppers.,Waste,Standard,The complaint mentions 'garbage' indicating Waste.,
+PM-202418,Wedding venue playing music past midnight on weeknights.,Other,Standard,"The complaint mentions 'Wedding venue playing music past midnight on weeknights.' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+PM-202419,Road surface cracked and sinking near utility work done 1 month ago.,Other,Standard,"The complaint mentions 'Road surface cracked and sinking near utility work' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+PM-202420,Manhole cover missing. Risk of serious injury to cyclists.,Other,Urgent,"The complaint mentions 'Manhole cover missing. Risk of serious injury to' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+PM-202427,Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.,Flooding,Standard,The complaint mentions 'flood' indicating Flooding.,
+PM-202428,Dead animal not removed for 36 hours. Health concern.,Other,Standard,"The complaint mentions 'Dead animal not removed for 36 hours. Health' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+PM-202430,"Heritage street, lights out. Safety concern for pedestrians after dark.",Heritage Damage,Standard,The complaint mentions 'heritage' indicating Heritage Damage.,
+PM-202433,Bulk waste from apartment renovation dumped on public road.,Waste,Standard,The complaint mentions 'waste' indicating Waste.,
+PM-202446,Footpath tiles broken and upturned. Elderly resident fell last week.,Other,Urgent,"The complaint mentions 'Footpath tiles broken and upturned. Elderly resident fell' which does not clearly map to any category, requiring review.",NEEDS_REVIEW

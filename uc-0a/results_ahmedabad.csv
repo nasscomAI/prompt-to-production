@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+AM-202401,Tarmac surface melting at 44°C. Footwear sticking. Park users unsafe.,Other,Standard,"The complaint mentions 'Tarmac surface melting at 44°C. Footwear sticking. Park' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202402,Metal bus shelter reaching dangerous temperatures. Commuters refusing to use.,Other,Standard,"The complaint mentions 'Metal bus shelter reaching dangerous temperatures. Commuters refusing' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202405,Dead trees with split branches. Fall risk to walkers. 3 trees affected.,Other,Standard,"The complaint mentions 'Dead trees with split branches. Fall risk to' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202406,Irrigation system broken. Grass dying in heatwave conditions.,Heat Hazard,Standard,The complaint mentions 'heat' indicating Heat Hazard.,
+AM-202407,Broken bench and upturned paving. Child injured last week.,Other,Urgent,"The complaint mentions 'Broken bench and upturned paving. Child injured last' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202410,Pothole on main highway causing morning rush lane closure.,Pothole,Standard,The complaint mentions 'pothole' indicating Pothole.,
+AM-202414,Residential colony unlit after 9pm. Wiring theft reported.,Other,Standard,"The complaint mentions 'Residential colony unlit after 9pm. Wiring theft reported.' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202417,Night market waste not cleared before morning. Heritage area affected.,Other,Standard,"The complaint mentions 'waste, heritage' which maps to multiple categories, requiring review.",NEEDS_REVIEW
+AM-202421,Club music audible at residential buildings at 2am.,Other,Standard,"The complaint mentions 'Club music audible at residential buildings at 2am.' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202424,Zoo approach road surface bubbling at 45°C. Visitor complaints.,Other,Standard,"The complaint mentions 'Zoo approach road surface bubbling at 45°C. Visitor' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202429,River walk surface temperature unbearable. Installed temperature reads 52°C.,Other,Standard,"The complaint mentions 'River walk surface temperature unbearable. Installed temperature reads' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+AM-202431,Old city road subsidence near ancient step well. Heritage concern.,Heritage Damage,Standard,The complaint mentions 'heritage' indicating Heritage Damage.,
+AM-202435,Black metal road dividers storing heat. Motorists reporting burns on contact.,Heat Hazard,Standard,The complaint mentions 'heat' indicating Heat Hazard.,
+AM-202444,Restaurant waste bins overflowing on Sunday night. Health risk.,Waste,Standard,The complaint mentions 'waste' indicating Waste.,
+AM-202445,BRT shelter roof glass broken. Users exposed to full sun.,Other,Standard,"The complaint mentions 'BRT shelter roof glass broken. Users exposed to' which does not clearly map to any category, requiring review.",NEEDS_REVIEW

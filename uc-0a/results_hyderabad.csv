@@ -1,0 +1,16 @@
+complaint_id,description,category,priority,reason,flag
+GH-202401,Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,Flooding,Urgent,The complaint mentions 'flood' indicating Flooding.,
+GH-202402,Market area flooded. Traders suffering losses. Drain completely blocked.,Other,Standard,"The complaint mentions 'flood, drain' which maps to multiple categories, requiring review.",NEEDS_REVIEW
+GH-202406,Main stormwater drain 100% blocked with construction debris.,Other,Standard,"The complaint mentions 'debris, drain' which maps to multiple categories, requiring review.",NEEDS_REVIEW
+GH-202407,Drain blocked and mosquito breeding. Dengue concern.,Drain Blockage,Standard,The complaint mentions 'drain' indicating Drain Blockage.,
+GH-202410,Potholes causing vehicles to slow to 20kmph on fast road.,Pothole,Standard,The complaint mentions 'pothole' indicating Pothole.,
+GH-202411,Pothole swallowed entire motorcycle wheel. Rider hospitalised.,Pothole,Urgent,The complaint mentions 'pothole' indicating Pothole.,
+GH-202412,School bus struggling to navigate 6 potholes in 200m stretch.,Pothole,Urgent,The complaint mentions 'pothole' indicating Pothole.,
+GH-202417,Heritage zone garbage overflow. Tourist photographs showing piles of waste.,Other,Standard,"The complaint mentions 'garbage, heritage' which maps to multiple categories, requiring review.",NEEDS_REVIEW
+GH-202420,Construction drilling from 5am daily near residential towers.,Other,Standard,"The complaint mentions 'Construction drilling from 5am daily near residential towers.' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+GH-202422,Road collapsed partially. Crater 1m deep near residential gate.,Pothole,Urgent,The complaint mentions 'crater' indicating Pothole.,
+GH-202424,Underpass floods in light rain. Cars regularly abandoned.,Flooding,Standard,The complaint mentions 'flood' indicating Flooding.,
+GH-202428,Post-market waste not cleared. Area unusable by Sunday morning.,Waste,Standard,The complaint mentions 'waste' indicating Waste.,
+GH-202432,24hr supermarket delivery trucks idling with engines on.,Other,Standard,"The complaint mentions '24hr supermarket delivery trucks idling with engines on.' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
+GH-202448,Main drain blocked — entire locality at flooding risk this week.,Other,Standard,"The complaint mentions 'flood, drain' which maps to multiple categories, requiring review.",NEEDS_REVIEW
+GH-202438,Colony surrounded by fields that channel rainwater through main road.,Other,Standard,"The complaint mentions 'Colony surrounded by fields that channel rainwater through' which does not clearly map to any category, requiring review.",NEEDS_REVIEW
