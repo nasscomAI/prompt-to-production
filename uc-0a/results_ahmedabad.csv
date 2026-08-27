@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Description cites ""melting at 44°C. Footwear sticking. Park users"", indicating Heat Hazard with Standard priority.",
+AM-202402,Heat Hazard,Standard,"Description cites ""temperatures. Commuters refusing to use"", indicating Heat Hazard with Standard priority.",
+AM-202405,Other,Standard,"Description quotes ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."" but the category is ambiguous; flagged NEEDS_REVIEW for manual review.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Description cites ""heatwave conditions"", indicating Heat Hazard with Standard priority.",
+AM-202407,Road Damage,Urgent,"Description cites ""upturned paving. Child injured last week"", indicating Road Damage with Urgent priority.",
+AM-202410,Pothole,Standard,"Description cites ""Pothole on main highway causing morning rush la"", indicating Pothole with Standard priority.",
+AM-202414,Streetlight,Low,"Description cites ""unlit after 9pm. Wiring theft reported"", indicating Streetlight with Low priority.",
+AM-202417,Waste,Standard,"Description cites ""waste not cleared before morning. Heritage ar"", indicating Waste with Standard priority.",
+AM-202421,Noise,Low,"Description cites ""music audible at residential buildings at 2am"", indicating Noise with Low priority.",
+AM-202424,Road Damage,Standard,"Description cites ""road surface bubbling at 45°C. Visitor complaints"", indicating Road Damage with Standard priority.",
+AM-202429,Heat Hazard,Standard,"Description cites ""temperature unbearable. Installed temperature reads"", indicating Heat Hazard with Standard priority.",
+AM-202431,Road Damage,Standard,"Description cites ""subsidence near ancient step well. Heritage concer"", indicating Road Damage with Standard priority.",
+AM-202435,Heat Hazard,Standard,"Description cites ""heat. Motorists reporting burns on contact"", indicating Heat Hazard with Standard priority.",
+AM-202444,Waste,Standard,"Description cites ""waste bins overflowing on Sunday night. Healt"", indicating Waste with Standard priority.",
+AM-202445,Heat Hazard,Standard,"Description cites ""full sun"", indicating Heat Hazard with Standard priority.",
