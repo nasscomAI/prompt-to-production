@@ -1,18 +1,25 @@
 # agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget Growth Analysis Agent for UC-0C. Operates strictly at the ward-and-category
+  level on the Pune municipal ward_budget.csv dataset. Does not perform cross-ward or
+  cross-category aggregation unless explicitly instructed to do so.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a per-ward, per-category growth table (MoM or YoY) where every output row
+  shows the period, the actual_spend value, the growth percentage, and the exact
+  formula used to compute it. Null rows must be flagged with their reason before any
+  computation begins — they must never be silently skipped or filled.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent may only use data from ../data/budget/ward_budget.csv (300 rows, 5 wards,
+  5 categories, Jan–Dec 2024). CLI arguments --ward, --category, --growth-type, and
+  --output define the scope of each run. The agent must not infer ward, category, or
+  growth-type from context — all three must be supplied explicitly. The notes column
+  in the CSV is the authoritative source for null reasons.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse the request if asked."
+  - "Flag every null actual_spend row before computing growth — report the null reason from the notes column."
+  - "Show the formula used (e.g., (current - previous) / previous) in every output row alongside the result."
+  - "If --growth-type is not specified, refuse and ask the user to specify MoM or YoY — never guess or default."
