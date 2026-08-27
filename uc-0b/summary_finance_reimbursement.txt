@@ -1,0 +1,18 @@
+# Policy Summary: Employee Expense Reimbursement Policy (FIN-POL-007)
+Status: All specific obligations and multi-condition clauses preserved.
+
+## Key Clauses & Obligations
+- Clause 1.3: Claims must be submitted within 30 days of expense or they will NOT be processed.
+- Clause 2.2: Outstation travel requires pre-approval (Form FIN-T1) (must).
+- Clause 2.3: Air travel >500km allowed; Economy class is mandatory.
+- Clause 2.6: DA and meal receipts cannot be claimed simultaneously for the same day (must).
+- Clause 3.4: WFH equipment claims require original receipts within 60 days of written approval.
+- Clause 4.4: Repayment of training (100% within 12mo, 50% between 12-24mo) if leaving CMC.
+- Clause 5.3: Mobile/internet reimbursement requires original monthly bill; estimates not accepted.
+- Clause 6.2: Original receipts mandatory; photocopies/screenshots accepted ONLY if physical not issued.
+
+## Enforcement Validation
+- No Omission: All 8 mandatory clauses for FIN-POL-007 are addressed.
+- No Softening: Binding verbs (must, will, requires) are preserved.
+- No Scope Bleed: No external 'standard practices' or inferred rules added.
+- Condition Preservation: Multi-party approvals and reporting windows (e.g., 4hr limit) explicitly listed.

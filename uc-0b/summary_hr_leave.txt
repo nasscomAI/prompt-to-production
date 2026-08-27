@@ -1,0 +1,20 @@
+# Policy Summary: Employee Leave Policy (HR-POL-001)
+Status: All specific obligations and multi-condition clauses preserved.
+
+## Key Clauses & Obligations
+- Clause 2.3: Submit application at least 14 days in advance via Form HR-L1 (must).
+- Clause 2.4: Written approval required before leave starts; verbal is invalid (must).
+- Clause 2.5: Unapproved absence = Loss of Pay (LOP) regardless of subsequent approval (will).
+- Clause 2.6: Max 5 days carry-forward; excess forfeited on 31 Dec (may/forfeited).
+- Clause 2.7: Carry-forward days must be used Jan–Mar or forfeited (must).
+- Clause 3.2: Sick leave 3+ days requires medical certificate within 48hrs of return (requires).
+- Clause 3.4: Sick leave before/after holidays requires medical cert regardless of duration (requires).
+- Clause 5.2: LWP REQUIRES approval from BOTH Dept Head and HR Director (requires).
+- Clause 5.3: LWP >30 days requires Municipal Commissioner approval (requires).
+- Clause 7.2: Leave encashment during active service is NOT PERMITTED (not permitted).
+
+## Enforcement Validation
+- No Omission: All 10 mandatory clauses for HR-POL-001 are addressed.
+- No Softening: Binding verbs (must, will, requires) are preserved.
+- No Scope Bleed: No external 'standard practices' or inferred rules added.
+- Condition Preservation: Multi-party approvals and reporting windows (e.g., 4hr limit) explicitly listed.
