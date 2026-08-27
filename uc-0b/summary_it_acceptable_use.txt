@@ -1,0 +1,11 @@
+POLICY SUMMARY: policy_it_acceptable_use
+============================================================
+
+Section 2.1: Corporate devices (laptops, desktops, mobile phones issued by
+  CMC) must be used primarily for official work purposes.
+
+Section 2.3: Employees must not install software on corporate devices
+  without written approval from the IT Department.
+
+Section 3.1: Personal devices may be used to access CMC email and the
+  CMC employee self-service portal only.
