@@ -1,35 +1,51 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
-import argparse
-import csv
-
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def get_number(prompt):
+    """Get a valid float number from the user."""
+    while True:
+        user_input = input(prompt)
+        try:
+            return float(user_input)
+        except ValueError:
+            print("Invalid input. Please enter a number.")
 
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def get_operation():
+    """Get a valid operation from the user."""
+    valid_operations = {"+", "-", "*", "/"}
+    while True:
+        op = input("Choose an operation (+, -, *, /): ")
+        if op in valid_operations:
+            return op
+        print("Invalid operation. Please choose one of +, -, *, /.")
+
+
+def calculate(num1, num2, operation):
+    """Perform the chosen arithmetic operation."""
+    if operation == "+":
+        return num1 + num2
+    elif operation == "-":
+        return num1 - num2
+    elif operation == "*":
+        return num1 * num2
+    elif operation == "/":
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+            return None
+        return num1 / num2
+
+
+def main():
+    print("Simple Calculator")
+    print("-----------------")
+
+    first_number = get_number("Enter the first number: ")
+    second_number = get_number("Enter the second number: ")
+    operation = get_operation()
+
+    result = calculate(first_number, second_number, operation)
+
+    if result is not None:
+        print(f"Result: {first_number} {operation} {second_number} = {result}")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
-    args = parser.parse_args()
-    batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
+    main()
