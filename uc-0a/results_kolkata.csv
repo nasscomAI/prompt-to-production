@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Description mentions electrical issues or streetlights.,
+KM-202402,Other,Standard,Categorization ambiguous or unclassifiable.,NEEDS_REVIEW
+KM-202405,Other,Low,Categorization ambiguous or unclassifiable.,NEEDS_REVIEW
+KM-202409,Pothole,Low,Description mentions 'pothole'.,
+KM-202410,Pothole,Low,Description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'.,
+KM-202415,Flooding,Standard,Description mentions flooding or rainwater accumulation.,
+KM-202418,Waste,Standard,Description mentions waste or garbage accumulation.,
+KM-202421,Other,Urgent,Categorization ambiguous or unclassifiable. Priority set to Urgent because description contains 'hospital'.,NEEDS_REVIEW
+KM-202422,Other,Low,Categorization ambiguous or unclassifiable.,NEEDS_REVIEW
+KM-202426,Heritage Damage,Low,Description mentions damage to a heritage site.,
+KM-202430,Waste,Standard,Description mentions waste or garbage accumulation.,
+KM-202434,Heritage Damage,Standard,Description mentions damage to a heritage site.,
+KM-202436,Streetlight,Standard,Description mentions electrical issues or streetlights.,
+KM-202438,Noise,Standard,Description mentions noise issues like music or drilling.,

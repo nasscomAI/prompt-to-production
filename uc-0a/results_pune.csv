@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,Description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,Description mentions 'pothole'. Priority set to Urgent because description contains 'child'.,
+PM-202406,Flooding,Urgent,Description mentions flooding or rainwater accumulation. Priority set to Urgent because description contains 'stranded'.,
+PM-202408,Flooding,Standard,Description mentions flooding or rainwater accumulation.,
+PM-202410,Streetlight,Standard,Description mentions electrical issues or streetlights.,
+PM-202411,Streetlight,Urgent,Description mentions electrical issues or streetlights. Priority set to Urgent because description contains 'hazard'.,
+PM-202413,Waste,Standard,Description mentions waste or garbage accumulation.,
+PM-202418,Noise,Low,Description mentions noise issues like music or drilling.,
+PM-202419,Road Damage,Low,Description mentions road surface issues.,
+PM-202420,Other,Urgent,Categorization ambiguous or unclassifiable. Priority set to Urgent because description contains 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Description mentions flooding or rainwater accumulation.,
+PM-202428,Other,Low,Categorization ambiguous or unclassifiable.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,Description mentions electrical issues or streetlights.,
+PM-202433,Waste,Standard,Description mentions waste or garbage accumulation.,
+PM-202446,Other,Urgent,Categorization ambiguous or unclassifiable. Priority set to Urgent because description contains 'fell'.,NEEDS_REVIEW
