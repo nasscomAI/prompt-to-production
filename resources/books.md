@@ -22,3 +22,4 @@
 - [Prompt Engineering for Generative AI](https://www.oreilly.com/library/view/prompt-engineering-for/9781098153427/) by James Phoenix and Mike Taylor
 - [Prompt Engineering for LLMs](https://www.oreilly.com/library/view/prompt-engineering-for/9781098156145/) by John Berryman and Albert Ziegler
 - [Prompt Engineering for AI Systems](https://www.manning.com/books/prompt-engineering-for-ai-systems-cx) by Shivendra Srivastava and Naresh Vurukonda
+

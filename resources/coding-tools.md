@@ -28,3 +28,4 @@ own API key.
 * [Amp](https://ampcode.com/) - Amp is a frontier coding agent engineered to maximize what’s possible with today’s latest models—autonomous reasoning, comprehensive code editing, and complex task execution.
 * [Goose](https://github.com/block/goose) - Free, any LLM, supports local models (rust based)
 * [Aider](https://aider.chat/) - An open source free AI pair programming agent.
+
