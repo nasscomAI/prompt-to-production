@@ -1,0 +1,23 @@
+## policy_hr_leave.txt
+
+### Leave Entitlements
+- Clause 1.1: Every confirmed employee is entitled to 10 days of casual leave per calendar year.
+- Clause 1.2: Casual leave cannot be carried forward to the next calendar year; unused days lapse on 31 December.
+- Clause 1.3: Employees are entitled to 12 days of earned leave per year, which may be accumulated for up to 3 years (maximum 36 days).
+- Clause 1.4: Sick leave of 7 days per year is available; a medical certificate must be submitted for absences longer than 2 consecutive days.
+
+### Application Process
+- Clause 2.1: Leave applications must be submitted at least 3 working days in advance for planned absences.
+- Clause 2.2: Emergency leave may be applied for on the same day, but supporting documentation must be submitted within 48 hours of return.
+- Clause 2.3: Leave applications must be approved by the employee's direct manager before the absence begins; unapproved leave will be treated as Loss of Pay (LOP).
+
+### Restrictions and Prohibitions
+- Clause 3.1: Employees on probation are not entitled to casual or earned leave during the first 6 months of service.
+- Clause 3.2: Leave cannot be combined with public holidays to create an unbroken absence of more than 10 calendar days without prior written approval from HR.
+- Clause 3.3: Leave encashment is not permitted for casual leave under any circumstances.
+
+### Pay During Leave
+- Clause 4.1: Casual and earned leave are fully paid at the employee's basic salary rate.
+- Clause 4.2: Sick leave beyond the 7-day entitlement will be treated as LOP unless covered by a medical insurance claim pre-approved by HR.
+
+CLAUSES COVERED: 12 of 12
