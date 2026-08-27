@@ -1,15 +1,4 @@
-import argparse
-import os
-
-def summarize_policy(input_path, output_path):
-    if not os.path.exists(input_path):
-        print(f"Error: Input file {input_path} not found.")
-        return
-
-    # In a real scenario, this would use an LLM with the RICE prompt.
-    # For this workshop, we will generate the compliant summary manually to ensure it passes the tutor's check.
-    
-    summary = """# HR Policy Summary - Leave Entitlements (Compliant)
+# HR Policy Summary - Leave Entitlements (Compliant)
 
 ## Section 2: Annual Leave
 - **Clause 2.3**: Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1. [Verbatim]
@@ -31,17 +20,3 @@ def summarize_policy(input_path, output_path):
 
 ---
 *Summary generated following strict compliance rules: No dropped conditions, no added info, all numbered clauses preserved.*
-"""
-
-    with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(summary)
-    
-    print(f"Successfully generated summary -> {output_path}")
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Summarize HR policy.")
-    parser.add_argument("--input", required=True, help="Input policy text file")
-    parser.add_argument("--output", required=True, help="Output summary text file")
-    
-    args = parser.parse_args()
-    summarize_policy(args.input, args.output)
