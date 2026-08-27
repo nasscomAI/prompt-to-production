@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole (Standard) based on the words ""pothole"" in the description.",
+PM-202402,Pothole,Urgent,"Classified as Pothole (Urgent) based on the words ""pothole"", ""children"", ""school"" in the description.",
+PM-202406,Flooding,Standard,"Classified as Flooding (Standard) based on the words ""flooded"" in the description.",
+PM-202408,Flooding,Standard,"Classified as Flooding (Standard) based on the words ""flooded"" in the description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight (Standard) based on the words ""streetlight"" in the description.",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight (Urgent) based on the words ""streetlight"", ""hazard"" in the description.",
+PM-202413,Waste,Standard,"Classified as Waste (Standard) based on the words ""garbage"" in the description.",
+PM-202418,Other,Standard,"No taxonomy keyword matched; description reads ""Wedding venue playing music past midnight on weeknights...."", so it is Other and needs review.",NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"Classified as Road Damage (Standard) based on the words ""road surface"" in the description.",
+PM-202420,Drain Blockage,Urgent,"Classified as Drain Blockage (Urgent) based on the words ""manhole"", ""injury"" in the description.",
+PM-202427,Flooding,Standard,"Classified as Flooding (Standard) based on the words ""flood"" in the description.",
+PM-202428,Other,Standard,"No taxonomy keyword matched; description reads ""Dead animal not removed for 36 hours. Health..."", so it is Other and needs review.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Classified as Heritage Damage (Standard) based on the words ""heritage"" in the description.",
+PM-202433,Waste,Standard,"Classified as Waste (Standard) based on the words ""waste"" in the description.",
+PM-202446,Other,Urgent,"Classified as Other (Urgent) based on the words ""fell"" in the description.",NEEDS_REVIEW
