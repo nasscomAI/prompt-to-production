@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Classified based on: Tarmac surface melting at 44°C. Footwear sticking. Park...,NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,Classified based on: Metal bus shelter reaching dangerous temperatures. Commuters refusing...,
+AM-202405,Other,Standard,Classified based on: Dead trees with split branches. Fall risk to...,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified based on: Irrigation system broken. Grass dying in heatwave conditions.,
+AM-202407,Other,Urgent,Classified based on: Broken bench and upturned paving. Child injured last...,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified based on: Pothole on main highway causing morning rush lane...,
+AM-202414,Other,Standard,Classified based on: Residential colony unlit after 9pm. Wiring theft reported.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified based on: Night market waste not cleared before morning. Heritage...,
+AM-202421,Noise,Standard,Classified based on: Club music audible at residential buildings at 2am.,
+AM-202424,Road Damage,Standard,Classified based on: Zoo approach road surface bubbling at 45°C. Visitor...,
+AM-202429,Heat Hazard,Standard,Classified based on: River walk surface temperature unbearable. Installed temperature reads...,
+AM-202431,Heritage Damage,Standard,Classified based on: Old city road subsidence near ancient step well....,
+AM-202435,Heat Hazard,Standard,Classified based on: Black metal road dividers storing heat. Motorists reporting...,
+AM-202444,Waste,Standard,Classified based on: Restaurant waste bins overflowing on Sunday night. Health...,
+AM-202445,Other,Standard,Classified based on: BRT shelter roof glass broken. Users exposed to...,NEEDS_REVIEW
