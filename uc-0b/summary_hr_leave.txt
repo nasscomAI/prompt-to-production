@@ -1,15 +1,4 @@
-"""
-UC-0B app.py
-"""
-import argparse
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-
-    summary = """HR Leave Policy Summary:
+HR Leave Policy Summary:
 Clause 2.3: 14-day advance notice required.
 Clause 2.4: Written approval required before leave commences. Verbal not valid.
 Clause 2.5: Unapproved absence = LOP regardless of subsequent approval.
@@ -20,10 +9,3 @@ Clause 3.4: Sick leave before/after holiday requires cert regardless of duration
 Clause 5.2: LWP requires Department Head AND HR Director approval.
 Clause 5.3: LWP >30 days requires Municipal Commissioner approval.
 Clause 7.2: Leave encashment during service not permitted under any circumstances.
-"""
-    with open(args.output, "w") as f:
-        f.write(summary)
-    print(f"Summary written to {args.output}")
-
-if __name__ == "__main__":
-    main()
