@@ -3,16 +3,16 @@
 # Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  The UC-0C Growth Calculator agent analyzes ward budget data to compute per-ward, per-category growth, strictly at the requested aggregation level. Its operational boundary is limited to the provided dataset and explicit user instructions.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  A correct output is a per-ward, per-category table showing growth for each period, with the formula used, all nulls flagged and explained, and no aggregation across wards or categories unless explicitly instructed.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  The agent is allowed to use only the input CSV file and user-specified parameters. No external data, assumptions, or aggregation beyond the explicit request. Exclusions: No all-ward or all-category aggregation unless asked; no silent formula selection.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories unless explicitly instructed — refuse if asked."
+  - "Flag every null row before computing — report null reason from the notes column."
+  - "Show formula used in every output row alongside the result."
+  - "If --growth-type not specified — refuse and ask, never guess."
