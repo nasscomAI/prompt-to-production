@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Categorized as Heritage Damage based on keywords: heritage.,
+KM-202402,Other,Standard,No clear category match found.,NEEDS_REVIEW
+KM-202405,Other,Standard,No clear category match found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Categorized as Pothole based on keywords: pothole.,
+KM-202410,Pothole,Standard,Categorized as Pothole based on keywords: pothole.,
+KM-202411,Pothole,Standard,Categorized as Pothole based on keywords: pothole.,
+KM-202415,Drain Blockage,Standard,Categorized as Drain Blockage based on keywords: drain.,
+KM-202418,Waste,Standard,Categorized as Waste based on keywords: waste.,
+KM-202421,Road Damage,Urgent,"Categorized as Road Damage based on keywords: sinking, hospital. Urgent due to severity keyword: hospital.",
+KM-202422,Road Damage,Standard,Categorized as Road Damage based on keywords: road surface.,
+KM-202426,Heritage Damage,Standard,Categorized as Heritage Damage based on keywords: heritage.,
+KM-202430,Waste,Standard,Categorized as Waste based on keywords: smell.,
+KM-202434,Heritage Damage,Standard,Categorized as Heritage Damage based on keywords: heritage.,
+KM-202436,Other,Standard,No clear category match found.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Categorized as Heritage Damage based on keywords: heritage.,

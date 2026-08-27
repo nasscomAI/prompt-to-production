@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No clear category match found.,NEEDS_REVIEW
+AM-202402,Other,Standard,No clear category match found.,NEEDS_REVIEW
+AM-202405,Other,Standard,No clear category match found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Categorized as Heat Hazard based on keywords: heat.,
+AM-202407,Other,Urgent,Categorized as Other based on keywords: child. Urgent due to severity keyword: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Categorized as Pothole based on keywords: pothole.,
+AM-202414,Other,Standard,No clear category match found.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Categorized as Waste based on keywords: waste.,
+AM-202421,Noise,Standard,Categorized as Noise based on keywords: music.,
+AM-202424,Road Damage,Standard,Categorized as Road Damage based on keywords: road surface.,
+AM-202429,Other,Standard,No clear category match found.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,Categorized as Heritage Damage based on keywords: heritage.,
+AM-202435,Heat Hazard,Standard,Categorized as Heat Hazard based on keywords: heat.,
+AM-202444,Waste,Standard,Categorized as Waste based on keywords: waste.,
+AM-202445,Other,Standard,No clear category match found.,NEEDS_REVIEW

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Categorized as Pothole based on keywords: pothole.,
+PM-202402,Pothole,Urgent,"Categorized as Pothole based on keywords: pothole, child. Urgent due to severity keyword: child.",
+PM-202406,Flooding,Standard,Categorized as Flooding based on keywords: flooded.,
+PM-202408,Flooding,Standard,Categorized as Flooding based on keywords: flooded.,
+PM-202410,Streetlight,Standard,Categorized as Streetlight based on keywords: streetlight.,
+PM-202411,Streetlight,Urgent,"Categorized as Streetlight based on keywords: streetlight, hazard. Urgent due to severity keyword: hazard.",
+PM-202413,Waste,Standard,Categorized as Waste based on keywords: garbage.,
+PM-202418,Noise,Standard,Categorized as Noise based on keywords: music.,
+PM-202419,Road Damage,Standard,Categorized as Road Damage based on keywords: road surface.,
+PM-202420,Other,Urgent,Categorized as Other based on keywords: injury. Urgent due to severity keyword: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Categorized as Flooding based on keywords: flood.,
+PM-202428,Waste,Standard,Categorized as Waste based on keywords: dead animal.,
+PM-202430,Streetlight,Standard,Categorized as Streetlight based on keywords: lights out.,
+PM-202433,Waste,Standard,Categorized as Waste based on keywords: waste.,
+PM-202446,Other,Urgent,Categorized as Other based on keywords: fell. Urgent due to severity keyword: fell.,NEEDS_REVIEW
