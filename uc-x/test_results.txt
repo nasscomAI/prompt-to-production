@@ -1,0 +1,26 @@
+CMC Policy Information Agent — Test Verification Log
+
+Question 1: Can I carry forward unused annual leave?
+Agent: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December. [policy_hr_leave.txt Section 2.6]
+
+Question 2: Can I install Slack on my work laptop?
+Agent: Employees must not install software on corporate devices without written approval from the IT Department. [policy_it_acceptable_use.txt Section 2.3]
+
+Question 3: What is the home office equipment allowance?
+Agent: Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000. [policy_finance_reimbursement.txt Section 3.1]
+
+Question 4 (The Trap): Can I use my personal phone for work files from home?
+Agent: Personal devices may be used to access CMC email and the CMC employee self-service portal only. [policy_it_acceptable_use.txt Section 3.1]
+
+Question 5 (Refusal): What is the company view on flexible working culture?
+Agent: This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact [relevant team] for guidance.
+
+Question 6: Can I claim DA and meal receipts on the same day?
+Agent: DA and meal receipts cannot be claimed simultaneously for the same day. [policy_finance_reimbursement.txt Section 2.6]
+
+Question 7: Who approves leave without pay?
+Agent: LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient. [policy_hr_leave.txt Section 5.2]
+
+VERIFICATION STATUS: ALL TESTS PASSED (RICE-COMPLIANT)
