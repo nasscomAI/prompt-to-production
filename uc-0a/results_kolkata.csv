@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+KM-202402,Heritage Damage,Standard,"Description mentions 'historic', so category is Heritage Damage and priority is Standard.",
+KM-202405,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+KM-202409,Pothole,Standard,"Description mentions 'pothole', so category is Pothole and priority is Standard.",
+KM-202410,Pothole,Standard,"Description mentions 'pothole', so category is Pothole and priority is Standard.",
+KM-202411,Pothole,Standard,"Description mentions 'pothole', so category is Pothole and priority is Standard.",
+KM-202415,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+KM-202418,Waste,Low,"Description mentions 'waste', so category is Waste and priority is Low.",NEEDS_REVIEW
+KM-202421,Road Damage,Urgent,"Description mentions 'sinking' and severity keyword 'hospital', so category is Road Damage and priority is Urgent.",
+KM-202422,Road Damage,Standard,"Description mentions 'road surface', so category is Road Damage and priority is Standard.",
+KM-202426,Heritage Damage,Standard,"Description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+KM-202430,Waste,Low,"Description mentions 'smell', so category is Waste and priority is Low.",
+KM-202434,Heritage Damage,Standard,"Description mentions 'heritage', so category is Heritage Damage and priority is Standard.",
+KM-202436,Streetlight,Standard,"Description mentions 'darkness', so category is Streetlight and priority is Standard.",
+KM-202438,Heritage Damage,Standard,"Description mentions 'heritage', so category is Heritage Damage and priority is Standard.",

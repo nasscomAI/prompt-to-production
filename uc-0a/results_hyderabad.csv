@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions 'flood' and severity keyword 'ambulance', so category is Flooding and priority is Urgent.",
+GH-202402,Flooding,Standard,"Description mentions 'flood', so category is Flooding and priority is Standard.",
+GH-202406,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+GH-202407,Drain Blockage,Standard,"Description mentions 'drain blocked', so category is Drain Blockage and priority is Standard.",
+GH-202410,Pothole,Standard,"Description mentions 'pothole', so category is Pothole and priority is Standard.",
+GH-202411,Pothole,Urgent,"Description mentions 'pothole' and severity keyword 'hospital', so category is Pothole and priority is Urgent.",
+GH-202412,Pothole,Urgent,"Description mentions 'pothole' and severity keyword 'school', so category is Pothole and priority is Urgent.",
+GH-202417,Waste,Low,"Description mentions 'garbage', so category is Waste and priority is Low.",NEEDS_REVIEW
+GH-202420,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+GH-202422,Pothole,Urgent,"Description mentions 'crater' and severity keyword 'collapse', so category is Pothole and priority is Urgent.",
+GH-202424,Flooding,Standard,"Description mentions 'flood', so category is Flooding and priority is Standard.",
+GH-202428,Waste,Low,"Description mentions 'waste', so category is Waste and priority is Low.",
+GH-202432,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,
+GH-202448,Flooding,Standard,"Description mentions 'flood', so category is Flooding and priority is Standard.",NEEDS_REVIEW
+GH-202438,Other,Standard,Complaint text could not be matched to a strong category; category set to Other.,

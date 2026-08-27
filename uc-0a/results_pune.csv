@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions 'pothole', so category is Pothole and priority is Standard.",
+PM-202402,Pothole,Urgent,"Description mentions 'pothole' and severity keyword 'child', so category is Pothole and priority is Urgent.",
+PM-202406,Flooding,Standard,"Description mentions 'flood', so category is Flooding and priority is Standard.",
+PM-202408,Flooding,Standard,"Description mentions 'flood', so category is Flooding and priority is Standard.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Description mentions 'streetlight', so category is Streetlight and priority is Standard.",
+PM-202411,Streetlight,Urgent,"Description mentions 'streetlight' and severity keyword 'hazard', so category is Streetlight and priority is Urgent.",
+PM-202413,Waste,Low,"Description mentions 'garbage', so category is Waste and priority is Low.",
+PM-202418,Noise,Low,"Description mentions 'music', so category is Noise and priority is Low.",
+PM-202419,Road Damage,Standard,"Description mentions 'cracked', so category is Road Damage and priority is Standard.",
+PM-202420,Road Damage,Urgent,"Description mentions 'manhole cover missing' and severity keyword 'injury', so category is Road Damage and priority is Urgent.",
+PM-202427,Flooding,Standard,"Description mentions 'flood', so category is Flooding and priority is Standard.",
+PM-202428,Waste,Low,"Description mentions 'dead animal', so category is Waste and priority is Low.",
+PM-202430,Streetlight,Standard,"Description mentions 'lights out', so category is Streetlight and priority is Standard.",NEEDS_REVIEW
+PM-202433,Waste,Low,"Description mentions 'waste', so category is Waste and priority is Low.",
+PM-202446,Road Damage,Urgent,"Description mentions 'footpath tiles' and severity keyword 'fell', so category is Road Damage and priority is Urgent.",
