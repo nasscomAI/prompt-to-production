@@ -1,0 +1,16 @@
+id,category,priority,reason,flag
+N/A,Road Damage,Standard,Classified as Road Damage with Standard priority based on description details (citing: tarmac).,
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: heat, wave, broken).",NEEDS_REVIEW
+N/A,Road Damage,Urgent,"Classified as Road Damage with Urgent priority based on description details (citing: child, broken).",
+N/A,Pothole,Standard,"Classified as Pothole with Standard priority based on description details (citing: pothole, hole).",
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: waste, heritage).",NEEDS_REVIEW
+N/A,Noise,Standard,Classified as Noise with Standard priority based on description details (citing: music).,
+N/A,Road Damage,Standard,Classified as Road Damage with Standard priority based on description details (citing: road).,
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: heritage, road).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: heat, road).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: sun, waste).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: sun, broken).",NEEDS_REVIEW

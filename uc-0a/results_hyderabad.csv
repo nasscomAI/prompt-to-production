@@ -1,0 +1,16 @@
+id,category,priority,reason,flag
+N/A,Flooding,Urgent,"Classified as Flooding with Urgent priority based on description details (citing: ambulance, flood).",
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: drain, flood).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: water, drain).",NEEDS_REVIEW
+N/A,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority based on description details (citing: drain).,
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: hole, road, pothole).",NEEDS_REVIEW
+N/A,Pothole,Urgent,"Classified as Pothole with Urgent priority based on description details (citing: hole, hospital, pothole).",
+N/A,Pothole,Urgent,"Classified as Pothole with Urgent priority based on description details (citing: hole, school, pothole).",
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: hot, waste, garbage, heritage).",NEEDS_REVIEW
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Road Damage,Urgent,"Classified as Road Damage with Urgent priority based on description details (citing: road, collapse).",
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: light, flood).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: waste, sun).",NEEDS_REVIEW
+N/A,Other,Standard,Classified as Other with Standard priority based on description details.,NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: drain, flood).",NEEDS_REVIEW
+N/A,Other,Standard,"Classified as Other with Standard priority based on description details (citing: road, water).",NEEDS_REVIEW
