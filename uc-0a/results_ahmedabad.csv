@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'mac surface melting at 44°C. Footw' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202402,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'g dangerous temperatures. Commuters ref' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202405,Other,Urgent,Classified as 'Other' citing 'Dead trees with spl' and assigned 'Urgent' priority due to safety trigger 't branches. Fall risk to walker'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'ss dying in heatwave conditions' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202407,Road Damage,Urgent,Classified as 'Road Damage' citing 'nd upturned paving. Child injured' and assigned 'Urgent' priority due to safety trigger 'ned paving. Child injured last w'.,
+AM-202410,Pothole,Standard,Classified as 'Pothole' citing 'Pothole on main highwa' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202414,Streetlight,Standard,Classified as 'Streetlight' citing 'tial colony unlit after 9pm. Wir' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202417,Waste,Standard,Classified as 'Waste' citing 'ight market waste not cleared be' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202421,Noise,Standard,Classified as 'Noise' citing 'Club music audible at res' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202424,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'oad surface bubbling at 45°C. Visit' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202429,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'alk surface temperature unbearable. In' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202431,Heritage Damage,Standard,Classified as 'Heritage Damage' citing 'idence near ancient step well. Her' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202435,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'ad dividers storing heat. Motorists rep' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202444,Waste,Standard,Classified as 'Waste' citing 'Restaurant waste bins overflowi' with 'Standard' priority as no severe life-safety keywords were found.,
+AM-202445,Heat Hazard,Standard,Classified as 'Heat Hazard' citing 'exposed to full sun' with 'Standard' priority as no severe life-safety keywords were found.,
