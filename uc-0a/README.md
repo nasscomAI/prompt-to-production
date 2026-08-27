@@ -20,6 +20,18 @@ uc-0a/results_[your-city].csv
 python classifier.py \
   --input ../data/city-test-files/test_pune.csv \
   --output results_pune.csv
+
+python classifier.py \
+  --input ../data/city-test-files/test_hyderabad.csv \
+  --output results_hyderabad.csv
+
+python classifier.py \
+  --input ../data/city-test-files/test_ahmedabad.csv \
+  --output results_ahmedabad.csv
+
+python classifier.py \
+  --input ../data/city-test-files/test_bangalore.csv \
+  --output results_bangalore.csv
 ```
 
 ---

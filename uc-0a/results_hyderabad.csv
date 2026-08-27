@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Matched category 'Flooding' due to words: flood. Triggered 'Urgent' priority due to severity words: ambulance.,
+GH-202402,Flooding,Standard,"Matched category 'Flooding' due to words: flood, drain. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202406,Flooding,Standard,"Matched category 'Flooding' due to words: water, drain. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"Matched category 'Drain Blockage' due to words: drain. No severity keywords found, defaulting to 'Standard'.",
+GH-202410,Pothole,Standard,"Matched category 'Pothole' due to words: pothole. No severity keywords found, defaulting to 'Standard'.",
+GH-202411,Pothole,Urgent,Matched category 'Pothole' due to words: pothole. Triggered 'Urgent' priority due to severity words: hospital.,
+GH-202412,Pothole,Urgent,Matched category 'Pothole' due to words: pothole. Triggered 'Urgent' priority due to severity words: school.,
+GH-202417,Waste,Standard,"Matched category 'Waste' due to words: garbage, waste, heritage. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202420,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202422,Other,Urgent,No specific category keywords found. Triggered 'Urgent' priority due to severity words: collapse.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,"Matched category 'Flooding' due to words: flood, light. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202428,Waste,Standard,"Matched category 'Waste' due to words: waste. No severity keywords found, defaulting to 'Standard'.",
+GH-202432,Other,Standard,"No specific category keywords found. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Matched category 'Flooding' due to words: flood, drain. No severity keywords found, defaulting to 'Standard'.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Matched category 'Flooding' due to words: water. No severity keywords found, defaulting to 'Standard'.",
