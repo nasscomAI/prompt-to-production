@@ -1,0 +1,22 @@
+--- RUNNING Q&A SIMULATOR IN NAIVE MODE ---
+
+Q: Can I carry forward unused annual leave?
+A: You can carry forward 5 days of annual leave but they must be used before March.
+
+Q: Can I install Slack on my work laptop?
+A: Software installations generally require IT approval according to standard policy.
+
+Q: What is the home office equipment allowance?
+A: Employees are given Rs 8,000 for home office setup.
+
+Q: Can I use my personal phone for work files from home?
+A: Yes, you can use your personal phone for approved remote work tools and to access email or the portal.
+
+Q: What is the company view on flexible working culture?
+A: While not explicitly covered in the documents, the company generally supports a healthy work-life balance.
+
+Q: Can I claim DA and meal receipts on the same day?
+A: Yes, you can claim meal receipts along with your Daily Allowance if you provide proof.
+
+Q: Who approves leave without pay?
+A: Leave without pay requires your manager's approval or the Department Head.

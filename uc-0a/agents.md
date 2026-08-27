@@ -1,18 +1,88 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A — Agents
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## 1. Baseline Prompt
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+Classify the complaint into:
+- sanitation
+- water
+- roads
+- electricity
+- others
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+Complaint: {input}
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+Return only category.
+
+---
+
+## Baseline Output Examples
+
+Input: Garbage not collected  
+Output: sanitation  
+
+Input: Water not coming  
+Output: water  
+
+---
+
+## Issues with Baseline
+
+- No strict rules
+- Can be inconsistent
+- No handling of unclear inputs
+- No priority understanding
+
+---
+
+## 2. Improved Prompt (RICE)
+
+ROLE:
+You are a strict municipal complaint classification system.
+
+INSTRUCTIONS:
+Classify complaint into exactly one:
+- sanitation
+- water
+- roads
+- electricity
+- others
+
+CONTEXT:
+Complaints may be vague. Choose most critical issue.
+
+EXAMPLES:
+Garbage not collected → sanitation  
+Water leakage → water  
+Potholes on road → roads  
+Power cut → electricity  
+Noise issue → others  
+
+ENFORCEMENT:
+- Only one category
+- No explanation
+- If unclear → others
+
+INPUT:
+{complaint}
+
+OUTPUT:
+<category>
+
+---
+
+## Improved Output Examples
+
+Input: Garbage not collected  
+Output: sanitation  
+
+Input: Multiple issues but major is water  
+Output: water  
+
+---
+
+## Improvements
+
+- Structured output
+- Consistent classification
+- Handles ambiguity
+- Enforced rules

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified based on explicit keywords: flood/rain and severity 'ambulance'.,
+GH-202402,Flooding,Low,Classified based on explicit keywords: flood/rain.,NEEDS_REVIEW
+GH-202406,Flooding,Low,Classified based on explicit keywords: flood/rain.,NEEDS_REVIEW
+GH-202407,Flooding,Low,Classified based on explicit keywords: flood/rain.,NEEDS_REVIEW
+GH-202410,Pothole,Low,Classified based on explicit keywords: pothole/crater.,
+GH-202411,Pothole,Urgent,Classified based on explicit keywords: pothole/crater and severity 'hospital'.,
+GH-202412,Pothole,Urgent,Classified based on explicit keywords: pothole/crater and severity 'school'.,
+GH-202417,Waste,Low,Classified based on explicit keywords: garbage/waste.,NEEDS_REVIEW
+GH-202420,Other,Low,Classified based on explicit keywords: None.,
+GH-202422,Pothole,Urgent,Classified based on explicit keywords: pothole/crater and severity 'collapse'.,
+GH-202424,Flooding,Low,Classified based on explicit keywords: flood/rain.,
+GH-202428,Waste,Low,Classified based on explicit keywords: garbage/waste.,
+GH-202432,Other,Low,Classified based on explicit keywords: None.,
+GH-202448,Flooding,Low,Classified based on explicit keywords: flood/rain.,NEEDS_REVIEW
+GH-202438,Flooding,Low,Classified based on explicit keywords: flood/rain.,NEEDS_REVIEW
