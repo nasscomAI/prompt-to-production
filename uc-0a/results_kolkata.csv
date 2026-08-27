@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The complaint is categorized as 'Heritage Damage' and lacks urgent keywords, based on the text starting with 'Heritage lamp post...'.",
+KM-202402,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Historic tram road...'.",NEEDS_REVIEW
+KM-202405,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Wedding band playing...'.",NEEDS_REVIEW
+KM-202409,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Airport access road...'.",NEEDS_REVIEW
+KM-202410,Pothole,Standard,"The complaint is categorized as 'Pothole' and lacks urgent keywords, based on the text starting with 'Pothole causing tyre...'.",
+KM-202411,Pothole,Standard,"The complaint is categorized as 'Pothole' and lacks urgent keywords, based on the text starting with 'Deep pothole filling...'.",
+KM-202415,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'New residential complex...'.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"The complaint is categorized as 'Waste' and lacks urgent keywords, based on the text starting with 'Tourist zone waste...'.",
+KM-202421,Other,Urgent,The priority is Urgent because the complaint text explicitly mentions the word 'hospital'.,NEEDS_REVIEW
+KM-202422,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Road surface buckled...'.",NEEDS_REVIEW
+KM-202426,Heritage Damage,Standard,"The complaint is categorized as 'Heritage Damage' and lacks urgent keywords, based on the text starting with 'Heritage residential building...'.",
+KM-202430,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Road subsided near...'.",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"The complaint is categorized as 'Heritage Damage' and lacks urgent keywords, based on the text starting with 'Street paving removed...'.",
+KM-202436,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Entire colony substation...'.",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"The complaint is categorized as 'Heritage Damage' and lacks urgent keywords, based on the text starting with 'Street vendors using...'.",

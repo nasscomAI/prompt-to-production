@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The complaint is categorized as 'Pothole' and lacks urgent keywords, based on the text starting with 'Large pothole 60cm...'.",
+PM-202402,Pothole,Urgent,The priority is Urgent because the complaint text explicitly mentions the word 'child'.,
+PM-202406,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Underpass flooded knee-deep...'.",NEEDS_REVIEW
+PM-202408,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Bus stand flooded....'.",NEEDS_REVIEW
+PM-202410,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Three consecutive streetlights...'.",NEEDS_REVIEW
+PM-202411,Other,Urgent,The priority is Urgent because the complaint text explicitly mentions the word 'hazard'.,NEEDS_REVIEW
+PM-202413,Waste,Standard,"The complaint is categorized as 'Waste' and lacks urgent keywords, based on the text starting with 'Overflowing garbage bins...'.",
+PM-202418,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Wedding venue playing...'.",NEEDS_REVIEW
+PM-202419,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Road surface cracked...'.",NEEDS_REVIEW
+PM-202420,Other,Urgent,The priority is Urgent because the complaint text explicitly mentions the word 'injury'.,NEEDS_REVIEW
+PM-202427,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Bridge approach floods...'.",NEEDS_REVIEW
+PM-202428,Other,Standard,"The complaint is categorized as 'Other' and lacks urgent keywords, based on the text starting with 'Dead animal not...'.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The complaint is categorized as 'Heritage Damage' and lacks urgent keywords, based on the text starting with 'Heritage street, lights...'.",
+PM-202433,Waste,Standard,"The complaint is categorized as 'Waste' and lacks urgent keywords, based on the text starting with 'Bulk waste from...'.",
+PM-202446,Other,Urgent,The priority is Urgent because the complaint text explicitly mentions the word 'fell'.,NEEDS_REVIEW
