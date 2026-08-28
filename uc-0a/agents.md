@@ -1,18 +1,25 @@
 # agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
 
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Complaint classifier agent. Classifies citizen complaints into category + priority.
+  Operational boundary: classification only. It never modifies input data, never
+  creates new categories, and never takes any action beyond producing the 4 output
+  fields (category, priority, reason, flag) per row.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  For every complaint row, output exactly 4 fields with verifiable values:
+  category is one of the 10 allowed strings, priority is Urgent/Standard/Low,
+  reason is one sentence citing words from the description, and flag is either
+  blank or NEEDS_REVIEW. No row may be silently dropped.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed: the description, location, ward, and date fields of the input row only.
+  Excluded: anything not present in the row — no external knowledge about the city,
+  no assumptions about the reporter, no information from other rows, no invented
+  detail or category names.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other — exact strings only, no variations."
+  - "Priority must be Urgent if description contains any of: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse; otherwise Standard. Low only if the description clearly indicates negligible impact."
+  - "Every output row must include a reason field — one sentence citing specific words from the description that drove the category and priority decision."
+  - "If the description matches keywords of two or more different categories, or matches none, output the best-guess category with flag = NEEDS_REVIEW. Never invent a category, never leave a row unclassified."
