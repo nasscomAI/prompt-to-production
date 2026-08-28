@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because of 'flooding' indicators ('flood', 'flooded', 'rain') and marked Urgent due to safety keyword(s) ('ambulance') in the description.",
+GH-202402,Other,Standard,"The complaint matches multiple potential categories (Flooding, Drain Blockage) and is genuinely ambiguous.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority due to 'drain blockage' indicators ('drain') in the description.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority due to 'drain blockage' indicators ('drain') in the description.,
+GH-202410,Pothole,Standard,"Classified as Pothole with Standard priority due to 'pothole' indicators ('pothole', 'potholes') in the description.",
+GH-202411,Pothole,Urgent,Classified as Pothole because of 'pothole' indicators ('pothole') and marked Urgent due to safety keyword(s) ('hospital') in the description.,
+GH-202412,Pothole,Urgent,"Classified as Pothole because of 'pothole' indicators ('pothole', 'potholes') and marked Urgent due to safety keyword(s) ('school') in the description.",
+GH-202417,Other,Standard,"The complaint matches multiple potential categories (Waste, Heritage Damage) and is genuinely ambiguous.",NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise with Standard priority due to 'noise' indicators ('drilling') in the description.,
+GH-202422,Road Damage,Urgent,"Classified as Road Damage because of 'road damage' indicators ('road collapsed', 'crater') and marked Urgent due to safety keyword(s) ('collapse') in the description.",
+GH-202424,Flooding,Standard,"Classified as Flooding with Standard priority due to 'flooding' indicators ('flood', 'floods', 'rain') in the description.",
+GH-202428,Waste,Standard,Classified as Waste with Standard priority due to 'waste' indicators ('waste') in the description.,
+GH-202432,Other,Standard,The complaint does not match any predefined category keywords and requires manual classification.,NEEDS_REVIEW
+GH-202448,Other,Standard,"The complaint matches multiple potential categories (Flooding, Drain Blockage) and is genuinely ambiguous.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified as Flooding with Standard priority due to 'flooding' indicators ('rainwater', 'rain') in the description.",
