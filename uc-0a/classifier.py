@@ -146,7 +146,8 @@ def classify_complaint(row: dict) -> dict:
             all_cites = []
             for cat in categories:
                 words = [m.group(0) for m in re.finditer(category_patterns[cat], desc_lower)]
-                all_cites.append(f"'{cat}' ({', '.join([f"'{w}'" for w in set(words)])})")
+                word_cites = ", ".join(f"'{w}'" for w in set(words))
+                all_cites.append(f"'{cat}' ({word_cites})")
             cats_str = " and ".join(all_cites)
             reason = f"The description contains competing indicators for {cats_str}, but does not establish which condition should be treated as the primary complaint."
         else:
