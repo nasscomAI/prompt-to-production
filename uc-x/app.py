@@ -46,6 +46,7 @@ QUERY_MODIFIERS = {
     "together", "what", "when", "how", "long", "late", "much", "pay", "need", "before", "after",
     "instead", "addition", "don't", "don", "t", "receive", "receiving", "claiming", "available",
     "deadline", "needs", "slack", "benefit", "information", "store", "next", "year", "happens", "into", "expire", "needed", "someone",
+    "too", "become",
 }
 # Policy-domain nouns used only to detect incompatible multi-document questions.
 DOMAIN_TERMS = {
@@ -62,6 +63,7 @@ INTENT_CUES = {
     "access": {"access", "email", "portal", "network", "file", "data"},
     "prohibition": {"cannot", "not", "prohibit", "must", "only"},
     "carry_forward": {"carry", "forward", "forfeit"},
+    "expiry": {"expire", "expiry", "lapse", "lapsed", "forfeit", "forfeited"},
     "encashment": {"encash", "retirement", "resignation"},
     "amount": {"amount", "much", "rs", "cost", "maximum", "per"},
 }
@@ -195,7 +197,7 @@ def _score(question: str, section: Section, idf: dict[str, float]) -> float:
     # its two words a short distance apart. It is stronger than either word alone.
     pair_words = [word for word in query_words if word not in {"a", "an", "the", "of", "to", "for", "in", "on", "my", "i", "can"}]
     for first, second in zip(pair_words, pair_words[1:]):
-        if (first not in GENERIC_TERMS or second not in GENERIC_TERMS) and {first, second} <= body_terms:
+        if first not in GENERIC_TERMS and second not in GENERIC_TERMS and {first, second} <= body_terms | heading_terms:
             score += 2.0 * (idf.get(first, 0.0) + idf.get(second, 0.0))
     if {"reimbursement", "claim", "submit"} <= set(query_words) and {"reimbursement", "claim", "submit"} <= body_terms:
         score += 20.0
@@ -306,6 +308,15 @@ def answer_question(question: str, index: dict[str, dict[str, Section]]) -> str:
     ranked = sorted(((_score(question, section, idf), section) for section in sections), reverse=True, key=lambda item: item[0])
     best_score, best = ranked[0]
     runner_up_score, runner_up = ranked[1]
+    # An approval question that names a specific body ("does the IT department
+    # approve ...?") must be answered by a clause that itself names that body;
+    # otherwise an answer would imply the policy takes a position on a body it
+    # never mentions.
+    named_body = re.search(r"\bdoes\s+(?:the\s+)?([a-z]+)\s+(?:department|team|committee)\b", question.lower())
+    if named_body and "approval" in question_intents and not (
+        set(_normalise(f"{named_body.group(1)} department")) <= set(_normalise(best.searchable_text))
+    ):
+        return REFUSAL
     query_terms = words - GENERIC_TERMS
     matched_terms = query_terms & set(_normalise(best.searchable_text))
     # Intent overlap is evidence too: the intent machinery is what links a
