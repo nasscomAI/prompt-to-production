@@ -1,16 +1,8 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Policy Q&A Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- `retrieve_documents`
+  - Input: list of policy file paths.
+  - Output: loaded text content indexed by document name and section number.
+- `answer_question`
+  - Input: user question, indexed documents.
+  - Output: single-source answer with citation, OR exact refusal template.

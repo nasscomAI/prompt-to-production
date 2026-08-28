@@ -1,16 +1,8 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Policy Summarizer Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- `retrieve_policy`
+  - Input: path to `.txt` policy file.
+  - Output: structured numbered sections from the text.
+- `summarize_policy`
+  - Input: structured sections.
+  - Output: compliant summary string with clause references adhering to enforcement rules.
