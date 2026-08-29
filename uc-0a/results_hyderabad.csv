@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description mentions ""flooded"", so this is classified as Flooding.",
+GH-202402,Flooding,Standard,"The description mentions both ""flooded"" and ""Drain"", so the category cannot be decided from the description alone and is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"The description mentions ""drain"", so this is classified as Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"The description mentions ""Drain"", so this is classified as Drain Blockage.",
+GH-202410,Pothole,Standard,"The description mentions ""Potholes"", so this is classified as Pothole.",
+GH-202411,Pothole,Urgent,"The description mentions ""Pothole"", so this is classified as Pothole.",
+GH-202412,Pothole,Urgent,"The description mentions ""potholes"", so this is classified as Pothole.",
+GH-202417,Waste,Standard,"The description mentions ""garbage"", so this is classified as Waste.",
+GH-202420,Noise,Standard,"The description mentions ""drilling"", so this is classified as Noise.",
+GH-202422,Road Damage,Urgent,"The description mentions ""Road collapsed"", so this is classified as Road Damage.",
+GH-202424,Flooding,Standard,"The description mentions ""floods"", so this is classified as Flooding.",
+GH-202428,Waste,Standard,"The description mentions ""waste"", so this is classified as Waste.",
+GH-202432,Noise,Standard,"The description mentions ""idling"", so this is classified as Noise.",
+GH-202448,Drain Blockage,Standard,"The description mentions ""drain"", so this is classified as Drain Blockage.",
+GH-202438,Flooding,Standard,"The description mentions ""channel rainwater"", so this is classified as Flooding.",

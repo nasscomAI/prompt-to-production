@@ -1,16 +1,14 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a single complaint row into category, priority, reason, and flag using deterministic keyword matching against the allowed schema.
+    input: A dict representing one CSV row with keys complaint_id and description.
+    output: A dict with keys complaint_id, category, priority, reason, flag.
+    error_handling: Returns category Other and flag NEEDS_REVIEW if description is blank or no category keyword matches; handles missing keys gracefully.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: batch_classify
+    description: Reads an input CSV, applies classify_complaint to every row, and writes the results to an output CSV.
+    input: Input CSV file path and output CSV file path.
+    output: Writes a results CSV with columns complaint_id, category, priority, reason, flag.
+    error_handling: Skips rows that cannot be parsed, logs a warning, and still produces a valid output CSV even if some rows fail.

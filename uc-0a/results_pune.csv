@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions ""pothole"", so this is classified as Pothole.",
+PM-202402,Pothole,Urgent,"The description mentions ""pothole"", so this is classified as Pothole.",
+PM-202406,Flooding,Standard,"The description mentions ""flooded"", so this is classified as Flooding.",
+PM-202408,Flooding,Standard,"The description mentions both ""flooded"" and ""Drain"", so the category cannot be decided from the description alone and is flagged NEEDS_REVIEW.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions ""streetlight"", so this is classified as Streetlight.",
+PM-202411,Streetlight,Urgent,"The description mentions ""Streetlight"", so this is classified as Streetlight.",
+PM-202413,Waste,Standard,"The description mentions ""garbage"", so this is classified as Waste.",
+PM-202418,Noise,Standard,"The description mentions ""music"", so this is classified as Noise.",
+PM-202419,Road Damage,Standard,"The description mentions ""Road surface cracked"", so this is classified as Road Damage.",
+PM-202420,Road Damage,Urgent,"The description mentions ""Manhole"", so this is classified as Road Damage.",
+PM-202427,Flooding,Standard,"The description mentions ""floods"", so this is classified as Flooding.",
+PM-202428,Waste,Low,"The description mentions ""Dead animal"", so this is classified as Waste.",
+PM-202430,Streetlight,Standard,"The description mentions ""lights out"", so this is classified as Streetlight.",
+PM-202433,Waste,Standard,"The description mentions ""waste"", so this is classified as Waste.",
+PM-202446,Road Damage,Urgent,"The description mentions ""Footpath"", so this is classified as Road Damage.",
