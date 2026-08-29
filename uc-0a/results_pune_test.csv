@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description mentions ""pothole"" indicating pothole.",
+PM-202402,Pothole,Urgent,"Description mentions ""pothole"" indicating pothole.",
+PM-202406,Flooding,Standard,"Description mentions ""flooded"" indicating flooding.",
+PM-202408,Drain Blockage,Standard,"Description mentions ""in"" indicating drain blockage.",
+PM-202410,Streetlight,Standard,"Description mentions ""streetlights"" indicating streetlight.",
+PM-202411,Streetlight,Urgent,"Description mentions ""Streetlight"" indicating streetlight.",
+PM-202413,Waste,Standard,"Description mentions ""garbage"" indicating waste.",
+PM-202418,Other,Standard,"Description mentions ""Wedding"" indicating other.",NEEDS_REVIEW
+PM-202419,Other,Standard,"Description mentions ""Road"" indicating other.",NEEDS_REVIEW
+PM-202420,Other,Urgent,"Description mentions ""Manhole"" indicating other.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"Description mentions ""floods"" indicating flooding.",
+PM-202428,Other,Standard,"Description mentions ""Dead"" indicating other.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"Description mentions ""Heritage"" indicating heritage damage.",
+PM-202433,Waste,Standard,"Description mentions ""waste"" indicating waste.",
+PM-202446,Other,Urgent,"Description mentions ""Footpath"" indicating other.",NEEDS_REVIEW
