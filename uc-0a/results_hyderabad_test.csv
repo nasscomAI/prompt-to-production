@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description mentions ""flooded"" indicating flooding.",
+GH-202402,Drain Blockage,Standard,"Description mentions ""Drain"" indicating drain blockage.",
+GH-202406,Drain Blockage,Standard,"Description mentions ""drain"" indicating drain blockage.",
+GH-202407,Drain Blockage,Standard,"Description mentions ""Drain"" indicating drain blockage.",
+GH-202410,Pothole,Standard,"Description mentions ""Potholes"" indicating pothole.",
+GH-202411,Pothole,Urgent,"Description mentions ""Pothole"" indicating pothole.",
+GH-202412,Pothole,Urgent,"Description mentions ""6"" indicating pothole.",
+GH-202417,Waste,Standard,"Description mentions ""garbage"" indicating waste.",
+GH-202420,Other,Standard,"Description mentions ""Construction"" indicating other.",NEEDS_REVIEW
+GH-202422,Road Damage,Urgent,"Description mentions ""Road"" indicating road damage.",
+GH-202424,Flooding,Standard,"Description mentions ""floods"" indicating flooding.",
+GH-202428,Waste,Standard,"Description mentions ""waste"" indicating waste.",
+GH-202432,Other,Standard,"Description mentions ""24hr"" indicating other.",NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description mentions ""—"" indicating flooding.",
+GH-202438,Other,Standard,"Description mentions ""Colony"" indicating other.",NEEDS_REVIEW
