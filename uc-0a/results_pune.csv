@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Citing 'pothole' for category Pothole; assigned Standard as it standard operational priority.,
+PM-202402,Pothole,Urgent,Citing 'pothole' for category Pothole; assigned Urgent as it contains severity trigger 'school'.,
+PM-202406,Other,Standard,Classified as Other due to ambiguous text; standard operational priority.,NEEDS_REVIEW
+PM-202408,Drain Blockage,Standard,Citing 'drain' for category Drain Blockage; assigned Standard as it standard operational priority.,
+PM-202410,Other,Standard,Classified as Other due to ambiguous text; standard operational priority.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,Citing 'streetlight' for category Streetlight; assigned Urgent as it contains severity trigger 'hazard'.,
+PM-202413,Waste,Standard,Citing 'waste' for category Waste; assigned Standard as it standard operational priority.,
+PM-202418,Noise,Standard,Citing 'noise' for category Noise; assigned Standard as it standard operational priority.,
+PM-202419,Road Damage,Standard,Citing 'road' for category Road Damage; assigned Standard as it standard operational priority.,
+PM-202420,Other,Urgent,Classified as Other due to ambiguous text; contains severity trigger 'injury'.,NEEDS_REVIEW
+PM-202427,Other,Standard,Classified as Other due to ambiguous text; standard operational priority.,NEEDS_REVIEW
+PM-202428,Other,Standard,Classified as Other due to ambiguous text; standard operational priority.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Citing 'heritage' for category Heritage Damage; assigned Standard as it standard operational priority.,
+PM-202433,Waste,Standard,Citing 'waste' for category Waste; assigned Standard as it standard operational priority.,
+PM-202446,Other,Urgent,Classified as Other due to ambiguous text; contains severity trigger 'fell'.,NEEDS_REVIEW
