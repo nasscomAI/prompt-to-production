@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category Pothole because the description references ""pothole"". Priority is Standard because no severity keyword is present.",
+PM-202402,Pothole,Urgent,"Category Pothole because the description references ""pothole"". Priority is Urgent because the description contains the severity keyword(s): ""child"", ""school"".",
+PM-202406,Flooding,Standard,"Category Flooding because the description references ""flood"", ""knee-deep"", ""rain"". Priority is Standard because no severity keyword is present.",
+PM-202408,Flooding,Standard,"Category Flooding because the description references ""flood"", ""standing in water"", ""water"". Priority is Standard because no severity keyword is present.",
+PM-202410,Streetlight,Standard,"Category Streetlight because the description references ""streetlight"", ""lights out"", ""dark"". Priority is Standard because no severity keyword is present.",
+PM-202411,Streetlight,Urgent,"Category Streetlight because the description references ""Streetlight"", ""sparking"", ""flickering"". Priority is Urgent because the description contains the severity keyword(s): ""hazard"".",
+PM-202413,Waste,Standard,"Category Waste because the description references ""garbage"", ""bins"", ""Overflowing"". Priority is Standard because no severity keyword is present.",
+PM-202418,Noise,Standard,"Category Noise because the description references ""music"". Priority is Standard because no severity keyword is present.",
+PM-202419,Road Damage,Standard,"Category Road Damage because the description references ""cracked"", ""sinking"", ""Road"". Priority is Standard because no severity keyword is present.",
+PM-202420,Road Damage,Urgent,"Category Road Damage because the description references ""Manhole"". Priority is Urgent because the description contains the severity keyword(s): ""injury"".",
+PM-202427,Flooding,Standard,"Category Flooding because the description references ""flood"", ""rain"". Priority is Standard because no severity keyword is present.",
+PM-202428,Waste,Standard,"Category Waste because the description references ""Dead animal"". Priority is Standard because no severity keyword is present.",
+PM-202430,Streetlight,Standard,"Category Streetlight because the description references ""lights out"", ""dark"". Priority is Standard because no severity keyword is present.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category Waste because the description references ""waste"". Priority is Standard because no severity keyword is present.",
+PM-202446,Road Damage,Urgent,"Category Road Damage because the description references ""Footpath"", ""tiles broken"". Priority is Urgent because the description contains the severity keyword(s): ""fell"".",
