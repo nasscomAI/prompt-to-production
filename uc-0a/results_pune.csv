@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Description cites 'Large pothole 60cm wide causing tyre damage' with no severity keywords, so category is Pothole and priority is Standard.",
+PM-202402,Pothole,Urgent,"Description cites 'Deep pothole near bus stop. School childre' and contains 'child', 'school', so category is Pothole and priority is Urgent.",
+PM-202406,Flooding,Standard,"Description cites 'Underpass flooded knee-deep after 2hrs rain. Commuters st' with no severity keywords, so category is Flooding and priority is Standard.",
+PM-202408,Drain Blockage,Standard,"Description cites 'in water. Drain blocked' with no severity keywords, so category is Drain Blockage and priority is Standard.",
+PM-202410,Streetlight,Standard,"Description cites 'consecutive streetlights out for 10 days. Area very da' with no severity keywords, so category is Streetlight and priority is Standard.",
+PM-202411,Streetlight,Urgent,"Description cites 'Streetlight flickering and sparking. Elec' and contains 'hazard', so category is Streetlight and priority is Urgent.",
+PM-202413,Waste,Standard,"Description cites 'Overflowing garbage bins near vegetable m' with no severity keywords, so category is Waste and priority is Standard.",
+PM-202418,Noise,Standard,"Description cites 'Wedding venue playing music past midn' with no severity keywords, so category is Noise and priority is Standard.",
+PM-202419,Road Damage,Standard,"Description cites 'Road surface cracked and sinking near util' with no severity keywords, so category is Road Damage and priority is Standard.",
+PM-202420,Road Damage,Urgent,"Description cites 'Manhole cover missing. Risk of seriou' and contains 'injury', so category is Road Damage and priority is Urgent.",
+PM-202427,Flooding,Standard,"Description cites 'Bridge approach floods in 30mins of rain. Bridge bec' with no severity keywords, so category is Flooding and priority is Standard.",
+PM-202428,Waste,Standard,"Description cites 'Dead animal not removed for 36 hours. Hea' with no severity keywords, so category is Waste and priority is Standard.",
+PM-202430,Other,Standard,"Description mentions 'Heritage street, lights out. Safety concern for pedestria', making Heritage Damage and Streetlight equally plausible, so category is Other with NEEDS_REVIEW and priority is Standard.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Description cites 'renovation dumped on public road' with no severity keywords, so category is Waste and priority is Standard.",
+PM-202446,Road Damage,Urgent,"Description cites 'Footpath tiles broken and upturned. Elderly residen' and contains 'fell', so category is Road Damage and priority is Urgent.",
