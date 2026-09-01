@@ -2,36 +2,32 @@
 
 skills:
   - name: classify_complaint
-    description: Classifies a single complaint row into an operational category, priority, one-sentence justification, and ambiguity flag.
+    description: >
+      Classify a single complaint row into category, priority, reason, and flag
+      using the fixed taxonomy and severity keyword rules.
     input: >
-      One complaint row as a dict with keys: complaint_id, date_raised, city,
-      ward, location, description, reported_by, days_open (str values from
-      the input CSV). Only `description` drives classification; other fields
-      are passthrough.
+      dict with keys: complaint_id (str), description (str), location (str), date (str).
+      Description is the only field used for classification.
     output: >
-      A dict with keys: complaint_id (copied verbatim), category (exactly one
-      of Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage
-      Damage, Heat Hazard, Drain Blockage, Other), priority (Urgent |
-      Standard | Low), reason (one sentence quoting words present in the
-      description), flag (NEEDS_REVIEW or empty string).
+      dict with keys: complaint_id (str), category (str from allowed list),
+      priority (str: Urgent/Standard/Low), reason (str: one sentence citing description words),
+      flag (str: NEEDS_REVIEW or empty).
     error_handling: >
-      If description is missing, empty, unreadable, or supports no taxonomy
-      category, return category=Other, flag=NEEDS_REVIEW, and a reason naming
-      what information is missing. Never raise; never invent sub-categories;
-      severity keywords in the description always force priority=Urgent.
+      If description is null or empty, set category to Other, flag to NEEDS_REVIEW,
+      and reason to "No description provided."
+      If complaint_id is missing, set it to "UNKNOWN".
 
   - name: batch_classify
-    description: Reads the input complaints CSV, applies classify_complaint to every row, and writes the results CSV.
+    description: >
+      Read input CSV, apply classify_complaint to each row, and write results CSV.
+      Ensures every input row produces an output row.
     input: >
-      Paths to input CSV (test_[city].csv with columns complaint_id,
-      date_raised, city, ward, location, description, reported_by,
-      days_open) and output CSV path.
+      Two file paths: input_path (str) to CSV with columns complaint_id, description,
+      location, date; output_path (str) for results CSV.
     output: >
-      Writes results CSV with one row per input row — never fewer — with
-      columns: complaint_id, category, priority, reason, flag. Returns/prints
-      the output path on completion.
+      Writes CSV file with columns: complaint_id, category, priority, reason, flag.
+      Also returns count of classified and flagged rows.
     error_handling: >
-      Malformed rows (missing fields, bad encoding) are still written to the
-      output with category=Other, flag=NEEDS_REVIEW rather than crashing or
-      being skipped. Zero-row drop policy: every input complaint_id must
-      appear exactly once in the output even if individual rows fail.
+      If a row is malformed or missing required fields, classify it with category: Other
+      and flag: NEEDS_REVIEW rather than skipping. Never crash on bad rows.
+      If input file is empty, write empty CSV with headers and return count 0.
