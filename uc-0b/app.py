@@ -5,7 +5,6 @@ Implements retrieve_policy and summarize_policy skills per agents.md and skills.
 """
 
 import argparse
-import json
 import re
 import sys
 from pathlib import Path
@@ -37,16 +36,16 @@ def retrieve_policy(file_path: str) -> dict[str, Any]:
             if current_clause is not None:
                 sections.append({
                     "clause_number": current_clause,
-                    "text": " ".join(current_text_lines).strip()
+                    "text": "\n".join(current_text_lines).strip()
                 })
             current_clause = match.group(1)
             current_text_lines = [match.group(2)]
         elif current_clause is not None and line.strip():
-            current_text_lines.append(line.strip())
+            current_text_lines.append(line)
         elif current_clause is not None and not line.strip():
             sections.append({
                 "clause_number": current_clause,
-                "text": " ".join(current_text_lines).strip()
+                "text": "\n".join(current_text_lines).strip()
             })
             current_clause = None
             current_text_lines = []
@@ -54,7 +53,7 @@ def retrieve_policy(file_path: str) -> dict[str, Any]:
     if current_clause is not None:
         sections.append({
             "clause_number": current_clause,
-            "text": " ".join(current_text_lines).strip()
+            "text": "\n".join(current_text_lines).strip()
         })
 
     return {
@@ -136,7 +135,7 @@ def _summarize_clause(clause_num: str, text: str) -> str:
         ),
     }
 
-    if clause_num in clause_summaries:
+    if clause_num in clause_summaries and len(text) > 20:
         return clause_summaries[clause_num]
 
     return f"[VERBATIM] {text}"

@@ -4,7 +4,6 @@ Classifies complaint descriptions into category, priority, reason, and flag.
 """
 import argparse
 import csv
-import re
 
 SEVERITY_KEYWORDS = {"injury", "child", "school", "hospital", "ambulance", "fire", "hazard", "fell", "collapse"}
 
@@ -102,8 +101,8 @@ def batch_classify(input_path: str, output_path: str):
             try:
                 result = classify_complaint(row)
                 writer.writerow(result)
-            except Exception:
-                continue
+            except Exception as e:
+                writer.writerow({"complaint_id": row.get("complaint_id", ""), "category": "Other", "priority": "Standard", "reason": f"Error processing row: {e}", "flag": "NEEDS_REVIEW"})
 
 
 if __name__ == "__main__":

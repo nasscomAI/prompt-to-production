@@ -8,7 +8,7 @@ parameters:
     description: Directory containing the three policy text files
 returns:
   index: object with keys "policy_hr_leave.txt", "policy_it_acceptable_use.txt", "policy_finance_reimbursement.txt"
-  Each value is an object mapping section numbers (e.g., "2.6") to section text content.
+  description: Each value is an object mapping section numbers (e.g., "2.6") to section text content.
 behavior: |
   1. Read all three .txt files from the policy directory
   2. Parse each file into sections by detecting numbered headings (e.g., "2.6 Carry Forward of Annual Leave")

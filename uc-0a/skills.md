@@ -9,4 +9,4 @@ skills:
     description: Reads input CSV, applies classify_complaint per row, writes output CSV
     input: input_path (str), output_path (str)
     output: writes results CSV with columns: complaint_id, category, priority, reason, flag
-    error_handling:flags nulls, does not crash on bad rows, produces output even if some rows fail
+    error_handling: flags nulls, does not crash on bad rows, produces output even if some rows fail
