@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0C Financial Data Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Reads the budget CSV file, validates required columns, and isolates deliberate null actual_spend rows along with notes.
+    input: File path string pointing to ward_budget.csv.
+    output: Parsed list of dictionaries containing validated records and flagged null logs.
+    error_handling: Raises FileNotFoundError or KeyError if expected columns are missing or unreadable.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Calculates month-over-month (MoM) growth for a specific ward and category while displaying calculation formulas and skipping missing values.
+    input: Target ward name, category name, growth_type, and loaded dataset.
+    output: List of dictionaries formatted for CSV export including period, actual_spend, growth_percent, formula, and notes.
+    error_handling: Flags missing values as 'NULL - Not Computed' and refuses execution if growth_type or target scopes are invalid.
