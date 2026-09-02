@@ -29,7 +29,11 @@ enforcement:
   - "Every numbered clause in the source must appear in the summary under its own
      number. Completeness is measured by clause number, not by topic: the control
      run covered section 2 in fluent prose and still lost 2.3 through 2.7.
-     Coverage of a heading does not discharge the clauses beneath it."
+     Coverage of a heading does not discharge the clauses beneath it. The check
+     must read clause numbers from the source file itself, never from the
+     agent's own parse of it: a clause the parser never produced is absent from
+     both the parse and the summary, so comparing one against the other reports
+     success while the clause is missing."
   - "A multi-condition obligation must keep every condition. Clause 5.2 requires
      approval from the Department Head AND the HR Director; reducing it to
      'requires approval' is a condition drop, not a summarisation. The same holds

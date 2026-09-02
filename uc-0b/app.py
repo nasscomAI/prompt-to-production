@@ -10,7 +10,7 @@ import argparse
 import re
 import sys
 
-CLAUSE_RE = re.compile(r"^(\d+\.\d+)\s+(.*)$")
+CLAUSE_RE = re.compile(r"^(\d+\.\d+)\.?\s+(.*)$")
 SECTION_RE = re.compile(r"^(\d+)\.\s+([A-Z][A-Z &/]+)\s*$")
 
 # A clause carrying any of these binds the reader; condensing risks changing its
@@ -66,7 +66,7 @@ def retrieve_policy(policy_path: str):
         raise SystemExit(
             f"No numbered clauses found in {policy_path}. Refusing to emit a summary "
             "that would satisfy a completeness check vacuously.")
-    return sections, header
+    return sections, header, "\n".join(lines)
 
 
 def _is_binding(text: str) -> bool:
@@ -82,8 +82,14 @@ def _conditions(text: str):
     return toks
 
 
-def summarize_policy(sections, header, output_path: str):
-    """Render the summary, asserting completeness and condition survival before writing."""
+def summarize_policy(sections, header, output_path: str, raw_source: str = ""):
+    """Render the summary, verifying it against the raw source before writing.
+
+    Verification must not compare the render against `sections`: both come from
+    the same parse, so a clause the parser never saw is absent from both sides
+    and the check passes while the clause is missing. Clause numbers are taken
+    from `raw_source` instead, which also catches a parser omission.
+    """
     out = ["CLAUSE-REFERENCED SUMMARY — " + (header[2] if len(header) > 2 else "POLICY"),
            "Source: " + (header[3] if len(header) > 3 else "see input file"), "",
            "Every numbered clause of the source appears below under its own number.",
@@ -114,9 +120,16 @@ def summarize_policy(sections, header, output_path: str):
     text = "\n".join(out) + "\n"
 
     problems = []
+    # Independent completeness: clause numbers come from the source file itself,
+    # so a clause the parser never produced is still detected as missing.
+    source_clauses = re.findall(r"(?m)^\s*(\d+\.\d+)\.?\s", raw_source)
+    parsed_clauses = {c["clause"] for c in sections}
+    for cl in dict.fromkeys(source_clauses):
+        if cl not in parsed_clauses:
+            problems.append(f"clause {cl} is in the source but was never parsed")
+        if not re.search(rf"(?m)^\s*{re.escape(cl)}\s", text):
+            problems.append(f"clause {cl} missing from summary")
     for c in sections:
-        if not re.search(rf"(?m)^\s*{re.escape(c['clause'])}\s", text):
-            problems.append(f"clause {c['clause']} missing from summary")
         for tok in _conditions(c["text"]):
             if tok not in text:
                 problems.append(f"clause {c['clause']} lost condition '{tok}'")
@@ -140,8 +153,8 @@ def main():
     parser.add_argument("--input", required=True, help="Path to policy .txt")
     parser.add_argument("--output", required=True, help="Path to write summary")
     args = parser.parse_args()
-    sections, header = retrieve_policy(args.input)
-    summarize_policy(sections, header, args.output)
+    sections, header, raw = retrieve_policy(args.input)
+    summarize_policy(sections, header, args.output, raw)
     print(f"Done. Summary written to {args.output}")
 
 
