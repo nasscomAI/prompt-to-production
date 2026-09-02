@@ -45,6 +45,12 @@ enforcement:
      generally required or is normally expected. The control run turned 'must
      submit' into 'should be applied for' and 'requires a medical certificate'
      into 'generally required'; both keep the topic and discard the obligation."
+  - "Structural scaffolding is not added information. Section headings, the
+     [VERBATIM] markers and the index title are apparatus that lets a reader
+     navigate the clauses; they are exempt from the no-addition rule, which
+     governs the content of the clauses themselves. The exemption is stated here
+     because the intent section calls the summary checkable by script, and no
+     check can pass without knowing which lines are scaffold."
   - "No information may be added. Phrases such as 'as is standard practice',
      'typically', 'generally understood' or 'in most organisations' fail whether
      or not they are true, because they are not in the source. The summary may

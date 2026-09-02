@@ -33,6 +33,9 @@ BLEED = [
     "generally understood", "generally expected", "in most organisations",
     "it is common", "usually", "best practice", "we recommend", "should be",
     "normally",
+    # "may" is deliberately absent: the source uses it bindingly in 2.6, 5.1 and
+    # 7.1 ("may carry forward", "may apply", "may be encashed only"), so banning
+    # it outright would reject correct output.
 ]
 
 
@@ -100,7 +103,7 @@ def summarize_policy(sections, header, output_path: str, raw_source: str = ""):
            "word: condensing them would risk dropping a condition or weakening a",
            "modal verb. No wording below comes from outside the source document.", ""]
 
-    verbatim = condensed = 0
+    verbatim = unmarked = 0
     current = None
     for c in sections:
         if c["section"] != current:
@@ -111,7 +114,7 @@ def summarize_policy(sections, header, output_path: str, raw_source: str = ""):
             verbatim += 1
         else:
             out.append(f"  {c['clause']} {c['text']}")
-            condensed += 1
+            unmarked += 1
 
     out += ["", "", "MULTI-CONDITION OBLIGATIONS — every condition listed is stated in the",
             "clause cited beside it; none is added here.", "-" * 62]
@@ -147,8 +150,12 @@ def summarize_policy(sections, header, output_path: str, raw_source: str = ""):
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(text)
-    print(f"Clauses: {len(sections)}  verbatim: {verbatim}  condensed: {condensed}")
-    return {"clauses": len(sections), "verbatim": verbatim, "condensed": condensed}
+    # Every clause is emitted verbatim. The split reports which carry a binding
+    # verb and are marked, not which were shortened: nothing is shortened, because
+    # no span of this document can be dropped without losing a condition.
+    print(f"Clauses: {len(sections)}  marked binding: {verbatim}  unmarked: {unmarked}  condensed: 0")
+    return {"clauses": len(sections), "marked_binding": verbatim,
+            "unmarked": unmarked, "condensed": 0}
 
 
 def main():

@@ -17,7 +17,9 @@ skills:
       written. A file containing no N.M clause numbers exits rather than
       returning an empty structure, because a silently empty parse would satisfy
       a completeness check vacuously and produce a summary of nothing. Lines
-      before the first numbered clause are retained as header, not discarded.
+      preceding the first section heading are retained as document header;
+      section headings themselves are recognised as a distinct line type and
+      populate section_title rather than being swept into the header.
 
   - name: summarize_policy
     description: >
