@@ -156,7 +156,7 @@ def main():
         print(f"Summary written to {args.output}")
 
     except Exception as e:
-        print(f"Error: {e}", file=sys.stderr)
+        print(f"REFUSAL: {e}", file=sys.stderr)
         sys.exit(1)
 
 

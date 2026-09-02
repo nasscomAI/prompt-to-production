@@ -68,7 +68,6 @@ def compute_growth(df: pd.DataFrame, ward: str, category: str, growth_type: str)
 
         if growth_type == "MoM":
             prior_idx = i - 1
-            prior_label = "previous month"
         else:
             current_year = int(period[:4])
             current_month = int(period[5:])
@@ -83,7 +82,6 @@ def compute_growth(df: pd.DataFrame, ward: str, category: str, growth_type: str)
                 })
                 continue
             prior_idx = prior_matches.index[0]
-            prior_label = f"same month prior year ({target_period})"
 
         prior_actual = subset.loc[prior_idx, "actual_spend"]
         if pd.isna(prior_actual):

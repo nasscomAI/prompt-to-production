@@ -6,7 +6,6 @@ Interactive CLI for policy document Q&A with strict single-source enforcement.
 
 import os
 import re
-import sys
 from typing import Dict, List, Tuple
 
 
@@ -69,13 +68,17 @@ def retrieve_documents() -> Dict[str, Dict[str, Dict]]:
     index = {}
     for filename in POLICY_FILES:
         path = os.path.join(POLICY_DIR, filename)
-        with open(path, "r", encoding="utf-8") as f:
-            content = f.read()
-        index[filename] = parse_sections(content)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                content = f.read()
+            index[filename] = parse_sections(content)
+        except OSError:
+            # Degrade to refusal by returning empty index if files cannot be loaded
+            return {}
     return index
 
 
-def search_sections(index: Dict[str, Dict[str, Dict]], question: str) -> List[Tuple[str, str, str]]:
+def search_sections(index: Dict[str, Dict[str, Dict]], question: str) -> List[Tuple[int, str, str, str]]:
     """Search all sections for relevance to question. Returns (doc, section, text)."""
     question_lower = question.lower()
     question_words = set(re.findall(r"\b\w+\b", question_lower))
@@ -91,25 +94,24 @@ def search_sections(index: Dict[str, Dict[str, Dict]], question: str) -> List[Tu
             overlap = question_words & combined_words
             if overlap:
                 score = len(overlap)
-                results.append((score, doc_name, section_num, section_data["text"]))
+                combined_text = f"{section_data['title']}\n{section_data['text']}".strip()
+                results.append((score, doc_name, section_num, combined_text))
 
     results.sort(reverse=True, key=lambda x: x[0])
     return results
 
 
-def answer_question(question: str, index: Dict[str, Dict[str, str]]) -> str:
+def answer_question(question: str, index: Dict[str, Dict[str, Dict]]) -> str:
     """Return single-source answer with citation OR refusal template."""
     matches = search_sections(index, question)
 
     if not matches:
         return REFUSAL_TEMPLATE
 
-    # Get the top score
-    top_score = matches[0][0]
-    # Find all documents that have the top score (to check for ties)
-    top_docs = set(doc for score, doc, _, _ in matches if score == top_score)
+    # Find all documents that have any relevant content
+    all_matched_docs = set(doc for score, doc, _, _ in matches)
     
-    if len(top_docs) > 1:
+    if len(all_matched_docs) > 1:
         return REFUSAL_TEMPLATE
 
     doc_name = matches[0][1]
