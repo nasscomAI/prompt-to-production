@@ -11,7 +11,10 @@ import re
 import sys
 
 CLAUSE_RE = re.compile(r"^(\d+\.\d+)\.?\s+(.*)$")
-SECTION_RE = re.compile(r"^(\d+)\.\s+([A-Z][A-Z &/]+)\s*$")
+# Titles carry parentheses — "LEAVE WITHOUT PAY (LWP)", "PERSONAL DEVICES
+# (BYOD)". Excluding them silently filed every clause of those sections under
+# the preceding heading.
+SECTION_RE = re.compile(r"^(\d+)\.\s+([A-Z][A-Z0-9 &/()',.-]+)\s*$")
 
 # A clause carrying any of these binds the reader; condensing risks changing its
 # force, so it is emitted verbatim instead (rule 3, rule 5).

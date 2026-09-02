@@ -35,6 +35,9 @@ SECTION 4 — MATERNITY AND PATERNITY LEAVE
   4.2 For a third or subsequent child, maternity leave is 12 weeks paid.
   4.3 [VERBATIM] Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
   4.4 [VERBATIM] Paternity leave cannot be split across multiple periods.
+
+SECTION 5 — LEAVE WITHOUT PAY (LWP)
+--------------------------------------------------------------
   5.1 [VERBATIM] An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
   5.2 [VERBATIM] LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
   5.3 [VERBATIM] LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
