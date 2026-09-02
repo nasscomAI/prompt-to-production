@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because the description states ""flooded"".",
+GH-202402,Flooding,Standard,"Classified as Flooding because the description states ""flooded"".",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage because the description states ""stormwater drain"".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage because the description states ""Drain blocked"".",
+GH-202410,Pothole,Standard,"Classified as Pothole because the description states ""Potholes"".",
+GH-202411,Pothole,Standard,"Classified as Pothole because the description states ""Pothole"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole because the description states ""potholes"".",
+GH-202417,Waste,Standard,"Classified as Waste because the description states ""garbage"".",
+GH-202420,Noise,Standard,"Classified as Noise because the description states ""drilling"".",
+GH-202422,Road Damage,Standard,"Classified as Road Damage because the description states ""Road collapsed"".",
+GH-202424,Flooding,Standard,"Classified as Flooding because the description states ""floods"".",
+GH-202428,Waste,Standard,"Classified as Waste because the description states ""waste"".",
+GH-202432,Noise,Standard,"Classified as Noise because the description states ""idling with engines"".",
+GH-202448,Other,Standard,"The description contains ""flooding"" and ""drain blocked"", so the category is ambiguous and requires review.",NEEDS_REVIEW
+GH-202438,Other,Standard,"The description mentions ""Colony surrounded by"" but does not identify one allowed complaint category, so it requires review.",NEEDS_REVIEW
