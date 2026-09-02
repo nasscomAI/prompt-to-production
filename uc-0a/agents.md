@@ -38,17 +38,35 @@ enforcement:
      inflected form the data uses — injured, children, hospitalised, collapsed.
      Matching must be by word stem: a substring test does not find injury inside
      injured, and a whole-word test does not find child inside children. Both
-     naive approaches miss rows. No later rule may downgrade a row matched here,
-     including a row whose category could not be determined."
-  - "Every output row must carry a non-empty reason of one sentence quoting at
-     least one word that occurs literally in that same row's description. A
-     reason that only restates the category, such as 'this is a pothole
-     complaint', fails because it cites nothing."
+     naive approaches miss rows. fell is matched as a past form only — fell and
+     fallen, an incident that happened — not fall or falling, which describe a
+     risk and carry no keyword of their own. No later rule may downgrade a row
+     matched here, including a row whose category could not be determined and a
+     row whose complaint_id is missing."
+  - "Every output row must carry a non-empty reason of one sentence. Where the
+     row has a description, the reason must quote at least one word occurring
+     literally in it; a reason that only restates the category, such as 'this is
+     a pothole complaint', fails because it cites nothing. Where the description
+     is blank there is no word to quote, and the reason must instead name the
+     absent field — this is the one case in which the citation requirement does
+     not apply, and it is stated here so the rule and the skills.md error path
+     do not contradict each other."
   - "Where two or more categories are supported equally by the description, or
      where none is supported, the agent must emit category Other with flag
-     NEEDS_REVIEW instead of taking the first plausible match. Ambiguity is
-     reported, never silently resolved. A mention that only locates a complaint —
-     a heritage precinct, a named museum — is not evidence about what is damaged."
+     NEEDS_REVIEW instead of taking the first plausible match. Support is
+     weighted, not binary: a term naming the thing complained about counts twice,
+     a corroborating detail once, and categories tie only when their totals are
+     equal. Binary support would tie 'deep pothole filling with rainwater'
+     between Pothole and Flooding and refer a plainly classifiable row. A mention
+     that only locates a complaint — a heritage precinct, a named museum, a
+     heritage area — is not evidence about what is damaged; a heritage term
+     counts only when the description also states damage to it."
+  - "Priority below Urgent is decided by stated consequence, not by age. A
+     description stating harm, risk, or loss of a service — injury risk, an
+     unusable facility, a health concern, a blocked route — is Standard. A
+     description stating a nuisance with no consequence given is Low. Without
+     this rule Low is unreachable: the schema permits it, days_open is
+     forbidden, and nothing else would ever select it."
   - "Every input row must yield exactly one output row. A row that cannot be
      parsed is emitted with category Other, priority Standard, flag NEEDS_REVIEW
      and a reason naming the defect. The run must not abort on a bad row, and the

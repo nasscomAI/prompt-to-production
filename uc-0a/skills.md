@@ -5,18 +5,24 @@ skills:
       one-sentence reason citing that row's description, and an ambiguity flag.
     input: >
       dict — one row of test_[city].csv, carrying at least complaint_id and
-      description. Reads ward and location only where they disambiguate the
-      description; ignores days_open, reported_by, city and the complaint_id
-      prefix for classification purposes.
+      description. Classification is derived from the description alone. The
+      ward and location fields hold place names only, and treating a place name
+      as category evidence would violate the locative exclusion in enforcement
+      rule 4, so they are not read. days_open, reported_by, city and the
+      complaint_id prefix are likewise not read.
     output: >
       dict with exactly five keys — complaint_id (str, copied from the input),
       category (str, one of the ten permitted values), priority (Urgent, Standard
       or Low), reason (str, one sentence quoting at least one word present in the
       description), flag (NEEDS_REVIEW or empty string).
     error_handling: >
-      A row with a missing or blank complaint_id or description returns category
-      Other, priority Standard, flag NEEDS_REVIEW and a reason naming which field
-      was absent. Two or more categories supported equally return Other with
+      A row with a blank description returns category Other, priority Standard,
+      flag NEEDS_REVIEW and a reason naming the absent field, since there is
+      nothing to classify or to cite. A row with a blank complaint_id is
+      classified normally and flagged NEEDS_REVIEW, keeping whatever priority its
+      description earns: enforcement rule 2 forbids downgrading a severity match,
+      so an injury is not recorded as Standard because an identifier was
+      missing. Two or more categories supported equally return Other with
       NEEDS_REVIEW rather than the first match. A category outside the permitted
       set is downgraded to Other with NEEDS_REVIEW rather than emitted. Field
       values are coerced to str before use rather than assumed to be strings,

@@ -123,11 +123,16 @@ def classify_complaint(row: dict) -> dict:
     complaint_id = str(row.get("complaint_id") or "").strip()
     description = str(row.get("description") or "").strip()
 
-    if not complaint_id or not description:
-        missing = "complaint_id" if not complaint_id else "description"
+    # A blank description leaves nothing to classify or to cite, so the row is
+    # referred. A blank complaint_id does not: the description may still carry a
+    # severity term, and rule 2 forbids downgrading such a row. It is referred for
+    # review but classified normally, so an injury is not filed as Standard
+    # because an identifier was missing.
+    if not description:
         return {"complaint_id": complaint_id or "UNKNOWN", "category": "Other",
                 "priority": "Standard", "flag": "NEEDS_REVIEW",
-                "reason": f"Row could not be classified: {missing} is missing or blank."}
+                "reason": "Row could not be classified: description is missing or blank."}
+    missing_id = not complaint_id
 
     # Rule 2 — severity decides priority; nothing below may downgrade a match.
     severity_hits = [(name, _hits([pat], description)[0])
@@ -186,7 +191,11 @@ def classify_complaint(row: dict) -> dict:
         reason = f"Category '{category}' is not in the permitted set; referred for review. " + reason
         category, flag = "Other", "NEEDS_REVIEW"
 
-    return {"complaint_id": complaint_id, "category": category,
+    if missing_id:
+        flag = "NEEDS_REVIEW"
+        reason = "Row has no complaint_id; referred for review. " + reason
+
+    return {"complaint_id": complaint_id or "UNKNOWN", "category": category,
             "priority": priority, "reason": reason, "flag": flag}
 
 
