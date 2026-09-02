@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0B Policy Summarizer
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: Ingests a raw policy text file and parses its contents into structured sections, headings, and distinct numbered clauses.
+    input: file_path (str, path to the input .txt policy document).
+    output: Structured representation containing metadata (document reference, version) and a list of section objects with numbered clause texts.
+    error_handling: Raises descriptive FileNotFoundError if the path is invalid; gracefully captures unformatted introductory lines and preserves all clause texts without truncation.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: Transforms structured policy clauses into an accurate, complete summary adhering to zero clause omission, preserved binding obligations, and strict approver requirements.
+    input: Structured policy sections or raw text from retrieve_policy.
+    output: Plain-text formatted summary covering all numbered clauses (1.1 through 8.2) with strict binding terms and clause citations.
+    error_handling: If a clause cannot be compressed without risking obligation softening or condition loss, quotes the clause verbatim with a preservation notice.
