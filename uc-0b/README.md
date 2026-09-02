@@ -1,71 +1,76 @@
 # UC-0B — Summary That Changes Meaning
 
-**Core failure modes:** Clause omission · Scope bleed · Obligation softening
+**Core Failure Modes Addressed:** Clause omission · Scope bleed · Obligation softening · Condition dropping
 
 ---
 
-## Your Input File
-```
-../data/policy-documents/policy_hr_leave.txt
-```
+## 📂 Files Overview
 
-## Your Output File
-```
-uc-0b/summary_hr_leave.txt
-```
+| File | Purpose |
+|---|---|
+| [agents.md](./agents.md) | Policy Summarizer agent definition and RICE enforcement rules. |
+| [skills.md](./skills.md) | Standardized skill definitions (`retrieve_policy`, `summarize_policy`). |
+| [app.py](./app.py) | Python policy summarization script preserving all clauses & legal constraints. |
+| [summary_hr_leave.txt](./summary_hr_leave.txt) | Verified output summary of the HR Leave Policy. |
 
-## Run Command
+---
+
+## 🚀 How to Run
+
+### Option 1: From the `uc-0b/` Directory
 ```bash
 python app.py \
   --input ../data/policy-documents/policy_hr_leave.txt \
   --output summary_hr_leave.txt
 ```
 
----
-
-## Do This Before Writing Any Prompt — Clause Inventory
-
-Read `policy_hr_leave.txt` and map these 10 clauses. This is your ground truth.
-
-| Clause | Core obligation | Binding verb |
-|---|---|---|
-| 2.3 | 14-day advance notice required | must |
-| 2.4 | Written approval required before leave commences. Verbal not valid. | must |
-| 2.5 | Unapproved absence = LOP regardless of subsequent approval | will |
-| 2.6 | Max 5 days carry-forward. Above 5 forfeited on 31 Dec. | may / are forfeited |
-| 2.7 | Carry-forward days must be used Jan–Mar or forfeited | must |
-| 3.2 | 3+ consecutive sick days requires medical cert within 48hrs | requires |
-| 3.4 | Sick leave before/after holiday requires cert regardless of duration | requires |
-| 5.2 | LWP requires Department Head AND HR Director approval | requires |
-| 5.3 | LWP >30 days requires Municipal Commissioner approval | requires |
-| 7.2 | Leave encashment during service not permitted under any circumstances | not permitted |
-
-**The trap:** Clause 5.2 requires TWO approvers. AI will often preserve "requires approval" but drop "from both Department Head and HR Director." That is a condition drop — not a softening.
-
----
-
-## Enforcement Rules Your agents.md Must Include
-1. Every numbered clause must be present in the summary
-2. Multi-condition obligations must preserve ALL conditions — never drop one silently
-3. Never add information not present in the source document
-4. If a clause cannot be summarised without meaning loss — quote it verbatim and flag it
-
----
-
-## Skills to Define in skills.md
-- `retrieve_policy` — loads .txt policy file, returns content as structured numbered sections
-- `summarize_policy` — takes structured sections, produces compliant summary with clause references
-
----
-
-## What Will Fail From the Naive Prompt
-Run `"Summarize the policy document."` first.
-Then check: which of the 10 clauses above are missing? Which have had conditions dropped?
-Scope bleed to look for: phrases like "as is standard practice", "typically in government organisations", "employees are generally expected to" — none of these are in the source document.
-
----
-
-## Commit Formula
+### Option 2: From the Project Root (`prompt-to-production/`)
+```bash
+python uc-0b/app.py \
+  --input data/policy-documents/policy_hr_leave.txt \
+  --output uc-0b/summary_hr_leave.txt
 ```
+
+---
+
+## 📋 Ground Truth Clause Inventory
+
+All 10 critical clauses are strictly preserved with their binding modal verbs:
+
+| Clause | Core Obligation | Binding Verb |
+|---|---|---|
+| **2.3** | 14-day advance notice required using Form HR-L1 | `must` |
+| **2.4** | Written approval required from direct manager before leave commences (verbal not valid) | `must` / `not valid` |
+| **2.5** | Unapproved absence recorded as Loss of Pay (LOP) regardless of subsequent approval | `will` |
+| **2.6** | Max 5 days carry-forward; days above 5 forfeited on 31 Dec | `may` / `are forfeited` |
+| **2.7** | Carry-forward days must be used in Q1 (Jan–Mar) or forfeited | `must` / `forfeited` |
+| **3.2** | 3+ consecutive sick days requires medical cert within 48hrs | `requires` |
+| **3.4** | Sick leave before/after holiday or annual leave requires cert regardless of duration | `requires` |
+| **5.2** | LWP requires approval from **BOTH** Department Head **AND** HR Director (dual approval) | `requires` |
+| **5.3** | LWP >30 continuous days requires approval from Municipal Commissioner | `requires` |
+| **7.2** | Leave encashment during active service is not permitted under any circumstances | `not permitted` |
+
+---
+
+## 🛠 Skills Defined in `skills.md`
+
+1. **`retrieve_policy`**:
+   - **Input:** `file_path` (str, path to `.txt` policy file).
+   - **Output:** Structured sections and individual numbered clauses.
+   - **Error Handling:** Validates file existence and captures unnumbered preamble lines.
+
+2. **`summarize_policy`**:
+   - **Input:** Parsed policy data.
+   - **Output:** Complete, faithful plain-text summary covering all numbered clauses (1.1 through 8.2).
+   - **Error Handling:** Zero scope bleed, zero obligation softening; quotes complex clauses verbatim.
+
+---
+
+## 📝 Commit Message Formula
+
+```bash
 UC-0B Fix [failure mode]: [why it failed] → [what you changed]
 ```
+
+**Example:**
+`UC-0B Fix clause omission: completeness not enforced → added every-numbered-clause rule and dual-approver preservation`
