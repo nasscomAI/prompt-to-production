@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding based on ""Underpass flooded after 1hr rain"" and assigned Urgent priority due to ""Ambulance diverted"".",
+GH-202402,Flooding,Standard,"Classified as Flooding based on ""Market area flooded"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage based on ""Main stormwater drain 100% blocked with construction debris"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage based on ""Drain blocked and mosquito breeding"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202410,Pothole,Standard,"Classified as Pothole based on ""Potholes causing vehicles to slow to 20kmph on fast road"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202411,Pothole,Urgent,"Classified as Pothole based on ""Pothole swallowed entire motorcycle wheel"" and assigned Urgent priority due to ""Rider hospitalised"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole based on ""School bus struggling to navigate 6 potholes in 200m stretch"" and assigned Urgent priority due to severe safety risk.",
+GH-202417,Waste,Standard,"Classified as Waste based on ""Heritage zone garbage overflow"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202420,Noise,Low,"Classified as Noise based on ""Construction drilling from 5am daily near residential towers"" and assigned Low priority as a non-hazardous nuisance issue.",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage based on ""Road collapsed partially"" and assigned Urgent priority due to severe safety risk.",
+GH-202424,Flooding,Standard,"Classified as Flooding based on ""Underpass floods in light rain"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202428,Waste,Standard,"Classified as Waste based on ""Post-market waste not cleared"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+GH-202432,Noise,Low,"Classified as Noise based on ""24hr supermarket delivery trucks idling with engines on"" and assigned Low priority as a non-hazardous nuisance issue.",
+GH-202448,Other,Standard,"Classified as Other and flagged NEEDS_REVIEW citing ""Main drain blocked — entire locality at flooding risk this week"" and ""Main drain blocked — entire locality at flooding risk this week"" due to conflicting categories, with Standard priority as an active disruption.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Classified as Flooding based on ""Colony surrounded by fields that channel rainwater through main road"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",

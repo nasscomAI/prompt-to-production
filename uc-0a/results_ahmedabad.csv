@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard based on ""Tarmac surface melting at 44°C"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard based on ""Metal bus shelter reaching dangerous temperatures"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202405,Other,Standard,"Classified as Other and flagged NEEDS_REVIEW citing ""Dead trees with split branches"" as it falls outside defined categories, with Standard priority.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard based on ""Grass dying in heatwave conditions"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202407,Other,Urgent,"Classified as Other based on ""Child injured last week"" and assigned Urgent priority due to severe safety risk.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Classified as Pothole based on ""Pothole on main highway causing morning rush lane closure"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202414,Streetlight,Standard,"Classified as Streetlight based on ""Residential colony unlit after 9pm"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202417,Waste,Standard,"Classified as Waste based on ""Night market waste not cleared before morning"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202421,Noise,Low,"Classified as Noise based on ""Club music audible at residential buildings at 2am"" and assigned Low priority as a non-hazardous nuisance issue.",
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard based on ""Zoo approach road surface bubbling at 45°C"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard based on ""River walk surface temperature unbearable"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202431,Other,Standard,"Classified as Other and flagged NEEDS_REVIEW citing ""Old city road subsidence near ancient step well"" and ""Old city road subsidence near ancient step well"" due to conflicting categories, with Standard priority as an active disruption.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Classified as Heat Hazard based on ""Motorists reporting burns on contact"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202444,Waste,Standard,"Classified as Waste based on ""Restaurant waste bins overflowing on Sunday night"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard based on ""Users exposed to full sun"" and assigned Standard priority due to active municipal disruption without urgent safety hazards.",
