@@ -1,0 +1,5 @@
+# Nasscom AI Code Sarathi — Prompt-to-Production workshop
+# All four use cases (uc-0a, uc-0b, uc-0c, uc-x) are implemented with the
+# Python standard library only (argparse, csv, re, sys). No third-party
+# packages are required. This file exists so environments can be reproduced
+# uniformly:  python -m pip install -r requirements.txt
