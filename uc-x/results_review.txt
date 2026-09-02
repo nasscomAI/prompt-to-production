@@ -1,0 +1,45 @@
+UC-X Ask My Documents - Review Output
+======================================================================
+
+Q1: Can I carry forward unused annual leave?
+
+Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+policy_hr_leave.txt, section 2.6
+----------------------------------------------------------------------
+Q2: Can I install Slack on my work laptop?
+
+Employees must not install software on corporate devices without written approval from the IT Department.
+
+policy_it_acceptable_use.txt, section 2.3
+----------------------------------------------------------------------
+Q3: What is the home office equipment allowance?
+
+Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.
+
+policy_finance_reimbursement.txt, section 3.1
+----------------------------------------------------------------------
+Q4: Can I use my personal phone to access work files when working from home?
+
+Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+
+policy_it_acceptable_use.txt, section 3.1
+----------------------------------------------------------------------
+Q5: What is the company view on flexible working culture?
+
+This question is not covered in the available policy documents
+(policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+Please contact the relevant department for guidance.
+----------------------------------------------------------------------
+Q6: Can I claim DA and meal receipts on the same day?
+
+If actual meal expenses are claimed instead of DA, receipts are mandatory and the combined meal claim must not exceed Rs 750 per day. DA and meal receipts cannot be claimed simultaneously for the same day.
+
+policy_finance_reimbursement.txt, section 2.6
+----------------------------------------------------------------------
+Q7: Who approves leave without pay?
+
+LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.
+
+policy_hr_leave.txt, section 5.2
+----------------------------------------------------------------------
