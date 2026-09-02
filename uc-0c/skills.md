@@ -23,8 +23,11 @@ skills:
       Computes period-over-period growth for exactly one ward and one category,
       returning a per-period table that shows the formula behind every figure.
     input: >
-      rows (from load_dataset); ward (str); category (str); growth_type
-      (MoM or YoY).
+      rows (from load_dataset); ward (str) — exactly one; category (str) —
+      exactly one; growth_type (MoM or YoY). The signature admits one of each by
+      construction; a request for an aggregate is expressed by passing a
+      sentinel such as "all", "*" or "total", or by omitting the argument, and
+      those are what the refusal below detects.
     output: >
       list of dicts in period order, each with period, ward, category,
       actual_spend, previous_period, previous_spend, growth_type, growth_pct,
@@ -33,7 +36,9 @@ skills:
       Refuses when growth_type is absent, when the ward or category is not
       present in the dataset, when a request would span more than one ward or
       category, or when a period appears more than once for the requested scope,
-      naming what is required, what is available, or which periods conflict. A period whose own
+      naming what is required, what is available, or which periods conflict. A
+      refusal exits non-zero, writes nothing to the output path, and reports on
+      stderr. A period whose own
       or whose prior actual_spend is null yields a flagged row with the reason
       and no growth figure, never an imputed one. YoY against a single-year
       dataset yields flagged rows reporting that no prior-year period exists.
