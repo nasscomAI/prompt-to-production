@@ -49,4 +49,7 @@ enforcement:
      a computed value."
   - "The requested ward and category must exist in the dataset. An unmatched
      ward or category is refused, naming the values that are available, rather
-     than returning an empty result that would read as zero growth."
+     than returning an empty result that would read as zero growth. A period
+     appearing twice for the same ward and category is equally refused: two
+     rows carry two different answers, and computing from whichever was read
+     last produces a figure that looks correct and cannot be checked."

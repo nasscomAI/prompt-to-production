@@ -31,8 +31,9 @@ skills:
       formula and flag. growth_pct is blank where a flag is set.
     error_handling: >
       Refuses when growth_type is absent, when the ward or category is not
-      present in the dataset, or when a request would span more than one ward or
-      category, naming what is required or what is available. A period whose own
+      present in the dataset, when a request would span more than one ward or
+      category, or when a period appears more than once for the requested scope,
+      naming what is required, what is available, or which periods conflict. A period whose own
       or whose prior actual_spend is null yields a flagged row with the reason
       and no growth figure, never an imputed one. YoY against a single-year
       dataset yields flagged rows reporting that no prior-year period exists.

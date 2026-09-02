@@ -7,7 +7,6 @@ compute. It refuses rather than guesses: no scope, no growth type, no answer.
 """
 import argparse
 import csv
-import sys
 
 REQUIRED_COLUMNS = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]
 GROWTH_TYPES = ["MoM", "YoY"]
@@ -69,18 +68,36 @@ def compute_growth(rows, ward: str, category: str, growth_type: str):
 
     wards = sorted({r["ward"] for r in rows})
     cats = sorted({r["category"] for r in rows})
-    for label, value, available in (("ward", ward, wards), ("category", category, cats)):
+    for label, plural, value, available in (("ward", "wards", ward, wards),
+                                            ("category", "categories", category, cats)):
         if not value or value.strip().lower() in AGGREGATE_REQUESTS:
             raise SystemExit(
-                f"Refusing to aggregate across {label}s. This tool reports one ward and one "
+                f"Refusing to aggregate across {plural}. This tool reports one ward and one "
                 f"category at a time; an all-{label} figure conceals the per-{label} movement "
-                f"it averages. Available {label}s: {', '.join(available)}")
+                f"it averages. Available {plural}: {', '.join(available)}")
         if value not in available:
             raise SystemExit(f"Refusing to compute: {label} '{value}' is not in the dataset. "
-                             f"Available {label}s: {', '.join(available)}")
+                             f"Available {plural}: {', '.join(available)}")
 
     scoped = sorted([r for r in rows if r["ward"] == ward and r["category"] == category],
                     key=lambda r: r["period"])
+
+    # Two rows for the same period carry two different answers. Building the
+    # lookup would keep whichever came last and emit a growth figure with no
+    # sign that a conflict existed, which is the failure this UC is named for.
+    seen = {}
+    conflicts = []
+    for r in scoped:
+        if r["period"] in seen:
+            conflicts.append(f"{r['period']} (values {seen[r['period']]} and {r['raw_actual']})")
+        seen[r["period"]] = r["raw_actual"]
+    if conflicts:
+        raise SystemExit(
+            "Refusing to compute: duplicate period rows for "
+            f"{ward} / {category} — {'; '.join(conflicts)}. Each period must appear "
+            "once; growth computed from one of two conflicting figures would look "
+            "correct and be unverifiable.")
+
     by_period = {r["period"]: r for r in scoped}
 
     out = []
