@@ -166,13 +166,23 @@ def main():
     index = retrieve_documents()
 
     print("Ask My Documents")
-    print("Type 'exit' to quit.\n")
+    print("Type 'exit' to quit.")
+    print("Type 'help' to see available policy documents.\n")
 
     while True:
         question = input("Question: ").strip()
 
         if question.lower() == "exit":
             break
+
+        if question.lower() == "help":
+            print("Available policy documents:")
+            print("- policy_hr_leave.txt")
+            print("- policy_it_acceptable_use.txt")
+            print("- policy_finance_reimbursement.txt")
+            print("Ask a question covered by these documents.")
+            print()
+            continue
 
         if not question:
             print()
