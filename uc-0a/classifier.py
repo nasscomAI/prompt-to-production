@@ -101,7 +101,12 @@ def classify_complaint(row: dict) -> dict:
         # create reason listing categories and sample terms
         parts = []
         for c in matched_categories:
-            parts.append(f"{c} (found {', '.join([f'\"{t}\"' for t in matched_terms.get(c,[])])})")
+            terms = matched_terms.get(c, [])
+            quoted_terms = ", ".join(f'"{t}"' for t in terms) if terms else ""
+            if quoted_terms:
+                parts.append(f"{c} (found {quoted_terms})")
+            else:
+                parts.append(f"{c}")
         result["reason"] = "Ambiguous: matches " + "; ".join(parts)
         result["flag"] = "NEEDS_REVIEW"
     else:
