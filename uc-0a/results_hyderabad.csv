@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Flooding,Urgent,Flooding issue reported: Underpass flooded after 1hr.,
+Flooding,Standard,Flooding issue reported: area flooded. Traders suffering.,NEEDS_REVIEW
+Drain Blockage,Standard,Drain Blockage issue reported: stormwater drain 100% blocked.,
+Drain Blockage,Standard,Drain Blockage issue reported: Drain blocked and.,
+Pothole,Standard,Pothole issue reported: Potholes causing vehicles.,
+Pothole,Urgent,Pothole issue reported: Pothole swallowed entire.,
+Pothole,Urgent,Pothole issue reported: 6 potholes in 200m.,
+Waste,Standard,Waste issue reported: zone garbage overflow. Tourist.,NEEDS_REVIEW
+Noise,Standard,Noise issue reported: Construction drilling from 5am.,
+Road Damage,Urgent,Road Damage issue reported: Road collapsed partially. Crater.,
+Flooding,Standard,Flooding issue reported: Underpass floods in light.,
+Waste,Standard,Waste issue reported: Post-market waste not cleared.,
+Noise,Standard,Noise issue reported: trucks idling with engines.,
+Flooding,Standard,Flooding issue reported: at flooding risk this.,NEEDS_REVIEW
+Flooding,Standard,Flooding issue reported: Colony surrounded by fields that channel rainwater through.,

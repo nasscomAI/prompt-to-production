@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Pothole issue reported: Large pothole 60cm wide.,
+Pothole,Urgent,Pothole issue reported: Deep pothole near bus.,
+Flooding,Standard,Flooding issue reported: Underpass flooded knee-deep after.,
+Flooding,Standard,Flooding issue reported: stand flooded. Passengers standing.,NEEDS_REVIEW
+Streetlight,Standard,Streetlight issue reported: consecutive streetlights out for.,
+Streetlight,Urgent,Streetlight issue reported: Streetlight flickering and.,
+Waste,Standard,Waste issue reported: Overflowing garbage bins near.,
+Noise,Standard,Noise issue reported: playing music past midnight.,
+Road Damage,Standard,Road Damage issue reported: surface cracked and sinking.,
+Other,Urgent,Other issue reported: Manhole cover missing. Risk of serious injury to.,NEEDS_REVIEW
+Flooding,Standard,Flooding issue reported: approach floods in 30mins.,
+Waste,Standard,Waste issue reported: Dead animal not removed.,
+Streetlight,Standard,"Streetlight issue reported: street, lights out. Safety.",NEEDS_REVIEW
+Waste,Standard,Waste issue reported: Bulk waste from apartment.,
+Road Damage,Urgent,Road Damage issue reported: tiles broken and upturned.,
