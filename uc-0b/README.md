@@ -65,6 +65,20 @@ Scope bleed to look for: phrases like "as is standard practice", "typically in g
 
 ---
 
+## Implementation Notes — What We Changed
+
+This UC was implemented as a strict clause-preservation workflow:
+
+- `agents.md` was replaced with a concrete HR policy-summary agent definition with enforcement rules for clause coverage, multi-condition integrity, and refusal on unsupported assumptions.
+- `skills.md` was filled with the required `retrieve_policy` and `summarize_policy` skills.
+- `app.py` was implemented to read the input policy, extract numbered clauses while ignoring section headers and decorative separators, validate the presence of all required clauses, and write the final summary file.
+- A validation check was added to fail the run if the output does not include exactly the 10 required numbered clauses.
+- The generated summary file is `summary_hr_leave.txt` and was verified against the policy source.
+
+Verified result: the script runs successfully and produces a 10-line summary containing all required clauses from the source policy.
+
+---
+
 ## Commit Formula
 ```
 UC-0B Fix [failure mode]: [why it failed] → [what you changed]
