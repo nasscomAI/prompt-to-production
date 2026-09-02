@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Heat Hazard,Standard,Heat Hazard issue reported: at 44°C. Footwear sticking.,NEEDS_REVIEW
+Heat Hazard,Standard,Heat Hazard issue reported: dangerous temperatures. Commuters refusing.,
+Other,Standard,Other issue reported: Dead trees with split branches. Fall risk to.,NEEDS_REVIEW
+Road Damage,Standard,Road Damage issue reported: system broken. Grass dying.,NEEDS_REVIEW
+Road Damage,Urgent,Road Damage issue reported: upturned paving. Child injured.,
+Pothole,Standard,Pothole issue reported: Pothole on main.,
+Streetlight,Standard,Streetlight issue reported: colony unlit after 9pm.,
+Waste,Standard,Waste issue reported: market waste not cleared.,NEEDS_REVIEW
+Noise,Standard,Noise issue reported: Club music audible at.,
+Road Damage,Standard,Road Damage issue reported: approach road surface bubbling.,NEEDS_REVIEW
+Heat Hazard,Standard,Heat Hazard issue reported: surface temperature unbearable. Installed.,
+Heritage Damage,Standard,Heritage Damage issue reported: near ancient step well.,NEEDS_REVIEW
+Heat Hazard,Standard,Heat Hazard issue reported: storing heat. Motorists reporting.,
+Waste,Standard,Waste issue reported: Restaurant waste bins overflowing.,
+Road Damage,Standard,Road Damage issue reported: glass broken. Users exposed.,
