@@ -18,8 +18,12 @@ skills:
       Other, priority Standard, flag NEEDS_REVIEW and a reason naming which field
       was absent. Two or more categories supported equally return Other with
       NEEDS_REVIEW rather than the first match. A category outside the permitted
-      set is downgraded to Other with NEEDS_REVIEW rather than emitted. The
-      function never raises: every input returns a well-formed five-key dict.
+      set is downgraded to Other with NEEDS_REVIEW rather than emitted. Field
+      values are coerced to str before use rather than assumed to be strings,
+      because csv.DictReader yields a list for a row carrying more fields than
+      the header and a caller may pass any type. The function never raises:
+      every input, including a malformed or non-string one, returns a
+      well-formed five-key dict.
 
   - name: batch_classify
     description: >

@@ -117,8 +117,11 @@ def _hits(patterns, text):
 
 def classify_complaint(row: dict) -> dict:
     """Classify one complaint row. Returns complaint_id, category, priority, reason, flag."""
-    complaint_id = (row.get("complaint_id") or "").strip()
-    description = (row.get("description") or "").strip()
+    # Coerced, not assumed to be str: csv.DictReader yields a list for a row with
+    # more fields than the header, and a caller may pass any type. skills.md
+    # promises this function never raises, so the contract is met here.
+    complaint_id = str(row.get("complaint_id") or "").strip()
+    description = str(row.get("description") or "").strip()
 
     if not complaint_id or not description:
         missing = "complaint_id" if not complaint_id else "description"
