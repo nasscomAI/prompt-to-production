@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole due to mention of 'pothole' in the description.,
+PM-202402,Pothole,Urgent,Classified as Pothole due to mention of 'pothole' in the description.,
+PM-202406,Flooding,Standard,Classified as Flooding due to mention of 'flood' in the description.,
+PM-202408,Flooding,Standard,Classified as Flooding due to mention of 'flood' in the description.,
+PM-202410,Streetlight,Standard,Classified as Streetlight due to mention of 'streetlight' in the description.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight due to mention of 'streetlight' in the description.,
+PM-202413,Flooding,Standard,Classified as Flooding due to mention of 'overflow' in the description.,
+PM-202418,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
+PM-202419,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
+PM-202420,Other,Urgent,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding due to mention of 'flood' in the description.,
+PM-202428,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage due to mention of 'heritage' in the description.,
+PM-202433,Waste,Standard,Classified as Waste due to mention of 'waste' in the description.,
+PM-202446,Other,Urgent,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
