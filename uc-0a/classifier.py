@@ -63,9 +63,11 @@ CATEGORY_KEYWORDS = {
     ],
     "Flooding": [
         "flood",
+        "floods",
         "flooding",
         "flooded",
         "waterlogged",
+        "waterlogging",
         "water logged",
         "water logging",
         "standing water",
@@ -78,7 +80,9 @@ CATEGORY_KEYWORDS = {
         "street light",
         "street lights",
         "lamp post",
+        "lamp posts",
         "lamppost",
+        "lampposts",
         "street lamp",
         "street lamps",
     ],
@@ -93,12 +97,17 @@ CATEGORY_KEYWORDS = {
         "rubbish",
         "overflowing bin",
         "overflowing bins",
+        "dead animal",
+        "dead animals",
+        "animal",
+        "animals",
     ],
     "Noise": [
         "noise",
         "noisy",
         "loud music",
         "loud",
+        "music",
         "honking",
         "horn honking",
         "blaring",
@@ -114,6 +123,11 @@ CATEGORY_KEYWORDS = {
         "road is broken",
         "uneven road",
         "road surface",
+        "footpath",
+        "footpaths",
+        "footpath tiles",
+        "tiles broken",
+        "broken tiles",
     ],
     "Heritage Damage": [
         "heritage",
@@ -138,14 +152,22 @@ CATEGORY_KEYWORDS = {
     "Drain Blockage": [
         "drain blockage",
         "blocked drain",
+        "blocked drains",
         "clogged drain",
+        "clogged drains",
         "drain is blocked",
+        "drains are blocked",
         "drainage blocked",
         "sewer overflow",
         "sewage overflow",
         "clogged sewer",
         "drain",
+        "drains",
         "drainage",
+        "manhole",
+        "manholes",
+        "manhole cover",
+        "manhole cover missing",
     ],
 }
 
@@ -276,6 +298,11 @@ def classify_complaint(row):
 
         if len(top_categories) == 1:
             best_category = top_categories[0]
+        elif "Flooding" in top_categories:
+            # Flooding evidence is treated as at least as relevant as any
+            # other tied category (e.g. Drain Blockage), so resolve the
+            # tie in favor of Flooding rather than falling back to Other.
+            best_category = "Flooding"
         else:
             tie = True
 
