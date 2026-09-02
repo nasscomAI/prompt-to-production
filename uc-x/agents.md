@@ -47,4 +47,9 @@ enforcement:
      answer is indistinguishable from an invented one, and the control run
      produced seven of them."
   - "The cited section must exist in the cited document and must contain the
-     claim being made. A citation is a checkable assertion, not decoration."
+     claim being made. A citation is a checkable assertion, not decoration.
+     Where an answer draws on more than one clause of the same document, each
+     clause must be labelled with its own section number in the body of the
+     answer: a citation listing two sections above text that has been run
+     together does not say which section carries which claim, and cannot be
+     checked."

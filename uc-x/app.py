@@ -184,8 +184,14 @@ def answer_question(question: str, index):
     chosen = [c for s, c in best if s == top_score][:2]
 
     sections = [c["section"] for c in chosen]
-    body = " ".join(c["text"] for c in chosen)
-    rendered = f"{body}\n\nSource: {doc}, section{'s' if len(sections) > 1 else ''} {', '.join(sections)}"
+    # Each clause is labelled with its own section rather than fused into one
+    # paragraph. Rule 5 requires the cited section to contain the claim being
+    # made; with two sections cited and their text run together, a reader cannot
+    # tell which section carries which claim, and the citation stops being
+    # checkable.
+    body = "\n".join(f"[{c['section']}] {c['text']}" for c in chosen)
+    rendered = (f"{body}\n\nSource: {doc}, "
+                f"section{'s' if len(sections) > 1 else ''} {', '.join(sections)}")
 
     # Rules 1 and 2, checked rather than trusted, before the answer is returned.
     low = rendered.lower()
