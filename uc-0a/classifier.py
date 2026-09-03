@@ -97,12 +97,15 @@ HERITAGE_LOCATION_ONLY = [r"\bheritage (?:area|zone|precinct|street)\b",
 # route. A named group of people affected counts as a stated consequence.
 SUPPORTING_SIGNALS = [
     r"\brisk\b", r"\bunsafe\b", r"\bdanger(?:ous)?\b", r"\baccident\b",
-    r"\bhealth\b", r"\bhazard(?:s|ous)?\b", r"\binjur(?:y|ies|ed)\b",
-    r"\bstranded\b", r"\bunusable\b", r"\binaccessible\b", r"\babandoned\b",
-    r"\blosses\b", r"\bdamaged?\b", r"\bexposed\b", r"\bstructural\b",
-    r"\bgas leak\b", r"\bdengue\b", r"\bhospitalis(?:ed|ation)\b",
-    r"\bcommuters\b", r"\btraders\b", r"\bpedestrians?\b", r"\bresidents?\b",
-    r"\bvisitors?\b", r"\bpassengers\b",
+    r"\bhealth\b", r"\bstranded\b", r"\bunusable\b", r"\binaccessible\b",
+    r"\babandoned\b", r"\blosses\b", r"\bdamaged?\b", r"\bexposed\b",
+    r"\bstructural\b", r"\bgas leak\b", r"\bdengue\b", r"\bburns?\b",
+    # the named-group list, closed rather than illustrative — see rule 5
+    r"\bcommuters?\b", r"\btraders?\b", r"\bpedestrians?\b", r"\bresidents\b",
+    r"\bvisitors?\b", r"\bpassengers?\b", r"\bwalkers?\b", r"\bmotorists?\b",
+    r"\bshoppers?\b", r"\bcyclists?\b", r"\btourists?\b", r"\busers?\b",
+    r"\briders?\b", r"\bdrivers?\b", r"\bvehicles?\b", r"\bchildren\b",
+    r"\bemployees?\b",
 ]
 
 # Rule 1 is only a rule if it is checked. Refuse to start if the cue table names

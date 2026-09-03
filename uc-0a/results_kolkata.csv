@@ -1,5 +1,5 @@
 complaint_id,category,priority,reason,flag
-KM-202401,Heritage Damage,Low,"Cited 'Heritage', 'knocked over', 'Not restored' → Heritage Damage.",
+KM-202401,Heritage Damage,Standard,"Cited 'Heritage', 'knocked over', 'Not restored' → Heritage Damage.",
 KM-202402,Heritage Damage,Low,"Cited 'Historic', 'tram road', 'broken up' → Heritage Damage.",
 KM-202405,Noise,Low,"Cited 'band', '11pm' → Noise.",
 KM-202409,Pothole,Low,Cited 'potholes' → Pothole.,

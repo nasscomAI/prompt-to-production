@@ -5,7 +5,7 @@ PM-202406,Flooding,Standard,"Cited 'flooded', 'knee-deep', 'stranded' → Floodi
 PM-202408,Flooding,Standard,"Cited 'flooded', 'standing in water' → Flooding.",
 PM-202410,Streetlight,Low,"Cited 'streetlights', 'dark' → Streetlight.",
 PM-202411,Streetlight,Urgent,Cited 'Streetlight' → Streetlight; severity term 'hazard' present → Urgent.,
-PM-202413,Waste,Low,"Cited 'garbage', 'bins', 'Overflowing' → Waste.",
+PM-202413,Waste,Standard,"Cited 'garbage', 'bins', 'Overflowing' → Waste.",
 PM-202418,Noise,Low,"Cited 'music', 'past midnight' → Noise.",
 PM-202419,Road Damage,Low,"Cited 'cracked', 'Road surface' → Road Damage.",
 PM-202420,Road Damage,Urgent,Cited 'Manhole' → Road Damage; severity term 'injury' present → Urgent.,

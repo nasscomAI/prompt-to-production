@@ -62,6 +62,10 @@ enforcement:
      with rainwater' ties Pothole against Flooding and a plainly classifiable row
      is referred. A term matched more than once counts once, and where two terms
      overlap in the text only the longer counts.
+     Terms are matched as whole words allowing a regular plural, so potholes,
+     cobblestones, amplifiers and streetlights match their singular listings.
+     Rule 2 prescribes stem matching and rule 4 previously prescribed nothing,
+     which left six rows turning on an unstated choice.
      The vocabulary is part of this specification, not an implementation detail;
      without it the weighting above operates on quantities no reader can compute.
      Naming terms, then corroborating terms, per category:
@@ -84,8 +88,8 @@ enforcement:
          degrees Celsius; temperature, full sun, unbearable.
        Drain Blockage — drain, drains, draining, drainage, stormwater; mosquito
          breeding, blocked.
-       Other — no naming term of any category is present, or two or more tie. Binary support would tie 'deep pothole filling with rainwater'
-     between Pothole and Flooding and refer a plainly classifiable row. A mention
+       Other — no naming term of any category is present, or two or more tie.
+     A mention
      that only locates a complaint — a heritage precinct, a named museum, a
      heritage area — is not evidence about what is damaged; a heritage term
      counts only when the description also states damage to it."
@@ -94,10 +98,18 @@ enforcement:
      and nothing else would ever select it. The test is whether the description
      asserts an effect on someone or something beyond the defect itself. It is
      Standard when any of these appears: risk, unsafe, danger, dangerous,
-     accident, health, hazard, injury, stranded, unusable, inaccessible,
-     abandoned, losses, damage, damaged, exposed, structural, gas leak, dengue,
-     hospitalised, or a named group of people affected such as commuters,
-     traders, pedestrians, residents, visitors or passengers. It is Low when the
+     accident, health, stranded, unusable, inaccessible, abandoned, losses,
+     damage, damaged, exposed, structural, gas leak, dengue, burns, or a named
+     group of people affected. That group list is exhaustive, not illustrative:
+     commuters, traders, pedestrians, residents, visitors, passengers, walkers,
+     motorists, shoppers, cyclists, tourists, users, riders, drivers, vehicles,
+     children, employees. Leaving it open produced two rows describing the same
+     situation at different priorities — 'Tourist photographs showing piles of
+     waste' against 'Foreign visitors photographing piles' — purely because one
+     happened to use a listed noun. A singular form matches its plural listing.
+     The terms hazard, injury and hospitalised are deliberately absent: rule 2
+     makes any row containing them Urgent, so listing them here would be dead
+     text. It is Low when the
      description states only the defect, its extent or its duration, and none of
      the above appears. Reporting that a defect exists, however large or however
      long it has stood, is not a stated consequence — 'three streetlights out for
