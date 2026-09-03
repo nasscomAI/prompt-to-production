@@ -92,10 +92,17 @@ HERITAGE_LOCATION_ONLY = [r"\bheritage (?:area|zone|precinct|street)\b",
 # The README fixes only the Urgent trigger. Standard against Low is this file's
 # call: stated harm, risk or loss of a service is Standard, nuisance without
 # stated harm is Low. days_open is never consulted — see agents.md context.
+# Enumerated in enforcement rule 5. "blocked" is deliberately absent: it would
+# make every "Drain blocked" row Standard, and a blocked drain is not a blocked
+# route. A named group of people affected counts as a stated consequence.
 SUPPORTING_SIGNALS = [
     r"\brisk\b", r"\bunsafe\b", r"\bdanger(?:ous)?\b", r"\baccident\b",
-    r"\bhealth\b", r"\bstranded\b", r"\bblocked\b", r"\bdengue\b",
-    r"\bgas leak\b", r"\bstructural\b", r"\blosses\b", r"\bexposed\b",
+    r"\bhealth\b", r"\bhazard(?:s|ous)?\b", r"\binjur(?:y|ies|ed)\b",
+    r"\bstranded\b", r"\bunusable\b", r"\binaccessible\b", r"\babandoned\b",
+    r"\blosses\b", r"\bdamaged?\b", r"\bexposed\b", r"\bstructural\b",
+    r"\bgas leak\b", r"\bdengue\b", r"\bhospitalis(?:ed|ation)\b",
+    r"\bcommuters\b", r"\btraders\b", r"\bpedestrians?\b", r"\bresidents?\b",
+    r"\bvisitors?\b", r"\bpassengers\b",
 ]
 
 # Rule 1 is only a rule if it is checked. Refuse to start if the cue table names

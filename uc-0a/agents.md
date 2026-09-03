@@ -17,8 +17,10 @@ intent: >
   human judging classification quality.
 
 context: >
-  The agent may read only the description, and the ward and location fields where
-  they disambiguate it. It may not use days_open to set priority: a complaint's
+  The agent may read only the description. The ward and location fields hold
+  place names, and enforcement rule 4 forbids treating a place name as evidence
+  about what is damaged, so they are not read at all. It may not use days_open to
+  set priority: a complaint's
   age is a backlog measure, not a severity measure, and the control run showed
   that treating it as one inverts the ranking — a dark street open 18 days came
   back Urgent while "School children at risk" came back Standard. It may not use
@@ -54,19 +56,53 @@ enforcement:
   - "Where two or more categories are supported equally by the description, or
      where none is supported, the agent must emit category Other with flag
      NEEDS_REVIEW instead of taking the first plausible match. Support is
-     weighted, not binary: a term naming the thing complained about counts twice,
-     a corroborating detail once, and categories tie only when their totals are
-     equal. Binary support would tie 'deep pothole filling with rainwater'
+     weighted, not binary: a naming term counts twice, a corroborating term once,
+     and categories tie only when their totals are equal. A category may not be
+     selected on corroborating terms alone — without that, 'deep pothole filling
+     with rainwater' ties Pothole against Flooding and a plainly classifiable row
+     is referred. A term matched more than once counts once, and where two terms
+     overlap in the text only the longer counts.
+     The vocabulary is part of this specification, not an implementation detail;
+     without it the weighting above operates on quantities no reader can compute.
+     Naming terms, then corroborating terms, per category:
+       Pothole — pothole; tyre damage, tyre blowout.
+       Flooding — flood, flooded, flooding, waterlogged, knee-deep, standing in
+         water; rainwater, stranded.
+       Streetlight — streetlight, street light, lamp post, lights out, unlit,
+         substation; dark, darkness, wiring theft.
+       Waste — waste, garbage, rubbish, bin, bins, litter, dead animal; dumped,
+         overflowing.
+       Noise — noise, music, amplifier, drilling, band, idling; audible, past
+         midnight, a clock time such as 2am or 11pm.
+       Road Damage — subsidence, subsided, buckled, crater, cracked, cobblestone,
+         manhole, collapse, collapsed, footpath; paving, road surface, tiles
+         broken.
+       Heritage Damage — heritage, historic, ancient, museum, step well, tram
+         road, subject to the locative exclusion below; knocked over, defaced,
+         broken, damaged, not restored, not replaced, removed, split.
+       Heat Hazard — heat, heatwave, melting, bubbling, burns, a temperature in
+         degrees Celsius; temperature, full sun, unbearable.
+       Drain Blockage — drain, drains, draining, drainage, stormwater; mosquito
+         breeding, blocked.
+       Other — no naming term of any category is present, or two or more tie. Binary support would tie 'deep pothole filling with rainwater'
      between Pothole and Flooding and refer a plainly classifiable row. A mention
      that only locates a complaint — a heritage precinct, a named museum, a
      heritage area — is not evidence about what is damaged; a heritage term
      counts only when the description also states damage to it."
-  - "Priority below Urgent is decided by stated consequence, not by age. A
-     description stating harm, risk, or loss of a service — injury risk, an
-     unusable facility, a health concern, a blocked route — is Standard. A
-     description stating a nuisance with no consequence given is Low. Without
-     this rule Low is unreachable: the schema permits it, days_open is
-     forbidden, and nothing else would ever select it."
+  - "Priority below Urgent is decided by stated consequence, not by age. Without
+     this rule Low is unreachable: the schema permits it, days_open is forbidden,
+     and nothing else would ever select it. The test is whether the description
+     asserts an effect on someone or something beyond the defect itself. It is
+     Standard when any of these appears: risk, unsafe, danger, dangerous,
+     accident, health, hazard, injury, stranded, unusable, inaccessible,
+     abandoned, losses, damage, damaged, exposed, structural, gas leak, dengue,
+     hospitalised, or a named group of people affected such as commuters,
+     traders, pedestrians, residents, visitors or passengers. It is Low when the
+     description states only the defect, its extent or its duration, and none of
+     the above appears. Reporting that a defect exists, however large or however
+     long it has stood, is not a stated consequence — 'three streetlights out for
+     10 days' is Low, and 'passengers standing in water' is Standard, because the
+     second names who is affected and the first does not."
   - "Every input row must yield exactly one output row. A row that cannot be
      parsed is emitted with category Other, priority Standard, flag NEEDS_REVIEW
      and a reason naming the defect. The run must not abort on a bad row, and the
