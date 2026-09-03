@@ -1,16 +1,46 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# \# UC-0C Skills
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# 
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# \## load\_dataset
+
+# 
+
+# Reads the budget CSV file, validates the required columns, reports the
+
+# number of rows and the count of null actual\_spend values, and reports
+
+# which rows are null together with their notes/reasons.
+
+# 
+
+# \## compute\_growth
+
+# 
+
+# Takes ward, category, and growth\_type as explicit inputs and returns a
+
+# per-period table for that ward/category combination.
+
+# 
+
+# The output includes:
+
+# \- period
+
+# \- actual\_spend
+
+# \- growth type
+
+# \- formula used
+
+# \- growth result
+
+# \- null reason when applicable
+
+# 
+
+# Null actual\_spend values are flagged and are not used to silently compute
+
+# growth.
+

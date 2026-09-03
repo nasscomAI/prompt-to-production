@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"The description contains ""heritage"", supporting the Heritage Damage category.",
+KM-202402,Road Damage,Standard,"The description contains ""cobblestones broken"", supporting the Road Damage category.",
+KM-202405,Noise,Standard,"The description contains ""wedding band"", supporting the Noise category.",
+KM-202409,Pothole,Standard,"The description contains ""pothole"", supporting the Pothole category.",
+KM-202410,Pothole,Standard,"The description contains ""pothole"", supporting the Pothole category.",
+KM-202411,Pothole,Standard,"The description contains ""pothole"", supporting the Pothole category.",
+KM-202415,Drain Blockage,Standard,"The description contains ""draining directly"", supporting the Drain Blockage category.",
+KM-202418,Waste,Standard,"The description contains ""waste"", supporting the Waste category.",
+KM-202421,Other,Urgent,"The description contains ""hospital"", which requires Urgent priority.",NEEDS_REVIEW
+KM-202422,Road Damage,Standard,"The description contains ""road surface"", supporting the Road Damage category.",
+KM-202426,Heritage Damage,Standard,"The description contains ""heritage"", supporting the Heritage Damage category.",
+KM-202430,Road Damage,Standard,"The description contains ""road subsided"", supporting the Road Damage category.",
+KM-202434,Heritage Damage,Standard,"The description contains ""heritage"", supporting the Heritage Damage category.",
+KM-202436,Streetlight,Standard,"The description contains ""darkness"", supporting the Streetlight category.",
+KM-202438,Noise,Standard,"The description contains ""amplifiers"", supporting the Noise category.",

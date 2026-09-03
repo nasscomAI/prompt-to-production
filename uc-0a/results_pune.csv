@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains ""pothole"", supporting the Pothole category.",
+PM-202402,Pothole,Urgent,"The description contains ""child"", which requires Urgent priority.",
+PM-202406,Flooding,Standard,"The description contains ""flood"", supporting the Flooding category.",
+PM-202408,Other,Standard,"The description contains ""flooded and drain blocked"" and is ambiguous, so it needs review.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description contains ""streetlight"", supporting the Streetlight category.",
+PM-202411,Streetlight,Urgent,"The description contains ""hazard"", which requires Urgent priority.",
+PM-202413,Waste,Standard,"The description contains ""garbage"", supporting the Waste category.",
+PM-202418,Noise,Standard,"The description contains ""music"", supporting the Noise category.",
+PM-202419,Road Damage,Standard,"The description contains ""road surface"", supporting the Road Damage category.",
+PM-202420,Drain Blockage,Urgent,"The description contains ""injury"", which requires Urgent priority.",
+PM-202427,Flooding,Standard,"The description contains ""flood"", supporting the Flooding category.",
+PM-202428,Other,Standard,"The description contains ""health concern"" and is ambiguous, so it needs review.",NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description contains ""heritage"", supporting the Heritage Damage category.",
+PM-202433,Waste,Standard,"The description contains ""waste"", supporting the Waste category.",
+PM-202446,Road Damage,Urgent,"The description contains ""fell"", which requires Urgent priority.",
