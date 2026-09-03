@@ -13,4 +13,4 @@ GH-202424,Flooding,Standard,Cited 'floods' → Flooding.,
 GH-202428,Waste,Standard,Cited 'waste' → Waste.,
 GH-202432,Noise,Low,Cited 'idling' → Noise.,
 GH-202448,Drain Blockage,Standard,"Cited 'drain', 'blocked' → Drain Blockage.",
-GH-202438,Flooding,Low,Cited 'rainwater' → Flooding.,
+GH-202438,Other,Low,"No category cue found in ""Colony surrounded by fields that channel rainwater through m""; referred for review rather than guessed.",NEEDS_REVIEW

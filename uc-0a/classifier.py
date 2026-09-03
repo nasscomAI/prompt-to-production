@@ -64,13 +64,14 @@ CATEGORY_CUES = {
     "Road Damage": {
         "primary":   [r"\bsubsid(?:ed|ence|ing)\b", r"\bbuckled\b", r"\bcrater\b",
                       r"\bcracked\b", r"\bcobblestones?\b", r"\bmanhole\b",
-                      r"\bcollaps(?:e|ed)\b", r"\bfootpath\b"],
-        "secondary": [r"\bpaving\b", r"\broad surface\b", r"\btiles broken\b"],
+                      r"\bcollaps(?:e|ed)\b", r"\bfootpath\b", r"\bpaving\b"],
+        "secondary": [r"\broad surface\b", r"\btiles broken\b"],
     },
     "Heat Hazard": {
         "primary":   [r"\bheat(?:wave)?\b", r"\bmelting\b", r"\bbubbling\b",
-                      r"\bburns?\b", r"\b\d+\s*°?\s*c\b"],
-        "secondary": [r"\btemperature(?:s)?\b", r"\bfull sun\b", r"\bunbearable\b"],
+                      r"\bburns?\b", r"\b\d+\s*°?\s*c\b",
+                      r"\btemperature(?:s)?\b", r"\bfull sun\b"],
+        "secondary": [r"\bunbearable\b"],
     },
     "Drain Blockage": {
         "primary":   [r"\bdrains?\b", r"\bdrain(?:ing|age)\b", r"\bstormwater\b"],
@@ -86,8 +87,14 @@ HERITAGE_SUBJECT = [r"\bheritage\b", r"\bhistoric(?:al)?\b", r"\bancient\b",
 HERITAGE_DAMAGE = [r"\bknocked over\b", r"\bdefaced\b", r"\bbroken(?: up)?\b",
                    r"\bdamaged?\b", r"\bnot (?:restored|replaced)\b",
                    r"\bremoved\b", r"\bsubsid(?:ed|ence)\b", r"\bsplit\b"]
-HERITAGE_LOCATION_ONLY = [r"\bheritage (?:area|zone|precinct|street)\b",
-                          r"\bnear\b.{0,20}\bmuseum\b"]
+# A heritage subject introduced by a preposition of place locates the complaint
+# and never proves damage to it — "road subsidence near an ancient step well" is
+# Road Damage, not Heritage Damage.
+HERITAGE_LOCATION_ONLY = [
+    r"\bheritage (?:area|zone|precinct|street)\b",
+    r"\b(?:near|at|in|by|beside)\b[^.]{0,24}\b(?:museum|step well|heritage|"
+    r"historic(?:al)?|ancient|tram road)\b",
+]
 
 # The README fixes only the Urgent trigger. Standard against Low is this file's
 # call: stated harm, risk or loss of a service is Standard, nuisance without
@@ -159,6 +166,12 @@ def classify_complaint(row: dict) -> dict:
     scores, weights = {}, {}
     for cat, cues in CATEGORY_CUES.items():
         primary, secondary = _hits(cues["primary"], description), _hits(cues["secondary"], description)
+        # A category may not be selected on corroborating terms alone: a
+        # corroborating term is evidence about a category already in play, not
+        # evidence that it is in play.
+        if not primary:
+            scores[cat], weights[cat] = [], 0
+            continue
         scores[cat] = primary + secondary
         weights[cat] = 2 * len(primary) + len(secondary)
 

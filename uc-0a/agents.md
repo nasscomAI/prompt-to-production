@@ -55,13 +55,19 @@ enforcement:
      do not contradict each other."
   - "Where two or more categories are supported equally by the description, or
      where none is supported, the agent must emit category Other with flag
-     NEEDS_REVIEW instead of taking the first plausible match. Support is
+     NEEDS_REVIEW instead of taking the first plausible match. A referred row
+     still takes the priority rules 2 and 5 give it: referral is a statement
+     about category, not about urgency. Support is
      weighted, not binary: a naming term counts twice, a corroborating term once,
      and categories tie only when their totals are equal. A category may not be
-     selected on corroborating terms alone — without that, 'deep pothole filling
-     with rainwater' ties Pothole against Flooding and a plainly classifiable row
-     is referred. A term matched more than once counts once, and where two terms
-     overlap in the text only the longer counts.
+     selected on corroborating terms alone: a corroborating term is evidence
+     about a category already in play, not evidence that it is in play. Where
+     that leaves a row with no category at all, the row is referred rather than
+     guessed. A term matched more than once counts once; where two matches
+     overlap only the longer span counts, and where two spans are the same
+     length the earlier in the description counts; and one span contributes at
+     most once to a category however many of that category's listings it
+     matches, so a duplicate listing cannot inflate a score.
      Terms are matched as whole words allowing a regular plural, so potholes,
      cobblestones, amplifiers and streetlights match their singular listings.
      Rule 2 prescribes stem matching and rule 4 previously prescribed nothing,
@@ -74,25 +80,29 @@ enforcement:
          water; rainwater, stranded.
        Streetlight — streetlight, street light, lamp post, lights out, unlit,
          substation; dark, darkness, wiring theft.
-       Waste — waste, garbage, rubbish, bin, bins, litter, dead animal; dumped,
+       Waste — waste, garbage, rubbish, bin, litter, dead animal; dumped,
          overflowing.
        Noise — noise, music, amplifier, drilling, band, idling; audible, past
          midnight, a clock time such as 2am or 11pm.
        Road Damage — subsidence, subsided, buckled, crater, cracked, cobblestone,
-         manhole, collapse, collapsed, footpath; paving, road surface, tiles
+         manhole, collapse, collapsed, footpath, paving; road surface, tiles
          broken.
        Heritage Damage — heritage, historic, ancient, museum, step well, tram
          road, subject to the locative exclusion below; knocked over, defaced,
          broken, damaged, not restored, not replaced, removed, split.
        Heat Hazard — heat, heatwave, melting, bubbling, burns, a temperature in
-         degrees Celsius; temperature, full sun, unbearable.
-       Drain Blockage — drain, drains, draining, drainage, stormwater; mosquito
+         degrees Celsius, temperature, temperatures, full sun; unbearable.
+       Drain Blockage — drain, draining, drainage, stormwater; mosquito
          breeding, blocked.
        Other — no naming term of any category is present, or two or more tie.
      A mention
      that only locates a complaint — a heritage precinct, a named museum, a
      heritage area — is not evidence about what is damaged; a heritage term
-     counts only when the description also states damage to it."
+     counts only when the description also states damage to it. Damage is
+     proved by one of Heritage Damage's own corroborating terms, and by nothing
+     else. A heritage subject introduced by a preposition of place — near, at,
+     in, by, beside — locates the complaint and never proves damage to it, so
+     'road subsidence near an ancient step well' is Road Damage."
   - "Priority below Urgent is decided by stated consequence, not by age. Without
      this rule Low is unreachable: the schema permits it, days_open is forbidden,
      and nothing else would ever select it. The test is whether the description
