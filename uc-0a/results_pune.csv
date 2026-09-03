@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The description states 'Large pothole 60cm wide causing tyre damage'.,
+PM-202402,Pothole,Urgent,The complaint describes a pothole issue and cites the severity keyword 'child'.,
+PM-202406,Flooding,Standard,The description states 'Underpass flooded knee-deep after 2hrs rain'.,
+PM-202408,Flooding,Standard,The description states 'Bus stand flooded'.,
+PM-202410,Streetlight,Standard,The description states 'Three consecutive streetlights out for 10 days'.,
+PM-202411,Streetlight,Urgent,The complaint describes a streetlight issue and cites the severity keyword 'hazard'.,
+PM-202413,Waste,Standard,The description states 'Overflowing garbage bins near vegetable market'.,
+PM-202418,Noise,Standard,The description states 'Wedding venue playing music past midnight on weeknights'.,
+PM-202419,Road Damage,Standard,The description states 'Road surface cracked and sinking near utility work done 1 month ago'.,
+PM-202420,Road Damage,Urgent,The complaint describes a road damage issue and cites the severity keyword 'injury'.,
+PM-202427,Flooding,Standard,The description states 'Bridge approach floods in 30mins of rain'.,
+PM-202428,Other,Standard,The description states 'Dead animal not removed for 36 hours'.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description states 'Heritage street, lights out'.",
+PM-202433,Waste,Standard,The description states 'Bulk waste from apartment renovation dumped on public road'.,
+PM-202446,Road Damage,Urgent,The complaint describes a road damage issue and cites the severity keyword 'fell'.,
