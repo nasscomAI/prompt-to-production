@@ -1,5 +1,6 @@
 """
 UC-0A — Complaint Classifier
+<<<<<<< HEAD
 Implementation adhering to RICE rules, agents.md, and skills.md requirements.
 """
 import argparse
@@ -120,11 +121,28 @@ def classify_complaint(row: Dict[str, str]) -> Dict[str, str]:
         "reason": reason,
         "flag": flag
     }
+=======
+Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+"""
+import argparse
+import csv
+
+def classify_complaint(row: dict) -> dict:
+    """
+    Classify a single complaint row.
+    Returns: dict with keys: complaint_id, category, priority, reason, flag
+    
+    TODO: Build this using your AI tool guided by your agents.md and skills.md.
+    Your RICE enforcement rules must be reflected in this function's behaviour.
+    """
+    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+>>>>>>> upstream/main
 
 
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
+<<<<<<< HEAD
     """
     results = []
     with open(input_path, mode="r", encoding="utf-8") as infile:
@@ -150,6 +168,13 @@ def batch_classify(input_path: str, output_path: str):
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(results)
+=======
+    
+    TODO: Build this using your AI tool.
+    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
+    """
+    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+>>>>>>> upstream/main
 
 
 if __name__ == "__main__":
@@ -159,4 +184,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     batch_classify(args.input, args.output)
     print(f"Done. Results written to {args.output}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
