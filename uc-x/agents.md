@@ -29,7 +29,13 @@ enforcement:
   - "Never combine claims from two different documents into a single answer.
      Every answer is sourced from exactly one document. Where two documents both
      appear relevant and neither is clearly the better source, refuse rather than
-     choose silently or merge. The control run answered 'can I use my personal
+     choose silently or merge. Better source is decided numerically and the
+     numbers belong here, not in the code: a clause must score at least 2 to be
+     considered at all, a document scores as its best clause, and the leading
+     document must beat the second by at least 1 or the question is refused.
+     These values decide the personal-phone question — it currently leads by
+     1.5 — so leaving them unstated would leave the use case's own trap
+     resolved by a constant no reader of this spec could see. The control run answered 'can I use my personal
      phone to access work files' out of the finance policy's Rs 8,000 furniture
      allowance without ever reaching IT section 3.1, and cited nothing."
   - "Never use a hedging construction. The phrases 'while not explicitly
@@ -46,6 +52,16 @@ enforcement:
      number it came from, positioned so the reader can check it. An uncited
      answer is indistinguishable from an invented one, and the control run
      produced seven of them."
+  - "Retrieval is lexical, and lexical matching cannot tell a question that is
+     answered from one whose words merely appear. A question outside the corpus
+     whose terms occur incidentally will clear the relevance gate and be answered
+     with a correct citation: 'What is the notice period for resignation?' is
+     addressed by none of the three documents, yet matches notice in IT 7.3 and
+     is answered. Coverage does not separate these — that question matches one
+     of three query terms, and so does 'Can I install Slack on my work laptop?',
+     which must be answered. No rule stated here closes this, and an
+     implementer should know it is open rather than assume the enforcement
+     rules are exhaustive."
   - "The cited section must exist in the cited document and must contain the
      claim being made. A citation is a checkable assertion, not decoration.
      Where an answer draws on more than one clause of the same document, each

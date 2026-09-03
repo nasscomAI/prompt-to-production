@@ -29,9 +29,8 @@ skills:
       document named in doc, and its rendered text carries that filename and
       those section numbers.
     error_handling: >
-      Returns the refusal template unchanged when no clause scores above the
-      relevance threshold, and equally when the two best-scoring documents are
-      too close to separate, because answering from either would be a silent
+      Returns the refusal template unchanged when no clause scores 2 or above,
+      and equally when the best-scoring document leads the second by less than 1, because answering from either would be a silent
       choice between sources. An empty or whitespace-only question is refused the
       same way. It never emits a hedging phrase and never merges text from two
       documents, and the rendered answer is checked for both before it is
