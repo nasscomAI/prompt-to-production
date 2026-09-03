@@ -68,6 +68,12 @@ enforcement:
      length the earlier in the description counts; and one span contributes at
      most once to a category however many of that category's listings it
      matches, so a duplicate listing cannot inflate a score.
+     Matching is case-insensitive. Nineteen words in the corpus — School, Drain,
+     Pothole, Footpath, Manhole, Crater, Heritage, Historic, Museum, Darkness,
+     Hospital, Child, Motorists, Health, Users, Visitor and others — appear
+     capitalised at the start of a sentence while every listing here is written
+     lower case, so a case-sensitive reading would fail to match roughly a
+     quarter of the rows.
      Terms are matched as whole words allowing a regular plural, so potholes,
      cobblestones, amplifiers and streetlights match their singular listings.
      Rule 2 prescribes stem matching and rule 4 previously prescribed nothing,
