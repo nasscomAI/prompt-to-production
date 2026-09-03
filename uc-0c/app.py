@@ -1,19 +1,32 @@
 """
-UC-0C — Number That Looks Right
-RICE + agents.md + skills.md + CRAFT workflow
-Enforcement: per-ward per-category only, flag nulls, show formula, refuse if growth-type missing
+UC-0C — Number That Looks Right | Vibe Coding Workshop (Civic Tech Edition)
+
+Workshop workflow: RICE → agents.md → skills.md → CRAFT
+Author: Sneha (participant/Sneha-Amritsar)
+
+Enforcement:
+  - Per-ward per-category only — refuse aggregation (exit 2).
+  - Flag every null actual_spend before computing (notes copied).
+  - Show formula every row: MoM: (cur-prev)/prev*100=+x.x% or NULL/N/A.
+  - Refuse if --growth-type missing — never guess.
+
+Skills: load_dataset, compute_growth, verification
+Usage:
+  python app.py --input data/budget/ward_budget.csv --ward "Ward 1 – Kasba" --category "Roads & Pothole Repair" --growth-type MoM --output growth_output.csv
 """
+
+from __future__ import annotations
+
 import argparse
 import csv
 import sys
 from pathlib import Path
-from collections import defaultdict
+from typing import Dict, List, Tuple
 
-REQUIRED_COLUMNS = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]
-GROWTH_TYPES = ["MoM", "YoY"]
+REQUIRED_COLUMNS: List[str] = ["period", "ward", "category", "budgeted_amount", "actual_spend", "notes"]
+GROWTH_TYPES: List[str] = ["MoM", "YoY"]
 
-# Known null rows per README for verification
-KNOWN_NULLS = {
+KNOWN_NULLS: set[Tuple[str, str, str]] = {
     ("2024-03", "Ward 2 – Shivajinagar", "Drainage & Flooding"),
     ("2024-07", "Ward 4 – Warje", "Roads & Pothole Repair"),
     ("2024-11", "Ward 1 – Kasba", "Waste Management"),
@@ -22,8 +35,19 @@ KNOWN_NULLS = {
 }
 
 
-def load_dataset(input_path: str):
-    """Read CSV, validate columns, report nulls, return rows."""
+def load_dataset(input_path: str) -> List[Dict[str, str]]:
+    """Read CSV, validate columns, report nulls, return typed rows.
+
+    Args:
+        input_path: Path to ward_budget.csv.
+
+    Returns:
+        List of row dicts with added _actual (float|None) and _budgeted (float).
+
+    Raises:
+        FileNotFoundError: If file missing.
+        ValueError: If header missing or required columns absent.
+    """
     p = Path(input_path)
     if not p.exists():
         raise FileNotFoundError(f"Dataset not found: {input_path}")
@@ -35,9 +59,7 @@ def load_dataset(input_path: str):
         if missing:
             raise ValueError(f"Missing required columns: {missing} vs found {reader.fieldnames}")
         rows = list(reader)
-        # Parse types
         for r in rows:
-            # normalize actual_spend
             val = r.get("actual_spend", "").strip() if r.get("actual_spend") is not None else ""
             if val == "":
                 r["_actual"] = None
@@ -46,7 +68,6 @@ def load_dataset(input_path: str):
                     r["_actual"] = float(val)
                 except ValueError:
                     r["_actual"] = None
-            # budgeted
             try:
                 r["_budgeted"] = float(r.get("budgeted_amount", "").strip() or 0)
             except ValueError:
@@ -60,8 +81,21 @@ def load_dataset(input_path: str):
         return rows
 
 
-def compute_growth(rows, ward: str, category: str, growth_type: str):
-    """Filter to ward+category, sort by period, compute growth with formula."""
+def compute_growth(rows: List[Dict[str, str]], ward: str, category: str, growth_type: str) -> List[Dict[str, str]]:
+    """Compute per-period growth for single ward+category with formula.
+
+    Args:
+        rows: Full dataset from load_dataset.
+        ward: Exact ward name (e.g., "Ward 1 – Kasba").
+        category: Exact category (e.g., "Roads & Pothole Repair").
+        growth_type: "MoM" or "YoY".
+
+    Returns:
+        List of 12 dicts sorted by period with growth_pct and formula.
+
+    Exits:
+        2 on REFUSAL (aggregation, missing growth_type, not found).
+    """
     if not growth_type:
         print("REFUSAL: --growth-type required (MoM or YoY) — never guess formula.", file=sys.stderr)
         sys.exit(2)
@@ -70,7 +104,6 @@ def compute_growth(rows, ward: str, category: str, growth_type: str):
         sys.exit(2)
     if not ward or not category:
         print("REFUSAL: Aggregation across wards/categories not allowed — specify single --ward and single --category.", file=sys.stderr)
-        # Show available values to help user
         wards = sorted(set(r["ward"] for r in rows))
         cats = sorted(set(r["category"] for r in rows))
         print(f"  Available wards: {wards}", file=sys.stderr)
@@ -86,16 +119,11 @@ def compute_growth(rows, ward: str, category: str, growth_type: str):
         print(f"  Available categories: {cats}", file=sys.stderr)
         sys.exit(2)
 
-    # Sort by period YYYY-MM lexicographically works
     filtered.sort(key=lambda r: r["period"])
-
-    # Detect if user tried to request all wards/categories (should refuse) — already handled by requiring exact match
-
-    output = []
+    output: List[Dict[str, str]] = []
     for i, r in enumerate(filtered):
         period = r["period"]
         actual = r["_actual"]
-        budgeted = r["_budgeted"]
         notes = r.get("notes", "").strip()
         if actual is None:
             growth = ""
@@ -118,27 +146,32 @@ def compute_growth(rows, ward: str, category: str, growth_type: str):
                         val = (actual - prev_actual) / prev_actual * 100
                         growth = f"{val:+.1f}%"
                         formula = f"MoM: ({actual}-{prev_actual})/{prev_actual}*100={val:+.1f}%"
-                    elif growth_type == "YoY":
-                        # YoY not applicable for single year; show N/A
+                    else:  # YoY
                         growth = ""
                         formula = "N/A: YoY requires prior year data"
                     flag_notes = notes
 
-        output.append({
-            "period": period,
-            "ward": ward,
-            "category": category,
-            "budgeted_amount": r.get("budgeted_amount", ""),
-            "actual_spend": r.get("actual_spend", ""),
-            "growth_pct": growth,
-            "formula": formula,
-            "notes": flag_notes,
-        })
+        output.append(
+            {
+                "period": period,
+                "ward": ward,
+                "category": category,
+                "budgeted_amount": r.get("budgeted_amount", ""),
+                "actual_spend": r.get("actual_spend", ""),
+                "growth_pct": growth,
+                "formula": formula,
+                "notes": flag_notes,
+            }
+        )
     return output
 
 
-def main():
-    parser = argparse.ArgumentParser(description="UC-0C Ward Budget Growth")
+def main() -> None:
+    """CLI entrypoint."""
+    parser = argparse.ArgumentParser(
+        description="UC-0C Ward Budget Growth — per-ward per-category MoM with null-flagging and formula.",
+        epilog='Example: python app.py --input data/budget/ward_budget.csv --ward "Ward 1 – Kasba" --category "Roads & Pothole Repair" --growth-type MoM --output growth_output.csv',
+    )
     parser.add_argument("--input", required=True, help="Path to ward_budget.csv")
     parser.add_argument("--ward", required=False, default=None, help='Ward name e.g. "Ward 1 – Kasba"')
     parser.add_argument("--category", required=False, default=None, help='Category e.g. "Roads & Pothole Repair"')
@@ -146,14 +179,12 @@ def main():
     parser.add_argument("--output", required=True, help="Path to write growth_output.csv")
     args = parser.parse_args()
 
-    # Enforce refusals before loading
     if not args.growth_type:
         print("REFUSAL: --growth-type required (MoM or YoY) — never guess formula.", file=sys.stderr)
         sys.exit(2)
 
     rows = load_dataset(args.input)
 
-    # Additional refusal: if ward/category missing, refuse (no aggregation)
     if not args.ward or not args.category:
         print("REFUSAL: Aggregation across wards/categories not allowed — specify single --ward and single --category.", file=sys.stderr)
         wards = sorted(set(r["ward"] for r in rows))
