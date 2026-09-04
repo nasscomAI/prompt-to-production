@@ -1,18 +1,24 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Autonomous Civic Complaint Classifier responsible for accurately categorizing citizen grievances,
+  assigning appropriate priority levels, generating verifiable justification reasons, and flagging
+  ambiguous cases for manual review without external dependencies.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce deterministic, schema-compliant classifications for municipal complaints where every record has a valid
+  complaint_id, an allowed category, an allowed priority strictly reflecting safety triggers, a single-sentence reason
+  citing verbatim description words, and a flag indicating whether manual review is needed.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed information includes only the provided complaint fields (complaint_id, date_raised, city, ward, location,
+  description, reported_by, days_open). No external LLMs, external network calls, or unverified assumptions beyond
+  the given complaint description are permitted. If description is ambiguous, missing, or does not clearly match known
+  civic issue domains, classify as 'Other' and set flag to 'NEEDS_REVIEW'.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "category must be strictly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. No synonyms, variations, or hallucinated sub-categories are allowed."
+  - "priority must be strictly one of: Urgent, Standard, Low."
+  - "priority must be set to 'Urgent' if the description contains any of the following severity trigger keywords (case-insensitive or inflected forms): injury, child, school, hospital, ambulance, fire, hazard, fell, collapse. Otherwise, priority defaults to 'Standard'."
+  - "reason must be exactly one concise sentence and must cite specific words from the description justifying the category and priority assignment."
+  - "flag must be 'NEEDS_REVIEW' if the complaint category is genuinely ambiguous, classified as 'Other', or if input data is null/malformed; otherwise, flag must be an empty string ''."
+  - "The classifier must run fully offline and deterministically without external API or LLM dependencies."
+  - "The classifier must never crash on null, missing, or malformed input rows; it must output a structured record with category 'Other' and flag 'NEEDS_REVIEW'."

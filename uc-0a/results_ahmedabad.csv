@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'Tarmac surface melting'; priority set to Standard with no emergency safety triggers detected.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'dangerous temperatures'; priority set to Standard with no emergency safety triggers detected.,
+AM-202405,Other,Standard,Classified as Other based on description keyword 'trees'; priority set to Standard with no emergency safety triggers detected.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'heatwave conditions'; priority set to Standard with no emergency safety triggers detected.,
+AM-202407,Road Damage,Urgent,"Classified as Road Damage based on 'upturned paving'; escalated to Urgent due to severity trigger(s) 'injured', 'Child'.",
+AM-202410,Pothole,Standard,Classified as Pothole based on description keyword 'Pothole'; priority set to Standard with no emergency safety triggers detected.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on description keyword 'unlit'; priority set to Standard with no emergency safety triggers detected.,
+AM-202417,Waste,Standard,Classified as Waste based on description keyword 'waste'; priority set to Standard with no emergency safety triggers detected.,
+AM-202421,Noise,Standard,Classified as Noise based on description keyword 'music'; priority set to Standard with no emergency safety triggers detected.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'surface bubbling'; priority set to Standard with no emergency safety triggers detected.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'temperature unbearable'; priority set to Standard with no emergency safety triggers detected.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage based on description keyword 'ancient step well'; priority set to Standard with no emergency safety triggers detected.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'storing heat'; priority set to Standard with no emergency safety triggers detected.,
+AM-202444,Waste,Standard,Classified as Waste based on description keyword 'waste'; priority set to Standard with no emergency safety triggers detected.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard based on description keyword 'full sun'; priority set to Standard with no emergency safety triggers detected.,
