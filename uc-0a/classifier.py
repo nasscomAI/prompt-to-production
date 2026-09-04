@@ -63,13 +63,6 @@ def batch_classify(input_path: str, output_path: str):
     TODO: Build this using your AI tool.
     Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    if _name_ == "_main_":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--input", required=True)
-    parser.add_argument("--output", required=True)
-    args = parser.parse_args()
-
-    batch_classify(args.input, args.output)
  import csv
 
     with open(input_path, "r", newline="", encoding="utf-8") as infile:
@@ -96,5 +89,11 @@ def batch_classify(input_path: str, output_path: str):
         writer = csv.DictWriter(outfile, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(results)
+if _name_ == "_main_":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output", required=True)
+    args = parser.parse_args()
 
+    batch_classify(args.input, args.output)
 
