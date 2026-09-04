@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified as Heritage Damage based on description keyword 'Heritage lamp post'; priority set to Standard with no emergency safety triggers detected.,
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage based on description keyword 'Historic tram road cobblestones'; priority set to Standard with no emergency safety triggers detected.,
+KM-202405,Noise,Standard,Classified as Noise based on description keyword 'Wedding band'; priority set to Standard with no emergency safety triggers detected.,
+KM-202409,Pothole,Standard,Classified as Pothole based on description keyword 'potholes'; priority set to Standard with no emergency safety triggers detected.,
+KM-202410,Pothole,Standard,Classified as Pothole based on description keyword 'Pothole'; priority set to Standard with no emergency safety triggers detected.,
+KM-202411,Pothole,Standard,Classified as Pothole based on description keyword 'pothole'; priority set to Standard with no emergency safety triggers detected.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage based on description keyword 'draining directly onto public road'; priority set to Standard with no emergency safety triggers detected.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste based on description keyword 'waste'; priority set to Standard with no emergency safety triggers detected.,
+KM-202421,Road Damage,Urgent,"Classified as Road Damage based on 'Footpath broken'; escalated to Urgent due to severity trigger(s) 'Hospital', 'fell'.",
+KM-202422,Road Damage,Standard,Classified as Road Damage based on description keyword 'Road surface buckled'; priority set to Standard with no emergency safety triggers detected.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage based on description keyword 'Heritage residential'; priority set to Standard with no emergency safety triggers detected.,
+KM-202430,Road Damage,Standard,Classified as Road Damage based on description keyword 'Road subsided'; priority set to Standard with no emergency safety triggers detected.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage based on description keyword 'heritage stone'; priority set to Standard with no emergency safety triggers detected.,
+KM-202436,Streetlight,Standard,Classified as Streetlight based on description keyword 'substation tripped'; priority set to Standard with no emergency safety triggers detected.,
+KM-202438,Noise,Standard,Classified as Noise based on description keyword 'amplifiers'; priority set to Standard with no emergency safety triggers detected.,
