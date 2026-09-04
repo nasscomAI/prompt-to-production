@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Cited 'flooded' → Flooding; severity term 'Ambulance' present → Urgent.,
+GH-202402,Drain Blockage,Standard,"Cited 'Drain', 'blocked' → Drain Blockage.",
+GH-202406,Drain Blockage,Low,"Cited 'drain', 'stormwater', 'blocked' → Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Cited 'Drain', 'mosquito breeding', 'blocked' → Drain Blockage.",
+GH-202410,Pothole,Standard,Cited 'Potholes' → Pothole.,
+GH-202411,Pothole,Urgent,Cited 'Pothole' → Pothole; severity term 'hospitalised' present → Urgent.,
+GH-202412,Pothole,Urgent,Cited 'potholes' → Pothole; severity term 'School' present → Urgent.,
+GH-202417,Waste,Standard,"Cited 'waste', 'garbage', 'overflow' → Waste.",
+GH-202420,Noise,Low,"Cited 'drilling', '5am' → Noise.",
+GH-202422,Road Damage,Urgent,"Cited 'Crater', 'collapsed' → Road Damage; severity term 'collapsed' present → Urgent.",
+GH-202424,Flooding,Standard,Cited 'floods' → Flooding.,
+GH-202428,Waste,Standard,Cited 'waste' → Waste.,
+GH-202432,Noise,Low,Cited 'idling' → Noise.,
+GH-202448,Drain Blockage,Standard,"Cited 'drain', 'blocked' → Drain Blockage.",
+GH-202438,Other,Low,"No category cue found in ""Colony surrounded by fields that channel rainwater through m""; referred for review rather than guessed.",NEEDS_REVIEW
