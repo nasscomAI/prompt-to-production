@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Description cites 'pothole' which indicates Pothole.,
+PM-202402,Pothole,Urgent,"Description cites 'pothole' which indicates Pothole. Severity keyword 'child' present, so priority is Urgent.",
+PM-202406,Flooding,Standard,"Description cites 'flooded', 'rain' which indicates Flooding.",
+PM-202408,Flooding,Standard,"Description cites 'flooded', 'standing in water' which indicates Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Description cites 'streetlight' which indicates Streetlight.,
+PM-202411,Streetlight,Urgent,"Description cites 'streetlight' which indicates Streetlight. Severity keyword 'hazard' present, so priority is Urgent.",
+PM-202413,Waste,Standard,"Description cites 'garbage', 'bins' which indicates Waste.",
+PM-202418,Noise,Standard,Description cites 'music' which indicates Noise.,
+PM-202419,Road Damage,Standard,"Description cites 'road surface', 'cracked', 'sinking' which indicates Road Damage.",
+PM-202420,Drain Blockage,Urgent,"Description cites 'manhole' which indicates Drain Blockage. Severity keyword 'injury' present, so priority is Urgent.",
+PM-202427,Flooding,Standard,"Description cites 'flood', 'rain' which indicates Flooding.",
+PM-202428,Waste,Standard,Description cites 'dead animal' which indicates Waste.,
+PM-202430,Streetlight,Standard,Description cites 'lights out' which indicates Streetlight.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Description cites 'waste' which indicates Waste.,
+PM-202446,Road Damage,Urgent,"Description cites 'footpath', 'tiles broken' which indicates Road Damage. Severity keyword 'fell' present, so priority is Urgent.",
