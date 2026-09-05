@@ -63,7 +63,7 @@ git --version            # Must show a version number
 python3 -c "import csv, json; print('Ready')"   # Must print: Ready
 ```
 
-> **If any command fails**, do not proceed. Resolve the installation issue first
+> **If any command fails**, do not proceed. Resolve the installation issue firs
 > or flag your tutor.
 
 ---
