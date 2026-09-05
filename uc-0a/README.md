@@ -15,11 +15,17 @@
 uc-0a/results_[your-city].csv
 ```
 
+## Prerequisites
+```bash
+pip install -r ../requirements.txt   # google-genai
+export GEMINI_API_KEY=your_key_here  # or set in repo-root .env
+```
+
 ## Run Command
 ```bash
 python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
+  --input ../data/city-test-files/test_kolkata.csv \
+  --output results_kolkata.csv
 ```
 
 ---
