@@ -14,6 +14,12 @@
 uc-0b/summary_hr_leave.txt
 ```
 
+## Prerequisites
+```bash
+pip install -r ../requirements.txt   # google-genai
+export GEMINI_API_KEY=your_key_here  # or set in repo-root .env
+```
+
 ## Run Command
 ```bash
 python app.py \
