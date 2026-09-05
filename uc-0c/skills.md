@@ -30,7 +30,7 @@ skills:
       - "if the caller requests aggregation across all wards or all categories at load time: refuse with an error stating that load_dataset returns raw rows only and aggregation requires explicit per-ward per-category scoping"
 
   - name: compute_growth
-    description: Takes a loaded dataset plus ward, category, and growth_type, and returns a per-period table with actual spend, growth result, and formula shown — flagging null rows without computing growth for them.
+    description: Takes a loaded dataset plus ward, category, and growth_type, and computes a per-period table with actual spend, growth result, and formula shown — flagging null rows without computing growth for them. Implemented as deterministic Python (no LLM).
     input:
       type: dict
       fields:
@@ -61,7 +61,6 @@ skills:
       - "if the caller requests growth across all wards or all categories without specifying both ward and category: refuse with an error stating per-ward per-category granularity is required"
       - "if a period's actual_spend is null: set null_flag to TRUE, copy null_reason from the notes column, leave growth_pct and formula blank — do not compute growth for that period"
       - "if growth cannot be computed because the comparison period's actual_spend is null (e.g. MoM after a null month): set growth_pct to NOT_COMPUTED, include the formula that would have been used, and note which comparison period was missing — do not impute the missing value"
-      - "if rows input is empty or None: raise ValueError stating no dataset rows were provided — do not call the LLM or write output"
+      - "if rows input is empty or None: raise ValueError stating no dataset rows were provided — do not write output"
       - "if output file path directory does not exist or is not writable: raise IOError before processing any periods — do not silently discard results"
-      - "if the LLM or computation layer returns a single aggregated number instead of a per-period table: reject the result and refuse to write the output file — a city-wide or category-wide summary is a failure mode"
-      - "if the LLM call raises an exception (timeout, API error, rate limit): do not write a partial output file — propagate the error to the caller with a message stating growth computation failed"
+      - "if computation would produce a single aggregated number instead of a per-period table: refuse to write the output file — a city-wide or category-wide summary is a failure mode"

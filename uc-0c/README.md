@@ -16,6 +16,11 @@ uc-0c/growth_output.csv
 ```
 Must be a per-ward per-category table — not a single aggregated number.
 
+## Prerequisites
+```bash
+pip install -r ../requirements.txt   # stdlib only for UC-0C; file kept for repo consistency
+```
+
 ## Run Command
 ```bash
 python app.py \
