@@ -1,0 +1,13 @@
+period,actual_spend,formula,growth_type,growth_result,null_reason,flagged
+2024-01,13.3,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,(no prior month),,
+2024-02,12.2,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,-8.3%,,
+2024-03,12.3,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+0.8%,,
+2024-04,13.4,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+8.9%,,
+2024-05,14.1,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+5.2%,,
+2024-06,14.8,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+5.0%,,
+2024-07,19.7,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+33.1%,,
+2024-08,20.2,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+2.5%,,
+2024-09,20.1,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,-0.5%,,
+2024-10,13.1,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,-34.8%,,
+2024-11,14.2,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,+8.4%,,
+2024-12,12.7,MoM = (this_month_actual / prev_month_actual - 1) * 100,mom,-10.6%,,
