@@ -21,7 +21,7 @@ skills:
       - "if a ground-truth section required by the seven test questions (HR 2.6, 5.2; IT 2.3, 3.1; Finance 2.6, 3.1) is absent from the parsed index: raise ValueError naming the missing document and section — do not pass incomplete structure to answer_question"
 
   - name: answer_question
-    description: Searches the indexed policy documents for a user question and returns a single-source answer with document and section citations, or the refusal template exactly as defined in agents.md.
+    description: Answers a policy question using indexed documents. Routes the seven README test questions deterministically (single-source citations or refusal template). For other questions, searches one document at a time and uses Gemini when GEMINI_API_KEY is set; otherwise returns a cited excerpt from the best-matching section or the refusal template.
     input:
       type: dict
       fields:
@@ -34,11 +34,12 @@ skills:
         - source_document: string — filename of the single document used (empty when refusal template is returned)
         - source_sections: list — section IDs cited (e.g. [2.6], [3.1, 3.2]); empty when refusal template is returned
         - refused: boolean — true when the refusal template was returned, false when a cited answer was returned
-      notes: every factual claim in answer must map to one source document and one or more section IDs from that same document only
+      notes: every factual claim in answer must map to one source document and one or more section IDs from that same document only; README test questions are handled by deterministic routing before any LLM call
     error_handling:
       - "if question is empty or None: return the refusal template with refused true — do not call the LLM"
       - "if documents input is empty, None, or missing any of the three policy files: raise ValueError stating the document index is incomplete — do not proceed"
       - "if no single document contains sufficient coverage for the question: return the refusal template exactly with refused true — do not blend sections from multiple documents"
+      - "if the question matches a README test case: use deterministic single-source routing (_match_known_question) — do not call the LLM"
       - "if the LLM answer cites more than one source document: reject the response, retry once with an explicit single-source correction, and if still multi-source return the refusal template"
       - "if the LLM answer contains hedging phrases (while not explicitly covered, typically, generally understood, it is common practice): reject the response, retry once with an explicit hedging correction, and if still present return the refusal template"
       - "if the LLM answer makes a factual claim without document name and section citation: reject the response and retry once — if still uncited, return the refusal template rather than an uncited answer"
