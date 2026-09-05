@@ -11,11 +11,17 @@
 ../data/policy-documents/policy_finance_reimbursement.txt
 ```
 
+## Prerequisites
+```bash
+pip install -r ../requirements.txt   # google-genai optional for interactive questions
+export GEMINI_API_KEY=your_key_here  # optional; seven README tests run without API
+```
+
 ## Run Command
 ```bash
-python app.py
+python app.py          # interactive Q&A
+python app.py --test   # run all 7 README test questions
 ```
-Interactive CLI — type questions, read answers.
 
 ---
 
