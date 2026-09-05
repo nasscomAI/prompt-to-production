@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Categorized as Heritage Damage based on ""Heritage lamp post knocked over by delivery vehicl"".",
+KM-202402,Heritage Damage,Standard,"Categorized as Heritage Damage based on ""Historic tram road cobblestones broken up by cable"".",
+KM-202405,Other,Standard,"Categorized as Other based on ""Wedding band playing near Tagore Museum at 11pm. F"".",NEEDS_REVIEW
+KM-202409,Pothole,Standard,"Categorized as Pothole based on ""Airport access road full of potholes. Diplomatic c"".",
+KM-202410,Pothole,Standard,"Categorized as Pothole based on ""Pothole causing tyre blowouts. Three incidents thi"".",
+KM-202411,Pothole,Standard,"Categorized as Pothole based on ""Deep pothole filling with rainwater. Depth invisib"".",
+KM-202415,Drain Blockage,Standard,"Categorized as Drain Blockage based on ""New residential complex draining directly onto pub"".",
+KM-202418,Waste,Standard,"Categorized as Waste based on ""Tourist zone waste overflowing. Foreign visitors p"".",
+KM-202421,Road Damage,Urgent,"Categorized as Road Damage based on ""Footpath broken and sinking. Elderly pedestrian fe""; severity keyword(s) hospital, fell.",
+KM-202422,Road Damage,Standard,"Categorized as Road Damage based on ""Road surface buckled near bridge. Structural conce"".",
+KM-202426,Heritage Damage,Standard,"Categorized as Heritage Damage based on ""Heritage residential building exterior defaced by "".",
+KM-202430,Other,Standard,"Categorized as Other based on ""Road subsided near gas pipeline. Gas leak smell re"".",NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,"Categorized as Heritage Damage based on ""Street paving removed for utility work — heritage "".",
+KM-202436,Other,Standard,"Categorized as Other based on ""Entire colony substation tripped. Darkness for 3 n"".",NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Categorized as Heritage Damage based on ""Street vendors using amplifiers illegally in herit"".",

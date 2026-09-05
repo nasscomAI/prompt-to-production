@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,"Categorized as Other based on ""Tarmac surface melting at 44°C. Footwear sticking."".",NEEDS_REVIEW
+AM-202402,Heat Hazard,Standard,"Categorized as Heat Hazard based on ""Metal bus shelter reaching dangerous temperatures."".",
+AM-202405,Other,Standard,"Categorized as Other based on ""Dead trees with split branches. Fall risk to walke"".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Categorized as Heat Hazard based on ""Irrigation system broken. Grass dying in heatwave "".",
+AM-202407,Other,Urgent,"Categorized as Other based on ""Broken bench and upturned paving. Child injured la""; severity keyword(s) child.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Categorized as Pothole based on ""Pothole on main highway causing morning rush lane "".",
+AM-202414,Other,Standard,"Categorized as Other based on ""Residential colony unlit after 9pm. Wiring theft r"".",NEEDS_REVIEW
+AM-202417,Waste,Standard,"Categorized as Waste based on ""Night market waste not cleared before morning. Her"".",
+AM-202421,Noise,Standard,"Categorized as Noise based on ""Club music audible at residential buildings at 2am"".",
+AM-202424,Road Damage,Standard,"Categorized as Road Damage based on ""Zoo approach road surface bubbling at 45°C. Visito"".",
+AM-202429,Heat Hazard,Standard,"Categorized as Heat Hazard based on ""River walk surface temperature unbearable. Install"".",
+AM-202431,Heritage Damage,Standard,"Categorized as Heritage Damage based on ""Old city road subsidence near ancient step well. H"".",
+AM-202435,Heat Hazard,Standard,"Categorized as Heat Hazard based on ""Black metal road dividers storing heat. Motorists "".",
+AM-202444,Waste,Standard,"Categorized as Waste based on ""Restaurant waste bins overflowing on Sunday night."".",
+AM-202445,Other,Standard,"Categorized as Other based on ""BRT shelter roof glass broken. Users exposed to fu"".",NEEDS_REVIEW

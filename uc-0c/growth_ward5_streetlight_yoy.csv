@@ -1,0 +1,13 @@
+period,ward,category,budgeted_amount,actual_spend,formula,growth_value,flag
+2024-01,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.4,YoY: N/A — prior-year data not present in dataset,,
+2024-02,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.4,YoY: N/A — prior-year data not present in dataset,,
+2024-03,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,4.1,YoY: N/A — prior-year data not present in dataset,,
+2024-04,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,4.1,YoY: N/A — prior-year data not present in dataset,,
+2024-05,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,,YoY: N/A — skipped (null actual_spend),,NULL - Equipment procurement delay
+2024-06,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.8,YoY: N/A — prior-year data not present in dataset,,
+2024-07,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,5.3,YoY: N/A — prior-year data not present in dataset,,
+2024-08,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,5.4,YoY: N/A — prior-year data not present in dataset,,
+2024-09,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,5.0,YoY: N/A — prior-year data not present in dataset,,
+2024-10,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.8,YoY: N/A — prior-year data not present in dataset,,
+2024-11,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.3,YoY: N/A — prior-year data not present in dataset,,
+2024-12,Ward 5 – Hadapsar,Streetlight Maintenance,3.7,3.4,YoY: N/A — prior-year data not present in dataset,,
