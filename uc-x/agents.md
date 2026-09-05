@@ -1,18 +1,18 @@
 # agents.md
 # INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
 # Delete these comments before committing.
+# agents.md — UC-X
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+role: General problem-solving agent for the UC-X task.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+intent: Analyze the provided input, identify the required task, and produce the correct output.
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+context: Use only the information and rules provided in README.md and the input data.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+- Follow the requirements defined in README.md.
+- Use only the provided input data.
+- Do not invent information.
+- Produce output in the required format.
+- If required information is missing or invalid, clearly flag the issue.
+- Keep the final result clear and understandable.
