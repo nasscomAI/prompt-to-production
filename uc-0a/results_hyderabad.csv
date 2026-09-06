@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding (Urgent) citing words: 'flooded', 'ambulance'.",
+GH-202402,Drain Blockage,Standard,"Classified as Drain Blockage (Standard) citing words: 'flooded', 'drain'.",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage (Standard) citing words: 'drain', 'stormwater drain'.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage (Standard) citing words: 'drain blocked', 'drain'.",
+GH-202410,Pothole,Standard,"Classified as Pothole (Standard) citing words: 'pothole', 'potholes'.",
+GH-202411,Pothole,Urgent,"Classified as Pothole (Urgent) citing words: 'pothole', 'hospital', 'hospitalised'.",
+GH-202412,Pothole,Urgent,"Classified as Pothole (Urgent) citing words: 'pothole', 'potholes', 'school'.",
+GH-202417,Waste,Standard,"Classified as Waste (Standard) citing words: 'garbage', 'waste', 'heritage'.",
+GH-202420,Noise,Standard,Classified as Noise (Standard) citing words: 'drilling'.,
+GH-202422,Road Damage,Urgent,"Classified as Road Damage (Urgent) citing words: 'collapsed', 'crater'.",
+GH-202424,Flooding,Standard,Classified as Flooding (Standard) citing words: 'floods'.,
+GH-202428,Waste,Standard,Classified as Waste (Standard) citing words: 'waste'.,
+GH-202432,Noise,Standard,Classified as Noise (Standard) citing words: 'idling'.,
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage (Standard) citing words: 'flooding', 'drain blocked', 'drain'.",
+GH-202438,Other,Standard,Classified as Other (Standard) citing: 'Colony surrounded by fields that channel rainwater'.,NEEDS_REVIEW
