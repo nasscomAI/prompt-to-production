@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Urgent,Classified Heat Hazard (Urgent) — evidence: 'melting'. urgent signal: 'unsafe'.,
+AM-202402,Heat Hazard,Urgent,Classified Heat Hazard (Urgent) — evidence: 'temperature'. urgent signal: 'dangerous'.,
+AM-202405,Other,Urgent,"Ambiguous or out-of-taxonomy (Other, Urgent) — review prompted by ''fall risk', 'risk to', 'risk''.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,"Classified Heat Hazard (Low) — evidence: 'heat', 'heatwave'. low signal: 'irrigation system', 'grass dying'.",
+AM-202407,Road Damage,Urgent,"Classified Road Damage (Urgent) — evidence: 'paving'. urgent signal: 'injured', 'child'.",
+AM-202410,Pothole,Standard,Classified Pothole (Standard) — evidence: 'pothole'.,
+AM-202414,Streetlight,Standard,"Classified Streetlight (Standard) — evidence: 'unlit', 'wiring'.",
+AM-202417,Other,Standard,"Ambiguous or out-of-taxonomy (Other, Standard) — needs review.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified Noise (Standard) — evidence: 'music'.,
+AM-202424,Road Damage,Standard,"Classified Road Damage (Standard) — evidence: 'road surface', 'road'.",
+AM-202429,Heat Hazard,Standard,"Classified Heat Hazard (Standard) — evidence: 'surface temperature', 'temperature'.",
+AM-202431,Heritage Damage,Standard,"Classified Heritage Damage (Standard) — evidence: 'heritage', 'ancient'. standard signal: 'concern'.",
+AM-202435,Heat Hazard,Urgent,"Classified Heat Hazard (Urgent) — evidence: 'heat', 'burns on contact', 'storing heat'. urgent signal: 'burns'.",
+AM-202444,Waste,Standard,"Classified Waste (Standard) — evidence: 'waste', 'bins', 'bins overflowing', 'overflowing'. standard signal: 'risk'.",
+AM-202445,Heat Hazard,Standard,"Classified Heat Hazard (Standard) — evidence: 'full sun', 'sun'.",
