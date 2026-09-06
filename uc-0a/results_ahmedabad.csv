@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Cited ""°c"", ""melting"" in the complaint description => this is a Heat Hazard issue.",
+AM-202402,Heat Hazard,Standard,"Cited ""temperature*"" in the complaint description => this is a Heat Hazard issue.",
+AM-202405,Other,Urgent,No category-defining words could be matched in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Cited ""heat*"" in the complaint description => this is a Heat Hazard issue.",
+AM-202407,Road Damage,Urgent,"Cited ""paving"" in the complaint description => this is a Road Damage issue. Severity trigger ""injur*"" => Urgent priority.",
+AM-202410,Pothole,Standard,"Cited ""pothole*"" in the complaint description => this is a Pothole issue.",
+AM-202414,Streetlight,Standard,"Cited ""unlit"" in the complaint description => this is a Streetlight issue.",
+AM-202417,Waste,Standard,"Cited ""waste"" in the complaint description => this is a Waste issue.",
+AM-202421,Noise,Standard,"Cited ""music"" in the complaint description => this is a Noise issue.",
+AM-202424,Heat Hazard,Standard,"Cited ""°c"", ""bubbl*"" in the complaint description => this is a Heat Hazard issue.",
+AM-202429,Heat Hazard,Standard,"Cited ""temperature*"", ""°c"", ""unbearable"" in the complaint description => this is a Heat Hazard issue.",
+AM-202431,Heritage Damage,Standard,"Cited ""heritage"", ""ancient"" in the complaint description => this is a Heritage Damage issue.",
+AM-202435,Heat Hazard,Urgent,"Cited ""heat*"", ""burn*"" in the complaint description => this is a Heat Hazard issue. Severity trigger ""burn*"" => Urgent priority.",
+AM-202444,Waste,Standard,"Cited ""waste"", ""bins"" in the complaint description => this is a Waste issue.",
+AM-202445,Heat Hazard,Standard,"Cited ""sun"" in the complaint description => this is a Heat Hazard issue.",
