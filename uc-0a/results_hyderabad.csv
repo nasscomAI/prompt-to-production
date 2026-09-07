@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Urgent due to severity keyword(s) 'ambulance' in description.,
+GH-202402,Flooding,Standard,Classified as Standard priority based on routine complaint status open for 20 days.,
+GH-202406,Drain Blockage,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+GH-202407,Drain Blockage,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+GH-202410,Pothole,Standard,Classified as Standard priority based on routine complaint status open for 18 days.,
+GH-202411,Pothole,Urgent,Classified as Urgent due to severity keyword(s) 'hospital' in description.,
+GH-202412,Pothole,Urgent,Classified as Urgent due to severity keyword(s) 'school' in description.,
+GH-202417,Waste,Standard,Classified as Standard priority based on routine complaint status open for 11 days.,
+GH-202420,Noise,Standard,Classified as Standard priority based on routine complaint status open for 12 days.,
+GH-202422,Road Damage,Urgent,Classified as Urgent due to severity keyword(s) 'collapse' in description.,
+GH-202424,Flooding,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+GH-202428,Waste,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+GH-202432,Noise,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+GH-202448,Flooding,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+GH-202438,Other,Standard,Classified as Standard priority based on routine complaint status open for 11 days.,NEEDS_REVIEW

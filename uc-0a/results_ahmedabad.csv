@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+AM-202402,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+AM-202405,Other,Standard,Classified as Standard priority based on routine complaint status open for 19 days.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Standard priority based on routine complaint status open for 18 days.,
+AM-202407,Other,Urgent,Classified as Urgent due to severity keyword(s) 'child' in description.,NEEDS_REVIEW
+AM-202410,Pothole,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+AM-202414,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Standard priority based on routine complaint status open for 21 days.,
+AM-202421,Other,Standard,Classified as Standard priority based on routine complaint status open for 18 days.,NEEDS_REVIEW
+AM-202424,Other,Standard,Classified as Standard priority based on routine complaint status open for 19 days.,NEEDS_REVIEW
+AM-202429,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+AM-202431,Waste,Standard,Classified as Standard priority based on routine complaint status open for 18 days.,
+AM-202435,Heat Hazard,Standard,Classified as Standard priority based on routine complaint status open for 16 days.,
+AM-202444,Waste,Standard,Classified as Standard priority based on routine complaint status open for 20 days.,
+AM-202445,Heat Hazard,Low,Classified as Low priority as no critical severity keywords were found in the description.,

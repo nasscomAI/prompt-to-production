@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+PM-202402,Pothole,Urgent,"Classified as Urgent due to severity keyword(s) 'child', 'school' in description.",
+PM-202406,Flooding,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+PM-202408,Flooding,Standard,Classified as Standard priority based on routine complaint status open for 12 days.,
+PM-202410,Streetlight,Standard,Classified as Standard priority based on routine complaint status open for 18 days.,
+PM-202411,Streetlight,Urgent,Classified as Urgent due to severity keyword(s) 'hazard' in description.,
+PM-202413,Waste,Standard,Classified as Standard priority based on routine complaint status open for 13 days.,
+PM-202418,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+PM-202419,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Classified as Urgent due to severity keyword(s) 'injury' in description.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Standard priority based on routine complaint status open for 12 days.,
+PM-202428,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+PM-202430,Waste,Standard,Classified as Standard priority based on routine complaint status open for 19 days.,
+PM-202433,Waste,Standard,Classified as Standard priority based on routine complaint status open for 20 days.,
+PM-202446,Other,Urgent,Classified as Urgent due to severity keyword(s) 'fell' in description.,NEEDS_REVIEW
