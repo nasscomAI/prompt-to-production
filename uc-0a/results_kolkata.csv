@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Waste,Standard,Classified as Standard priority based on routine complaint status open for 17 days.,
+KM-202402,Other,Standard,Classified as Standard priority based on routine complaint status open for 16 days.,NEEDS_REVIEW
+KM-202405,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+KM-202409,Pothole,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+KM-202410,Pothole,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+KM-202411,Pothole,Standard,Classified as Standard priority based on routine complaint status open for 12 days.,
+KM-202415,Drain Blockage,Standard,Classified as Standard priority based on routine complaint status open for 13 days.,
+KM-202418,Waste,Standard,Classified as Standard priority based on routine complaint status open for 15 days.,
+KM-202421,Other,Urgent,"Classified as Urgent due to severity keyword(s) 'hospital', 'fell' in description.",NEEDS_REVIEW
+KM-202422,Other,Low,Classified as Low priority as no critical severity keywords were found in the description.,NEEDS_REVIEW
+KM-202426,Waste,Low,Classified as Low priority as no critical severity keywords were found in the description.,
+KM-202430,Other,Standard,Classified as Standard priority based on routine complaint status open for 21 days.,NEEDS_REVIEW
+KM-202434,Waste,Standard,Classified as Standard priority based on routine complaint status open for 14 days.,
+KM-202436,Streetlight,Standard,Classified as Standard priority based on routine complaint status open for 17 days.,
+KM-202438,Waste,Standard,Classified as Standard priority based on routine complaint status open for 19 days.,
