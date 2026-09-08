@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads and indexes all policy files from data/policy-documents/ into structured, searchable section and clause nodes keyed by document name and section number.
+    input: List of filepaths to policy text documents (e.g., policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt).
+    output: Indexed database of structured document nodes with document reference, section number, title, and full clause text.
+    error_handling: Raises FileNotFoundError if any policy document is missing; logs a warning and validates section header structure.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Queries the indexed policy database to find the single most relevant document section, validates single-source attribution, and returns a cited answer or the exact refusal template.
+    input: Question string from the user.
+    output: Structured response containing the answered text, source document citation(s), section numbers, or the exact refusal template.
+    error_handling: Detects cross-document contamination and strips cross-document blending; detects out-of-scope/uncovered questions and falls back to the exact refusal template without hedging.

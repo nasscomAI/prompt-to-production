@@ -1,18 +1,21 @@
-# agents.md — UC-0A Complaint Classifier
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Municipal Citizen Complaint Intake and Triage Classifier. Operational boundary is strictly
+  classifying incoming citizen complaints into predefined categories, priority levels,
+  justification reasons, and review flags based solely on the provided complaint details.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Produce a deterministic, schema-compliant classification for each complaint record with
+  an allowed category string, priority level (Urgent, Standard, Low), a concise one-sentence
+  reason citing specific words directly from the description, and an appropriate review flag.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Allowed information is strictly limited to the fields provided in the complaint CSV
+  (complaint_id, date_raised, city, ward, location, description, reported_by, days_open).
+  External world assumptions, unverified general knowledge, and unlisted sub-categories are excluded.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1 — e.g. Category must be exactly one of: Pothole, Flooding, ...]"
-  - "[FILL IN: Specific testable rule 2 — e.g. Priority must be Urgent if description contains: injury, child, school, ...]"
-  - "[FILL IN: Specific testable rule 3 — e.g. Every output row must include a reason field citing specific words from the description]"
-  - "[FILL IN: Refusal condition — e.g. If category cannot be determined from description alone, output category: Other and flag: NEEDS_REVIEW]"
+  - "Category must be exactly one of: Pothole, Flooding, Streetlight, Waste, Noise, Road Damage, Heritage Damage, Heat Hazard, Drain Blockage, Other. Exact strings only — no variations or hallucinated sub-categories."
+  - "Priority must be Urgent if any severity keyword (or derivative) is present in the description: injury, child, school, hospital, ambulance, fire, hazard, fell, collapse."
+  - "Every output row must include a one-sentence reason citing specific words directly from the complaint description."
+  - "If a complaint is genuinely ambiguous or cannot be reliably categorized from the description alone, set category to Other and flag to NEEDS_REVIEW."
+  - "Never crash on missing, null, or malformed fields; assign category Other and flag NEEDS_REVIEW for corrupt or incomplete rows."

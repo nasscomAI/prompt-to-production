@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Classified as Heritage Damage (Standard) citing words: 'heritage'.,
+KM-202402,Heritage Damage,Standard,"Classified as Heritage Damage (Standard) citing words: 'historic', 'cobblestones', 'broken'.",
+KM-202405,Noise,Standard,Classified as Noise (Standard) citing words: 'wedding band'.,
+KM-202409,Pothole,Standard,"Classified as Pothole (Standard) citing words: 'pothole', 'potholes'.",
+KM-202410,Pothole,Standard,Classified as Pothole (Standard) citing words: 'pothole'.,
+KM-202411,Pothole,Standard,Classified as Pothole (Standard) citing words: 'pothole'.,
+KM-202415,Other,Standard,Classified as Other (Standard) citing words: 'drain'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste (Standard) citing words: 'waste'.,
+KM-202421,Road Damage,Urgent,"Classified as Road Damage (Urgent) citing words: 'hospital', 'fell', 'broken'.",
+KM-202422,Road Damage,Standard,Classified as Road Damage (Standard) citing words: 'buckled'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage (Standard) citing words: 'heritage'.,
+KM-202430,Road Damage,Urgent,Classified as Road Damage (Urgent) citing words: 'subsided'.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage (Standard) citing words: 'heritage'.,
+KM-202436,Streetlight,Standard,Classified as Streetlight (Standard) citing words: 'darkness'.,
+KM-202438,Noise,Standard,"Classified as Noise (Standard) citing words: 'amplifiers', 'heritage'.",
