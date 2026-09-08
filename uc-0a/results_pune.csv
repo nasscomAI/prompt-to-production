@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains 'pothole', indicating the category Pothole.",
+PM-202402,Pothole,Urgent,"The description contains 'pothole' indicating Pothole, and the severity keyword 'child' requires Urgent priority.",
+PM-202406,Flooding,Standard,"The description contains 'flood', indicating the category Flooding.",
+PM-202408,Flooding,Standard,"The description contains 'flood', indicating the category Flooding.",
+PM-202410,Streetlight,Standard,"The description contains 'streetlight', indicating the category Streetlight.",
+PM-202411,Streetlight,Urgent,"The description contains 'streetlight' indicating Streetlight, and the severity keyword 'hazard' requires Urgent priority.",
+PM-202413,Waste,Standard,"The description contains 'garbage', indicating the category Waste.",
+PM-202418,Other,Standard,The description does not provide enough evidence to determine a specific category.,NEEDS_REVIEW
+PM-202419,Other,Standard,The description does not provide enough evidence to determine a specific category.,NEEDS_REVIEW
+PM-202420,Other,Urgent,"The description does not provide enough evidence to determine a specific category, but contains the severity keyword 'injury', requiring Urgent priority.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description contains 'flood', indicating the category Flooding.",
+PM-202428,Other,Standard,The description does not provide enough evidence to determine a specific category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description contains 'heritage', indicating the category Heritage Damage.",
+PM-202433,Waste,Standard,"The description contains 'waste', indicating the category Waste.",
+PM-202446,Other,Urgent,"The description does not provide enough evidence to determine a specific category, but contains the severity keyword 'fell', requiring Urgent priority.",NEEDS_REVIEW
