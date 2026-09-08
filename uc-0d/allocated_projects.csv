@@ -1,0 +1,8 @@
+project_id,ward_id,project_name,requested_amount_inr,status,allocated_amount_inr,remaining_ward_balance,audit_reason
+PRJ-2026-001,Ward-1,Main Road Resurfacing,450000.0,APPROVED,450000.0,14550000.0,Approved and allocated. Dual-signoff verified (Ward Officer + Finance Controller)
+PRJ-2026-002,Ward-1,Community Park Lights,85000.0,APPROVED,85000.0,14465000.0,Approved and allocated. Single sign-off valid for <= 100k (Ward Officer)
+PRJ-2026-003,Ward-2,Monsoon Storm Drain Clearing,1200000.0,REJECTED,0.0,8500000.0,INSUFFICIENT_SIGNATURES: missing Finance Controller (AUTH-FIN-01)
+PRJ-2026-004,Ward-2,Primary School Roof Repair,350000.0,REJECTED,0.0,8500000.0,INSUFFICIENT_SIGNATURES: missing Ward Officer (AUTH-WARD-01)
+PRJ-2026-005,Ward-3,Hospital Access Road Paving,800000.0,APPROVED,800000.0,21200000.0,Approved and allocated. Dual-signoff verified (Ward Officer + Finance Controller)
+PRJ-2026-006,Ward-4,Emergency Flood Pump Installation,5000000.0,REJECTED,0.0,4200000.0,"EXCEEDS_WARD_BALANCE: required 5,000,000.00 > available 4,200,000.00"
+PRJ-2026-007,Ward-5,Waste Segregation Sheds,95000.0,APPROVED,95000.0,10905000.0,Approved and allocated. Single sign-off valid for <= 100k (Municipal Commissioner)
