@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Ingests all three policy text documents, segments them into structured sections and numbered clauses, and builds an index mapped by document filename and section identifier.
+    input: Directory path or explicit file paths to policy_hr_leave.txt, policy_it_acceptable_use.txt, and policy_finance_reimbursement.txt.
+    output: Indexed corpus structure containing parsed sections, clauses, and document metadata.
+    error_handling: Raises FileNotFoundError if any of the three required policy files cannot be read.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Processes a user query against the indexed documents, identifying the single most authoritative matching section, returning a single-source cited answer, or triggering the verbatim refusal template.
+    input: User question string and indexed corpus.
+    output: Text response containing single-source factual answer with [document § section] citation, OR the standardized refusal template.
+    error_handling: Detects queries spanning conflicting documents and enforces single-document precedence or clean refusal. Rejects queries outside document scope using the exact refusal template.
