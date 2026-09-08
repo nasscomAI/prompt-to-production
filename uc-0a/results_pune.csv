@@ -1,0 +1,16 @@
+complaint_id,category,priority_flag,reason,confidence
+PM-202401,Pothole,Low,"contains ""pothole""",Medium
+PM-202402,Pothole,Urgent,"contains ""pothole"" and urgent keyword ""child""",Medium
+PM-202406,Flooding,Low,"contains ""flooded""",Medium
+PM-202408,Flooding,Routine,"contains ""flooded""",Medium
+PM-202410,Streetlight_Out,Routine,"contains ""streetlight""",Medium
+PM-202411,Streetlight_Out,Routine,"ambiguous between Streetlight_Out, Park_Maintenance, contains ""streetlight""",Low
+PM-202413,Garbage_Overflow,Routine,"contains ""garbage""",Medium
+PM-202418,Other,Low,"no clear keyword match, contains ""Wedding venue playing music""",Medium
+PM-202419,Other,Routine,"no clear keyword match, contains ""Road surface cracked and""",Medium
+PM-202420,Sewage_Backup,Urgent,"contains ""manhole"" and urgent keyword ""injury""",Medium
+PM-202427,Other,Low,"no clear keyword match, contains ""Bridge approach floods in""",Medium
+PM-202428,Other,Low,"no clear keyword match, contains ""Dead animal not removed""",Medium
+PM-202430,Other,Routine,"no clear keyword match, contains ""Heritage street, lights out.""",Medium
+PM-202433,Garbage_Overflow,Routine,"contains ""dump""",Medium
+PM-202446,Other,Low,"no clear keyword match, contains ""Footpath tiles broken and""",Medium
