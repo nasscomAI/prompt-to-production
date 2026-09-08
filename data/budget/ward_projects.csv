@@ -1,0 +1,8 @@
+project_id,ward_id,project_name,category,requested_amount_inr,contractor_id,approvers
+PRJ-2026-001,Ward-1,Main Road Resurfacing,Roads,450000.0,CONT-101,AUTH-WARD-01;AUTH-FIN-01
+PRJ-2026-002,Ward-1,Community Park Lights,Electrical,85000.0,CONT-102,AUTH-WARD-01
+PRJ-2026-003,Ward-2,Monsoon Storm Drain Clearing,Drainage,1200000.0,CONT-103,AUTH-WARD-01
+PRJ-2026-004,Ward-2,Primary School Roof Repair,Civic Infrastructure,350000.0,CONT-104,AUTH-FIN-01
+PRJ-2026-005,Ward-3,Hospital Access Road Paving,Roads,800000.0,CONT-105,AUTH-WARD-01;AUTH-FIN-01
+PRJ-2026-006,Ward-4,Emergency Flood Pump Installation,Emergency,5000000.0,CONT-106,AUTH-WARD-01;AUTH-FIN-01
+PRJ-2026-007,Ward-5,Waste Segregation Sheds,Sanitation,95000.0,CONT-107,AUTH-COMM-01
