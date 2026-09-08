@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Matched category keyword(s): 'pothole'.,
+PM-202402,Pothole,Urgent,Severity keyword(s) 'school' found. Matched category keyword(s): 'pothole'.,
+PM-202406,Flooding,Standard,Matched category keyword(s): 'flooded'.,
+PM-202408,Flooding,Standard,"Matched category keyword(s): 'flooded, water, drain, blocked'.",NEEDS_REVIEW
+PM-202410,Other,Standard,No specific category keywords found.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,Severity keyword(s) 'hazard' found. Matched category keyword(s): 'streetlight'.,
+PM-202413,Waste,Standard,Matched category keyword(s): 'garbage'.,
+PM-202418,Other,Standard,No specific category keywords found.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,Matched category keyword(s): 'road'.,
+PM-202420,Other,Urgent,Severity keyword(s) 'injury' found. No specific category keywords found.,NEEDS_REVIEW
+PM-202427,Other,Standard,No specific category keywords found.,NEEDS_REVIEW
+PM-202428,Other,Standard,No specific category keywords found.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Matched category keyword(s): 'heritage'.,
+PM-202433,Waste,Standard,"Matched category keyword(s): 'waste, road'.",NEEDS_REVIEW
+PM-202446,Other,Urgent,Severity keyword(s) 'fell' found. No specific category keywords found.,NEEDS_REVIEW
