@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The complaint description contains ""pothole"".",
+PM-202402,Pothole,Urgent,"The complaint description contains ""pothole"" and ""child"".",
+PM-202406,Flooding,Standard,"The complaint description contains ""flood"".",
+PM-202408,Other,Standard,"The description contains keywords matching multiple categories: Flooding, Drain Blockage.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The complaint description contains ""streetlight"".",
+PM-202411,Streetlight,Urgent,"The complaint description contains ""streetlight"" and ""hazard"".",
+PM-202413,Waste,Standard,"The complaint description contains ""garbage"".",
+PM-202418,Noise,Standard,"The complaint description contains ""music"".",
+PM-202419,Road Damage,Standard,"The complaint description contains ""road surface"".",
+PM-202420,Other,Urgent,"The description does not contain a clear category keyword: ""Manhole cover missing. Risk of serious injury to cyclists."".",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The complaint description contains ""flood"".",
+PM-202428,Waste,Standard,"The complaint description contains ""dead animal"".",
+PM-202430,Heritage Damage,Standard,"The complaint description contains ""heritage"".",
+PM-202433,Waste,Standard,"The complaint description contains ""waste"".",
+PM-202446,Road Damage,Urgent,"The complaint description contains ""footpath"" and ""fell"".",
