@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Normal,"Category 'Pothole' based on 'pothole'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202402,Pothole,Urgent,Category 'Pothole' based on 'pothole'. Priority 'Urgent' based on 'child'.,
+PM-202406,Flooding,Normal,"Category 'Flooding' based on 'flood'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202408,Flooding,High,Category 'Flooding' based on 'flood'. Priority 'High' based on 'blocked'.,
+PM-202410,Streetlight,Normal,"Category 'Streetlight' based on 'streetlight'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202411,Streetlight,Normal,"Category 'Streetlight' based on 'streetlight'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202413,Garbage,Normal,"Category 'Garbage' based on 'garbage'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202418,Other,Normal,Description: 'Wedding venue playing music past midnight on weeknights.'. No single supported category can be determined reliably from the description.,NEEDS_REVIEW
+PM-202419,Other,Normal,Description: 'Road surface cracked and sinking near utility work done 1 month ago.'. No single supported category can be determined reliably from the description.,NEEDS_REVIEW
+PM-202420,Other,Urgent,Description: 'Manhole cover missing. Risk of serious injury to cyclists.'. No single supported category can be determined reliably from the description.,NEEDS_REVIEW
+PM-202427,Flooding,Normal,"Category 'Flooding' based on 'flood'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202428,Other,Normal,Description: 'Dead animal not removed for 36 hours. Health concern.'. No single supported category can be determined reliably from the description.,NEEDS_REVIEW
+PM-202430,Other,Normal,"Description: 'Heritage street, lights out. Safety concern for pedestrians after dark.'. No single supported category can be determined reliably from the description.",NEEDS_REVIEW
+PM-202433,Garbage,Normal,"Category 'Garbage' based on 'waste'. No explicit urgent or high-priority indicator was found, so priority is Normal.",
+PM-202446,Other,Normal,Description: 'Footpath tiles broken and upturned. Elderly resident fell last week.'. No single supported category can be determined reliably from the description.,NEEDS_REVIEW
