@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"classified as Pothole based on the word(s) 'pothole' in the description; no severity keywords found, so priority is Standard.",
+PM-202402,Pothole,Urgent,"classified as Pothole based on the word(s) 'pothole' in the description; priority set to Urgent due to severity word(s) 'child, school' in the description.",
+PM-202406,Flooding,Standard,"classified as Flooding based on the word(s) 'flood' in the description; no severity keywords found, so priority is Standard.",
+PM-202408,Other,Standard,"the description matches more than one category (Flooding, Drain Blockage) and is genuinely ambiguous; no severity keywords found, so priority is Standard.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"classified as Streetlight based on the word(s) 'streetlight, lights out' in the description; no severity keywords found, so priority is Standard.",
+PM-202411,Streetlight,Urgent,"classified as Streetlight based on the word(s) 'streetlight, flicker, spark' in the description; priority set to Urgent due to severity word(s) 'hazard' in the description.",
+PM-202413,Waste,Standard,"classified as Waste based on the word(s) 'garbage, bin' in the description; no severity keywords found, so priority is Standard.",
+PM-202418,Noise,Standard,"classified as Noise based on the word(s) 'music' in the description; no severity keywords found, so priority is Standard.",
+PM-202419,Road Damage,Standard,"classified as Road Damage based on the word(s) 'road surface, cracked, sinking' in the description; no severity keywords found, so priority is Standard.",
+PM-202420,Road Damage,Urgent,classified as Road Damage based on the word(s) 'manhole' in the description; priority set to Urgent due to severity word(s) 'injury' in the description.,
+PM-202427,Flooding,Standard,"classified as Flooding based on the word(s) 'flood' in the description; no severity keywords found, so priority is Standard.",
+PM-202428,Waste,Standard,"classified as Waste based on the word(s) 'dead animal' in the description; no severity keywords found, so priority is Standard.",
+PM-202430,Other,Standard,"the description matches more than one category (Streetlight, Heritage Damage) and is genuinely ambiguous; no severity keywords found, so priority is Standard.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"classified as Waste based on the word(s) 'waste, dumped' in the description; no severity keywords found, so priority is Standard.",
+PM-202446,Road Damage,Urgent,"classified as Road Damage based on the word(s) 'footpath, tiles' in the description; priority set to Urgent due to severity word(s) 'fell' in the description.",
