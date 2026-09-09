@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Identified pothole issue based on keywords 'pothole'.,
+PM-202402,Pothole,Urgent,"Identified pothole issue based on keywords 'children', 'School', 'pothole'.",
+PM-202406,Flooding,Standard,Identified flooding issue based on keywords 'flooded'.,
+PM-202408,Other,Standard,"Classified based on keywords 'flooded', 'Drain' requiring operational verification.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Identified streetlight issue based on keywords 'streetlights'.,
+PM-202411,Streetlight,Standard,Identified streetlight issue based on keywords 'Streetlight'.,
+PM-202413,Waste,Standard,Identified waste issue based on keywords 'garbage'.,
+PM-202418,Noise,Standard,Identified noise issue based on keywords 'music'.,
+PM-202419,Other,Standard,Classified as Other due to absence of definitive category keywords.,NEEDS_REVIEW
+PM-202420,Drain Blockage,Urgent,"Identified drain blockage issue based on keywords 'injury', 'Manhole'.",
+PM-202427,Flooding,Standard,Identified flooding issue based on keywords 'floods'.,
+PM-202428,Other,Standard,Classified as Other due to absence of definitive category keywords.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Identified heritage damage issue based on keywords 'Heritage'.,
+PM-202433,Waste,Standard,"Identified waste issue based on keywords 'waste', 'dumped'.",
+PM-202446,Other,Standard,Classified as Other due to absence of definitive category keywords.,NEEDS_REVIEW
