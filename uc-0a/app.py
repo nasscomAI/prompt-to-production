@@ -1,11 +1,12 @@
 """
-UC-0A — Complaint Classifier
+UC-0A — Complaint Classifier (app.py)
 Guided by agents.md and skills.md RICE specification.
 """
 import argparse
 import csv
 import os
 import re
+import sys
 
 ALLOWED_CATEGORIES = [
     "Pothole",
@@ -39,15 +40,26 @@ LOW_PRIORITY_RE = re.compile(
 
 def classify_complaint(row: dict) -> dict:
     """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
+    Skill 1: classify_complaint
+    Classifies a single complaint row into category, priority, reason, and flag.
+    Includes error handling for missing, null, or ambiguous inputs.
     """
-    comp_id = row.get("complaint_id", "") if row else ""
-    desc = row.get("description", "") if row else ""
+    if not isinstance(row, dict):
+        return {
+            "complaint_id": "",
+            "category": "Other",
+            "priority": "Low",
+            "reason": "Invalid input format; expected row object.",
+            "flag": "NEEDS_REVIEW"
+        }
 
+    comp_id = row.get("complaint_id", "") if row.get("complaint_id") is not None else ""
+    desc = row.get("description", "") if row.get("description") is not None else ""
+
+    # Error handling for missing, empty, or null description
     if not desc or not str(desc).strip():
         return {
-            "complaint_id": comp_id,
+            "complaint_id": str(comp_id),
             "category": "Other",
             "priority": "Low",
             "reason": "Missing or empty complaint description text.",
@@ -57,7 +69,7 @@ def classify_complaint(row: dict) -> dict:
     desc_str = str(desc).strip()
     desc_lower = desc_str.lower()
 
-    # Check severity keywords for Urgent priority
+    # Rule 2: Priority calculation based on severity keywords
     sev_match = SEVERITY_KEYWORDS_RE.search(desc_str)
     urg_match = OTHER_URGENT_RE.search(desc_str)
 
@@ -74,50 +86,41 @@ def classify_complaint(row: dict) -> dict:
         priority = "Standard"
         cited_word = None
 
-    # Score categories
+    # Rule 1: Category matching against allowed taxonomy
     cat_matches = {}
 
-    # Pothole
     m = re.findall(r'\b(?:potholes?|crater|motorcycle wheel)\b', desc_lower)
     if m:
         cat_matches["Pothole"] = m
 
-    # Flooding
     m = re.findall(r'\b(?:flood(?:ed|ing|s)?|rainwater|underpass flooded|waterlogging)\b', desc_lower)
     if m:
         cat_matches["Flooding"] = m
 
-    # Streetlight
     m = re.findall(r'\b(?:streetlights?|unlit|darkness|lights out|wiring theft|substation tripped)\b', desc_lower)
     if m:
         cat_matches["Streetlight"] = m
 
-    # Waste
     m = re.findall(r'\b(?:garbages?|trash|waste|dead animal|bins?|dumped)\b', desc_lower)
     if m:
         cat_matches["Waste"] = m
 
-    # Noise
     m = re.findall(r'\b(?:music|drilling|amplifiers?|idling|noise|wedding venue|wedding band)\b', desc_lower)
     if m:
         cat_matches["Noise"] = m
 
-    # Road Damage
     m = re.findall(r'\b(?:tarmac|road surface|road collapsed?|footpath|manhole|paving|cracked|sinking|subsidence|buckled|tiles broken|bridge approach)\b', desc_lower)
     if m:
         cat_matches["Road Damage"] = m
 
-    # Heritage Damage
     m = re.findall(r'\b(?:heritage|historic|museum|ancient)\b', desc_lower)
     if m:
         cat_matches["Heritage Damage"] = m
 
-    # Heat Hazard
     m = re.findall(r'\b(?:heatwave|4[45]°c|52°c|melting|burns|full sun|temperature|sun|hot)\b', desc_lower)
     if m:
         cat_matches["Heat Hazard"] = m
 
-    # Drain Blockage
     m = re.findall(r'\b(?:drains?|stormwater drain|drainage)\b', desc_lower)
     if m:
         cat_matches["Drain Blockage"] = m
@@ -125,7 +128,7 @@ def classify_complaint(row: dict) -> dict:
     flag = ""
     category = "Other"
 
-    # Evaluate ambiguity and determine category
+    # Rule 4: Ambiguity refusal condition
     if "Heritage Damage" in cat_matches and len(cat_matches) > 1:
         category = "Heritage Damage"
         flag = "NEEDS_REVIEW"
@@ -146,7 +149,7 @@ def classify_complaint(row: dict) -> dict:
             if len(sorted_cats) > 1 and len(sorted_cats[0][1]) == len(sorted_cats[1][1]):
                 flag = "NEEDS_REVIEW"
 
-    # Formulate reason sentence quoting description words
+    # Rule 3: Reason citation (one sentence citing specific words)
     if cited_word:
         reason_text = f"Classified as {category} with {priority} priority citing severity term '{cited_word}' from description."
     else:
@@ -154,7 +157,7 @@ def classify_complaint(row: dict) -> dict:
         reason_text = f"Classified as {category} with {priority} priority based on description snippet '{snippet}'."
 
     return {
-        "complaint_id": comp_id,
+        "complaint_id": str(comp_id),
         "category": category,
         "priority": priority,
         "reason": reason_text,
@@ -164,8 +167,9 @@ def classify_complaint(row: dict) -> dict:
 
 def batch_classify(input_path: str, output_path: str):
     """
-    Read input CSV, classify each row, write results CSV.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
+    Skill 2: batch_classify
+    Reads input CSV, applies classify_complaint per row, writes output CSV.
+    Includes error handling for missing files, corrupt rows, and IO issues.
     """
     fieldnames = ["complaint_id", "category", "priority", "reason", "flag"]
     results = []
@@ -185,7 +189,7 @@ def batch_classify(input_path: str, output_path: str):
             except Exception as e:
                 comp_id = row.get("complaint_id", "") if row else ""
                 classified = {
-                    "complaint_id": comp_id,
+                    "complaint_id": str(comp_id),
                     "category": "Other",
                     "priority": "Low",
                     "reason": f"Error during processing: {str(e)}",
@@ -200,10 +204,10 @@ def batch_classify(input_path: str, output_path: str):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier App")
+    parser.add_argument("--input",  required=True, help="Path to input CSV file")
+    parser.add_argument("--output", required=True, help="Path to output CSV file")
     args = parser.parse_args()
+
     batch_classify(args.input, args.output)
     print(f"Done. Results written to {args.output}")
-
