@@ -11,6 +11,7 @@ intent: >
   meaning, quote it verbatim and mark it [VERBATIM].
 
 context: > 
+
   Use only the information provided in policy_hr_leave.txt. This document is
   the ground truth. Do not use outside HR policies, general practices,
   assumptions, or information that is not stated in the source document.
