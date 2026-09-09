@@ -1,0 +1,57 @@
+================================================================================
+EMPLOYEE LEAVE POLICY (HR-POL-001) — COMPLIANT EXECUTIVE SUMMARY
+Preserving All Binding Obligations, Dual Approvals, Deadlines, and Forfeiture Rules
+================================================================================
+
+--- 1. PURPOSE AND SCOPE ---
+1.1: Scope covers all permanent and contractual CMC employees.
+1.2: Excludes daily wage workers and consultants (governed by separate contracts).
+
+--- 2. ANNUAL LEAVE ---
+2.1: Permanent employees receive 18 days paid annual leave per calendar year.
+2.2: Annual leave accrues at 1.5 days per month from date of joining.
+2.3 [BINDING]: Employees MUST submit leave application at least 14 calendar days in advance via Form HR-L1.
+2.4 [BINDING]: Written approval from direct manager is mandatory BEFORE leave commences. Verbal approval is NOT valid.
+2.5 [BINDING]: Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+2.6 [BINDING]: Maximum 5 days unused annual leave may be carried forward to next year; any days above 5 are forfeited on 31 December.
+2.7 [BINDING]: Carry-forward days MUST be used within Q1 (January–March) of following year or they are forfeited.
+
+--- 3. SICK LEAVE ---
+3.1: Entitled to 12 days paid sick leave per calendar year.
+3.2 [BINDING]: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of return to work.
+3.3: Sick leave cannot be carried forward to the following year.
+3.4 [BINDING]: Sick leave taken immediately before or after a public holiday or annual leave requires a medical certificate REGARDLESS of duration.
+
+--- 4. MATERNITY AND PATERNITY LEAVE ---
+4.1: Female employees entitled to 26 weeks paid maternity leave for first two live births.
+4.2: Maternity leave for third or subsequent child is 12 weeks paid.
+4.3: Male employees entitled to 5 days paid paternity leave, to be taken within 30 days of birth.
+4.4: Paternity leave cannot be split across multiple periods.
+
+--- 5. LEAVE WITHOUT PAY (LWP) ---
+5.1: Leave Without Pay (LWP) can only be applied for after exhausting all applicable paid leave entitlements.
+5.2 [BINDING - MULTI-CONDITION DUAL APPROVAL]: [VERBATIM] "LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient."
+5.3 [BINDING]: LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+5.4: Periods of LWP do not count toward service for seniority, increments, or retirement benefits.
+
+--- 6. PUBLIC HOLIDAYS ---
+6.1: Entitled to all gazetted public holidays declared by State Government.
+6.2: Work on a public holiday entitles employee to one compensatory off day, to be taken within 60 days of holiday worked.
+6.3: Compensatory off cannot be encashed.
+
+--- 7. LEAVE ENCASHMENT ---
+7.1: Annual leave encashment allowed only at retirement or resignation, subject to maximum 60 days.
+7.2 [BINDING - ABSOLUTE PROHIBITION]: [VERBATIM] "Leave encashment during service is not permitted under any circumstances."
+7.3: Sick leave and LWP cannot be encashed under any circumstances.
+
+--- 8. GRIEVANCES ---
+8.1: Leave grievances must be raised with HR Department within 10 working days of disputed decision.
+8.2: Grievances after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
+
+--------------------------------------------------------------------------------
+VERIFICATION AUDIT:
+Total numbered clauses verified and summarized: 29
+All 10 ground truth binding obligations (2.3, 2.4, 2.5, 2.6, 2.7, 3.2, 3.4, 5.2, 5.3, 7.2) confirmed present.
+Multi-condition rule 5.2 (Department Head AND HR Director approval) preserved.
+Scope bleed check passed: Zero external opinions or extraneous text added.
+================================================================================

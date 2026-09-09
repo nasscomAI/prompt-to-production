@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Flooding supported by ""flooded"" in the description; marked Urgent due to ""Ambulance"".",
+GH-202402,Drain Blockage,Standard,"Drain Blockage supported by ""Drain"", ""blocked"" in the description.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Drain Blockage supported by ""drain"", ""blocked"" in the description.",
+GH-202407,Drain Blockage,Standard,"Drain Blockage supported by ""Drain"", ""blocked"" in the description.",
+GH-202410,Pothole,Standard,"Pothole supported by ""Potholes"" in the description.",
+GH-202411,Pothole,Urgent,"Pothole supported by ""Pothole"" in the description; marked Urgent due to ""hospitalised"".",
+GH-202412,Pothole,Urgent,"Pothole supported by ""potholes"" in the description; marked Urgent due to ""School"".",
+GH-202417,Waste,Standard,"Waste supported by ""garbage"", ""overflow"" in the description.",NEEDS_REVIEW
+GH-202420,Noise,Standard,"Noise supported by ""drilling"" in the description.",
+GH-202422,Road Damage,Urgent,"Road Damage supported by ""collapsed"" in the description.",
+GH-202424,Flooding,Standard,"Flooding supported by ""floods"" in the description.",
+GH-202428,Waste,Standard,"Waste supported by ""waste"", ""not cleared"" in the description.",
+GH-202432,Noise,Standard,"Noise supported by ""idling"" in the description.",
+GH-202448,Drain Blockage,Standard,"Drain Blockage supported by ""drain"", ""blocked"" in the description.",NEEDS_REVIEW
+GH-202438,Flooding,Standard,"Flooding supported by ""rainwater"" in the description.",
