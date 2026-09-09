@@ -1,16 +1,28 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+\# UC-0B Skills
+
+
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+&#x20; - name: retrieve\_policy
+
+&#x20;   description: Loads the HR leave policy and returns its content as structured numbered sections.
+
+&#x20;   input: A path to a .txt HR policy document.
+
+&#x20;   output: Structured policy sections containing section numbers and source text.
+
+&#x20;   error\_handling: If the file is missing, unreadable, or not a text policy file, report the error and do not invent policy content.
+
+
+
+&#x20; - name: summarize\_policy
+
+&#x20;   description: Produces a clause-complete HR policy summary while preserving every binding obligation and condition.
+
+&#x20;   input: Structured numbered sections returned by retrieve\_policy.
+
+&#x20;   output: A text summary containing the required policy clauses with clause references.
+
+&#x20;   error\_handling: If a clause cannot be summarized without meaning loss, preserve it verbatim and flag it; never guess or add external information.
+
