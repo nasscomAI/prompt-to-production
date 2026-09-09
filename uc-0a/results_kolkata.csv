@@ -1,16 +1,16 @@
 complaint_id,category,priority,reason,flag
-KM-202401,Streetlight,Standard,Classified as Streetlight due to mention of 'lamp' in the description.,
-KM-202402,Heritage Damage,Standard,Classified as Heritage Damage due to mention of 'historic' in the description.,
-KM-202405,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-KM-202409,Pothole,Standard,Classified as Pothole due to mention of 'pothole' in the description.,
-KM-202410,Pothole,Standard,Classified as Pothole due to mention of 'pothole' in the description.,
-KM-202411,Pothole,Standard,Classified as Pothole due to mention of 'pothole' in the description.,
-KM-202415,Drain Blockage,Standard,Classified as Drain Blockage due to mention of 'drain' in the description.,
-KM-202418,Flooding,Standard,Classified as Flooding due to mention of 'overflow' in the description.,
-KM-202421,Pothole,Urgent,Classified as Pothole due to mention of 'pit' in the description.,
-KM-202422,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-KM-202426,Heritage Damage,Standard,Classified as Heritage Damage due to mention of 'heritage' in the description.,
-KM-202430,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-KM-202434,Heritage Damage,Standard,Classified as Heritage Damage due to mention of 'heritage' in the description.,
-KM-202436,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-KM-202438,Heritage Damage,Standard,Classified as Heritage Damage due to mention of 'heritage' in the description.,
+KM-202401,Other,Standard,Classified as Other with Standard priority because description states 'Heritage lamp post knocked over by delivery vehicle…'.,NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because description states 'Historic tram road cobblestones broken up by cable…'.,
+KM-202405,Noise,Low,Classified as Noise with Low priority because description states 'Wedding band playing near Tagore Museum at 11pm…'.,
+KM-202409,Pothole,Standard,Classified as Pothole with Standard priority because description states 'Airport access road full of potholes Diplomatic complaint…'.,
+KM-202410,Pothole,Standard,Classified as Pothole with Standard priority because description states 'Pothole causing tyre blowouts Three incidents this week'.,
+KM-202411,Pothole,Standard,Classified as Pothole with Standard priority because description states 'Deep pothole filling with rainwater Depth invisible Accident…'.,
+KM-202415,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description states 'New residential complex draining directly onto public road'.,
+KM-202418,Waste,Standard,Classified as Waste with Standard priority because description states 'Tourist zone waste overflowing Foreign visitors photographing piles'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage with Urgent priority because description states 'Footpath broken and sinking Elderly pedestrian fell Hospital…'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage with Standard priority because description states 'Road surface buckled near bridge Structural concern raised'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because description states 'Heritage residential building exterior defaced by billboard installation'.,
+KM-202430,Road Damage,Standard,Classified as Road Damage with Standard priority because description states 'Road subsided near gas pipeline Gas leak smell…'.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority because description states 'Street paving removed for utility work — heritage…'.,
+KM-202436,Streetlight,Standard,Classified as Streetlight with Standard priority because description states 'Entire colony substation tripped Darkness for 3 nights'.,
+KM-202438,Other,Standard,Classified as Other with Standard priority because description states 'Street vendors using amplifiers illegally in heritage precinct'.,NEEDS_REVIEW

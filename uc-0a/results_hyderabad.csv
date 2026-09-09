@@ -1,16 +1,16 @@
 complaint_id,category,priority,reason,flag
-GH-202401,Flooding,Urgent,Classified as Flooding due to mention of 'flood' in the description.,
-GH-202402,Flooding,Standard,Classified as Flooding due to mention of 'flood' in the description.,
-GH-202406,Drain Blockage,Standard,Classified as Drain Blockage due to mention of 'drain' in the description.,
-GH-202407,Drain Blockage,Standard,Classified as Drain Blockage due to mention of 'drain' in the description.,
-GH-202410,Pothole,Standard,Classified as Pothole due to mention of 'pothole' in the description.,
-GH-202411,Pothole,Urgent,Classified as Pothole due to mention of 'pothole' in the description.,
-GH-202412,Pothole,Urgent,Classified as Pothole due to mention of 'pothole' in the description.,
-GH-202417,Flooding,Standard,Classified as Flooding due to mention of 'overflow' in the description.,
-GH-202420,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-GH-202422,Other,Urgent,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-GH-202424,Flooding,Standard,Classified as Flooding due to mention of 'flood' in the description.,
-GH-202428,Waste,Standard,Classified as Waste due to mention of 'waste' in the description.,
-GH-202432,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
-GH-202448,Flooding,Standard,Classified as Flooding due to mention of 'flood' in the description.,
-GH-202438,Other,Standard,No clear category keywords found; defaulted to Other.,NEEDS_REVIEW
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority because description states 'Underpass flooded after 1hr rain Ambulance diverted Lives…'.,
+GH-202402,Other,Standard,Classified as Other with Standard priority because description states 'Market area flooded Traders suffering losses Drain completely…'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description states 'Main stormwater drain 100% blocked with construction debris'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because description states 'Drain blocked and mosquito breeding Dengue concern'.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority because description states 'Potholes causing vehicles to slow to 20kmph on…'.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority because description states 'Pothole swallowed entire motorcycle wheel Rider hospitalised'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority because description states 'School bus struggling to navigate 6 potholes in…'.,
+GH-202417,Waste,Standard,Classified as Waste with Standard priority because description states 'Heritage zone garbage overflow Tourist photographs showing piles…'.,
+GH-202420,Noise,Low,Classified as Noise with Low priority because description states 'Construction drilling from 5am daily near residential towers'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage with Urgent priority because description states 'Road collapsed partially Crater 1m deep near residential…'.,
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority because description states 'Underpass floods in light rain Cars regularly abandoned'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority because description states 'Post-market waste not cleared Area unusable by Sunday…'.,
+GH-202432,Noise,Low,Classified as Noise with Low priority because description states '24hr supermarket delivery trucks idling with engines on'.,
+GH-202448,Other,Standard,Classified as Other with Standard priority because description states 'Main drain blocked — entire locality at flooding…'.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding with Standard priority because description states 'Colony surrounded by fields that channel rainwater through…'.,
