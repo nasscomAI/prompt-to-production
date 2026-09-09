@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains 'pothole', supporting the 'Pothole' category.",
+PM-202402,Pothole,Urgent,"The description contains 'pothole', supporting the 'Pothole' category. It also contains 'child', which requires Urgent priority.",
+PM-202406,Flooding,Standard,"The description contains 'flood', supporting the 'Flooding' category.",
+PM-202408,Flooding,Standard,"The description contains 'flood', supporting the 'Flooding' category.",
+PM-202410,Streetlight,Standard,"The description contains 'streetlight', supporting the 'Streetlight' category.",
+PM-202411,Streetlight,Urgent,"The description contains 'streetlight', supporting the 'Streetlight' category. It also contains 'hazard', which requires Urgent priority.",
+PM-202413,Waste,Standard,"The description contains 'garbage', supporting the 'Waste' category.",
+PM-202418,Other,Standard,The description 'Wedding venue playing music past midnight on weeknights.' does not provide enough specific information for a canonical category.,NEEDS_REVIEW
+PM-202419,Road Damage,Standard,"The description contains 'road surface', supporting the 'Road Damage' category.",
+PM-202420,Other,Urgent,The description 'Manhole cover missing. Risk of serious injury to cyclists.' does not provide enough specific information for a canonical category.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description contains 'flood', supporting the 'Flooding' category.",
+PM-202428,Other,Standard,The description 'Dead animal not removed for 36 hours. Health concern.' does not provide enough specific information for a canonical category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description contains 'heritage', supporting the 'Heritage Damage' category.",
+PM-202433,Waste,Standard,"The description contains 'waste', supporting the 'Waste' category.",
+PM-202446,Road Damage,Urgent,"The description contains 'footpath', supporting the 'Road Damage' category. It also contains 'fell', which requires Urgent priority.",
