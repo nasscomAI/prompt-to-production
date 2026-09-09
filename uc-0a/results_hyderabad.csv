@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding citing 'Underpass flooded after 1hr rain'; priority Urgent triggered by severity keyword 'Ambulance'.,
+GH-202402,Drain Blockage,Standard,Classified as Drain Blockage based on description citing 'Drain completely blocked'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on description citing 'Main stormwater drain 100% blocked with co...'.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on description citing 'Drain blocked and mosquito breeding'.,
+GH-202410,Pothole,Standard,Classified as Pothole based on description citing 'Potholes causing vehicles to slow to 20kmp...'.,
+GH-202411,Pothole,Urgent,Classified as Pothole citing 'Pothole swallowed entire motorcycle wheel'; priority Urgent triggered by severity keyword 'hospitalised'.,
+GH-202412,Pothole,Urgent,Classified as Pothole citing 'School bus struggling to navigate 6 pothol...'; priority Urgent triggered by severity keyword 'School'.,
+GH-202417,Waste,Standard,Classified as Waste based on description citing 'Heritage zone garbage overflow'.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise based on description citing 'Construction drilling from 5am daily near ...'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage citing 'Road collapsed partially'; priority Urgent triggered by severity keyword 'collapsed'.,
+GH-202424,Flooding,Standard,Classified as Flooding based on description citing 'Underpass floods in light rain'.,
+GH-202428,Waste,Standard,Classified as Waste based on description citing 'Post-market waste not cleared'.,
+GH-202432,Noise,Standard,Classified as Noise based on description citing '24hr supermarket delivery trucks idling wi...'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage based on description citing 'Main drain blocked — entire locality at fl...'.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding based on description citing 'Colony surrounded by fields that channel r...'.,
