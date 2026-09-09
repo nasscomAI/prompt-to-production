@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Description reports ""flood"", classified as Flooding.",
+GH-202402,Flooding,Standard,"Description reports ""flood"", classified as Flooding.",
+GH-202406,Drain Blockage,Standard,"Description reports ""drain"", classified as Drain Blockage.",
+GH-202407,Drain Blockage,Standard,"Description reports ""Drain"", classified as Drain Blockage.",
+GH-202410,Pothole,Standard,"Description reports ""Pothole"", classified as Pothole.",
+GH-202411,Pothole,Urgent,"Description reports ""Pothole"", classified as Pothole.",
+GH-202412,Pothole,Urgent,"Description reports ""pothole"", classified as Pothole.",
+GH-202417,Waste,Standard,"Description reports ""garbage"", classified as Waste.",
+GH-202420,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""Construction drilling from 5am daily near residential towers.""",NEEDS_REVIEW
+GH-202422,Pothole,Urgent,"Description reports ""Crater"", classified as Pothole.",
+GH-202424,Flooding,Standard,"Description reports ""flood"", classified as Flooding.",
+GH-202428,Waste,Standard,"Description reports ""waste"", classified as Waste.",
+GH-202432,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""24hr supermarket delivery trucks idling with engines on.""",NEEDS_REVIEW
+GH-202448,Flooding,Standard,"Description reports ""flood"", classified as Flooding.",
+GH-202438,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""Colony surrounded by fields that channel rainwater through main road.""",NEEDS_REVIEW
