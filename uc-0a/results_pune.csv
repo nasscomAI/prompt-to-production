@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The complaint cites ""Large pothole 60cm wide causing"" in the description.",
+PM-202402,Pothole,Urgent,"The complaint cites ""Deep pothole near bus stop. Sc"" in the description.",
+PM-202406,Flooding,Standard,"The complaint cites ""Underpass flooded knee-deep after 2"" in the description.",
+PM-202408,Flooding,Standard,"The complaint cites ""Bus stand flooded. Passengers stand"" in the description.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The complaint cites ""Three consecutive streetlights out for 10 days."" in the description.",
+PM-202411,Streetlight,Urgent,"The complaint cites ""Streetlight flickering and sp"" in the description.",
+PM-202413,Waste,Standard,"The complaint cites ""Overflowing garbage bins near vegetab"" in the description.",
+PM-202418,Noise,Low,"The complaint cites ""ing venue playing music past midnight on"" in the description.",
+PM-202419,Road Damage,Standard,"The complaint cites ""Road surface cracked and sinking near"" in the description.",
+PM-202420,Drain Blockage,Urgent,"The complaint cites "". Risk of serious injury to cyclists."" in the description.",
+PM-202427,Flooding,Standard,"The complaint cites ""Bridge approach floods in 30mins of rain"" in the description.",
+PM-202428,Waste,Standard,"The complaint cites ""Dead animal not removed for 36 hours"" in the description.",
+PM-202430,Streetlight,Standard,"The complaint cites ""Heritage street, lights ou"" in the description.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The complaint cites ""Bulk waste from apartment renovation dumped on public road"" in the description.",
+PM-202446,Road Damage,Urgent,"The complaint cites ""Elderly resident fell last week."" in the description.",
