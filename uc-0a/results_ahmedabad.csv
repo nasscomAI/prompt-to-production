@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+AM-202402,Heat Hazard,Urgent,Category 'Heat Hazard' based on keywords: temperature. Priority 'Urgent' based on urgency indicators in description.,
+AM-202405,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category 'Heat Hazard' based on keywords: heat. Priority 'Standard' — no severity keywords found.,
+AM-202407,Other,Urgent,Category 'Other' based on keywords: child. Priority 'Urgent' triggered by: child.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Category 'Pothole' based on keywords: pothole. Priority 'Standard' — no severity keywords found.,
+AM-202414,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+AM-202417,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Category 'Noise' based on keywords: music. Priority 'Standard' — no severity keywords found.,
+AM-202424,Pothole,Standard,Category 'Pothole' based on keywords: road surface. Priority 'Standard' — no severity keywords found.,
+AM-202429,Heat Hazard,Standard,Category 'Heat Hazard' based on keywords: temperature. Priority 'Standard' — no severity keywords found.,
+AM-202431,Heritage Damage,Standard,Category 'Heritage Damage' based on keywords: heritage. Priority 'Standard' — no severity keywords found.,
+AM-202435,Heat Hazard,Standard,Category 'Heat Hazard' based on keywords: heat. Priority 'Standard' — no severity keywords found.,
+AM-202444,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+AM-202445,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW

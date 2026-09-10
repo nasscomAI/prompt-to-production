@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category 'Pothole' based on keywords: pothole. Priority 'Standard' — no severity keywords found.,
+PM-202402,Pothole,Urgent,"Category 'Pothole' based on keywords: pothole, child. Priority 'Urgent' triggered by: child, school.",
+PM-202406,Flooding,Standard,Category 'Flooding' based on keywords: flood. Priority 'Standard' — no severity keywords found.,
+PM-202408,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category 'Streetlight' based on keywords: streetlight. Priority 'Standard' — no severity keywords found.,
+PM-202411,Streetlight,Urgent,"Category 'Streetlight' based on keywords: streetlight, hazard. Priority 'Urgent' triggered by: hazard.",
+PM-202413,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+PM-202418,Noise,Standard,Category 'Noise' based on keywords: music. Priority 'Standard' — no severity keywords found.,
+PM-202419,Pothole,Standard,Category 'Pothole' based on keywords: road surface. Priority 'Standard' — no severity keywords found.,
+PM-202420,Other,Urgent,Category 'Other' based on keywords: injury. Priority 'Urgent' triggered by: injury.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category 'Flooding' based on keywords: flood. Priority 'Standard' — no severity keywords found.,
+PM-202428,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Category 'Heritage Damage' based on keywords: heritage. Priority 'Standard' — no severity keywords found.,
+PM-202433,Waste,Standard,Category 'Waste' based on keywords: waste. Priority 'Standard' — no severity keywords found.,
+PM-202446,Other,Urgent,Category 'Other' based on keywords: fell. Priority 'Urgent' triggered by: fell.,NEEDS_REVIEW

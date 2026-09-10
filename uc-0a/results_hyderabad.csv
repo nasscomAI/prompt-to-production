@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Category 'Flooding' based on keywords: flood, ambulance. Priority 'Urgent' triggered by: ambulance.",
+GH-202402,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Category 'Drain Blockage' based on keywords: drain. Priority 'Standard' — no severity keywords found.,
+GH-202407,Drain Blockage,Standard,Category 'Drain Blockage' based on keywords: drain. Priority 'Standard' — no severity keywords found.,
+GH-202410,Pothole,Standard,Category 'Pothole' based on keywords: pothole. Priority 'Standard' — no severity keywords found.,
+GH-202411,Pothole,Urgent,"Category 'Pothole' based on keywords: pothole, hospital. Priority 'Urgent' triggered by: hospital.",
+GH-202412,Pothole,Urgent,"Category 'Pothole' based on keywords: pothole, school. Priority 'Urgent' triggered by: school.",
+GH-202417,Waste,Standard,Category 'Waste' based on keywords: garbage. Priority 'Standard' — no severity keywords found.,
+GH-202420,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+GH-202422,Other,Urgent,Category 'Other' based on keywords: collapse. Priority 'Urgent' triggered by: collapse.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Category 'Flooding' based on keywords: flood. Priority 'Standard' — no severity keywords found.,
+GH-202428,Waste,Standard,Category 'Waste' based on keywords: waste. Priority 'Standard' — no severity keywords found.,
+GH-202432,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+GH-202448,Flooding,Standard,Category 'Flooding' based on keywords: flood. Priority 'Standard' — no severity keywords found.,
+GH-202438,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
