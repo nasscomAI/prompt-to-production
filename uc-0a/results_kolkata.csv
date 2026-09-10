@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Classified as Heritage Damage because the report states ""Heritage lamp post knocked over"".",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Classified as Heritage Damage because the report states ""Historic tram road cobblestones broken"".",NEEDS_REVIEW
+KM-202405,Noise,Low,"Classified as Noise because the report states ""Wedding band playing near Tagore"".",
+KM-202409,Pothole,Standard,"Classified as Pothole because the report states ""potholes. Diplomatic complaint received."".",
+KM-202410,Pothole,Standard,"Classified as Pothole because the report states ""Pothole causing tyre blowouts. Three"".",
+KM-202411,Pothole,Standard,"Classified as Pothole because the report states ""pothole filling with rainwater. Depth"".",
+KM-202415,Other,Standard,"Classified as Other because the report states ""New residential complex draining directly"".",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classified as Waste because the report states ""waste overflowing. Foreign visitors photographing"".",
+KM-202421,Road Damage,Urgent,"Classified as Road Damage because the report states ""Footpath broken and sinking. Elderly"".",
+KM-202422,Road Damage,Standard,"Classified as Road Damage because the report states ""Road surface buckled near bridge."".",
+KM-202426,Heritage Damage,Standard,"Classified as Heritage Damage because the report states ""Heritage residential building exterior defaced"".",
+KM-202430,Road Damage,Standard,"Classified as Road Damage because the report states ""subsided near gas pipeline. Gas"".",
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage because the report states ""heritage stone not replaced."".",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Classified as Streetlight because the report states ""substation tripped. Darkness for 3"".",
+KM-202438,Noise,Low,"Classified as Noise because the report states ""amplifiers illegally in heritage precinct."".",
