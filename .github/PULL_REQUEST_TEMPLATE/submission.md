@@ -1,152 +1,84 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  
-**City / Group:**  
-**Date:**  
-**AI tool(s) used:**  
+**Name:** Karvy Kapoor
+
+**City / Group:** Ghaziabad
+
+**Date:** 11 September 2026
+
+**AI tool(s) used:** ChatGPT, Groq API with `openai/gpt-oss-20b`
 
 ---
 
-## Checklist — Complete Before Opening This PR
+## Submission Scope
 
-- [ ] `agents.md` committed for all 4 UCs
-- [ ] `skills.md` committed for all 4 UCs
-- [ ] `classifier.py` runs on `test_[city].csv` without crash
-- [ ] `results_[city].csv` present in `uc-0a/`
-- [ ] `app.py` for UC-0B, UC-0C, UC-X — all run without crash
-- [ ] `summary_hr_leave.txt` present in `uc-0b/`
-- [ ] `growth_output.csv` present in `uc-0c/`
-- [ ] 4+ commits with meaningful messages following the formula
-- [ ] All sections below are filled in
+This submission covers **UC-0B — Summary That Changes Meaning** only.
+
+UC-0A, UC-0C, and UC-X are intentionally not included.
 
 ---
 
-## UC-0A — Complaint Classifier
+## Checklist
 
-**Which failure mode did you encounter first?**
-*(taxonomy drift / severity blindness / missing justification / hallucinated sub-categories / false confidence)*
+- [x] `agents.md` committed for UC-0B
+- [x] `skills.md` committed for UC-0B
+- [x] `app.py` for UC-0B runs without crash
+- [x] `summary_hr_leave.txt` present in `uc-0b/`
+- [x] All 29 numbered policy clauses are present in the final summary
+- [x] Meaningful UC-0B commit created
 
-> [Your answer]
+The following items are not applicable because this submission covers UC-0B only:
 
-**What enforcement rule fixed it? Quote the rule exactly as it appears in your agents.md:**
-
-> [Your answer]
-
-**How many rows in your results CSV match the answer key?**
-*(Tutor will release answer key after session)*
-
-> [Your answer] out of 15
-
-**Did all severity signal rows (injury/child/school/hospital) return Urgent?**
-
-> Yes / No — [explain any exceptions]
-
-**Your git commit message for UC-0A:**
-
-> [paste your commit message here]
+- UC-0A classifier and results CSV
+- UC-0C growth output
+- UC-X document question answering
+- Four-use-case completion
 
 ---
 
 ## UC-0B — Summary That Changes Meaning
 
 **Which failure mode did you encounter?**
-*(clause omission / scope bleed / obligation softening)*
 
-> [Your answer]
+> Clause omission.
 
-**List any clauses that were missing or weakened in the naive output (before your RICE fix):**
+**List any clauses that were missing or weakened in the naive output before your RICE fix:**
 
-> [Your answer — reference clause numbers]
+> The naive output stopped at clause 5.2 and omitted clauses 5.3 through 8.2. The initial output was therefore incomplete. Additional enforcement was also needed to preserve all conditions in multi-condition clauses, especially clause 5.2, which requires approval from both the Department Head and the HR Director.
 
-**After your fix — are all 10 critical clauses present in summary_hr_leave.txt?**
+**After your fix — are all 10 critical clauses present in `summary_hr_leave.txt`?**
 
-> Yes / No — [which are still missing or wrong]
+> Yes. All 10 critical clauses are present. The final summary also contains all 29 numbered clauses from the source policy.
 
-**Did the naive prompt add any information not in the source document (scope bleed)?**
+**Did the naive prompt add any information not in the source document?**
 
-> Yes / No — [quote any bleed you found]
+> No unsupported information was retained in the final summary. The enforcement rules restricted the system to the supplied policy document and prohibited invented information, external assumptions, and unsupported practices.
 
 **Your git commit message for UC-0B:**
 
-> [paste your commit message here]
-
----
-
-## UC-0C — Number That Looks Right
-
-**What did the naive prompt return when you ran "Calculate growth from the data."?**
-
-> [Your answer — quote the output]
-
-**Did it aggregate across all wards? Did it mention the 5 null rows?**
-
-> [Your answer]
-
-**After your fix — does your system refuse all-ward aggregation?**
-
-> Yes / No
-
-**Does your growth_output.csv flag the 5 null rows rather than skipping them?**
-
-> Yes / No — [list which rows are flagged]
-
-**Does your output match the reference values (Ward 1 Roads +33.1% in July, −34.8% in October)?**
-
-> Yes / No — [note any discrepancy]
-
-**Your git commit message for UC-0C:**
-
-> [paste your commit message here]
-
----
-
-## UC-X — Ask My Documents
-
-**What did the naive prompt return for the cross-document test question?**
-*(Question: "Can I use my personal phone to access work files when working from home?")*
-
-> [Quote the actual output]
-
-**Did it blend the IT and HR policies?**
-
-> Yes / No — [explain]
-
-**After your fix — what does your system return for this question?**
-
-> [Quote the actual output]
-
-**Did your system use any hedging phrases in any answer?**
-*("while not explicitly covered", "typically", "generally understood")*
-
-> Yes / No — [quote any you found]
-
-**Did all 7 test questions produce either a single-source cited answer or the exact refusal template?**
-
-> Yes / No — [list any that failed]
-
-**Your git commit message for UC-X:**
-
-> [paste your commit message here]
+> `[UC-0B] Fix clause omission: incomplete summaries → enforced all 29 policy clauses`
 
 ---
 
 ## CRAFT Loop Reflection
 
-**Which CRAFT step was hardest across all UCs, and why?**
+**Which CRAFT step was hardest, and why?**
 
-> [Your answer — 2–3 sentences]
+> The hardest step was enforcement because the initial prompt produced a summary that stopped before the end of the policy. I made the requirements explicit by listing every expected clause and requiring preservation of conditions, approvals, deadlines, exceptions, and prohibitions.
 
-**What is the single most important thing you added manually to an agents.md that the AI did not generate on its own?**
+**What is the single most important thing you added manually to `agents.md`?**
 
-> [Your answer — be specific, quote the rule]
+> `"Every numbered clause in the source policy must appear in the summary with its clause number."`
 
-**Name one real task in your work where you will apply RICE + CRAFT within the next two weeks:**
+**Name one real task where you will apply RICE + CRAFT within the next two weeks:**
 
-> [Your answer]
+> I will apply RICE + CRAFT to my AI career intelligence platform when generating summaries or recommendations from job descriptions. I will identify failure modes and add explicit enforcement rules before relying on the generated output.
 
 ---
 
-## Reviewer Notes *(tutor fills this section)*
+## Reviewer Notes
+
+*Reviewer fills this section.*
 
 | Criterion | Score /4 | Notes |
 |---|---|---|
@@ -158,6 +90,7 @@
 | **Total** | **/20** | |
 
 **Badge decision:**
-- [ ] Standard badge — meets pass threshold (score 11+/20 on this review, full rubric 22+/40)
-- [ ] Distinction badge — meets distinction threshold (score 17+/20 on this review, full rubric 34+/40)
-- [ ] Not yet — resubmit after addressing: _______________
+
+- [ ] Standard badge
+- [ ] Distinction badge
+- [ ] Not yet
