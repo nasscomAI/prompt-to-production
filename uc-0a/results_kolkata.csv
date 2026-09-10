@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+KM-202402,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+KM-202405,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Category 'Pothole' based on keywords: pothole. Priority 'Standard' — no severity keywords found.,
+KM-202410,Pothole,Standard,Category 'Pothole' based on keywords: pothole. Priority 'Standard' — no severity keywords found.,
+KM-202411,Pothole,Standard,Category 'Pothole' based on keywords: pothole. Priority 'Standard' — no severity keywords found.,
+KM-202415,Drain Blockage,Standard,Category 'Drain Blockage' based on keywords: drain. Priority 'Standard' — no severity keywords found.,
+KM-202418,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+KM-202421,Pothole,Urgent,"Category 'Pothole' based on keywords: pit, hospital. Priority 'Urgent' triggered by: hospital, fell.",
+KM-202422,Pothole,Standard,Category 'Pothole' based on keywords: road surface. Priority 'Standard' — no severity keywords found.,
+KM-202426,Heritage Damage,Standard,Category 'Heritage Damage' based on keywords: heritage. Priority 'Standard' — no severity keywords found.,
+KM-202430,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+KM-202434,Heritage Damage,Standard,Category 'Heritage Damage' based on keywords: heritage. Priority 'Standard' — no severity keywords found.,
+KM-202436,Other,Standard,Category 'Other' based on keywords: general description. Priority 'Standard' — no severity keywords found.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Category 'Heritage Damage' based on keywords: heritage. Priority 'Standard' — no severity keywords found.,
