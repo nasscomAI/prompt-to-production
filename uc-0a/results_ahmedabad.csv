@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"""Tarmac surface melting at 44°C."" indicates Heat Hazard.",
+AM-202402,Heat Hazard,Standard,"""Metal bus shelter reaching dangerous temperatures."" indicates Heat Hazard.",
+AM-202405,Other,Standard,"No category keyword found in ""Dead trees with split branches. Fall risk to walkers. 3 trees affected."".",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"""Grass dying in heatwave conditions."" indicates Heat Hazard.",
+AM-202407,Road Damage,Urgent,"""Broken bench and upturned paving."" indicates Road Damage and contains severity keyword ""injur"".",
+AM-202410,Pothole,Standard,"""Pothole on main highway causing morning rush lane closure."" indicates Pothole.",
+AM-202414,Streetlight,Standard,"""Residential colony unlit after 9pm."" indicates Streetlight.",
+AM-202417,Other,Standard,"""Night market waste not cleared before morning. Heritage area affected."" supports both Waste and Heritage Damage, so no single category can be determined.",NEEDS_REVIEW
+AM-202421,Noise,Standard,"""Club music audible at residential buildings at 2am."" indicates Noise.",
+AM-202424,Other,Standard,"""Zoo approach road surface bubbling at 45°C. Visitor complaints."" supports both Road Damage and Heat Hazard, so no single category can be determined.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,"""River walk surface temperature unbearable."" indicates Heat Hazard.",
+AM-202431,Heritage Damage,Standard,"""Heritage concern."" indicates Heritage Damage; also supports Road Damage, needs review.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"""Black metal road dividers storing heat."" indicates Heat Hazard.",
+AM-202444,Waste,Standard,"""Restaurant waste bins overflowing on Sunday night."" indicates Waste.",
+AM-202445,Heat Hazard,Standard,"""Users exposed to full sun."" indicates Heat Hazard.",
