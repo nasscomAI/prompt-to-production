@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-X Ask My Documents
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Load all 3 CMC policy .txt files and index them by document name and section number with verbatim clause text.
+    input: "data_dir (string path to the directory holding policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt, UTF-8 plain text). Example: '../data/policy-documents'."
+    output: "Dict of document name -> {section number -> verbatim clause text}, e.g. {'policy_hr_leave.txt': {'2.6': 'Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.', '5.2': 'LWP requires approval from the Department Head and the HR Director. Manager approval alone is not sufficient.'}, 'policy_it_acceptable_use.txt': {'2.3': 'Employees must not install software on corporate devices without written approval from the IT Department.', '3.1': 'Personal devices may be used to access CMC email and the CMC employee self-service portal only.'}, 'policy_finance_reimbursement.txt': {'3.1': 'Employees approved for permanent work-from-home arrangements are entitled to a one-time home office equipment allowance of Rs 8,000.', '2.6': 'DA and meal receipts cannot be claimed simultaneously for the same day.'}}. Preserves original wording with no paraphrase."
+    error_handling: If a file is missing, unreadable, or empty, raise FileNotFoundError/ValueError naming the path — never invent sections, never fall back to external knowledge. If no sections parse, raise ValueError — never answer from an empty index.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Search the indexed documents and return a single-source cited answer or the exact refusal template.
+    input: "question (user question string) plus index (dict from retrieve_documents). Only the question text and the indexed verbatim sections are searched — one document, one section wins."
+    output: "Either (a) a single-source answer drawn from ONLY the winning section plus a 'Source: <document> section <X.Y>' citation, e.g. 'Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December. Source: policy_hr_leave.txt section 2.6'; or (b) the byte-identical refusal template 'This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.' with no citation. Never cites or paraphrases two documents in one answer; never emits hedging phrases."
+    error_handling: If no section covers the question (e.g. flexible-working culture), or the best match is below threshold, return the refusal template byte-identically — no rewording, no prefix/suffix, no hedging. If a question spans two documents (e.g. personal phone + work-from-home), answer from the single IT section 3.1 only or refuse — never blend HR 'approved remote work tools' with IT BYOD wording."
