@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Description mentions '°c'.,
+AM-202402,Heat Hazard,Standard,Description mentions 'temperature'.,
+AM-202405,Other,Standard,No recognised category keywords were found in the description.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Description mentions 'heatwave'.,
+AM-202407,Road Damage,Urgent,Description mentions 'paving'; marked Urgent due to severity keyword 'injured'.,
+AM-202410,Pothole,Standard,Description mentions 'pothole'.,
+AM-202414,Streetlight,Standard,Description mentions 'unlit'.,
+AM-202417,Heritage Damage,Standard,"Description mentions 'heritage' (Heritage Damage) but also 'waste' (Waste), making the category ambiguous.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Description mentions 'music'.,
+AM-202424,Heat Hazard,Standard,"Description mentions '°c' (Heat Hazard) but also 'road surface' (Road Damage), making the category ambiguous.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Description mentions '°c'.,
+AM-202431,Heritage Damage,Standard,"Description mentions 'heritage' (Heritage Damage) but also 'subsidence' (Road Damage), making the category ambiguous.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Description mentions 'burns on contact'.,
+AM-202444,Waste,Standard,Description mentions 'bins overflowing'.,
+AM-202445,Other,Standard,No recognised category keywords were found in the description.,NEEDS_REVIEW
