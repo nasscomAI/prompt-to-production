@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"""Large pothole 60cm wide causing tyre damage."" indicates Pothole.",
+PM-202402,Pothole,Urgent,"""Deep pothole near bus stop."" indicates Pothole and contains severity keyword ""child"".",
+PM-202406,Flooding,Standard,"""Underpass flooded knee-deep after 2hrs rain."" indicates Flooding.",
+PM-202408,Other,Standard,"""Bus stand flooded. Passengers standing in water. Drain blocked."" supports both Flooding and Drain Blockage, so no single category can be determined.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"""Three consecutive streetlights out for 10 days."" indicates Streetlight.",
+PM-202411,Streetlight,Urgent,"""Streetlight flickering and sparking."" indicates Streetlight and contains severity keyword ""hazard"".",
+PM-202413,Waste,Standard,"""Overflowing garbage bins near vegetable market."" indicates Waste.",
+PM-202418,Noise,Standard,"""Wedding venue playing music past midnight on weeknights."" indicates Noise.",
+PM-202419,Road Damage,Standard,"""Road surface cracked and sinking near utility work done 1 month ago."" indicates Road Damage.",
+PM-202420,Road Damage,Urgent,"""Manhole cover missing."" indicates Road Damage and contains severity keyword ""injur"".",
+PM-202427,Flooding,Standard,"""Bridge approach floods in 30mins of rain."" indicates Flooding.",
+PM-202428,Waste,Standard,"""Dead animal not removed for 36 hours."" indicates Waste.",
+PM-202430,Other,Standard,"""Heritage street, lights out. Safety concern for pedestrians after dark."" supports both Streetlight and Heritage Damage, so no single category can be determined.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"""Bulk waste from apartment renovation dumped on public road."" indicates Waste.",
+PM-202446,Road Damage,Urgent,"""Footpath tiles broken and upturned."" indicates Road Damage and contains severity keyword ""fell"".",
