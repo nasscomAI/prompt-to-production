@@ -1,16 +1,15 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0A Complaint Classifier Skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: classify_complaint
+    description: Classifies a citizen complaint into the correct category and priority.
+    input: A single complaint description as text.
+    output: Category, priority, reason, and flag for the complaint.
+    error_handling: If the complaint is ambiguous, use the Other category and set the flag to NEEDS_REVIEW.
+
+  - name: generate_reason
+    description: Generates a short reason based only on evidence in the complaint description.
+    input: Complaint description and its classification as text.
+    output: One concise sentence explaining the classification using evidence from the complaint.
+    error_handling: If there is insufficient information, provide a cautious reason based only on the available complaint text.
