@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding with Urgent priority because the description reports ""flooded"" and mentions ""Ambulance"".",
+GH-202402,Flooding,Standard,"Classified as Flooding with Standard priority because the description reports ""flooded"".",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage with Standard priority because the description reports ""drain 100% blocked"".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage with Standard priority because the description reports ""Drain blocked"".",
+GH-202410,Pothole,Standard,"Classified as Pothole with Standard priority because the description reports ""Potholes"".",
+GH-202411,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description reports ""Pothole"" and mentions ""hospital"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole with Urgent priority because the description reports ""potholes"" and mentions ""School"".",
+GH-202417,Waste,Standard,"Classified as Waste with Standard priority because the description reports ""garbage"".",NEEDS_REVIEW
+GH-202420,Noise,Low,"Classified as Noise with Low priority because the description reports ""Construction drilling"".",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage with Urgent priority because the description reports ""Road collapsed partially"".",
+GH-202424,Flooding,Standard,"Classified as Flooding with Standard priority because the description reports ""floods"".",
+GH-202428,Waste,Standard,"Classified as Waste with Standard priority because the description reports ""Post-market waste"".",
+GH-202432,Noise,Low,"Classified as Noise with Low priority because the description reports ""idling with engines on"".",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage with Standard priority because the description reports ""drain blocked"".",
+GH-202438,Other,Standard,"Classified as Other with Standard priority because the description reports ""Colony surrounded by fields"".",NEEDS_REVIEW
