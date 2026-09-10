@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority due to severity keyword 'Ambulance' in 'Ambulance diverted'.,
+GH-202402,Other,Standard,Assigned to Other with flag NEEDS_REVIEW because the description ambiguously references Flooding and Drain Blockage citing 'Market area flooded' and 'Drain completely blocked'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority based on cited 'Main stormwater drain 100% blocked with construction debris'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority based on cited 'Drain blocked and mosquito breeding'.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority based on cited 'Potholes causing vehicles to slow to 20kmph on fast road'.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority due to severity keyword 'hospitalised' in 'Rider hospitalised'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority due to severity keyword 'School' in 'School bus struggling to navigate 6 potholes in 200m stretch'.,
+GH-202417,Other,Standard,Assigned to Other with flag NEEDS_REVIEW because the description ambiguously references Waste and Heritage Damage citing 'Heritage zone garbage overflow' and 'Tourist photographs showing piles of waste'.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise with Standard priority based on cited 'Construction drilling from 5am daily near residential towers'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage with Urgent priority due to severity keyword 'collapsed' in 'Road collapsed partially'.,
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority based on cited 'Underpass floods in light rain'.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority based on cited 'Post-market waste not cleared'.,
+GH-202432,Noise,Standard,Classified as Noise with Standard priority based on cited '24hr supermarket delivery trucks idling with engines on'.,
+GH-202448,Other,Standard,Assigned to Other with flag NEEDS_REVIEW because the description ambiguously references Flooding and Drain Blockage citing 'Main drain blocked — entire locality at flooding risk this week'.,NEEDS_REVIEW
+GH-202438,Other,Standard,Assigned to Other with flag NEEDS_REVIEW because the category cannot be determined from description citing 'Colony surrounded by fields that channel rainwater through main road'.,NEEDS_REVIEW
