@@ -1,16 +1,19 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+- name: classify_complaint
+  description: Reads a single complaint row and classifies it into a category, priority, and reason, applying a flag if ambiguous.
+  input: 
+    type: dict
+    format: row dictionary from CSV containing complaint description
+  output:
+    type: dict
+    format: row dictionary with keys complaint_id, category, priority, reason, flag
+  error_handling: Return category="Other" and flag="NEEDS_REVIEW" if the description is genuinely ambiguous or unrecognizable. If no reason can be cited, still provide the row with a generic reason and NEEDS_REVIEW.
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: batch_classify
+  description: Reads an input CSV of complaints, applies classify_complaint to each row, and writes the output to a CSV.
+  input:
+    type: string
+    format: path to input CSV file
+  output:
+    type: string
+    format: path to output CSV file
+  error_handling: If a row fails to process, skip or flag it, but do not crash the batch job. Continue processing the remaining rows.
