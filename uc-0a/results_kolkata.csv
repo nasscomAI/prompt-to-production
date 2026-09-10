@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202402,Heritage Damage,Standard,"Description mentions 'historic' (Heritage Damage) but also 'cobblestones broken' (Road Damage), making the category ambiguous.",NEEDS_REVIEW
+KM-202405,Heritage Damage,Standard,"Description mentions 'museum' (Heritage Damage) but also 'band playing' (Noise), making the category ambiguous.",NEEDS_REVIEW
+KM-202409,Pothole,Standard,Description mentions 'pothole'.,
+KM-202410,Pothole,Standard,Description mentions 'pothole'.,
+KM-202411,Pothole,Standard,Description mentions 'pothole'.,
+KM-202415,Other,Standard,No recognised category keywords were found in the description.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Description mentions 'overflowing'.,
+KM-202421,Road Damage,Urgent,Description mentions 'sinking'; marked Urgent due to severity keyword 'hospital'.,
+KM-202422,Road Damage,Standard,Description mentions 'road surface'.,
+KM-202426,Heritage Damage,Standard,Description mentions 'heritage'.,
+KM-202430,Road Damage,Standard,Description mentions 'subsided'.,
+KM-202434,Heritage Damage,Standard,"Description mentions 'heritage' (Heritage Damage) but also 'paving' (Road Damage), making the category ambiguous.",NEEDS_REVIEW
+KM-202436,Other,Standard,No recognised category keywords were found in the description.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,"Description mentions 'heritage' (Heritage Damage) but also 'amplifier' (Noise), making the category ambiguous.",NEEDS_REVIEW
