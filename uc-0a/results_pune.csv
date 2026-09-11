@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,description mentions 'pothole' which matches category Pothole,
+PM-202402,Pothole,Urgent,description mentions 'pothole' which matches category Pothole,
+PM-202406,Flooding,Standard,description mentions 'flood' which matches category Flooding,
+PM-202408,Flooding,Standard,"description mentions 'flood, in water' which matches category Flooding",
+PM-202410,Streetlight,Standard,"description mentions 'streetlight, lights out' which matches category Streetlight",
+PM-202411,Streetlight,Urgent,"description mentions 'streetlight, sparking, flickering' which matches category Streetlight",
+PM-202413,Waste,Standard,"description mentions 'garbage, bin, smell' which matches category Waste",
+PM-202418,Noise,Standard,description mentions 'music' which matches category Noise,
+PM-202419,Road Damage,Standard,"description mentions 'road, cracked, sinking, surface' which matches category Road Damage",
+PM-202420,Road Damage,Urgent,description mentions 'manhole' which matches category Road Damage,
+PM-202427,Flooding,Standard,description mentions 'flood' which matches category Flooding,
+PM-202428,Waste,Standard,description mentions 'dead animal' which matches category Waste,
+PM-202430,Streetlight,Standard,description mentions 'lights out' which matches category Streetlight,NEEDS_REVIEW
+PM-202433,Waste,Standard,"description mentions 'waste, dump' which matches category Waste",
+PM-202446,Road Damage,Urgent,description mentions 'footpath' which matches category Road Damage,
