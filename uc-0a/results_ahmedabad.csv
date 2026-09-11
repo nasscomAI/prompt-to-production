@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"The words ""surface melting"" support the Heat Hazard category.",
+AM-202402,Heat Hazard,Standard,"The words ""dangerous temperatures"" support the Heat Hazard category.",
+AM-202405,Other,Standard,The description does not clearly match any allowed category and requires review.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The words ""heatwave"" support the Heat Hazard category.",
+AM-202407,Road Damage,Urgent,"The words ""upturned paving"" support the Road Damage category.",
+AM-202410,Pothole,Standard,"The words ""pothole"" support the Pothole category.",
+AM-202414,Streetlight,Standard,"The words ""unlit after"" support the Streetlight category.",
+AM-202417,Waste,Standard,"The words ""waste"" support the Waste category.",
+AM-202421,Noise,Standard,"The words ""club music"" support the Noise category.",
+AM-202424,Heat Hazard,Standard,"The words ""45°c"" support the Heat Hazard category.",
+AM-202429,Heat Hazard,Standard,"The words ""temperature unbearable"" support the Heat Hazard category.",
+AM-202431,Road Damage,Standard,"The words ""road subsidence"" support the Road Damage category.",
+AM-202435,Heat Hazard,Standard,"The words ""storing heat"" support the Heat Hazard category.",
+AM-202444,Waste,Standard,"The words ""waste"" support the Waste category.",
+AM-202445,Other,Standard,The description does not clearly match any allowed category and requires review.,NEEDS_REVIEW
