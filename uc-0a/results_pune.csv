@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description contains ""pothole"", indicating Pothole.",
+PM-202402,Pothole,Urgent,"The description contains ""pothole"", indicating Pothole.",
+PM-202406,Flooding,Standard,"The description contains ""flood"", indicating Flooding.",
+PM-202408,Drain Blockage,Standard,"The description contains ""drain blocked"", indicating Drain Blockage.",
+PM-202410,Streetlight,Standard,"The description contains ""streetlight"", indicating Streetlight.",
+PM-202411,Streetlight,Urgent,"The description contains ""streetlight"", indicating Streetlight.",
+PM-202413,Waste,Standard,"The description contains ""garbage"", indicating Waste.",
+PM-202418,Noise,Standard,"The description contains ""music"", indicating Noise.",
+PM-202419,Road Damage,Standard,"The description contains ""road surface"", indicating Road Damage.",
+PM-202420,Drain Blockage,Urgent,"The description contains ""manhole"", indicating Drain Blockage.",
+PM-202427,Flooding,Standard,"The description contains ""flood"", indicating Flooding.",
+PM-202428,Other,Standard,No allowed category keyword was found in the description.,NEEDS_REVIEW
+PM-202430,Streetlight,Standard,"The description contains ""lights out"", indicating Streetlight.",
+PM-202433,Waste,Standard,"The description contains ""waste"", indicating Waste.",
+PM-202446,Road Damage,Urgent,"The description contains ""footpath"", indicating Road Damage.",
