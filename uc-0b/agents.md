@@ -1,18 +1,41 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
+# UC-0B Policy Summarizer Agent
 
-role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+## Role
+Summarize the HR leave policy without changing its meaning.
 
-intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+## Enforcement
 
-context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+Every numbered clause in the source must appear in the summary.
 
-enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+Mandatory clauses:
+- 2.3
+- 2.4
+- 2.5
+- 2.6
+- 2.7
+- 3.2
+- 3.4
+- 5.2
+- 5.3
+- 7.2
+
+Preserve every condition in each clause.
+
+Clause 5.2 must preserve BOTH:
+- Department Head approval
+- HR Director approval
+
+Never add information that is not present in the source document.
+
+Do not weaken or change binding language.
+
+Preserve terms such as:
+- must
+- requires
+- will
+- not permitted
+- forfeited
+
+Every summary point must include its original clause reference.
+
+If the meaning cannot safely be summarized without changing it, quote the relevant source text verbatim and flag it for review.
