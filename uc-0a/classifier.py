@@ -5,28 +5,41 @@ Builds on agents.md (enforcement rules) and skills.md (classify_complaint, batch
 import argparse
 import csv
 
+# Ordered: operational/functional signals first, contextual adjectives (e.g. "heritage") later,
+# so the first match is the actionable defect, not the location qualifier.
 CATEGORIES = {
     "pothole": "Pothole",
     "crater": "Pothole",
     "flood": "Flooding",
     "flooded": "Flooding",
     "waterlogged": "Flooding",
+    "rainwater": "Flooding",
     "streetlight": "Streetlight",
     "lights out": "Streetlight",
+    "lamp": "Streetlight",
+    "unlit": "Streetlight",
     "garbage": "Waste",
     "waste": "Waste",
     "bins": "Waste",
     "animal": "Waste",
     "noise": "Noise",
     "music": "Noise",
+    "band": "Noise",
+    "amplifier": "Noise",
+    "drilling": "Noise",
+    "idling": "Noise",
     "road damage": "Road Damage",
     "road surface": "Road Damage",
     "cracked": "Road Damage",
     "sinking": "Road Damage",
     "sunken": "Road Damage",
+    "subsid": "Road Damage",
     "footpath": "Road Damage",
+    "historic": "Heritage Damage",
     "heritage": "Heritage Damage",
     "heat": "Heat Hazard",
+    "temperature": "Heat Hazard",
+    "melting": "Heat Hazard",
     "drain": "Drain Blockage",
     "drainage": "Drain Blockage",
 }
@@ -36,13 +49,6 @@ SEVERITY_KEYWORDS = [
     "fire", "hazard", "fell", "collapse",
 ]
 
-# exact list from enforcement — any description not matching one of these is ambiguous
-VAULTED_CATEGORIES = [
-    "Pothole", "Flooding", "Streetlight", "Waste", "Noise",
-    "Road Damage", "Heritage Damage", "Heat Hazard", "Drain Blockage", "Other",
-]
-
-
 def _detect_category(description: str):
     lower = description.lower()
     for keyword, cat in CATEGORIES.items():
@@ -51,13 +57,20 @@ def _detect_category(description: str):
     return None
 
 
+# Category implies degraded infrastructure or impacted access → Standard
+DEGRADED_INFRA = {
+    "Pothole", "Flooding", "Streetlight", "Road Damage",
+    "Heritage Damage", "Drain Blockage",
+}
+
+
 def _detect_priority(description: str, category: str):
     lower = description.lower()
     if any(kw in lower for kw in SEVERITY_KEYWORDS):
         return "Urgent"
-    if category in ("Flooding", "Drain Blockage"):
+    if category in DEGRADED_INFRA:
         return "Standard"
-    return "Standard"
+    return "Low"
 
 
 def _build_reason(category: str, description: str, flag: str):

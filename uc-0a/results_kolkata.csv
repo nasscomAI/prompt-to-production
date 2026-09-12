@@ -1,16 +1,16 @@
 complaint_id,category,priority,reason,flag
-KM-202401,Heritage Damage,Standard,"Description reports ""Heritage"", classified as Heritage Damage.",
-KM-202402,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""Historic tram road cobblestones broken up by cable laying work.""",NEEDS_REVIEW
-KM-202405,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""Wedding band playing near Tagore Museum at 11pm. Festival season ongoing.""",NEEDS_REVIEW
+KM-202401,Streetlight,Standard,"Description reports ""lamp"", classified as Streetlight.",
+KM-202402,Heritage Damage,Standard,"Description reports ""Historic"", classified as Heritage Damage.",
+KM-202405,Noise,Low,"Description reports ""band"", classified as Noise.",
 KM-202409,Pothole,Standard,"Description reports ""pothole"", classified as Pothole.",
 KM-202410,Pothole,Standard,"Description reports ""Pothole"", classified as Pothole.",
 KM-202411,Pothole,Standard,"Description reports ""pothole"", classified as Pothole.",
 KM-202415,Drain Blockage,Standard,"Description reports ""drain"", classified as Drain Blockage.",
-KM-202418,Waste,Standard,"Description reports ""waste"", classified as Waste.",
+KM-202418,Waste,Low,"Description reports ""waste"", classified as Waste.",
 KM-202421,Road Damage,Urgent,"Description reports ""sinking"", classified as Road Damage.",
 KM-202422,Road Damage,Standard,"Description reports ""Road surface"", classified as Road Damage.",
 KM-202426,Heritage Damage,Standard,"Description reports ""Heritage"", classified as Heritage Damage.",
-KM-202430,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""Road subsided near gas pipeline. Gas leak smell reported too.""",NEEDS_REVIEW
+KM-202430,Road Damage,Standard,"Description reports ""subsid"", classified as Road Damage.",
 KM-202434,Heritage Damage,Standard,"Description reports ""heritage"", classified as Heritage Damage.",
-KM-202436,Other,Standard,"Description does not clearly match a listed category, so it is flagged for review: ""Entire colony substation tripped. Darkness for 3 nights.""",NEEDS_REVIEW
-KM-202438,Heritage Damage,Standard,"Description reports ""heritage"", classified as Heritage Damage.",
+KM-202436,Other,Low,"Description does not clearly match a listed category, so it is flagged for review: ""Entire colony substation tripped. Darkness for 3 nights.""",NEEDS_REVIEW
+KM-202438,Noise,Low,"Description reports ""amplifier"", classified as Noise.",
