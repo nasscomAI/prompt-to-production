@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Low,"Description reports ""melting"", classified as Heat Hazard.",
+AM-202402,Heat Hazard,Low,"Description reports ""temperature"", classified as Heat Hazard.",
+AM-202405,Other,Low,"Description does not clearly match a listed category, so it is flagged for review: ""Dead trees with split branches. Fall risk to walkers. 3 trees affected.""",NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,"Description reports ""heat"", classified as Heat Hazard.",
+AM-202407,Other,Urgent,"Description does not clearly match a listed category, so it is flagged for review: ""Broken bench and upturned paving. Child injured last week.""",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Description reports ""Pothole"", classified as Pothole.",
+AM-202414,Streetlight,Standard,"Description reports ""unlit"", classified as Streetlight.",
+AM-202417,Waste,Low,"Description reports ""waste"", classified as Waste.",
+AM-202421,Noise,Low,"Description reports ""music"", classified as Noise.",
+AM-202424,Road Damage,Standard,"Description reports ""road surface"", classified as Road Damage.",
+AM-202429,Heat Hazard,Low,"Description reports ""temperature"", classified as Heat Hazard.",
+AM-202431,Road Damage,Standard,"Description reports ""subsid"", classified as Road Damage.",
+AM-202435,Heat Hazard,Low,"Description reports ""heat"", classified as Heat Hazard.",
+AM-202444,Waste,Low,"Description reports ""waste"", classified as Waste.",
+AM-202445,Other,Low,"Description does not clearly match a listed category, so it is flagged for review: ""BRT shelter roof glass broken. Users exposed to full sun.""",NEEDS_REVIEW
