@@ -1,0 +1,10 @@
+UC-X — Ask My Documents
+Type a question about company policy, or 'quit' to exit.
+
+> can I carry forward unused annual leave?
+(policy_hr_leave.txt §2.6): Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+
+> Can I install Slack on my work laptop?
+(policy_it_acceptable_use.txt §2.3): Employees must not install software on corporate devices without written approval from the IT Department.
+
+> quit
