@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category is Pothole because 'pothole' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202402,Pothole,Urgent,"Category is Pothole because 'pothole' appears in the description, and priority is Urgent because 'child' also appears in the description.",
+PM-202406,Flooding,Standard,"Category is Flooding because 'flood' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202408,Other,Standard,"Category is Other because 'flood' and 'drain' both appear in the description, making the category genuinely ambiguous.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category is Streetlight because 'streetlight' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202411,Streetlight,Urgent,"Category is Streetlight because 'streetlight' appears in the description, and priority is Urgent because 'hazard' also appears in the description.",
+PM-202413,Waste,Standard,"Category is Waste because 'garbage' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202418,Noise,Standard,"Category is Noise because 'music' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202419,Road Damage,Standard,"Category is Road Damage because 'road surface' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202420,Road Damage,Urgent,"Category is Road Damage because 'manhole' appears in the description, and priority is Urgent because 'injury' also appears in the description.",
+PM-202427,Flooding,Standard,"Category is Flooding because 'flood' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202428,Waste,Standard,"Category is Waste because 'dead animal' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202430,Other,Standard,"Category is Other because 'heritage' and 'light' both appear in the description, making the category genuinely ambiguous.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category is Waste because 'waste' appears in the description, and priority is Standard because no Urgent-trigger word appears in the description.",
+PM-202446,Road Damage,Urgent,"Category is Road Damage because 'broken' appears in the description, and priority is Urgent because 'fell' also appears in the description.",
