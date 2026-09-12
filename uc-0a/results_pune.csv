@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,description mentions 'pothole',
+PM-202402,Pothole,Urgent,"description mentions 'pothole'; severity keyword(s) found: child, school",
+PM-202406,Flooding,Standard,description mentions 'flood',
+PM-202408,Other,Standard,description mentions 'flood / drain',NEEDS_REVIEW
+PM-202410,Streetlight,Standard,description mentions 'streetlight',
+PM-202411,Streetlight,Urgent,description mentions 'streetlight'; severity keyword(s) found: hazard,
+PM-202413,Waste,Standard,description mentions 'garbage',
+PM-202418,Other,Standard,no matching category or severity keywords found in description,NEEDS_REVIEW
+PM-202419,Other,Standard,no matching category or severity keywords found in description,NEEDS_REVIEW
+PM-202420,Other,Urgent,severity keyword(s) found: injury,NEEDS_REVIEW
+PM-202427,Flooding,Standard,description mentions 'flood',
+PM-202428,Other,Standard,no matching category or severity keywords found in description,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,description mentions 'heritage',
+PM-202433,Waste,Standard,description mentions 'waste',
+PM-202446,Other,Urgent,severity keyword(s) found: fell,NEEDS_REVIEW
