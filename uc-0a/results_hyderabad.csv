@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The words ""flood"" support the Flooding category.",
+GH-202402,Flooding,Standard,"The words ""flood"" support the Flooding category.",
+GH-202406,Drain Blockage,Standard,"The words ""stormwater drain"" support the Drain Blockage category.",
+GH-202407,Drain Blockage,Standard,"The words ""drain blocked"" support the Drain Blockage category.",
+GH-202410,Pothole,Standard,"The words ""pothole"" support the Pothole category.",
+GH-202411,Pothole,Standard,"The words ""pothole"" support the Pothole category.",
+GH-202412,Pothole,Urgent,"The words ""pothole"" support the Pothole category.",
+GH-202417,Waste,Standard,"The words ""garbage"" support the Waste category.",
+GH-202420,Noise,Standard,"The words ""construction drilling"" support the Noise category.",
+GH-202422,Road Damage,Standard,"The words ""road collapsed"" support the Road Damage category.",
+GH-202424,Flooding,Standard,"The words ""flood"" support the Flooding category.",
+GH-202428,Waste,Standard,"The words ""waste"" support the Waste category.",
+GH-202432,Noise,Standard,"The words ""trucks idling"" support the Noise category.",
+GH-202448,Flooding,Standard,"The words ""flood"" support the Flooding category.",
+GH-202438,Other,Standard,The description does not clearly match any allowed category and requires review.,NEEDS_REVIEW

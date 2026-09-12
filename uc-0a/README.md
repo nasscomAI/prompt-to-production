@@ -16,13 +16,12 @@ uc-0a/results_[your-city].csv
 ```
 
 ## Run Command
-```bash
-python classifier.py \
-  --input ../data/city-test-files/test_pune.csv \
-  --output results_pune.csv
-```
 
----
+
+```bash
+python uc-0a/classifier.py \
+  --input data/city-test-files/test_[your-city].csv \
+  --output uc-0a/results_[your-city].csv
 
 ## Classification Schema — Your Enforcement Must Reference These Exactly
 

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The words ""pothole"" support the Pothole category.",
+PM-202402,Pothole,Urgent,"The words ""pothole"" support the Pothole category.",
+PM-202406,Flooding,Standard,"The words ""flood"" support the Flooding category.",
+PM-202408,Flooding,Standard,"The words ""flood"" support the Flooding category.",
+PM-202410,Streetlight,Standard,"The words ""streetlight"" support the Streetlight category.",
+PM-202411,Streetlight,Urgent,"The words ""streetlight"" support the Streetlight category.",
+PM-202413,Waste,Standard,"The words ""garbage"" support the Waste category.",
+PM-202418,Noise,Standard,"The words ""music past midnight"" support the Noise category.",
+PM-202419,Road Damage,Standard,"The words ""road surface cracked"" support the Road Damage category.",
+PM-202420,Other,Urgent,The description does not clearly match any allowed category and requires review.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The words ""flood"" support the Flooding category.",
+PM-202428,Waste,Standard,"The words ""dead animal"" support the Waste category.",
+PM-202430,Streetlight,Standard,"The words ""lights out"" support the Streetlight category.",
+PM-202433,Waste,Standard,"The words ""waste"" support the Waste category.",
+PM-202446,Road Damage,Urgent,"The words ""footpath tiles broken"" support the Road Damage category.",
