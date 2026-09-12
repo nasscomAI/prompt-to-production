@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,"Classified as Pothole because complaint mentions ""pothole"".",
+Pothole,Urgent,"Classified as Pothole because complaint mentions ""pothole""; urgent keywords ""child"", ""school"" present.",
+Flooding,Standard,"Classified as Flooding because complaint mentions ""flood"".",
+Drain Blockage,Standard,"Classified as Drain Blockage because complaint mentions ""drain"".",NEEDS_REVIEW
+Streetlight,Standard,"Classified as Streetlight because complaint mentions ""streetlight"".",
+Streetlight,Urgent,"Classified as Streetlight because complaint mentions ""streetlight""; urgent keywords ""hazard"" present.",
+Waste,Standard,"Classified as Waste because complaint mentions ""garbage"".",
+Noise,Standard,"Classified as Noise because complaint mentions ""music"".",
+Other,Standard,Classified as Other because no specific keywords matched.,NEEDS_REVIEW
+Other,Urgent,"Classified as Other because urgent keywords ""injury"" present.",NEEDS_REVIEW
+Flooding,Standard,"Classified as Flooding because complaint mentions ""flood"".",
+Other,Standard,Classified as Other because no specific keywords matched.,NEEDS_REVIEW
+Heritage Damage,Standard,"Classified as Heritage Damage because complaint mentions ""heritage"".",
+Waste,Standard,"Classified as Waste because complaint mentions ""waste"".",
+Other,Urgent,"Classified as Other because urgent keywords ""fell"" present.",NEEDS_REVIEW
