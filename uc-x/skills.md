@@ -1,16 +1,32 @@
 # skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  retrieve_documents:
+    purpose: >
+      Load and index the three approved policy documents by document name
+      and numbered section so questions can be answered from the correct
+      source only.
+    inputs:
+      - policy_hr_leave.txt
+      - policy_it_acceptable_use.txt
+      - policy_finance_reimbursement.txt
+    output: >
+      A searchable collection of policy sections grouped by document.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  answer_question:
+    purpose: >
+      Search the indexed policy sections and return an answer from one
+      source document only.
+    rules:
+      - "Return the relevant policy section when the question is covered."
+      - "Include the document name and section number with every factual answer."
+      - "Preserve all conditions and limits stated in the source section."
+      - "Never combine claims from different policy documents."
+      - "Never use hedging language or outside information."
+      - "Return the exact refusal template when the question is not covered."
+
+refusal_template: >
+  This question is not covered in the available policy documents
+  (policy_hr_leave.txt, policy_it_acceptable_use.txt,
+  policy_finance_reimbursement.txt).
+  Please contact [relevant team] for guidance.
