@@ -1,16 +1,25 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills.md — UC-0B Summary That Changes Meaning
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_policy
+    description: >
+      Loads a .txt policy file and returns its content as structured numbered sections.
+    input: >
+      Path to a policy .txt file (e.g. ../data/policy-documents/policy_hr_leave.txt).
+    output: >
+      Ordered list of sections, each with clause number (e.g. "2.3") and its full text.
+    error_handling: >
+      Raises a clear error if the file is missing; warns and reports any clause that
+      could not be parsed into a numbered section.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: summarize_policy
+    description: >
+      Produces a compliant clause-referenced summary from the structured sections.
+    input: >
+      The structured sections returned by retrieve_policy.
+    output: >
+      Summary text where every numbered clause is present with its clause reference
+      and all conditions preserved.
+    error_handling: >
+      If a clause cannot be summarised without meaning loss, quotes it verbatim and
+      appends a flag (e.g. "QUOTED VERBATIM — could not compress without changing meaning").
