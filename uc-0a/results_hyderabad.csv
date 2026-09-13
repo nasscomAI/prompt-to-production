@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Flooding — description cites 'flooded'; Urgent because 'ambulance' is a severity keyword.,
+GH-202402,Flooding,Standard,Flooding — description cites 'flooded'; Standard — no severity keyword present.,
+GH-202406,Drain Blockage,Standard,Drain Blockage — description cites 'drain'; Standard — no severity keyword present.,
+GH-202407,Drain Blockage,Standard,Drain Blockage — description cites 'drain'; Standard — no severity keyword present.,
+GH-202410,Pothole,Standard,Pothole — description cites 'potholes'; Standard — no severity keyword present.,
+GH-202411,Pothole,Urgent,Pothole — description cites 'pothole'; Urgent because 'hospitalised' is a severity keyword.,
+GH-202412,Pothole,Urgent,Pothole — description cites 'potholes'; Urgent because 'school' is a severity keyword.,
+GH-202417,Waste,Standard,Waste — description cites 'garbage'; Standard — no severity keyword present.,
+GH-202420,Noise,Standard,Noise — description cites 'drilling'; Standard — no severity keyword present.,
+GH-202422,Road Damage,Urgent,Road Damage — description cites 'collapsed'; Urgent because 'collapsed' is a severity keyword.,
+GH-202424,Flooding,Standard,Flooding — description cites 'floods'; Standard — no severity keyword present.,
+GH-202428,Waste,Standard,Waste — description cites 'waste'; Standard — no severity keyword present.,
+GH-202432,Noise,Standard,Noise — description cites 'idling'; Standard — no severity keyword present.,
+GH-202448,Flooding,Standard,Flooding — description cites 'flooding'; Standard — no severity keyword present.,
+GH-202438,Other,Standard,Other — 'Colony surrounded by fields that channel rainwater through main road.' matches no category in the enum; flagged NEEDS_REVIEW.,NEEDS_REVIEW
