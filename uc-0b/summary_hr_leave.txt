@@ -1,0 +1,10 @@
+[2.3] Employees must submit a leave application at least 14 calendar days in advance (Form HR-L1).
+[2.4] Leave requires written approval from the direct manager before it commences; verbal approval is not valid.
+[2.5] Unapproved absence is recorded as Loss of Pay, even if approved afterward.
+[2.6] Employees may carry forward a maximum of 5 unused annual leave days; anything above 5 is forfeited on 31 December.
+[2.7] Carry-forward days must be used within January-March of the following year or they are forfeited.
+[3.2] Sick leave of 3+ consecutive days requires a medical certificate submitted within 48 hours of returning to work.
+[3.4] Sick leave taken immediately before or after a public holiday or annual leave requires a medical certificate regardless of duration.
+[5.2] Leave Without Pay requires approval from BOTH the Department Head AND the HR Director; manager approval alone is not sufficient.
+[5.3] Leave Without Pay exceeding 30 continuous days requires approval from the Municipal Commissioner.
+[7.2] Leave encashment during service is not permitted under any circumstances.
