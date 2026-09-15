@@ -1,16 +1,24 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# skills:
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# &#x20; - name: retrieve\_policy
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+# &#x20;   description: Loads a .txt policy file and returns its content as structured numbered sections, handling clauses that wrap across multiple lines.
+
+# &#x20;   input: File path to a policy .txt document.
+
+# &#x20;   output: A list of dicts, each with a clause number and its full text.
+
+# &#x20;   error\_handling: If the file cannot be opened or contains no recognizable numbered clauses, raise a clear error rather than silently returning an empty summary.
+
+# 
+
+# &#x20; - name: summarize\_policy
+
+# &#x20;   description: Takes structured clause sections and produces a compliant summary referencing every clause number, preserving all conditions for high-risk multi-condition clauses.
+
+# &#x20;   input: A list of clause dicts (number, text) from retrieve\_policy.
+
+# &#x20;   output: A formatted summary string with one line per clause, clause number included.
+
+# &#x20;   error\_handling: If a clause is flagged high-risk for condition loss, output it verbatim rather than attempt compression.
+
