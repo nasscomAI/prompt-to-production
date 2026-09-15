@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Category set to Pothole because description says ""Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.""; priority set to Standard from those same words.",
+PM-202402,Pothole,Urgent,"Category set to Pothole because description says ""Deep pothole near bus stop. School children at risk during morning hours.""; priority set to Urgent from those same words.",
+PM-202406,Flooding,Standard,"Category set to Flooding because description says ""Underpass flooded knee-deep after 2hrs rain. Commuters stranded.""; priority set to Standard from those same words.",
+PM-202408,Drain Blockage,Standard,"Category set to Drain Blockage because description says ""Bus stand flooded. Passengers standing in water. Drain blocked.""; priority set to Standard from those same words.",
+PM-202410,Streetlight,Standard,"Category set to Streetlight because description says ""Three consecutive streetlights out for 10 days. Area very dark at night.""; priority set to Standard from those same words.",
+PM-202411,Streetlight,Urgent,"Category set to Streetlight because description says ""Streetlight flickering and sparking. Electrical hazard reported.""; priority set to Urgent from those same words.",
+PM-202413,Waste,Standard,"Category set to Waste because description says ""Overflowing garbage bins near vegetable market. Smell affecting shoppers.""; priority set to Standard from those same words.",
+PM-202418,Noise,Standard,"Category set to Noise because description says ""Wedding venue playing music past midnight on weeknights.""; priority set to Standard from those same words.",
+PM-202419,Road Damage,Standard,"Category set to Road Damage because description says ""Road surface cracked and sinking near utility work done 1 month ago.""; priority set to Standard from those same words.",
+PM-202420,Road Damage,Urgent,"Category set to Road Damage because description says ""Manhole cover missing. Risk of serious injury to cyclists.""; priority set to Urgent from those same words.",
+PM-202427,Flooding,Standard,"Category set to Flooding because description says ""Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.""; priority set to Standard from those same words.",
+PM-202428,Waste,Standard,"Category set to Waste because description says ""Dead animal not removed for 36 hours. Health concern.""; priority set to Standard from those same words.",
+PM-202430,Other,Standard,"Category set to Other because description says ""Heritage street, lights out. Safety concern for pedestrians after dark.""; priority set to Standard from those same words.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category set to Waste because description says ""Bulk waste from apartment renovation dumped on public road.""; priority set to Standard from those same words.",
+PM-202446,Road Damage,Urgent,"Category set to Road Damage because description says ""Footpath tiles broken and upturned. Elderly resident fell last week.""; priority set to Urgent from those same words.",

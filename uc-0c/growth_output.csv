@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth_type,growth_result,formula,note
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.3,MoM,N/A,(current_actual - previous_actual) / previous_actual * 100,No prior comparable month
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,12.2,MoM,-8.3%,(current_actual - previous_actual) / previous_actual * 100,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,12.3,MoM,+0.8%,(current_actual - previous_actual) / previous_actual * 100,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.4,MoM,+8.9%,(current_actual - previous_actual) / previous_actual * 100,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,14.1,MoM,+5.2%,(current_actual - previous_actual) / previous_actual * 100,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,14.8,MoM,+5.0%,(current_actual - previous_actual) / previous_actual * 100,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,19.7,MoM,+33.1%,(current_actual - previous_actual) / previous_actual * 100,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,20.2,MoM,+2.5%,(current_actual - previous_actual) / previous_actual * 100,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,20.1,MoM,-0.5%,(current_actual - previous_actual) / previous_actual * 100,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.1,MoM,-34.8%,(current_actual - previous_actual) / previous_actual * 100,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,14.2,MoM,+8.4%,(current_actual - previous_actual) / previous_actual * 100,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,12.7,MoM,-10.6%,(current_actual - previous_actual) / previous_actual * 100,
