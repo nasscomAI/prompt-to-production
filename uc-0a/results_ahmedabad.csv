@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard because description refers to 'melting'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because description refers to 'temperatures'.,
+AM-202405,Other,Standard,Classified as Other because description refers to 'Dead trees with split branches'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because description refers to 'heatwave'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage based on 'paving'; marked Urgent due to severity keyword 'injured'.,
+AM-202410,Pothole,Standard,Classified as Pothole because description refers to 'pothole'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight because description refers to 'unlit'.,
+AM-202417,Waste,Standard,"Classified as Waste because description refers to 'waste, heritage'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise because description refers to 'music'.,
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard because description refers to '45°c, road surface'.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description refers to 'temperature'.,
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage because description refers to 'heritage, subsidence'.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description refers to 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because description refers to 'waste'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because description refers to 'full sun'.,

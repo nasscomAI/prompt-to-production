@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Classified as Streetlight because description refers to 'lamp, heritage'.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,"Classified as Heritage Damage because description refers to 'historic, cobblestones'.",NEEDS_REVIEW
+KM-202405,Noise,Standard,Classified as Noise because description refers to 'wedding band'.,
+KM-202409,Pothole,Standard,Classified as Pothole because description refers to 'potholes'.,
+KM-202410,Pothole,Standard,Classified as Pothole because description refers to 'pothole'.,
+KM-202411,Pothole,Standard,"Classified as Pothole because description refers to 'pothole, rainwater'.",NEEDS_REVIEW
+KM-202415,Other,Standard,Classified as Other because description refers to 'New residential complex draini'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste because description refers to 'waste'.,
+KM-202421,Road Damage,Urgent,Classified as Road Damage based on 'footpath'; marked Urgent due to severity keyword 'hospital'.,
+KM-202422,Road Damage,Standard,Classified as Road Damage because description refers to 'road surface'.,
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage because description refers to 'heritage'.,
+KM-202430,Road Damage,Standard,Classified as Road Damage because description refers to 'subsided'.,
+KM-202434,Heritage Damage,Standard,"Classified as Heritage Damage because description refers to 'heritage, paving'.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,Classified as Streetlight because description refers to 'darkness'.,
+KM-202438,Noise,Standard,"Classified as Noise because description refers to 'amplifiers, heritage'.",NEEDS_REVIEW
