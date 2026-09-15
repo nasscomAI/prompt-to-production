@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,The report mentions a 'Large pothole 60cm wide' that is 'causing tyre damage' to multiple vehicles.,
+PM-202402,Pothole,Urgent,The complaint mentions a 'Deep pothole' posing a risk to 'School children' during morning hours.,
+PM-202406,Flooding,Standard,The complaint describes an 'underpass flooded knee-deep' leaving commuters stranded.,
+PM-202408,Flooding,Standard,"The report mentions that the bus stand is flooded and the drain is blocked, forcing passengers to stand in water.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,The report cites 'three consecutive streetlights out for 10 days' causing the area to be 'very dark at night'.,
+PM-202411,Streetlight,Urgent,The complaint describes a flickering streetlight and explicitly mentions an electrical hazard.,
+PM-202413,Waste,Standard,The report describes 'overflowing garbage bins' causing a foul smell that is 'affecting shoppers' at a market.,
+PM-202418,Noise,Standard,The complaint identifies a wedding venue playing music past midnight on weeknights causing a late-night disturbance.,
+PM-202419,Road Damage,Standard,The complaint reports that the 'Road surface cracked and sinking' following utility work.,
+PM-202420,Road Damage,Urgent,The complaint is set to Urgent because it explicitly cites a risk of 'injury' to cyclists.,
+PM-202427,Flooding,Standard,"The report states that the bridge approach floods in 30mins of rain, causing the bridge to become inaccessible.",
+PM-202428,Waste,Standard,"The report notes a dead animal that has not been removed for 36 hours, posing a health concern.",
+PM-202430,Other,Standard,Fallback triggered: 429 RESOURCE_EXHAUSTED. {'error': {'code': 42,NEEDS_REVIEW
+PM-202433,Other,Standard,Fallback triggered: 429 RESOURCE_EXHAUSTED. {'error': {'code': 42,NEEDS_REVIEW
+PM-202446,Other,Urgent,Fallback triggered: 429 RESOURCE_EXHAUSTED. {'error': {'code': 42,NEEDS_REVIEW

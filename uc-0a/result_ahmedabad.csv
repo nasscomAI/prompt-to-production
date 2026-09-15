@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Urgent,The complaint is classified as urgent because the description explicitly uses the severity keyword 'unsafe'.,
+AM-202402,Heat Hazard,Standard,The complaint describes a metal bus shelter reaching dangerous temperatures that commuters are refusing to use.,
+AM-202405,Other,Urgent,The description explicitly mentions 'Fall risk' which triggers the urgent priority rule for hazard keywords.,
+AM-202406,Other,Low,"The complaint describes a broken irrigation system causing grass to die, which is a low-impact nuisance without immediate safety risks.",
+AM-202407,Heritage Damage,Urgent,The complaint mentions that a child was injured due to the broken bench and upturned paving.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,The description explicitly mentions a pothole causing a lane closure during the morning rush.,
+AM-202414,Streetlight,Standard,The description states the residential colony is unlit after 9pm due to reported wiring theft.,
+AM-202417,Waste,Low,The complaint describes uncleared market waste affecting a heritage area without mentioning any immediate safety hazards.,
+AM-202421,Noise,Standard,The complaint describes club music audible at residential buildings at 2am.,
+AM-202424,Heat Hazard,Standard,"The description mentions the road surface bubbling at 45°C, fitting the heat hazard category without urgent severity keywords.",
+AM-202429,Heat Hazard,Low,The complaint reports an unbearable surface temperature of 52°C at the river walk without mentioning any urgent safety keywords like injury or hazard.,
+AM-202431,Heritage Damage,Standard,The description mentions road subsidence near an ancient step well and explicitly notes a heritage concern.,
+AM-202435,Heat Hazard,Urgent,"The description mentions that motorists are reporting burns on contact, which constitutes a hazard.",
+AM-202444,Waste,Standard,The complaint describes restaurant waste bins overflowing on Sunday night.,
+AM-202445,Other,Low,The complaint describes broken roof glass and sun exposure without any immediate safety hazard keywords.,
