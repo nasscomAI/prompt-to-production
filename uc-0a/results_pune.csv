@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category Pothole from matched term 'pothole'; priority Standard as no severity term is present.,
+PM-202402,Pothole,Urgent,"Category Pothole from matched term 'pothole'; priority Urgent from severity term 'children', 'School'.",
+PM-202406,Flooding,Standard,"Category Flooding from matched term 'flooded', 'knee-deep'; priority Standard as no severity term is present.",
+PM-202408,Flooding,Standard,"Category Flooding from matched term 'flooded', 'standing in water'; priority Standard as no severity term is present.",
+PM-202410,Streetlight,Standard,"Category Streetlight from matched term 'streetlights', 'dark'; priority Standard as no severity term is present.",
+PM-202411,Streetlight,Urgent,Category Streetlight from matched term 'Streetlight'; priority Urgent from severity term 'hazard'.,
+PM-202413,Waste,Standard,"Category Waste from matched term 'garbage', 'bins'; priority Standard as no severity term is present.",
+PM-202418,Noise,Low,Category Noise from matched term 'music'; priority Low as no severity or impact term is present.,
+PM-202419,Road Damage,Standard,"Category Road Damage from matched term 'cracked', 'sinking', 'Road surface'; priority Standard as no severity term is present.",
+PM-202420,Road Damage,Urgent,Category Road Damage from matched term 'Manhole'; priority Urgent from severity term 'injury'.,
+PM-202427,Flooding,Standard,Category Flooding from matched term 'floods'; priority Standard as no severity term is present.,
+PM-202428,Waste,Standard,Category Waste from matched term 'Dead animal'; priority Standard as no severity term is present.,
+PM-202430,Streetlight,Standard,"Category Streetlight from matched term 'lights out', 'dark'; priority Standard as no severity term is present; Heritage Damage is equally supported by 'Heritage', so flagged for review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category Waste from matched term 'waste', 'dumped'; priority Standard as no severity term is present.",
+PM-202446,Road Damage,Urgent,Category Road Damage from matched term 'Footpath'; priority Urgent from severity term 'fell'.,
