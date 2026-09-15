@@ -1,0 +1,13 @@
+period,actual_spend,previous_period,previous_spend,growth_pct,formula_used,null_flag,null_reason
+2024-01,13.3,2023-12,,,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,true,no previous MoM period available
+2024-02,12.2,2024-01,13.3,-8.3%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-03,12.3,2024-02,12.2,+0.8%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-04,13.4,2024-03,12.3,+8.9%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-05,14.1,2024-04,13.4,+5.2%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-06,14.8,2024-05,14.1,+5.0%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-07,19.7,2024-06,14.8,+33.1%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-08,20.2,2024-07,19.7,+2.5%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-09,20.1,2024-08,20.2,-0.5%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-10,13.1,2024-09,20.1,-34.8%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-11,14.2,2024-10,13.1,+8.4%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
+2024-12,12.7,2024-11,14.2,-10.6%,MoM = (current_spend - previous_month_spend) / previous_month_spend x 100,false,
