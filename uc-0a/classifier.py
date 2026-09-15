@@ -1,29 +1,101 @@
 """
 UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
+Built using the RICE → agents.md → skills.md → CRAFT workflow.
 """
 import argparse
 import csv
+
 
 def classify_complaint(row: dict) -> dict:
     """
     Classify a single complaint row.
     Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    description = row.get("description", "") or ""
+    desc_lower = description.lower()
+
+    SEVERITY_KEYWORDS = ["injury", "child", "school", "hospital",
+                         "ambulance", "fire", "hazard", "fell", "collapse"]
+
+    # --- Category detection: keyword signals per allowed category ---
+    CATEGORY_SIGNALS = {
+        "Pothole":         ["pothole"],
+        "Flooding":        ["flood", "flooded", "knee-deep", "water"],
+        "Streetlight":     ["streetlight", "street light", "lights out", "flickering"],
+        "Waste":           ["garbage", "waste", "bin", "dumped", "dead animal"],
+        "Noise":           ["music", "noise", "loud"],
+        "Road Damage":     ["cracked", "sinking", "footpath", "tiles", "manhole"],
+        "Heritage Damage": ["heritage"],
+        "Heat Hazard":     ["heat", "heatwave", "sunstroke"],
+        "Drain Blockage":  ["drain blocked", "drain", "blocked"],
+    }
+
+    matched_categories = []
+    matched_terms = []
+    for category, keywords in CATEGORY_SIGNALS.items():
+        for kw in keywords:
+            if kw in desc_lower:
+                matched_categories.append(category)
+                matched_terms.append(kw)
+                break  # one match per category is enough
+
+    # --- Priority detection ---
+    severity_hits = [kw for kw in SEVERITY_KEYWORDS if kw in desc_lower]
+    priority = "Urgent" if severity_hits else "Standard"
+
+    # --- Decide category + flag ---
+    if len(matched_categories) == 1:
+        category = matched_categories[0]
+        flag = ""
+        reason = f"Classified as {category} due to mention of '{matched_terms[0]}'"
+    elif len(matched_categories) > 1:
+        category = "Other"
+        flag = "NEEDS_REVIEW"
+        reason = f"Multiple possible categories matched ({', '.join(matched_categories)}); needs human review"
+    else:
+        category = "Other"
+        flag = "NEEDS_REVIEW"
+        reason = "No category keywords matched in description; needs human review"
+
+    if priority == "Urgent":
+        reason += f"; marked Urgent due to '{severity_hits[0]}'"
+
+    return {
+        "complaint_id": row.get("complaint_id", ""),
+        "category": category,
+        "priority": priority,
+        "reason": reason,
+        "flag": flag,
+    }
 
 
 def batch_classify(input_path: str, output_path: str):
     """
     Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
     """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+    fieldnames = ["complaint_id", "date_raised", "city", "ward", "location",
+                  "description", "reported_by", "days_open",
+                  "category", "priority", "reason", "flag"]
+
+    results = []
+    with open(input_path, "r", encoding="utf-8", newline="") as infile:
+        reader = csv.DictReader(infile)
+        for row in reader:
+            try:
+                classification = classify_complaint(row)
+                merged = {**row, **classification}
+                results.append(merged)
+            except Exception as e:
+                row["category"] = "Other"
+                row["priority"] = "Standard"
+                row["reason"] = f"Row failed to classify: {e}"
+                row["flag"] = "NEEDS_REVIEW"
+                results.append(row)
+
+    with open(output_path, "w", encoding="utf-8", newline="") as outfile:
+        writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(results)
 
 
 if __name__ == "__main__":
