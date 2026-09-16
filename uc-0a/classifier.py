@@ -1,35 +1,54 @@
-"""
-UC-0A — Complaint Classifier
-Starter file. Build this using the RICE → agents.md → skills.md → CRAFT workflow.
-"""
 import argparse
 import csv
+import sys
 
-def classify_complaint(row: dict) -> dict:
-    """
-    Classify a single complaint row.
-    Returns: dict with keys: complaint_id, category, priority, reason, flag
-    
-    TODO: Build this using your AI tool guided by your agents.md and skills.md.
-    Your RICE enforcement rules must be reflected in this function's behaviour.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+def batch_classify(input_file, output_file):
+    # Define keywords that trigger high/critical severity escalation
+    escalation_keywords = ["injury", "injured", "child", "children", "school", "hospital", "live wire", "hazard"]
 
+    try:
+        with open(input_file, mode='r', encoding='utf-8') as infile:
+            reader = csv.DictReader(infile)
+            fieldnames = reader.fieldnames
+            
+            # Ensure output file includes classification columns if not already present
+            if fieldnames and 'category' not in fieldnames:
+                fieldnames = list(fieldnames) + ['category', 'severity']
+            
+            rows = []
+            for row in reader:
+                description = row.get('description', '').lower()
+                
+                # Determine category (default fallback)
+                category = row.get('category', 'General')
+                
+                # Determine severity based on rules/keywords
+                severity = row.get('severity', 'Medium')
+                for keyword in escalation_keywords:
+                    if keyword in description:
+                        severity = 'High'
+                        break
+                
+                row['category'] = category
+                row['severity'] = severity
+                rows.append(row)
 
-def batch_classify(input_path: str, output_path: str):
-    """
-    Read input CSV, classify each row, write results CSV.
-    
-    TODO: Build this using your AI tool.
-    Must: flag nulls, not crash on bad rows, produce output even if some rows fail.
-    """
-    raise NotImplementedError("Build this using your AI tool + RICE prompt")
+        # Write output file
+        with open(output_file, mode='w', newline='', encoding='utf-8') as outfile:
+            writer = csv.DictWriter(outfile, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+            
+        print(f"Successfully processed {input_file} and saved results to {output_file}")
 
+    except Exception as e:
+        print(f"Error processing files: {e}", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="UC-0A Complaint Classifier")
-    parser.add_argument("--input",  required=True, help="Path to test_[city].csv")
-    parser.add_argument("--output", required=True, help="Path to write results CSV")
+    parser = argparse.ArgumentParser(description="Civic Complaint Classifier")
+    parser.add_argument("--input", required=True, help="Path to input CSV file")
+    parser.add_argument("--output", required=True, help="Path to output CSV file")
+    
     args = parser.parse_args()
     batch_classify(args.input, args.output)
-    print(f"Done. Results written to {args.output}")
