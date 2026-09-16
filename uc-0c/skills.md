@@ -1,16 +1,9 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Anti-Silent Aggregation
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Triggers
+- Any request to sum, group, or aggregate financial data.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Core Constraint & Extraction Rules
+- **CRITICAL RULE:** Prevent silent data aggregation loss by enforcing a strict "per-ward, per-category" scope.
+- Do not collapse distinct categories together under generic labels.
+- Output must explicitly preserve the granularity of Ward and Category combinations.
