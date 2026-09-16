@@ -1,16 +1,9 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Zero-Loss Numerical Summarization
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Triggers
+- Any document containing numbered lists, policy clauses, or specific numerical constraints (e.g., days, hours, percentages).
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Core Constraint & Extraction Rules
+- **CRITICAL RULE:** Do NOT omit any numbered clauses, bullet points, or strict numerical constraints (e.g., "15 days", "Clause 4.2", "48 hours") from the original text.
+- Every numeric condition, time limit, or specifically numbered rule present in the original policy MUST be explicitly stated in the summary. 
+- You may rephrase the surrounding text for brevity, but the numbers and clause identifiers must remain fully intact.
