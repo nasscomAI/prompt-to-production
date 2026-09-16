@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions ""pothole"", indicating pothole.",
+PM-202402,Pothole,Urgent,"The description mentions ""pothole"" and the severity keyword ""school"".",
+PM-202406,Flooding,Standard,"The description mentions ""flooded"", indicating flooding.",
+PM-202408,Drain Blockage,Standard,"The description mentions ""drain blocked"", indicating drain blockage.",
+PM-202410,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"The description mentions ""streetlight"" and the severity keyword ""hazard"".",
+PM-202413,Waste,Standard,"The description mentions ""garbage"", indicating waste.",
+PM-202418,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+PM-202419,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+PM-202420,Other,Urgent,The description does not identify a supported complaint category.,NEEDS_REVIEW
+PM-202427,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+PM-202428,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"The description mentions ""heritage"", indicating heritage damage.",
+PM-202433,Waste,Standard,"The description mentions ""waste"", indicating waste.",
+PM-202446,Other,Urgent,The description does not identify a supported complaint category.,NEEDS_REVIEW
