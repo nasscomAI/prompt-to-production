@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category Pothole from matched term(s) 'pothole' in the description; priority Standard because no severity keyword appears.,
+PM-202402,Pothole,Urgent,"Category Pothole from matched term(s) 'pothole' in the description; priority Urgent because severity keyword(s) 'children', 'school' appear.",
+PM-202406,Flooding,Standard,"Category Flooding from matched term(s) 'flooded', 'knee-deep' in the description; priority Standard because no severity keyword appears.",
+PM-202408,Drain Blockage,Standard,"Category Drain Blockage from matched term(s) 'drain blocked' in the description; Flooding matched with equal weight, so the row is flagged; priority Standard because no severity keyword appears.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Category Streetlight from matched term(s) 'streetlights', 'dark at night' in the description; priority Standard because no severity keyword appears.",
+PM-202411,Streetlight,Urgent,Category Streetlight from matched term(s) 'streetlight' in the description; priority Urgent because severity keyword(s) 'hazard' appear.,
+PM-202413,Waste,Low,"Category Waste from matched term(s) 'garbage', 'bins', 'smell' in the description; priority Low because no severity keyword appears.",
+PM-202418,Noise,Low,Category Noise from matched term(s) 'music' in the description; priority Low because no severity keyword appears.,
+PM-202419,Road Damage,Standard,"Category Road Damage from matched term(s) 'road surface', 'cracked', 'sinking' in the description; priority Standard because no severity keyword appears.",
+PM-202420,Drain Blockage,Urgent,"Category Drain Blockage from matched term(s) 'manhole' in the description, which is weak evidence only, so the row is flagged; priority Urgent because severity keyword(s) 'injury' appear.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,Category Flooding from matched term(s) 'floods' in the description; priority Standard because no severity keyword appears.,
+PM-202428,Waste,Low,Category Waste from matched term(s) 'dead animal' in the description; priority Low because no severity keyword appears.,
+PM-202430,Streetlight,Standard,"Category Streetlight from matched term(s) 'lights out' in the description; Heritage Damage matched with equal weight, so the row is flagged; priority Standard because no severity keyword appears.",NEEDS_REVIEW
+PM-202433,Waste,Low,"Category Waste from matched term(s) 'waste', 'dumped' in the description; priority Low because no severity keyword appears.",
+PM-202446,Road Damage,Urgent,Category Road Damage from matched term(s) 'footpath' in the description; priority Urgent because severity keyword(s) 'fell' appear.,
