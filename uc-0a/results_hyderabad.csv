@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"The description mentions ""flooded"" and the severity keyword ""ambulance"".",
+GH-202402,Flooding,Standard,"The description mentions ""flooded"", indicating flooding.",
+GH-202406,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202407,Drain Blockage,Standard,"The description mentions ""drain blocked"", indicating drain blockage.",
+GH-202410,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202411,Pothole,Standard,"The description mentions ""pothole"", indicating pothole.",
+GH-202412,Other,Urgent,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202417,Heritage Damage,Standard,"The description mentions ""heritage"", indicating heritage damage.",
+GH-202420,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202422,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202424,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202428,Waste,Standard,"The description mentions ""waste"", indicating waste.",
+GH-202432,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"The description mentions ""drain blocked"", indicating drain blockage.",
+GH-202438,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW

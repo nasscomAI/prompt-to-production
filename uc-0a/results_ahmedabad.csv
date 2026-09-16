@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202402,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202405,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"The description mentions ""heatwave"", indicating heat hazard.",
+AM-202407,Other,Urgent,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,"The description mentions ""pothole"", indicating pothole.",
+AM-202414,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202417,Heritage Damage,Standard,"The description mentions ""heritage"", indicating heritage damage.",
+AM-202421,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202424,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202429,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"The description mentions ""heritage"", indicating heritage damage.",
+AM-202435,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
+AM-202444,Waste,Standard,"The description mentions ""waste"", indicating waste.",
+AM-202445,Other,Standard,The description does not identify a supported complaint category.,NEEDS_REVIEW
