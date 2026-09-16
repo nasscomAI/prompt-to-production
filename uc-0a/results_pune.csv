@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole because the description mentions 'pothole'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole because the description mentions 'pothole', and priority is Urgent because it also mentions 'school'.",
+PM-202406,Flooding,Standard,Classified as Flooding because the description mentions 'flooded'.,
+PM-202408,Other,Standard,"Category needs review because the description contains mixed signals such as 'flooded', 'drain'.",NEEDS_REVIEW
+PM-202410,Other,Standard,Category needs review because the description is missing or does not contain a supported complaint keyword.,NEEDS_REVIEW
+PM-202411,Streetlight,Urgent,"Classified as Streetlight because the description mentions 'streetlight', and priority is Urgent because it also mentions 'hazard'.",
+PM-202413,Waste,Standard,Classified as Waste because the description mentions 'garbage'.,
+PM-202418,Noise,Standard,Classified as Noise because the description mentions 'music'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage because the description mentions 'road surface'.,
+PM-202420,Drain Blockage,Urgent,"Classified as Drain Blockage because the description mentions 'manhole', and priority is Urgent because it also mentions 'injury'.",
+PM-202427,Other,Standard,Category needs review because the description is missing or does not contain a supported complaint keyword.,NEEDS_REVIEW
+PM-202428,Other,Standard,Category needs review because the description is missing or does not contain a supported complaint keyword.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,Classified as Heritage Damage because the description mentions 'heritage'.,
+PM-202433,Waste,Standard,"Classified as Waste because the description mentions 'waste', 'dumped'.",
+PM-202446,Other,Urgent,Category needs review because the description is missing or does not contain a supported complaint keyword.,NEEDS_REVIEW
