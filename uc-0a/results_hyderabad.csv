@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding (flooding or water stagnation reported). Urgent priority triggered by severity indicator(s): ambulance, lives at risk.",
+GH-202402,Flooding,Standard,Classified as Flooding (flooding or water stagnation reported; mentions both flooding and drain blockage). Standard priority: typical municipal maintenance report.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage (blocked stormwater drainage reported). Standard priority: typical municipal maintenance report.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage (blocked stormwater drainage reported). Standard priority: typical municipal maintenance report.,
+GH-202410,Pothole,Standard,Classified as Pothole (description reports pothole(s)). Standard priority: typical municipal maintenance report.,
+GH-202411,Pothole,Urgent,Classified as Pothole (description reports pothole(s)). Urgent priority triggered by severity indicator(s): hospitalised.,
+GH-202412,Pothole,Urgent,Classified as Pothole (description reports pothole(s)). Urgent priority triggered by severity indicator(s): school.,
+GH-202417,Waste,Standard,Classified as Waste (waste or garbage accumulation reported; potential cross-category between Heritage and Waste). Standard priority: typical municipal maintenance report.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise (noise disturbance reported). Standard priority: typical municipal maintenance report.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage (structural damage to roadway or pavement). Urgent priority triggered by severity indicator(s): collapsed.,
+GH-202424,Flooding,Standard,Classified as Flooding (flooding or water stagnation reported). Standard priority: routine operational matter without acute safety hazard.,
+GH-202428,Waste,Standard,Classified as Waste (waste or garbage accumulation reported). Standard priority: typical municipal maintenance report.,
+GH-202432,Noise,Low,Classified as Noise (noise disturbance reported). Low priority: routine operational matter without acute safety hazard.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage (blocked stormwater drainage reported). Standard priority: typical municipal maintenance report.,
+GH-202438,Flooding,Standard,Classified as Flooding (flooding or water stagnation reported). Standard priority: typical municipal maintenance report.,
