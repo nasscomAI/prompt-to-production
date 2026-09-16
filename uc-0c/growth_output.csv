@@ -1,0 +1,18 @@
+record_type,period,ward,category,actual_spend,growth_type,growth_percent,formula,null_flag,null_reason,notes
+CALCULATION,2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.3,MoM,NOT_COMPUTED,NOT_COMPUTED: no previous period for MoM comparison,,,
+CALCULATION,2024-02,Ward 1 – Kasba,Roads & Pothole Repair,12.2,MoM,-8.3%,((12.2 - 13.3) / 13.3) * 100 = -8.3%,,,
+CALCULATION,2024-03,Ward 1 – Kasba,Roads & Pothole Repair,12.3,MoM,+0.8%,((12.3 - 12.2) / 12.2) * 100 = +0.8%,,,
+CALCULATION,2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.4,MoM,+8.9%,((13.4 - 12.3) / 12.3) * 100 = +8.9%,,,
+CALCULATION,2024-05,Ward 1 – Kasba,Roads & Pothole Repair,14.1,MoM,+5.2%,((14.1 - 13.4) / 13.4) * 100 = +5.2%,,,
+CALCULATION,2024-06,Ward 1 – Kasba,Roads & Pothole Repair,14.8,MoM,+5.0%,((14.8 - 14.1) / 14.1) * 100 = +5.0%,,,
+CALCULATION,2024-07,Ward 1 – Kasba,Roads & Pothole Repair,19.7,MoM,+33.1%,((19.7 - 14.8) / 14.8) * 100 = +33.1%,,,
+CALCULATION,2024-08,Ward 1 – Kasba,Roads & Pothole Repair,20.2,MoM,+2.5%,((20.2 - 19.7) / 19.7) * 100 = +2.5%,,,
+CALCULATION,2024-09,Ward 1 – Kasba,Roads & Pothole Repair,20.1,MoM,-0.5%,((20.1 - 20.2) / 20.2) * 100 = -0.5%,,,
+CALCULATION,2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.1,MoM,-34.8%,((13.1 - 20.1) / 20.1) * 100 = -34.8%,,,
+CALCULATION,2024-11,Ward 1 – Kasba,Roads & Pothole Repair,14.2,MoM,+8.4%,((14.2 - 13.1) / 13.1) * 100 = +8.4%,,,
+CALCULATION,2024-12,Ward 1 – Kasba,Roads & Pothole Repair,12.7,MoM,-10.6%,((12.7 - 14.2) / 14.2) * 100 = -10.6%,,,
+NULL_AUDIT,2024-03,Ward 2 – Shivajinagar,Drainage & Flooding,,NOT_COMPUTED,NOT_COMPUTED,NOT_COMPUTED: null actual_spend in complete input dataset,NULL_ACTUAL_SPEND,Data not submitted by ward office,Data not submitted by ward office
+NULL_AUDIT,2024-05,Ward 5 – Hadapsar,Streetlight Maintenance,,NOT_COMPUTED,NOT_COMPUTED,NOT_COMPUTED: null actual_spend in complete input dataset,NULL_ACTUAL_SPEND,Equipment procurement delay,Equipment procurement delay
+NULL_AUDIT,2024-07,Ward 4 – Warje,Roads & Pothole Repair,,NOT_COMPUTED,NOT_COMPUTED,NOT_COMPUTED: null actual_spend in complete input dataset,NULL_ACTUAL_SPEND,Audit freeze — figures under review,Audit freeze — figures under review
+NULL_AUDIT,2024-08,Ward 3 – Kothrud,Parks & Greening,,NOT_COMPUTED,NOT_COMPUTED,NOT_COMPUTED: null actual_spend in complete input dataset,NULL_ACTUAL_SPEND,Project suspended — pending approval,Project suspended — pending approval
+NULL_AUDIT,2024-11,Ward 1 – Kasba,Waste Management,,NOT_COMPUTED,NOT_COMPUTED,NOT_COMPUTED: null actual_spend in complete input dataset,NULL_ACTUAL_SPEND,Contractor change — billing delayed,Contractor change — billing delayed
