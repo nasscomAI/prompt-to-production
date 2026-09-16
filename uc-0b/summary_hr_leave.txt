@@ -1,0 +1,156 @@
+EMPLOYEE LEAVE POLICY — COMPLIANCE SUMMARY
+Source: policy_hr_leave.txt
+  CITY MUNICIPAL CORPORATION
+  HUMAN RESOURCES DEPARTMENT
+  EMPLOYEE LEAVE POLICY
+  Document Reference: HR-POL-001
+  Version: 2.3 | Effective: 1 April 2024
+
+Method: EXTRACTIVE. Every sentence of body text below is a verbatim
+substring of the source. Nothing is paraphrased, so no obligation can
+be softened and no outside information can be introduced.
+Clauses marked [VERBATIM — multi-condition] carry two or more independent
+conditions and are reproduced in full rather than compressed.
+
+====================================================================
+1. PURPOSE AND SCOPE
+====================================================================
+[1.1] SCOPE
+  This policy governs all leave entitlements for permanent and contractual employees of the City Municipal Corporation (CMC).
+
+[1.2] SCOPE
+  This policy does not apply to daily wage workers or consultants.
+  Those categories are governed by their respective contracts.
+  conditions: does not apply (NEGATION)
+
+====================================================================
+2. ANNUAL LEAVE
+====================================================================
+[2.1] ENTITLEMENT
+  Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+  conditions: 18 days
+
+[2.2] ENTITLEMENT
+  Annual leave accrues at 1.5 days per month from the date of joining.
+  conditions: 1.5 days
+
+[2.3] MUST  [VERBATIM — multi-condition]
+  Employees must submit a leave application at least 14 calendar days in advance using Form HR-L1.
+  conditions: 14 calendar days · Form HR-L1
+
+[2.4] MUST  [VERBATIM — multi-condition]
+  Leave applications must receive written approval from the employee's direct manager before the leave commences.
+  Verbal approval is not valid.
+  conditions: direct manager · written approval · before the leave commences · is not valid (NEGATION)
+
+[2.5] WILL  [VERBATIM — multi-condition]
+  Unapproved absence will be recorded as Loss of Pay (LOP) regardless of subsequent approval.
+  conditions: Loss of Pay (LOP) · regardless of subsequent approval
+
+[2.6] WILL  [VERBATIM — multi-condition]
+  Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year.
+  Any days above 5 are forfeited on 31 December.
+  conditions: 5 unused annual leave days · 31 December
+
+[2.7] MUST  [VERBATIM — multi-condition]
+  Carry-forward days must be used within the first quarter (January–March) of the following year or they are forfeited.
+  conditions: January–March · first quarter
+
+====================================================================
+3. SICK LEAVE
+====================================================================
+[3.1] ENTITLEMENT
+  Each employee is entitled to 12 days of paid sick leave per calendar year.
+  conditions: 12 days
+
+[3.2] REQUIRES  [VERBATIM — multi-condition]
+  Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+  conditions: 3 or more consecutive days · 48 hours · registered medical practitioner · medical certificate
+
+[3.3] PROHIBITED
+  Sick leave cannot be carried forward to the following year.
+  conditions: cannot (NEGATION)
+
+[3.4] REQUIRES  [VERBATIM — multi-condition]
+  Sick leave taken immediately before or after a public holiday or annual leave period requires a medical certificate regardless of duration.
+  conditions: medical certificate · public holiday · regardless of duration
+
+====================================================================
+4. MATERNITY AND PATERNITY LEAVE
+====================================================================
+[4.1] ENTITLEMENT  [VERBATIM — multi-condition]
+  Female employees are entitled to 26 weeks of paid maternity leave for the first two live births.
+  conditions: 26 weeks · first two live births
+
+[4.2] CLAUSE  [VERBATIM — multi-condition]
+  For a third or subsequent child, maternity leave is 12 weeks paid.
+  conditions: 12 weeks · third or subsequent child
+
+[4.3] ENTITLEMENT  [VERBATIM — multi-condition]
+  Male employees are entitled to 5 days of paid paternity leave, to be taken within 30 days of the child's birth.
+  conditions: 5 days · 30 days
+
+[4.4] PROHIBITED
+  Paternity leave cannot be split across multiple periods.
+  conditions: cannot (NEGATION)
+
+====================================================================
+5. LEAVE WITHOUT PAY (LWP)
+====================================================================
+[5.1] MAY
+  An employee may apply for Leave Without Pay only after exhausting all applicable paid leave entitlements.
+  conditions: only after exhausting
+
+[5.2] REQUIRES  [VERBATIM — multi-condition]
+  LWP requires approval from the Department Head and the HR Director.
+  Manager approval alone is not sufficient.
+  conditions: Department Head · HR Director · not sufficient (NEGATION)
+
+[5.3] REQUIRES  [VERBATIM — multi-condition]
+  LWP exceeding 30 continuous days requires approval from the Municipal Commissioner.
+  conditions: 30 continuous days · Municipal Commissioner
+
+[5.4] CLAUSE
+  Periods of LWP do not count toward service for the purposes of seniority, increments, or retirement benefits.
+  conditions: do not count (NEGATION)
+
+====================================================================
+6. PUBLIC HOLIDAYS
+====================================================================
+[6.1] ENTITLEMENT
+  Employees are entitled to all gazetted public holidays as declared by the State Government each year.
+  conditions: State Government
+
+[6.2] REQUIRES  [VERBATIM — multi-condition]
+  If an employee is required to work on a public holiday, they are entitled to one compensatory off day, to be taken within 60 days of the holiday worked.
+  conditions: 60 days · compensatory off · public holiday
+
+[6.3] PROHIBITED  [VERBATIM — multi-condition]
+  Compensatory off cannot be encashed.
+  conditions: Compensatory off · cannot (NEGATION)
+
+====================================================================
+7. LEAVE ENCASHMENT
+====================================================================
+[7.1] MAY
+  Annual leave may be encashed only at the time of retirement or resignation, subject to a maximum of 60 days.
+  conditions: 60 days
+
+[7.2] PROHIBITED  [VERBATIM — multi-condition]
+  Leave encashment during service is not permitted under any circumstances.
+  conditions: under any circumstances · not permitted (NEGATION)
+
+[7.3] PROHIBITED  [VERBATIM — multi-condition]
+  Sick leave and LWP cannot be encashed under any circumstances.
+  conditions: under any circumstances · cannot (NEGATION)
+
+====================================================================
+8. GRIEVANCES
+====================================================================
+[8.1] MUST  [VERBATIM — multi-condition]
+  Leave-related grievances must be raised with the HR Department within 10 working days of the disputed decision.
+  conditions: 10 working days · HR Department
+
+[8.2] WILL  [VERBATIM — multi-condition]
+  Grievances raised after 10 working days will not be considered unless exceptional circumstances are demonstrated in writing.
+  conditions: 10 working days · will not be considered (NEGATION)
