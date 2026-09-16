@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# Skills: Complaint Processing & Severity Escalation
 
-skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Triggers & Keywords
+- **Roads / Pothole:** Pothole, crater, broken road, asphalt hole.
+- **Water:** Leakage, pipe burst, contamination, no water.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+## Extraction Rules
+- Extract the core issue description and location metadata if available.
+
+## Severity Escalation Logic
+- **Critical / High:** If the text contains keywords such as `injury`, `child`, `school`, `hospital`, `live wire`, or `accidental hazard`, automatically escalate the severity level to **High** or **Critical**, regardless of the basic category.
