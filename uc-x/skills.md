@@ -1,16 +1,11 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
-
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads the three approved policy documents and indexes them by document filename and section number.
+    input: "No user document input; files are resolved relative to app.py from ../data/policy-documents."
+    output: "Dictionary keyed by filename with section-number dictionaries containing clause text."
+    error_handling: "Raises clear errors for missing files, unreadable text, empty policies, null content, or failure to parse numbered sections."
+  - name: answer_question
+    description: Answers a policy question from exactly one indexed document with citation or returns the exact refusal template.
+    input: "Question string plus indexed documents."
+    output: "Plain-text answer with source filename and section number, or the exact unsupported-question refusal."
+    error_handling: "Refuses blank, ambiguous, unsupported, multi-document, or hallucination-prone questions; never blends documents or uses hedged wording."
