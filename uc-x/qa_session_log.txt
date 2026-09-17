@@ -1,0 +1,18 @@
+UC-X Ask My Documents -- session started 2026-09-16T20:57:46.425370
+Documents loaded: policy_finance_reimbursement.txt, policy_hr_leave.txt, policy_it_acceptable_use.txt
+
+Q: policy_hr_leave.txt
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+
+Q: sick leave
+A: or annual leave period requires a medical certificate regardless
+    of duration.
+
+═══════════════════════════════════════════════════════════
+4. MATERNITY AND PATERNITY LEAVE
+═══════════════════════════════════════════════════════════
+
+[Source: policy_hr_leave.txt, Section 3.4 - Sick leave taken immediately before or after a public holiday]
+
+Q: higherstudies leave for 2 yeaars
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
