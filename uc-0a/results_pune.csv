@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"The description mentions ""pothole"", so it is classified as Pothole with Standard priority.",
+PM-202402,Pothole,Urgent,"The description mentions ""pothole"" and the severity keyword ""school"", so it is classified as Pothole with Urgent priority.",
+PM-202406,Flooding,Standard,"The description mentions ""flooded"", so it is classified as Flooding with Standard priority.",
+PM-202408,Other,Standard,"The description contains multiple category indicators: ""flooded"" (Flooding), ""Drain"" (Drain Blockage).",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"The description mentions ""streetlights"", so it is classified as Streetlight with Standard priority.",
+PM-202411,Streetlight,Urgent,"The description mentions ""Streetlight"" and the severity keyword ""hazard"", so it is classified as Streetlight with Urgent priority.",
+PM-202413,Waste,Standard,"The description mentions ""garbage"", so it is classified as Waste with Standard priority.",
+PM-202418,Noise,Standard,"The description mentions ""playing music"", so it is classified as Noise with Standard priority.",
+PM-202419,Road Damage,Standard,"The description mentions ""Road surface"", so it is classified as Road Damage with Standard priority.",
+PM-202420,Other,Urgent,"The description mentions ""Manhole cover missing. Risk of serious"", but no permitted category can be determined confidently.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"The description mentions ""floods"", so it is classified as Flooding with Standard priority.",
+PM-202428,Other,Standard,"The description mentions ""Dead animal not removed for 36"", but no permitted category can be determined confidently.",NEEDS_REVIEW
+PM-202430,Other,Standard,"The description mentions ""Heritage street, lights out. Safety concern"", but no permitted category can be determined confidently.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"The description mentions ""waste"", so it is classified as Waste with Standard priority.",
+PM-202446,Road Damage,Urgent,"The description mentions ""Footpath tiles"" and the severity keyword ""fell"", so it is classified as Road Damage with Urgent priority.",

@@ -1,0 +1,13 @@
+ward,category,period,actual_spend,previous_period,previous_actual_spend,growth_type,formula,growth_percent,status,null_reason
+Ward 1 – Kasba,Roads & Pothole Repair,2024-01,13.3,,,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,,NO_PREVIOUS_PERIOD,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-02,12.2,2024-01,13.3,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,-8.3,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-03,12.3,2024-02,12.2,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,0.8,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-04,13.4,2024-03,12.3,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,8.9,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-05,14.1,2024-04,13.4,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,5.2,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-06,14.8,2024-05,14.1,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,5.0,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-07,19.7,2024-06,14.8,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,33.1,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-08,20.2,2024-07,19.7,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,2.5,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-09,20.1,2024-08,20.2,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,-0.5,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-10,13.1,2024-09,20.1,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,-34.8,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-11,14.2,2024-10,13.1,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,8.4,COMPUTED,
+Ward 1 – Kasba,Roads & Pothole Repair,2024-12,12.7,2024-11,14.2,MoM,((current actual_spend - previous actual_spend) / previous actual_spend) * 100,-10.6,COMPUTED,
