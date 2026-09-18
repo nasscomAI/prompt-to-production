@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Other,Standard,"Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'lamp post', 'heritage'.",NEEDS_REVIEW
+KM-202402,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on words 'historic' in the complaint description.,
+KM-202405,Noise,Standard,Classified as Noise with Standard priority based on words 'band' in the complaint description.,
+KM-202409,Pothole,Standard,Classified as Pothole with Standard priority based on words 'potholes' in the complaint description.,
+KM-202410,Pothole,Standard,Classified as Pothole with Standard priority based on words 'pothole' in the complaint description.,
+KM-202411,Pothole,Standard,Classified as Pothole with Standard priority based on words 'pothole' in the complaint description.,
+KM-202415,Other,Standard,Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'New residential complex draining directly onto public road.'.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Classified as Waste with Standard priority based on words 'waste' in the complaint description.,
+KM-202421,Road Damage,Urgent,"Classified as Road Damage with Urgent priority based on words 'sinking', 'hospital', 'fell' in the complaint description.",
+KM-202422,Road Damage,Standard,"Classified as Road Damage with Standard priority based on words 'road surface', 'buckled' in the complaint description.",
+KM-202426,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on words 'heritage' in the complaint description.,
+KM-202430,Road Damage,Standard,Classified as Road Damage with Standard priority based on words 'subsided' in the complaint description.,
+KM-202434,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on words 'heritage' in the complaint description.,
+KM-202436,Streetlight,Standard,Classified as Streetlight with Standard priority based on words 'darkness' in the complaint description.,
+KM-202438,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on words 'heritage' in the complaint description.,

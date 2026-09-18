@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole with Standard priority based on words 'pothole' in the complaint description.,
+PM-202402,Pothole,Urgent,"Classified as Pothole with Urgent priority based on words 'pothole', 'children', 'school' in the complaint description.",
+PM-202406,Flooding,Standard,"Classified as Flooding with Standard priority based on words 'flooded', 'underpass flooded' in the complaint description.",
+PM-202408,Drain Blockage,Standard,"Classified as Drain Blockage with Standard priority based on words 'drain', 'drain blocked' in the complaint description.",
+PM-202410,Streetlight,Standard,"Classified as Streetlight with Standard priority based on words 'streetlights', 'dark' in the complaint description.",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight with Urgent priority based on words 'streetlight', 'hazard' in the complaint description.",
+PM-202413,Waste,Standard,Classified as Waste with Standard priority based on words 'garbage' in the complaint description.,
+PM-202418,Noise,Standard,Classified as Noise with Standard priority based on words 'music' in the complaint description.,
+PM-202419,Road Damage,Standard,"Classified as Road Damage with Standard priority based on words 'cracked', 'road surface', 'sinking' in the complaint description.",
+PM-202420,Other,Urgent,Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'injury'.,NEEDS_REVIEW
+PM-202427,Flooding,Standard,Classified as Flooding with Standard priority based on words 'floods' in the complaint description.,
+PM-202428,Waste,Standard,Classified as Waste with Standard priority based on words 'dead animal' in the complaint description.,
+PM-202430,Other,Standard,"Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'dark', 'heritage'.",NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste with Standard priority based on words 'waste' in the complaint description.,
+PM-202446,Other,Urgent,Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'fell'.,NEEDS_REVIEW

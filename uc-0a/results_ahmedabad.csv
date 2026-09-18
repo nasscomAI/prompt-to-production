@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on words '44°c' in the complaint description.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on words 'dangerous temperatures' in the complaint description.,
+AM-202405,Other,Standard,Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'Dead trees with split branches. Fall risk to walkers. 3 tree'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on words 'heatwave' in the complaint description.,
+AM-202407,Other,Urgent,Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'child'.,NEEDS_REVIEW
+AM-202410,Pothole,Standard,Classified as Pothole with Standard priority based on words 'pothole' in the complaint description.,
+AM-202414,Streetlight,Standard,Classified as Streetlight with Standard priority based on words 'unlit' in the complaint description.,
+AM-202417,Other,Standard,"Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'waste', 'heritage'.",NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise with Standard priority based on words 'music' in the complaint description.,
+AM-202424,Other,Standard,"Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'road surface', '45°c'.",NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on words 'unbearable' in the complaint description.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage with Standard priority based on words 'heritage' in the complaint description.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority based on words 'heat' in the complaint description.,
+AM-202444,Waste,Standard,Classified as Waste with Standard priority based on words 'waste' in the complaint description.,
+AM-202445,Other,Standard,Marked as Other with NEEDS_REVIEW because the description is ambiguous based on 'BRT shelter roof glass broken. Users exposed to full sun.'.,NEEDS_REVIEW
