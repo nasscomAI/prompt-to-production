@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,'melting' and '44°c' point to category Heat Hazard.,
+AM-202402,Heat Hazard,Standard,'temperatures' points to category Heat Hazard.,
+AM-202405,Other,Standard,No known category keyword appears in 'dead trees with split branches. fall risk to walkers. 3 tree'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,'heatwave' points to category Heat Hazard.,
+AM-202407,Other,Urgent,"No known category keyword appears in 'broken bench and upturned paving. child injured last week.', and severity word 'child' requires Urgent priority.",NEEDS_REVIEW
+AM-202410,Pothole,Standard,'pothole' points to category Pothole.,
+AM-202414,Streetlight,Standard,'unlit' points to category Streetlight.,
+AM-202417,Waste,Standard,'waste' points to category Waste.,
+AM-202421,Noise,Standard,'music' points to category Noise.,
+AM-202424,Heat Hazard,Standard,'bubbling' and '45°c' point to category Heat Hazard.,
+AM-202429,Heat Hazard,Standard,'temperature' and '52°c' point to category Heat Hazard.,
+AM-202431,Road Damage,Standard,'subsidence' points to category Road Damage.,
+AM-202435,Heat Hazard,Standard,'heat' and 'burns' point to category Heat Hazard.,
+AM-202444,Waste,Standard,'waste' and 'bins' point to category Waste.,
+AM-202445,Heat Hazard,Standard,'sun' points to category Heat Hazard.,

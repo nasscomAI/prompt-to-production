@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"'flooded' points to category Flooding, and severity word 'ambulance' requires Urgent priority.",
+GH-202402,Other,Standard,"Both 'flooded' and 'drain' appear, so the category is genuinely ambiguous.",NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,'drain' points to category Drain Blockage.,
+GH-202407,Drain Blockage,Standard,'drain' points to category Drain Blockage.,
+GH-202410,Pothole,Standard,'potholes' points to category Pothole.,
+GH-202411,Pothole,Urgent,"'pothole' points to category Pothole, and severity word 'hospitalised' requires Urgent priority.",
+GH-202412,Pothole,Urgent,"'potholes' points to category Pothole, and severity word 'school' requires Urgent priority.",
+GH-202417,Waste,Standard,'garbage' and 'waste' point to category Waste.,
+GH-202420,Noise,Standard,'drilling' points to category Noise.,
+GH-202422,Road Damage,Urgent,"'collapsed' and 'crater' point to category Road Damage, and severity word 'collapsed' requires Urgent priority.",
+GH-202424,Flooding,Standard,'floods' points to category Flooding.,
+GH-202428,Waste,Standard,'waste' points to category Waste.,
+GH-202432,Noise,Standard,'idling' and 'engines' point to category Noise.,
+GH-202448,Other,Standard,"Both 'flooding' and 'drain' appear, so the category is genuinely ambiguous.",NEEDS_REVIEW
+GH-202438,Other,Standard,No known category keyword appears in 'colony surrounded by fields that channel rainwater through m'.,NEEDS_REVIEW
