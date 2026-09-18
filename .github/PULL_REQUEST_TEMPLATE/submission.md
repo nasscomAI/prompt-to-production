@@ -1,6 +1,6 @@
 # Vibe Coding Workshop — Submission PR
 
-**Name:**  Dr C RAVIKUMAR
+**Name:**  Dr RAVIKUMAR CHANDRASEKARAN
 **City / Group:**  Vellore, Tamilnadu
 **Date:**  September 18, 2026
 **AI tool(s) used:**  Codex CLI (GPT-based coding assistant)
