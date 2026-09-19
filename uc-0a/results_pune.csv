@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Category Pothole selected from keywords 'pothole'. No severity keyword present -> priority is not Urgent.,
+PM-202402,Pothole,Urgent,Category Pothole selected from keywords 'pothole'. Priority Urgent because severity word(s) 'school' present.,
+PM-202406,Flooding,Standard,"Category Flooding selected from keywords 'flooded', 'knee-deep'. No severity keyword present -> priority is not Urgent.",
+PM-202408,Flooding,Standard,Category Flooding selected from ''flooded'' but tied with another category. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Category Streetlight selected from keywords 'streetlights'. No severity keyword present -> priority is not Urgent.,
+PM-202411,Streetlight,Urgent,"Category Streetlight selected from keywords 'streetlight', 'flickering', 'sparking'. Priority Urgent because severity word(s) 'hazard' present.",
+PM-202413,Waste,Standard,"Category Waste selected from keywords 'garbage', 'bins', 'smell'. No severity keyword present -> priority is not Urgent.",
+PM-202418,Noise,Standard,Category Noise selected from keywords 'music'. No severity keyword present -> priority is not Urgent.,
+PM-202419,Road Damage,Standard,"Category Road Damage selected from keywords 'road surface', 'cracked', 'sinking'. No severity keyword present -> priority is not Urgent.",
+PM-202420,Drain Blockage,Urgent,Category Drain Blockage selected from keywords 'manhole'. Priority Urgent because severity word(s) 'injury' present.,
+PM-202427,Flooding,Standard,Category Flooding selected from keywords 'inaccessible'. No severity keyword present -> priority is not Urgent.,
+PM-202428,Waste,Standard,Category Waste selected from keywords 'dead animal'. No severity keyword present -> priority is not Urgent.,
+PM-202430,Streetlight,Standard,Category Streetlight selected from ''lights out'' but description also flags heritage context - category is ambiguous. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+PM-202433,Waste,Standard,"Category Waste selected from keywords 'waste', 'dumped'. No severity keyword present -> priority is not Urgent.",
+PM-202446,Road Damage,Urgent,"Category Road Damage selected from keywords 'tiles broken', 'upturned', 'footpath'. Priority Urgent because severity word(s) 'fell' present.",

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,Category Streetlight selected from ''lamp'' but description also flags heritage context - category is ambiguous. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+KM-202402,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+KM-202405,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+KM-202409,Pothole,Standard,Category Pothole selected from keywords 'potholes'. No severity keyword present -> priority is not Urgent.,
+KM-202410,Pothole,Standard,Category Pothole selected from keywords 'pothole'. No severity keyword present -> priority is not Urgent.,
+KM-202411,Pothole,Standard,Category Pothole selected from keywords 'pothole'. No severity keyword present -> priority is not Urgent.,
+KM-202415,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+KM-202418,Waste,Standard,Category Waste selected from keywords 'waste'. No severity keyword present -> priority is not Urgent.,
+KM-202421,Road Damage,Urgent,"Category Road Damage selected from keywords 'sinking', 'footpath'. Priority Urgent because severity word(s) 'hospital', 'fell' present.",
+KM-202422,Road Damage,Standard,Category Road Damage selected from keywords 'road surface'. No severity keyword present -> priority is not Urgent.,
+KM-202426,Heritage Damage,Standard,Category Heritage Damage selected from keywords 'heritage'. No severity keyword present -> priority is not Urgent.,
+KM-202430,Waste,Standard,Category Waste selected from keywords 'smell'. No severity keyword present -> priority is not Urgent.,
+KM-202434,Heritage Damage,Standard,Category Heritage Damage selected from keywords 'heritage'. No severity keyword present -> priority is not Urgent.,
+KM-202436,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+KM-202438,Heritage Damage,Standard,Category Heritage Damage selected from keywords 'heritage'. No severity keyword present -> priority is not Urgent.,

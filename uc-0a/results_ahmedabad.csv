@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+AM-202402,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+AM-202405,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Category Heat Hazard selected from keywords 'heatwave'. No severity keyword present -> priority is not Urgent.,
+AM-202407,Road Damage,Urgent,Category Road Damage selected from keywords 'upturned'. Priority Urgent because severity word(s) 'child' present.,
+AM-202410,Pothole,Standard,Category Pothole selected from keywords 'pothole'. No severity keyword present -> priority is not Urgent.,
+AM-202414,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Category Waste selected from ''waste'' but tied with another category. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Category Noise selected from keywords 'music'. No severity keyword present -> priority is not Urgent.,
+AM-202424,Road Damage,Standard,Category Road Damage selected from keywords 'road surface'. No severity keyword present -> priority is not Urgent.,
+AM-202429,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
+AM-202431,Heritage Damage,Standard,"Category Heritage Damage selected from keywords 'heritage', 'ancient', 'old city'. No severity keyword present -> priority is not Urgent.",
+AM-202435,Heat Hazard,Standard,Category Heat Hazard selected from keywords 'heat'. No severity keyword present -> priority is not Urgent.,
+AM-202444,Waste,Standard,"Category Waste selected from keywords 'waste', 'bins'. No severity keyword present -> priority is not Urgent.",
+AM-202445,Other,Standard,No category keyword matched the description. No severity keyword present -> priority is not Urgent.,NEEDS_REVIEW
