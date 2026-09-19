@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified as Heat Hazard because the description says 'melting', '44°C', kept Standard because 'unsafe' shows impact but no severity keyword is present.",
+AM-202402,Heat Hazard,Standard,"Classified as Heat Hazard because the description says 'temperatures', kept Standard because 'dangerous' shows impact but no severity keyword is present.",
+AM-202405,Other,Standard,"Classified as Other because no listed category word appears in the description, kept Standard because 'risk' shows impact but no severity keyword is present; flagged for review because no category keyword matched.",NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,"Classified as Heat Hazard because the description says 'heatwave', kept Standard because no severity keyword is present; flagged for review because the only evidence for Heat Hazard is weak.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Classified as Road Damage because the description says 'upturned', 'paving', marked Urgent for severity words 'Child', 'injured'.",
+AM-202410,Pothole,Standard,"Classified as Pothole because the description says 'Pothole', kept Standard because no severity keyword is present.",
+AM-202414,Streetlight,Standard,"Classified as Streetlight because the description says 'unlit', 'Wiring', kept Standard because no severity keyword is present.",
+AM-202417,Waste,Standard,"Classified as Waste because the description says 'waste', kept Standard because no severity keyword is present.",
+AM-202421,Noise,Low,"Classified as Noise because the description says 'music', 'audible', set Low as a nuisance/amenity issue with no severity or risk words.",
+AM-202424,Heat Hazard,Standard,"Classified as Heat Hazard because the description says 'bubbling', '45°C', kept Standard because no severity keyword is present.",
+AM-202429,Heat Hazard,Standard,"Classified as Heat Hazard because the description says 'temperature', 'temperature', '52°C', kept Standard because no severity keyword is present.",
+AM-202431,Heritage Damage,Standard,"Classified as Heritage Damage because the description says 'ancient', 'step well', 'Heritage', kept Standard because 'subsidence' shows impact but no severity keyword is present.",
+AM-202435,Heat Hazard,Urgent,"Classified as Heat Hazard because the description says 'heat', 'burns', marked Urgent for severity words 'burns'.",
+AM-202444,Waste,Standard,"Classified as Waste because the description says 'waste', 'bins', 'overflowing', kept Standard because 'Health', 'risk' shows impact but no severity keyword is present.",
+AM-202445,Heat Hazard,Standard,"Classified as Heat Hazard because the description says 'sun', kept Standard because no severity keyword is present; flagged for review because the only evidence for Heat Hazard is weak.",NEEDS_REVIEW

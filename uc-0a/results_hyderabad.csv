@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because the description says 'flooded', marked Urgent for severity words 'Ambulance', 'Lives at risk'.",
+GH-202402,Flooding,Standard,"Classified as Flooding because the description says 'flooded', kept Standard because no severity keyword is present.",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage because the description says 'stormwater', 'drain 100% blocked', kept Standard because no severity keyword is present.",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage because the description says 'Drain blocked', 'mosquito', kept Standard because 'Dengue' shows impact but no severity keyword is present.",
+GH-202410,Pothole,Standard,"Classified as Pothole because the description says 'Potholes', kept Standard because no severity keyword is present.",
+GH-202411,Pothole,Urgent,"Classified as Pothole because the description says 'Pothole', marked Urgent for severity words 'hospitalised'.",
+GH-202412,Pothole,Urgent,"Classified as Pothole because the description says 'potholes', marked Urgent for severity words 'School'.",
+GH-202417,Waste,Standard,"Classified as Waste because the description says 'garbage', 'overflow', 'waste', kept Standard because no severity keyword is present.",
+GH-202420,Noise,Low,"Classified as Noise because the description says 'drilling', set Low as a nuisance/amenity issue with no severity or risk words.",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage because the description says 'collapsed', 'Crater', marked Urgent for severity words 'collapsed'.",
+GH-202424,Flooding,Standard,"Classified as Flooding because the description says 'floods', kept Standard because no severity keyword is present.",
+GH-202428,Waste,Standard,"Classified as Waste because the description says 'waste', kept Standard because no severity keyword is present.",
+GH-202432,Noise,Low,"Classified as Noise because the description says 'idling', set Low as a nuisance/amenity issue with no severity or risk words; flagged for review because the only evidence for Noise is weak.",NEEDS_REVIEW
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage because the description says 'drain blocked', kept Standard because 'risk' shows impact but no severity keyword is present.",
+GH-202438,Flooding,Standard,"Classified as Flooding because the description says 'rainwater', kept Standard because no severity keyword is present; flagged for review because the only evidence for Flooding is weak.",NEEDS_REVIEW
