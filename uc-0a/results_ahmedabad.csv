@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,"Classified Heat Hazard because the description mentions ""44°C"", ""melting"".",
+AM-202402,Heat Hazard,Standard,"Classified Heat Hazard because the description mentions ""temperatures"".",
+AM-202405,Other,Standard,"No defined category matches the description (""Dead trees with split branches, Fall risk to walkers, 3""), so it is flagged for review.",NEEDS_REVIEW
+AM-202406,Other,Standard,"No defined category matches the description (""Irrigation system broken, Grass dying in heatwave""), so it is flagged for review.",NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Classified Road Damage because the description mentions ""paving"", flagged for review because the evidence is weak, and priority is Urgent because it mentions ""injured"", ""Child"".",NEEDS_REVIEW
+AM-202410,Pothole,Standard,"Classified Pothole because the description mentions ""Pothole"".",
+AM-202414,Streetlight,Standard,"Classified Streetlight because the description mentions ""unlit"".",
+AM-202417,Waste,Standard,"Classified Waste because the description mentions ""waste"".",
+AM-202421,Noise,Standard,"Classified Noise because the description mentions ""music"".",
+AM-202424,Heat Hazard,Standard,"Classified Heat Hazard because the description mentions ""45°C"", ""bubbling"".",
+AM-202429,Heat Hazard,Standard,"Classified Heat Hazard because the description mentions ""52°C"", ""temperature"".",
+AM-202431,Heritage Damage,Standard,"Classified Heritage Damage because the description mentions ""ancient"", ""subsidence"", flagged for review because it also fits Road Damage.",NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,"Classified Heat Hazard because the description mentions ""burns"", ""heat"".",
+AM-202444,Waste,Standard,"Classified Waste because the description mentions ""waste"".",
+AM-202445,Heat Hazard,Standard,"Classified Heat Hazard because the description mentions ""full sun"", flagged for review because the evidence is weak.",NEEDS_REVIEW

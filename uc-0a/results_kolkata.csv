@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Heritage Damage,Standard,"Classified Heritage Damage because the description mentions ""Heritage"", ""knocked"".",
+KM-202402,Heritage Damage,Standard,"Classified Heritage Damage because the description mentions ""Historic"", ""cobblestones"".",
+KM-202405,Noise,Standard,"Classified Noise because the description mentions ""band playing"".",
+KM-202409,Pothole,Standard,"Classified Pothole because the description mentions ""potholes"".",
+KM-202410,Pothole,Standard,"Classified Pothole because the description mentions ""Pothole"".",
+KM-202411,Pothole,Standard,"Classified Pothole because the description mentions ""pothole"".",
+KM-202415,Other,Standard,"No defined category matches the description (""New residential complex draining directly onto public road""), so it is flagged for review.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classified Waste because the description mentions ""waste"".",
+KM-202421,Road Damage,Urgent,"Classified Road Damage because the description mentions ""sinking"", ""Footpath"", and priority is Urgent because it mentions ""Hospital"", ""fell"".",
+KM-202422,Road Damage,Standard,"Classified Road Damage because the description mentions ""Road surface"", ""buckled"".",
+KM-202426,Heritage Damage,Standard,"Classified Heritage Damage because the description mentions ""Heritage"", ""defaced"".",
+KM-202430,Road Damage,Standard,"Classified Road Damage because the description mentions ""subsided"".",
+KM-202434,Heritage Damage,Standard,"Classified Heritage Damage because the description mentions ""heritage"", ""removed"", flagged for review because it also fits Road Damage.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Classified Streetlight because the description mentions ""Darkness"", flagged for review because the evidence is weak.",NEEDS_REVIEW
+KM-202438,Noise,Standard,"Classified Noise because the description mentions ""amplifiers"".",
