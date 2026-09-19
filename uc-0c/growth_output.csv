@@ -1,0 +1,13 @@
+﻿period,ward,category,actual_spend,growth_type,growth,formula,flag
+2024-01,Ward 1 – Kasba,Roads & Pothole Repair,13.3,MoM,,MoM = (actual_spend[2024-01] - actual_spend[2023-12]) / actual_spend[2023-12] * 100,No 2023-12 data in dataset - not computed
+2024-02,Ward 1 – Kasba,Roads & Pothole Repair,12.2,MoM,-8.3%,MoM = (actual_spend[2024-02] - actual_spend[2024-01]) / actual_spend[2024-01] * 100,
+2024-03,Ward 1 – Kasba,Roads & Pothole Repair,12.3,MoM,+0.8%,MoM = (actual_spend[2024-03] - actual_spend[2024-02]) / actual_spend[2024-02] * 100,
+2024-04,Ward 1 – Kasba,Roads & Pothole Repair,13.4,MoM,+8.9%,MoM = (actual_spend[2024-04] - actual_spend[2024-03]) / actual_spend[2024-03] * 100,
+2024-05,Ward 1 – Kasba,Roads & Pothole Repair,14.1,MoM,+5.2%,MoM = (actual_spend[2024-05] - actual_spend[2024-04]) / actual_spend[2024-04] * 100,
+2024-06,Ward 1 – Kasba,Roads & Pothole Repair,14.8,MoM,+5.0%,MoM = (actual_spend[2024-06] - actual_spend[2024-05]) / actual_spend[2024-05] * 100,
+2024-07,Ward 1 – Kasba,Roads & Pothole Repair,19.7,MoM,+33.1%,MoM = (actual_spend[2024-07] - actual_spend[2024-06]) / actual_spend[2024-06] * 100,
+2024-08,Ward 1 – Kasba,Roads & Pothole Repair,20.2,MoM,+2.5%,MoM = (actual_spend[2024-08] - actual_spend[2024-07]) / actual_spend[2024-07] * 100,
+2024-09,Ward 1 – Kasba,Roads & Pothole Repair,20.1,MoM,-0.5%,MoM = (actual_spend[2024-09] - actual_spend[2024-08]) / actual_spend[2024-08] * 100,
+2024-10,Ward 1 – Kasba,Roads & Pothole Repair,13.1,MoM,-34.8%,MoM = (actual_spend[2024-10] - actual_spend[2024-09]) / actual_spend[2024-09] * 100,
+2024-11,Ward 1 – Kasba,Roads & Pothole Repair,14.2,MoM,+8.4%,MoM = (actual_spend[2024-11] - actual_spend[2024-10]) / actual_spend[2024-10] * 100,
+2024-12,Ward 1 – Kasba,Roads & Pothole Repair,12.7,MoM,-10.6%,MoM = (actual_spend[2024-12] - actual_spend[2024-11]) / actual_spend[2024-11] * 100,

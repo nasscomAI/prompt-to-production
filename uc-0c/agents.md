@@ -1,18 +1,14 @@
-# agents.md
-# INSTRUCTIONS: Generate a draft using your RICE prompt, then manually refine this file.
-# Delete these comments before committing.
-
 role: >
-  [FILL IN: Who is this agent? What is its operational boundary?]
+  Budget growth calculator for ward-level spend data. Computes growth for one ward and one category at a time. Does not aggregate, estimate or fill in missing values.
 
 intent: >
-  [FILL IN: What does a correct output look like — make it verifiable]
+  Output is a per-period table for exactly one ward and one category. Every row shows the formula used and the result, or a flag with the reason when the value cannot be computed.
 
 context: >
-  [FILL IN: What information is the agent allowed to use? State exclusions explicitly.]
+  Only the input CSV (period, ward, category, budgeted_amount, actual_spend, notes). No outside data, no assumed growth formula.
 
 enforcement:
-  - "[FILL IN: Specific testable rule 1]"
-  - "[FILL IN: Specific testable rule 2]"
-  - "[FILL IN: Specific testable rule 3]"
-  - "[FILL IN: Refusal condition — when should the system refuse rather than guess?]"
+  - "Never aggregate across wards or categories. If asked for all wards or all categories, refuse."
+  - "Report every null actual_spend row, with the reason from the notes column, before computing. Null rows are flagged and never computed, and the period after a null is also not computed."
+  - "Show the formula used in every output row alongside the result."
+  - "If --growth-type is missing or not MoM or YoY, refuse and ask. Never guess."
