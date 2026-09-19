@@ -1,16 +1,14 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
+# UC-0C skills
 
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: load_dataset
+    description: Read and validate the budget CSV while reporting all null actual_spend rows.
+    input: CSV path.
+    output: Validated rows and a null report containing period, ward, category, and notes.
+    error_handling: Reject missing columns or a missing dataset; preserve nulls rather than imputing them.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: compute_growth
+    description: Compute per-period growth for one ward/category series with explicit formulas.
+    input: Rows, one ward, one category, and an explicit growth type.
+    output: Per-period table with actual spend, growth percentage, formula, status, and notes.
+    error_handling: Refuse all-ward/all-category requests and flag rows whose current or prior actual spend is null.
