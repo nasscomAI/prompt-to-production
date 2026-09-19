@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+KM-202401,Streetlight,Standard,"Classified as Streetlight because the description says 'lamp post', kept Standard because no severity keyword is present.",
+KM-202402,Heritage Damage,Low,"Classified as Heritage Damage because the description says 'Historic', 'cobblestones', set Low as a nuisance/amenity issue with no severity or risk words.",
+KM-202405,Noise,Low,"Classified as Noise because the description says 'band playing', set Low as a nuisance/amenity issue with no severity or risk words.",
+KM-202409,Pothole,Standard,"Classified as Pothole because the description says 'potholes', kept Standard because no severity keyword is present.",
+KM-202410,Pothole,Standard,"Classified as Pothole because the description says 'Pothole', kept Standard because no severity keyword is present.",
+KM-202411,Pothole,Standard,"Classified as Pothole because the description says 'pothole', kept Standard because 'Accident', 'risk' shows impact but no severity keyword is present.",
+KM-202415,Other,Standard,"Classified as Other because no listed category word appears in the description, kept Standard because no severity keyword is present; flagged for review because no category keyword matched.",NEEDS_REVIEW
+KM-202418,Waste,Standard,"Classified as Waste because the description says 'waste', 'overflowing', kept Standard because no severity keyword is present.",
+KM-202421,Road Damage,Urgent,"Classified as Road Damage because the description says 'Footpath', 'sinking', marked Urgent for severity words 'fell', 'Hospital'.",
+KM-202422,Road Damage,Standard,"Classified as Road Damage because the description says 'Road surface', 'buckled', 'Structural', kept Standard because 'Structural' shows impact but no severity keyword is present.",
+KM-202426,Heritage Damage,Low,"Classified as Heritage Damage because the description says 'Heritage', 'defaced', set Low as a nuisance/amenity issue with no severity or risk words.",
+KM-202430,Road Damage,Urgent,"Classified as Road Damage because the description says 'subsided', marked Urgent for severity words 'Gas leak'.",
+KM-202434,Road Damage,Standard,"Classified as Road Damage because the description says 'paving', kept Standard because no severity keyword is present; flagged for review because it matches Road Damage and Heritage Damage equally.",NEEDS_REVIEW
+KM-202436,Streetlight,Standard,"Classified as Streetlight because the description says 'substation', 'Darkness', kept Standard because no severity keyword is present.",
+KM-202438,Noise,Low,"Classified as Noise because the description says 'amplifiers', set Low as a nuisance/amenity issue with no severity or risk words.",
