@@ -1,16 +1,12 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: retrieve_documents
+    description: Loads the three policy files and indexes every numbered clause by document name and section number.
+    input: None; reads the three files from ../data/policy-documents.
+    output: List of clauses with document, section, text and search terms.
+    error_handling: A missing or unreadable file, or a file with no clauses, stops with a clear error message.
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+  - name: answer_question
+    description: Finds the best-matching clauses in one document and returns them with citations, or the refusal template.
+    input: question (str) and the clause index.
+    output: Clause text with [document, section] citations from a single document, or the refusal template.
+    error_handling: A score below the minimum returns the refusal template. Clauses from a second document are never added.
