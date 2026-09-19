@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"No severity keyword; category from ""pothole"" -> Pothole.",
+PM-202402,Pothole,Urgent,"Severity word ""children"" in description; category from ""pothole"" -> Pothole.",
+PM-202406,Flooding,Standard,"No severity keyword; category from ""flood"" -> Flooding.",
+PM-202408,Drain Blockage,Standard,"No severity keyword; category from ""drain"" -> Drain Blockage; ""flood"" -> Flooding.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"No severity keyword; category from ""streetlight"" -> Streetlight.",
+PM-202411,Streetlight,Urgent,"Severity word ""hazard"" in description; category from ""streetlight"" -> Streetlight.",
+PM-202413,Waste,Standard,"No severity keyword; category from ""garbage"" -> Waste.",
+PM-202418,Noise,Standard,"No severity keyword; category from ""music"" -> Noise.",
+PM-202419,Road Damage,Standard,"No severity keyword; category from ""crack"" -> Road Damage.",
+PM-202420,Other,Urgent,"Severity word ""injury"" in description; category from no category keyword found in description.",NEEDS_REVIEW
+PM-202427,Flooding,Standard,"No severity keyword; category from ""flood"" -> Flooding.",
+PM-202428,Other,Standard,No severity keyword; category from no category keyword found in description.,NEEDS_REVIEW
+PM-202430,Heritage Damage,Standard,"No severity keyword; category from ""heritage"" -> Heritage Damage; ""lights out"" -> Streetlight.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"No severity keyword; category from ""waste"" -> Waste.",
+PM-202446,Road Damage,Urgent,"Severity word ""fell"" in description; category from ""footpath"" -> Road Damage.",
