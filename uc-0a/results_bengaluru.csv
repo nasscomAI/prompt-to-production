@@ -1,0 +1,16 @@
+category,priority,reason,flag
+Pothole,Standard,Complaint mentions 'Large pothole 60cm wide causing tyre damage. Three vehicles affected this week.',
+Pothole,Urgent,Complaint mentions 'Deep pothole near bus stop. School children at risk during morning hours.',
+Flooding,Standard,Complaint mentions 'Underpass flooded knee-deep after 2hrs rain. Commuters stranded.',
+Flooding,Standard,Complaint mentions 'Bus stand flooded. Passengers standing in water. Drain blocked.',
+Streetlight,Standard,Complaint mentions 'Three consecutive streetlights out for 10 days. Area very dark at night.',
+Streetlight,Urgent,Complaint mentions 'Streetlight flickering and sparking. Electrical hazard reported.',
+Waste,Standard,Complaint mentions 'Overflowing garbage bins near vegetable market. Smell affecting shoppers.',
+Other,Standard,Complaint mentions 'Wedding venue playing music past midnight on weeknights.',NEEDS_REVIEW
+Road Damage,Standard,Complaint mentions 'Road surface cracked and sinking near utility work done 1 month ago.',
+Other,Urgent,Complaint mentions 'Manhole cover missing. Risk of serious injury to cyclists.',NEEDS_REVIEW
+Flooding,Standard,Complaint mentions 'Bridge approach floods in 30mins of rain. Bridge becomes inaccessible.',
+Other,Standard,Complaint mentions 'Dead animal not removed for 36 hours. Health concern.',NEEDS_REVIEW
+Streetlight,Standard,"Complaint mentions 'Heritage street, lights out. Safety concern for pedestrians after dark.'",
+Waste,Standard,Complaint mentions 'Bulk waste from apartment renovation dumped on public road.',
+Other,Urgent,Complaint mentions 'Footpath tiles broken and upturned. Elderly resident fell last week.',NEEDS_REVIEW
