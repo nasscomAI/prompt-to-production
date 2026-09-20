@@ -1,0 +1,53 @@
+CITY MUNICIPAL CORPORATION - POLICY Q&A ASSISTANT (UC-X)
+Sources: policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt
+
+Q: How much annual leave am I entitled to?
+A: Each permanent employee is entitled to 18 days of paid annual leave per calendar year.
+Source: policy_hr_leave.txt, clause 2.1
+
+Q: Can I carry forward my unused annual leave days?
+A: Employees may carry forward a maximum of 5 unused annual leave days to the following calendar year. Any days above 5 are forfeited on 31 December.
+Source: policy_hr_leave.txt, clause 2.6
+
+Q: My child is sick for over a week, do I need a medical certificate?
+A: Sick leave of 3 or more consecutive days requires a medical certificate from a registered medical practitioner, submitted within 48 hours of returning to work.
+Source: policy_hr_leave.txt, clause 3.2
+
+Q: Can I use my personal phone to check my work email?
+A: Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+Source: policy_it_acceptable_use.txt, clause 3.1
+
+Q: Can I use my personal phone to access work files when working from home?
+A: Personal devices may be used to access CMC email and the CMC employee self-service portal only.
+Source: policy_it_acceptable_use.txt, clause 3.1
+
+Q: I lost my phone and my work email was on it, what should I do?
+A: If a personal device containing CMC email is lost or stolen, the employee must report it to the IT helpdesk within 4 hours so that a remote wipe of CMC data can be performed.
+Source: policy_it_acceptable_use.txt, clause 3.5
+
+Q: How much do I get reimbursed for local travel in my car?
+A: If an employee leaves CMC within 12 months of a reimbursed training expense, they must repay 100% of the reimbursed amount. If they leave between 12 and 24 months, they must repay 50%.
+Source: policy_finance_reimbursement.txt, clause 4.4
+
+Q: Can I claim airfare for a trip to a city 300 km away?
+A: Air travel is permitted for journeys exceeding 500 km only. Economy class is mandatory. Business class is not reimbursable.
+Source: policy_finance_reimbursement.txt, clause 2.3
+
+Q: How many days of sick leave am I allowed to take?
+A: Each employee is entitled to 12 days of paid sick leave per calendar year.
+Source: policy_hr_leave.txt, clause 3.1
+
+Q: How much is the monthly internet reimbursement for Grade B employees working from home?
+A: Employees in Grade B and above are entitled to a monthly internet reimbursement of Rs 800 for approved work-from-home arrangements only.
+Source: policy_finance_reimbursement.txt, clause 5.2
+
+Q: I want to book accommodation for my outstation trip, how much can I claim per night?
+A: Hotel accommodation for outstation travel is reimbursable up to Rs 3,500 per night for Grade A cities and Rs 2,500 per night for other locations.
+Source: policy_finance_reimbursement.txt, clause 2.4
+
+Q: What is the recruitment policy for junior engineers?
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+
+Q: Is the dress code formal or casual?
+A: This question is not covered in the available policy documents (policy_hr_leave.txt, policy_it_acceptable_use.txt, policy_finance_reimbursement.txt). Please contact [relevant team] for guidance.
+
