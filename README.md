@@ -84,6 +84,19 @@ workshop-repo/
         └── submission.md   Fill this when opening your PR
 ```
 
+    ## Agent Guidance Files
+
+    Each use case includes an `agents.md` file and a `skills.md` file. These files
+    define the agent's role, allowed context, required output, enforcement rules,
+    and error handling before the implementation is built.
+
+    - **UC-0A:** Complaint categories, severity keywords, reasons, and ambiguity flags
+    - **UC-0B:** Clause-complete policy summaries that preserve conditions and binding language
+    - **UC-0C:** Per-ward and per-category growth calculations with explicit null handling
+    - **UC-X:** Single-source policy answers with section citations and a fixed refusal template
+
+    Use these files as the behavioral contract when implementing each use case.
+
 ---
 
 ## Commit Message Standard
