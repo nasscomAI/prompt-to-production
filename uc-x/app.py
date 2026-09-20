@@ -79,15 +79,27 @@ def _stem(token):
     return token
 
 
-def _tokens(text):
+def _tokens(text, stem=True):
     words = re.findall(r"[a-z0-9]+", text.lower())
     result = []
     for word in words:
-        stemmed = _stem(word)
-        if word in STOPWORDS or stemmed in STOPWORDS or len(stemmed) < 3:
+        if word in STOPWORDS or len(word) < 3:
             continue
-        result.append(stemmed)
+        value = _stem(word) if stem else word
+        result.append(value)
     return result
+
+
+def _vocabulary(text):
+    """Raw and stemmed forms so inflections ('access') never mis-match."""
+    words = re.findall(r"[a-z0-9]+", text.lower())
+    vocab = []
+    for word in words:
+        if word in STOPWORDS or len(word) < 3:
+            continue
+        vocab.append(word)
+        vocab.append(_stem(word))
+    return vocab
 
 
 def _bigrams(question):
@@ -99,7 +111,7 @@ def _occurrences(index):
     occ = {}
     for filename, clauses in index.items():
         for _, text in clauses:
-            seen = set(_tokens(text))
+            seen = set(_vocabulary(text))
             for token in seen:
                 occ[token] = occ.get(token, 0) + 1
     return occ
@@ -110,7 +122,7 @@ def answer_question(question, index, occ):
     if not question.strip():
         return "Please ask a policy question supported by the documents.", None
 
-    question_tokens = _tokens(question)
+    question_tokens = list(dict.fromkeys(_vocabulary(question)))
     question_bigrams = _bigrams(question)
     byod_context = bool(
         set(question_tokens) & {"personal", "phone", "device", "smartphone"}
@@ -119,7 +131,7 @@ def answer_question(question, index, occ):
     best = None  # (weight, bigram_score, doc_rank, min_number_key) + result
     for doc_rank, filename in enumerate(DOC_PATHS):
         for number, text in index[filename]:
-            clause_set = set(_tokens(text))
+            clause_set = set(_vocabulary(text))
 
             exact = []
             for qtok in question_tokens:
