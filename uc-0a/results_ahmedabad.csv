@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'melting'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'temperature'.,
+AM-202405,Other,Standard,Classified as Other based on description 'Dead trees with split branches. Fall risk to walkers. 3 trees affected.'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'heat'.,
+AM-202407,Road Damage,Urgent,Classified as Road Damage because description contains 'upturned paving'.,
+AM-202410,Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight because description contains 'unlit'.,
+AM-202417,Waste,Standard,Classified as Waste because description contains 'waste'.,
+AM-202421,Noise,Low,Classified as Noise because description contains 'music'.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'bubbling'.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'temperature'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage because description contains 'heritage'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'heat'.,
+AM-202444,Waste,Standard,Classified as Waste because description contains 'waste'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because description contains 'full sun'.,

@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding because description contains 'flood'.,
+GH-202402,Flooding,Standard,Classified as Flooding because description contains 'flood'.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage because description contains 'drain blocked'.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage because description contains 'drain blocked'.,
+GH-202410,Pothole,Standard,Classified as Pothole because description contains 'pothole'.,
+GH-202411,Pothole,Urgent,Classified as Pothole because description contains 'pothole'.,
+GH-202412,Pothole,Urgent,Classified as Pothole because description contains 'pothole'.,
+GH-202417,Waste,Standard,Classified as Waste because description contains 'garbage'.,
+GH-202420,Noise,Low,Classified as Noise because description contains 'drilling'.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage because description contains 'collapse'.,
+GH-202424,Flooding,Standard,Classified as Flooding because description contains 'flood'.,
+GH-202428,Waste,Standard,Classified as Waste because description contains 'waste'.,
+GH-202432,Noise,Low,Classified as Noise because description contains 'idling'.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage because description contains 'drain blocked'.,NEEDS_REVIEW
+GH-202438,Other,Standard,Classified as Other based on description 'Colony surrounded by fields that channel rainwater through main road.'.,NEEDS_REVIEW
