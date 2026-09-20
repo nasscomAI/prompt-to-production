@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified based on description citing 'Tarmac surface melting at 44°C'.,
+AM-202402,Other,Standard,Classified based on description citing 'Metal bus shelter reaching dangerous temperatures'.,NEEDS_REVIEW
+AM-202405,Other,Low,Classified based on description citing 'Dead trees with split branches'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Low,Classified based on description citing 'Irrigation system broken'.,
+AM-202407,Road Damage,Urgent,Classified based on description citing 'Broken bench and upturned paving'.,
+AM-202410,Pothole,Standard,Classified based on description citing 'Pothole on main highway causing morning rush lane closure'.,
+AM-202414,Streetlight,Standard,Classified based on description citing 'Residential colony unlit after 9pm'.,
+AM-202417,Waste,Low,Classified based on description citing 'Night market waste not cleared before morning'.,
+AM-202421,Noise,Low,Classified based on description citing 'Club music audible at residential buildings at 2am'.,
+AM-202424,Heat Hazard,Low,Classified based on description citing 'Zoo approach road surface bubbling at 45°C'.,
+AM-202429,Heat Hazard,Standard,Classified based on description citing 'River walk surface temperature unbearable'.,
+AM-202431,Heritage Damage,Low,Classified based on description citing 'Old city road subsidence near ancient step well'.,
+AM-202435,Heat Hazard,Low,Classified based on description citing 'Black metal road dividers storing heat'.,
+AM-202444,Waste,Low,Classified based on description citing 'Restaurant waste bins overflowing on Sunday night'.,
+AM-202445,Heat Hazard,Standard,Classified based on description citing 'BRT shelter roof glass broken'.,
