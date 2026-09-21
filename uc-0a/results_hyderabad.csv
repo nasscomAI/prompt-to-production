@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding based on: Underpass flooded after 1hr rain. Ambulance diverted. Lives at risk.,
+GH-202402,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage based on: Main stormwater drain 100% blocked with construction debris.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage based on: Drain blocked and mosquito breeding. Dengue concern.,
+GH-202410,Pothole,Standard,Classified as Pothole based on: Potholes causing vehicles to slow to 20kmph on fast road.,
+GH-202411,Pothole,Standard,Classified as Pothole based on: Pothole swallowed entire motorcycle wheel. Rider hospitalised.,
+GH-202412,Pothole,Urgent,Classified as Pothole based on: School bus struggling to navigate 6 potholes in 200m stretch.,
+GH-202417,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
+GH-202420,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
+GH-202422,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
+GH-202424,Flooding,Standard,Classified as Flooding based on: Underpass floods in light rain. Cars regularly abandoned.,
+GH-202428,Waste,Standard,Classified as Waste based on: Post-market waste not cleared. Area unusable by Sunday morning.,
+GH-202432,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
+GH-202448,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
+GH-202438,Other,Standard,Description is ambiguous and does not identify one allowed category.,NEEDS_REVIEW
