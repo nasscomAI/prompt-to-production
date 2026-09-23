@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,Classified as Pothole based on description citing 'Large pothole 60cm wide causing tyre damage'.,
+PM-202402,Pothole,Urgent,"Classified as Pothole citing 'Deep pothole near bus stop'; priority Urgent triggered by severity keyword 'children', 'School'.",
+PM-202406,Flooding,Standard,Classified as Flooding based on description citing 'Underpass flooded knee-deep after 2hrs rain'.,
+PM-202408,Drain Blockage,Standard,Classified as Drain Blockage based on description citing 'Drain blocked'.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,Classified as Streetlight based on description citing 'Three consecutive streetlights out for 10 ...'.,
+PM-202411,Streetlight,Urgent,Classified as Streetlight citing 'Streetlight flickering and sparking'; priority Urgent triggered by severity keyword 'hazard'.,
+PM-202413,Waste,Standard,Classified as Waste based on description citing 'Overflowing garbage bins near vegetable ma...'.,
+PM-202418,Noise,Standard,Classified as Noise based on description citing 'Wedding venue playing music past midnight ...'.,
+PM-202419,Road Damage,Standard,Classified as Road Damage based on description citing 'Road surface cracked and sinking near util...'.,
+PM-202420,Road Damage,Urgent,Classified as Road Damage citing 'Manhole cover missing'; priority Urgent triggered by severity keyword 'injury'.,
+PM-202427,Flooding,Standard,Classified as Flooding based on description citing 'Bridge approach floods in 30mins of rain'.,
+PM-202428,Waste,Standard,Classified as Waste based on description citing 'Dead animal not removed for 36 hours'.,
+PM-202430,Streetlight,Standard,Classified as Streetlight based on description citing 'lights out'.,NEEDS_REVIEW
+PM-202433,Waste,Standard,Classified as Waste based on description citing 'Bulk waste from apartment renovation dumpe...'.,
+PM-202446,Road Damage,Urgent,Classified as Road Damage citing 'Footpath tiles broken and upturned'; priority Urgent triggered by severity keyword 'fell'.,

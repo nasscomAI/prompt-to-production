@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'Tarmac surface melting at 44°C'.,
+AM-202402,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'Metal bus shelter reaching dangerous tempe...'.,
+AM-202405,Other,Standard,Classified as Other based on description citing 'Dead trees with split branches.'.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'Grass dying in heatwave conditions'.,
+AM-202407,Road Damage,Urgent,"Classified as Road Damage citing 'Broken bench and upturned paving'; priority Urgent triggered by severity keyword 'injured', 'Child'.",
+AM-202410,Pothole,Standard,Classified as Pothole based on description citing 'Pothole on main highway causing morning ru...'.,
+AM-202414,Streetlight,Standard,Classified as Streetlight based on description citing 'Residential colony unlit after 9pm'.,
+AM-202417,Waste,Standard,Classified as Waste based on description citing 'Night market waste not cleared before morning'.,NEEDS_REVIEW
+AM-202421,Noise,Standard,Classified as Noise based on description citing 'Club music audible at residential building...'.,
+AM-202424,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'Zoo approach road surface bubbling at 45°C'.,NEEDS_REVIEW
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'River walk surface temperature unbearable'.,
+AM-202431,Heritage Damage,Standard,Classified as Heritage Damage based on description citing 'Old city road subsidence near ancient step...'.,
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'Black metal road dividers storing heat'.,
+AM-202444,Waste,Standard,Classified as Waste based on description citing 'Restaurant waste bins overflowing on Sunda...'.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard based on description citing 'Users exposed to full sun'.,
