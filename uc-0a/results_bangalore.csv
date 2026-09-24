@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+BLR-2024-001,Pothole,Urgent,Cites risk of 'injury'.,
+BLR-2024-002,Streetlight,Urgent,"Contains severity keyword(s): hazard, collapse.",
+BLR-2024-003,Waste,Standard,Issue is ongoing but lacks immediate physical hazard keywords.,
+BLR-2024-004,Other,Urgent,"Cites 'school' and 'child', indicating immediate risk.",NEEDS_REVIEW
+BLR-2024-005,Road Damage,Standard,Standard maintenance requested.,
+BLR-2024-006,Waste,Standard,Standard maintenance requested.,
+BLR-2024-007,Noise,Standard,Standard maintenance requested.,
+BLR-2024-008,Flooding,Standard,Standard maintenance requested.,
+BLR-2024-009,Road Damage,Urgent,Contains severity keyword(s): fell.,
+BLR-2024-010,Heritage Damage,Standard,Standard maintenance requested.,
+BLR-2024-011,Road Damage,Standard,Standard maintenance requested.,
+BLR-2024-012,Streetlight,Standard,Issue is ongoing but lacks immediate physical hazard keywords.,
+BLR-2024-013,Waste,Urgent,Contains severity keyword(s): hospital.,
+BLR-2024-014,Heat Hazard,Urgent,Contains severity keyword(s): hazard.,
+BLR-2024-015,Other,Standard,Standard maintenance requested.,NEEDS_REVIEW
