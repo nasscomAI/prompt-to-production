@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,Classified as Flooding with Urgent priority because the complaint cites 'Underpass flooded after 1hr rain' with urgent severity triggered by 'Ambulance'.,
+GH-202402,Other,Standard,Classified as Other with Standard priority flagged for review because the description cites 'Market area flooded' spanning multiple categories (Flooding and Drain Blockage) with standard operational urgency.,NEEDS_REVIEW
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description cites 'Main stormwater drain 100% blocked with construction debris' representing an operational issue without acute safety hazard.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage with Standard priority because the description cites 'Drain blocked and mosquito breeding' representing an operational issue without acute safety hazard.,
+GH-202410,Pothole,Standard,Classified as Pothole with Standard priority because the description cites 'Potholes causing vehicles to slow to 20kmph on fast road' representing an operational issue without acute safety hazard.,
+GH-202411,Pothole,Urgent,Classified as Pothole with Urgent priority because the complaint cites 'Pothole swallowed entire motorcycle wheel' with urgent severity triggered by 'hospitalised'.,
+GH-202412,Pothole,Urgent,Classified as Pothole with Urgent priority because the complaint cites 'School bus struggling to navigate 6 potholes in 200m stretch' with urgent severity triggered by 'School'.,
+GH-202417,Other,Standard,Classified as Other with Standard priority flagged for review because the description cites 'Heritage zone garbage overflow' spanning multiple categories (Waste and Heritage Damage) with standard operational urgency.,NEEDS_REVIEW
+GH-202420,Noise,Standard,Classified as Noise with Standard priority because the description cites 'Construction drilling from 5am daily near residential towers' representing an operational issue without acute safety hazard.,
+GH-202422,Road Damage,Urgent,Classified as Road Damage with Urgent priority because the complaint cites 'Road collapsed partially' with urgent severity triggered by 'collapsed'.,
+GH-202424,Flooding,Standard,Classified as Flooding with Standard priority because the description cites 'Underpass floods in light rain' representing an operational issue without acute safety hazard.,
+GH-202428,Waste,Standard,Classified as Waste with Standard priority because the description cites 'Post-market waste not cleared' representing an operational issue without acute safety hazard.,
+GH-202432,Noise,Low,Classified as Noise with Low priority because the description cites '24hr supermarket delivery trucks idling with engines on' representing an operational issue without acute safety hazard.,
+GH-202448,Other,Standard,Classified as Other with Standard priority flagged for review because the description cites 'Main drain blocked — entire locality at flooding risk this week' spanning multiple categories (Flooding and Drain Blockage) with standard operational urgency.,NEEDS_REVIEW
+GH-202438,Flooding,Standard,Classified as Flooding with Standard priority because the description cites 'Colony surrounded by fields that channel rainwater through main road' representing an operational issue without acute safety hazard.,
