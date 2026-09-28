@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+AM-202401,Road Damage,Standard,Classified as Road Damage with Standard priority because the description says Tarmac surface melting at 44°C but lists unlisted hazard unsafe for review.,NEEDS_REVIEW
+AM-202402,Other,Standard,Classified as Other because the description says Metal bus shelter and matches no taxonomy rule.,NEEDS_REVIEW
+AM-202405,Other,Urgent,Classified as Other because the description says Dead trees with and matches no taxonomy rule.,NEEDS_REVIEW
+AM-202406,Heat Hazard,Standard,Classified as Heat Hazard because the description says dying in heatwave conditions.,NEEDS_REVIEW
+AM-202407,Road Damage,Urgent,"Classified as Road Damage, priority Urgent because the description says bench and upturned paving and contains severity word injured.",
+AM-202410,Pothole,Standard,Classified as Pothole because the description says Pothole on main.,
+AM-202414,Streetlight,Standard,Classified as Streetlight with Standard priority because the description says Residential colony unlit after 9pm but lists unlisted hazard wiring theft for review.,NEEDS_REVIEW
+AM-202417,Waste,Standard,Classified as Waste because the description says Night market waste not cleared.,NEEDS_REVIEW
+AM-202421,Noise,Low,Classified as Noise because the description says Club music audible at.,
+AM-202424,Road Damage,Standard,Classified as Road Damage because the description says road surface bubbling at 45°C.,
+AM-202429,Heat Hazard,Standard,Classified as Heat Hazard because the description says surface temperature unbearable.,
+AM-202431,Road Damage,Standard,Classified as Road Damage because the description says city road subsidence near ancient.,NEEDS_REVIEW
+AM-202435,Heat Hazard,Standard,Classified as Heat Hazard with Standard priority because the description says road dividers storing heat but lists unlisted hazard burn for review.,NEEDS_REVIEW
+AM-202444,Waste,Standard,Classified as Waste because the description says Restaurant waste bins overflowing.,
+AM-202445,Heat Hazard,Standard,Classified as Heat Hazard because the description says Users exposed to full.,NEEDS_REVIEW

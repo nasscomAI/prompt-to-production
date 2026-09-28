@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding, priority Urgent because the description says Underpass flooded after 1hr and contains severity word Ambulance.",
+GH-202402,Flooding,Standard,Classified as Flooding because the description says Market area flooded.,
+GH-202406,Drain Blockage,Standard,Classified as Drain Blockage because the description says drain 100% blocked with construction.,
+GH-202407,Drain Blockage,Standard,Classified as Drain Blockage because the description says Drain blocked and mosquito.,
+GH-202410,Pothole,Standard,Classified as Pothole because the description says Potholes causing vehicles.,
+GH-202411,Pothole,Urgent,"Classified as Pothole, priority Urgent because the description says Pothole swallowed entire and contains severity word hospitalised..",
+GH-202412,Pothole,Urgent,"Classified as Pothole, priority Urgent because the description says navigate 6 potholes in 200m and contains severity word School.",
+GH-202417,Waste,Standard,Classified as Waste because the description says Heritage zone garbage overflow.,NEEDS_REVIEW
+GH-202420,Noise,Low,Classified as Noise because the description says Construction drilling from 5am.,
+GH-202422,Pothole,Urgent,"Classified as Pothole, priority Urgent because the description says Crater 1m deep and contains severity word collapsed.",
+GH-202424,Flooding,Standard,Classified as Flooding because the description says Underpass floods in light.,
+GH-202428,Waste,Standard,Classified as Waste because the description says Post-market waste not cleared.,
+GH-202432,Noise,Low,Classified as Noise because the description says delivery trucks idling with engines.,
+GH-202448,Drain Blockage,Standard,Classified as Drain Blockage because the description says Main drain blocked — entire.,
+GH-202438,Other,Low,Classified as Other because the description says Colony surrounded by and matches no taxonomy rule.,NEEDS_REVIEW
