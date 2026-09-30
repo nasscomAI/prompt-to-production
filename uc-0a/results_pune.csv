@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,This complaint is classified under Pothole with Standard priority based on the description citing 'pothole'.,
+PM-202402,Pothole,Urgent,This complaint is classified under Pothole with Urgent priority due to the keyword 'child' based on the description citing 'pothole'.,
+PM-202406,Flooding,Standard,This complaint is classified under Flooding with Standard priority based on the description citing 'flooding/flooded'.,
+PM-202408,Other,Standard,The complaint is flagged for review because the description contains references to multiple categories (Drain Blockage and Flooding) causing ambiguity.,NEEDS_REVIEW
+PM-202410,Streetlight,Standard,This complaint is classified under Streetlight with Standard priority based on the description citing 'streetlight/lights out'.,
+PM-202411,Streetlight,Urgent,This complaint is classified under Streetlight with Urgent priority due to the keyword 'hazard' based on the description citing 'streetlight/lights out'.,
+PM-202413,Waste,Standard,This complaint is classified under Waste with Standard priority based on the description citing 'waste/garbage/dead animal'.,
+PM-202418,Noise,Standard,This complaint is classified under Noise with Standard priority based on the description citing 'music/noise'.,
+PM-202419,Road Damage,Standard,This complaint is classified under Road Damage with Standard priority based on the description citing 'road/footpath damage'.,
+PM-202420,Drain Blockage,Urgent,This complaint is classified under Drain Blockage with Urgent priority due to the keyword 'injury' based on the description citing 'drain/manhole'.,
+PM-202427,Flooding,Standard,This complaint is classified under Flooding with Standard priority based on the description citing 'flooding/flooded'.,
+PM-202428,Waste,Standard,This complaint is classified under Waste with Standard priority based on the description citing 'waste/garbage/dead animal'.,
+PM-202430,Other,Standard,The complaint is flagged for review because the description contains references to multiple categories (Heritage Damage and Streetlight) causing ambiguity.,NEEDS_REVIEW
+PM-202433,Waste,Standard,This complaint is classified under Waste with Standard priority based on the description citing 'waste/garbage/dead animal'.,
+PM-202446,Road Damage,Urgent,This complaint is classified under Road Damage with Urgent priority due to the keyword 'fell' based on the description citing 'road/footpath damage'.,
