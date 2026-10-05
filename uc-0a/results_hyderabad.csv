@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+GH-202401,Flooding,Urgent,"Classified as Flooding because it mentions ""flooded""; priority is Urgent because it includes ""Ambulance"".",
+GH-202402,Drain Blockage,Standard,"Classified as Drain Blockage because it mentions ""Drain completely blocked"".",
+GH-202406,Drain Blockage,Standard,"Classified as Drain Blockage because it mentions ""stormwater drain 100% blocked"".",
+GH-202407,Drain Blockage,Standard,"Classified as Drain Blockage because it mentions ""Drain blocked"".",
+GH-202410,Pothole,Standard,"Classified as Pothole because it mentions ""Potholes"".",
+GH-202411,Pothole,Urgent,"Classified as Pothole because it mentions ""Pothole""; priority is Urgent because it includes ""hospitalised"".",
+GH-202412,Pothole,Urgent,"Classified as Pothole because it mentions ""potholes""; priority is Urgent because it includes ""School"".",
+GH-202417,Waste,Standard,"Classified as Waste because it mentions ""garbage"".",
+GH-202420,Noise,Standard,"Classified as Noise because it mentions ""drilling"".",
+GH-202422,Road Damage,Urgent,"Classified as Road Damage because it mentions ""Road collapsed""; priority is Urgent because it includes ""collapsed"".",
+GH-202424,Flooding,Standard,"Classified as Flooding because it mentions ""floods"".",
+GH-202428,Waste,Standard,"Classified as Waste because it mentions ""waste"".",
+GH-202432,Noise,Standard,"Classified as Noise because it mentions ""idling"".",
+GH-202448,Drain Blockage,Standard,"Classified as Drain Blockage because it mentions ""drain blocked"".",
+GH-202438,Other,Standard,No clear category-specific words appear in the description.,NEEDS_REVIEW
