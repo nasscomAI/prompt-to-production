@@ -1,0 +1,16 @@
+complaint_id,date_raised,city,ward,location,description,reported_by,days_open
+BLR-202401,2024-06-15,Bangalore,Ward 1 – Koramangala,80 Feet Road near Forum Mall,Large pothole on main road causing hazard to two-wheelers. Multiple near-accidents reported.,Citizen Portal,6
+BLR-202402,2024-06-18,Bangalore,Ward 2 – Indiranagar,100 Feet Road near BDA Complex,Deep pothole near school zone. Children at risk during morning drop-off hours.,Councillor Referral,10
+BLR-202403,2024-06-20,Bangalore,Ward 3 – Jayanagar,4th Block near Jayanagar Shopping Complex,Severe waterlogging after 1 hour of rain. Shops flooded and commuters stranded.,Ward Office Walk-in,8
+BLR-202404,2024-06-12,Bangalore,Ward 4 – Whitefield,ITPL Main Road near Satya Sai Hospital,Overflowing drain near hospital entrance. Patients unable to access emergency ward.,Social Media,14
+BLR-202405,2024-06-22,Bangalore,Ward 5 – Malleshwaram,Sampige Road near Mantri Mall,Three consecutive streetlights not working for 2 weeks. Very dark at night.,Email,16
+BLR-202406,2024-06-10,Bangalore,Ward 1 – Koramangala,Sony World Signal near Ejipura,Streetlight pole leaning dangerously. Sparking observed during rain. Electrical hazard reported.,WhatsApp Helpline,9
+BLR-202407,2024-06-25,Bangalore,Ward 2 – Indiranagar,CMH Road near Old Madras Bank,Garbage bins overflowing near residential area. Stray dogs congregating. Smell unbearable.,Citizen Portal,11
+BLR-202408,2024-06-08,Bangalore,Ward 3 – Jayanagar,11th Cross near National College,Construction noise past midnight on weekdays. Affecting elderly residents and students.,Phone Helpline,5
+BLR-202409,2024-06-14,Bangalore,Ward 4 – Whitefield,Varthur Main Road near Kundalahalli Gate,Road surface completely damaged after recent utility work. Deep cracks visible.,Social Media,3
+BLR-202410,2024-06-19,Bangalore,Ward 5 – Malleshwaram,Near Sankey Tank walking path,Old heritage wall crumbling. Pieces fell on the walking path. Risk of injury to morning walkers.,Email,12
+BLR-202411,2024-06-21,Bangalore,Ward 1 – Koramangala,Hosur Road near Silk Board Junction,Open manhole cover missing. Elderly pedestrian fell into it yesterday evening.,Councillor Referral,1
+BLR-202412,2024-06-16,Bangalore,Ward 2 – Indiranagar,Defence Colony near HAL Airport Road,Blocked stormwater drain causing flooding in basement parking of apartments.,Ward Office Walk-in,7
+BLR-202413,2024-06-23,Bangalore,Ward 3 – Jayanagar,26th Main Road near BTM Layout,Exposed electrical wires near bus stop. Fire risk during monsoon. Immediate attention needed.,WhatsApp Helpline,2
+BLR-202414,2024-06-11,Bangalore,Ward 4 – Whitefield,Marathahalli Bridge underpass,Child injured due to broken footpath tiles near school crossing. Parents demanding action.,Social Media,15
+BLR-202415,2024-06-27,Bangalore,Ward 5 – Malleshwaram,Yeshwanthpur Circle near Metro Station,Unauthorized dumping of construction debris on public road. Blocking half the lane.,Citizen Portal,4
