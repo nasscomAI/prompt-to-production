@@ -6,6 +6,7 @@ import argparse
 import csv
 import json
 import os
+import re
 import sys
 
 def classify_complaint(client, prompt_base, row: dict) -> dict:
@@ -16,7 +17,6 @@ def classify_complaint(client, prompt_base, row: dict) -> dict:
     )
     try:
         # Assuming the model returns JSON
-        import re
         json_str = response.text
         match = re.search(r'\{.*\}', json_str, re.DOTALL)
         if match:
@@ -61,7 +61,16 @@ def batch_classify(input_path: str, output_path: str):
         reader = csv.DictReader(infile)
         fieldnames = reader.fieldnames + ['category', 'priority', 'reason', 'flag']
         for row in reader:
-            classification = classify_complaint(client, prompt_base, row)
+            try:
+                classification = classify_complaint(client, prompt_base, row)
+            except Exception as e:
+                print(f"Warning: Failed to classify row {row.get('complaint_id', '?')}: {e}", file=sys.stderr)
+                classification = {
+                    "category": "Other",
+                    "priority": "Low",
+                    "reason": f"Classification error: {e}",
+                    "flag": "NEEDS_REVIEW"
+                }
             row.update(classification)
             results.append(row)
 
