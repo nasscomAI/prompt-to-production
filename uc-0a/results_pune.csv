@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Classified as Pothole because the description says ""pothole"".",
+PM-202402,Pothole,Urgent,"Classified as Pothole because the description says ""pothole"", and it is Urgent because it mentions ""School"", ""children"".",
+PM-202406,Flooding,Standard,"Classified as Flooding because the description says ""flooded"", ""knee-deep"".",
+PM-202408,Flooding,Standard,"Classified as Flooding because the description says ""flooded"", but it also matches Drain Blockage (""Drain""), so it needs review.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Classified as Streetlight because the description says ""streetlights"".",
+PM-202411,Streetlight,Urgent,"Classified as Streetlight because the description says ""Streetlight"", and it is Urgent because it mentions ""hazard"".",
+PM-202413,Waste,Standard,"Classified as Waste because the description says ""garbage"", ""bins"".",
+PM-202418,Noise,Standard,"Classified as Noise because the description says ""music"".",
+PM-202419,Road Damage,Standard,"Classified as Road Damage because the description says ""cracked"", ""sinking"", ""Road surface"".",
+PM-202420,Road Damage,Urgent,"Classified as Road Damage because the description says ""Manhole"", and it is Urgent because it mentions ""injury"".",
+PM-202427,Flooding,Standard,"Classified as Flooding because the description says ""floods"".",
+PM-202428,Waste,Standard,"Classified as Waste because the description says ""Dead animal"".",
+PM-202430,Streetlight,Standard,"Classified as Streetlight because the description says ""lights out"", but it also matches Heritage Damage (""Heritage""), so it needs review.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Classified as Waste because the description says ""waste"", ""dumped"".",
+PM-202446,Road Damage,Urgent,"Classified as Road Damage because the description says ""Footpath"", ""tiles"", and it is Urgent because it mentions ""fell"".",

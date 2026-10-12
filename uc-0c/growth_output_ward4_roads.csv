@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,previous_period,previous_spend,growth_pct,formula,flag
+2024-01,Ward 4 – Warje,Roads & Pothole Repair,10.2,2023-12,,,MoM = (current - previous) / previous × 100; previous (2023-12) unavailable,NO_PRIOR_PERIOD: 2023-12 not in dataset — growth not computed
+2024-02,Ward 4 – Warje,Roads & Pothole Repair,10.7,2024-01,10.2,+4.9,MoM = (10.7 - 10.2) / 10.2 × 100 = +4.9%,
+2024-03,Ward 4 – Warje,Roads & Pothole Repair,11.1,2024-02,10.7,+3.7,MoM = (11.1 - 10.7) / 10.7 × 100 = +3.7%,
+2024-04,Ward 4 – Warje,Roads & Pothole Repair,8.8,2024-03,11.1,-20.7,MoM = (8.8 - 11.1) / 11.1 × 100 = -20.7%,
+2024-05,Ward 4 – Warje,Roads & Pothole Repair,11.3,2024-04,8.8,+28.4,MoM = (11.3 - 8.8) / 8.8 × 100 = +28.4%,
+2024-06,Ward 4 – Warje,Roads & Pothole Repair,12.5,2024-05,11.3,+10.6,MoM = (12.5 - 11.3) / 11.3 × 100 = +10.6%,
+2024-07,Ward 4 – Warje,Roads & Pothole Repair,NULL,2024-06,12.5,,MoM = (NULL - 12.5) / 12.5 × 100,NULL_CURRENT: Audit freeze — figures under review — growth not computed
+2024-08,Ward 4 – Warje,Roads & Pothole Repair,16,2024-07,,,MoM = (16 - NULL) / NULL × 100,NULL_PREVIOUS: 2024-07 is null (Audit freeze — figures under review) — growth not computed
+2024-09,Ward 4 – Warje,Roads & Pothole Repair,14.7,2024-08,16,-8.1,MoM = (14.7 - 16) / 16 × 100 = -8.1%,
+2024-10,Ward 4 – Warje,Roads & Pothole Repair,11,2024-09,14.7,-25.2,MoM = (11 - 14.7) / 14.7 × 100 = -25.2%,
+2024-11,Ward 4 – Warje,Roads & Pothole Repair,9,2024-10,11,-18.2,MoM = (9 - 11) / 11 × 100 = -18.2%,
+2024-12,Ward 4 – Warje,Roads & Pothole Repair,11.2,2024-11,9,+24.4,MoM = (11.2 - 9) / 9 × 100 = +24.4%,
