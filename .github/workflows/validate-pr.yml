@@ -15,6 +15,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.sha }}
+          allow-unsafe-pr-checkout: true
       - name: Check Commit Message Format
         run: |
           echo "=== Workflow version: v4-pull_request_target ==="
@@ -40,6 +41,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: ${{ github.event.pull_request.head.sha }}
+          allow-unsafe-pr-checkout: true
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
