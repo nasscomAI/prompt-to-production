@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: summarize_document
+  description: Generates a concise summary while preserving the original meaning.
+  input: A document or text string.
+  output: A summarized version of the document.
+  error_handling: If the document is empty or unclear, return an appropriate message instead of guessing.
+
+- name: validate_summary
+  description: Checks whether the summary accurately reflects the original document.
+  input: Original document and generated summary.
+  output: Validation result indicating whether important information is preserved.
+  error_handling: If either input is missing, return a validation error.

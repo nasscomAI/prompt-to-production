@@ -1,16 +1,13 @@
-# skills.md
-# INSTRUCTIONS: Generate a draft by prompting AI, then manually refine this file.
-# Delete these comments before committing.
-
 skills:
-  - name: [skill_name]
-    description: [One sentence — what does this skill do?]
-    input: [What does it receive? Type and format.]
-    output: [What does it return? Type and format.]
-    error_handling: [What does it do when input is invalid or ambiguous?]
 
-  - name: [second_skill_name]
-    description: [One sentence]
-    input: [Type and format]
-    output: [Type and format]
-    error_handling: [What does it do when input is invalid or ambiguous?]
+- name: extract_leave_rules
+  description: Extracts leave policy rules from a document.
+  input: A leave policy document as text.
+  output: A structured list of leave rules with conditions and approvals.
+  error_handling: If a rule is unclear or incomplete, indicate that instead of guessing.
+
+- name: validate_leave_rules
+  description: Validates that extracted rules accurately match the source document.
+  input: Original leave policy document and extracted rules.
+  output: Validation result indicating whether the extracted rules are complete and accurate.
+  error_handling: If required information is missing, return a validation error.
