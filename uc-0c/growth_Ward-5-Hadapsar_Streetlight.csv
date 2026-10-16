@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth,formula,null_flag,notes
+2024-01,Ward 5 – Hadapsar,Streetlight Maintenance,3.4,,(this_period - prev_period) / prev_period * 100,False,
+2024-02,Ward 5 – Hadapsar,Streetlight Maintenance,3.4,0.0,(this_period - prev_period) / prev_period * 100,False,
+2024-03,Ward 5 – Hadapsar,Streetlight Maintenance,4.1,20.5882,(this_period - prev_period) / prev_period * 100,False,
+2024-04,Ward 5 – Hadapsar,Streetlight Maintenance,4.1,0.0,(this_period - prev_period) / prev_period * 100,False,
+2024-05,Ward 5 – Hadapsar,Streetlight Maintenance,,,(this_period - prev_period) / prev_period * 100,True,Equipment procurement delay
+2024-06,Ward 5 – Hadapsar,Streetlight Maintenance,3.8,,(this_period - prev_period) / prev_period * 100,False,
+2024-07,Ward 5 – Hadapsar,Streetlight Maintenance,5.3,39.4737,(this_period - prev_period) / prev_period * 100,False,
+2024-08,Ward 5 – Hadapsar,Streetlight Maintenance,5.4,1.8868,(this_period - prev_period) / prev_period * 100,False,
+2024-09,Ward 5 – Hadapsar,Streetlight Maintenance,5.0,-7.4074,(this_period - prev_period) / prev_period * 100,False,
+2024-10,Ward 5 – Hadapsar,Streetlight Maintenance,3.8,-24.0,(this_period - prev_period) / prev_period * 100,False,
+2024-11,Ward 5 – Hadapsar,Streetlight Maintenance,3.3,-13.1579,(this_period - prev_period) / prev_period * 100,False,
+2024-12,Ward 5 – Hadapsar,Streetlight Maintenance,3.4,3.0303,(this_period - prev_period) / prev_period * 100,False,

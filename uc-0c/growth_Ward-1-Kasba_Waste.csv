@@ -1,0 +1,13 @@
+period,ward,category,actual_spend,growth,formula,null_flag,notes
+2024-01,Ward 1 – Kasba,Waste Management,5.3,,(this_period - prev_period) / prev_period * 100,False,
+2024-02,Ward 1 – Kasba,Waste Management,6.4,20.7547,(this_period - prev_period) / prev_period * 100,False,
+2024-03,Ward 1 – Kasba,Waste Management,6.5,1.5625,(this_period - prev_period) / prev_period * 100,False,
+2024-04,Ward 1 – Kasba,Waste Management,5.7,-12.3077,(this_period - prev_period) / prev_period * 100,False,
+2024-05,Ward 1 – Kasba,Waste Management,6.1,7.0175,(this_period - prev_period) / prev_period * 100,False,
+2024-06,Ward 1 – Kasba,Waste Management,5.7,-6.5574,(this_period - prev_period) / prev_period * 100,False,
+2024-07,Ward 1 – Kasba,Waste Management,7.6,33.3333,(this_period - prev_period) / prev_period * 100,False,
+2024-08,Ward 1 – Kasba,Waste Management,8.3,9.2105,(this_period - prev_period) / prev_period * 100,False,
+2024-09,Ward 1 – Kasba,Waste Management,8.9,7.2289,(this_period - prev_period) / prev_period * 100,False,
+2024-10,Ward 1 – Kasba,Waste Management,6.8,-23.5955,(this_period - prev_period) / prev_period * 100,False,
+2024-11,Ward 1 – Kasba,Waste Management,,,(this_period - prev_period) / prev_period * 100,True,Contractor change — billing delayed
+2024-12,Ward 1 – Kasba,Waste Management,5.1,,(this_period - prev_period) / prev_period * 100,False,
