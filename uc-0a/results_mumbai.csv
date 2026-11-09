@@ -1,0 +1,16 @@
+complaint_id,category,priority,reason,flag
+PM-202401,Pothole,Standard,"Identified 'pothole' in description, suggesting Pothole and Standard priority.",
+PM-202402,Pothole,Urgent,"Identified 'child' in description, suggesting Pothole and Urgent priority.",
+PM-202406,Flooding,Standard,"Identified 'flood' in description, suggesting Flooding and Standard priority.",
+PM-202408,Flooding,Standard,"Identified 'flood' in description, suggesting Flooding and Standard priority.",NEEDS_REVIEW
+PM-202410,Streetlight,Standard,"Identified 'streetlight' in description, suggesting Streetlight and Standard priority.",
+PM-202411,Streetlight,Urgent,"Identified 'hazard' in description, suggesting Streetlight and Urgent priority.",
+PM-202413,Waste,Standard,"Identified 'garbage' in description, suggesting Waste and Standard priority.",NEEDS_REVIEW
+PM-202418,Noise,Standard,"Identified 'music' in description, suggesting Noise and Standard priority.",
+PM-202419,Road Damage,Standard,"Identified 'road surface' in description, suggesting Road Damage and Standard priority.",
+PM-202420,Other,Urgent,"Identified 'injury' in description, suggesting Other and Urgent priority.",
+PM-202427,Flooding,Standard,"Identified 'flood' in description, suggesting Flooding and Standard priority.",
+PM-202428,Waste,Standard,"Identified 'dead animal' in description, suggesting Waste and Standard priority.",
+PM-202430,Streetlight,Standard,"Identified 'lights out' in description, suggesting Streetlight and Standard priority.",NEEDS_REVIEW
+PM-202433,Waste,Standard,"Identified 'waste' in description, suggesting Waste and Standard priority.",
+PM-202446,Road Damage,Urgent,"Identified 'fell' in description, suggesting Road Damage and Urgent priority.",

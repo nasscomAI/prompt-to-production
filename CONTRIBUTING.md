@@ -42,7 +42,7 @@ A reviewer reading `git log` on your branch should see:
 UC-0A Fix severity blindness: no keywords → added injury/child/school triggers
 UC-0B Fix clause omission: completeness unenforced → added every-clause rule
 UC-0C Fix silent aggregation: no scope → enforced per-ward per-category
-UC-X  Fix cross-doc blending: no single-source rule → added attribution enforcement
+UC-0X Fix cross-doc blending: no single-source rule → added attribution enforcement
 ```
 
 That sequence — in order, on one branch — is readable as a learning journey.
@@ -58,7 +58,7 @@ Work only inside your UC's folder. Do not modify files in other UC folders or in
 uc-0a/          Your UC-0A work lives here
 uc-0b/          Your UC-0B work lives here
 uc-0c/          Your UC-0C work lives here
-uc-x/           Your UC-X work lives here
+uc-0x/           Your UC-0X work lives here
 data/           Read-only — do not modify
 tutor-only/     Not for participants — do not open or modify
 ```
@@ -102,8 +102,8 @@ UC-0B Fix clause omission: completeness not enforced → added every-numbered-cl
 UC-0B Fix condition drop: clause 5.2 lost second approver → added multi-condition preservation rule
 UC-0C Fix silent aggregation: no ward/category scope → enforced per-ward per-category only
 UC-0C Fix null skipping: nulls not flagged → added load_dataset null report before compute
-UC-X  Fix cross-doc blending: no single-source rule → added single-source attribution enforcement
-UC-X  Fix hedged hallucination: no refusal template → added exact refusal wording to enforcement
+UC-0X Fix cross-doc blending: no single-source rule → added single-source attribution enforcement
+UC-0X Fix hedged hallucination: no refusal template → added exact refusal wording to enforcement
 ```
 
 ### Bad commits — these will be flagged in review
@@ -156,7 +156,7 @@ When all four UCs are done:
 
 ```bash
 git add .
-git commit -m "UC-X Fix [whatever your last fix was]"
+git commit -m "UC-0X Fix [whatever your last fix was]"
 git push origin participant/[your-name]-[city]
 ```
 
@@ -183,7 +183,7 @@ Plus a CRAFT reflection and one forward-looking application of the framework.
 | Commit message: "update" or "done" | Tells the reviewer nothing. The message must name the failure. |
 | UC-0A: severity rows not Urgent | The most consequential failure in the workshop. Must be fixed. |
 | UC-0C: one aggregated number | Operationally useless. Must be per-ward per-category. |
-| UC-X: personal-phone question blended | The answer must come from one document. Not two. |
+| UC-0X: personal-phone question blended | The answer must come from one document. Not two. |
 | PR template sections blank or one word | The PR is the submission. Blank sections = no evidence. |
 
 ---
